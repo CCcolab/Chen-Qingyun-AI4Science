@@ -28,6 +28,8 @@ python3 -m http.server 8000 --bind 127.0.0.1 --directory scratch/site-dist
 
 [迁移与发布交接](docs/GITHUB_PAGES_MIGRATION_zh-CN.md) · [研究接入说明](docs/PHASE1_INTEGRATION_zh-CN.md) · [候选结果接口](docs/WEBSITE_RESULT_CONTRACT_zh-CN.md) · [后续研究入口](docs/NEXT_RESEARCH_GATES_zh-CN.md)
 
+针对 `b5d562c` 的评审，当前研究分支新增固定输入 v2 严格校验、完整运行快照和具名签认门禁。原 `results/` 及 v1 引擎封存不改；新 CLI 默认写入新的 `scratch/runs/` 目录。当前审阅者登记为空、审定导出关闭，独立研究页面仅供待审预览。详见[当前科研发布状态](docs/CURRENT_RESEARCH_STATUS_zh-CN.md)及[签认操作流程](docs/SCIENTIFIC_REVIEW_zh-CN.md)。
+
 原包及首次本地验收文档保留当时状态；后续线上执行以 GitHub Actions 和实际部署记录为准。仓库原初始提交及其 README 均已保留在历史中，见[初始仓库说明存档](docs/REMOTE_INITIAL_README_20261111.md)。
 
 接入时仓库还新增了同源网站迁移快照；其历史、[使用说明](NOTICE.md)、[迁移文档](docs/MIGRATION_zh-CN.md)、[YouMind 交付约定](docs/YOUMIND_HANDOFF_zh-CN.md)及 `tools/` 检查工具一并保留。正式发布仍使用本仓库 `scripts/` 的联合验收与独立 Pages 流程。

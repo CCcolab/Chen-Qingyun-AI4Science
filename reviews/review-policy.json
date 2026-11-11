@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "policy_id": "PF1966-UV-T1.scientific-review.v1",
+  "release_enabled": false,
+  "signature_namespace": "chen-qingyun-scientific-review-v1",
+  "minimum_reviewers": 1,
+  "required_checks": [
+    "source_transcription",
+    "original_attribution",
+    "units_and_arithmetic",
+    "sensitivity_and_uncertainty",
+    "claim_boundaries",
+    "publication_text"
+  ],
+  "authorized_reviewers": []
+}

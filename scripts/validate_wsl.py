@@ -116,7 +116,8 @@ def main() -> int:
                "result_type": "published_table_numerical_replay", "model_api_called": False,
                "quantum_calculation": "not_performed", "experiment": "not_performed",
                "future_hypotheses": "not_tested", "GitHub_Actions_executed": False,
-               "website_modified": False}
+               "website_modified": False, "original_scan_reverified_by_this_run": False,
+               "independent_transcription_signoff": "pending"}
     child_env = {**os.environ, "PYTHONDONTWRITEBYTECODE": "1", "PYTHONIOENCODING": "utf-8"}
 
     def run(label, command, cwd=ROOT):
@@ -195,6 +196,7 @@ def main() -> int:
                 raise ValueError("The original ZIP replay differs from its delivered results")
             summary["original_result_bytes_equal"] = True
             summary["original_result_fields_equal"] = True
+            summary["original_result_comparison_scope"] = "original_zip_v1_cli_vs_original_zip_results_only"
             integrated = staging / "integration"
             run("clone-committed-integration", ["git", "clone", "--no-hardlinks", "--single-branch",
                                                 "--branch", summary["source_branch"], str(ROOT), str(integrated)])
@@ -209,6 +211,15 @@ def main() -> int:
             summary["integrated_test_execution_policy"] = integrated_summary["test_execution_policy"]
             summary["integrated_result_bytes_equal"] = integrated_summary["all_result_bytes_equal"]
             summary["integrated_result_fields_equal"] = integrated_summary["all_result_fields_equal"]
+            summary["integrated_result_comparison_scope"] = integrated_summary["result_comparison_scope"]
+            summary["integrated_legacy_result_bytes_equal"] = integrated_summary["legacy_result_bytes_equal"]
+            summary["integrated_legacy_result_fields_equal"] = integrated_summary["legacy_result_fields_equal"]
+            for key in ("current_numerical_agreement", "current_run_integrity_passed",
+                        "current_result_schema_version", "current_candidate_schema_version",
+                        "current_result_sha256", "current_candidate_sha256",
+                        "current_publication_payload_sha256", "current_run_id",
+                        "current_run_manifest", "current_run_manifest_sha256"):
+                summary[f"integrated_{key}"] = integrated_summary[key]
             summary["integrated_source_worktree_dirty"] = integrated_summary["source_worktree_dirty"]
             summary["upstream_files_verified"] = integrated_summary["upstream_files_verified"]
             if (integrated / "site").is_dir():
