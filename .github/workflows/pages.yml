@@ -27,8 +27,8 @@ jobs:
           node-version: '24.13.1'
       - name: Verify website baseline and local routes
         run: python scripts/check_site.py --require-node --output scratch/pages-site-check.json
-      - name: Verify research without publishing its candidate results
-        run: python scripts/accept_phase1.py --output scratch/pages-research-acceptance
+      - name: Verify research sources and replay without local tests
+        run: python scripts/accept_phase1.py --skip-tests --output scratch/pages-research-acceptance
       - name: Build static website only
         run: python scripts/build_site.py --require-node --output scratch/site-dist
       - name: Upload website artifact

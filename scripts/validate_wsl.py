@@ -201,10 +201,12 @@ def main() -> int:
             cloned_commit = run("cloned-commit", ["git", "rev-parse", "HEAD"], integrated).stdout.strip()
             if cloned_commit != summary["source_commit"]:
                 raise ValueError("Source branch changed during staging; rerun against a fixed commit")
-            run("integrated-acceptance", [sys.executable, "scripts/accept_phase1.py", "--output",
+            run("integrated-acceptance", [sys.executable, "scripts/accept_phase1.py", "--skip-tests", "--output",
                                            str(output / "integration")], integrated)
             integrated_summary = json.loads((output / "integration/summary.json").read_text(encoding="utf-8"))
             summary["integrated_tests_run"] = integrated_summary["tests_run"]
+            summary["integrated_tests_status"] = integrated_summary["tests_status"]
+            summary["integrated_test_execution_policy"] = integrated_summary["test_execution_policy"]
             summary["integrated_result_bytes_equal"] = integrated_summary["all_result_bytes_equal"]
             summary["integrated_result_fields_equal"] = integrated_summary["all_result_fields_equal"]
             summary["integrated_source_worktree_dirty"] = integrated_summary["source_worktree_dirty"]

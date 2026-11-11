@@ -5,20 +5,22 @@
 本项目同时保留两份独立材料：
 
 - 网站：`upstream/chen-qingyun-a2-citations-candidate.zip`，21 个原始成员完整解到 `site/`，包含 15 个 HTML、两份原始 JSON。ZIP 指纹与研究交接文档一致，预览页没有替代源码。
-- 研究：2026-11-11 AI 研究启动包的 20 个文件原样保留在根目录；[原始说明](README_zh-CN.md)与历史环境记录不改写。PF1966-UV-T1 仅为原表数值重放，网站候选结果保持 `review_required`。
+- 研究：保留启动包的科学代码、数据、协议和历史结果；测试文件仅留本机，不再同步到 GitHub。原 SHA 清单、[原始说明](README_zh-CN.md)与历史环境记录保留，当前分发范围见[同步策略](docs/LOCAL_TESTS_POLICY_zh-CN.md)。PF1966-UV-T1 仅为原表数值重放，网站候选结果保持 `review_required`。
 
 ## 本地检查
 
 Python 3.10+，无需模型 API 密钥或第三方 Python 库：
 
 ```bash
-python3 scripts/accept_phase1.py --output scratch/research-check
+python3 scripts/accept_phase1.py --skip-tests --output scratch/research-check
 python3 scripts/check_site.py --output scratch/site-check.json
 python3 scripts/build_site.py --output scratch/site-dist
 python3 -m http.server 8000 --bind 127.0.0.1 --directory scratch/site-dist
 ```
 
 验收目录使用新路径。WSL 正式实测记录位于 `validation/`；Windows 和 WSL 环境分开记录。网站构建只输出网页和公开来源数据，研究候选、环境日志及原始 ZIP 不进入 Pages 产物。
+
+上述命令适用于 GitHub 克隆。原本机保留 `tests/` 时，去掉 `--skip-tests` 可执行完整本地测试；本地 Git 排除规则阻止其继续加入提交。GitHub CI 和 Pages 只做保留源码完整性、固定数值重放、结果比对和网站检查，单测明确记录为未运行。
 
 网站和研究原成果均归原作者；工程测试通过不代表新的实验、量化计算、机理验证或科学审定。尚未确定再分发许可的原论文全文、传记及照片不加入网站产物。
 
