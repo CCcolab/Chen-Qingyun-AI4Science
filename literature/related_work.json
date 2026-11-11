@@ -1,0 +1,95 @@
+{
+  "as_of": "2026-11-11",
+  "novelty_clearance": "not_granted",
+  "search_type": "targeted_nonexhaustive",
+  "works": [
+    {
+      "id": "PA-1986-DIXON",
+      "year": 1986,
+      "authors": "David A. Dixon; Tadamichi Fukunaga; Bruce E. Smart",
+      "title": "Structures and stabilities of fluorinated carbanions. Evidence for anionic hyperconjugation",
+      "doi": "10.1021/ja00274a029",
+      "url": "https://pubs.acs.org/doi/10.1021/ja00274a029",
+      "verified_scope": "publisher_metadata",
+      "constraint": "相关理论研究已有；具体分子与方法待全文核对",
+      "direct_citation_to_PF01": "not_asserted"
+    },
+    {
+      "id": "PA-2021-HU",
+      "year": 2021,
+      "authors": "Qian Wang; Quan Tao; Hui Dong; Chuanfa Ni; Xiaoming Xie; Jinbo Hu",
+      "title": "Fluorination Triggers Fluoroalkylation: Nucleophilic Perfluoro-tert-butylation with 1,1-Dibromo-2,2-bis(trifluoromethyl)ethylene (DBBF) and CsF",
+      "doi": "10.1002/anie.202113727",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34714973/",
+      "verified_scope": "publisher_or_pubmed_abstract",
+      "constraint": "阴离子试剂与特定应用属于原作者；不标为平台发明",
+      "direct_citation_to_PF01": "not_asserted"
+    },
+    {
+      "id": "PA-2022-WEI",
+      "year": 2022,
+      "authors": "Zhiqiang Wei; Lixian Wen; Kaidi Zhu; Qian Wang; Yanchuan Zhao; Jinbo Hu",
+      "title": "Regioselective Aromatic Perfluoro-tert-butylation Using Perfluoro-tert-butyl Phenyl Sulfone and Arynes",
+      "doi": "10.1021/jacs.2c10479",
+      "url": "https://pubs.acs.org/doi/10.1021/jacs.2c10479",
+      "verified_scope": "publisher_abstract",
+      "constraint": "砜试剂／芳炔方法已有，不作为新路线目标",
+      "direct_citation_to_PF01": "not_asserted"
+    },
+    {
+      "id": "PA-2025-ZHANG",
+      "year": 2025,
+      "authors": "Ruitong Zhang; Shengqi Zhou; Yijing Li; Yaxing Wu; Xiangyu Chen; Fei Wang; Yunchen Jiang; Xingwei Guo; Chao Chen",
+      "title": "Selective radical-type perfluoro-tert-butylation of unsaturated compounds with a stable and scalable reagent",
+      "doi": "10.1038/s41467-025-59772-5",
+      "url": "https://www.nature.com/articles/s41467-025-59772-5",
+      "verified_scope": "cached_primary_full_text_and_current_index",
+      "constraint": "自由基方法归原作者；Chao Chen 不是 Qingyun Chen",
+      "direct_citation_to_PF01": "not_asserted"
+    },
+    {
+      "id": "PA-2025-ZHU",
+      "year": 2025,
+      "authors": "Kaidi Zhu; Qinyu Luo; Pengcheng Xu; Zhigang Ni; Shuo Sun; Mingyou Hu; Chuanfa Ni; Jinbo Hu",
+      "title": "Dehydroxy-Perfluoro-tert-butylation of alcohols with PhSO2C(CF3)3 and insights into the structure of the [C(CF3)3]− anion",
+      "doi": "10.1038/s41467-025-63180-0",
+      "url": "https://www.nature.com/articles/s41467-025-63180-0",
+      "verified_scope": "publisher_abstract_and_indexed_computational_section",
+      "constraint": "单晶阴离子结构和 DFT 已有；反离子敏感性只作待查新问题",
+      "direct_citation_to_PF01": "not_asserted"
+    },
+    {
+      "id": "PA-2026-CHENG",
+      "year": 2026,
+      "authors": "Jin Cheng; Zhiqiang Wei; Chuanfa Ni; Mingyou Hu; Jinbo Hu",
+      "title": "Preparation of Substituted Phenyl Perfluoro-tert-butyl Sulfones and Their Use in Nucleophilic Perfluoro-tert-butylation Reactions",
+      "doi": "10.1002/ijch.70047",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/ijch.70047",
+      "verified_scope": "publisher_metadata_and_abstract",
+      "constraint": "2026-10-11 已在线发表；取代砜比较不是空白方向",
+      "direct_citation_to_PF01": "not_asserted"
+    },
+    {
+      "id": "PA-2024-HUANG-XUE",
+      "year": 2024,
+      "authors": "黄广龙；薛小松",
+      "title": "陈试剂形成三氟甲基源的机理计算（展示释义）",
+      "doi": "10.6023/A23090434",
+      "url": "https://sioc-journal.cn/Jwk_hxxb/EN/10.6023/A23090434",
+      "verified_scope": "previously_registered_primary_metadata_and_abstract",
+      "constraint": "已有专业计算，仅对照；不是陈庆云早期计算，也不是平台原创",
+      "direct_citation_to_PF01": "not_asserted"
+    },
+    {
+      "id": "PA-2021-EDA",
+      "year": 2021,
+      "authors": null,
+      "title": "Visible-light induced photochemistry of Electron Donor-Acceptor Complexes in Perfluoroalkylation Reactions: Investigation of halogen bonding interactions through UV–Visible absorption and Raman spectroscopies combined with DFT calculations",
+      "doi": null,
+      "url": "https://www.sciencedirect.com/science/article/pii/S0167732221007200",
+      "verified_scope": "publisher_abstract",
+      "constraint": "相邻课题已有 UV/Raman/DFT；C4F9I 具体异构体及与 PF01 的引用关系未核",
+      "direct_citation_to_PF01": "not_asserted"
+    }
+  ]
+}

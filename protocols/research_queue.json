@@ -1,0 +1,96 @@
+{
+  "public_release": "review_required",
+  "tasks": [
+    {
+      "id": "PF1966-UV-T1",
+      "achievement_line": "A03",
+      "question": "原表三个碘代物的位移数值重放",
+      "status": "local_run_complete_review_required",
+      "blockers": [],
+      "novelty": "not_claimed"
+    },
+    {
+      "id": "PF-02",
+      "achievement_line": "A03",
+      "question": "给体络合与紫外溶剂位移的模型比较",
+      "status": "protocol_not_approved",
+      "blockers": [
+        "实验条件与谱带归属",
+        "合适的激发态和溶剂模型",
+        "相邻已有工作全文"
+      ],
+      "novelty": "not_claimed"
+    },
+    {
+      "id": "PF-03",
+      "achievement_line": "A03",
+      "question": "2025 已发表阴离子结构／计算的独立复算及条件敏感性",
+      "status": "blocked_before_calculation",
+      "blockers": [
+        "原文及 SI",
+        "反离子／溶剂／状态定义",
+        "计算资源与验收合同",
+        "系统查新"
+      ],
+      "novelty": "not_claimed"
+    },
+    {
+      "id": "A01-RU1960",
+      "achievement_line": "A01",
+      "question": "两篇不同俄文研究的逐段与结构核译",
+      "status": "source_acquisition",
+      "blockers": [
+        "俄文全文及结构图",
+        "双语专业核校"
+      ],
+      "novelty": "not_claimed"
+    },
+    {
+      "id": "A02-T1980",
+      "achievement_line": "A02",
+      "question": "偏氟乙烯调聚的产物与定位证据重建",
+      "status": "source_acquisition",
+      "blockers": [
+        "原刊结构式",
+        "完整条件",
+        "产物表征定位"
+      ],
+      "novelty": "not_claimed"
+    },
+    {
+      "id": "A06-SOCO",
+      "achievement_line": "A06",
+      "question": "1982 与 1983 不同磺酸酯的断键对照",
+      "status": "source_acquisition",
+      "blockers": [
+        "两篇原刊",
+        "逐底物原子映射",
+        "亲核试剂和条件",
+        "已有机制研究检索"
+      ],
+      "novelty": "not_claimed"
+    },
+    {
+      "id": "A04-F53-HISTORY",
+      "achievement_line": "A04",
+      "question": "F-53 署名、厂试及当年测算的分别核证",
+      "status": "evidence_work_only",
+      "blockers": [
+        "历史工况与配方",
+        "原始工程记录"
+      ],
+      "novelty": "not_claimed"
+    },
+    {
+      "id": "A05-REFRIGERANTS",
+      "achievement_line": "A05",
+      "question": "制冷剂组分、中试与整机资料消歧",
+      "status": "evidence_work_only",
+      "blockers": [
+        "技术原文与专利",
+        "工况与物料身份"
+      ],
+      "novelty": "not_claimed"
+    }
+  ]
+}

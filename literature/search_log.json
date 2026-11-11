@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-11",
+  "coverage": "公开出版方与机构索引及已存原文；非穷尽性查新，部分全文读取受限",
+  "queries": [
+    "全氟叔丁基碘 1966 陈庆云",
+    "perfluoro-tert-butyl Chen inductive",
+    "perfluoro-tert-butyl counterion computational",
+    "perfluoro-tert-butyl solvation DFT",
+    "perfluoro-tert-butyl ultraviolet solvent",
+    "perfluoro-tert-butyl halogen bond computational",
+    "Structures and stabilities of fluorinated carbanions 1986",
+    "Preparation of Substituted Phenyl Perfluoro-tert-butyl Sulfones 2026",
+    "全氟和多氟烷基磺酸 1982 337",
+    "全氟 磺酸酯 硫氧键断裂 陈庆云 1983"
+  ],
+  "exclusions": [
+    "全氟叔丁醇／全氟叔丁氧基论文不因名称相近自动归入陈先生 PFtB 碘代物的直接延伸",
+    "没有把此前陈试剂的无关光谱数据工作接入本任务",
+    "没有以检索未命中宣称首次或无人研究"
+  ],
+  "remaining_checks": [
+    "关键候选问题的全文及 SI",
+    "明确化学实体、离子对和溶剂条件的相似工作",
+    "引证链、预印本与学位论文",
+    "独立专业核校"
+  ]
+}
