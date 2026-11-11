@@ -35,6 +35,29 @@ def digest(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def check_member_set(site: Path, expected: set[str]) -> tuple[set[str], dict, list[str]]:
+    """Allow only the empty, regular Pages marker outside the baseline members."""
+    actual = {path.relative_to(site).as_posix() for path in site.rglob("*")
+              if path.is_file() or path.is_symlink()}
+    marker = site / ".nojekyll"
+    present = marker.exists() or marker.is_symlink()
+    regular = marker.is_file() and not marker.is_symlink()
+    size = marker.stat().st_size if regular else None
+    accepted = present and regular and size == 0
+    marker_report = {"path": ".nojekyll", "present": present, "accepted": accepted,
+                     "bytes": size, "is_symlink": marker.is_symlink(),
+                     "role": "GitHub Pages deployment marker; not an original ZIP member"}
+    errors = []
+    if present and not accepted:
+        errors.append("The additional site/.nojekyll must be an empty regular file, not a symlink")
+    allowed_extra = {".nojekyll"} if accepted else set()
+    missing = expected - actual
+    extra = actual - expected - allowed_extra
+    if missing or extra:
+        errors.append(f"Website member set changed; missing={sorted(missing)}, extra={sorted(extra)}")
+    return actual, marker_report, errors
+
+
 class Page(HTMLParser):
     def __init__(self, path: str):
         super().__init__(convert_charrefs=True)
@@ -101,10 +124,10 @@ def inspect_site(*, require_node: bool = False) -> dict:
             expected[name] = entry
         if len(expected) != 21:
             errors.append("Expected exactly 21 unique baseline members")
-        actual = {path.relative_to(SITE).as_posix() for path in SITE.rglob("*") if path.is_file()}
-        if actual != expected.keys():
-            errors.append(f"Website member set changed; missing={sorted(expected.keys() - actual)}, "
-                          f"extra={sorted(actual - expected.keys())}")
+        actual, deployment_marker, member_errors = check_member_set(SITE, set(expected))
+        report["baseline_member_count"] = len(expected)
+        report["deployment_marker"] = deployment_marker
+        errors.extend(member_errors)
         for name, entry in expected.items():
             path = SITE / name
             present = path.is_file() and not path.is_symlink()

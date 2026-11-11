@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "environment": {
+    "system": "Linux",
+    "release": "6.18.57",
+    "python": "3.12.14"
+  },
+  "scope": "File integrity, JSON equality, static destinations and optional loopback HTTP; excludes browser interactions, clipboard and scientific validation.",
+  "html_pages": 15,
+  "sources": 51,
+  "achievement_lines": 9,
+  "local_references_checked": 529,
+  "http_requests": 66,
+  "mounts_checked": [
+    "/",
+    "/Chen-Qingyun-AI4Science/"
+  ],
+  "errors": []
+}
