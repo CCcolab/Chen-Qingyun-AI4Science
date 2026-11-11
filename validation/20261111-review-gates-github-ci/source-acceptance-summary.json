@@ -1,0 +1,106 @@
+{
+  "started_at_utc": "2026-11-11T10:24:33.761158+00:00",
+  "task_id": "PF1966-UV-T1",
+  "result_type": "published_table_numerical_replay",
+  "scientific_review_status": "review_required",
+  "commands": [
+    {
+      "label": "git-revision",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/home/runner/work/Chen-Qingyun-AI4Science/Chen-Qingyun-AI4Science",
+      "started_at_utc": "2026-11-11T10:24:33.820032+00:00",
+      "finished_at_utc": "2026-11-11T10:24:33.822032+00:00",
+      "exit_code": 0,
+      "stdout": "logs/git-revision.stdout.txt",
+      "stderr": "logs/git-revision.stderr.txt"
+    },
+    {
+      "label": "git-status",
+      "command": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "cwd": "/home/runner/work/Chen-Qingyun-AI4Science/Chen-Qingyun-AI4Science",
+      "started_at_utc": "2026-11-11T10:24:33.822044+00:00",
+      "finished_at_utc": "2026-11-11T10:24:33.838041+00:00",
+      "exit_code": 0,
+      "stdout": "logs/git-status.stdout.txt",
+      "stderr": "logs/git-status.stderr.txt"
+    },
+    {
+      "label": "sealed-v1-numerical-replay",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.16/x64/bin/python",
+        "-m",
+        "chen_research",
+        "--output",
+        "/home/runner/work/Chen-Qingyun-AI4Science/Chen-Qingyun-AI4Science/scratch/ci-acceptance/legacy-replay"
+      ],
+      "cwd": "/tmp/chen-upstream-ksjze7ej",
+      "started_at_utc": "2026-11-11T10:24:33.839968+00:00",
+      "finished_at_utc": "2026-11-11T10:24:33.882564+00:00",
+      "exit_code": 0,
+      "stdout": "logs/sealed-v1-numerical-replay.stdout.txt",
+      "stderr": "logs/sealed-v1-numerical-replay.stderr.txt"
+    },
+    {
+      "label": "current-v2-numerical-replay",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.16/x64/bin/python",
+        "-m",
+        "chen_research",
+        "--output",
+        "/home/runner/work/Chen-Qingyun-AI4Science/Chen-Qingyun-AI4Science/scratch/ci-acceptance/current-run"
+      ],
+      "cwd": "/home/runner/work/Chen-Qingyun-AI4Science/Chen-Qingyun-AI4Science",
+      "started_at_utc": "2026-11-11T10:24:33.885889+00:00",
+      "finished_at_utc": "2026-11-11T10:24:33.951567+00:00",
+      "exit_code": 0,
+      "stdout": "logs/current-v2-numerical-replay.stdout.txt",
+      "stderr": "logs/current-v2-numerical-replay.stderr.txt"
+    }
+  ],
+  "quantum_calculation": "not_performed",
+  "experiment": "not_performed",
+  "future_hypotheses": "not_tested",
+  "model_api_called": false,
+  "website_modified": false,
+  "original_scan_reverified_by_this_run": false,
+  "independent_transcription_signoff": "pending",
+  "status": "passed",
+  "errors": [],
+  "result_comparison_scope": {
+    "all_result_bytes_equal": "sealed_v1_cli_vs_historical_results_only",
+    "all_result_fields_equal": "sealed_v1_cli_vs_historical_results_only",
+    "current_numerical_agreement": "v2_vs_v1_explicit_scientific_projection_only",
+    "current_full_file_equality_with_v1": "not_required_schema_and_provenance_changed"
+  },
+  "test_execution_policy": "local_only_not_run",
+  "tests_run": 0,
+  "tests_status": "not_run_by_distribution_policy",
+  "upstream_files_verified": 18,
+  "source_commit": "b5cc213548fbddce3cb3cc0929ad21c69a7e5977",
+  "source_worktree_dirty": false,
+  "original_delivery_verifier": "not_run_original_test_member_not_distributed",
+  "result_files_compared": 2,
+  "all_result_bytes_equal": true,
+  "all_result_fields_equal": true,
+  "legacy_result_bytes_equal": true,
+  "legacy_result_fields_equal": true,
+  "current_numerical_agreement": true,
+  "current_run_integrity_passed": true,
+  "current_result_schema_version": "2.0",
+  "current_candidate_schema_version": "2.0",
+  "current_result_sha256": "4e69073ce8e96bd5ffa217cd89b67522e839ede99d2ded056d44f120c76141dd",
+  "current_candidate_sha256": "93498a5c6b430ad02e11f7078d0e2cbbcd62cfc3aab3fee4875ae43b45500cc2",
+  "current_publication_payload_sha256": "7557fd716de3299c867f7111ed972c24bf9a73af437c9826ba4f78715d6f6c01",
+  "current_run_id": "9e138177-d8df-4bae-8bc3-5bda2d7d493d",
+  "current_run_manifest": "/home/runner/work/Chen-Qingyun-AI4Science/Chen-Qingyun-AI4Science/scratch/ci-acceptance/current-run/run-manifest.json",
+  "current_run_manifest_sha256": "a8a53e792068fe7ddc6d9d8d7a393edefc77e3d3b4bdcd149d0ed6df447f20a2",
+  "finished_at_utc": "2026-11-11T10:24:33.961295+00:00"
+}

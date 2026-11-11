@@ -25,6 +25,8 @@
 
 正式环境为 Ubuntu 24.04.4 LTS／WSL 2，内核 `5.15.167.4-microsoft-standard-WSL2`、Python 3.12.3、Linux Node 24.13.1。在 Linux 临时文件系统克隆干净固定提交运行，未修改系统 Node。首次尝试因最终接口文档尚未提交而主动停止；失败日志留在 `validation/20261111-wsl2-review-gates/`，成功重验另用 `-r2`，没有覆盖失败。
 
+实际 GitHub CI [43003344667](https://github.com/CCcolab/Chen-Qingyun-AI4Science/actions/runs/43003344667) 已成功，对应提交 `b5cc213548fbddce3cb3cc0929ad21c69a7e5977`。下载的实际摘要确认 `tests_run: 0`、`tests_status: not_run_by_distribution_policy`、v1 字节一致、v2 数学投影和运行绑定通过；完整门禁、待审材料与网站构建步骤成功。实际元数据、日志、源码验收摘要和空审定目录归档在 `validation/20261111-review-gates-github-ci/`。该 CI 不是 WSL，也没有开展单元测试或科研签认。
+
 ## 具体待审记录
 
 完整持久证据：[WSL r2 摘要](../validation/20261111-wsl2-review-gates-r2/summary.json)。运行 ID 为 `ca336d0c-dd92-4b8d-b920-e837c76a3498`，清单 SHA-256 为 `898a94bbdcc78d985d2589ceb3cf75e1a2f9135350ebda0e92361ee7ed069c87`。
