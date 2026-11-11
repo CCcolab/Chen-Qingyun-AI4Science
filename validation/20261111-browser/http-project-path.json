@@ -1,0 +1,133 @@
+{
+  "checked_at_utc": "2026-11-11T08:05:15.993359+00:00",
+  "base_url": "http://127.0.0.1:8766/Chen-Qingyun-AI4Science/",
+  "status": "passed",
+  "checks": [
+    {
+      "path": ".nojekyll",
+      "status": 200,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "same_as_build": true
+    },
+    {
+      "path": "achievements/index.html",
+      "status": 200,
+      "bytes": 22706,
+      "sha256": "d9b4024ff8bbe8519d8d77b0c6785165db3ae9fe4ed70214ca60ea218872107d",
+      "same_as_build": true
+    },
+    {
+      "path": "data/achievement-lines.json",
+      "status": 200,
+      "bytes": 39768,
+      "sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+      "same_as_build": true
+    },
+    {
+      "path": "data/public-sources.json",
+      "status": 200,
+      "bytes": 33608,
+      "sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+      "same_as_build": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 142901,
+      "sha256": "2d13bae2c39b5b41964fc6c50481309dd62eb058a6f68e61051e5d42539344a9",
+      "same_as_build": true
+    },
+    {
+      "path": "pftb/index.html",
+      "status": 200,
+      "bytes": 97584,
+      "sha256": "0d4396b85f8cfd772edcf8fe9bc192d845268399e1ed3834e1d83562639ba372",
+      "same_as_build": true
+    },
+    {
+      "path": "topics/chen-reagent/index.html",
+      "status": 200,
+      "bytes": 10199,
+      "sha256": "649a7e6f3b3431982eba13d5036e3cd2acc22fc40cfe791c0bb9a91aabfd7553",
+      "same_as_build": true
+    },
+    {
+      "path": "topics/deoxyfluorination/index.html",
+      "status": 200,
+      "bytes": 5510,
+      "sha256": "0c71ad2500ae5f094be1cd10cfd9415a376deb905e9d936d2628ef8143edad66",
+      "same_as_build": true
+    },
+    {
+      "path": "topics/early-fluoroketones/index.html",
+      "status": 200,
+      "bytes": 7023,
+      "sha256": "fcdc4df61f18e12ac168c4aab65b9f0438e987bd9f311997755c875cc615093b",
+      "same_as_build": true
+    },
+    {
+      "path": "topics/f53/index.html",
+      "status": 200,
+      "bytes": 8145,
+      "sha256": "942b97805e2e785192face1ef3718b4180c276f77b5133f526c70532cfd83175",
+      "same_as_build": true
+    },
+    {
+      "path": "topics/fluorinated-small-rings/index.html",
+      "status": 200,
+      "bytes": 5892,
+      "sha256": "a98fe98626644e80de5b4584114e32aa0842cc3a877a41f8a76f6543571bd239",
+      "same_as_build": true
+    },
+    {
+      "path": "topics/fluoromonomers/index.html",
+      "status": 200,
+      "bytes": 6450,
+      "sha256": "366a55eba14a054cc678016f8c71cd391921e1eaef4cd1fd0e22cc2ce42dd904",
+      "same_as_build": true
+    },
+    {
+      "path": "topics/fluoroporphyrins/index.html",
+      "status": 200,
+      "bytes": 5969,
+      "sha256": "84b4b2ed0e59fdb940bfa38e5d9c0326f3fce1335ba9d71b1b19108f57a63bbf",
+      "same_as_build": true
+    },
+    {
+      "path": "topics/index.html",
+      "status": 200,
+      "bytes": 1367,
+      "sha256": "3b891eb056f7d5d76681ff5395149e474ec934b0d9ab2d4729df9c0441d580ad",
+      "same_as_build": true
+    },
+    {
+      "path": "topics/perfluorosulfonates/index.html",
+      "status": 200,
+      "bytes": 5272,
+      "sha256": "6618d0d4d7a135e88c924ae3ecd420338e9613190447676f608af9939aea84ec",
+      "same_as_build": true
+    },
+    {
+      "path": "topics/refrigerants/index.html",
+      "status": 200,
+      "bytes": 6227,
+      "sha256": "4d41e38398b8ec12584c6700fd84da1c1b42f9bc1c722fba64a2c151ed6af6e7",
+      "same_as_build": true
+    },
+    {
+      "path": "topics/single-electron-transfer/index.html",
+      "status": 200,
+      "bytes": 5839,
+      "sha256": "64c162a1ccc9c69bc82bd2ff9de0b70aa12e1ac103fc7f0a56123b134d699bbb",
+      "same_as_build": true
+    },
+    {
+      "path": "topics/sulfonyl-fluoride/index.html",
+      "status": 200,
+      "bytes": 5003,
+      "sha256": "62beb639cb5448473dd799cf5e23d3a4a42b8e4ccd0204b02cadeb2b7d6d6032",
+      "same_as_build": true
+    }
+  ]
+}

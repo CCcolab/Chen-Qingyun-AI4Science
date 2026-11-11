@@ -43,12 +43,12 @@ Actions 使用已核验的官方发布固定提交，不把配置存在写成远
 ## 待补的接入信息
 
 - 实际 GitHub 仓库 URL、默认分支、写入权限、研究目录位置和分支保护规则。
-- 正式 YouMind 页面及对应源码、Pages 发布源（若使用）、构建方式和正确的前端基线。
+- 实际 Pages 发布源、组织权限及线上发布检查；匹配的 YouMind 源码已导入 `site/`。
 - 科学审阅者、转录签认及候选转为正式发布产物的流程。
 - 项目的代码与数据许可。原包未附 LICENSE，不推定原论文全文或现有素材可再次分发。
 
 用户补充目标规划前，连接检索 `Chen`、`Qingyun` 未返回目标。旧 Starter 数据中只有建议仓库 `CCcolab/Chen-Qingyun-Legacy`；本轮连接读取返回 404，不能判定其不存在。该旧拟名不是本次目标。未创建远程仓库、推送或发布。
 
-交接文档登记的前端 ZIP 指纹为 `fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e`。现存 `Chen_Qingyun_YouMind_Starter_20261101.zip` 为 `4b6ef282d11efdd7396d8648dbb856d38b99fae5ee2b05dedd8d1ba09c6880eb`，`Chen_PFtB_Source_Candidate_20261104.zip` 为 `d9ec71125bcc867764e1d4229e719c5d0912d72af714e29d745fce20b59f7bb9`。两者均不能自动替代正式基线；已保留原文件和原始 JSON。
+交接文档登记的前端 ZIP 指纹为 `fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e`。原工作区的两个旧网站 ZIP 未匹配，均保留原样；随后已从本机 Downloads 找到完全匹配的完整候选包，复制到 `upstream/` 并原样解到 `site/`。来源、完整性和 Pages 准备见 `GITHUB_PAGES_MIGRATION_zh-CN.md`。
 
 网站候选读取规则见 `WEBSITE_RESULT_CONTRACT_zh-CN.md`；未来研究入口见 `NEXT_RESEARCH_GATES_zh-CN.md`。本次工程验收不改变 `review_required`，也不构成独立科学审定。

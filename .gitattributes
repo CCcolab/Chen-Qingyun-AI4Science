@@ -1,2 +1,5 @@
 # Preserve the delivered SHA-256 identities on Windows and Linux.
-* -text
+* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Imported upstream bytes and captured transcripts retain their original whitespace.
+site/** whitespace=-blank-at-eol,-blank-at-eof
+validation/** whitespace=-blank-at-eol,-blank-at-eof

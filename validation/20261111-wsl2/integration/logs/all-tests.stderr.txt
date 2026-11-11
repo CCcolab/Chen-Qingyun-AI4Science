@@ -1,0 +1,24 @@
+test_boolean_is_not_accepted_as_numeric_one (test_accept_phase1.AcceptanceComparisonTests.test_boolean_is_not_accepted_as_numeric_one) ... ok
+test_nested_scientific_status_change_reports_its_exact_field (test_accept_phase1.AcceptanceComparisonTests.test_nested_scientific_status_change_reports_its_exact_field) ... ok
+test_reformatted_json_is_semantically_equal_but_not_byte_identical (test_accept_phase1.AcceptanceComparisonTests.test_reformatted_json_is_semantically_equal_but_not_byte_identical) ... ok
+test_b_not_silently_interpreted_as_benzene (test_uv_replay.ScientificBoundaryTests.test_b_not_silently_interpreted_as_benzene) ... ok
+test_duplicate_observation_rejected (test_uv_replay.ScientificBoundaryTests.test_duplicate_observation_rejected) ... ok
+test_fourth_iodide_cannot_be_invented_as_measured (test_uv_replay.ScientificBoundaryTests.test_fourth_iodide_cannot_be_invented_as_measured) ... ok
+test_missing_pair_does_not_get_imputed (test_uv_replay.ScientificBoundaryTests.test_missing_pair_does_not_get_imputed) ... ok
+test_nonfinite_value_rejected (test_uv_replay.ScientificBoundaryTests.test_nonfinite_value_rejected) ... ok
+test_original_table_arithmetic_and_independent_energy_conversion (test_uv_replay.ScientificBoundaryTests.test_original_table_arithmetic_and_independent_energy_conversion) ... ok
+test_rounding_cannot_be_promoted_to_experimental_uncertainty (test_uv_replay.ScientificBoundaryTests.test_rounding_cannot_be_promoted_to_experimental_uncertainty) ... ok
+test_transcription_that_misses_original_shift_rejected (test_uv_replay.ScientificBoundaryTests.test_transcription_that_misses_original_shift_rejected) ... ok
+test_wavelength_units_cannot_be_renamed_without_conversion (test_uv_replay.ScientificBoundaryTests.test_wavelength_units_cannot_be_renamed_without_conversion) ... ok
+test_all_scientific_boundaries_survive_export (test_website_contract.WebsiteContractTests.test_all_scientific_boundaries_survive_export) ... ok
+test_candidate_cannot_promote_engineering_success_to_scientific_approval (test_website_contract.WebsiteContractTests.test_candidate_cannot_promote_engineering_success_to_scientific_approval) ... ok
+test_candidate_fingerprints_match_actual_inputs_and_paired_result (test_website_contract.WebsiteContractTests.test_candidate_fingerprints_match_actual_inputs_and_paired_result) ... ok
+test_original_measurement_ids_remain_unique_and_map_to_each_exported_pair (test_website_contract.WebsiteContractTests.test_original_measurement_ids_remain_unique_and_map_to_each_exported_pair) ... ok
+test_rounding_intervals_retain_their_nonexperimental_context (test_website_contract.WebsiteContractTests.test_rounding_intervals_retain_their_nonexperimental_context) ... ok
+test_rows_preserve_isomer_identity_and_exact_donor_coverage (test_website_contract.WebsiteContractTests.test_rows_preserve_isomer_identity_and_exact_donor_coverage) ... ok
+test_stable_source_reference_resolves_and_preserves_original_attribution (test_website_contract.WebsiteContractTests.test_stable_source_reference_resolves_and_preserves_original_attribution) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.009s
+
+OK

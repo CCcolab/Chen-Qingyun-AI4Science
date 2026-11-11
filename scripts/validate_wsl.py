@@ -14,8 +14,10 @@ import os
 from pathlib import Path, PurePosixPath
 import platform
 import re
+import shutil
 import subprocess
 import sys
+import tarfile
 import tempfile
 import zipfile
 
@@ -27,11 +29,83 @@ ARCHIVE_SHA256 = "623127d317b3a4ecc51052e43816286a3dd04eb95f41fc8bf7c3bb8d76bc2d
 ARCHIVE_ROOT = "Chen_Qingyun_AI_Research_20261111"
 
 
+def stage_node(archive_path: Path, shasums_path: Path, staging: Path, output: Path) -> Path:
+    """Verify the supplied official release checksum and extract only bin/node.
+
+    No tar pathname or symlink is used for a filesystem write. npm, documentation
+    and archive links are unnecessary for these syntax checks and are not extracted.
+    """
+    release = re.fullmatch(r"node-v(24\.\d+\.\d+)-linux-(x64|arm64)\.tar\.xz", archive_path.name)
+    if not release:
+        raise ValueError("--node-archive must be an official Node 24 Linux x64/arm64 tar.xz filename")
+    version = release.group(1)
+    evidence = output / "node-runtime"
+    evidence.mkdir()
+    manifest_bytes = shasums_path.read_bytes()
+    (evidence / "SHASUMS256.txt").write_bytes(manifest_bytes)
+    matches = []
+    for line in manifest_bytes.decode("utf-8").splitlines():
+        matched = re.fullmatch(r"([0-9a-fA-F]{64})\s+\*?(.+)", line.strip())
+        if matched and matched.group(2) == archive_path.name:
+            matches.append(matched.group(1).lower())
+    provenance = {"archive_filename": archive_path.name,
+                  "expected_official_archive_url": f"https://nodejs.org/dist/v{version}/{archive_path.name}",
+                  "expected_official_shasums_url": f"https://nodejs.org/dist/v{version}/SHASUMS256.txt",
+                  "archive_bytes": archive_path.stat().st_size,
+                  "archive_sha256": hashlib.sha256(archive_path.read_bytes()).hexdigest(),
+                  "shasums_sha256": hashlib.sha256(manifest_bytes).hexdigest(),
+                  "manifest_matches": matches, "checksum_verified": False,
+                  "verification": "SHA-256 against caller-supplied release SHASUMS; signature not verified",
+                  "extraction_scope": "regular-file bin/node only; no archive symlinks or hardlinks extracted",
+                  "system_install_modified": False}
+    retrieval = archive_path.parent / "retrieval.json"
+    if retrieval.is_file():
+        retrieval_bytes = retrieval.read_bytes()
+        json.loads(retrieval_bytes.decode("utf-8"))
+        (evidence / "retrieval.json").write_bytes(retrieval_bytes)
+        provenance["caller_retrieval_record_sha256"] = hashlib.sha256(retrieval_bytes).hexdigest()
+        provenance["caller_retrieval_record"] = "retrieval.json"
+    save_json(evidence / "provenance.json", provenance)
+    if len(matches) != 1 or provenance["archive_sha256"] != matches[0]:
+        raise ValueError("Node archive SHA-256 does not match exactly one SHASUMS entry")
+    provenance["checksum_verified"] = True
+    save_json(evidence / "provenance.json", provenance)
+    release_root = archive_path.name.removesuffix(".tar.xz")
+    binary_name = f"{release_root}/bin/node"
+    executable = staging / "node-runtime" / release_root / "bin/node"
+    with tarfile.open(archive_path, mode="r:xz") as archive:
+        binaries = []
+        for member in archive.getmembers():
+            path = PurePosixPath(member.name)
+            if (not member.name or path.is_absolute() or ".." in path.parts
+                    or "\\" in member.name or path.parts[0] != release_root):
+                raise ValueError("Unsafe Node archive pathname")
+            if member.name == binary_name:
+                binaries.append(member)
+        if len(binaries) != 1 or not binaries[0].isfile():
+            raise ValueError("Node archive must contain one regular-file bin/node")
+        executable.parent.mkdir(parents=True)
+        source = archive.extractfile(binaries[0])
+        if source is None:
+            raise ValueError("Cannot read the Node executable from its archive")
+        with source, executable.open("xb") as target:
+            shutil.copyfileobj(source, target)
+        executable.chmod(0o755)
+    provenance["node_binary_sha256"] = hashlib.sha256(executable.read_bytes()).hexdigest()
+    provenance["linux_temporary_executable"] = str(executable)
+    save_json(evidence / "provenance.json", provenance)
+    return executable
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--archive", type=Path, default=ROOT.parent / f"{ARCHIVE_ROOT}.zip")
     parser.add_argument("--output", type=Path, required=True, help="New evidence directory")
+    parser.add_argument("--node-archive", type=Path, help="Official Node 24 Linux tar.xz (optional)")
+    parser.add_argument("--node-shasums", type=Path, help="Its official release SHASUMS256.txt")
     args = parser.parse_args()
+    if bool(args.node_archive) != bool(args.node_shasums):
+        parser.error("--node-archive and --node-shasums must be supplied together")
     output = args.output.resolve()
     if output.exists():
         parser.error("Use a new evidence directory; previous records are never overwritten")
@@ -43,12 +117,12 @@ def main() -> int:
                "quantum_calculation": "not_performed", "experiment": "not_performed",
                "future_hypotheses": "not_tested", "GitHub_Actions_executed": False,
                "website_modified": False}
+    child_env = {**os.environ, "PYTHONDONTWRITEBYTECODE": "1", "PYTHONIOENCODING": "utf-8"}
 
     def run(label, command, cwd=ROOT):
         process = subprocess.run(command, cwd=cwd, capture_output=True, encoding="utf-8",
                                  errors="replace", check=False,
-                                 env={**os.environ, "PYTHONDONTWRITEBYTECODE": "1",
-                                      "PYTHONIOENCODING": "utf-8"})
+                                 env=child_env)
         for stream in ("stdout", "stderr"):
             (output / "logs" / f"{label}.{stream}.txt").write_text(
                 getattr(process, stream), encoding="utf-8", newline="\n")
@@ -71,6 +145,17 @@ def main() -> int:
             raise ValueError("ZIP does not match the user-supplied delivery")
         summary["source_commit"] = run("source-commit", ["git", "rev-parse", "HEAD"]).stdout.strip()
         summary["source_branch"] = run("source-branch", ["git", "branch", "--show-current"]).stdout.strip()
+        status_command = ["git", "status", "--porcelain", "--", "."]
+        try:
+            relative_output = output.relative_to(ROOT)
+        except ValueError:
+            pass
+        else:
+            status_command.append(f":(exclude){relative_output.as_posix()}/**")
+        source_status = run("source-status", status_command).stdout.strip()
+        summary["source_worktree_dirty"] = bool(source_status)
+        if source_status:
+            raise ValueError("Commit all source changes before formal WSL acceptance")
         with tempfile.TemporaryDirectory(prefix="chen-phase1-wsl2-") as temporary:
             staging = Path(temporary)
             fs = run("linux-filesystem", ["stat", "-f", "-c", "%T", str(staging)]).stdout.strip()
@@ -78,6 +163,11 @@ def main() -> int:
                 raise ValueError("Staging must use the Linux filesystem")
             summary["linux_staging_filesystem"] = fs
             summary["linux_staging_directory"] = str(staging)
+            staged_node = (stage_node(args.node_archive.resolve(), args.node_shasums.resolve(), staging, output)
+                           if args.node_archive else None)
+            if staged_node:
+                child_env["PATH"] = str(staged_node.parent) + os.pathsep + child_env.get("PATH", "")
+                summary["node_runtime_source"] = "verified_archive_in_linux_temporary_directory"
             with zipfile.ZipFile(args.archive) as archive:
                 members = archive.infolist()
                 names = [member.filename for member in members]
@@ -119,8 +209,41 @@ def main() -> int:
             summary["integrated_result_fields_equal"] = integrated_summary["all_result_fields_equal"]
             summary["integrated_source_worktree_dirty"] = integrated_summary["source_worktree_dirty"]
             summary["upstream_files_verified"] = integrated_summary["upstream_files_verified"]
+            if (integrated / "site").is_dir():
+                node = str(staged_node) if staged_node else shutil.which("node", path=child_env.get("PATH"))
+                if not node:
+                    raise ValueError("Website acceptance requires Node 24; provide both Node archive options or an environment Node 24")
+                node_version = run("linux-node-version", [node, "--version"], integrated).stdout.strip()
+                summary["linux_node_version"] = node_version
+                if not re.fullmatch(r"v24\.\d+\.\d+", node_version):
+                    raise ValueError(f"Website acceptance requires Node 24; found {node_version}")
+                runtime = json.loads(run("linux-node-runtime", [node, "-p",
+                    "JSON.stringify({platform:process.platform,arch:process.arch,version:process.version,execPath:process.execPath})"],
+                    integrated).stdout)
+                if runtime["platform"] != "linux" or runtime["version"] != node_version:
+                    raise ValueError("Website acceptance requires a native Linux Node 24 process")
+                summary["linux_node_runtime"] = runtime
+                summary.setdefault("node_runtime_source", "existing_environment_node24")
+                if not staged_node:
+                    node_evidence = output / "node-runtime"
+                    node_evidence.mkdir()
+                    save_json(node_evidence / "provenance.json", {
+                        "runtime_source": "existing_environment_node24", "executable": node,
+                        "version": node_version, "linux_runtime": runtime,
+                        "node_binary_sha256": hashlib.sha256(Path(runtime["execPath"]).read_bytes()).hexdigest(),
+                        "release_archive_checksum_verified": False, "system_install_modified": False})
+                run("website-static-check", [sys.executable, "scripts/check_site.py", "--require-node", "--output",
+                                              str(output / "site-check.json")], integrated)
+                run("website-build", [sys.executable, "scripts/build_site.py", "--require-node", "--output",
+                                       str(output / "site-dist")], integrated)
+                site_check = json.loads((output / "site-check.json").read_text(encoding="utf-8"))
+                summary["website_static_status"] = site_check["status"]
+                summary["website_source_members_verified"] = site_check["member_count"]
+                summary["website_public_source_count"] = site_check["public_source_count"]
+                summary["website_javascript_checks"] = len(site_check["javascript_checks"])
+                summary["website_publish_member_count"] = sum(path.is_file() for path in (output / "site-dist").rglob("*"))
             summary["status"] = "passed"
-    except (OSError, ValueError, KeyError, zipfile.BadZipFile) as exc:
+    except (OSError, ValueError, KeyError, zipfile.BadZipFile, tarfile.TarError) as exc:
         summary["errors"].append(str(exc))
     finally:
         summary["finished_at_utc"] = datetime.now(timezone.utc).isoformat()

@@ -1,0 +1,9 @@
+A2 离子液体入口候选包核验
+基线：上轮更正候选 ZIP；此记录作为新增文件，不修改基线其他文件。
+根路径带锚点直接打开、刷新、点击：未测（无已连接的真实 HTTP 服务器）。
+/chen-qingyun/ 子路径带锚点直接打开、刷新、点击：未测（无已连接的真实 HTTP 服务器）。
+目标及相对路径：静态检查通过；不得等同浏览器实际部署与点击。
+基线的其余 19 个文件在内存逐字节相同，其中14个HTML和两份JSON均相同。
+JSON SHA-256：
+data/public-sources.json  94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062
+data/achievement-lines.json  1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec

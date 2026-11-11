@@ -1,0 +1,51 @@
+{
+  "scope": "Actual Chrome UI through computer-use; local project prefix only, not a GitHub deployment",
+  "local_url": "http://127.0.0.1:8766/Chen-Qingyun-AI4Science/",
+  "source_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "homepage": {
+    "source_cards": 51,
+    "copy_buttons": 51,
+    "achievement_lines": 9,
+    "search": "CQ-H22 -> primary index 1 / 49"
+  },
+  "citation_checks": {
+    "buttons_showed_success": [
+      "CQ-H22",
+      "CQ-R08",
+      "CQ-H01"
+    ],
+    "CQ-H22_textarea_fields_observed": [
+      "authors",
+      "year",
+      "formal_title",
+      "venue",
+      "locator",
+      "verification",
+      "boundary",
+      "doi",
+      "url",
+      "status"
+    ],
+    "clipboard_readback_independently_confirmed": false,
+    "clipboard_rejection_fallback_exercised": false
+  },
+  "a08_entry": "topics/index.html -> achievements/index.html#record-fluorinated-ionic-liquids -> index.html#source-cq-h22",
+  "pftb": {
+    "direct_state": "#s/T03/boundary/R92C",
+    "refresh_preserved": [
+      "三、电子效应的论据与限制",
+      "边界",
+      "第48页 · 具体反应"
+    ],
+    "changed_state": "#s/T04/observation/R92B",
+    "back_state": "#s/T04/observation/R92C",
+    "forward_state": "#s/T04/observation/R92B",
+    "console_errors_observed": []
+  },
+  "not_executed": [
+    "actual GitHub Pages deployment",
+    "browser JavaScript-disabled session",
+    "forced clipboard rejection"
+  ],
+  "network_note": "Initial sandbox-only server inaccessible; loopback server outside sandbox passed"
+}

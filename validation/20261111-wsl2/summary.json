@@ -1,0 +1,150 @@
+{
+  "status": "passed",
+  "started_at_utc": "2026-11-11T07:45:31.994034+00:00",
+  "commands": [
+    {
+      "label": "source-commit",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research_20261111",
+      "exit_code": 0,
+      "stdout": "logs/source-commit.stdout.txt",
+      "stderr": "logs/source-commit.stderr.txt"
+    },
+    {
+      "label": "source-branch",
+      "command": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "cwd": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research_20261111",
+      "exit_code": 0,
+      "stdout": "logs/source-branch.stdout.txt",
+      "stderr": "logs/source-branch.stderr.txt"
+    },
+    {
+      "label": "linux-filesystem",
+      "command": [
+        "stat",
+        "-f",
+        "-c",
+        "%T",
+        "/tmp/chen-phase1-wsl2-l9oayneu"
+      ],
+      "cwd": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research_20261111",
+      "exit_code": 0,
+      "stdout": "logs/linux-filesystem.stdout.txt",
+      "stderr": "logs/linux-filesystem.stderr.txt"
+    },
+    {
+      "label": "original-integrity",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/verify_delivery.py"
+      ],
+      "cwd": "/tmp/chen-phase1-wsl2-l9oayneu/Chen_Qingyun_AI_Research_20261111",
+      "exit_code": 0,
+      "stdout": "logs/original-integrity.stdout.txt",
+      "stderr": "logs/original-integrity.stderr.txt"
+    },
+    {
+      "label": "original-tests",
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/tmp/chen-phase1-wsl2-l9oayneu/Chen_Qingyun_AI_Research_20261111",
+      "exit_code": 0,
+      "stdout": "logs/original-tests.stdout.txt",
+      "stderr": "logs/original-tests.stderr.txt"
+    },
+    {
+      "label": "original-replay",
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "chen_research",
+        "--output",
+        "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research_20261111/validation/20261111-wsl2/original-replay"
+      ],
+      "cwd": "/tmp/chen-phase1-wsl2-l9oayneu/Chen_Qingyun_AI_Research_20261111",
+      "exit_code": 0,
+      "stdout": "logs/original-replay.stdout.txt",
+      "stderr": "logs/original-replay.stderr.txt"
+    },
+    {
+      "label": "clone-committed-integration",
+      "command": [
+        "git",
+        "clone",
+        "--no-hardlinks",
+        "--single-branch",
+        "--branch",
+        "research/phase1-wsl2-20261111",
+        "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research_20261111",
+        "/tmp/chen-phase1-wsl2-l9oayneu/integration"
+      ],
+      "cwd": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research_20261111",
+      "exit_code": 0,
+      "stdout": "logs/clone-committed-integration.stdout.txt",
+      "stderr": "logs/clone-committed-integration.stderr.txt"
+    },
+    {
+      "label": "cloned-commit",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/tmp/chen-phase1-wsl2-l9oayneu/integration",
+      "exit_code": 0,
+      "stdout": "logs/cloned-commit.stdout.txt",
+      "stderr": "logs/cloned-commit.stderr.txt"
+    },
+    {
+      "label": "integrated-acceptance",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/accept_phase1.py",
+        "--output",
+        "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research_20261111/validation/20261111-wsl2/integration"
+      ],
+      "cwd": "/tmp/chen-phase1-wsl2-l9oayneu/integration",
+      "exit_code": 0,
+      "stdout": "logs/integrated-acceptance.stdout.txt",
+      "stderr": "logs/integrated-acceptance.stderr.txt"
+    }
+  ],
+  "errors": [],
+  "scientific_review_status": "review_required",
+  "result_type": "published_table_numerical_replay",
+  "model_api_called": false,
+  "quantum_calculation": "not_performed",
+  "experiment": "not_performed",
+  "future_hypotheses": "not_tested",
+  "GitHub_Actions_executed": false,
+  "website_modified": false,
+  "archive_sha256": "623127d317b3a4ecc51052e43816286a3dd04eb95f41fc8bf7c3bb8d76bc2d4f",
+  "source_commit": "f92db286026569de9c5a148139d681beee96fe01",
+  "source_branch": "research/phase1-wsl2-20261111",
+  "linux_staging_filesystem": "ext2/ext3",
+  "linux_staging_directory": "/tmp/chen-phase1-wsl2-l9oayneu",
+  "original_tests_run": 9,
+  "original_result_bytes_equal": true,
+  "original_result_fields_equal": true,
+  "integrated_tests_run": 19,
+  "integrated_result_bytes_equal": true,
+  "integrated_result_fields_equal": true,
+  "integrated_source_worktree_dirty": false,
+  "upstream_files_verified": 19,
+  "finished_at_utc": "2026-11-11T07:45:33.310056+00:00"
+}
