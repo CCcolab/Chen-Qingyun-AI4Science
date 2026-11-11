@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>陈庆云院士团队的 PFtB 早期研究｜原始贡献、证据与学术回响</title>
+<meta name="description" content="依据1966年原始论文重建全氟叔丁基碘（PFtBI）结构确认、特殊反应行为与诱导效应顺序的论证，并逐处对齐1992、2021、2022年引文语境。内容版本2026-11-03.1。">
+<script>document.documentElement.className += ' js';</script>
+<style>
+:root{
+  --paper:#F6F3EB; --paper-2:#FFFDF7; --ink:#182725; --teal:#176B5B; --teal-dark:#104E43;
+  --ochre:#8A5A28; --line:#E1D9C6; --muted:#4C5A57; --muted-2:#55615E;
+  --danger:#7A2E22; --danger-bg:#F7ECE7;
+  --serif:"Songti SC","STSong","SimSun","Noto Serif CJK SC","Source Han Serif SC",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+/* 只用 scroll-margin 一套偏移，避免 scroll-padding 与 scroll-margin 叠加（R03 复测：300≈150+150） */
+#top,#main,section{scroll-margin-top:76px}
+@media (max-width:720px){
+  #top,#main,section{scroll-margin-top:150px}
+}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.78;}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:700;line-height:1.3;color:var(--ink)}
+p{margin:0 0 1em}
+a{color:var(--teal-dark);text-underline-offset:3px}
+a:hover{color:var(--teal)}
+button{font-family:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+.readcol{max-width:720px}
+.skip-link{position:absolute;left:-999px;top:0;background:var(--teal);color:#fff;padding:10px 16px;z-index:100;border-radius:0 0 8px 0}
+.skip-link:focus{left:0}
+:focus-visible{outline:3px solid var(--teal);outline-offset:2px;border-radius:4px}
+
+/* ---------- 顶部导航 ---------- */
+.site-nav{position:sticky;top:0;z-index:40;background:rgba(246,243,235,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.site-nav .wrap{display:flex;align-items:center;gap:20px;min-height:58px;flex-wrap:wrap}
+.brand{font-family:var(--serif);font-weight:700;font-size:15px;color:var(--ink);text-decoration:none;white-space:nowrap;padding:6px 0}
+.brand small{display:block;font-family:var(--sans);font-weight:400;font-size:11px;color:var(--muted-2);letter-spacing:.04em}
+.nav-links{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+.nav-links a{padding:10px 12px;min-height:44px;display:inline-flex;align-items:center;font-size:15px;color:var(--muted);text-decoration:none;border-bottom:2px solid transparent}
+.nav-links a:hover{color:var(--teal-dark)}
+.nav-links a[aria-current="true"]{color:var(--teal-dark);border-bottom-color:var(--teal)}
+
+/* ---------- 首屏 ---------- */
+.hero{padding:64px 0 48px;border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:48px;align-items:center}
+.eyebrow{display:inline-block;font-size:14px;letter-spacing:.12em;color:var(--ochre);border:1px solid var(--ochre);border-radius:999px;padding:4px 14px;margin-bottom:20px}
+.hero h1{font-size:clamp(30px,4.6vw,52px);margin:0 0 14px;letter-spacing:.01em}
+.hero .subtitle{font-size:19px;color:var(--teal-dark);margin:0 0 22px;font-family:var(--serif)}
+.hero .lead-q{font-size:clamp(19px,2.2vw,23px);font-family:var(--serif);margin:0 0 14px}
+.hero .intro{color:var(--muted);max-width:600px}
+.hero .credit{font-size:15px;background:var(--paper-2);border:1px solid var(--line);border-left:4px solid var(--teal);padding:10px 14px;border-radius:8px;display:inline-block;margin:6px 0 22px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 20px;border-radius:10px;font-size:16px;text-decoration:none;border:1px solid var(--teal);cursor:pointer;background:var(--paper-2);color:var(--teal-dark)}
+.btn-primary{background:var(--teal);color:#fff}
+.btn-primary:hover{background:var(--teal-dark);color:#fff}
+.btn-ghost{background:transparent}
+.hero-status{margin-top:22px;font-size:14px;color:var(--muted);border-top:1px dashed var(--line);padding-top:14px;max-width:600px}
+.hero-figure{background:var(--paper-2);border:1px solid var(--line);border-radius:18px;padding:22px}
+.hero-figure svg{width:100%;height:auto;display:block}
+.fig-caption{font-size:13px;color:var(--muted-2);margin:10px 0 0;border-top:1px dashed var(--line);padding-top:10px}
+.entity-chips{display:grid;gap:10px;margin-top:14px}
+.entity{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--paper)}
+.entity .e-head{display:flex;align-items:baseline;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.entity .e-kind{font-size:12px;color:var(--ochre);border:1px solid var(--ochre);border-radius:6px;padding:1px 8px;white-space:nowrap}
+.entity .e-name{font-weight:700;font-size:15px}
+.formula{font-family:"Times New Roman",Georgia,serif;font-size:17px;letter-spacing:.01em;overflow-wrap:break-word}
+.formula sub{font-size:.72em}
+.formula sup{font-size:.72em}
+.entity .e-bound{font-size:13px;color:var(--muted);margin:4px 0 0}
+.plain-alt{display:block;font-family:var(--sans);font-size:12px;color:var(--muted-2);margin-top:2px}
+
+/* ---------- 通用区块 ---------- */
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+.sec-head{margin-bottom:28px}
+.sec-head h2{font-size:clamp(24px,3vw,32px);margin:0 0 8px;padding-left:14px;border-left:5px solid var(--teal)}
+.sec-head p{color:var(--muted);max-width:760px;margin:0}
+
+/* ---------- 原始贡献 ---------- */
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.contrib-card{background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:22px;display:flex;flex-direction:column}
+.contrib-card .c-no{font-family:var(--serif);color:var(--ochre);font-size:14px;letter-spacing:.1em}
+.contrib-card h3{font-size:20px;margin:6px 0 10px}
+.contrib-card p{font-size:15.5px;color:var(--muted);flex:1}
+.contrib-card .c-loc{font-size:13px;color:var(--muted-2);border-top:1px dashed var(--line);padding-top:10px;margin-bottom:12px}
+.card-actions{display:flex;gap:8px;flex-wrap:wrap}
+.mini-btn{min-height:44px;padding:8px 12px;font-size:14px;border-radius:8px;border:1px solid var(--teal);background:transparent;color:var(--teal-dark);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center}
+.mini-btn:hover{background:var(--teal);color:#fff}
+
+/* ---------- 论证细读 ---------- */
+.arg-toolbar{display:flex;flex-direction:column;gap:12px;margin-bottom:22px}
+.tab-row{display:flex;gap:8px;flex-wrap:wrap}
+.tab-btn{min-height:44px;padding:8px 16px;border-radius:10px;border:1px solid var(--line);background:var(--paper-2);color:var(--muted);cursor:pointer;font-size:15px}
+.tab-btn[aria-pressed="true"]{background:var(--teal);border-color:var(--teal);color:#fff;font-weight:700}
+.view-row{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.view-row .vr-label{font-size:13px;color:var(--muted-2);margin-right:4px}
+.view-btn{min-height:44px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--paper-2);color:var(--muted);cursor:pointer;font-size:14px}
+.view-btn[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.chapter-panel{background:var(--paper-2);border:1px solid var(--line);border-radius:16px;padding:28px;margin-bottom:18px;max-width:780px}
+.chapter-panel h3{font-size:23px;margin:0 0 6px}
+.map-table{margin:14px 0 6px;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.map-row{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.map-row:first-child{border-top:0}
+.map-row.map-head{background:var(--paper);font-weight:700;font-size:13.5px;color:var(--teal-dark)}
+.map-cell{padding:12px 14px;font-size:14px;line-height:1.65}
+.map-cell:first-child{border-right:1px solid var(--line)}
+.map-cell .m-prop{font-weight:700;display:block;margin-bottom:3px}
+.map-cell .m-page{font-size:12.5px;color:var(--muted-2)}
+.map-cell .m-use{display:block;margin-bottom:3px}
+.map-cell .m-bound{font-size:12.5px;color:var(--danger)}
+@media (max-width:720px){
+  .map-row.map-head{display:none}
+  .map-row{grid-template-columns:1fr}
+  .map-cell:first-child{border-right:0;border-bottom:1px dashed var(--line);background:var(--paper)}
+}
+.ch-q{font-family:var(--serif);font-size:17px;color:var(--teal-dark);margin-bottom:6px}
+.ch-locator{font-size:13.5px;color:var(--muted-2);margin-bottom:16px}
+.field{border-top:1px dashed var(--line);padding:14px 0}
+.field h4{font-size:14px;letter-spacing:.08em;color:var(--ochre);margin:0 0 6px;font-family:var(--sans);font-weight:700}
+.field p{margin:0;font-size:16px}
+.field p + p{margin-top:8px}
+.order-box{margin:12px 0 4px;background:var(--paper);border:1px solid var(--teal);border-radius:12px;padding:16px 18px}
+.order-box .order{font-family:"Times New Roman",Georgia,serif;font-size:clamp(17px,2.4vw,21px);margin-bottom:6px}
+.order-box .order-cap{font-size:13.5px;color:var(--teal-dark);font-weight:700}
+.order-box .order-note{font-size:13.5px;color:var(--muted);margin:6px 0 0}
+.ctx-chips{display:flex;flex-direction:column;gap:8px}
+.ctx-chip{text-align:left;min-height:44px;padding:10px 14px;border-radius:10px;border:1px solid var(--line);background:var(--paper);cursor:pointer;font-size:14.5px;color:var(--ink)}
+.ctx-chip:hover{border-color:var(--teal)}
+.ctx-chip .cc-year{font-weight:700;color:var(--teal-dark);margin-right:6px}
+.ctx-chip .cc-loc{color:var(--muted-2);font-size:13px;display:block}
+.no-response{font-size:14px;color:var(--muted-2);font-style:normal;background:var(--paper);border:1px dashed var(--line);padding:8px 12px;border-radius:8px}
+.arg-note{font-size:13.5px;color:var(--muted-2);margin-top:6px}
+
+/* ---------- 时间线 ---------- */
+.timeline{list-style:none;margin:0;padding:0 0 0 8px}
+.tl-node{position:relative;padding:0 0 26px 34px}
+.tl-node::before{content:"";position:absolute;left:8px;top:26px;bottom:-2px;width:2px;background:var(--line)}
+.tl-node:last-child::before{display:none}
+.tl-dot{position:absolute;left:0;top:2px;width:18px;height:18px;border-radius:50%;background:var(--paper);border:3px solid var(--teal)}
+.tl-node.is-appendix .tl-dot{border-color:var(--ochre)}
+.tl-node.is-biblio .tl-dot{border-color:var(--muted-2)}
+.tl-card{background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.tl-year{font-family:var(--serif);font-size:22px;font-weight:700;margin-right:10px}
+.tl-type{display:inline-block;font-size:12.5px;padding:2px 10px;border-radius:999px;border:1px solid var(--teal);color:var(--teal-dark);margin-bottom:8px}
+.tl-type.t-biblio{border-color:var(--muted-2);color:var(--muted)}
+.tl-type.t-appendix{border-color:var(--ochre);color:var(--ochre)}
+.tl-card h3{font-size:18px;margin:2px 0 8px}
+.tl-card p{font-size:15px;color:var(--muted);margin-bottom:8px}
+.tl-meta{font-size:13px;color:var(--muted-2)}
+.ctx-tabs{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 12px}
+.ctx-tab{min-height:44px;padding:6px 12px;font-size:13.5px;border-radius:8px;border:1px solid var(--line);background:var(--paper);cursor:pointer}
+.ctx-tab[aria-pressed="true"]{background:var(--teal);border-color:var(--teal);color:#fff}
+.ctx-card{border:1px solid var(--line);border-radius:10px;padding:14px 16px;background:var(--paper);margin-bottom:10px}
+.ctx-card h4{margin:0 0 6px;font-size:16px;font-family:var(--serif)}
+.ctx-card dl{margin:0;font-size:14px}
+.ctx-card dt{font-weight:700;color:var(--ochre);font-size:13px;margin-top:8px}
+.ctx-card dd{margin:2px 0 0;color:var(--muted)}
+.ctx-card .cc-bound{background:var(--danger-bg);border-left:3px solid var(--danger);padding:8px 10px;border-radius:0 6px 6px 0;margin-top:10px;font-size:13.5px;color:var(--danger)}
+.tl-footnote{font-size:13.5px;color:var(--muted-2);background:var(--paper-2);border:1px dashed var(--line);border-radius:10px;padding:12px 16px;margin-top:8px}
+
+/* ---------- 研究问题 ---------- */
+.ai-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:30px}
+.ai-item{background:var(--paper-2);border:1px solid var(--line);border-radius:12px;padding:16px}
+.ai-item h3{font-size:16px;margin:0 0 6px}
+.ai-item p{font-size:13.5px;color:var(--muted);margin:0}
+.ai-item .ai-status{display:inline-block;margin-top:8px;font-size:12px;color:var(--ochre);border:1px solid var(--ochre);border-radius:6px;padding:1px 8px}
+.q-item{background:var(--paper-2);border:1px solid var(--line);border-radius:12px;margin-bottom:12px;overflow:hidden}
+.q-item summary{cursor:pointer;min-height:44px;padding:14px 18px;display:flex;align-items:center;gap:12px;list-style:none;font-family:var(--serif);font-size:17px;font-weight:700}
+.q-item summary::-webkit-details-marker{display:none}
+.q-item summary::before{content:"＋";color:var(--teal);font-family:var(--sans);width:1.2em}
+.q-item[open] summary::before{content:"－"}
+.q-badge{margin-left:auto;font-size:12.5px;border-radius:6px;padding:2px 10px;font-family:var(--sans);font-weight:700;white-space:nowrap}
+.b-new{color:#7A5A10;border:1px solid #B98A2E;background:#FBF3E2}
+.b-check{color:var(--teal-dark);border:1px solid var(--teal);background:#EAF3F0}
+.b-fetch{color:var(--muted);border:1px solid var(--muted-2);background:var(--paper)}
+.q-body{padding:0 18px 16px;border-top:1px dashed var(--line)}
+.q-body dl{margin:12px 0 0}
+.q-body dt{font-size:13px;font-weight:700;color:var(--ochre);margin-top:10px}
+.q-body dd{margin:3px 0 0;font-size:14.5px;color:var(--muted)}
+.q-body dd.not-claim{color:var(--danger)}
+
+/* ---------- 来源与边界 ---------- */
+.policy-box{background:#EAF3F0;border:1px solid var(--teal);border-radius:12px;padding:16px 18px;margin-bottom:26px;font-size:15px}
+.policy-box strong{color:var(--teal-dark)}
+.search-box{background:var(--paper-2);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:26px}
+.search-box label{font-weight:700;font-size:15px;display:block;margin-bottom:6px}
+.search-box .scope{font-size:13px;color:var(--muted-2);margin-bottom:10px}
+.search-box input{width:100%;min-height:44px;padding:10px 14px;font-size:16px;border:1px solid var(--line);border-radius:10px;background:var(--paper)}
+.search-results{list-style:none;margin:12px 0 0;padding:0}
+.search-results li{margin-bottom:8px}
+.sr-btn{width:100%;text-align:left;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px 14px;min-height:44px;cursor:pointer;font-size:14.5px}
+.sr-btn:hover{border-color:var(--teal)}
+.sr-kind{font-size:12px;color:var(--ochre);border:1px solid var(--ochre);border-radius:6px;padding:0 6px;margin-right:8px}
+.sr-none{font-size:14px;color:var(--muted);padding:8px 2px}
+.src-group h3{font-size:18px;margin:24px 0 12px}
+.src-card{background:var(--paper-2);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:12px}
+.src-card .src-id{font-size:12px;color:var(--muted-2);letter-spacing:.08em}
+.src-card h4{font-size:16.5px;margin:4px 0 6px;font-family:var(--serif)}
+.src-card .src-meta{font-size:14px;color:var(--muted);margin-bottom:4px}
+.src-card .src-loc{font-size:13.5px;color:var(--teal-dark)}
+.src-card .src-v{display:inline-block;margin:8px 0 10px;font-size:12.5px;color:var(--teal-dark);background:#EAF3F0;border:1px solid var(--teal);border-radius:6px;padding:2px 10px}
+.src-card .src-v.is-wait{color:var(--ochre);background:#FBF3E2;border-color:#B98A2E}
+.src-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.src-link{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border-radius:8px;border:1px solid var(--teal);color:var(--teal-dark);text-decoration:none;font-size:14px}
+.src-link:hover{background:var(--teal);color:#fff}
+.boundary-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}
+.boundary-col{background:var(--paper-2);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.boundary-col h3{font-size:16.5px;margin:0 0 10px}
+.boundary-col ul{margin:0;padding-left:1.2em;font-size:14px;color:var(--muted)}
+.boundary-col li{margin-bottom:6px}
+.boundary-statements{margin-top:18px;font-size:14px;color:var(--muted)}
+.boundary-statements p{padding-left:14px;border-left:3px solid var(--ochre)}
+
+/* ---------- 页脚 ---------- */
+.site-footer{padding:36px 0 48px;font-size:13.5px;color:var(--muted-2)}
+.site-footer .ver{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:10px}
+.site-footer .ver span{border:1px solid var(--line);border-radius:6px;padding:2px 10px;background:var(--paper-2)}
+
+/* ---------- 模态弹窗 ---------- */
+.modal-backdrop{position:fixed;inset:0;background:rgba(24,39,37,.55);display:flex;align-items:center;justify-content:center;padding:20px;z-index:80}
+.modal-backdrop[hidden]{display:none}
+.modal{background:var(--paper);max-width:640px;width:100%;max-height:88vh;overflow:auto;border-radius:16px;padding:24px 26px;border:1px solid var(--line);box-shadow:0 18px 60px rgba(0,0,0,.28)}
+.modal h3{font-size:20px;margin:0 0 4px}
+.modal .m-kind{font-size:12.5px;color:var(--ochre);margin-bottom:12px}
+.modal dl{margin:0 0 8px}
+.modal dt{font-size:13px;font-weight:700;color:var(--ochre);margin-top:12px}
+.modal dd{margin:3px 0 0;font-size:14.5px}
+.modal dd.m-bound{background:var(--danger-bg);border-left:3px solid var(--danger);padding:8px 10px;border-radius:0 6px 6px 0;color:var(--danger)}
+.modal .m-summary-tag{font-size:12px;color:var(--muted-2);display:block;margin-top:4px}
+.modal-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;padding-top:14px;border-top:1px solid var(--line)}
+.modal-actions .btn,.modal-actions .src-link{min-height:44px}
+.copy-fallback{margin-top:12px}
+.copy-fallback textarea{width:100%;min-height:96px;font-family:var(--sans);font-size:13px;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--paper-2)}
+.copy-fallback p{font-size:12.5px;color:var(--ochre);margin:6px 0 0}
+.copy-ok{font-size:13px;color:var(--teal-dark);align-self:center}
+
+/* ---------- JS / noJS 行为 ---------- */
+html:not(.js) .js-only{display:none!important}
+html.js .tab-btn{display:inline-flex;align-items:center}
+html.js .view-btn{display:inline-flex;align-items:center}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:960px){
+  .hero-grid{grid-template-columns:1fr;gap:30px}
+  .cards3,.ai-grid{grid-template-columns:1fr}
+  .boundary-grid{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+  body{font-size:16px}
+  .wrap{padding:0 20px}
+  .hero{padding:44px 0 36px}
+  section{padding:42px 0}
+  .nav-links{width:100%;margin-left:0;overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch}
+  .nav-links a{white-space:nowrap}
+  .chapter-panel{padding:20px}
+  .tl-node{padding-left:28px}
+}
+@media (max-width:360px){
+  .wrap{padding:0 16px}
+  .cta-row .btn{flex:1 1 100%}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+}
+/* ---------- 打印 ---------- */
+@media print{
+  @page{ margin:14mm 12mm; }
+  *{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  html,body{background:#fff;font-size:11.5pt;line-height:1.6}
+  /* 不打印导航与纯交互控件；来源外链本身保留 */
+  .site-nav,.js-only,.search-box,.card-actions,.src-actions .mini-btn,.modal-backdrop,.cta-row,.skip-link,.copy-fallback,.copy-ok{display:none!important}
+  a{color:var(--ink);text-decoration:none}
+  /* 来源外链在纸面上显示完整URL，保证来源定位可追溯 */
+  .src-card a[href^="http"]::after{content:" (" attr(href) ")";font-size:9pt;color:#33403E;word-break:break-all}
+
+  /* 标题字号收敛，避免打印时过大 */
+  h1{font-size:24pt} h2{font-size:17pt} h3{font-size:13.5pt} h4{font-size:11pt}
+  .hero{padding:18px 0}
+  .hero-grid{grid-template-columns:1fr;gap:14px}
+  .hero-figure{padding:14px}
+  section{padding:14px 0;break-inside:auto}
+  .wrap{max-width:100%;padding:0}
+
+  /* 折叠内容完整展开：四章、被字段视图隐藏的字段、1992三处语境、研究问题正文 */
+  .chapter-panel,.ctx-card,.q-item .q-body{display:block!important}
+  .chapter-panel[hidden],.field[hidden],.ctx-card[hidden]{display:block!important}
+  details.q-item:not([open]) .q-body{display:block!important}
+  details.q-item > summary{list-style:none}
+  details.q-item summary::before{content:""!important}
+  .chapter-panel{max-width:100%;padding:16px;margin-bottom:12px}
+  .map-row{grid-template-columns:1fr 1fr}
+  /* 打印时显式恢复对照表表头，避免屏幕窄屏断点将其隐藏 */
+  .map-row.map-head{display:grid!important;background:#eee}
+  /* 多列栅格在纸面上统一单列，避免不同浏览器对打印宽度解释不同而压窄内容 */
+  .cards3,.ai-grid,.boundary-grid,.hero-grid{grid-template-columns:1fr!important}
+  .entity-chips{gap:6px}
+
+  /* 跨页不截断：以卡片/字段/对照行为最小整块，标题不与正文分离。
+     长容器（章面板、时间线节点/卡片）允许跨页，避免整块超一页时被截断。 */
+  h2,h3,h4,.sec-head,.ch-q,.ch-locator{break-after:avoid;page-break-after:avoid}
+  .field,.map-row,.map-cell,.ctx-card,.src-card,.contrib-card,
+  .q-item,.entity,.ai-item,.order-box,.policy-box,.boundary-col,.hero-figure{
+    break-inside:avoid;page-break-inside:avoid;
+  }
+  .chapter-panel,.tl-node,.tl-card,.map-table{break-inside:auto;page-break-inside:auto}
+  .tl-node{padding-bottom:14px}
+  /* 边界/状态色块与时间线在打印时保留颜色 */
+  .cc-bound,.m-bound,.src-v,.policy-box,.tl-dot,.eyebrow,.q-badge,
+  .entity .e-kind,.tl-type{print-color-adjust:exact;-webkit-print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+<p style="margin:0;padding:10px 20px;background:#e4f0e9"><a href="../index.html#topic-preview">← 返回学术成就平台</a></p>
+<a class="skip-link" href="#main">跳到正文</a>
+
+<nav class="site-nav" aria-label="页面导航">
+  <div class="wrap">
+    <a class="brand" href="#top">陈庆云院士团队 · PFtB早期研究<small>内容版本 2026-11-03.1</small></a>
+    <div class="nav-links">
+      <a href="#contribution">原始贡献</a>
+      <a href="#arguments">论证细读</a>
+      <a href="#reception">学术回响</a>
+      <a href="#questions">研究问题</a>
+      <a href="#sources">来源与边界</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main" tabindex="-1">
+
+<!-- ============ 首屏 ============ -->
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">原始贡献、证据与学术回响</span>
+      <h1>陈庆云院士团队的 PFtB 早期研究</h1>
+      <p class="subtitle">原始贡献、证据与学术回响</p>
+      <p class="lead-q">陈庆云团队当年提出了什么，后续研究如何回应？</p>
+      <p class="intro">从1966年的原始论文出发，重建结构确认、特殊反应行为与电子效应的论证，逐处查看后续文献如何采用和评议这些命题。</p>
+      <p class="credit">1966年原始论文作者：陈庆云、蒋锡夔、陈秉启、梁梦兰。</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#arguments">进入原始论证</a>
+        <a class="btn btn-ghost" href="#reception">追踪学术回响</a>
+      </div>
+      <p class="hero-status">本专题展示已核定资料及待核问题；尚无本平台新量子化学计算或获确认的新化学发现。本期围绕陈庆云团队的PFtB早期研究展开，相关成果归属于各原论文作者。</p>
+    </div>
+    <div class="hero-figure">
+      <svg viewBox="0 0 360 250" role="img" aria-label="全氟叔丁基碘(PFtBI)自绘示意图：中心碳连接三条CF3支链与一个碘原子">
+        <line x1="140" y1="128" x2="72" y2="62" stroke="#176B5B" stroke-width="3"></line>
+        <line x1="140" y1="132" x2="72" y2="198" stroke="#176B5B" stroke-width="3"></line>
+        <line x1="146" y1="124" x2="208" y2="58" stroke="#176B5B" stroke-width="3"></line>
+        <line x1="150" y1="132" x2="286" y2="150" stroke="#182725" stroke-width="3"></line>
+        <circle cx="140" cy="130" r="5" fill="#182725"></circle>
+        <circle cx="72" cy="62" r="4" fill="#176B5B"></circle>
+        <circle cx="72" cy="198" r="4" fill="#176B5B"></circle>
+        <circle cx="208" cy="58" r="4" fill="#176B5B"></circle>
+        <text x="128" y="122" font-family="Songti SC, serif" font-size="20" fill="#182725">C</text>
+        <text x="14" y="58" font-family="Georgia, serif" font-size="18" fill="#176B5B">CF<tspan font-size="11" dy="3">3</tspan></text>
+        <text x="14" y="214" font-family="Georgia, serif" font-size="18" fill="#176B5B">CF<tspan font-size="11" dy="3">3</tspan></text>
+        <text x="214" y="52" font-family="Georgia, serif" font-size="18" fill="#176B5B">CF<tspan font-size="11" dy="3">3</tspan></text>
+        <text x="294" y="157" font-family="Georgia, serif" font-size="22" fill="#182725">I</text>
+      </svg>
+      <p class="fig-caption">自绘示意（非计算结构，不代表键长、键角或能量）：全氟叔丁基碘 (CF<sub>3</sub>)<sub>3</sub>C–I，三条 –CF<sub>3</sub> 支链构成 PFtB 视觉识别。</p>
+      <div class="entity-chips">
+        <div class="entity">
+          <div class="e-head"><span class="e-name">全氟叔丁基（PFtB）</span><span class="e-kind">基团</span></div>
+          <div class="formula">–C(CF<sub>3</sub>)<sub>3</sub><span class="plain-alt">纯文本：–C(CF3)3，表示连接到其他原子或基团的取代基。</span></div>
+        </div>
+        <div class="entity">
+          <div class="e-head"><span class="e-name">全氟叔丁基碘（PFtBI）</span><span class="e-kind">中性化合物</span></div>
+          <div class="formula">(CF<sub>3</sub>)<sub>3</sub>C–I<span class="plain-alt">纯文本：(CF3)3C–I，1966论文研究对象之一；不得与阴离子混同。</span></div>
+        </div>
+        <div class="entity">
+          <div class="e-head"><span class="e-name">全氟叔丁基阴离子</span><span class="e-kind">阴离子</span></div>
+          <div class="formula">(CF<sub>3</sub>)<sub>3</sub>C<sup>−</sup><span class="plain-alt">纯文本：(CF3)3C−，原文讨论中的推断对象；1966年没有直接观测到游离阴离子。</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 原始贡献 ============ -->
+<section id="contribution">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>原始贡献</h2>
+      <p>三项贡献均依据1966年论文本身辨认，来源常驻于每张卡片。卡片中的概述为本专题摘要（非原文逐字引语），原文定位可直接跳转核对。</p>
+    </div>
+    <div class="cards3">
+      <article class="contrib-card">
+        <span class="c-no">贡献一 · 结构</span>
+        <h3>结构确认与既有方法</h3>
+        <p>原文以元素分析、光谱与反应证据彼此印证，确认全氟叔丁基碘等化合物身份；同时明确引用 Krespan 的既有制备方法，把方法来源与作者自行开展的结构、性质研究分开记录，不据此主张世界首次合成。</p>
+        <p class="c-loc">来源：<a href="../index.html#source-pf01">PF01</a>《化学学报》32(1)，第18–19、24–25页</p>
+        <div class="card-actions">
+          <a class="mini-btn" href="#arguments" data-goto-chapter="T01">查看论证</a>
+          <a class="mini-btn js-only" href="#sources" data-source-open="PF01">原文定位与摘要</a>
+        </div>
+      </article>
+      <article class="contrib-card">
+        <span class="c-no">贡献二 · 反应</span>
+        <h3>特殊反应行为与机理解释</h3>
+        <p>作者依据反应产物及相关证据，提出对卤原子进攻的解释，以亲卤进攻和有关中间体说明反应行为；原文同时保留式(3)、式(3′)两种写法与页脚提出的一步过程可能，并未把产物对应当作唯一路径。</p>
+        <p class="c-loc">来源：<a href="../index.html#source-pf01">PF01</a>，第19–20页，式(3)、式(3′)及页脚讨论</p>
+        <div class="card-actions">
+          <a class="mini-btn" href="#arguments" data-goto-chapter="T02">查看论证</a>
+          <a class="mini-btn js-only" href="#sources" data-source-open="PF01">原文定位与摘要</a>
+        </div>
+      </article>
+      <article class="contrib-card">
+        <span class="c-no">贡献三 · 电子效应</span>
+        <h3>电子效应的论据与限制</h3>
+        <p>表1实测比较 n-C<sub>3</sub>F<sub>7</sub>I、i-C<sub>3</sub>F<sub>7</sub>I 与 t-C<sub>4</sub>F<sub>9</sub>I 三种碘代物的光谱数据，讨论氟取代效应的非加和性，并据此提出全氟烷基诱导效应顺序及有条件的阴离子稳定性推断；完整四基团排序含外推层次。</p>
+        <p class="c-loc">来源：<a href="../index.html#source-pf01">PF01</a>，第20–21页，表1、式(10)及相关脚注</p>
+        <div class="card-actions">
+          <a class="mini-btn" href="#arguments" data-goto-chapter="T03">查看论证</a>
+          <a class="mini-btn js-only" href="#sources" data-source-open="PF01">原文定位与摘要</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 论证细读 ============ -->
+<section id="arguments">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>论证细读</h2>
+      <p>四章对应原文的问题、观察、解释、条件、边界与来源定位。默认展开“全部论证”；切换视图只筛选核定字段，不对结论作任何改写。没有对应回应的位置将显示“本次核定材料尚未建立对应”。</p>
+    </div>
+
+    <div class="arg-toolbar js-only" role="group" aria-label="章节切换（普通按钮组）">
+      <div class="tab-row" id="chapter-tabs">
+        <button type="button" class="tab-btn" data-chapter="T01" aria-pressed="true">一、结构确认与既有方法</button>
+        <button type="button" class="tab-btn" data-chapter="T02" aria-pressed="false">二、特殊反应行为与机理</button>
+        <button type="button" class="tab-btn" data-chapter="T03" aria-pressed="false">三、电子效应的论据与限制</button>
+        <button type="button" class="tab-btn" data-chapter="T04" aria-pressed="false">四、直接引文中的采用与评议</button>
+      </div>
+      <div class="view-row" id="view-tabs">
+        <span class="vr-label">字段视图：</span>
+        <button type="button" class="view-btn" data-view="all" aria-pressed="true">全部论证</button>
+        <button type="button" class="view-btn" data-view="observation" aria-pressed="false">观察</button>
+        <button type="button" class="view-btn" data-view="interpretation" aria-pressed="false">解释</button>
+        <button type="button" class="view-btn" data-view="conditions" aria-pressed="false">条件</button>
+        <button type="button" class="view-btn" data-view="boundary" aria-pressed="false">边界</button>
+        <button type="button" class="view-btn" data-view="reception" aria-pressed="false">后续回应</button>
+      </div>
+    </div>
+
+    <!-- T01 -->
+    <article class="chapter-panel" data-chapter-panel="T01">
+      <h3>一、结构确认与既有方法</h3>
+      <p class="ch-q">作者怎样确认研究对象，又如何交代方法来源？</p>
+      <p class="ch-locator">来源定位：<a href="../index.html#source-pf01">PF01</a>，第18–19、24–25页</p>
+      <div class="field" data-field="observation">
+        <h4>原文观察</h4>
+        <p>原文结合元素分析、光谱和反应证据确认化合物身份，并引用 Krespan 的既有制备方法。</p>
+      </div>
+      <div class="field" data-field="interpretation">
+        <h4>解释（本专题摘要）</h4>
+        <p>本项贡献需要从结构证据与化学性质研究中具体辨认。</p>
+      </div>
+      <div class="field" data-field="conditions">
+        <h4>条件</h4>
+        <p>分开记录既有方法、作者开展的研究及其论证。</p>
+      </div>
+      <div class="field" data-field="boundary">
+        <h4>边界</h4>
+        <p>不称1966年论文为 PFtBI 或 PFtB 的世界首次合成；不公开制备操作细节。</p>
+      </div>
+      <div class="field" data-field="reception">
+        <h4>后续回应</h4>
+        <div class="ctx-chips">
+          <button type="button" class="ctx-chip js-only" data-context="R92A"><span class="cc-year">1992</span>合成背景中的早期工作<span class="cc-loc">RCR 英译刊第42页，参考文献[82–84]中的[84]</span></button>
+          <p class="arg-note">（无脚本时，该语境的完整内容见下方“学术回响”1992年节点。）</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- T02 -->
+    <article class="chapter-panel" data-chapter-panel="T02">
+      <h3>二、特殊反应行为与机理解释</h3>
+      <p class="ch-q">产物证据支持怎样的解释，哪些路径仍有余地？</p>
+      <p class="ch-locator">来源定位：<a href="../index.html#source-pf01">PF01</a>，第19–20页，式(3)、式(3′)及页脚讨论</p>
+      <div class="field" data-field="observation">
+        <h4>原文观察</h4>
+        <p>作者根据所研究反应的产物及相关证据讨论对卤原子进攻。</p>
+      </div>
+      <div class="field" data-field="interpretation">
+        <h4>解释（本专题摘要）</h4>
+        <p>亲卤进攻和有关中间体是作者用于解释反应的机理层次。</p>
+      </div>
+      <div class="field" data-field="conditions">
+        <h4>条件</h4>
+        <p>保留式(3)与式(3′)的区别，以及页脚提出的一步过程可能性。</p>
+      </div>
+      <div class="field" data-field="boundary">
+        <h4>边界</h4>
+        <p>产物对应不等于路径唯一；不能写成当时已直接观测游离 PFtB 阴离子。</p>
+      </div>
+      <div class="field" data-field="reception">
+        <h4>后续回应</h4>
+        <div class="ctx-chips">
+          <button type="button" class="ctx-chip js-only" data-context="R92B"><span class="cc-year">1992</span>反应解释的再讨论<span class="cc-loc">RCR 英译刊第44页，参考文献[22,84,131]</span></button>
+          <button type="button" class="ctx-chip js-only" data-context="R92C"><span class="cc-year">1992</span>PFtBI与二乙胺反应<span class="cc-loc">RCR 英译刊第48页，参考文献[84]</span></button>
+          <p class="arg-note">（无脚本时，两处语境的完整内容见下方“学术回响”1992年节点。）</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- T03 -->
+    <article class="chapter-panel" data-chapter-panel="T03">
+      <h3>三、电子效应的论据与限制</h3>
+      <p class="ch-q">完整诱导效应顺序是怎样提出的，实测范围在哪里？</p>
+      <p class="ch-locator">来源定位：<a href="../index.html#source-pf01">PF01</a>，第20–21页，表1、式(10)及相关脚注</p>
+      <div class="field" data-field="observation">
+        <h4>原文观察</h4>
+        <p>原文表1实际比较三种碘代物的相关光谱数据，并讨论氟取代效应的非加和性。</p>
+      </div>
+      <div class="field" data-field="interpretation">
+        <h4>解释（本专题摘要）</h4>
+        <p>作者据此及相关化学论据提出全氟烷基诱导效应顺序，并作出有条件的阴离子相对稳定性推断。</p>
+        <div class="order-box">
+          <p class="order">–C(CF<sub>3</sub>)<sub>3</sub> &gt; –CF(CF<sub>3</sub>)<sub>2</sub> &gt; –CF<sub>2</sub>CF<sub>3</sub> &gt; –CF<sub>3</sub></p>
+          <p class="order-cap">作者提出的顺序（1966）</p>
+          <p class="order-note">1966年作者提出的诱导效应顺序，需结合原文论证与适用限制理解；不绘制能垒、轨道或能量数值。</p>
+        </div>
+      </div>
+      <div class="field" data-field="conditions">
+        <h4>条件</h4>
+        <p>三种实测碘代物为 n-C<sub>3</sub>F<sub>7</sub>I、i-C<sub>3</sub>F<sub>7</sub>I 和 t-C<sub>4</sub>F<sub>9</sub>I；完整四基团排序含外推层次。原文已讨论位阻、溶剂化及共轭体系限制。</p>
+      </div>
+      <div class="field" data-field="boundary">
+        <h4>边界</h4>
+        <p>不称四个基团均已直接测定，不把顺序写成适用于所有体系的常数；原始光谱仅作历史论据。</p>
+      </div>
+      <div class="field" data-field="reception">
+        <h4>后续回应</h4>
+        <div class="ctx-chips">
+          <button type="button" class="ctx-chip js-only" data-context="R21A"><span class="cc-year">2021</span>电子性质判断的回引<span class="cc-loc">Angew. Chem. Int. Ed. 第27318页正文[5]，参考文献[5a]</span></button>
+          <p class="arg-note">（无脚本时，该语境的完整内容见下方“学术回响”2021年节点。）</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- T04 -->
+    <article class="chapter-panel" data-chapter-panel="T04">
+      <h3>四、直接引文中的采用与评议</h3>
+      <p class="ch-q">后续作者引用了什么，引用本身又不能证明什么？</p>
+      <p class="ch-locator">来源定位：PF30、PF07、PF08；各引文位置见“学术回响”</p>
+      <div class="field" data-field="observation">
+        <h4>原文观察</h4>
+        <p>已核材料中，1992年综述有三处具体语境，2021年与2022年论文分别用于性质判断和历史路线背景。</p>
+      </div>
+      <div class="field" data-field="interpretation">
+        <h4>解释（本专题摘要）</h4>
+        <p>国际可见性需要通过具体命题、引用位置和评价语气来呈现。</p>
+      </div>
+      <div class="field" data-field="conditions">
+        <h4>条件</h4>
+        <p>同一文献多处引用只计一篇；国际期刊发表、境外题录与境外学术评述分别标注。</p>
+      </div>
+      <div class="field" data-field="boundary">
+        <h4>边界</h4>
+        <p>引用不等于全面认可、独立验证或后续方法的因果传承。2005年成组引文放入附录。</p>
+      </div>
+      <div class="field" data-field="reception">
+        <h4>后续回应：五处主线引文语境</h4>
+        <div class="ctx-chips">
+          <button type="button" class="ctx-chip js-only" data-context="R92A"><span class="cc-year">1992 · 第42页</span>合成背景中的早期工作</button>
+          <button type="button" class="ctx-chip js-only" data-context="R92B"><span class="cc-year">1992 · 第44页</span>反应解释的再讨论</button>
+          <button type="button" class="ctx-chip js-only" data-context="R92C"><span class="cc-year">1992 · 第48页</span>PFtBI与二乙胺反应</button>
+          <button type="button" class="ctx-chip js-only" data-context="R21A"><span class="cc-year">2021 · 第27318页</span>电子性质判断的回引</button>
+          <button type="button" class="ctx-chip js-only" data-context="R22A"><span class="cc-year">2022 · 第22281页</span>历史方法背景的回引</button>
+          <p class="arg-note">每处语境打开的是各自专属定位与边界，并非同一泛用弹窗。无脚本时完整内容见“学术回响”。</p>
+          <div class="map-table" aria-label="原始命题与后续采用范围对照表">
+            <div class="map-row map-head"><div class="map-cell">1966原始命题及页码</div><div class="map-cell">后续作者实际采用 / 评议的范围</div></div>
+            <div class="map-row">
+              <div class="map-cell"><span class="m-prop">结构确认与早期制备背景</span><span class="m-page"><a href="../index.html#source-pf01">PF01</a> 第18–19、24–25页</span></div>
+              <div class="map-cell"><span class="m-use">1992 RCR 第42页[82–84]：列入早期制备背景的成组文献。</span><span class="m-bound">组引文不把方法或优先权独占归于陈庆云团队。</span></div>
+            </div>
+            <div class="map-row">
+              <div class="map-cell"><span class="m-prop">特殊反应行为与机理解释（式3/3′）</span><span class="m-page"><a href="../index.html#source-pf01">PF01</a> 第19–20页</span></div>
+              <div class="map-cell"><span class="m-use">1992 RCR 第44页[22,84,131]：离子/自由基/自由基阴离子解释的一般性机理评议。</span><span class="m-bound">非某项具体机理已被实验推翻。</span></div>
+            </div>
+            <div class="map-row">
+              <div class="map-cell"><span class="m-prop">PFtBI 与二乙胺的具体反应</span><span class="m-page"><a href="../index.html#source-pf01">PF01</a> 第19–20页相关反应</span></div>
+              <div class="map-cell"><span class="m-use">1992 RCR 第48页[84]：保留该项具体反应讨论。</span><span class="m-bound">与第42、44页同属一篇综述，不重复计数。</span></div>
+            </div>
+            <div class="map-row">
+              <div class="map-cell"><span class="m-prop">全氟烷基诱导效应 / PFtB 强吸电子性质</span><span class="m-page"><a href="../index.html#source-pf01">PF01</a> 第20–21页，表1、式(10)</span></div>
+              <div class="map-cell"><span class="m-use">2021 Angew 第27318页[5]/[5a]：在 PFtB 比 CF<sub>3</sub> 吸电子更强的论述中回引。</span><span class="m-bound">属性质判断，非完整四基团顺序的独立验证。</span></div>
+            </div>
+            <div class="map-row">
+              <div class="map-cell"><span class="m-prop">PFtBI 早期方法路线</span><span class="m-page"><a href="../index.html#source-pf01">PF01</a> 第18–25页</span></div>
+              <div class="map-cell"><span class="m-use">2022 JACS 第22281页[7]/22287页[7a]：作为早期方法受限的历史背景引用。</span><span class="m-bound">不把2022芳炔方法归于陈先生，非全面验证1966理论。</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 学术回响 ============ -->
+<section id="reception">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>学术回响（1966—2022）</h2>
+      <p>时间线先回答“引用了哪一项命题”，并按原始研究、书目传播、直接引文、引证附录区分。国际期刊发表、境外题录收录与境外作者评议不混作单一的“国际认可”。</p>
+    </div>
+
+    <ol class="timeline">
+      <li class="tl-node">
+        <div class="tl-card">
+          <span class="tl-year">1966</span><span class="tl-type">原始研究</span>
+          <h3>原始论文发表</h3>
+          <p>陈庆云、蒋锡夔、陈秉启、梁梦兰：《全氟和多氟型有机化合物的化学特性——全氟叔丁基碘以及全氟烷基的诱导效应顺序》，《化学学报》32(1)，18–25。</p>
+          <p class="tl-meta">投稿日期1964-09-07；期刊网页2013年日期不作发表时间。四作者并列署名。</p>
+          <a class="src-link js-only" href="#sources" data-source-open="PF01">查看来源 PF01</a>
+        </div>
+      </li>
+
+      <li class="tl-node is-biblio">
+        <div class="tl-card">
+          <span class="tl-year">1966</span><span class="tl-type t-biblio">书目记录（英文对应待核）</span>
+          <h3>Scientia Sinica 英文书目记录</h3>
+          <p>Scientia Sinica 15，498–506，题名与四作者书目线索。英文全文与中文原文的内容对应仍待核，不另算为另一项原创成果。</p>
+          <a class="src-link js-only" href="#sources" data-source-open="PF28">查看来源 PF28</a>
+        </div>
+      </li>
+
+      <li class="tl-node is-biblio">
+        <div class="tl-card">
+          <span class="tl-year">1967</span><span class="tl-type t-biblio">传播记录（不计科研引用）</span>
+          <h3>境外通讯题录收录</h3>
+          <p>IIT NMR Newsletter 第105期文献目录收录该论文（PDF第43页）。题录收录属于传播记录，不计入科研引用。</p>
+          <a class="src-link js-only" href="#sources" data-source-open="PF29">查看来源 PF29</a>
+        </div>
+      </li>
+
+      <li class="tl-node">
+        <div class="tl-card">
+          <span class="tl-year">1992</span><span class="tl-type">主线直接引文 · 同一篇综述的三处语境</span>
+          <h3>Deev 等：Iodoperfluoroalkanes（Russian Chemical Reviews 61(1), 40–54）</h3>
+          <p>三处语境共用同一篇文献身份；俄文原刊与英译刊不重复计数。</p>
+          <div class="ctx-tabs js-only" role="group" aria-label="1992年三处语境切换">
+            <button type="button" class="ctx-tab" data-ctx92="R92A" aria-pressed="true">第42页 · 合成背景</button>
+            <button type="button" class="ctx-tab" data-ctx92="R92B" aria-pressed="false">第44页 · 机理评议</button>
+            <button type="button" class="ctx-tab" data-ctx92="R92C" aria-pressed="false">第48页 · 具体反应</button>
+          </div>
+
+          <div class="ctx-card" data-ctx-card="R92A">
+            <h4>语境A：合成背景中的早期工作</h4>
+            <dl>
+              <dt>类型</dt><dd>历史路线背景</dd>
+              <dt>定位</dt><dd>英译刊第42页，参考文献[82–84]；[84]为陈庆云等1966文</dd>
+              <dt>用途</dt><dd>综述把该研究列入早期制备背景的成组文献。</dd>
+            </dl>
+            <p class="cc-bound">边界：组引文不能把整个方法或优先权独占归于陈庆云团队。</p>
+            <p style="margin-top:10px"><button type="button" class="mini-btn js-only" data-context="R92A">查看此语境专属定位</button></p>
+          </div>
+
+          <div class="ctx-card" data-ctx-card="R92B">
+            <h4>语境B：反应解释的再讨论</h4>
+            <dl>
+              <dt>类型</dt><dd>机理评议</dd>
+              <dt>定位</dt><dd>英译刊第44页，参考文献[22,84,131]</dd>
+              <dt>用途</dt><dd>综述在讨论离子、自由基或自由基阴离子解释的语境中引用原始工作。</dd>
+            </dl>
+            <p class="cc-bound">边界：这是一般性机理评议，不能据此宣布陈先生某项特定反应的机理已被实验推翻。</p>
+            <p style="margin-top:10px"><button type="button" class="mini-btn js-only" data-context="R92B">查看此语境专属定位</button></p>
+          </div>
+
+          <div class="ctx-card" data-ctx-card="R92C">
+            <h4>语境C：PFtBI与二乙胺反应</h4>
+            <dl>
+              <dt>类型</dt><dd>具体反应</dd>
+              <dt>定位</dt><dd>英译刊第48页，参考文献[84]</dd>
+              <dt>用途</dt><dd>综述保留了原工作中的一项具体反应讨论。</dd>
+            </dl>
+            <p class="cc-bound">边界：本条与1992年另外两处语境属于同一篇综述。</p>
+            <p style="margin-top:10px"><button type="button" class="mini-btn js-only" data-context="R92C">查看此语境专属定位</button></p>
+          </div>
+          <a class="src-link js-only" href="#sources" data-source-open="PF30">查看来源 PF30</a>
+        </div>
+      </li>
+
+      <li class="tl-node is-appendix">
+        <div class="tl-card">
+          <span class="tl-year">2005</span><span class="tl-type t-appendix">引证附录（成组引文）</span>
+          <h3>Dou 等：Journal of Fluorine Chemistry 126(3), 333–338</h3>
+          <p>第336页正文[22,23]；参考文献[22a]直接列出陈庆云等1966年英文书目，[22]还包含另外两篇文献。</p>
+          <p class="cc-bound" style="background:#FBF3E2;border-left-color:#B98A2E;color:#7A5A10">边界：不能把单个参数来源直接判给[22a]；仅作引证附录，不展开 EPR 研究内容，也不作为独立 PFtB 应用成就。</p>
+          <p style="margin-top:10px"><a class="src-link js-only" href="#sources" data-source-open="PF31">查看来源 PF31</a></p>
+        </div>
+      </li>
+
+      <li class="tl-node">
+        <div class="tl-card">
+          <span class="tl-year">2021</span><span class="tl-type">主线直接引文 · 性质判断</span>
+          <h3>Wang 等：Angew. Chem. Int. Ed. 60, 27318–27323</h3>
+          <div class="ctx-card" data-ctx-card="R21A" style="background:var(--paper)">
+            <h4>电子性质判断的回引</h4>
+            <dl>
+              <dt>定位</dt><dd>第27318页正文[5]，参考文献[5a]为陈庆云等；同组含[5b]</dd>
+              <dt>用途</dt><dd>论文在 PFtB 比 CF<sub>3</sub> 具有更强吸电子性质的论述中直接回引1966年研究。</dd>
+            </dl>
+            <p class="cc-bound">边界：不能扩展为完整四基团顺序获独立验证。[11]中的1966年早期应用引文不属于陈庆云；后续新方法属于2021年作者。中国团队在国际期刊中的回引如实标识，不改写为境外独立团队认可。</p>
+            <p style="margin-top:10px"><button type="button" class="mini-btn js-only" data-context="R21A">查看此语境专属定位</button></p>
+          </div>
+          <a class="src-link js-only" href="#sources" data-source-open="PF07">查看来源 PF07</a>
+        </div>
+      </li>
+
+      <li class="tl-node">
+        <div class="tl-card">
+          <span class="tl-year">2022</span><span class="tl-type">主线直接引文 · 历史方法背景</span>
+          <h3>Wei 等：J. Am. Chem. Soc. 144, 22281–22288</h3>
+          <div class="ctx-card" data-ctx-card="R22A" style="background:var(--paper)">
+            <h4>历史方法背景的回引</h4>
+            <dl>
+              <dt>定位</dt><dd>第22281页正文[7]，第22287页参考文献[7a]</dd>
+              <dt>用途</dt><dd>论文在早期方法受限的历史背景中引用陈庆云团队1966年研究。</dd>
+            </dl>
+            <p class="cc-bound">边界：不据此将2022年芳炔方法归属于陈先生，也不称其全面验证1966年全部理论。</p>
+            <p style="margin-top:10px"><button type="button" class="mini-btn js-only" data-context="R22A">查看此语境专属定位</button></p>
+          </div>
+          <a class="src-link js-only" href="#sources" data-source-open="PF08">查看来源 PF08</a>
+        </div>
+      </li>
+    </ol>
+
+    <p class="tl-footnote">计数口径：4篇是截至资料核定日期（2026-11-03）已核实的直接引文下限，并非全球引用总量；其中2005年成组引文仅列附录。1967年题录不计入；1992年三处语境仍为一篇。1988年候选文献未核原文，不进入已确认引文列表；内部证据登记与书目关系不作为公众引用统计。本页不做引用总量、影响力分数或全球排名卡。</p>
+  </div>
+</section>
+
+<!-- ============ 研究问题 ============ -->
+<section id="questions">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>研究问题与AI辅助整理</h2>
+      <p>首版的 AI 价值是可追溯的资料工作：从原始论证识别命题，逐处对齐后续引文，形成范围明确、可继续查新的问题。页面不接入在线生成服务，没有计算按钮，也没有模拟进度条。</p>
+    </div>
+
+    <div class="ai-grid">
+      <div class="ai-item">
+        <h3>重建原始论证</h3>
+        <p>AI协助拆分观察、解释、假设与限制；人工逐项核对化学式、脚注及页码。产出带来源定位的论证卡。</p>
+        <span class="ai-status">资料与方法工作</span>
+      </div>
+      <div class="ai-item">
+        <h3>对齐被引命题</h3>
+        <p>AI协助识别后续引文的对象、语气和范围变化，保留原作者归属。产出原始命题与后续引文的对照。</p>
+        <span class="ai-status">引证语义整理</span>
+      </div>
+      <div class="ai-item">
+        <h3>形成精确查新问题</h3>
+        <p>先查同一对象、同一命题及接近条件的先行研究，确认缺口后再决定科学计算。</p>
+        <span class="ai-status">待查新 · 不宣称空白</span>
+      </div>
+    </div>
+
+    <details class="q-item" open="">
+      <summary>问题一：原文备选机理是否已有同体系辨析<span class="q-badge b-new">状态：待查新</span></summary>
+      <div class="q-body">
+        <dl>
+          <dt>问题</dt><dd>是否已有针对同一底物、反应对象和接近条件的后续研究，能区分原文保留的路径？</dd>
+          <dt>原文出发点</dt><dd><a href="../index.html#source-pf01">PF01</a>第19–20页式(3)、式(3′)及页脚一步过程讨论。</dd>
+          <dt>下一步证据</dt><dd>先核对最接近的原始文献及反应条件；没有完成前不设定新计算课题。</dd>
+          <dt>不可宣称</dt><dd class="not-claim">不能表述为尚无人研究或本平台首次提出。</dd>
+        </dl>
+      </div>
+    </details>
+
+    <details class="q-item">
+      <summary>问题二：现代回引采用了性质还是完整排序<span class="q-badge b-check">状态：待核查</span></summary>
+      <div class="q-body">
+        <dl>
+          <dt>问题</dt><dd>后续作者使用的是 PFtB 与 CF<sub>3</sub> 的定性比较，还是对原始完整排序进行了独立检验？</dd>
+          <dt>原文出发点</dt><dd><a href="../index.html#source-pf01">PF01</a>第20–21页与PF07第27318页正文[5]。</dd>
+          <dt>下一步证据</dt><dd>逐篇对齐被引句、测量对象、条件和数据；区分回引与新验证。</dd>
+          <dt>当前材料不能证明</dt><dd class="not-claim">当前材料不能证明完整排序已被现代研究全面验证。</dd>
+        </dl>
+      </div>
+    </details>
+
+    <details class="q-item">
+      <summary>问题三：英文刊载与早期传播链怎样对应<span class="q-badge b-fetch">状态：待取原文</span></summary>
+      <div class="q-body">
+        <dl>
+          <dt>问题</dt><dd>取得 Scientia Sinica 原文后，怎样核对两刊的内容对应、页码和后续引用入口？</dd>
+          <dt>出发点</dt><dd><a href="../index.html#source-pf01">PF01</a>、PF28及PF29。</dd>
+          <dt>下一步证据</dt><dd>核对英文全文与1967年题录；不重复计成果或引用。</dd>
+          <dt>性质说明</dt><dd class="not-claim">这是文献核对问题，不是新的化学发现。</dd>
+        </dl>
+      </div>
+    </details>
+
+    <p class="tl-footnote">迭代规则：新资料先核对化学对象与作者，再核对命题、条件和引用用途；对最接近先行工作登记检索库、检索式、日期、全文可得性与正反证据；只有专业复核确认具体缺口，才提出科学计算任务。尚无本平台新量子化学计算或获确认的新化学发现；公开检索未检出不能写成前所未有；没有同条件检验，不能把现代其他底物或反应体系的机制直接套回1966年。</p>
+  </div>
+</section>
+
+<section id="team-follow-up-1980"><div class="wrap"><div class="sec-head"><h2>团队后续研究：1980 年偏氟乙烯调聚</h2><p>同一碘化物，不同的反应问题</p></div><p>1980 年，陈庆云、马振中、蒋锡夔、张元发、贾世茂将全氟叔丁基碘用于偏氟乙烯的自由基调聚，并考察四氯化碳体系，比较产物结构和加成位置。馆藏书目与摘要可查；公开馆藏转录中的结构式仍须回刊本核对。〔<a href="../index.html#source-cq-h13">CQ-H13</a>〕</p><p>这是同一化合物上的团队后续原始研究。1966 年所讨论的亲卤解释与 1980 年自由基调聚各有对象和条件；该记录<strong>不增加独立引文计数</strong>，也不提供对 1966 年机理或其光谱数据的独立复核。〔<a href="../index.html#source-pf01">PF01</a>、<a href="../index.html#source-cq-h13">CQ-H13</a>〕</p><p><a href="../topics/fluoromonomers/index.html#record-fluorinated-oils">返回氟材料与调聚档案</a></p></div></section>
+
+<!-- ============ 来源与边界 ============ -->
+<section id="sources">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>来源与边界</h2>
+      <p>七条核定来源按类别分组。来源面板中的转述均标为本专题摘要，不伪装为原文逐字引语；外部原文若失效，页面仍保留题名、出处、页码与核验状态。</p>
+    </div>
+
+    <div class="policy-box">
+      <strong>计数口径：</strong>已核实的直接引文为 <strong>4 篇下限</strong>（PF30、PF31、PF07、PF08），并非全球引用总量；其中2005年 PF31 为成组引文，仅列附录。1967年题录不计入；1992年三处语境仍为一篇。本页不提供总引用量、影响力分数或全球排名。
+    </div>
+
+    <div class="search-box js-only">
+      <label for="q-search">材料内检索（可选增强）</label>
+      <p class="scope">检索范围仅限本页核定材料：章节标题与字段、引文语境、研究问题、七条来源的书目信息。不调用生成模型，不检索互联网。</p>
+      <input type="search" id="q-search" placeholder="例如：二乙胺、诱导效应、Scientia、[5a]" autocomplete="off">
+      <ul class="search-results" id="search-results" aria-live="polite"></ul>
+    </div>
+
+    <div class="src-group">
+      <h3>原始研究（1篇）</h3>
+      <article class="src-card" data-source-card="PF01">
+        <span class="src-id"><a href="../index.html#source-pf01">PF01</a> · 1966 · original</span>
+        <h4>全氟和多氟型有机化合物的化学特性——全氟叔丁基碘以及全氟烷基的诱导效应顺序</h4>
+        <p class="src-meta">陈庆云、蒋锡夔、陈秉启、梁梦兰．化学学报 32(1)，18–25．</p>
+        <p class="src-loc">定位：第18–21、24–25页</p>
+        <span class="src-v">核验：原始论文相关段落已核</span>
+        <div class="src-actions">
+          <a class="src-link" href="https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18" target="_blank" rel="noopener noreferrer">原论文期刊入口（新标签页）</a>
+          <button type="button" class="mini-btn js-only" data-copy-source="PF01">复制完整书目信息</button>
+        </div>
+      </article>
+    </div>
+
+    <div class="src-group">
+      <h3>书目与传播记录（2条，不计科研引用）</h3>
+      <article class="src-card" data-source-card="PF28">
+        <span class="src-id">PF28 · 1966 · bibliographic</span>
+        <h4>Perfluoro-t-Butyl Iodide and the Inductive Order of Perfluoroalkyl Groups</h4>
+        <p class="src-meta">C.-Y. Chen, H.-K. Jiang, B.-Q. Chen, M.-L. Liang．Scientia Sinica 15，498–506．</p>
+        <p class="src-loc">定位：见1967年题录</p>
+        <span class="src-v is-wait">核验：英文全文对应待核</span>
+        <div class="src-actions">
+          <a class="src-link" href="https://ismar.org/wp-content/uploads/TAMU/1967/TAMU-NMR-Newsletter-105-June-1967.pdf" target="_blank" rel="noopener noreferrer">1967年题录证据（新标签页）</a>
+          <button type="button" class="mini-btn js-only" data-copy-source="PF28">复制完整书目信息</button>
+        </div>
+      </article>
+      <article class="src-card" data-source-card="PF29">
+        <span class="src-id">PF29 · 1967 · bibliographic</span>
+        <h4>IIT NMR Newsletter, No.105, June 1967：PFtB论文题录</h4>
+        <p class="src-meta">IIT NMR Newsletter（编者）．IIT NMR Newsletter No.105．</p>
+        <p class="src-loc">定位：PDF第43页文献目录</p>
+        <span class="src-v">核验：题录已核 · 不算科研引用</span>
+        <div class="src-actions">
+          <a class="src-link" href="https://ismar.org/wp-content/uploads/TAMU/1967/TAMU-NMR-Newsletter-105-June-1967.pdf" target="_blank" rel="noopener noreferrer">通讯档案（新标签页）</a>
+          <button type="button" class="mini-btn js-only" data-copy-source="PF29">复制完整书目信息</button>
+        </div>
+      </article>
+    </div>
+
+    <div class="src-group">
+      <h3>主线直接引文（3篇）</h3>
+      <article class="src-card" data-source-card="PF30">
+        <span class="src-id">PF30 · 1992 · direct</span>
+        <h4>Iodoperfluoroalkanes</h4>
+        <p class="src-meta">L. E. Deev, T. I. Nazarenko, K. I. Pashkevich, V. G. Ponomarev．Russian Chemical Reviews 61(1)，40–54．DOI: 10.1070/RC1992v061n01ABEH000930</p>
+        <p class="src-loc">定位：英译刊第42、44、48页；参考文献[84]（三处语境，同一篇）</p>
+        <span class="src-v">核验：三处引文语境已核 · 同一篇</span>
+        <div class="src-actions">
+          <a class="src-link" href="https://www.russchemrev.org/RCR930pdf" target="_blank" rel="noopener noreferrer">综述原文入口（新标签页）</a>
+          <button type="button" class="mini-btn js-only" data-copy-source="PF30">复制完整书目信息</button>
+        </div>
+      </article>
+      <article class="src-card" data-source-card="PF07">
+        <span class="src-id">PF07 · 2021 · direct</span>
+        <h4>Fluorination Triggers Fluoroalkylation: Nucleophilic Perfluoro-tert-butylation with 1,1-Dibromo-2,2-bis(trifluoromethyl)ethylene (DBBF) and CsF</h4>
+        <p class="src-meta">Qian Wang, Quan Tao, Hui Dong, Chuanfa Ni, Xiaoming Xie, Jinbo Hu．Angewandte Chemie International Edition 60，27318–27323．DOI: 10.1002/anie.202113727</p>
+        <p class="src-loc">定位：第27318页[5]及参考文献[5a]</p>
+        <span class="src-v">核验：直接引文及用途已核</span>
+        <div class="src-actions">
+          <a class="src-link" href="https://doi.org/10.1002/anie.202113727" target="_blank" rel="noopener noreferrer">出版社入口（新标签页）</a>
+          <button type="button" class="mini-btn js-only" data-copy-source="PF07">复制完整书目信息</button>
+        </div>
+      </article>
+      <article class="src-card" data-source-card="PF08">
+        <span class="src-id">PF08 · 2022 · direct</span>
+        <h4>Regioselective Aromatic Perfluoro-tert-butylation Using Perfluoro-tert-butyl Phenyl Sulfone and Arynes</h4>
+        <p class="src-meta">Zhiqiang Wei, Lixian Wen, Kaidi Zhu, Qian Wang, Yanchuan Zhao, Jinbo Hu．Journal of the American Chemical Society 144，22281–22288．DOI: 10.1021/jacs.2c10479</p>
+        <p class="src-loc">定位：第22281页[7]和第22287页[7a]</p>
+        <span class="src-v">核验：直接引文及用途已核</span>
+        <div class="src-actions">
+          <a class="src-link" href="https://pubs.acs.org/doi/10.1021/jacs.2c10479" target="_blank" rel="noopener noreferrer">出版社入口（新标签页）</a>
+          <button type="button" class="mini-btn js-only" data-copy-source="PF08">复制完整书目信息</button>
+        </div>
+      </article>
+    </div>
+
+    <div class="src-group">
+      <h3>引证附录（1篇，成组引文）</h3>
+      <article class="src-card" data-source-card="PF31">
+        <span class="src-id">PF31 · 2005 · appendix</span>
+        <h4>EPR studies on H-abstraction from p-substituted benzaldehydes by new “Magic Blue” reagents and correlation analysis of aN values of ω-fluorosulfonylperfluoroalkyl p-substituted benzoyl nitroxides</h4>
+        <p class="src-meta">Hong-Yan Dou, Jun-Hua Dong, Hai-Ying He, Cheng-Xue Zhao, Kao Li-Chuin, Tahsin J. Chow．Journal of Fluorine Chemistry 126(3)，333–338．DOI: 10.1016/j.jfluchem.2004.12.007</p>
+        <p class="src-loc">定位：第336页[22,23]及[22a]</p>
+        <span class="src-v is-wait">核验：成组引文已核 · 具体参数归属未定</span>
+        <div class="src-actions">
+          <a class="src-link" href="https://doi.org/10.1016/j.jfluchem.2004.12.007" target="_blank" rel="noopener noreferrer">出版社入口（新标签页）</a>
+          <button type="button" class="mini-btn js-only" data-copy-source="PF31">复制完整书目信息</button>
+        </div>
+      </article>
+    </div>
+
+    <div class="boundary-grid">
+      <div class="boundary-col">
+        <h3>本期不收录（范围冻结）</h3>
+        <ul>
+          <li>MRI应用、激光应用、聚合物与溶剂应用</li>
+          <li>F53、氟利昂、陈试剂、含氟酮独立专题</li>
+          <li>2005文献的 EPR 研究内容</li>
+          <li>已完成的光谱数据复分析成果</li>
+          <li>实时AI问答、在线量子计算</li>
+          <li>待核文献当作确认引用（如1988候选）</li>
+          <li>全球完整引用总量、影响力分数或排名</li>
+          <li>虚构照片、生成式化学结构与未授权肖像</li>
+        </ul>
+      </div>
+      <div class="boundary-col">
+        <h3>归属与发现边界</h3>
+        <ul>
+          <li>原始与后续成果分别归属各原论文作者；AI整理不改变成果归属。</li>
+          <li>2021、2022年的方法贡献归属于各论文作者，不归为陈先生成果。</li>
+          <li>尚无获确认的新化学发现；公开检索未检出不等于前所未有。</li>
+          <li>不同底物或反应体系的现代机制，无同条件检验不得套回1966年。</li>
+          <li>版权：链接原始文献，仅使用原创摘要与自绘示意，不随站点分发论文整页扫描或完整PDF。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="boundary-statements">
+      <p>新检索材料先列入待核清单，经化学对象、作者、命题、条件与引用用途复核后，方可进入公开内容；每次修订显示内容版本与简短变更说明。</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="ver">
+      <span>内容版本 2026-11-03.1</span>
+      <span>数据模式 schema 1.0.0</span>
+      <span>证据登记表 0.1.6</span>
+      <span>核定日期 2026-11-03</span>
+    </div>
+    <p>“陈庆云院士团队的 PFtB 早期研究”首版静态页面：无账号、无数据库、无分析跟踪、无外部模型密钥、无访客上传。页面字体使用系统字体，化学式为语义化上下标与自绘SVG示意，不依赖任何外网资源。</p>
+  </div>
+</footer>
+
+<!-- 来源/语境详情弹窗（无脚本时不显示；同等信息已在正文完整给出） -->
+<div class="modal-backdrop" id="modal-backdrop" hidden="">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+    <h3 id="modal-title"></h3>
+    <p class="m-kind" id="modal-kind"></p>
+    <dl id="modal-body"></dl>
+    <div class="modal-actions">
+      <button type="button" class="btn btn-primary" id="modal-copy">复制完整书目/定位文本</button>
+      <a class="src-link" id="modal-link" target="_blank" rel="noopener noreferrer" hidden="">打开已核链接（新标签页）</a>
+      <button type="button" class="btn btn-ghost" id="modal-close">关闭</button>
+      <span class="copy-ok" id="copy-ok" hidden="">已复制完整纯文本。</span>
+    </div>
+    <div class="copy-fallback" id="copy-fallback" hidden="">
+      <textarea readonly="" id="copy-text"></textarea>
+      <p>剪贴板在当前环境不可用，未提示虚假成功；请手动全选上方文本复制。</p>
+    </div>
+  </div>
+</div>
+
+<!-- 唯一核定内容源（与 data/site-content.json 逐字一致，构建时内嵌，浏览器不运行时fetch本地JSON） -->
+<script type="application/json" id="site-data">
+{"schema_version":"1.0.0","content_version":"2026-11-03.1","language":"zh-CN","provenance":{"register_revision":"0.1.6","freeze_date":"2026-11-03","public_subset":true},"site":{"project_name":"陈庆云院士团队的 PFtB 早期研究","title":"陈庆云院士团队的 PFtB 早期研究","subtitle":"原始贡献、证据与学术回响","eyebrow":"原始贡献、证据与学术回响","hero_question":"陈庆云团队当年提出了什么，后续研究如何回应？","intro":"从1966年的原始论文出发，重建结构确认、特殊反应行为与电子效应的论证，逐处查看后续文献如何采用和评议这些命题。","credit":"1966年原始论文作者：陈庆云、蒋锡夔、陈秉启、梁梦兰。","primary_cta":{"text":"进入原始论证","href":"#arguments"},"secondary_cta":{"text":"追踪学术回响","href":"#reception"},"status":"本专题展示已核定资料及待核问题；尚无本平台新量子化学计算或获确认的新化学发现。","scope_note":"本期围绕陈庆云团队的PFtB早期研究展开。相关成果归属于各原论文作者。","nav":[{"text":"原始贡献","href":"#contribution"},{"text":"论证细读","href":"#arguments"},{"text":"学术回响","href":"#reception"},{"text":"研究问题","href":"#questions"},{"text":"来源与边界","href":"#sources"}]},"entities":[{"id":"E01","label":"全氟叔丁基","formula_text":"–C(CF3)3","kind":"基团","boundary":"表示连接到其他原子或基团的取代基。"},{"id":"E02","label":"全氟叔丁基碘","formula_text":"(CF3)3C–I","kind":"中性化合物","boundary":"1966论文研究对象之一；不得与阴离子混同。"},{"id":"E03","label":"全氟叔丁基阴离子","formula_text":"(CF3)3C−","kind":"阴离子","boundary":"原文讨论中的推断对象；1966年没有直接观测到游离阴离子。"}],"chapters":[{"id":"T01","title":"结构确认与既有方法","question":"作者怎样确认研究对象，又如何交代方法来源？","source_ids":["PF01"],"locator":"第18–19、24–25页","observation":"原文结合元素分析、光谱和反应证据确认化合物身份，并引用Krespan的既有制备方法。","interpretation":"本项贡献需要从结构证据与化学性质研究中具体辨认。","conditions":"分开记录既有方法、作者开展的研究及其论证。","boundary":"不称1966年论文为PFtBI或PFtB的世界首次合成；不公开制备操作细节。","reception_context_ids":["R92A"]},{"id":"T02","title":"特殊反应行为与机理解释","question":"产物证据支持怎样的解释，哪些路径仍有余地？","source_ids":["PF01"],"locator":"第19–20页，式(3)、式(3′)及页脚讨论","observation":"作者根据所研究反应的产物及相关证据讨论对卤原子进攻。","interpretation":"亲卤进攻和有关中间体是作者用于解释反应的机理层次。","conditions":"保留式(3)与式(3′)的区别，以及页脚提出的一步过程可能性。","boundary":"产物对应不等于路径唯一；不能写成当时已直接观测游离PFtB阴离子。","reception_context_ids":["R92B","R92C"]},{"id":"T03","title":"电子效应的论据与限制","question":"完整诱导效应顺序是怎样提出的，实测范围在哪里？","source_ids":["PF01"],"locator":"第20–21页，表1、式(10)及相关脚注","observation":"原文表1实际比较三种碘代物的相关光谱数据，并讨论氟取代效应的非加和性。","interpretation":"作者据此及相关化学论据提出全氟烷基诱导效应顺序，并作出有条件的阴离子相对稳定性推断。","conditions":"三种实测碘代物为n-C3F7I、i-C3F7I和t-C4F9I；完整四基团排序含外推层次。原文已讨论位阻、溶剂化及共轭体系限制。","boundary":"不称四个基团均已直接测定，不把顺序写成适用于所有体系的常数；原始光谱仅作历史论据。","proposed_order_text":"–C(CF3)3 > –CF(CF3)2 > –CF2CF3 > –CF3","order_caption":"1966年作者提出的诱导效应顺序，需结合原文论证与适用限制理解。","reception_context_ids":["R21A"]},{"id":"T04","title":"直接引文中的采用与评议","question":"后续作者引用了什么，引用本身又不能证明什么？","source_ids":["PF30","PF07","PF08"],"locator":"各引文位置见学术回响","observation":"已核材料中，1992年综述有三处具体语境，2021年与2022年论文分别用于性质判断和历史路线背景。","interpretation":"国际可见性需要通过具体命题、引用位置和评价语气来呈现。","conditions":"同一文献多处引用只计一篇；国际期刊发表、境外题录与境外学术评述分别标注。","boundary":"引用不等于全面认可、独立验证或后续方法的因果传承。2005年成组引文放入附录。","reception_context_ids":["R92A","R92B","R92C","R21A","R22A"]}],"reception_contexts":[{"id":"R92A","source_id":"PF30","year":1992,"type":"历史路线背景","label":"合成背景中的早期工作","locator":"英译刊第42页，参考文献[82–84]；[84]为陈庆云等1966文","meaning":"综述把该研究列入早期制备背景的成组文献。","boundary":"组引文不能把整个方法或优先权独占归于陈庆云团队。"},{"id":"R92B","source_id":"PF30","year":1992,"type":"机理评议","label":"反应解释的再讨论","locator":"英译刊第44页，参考文献[22,84,131]","meaning":"综述在讨论离子、自由基或自由基阴离子解释的语境中引用原始工作。","boundary":"这是一般性机理评议，不能据此宣布陈先生某项特定反应的机理已被实验推翻。"},{"id":"R92C","source_id":"PF30","year":1992,"type":"具体反应","label":"PFtBI与二乙胺反应","locator":"英译刊第48页，参考文献[84]","meaning":"综述保留了原工作中的一项具体反应讨论。","boundary":"本条与1992年另外两处语境属于同一篇综述。"},{"id":"R21A","source_id":"PF07","year":2021,"type":"性质判断","label":"电子性质判断的回引","locator":"第27318页正文[5]，参考文献[5a]为陈庆云等；同组含[5b]","meaning":"论文在PFtB比CF3具有更强吸电子性质的论述中直接回引1966年研究。","boundary":"不能扩展为完整四基团顺序获独立验证。[11]的1966年早期应用引文不属于陈庆云；后续新方法属于2021年作者。"},{"id":"R22A","source_id":"PF08","year":2022,"type":"历史路线背景","label":"历史方法背景的回引","locator":"第22281页正文[7]，第22287页参考文献[7a]","meaning":"论文在早期方法受限的历史背景中引用陈庆云团队1966年研究。","boundary":"不据此将2022年芳炔方法归属于陈先生，也不称其全面验证1966年全部理论。"}],"historical_events":[{"id":"H66","year":1966,"source_id":"PF01","label":"原始论文发表","kind":"原始研究","detail":"化学学报32(1)，18–25。投稿日期1964-09-07；网页2013年日期不作发表时间。"},{"id":"H66E","year":1966,"source_id":"PF28","label":"英文书目记录","kind":"书目对应待核","detail":"Scientia Sinica 15，498–506。已有题名与四作者书目线索，英文原文刊载对应仍待核；不重复计为另一项原创成果。"},{"id":"H67","year":1967,"source_id":"PF29","label":"境外通讯题录收录","kind":"传播记录","detail":"IIT NMR Newsletter第105期文献目录，PDF第43页。题录收录不算科研引用。"}],"citation_appendix":[{"source_id":"PF31","label":"2005年成组引文","locator":"第336页正文[22,23]；参考文献[22a]","meaning":"参考文献[22a]直接列出陈庆云等1966年英文书目；[22]还包含另外两篇文献。","boundary":"不能把单个参数来源直接判给[22a]；仅作引证附录，不展开EPR研究内容，也不作为独立PFtB应用成就。"}],"counting_policy":{"confirmed_direct_citing_publications_lower_bound":4,"confirmed_direct_source_ids":["PF30","PF31","PF07","PF08"],"main_reception_source_ids":["PF30","PF07","PF08"],"note":"4篇是截至资料核定日期已核实的直接引文下限，并非全球引用总量。其中2005年成组引文仅列附录。1967年题录不计入；1992年三处语境仍为一篇。","display_rule":"不做总引用量或影响力排名大数字卡；计数说明仅放来源与边界区。"},"ai_work":[{"id":"A01","title":"重建原始论证","method":"AI协助拆分观察、解释、假设与限制；人工逐项核对化学式、脚注及页码。","output":"带来源定位的论证卡。","status":"资料与方法工作"},{"id":"A02","title":"对齐被引命题","method":"AI协助识别后续引文的对象、语气和范围变化，保留原作者归属。","output":"原始命题与后续引文的对照。","status":"引证语义整理"},{"id":"A03","title":"形成精确查新问题","method":"先查同一对象、同一命题及接近条件的先行研究，确认缺口后再决定科学计算。","output":"带检索范围与待核事项的问题档案。","status":"待查新 不宣称空白"}],"questions":[{"id":"Q01","title":"原文备选机理是否已有同体系辨析","origin":"PF01第19–20页式(3)、式(3′)及页脚一步过程讨论。","question":"是否已有针对同一底物、反应对象和接近条件的后续研究，能区分原文保留的路径？","status":"待查新","next_evidence":"先核对最接近的原始文献及反应条件；没有完成前不设定新计算课题。","not_claim":"不能表述为尚无人研究或本平台首次提出。"},{"id":"Q02","title":"现代回引采用了性质还是完整排序","origin":"PF01第20–21页与PF07第27318页正文[5]。","question":"后续作者使用的是PFtB与CF3的定性比较，还是对原始完整排序进行了独立检验？","status":"待核查","next_evidence":"逐篇对齐被引句、测量对象、条件和数据；区分回引与新验证。","not_claim":"当前材料不能证明完整排序已被现代研究全面验证。"},{"id":"Q03","title":"英文刊载与早期传播链怎样对应","origin":"PF01、PF28及PF29。","question":"取得Scientia Sinica原文后，怎样核对两刊的内容对应、页码和后续引用入口？","status":"待取原文","next_evidence":"核对英文全文与1967年题录；不重复计成果或引用。","not_claim":"这是文献核对问题，不是新的化学发现。"}],"sources":[{"id":"PF01","year":1966,"authors":["陈庆云","蒋锡夔","陈秉启","梁梦兰"],"title":"全氟和多氟型有机化合物的化学特性——全氟叔丁基碘以及全氟烷基的诱导效应顺序","journal":"化学学报 32(1),18–25","doi":null,"url":"https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18","role":"original","locator":"第18–21、24–25页","verification_note":"原始论文相关段落已核","link_label":"原论文期刊入口"},{"id":"PF28","year":1966,"authors":["C.-Y. Chen","H.-K. Jiang","B.-Q. Chen","M.-L. Liang"],"title":"Perfluoro-t-Butyl Iodide and the Inductive Order of Perfluoroalkyl Groups","journal":"Scientia Sinica 15,498–506","doi":null,"url":"https://ismar.org/wp-content/uploads/TAMU/1967/TAMU-NMR-Newsletter-105-June-1967.pdf","role":"bibliographic","locator":"见1967年题录","verification_note":"英文全文对应待核","link_label":"1967年题录证据"},{"id":"PF29","year":1967,"authors":["IIT NMR Newsletter（编者）"],"title":"IIT NMR Newsletter, No.105, June 1967：PFtB论文题录","journal":"IIT NMR Newsletter No.105","doi":null,"url":"https://ismar.org/wp-content/uploads/TAMU/1967/TAMU-NMR-Newsletter-105-June-1967.pdf","role":"bibliographic","locator":"PDF第43页文献目录","verification_note":"题录已核 不算科研引用","link_label":"通讯档案"},{"id":"PF30","year":1992,"authors":["L. E. Deev","T. I. Nazarenko","K. I. Pashkevich","V. G. Ponomarev"],"title":"Iodoperfluoroalkanes","journal":"Russian Chemical Reviews 61(1),40–54","doi":"10.1070/RC1992v061n01ABEH000930","url":"https://www.russchemrev.org/RCR930pdf","role":"direct","locator":"英译刊第42、44、48页；参考文献[84]","verification_note":"三处引文语境已核 同一篇","link_label":"综述原文"},{"id":"PF07","year":2021,"authors":["Qian Wang","Quan Tao","Hui Dong","Chuanfa Ni","Xiaoming Xie","Jinbo Hu"],"title":"Fluorination Triggers Fluoroalkylation: Nucleophilic Perfluoro-tert-butylation with 1,1-Dibromo-2,2-bis(trifluoromethyl)ethylene (DBBF) and CsF","journal":"Angewandte Chemie International Edition 60,27318–27323","doi":"10.1002/anie.202113727","url":"https://doi.org/10.1002/anie.202113727","role":"direct","locator":"第27318页[5]及参考文献[5a]","verification_note":"直接引文及用途已核","link_label":"出版社入口"},{"id":"PF08","year":2022,"authors":["Zhiqiang Wei","Lixian Wen","Kaidi Zhu","Qian Wang","Yanchuan Zhao","Jinbo Hu"],"title":"Regioselective Aromatic Perfluoro-tert-butylation Using Perfluoro-tert-butyl Phenyl Sulfone and Arynes","journal":"Journal of the American Chemical Society 144,22281–22288","doi":"10.1021/jacs.2c10479","url":"https://pubs.acs.org/doi/10.1021/jacs.2c10479","role":"direct","locator":"第22281页[7]和第22287页[7a]","verification_note":"直接引文及用途已核","link_label":"出版社入口"},{"id":"PF31","year":2005,"authors":["Hong-Yan Dou","Jun-Hua Dong","Hai-Ying He","Cheng-Xue Zhao","Kao Li-Chuin","Tahsin J. Chow"],"title":"EPR studies on H-abstraction from p-substituted benzaldehydes by new “Magic Blue” reagents and correlation analysis of aN values of ω-fluorosulfonylperfluoroalkyl p-substituted benzoyl nitroxides","journal":"Journal of Fluorine Chemistry 126(3),333–338","doi":"10.1016/j.jfluchem.2004.12.007","url":"https://doi.org/10.1016/j.jfluchem.2004.12.007","role":"appendix","locator":"第336页[22,23]及[22a]","verification_note":"成组引文已核 具体参数归属未定","link_label":"出版社入口"}],"publication_rules":{"omit_topics":["MRI应用","激光应用","聚合物与溶剂应用","F53","氟利昂","陈试剂","含氟酮独立专题","EPR研究内容"],"omit_features":["已完成的光谱数据复分析","实时AI问答","在线量子计算","待核文献当作确认引用","全球完整引用总量或排名","虚构照片与生成式化学结构"],"ownership":"原始与后续成果分别归属各原论文作者；AI整理不改变成果归属。","novelty":"尚无获确认的新化学发现；公开检索未检出不等于前所未有。","rights":"链接原始文献；仅使用原创摘要和自行核验绘制的示意图，不打包原论文整页扫描或完整PDF。"}}
+</script>
+
+<script>
+(function(){
+  'use strict';
+  var DATA;
+  try{ DATA = JSON.parse(document.getElementById('site-data').textContent); }
+  catch(e){ console.error('核定数据解析失败', e); return; }
+  var sources = {}; DATA.sources.forEach(function(s){ sources[s.id]=s; });
+  var contexts = {}; DATA.reception_contexts.forEach(function(c){ contexts[c.id]=c; });
+  var chapters = {}; DATA.chapters.forEach(function(c){ chapters[c.id]=c; });
+
+  function $(sel, root){ return (root||document).querySelector(sel); }
+  function $all(sel, root){ return Array.prototype.slice.call((root||document).querySelectorAll(sel)); }
+
+  /* ---------- 章节 / 字段视图（状态优先保存在内存；可用时同步URL，支持刷新与前进后退） ---------- */
+  var state = { ch:'T01', view:'all', ctx92:'R92A' };
+  var historyOk = true; // 受限沙盒（如 about:srcdoc）禁止构造历史时降级为纯内存状态
+
+  function parseHash(){
+    var m = /#s\/([A-Z]\d+)\/([a-z]+)(?:\/([A-Z]\d+[A-Z]?))?/.exec(location.hash||'');
+    if(m){ state.ch=m[1]; state.view=m[2]; if(m[3]) state.ctx92=m[3]; return true; }
+    return false;
+  }
+  // 仅作“增强”：任何历史写入失败都不得中断渲染或后续事件绑定
+  function writeHash(push){
+    if(!historyOk) return;
+    var h = '#s/'+state.ch+'/'+state.view+'/'+state.ctx92;
+    try{
+      if(location.hash === h) return;
+      if(push){ history.pushState(null,'',h); } else { history.replaceState(null,'',h); }
+    }catch(err){ historyOk = false; }
+  }
+  // 仅滚动定位，不改写状态片段，避免覆盖 #s/... 造成刷新丢状态
+  function scrollToId(id){
+    var el = document.getElementById(id);
+    if(el){ el.scrollIntoView({behavior:'smooth',block:'start'}); }
+  }
+
+  function renderChapter(){
+    $all('.tab-btn').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.chapter===state.ch ? 'true':'false'); });
+    $all('.chapter-panel').forEach(function(p){ p.hidden = (p.dataset.chapterPanel!==state.ch); });
+    $all('.view-btn').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.view===state.view ? 'true':'false'); });
+    var panel = $('.chapter-panel[data-chapter-panel="'+state.ch+'"]');
+    if(panel){
+      $all('.field', panel).forEach(function(f){
+        f.hidden = !(state.view==='all' || f.dataset.field===state.view);
+      });
+    }
+  }
+  function renderCtx92(){
+    $all('.ctx-tab').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.ctx92===state.ctx92?'true':'false'); });
+    $all('[data-ctx-card]').forEach(function(c){
+      if(c.dataset.ctxCard==='R92A'||c.dataset.ctxCard==='R92B'||c.dataset.ctxCard==='R92C'){
+        c.hidden = (c.dataset.ctxCard!==state.ctx92);
+      }
+    });
+  }
+  function renderAll(){ renderChapter(); renderCtx92(); }
+
+  $all('.tab-btn').forEach(function(b){
+    b.addEventListener('click', function(){ state.ch=b.dataset.chapter; renderChapter(); writeHash(true); });
+  });
+  $all('.view-btn').forEach(function(b){
+    b.addEventListener('click', function(){ state.view=b.dataset.view; renderChapter(); writeHash(true); });
+  });
+  $all('.ctx-tab').forEach(function(b){
+    b.addEventListener('click', function(){ state.ctx92=b.dataset.ctx92; renderCtx92(); writeHash(true); });
+  });
+  $all('[data-goto-chapter]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      state.ch = a.dataset.gotoChapter; state.view='all';
+      renderChapter(); writeHash(true);
+      scrollToId('arguments');
+    });
+  });
+  window.addEventListener('popstate', function(){ if(parseHash()) renderAll(); });
+  window.addEventListener('hashchange', function(){ if(parseHash()) renderAll(); });
+
+  // 普通导航/CTA/品牌等页内锚点：默认跳转会把地址改成裸 #arguments 而冲掉 #s/...（R02残留）。
+  // 统一改为“保留当前章节状态写入历史 + 手动滚动到锚点”，刷新/前进后退不丢章节。
+  document.addEventListener('click', function(e){
+    var a = e.target.closest ? e.target.closest('a[href^="#"]') : null;
+    if(!a) return;
+    // 这些锚点已有专属处理（章节卡、来源/语境弹窗），不重复拦截
+    if(a.closest('[data-goto-chapter],[data-source-open],[data-context]')) return;
+    var id = a.getAttribute('href').slice(1);
+    if(!id || !document.getElementById(id)) return;
+    e.preventDefault();
+    writeHash(true);          // 持久化当前 ch/view/ctx92（历史受限时自动降级为内存状态）
+    scrollToId(id);           // 仅滚动，scroll-margin 负责避开固定导航
+    if(id==='main'){ var mn=document.getElementById('main'); if(mn) mn.focus(); }
+  });
+
+  var initialAnchor = /^(#arguments|#reception|#sources|#team-follow-up-1980)$/.test(location.hash) ? location.hash.slice(1) : null;
+  parseHash(); renderAll();
+  if(initialAnchor){ requestAnimationFrame(function(){ scrollToId(initialAnchor); }); }
+  else { writeHash(false); }
+
+  /* ---------- 模态弹窗：来源 / 语境（焦点限制、Esc、焦点返回） ---------- */
+  var backdrop = $('#modal-backdrop'), modal = $('.modal'), title = $('#modal-title'),
+      kind = $('#modal-kind'), body = $('#modal-body'), link = $('#modal-link'),
+      copyBtn=$('#modal-copy'), copyOk=$('#copy-ok'),
+      fallback=$('#copy-fallback'), copyText=$('#copy-text');
+  var lastOpener = null, currentCopyText = '';
+
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+  function dt(k, v, isBound){ return '<dt>'+esc(k)+'</dt><dd'+(isBound?' class="m-bound"':'')+'>'+v+'</dd>'; }
+
+  function citationOf(s){
+    var t = s.authors.join('，') + '．' + s.title + '．' + s.journal + '（' + s.year + '）．';
+    if(s.doi) t += 'DOI: ' + s.doi + '．';
+    t += '定位：' + s.locator + '．';
+    if(s.url) t += 'URL: ' + s.url;
+    return t;
+  }
+
+  function focusableInModal(){
+    return $all('button, a[href], textarea, input', modal).filter(function(n){
+      if(n.disabled || n.hidden) return false;
+      if(n.offsetParent===null && n.getClientRects().length===0) return false;
+      return true;
+    });
+  }
+
+  function openModal(opener){
+    lastOpener = opener || document.activeElement;
+    fallback.hidden = true; copyOk.hidden = true;
+    backdrop.hidden = false;
+    // 背景 inert：旧浏览器不支持时由焦点回绕兜底
+    setBackgroundInert(true);
+    document.body.style.overflow = 'hidden';
+    var f = focusableInModal();
+    if(f.length){ f[0].focus(); } else { modal.focus(); } // 打开即聚焦首个控件，避免容器焦点导致 Shift+Tab 逃逸
+  }
+  function closeModal(){
+    backdrop.hidden = true;
+    setBackgroundInert(false);
+    document.body.style.overflow = '';
+    if(lastOpener && typeof lastOpener.focus==='function'){ lastOpener.focus(); }
+  }
+  // 打开弹窗时让背景内容不可 Tab 到达（支持 inert 的浏览器）
+  function setBackgroundInert(on){
+    try{
+      $all('body > *').forEach(function(n){
+        if(n===backdrop) return;
+        if(on){ n.setAttribute('data-prev-inert', n.hasAttribute('inert')?'1':'0'); n.setAttribute('inert',''); }
+        else if(n.getAttribute('data-prev-inert')==='0'){ n.removeAttribute('inert'); }
+      });
+    }catch(e){ /* inert 不可用时忽略，焦点回绕仍生效 */ }
+  }
+
+  function openSource(id, opener){
+    var s = sources[id]; if(!s) return;
+    title.textContent = s.title;
+    kind.textContent = '来源 '+s.id+' · '+s.year+' · '+({original:'原始研究',direct:'主线直接引文',bibliographic:'书目/传播记录',appendix:'引证附录'})[s.role];
+    body.innerHTML =
+      dt('作者', esc(s.authors.join('、'))) +
+      dt('出处', esc(s.journal)) +
+      dt('页码 / 引文号', esc(s.locator)) +
+      dt('核验状态', esc(s.verification_note)) +
+      dt('说明', '本面板中的转述均为<strong>本专题摘要</strong>，非原文逐字引语。', false) +
+      (s.role==='bibliographic' ? dt('注意','英文全文对应待核时，该链接为题录证据。',false) : '');
+    if(s.url){ link.hidden=false; link.href=s.url; link.textContent=(s.link_label||'已核链接')+'（新标签页）'; }
+    else { link.hidden=true; }
+    currentCopyText = citationOf(s);
+    copyText.value = currentCopyText;
+    openModal(opener);
+  }
+
+  function openContext(id, opener){
+    var c = contexts[id]; if(!c) return;
+    var s = sources[c.source_id];
+    title.textContent = c.year + '年引文语境：' + c.label;
+    kind.textContent = c.id + ' · ' + c.type + ' · 来源 ' + c.source_id;
+    body.innerHTML =
+      dt('文献', esc(s ? s.authors.join('、')+'：'+s.title+'（'+s.journal+'）' : c.source_id)) +
+      dt('具体定位', esc(c.locator)) +
+      dt('实际用途（本专题摘要）', esc(c.meaning)) +
+      dt('边界', esc(c.boundary), true);
+    link.hidden=false; link.href=s.url; link.textContent='打开该文献已核链接（新标签页）';
+    currentCopyText = '['+c.id+'] '+c.year+'年引文语境（'+c.type+'）：'+c.label+'。\n'
+      + '文献：'+(s ? s.authors.join('，')+'．'+s.title+'．'+s.journal+'（'+s.year+'）'+(s.doi?('．DOI: '+s.doi):'') : c.source_id)+'。\n'
+      + '具体定位：'+c.locator+'。\n实际用途（本专题摘要）：'+c.meaning+'\n边界：'+c.boundary
+      + (s&&s.url ? ('\nURL: '+s.url) : '');
+    copyText.value = currentCopyText;
+    openModal(opener);
+  }
+
+  $('#modal-close').addEventListener('click', closeModal);
+  backdrop.addEventListener('click', function(e){ if(e.target===backdrop) closeModal(); });
+  document.addEventListener('keydown', function(e){
+    if(backdrop.hidden) return;
+    if(e.key==='Escape'){ closeModal(); return; }
+    if(e.key==='Tab'){
+      var f = focusableInModal();
+      if(!f.length){ e.preventDefault(); modal.focus(); return; }
+      var first=f[0], last=f[f.length-1];
+      var ae = document.activeElement;
+      var inside = modal.contains(ae);
+      // 焦点在容器本身或已跑到弹窗外：打开即回收到边界控件
+      if(e.shiftKey && (ae===first || ae===modal || !inside)){ e.preventDefault(); last.focus(); }
+      else if(!e.shiftKey && (ae===last || !inside)){ e.preventDefault(); first.focus(); }
+    }
+  });
+
+  document.addEventListener('click', function(e){
+    var t = e.target.closest ? e.target : null;
+    if(!t) return;
+    var cp = t.closest('[data-copy-source]');
+    if(cp){ e.preventDefault(); openSource(cp.getAttribute('data-copy-source'), cp); return; }
+    var so = t.closest('[data-source-open]');
+    if(so){ e.preventDefault(); openSource(so.getAttribute('data-source-open'), so); return; }
+    var cc = t.closest('[data-context]');
+    if(cc){ e.preventDefault(); openContext(cc.getAttribute('data-context'), cc); return; }
+  });
+
+  /* ---------- 复制引用：剪贴板失败时给可选文本，不提示虚假成功 ---------- */
+  function showFallback(){
+    copyText.value = currentCopyText;
+    fallback.hidden = false;
+    copyOk.hidden = true;
+    copyText.focus(); copyText.select();
+  }
+  copyBtn.addEventListener('click', function(){
+    function ok(){ copyOk.hidden=false; fallback.hidden=true; setTimeout(function(){copyOk.hidden=true;},2500); }
+    function fail(){ showFallback(); }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(currentCopyText).then(ok).catch(function(){
+        try{ document.execCommand('copy'); } catch(_){}
+        /* 沙盒环境权限不确定：只要走了异常路径就展示手动备选，不谎报成功 */
+        showFallback();
+      });
+    } else {
+      try{ copyText.value=currentCopyText; fallback.hidden=false; copyText.focus(); copyText.select();
+           document.execCommand('copy'); showFallback(); } catch(_){ showFallback(); }
+    }
+  });
+
+  /* ---------- 材料内检索（仅核定材料，不联网、不生成） ---------- */
+  var searchInput = $('#q-search'), searchResults = $('#search-results');
+  var index = [];
+  DATA.chapters.forEach(function(c){
+    index.push({kind:'论证章节', title:c.id+' '+c.title, text:[c.question,c.observation,c.interpretation,c.conditions,c.boundary,c.locator].join(' '), act:function(){
+      state.ch=c.id; state.view='all'; renderChapter(); writeHash(true);
+      scrollToId('arguments'); // 仅滚动，保留 #s/... 状态，刷新不丢章节
+    }});
+  });
+  DATA.reception_contexts.forEach(function(c){
+    index.push({kind:'引文语境', title:c.year+' '+c.label, text:[c.type,c.locator,c.meaning,c.boundary].join(' '), act:function(btn){ openContext(c.id, btn); }});
+  });
+  DATA.questions.forEach(function(q){
+    index.push({kind:'研究问题', title:q.id+' '+q.title, text:[q.question,q.origin,q.status,q.next_evidence,q.not_claim].join(' '), act:function(){
+      var all = $all('.q-item'); var idx = DATA.questions.indexOf(q);
+      if(all[idx]){ all[idx].open=true; all[idx].scrollIntoView({behavior:'smooth',block:'center'}); }
+    }});
+  });
+  DATA.sources.forEach(function(s){
+    index.push({kind:'核定来源', title:s.id+' '+s.title, text:[s.authors.join(' '),s.journal,s.locator,s.verification_note].join(' '), act:function(btn){ openSource(s.id, btn); }});
+  });
+
+  searchInput.addEventListener('input', function(){
+    var q = searchInput.value.trim().toLowerCase();
+    searchResults.innerHTML='';
+    if(!q){ return; }
+    var hits = index.filter(function(it){ return it.title.toLowerCase().indexOf(q)>=0 || it.text.toLowerCase().indexOf(q)>=0; }).slice(0,12);
+    if(!hits.length){
+      searchResults.innerHTML = '<li class="sr-none">在本页核定材料（章节、语境、问题、七条来源）中未找到匹配项。检索不联网、不生成扩展答案；可更换关键词，例如“式(3′)”“[7a]”“二乙胺”。</li>';
+      return;
+    }
+    hits.forEach(function(it){
+      var li=document.createElement('li'); var b=document.createElement('button'); b.type='button'; b.className='sr-btn';
+      b.innerHTML = '<span class="sr-kind">'+esc(it.kind)+'</span>'+esc(it.title);
+      b.addEventListener('click', function(){ it.act(b); });
+      li.appendChild(b); searchResults.appendChild(li);
+    });
+  });
+
+  /* ---------- 导航当前区块高亮 ---------- */
+  if('IntersectionObserver' in window){
+    var map = {};
+    $all('.nav-links a').forEach(function(a){ map[a.getAttribute('href').slice(1)] = a; });
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting && map[en.target.id]){
+          $all('.nav-links a').forEach(function(a){ a.removeAttribute('aria-current'); });
+          map[en.target.id].setAttribute('aria-current','true');
+        }
+      });
+    }, {rootMargin:'-40% 0px -55% 0px'});
+    ['contribution','arguments','reception','questions','sources'].forEach(function(id){ var el=document.getElementById(id); if(el) io.observe(el); });
+  }
+
+  /* ---------- 打印：展开全部研究问题，打印后恢复原状 ---------- */
+  var printSavedOpen = null;
+  window.addEventListener('beforeprint', function(){
+    printSavedOpen = $all('details.q-item').map(function(d){ return d.open; });
+    $all('details.q-item').forEach(function(d){ d.open = true; });
+  });
+  window.addEventListener('afterprint', function(){
+    if(printSavedOpen){
+      $all('details.q-item').forEach(function(d,i){ d.open = !!printSavedOpen[i]; });
+      printSavedOpen = null;
+    }
+  });
+})();
+</script>
+
+
+</body></html>

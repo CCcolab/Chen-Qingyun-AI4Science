@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "environment": "辅助云端环境，非 Windows 11／WSL 2 验收",
+  "node": "v24.22.1",
+  "inline_scripts_parsed": 6,
+  "executed": false,
+  "date": "2026-11-11"
+}
