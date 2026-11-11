@@ -1,0 +1,1 @@
+ M docs/WEBSITE_RESULT_CONTRACT_zh-CN.md

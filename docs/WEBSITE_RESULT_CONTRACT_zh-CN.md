@@ -14,7 +14,7 @@
 
 | 层次 | 文件或产物 | 版本与状态 | 消费规则 |
 |---|---|---|---|
-| 历史封存结果 | `results/pftb1966-uv-replay.json`、`results/website-candidate.json` | 历史候选 v1 的约定称呼；文件本身没有独立 `schema_version`，保持旧字节与 `review_required` | 仅作为可重跑历史基线；须联读其协议、CSV 和来源登记，不能单独当作完整发布接口 |
+| 历史封存结果 | `results/pftb1966-uv-replay.json`、`results/website-candidate.json` | 历史完整结果有 `schema_version: "1.0"`；历史候选没有独立 `schema_version`，v1 只是候选的约定称呼；两文件保持旧字节与待审状态 | 仅作为可重跑历史基线；须联读其协议、CSV 和来源登记，不能单独当作完整发布接口 |
 | 新完整结果与候选 | 每次独立运行目录的同名两份 JSON | `schema_version: "2.0"`，`input_contract_version: "PF1966-UV-T1.fixed.v2"`；完整结果的 `scientific_review_status`、候选的 `publication_status` 均为 `review_required` | 新候选补足来源与敏感性，但本身不含 run ID、完整结果指纹或科学签名，仍须关联该次清单 |
 | 待审展示载荷 | 同次 `publication-payload.json` | `schema_version: "1.0"`，`record_id: "PF1966-UV-T1:<run_id>"`，`publication_status: review_required` | 是本次拟展示内容；其原字节指纹由运行清单及科学审阅绑定，不能仅改状态后发布 |
 | 审定目录 | `reviewed-results.json` | 目录 `schema_version: "1.0"`；成功导出时目录和其中记录的 `publication_status` 为 `scientifically_reviewed` | 只能由真实签名通过门禁后另行生成，保留原候选历史；当前没有该类已审定记录 |
@@ -72,7 +72,7 @@ H 为原表 `C6H14` 基准，保持该记号，不擅自指定其异构体；B �
 
 清单以相对路径、SHA-256 和字节数绑定 `inputs/` 内 3 份原字节快照、`code/` 内全部当前 `chen_research/*.py` 与 `scripts/accept_phase1.py`、真实 `environment.json`、完整结果、新候选和展示载荷。环境记录实际 OS／内核／Python、Git 提交及 dirty 状态；API 或 CLI 身份如实区分。该运行器本身不执行单测，记录 `tests_run: 0`、`tests_status: not_run_by_runner`，不冒用其它验收记录的测试数。
 
-`verify_run` 不仅相信清单中的哈希：它重新核对各个绑定、当前源码清单与快照、输入资格和算术，重新生成并比较完整结果、候选与展示载荷。代码新增／删除／变化、任一输入或结果变化、运行或环境记录变化都不能复用原审阅。路径不得穿越、使用绝对绑定路径、符号链接或重解析点；已有证据不覆盖。CLI 校验失败另存本地失败记录，不生成成功清单或候选。
+`verify_run` 不仅相信清单中的哈希：它重新核对各个绑定、当前源码清单与快照、输入资格和算术，重新生成并比较完整结果、候选与展示载荷。代码新增／删除／变化、任一输入或结果变化、运行或环境记录变化都不能复用原审阅。路径不得穿越、使用绝对绑定路径、符号链接或重解析点；已有证据不覆盖。输入资格校验失败在生成候选前拒绝，CLI 另存本地失败记录；后续写出失败若留下部分目录，也没有成功清单，不能作为成功结果使用。
 
 `publication-payload.json` 不含自身指纹或完整结果指纹；这两个关联由该次清单和审阅记录的 `binding` 提供，不能假设孤立 payload 已经自证。科学审阅绑定项包括：
 
@@ -99,7 +99,7 @@ H 为原表 `C6H14` 基准，保持该记号，不擅自指定其异构体；B �
 
 成功导出到全新目录，包含 `reviewed-results.json`、独立 `PF1966-UV-T1.html`、原字节 `review-record.json` 及 `review-record.json.sig`。目录的 `records` 包含载荷的审定副本；该副本保留载荷 `schema_version: "1.0"`，`scientific_review` 记录 `signature_verified`、具名审阅者、时间、审阅／签名／策略指纹及完整 binding。原运行载荷和候选继续为 `review_required`。
 
-当前 `empty-catalog` 只生成空 `records`、`release_enabled`、`policy_sha256` 和待审原因，不能因存在目录文件就显示审定成功。公开源码中的候选也不能被页面过滤器自行升级。
+当前 `empty-catalog` 生成的 JSON 包含空 `records`、`release_enabled`、`policy_sha256` 和待审原因，版本为 `1.0`、状态为 `review_required`；不能因存在目录文件就显示审定成功。公开源码中的候选也不能被页面过滤器自行升级。
 
 审定导出不会自动复制完整运行目录、策略或原文文件，也不会部署网站。发布前须持久归档该次运行输入、源码、完整结果、环境、清单、策略、审阅记录与签名，以及可依法保存的原文核校材料，并确保与 binding 可核对；仅保存将于 30 天后过期的 Actions 附件不足以保全证据。原文、私人报告及未授权材料不因审阅需要而自动公开。
 
