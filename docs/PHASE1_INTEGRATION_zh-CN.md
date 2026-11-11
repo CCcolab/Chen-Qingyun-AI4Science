@@ -1,6 +1,6 @@
 # 第一阶段本地接入说明
 
-日期：2026-11-11。这里是独立研究仓库的接入准备，实际网站仓库尚未确认。原始 README、交接文档和结果保留为启动包的历史快照；本次正式环境验收另存，不能以改写历史记录的方式补上。
+日期：2026-11-11。这里是独立研究仓库的接入准备。用户已明确：仓库尚未创建，拟名 `CCcolab/Chen-Qingyun-AI4Science`，默认分支计划 `main`，正式网站计划 GitHub Pages，YouMind 负责制作、预览和导出。仓库创建、远程配置、推送与线上发布均留待实际 URL 明确之后。原始 README、交接文档和结果保留为启动包的历史快照；本次正式环境验收另存，不能以改写历史记录的方式补上。
 
 本地项目：`D:\AI4Science\Chen-Qingyun-2029\Chen_Qingyun_AI_Research_20261111`。原包基线提交为 `f6af9e5f0c87cc569e3bf77b4ac8a8a90eb6d482`，分支为 `research/phase1-wsl2-20261111`。当前没有远程仓库。机器未配置 Git 作者，本仓库使用本地自动化身份 `Codex <codex@localhost>`；这只是代码导入与工程提交身份，原科学作者仍以来源登记为准。
 
@@ -47,7 +47,7 @@ Actions 使用已核验的官方发布固定提交，不把配置存在写成远
 - 科学审阅者、转录签认及候选转为正式发布产物的流程。
 - 项目的代码与数据许可。原包未附 LICENSE，不推定原论文全文或现有素材可再次分发。
 
-连接检索 `Chen`、`Qingyun` 未返回目标。旧 Starter 数据中只有建议仓库 `CCcolab/Chen-Qingyun-Legacy`；本轮连接读取返回 404，不能判定其不存在或将其当作已授权目标。未创建远程仓库、推送或发布。
+用户补充目标规划前，连接检索 `Chen`、`Qingyun` 未返回目标。旧 Starter 数据中只有建议仓库 `CCcolab/Chen-Qingyun-Legacy`；本轮连接读取返回 404，不能判定其不存在。该旧拟名不是本次目标。未创建远程仓库、推送或发布。
 
 交接文档登记的前端 ZIP 指纹为 `fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e`。现存 `Chen_Qingyun_YouMind_Starter_20261101.zip` 为 `4b6ef282d11efdd7396d8648dbb856d38b99fae5ee2b05dedd8d1ba09c6880eb`，`Chen_PFtB_Source_Candidate_20261104.zip` 为 `d9ec71125bcc867764e1d4229e719c5d0912d72af714e29d745fce20b59f7bb9`。两者均不能自动替代正式基线；已保留原文件和原始 JSON。
 
