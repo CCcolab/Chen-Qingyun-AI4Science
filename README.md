@@ -1,30 +1,28 @@
-# 陈庆云学术成就网站与 AI 辅助研究
+# 陈庆云院士科学成就的 AI 辅助研究
 
-正式源码仓库：[CCcolab/Chen-Qingyun-AI4Science](https://github.com/CCcolab/Chen-Qingyun-AI4Science)，默认分支 `main`。YouMind 负责网页制作和导出，GitHub 保存源码并使用 GitHub Pages 发布。网站内容保持原作者归属；研究结果继续保留 `review_required`。
+本平台围绕陈庆云院士及合作者的科学研究，以原始文献、数据和具体问题为依据，运用 AI 辅助核读、结构与对象消歧、数值复算、竞争解释比较和未来研究设计。
 
-公开网站：[陈庆云院士学术成就](https://cccolab.github.io/Chen-Qingyun-AI4Science/)。2026-11-11 已完成 GitHub Actions 发布和线上验收；见[上线验收记录](docs/ONLINE_ACCEPTANCE_20261111_zh-CN.md)。
+[学术成就网站](https://cccolab.github.io/Chen-Qingyun-AI4Science/) · [早期含氟酮与双酚 AF 专题](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html) · [研究路线图](docs/RESEARCH_ROADMAP_zh-CN.md)
 
-## 本地检查
+## 研究目标
 
-Python 3.10+，无需模型 API 密钥或第三方 Python 库：
+- **复现**：重建原研究的问题、对象、观察与论证；对有完整数据和方法的结果开展独立复算。
+- **验证**：比较可检验的竞争解释，通过适当的计算、对照和不确定性分析，研究原结论的适用范围。
+- **拓展**：从原始证据和已有研究的缺口出发，提出可证伪的新问题，经查新和专业研究后推进。
 
-```bash
-python3 scripts/accept_phase1.py --skip-tests --output scratch/research-check
-python3 scripts/check_site.py --output scratch/site-check.json
-python3 scripts/build_site.py --output scratch/site-dist
-python3 -m http.server 8000 --bind 127.0.0.1 --directory scratch/site-dist
-```
+## 当前重点：早期含氟酮与双酚 AF
 
-验收目录使用新路径。WSL 正式实测记录位于 `validation/`；Windows 和 WSL 环境分开记录。网站构建只输出网页和公开来源数据，研究候选、环境日志及原始 ZIP 不进入 Pages 产物。
+从六氟丙酮的早期研究与双酚 AF 相关原始材料入手：
 
-上述命令适用于 GitHub 克隆。原本机保留 `tests/` 时，去掉 `--skip-tests` 可执行完整本地测试；本地 Git 排除规则阻止其继续加入提交。GitHub CI 和 Pages 只做保留源码完整性、固定数值重放、结果比对和网站检查，单测明确记录为未运行。
+1. 核对原始论文和第 117491 号苏联发明人证书，明确作者、年代、对象及各项贡献。
+2. 分开梳理六氟丙酮反应、双酚 AF 方法和两篇不同的 1960 年俄文研究，建立结构—观察—解释的证据关系。
+3. 使用 AI 辅助核译和图式辨识，逐项区分原文观察、作者解释与平台提出的假设。
+4. 从证据充分的问题选择首项复算或模型比较，再研究后续分子与材料方向。
 
-网站和研究原成果均归原作者；工程测试通过不代表新的实验、量化计算、机理验证或科学审定。尚未确定再分发许可的原论文全文、传记及照片不加入网站产物。
+已有 PF1966-UV-T1 工作属于三种碘代物溶剂位移的原表数值重放，保持待审；不作为光谱实验复现或机理验证。
 
-[迁移与发布交接](docs/GITHUB_PAGES_MIGRATION_zh-CN.md) · [研究接入说明](docs/PHASE1_INTEGRATION_zh-CN.md) · [候选结果接口](docs/WEBSITE_RESULT_CONTRACT_zh-CN.md) · [后续研究入口](docs/NEXT_RESEARCH_GATES_zh-CN.md)
+## 研究边界
 
-针对 `b5d562c` 的评审，当前研究分支新增固定输入 v2 严格校验、完整运行快照和具名签认门禁。原 `results/` 及 v1 引擎封存不改；新 CLI 默认写入新的 `scratch/runs/` 目录。当前审阅者登记为空、审定导出关闭，独立研究页面仅供待审预览。详见[当前科研发布状态](docs/CURRENT_RESEARCH_STATUS_zh-CN.md)及[签认操作流程](docs/SCIENTIFIC_REVIEW_zh-CN.md)。
+已发表成果保留原作者与合作团队归属。平台的新分析、复算和未来假设单独标识，并保留可核对的来源与研究条件。
 
-原包及首次本地验收文档保留当时状态；后续线上执行以 GitHub Actions 和实际部署记录为准。仓库原初始提交及其 README 均已保留在历史中，见[初始仓库说明存档](docs/REMOTE_INITIAL_README_20261111.md)。
-
-接入时仓库还新增了同源网站迁移快照；其历史、[使用说明](NOTICE.md)、[迁移文档](docs/MIGRATION_zh-CN.md)、[YouMind 交付约定](docs/YOUMIND_HANDOFF_zh-CN.md)及 `tools/` 检查工具一并保留。正式发布仍使用本仓库 `scripts/` 的联合验收与独立 Pages 流程。
+AI 辅助分析不能替代原始材料和专业判断。原表数值重放、量化计算、实验验证与未来假设分别记录；尚未开展的工作不写为已完成，未经充分查新的设想不称首次发现。
