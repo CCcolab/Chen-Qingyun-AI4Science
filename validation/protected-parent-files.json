@@ -1,0 +1,60 @@
+{
+  "checked_at_utc": "2026-11-11T08:06:57.690745+00:00",
+  "status": "passed",
+  "checks": [
+    {
+      "path": "5.16 陈庆云传.pdf",
+      "before_sha256": "731a5ae47f75f136eaec9e8e09021ddaaad30c0aaefd545f8c3c85857ca26d61",
+      "after_sha256": "731a5ae47f75f136eaec9e8e09021ddaaad30c0aaefd545f8c3c85857ca26d61",
+      "equal": true
+    },
+    {
+      "path": "Chen_PFtB_Evidence_Register_20261101.json",
+      "before_sha256": "7f3e8349f0a145a1313edb67156485ae4df6b807bf44a7ab7de7373a30920751",
+      "after_sha256": "7f3e8349f0a145a1313edb67156485ae4df6b807bf44a7ab7de7373a30920751",
+      "equal": true
+    },
+    {
+      "path": "Chen_PFtB_Evidence_Register_20261103-v1.json",
+      "before_sha256": "1cba430bad480d4e0a55d20a6c8cb0d8770af5a5e30377e22576e861e1417d0b",
+      "after_sha256": "1cba430bad480d4e0a55d20a6c8cb0d8770af5a5e30377e22576e861e1417d0b",
+      "equal": true
+    },
+    {
+      "path": "Chen_PFtB_Evidence_Register_20261103.json",
+      "before_sha256": "2275ddf67cb21a09dc5e5dff00e0c77a818e7bcf59b086effcaca52eacad81b8",
+      "after_sha256": "2275ddf67cb21a09dc5e5dff00e0c77a818e7bcf59b086effcaca52eacad81b8",
+      "equal": true
+    },
+    {
+      "path": "Chen_PFtB_Source_Candidate_20261104.zip",
+      "before_sha256": "d9ec71125bcc867764e1d4229e719c5d0912d72af714e29d745fce20b59f7bb9",
+      "after_sha256": "d9ec71125bcc867764e1d4229e719c5d0912d72af714e29d745fce20b59f7bb9",
+      "equal": true
+    },
+    {
+      "path": "Chen_Qingyun_AI_Research_20261111.zip",
+      "before_sha256": "623127d317b3a4ecc51052e43816286a3dd04eb95f41fc8bf7c3bb8d76bc2d4f",
+      "after_sha256": "623127d317b3a4ecc51052e43816286a3dd04eb95f41fc8bf7c3bb8d76bc2d4f",
+      "equal": true
+    },
+    {
+      "path": "Chen_Qingyun_YouMind_Starter_20261101.zip",
+      "before_sha256": "4b6ef282d11efdd7396d8648dbb856d38b99fae5ee2b05dedd8d1ba09c6880eb",
+      "after_sha256": "4b6ef282d11efdd7396d8648dbb856d38b99fae5ee2b05dedd8d1ba09c6880eb",
+      "equal": true
+    },
+    {
+      "path": "F53-1982.jpg",
+      "before_sha256": "4a390107e0038d8ab45a4da6f1ef1b3c126f0ebb3a2e993f0baaa271ea2fe8e5",
+      "after_sha256": "4a390107e0038d8ab45a4da6f1ef1b3c126f0ebb3a2e993f0baaa271ea2fe8e5",
+      "equal": true
+    },
+    {
+      "path": "人民数据-国内科技论文谁家最多.pdf",
+      "before_sha256": "533b0209e30e1a3e6d6670dacd35e609df8f25f351d8ef2d6ecd3e4088dc6513",
+      "after_sha256": "533b0209e30e1a3e6d6670dacd35e609df8f25f351d8ef2d6ecd3e4088dc6513",
+      "equal": true
+    }
+  ]
+}

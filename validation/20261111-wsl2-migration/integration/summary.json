@@ -1,0 +1,98 @@
+{
+  "started_at_utc": "2026-11-11T08:06:36.369014+00:00",
+  "task_id": "PF1966-UV-T1",
+  "result_type": "published_table_numerical_replay",
+  "scientific_review_status": "review_required",
+  "commands": [
+    {
+      "label": "git-revision",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/tmp/chen-phase1-wsl2-kwye76ey/integration",
+      "started_at_utc": "2026-11-11T08:06:36.402853+00:00",
+      "finished_at_utc": "2026-11-11T08:06:36.409601+00:00",
+      "exit_code": 0,
+      "stdout": "logs/git-revision.stdout.txt",
+      "stderr": "logs/git-revision.stderr.txt"
+    },
+    {
+      "label": "git-status",
+      "command": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "cwd": "/tmp/chen-phase1-wsl2-kwye76ey/integration",
+      "started_at_utc": "2026-11-11T08:06:36.409627+00:00",
+      "finished_at_utc": "2026-11-11T08:06:36.417925+00:00",
+      "exit_code": 0,
+      "stdout": "logs/git-status.stdout.txt",
+      "stderr": "logs/git-status.stderr.txt"
+    },
+    {
+      "label": "original-delivery-verifier",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/verify_delivery.py"
+      ],
+      "cwd": "/tmp/chen-upstream-74ueo4g5",
+      "started_at_utc": "2026-11-11T08:06:36.419640+00:00",
+      "finished_at_utc": "2026-11-11T08:06:36.448034+00:00",
+      "exit_code": 0,
+      "stdout": "logs/original-delivery-verifier.stdout.txt",
+      "stderr": "logs/original-delivery-verifier.stderr.txt"
+    },
+    {
+      "label": "all-tests",
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/tmp/chen-phase1-wsl2-kwye76ey/integration",
+      "started_at_utc": "2026-11-11T08:06:36.448503+00:00",
+      "finished_at_utc": "2026-11-11T08:06:36.513275+00:00",
+      "exit_code": 0,
+      "stdout": "logs/all-tests.stdout.txt",
+      "stderr": "logs/all-tests.stderr.txt"
+    },
+    {
+      "label": "numerical-replay",
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "chen_research",
+        "--output",
+        "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research_20261111/validation/20261111-wsl2-migration/integration/replay"
+      ],
+      "cwd": "/tmp/chen-phase1-wsl2-kwye76ey/integration",
+      "started_at_utc": "2026-11-11T08:06:36.513424+00:00",
+      "finished_at_utc": "2026-11-11T08:06:36.552860+00:00",
+      "exit_code": 0,
+      "stdout": "logs/numerical-replay.stdout.txt",
+      "stderr": "logs/numerical-replay.stderr.txt"
+    }
+  ],
+  "quantum_calculation": "not_performed",
+  "experiment": "not_performed",
+  "future_hypotheses": "not_tested",
+  "model_api_called": false,
+  "website_modified": false,
+  "status": "passed",
+  "errors": [],
+  "upstream_files_verified": 19,
+  "source_commit": "f0c54cb9e8ee10b92c44b8566fd92e7f43065402",
+  "source_worktree_dirty": false,
+  "tests_run": 19,
+  "result_files_compared": 2,
+  "all_result_bytes_equal": true,
+  "all_result_fields_equal": true,
+  "finished_at_utc": "2026-11-11T08:06:36.570342+00:00"
+}

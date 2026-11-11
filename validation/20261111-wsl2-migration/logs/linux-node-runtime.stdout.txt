@@ -1,0 +1,1 @@
+{"platform":"linux","arch":"x64","version":"v24.13.1","execPath":"/tmp/chen-phase1-wsl2-kwye76ey/node-runtime/node-v24.13.1-linux-x64/bin/node"}
