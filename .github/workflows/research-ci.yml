@@ -1,0 +1,59 @@
+name: Research candidate acceptance
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'chen_research/**'
+      - 'data/**'
+      - 'protocols/**'
+      - 'literature/**'
+      - 'results/**'
+      - 'scripts/**'
+      - 'schemas/**'
+      - 'tests/**'
+      - 'SHA256SUMS'
+      - '.gitattributes'
+      - '.github/workflows/research-ci.yml'
+  pull_request:
+    paths:
+      - 'chen_research/**'
+      - 'data/**'
+      - 'protocols/**'
+      - 'literature/**'
+      - 'results/**'
+      - 'scripts/**'
+      - 'schemas/**'
+      - 'tests/**'
+      - 'SHA256SUMS'
+      - '.gitattributes'
+      - '.github/workflows/research-ci.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  offline-replay:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Preserve original file bytes before checkout
+        run: git config --global core.autocrlf false
+      - name: Check out research files without credential persistence
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          persist-credentials: false
+      - name: Use Python 3.12
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
+      - name: Verify immutable inputs, tests, replay and exact result comparison
+        run: python scripts/accept_phase1.py --output scratch/ci-acceptance
+      - name: Keep review-required candidate and evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: PF1966-UV-T1-review-required-${{ github.run_id }}
+          path: scratch/ci-acceptance/
+          if-no-files-found: error
+          retention-days: 30
