@@ -23,6 +23,8 @@ python3 -m http.server 8000 --bind 127.0.0.1 --directory scratch/site-dist
 
 [迁移与发布交接](docs/GITHUB_PAGES_MIGRATION_zh-CN.md) · [研究接入说明](docs/PHASE1_INTEGRATION_zh-CN.md) · [候选结果接口](docs/WEBSITE_RESULT_CONTRACT_zh-CN.md) · [后续研究入口](docs/NEXT_RESEARCH_GATES_zh-CN.md)
 
+离线研究工作台支持九条成果与传承线的 12 项任务、来源摘录、AI 分析包与有源建议导入，以及固定适配器的受控运行。入口为 `python3 -m chen_workbench`；见[平台架构](docs/PLATFORM_ARCHITECTURE_zh-CN.md)和[使用说明](docs/OFFLINE_WORKBENCH_zh-CN.md)。科研记录继续待审，在线模型与新增量化任务尚未接入。
+
 针对 `b5d562c` 的评审，当前研究分支新增固定输入 v2 严格校验、完整运行快照和具名签认门禁。原 `results/` 及 v1 引擎封存不改；新 CLI 默认写入新的 `scratch/runs/` 目录。当前审阅者登记为空、审定导出关闭，独立研究页面仅供待审预览。详见[当前科研发布状态](docs/CURRENT_RESEARCH_STATUS_zh-CN.md)及[签认操作流程](docs/SCIENTIFIC_REVIEW_zh-CN.md)。
 
 原包及首次本地验收文档保留当时状态；后续线上执行以 GitHub Actions 和实际部署记录为准。仓库原初始提交及其 README 均已保留在历史中，见[初始仓库说明存档](docs/REMOTE_INITIAL_README_20261111.md)。

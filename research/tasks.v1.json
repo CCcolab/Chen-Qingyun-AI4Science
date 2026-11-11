@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.0",
+  "catalog_id": "Chen-Qingyun.research",
+  "catalog_version": "2026-11-11.v1",
+  "baselines": {
+    "site/data/achievement-lines.json": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+    "site/data/public-sources.json": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+    "protocols/research_queue.json": "3b123b5f14a4a8ba1bc94e4e7ade3ab87982f600a94c7c635f0bfd8be6e9c9f1",
+    "literature/related_work.json": "fa746224de1c6049fe975ae9c9dd0cd9e8e6a4cc5b372fde473ddd7f127e47a6"
+  },
+  "tasks": [
+    {
+      "task_id": "PF1966-UV-T1",
+      "achievement_line": "A03",
+      "title": "原表三个碘代物的位移数值重放",
+      "work_type": "published_table_numerical_replay",
+      "question": "原表三个碘代物的位移数值重放",
+      "source_ids": [
+        "PF01"
+      ],
+      "runner": "pftb1966_replay_v2",
+      "timeout_seconds": 120,
+      "blockers": [],
+      "ai_role": "辅助提取、实体消歧、来源对齐、竞争解释及可证伪问题；所有建议待审",
+      "acceptance": [
+        "引用定位可追溯，保留原作者",
+        "缺失条件明确记录，不补造事实",
+        "计算必须有固定输入、获准协议、真实日志及人工审阅"
+      ],
+      "claim_boundary": "仅原表数值重放；不是光谱实验复现、量化计算或机理验证",
+      "scientific_review_status": "review_required"
+    },
+    {
+      "task_id": "PF-02",
+      "achievement_line": "A03",
+      "title": "给体络合与紫外溶剂位移的模型比较",
+      "work_type": "model_validation",
+      "question": "给体络合与紫外溶剂位移的模型比较",
+      "source_ids": [
+        "PF01",
+        "PA-2021-EDA"
+      ],
+      "runner": null,
+      "timeout_seconds": 120,
+      "blockers": [
+        "实验条件与谱带归属",
+        "合适的激发态和溶剂模型",
+        "相邻已有工作全文"
+      ],
+      "ai_role": "辅助提取、实体消歧、来源对齐、竞争解释及可证伪问题；所有建议待审",
+      "acceptance": [
+        "引用定位可追溯，保留原作者",
+        "缺失条件明确记录，不补造事实",
+        "计算必须有固定输入、获准协议、真实日志及人工审阅"
+      ],
+      "claim_boundary": "亲卤解释和部分紫外溶剂位移证据须回到对应实验；未直接观测游离全氟叔丁基阴离子。制备贡献、机理解释和四基团外推各有范围。 1980 年调聚属于同一化合物的团队后续，不计入独立引证或机理复核。",
+      "scientific_review_status": "review_required"
+    },
+    {
+      "task_id": "PF-03",
+      "achievement_line": "A03",
+      "title": "2025 已发表阴离子结构／计算的独立复算及条件敏感性",
+      "work_type": "computational_reproduction",
+      "question": "2025 已发表阴离子结构／计算的独立复算及条件敏感性",
+      "source_ids": [
+        "PF01",
+        "PA-2025-ZHU",
+        "PA-1986-DIXON"
+      ],
+      "runner": null,
+      "timeout_seconds": 120,
+      "blockers": [
+        "原文及 SI",
+        "反离子／溶剂／状态定义",
+        "计算资源与验收合同",
+        "系统查新"
+      ],
+      "ai_role": "辅助提取、实体消歧、来源对齐、竞争解释及可证伪问题；所有建议待审",
+      "acceptance": [
+        "引用定位可追溯，保留原作者",
+        "缺失条件明确记录，不补造事实",
+        "计算必须有固定输入、获准协议、真实日志及人工审阅"
+      ],
+      "claim_boundary": "亲卤解释和部分紫外溶剂位移证据须回到对应实验；未直接观测游离全氟叔丁基阴离子。制备贡献、机理解释和四基团外推各有范围。 1980 年调聚属于同一化合物的团队后续，不计入独立引证或机理复核。",
+      "scientific_review_status": "review_required"
+    },
+    {
+      "task_id": "A01-RU1960",
+      "achievement_line": "A01",
+      "title": "两篇不同俄文研究的逐段与结构核译",
+      "work_type": "evidence_reconstruction",
+      "question": "两篇不同俄文研究的逐段与结构核译",
+      "source_ids": [
+        "CQ-H01",
+        "CQ-H02",
+        "CQ-R01",
+        "CQ-R02",
+        "CQ-R03",
+        "CQ-H12"
+      ],
+      "runner": null,
+      "timeout_seconds": 120,
+      "blockers": [
+        "俄文全文及结构图",
+        "双语专业核校"
+      ],
+      "ai_role": "辅助提取、实体消歧、来源对齐、竞争解释及可证伪问题；所有建议待审",
+      "acceptance": [
+        "引用定位可追溯，保留原作者",
+        "缺失条件明确记录，不补造事实",
+        "计算必须有固定输入、获准协议、真实日志及人工审阅"
+      ],
+      "claim_boundary": "证书支持三人共同发明这一制备方法；不据此认定世界首创、工业采用或全部合成路线。",
+      "scientific_review_status": "review_required"
+    },
+    {
+      "task_id": "A02-T1980",
+      "achievement_line": "A02",
+      "title": "偏氟乙烯调聚的产物与定位证据重建",
+      "work_type": "evidence_reconstruction",
+      "question": "偏氟乙烯调聚的产物与定位证据重建",
+      "source_ids": [
+        "CQ-H01",
+        "CQ-R28",
+        "S1",
+        "PF01",
+        "CQ-H13"
+      ],
+      "runner": null,
+      "timeout_seconds": 120,
+      "blockers": [
+        "原刊结构式",
+        "完整条件",
+        "产物表征定位"
+      ],
+      "ai_role": "辅助提取、实体消歧、来源对齐、竞争解释及可证伪问题；所有建议待审",
+      "acceptance": [
+        "引用定位可追溯，保留原作者",
+        "缺失条件明确记录，不补造事实",
+        "计算必须有固定输入、获准协议、真实日志及人工审阅"
+      ],
+      "claim_boundary": "氟橡胶 1 号在其加入课题组前已有研制成果。单体改进、后续牌号、氟油应用和调聚论文须各自举证。",
+      "scientific_review_status": "review_required"
+    },
+    {
+      "task_id": "A06-SOCO",
+      "achievement_line": "A06",
+      "title": "1982 与 1983 不同磺酸酯的断键对照",
+      "work_type": "evidence_reconstruction",
+      "question": "1982 与 1983 不同磺酸酯的断键对照",
+      "source_ids": [
+        "CQ-H01",
+        "CQ-H07",
+        "CQ-H08",
+        "CQ-R05",
+        "CQ-R08",
+        "CQ-R21",
+        "CQ-H16",
+        "CQ-H17",
+        "CQ-H18",
+        "CQ-H23",
+        "CQ-H10"
+      ],
+      "runner": null,
+      "timeout_seconds": 120,
+      "blockers": [
+        "两篇原刊",
+        "逐底物原子映射",
+        "亲核试剂和条件",
+        "已有机制研究检索"
+      ],
+      "ai_role": "辅助提取、实体消歧、来源对齐、竞争解释及可证伪问题；所有建议待审",
+      "acceptance": [
+        "引用定位可追溯，保留原作者",
+        "缺失条件明确记录，不补造事实",
+        "计算必须有固定输入、获准协议、真实日志及人工审阅"
+      ],
+      "claim_boundary": "产物观察与机理解释各自列出。甲酯 MFSDA、硅酯 TFDA、酸型及不同盐型逐一建档；他人的复核、计算与采用保留原作者。",
+      "scientific_review_status": "review_required"
+    },
+    {
+      "task_id": "A04-F53-HISTORY",
+      "achievement_line": "A04",
+      "title": "F-53 署名、厂试及当年测算的分别核证",
+      "work_type": "historical_evidence",
+      "question": "F-53 署名、厂试及当年测算的分别核证",
+      "source_ids": [
+        "CQ-H01",
+        "CQ-H05",
+        "CQ-H04",
+        "CQ-H03",
+        "CQ-R04",
+        "CQ-R12",
+        "CQ-H14",
+        "CQ-H15"
+      ],
+      "runner": null,
+      "timeout_seconds": 120,
+      "blockers": [
+        "历史工况与配方",
+        "原始工程记录"
+      ],
+      "ai_role": "辅助提取、实体消歧、来源对齐、竞争解释及可证伪问题；所有建议待审",
+      "acceptance": [
+        "引用定位可追溯，保留原作者",
+        "缺失条件明确记录，不补造事实",
+        "计算必须有固定输入、获准协议、真实日志及人工审阅"
+      ],
+      "claim_boundary": "工厂测试、产能与推广统计、报纸估算分别记录；历史商品名 F-53 与后续文献中的含氯 F-53B 不自动等同。 研发职责、论文署名和奖证字段分别取证。",
+      "scientific_review_status": "review_required"
+    },
+    {
+      "task_id": "A05-REFRIGERANTS",
+      "achievement_line": "A05",
+      "title": "制冷剂组分、中试与整机资料消歧",
+      "work_type": "historical_evidence",
+      "question": "制冷剂组分、中试与整机资料消歧",
+      "source_ids": [
+        "CQ-H01",
+        "S1",
+        "CQ-R28",
+        "CQ-H24"
+      ],
+      "runner": null,
+      "timeout_seconds": 120,
+      "blockers": [
+        "技术原文与专利",
+        "工况与物料身份"
+      ],
+      "ai_role": "辅助提取、实体消歧、来源对齐、竞争解释及可证伪问题；所有建议待审",
+      "acceptance": [
+        "引用定位可追溯，保留原作者",
+        "缺失条件明确记录，不补造事实",
+        "计算必须有固定输入、获准协议、真实日志及人工审阅"
+      ],
+      "claim_boundary": "组分制备、已有配方试配、连续中试和整机试用是不同证据阶段；没有据此认定 F-502 为原创制冷剂，或把中试写成年产和全国推广。",
+      "scientific_review_status": "review_required"
+    },
+    {
+      "task_id": "PF-04",
+      "achievement_line": "A03",
+      "title": "为竞争解释设计可区分的观测",
+      "work_type": "future_hypothesis",
+      "question": "为竞争解释设计可区分的观测",
+      "source_ids": [
+        "PF01",
+        "PA-2025-ZHU"
+      ],
+      "runner": null,
+      "timeout_seconds": 120,
+      "blockers": [
+        "已有观测与系统查新",
+        "竞争解释和否证判据",
+        "专业实验方案审阅"
+      ],
+      "ai_role": "仅辅助资料对齐、消歧与提出待验证问题，不生成无来源的结论",
+      "acceptance": [
+        "每项事实有具体原文或档案定位",
+        "建议与既有成果分别归属",
+        "研究者独立核校，缺失材料继续保留"
+      ],
+      "claim_boundary": "未来假设，未实施实验、未完成查新，不主张首次",
+      "scientific_review_status": "review_required"
+    },
+    {
+      "task_id": "A07-SET-EVIDENCE",
+      "achievement_line": "A07",
+      "title": "逐项核对具体 C–Cl 活化的引发、对照与产物",
+      "work_type": "evidence_reconstruction",
+      "question": "逐项核对具体 C–Cl 活化的引发、对照与产物",
+      "source_ids": [
+        "CQ-R06",
+        "CQ-H09"
+      ],
+      "runner": null,
+      "timeout_seconds": 120,
+      "blockers": [
+        "1999 年原始论文及必要补充材料",
+        "引发与对照条件",
+        "产物鉴定及具体底物映射"
+      ],
+      "ai_role": "仅辅助资料对齐、消歧与提出待验证问题，不生成无来源的结论",
+      "acceptance": [
+        "每项事实有具体原文或档案定位",
+        "建议与既有成果分别归属",
+        "研究者独立核校，缺失材料继续保留"
+      ],
+      "claim_boundary": "具体体系的 C–Cl 转化不是普适 C–F 断裂或 PFAS 降解。企业访谈的技术转移线索，不能单独证明商业化量产。",
+      "scientific_review_status": "review_required"
+    },
+    {
+      "task_id": "A08-CROSS-EVIDENCE",
+      "achievement_line": "A08",
+      "title": "选择具体分子建立结构—性质—证据矩阵",
+      "work_type": "evidence_reconstruction",
+      "question": "选择具体分子建立结构—性质—证据矩阵",
+      "source_ids": [
+        "CQ-H01",
+        "CQ-R07",
+        "CQ-R09",
+        "CQ-H09",
+        "CQ-R10",
+        "CQ-R11",
+        "CQ-H10",
+        "CQ-R15",
+        "CQ-R16",
+        "CQ-R17",
+        "CQ-H11",
+        "CQ-R08",
+        "CQ-H21",
+        "CQ-H19",
+        "CQ-H20",
+        "CQ-H22"
+      ],
+      "runner": null,
+      "timeout_seconds": 120,
+      "blockers": [
+        "选择唯一分子及原始论文",
+        "结构、观测量与基准",
+        "逐对象查新"
+      ],
+      "ai_role": "仅辅助资料对齐、消歧与提出待验证问题，不生成无来源的结论",
+      "acceptance": [
+        "每项事实有具体原文或档案定位",
+        "建议与既有成果分别归属",
+        "研究者独立核校，缺失材料继续保留"
+      ],
+      "claim_boundary": "每个分子和反应按实际作者、结构、表征和用途归档。特定 20π 二氢卟啉为非芳香性；表面性能不能代替环境评价，专题间不推定因果。",
+      "scientific_review_status": "review_required"
+    },
+    {
+      "task_id": "A09-LEGACY-EVIDENCE",
+      "achievement_line": "A09",
+      "title": "核对作者、合作、培养与学术角色的来源关系",
+      "work_type": "scholarly_legacy",
+      "question": "核对作者、合作、培养与学术角色的来源关系",
+      "source_ids": [
+        "CQ-H01",
+        "CQ-H06",
+        "CQ-R28"
+      ],
+      "runner": null,
+      "timeout_seconds": 120,
+      "blockers": [
+        "原始史料与逐项定位",
+        "姓名及角色消歧",
+        "不同年代和文献类型的专业核校"
+      ],
+      "ai_role": "仅辅助资料对齐、消歧与提出待验证问题，不生成无来源的结论",
+      "acceptance": [
+        "每项事实有具体原文或档案定位",
+        "建议与既有成果分别归属",
+        "研究者独立核校，缺失材料继续保留"
+      ],
+      "claim_boundary": "共同署名、学术交流、师承和引文采用各有证据。1987 年的收录统计仅说明该调查的年度表现；附录论著条目不等于独著或论文总数。",
+      "scientific_review_status": "review_required"
+    }
+  ]
+}

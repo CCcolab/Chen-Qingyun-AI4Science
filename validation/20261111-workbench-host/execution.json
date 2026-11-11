@@ -1,0 +1,21 @@
+{
+  "recorded_at_utc": "2026-11-11T10:56:35.3531066Z",
+  "environment": "Windows 11",
+  "command": "python -X utf8 -B -m unittest discover -s tests -v",
+  "tests_run": 148,
+  "tests_skipped": 5,
+  "status": "passed",
+  "source_worktree_dirty_at_execution": true,
+  "source_fingerprints": {
+    "chen_workbench/__init__.py": "497e1f3b5b598af89e49262a048b2f0b487bb3553ce6aab71f5e25ff922947df",
+    "chen_workbench/__main__.py": "5cf1078831f02d40579258faa1ad9e88e6361d2fb6d187bc1502cdd696ddaa33",
+    "chen_workbench/ai_exchange.py": "553fb1e7a5dee7c5310b47648c92156a0eb58629042a37c772b14e0b7e026fc3",
+    "chen_workbench/catalog.py": "cf5606b468e1f8db785907b520d10f998706bf6a3cbd739f251bd697da94fd27",
+    "chen_workbench/common.py": "21a8bee959467f3c6775a2146d9050a434cf6736095fa6f97156c1bb1a1d6f49",
+    "chen_workbench/evidence.py": "7211275f9a86b6dee81482e5a34361705003fd6c8d94c8c17aa77ac3fb3055a1",
+    "chen_workbench/jobs.py": "34223a3763ccd7039bac46eaad0d9d37c3ee9a30386440adee77421d81eeb325",
+    "chen_workbench/report.py": "3a3743f89b86559a0b6c1b981455cf9aae649ea1d8dea3fd4fa5e2aebb55ec8b"
+  },
+  "test_sources_distributed": false,
+  "model_api_called": false
+}

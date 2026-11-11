@@ -5,6 +5,8 @@ on:
   push:
     paths:
       - 'chen_research/**'
+      - 'chen_workbench/**'
+      - 'research/**'
       - 'data/**'
       - 'protocols/**'
       - 'reviews/**'
@@ -22,6 +24,8 @@ on:
   pull_request:
     paths:
       - 'chen_research/**'
+      - 'chen_workbench/**'
+      - 'research/**'
       - 'data/**'
       - 'protocols/**'
       - 'reviews/**'
@@ -69,6 +73,8 @@ jobs:
           python scripts/review_result.py policy-status
       - name: Verify website baseline and Pages-relative routes
         run: python scripts/check_site.py --require-node --output scratch/ci-site-check.json
+      - name: Exercise offline workbench with two real replays and no model API or unit tests
+        run: python scripts/accept_workbench.py --output scratch/ci-workbench
       - name: Build website without publishing
         run: python scripts/build_site.py --require-node --output scratch/site-dist
       - name: Keep review-required v2 run bundle and separate v1 comparison evidence
@@ -77,5 +83,13 @@ jobs:
         with:
           name: PF1966-UV-T1-review-required-${{ github.run_id }}
           path: scratch/ci-acceptance/
+          if-no-files-found: error
+          retention-days: 30
+      - name: Keep offline workbench execution evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: offline-workbench-review-required-${{ github.run_id }}
+          path: scratch/ci-workbench/
           if-no-files-found: error
           retention-days: 30

@@ -222,6 +222,14 @@ def main() -> int:
                 summary[f"integrated_{key}"] = integrated_summary[key]
             summary["integrated_source_worktree_dirty"] = integrated_summary["source_worktree_dirty"]
             summary["upstream_files_verified"] = integrated_summary["upstream_files_verified"]
+            if (integrated / "chen_workbench").is_dir():
+                run("offline-workbench-acceptance", [sys.executable, "scripts/accept_workbench.py", "--output",
+                                                     str(output / "workbench")], integrated)
+                workbench = json.loads((output / "workbench/summary.json").read_text(encoding="utf-8"))
+                for key in ("status", "task_count", "achievement_line_count", "runnable_task_count",
+                            "blocked_task_count", "completed_jobs", "cancelled_jobs", "run_ids",
+                            "tests_run", "tests_status", "model_api_called"):
+                    summary[f"workbench_{key}"] = workbench[key]
             if (integrated / "site").is_dir():
                 node = str(staged_node) if staged_node else shutil.which("node", path=child_env.get("PATH"))
                 if not node:
