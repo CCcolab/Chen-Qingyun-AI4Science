@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "record_type": "fixed_task_run",
+  "run_id": "ca336d0c-dd92-4b8d-b920-e837c76a3498",
+  "task_id": "PF1966-UV-T1",
+  "result_type": "published_table_numerical_replay",
+  "scientific_review_status": "review_required",
+  "started_at_utc": "2026-11-11T10:19:58.685096+00:00",
+  "finished_at_utc": "2026-11-11T10:19:59.283001+00:00",
+  "execution": {
+    "kind": "cli",
+    "invocation": {
+      "kind": "cli",
+      "argv": [
+        "/tmp/chen-phase1-wsl2-2ri6v9fj/integration/chen_research/__main__.py",
+        "--output",
+        "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/validation/20261111-wsl2-review-gates-r2/integration/current-run"
+      ]
+    },
+    "process_argv": [
+      "/tmp/chen-phase1-wsl2-2ri6v9fj/integration/chen_research/__main__.py",
+      "--output",
+      "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/validation/20261111-wsl2-review-gates-r2/integration/current-run"
+    ],
+    "exit_code": 0,
+    "exit_code_scope": "completed_runner_call",
+    "status": "completed"
+  },
+  "inputs": {
+    "data": {
+      "path": "inputs/pftb1966_table1.csv",
+      "sha256": "92af88d5c1307d0a01b418354d2620a0d9eb8a8c68766adedd8be0feec2ff29a",
+      "bytes": 515
+    },
+    "protocol": {
+      "path": "inputs/pftb1966_uv.json",
+      "sha256": "3439dbf5d535663672afd034c888fce4aacc3c4314657199f40b90252568735c",
+      "bytes": 1520
+    },
+    "sources": {
+      "path": "inputs/sources.json",
+      "sha256": "5d898ddda4013b0361d4a33cb3cca964374fabe1f63c1b528218ac867adda0cc",
+      "bytes": 1032
+    }
+  },
+  "code": [
+    {
+      "source_path": "chen_research/__init__.py",
+      "path": "code/chen_research/__init__.py",
+      "sha256": "22426c7b141accd04a156946d124760bbbeb753bc3370cc05182f05852f629bd",
+      "bytes": 92
+    },
+    {
+      "source_path": "chen_research/__main__.py",
+      "path": "code/chen_research/__main__.py",
+      "sha256": "54c1d11fd726c5a4cc2a4e4a11226c4bfca3af156925dc8c01c772dd06dac260",
+      "bytes": 2058
+    },
+    {
+      "source_path": "chen_research/input_contract.py",
+      "path": "code/chen_research/input_contract.py",
+      "sha256": "f089b5a14376ba7493a0421b7c435226e5fef843e4262e3f2cb04a3760814401",
+      "bytes": 10341
+    },
+    {
+      "source_path": "chen_research/review_gate.py",
+      "path": "code/chen_research/review_gate.py",
+      "sha256": "30c8cb4b2ebfd4c58e564b5a935ba7c9b13fec2191f01c47b533c167467566c8",
+      "bytes": 28358
+    },
+    {
+      "source_path": "chen_research/run_record.py",
+      "path": "code/chen_research/run_record.py",
+      "sha256": "48f8ebe9e305610507031fbd13eb87475e5d62dc1bb1e996511f45eb45608e7a",
+      "bytes": 19971
+    },
+    {
+      "source_path": "chen_research/uv_replay.py",
+      "path": "code/chen_research/uv_replay.py",
+      "sha256": "c42c2f6525a9d44a127f3c3a0385dc6ebc8e79197acb1593ca4111599d76486c",
+      "bytes": 10324
+    },
+    {
+      "source_path": "scripts/accept_phase1.py",
+      "path": "code/scripts/accept_phase1.py",
+      "sha256": "35e9dc5a988f325bb37c682a05ef7cf31e1453be8e301de11467e60f09fae51b",
+      "bytes": 27835
+    }
+  ],
+  "artifacts": {
+    "environment": {
+      "path": "environment.json",
+      "sha256": "de07ea930e58c13eea4a32581a6866975459a0d5f4245b0fff9ca178b8714c2d",
+      "bytes": 1422
+    },
+    "complete_result": {
+      "path": "pftb1966-uv-replay.json",
+      "sha256": "4e69073ce8e96bd5ffa217cd89b67522e839ede99d2ded056d44f120c76141dd",
+      "bytes": 10227
+    },
+    "candidate_result": {
+      "path": "website-candidate.json",
+      "sha256": "93498a5c6b430ad02e11f7078d0e2cbbcd62cfc3aab3fee4875ae43b45500cc2",
+      "bytes": 9853
+    },
+    "publication_payload": {
+      "path": "publication-payload.json",
+      "sha256": "8d1ad359fffd6a2af5871a4ab57f454a45c275c45e66d9d82734958ae4ca2967",
+      "bytes": 12496
+    }
+  },
+  "tests": {
+    "tests_run": 0,
+    "tests_status": "not_run_by_runner"
+  },
+  "source_scan_verification": {
+    "status": "not_reverified_by_this_run",
+    "source_pdf_sha256": "b97a7b641968561a1387d82c9b01fb8b2973c2a47e2e36c07ce85db2831302be",
+    "independent_transcription_signoff": "pending"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "task_id": "PF1966-UV-T1",
+  "source_id": "PF01",
+  "source_url": "https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18",
+  "original_authors": ["陈庆云", "蒋锡夔", "陈秉启", "梁梦兰"],
+  "publication_year": 1966,
+  "web_platform_date_is_publication_year": false,
+  "source_pdf_sha256": "b97a7b641968561a1387d82c9b01fb8b2973c2a47e2e36c07ce85db2831302be",
+  "inspected_scan_page_sha256": "7db29ab674d3625139a32954268dd878945bfb6cfe327464d801ead7cc4ce5c5",
+  "location": {"pdf_page": 4, "printed_page": 21, "table": 1},
+  "original_wavelength_unit": "毫微米（millimicron），数值等于 nm",
+  "baseline_solvent": "C6H14",
+  "baseline_identity_note": "CSV 保留原表分子式记号；没有在本合同中将其进一步指定为某种异构体",
+  "donor_solvents": ["EtOH", "Et2O"],
+  "delta_lambda_definition": "lambda_H_nm - lambda_B_nm",
+  "blue_shift_definition": "10000000 * (1/lambda_B_nm - 1/lambda_H_nm), in cm^-1",
+  "display_rounding_half_width_nm": 0.05,
+  "experimental_uncertainty_nm": null,
+  "reported_delta_lambda_nm": {
+    "EtOH": {"nC3F7I": 20.0, "iC3F7I": 24.0, "tC4F9I": 27.5},
+    "Et2O": {"nC3F7I": 14.0, "iC3F7I": 17.0, "tC4F9I": 24.0}
+  },
+  "claim_scope": "原表三个完整碘代物的溶剂位移数值关系；不是四种孤立基团的普适吸电子顺序",
+  "not_directly_measured_here": ["CF3CF2I", "CF3I"],
+  "original_pdf_distributed": false,
+  "transcription_status": "AI visual cross-check against cached original scan; independent expert review pending"
+}

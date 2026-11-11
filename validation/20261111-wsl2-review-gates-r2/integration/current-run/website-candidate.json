@@ -1,0 +1,368 @@
+{
+  "schema_version": "2.0",
+  "input_contract_version": "PF1966-UV-T1.fixed.v2",
+  "task_id": "PF1966-UV-T1",
+  "result_type": "published_table_numerical_replay",
+  "publication_status": "review_required",
+  "source_ids": [
+    "PF01"
+  ],
+  "original_authors": [
+    "陈庆云",
+    "蒋锡夔",
+    "陈秉启",
+    "梁梦兰"
+  ],
+  "publication_year": 1966,
+  "source_url": "https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18",
+  "location": {
+    "pdf_page": 4,
+    "printed_page": 21,
+    "table": 1
+  },
+  "source_pdf_sha256": "b97a7b641968561a1387d82c9b01fb8b2973c2a47e2e36c07ce85db2831302be",
+  "protocol_sha256": "3439dbf5d535663672afd034c888fce4aacc3c4314657199f40b90252568735c",
+  "source_registry_sha256": "5d898ddda4013b0361d4a33cb3cca964374fabe1f63c1b528218ac867adda0cc",
+  "validator_code_sha256": "f089b5a14376ba7493a0421b7c435226e5fef843e4262e3f2cb04a3760814401",
+  "observation_ids": [
+    {
+      "measurement_id": "UV01",
+      "compound_id": "nC3F7I",
+      "solvent": "C6H14"
+    },
+    {
+      "measurement_id": "UV02",
+      "compound_id": "nC3F7I",
+      "solvent": "EtOH"
+    },
+    {
+      "measurement_id": "UV03",
+      "compound_id": "nC3F7I",
+      "solvent": "Et2O"
+    },
+    {
+      "measurement_id": "UV04",
+      "compound_id": "iC3F7I",
+      "solvent": "C6H14"
+    },
+    {
+      "measurement_id": "UV05",
+      "compound_id": "iC3F7I",
+      "solvent": "EtOH"
+    },
+    {
+      "measurement_id": "UV06",
+      "compound_id": "iC3F7I",
+      "solvent": "Et2O"
+    },
+    {
+      "measurement_id": "UV07",
+      "compound_id": "tC4F9I",
+      "solvent": "C6H14"
+    },
+    {
+      "measurement_id": "UV08",
+      "compound_id": "tC4F9I",
+      "solvent": "CCl4"
+    },
+    {
+      "measurement_id": "UV09",
+      "compound_id": "tC4F9I",
+      "solvent": "EtOH"
+    },
+    {
+      "measurement_id": "UV10",
+      "compound_id": "tC4F9I",
+      "solvent": "Et2O"
+    }
+  ],
+  "measurement_id_pairs": [
+    {
+      "compound_id": "nC3F7I",
+      "donor_solvent": "EtOH",
+      "baseline_measurement_id": "UV01",
+      "donor_measurement_id": "UV02"
+    },
+    {
+      "compound_id": "iC3F7I",
+      "donor_solvent": "EtOH",
+      "baseline_measurement_id": "UV04",
+      "donor_measurement_id": "UV05"
+    },
+    {
+      "compound_id": "tC4F9I",
+      "donor_solvent": "EtOH",
+      "baseline_measurement_id": "UV07",
+      "donor_measurement_id": "UV09"
+    },
+    {
+      "compound_id": "nC3F7I",
+      "donor_solvent": "Et2O",
+      "baseline_measurement_id": "UV01",
+      "donor_measurement_id": "UV03"
+    },
+    {
+      "compound_id": "iC3F7I",
+      "donor_solvent": "Et2O",
+      "baseline_measurement_id": "UV04",
+      "donor_measurement_id": "UV06"
+    },
+    {
+      "compound_id": "tC4F9I",
+      "donor_solvent": "Et2O",
+      "baseline_measurement_id": "UV07",
+      "donor_measurement_id": "UV10"
+    }
+  ],
+  "numeric_summary": [
+    {
+      "compound_id": "nC3F7I",
+      "formula": "C3F7I",
+      "baseline_solvent": "C6H14",
+      "donor_solvent": "EtOH",
+      "lambda_h_nm": 270.0,
+      "lambda_b_nm": 250.0,
+      "delta_lambda_nm": 20.0,
+      "blue_shift_cm_inverse": 2962.962963,
+      "display_rounding_intervals": {
+        "delta_lambda_nm": [
+          19.9,
+          20.1
+        ],
+        "blue_shift_cm_inverse": [
+          2948.104582,
+          2977.822004
+        ]
+      }
+    },
+    {
+      "compound_id": "iC3F7I",
+      "formula": "C3F7I",
+      "baseline_solvent": "C6H14",
+      "donor_solvent": "EtOH",
+      "lambda_h_nm": 274.0,
+      "lambda_b_nm": 250.0,
+      "delta_lambda_nm": 24.0,
+      "blue_shift_cm_inverse": 3503.649635,
+      "display_rounding_intervals": {
+        "delta_lambda_nm": [
+          23.9,
+          24.1
+        ],
+        "blue_shift_cm_inverse": [
+          3488.990101,
+          3518.309938
+        ]
+      }
+    },
+    {
+      "compound_id": "tC4F9I",
+      "formula": "C4F9I",
+      "baseline_solvent": "C6H14",
+      "donor_solvent": "EtOH",
+      "lambda_h_nm": 288.0,
+      "lambda_b_nm": 260.5,
+      "delta_lambda_nm": 27.5,
+      "blue_shift_cm_inverse": 3665.493709,
+      "display_rounding_intervals": {
+        "delta_lambda_nm": [
+          27.4,
+          27.6
+        ],
+        "blue_shift_cm_inverse": [
+          3652.097829,
+          3678.890324
+        ]
+      }
+    },
+    {
+      "compound_id": "nC3F7I",
+      "formula": "C3F7I",
+      "baseline_solvent": "C6H14",
+      "donor_solvent": "Et2O",
+      "lambda_h_nm": 270.0,
+      "lambda_b_nm": 256.0,
+      "delta_lambda_nm": 14.0,
+      "blue_shift_cm_inverse": 2025.462963,
+      "display_rounding_intervals": {
+        "delta_lambda_nm": [
+          13.9,
+          14.1
+        ],
+        "blue_shift_cm_inverse": [
+          2010.975077,
+          2039.951289
+        ]
+      }
+    },
+    {
+      "compound_id": "iC3F7I",
+      "formula": "C3F7I",
+      "baseline_solvent": "C6H14",
+      "donor_solvent": "Et2O",
+      "lambda_h_nm": 274.0,
+      "lambda_b_nm": 257.0,
+      "delta_lambda_nm": 17.0,
+      "blue_shift_cm_inverse": 2414.155472,
+      "display_rounding_intervals": {
+        "delta_lambda_nm": [
+          16.9,
+          17.1
+        ],
+        "blue_shift_cm_inverse": [
+          2399.925673,
+          2428.385785
+        ]
+      }
+    },
+    {
+      "compound_id": "tC4F9I",
+      "formula": "C4F9I",
+      "baseline_solvent": "C6H14",
+      "donor_solvent": "Et2O",
+      "lambda_h_nm": 288.0,
+      "lambda_b_nm": 264.0,
+      "delta_lambda_nm": 24.0,
+      "blue_shift_cm_inverse": 3156.565657,
+      "display_rounding_intervals": {
+        "delta_lambda_nm": [
+          23.9,
+          24.1
+        ],
+        "blue_shift_cm_inverse": [
+          3143.363792,
+          3169.768146
+        ]
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "donor_solvent": "EtOH",
+      "metric": "delta_lambda_nm",
+      "nominal_order": [
+        "tC4F9I",
+        "iC3F7I",
+        "nC3F7I"
+      ],
+      "matches_three_iodide_order": true,
+      "adjacent_comparisons": [
+        {
+          "higher": "tC4F9I",
+          "lower": "iC3F7I",
+          "nominal_gap": 3.5,
+          "separated_under_display_rounding_assumption": true,
+          "first_overlap_common_wavelength_half_width_nm": 0.875
+        },
+        {
+          "higher": "iC3F7I",
+          "lower": "nC3F7I",
+          "nominal_gap": 4.0,
+          "separated_under_display_rounding_assumption": true,
+          "first_overlap_common_wavelength_half_width_nm": 1.0
+        }
+      ]
+    },
+    {
+      "donor_solvent": "EtOH",
+      "metric": "blue_shift_cm_inverse",
+      "nominal_order": [
+        "tC4F9I",
+        "iC3F7I",
+        "nC3F7I"
+      ],
+      "matches_three_iodide_order": true,
+      "adjacent_comparisons": [
+        {
+          "higher": "tC4F9I",
+          "lower": "iC3F7I",
+          "nominal_gap": 161.844074,
+          "separated_under_display_rounding_assumption": true,
+          "first_overlap_common_wavelength_half_width_nm": 0.288427
+        },
+        {
+          "higher": "iC3F7I",
+          "lower": "nC3F7I",
+          "nominal_gap": 540.686672,
+          "separated_under_display_rounding_assumption": true,
+          "first_overlap_common_wavelength_half_width_nm": 0.915859
+        }
+      ]
+    },
+    {
+      "donor_solvent": "Et2O",
+      "metric": "delta_lambda_nm",
+      "nominal_order": [
+        "tC4F9I",
+        "iC3F7I",
+        "nC3F7I"
+      ],
+      "matches_three_iodide_order": true,
+      "adjacent_comparisons": [
+        {
+          "higher": "tC4F9I",
+          "lower": "iC3F7I",
+          "nominal_gap": 7.0,
+          "separated_under_display_rounding_assumption": true,
+          "first_overlap_common_wavelength_half_width_nm": 1.75
+        },
+        {
+          "higher": "iC3F7I",
+          "lower": "nC3F7I",
+          "nominal_gap": 3.0,
+          "separated_under_display_rounding_assumption": true,
+          "first_overlap_common_wavelength_half_width_nm": 0.75
+        }
+      ]
+    },
+    {
+      "donor_solvent": "Et2O",
+      "metric": "blue_shift_cm_inverse",
+      "nominal_order": [
+        "tC4F9I",
+        "iC3F7I",
+        "nC3F7I"
+      ],
+      "matches_three_iodide_order": true,
+      "adjacent_comparisons": [
+        {
+          "higher": "tC4F9I",
+          "lower": "iC3F7I",
+          "nominal_gap": 742.410185,
+          "separated_under_display_rounding_assumption": true,
+          "first_overlap_common_wavelength_half_width_nm": 1.35321
+        },
+        {
+          "higher": "iC3F7I",
+          "lower": "nC3F7I",
+          "nominal_gap": 388.692509,
+          "separated_under_display_rounding_assumption": true,
+          "first_overlap_common_wavelength_half_width_nm": 0.676744
+        }
+      ]
+    }
+  ],
+  "experimental_uncertainty_nm": null,
+  "display_rounding_assumption": {
+    "half_width_nm": 0.05,
+    "interpretation": "按一位小数的通常舍入作独立有界扰动诊断，不是仪器精度、测量误差或置信区间"
+  },
+  "transcription_review": "继承封存包转录；本轮未重新核验原扫描，独立专业签认待补",
+  "boundaries": {
+    "new_experiment": "not_performed",
+    "raw_spectrum_refitting": "not_performed",
+    "quantum_calculation": "not_performed",
+    "reaction_mechanism": "not_tested",
+    "free_anion_detection": "not_tested",
+    "universal_four_group_order": "not_tested",
+    "novel_chemistry": "not_claimed",
+    "unmeasured_iodides": [
+      "C2F5I",
+      "CF3I"
+    ],
+    "entity_warning": "原表第三个测量对象为 n-C3F7I，不能替换为 C2F5I；B 是给体溶剂不是苯",
+    "phase1_status": "原表数值重放候选；独立专业签认及审定发布待完成，工程环境另见绑定运行记录"
+  },
+  "data_sha256": "92af88d5c1307d0a01b418354d2620a0d9eb8a8c68766adedd8be0feec2ff29a",
+  "code_sha256": "c42c2f6525a9d44a127f3c3a0385dc6ebc8e79197acb1593ca4111599d76486c"
+}

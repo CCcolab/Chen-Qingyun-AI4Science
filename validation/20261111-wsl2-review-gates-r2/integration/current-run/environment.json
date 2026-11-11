@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "recorded_at_utc": "2026-11-11T10:19:58.694079+00:00",
+  "python_version": "3.12.3",
+  "python_executable": "/usr/bin/python3",
+  "operating_system": "Linux",
+  "kernel": "5.15.167.4-microsoft-standard-WSL2",
+  "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "wsl_kernel_detected": true,
+  "wsl2_kernel_detected": true,
+  "git": {
+    "available": true,
+    "commit": "16f06b67354e7f30ddcaaff090fcbe8eeb1610fd",
+    "branch": "research/input-review-gates-20261111",
+    "dirty": false
+  },
+  "tests_run": 0,
+  "tests_status": "not_run_by_runner",
+  "scientific_review_status": "review_required",
+  "original_scan_reverified_by_this_run": false,
+  "independent_transcription_signoff": "pending",
+  "model_api_called": false,
+  "quantum_calculation": "not_performed",
+  "experiment": "not_performed",
+  "os_release": {
+    "NAME": "Ubuntu",
+    "ID": "ubuntu",
+    "PRETTY_NAME": "Ubuntu 24.04.4 LTS",
+    "VERSION_ID": "24.04",
+    "VERSION": "24.04.4 LTS (Noble Numbat)",
+    "VERSION_CODENAME": "noble",
+    "ID_LIKE": "debian",
+    "HOME_URL": "https://www.ubuntu.com/",
+    "SUPPORT_URL": "https://help.ubuntu.com/",
+    "BUG_REPORT_URL": "https://bugs.launchpad.net/ubuntu/",
+    "PRIVACY_POLICY_URL": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy",
+    "UBUNTU_CODENAME": "noble",
+    "LOGO": "ubuntu-logo"
+  }
+}

@@ -1,0 +1,2 @@
+{"task_id": "PF1966-UV-T1", "run_manifest": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/validation/20261111-wsl2-review-gates-r2/integration/current-run/run-manifest.json", "scientific_review_status": "review_required"}
+仅为原表数值重放；实验、机理、量子计算及四基团普适排序均未验证。

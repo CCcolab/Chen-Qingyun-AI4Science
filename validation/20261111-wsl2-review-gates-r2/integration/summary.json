@@ -1,0 +1,106 @@
+{
+  "started_at_utc": "2026-11-11T10:19:58.484345+00:00",
+  "task_id": "PF1966-UV-T1",
+  "result_type": "published_table_numerical_replay",
+  "scientific_review_status": "review_required",
+  "commands": [
+    {
+      "label": "git-revision",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/tmp/chen-phase1-wsl2-2ri6v9fj/integration",
+      "started_at_utc": "2026-11-11T10:19:58.543204+00:00",
+      "finished_at_utc": "2026-11-11T10:19:58.553774+00:00",
+      "exit_code": 0,
+      "stdout": "logs/git-revision.stdout.txt",
+      "stderr": "logs/git-revision.stderr.txt"
+    },
+    {
+      "label": "git-status",
+      "command": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "cwd": "/tmp/chen-phase1-wsl2-2ri6v9fj/integration",
+      "started_at_utc": "2026-11-11T10:19:58.553808+00:00",
+      "finished_at_utc": "2026-11-11T10:19:58.570595+00:00",
+      "exit_code": 0,
+      "stdout": "logs/git-status.stdout.txt",
+      "stderr": "logs/git-status.stderr.txt"
+    },
+    {
+      "label": "sealed-v1-numerical-replay",
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "chen_research",
+        "--output",
+        "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/validation/20261111-wsl2-review-gates-r2/integration/legacy-replay"
+      ],
+      "cwd": "/tmp/chen-upstream-ooea8myp",
+      "started_at_utc": "2026-11-11T10:19:58.572605+00:00",
+      "finished_at_utc": "2026-11-11T10:19:58.623917+00:00",
+      "exit_code": 0,
+      "stdout": "logs/sealed-v1-numerical-replay.stdout.txt",
+      "stderr": "logs/sealed-v1-numerical-replay.stderr.txt"
+    },
+    {
+      "label": "current-v2-numerical-replay",
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "chen_research",
+        "--output",
+        "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/validation/20261111-wsl2-review-gates-r2/integration/current-run"
+      ],
+      "cwd": "/tmp/chen-phase1-wsl2-2ri6v9fj/integration",
+      "started_at_utc": "2026-11-11T10:19:58.649911+00:00",
+      "finished_at_utc": "2026-11-11T10:19:59.364324+00:00",
+      "exit_code": 0,
+      "stdout": "logs/current-v2-numerical-replay.stdout.txt",
+      "stderr": "logs/current-v2-numerical-replay.stderr.txt"
+    }
+  ],
+  "quantum_calculation": "not_performed",
+  "experiment": "not_performed",
+  "future_hypotheses": "not_tested",
+  "model_api_called": false,
+  "website_modified": false,
+  "original_scan_reverified_by_this_run": false,
+  "independent_transcription_signoff": "pending",
+  "status": "passed",
+  "errors": [],
+  "result_comparison_scope": {
+    "all_result_bytes_equal": "sealed_v1_cli_vs_historical_results_only",
+    "all_result_fields_equal": "sealed_v1_cli_vs_historical_results_only",
+    "current_numerical_agreement": "v2_vs_v1_explicit_scientific_projection_only",
+    "current_full_file_equality_with_v1": "not_required_schema_and_provenance_changed"
+  },
+  "test_execution_policy": "local_only_not_run",
+  "tests_run": 0,
+  "tests_status": "not_run_by_distribution_policy",
+  "upstream_files_verified": 18,
+  "source_commit": "16f06b67354e7f30ddcaaff090fcbe8eeb1610fd",
+  "source_worktree_dirty": false,
+  "original_delivery_verifier": "not_run_original_test_member_not_distributed",
+  "result_files_compared": 2,
+  "all_result_bytes_equal": true,
+  "all_result_fields_equal": true,
+  "legacy_result_bytes_equal": true,
+  "legacy_result_fields_equal": true,
+  "current_numerical_agreement": true,
+  "current_run_integrity_passed": true,
+  "current_result_schema_version": "2.0",
+  "current_candidate_schema_version": "2.0",
+  "current_result_sha256": "4e69073ce8e96bd5ffa217cd89b67522e839ede99d2ded056d44f120c76141dd",
+  "current_candidate_sha256": "93498a5c6b430ad02e11f7078d0e2cbbcd62cfc3aab3fee4875ae43b45500cc2",
+  "current_publication_payload_sha256": "8d1ad359fffd6a2af5871a4ab57f454a45c275c45e66d9d82734958ae4ca2967",
+  "current_run_id": "ca336d0c-dd92-4b8d-b920-e837c76a3498",
+  "current_run_manifest": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/validation/20261111-wsl2-review-gates-r2/integration/current-run/run-manifest.json",
+  "current_run_manifest_sha256": "898a94bbdcc78d985d2589ceb3cf75e1a2f9135350ebda0e92361ee7ed069c87",
+  "finished_at_utc": "2026-11-11T10:19:59.677048+00:00"
+}
