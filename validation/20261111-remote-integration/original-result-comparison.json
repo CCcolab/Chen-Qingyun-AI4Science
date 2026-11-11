@@ -1,0 +1,2618 @@
+[
+  {
+    "reference": "/tmp/chen-phase1-wsl2-nixmz2n_/Chen_Qingyun_AI_Research_20261111/results/pftb1966-uv-replay.json",
+    "generated": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research_20261111/validation/20261111-remote-integration/original-replay/pftb1966-uv-replay.json",
+    "reference_sha256": "c83794634136e2bd08d09b806b400eea603cf1c27c753ca3db2951b9c2c99432",
+    "generated_sha256": "c83794634136e2bd08d09b806b400eea603cf1c27c753ca3db2951b9c2c99432",
+    "byte_equal": true,
+    "all_fields_equal": true,
+    "field_checks": [
+      {
+        "path": "$",
+        "equal": true,
+        "expected_keys": [
+          "boundaries",
+          "code_sha256",
+          "comparisons",
+          "data_sha256",
+          "display_rounding_assumption",
+          "excluded_from_comparison",
+          "experimental_uncertainty_nm",
+          "measurements_and_derived_shifts",
+          "numerical_status",
+          "observations_count",
+          "protocol_sha256",
+          "result_type",
+          "schema_version",
+          "scientific_review_status",
+          "source_id",
+          "source_location",
+          "source_pdf_sha256",
+          "task_id",
+          "transcription_review",
+          "used_observations_count"
+        ],
+        "actual_keys": [
+          "boundaries",
+          "code_sha256",
+          "comparisons",
+          "data_sha256",
+          "display_rounding_assumption",
+          "excluded_from_comparison",
+          "experimental_uncertainty_nm",
+          "measurements_and_derived_shifts",
+          "numerical_status",
+          "observations_count",
+          "protocol_sha256",
+          "result_type",
+          "schema_version",
+          "scientific_review_status",
+          "source_id",
+          "source_location",
+          "source_pdf_sha256",
+          "task_id",
+          "transcription_review",
+          "used_observations_count"
+        ]
+      },
+      {
+        "path": "$.boundaries",
+        "equal": true,
+        "expected_keys": [
+          "entity_warning",
+          "free_anion_detection",
+          "new_experiment",
+          "novel_chemistry",
+          "phase1_status",
+          "quantum_calculation",
+          "raw_spectrum_refitting",
+          "reaction_mechanism",
+          "universal_four_group_order",
+          "unmeasured_iodides"
+        ],
+        "actual_keys": [
+          "entity_warning",
+          "free_anion_detection",
+          "new_experiment",
+          "novel_chemistry",
+          "phase1_status",
+          "quantum_calculation",
+          "raw_spectrum_refitting",
+          "reaction_mechanism",
+          "universal_four_group_order",
+          "unmeasured_iodides"
+        ]
+      },
+      {
+        "path": "$.boundaries.entity_warning",
+        "equal": true,
+        "expected": "原表第三个测量对象为 n-C3F7I，不能替换为 C2F5I；B 是给体溶剂不是苯",
+        "actual": "原表第三个测量对象为 n-C3F7I，不能替换为 C2F5I；B 是给体溶剂不是苯"
+      },
+      {
+        "path": "$.boundaries.free_anion_detection",
+        "equal": true,
+        "expected": "not_tested",
+        "actual": "not_tested"
+      },
+      {
+        "path": "$.boundaries.new_experiment",
+        "equal": true,
+        "expected": "not_performed",
+        "actual": "not_performed"
+      },
+      {
+        "path": "$.boundaries.novel_chemistry",
+        "equal": true,
+        "expected": "not_claimed",
+        "actual": "not_claimed"
+      },
+      {
+        "path": "$.boundaries.phase1_status",
+        "equal": true,
+        "expected": "仅形成可审阅数值重放，不等于模型服务、WSL 验收或网站已接入",
+        "actual": "仅形成可审阅数值重放，不等于模型服务、WSL 验收或网站已接入"
+      },
+      {
+        "path": "$.boundaries.quantum_calculation",
+        "equal": true,
+        "expected": "not_performed",
+        "actual": "not_performed"
+      },
+      {
+        "path": "$.boundaries.raw_spectrum_refitting",
+        "equal": true,
+        "expected": "not_performed",
+        "actual": "not_performed"
+      },
+      {
+        "path": "$.boundaries.reaction_mechanism",
+        "equal": true,
+        "expected": "not_tested",
+        "actual": "not_tested"
+      },
+      {
+        "path": "$.boundaries.universal_four_group_order",
+        "equal": true,
+        "expected": "not_tested",
+        "actual": "not_tested"
+      },
+      {
+        "path": "$.boundaries.unmeasured_iodides",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.boundaries.unmeasured_iodides[0]",
+        "equal": true,
+        "expected": "C2F5I",
+        "actual": "C2F5I"
+      },
+      {
+        "path": "$.boundaries.unmeasured_iodides[1]",
+        "equal": true,
+        "expected": "CF3I",
+        "actual": "CF3I"
+      },
+      {
+        "path": "$.code_sha256",
+        "equal": true,
+        "expected": "67169496a4c795eaef9ca7f68f3659def4050529fde0863fec5f2ffcce8b04de",
+        "actual": "67169496a4c795eaef9ca7f68f3659def4050529fde0863fec5f2ffcce8b04de"
+      },
+      {
+        "path": "$.comparisons",
+        "equal": true,
+        "expected_length": 4,
+        "actual_length": 4
+      },
+      {
+        "path": "$.comparisons[0]",
+        "equal": true,
+        "expected_keys": [
+          "adjacent_comparisons",
+          "donor_solvent",
+          "matches_three_iodide_order",
+          "metric",
+          "nominal_order"
+        ],
+        "actual_keys": [
+          "adjacent_comparisons",
+          "donor_solvent",
+          "matches_three_iodide_order",
+          "metric",
+          "nominal_order"
+        ]
+      },
+      {
+        "path": "$.comparisons[0].adjacent_comparisons",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.comparisons[0].adjacent_comparisons[0]",
+        "equal": true,
+        "expected_keys": [
+          "first_overlap_common_wavelength_half_width_nm",
+          "higher",
+          "lower",
+          "nominal_gap",
+          "separated_under_display_rounding_assumption"
+        ],
+        "actual_keys": [
+          "first_overlap_common_wavelength_half_width_nm",
+          "higher",
+          "lower",
+          "nominal_gap",
+          "separated_under_display_rounding_assumption"
+        ]
+      },
+      {
+        "path": "$.comparisons[0].adjacent_comparisons[0].first_overlap_common_wavelength_half_width_nm",
+        "equal": true,
+        "expected": 0.875,
+        "actual": 0.875
+      },
+      {
+        "path": "$.comparisons[0].adjacent_comparisons[0].higher",
+        "equal": true,
+        "expected": "tC4F9I",
+        "actual": "tC4F9I"
+      },
+      {
+        "path": "$.comparisons[0].adjacent_comparisons[0].lower",
+        "equal": true,
+        "expected": "iC3F7I",
+        "actual": "iC3F7I"
+      },
+      {
+        "path": "$.comparisons[0].adjacent_comparisons[0].nominal_gap",
+        "equal": true,
+        "expected": 3.5,
+        "actual": 3.5
+      },
+      {
+        "path": "$.comparisons[0].adjacent_comparisons[0].separated_under_display_rounding_assumption",
+        "equal": true,
+        "expected": true,
+        "actual": true
+      },
+      {
+        "path": "$.comparisons[0].adjacent_comparisons[1]",
+        "equal": true,
+        "expected_keys": [
+          "first_overlap_common_wavelength_half_width_nm",
+          "higher",
+          "lower",
+          "nominal_gap",
+          "separated_under_display_rounding_assumption"
+        ],
+        "actual_keys": [
+          "first_overlap_common_wavelength_half_width_nm",
+          "higher",
+          "lower",
+          "nominal_gap",
+          "separated_under_display_rounding_assumption"
+        ]
+      },
+      {
+        "path": "$.comparisons[0].adjacent_comparisons[1].first_overlap_common_wavelength_half_width_nm",
+        "equal": true,
+        "expected": 1.0,
+        "actual": 1.0
+      },
+      {
+        "path": "$.comparisons[0].adjacent_comparisons[1].higher",
+        "equal": true,
+        "expected": "iC3F7I",
+        "actual": "iC3F7I"
+      },
+      {
+        "path": "$.comparisons[0].adjacent_comparisons[1].lower",
+        "equal": true,
+        "expected": "nC3F7I",
+        "actual": "nC3F7I"
+      },
+      {
+        "path": "$.comparisons[0].adjacent_comparisons[1].nominal_gap",
+        "equal": true,
+        "expected": 4.0,
+        "actual": 4.0
+      },
+      {
+        "path": "$.comparisons[0].adjacent_comparisons[1].separated_under_display_rounding_assumption",
+        "equal": true,
+        "expected": true,
+        "actual": true
+      },
+      {
+        "path": "$.comparisons[0].donor_solvent",
+        "equal": true,
+        "expected": "EtOH",
+        "actual": "EtOH"
+      },
+      {
+        "path": "$.comparisons[0].matches_three_iodide_order",
+        "equal": true,
+        "expected": true,
+        "actual": true
+      },
+      {
+        "path": "$.comparisons[0].metric",
+        "equal": true,
+        "expected": "delta_lambda_nm",
+        "actual": "delta_lambda_nm"
+      },
+      {
+        "path": "$.comparisons[0].nominal_order",
+        "equal": true,
+        "expected_length": 3,
+        "actual_length": 3
+      },
+      {
+        "path": "$.comparisons[0].nominal_order[0]",
+        "equal": true,
+        "expected": "tC4F9I",
+        "actual": "tC4F9I"
+      },
+      {
+        "path": "$.comparisons[0].nominal_order[1]",
+        "equal": true,
+        "expected": "iC3F7I",
+        "actual": "iC3F7I"
+      },
+      {
+        "path": "$.comparisons[0].nominal_order[2]",
+        "equal": true,
+        "expected": "nC3F7I",
+        "actual": "nC3F7I"
+      },
+      {
+        "path": "$.comparisons[1]",
+        "equal": true,
+        "expected_keys": [
+          "adjacent_comparisons",
+          "donor_solvent",
+          "matches_three_iodide_order",
+          "metric",
+          "nominal_order"
+        ],
+        "actual_keys": [
+          "adjacent_comparisons",
+          "donor_solvent",
+          "matches_three_iodide_order",
+          "metric",
+          "nominal_order"
+        ]
+      },
+      {
+        "path": "$.comparisons[1].adjacent_comparisons",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.comparisons[1].adjacent_comparisons[0]",
+        "equal": true,
+        "expected_keys": [
+          "first_overlap_common_wavelength_half_width_nm",
+          "higher",
+          "lower",
+          "nominal_gap",
+          "separated_under_display_rounding_assumption"
+        ],
+        "actual_keys": [
+          "first_overlap_common_wavelength_half_width_nm",
+          "higher",
+          "lower",
+          "nominal_gap",
+          "separated_under_display_rounding_assumption"
+        ]
+      },
+      {
+        "path": "$.comparisons[1].adjacent_comparisons[0].first_overlap_common_wavelength_half_width_nm",
+        "equal": true,
+        "expected": 0.288427,
+        "actual": 0.288427
+      },
+      {
+        "path": "$.comparisons[1].adjacent_comparisons[0].higher",
+        "equal": true,
+        "expected": "tC4F9I",
+        "actual": "tC4F9I"
+      },
+      {
+        "path": "$.comparisons[1].adjacent_comparisons[0].lower",
+        "equal": true,
+        "expected": "iC3F7I",
+        "actual": "iC3F7I"
+      },
+      {
+        "path": "$.comparisons[1].adjacent_comparisons[0].nominal_gap",
+        "equal": true,
+        "expected": 161.844074,
+        "actual": 161.844074
+      },
+      {
+        "path": "$.comparisons[1].adjacent_comparisons[0].separated_under_display_rounding_assumption",
+        "equal": true,
+        "expected": true,
+        "actual": true
+      },
+      {
+        "path": "$.comparisons[1].adjacent_comparisons[1]",
+        "equal": true,
+        "expected_keys": [
+          "first_overlap_common_wavelength_half_width_nm",
+          "higher",
+          "lower",
+          "nominal_gap",
+          "separated_under_display_rounding_assumption"
+        ],
+        "actual_keys": [
+          "first_overlap_common_wavelength_half_width_nm",
+          "higher",
+          "lower",
+          "nominal_gap",
+          "separated_under_display_rounding_assumption"
+        ]
+      },
+      {
+        "path": "$.comparisons[1].adjacent_comparisons[1].first_overlap_common_wavelength_half_width_nm",
+        "equal": true,
+        "expected": 0.915859,
+        "actual": 0.915859
+      },
+      {
+        "path": "$.comparisons[1].adjacent_comparisons[1].higher",
+        "equal": true,
+        "expected": "iC3F7I",
+        "actual": "iC3F7I"
+      },
+      {
+        "path": "$.comparisons[1].adjacent_comparisons[1].lower",
+        "equal": true,
+        "expected": "nC3F7I",
+        "actual": "nC3F7I"
+      },
+      {
+        "path": "$.comparisons[1].adjacent_comparisons[1].nominal_gap",
+        "equal": true,
+        "expected": 540.686672,
+        "actual": 540.686672
+      },
+      {
+        "path": "$.comparisons[1].adjacent_comparisons[1].separated_under_display_rounding_assumption",
+        "equal": true,
+        "expected": true,
+        "actual": true
+      },
+      {
+        "path": "$.comparisons[1].donor_solvent",
+        "equal": true,
+        "expected": "EtOH",
+        "actual": "EtOH"
+      },
+      {
+        "path": "$.comparisons[1].matches_three_iodide_order",
+        "equal": true,
+        "expected": true,
+        "actual": true
+      },
+      {
+        "path": "$.comparisons[1].metric",
+        "equal": true,
+        "expected": "blue_shift_cm_inverse",
+        "actual": "blue_shift_cm_inverse"
+      },
+      {
+        "path": "$.comparisons[1].nominal_order",
+        "equal": true,
+        "expected_length": 3,
+        "actual_length": 3
+      },
+      {
+        "path": "$.comparisons[1].nominal_order[0]",
+        "equal": true,
+        "expected": "tC4F9I",
+        "actual": "tC4F9I"
+      },
+      {
+        "path": "$.comparisons[1].nominal_order[1]",
+        "equal": true,
+        "expected": "iC3F7I",
+        "actual": "iC3F7I"
+      },
+      {
+        "path": "$.comparisons[1].nominal_order[2]",
+        "equal": true,
+        "expected": "nC3F7I",
+        "actual": "nC3F7I"
+      },
+      {
+        "path": "$.comparisons[2]",
+        "equal": true,
+        "expected_keys": [
+          "adjacent_comparisons",
+          "donor_solvent",
+          "matches_three_iodide_order",
+          "metric",
+          "nominal_order"
+        ],
+        "actual_keys": [
+          "adjacent_comparisons",
+          "donor_solvent",
+          "matches_three_iodide_order",
+          "metric",
+          "nominal_order"
+        ]
+      },
+      {
+        "path": "$.comparisons[2].adjacent_comparisons",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.comparisons[2].adjacent_comparisons[0]",
+        "equal": true,
+        "expected_keys": [
+          "first_overlap_common_wavelength_half_width_nm",
+          "higher",
+          "lower",
+          "nominal_gap",
+          "separated_under_display_rounding_assumption"
+        ],
+        "actual_keys": [
+          "first_overlap_common_wavelength_half_width_nm",
+          "higher",
+          "lower",
+          "nominal_gap",
+          "separated_under_display_rounding_assumption"
+        ]
+      },
+      {
+        "path": "$.comparisons[2].adjacent_comparisons[0].first_overlap_common_wavelength_half_width_nm",
+        "equal": true,
+        "expected": 1.75,
+        "actual": 1.75
+      },
+      {
+        "path": "$.comparisons[2].adjacent_comparisons[0].higher",
+        "equal": true,
+        "expected": "tC4F9I",
+        "actual": "tC4F9I"
+      },
+      {
+        "path": "$.comparisons[2].adjacent_comparisons[0].lower",
+        "equal": true,
+        "expected": "iC3F7I",
+        "actual": "iC3F7I"
+      },
+      {
+        "path": "$.comparisons[2].adjacent_comparisons[0].nominal_gap",
+        "equal": true,
+        "expected": 7.0,
+        "actual": 7.0
+      },
+      {
+        "path": "$.comparisons[2].adjacent_comparisons[0].separated_under_display_rounding_assumption",
+        "equal": true,
+        "expected": true,
+        "actual": true
+      },
+      {
+        "path": "$.comparisons[2].adjacent_comparisons[1]",
+        "equal": true,
+        "expected_keys": [
+          "first_overlap_common_wavelength_half_width_nm",
+          "higher",
+          "lower",
+          "nominal_gap",
+          "separated_under_display_rounding_assumption"
+        ],
+        "actual_keys": [
+          "first_overlap_common_wavelength_half_width_nm",
+          "higher",
+          "lower",
+          "nominal_gap",
+          "separated_under_display_rounding_assumption"
+        ]
+      },
+      {
+        "path": "$.comparisons[2].adjacent_comparisons[1].first_overlap_common_wavelength_half_width_nm",
+        "equal": true,
+        "expected": 0.75,
+        "actual": 0.75
+      },
+      {
+        "path": "$.comparisons[2].adjacent_comparisons[1].higher",
+        "equal": true,
+        "expected": "iC3F7I",
+        "actual": "iC3F7I"
+      },
+      {
+        "path": "$.comparisons[2].adjacent_comparisons[1].lower",
+        "equal": true,
+        "expected": "nC3F7I",
+        "actual": "nC3F7I"
+      },
+      {
+        "path": "$.comparisons[2].adjacent_comparisons[1].nominal_gap",
+        "equal": true,
+        "expected": 3.0,
+        "actual": 3.0
+      },
+      {
+        "path": "$.comparisons[2].adjacent_comparisons[1].separated_under_display_rounding_assumption",
+        "equal": true,
+        "expected": true,
+        "actual": true
+      },
+      {
+        "path": "$.comparisons[2].donor_solvent",
+        "equal": true,
+        "expected": "Et2O",
+        "actual": "Et2O"
+      },
+      {
+        "path": "$.comparisons[2].matches_three_iodide_order",
+        "equal": true,
+        "expected": true,
+        "actual": true
+      },
+      {
+        "path": "$.comparisons[2].metric",
+        "equal": true,
+        "expected": "delta_lambda_nm",
+        "actual": "delta_lambda_nm"
+      },
+      {
+        "path": "$.comparisons[2].nominal_order",
+        "equal": true,
+        "expected_length": 3,
+        "actual_length": 3
+      },
+      {
+        "path": "$.comparisons[2].nominal_order[0]",
+        "equal": true,
+        "expected": "tC4F9I",
+        "actual": "tC4F9I"
+      },
+      {
+        "path": "$.comparisons[2].nominal_order[1]",
+        "equal": true,
+        "expected": "iC3F7I",
+        "actual": "iC3F7I"
+      },
+      {
+        "path": "$.comparisons[2].nominal_order[2]",
+        "equal": true,
+        "expected": "nC3F7I",
+        "actual": "nC3F7I"
+      },
+      {
+        "path": "$.comparisons[3]",
+        "equal": true,
+        "expected_keys": [
+          "adjacent_comparisons",
+          "donor_solvent",
+          "matches_three_iodide_order",
+          "metric",
+          "nominal_order"
+        ],
+        "actual_keys": [
+          "adjacent_comparisons",
+          "donor_solvent",
+          "matches_three_iodide_order",
+          "metric",
+          "nominal_order"
+        ]
+      },
+      {
+        "path": "$.comparisons[3].adjacent_comparisons",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.comparisons[3].adjacent_comparisons[0]",
+        "equal": true,
+        "expected_keys": [
+          "first_overlap_common_wavelength_half_width_nm",
+          "higher",
+          "lower",
+          "nominal_gap",
+          "separated_under_display_rounding_assumption"
+        ],
+        "actual_keys": [
+          "first_overlap_common_wavelength_half_width_nm",
+          "higher",
+          "lower",
+          "nominal_gap",
+          "separated_under_display_rounding_assumption"
+        ]
+      },
+      {
+        "path": "$.comparisons[3].adjacent_comparisons[0].first_overlap_common_wavelength_half_width_nm",
+        "equal": true,
+        "expected": 1.35321,
+        "actual": 1.35321
+      },
+      {
+        "path": "$.comparisons[3].adjacent_comparisons[0].higher",
+        "equal": true,
+        "expected": "tC4F9I",
+        "actual": "tC4F9I"
+      },
+      {
+        "path": "$.comparisons[3].adjacent_comparisons[0].lower",
+        "equal": true,
+        "expected": "iC3F7I",
+        "actual": "iC3F7I"
+      },
+      {
+        "path": "$.comparisons[3].adjacent_comparisons[0].nominal_gap",
+        "equal": true,
+        "expected": 742.410185,
+        "actual": 742.410185
+      },
+      {
+        "path": "$.comparisons[3].adjacent_comparisons[0].separated_under_display_rounding_assumption",
+        "equal": true,
+        "expected": true,
+        "actual": true
+      },
+      {
+        "path": "$.comparisons[3].adjacent_comparisons[1]",
+        "equal": true,
+        "expected_keys": [
+          "first_overlap_common_wavelength_half_width_nm",
+          "higher",
+          "lower",
+          "nominal_gap",
+          "separated_under_display_rounding_assumption"
+        ],
+        "actual_keys": [
+          "first_overlap_common_wavelength_half_width_nm",
+          "higher",
+          "lower",
+          "nominal_gap",
+          "separated_under_display_rounding_assumption"
+        ]
+      },
+      {
+        "path": "$.comparisons[3].adjacent_comparisons[1].first_overlap_common_wavelength_half_width_nm",
+        "equal": true,
+        "expected": 0.676744,
+        "actual": 0.676744
+      },
+      {
+        "path": "$.comparisons[3].adjacent_comparisons[1].higher",
+        "equal": true,
+        "expected": "iC3F7I",
+        "actual": "iC3F7I"
+      },
+      {
+        "path": "$.comparisons[3].adjacent_comparisons[1].lower",
+        "equal": true,
+        "expected": "nC3F7I",
+        "actual": "nC3F7I"
+      },
+      {
+        "path": "$.comparisons[3].adjacent_comparisons[1].nominal_gap",
+        "equal": true,
+        "expected": 388.692509,
+        "actual": 388.692509
+      },
+      {
+        "path": "$.comparisons[3].adjacent_comparisons[1].separated_under_display_rounding_assumption",
+        "equal": true,
+        "expected": true,
+        "actual": true
+      },
+      {
+        "path": "$.comparisons[3].donor_solvent",
+        "equal": true,
+        "expected": "Et2O",
+        "actual": "Et2O"
+      },
+      {
+        "path": "$.comparisons[3].matches_three_iodide_order",
+        "equal": true,
+        "expected": true,
+        "actual": true
+      },
+      {
+        "path": "$.comparisons[3].metric",
+        "equal": true,
+        "expected": "blue_shift_cm_inverse",
+        "actual": "blue_shift_cm_inverse"
+      },
+      {
+        "path": "$.comparisons[3].nominal_order",
+        "equal": true,
+        "expected_length": 3,
+        "actual_length": 3
+      },
+      {
+        "path": "$.comparisons[3].nominal_order[0]",
+        "equal": true,
+        "expected": "tC4F9I",
+        "actual": "tC4F9I"
+      },
+      {
+        "path": "$.comparisons[3].nominal_order[1]",
+        "equal": true,
+        "expected": "iC3F7I",
+        "actual": "iC3F7I"
+      },
+      {
+        "path": "$.comparisons[3].nominal_order[2]",
+        "equal": true,
+        "expected": "nC3F7I",
+        "actual": "nC3F7I"
+      },
+      {
+        "path": "$.data_sha256",
+        "equal": true,
+        "expected": "92af88d5c1307d0a01b418354d2620a0d9eb8a8c68766adedd8be0feec2ff29a",
+        "actual": "92af88d5c1307d0a01b418354d2620a0d9eb8a8c68766adedd8be0feec2ff29a"
+      },
+      {
+        "path": "$.display_rounding_assumption",
+        "equal": true,
+        "expected_keys": [
+          "half_width_nm",
+          "interpretation"
+        ],
+        "actual_keys": [
+          "half_width_nm",
+          "interpretation"
+        ]
+      },
+      {
+        "path": "$.display_rounding_assumption.half_width_nm",
+        "equal": true,
+        "expected": 0.05,
+        "actual": 0.05
+      },
+      {
+        "path": "$.display_rounding_assumption.interpretation",
+        "equal": true,
+        "expected": "按一位小数的通常舍入作独立有界扰动诊断，不是仪器精度、测量误差或置信区间",
+        "actual": "按一位小数的通常舍入作独立有界扰动诊断，不是仪器精度、测量误差或置信区间"
+      },
+      {
+        "path": "$.excluded_from_comparison",
+        "equal": true,
+        "expected_length": 1,
+        "actual_length": 1
+      },
+      {
+        "path": "$.excluded_from_comparison[0]",
+        "equal": true,
+        "expected_keys": [
+          "compound_id",
+          "reason",
+          "solvent"
+        ],
+        "actual_keys": [
+          "compound_id",
+          "reason",
+          "solvent"
+        ]
+      },
+      {
+        "path": "$.excluded_from_comparison[0].compound_id",
+        "equal": true,
+        "expected": "tC4F9I",
+        "actual": "tC4F9I"
+      },
+      {
+        "path": "$.excluded_from_comparison[0].reason",
+        "equal": true,
+        "expected": "不属于本合同的 C6H14—给体溶剂配对",
+        "actual": "不属于本合同的 C6H14—给体溶剂配对"
+      },
+      {
+        "path": "$.excluded_from_comparison[0].solvent",
+        "equal": true,
+        "expected": "CCl4",
+        "actual": "CCl4"
+      },
+      {
+        "path": "$.experimental_uncertainty_nm",
+        "equal": true,
+        "expected": null,
+        "actual": null
+      },
+      {
+        "path": "$.measurements_and_derived_shifts",
+        "equal": true,
+        "expected_length": 6,
+        "actual_length": 6
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[0]",
+        "equal": true,
+        "expected_keys": [
+          "baseline_solvent",
+          "blue_shift_cm_inverse",
+          "compound_id",
+          "delta_lambda_nm",
+          "display_rounding_intervals",
+          "donor_solvent",
+          "formula",
+          "lambda_b_nm",
+          "lambda_h_nm"
+        ],
+        "actual_keys": [
+          "baseline_solvent",
+          "blue_shift_cm_inverse",
+          "compound_id",
+          "delta_lambda_nm",
+          "display_rounding_intervals",
+          "donor_solvent",
+          "formula",
+          "lambda_b_nm",
+          "lambda_h_nm"
+        ]
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[0].baseline_solvent",
+        "equal": true,
+        "expected": "C6H14",
+        "actual": "C6H14"
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[0].blue_shift_cm_inverse",
+        "equal": true,
+        "expected": 2962.962963,
+        "actual": 2962.962963
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[0].compound_id",
+        "equal": true,
+        "expected": "nC3F7I",
+        "actual": "nC3F7I"
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[0].delta_lambda_nm",
+        "equal": true,
+        "expected": 20.0,
+        "actual": 20.0
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[0].display_rounding_intervals",
+        "equal": true,
+        "expected_keys": [
+          "blue_shift_cm_inverse",
+          "delta_lambda_nm"
+        ],
+        "actual_keys": [
+          "blue_shift_cm_inverse",
+          "delta_lambda_nm"
+        ]
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[0].display_rounding_intervals.blue_shift_cm_inverse",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[0].display_rounding_intervals.blue_shift_cm_inverse[0]",
+        "equal": true,
+        "expected": 2948.104582,
+        "actual": 2948.104582
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[0].display_rounding_intervals.blue_shift_cm_inverse[1]",
+        "equal": true,
+        "expected": 2977.822004,
+        "actual": 2977.822004
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[0].display_rounding_intervals.delta_lambda_nm",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[0].display_rounding_intervals.delta_lambda_nm[0]",
+        "equal": true,
+        "expected": 19.9,
+        "actual": 19.9
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[0].display_rounding_intervals.delta_lambda_nm[1]",
+        "equal": true,
+        "expected": 20.1,
+        "actual": 20.1
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[0].donor_solvent",
+        "equal": true,
+        "expected": "EtOH",
+        "actual": "EtOH"
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[0].formula",
+        "equal": true,
+        "expected": "C3F7I",
+        "actual": "C3F7I"
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[0].lambda_b_nm",
+        "equal": true,
+        "expected": 250.0,
+        "actual": 250.0
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[0].lambda_h_nm",
+        "equal": true,
+        "expected": 270.0,
+        "actual": 270.0
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[1]",
+        "equal": true,
+        "expected_keys": [
+          "baseline_solvent",
+          "blue_shift_cm_inverse",
+          "compound_id",
+          "delta_lambda_nm",
+          "display_rounding_intervals",
+          "donor_solvent",
+          "formula",
+          "lambda_b_nm",
+          "lambda_h_nm"
+        ],
+        "actual_keys": [
+          "baseline_solvent",
+          "blue_shift_cm_inverse",
+          "compound_id",
+          "delta_lambda_nm",
+          "display_rounding_intervals",
+          "donor_solvent",
+          "formula",
+          "lambda_b_nm",
+          "lambda_h_nm"
+        ]
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[1].baseline_solvent",
+        "equal": true,
+        "expected": "C6H14",
+        "actual": "C6H14"
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[1].blue_shift_cm_inverse",
+        "equal": true,
+        "expected": 3503.649635,
+        "actual": 3503.649635
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[1].compound_id",
+        "equal": true,
+        "expected": "iC3F7I",
+        "actual": "iC3F7I"
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[1].delta_lambda_nm",
+        "equal": true,
+        "expected": 24.0,
+        "actual": 24.0
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[1].display_rounding_intervals",
+        "equal": true,
+        "expected_keys": [
+          "blue_shift_cm_inverse",
+          "delta_lambda_nm"
+        ],
+        "actual_keys": [
+          "blue_shift_cm_inverse",
+          "delta_lambda_nm"
+        ]
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[1].display_rounding_intervals.blue_shift_cm_inverse",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[1].display_rounding_intervals.blue_shift_cm_inverse[0]",
+        "equal": true,
+        "expected": 3488.990101,
+        "actual": 3488.990101
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[1].display_rounding_intervals.blue_shift_cm_inverse[1]",
+        "equal": true,
+        "expected": 3518.309938,
+        "actual": 3518.309938
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[1].display_rounding_intervals.delta_lambda_nm",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[1].display_rounding_intervals.delta_lambda_nm[0]",
+        "equal": true,
+        "expected": 23.9,
+        "actual": 23.9
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[1].display_rounding_intervals.delta_lambda_nm[1]",
+        "equal": true,
+        "expected": 24.1,
+        "actual": 24.1
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[1].donor_solvent",
+        "equal": true,
+        "expected": "EtOH",
+        "actual": "EtOH"
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[1].formula",
+        "equal": true,
+        "expected": "C3F7I",
+        "actual": "C3F7I"
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[1].lambda_b_nm",
+        "equal": true,
+        "expected": 250.0,
+        "actual": 250.0
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[1].lambda_h_nm",
+        "equal": true,
+        "expected": 274.0,
+        "actual": 274.0
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[2]",
+        "equal": true,
+        "expected_keys": [
+          "baseline_solvent",
+          "blue_shift_cm_inverse",
+          "compound_id",
+          "delta_lambda_nm",
+          "display_rounding_intervals",
+          "donor_solvent",
+          "formula",
+          "lambda_b_nm",
+          "lambda_h_nm"
+        ],
+        "actual_keys": [
+          "baseline_solvent",
+          "blue_shift_cm_inverse",
+          "compound_id",
+          "delta_lambda_nm",
+          "display_rounding_intervals",
+          "donor_solvent",
+          "formula",
+          "lambda_b_nm",
+          "lambda_h_nm"
+        ]
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[2].baseline_solvent",
+        "equal": true,
+        "expected": "C6H14",
+        "actual": "C6H14"
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[2].blue_shift_cm_inverse",
+        "equal": true,
+        "expected": 3665.493709,
+        "actual": 3665.493709
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[2].compound_id",
+        "equal": true,
+        "expected": "tC4F9I",
+        "actual": "tC4F9I"
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[2].delta_lambda_nm",
+        "equal": true,
+        "expected": 27.5,
+        "actual": 27.5
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[2].display_rounding_intervals",
+        "equal": true,
+        "expected_keys": [
+          "blue_shift_cm_inverse",
+          "delta_lambda_nm"
+        ],
+        "actual_keys": [
+          "blue_shift_cm_inverse",
+          "delta_lambda_nm"
+        ]
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[2].display_rounding_intervals.blue_shift_cm_inverse",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[2].display_rounding_intervals.blue_shift_cm_inverse[0]",
+        "equal": true,
+        "expected": 3652.097829,
+        "actual": 3652.097829
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[2].display_rounding_intervals.blue_shift_cm_inverse[1]",
+        "equal": true,
+        "expected": 3678.890324,
+        "actual": 3678.890324
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[2].display_rounding_intervals.delta_lambda_nm",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[2].display_rounding_intervals.delta_lambda_nm[0]",
+        "equal": true,
+        "expected": 27.4,
+        "actual": 27.4
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[2].display_rounding_intervals.delta_lambda_nm[1]",
+        "equal": true,
+        "expected": 27.6,
+        "actual": 27.6
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[2].donor_solvent",
+        "equal": true,
+        "expected": "EtOH",
+        "actual": "EtOH"
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[2].formula",
+        "equal": true,
+        "expected": "C4F9I",
+        "actual": "C4F9I"
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[2].lambda_b_nm",
+        "equal": true,
+        "expected": 260.5,
+        "actual": 260.5
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[2].lambda_h_nm",
+        "equal": true,
+        "expected": 288.0,
+        "actual": 288.0
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[3]",
+        "equal": true,
+        "expected_keys": [
+          "baseline_solvent",
+          "blue_shift_cm_inverse",
+          "compound_id",
+          "delta_lambda_nm",
+          "display_rounding_intervals",
+          "donor_solvent",
+          "formula",
+          "lambda_b_nm",
+          "lambda_h_nm"
+        ],
+        "actual_keys": [
+          "baseline_solvent",
+          "blue_shift_cm_inverse",
+          "compound_id",
+          "delta_lambda_nm",
+          "display_rounding_intervals",
+          "donor_solvent",
+          "formula",
+          "lambda_b_nm",
+          "lambda_h_nm"
+        ]
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[3].baseline_solvent",
+        "equal": true,
+        "expected": "C6H14",
+        "actual": "C6H14"
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[3].blue_shift_cm_inverse",
+        "equal": true,
+        "expected": 2025.462963,
+        "actual": 2025.462963
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[3].compound_id",
+        "equal": true,
+        "expected": "nC3F7I",
+        "actual": "nC3F7I"
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[3].delta_lambda_nm",
+        "equal": true,
+        "expected": 14.0,
+        "actual": 14.0
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[3].display_rounding_intervals",
+        "equal": true,
+        "expected_keys": [
+          "blue_shift_cm_inverse",
+          "delta_lambda_nm"
+        ],
+        "actual_keys": [
+          "blue_shift_cm_inverse",
+          "delta_lambda_nm"
+        ]
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[3].display_rounding_intervals.blue_shift_cm_inverse",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[3].display_rounding_intervals.blue_shift_cm_inverse[0]",
+        "equal": true,
+        "expected": 2010.975077,
+        "actual": 2010.975077
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[3].display_rounding_intervals.blue_shift_cm_inverse[1]",
+        "equal": true,
+        "expected": 2039.951289,
+        "actual": 2039.951289
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[3].display_rounding_intervals.delta_lambda_nm",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[3].display_rounding_intervals.delta_lambda_nm[0]",
+        "equal": true,
+        "expected": 13.9,
+        "actual": 13.9
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[3].display_rounding_intervals.delta_lambda_nm[1]",
+        "equal": true,
+        "expected": 14.1,
+        "actual": 14.1
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[3].donor_solvent",
+        "equal": true,
+        "expected": "Et2O",
+        "actual": "Et2O"
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[3].formula",
+        "equal": true,
+        "expected": "C3F7I",
+        "actual": "C3F7I"
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[3].lambda_b_nm",
+        "equal": true,
+        "expected": 256.0,
+        "actual": 256.0
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[3].lambda_h_nm",
+        "equal": true,
+        "expected": 270.0,
+        "actual": 270.0
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[4]",
+        "equal": true,
+        "expected_keys": [
+          "baseline_solvent",
+          "blue_shift_cm_inverse",
+          "compound_id",
+          "delta_lambda_nm",
+          "display_rounding_intervals",
+          "donor_solvent",
+          "formula",
+          "lambda_b_nm",
+          "lambda_h_nm"
+        ],
+        "actual_keys": [
+          "baseline_solvent",
+          "blue_shift_cm_inverse",
+          "compound_id",
+          "delta_lambda_nm",
+          "display_rounding_intervals",
+          "donor_solvent",
+          "formula",
+          "lambda_b_nm",
+          "lambda_h_nm"
+        ]
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[4].baseline_solvent",
+        "equal": true,
+        "expected": "C6H14",
+        "actual": "C6H14"
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[4].blue_shift_cm_inverse",
+        "equal": true,
+        "expected": 2414.155472,
+        "actual": 2414.155472
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[4].compound_id",
+        "equal": true,
+        "expected": "iC3F7I",
+        "actual": "iC3F7I"
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[4].delta_lambda_nm",
+        "equal": true,
+        "expected": 17.0,
+        "actual": 17.0
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[4].display_rounding_intervals",
+        "equal": true,
+        "expected_keys": [
+          "blue_shift_cm_inverse",
+          "delta_lambda_nm"
+        ],
+        "actual_keys": [
+          "blue_shift_cm_inverse",
+          "delta_lambda_nm"
+        ]
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[4].display_rounding_intervals.blue_shift_cm_inverse",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[4].display_rounding_intervals.blue_shift_cm_inverse[0]",
+        "equal": true,
+        "expected": 2399.925673,
+        "actual": 2399.925673
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[4].display_rounding_intervals.blue_shift_cm_inverse[1]",
+        "equal": true,
+        "expected": 2428.385785,
+        "actual": 2428.385785
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[4].display_rounding_intervals.delta_lambda_nm",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[4].display_rounding_intervals.delta_lambda_nm[0]",
+        "equal": true,
+        "expected": 16.9,
+        "actual": 16.9
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[4].display_rounding_intervals.delta_lambda_nm[1]",
+        "equal": true,
+        "expected": 17.1,
+        "actual": 17.1
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[4].donor_solvent",
+        "equal": true,
+        "expected": "Et2O",
+        "actual": "Et2O"
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[4].formula",
+        "equal": true,
+        "expected": "C3F7I",
+        "actual": "C3F7I"
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[4].lambda_b_nm",
+        "equal": true,
+        "expected": 257.0,
+        "actual": 257.0
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[4].lambda_h_nm",
+        "equal": true,
+        "expected": 274.0,
+        "actual": 274.0
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[5]",
+        "equal": true,
+        "expected_keys": [
+          "baseline_solvent",
+          "blue_shift_cm_inverse",
+          "compound_id",
+          "delta_lambda_nm",
+          "display_rounding_intervals",
+          "donor_solvent",
+          "formula",
+          "lambda_b_nm",
+          "lambda_h_nm"
+        ],
+        "actual_keys": [
+          "baseline_solvent",
+          "blue_shift_cm_inverse",
+          "compound_id",
+          "delta_lambda_nm",
+          "display_rounding_intervals",
+          "donor_solvent",
+          "formula",
+          "lambda_b_nm",
+          "lambda_h_nm"
+        ]
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[5].baseline_solvent",
+        "equal": true,
+        "expected": "C6H14",
+        "actual": "C6H14"
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[5].blue_shift_cm_inverse",
+        "equal": true,
+        "expected": 3156.565657,
+        "actual": 3156.565657
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[5].compound_id",
+        "equal": true,
+        "expected": "tC4F9I",
+        "actual": "tC4F9I"
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[5].delta_lambda_nm",
+        "equal": true,
+        "expected": 24.0,
+        "actual": 24.0
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[5].display_rounding_intervals",
+        "equal": true,
+        "expected_keys": [
+          "blue_shift_cm_inverse",
+          "delta_lambda_nm"
+        ],
+        "actual_keys": [
+          "blue_shift_cm_inverse",
+          "delta_lambda_nm"
+        ]
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[5].display_rounding_intervals.blue_shift_cm_inverse",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[5].display_rounding_intervals.blue_shift_cm_inverse[0]",
+        "equal": true,
+        "expected": 3143.363792,
+        "actual": 3143.363792
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[5].display_rounding_intervals.blue_shift_cm_inverse[1]",
+        "equal": true,
+        "expected": 3169.768146,
+        "actual": 3169.768146
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[5].display_rounding_intervals.delta_lambda_nm",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[5].display_rounding_intervals.delta_lambda_nm[0]",
+        "equal": true,
+        "expected": 23.9,
+        "actual": 23.9
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[5].display_rounding_intervals.delta_lambda_nm[1]",
+        "equal": true,
+        "expected": 24.1,
+        "actual": 24.1
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[5].donor_solvent",
+        "equal": true,
+        "expected": "Et2O",
+        "actual": "Et2O"
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[5].formula",
+        "equal": true,
+        "expected": "C4F9I",
+        "actual": "C4F9I"
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[5].lambda_b_nm",
+        "equal": true,
+        "expected": 264.0,
+        "actual": 264.0
+      },
+      {
+        "path": "$.measurements_and_derived_shifts[5].lambda_h_nm",
+        "equal": true,
+        "expected": 288.0,
+        "actual": 288.0
+      },
+      {
+        "path": "$.numerical_status",
+        "equal": true,
+        "expected": "nominal_three_iodide_order_reproduced",
+        "actual": "nominal_three_iodide_order_reproduced"
+      },
+      {
+        "path": "$.observations_count",
+        "equal": true,
+        "expected": 10,
+        "actual": 10
+      },
+      {
+        "path": "$.protocol_sha256",
+        "equal": true,
+        "expected": "3439dbf5d535663672afd034c888fce4aacc3c4314657199f40b90252568735c",
+        "actual": "3439dbf5d535663672afd034c888fce4aacc3c4314657199f40b90252568735c"
+      },
+      {
+        "path": "$.result_type",
+        "equal": true,
+        "expected": "published_table_numerical_replay",
+        "actual": "published_table_numerical_replay"
+      },
+      {
+        "path": "$.schema_version",
+        "equal": true,
+        "expected": "1.0",
+        "actual": "1.0"
+      },
+      {
+        "path": "$.scientific_review_status",
+        "equal": true,
+        "expected": "review_required",
+        "actual": "review_required"
+      },
+      {
+        "path": "$.source_id",
+        "equal": true,
+        "expected": "PF01",
+        "actual": "PF01"
+      },
+      {
+        "path": "$.source_location",
+        "equal": true,
+        "expected": "1966, 32(1), printed p.21, Table 1; PDF p.4",
+        "actual": "1966, 32(1), printed p.21, Table 1; PDF p.4"
+      },
+      {
+        "path": "$.source_pdf_sha256",
+        "equal": true,
+        "expected": "b97a7b641968561a1387d82c9b01fb8b2973c2a47e2e36c07ce85db2831302be",
+        "actual": "b97a7b641968561a1387d82c9b01fb8b2973c2a47e2e36c07ce85db2831302be"
+      },
+      {
+        "path": "$.task_id",
+        "equal": true,
+        "expected": "PF1966-UV-T1",
+        "actual": "PF1966-UV-T1"
+      },
+      {
+        "path": "$.transcription_review",
+        "equal": true,
+        "expected": "AI 逐格对照原扫描页；尚无独立化学专家复核签认",
+        "actual": "AI 逐格对照原扫描页；尚无独立化学专家复核签认"
+      },
+      {
+        "path": "$.used_observations_count",
+        "equal": true,
+        "expected": 9,
+        "actual": 9
+      }
+    ]
+  },
+  {
+    "reference": "/tmp/chen-phase1-wsl2-nixmz2n_/Chen_Qingyun_AI_Research_20261111/results/website-candidate.json",
+    "generated": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research_20261111/validation/20261111-remote-integration/original-replay/website-candidate.json",
+    "reference_sha256": "cd0ac49d0624cd5a8310c3d3bcadf7992fc677ec4d5e5a6644c0467d9a8f4ee1",
+    "generated_sha256": "cd0ac49d0624cd5a8310c3d3bcadf7992fc677ec4d5e5a6644c0467d9a8f4ee1",
+    "byte_equal": true,
+    "all_fields_equal": true,
+    "field_checks": [
+      {
+        "path": "$",
+        "equal": true,
+        "expected_keys": [
+          "boundaries",
+          "code_sha256",
+          "data_sha256",
+          "numeric_summary",
+          "publication_status",
+          "result_type",
+          "source_ids",
+          "task_id"
+        ],
+        "actual_keys": [
+          "boundaries",
+          "code_sha256",
+          "data_sha256",
+          "numeric_summary",
+          "publication_status",
+          "result_type",
+          "source_ids",
+          "task_id"
+        ]
+      },
+      {
+        "path": "$.boundaries",
+        "equal": true,
+        "expected_keys": [
+          "entity_warning",
+          "free_anion_detection",
+          "new_experiment",
+          "novel_chemistry",
+          "phase1_status",
+          "quantum_calculation",
+          "raw_spectrum_refitting",
+          "reaction_mechanism",
+          "universal_four_group_order",
+          "unmeasured_iodides"
+        ],
+        "actual_keys": [
+          "entity_warning",
+          "free_anion_detection",
+          "new_experiment",
+          "novel_chemistry",
+          "phase1_status",
+          "quantum_calculation",
+          "raw_spectrum_refitting",
+          "reaction_mechanism",
+          "universal_four_group_order",
+          "unmeasured_iodides"
+        ]
+      },
+      {
+        "path": "$.boundaries.entity_warning",
+        "equal": true,
+        "expected": "原表第三个测量对象为 n-C3F7I，不能替换为 C2F5I；B 是给体溶剂不是苯",
+        "actual": "原表第三个测量对象为 n-C3F7I，不能替换为 C2F5I；B 是给体溶剂不是苯"
+      },
+      {
+        "path": "$.boundaries.free_anion_detection",
+        "equal": true,
+        "expected": "not_tested",
+        "actual": "not_tested"
+      },
+      {
+        "path": "$.boundaries.new_experiment",
+        "equal": true,
+        "expected": "not_performed",
+        "actual": "not_performed"
+      },
+      {
+        "path": "$.boundaries.novel_chemistry",
+        "equal": true,
+        "expected": "not_claimed",
+        "actual": "not_claimed"
+      },
+      {
+        "path": "$.boundaries.phase1_status",
+        "equal": true,
+        "expected": "仅形成可审阅数值重放，不等于模型服务、WSL 验收或网站已接入",
+        "actual": "仅形成可审阅数值重放，不等于模型服务、WSL 验收或网站已接入"
+      },
+      {
+        "path": "$.boundaries.quantum_calculation",
+        "equal": true,
+        "expected": "not_performed",
+        "actual": "not_performed"
+      },
+      {
+        "path": "$.boundaries.raw_spectrum_refitting",
+        "equal": true,
+        "expected": "not_performed",
+        "actual": "not_performed"
+      },
+      {
+        "path": "$.boundaries.reaction_mechanism",
+        "equal": true,
+        "expected": "not_tested",
+        "actual": "not_tested"
+      },
+      {
+        "path": "$.boundaries.universal_four_group_order",
+        "equal": true,
+        "expected": "not_tested",
+        "actual": "not_tested"
+      },
+      {
+        "path": "$.boundaries.unmeasured_iodides",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.boundaries.unmeasured_iodides[0]",
+        "equal": true,
+        "expected": "C2F5I",
+        "actual": "C2F5I"
+      },
+      {
+        "path": "$.boundaries.unmeasured_iodides[1]",
+        "equal": true,
+        "expected": "CF3I",
+        "actual": "CF3I"
+      },
+      {
+        "path": "$.code_sha256",
+        "equal": true,
+        "expected": "67169496a4c795eaef9ca7f68f3659def4050529fde0863fec5f2ffcce8b04de",
+        "actual": "67169496a4c795eaef9ca7f68f3659def4050529fde0863fec5f2ffcce8b04de"
+      },
+      {
+        "path": "$.data_sha256",
+        "equal": true,
+        "expected": "92af88d5c1307d0a01b418354d2620a0d9eb8a8c68766adedd8be0feec2ff29a",
+        "actual": "92af88d5c1307d0a01b418354d2620a0d9eb8a8c68766adedd8be0feec2ff29a"
+      },
+      {
+        "path": "$.numeric_summary",
+        "equal": true,
+        "expected_length": 6,
+        "actual_length": 6
+      },
+      {
+        "path": "$.numeric_summary[0]",
+        "equal": true,
+        "expected_keys": [
+          "baseline_solvent",
+          "blue_shift_cm_inverse",
+          "compound_id",
+          "delta_lambda_nm",
+          "display_rounding_intervals",
+          "donor_solvent",
+          "formula",
+          "lambda_b_nm",
+          "lambda_h_nm"
+        ],
+        "actual_keys": [
+          "baseline_solvent",
+          "blue_shift_cm_inverse",
+          "compound_id",
+          "delta_lambda_nm",
+          "display_rounding_intervals",
+          "donor_solvent",
+          "formula",
+          "lambda_b_nm",
+          "lambda_h_nm"
+        ]
+      },
+      {
+        "path": "$.numeric_summary[0].baseline_solvent",
+        "equal": true,
+        "expected": "C6H14",
+        "actual": "C6H14"
+      },
+      {
+        "path": "$.numeric_summary[0].blue_shift_cm_inverse",
+        "equal": true,
+        "expected": 2962.962963,
+        "actual": 2962.962963
+      },
+      {
+        "path": "$.numeric_summary[0].compound_id",
+        "equal": true,
+        "expected": "nC3F7I",
+        "actual": "nC3F7I"
+      },
+      {
+        "path": "$.numeric_summary[0].delta_lambda_nm",
+        "equal": true,
+        "expected": 20.0,
+        "actual": 20.0
+      },
+      {
+        "path": "$.numeric_summary[0].display_rounding_intervals",
+        "equal": true,
+        "expected_keys": [
+          "blue_shift_cm_inverse",
+          "delta_lambda_nm"
+        ],
+        "actual_keys": [
+          "blue_shift_cm_inverse",
+          "delta_lambda_nm"
+        ]
+      },
+      {
+        "path": "$.numeric_summary[0].display_rounding_intervals.blue_shift_cm_inverse",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.numeric_summary[0].display_rounding_intervals.blue_shift_cm_inverse[0]",
+        "equal": true,
+        "expected": 2948.104582,
+        "actual": 2948.104582
+      },
+      {
+        "path": "$.numeric_summary[0].display_rounding_intervals.blue_shift_cm_inverse[1]",
+        "equal": true,
+        "expected": 2977.822004,
+        "actual": 2977.822004
+      },
+      {
+        "path": "$.numeric_summary[0].display_rounding_intervals.delta_lambda_nm",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.numeric_summary[0].display_rounding_intervals.delta_lambda_nm[0]",
+        "equal": true,
+        "expected": 19.9,
+        "actual": 19.9
+      },
+      {
+        "path": "$.numeric_summary[0].display_rounding_intervals.delta_lambda_nm[1]",
+        "equal": true,
+        "expected": 20.1,
+        "actual": 20.1
+      },
+      {
+        "path": "$.numeric_summary[0].donor_solvent",
+        "equal": true,
+        "expected": "EtOH",
+        "actual": "EtOH"
+      },
+      {
+        "path": "$.numeric_summary[0].formula",
+        "equal": true,
+        "expected": "C3F7I",
+        "actual": "C3F7I"
+      },
+      {
+        "path": "$.numeric_summary[0].lambda_b_nm",
+        "equal": true,
+        "expected": 250.0,
+        "actual": 250.0
+      },
+      {
+        "path": "$.numeric_summary[0].lambda_h_nm",
+        "equal": true,
+        "expected": 270.0,
+        "actual": 270.0
+      },
+      {
+        "path": "$.numeric_summary[1]",
+        "equal": true,
+        "expected_keys": [
+          "baseline_solvent",
+          "blue_shift_cm_inverse",
+          "compound_id",
+          "delta_lambda_nm",
+          "display_rounding_intervals",
+          "donor_solvent",
+          "formula",
+          "lambda_b_nm",
+          "lambda_h_nm"
+        ],
+        "actual_keys": [
+          "baseline_solvent",
+          "blue_shift_cm_inverse",
+          "compound_id",
+          "delta_lambda_nm",
+          "display_rounding_intervals",
+          "donor_solvent",
+          "formula",
+          "lambda_b_nm",
+          "lambda_h_nm"
+        ]
+      },
+      {
+        "path": "$.numeric_summary[1].baseline_solvent",
+        "equal": true,
+        "expected": "C6H14",
+        "actual": "C6H14"
+      },
+      {
+        "path": "$.numeric_summary[1].blue_shift_cm_inverse",
+        "equal": true,
+        "expected": 3503.649635,
+        "actual": 3503.649635
+      },
+      {
+        "path": "$.numeric_summary[1].compound_id",
+        "equal": true,
+        "expected": "iC3F7I",
+        "actual": "iC3F7I"
+      },
+      {
+        "path": "$.numeric_summary[1].delta_lambda_nm",
+        "equal": true,
+        "expected": 24.0,
+        "actual": 24.0
+      },
+      {
+        "path": "$.numeric_summary[1].display_rounding_intervals",
+        "equal": true,
+        "expected_keys": [
+          "blue_shift_cm_inverse",
+          "delta_lambda_nm"
+        ],
+        "actual_keys": [
+          "blue_shift_cm_inverse",
+          "delta_lambda_nm"
+        ]
+      },
+      {
+        "path": "$.numeric_summary[1].display_rounding_intervals.blue_shift_cm_inverse",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.numeric_summary[1].display_rounding_intervals.blue_shift_cm_inverse[0]",
+        "equal": true,
+        "expected": 3488.990101,
+        "actual": 3488.990101
+      },
+      {
+        "path": "$.numeric_summary[1].display_rounding_intervals.blue_shift_cm_inverse[1]",
+        "equal": true,
+        "expected": 3518.309938,
+        "actual": 3518.309938
+      },
+      {
+        "path": "$.numeric_summary[1].display_rounding_intervals.delta_lambda_nm",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.numeric_summary[1].display_rounding_intervals.delta_lambda_nm[0]",
+        "equal": true,
+        "expected": 23.9,
+        "actual": 23.9
+      },
+      {
+        "path": "$.numeric_summary[1].display_rounding_intervals.delta_lambda_nm[1]",
+        "equal": true,
+        "expected": 24.1,
+        "actual": 24.1
+      },
+      {
+        "path": "$.numeric_summary[1].donor_solvent",
+        "equal": true,
+        "expected": "EtOH",
+        "actual": "EtOH"
+      },
+      {
+        "path": "$.numeric_summary[1].formula",
+        "equal": true,
+        "expected": "C3F7I",
+        "actual": "C3F7I"
+      },
+      {
+        "path": "$.numeric_summary[1].lambda_b_nm",
+        "equal": true,
+        "expected": 250.0,
+        "actual": 250.0
+      },
+      {
+        "path": "$.numeric_summary[1].lambda_h_nm",
+        "equal": true,
+        "expected": 274.0,
+        "actual": 274.0
+      },
+      {
+        "path": "$.numeric_summary[2]",
+        "equal": true,
+        "expected_keys": [
+          "baseline_solvent",
+          "blue_shift_cm_inverse",
+          "compound_id",
+          "delta_lambda_nm",
+          "display_rounding_intervals",
+          "donor_solvent",
+          "formula",
+          "lambda_b_nm",
+          "lambda_h_nm"
+        ],
+        "actual_keys": [
+          "baseline_solvent",
+          "blue_shift_cm_inverse",
+          "compound_id",
+          "delta_lambda_nm",
+          "display_rounding_intervals",
+          "donor_solvent",
+          "formula",
+          "lambda_b_nm",
+          "lambda_h_nm"
+        ]
+      },
+      {
+        "path": "$.numeric_summary[2].baseline_solvent",
+        "equal": true,
+        "expected": "C6H14",
+        "actual": "C6H14"
+      },
+      {
+        "path": "$.numeric_summary[2].blue_shift_cm_inverse",
+        "equal": true,
+        "expected": 3665.493709,
+        "actual": 3665.493709
+      },
+      {
+        "path": "$.numeric_summary[2].compound_id",
+        "equal": true,
+        "expected": "tC4F9I",
+        "actual": "tC4F9I"
+      },
+      {
+        "path": "$.numeric_summary[2].delta_lambda_nm",
+        "equal": true,
+        "expected": 27.5,
+        "actual": 27.5
+      },
+      {
+        "path": "$.numeric_summary[2].display_rounding_intervals",
+        "equal": true,
+        "expected_keys": [
+          "blue_shift_cm_inverse",
+          "delta_lambda_nm"
+        ],
+        "actual_keys": [
+          "blue_shift_cm_inverse",
+          "delta_lambda_nm"
+        ]
+      },
+      {
+        "path": "$.numeric_summary[2].display_rounding_intervals.blue_shift_cm_inverse",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.numeric_summary[2].display_rounding_intervals.blue_shift_cm_inverse[0]",
+        "equal": true,
+        "expected": 3652.097829,
+        "actual": 3652.097829
+      },
+      {
+        "path": "$.numeric_summary[2].display_rounding_intervals.blue_shift_cm_inverse[1]",
+        "equal": true,
+        "expected": 3678.890324,
+        "actual": 3678.890324
+      },
+      {
+        "path": "$.numeric_summary[2].display_rounding_intervals.delta_lambda_nm",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.numeric_summary[2].display_rounding_intervals.delta_lambda_nm[0]",
+        "equal": true,
+        "expected": 27.4,
+        "actual": 27.4
+      },
+      {
+        "path": "$.numeric_summary[2].display_rounding_intervals.delta_lambda_nm[1]",
+        "equal": true,
+        "expected": 27.6,
+        "actual": 27.6
+      },
+      {
+        "path": "$.numeric_summary[2].donor_solvent",
+        "equal": true,
+        "expected": "EtOH",
+        "actual": "EtOH"
+      },
+      {
+        "path": "$.numeric_summary[2].formula",
+        "equal": true,
+        "expected": "C4F9I",
+        "actual": "C4F9I"
+      },
+      {
+        "path": "$.numeric_summary[2].lambda_b_nm",
+        "equal": true,
+        "expected": 260.5,
+        "actual": 260.5
+      },
+      {
+        "path": "$.numeric_summary[2].lambda_h_nm",
+        "equal": true,
+        "expected": 288.0,
+        "actual": 288.0
+      },
+      {
+        "path": "$.numeric_summary[3]",
+        "equal": true,
+        "expected_keys": [
+          "baseline_solvent",
+          "blue_shift_cm_inverse",
+          "compound_id",
+          "delta_lambda_nm",
+          "display_rounding_intervals",
+          "donor_solvent",
+          "formula",
+          "lambda_b_nm",
+          "lambda_h_nm"
+        ],
+        "actual_keys": [
+          "baseline_solvent",
+          "blue_shift_cm_inverse",
+          "compound_id",
+          "delta_lambda_nm",
+          "display_rounding_intervals",
+          "donor_solvent",
+          "formula",
+          "lambda_b_nm",
+          "lambda_h_nm"
+        ]
+      },
+      {
+        "path": "$.numeric_summary[3].baseline_solvent",
+        "equal": true,
+        "expected": "C6H14",
+        "actual": "C6H14"
+      },
+      {
+        "path": "$.numeric_summary[3].blue_shift_cm_inverse",
+        "equal": true,
+        "expected": 2025.462963,
+        "actual": 2025.462963
+      },
+      {
+        "path": "$.numeric_summary[3].compound_id",
+        "equal": true,
+        "expected": "nC3F7I",
+        "actual": "nC3F7I"
+      },
+      {
+        "path": "$.numeric_summary[3].delta_lambda_nm",
+        "equal": true,
+        "expected": 14.0,
+        "actual": 14.0
+      },
+      {
+        "path": "$.numeric_summary[3].display_rounding_intervals",
+        "equal": true,
+        "expected_keys": [
+          "blue_shift_cm_inverse",
+          "delta_lambda_nm"
+        ],
+        "actual_keys": [
+          "blue_shift_cm_inverse",
+          "delta_lambda_nm"
+        ]
+      },
+      {
+        "path": "$.numeric_summary[3].display_rounding_intervals.blue_shift_cm_inverse",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.numeric_summary[3].display_rounding_intervals.blue_shift_cm_inverse[0]",
+        "equal": true,
+        "expected": 2010.975077,
+        "actual": 2010.975077
+      },
+      {
+        "path": "$.numeric_summary[3].display_rounding_intervals.blue_shift_cm_inverse[1]",
+        "equal": true,
+        "expected": 2039.951289,
+        "actual": 2039.951289
+      },
+      {
+        "path": "$.numeric_summary[3].display_rounding_intervals.delta_lambda_nm",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.numeric_summary[3].display_rounding_intervals.delta_lambda_nm[0]",
+        "equal": true,
+        "expected": 13.9,
+        "actual": 13.9
+      },
+      {
+        "path": "$.numeric_summary[3].display_rounding_intervals.delta_lambda_nm[1]",
+        "equal": true,
+        "expected": 14.1,
+        "actual": 14.1
+      },
+      {
+        "path": "$.numeric_summary[3].donor_solvent",
+        "equal": true,
+        "expected": "Et2O",
+        "actual": "Et2O"
+      },
+      {
+        "path": "$.numeric_summary[3].formula",
+        "equal": true,
+        "expected": "C3F7I",
+        "actual": "C3F7I"
+      },
+      {
+        "path": "$.numeric_summary[3].lambda_b_nm",
+        "equal": true,
+        "expected": 256.0,
+        "actual": 256.0
+      },
+      {
+        "path": "$.numeric_summary[3].lambda_h_nm",
+        "equal": true,
+        "expected": 270.0,
+        "actual": 270.0
+      },
+      {
+        "path": "$.numeric_summary[4]",
+        "equal": true,
+        "expected_keys": [
+          "baseline_solvent",
+          "blue_shift_cm_inverse",
+          "compound_id",
+          "delta_lambda_nm",
+          "display_rounding_intervals",
+          "donor_solvent",
+          "formula",
+          "lambda_b_nm",
+          "lambda_h_nm"
+        ],
+        "actual_keys": [
+          "baseline_solvent",
+          "blue_shift_cm_inverse",
+          "compound_id",
+          "delta_lambda_nm",
+          "display_rounding_intervals",
+          "donor_solvent",
+          "formula",
+          "lambda_b_nm",
+          "lambda_h_nm"
+        ]
+      },
+      {
+        "path": "$.numeric_summary[4].baseline_solvent",
+        "equal": true,
+        "expected": "C6H14",
+        "actual": "C6H14"
+      },
+      {
+        "path": "$.numeric_summary[4].blue_shift_cm_inverse",
+        "equal": true,
+        "expected": 2414.155472,
+        "actual": 2414.155472
+      },
+      {
+        "path": "$.numeric_summary[4].compound_id",
+        "equal": true,
+        "expected": "iC3F7I",
+        "actual": "iC3F7I"
+      },
+      {
+        "path": "$.numeric_summary[4].delta_lambda_nm",
+        "equal": true,
+        "expected": 17.0,
+        "actual": 17.0
+      },
+      {
+        "path": "$.numeric_summary[4].display_rounding_intervals",
+        "equal": true,
+        "expected_keys": [
+          "blue_shift_cm_inverse",
+          "delta_lambda_nm"
+        ],
+        "actual_keys": [
+          "blue_shift_cm_inverse",
+          "delta_lambda_nm"
+        ]
+      },
+      {
+        "path": "$.numeric_summary[4].display_rounding_intervals.blue_shift_cm_inverse",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.numeric_summary[4].display_rounding_intervals.blue_shift_cm_inverse[0]",
+        "equal": true,
+        "expected": 2399.925673,
+        "actual": 2399.925673
+      },
+      {
+        "path": "$.numeric_summary[4].display_rounding_intervals.blue_shift_cm_inverse[1]",
+        "equal": true,
+        "expected": 2428.385785,
+        "actual": 2428.385785
+      },
+      {
+        "path": "$.numeric_summary[4].display_rounding_intervals.delta_lambda_nm",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.numeric_summary[4].display_rounding_intervals.delta_lambda_nm[0]",
+        "equal": true,
+        "expected": 16.9,
+        "actual": 16.9
+      },
+      {
+        "path": "$.numeric_summary[4].display_rounding_intervals.delta_lambda_nm[1]",
+        "equal": true,
+        "expected": 17.1,
+        "actual": 17.1
+      },
+      {
+        "path": "$.numeric_summary[4].donor_solvent",
+        "equal": true,
+        "expected": "Et2O",
+        "actual": "Et2O"
+      },
+      {
+        "path": "$.numeric_summary[4].formula",
+        "equal": true,
+        "expected": "C3F7I",
+        "actual": "C3F7I"
+      },
+      {
+        "path": "$.numeric_summary[4].lambda_b_nm",
+        "equal": true,
+        "expected": 257.0,
+        "actual": 257.0
+      },
+      {
+        "path": "$.numeric_summary[4].lambda_h_nm",
+        "equal": true,
+        "expected": 274.0,
+        "actual": 274.0
+      },
+      {
+        "path": "$.numeric_summary[5]",
+        "equal": true,
+        "expected_keys": [
+          "baseline_solvent",
+          "blue_shift_cm_inverse",
+          "compound_id",
+          "delta_lambda_nm",
+          "display_rounding_intervals",
+          "donor_solvent",
+          "formula",
+          "lambda_b_nm",
+          "lambda_h_nm"
+        ],
+        "actual_keys": [
+          "baseline_solvent",
+          "blue_shift_cm_inverse",
+          "compound_id",
+          "delta_lambda_nm",
+          "display_rounding_intervals",
+          "donor_solvent",
+          "formula",
+          "lambda_b_nm",
+          "lambda_h_nm"
+        ]
+      },
+      {
+        "path": "$.numeric_summary[5].baseline_solvent",
+        "equal": true,
+        "expected": "C6H14",
+        "actual": "C6H14"
+      },
+      {
+        "path": "$.numeric_summary[5].blue_shift_cm_inverse",
+        "equal": true,
+        "expected": 3156.565657,
+        "actual": 3156.565657
+      },
+      {
+        "path": "$.numeric_summary[5].compound_id",
+        "equal": true,
+        "expected": "tC4F9I",
+        "actual": "tC4F9I"
+      },
+      {
+        "path": "$.numeric_summary[5].delta_lambda_nm",
+        "equal": true,
+        "expected": 24.0,
+        "actual": 24.0
+      },
+      {
+        "path": "$.numeric_summary[5].display_rounding_intervals",
+        "equal": true,
+        "expected_keys": [
+          "blue_shift_cm_inverse",
+          "delta_lambda_nm"
+        ],
+        "actual_keys": [
+          "blue_shift_cm_inverse",
+          "delta_lambda_nm"
+        ]
+      },
+      {
+        "path": "$.numeric_summary[5].display_rounding_intervals.blue_shift_cm_inverse",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.numeric_summary[5].display_rounding_intervals.blue_shift_cm_inverse[0]",
+        "equal": true,
+        "expected": 3143.363792,
+        "actual": 3143.363792
+      },
+      {
+        "path": "$.numeric_summary[5].display_rounding_intervals.blue_shift_cm_inverse[1]",
+        "equal": true,
+        "expected": 3169.768146,
+        "actual": 3169.768146
+      },
+      {
+        "path": "$.numeric_summary[5].display_rounding_intervals.delta_lambda_nm",
+        "equal": true,
+        "expected_length": 2,
+        "actual_length": 2
+      },
+      {
+        "path": "$.numeric_summary[5].display_rounding_intervals.delta_lambda_nm[0]",
+        "equal": true,
+        "expected": 23.9,
+        "actual": 23.9
+      },
+      {
+        "path": "$.numeric_summary[5].display_rounding_intervals.delta_lambda_nm[1]",
+        "equal": true,
+        "expected": 24.1,
+        "actual": 24.1
+      },
+      {
+        "path": "$.numeric_summary[5].donor_solvent",
+        "equal": true,
+        "expected": "Et2O",
+        "actual": "Et2O"
+      },
+      {
+        "path": "$.numeric_summary[5].formula",
+        "equal": true,
+        "expected": "C4F9I",
+        "actual": "C4F9I"
+      },
+      {
+        "path": "$.numeric_summary[5].lambda_b_nm",
+        "equal": true,
+        "expected": 264.0,
+        "actual": 264.0
+      },
+      {
+        "path": "$.numeric_summary[5].lambda_h_nm",
+        "equal": true,
+        "expected": 288.0,
+        "actual": 288.0
+      },
+      {
+        "path": "$.publication_status",
+        "equal": true,
+        "expected": "review_required",
+        "actual": "review_required"
+      },
+      {
+        "path": "$.result_type",
+        "equal": true,
+        "expected": "published_table_numerical_replay",
+        "actual": "published_table_numerical_replay"
+      },
+      {
+        "path": "$.source_ids",
+        "equal": true,
+        "expected_length": 1,
+        "actual_length": 1
+      },
+      {
+        "path": "$.source_ids[0]",
+        "equal": true,
+        "expected": "PF01",
+        "actual": "PF01"
+      },
+      {
+        "path": "$.task_id",
+        "equal": true,
+        "expected": "PF1966-UV-T1",
+        "actual": "PF1966-UV-T1"
+      }
+    ]
+  }
+]

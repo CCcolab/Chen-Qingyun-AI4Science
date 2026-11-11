@@ -1,0 +1,14 @@
+test_b_not_silently_interpreted_as_benzene (test_uv_replay.ScientificBoundaryTests.test_b_not_silently_interpreted_as_benzene) ... ok
+test_duplicate_observation_rejected (test_uv_replay.ScientificBoundaryTests.test_duplicate_observation_rejected) ... ok
+test_fourth_iodide_cannot_be_invented_as_measured (test_uv_replay.ScientificBoundaryTests.test_fourth_iodide_cannot_be_invented_as_measured) ... ok
+test_missing_pair_does_not_get_imputed (test_uv_replay.ScientificBoundaryTests.test_missing_pair_does_not_get_imputed) ... ok
+test_nonfinite_value_rejected (test_uv_replay.ScientificBoundaryTests.test_nonfinite_value_rejected) ... ok
+test_original_table_arithmetic_and_independent_energy_conversion (test_uv_replay.ScientificBoundaryTests.test_original_table_arithmetic_and_independent_energy_conversion) ... ok
+test_rounding_cannot_be_promoted_to_experimental_uncertainty (test_uv_replay.ScientificBoundaryTests.test_rounding_cannot_be_promoted_to_experimental_uncertainty) ... ok
+test_transcription_that_misses_original_shift_rejected (test_uv_replay.ScientificBoundaryTests.test_transcription_that_misses_original_shift_rejected) ... ok
+test_wavelength_units_cannot_be_renamed_without_conversion (test_uv_replay.ScientificBoundaryTests.test_wavelength_units_cannot_be_renamed_without_conversion) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.007s
+
+OK
