@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "task_id": "A01-OX-M1",
+  "title": "CF3/CH3配对噁唑酮羰基反应性的现代模型再检验",
+  "source_id": "CQ-R01",
+  "source_pdf_sha256": "ea6b42bd6e976fa82219cf4ed0a48357f46d6d7cdd9d9619144e3a80bc714175",
+  "source_locations": [
+    "1367页IV结构",
+    "1368页表1及星号脚注",
+    "1369页CF3/CH3对照和作者解释"
+  ],
+  "scientific_review_status": "review_required",
+  "execution_status": "molecular_graphs_and_starting_geometries_prepared; electronic_structure_protocol_draft",
+  "question": "在同一明确模型与亲核体下，含氟与非氟类似物的羰基加成/开环自由能路径，是否支持原文定性反应性差别？",
+  "primary_observation": "原文对水等四项标星情形报告非氟类似物同条件下不反应；无定量速率或实验势垒",
+  "first_nucleophile": "aniline; table1 starred matched control, benzene medium; avoids unspecified ether/water microheterogeneity, excess-ammonia branch and alcohol-catalyst exceptions",
+  "author_explanation": "原作者推测CF3的诱导与共轭影响降低羰基碳电子密度；这不是直接测得的电子密度",
+  "pair": [
+    {
+      "id": "A01-P134-IV-CF3",
+      "formula": "C12H5F6NO2",
+      "charge": 0,
+      "working_multiplicity": 1
+    },
+    {
+      "id": "A01-P134-IV-CH3",
+      "formula": "C12H11NO2",
+      "charge": 0,
+      "working_multiplicity": 1
+    }
+  ],
+  "working_state_note": "中性单重态是价键图下的计算工作态指定，不宣称原文直接测得自旋态",
+  "atom_map_note": "新计算映射1为羰基O，2为羰基C，3为环O；不是原论文环位编号",
+  "stages": [
+    {
+      "stage": 1,
+      "output": "配对分子图、原子映射与起始坐标",
+      "status": "prepared",
+      "boundary": "每个分子请求8次嵌入、RMS筛选后各保留1套；不是构象覆盖、电子结构优化或能量结果"
+    },
+    {
+      "stage": 2,
+      "output": "在同一方法、溶剂模型与构象规则下优化反应物，检验结构/电子描述符的模型敏感性",
+      "status": "not_run"
+    },
+    {
+      "stage": 3,
+      "output": "明确苯胺及质子转移模型，在同一介质下搜索加成与开环路径，验证过渡态连接后比较各自活化自由能",
+      "status": "not_run"
+    }
+  ],
+  "must_fix_before_energy_calculations": [
+    "电子结构软件版本、方法、基组、数值阈值和资源预算",
+    "两个分子的构象覆盖、对称等价与排除规则",
+    "以原文苯介质为基线，固定模型温度、标准态、显式溶剂/第二亲核体和质子转移模型；任何水分子均须说明其模型角色",
+    "驻点/过渡态资格、频率与路径连接要求",
+    "预先指定的模型变更和负对照，不事后挑选支持解释的结果"
+  ],
+  "comparison_rules": [
+    "分别计算每个原子守恒反应体系内的势垒，再比较势垒差；不比较两种不同组成分子的绝对总能量来判反应性",
+    "单个原子电荷、LUMO或几何嵌入均不能单独验证反应速率或机理",
+    "CF3换CH3同时改变电子、空间与溶剂化因素，需要对照而非预设纯诱导效应",
+    "历史分离收率与不同时长不能直接拟合为速率常数",
+    "计算只能检验明确模型的方向和敏感性，不能补造未报告的实验条件"
+  ],
+  "falsification_or_non_support": [
+    "合理对照下没有稳定的反应性方向差异，或差异依赖未支持的构象/质子转移选择，应报告不支持或模型不足",
+    "若取向解释只在某种电荷分区成立而势垒比较不支持，不能以该描述符宣布机理成立"
+  ],
+  "quantum_calculation": "not_performed",
+  "experimental_validation": "not_performed",
+  "novelty": "not_claimed; prior-art review required before extending the original research",
+  "reported_medium_for_selected_pair": "benzene, as printed in table1; actual concentrations not provided for quantitative kinetics",
+  "reported_time_scope": "table reports0.1h for aniline entry; endpoint duration is not a rate constant",
+  "balanced_reaction_models": {
+    "fluorinated": "C12H5F6NO2 + C6H7N -> C18H12F6N2O2 (reported product II)",
+    "nonfluorinated": "C12H11NO2 + C6H7N -> C18H18N2O2 (hypothetical comparison product, not observed in matched control)"
+  }
+}

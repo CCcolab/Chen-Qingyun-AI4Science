@@ -1,0 +1,48 @@
+{
+  "schema_version": "2.0",
+  "study_id": "A01-EARLY-KETONES-AF-v2",
+  "achievement_line": "A01",
+  "title": "由原页重建双酚AF与早期含氟酮的科学证据",
+  "sources": "sources.v2.json",
+  "scientific_review_status": "review_required",
+  "model_api_called": false,
+  "completed_research_steps": [
+    {
+      "step": "original_material_acquisition",
+      "scope": "two four-page papers and one specification scan page; grant front page not obtained"
+    },
+    {
+      "step": "AI_primary_reading",
+      "scope": "drawn structures, data, author interpretations and gaps extracted; not wholesale translation"
+    },
+    {
+      "step": "A01-AF-YIELD-T1",
+      "status": "executed_pending_scientific_review",
+      "question": "Can reported 98% be reconstructed from organic masses and name-based stoichiometry?",
+      "result": "bisphenol-af-yield/result.json"
+    },
+    {
+      "step": "A01-MR-T1",
+      "status": "executed_pending_scientific_review",
+      "question": "Can n,d and molecular formula reconstruct reported found molar refraction?",
+      "result": "molar-refraction/result.json"
+    }
+  ],
+  "selected_first_actual_task": "A01-AF-YIELD-T1",
+  "selected_first_modern_model_task": {
+    "task_id": "A01-OX-M1",
+    "question": "CF3/CH3 paired oxazolone carbonyl reactivity and ring opening",
+    "basis": "same-condition qualitative controls in original table, not quantitative rate data",
+    "status": "mapped structures and starting coordinates prepared; energy protocol draft",
+    "protocol": "oxazolone-model/protocol-draft.json",
+    "quantum_calculation": "not_performed"
+  },
+  "current_limitations": [
+    "independent professional transcription/chemical review pending",
+    "1962 subscribed full text not obtained",
+    "certificate grant front page and 1959 date not established",
+    "no new experiment or quantum mechanism validation",
+    "no novelty claim"
+  ],
+  "priority": "Investigate source yield/refraction residuals without repairing originals, then fix paired-model protocol before electronic-structure work"
+}

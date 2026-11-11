@@ -1,0 +1,131 @@
+{
+  "schema_version": "2.0",
+  "as_of": "2026-11-11",
+  "achievement_line": "A01",
+  "supersedes": "sources.v1.json (initial metadata-only snapshot)",
+  "scientific_review_status": "review_required",
+  "independent_professional_signoff": "pending",
+  "records": [
+    {
+      "source_id": "CQ-H12",
+      "archive_record_id": "dan23922",
+      "year": 1960,
+      "venue": "Doklady Akademii Nauk SSSR 133(5), 1113–1116",
+      "normalized_author_sequence": [
+        "陈庆云",
+        "N. P. Gambaryan",
+        "I. L. Knuniants"
+      ],
+      "subject_scope": "两种指定含氟共轭体系；不是双酚AF方法论文",
+      "source_url": "https://www.mathnet.ru/php/archive.phtml?issue=5&jrnid=dan&option_lang=rus&volume=133&wshow=issue&year=1960",
+      "cross_reference": "https://www.mathnet.ru/php/person.phtml?option_lang=eng&personid=108185",
+      "cross_reference_role": "Gambaryan的共同署名作者页，不是陈庆云个人作者页",
+      "read_scope": "actual archival PDF; all four rendered pages read by AI",
+      "full_text_read_status": "obtained_and_AI_visually_read; professional_review_pending",
+      "pending_scientific_evidence": [
+        "独立专业核译与结构转录签认",
+        "原文未提供的实验条件或不确定度不得补造"
+      ],
+      "local_file": "private-sources/a01/dan23922.pdf",
+      "sha256": "fc88042708adc563e5cc6910aa4e3e05c32f52e9055480f980fef50d9e278b87",
+      "bytes": 621170,
+      "original_pdf_url": "https://www.mathnet.ru/links/45339c5078a0fc0eab6eab0df3527ff9/dan23922.pdf",
+      "obtained_pages": [
+        1113,
+        1114,
+        1115,
+        1116
+      ]
+    },
+    {
+      "source_id": "CQ-R01",
+      "archive_record_id": "dan24193",
+      "year": 1960,
+      "venue": "Doklady Akademii Nauk SSSR 134(6), 1367–1370",
+      "normalized_author_sequence": [
+        "E. M. Rokhlin",
+        "N. P. Gambaryan",
+        "陈庆云",
+        "I. L. Knuniants"
+      ],
+      "subject_scope": "特定六氟异丙叉噁唑酮；与133卷论文分开建卡",
+      "source_url": "https://geodesic.mathdoc.fr/item/DAN_1960_134_6_a25/",
+      "read_scope": "actual archival PDF; all four rendered pages read by AI",
+      "full_text_read_status": "obtained_and_AI_visually_read; professional_review_pending",
+      "pending_scientific_evidence": [
+        "独立专业核译与结构转录签认",
+        "原文未提供的实验条件或不确定度不得补造"
+      ],
+      "local_file": "private-sources/a01/dan24193.pdf",
+      "sha256": "ea6b42bd6e976fa82219cf4ed0a48357f46d6d7cdd9d9619144e3a80bc714175",
+      "bytes": 550229,
+      "original_pdf_url": "https://www.mathnet.ru/links/5f0f232ab0ba1fe58f1d88f43738bbce/dan24193.pdf",
+      "obtained_pages": [
+        1367,
+        1368,
+        1369,
+        1370
+      ]
+    },
+    {
+      "source_id": "CQ-R02",
+      "year": 1962,
+      "title": "Some reactions of hexafluoroacetone",
+      "venue": "Bulletin of the Academy of Sciences of the USSR, Division of Chemical Science 11, 633–640",
+      "authors_as_publisher": [
+        "I. I. Knunyants",
+        "N. P. Gambaryan",
+        "Ch'en Ch'ing-yun",
+        "E. M. Rokhlin"
+      ],
+      "author_note": "按出版社保留I.I.写法，不悄然改成其他档案的I.L.；姓名异文另核",
+      "doi": "10.1007/BF00904766",
+      "source_url": "https://link.springer.com/article/10.1007/BF00904766",
+      "received": "1961-11-24",
+      "issue_date": "1962-04",
+      "read_scope": "出版社题录、摘要、参考文献；订阅全文未取得",
+      "supported_scope": "摘要涉及若干六氟丙酮反应及明显亲电性；不补造逐反应数据",
+      "full_text_read_status": "not_obtained"
+    },
+    {
+      "source_id": "CQ-H02",
+      "document_number": "117491",
+      "document_type": "苏联发明人证书说明书",
+      "mirror_title": "Способ получения бис-(пара-оксифенил)-гексафторпропана",
+      "collaborators_listed": [
+        "陈庆云",
+        "И. Л. Кнунянц",
+        "Н. П. Гамбарян"
+      ],
+      "author_sequence_status": "read_on_original_scan; professional_signoff_pending",
+      "source_url": "https://poleznayamodel.ru/patent/11/117491.html",
+      "read_scope": "actual 2480x3507 JPEG visually read, not OCR-only",
+      "dates_status": "filing read from scan; grant date not shown on obtained page",
+      "application_date_precision": "day",
+      "1959_document_date": "not_independently_verified_this_run",
+      "characterization_scope": "reported melting interval and yield; structure uniqueness not established by these alone",
+      "full_text_read_status": "specification_scan_page_obtained_and_AI_visually_read",
+      "supported_scope": "原说明书报告的名称、署名、申请日及物性/收率，不能直接等同现代结构复核或工业性能证明",
+      "local_file": "private-sources/a01/SU117491/3573210.jpg",
+      "sha256": "f7482b83780bd86523763f2e0e6b1b980a90ad1141ffc6e91811242f6a630469",
+      "bytes": 899909,
+      "original_image_url": "https://img.poleznayamodel.ru/img_pat/357/3573210.jpg",
+      "material_type": "one historical specification scan page hosted by third-party mirror",
+      "original_total_document_extent": "not established from this single linked image",
+      "grant_certificate_front_page": "not_obtained",
+      "author_sequence_as_printed": [
+        "И. Л. Кнунянц",
+        "Чэнь-Цинь-Юнь",
+        "Н. П. Гамбарян"
+      ],
+      "application_date_as_printed": "1958-07-19",
+      "application_number_as_printed": "604379/23",
+      "reported_melting_interval_C": [
+        161,
+        162
+      ],
+      "reported_yield_percent": 98,
+      "structure_evidence": "product name only; no chemical diagram or modern spectra on this page"
+    }
+  ]
+}

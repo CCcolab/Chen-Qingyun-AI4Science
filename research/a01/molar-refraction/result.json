@@ -1,0 +1,323 @@
+{
+  "schema_version": "1.0",
+  "task_id": "A01-MR-T1",
+  "result_type": "published_property_consistency_reconstruction",
+  "scientific_review_status": "review_required",
+  "source_pdf_verification": {
+    "status": "local_file_sha256_verified",
+    "registered_sha256": "fc88042708adc563e5cc6910aa4e3e05c32f52e9055480f980fef50d9e278b87",
+    "actual_sha256": "fc88042708adc563e5cc6910aa4e3e05c32f52e9055480f980fef50d9e278b87",
+    "bytes": 621170
+  },
+  "observations_sha256": "5fb8b1ec1965ff86930b498454dbd9c38180c8a379805d17dd0187ce9f78da72",
+  "protocol_sha256": "606ac349e00f8a45741510310683b0a1f03443ac3b7cd01f1005d728efeb812d",
+  "code_sha256": "a14ad2220e0c5b6fc73ca44104d6956a90f0af7b664d5c3f914bd3a71f069b72",
+  "formula": "R_m = ((n_D^2 - 1) / (n_D^2 + 2)) * M / rho; output cm^3 mol^-1",
+  "density_approximation": {
+    "rule": "rho ~= reported relative density * 1 g/cm^3",
+    "reference": "water at4C approximated as1g/cm3",
+    "temperature_correction": "none; no temperature coefficients supplied",
+    "IV_scope": "n at19C and d at20C; conditional mixed-temperature reconstruction"
+  },
+  "display_rounding_diagnostic": {
+    "n_and_density_half_width": 5e-05,
+    "printed_MR_half_width": 0.005,
+    "interpretation": "Independent bounded display-rounding assumptions only; not measurement uncertainty, error bars or confidence intervals"
+  },
+  "experimental_uncertainty": "not_reported_in_source",
+  "printed_calculated_MR_scope": "Original printed formula-based calculated MR; additive constants/method are not supplied on these pages and are not reconstructed or equated to the present Lorentz-Lorenz output.",
+  "rows": [
+    {
+      "compound_id": "I",
+      "formula_used": "C10H10F6O4",
+      "printed_page": 1115,
+      "source_region": "I characterization",
+      "reported_n_D": 1.372,
+      "n_temperature_C": 20.0,
+      "reported_relative_density": 1.3025,
+      "density_temperature_C": 20.0,
+      "reference_water_temperature_C": 4.0,
+      "printed_found_MR_cm3_mol": 53.74,
+      "printed_calculated_MR_cm3_mol": 52.09,
+      "mixed_measurement_temperature": false,
+      "interpretation_scope": "same_temperature_input_reconstruction",
+      "temperature_correction": "not_applied",
+      "note": "结构图为二乙酯；MR行与元素分析式一致",
+      "mass_conventions": {
+        "integer_mass_convention": {
+          "molar_mass_g_mol": 308.0,
+          "reconstructed_MR_cm3_mol": 53.74426409579129,
+          "reconstructed_minus_printed_found_cm3_mol": 0.004264095791285172,
+          "relative_difference_percent": 0.00793467769126381,
+          "display_rounding_only_interval_cm3_mol": [
+            53.735743886693186,
+            53.75278473798238
+          ],
+          "printed_found_display_interval_cm3_mol": [
+            53.735,
+            53.745000000000005
+          ],
+          "intervals_overlap": true,
+          "counterfactual_density_at_reported_n_to_match_found": 1.3026033491769287,
+          "counterfactual_n_at_reported_density_to_match_found": 1.3719669827670313,
+          "counterfactual_scope": "conditional algebra only; no proposed correction of source data"
+        },
+        "modern_approximate_atomic_weights": {
+          "molar_mass_g_mol": 308.17641897799996,
+          "reconstructed_MR_cm3_mol": 53.77504821314563,
+          "reconstructed_minus_printed_found_cm3_mol": 0.03504821314562889,
+          "relative_difference_percent": 0.06521811154750445,
+          "display_rounding_only_interval_cm3_mol": [
+            53.76652312376643,
+            53.783573735865915
+          ],
+          "printed_found_display_interval_cm3_mol": [
+            53.735,
+            53.745000000000005
+          ],
+          "intervals_overlap": false,
+          "counterfactual_density_at_reported_n_to_match_found": 1.3033494659029061,
+          "counterfactual_n_at_reported_density_to_match_found": 1.3717287963665068,
+          "counterfactual_scope": "conditional algebra only; no proposed correction of source data"
+        }
+      }
+    },
+    {
+      "compound_id": "II",
+      "formula_used": "C4H3F6NO3",
+      "printed_page": 1115,
+      "source_region": "II characterization",
+      "reported_n_D": 1.3401,
+      "n_temperature_C": 20.0,
+      "reported_relative_density": 1.6597,
+      "density_temperature_C": 20.0,
+      "reference_water_temperature_C": 4.0,
+      "printed_found_MR_cm3_mol": 28.34,
+      "printed_calculated_MR_cm3_mol": 28.65,
+      "mixed_measurement_temperature": false,
+      "interpretation_scope": "same_temperature_input_reconstruction",
+      "temperature_correction": "not_applied",
+      "note": "n_D原图为1.3401；不以缩小图视觉猜读替代放大核图",
+      "mass_conventions": {
+        "integer_mass_convention": {
+          "molar_mass_g_mol": 227.0,
+          "reconstructed_MR_cm3_mol": 28.676504287513904,
+          "reconstructed_minus_printed_found_cm3_mol": 0.33650428751390393,
+          "relative_difference_percent": 1.1873828070356525,
+          "display_rounding_only_interval_cm3_mol": [
+            28.67182424647659,
+            28.681184483465916
+          ],
+          "printed_found_display_interval_cm3_mol": [
+            28.335,
+            28.345
+          ],
+          "intervals_overlap": false,
+          "counterfactual_density_at_reported_n_to_match_found": 1.6794069924483708,
+          "counterfactual_n_at_reported_density_to_match_found": 1.3356975730374445,
+          "counterfactual_scope": "conditional algebra only; no proposed correction of source data"
+        },
+        "modern_approximate_atomic_weights": {
+          "molar_mass_g_mol": 227.06241897799998,
+          "reconstructed_MR_cm3_mol": 28.68438956544447,
+          "reconstructed_minus_printed_found_cm3_mol": 0.3443895654444695,
+          "relative_difference_percent": 1.2152066529444938,
+          "display_rounding_only_interval_cm3_mol": [
+            28.679708237520025,
+            28.689071048326213
+          ],
+          "printed_found_display_interval_cm3_mol": [
+            28.335,
+            28.345
+          ],
+          "intervals_overlap": false,
+          "counterfactual_density_at_reported_n_to_match_found": 1.6798687848189198,
+          "counterfactual_n_at_reported_density_to_match_found": 1.3355958021905303,
+          "counterfactual_scope": "conditional algebra only; no proposed correction of source data"
+        }
+      }
+    },
+    {
+      "compound_id": "III",
+      "formula_used": "C6H5F6NO4",
+      "printed_page": 1115,
+      "source_region": "III characterization",
+      "reported_n_D": 1.3575,
+      "n_temperature_C": 20.0,
+      "reported_relative_density": 1.5368,
+      "density_temperature_C": 20.0,
+      "reference_water_temperature_C": 4.0,
+      "printed_found_MR_cm3_mol": 38.56,
+      "printed_calculated_MR_cm3_mol": 39.34,
+      "mixed_measurement_temperature": false,
+      "interpretation_scope": "same_temperature_input_reconstruction",
+      "temperature_correction": "not_applied",
+      "note": "原刊MR行式为C6F6H5O4（漏N）；下一元素分析式为C6F6H5O4N；本轮输入采用与结构及分析式相符的含N式，不改原刊记录",
+      "mass_conventions": {
+        "integer_mass_convention": {
+          "molar_mass_g_mol": 269.0,
+          "reconstructed_MR_cm3_mol": 38.3896530643796,
+          "reconstructed_minus_printed_found_cm3_mol": -0.17034693562040104,
+          "relative_difference_percent": -0.4417710986006251,
+          "display_rounding_only_interval_cm3_mol": [
+            38.383576926084324,
+            38.39572943480555
+          ],
+          "printed_found_display_interval_cm3_mol": [
+            38.555,
+            38.565000000000005
+          ],
+          "intervals_overlap": false,
+          "counterfactual_density_at_reported_n_to_match_found": 1.5300108617567056,
+          "counterfactual_n_at_reported_density_to_match_found": 1.3592654877005996,
+          "counterfactual_scope": "conditional algebra only; no proposed correction of source data"
+        },
+        "modern_approximate_atomic_weights": {
+          "molar_mass_g_mol": 269.099418978,
+          "reconstructed_MR_cm3_mol": 38.403841391790145,
+          "reconstructed_minus_printed_found_cm3_mol": -0.15615860820985716,
+          "relative_difference_percent": -0.40497564369776234,
+          "display_rounding_only_interval_cm3_mol": [
+            38.39776300783144,
+            38.409920007965304
+          ],
+          "printed_found_display_interval_cm3_mol": [
+            38.555,
+            38.565000000000005
+          ],
+          "intervals_overlap": false,
+          "counterfactual_density_at_reported_n_to_match_found": 1.5305763343076526,
+          "counterfactual_n_at_reported_density_to_match_found": 1.3591177600486017,
+          "counterfactual_scope": "conditional algebra only; no proposed correction of source data"
+        }
+      }
+    },
+    {
+      "compound_id": "IV",
+      "formula_used": "C4HF6NO2",
+      "printed_page": 1116,
+      "source_region": "IV characterization",
+      "reported_n_D": 1.3355,
+      "n_temperature_C": 19.0,
+      "reported_relative_density": 1.5637,
+      "density_temperature_C": 20.0,
+      "reference_water_temperature_C": 4.0,
+      "printed_found_MR_cm3_mol": 26.6,
+      "printed_calculated_MR_cm3_mol": 27.69,
+      "mixed_measurement_temperature": true,
+      "interpretation_scope": "mixed_temperature_conditional_value",
+      "temperature_correction": "not_applied",
+      "note": "n_D在19°C而d_4在20°C；无温度系数，不校正，重建仅为混合温度输入的条件值",
+      "mass_conventions": {
+        "integer_mass_convention": {
+          "molar_mass_g_mol": 209.0,
+          "reconstructed_MR_cm3_mol": 27.679904789361196,
+          "reconstructed_minus_printed_found_cm3_mol": 1.0799047893611942,
+          "relative_difference_percent": 4.059792441207497,
+          "display_rounding_only_interval_cm3_mol": [
+            27.675279065234726,
+            27.684530685285605
+          ],
+          "printed_found_display_interval_cm3_mol": [
+            26.595000000000002,
+            26.605
+          ],
+          "intervals_overlap": false,
+          "counterfactual_density_at_reported_n_to_match_found": 1.6271829744031618,
+          "counterfactual_n_at_reported_density_to_match_found": 1.3211339321832931,
+          "counterfactual_scope": "conditional algebra only; no proposed correction of source data"
+        },
+        "modern_approximate_atomic_weights": {
+          "molar_mass_g_mol": 209.047418978,
+          "reconstructed_MR_cm3_mol": 27.686184946281045,
+          "reconstructed_minus_printed_found_cm3_mol": 1.086184946281044,
+          "relative_difference_percent": 4.083402053688135,
+          "display_rounding_only_interval_cm3_mol": [
+            27.68155817264687,
+            27.690811891752144
+          ],
+          "printed_found_display_interval_cm3_mol": [
+            26.595000000000002,
+            26.605
+          ],
+          "intervals_overlap": false,
+          "counterfactual_density_at_reported_n_to_match_found": 1.6275521579135215,
+          "counterfactual_n_at_reported_density_to_match_found": 1.3210540441103196,
+          "counterfactual_scope": "conditional algebra only; no proposed correction of source data"
+        }
+      }
+    },
+    {
+      "compound_id": "V",
+      "formula_used": "C10H13F6NO4",
+      "printed_page": 1116,
+      "source_region": "V characterization",
+      "reported_n_D": 1.384,
+      "n_temperature_C": 20.0,
+      "reported_relative_density": 1.4534,
+      "density_temperature_C": 20.0,
+      "reference_water_temperature_C": 4.0,
+      "printed_found_MR_cm3_mol": 54.9,
+      "printed_calculated_MR_cm3_mol": 52.2,
+      "mixed_measurement_temperature": false,
+      "interpretation_scope": "same_temperature_input_reconstruction",
+      "temperature_correction": "not_applied",
+      "note": "结构与元素分析式相符；原刊found与calculated两值均照录",
+      "mass_conventions": {
+        "integer_mass_convention": {
+          "molar_mass_g_mol": 325.0,
+          "reconstructed_MR_cm3_mol": 52.282137220083314,
+          "reconstructed_minus_printed_found_cm3_mol": -2.6178627799166847,
+          "relative_difference_percent": -4.768420364146968,
+          "display_rounding_only_interval_cm3_mol": [
+            52.274282701199404,
+            52.28999207006206
+          ],
+          "printed_found_display_interval_cm3_mol": [
+            54.894999999999996,
+            54.905
+          ],
+          "intervals_overlap": false,
+          "counterfactual_density_at_reported_n_to_match_found": 1.384095778427488,
+          "counterfactual_n_at_reported_density_to_match_found": 1.405777577384981,
+          "counterfactual_scope": "conditional algebra only; no proposed correction of source data"
+        },
+        "modern_approximate_atomic_weights": {
+          "molar_mass_g_mol": 325.20741897799996,
+          "reconstructed_MR_cm3_mol": 52.31550431999053,
+          "reconstructed_minus_printed_found_cm3_mol": -2.584495680009468,
+          "relative_difference_percent": -4.707642404388831,
+          "display_rounding_only_interval_cm3_mol": [
+            52.30764478825652,
+            52.323364183030684
+          ],
+          "printed_found_display_interval_cm3_mol": [
+            54.894999999999996,
+            54.905
+          ],
+          "intervals_overlap": false,
+          "counterfactual_density_at_reported_n_to_match_found": 1.3849791252946126,
+          "counterfactual_n_at_reported_density_to_match_found": 1.4054840907762072,
+          "counterfactual_scope": "conditional algebra only; no proposed correction of source data"
+        }
+      }
+    }
+  ],
+  "interpretation": {
+    "primary_same_temperature_comparison": [
+      "I",
+      "V"
+    ],
+    "I": "Integer-mass reconstruction overlaps the printed found value under display rounding.",
+    "V": "Neither stated mass convention nor the stated display rounding reconciles the full residual.",
+    "cause_of_residual": "unresolved; no ruling on printing, measurement, purity or undocumented convention",
+    "IV": "Mixed-temperature conditional reconstruction only; no unprovided temperature correction."
+  },
+  "boundaries": {
+    "quantum_calculation": "not_performed",
+    "new_experiment": "not_performed",
+    "conjugation_explanation": "not_validated",
+    "source_data_repair": "not_performed",
+    "professional_transcription_signoff": "pending"
+  }
+}

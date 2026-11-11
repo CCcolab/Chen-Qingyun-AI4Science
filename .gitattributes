@@ -3,3 +3,5 @@
 # Imported upstream bytes and captured transcripts retain their original whitespace.
 site/** whitespace=-blank-at-eol,-blank-at-eof
 validation/** whitespace=-blank-at-eol,-blank-at-eof
+# Preserve native RDKit SD-file property headers.
+research/a01/oxazolone-model/*.sdf whitespace=-blank-at-eol

@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "task_id": "A01-AF-YIELD-T1",
+  "source_id": "CQ-H02",
+  "document_number": "117491",
+  "source_image_url": "https://img.poleznayamodel.ru/img_pat/357/3573210.jpg",
+  "source_image_sha256": "f7482b83780bd86523763f2e0e6b1b980a90ad1141ffc6e91811242f6a630469",
+  "source_type": "historical_document_scan_on_third_party_mirror",
+  "source_location": "Visible sheet, example paragraph: first line and final two lines",
+  "read_scope": "AI visual reading of the scan; human scientific signoff pending",
+  "reported_organic_masses_g": {"phenol": "12.2", "hexafluoroacetone": "11.2", "product": "21.7"},
+  "reported_yield_percent": "98",
+  "yield_basis_in_source": "relative to theory; limiting-reagent and purity basis not specified",
+  "source_has_drawn_structure": false,
+  "target_identity": "bisphenol AF, interpreted from historical chemical name",
+  "formula_status": "name-derived modern chemical interpretation; not a formula printed on the visible sheet",
+  "scientific_review_status": "review_required"
+}

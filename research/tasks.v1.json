@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "catalog_id": "Chen-Qingyun.research",
-  "catalog_version": "2026-11-11.v1",
+  "catalog_version": "2026-11-11.v2",
   "baselines": {
     "site/data/achievement-lines.json": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
     "site/data/public-sources.json": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
@@ -101,8 +101,8 @@
       "runner": null,
       "timeout_seconds": 120,
       "blockers": [
-        "俄文全文及结构图",
-        "双语专业核校"
+        "原始结构、核译和数据的独立专业核校",
+        "现代模型协议与执行适配器尚待确定"
       ],
       "ai_role": "辅助提取、实体消歧、来源对齐、竞争解释及可证伪问题；所有建议待审",
       "acceptance": [

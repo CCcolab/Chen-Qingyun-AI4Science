@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.0",
+  "achievement_line": "A01",
+  "scientific_review_status": "review_required",
+  "reading_method": "AI reading of actual rendered primary pages; independent professional review pending",
+  "structure_records": [
+    {"id": "A01-P133-I", "source_id": "CQ-H12", "printed_page": 1113, "printed_label": "I", "condensed_graph": "(CF3)2C=C(COOC2H5)2", "formula": "C10H10F6O4", "evidence": "drawn ethyl ester groups on original page"},
+    {"id": "A01-P134-IV", "source_id": "CQ-R01", "printed_page": 1367, "printed_label": "IV", "formula": "C12H5F6NO2", "graph_file": "oxazolone-model/structures.json", "evidence": "original ring diagram, with formula printed on p1370"},
+    {"id": "A01-P134-CH3-comparator", "source_id": "CQ-R01", "printed_page": 1369, "formula_derived_from_graph": "C12H11NO2", "graph_file": "oxazolone-model/structures.json", "evidence": "original comparative diagram; do not call its unobserved model product an experimental result"},
+    {"id": "A01-SU117491-target", "source_id": "CQ-H02", "name_interpretation": "bisphenol AF", "formula_derived_from_name": "C15H10F6O2", "evidence": "chemical name only on obtained specification page; no drawn structure or formula", "structure_uniqueness_verified": false}
+  ],
+  "selected_observations": [
+    {"source_id": "CQ-H12", "compound": "I", "printed_page": 1115, "quantity": "IR_band", "value_cm_inverse": 1700, "assignment": "author assigns olefinic bond", "phase_instrument_and_full_spectrum": null},
+    {"source_id": "CQ-H12", "compound": "II", "printed_page": 1115, "quantity": "IR_bands", "values_cm_inverse": [3400, 1580], "author_assignments": ["OH", "nitro"]},
+    {"source_id": "CQ-H12", "compound": "III", "printed_page": 1115, "quantity": "IR_bands", "values_cm_inverse": [1580, 1800], "author_assignments": ["nitro", "ester"]},
+    {"source_id": "CQ-H12", "compound": "IV", "printed_page": 1116, "quantity": "IR_band", "value_cm_inverse": 1700, "assignment": "author assigns olefinic bond"},
+    {"source_id": "CQ-R01", "compound": "IV", "printed_page": 1370, "quantity": "melting_interval", "value_C": [82, 84]},
+    {"source_id": "CQ-R01", "compound": "IV", "printed_page": 1370, "quantity": "elemental_mass_percent", "elements": ["C", "H", "F", "N"], "found": [46.43, 1.60, 36.87, 4.53], "printed_calculated": [46.61, 1.63, 36.87, 4.53], "uncertainty": null},
+    {"source_id": "CQ-H02", "quantity": "reported_melting_interval", "value_C": [161, 162], "read_from": "specification scan example", "identity_uniqueness_verified": false},
+    {"source_id": "CQ-H02", "quantity": "reported_yield", "value_percent": 98, "read_from": "specification scan example", "calculation_basis": "not sufficiently specified"}
+  ],
+  "reported_property_data": "molar-refraction/observations.csv",
+  "reported_organic_mass_data": "bisphenol-af-yield/observations.json",
+  "author_interpretations": [
+    {"source_id": "CQ-H12", "printed_page": 1115, "claim": "酯基不共面解释特定体系中的竞争效应", "status": "author interpretation; torsional geometry not directly measured here"},
+    {"source_id": "CQ-R01", "printed_page": 1369, "claim": "CF3诱导与共轭作用降低羰基碳电子密度", "status": "author conjecture, not measured charge or mechanism proof"},
+    {"source_id": "CQ-H02", "claim": "产物可作为缩聚单体", "status": "document statement; no polymer-performance data supplied on obtained page"}
+  ],
+  "modeling_limits": [
+    "same Roman compound labels in different papers are different identities",
+    "do not convert endpoint time and isolated yield to a rate constant",
+    "water row in table1 uses ether; alcohol rows have catalyst exceptions",
+    "molar refraction, elemental analysis and melting point do not establish unique structure or mechanism alone",
+    "no new experiment or electronic-structure calculation performed in these extracts"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "task_id": "A01-MR-T1",
+  "scientific_review_status": "review_required",
+  "scientific_question": "Can the printed refractive index, relative density and molecular formula reconstruct the printed found molar refraction under explicit assumptions?",
+  "source_id": "CQ-H12",
+  "source_pages": [
+    1115,
+    1116
+  ],
+  "source_pdf_sha256": "fc88042708adc563e5cc6910aa4e3e05c32f52e9055480f980fef50d9e278b87",
+  "source_pdf_local_path": "private-sources/a01/dan23922.pdf",
+  "source_pdf_url": "https://www.mathnet.ru/links/45339c5078a0fc0eab6eab0df3527ff9/dan23922.pdf",
+  "observation_reading": "Five rows visually read from rendered original pages; professional independent signoff pending",
+  "observations_sha256": "5fb8b1ec1965ff86930b498454dbd9c38180c8a379805d17dd0187ce9f78da72",
+  "relation": "R_m = ((n_D^2 - 1) / (n_D^2 + 2)) * M / rho; output cm^3 mol^-1",
+  "density_approximation": {
+    "rule": "rho ~= reported relative density * 1 g/cm^3",
+    "reference": "water at4C approximated as1g/cm3",
+    "temperature_correction": "none; no temperature coefficients supplied",
+    "IV_scope": "n at19C and d at20C; conditional mixed-temperature reconstruction"
+  },
+  "atomic_mass_conventions": {
+    "integer_mass_convention": {
+      "C": 12.0,
+      "H": 1.0,
+      "F": 19.0,
+      "N": 14.0,
+      "O": 16.0
+    },
+    "modern_approximate_atomic_weights": {
+      "C": 12.011,
+      "H": 1.008,
+      "F": 18.998403163,
+      "N": 14.007,
+      "O": 15.999
+    }
+  },
+  "mass_convention_boundary": "Integer masses are an explicitly chosen historical-style convention, not proof of the original authors exact constants; modern values are approximate atomic weights, not isotope-exact masses.",
+  "display_rounding_diagnostic": {
+    "n_and_density_half_width": 5e-05,
+    "printed_MR_half_width": 0.005,
+    "interpretation": "Independent bounded display-rounding assumptions only; not measurement uncertainty, error bars or confidence intervals"
+  },
+  "printed_calculated_MR_scope": "Original printed formula-based calculated MR; additive constants/method are not supplied on these pages and are not reconstructed or equated to the present Lorentz-Lorenz output.",
+  "counterfactual_rule": "Hold one reported property and chosen mass fixed, solve for the other property required to equal printed found MR; algebraic sensitivity only, never a source correction.",
+  "boundaries": [
+    "No new experiment",
+    "No quantum calculation",
+    "No validation of the conjugation explanation",
+    "Do not silently repair original numbers or formula variants",
+    "Keep mixed-temperature IV separate from same-temperature I/V comparison"
+  ]
+}

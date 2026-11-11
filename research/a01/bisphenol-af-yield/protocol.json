@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "task_id": "A01-AF-YIELD-T1",
+  "question": "Can the reported 98 percent be reconstructed from the printed organic masses and the name-derived net stoichiometry?",
+  "result_type": "historical_mass_yield_ledger_reconstruction",
+  "source_image_sha256": "f7482b83780bd86523763f2e0e6b1b980a90ad1141ffc6e91811242f6a630469",
+  "atomic_weights_g_per_mol_of_atoms": {"H": "1.008", "C": "12.011", "O": "15.999", "F": "18.998403163"},
+  "atomic_weight_status": "explicit modern approximate convention; not inferred historical atomic weights",
+  "formulae": {
+    "phenol": {"C": 6, "H": 6, "O": 1},
+    "hexafluoroacetone": {"C": 3, "F": 6, "O": 1},
+    "product": {"C": 15, "H": 10, "F": 6, "O": 2},
+    "water": {"H": 2, "O": 1}
+  },
+  "stoichiometry": {"reactants": {"hexafluoroacetone": 1, "phenol": 2}, "products": {"product": 1, "water": 1}},
+  "structure_basis": "net atom balance conditional on the historical target name; no source structural drawing or reaction mechanism is claimed",
+  "nominal_assumptions": ["Use printed organic masses as stated", "Use unit purity and ideal one-product stoichiometry only for the conditional ledger", "Do not infer actual assay, recovery, conversion or mechanism"],
+  "display_rounding_diagnostic": {"mass_half_width_g": "0.05", "reported_percent_half_width_percentage_points": "0.5", "interpretation": "Independent bounded display-rounding diagnostic, not experimental uncertainty or a confidence interval"},
+  "interpretation_rules": [
+    "Report mass-based apparent yield, never corrected true yield",
+    "A residual is not proof of an error or misconduct",
+    "Keep unspecified purity, theoretical-yield basis and historical calculation convention unresolved",
+    "Changes of assumed purity do not all affect the residual in the same direction",
+    "Do not infer chemical identity, synthetic reproducibility or polymer properties from ledger closure"
+  ],
+  "quantum_calculation": "not_performed",
+  "experimental_validation": "not_performed",
+  "scientific_review_status": "review_required"
+}

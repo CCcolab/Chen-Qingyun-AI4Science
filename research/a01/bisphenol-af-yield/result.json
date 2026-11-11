@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "task_id": "A01-AF-YIELD-T1",
+  "result_type": "historical_mass_yield_ledger_reconstruction",
+  "scientific_review_status": "review_required",
+  "source_image_sha256": "f7482b83780bd86523763f2e0e6b1b980a90ad1141ffc6e91811242f6a630469",
+  "source_image_reverified_by_this_program": false,
+  "observations_sha256": "60d9c26ccf41448d908620600415a2ee7ad750c0cacf6b9ad788692f9d41d1e2",
+  "protocol_sha256": "0d1a9e3840f4bab9d9f7cf3e012519721d776156f4120b0acb198c62d1abc8ec",
+  "code_sha256": "76658a5d5b541605ebc654f0068435a7cbf449cd590f0b4728e89e6eb0567054",
+  "formula_status": "name-derived modern chemical interpretation; not a formula printed on the visible sheet",
+  "source_has_drawn_structure": false,
+  "net_equation": "C3F6O + 2 C6H6O -> C15H10F6O2 + H2O",
+  "net_equation_is_mechanism": false,
+  "atom_balance_residual": {
+    "C": 0,
+    "F": 0,
+    "O": 0,
+    "H": 0
+  },
+  "molar_masses_g_per_mol": {
+    "phenol": 94.113,
+    "hexafluoroacetone": 166.022418978,
+    "product": 336.233418978,
+    "water": 18.015
+  },
+  "reported_organic_masses_g": {
+    "phenol": 12.2,
+    "hexafluoroacetone": 11.2,
+    "product": 21.7
+  },
+  "reported_yield_percent": 98.0,
+  "nominal_limiting_reagent": "phenol",
+  "nominal_theoretical_product_g": 21.793204506984,
+  "nominal_mass_based_apparent_yield_percent": 99.572323074588,
+  "residual_to_reported_yield_percentage_points": 1.572323074588,
+  "reagent_basis_diagnostics": {
+    "hexafluoroacetone": {
+      "theoretical_product_g_if_basis": 22.682564895363,
+      "mass_based_apparent_yield_percent": 95.668193169972,
+      "is_limiting_reagent_in_nominal_ledger": false
+    },
+    "phenol": {
+      "theoretical_product_g_if_basis": 21.793204506984,
+      "mass_based_apparent_yield_percent": 99.572323074588,
+      "is_limiting_reagent_in_nominal_ledger": true
+    }
+  },
+  "display_rounding_diagnostic": {
+    "mass_half_width_g": 0.05,
+    "reported_percent_half_width_percentage_points": 0.5,
+    "apparent_yield_percent_bounds": [
+      98.937412559733,
+      100.212459190389
+    ],
+    "reported_percent_display_bounds": [
+      97.5,
+      98.5
+    ],
+    "overlap": false,
+    "limiting_reagents_over_all_corners": [
+      "phenol"
+    ],
+    "interpretation": "Display rounding only; not experimental uncertainty or confidence bounds"
+  },
+  "interpretation": "Conditional organic-mass ledger does not reproduce the printed 98 percent under stated assumptions; true yield and its original basis remain unresolved.",
+  "unresolved": [
+    "Product and reagent purity or assay",
+    "Original theoretical-yield basis",
+    "Historical mass and atomic-weight conventions",
+    "Any unprinted correction or reporting convention"
+  ],
+  "boundaries": {
+    "corrected_true_yield": "not_claimed",
+    "error_or_misconduct": "not_inferred",
+    "chemical_identity_validation": "not_performed",
+    "mechanism_validation": "not_performed",
+    "quantum_calculation": "not_performed",
+    "experimental_validation": "not_performed",
+    "polymer_properties": "not_inferred"
+  }
+}
