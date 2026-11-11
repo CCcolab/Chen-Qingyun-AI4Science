@@ -13,8 +13,9 @@
       "subject_scope": "两种指定含氟共轭体系；不是双酚AF方法论文",
       "source_url": "https://www.mathnet.ru/php/archive.phtml?issue=5&jrnid=dan&option_lang=rus&volume=133&wshow=issue&year=1960",
       "cross_reference": "https://www.mathnet.ru/php/person.phtml?option_lang=eng&personid=108185",
+      "cross_reference_role": "Gambaryan的共同署名作者页，不是陈庆云个人作者页",
       "read_scope": "原始档案目录与书目",
-      "full_text_read_status": "not_yet_page_verified",
+      "full_text_read_status": "not_obtained",
       "pending_scientific_evidence": ["原文结构图", "实际观察、数值和单位", "测量条件", "作者的论证范围"]
     },
     {
@@ -26,7 +27,7 @@
       "subject_scope": "特定六氟异丙叉噁唑酮；与133卷论文分开建卡",
       "source_url": "https://geodesic.mathdoc.fr/item/DAN_1960_134_6_a25/",
       "read_scope": "原始档案题录与作者元数据",
-      "full_text_read_status": "not_yet_page_verified",
+      "full_text_read_status": "not_obtained",
       "pending_scientific_evidence": ["原图与命名对应", "原始结构鉴定或物性", "与其他早期工作的实际联系"]
     },
     {
@@ -52,8 +53,30 @@
       "collaborators_listed": ["陈庆云", "И. Л. Кнунянц", "Н. П. Гамбарян"],
       "author_sequence_status": "original_document_order_pending_image_reading",
       "source_url": "https://poleznayamodel.ru/patent/11/117491.html",
-      "read_scope": "说明书镜像索引与OCR线索；原图、顺序和日期分别待核",
+      "read_scope": "说明书镜像索引及OCR正文；未取得原扫描或官方原件",
       "dates_status": "申请、登记、落款和镜像网页日期分开，不在本卡裁定",
+      "application_year_from_ocr": 1958,
+      "application_date_precision": "year_only; month and application-number characters damaged in OCR",
+      "1959_document_date": "not_independently_verified_this_run",
+      "reported_observation_candidates": [
+        {
+          "id": "A01-H02-MP-OCR",
+          "quantity": "melting_interval",
+          "raw_ocr": "1б1—162",
+          "normalized_value": null,
+          "status": "unverified_ocr_requires_original_image",
+          "eligible_as_computation_benchmark": false
+        },
+        {
+          "id": "A01-H02-YIELD-OCR",
+          "quantity": "single_example_yield",
+          "raw_ocr": "98%",
+          "normalized_value": null,
+          "status": "unverified_ocr_requires_original_image",
+          "eligible_as_computation_benchmark": false
+        }
+      ],
+      "characterization_scope": "所读OCR中有名称与单例物性报告，未见现代谱学或元素分析；不能据OCR确定原件完整表征范围",
       "full_text_read_status": "original_images_not_yet_verified",
       "supported_scope": "双酚AF相关方法与三人合作的原件线索；不裁定全球首次或工业采用"
     }
