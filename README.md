@@ -2,7 +2,7 @@
 
 本平台围绕陈庆云院士及合作者的科学研究，以原始文献、数据和具体问题为依据，运用 AI 辅助核读、结构与对象消歧、数值复算、竞争解释比较和未来研究设计。
 
-[学术成就网站](https://cccolab.github.io/Chen-Qingyun-AI4Science/) · [早期含氟酮与双酚 AF 专题](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html) · [研究路线图](docs/RESEARCH_ROADMAP_zh-CN.md)
+[学术成就网站](https://cccolab.github.io/Chen-Qingyun-AI4Science/) · [早期含氟酮与双酚 AF 专题](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html) · [A01 研究记录](research/a01/README.md) · [研究路线图](docs/RESEARCH_ROADMAP_zh-CN.md)
 
 ## 研究目标
 

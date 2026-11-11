@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-11",
+  "achievement_line": "A01",
+  "scientific_review_status": "review_required",
+  "records": [
+    {
+      "source_id": "CQ-H12",
+      "archive_record_id": "dan23922",
+      "year": 1960,
+      "venue": "Doklady Akademii Nauk SSSR 133(5), 1113–1116",
+      "normalized_author_sequence": ["陈庆云", "N. P. Gambaryan", "I. L. Knuniants"],
+      "subject_scope": "两种指定含氟共轭体系；不是双酚AF方法论文",
+      "source_url": "https://www.mathnet.ru/php/archive.phtml?issue=5&jrnid=dan&option_lang=rus&volume=133&wshow=issue&year=1960",
+      "cross_reference": "https://www.mathnet.ru/php/person.phtml?option_lang=eng&personid=108185",
+      "read_scope": "原始档案目录与书目",
+      "full_text_read_status": "not_yet_page_verified",
+      "pending_scientific_evidence": ["原文结构图", "实际观察、数值和单位", "测量条件", "作者的论证范围"]
+    },
+    {
+      "source_id": "CQ-R01",
+      "archive_record_id": "dan24193",
+      "year": 1960,
+      "venue": "Doklady Akademii Nauk SSSR 134(6), 1367–1370",
+      "normalized_author_sequence": ["E. M. Rokhlin", "N. P. Gambaryan", "陈庆云", "I. L. Knuniants"],
+      "subject_scope": "特定六氟异丙叉噁唑酮；与133卷论文分开建卡",
+      "source_url": "https://geodesic.mathdoc.fr/item/DAN_1960_134_6_a25/",
+      "read_scope": "原始档案题录与作者元数据",
+      "full_text_read_status": "not_yet_page_verified",
+      "pending_scientific_evidence": ["原图与命名对应", "原始结构鉴定或物性", "与其他早期工作的实际联系"]
+    },
+    {
+      "source_id": "CQ-R02",
+      "year": 1962,
+      "title": "Some reactions of hexafluoroacetone",
+      "venue": "Bulletin of the Academy of Sciences of the USSR, Division of Chemical Science 11, 633–640",
+      "authors_as_publisher": ["I. I. Knunyants", "N. P. Gambaryan", "Ch'en Ch'ing-yun", "E. M. Rokhlin"],
+      "author_note": "按出版社保留I.I.写法，不悄然改成其他档案的I.L.；姓名异文另核",
+      "doi": "10.1007/BF00904766",
+      "source_url": "https://link.springer.com/article/10.1007/BF00904766",
+      "received": "1961-11-24",
+      "issue_date": "1962-04",
+      "read_scope": "出版社题录、摘要、参考文献；订阅全文未取得",
+      "supported_scope": "摘要涉及若干六氟丙酮反应及明显亲电性；不补造逐反应数据",
+      "full_text_read_status": "not_obtained"
+    },
+    {
+      "source_id": "CQ-H02",
+      "document_number": "117491",
+      "document_type": "苏联发明人证书说明书",
+      "mirror_title": "Способ получения бис-(пара-оксифенил)-гексафторпропана",
+      "collaborators_listed": ["陈庆云", "И. Л. Кнунянц", "Н. П. Гамбарян"],
+      "author_sequence_status": "original_document_order_pending_image_reading",
+      "source_url": "https://poleznayamodel.ru/patent/11/117491.html",
+      "read_scope": "说明书镜像索引与OCR线索；原图、顺序和日期分别待核",
+      "dates_status": "申请、登记、落款和镜像网页日期分开，不在本卡裁定",
+      "full_text_read_status": "original_images_not_yet_verified",
+      "supported_scope": "双酚AF相关方法与三人合作的原件线索；不裁定全球首次或工业采用"
+    }
+  ]
+}
