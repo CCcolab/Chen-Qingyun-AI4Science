@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "study_id": "A01-EARLY-KETONES-AF-v1",
+  "achievement_line": "A01",
+  "workflow_task_id": "A01-RU1960",
+  "title": "早期含氟酮与双酚 AF：对象、原始观察与论断重建",
+  "research_stage": "evidence_reconstruction",
+  "scientific_review_status": "review_required",
+  "model_api_called": false,
+  "source_ids": ["CQ-H01", "CQ-H02", "CQ-H12", "CQ-R01", "CQ-R02"],
+  "questions": [
+    {
+      "id": "A01-Q01",
+      "question": "两篇1960年论文各自研究哪些具体化学对象，原观察与论断如何对应？",
+      "source_ids": ["CQ-H12", "CQ-R01"],
+      "first_output": "独立论文卡、逐图对象身份和原始观察清单",
+      "required_evidence": ["两篇俄文正文", "清晰结构图", "实际数值、单位和条件"],
+      "failure_rule": "命名、图式或版本冲突时保留身份未定，不生成复算输入"
+    },
+    {
+      "id": "A01-Q02",
+      "question": "117491号证书中的产物身份与方法贡献由哪些原始证据支持？",
+      "source_ids": ["CQ-H02"],
+      "first_output": "产物身份与表征辨识限度矩阵，署名和各类日期分列",
+      "required_evidence": ["原说明书图像", "原件作者及日期栏", "实际产物结构和鉴定资料"],
+      "failure_rule": "镜像OCR、现代数据库或证书中的新颖性措辞不单独证明全球首次、历史样品或工业采用"
+    },
+    {
+      "id": "A01-Q03",
+      "question": "六氟丙酮及指定共轭体系的原有电子效应解释有哪些适用范围与替代解释？",
+      "source_ids": ["CQ-H12", "CQ-R01", "CQ-R02"],
+      "first_output": "观察、作者解释、替代解释及可区分观测矩阵",
+      "required_evidence": ["具体分子及反应对象", "原文实际可观测量", "测量或反应条件", "相关已有研究"],
+      "failure_rule": "不能以单个电荷或轨道指标直接替代实验可观测量，不能扩成普适顺序"
+    },
+    {
+      "id": "A01-Q04",
+      "question": "关于样品与乙醚恒沸物的历史解释，是否存在可独立核对的组成与气液平衡证据？",
+      "source_ids": ["CQ-H01"],
+      "first_output": "样品、压力、组成、沸点记录和解释来源的缺口表",
+      "required_evidence": ["原始样品身份", "组成及压力", "原始沸点与气液平衡数据"],
+      "failure_rule": "传记叙述不当作独立实验确认，单分子能量不用于推断混合物恒沸行为"
+    },
+    {
+      "id": "A01-Q05",
+      "question": "在同条件实验基准下，双酚A与双酚AF的某一指定性质能否由预登记模型解释？",
+      "source_ids": [],
+      "first_output": "查新与候选配对性质；证据充分后再选择计算协议",
+      "required_evidence": ["同溶剂、温度与状态的实验基准", "中性与相关离子态身份", "构象、溶剂化与标准态协议", "先行工作及误差判据"],
+      "failure_rule": "未查新不声称创新，未计算不填结果，不由单体性质推出树脂或工业性能"
+    }
+  ],
+  "extraction_fields": [
+    "source_id", "printed_page", "figure_or_table", "compound_label",
+    "original_name", "candidate_structure", "structure_identity_status",
+    "reported_observation", "value", "unit", "conditions",
+    "original_author_interpretation", "supported_claim_scope",
+    "alternative_explanation", "unresolved_question", "human_review_status"
+  ],
+  "unknown_field_rule": "缺失数据写null或明确未取得，不由AI补齐事实",
+  "current_computation_protocol": "not_approved",
+  "quantum_calculation": "not_performed",
+  "experimental_validation": "not_performed",
+  "priority": "核读133(5):1113–1116原文，确定实际对象和测量内容后选择首项复算"
+}
