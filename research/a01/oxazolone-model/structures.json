@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "task_id": "A01-OX-M1",
+  "scientific_review_status": "review_required",
+  "preparation_method": "RDKit ETKDGv3; 8 requested starting embeddings, RMS pruning0.35A; no force field or quantum energy",
+  "rdkit_version": "2026.03.6",
+  "seed": 20261111,
+  "structures": [
+    {
+      "id": "A01-P134-IV-CF3",
+      "source_id": "CQ-R01",
+      "source_pages": [
+        1367,
+        1369
+      ],
+      "source_pdf_sha256": "ea6b42bd6e976fa82219cf4ed0a48357f46d6d7cdd9d9619144e3a80bc714175",
+      "mapped_smiles": "[O:1]=[C:2]1[O:3][C:4]([c:5]2[cH:6][cH:7][cH:8][cH:9][cH:10]2)=[N:11][C:12]1=[C:13]([C:14]([F:16])([F:17])[F:18])[C:15]([F:19])([F:20])[F:21]",
+      "derived_formula": "C12H5F6NO2",
+      "formal_charge": 0,
+      "working_multiplicity": 1,
+      "starting_conformers": 1,
+      "sdf": "A01-P134-IV-CF3.sdf",
+      "sdf_sha256": "c0653abe6f6f29ddeee4af9ac19682f5939cdf231544b99f3fc2e3486b490731",
+      "identity_status": "AI_visual_transcription_pending_independent_chemical_review",
+      "geometry_status": "embedded_not_electronic_structure_optimized",
+      "energy_or_frequency_calculation": "not_performed"
+    },
+    {
+      "id": "A01-P134-IV-CH3",
+      "source_id": "CQ-R01",
+      "source_pages": [
+        1367,
+        1369
+      ],
+      "source_pdf_sha256": "ea6b42bd6e976fa82219cf4ed0a48357f46d6d7cdd9d9619144e3a80bc714175",
+      "mapped_smiles": "[O:1]=[C:2]1[O:3][C:4]([c:5]2[cH:6][cH:7][cH:8][cH:9][cH:10]2)=[N:11][C:12]1=[C:13]([CH3:14])[CH3:15]",
+      "derived_formula": "C12H11NO2",
+      "formal_charge": 0,
+      "working_multiplicity": 1,
+      "starting_conformers": 1,
+      "sdf": "A01-P134-IV-CH3.sdf",
+      "sdf_sha256": "26f8026e2c93cb3f4ba7b0236f9815b0738d2c569662a4913da99765b6486da4",
+      "identity_status": "AI_visual_transcription_pending_independent_chemical_review",
+      "geometry_status": "embedded_not_electronic_structure_optimized",
+      "energy_or_frequency_calculation": "not_performed"
+    }
+  ],
+  "boundary": "Starting inputs only; neither structural uniqueness nor reaction mechanism verified"
+}

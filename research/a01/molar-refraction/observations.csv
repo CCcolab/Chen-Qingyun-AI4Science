@@ -1,0 +1,6 @@
+compound_id,formula,n_D,n_temperature_C,relative_density,density_temperature_C,reference_water_temperature_C,printed_found_MR_cm3_mol,printed_calculated_MR_cm3_mol,printed_page,source_region,note
+I,C10H10F6O4,1.3720,20,1.3025,20,4,53.74,52.09,1115,I characterization,"结构图为二乙酯；MR行与元素分析式一致"
+II,C4H3F6NO3,1.3401,20,1.6597,20,4,28.34,28.65,1115,II characterization,"n_D原图为1.3401；不以缩小图视觉猜读替代放大核图"
+III,C6H5F6NO4,1.3575,20,1.5368,20,4,38.56,39.34,1115,III characterization,"原刊MR行式为C6F6H5O4（漏N）；下一元素分析式为C6F6H5O4N；本轮输入采用与结构及分析式相符的含N式，不改原刊记录"
+IV,C4HF6NO2,1.3355,19,1.5637,20,4,26.60,27.69,1116,IV characterization,"n_D在19°C而d_4在20°C；无温度系数，不校正，重建仅为混合温度输入的条件值"
+V,C10H13F6NO4,1.3840,20,1.4534,20,4,54.90,52.20,1116,V characterization,"结构与元素分析式相符；原刊found与calculated两值均照录"
