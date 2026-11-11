@@ -11,7 +11,6 @@ on:
       - 'results/**'
       - 'scripts/**'
       - 'schemas/**'
-      - 'tests/**'
       - 'SHA256SUMS'
       - '.gitattributes'
       - '.github/workflows/research-ci.yml'
@@ -28,7 +27,6 @@ on:
       - 'results/**'
       - 'scripts/**'
       - 'schemas/**'
-      - 'tests/**'
       - 'SHA256SUMS'
       - '.gitattributes'
       - '.github/workflows/research-ci.yml'
@@ -59,8 +57,8 @@ jobs:
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: '24.13.1'
-      - name: Verify immutable inputs, tests, replay and exact result comparison
-        run: python scripts/accept_phase1.py --output scratch/ci-acceptance
+      - name: Verify retained sources and replay; tests remain local
+        run: python scripts/accept_phase1.py --skip-tests --output scratch/ci-acceptance
       - name: Verify website baseline and Pages-relative routes
         run: python scripts/check_site.py --require-node --output scratch/ci-site-check.json
       - name: Build website without publishing

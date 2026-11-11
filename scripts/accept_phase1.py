@@ -1,7 +1,8 @@
 """Offline acceptance of the immutable upstream replay and additive integration.
 
-The upstream verifier rejects all added files. Run it against a temporary snapshot
-of the 19 SHA256SUMS members; check those same members in the working tree first.
+Local full acceptance checks all 19 SHA256SUMS members and the original verifier.
+Published-source acceptance excludes the local test member and never claims that
+the original complete package or local test suite was verified in GitHub CI.
 No source, historical result, publication status, or scientific signoff is changed.
 """
 
@@ -35,13 +36,14 @@ def save_json(path: Path, value) -> None:
                     encoding="utf-8", newline="\n")
 
 
-def check_upstream() -> dict:
+def check_upstream(*, include_tests: bool = True) -> dict:
     manifest = ROOT / "SHA256SUMS"
     actual_manifest_hash = sha256(manifest)
     if actual_manifest_hash != UPSTREAM_MANIFEST_SHA256:
         raise ValueError("The original SHA256SUMS manifest changed")
     checks = []
     seen = set()
+    excluded = []
     for line in manifest.read_text(encoding="utf-8").splitlines():
         expected, name = line.split("  ", 1)
         path = PurePosixPath(name)
@@ -49,15 +51,20 @@ def check_upstream() -> dict:
                 or ".." in path.parts or "\\" in name or name in seen):
             raise ValueError(f"Invalid upstream manifest member: {name}")
         seen.add(name)
+        if not include_tests and name == "tests/test_uv_replay.py":
+            excluded.append({"path": name, "reason": "Local-only test source is not distributed"})
+            continue
         member = ROOT / name
         if member.is_symlink() or not member.is_file():
             raise ValueError(f"Missing or symlinked upstream member: {name}")
         actual = sha256(member)
         checks.append({"path": name, "expected_sha256": expected,
                        "actual_sha256": actual, "equal": actual == expected})
-    if len(checks) != 19 or not all(check["equal"] for check in checks):
-        raise ValueError("One or more of the 19 immutable upstream files changed")
+    expected_count = 19 if include_tests else 18
+    if len(seen) != 19 or len(checks) != expected_count or not all(check["equal"] for check in checks):
+        raise ValueError("One or more retained upstream files changed")
     return {"manifest_sha256": actual_manifest_hash, "files_checked": len(checks),
+            "manifest_member_count": len(seen), "excluded_by_distribution_policy": excluded,
             "all_equal": True, "files": checks}
 
 
@@ -109,6 +116,8 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=Path("scratch/phase1-acceptance"),
                         help="New or empty evidence directory; never overwrites a previous run")
+    parser.add_argument("--skip-tests", action="store_true",
+                        help="Published-source checks only; the local test suite is not distributed")
     args = parser.parse_args()
     output = args.output.resolve()
     if output.exists() and (not output.is_dir() or any(output.iterdir())):
@@ -121,6 +130,9 @@ def main() -> int:
                "quantum_calculation": "not_performed", "experiment": "not_performed",
                "future_hypotheses": "not_tested", "model_api_called": False,
                "website_modified": False, "status": "failed", "errors": []}
+    summary["test_execution_policy"] = "local_only_not_run" if args.skip_tests else "run_local_tests"
+    summary["tests_run"] = 0 if args.skip_tests else None
+    summary["tests_status"] = "not_run_by_distribution_policy" if args.skip_tests else "pending"
     environment = {"python_version": platform.python_version(), "python_executable": sys.executable,
                    "operating_system": platform.system(), "kernel": platform.release(),
                    "machine": platform.machine(), "platform": platform.platform(),
@@ -148,7 +160,7 @@ def main() -> int:
         return {**record, "stdout_text": process.stdout, "stderr_text": process.stderr}
 
     try:
-        integrity = check_upstream()
+        integrity = check_upstream(include_tests=not args.skip_tests)
         save_json(output / "upstream-integrity.json", integrity)
         summary["upstream_files_verified"] = integrity["files_checked"]
         save_json(output / "source-inventory.json", source_inventory(output))
@@ -161,22 +173,30 @@ def main() -> int:
         except OSError:
             summary["source_commit"] = None
             summary["source_worktree_dirty"] = None
-        # Keep the original strict verifier unchanged and preserve its exact package semantics.
-        with tempfile.TemporaryDirectory(prefix="chen-upstream-") as temporary:
-            snapshot = Path(temporary)
-            for member in ["SHA256SUMS", *[item["path"] for item in integrity["files"]]]:
-                destination = snapshot / member
-                destination.parent.mkdir(parents=True, exist_ok=True)
-                shutil.copyfile(ROOT / member, destination)
-            verified = run("original-delivery-verifier",
-                           [sys.executable, "scripts/verify_delivery.py"], snapshot)
-            if verified["exit_code"] != 0:
-                raise ValueError("The unchanged original delivery verifier failed")
-        tested = run("all-tests", [sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v"])
-        counts = re.search(r"Ran (\d+) tests?", tested["stderr_text"])
-        summary["tests_run"] = int(counts.group(1)) if counts else None
-        if tested["exit_code"] != 0:
-            raise ValueError("The complete integrated test suite failed")
+        if args.skip_tests:
+            summary["original_delivery_verifier"] = "not_run_original_test_member_not_distributed"
+        else:
+            # The strict original-package verifier applies only when local tests are available.
+            with tempfile.TemporaryDirectory(prefix="chen-upstream-") as temporary:
+                snapshot = Path(temporary)
+                for member in ["SHA256SUMS", *[item["path"] for item in integrity["files"]]]:
+                    destination = snapshot / member
+                    destination.parent.mkdir(parents=True, exist_ok=True)
+                    shutil.copyfile(ROOT / member, destination)
+                verified = run("original-delivery-verifier",
+                               [sys.executable, "scripts/verify_delivery.py"], snapshot)
+                if verified["exit_code"] != 0:
+                    raise ValueError("The unchanged original delivery verifier failed")
+            summary["original_delivery_verifier"] = "passed"
+            if not (ROOT / "tests").is_dir():
+                raise ValueError("Local tests are unavailable; use --skip-tests for published-source verification")
+            tested = run("all-tests", [sys.executable, "-m", "unittest", "discover", "-s", "tests", "-v"])
+            counts = re.search(r"Ran (\d+) tests?", tested["stderr_text"])
+            summary["tests_run"] = int(counts.group(1)) if counts else None
+            if tested["exit_code"] != 0 or not summary["tests_run"]:
+                summary["tests_status"] = "failed"
+                raise ValueError("The complete local test suite failed or was empty")
+            summary["tests_status"] = "passed"
         generated = output / "replay"
         replayed = run("numerical-replay", [sys.executable, "-m", "chen_research", "--output", str(generated)])
         if replayed["exit_code"] != 0:
@@ -195,6 +215,7 @@ def main() -> int:
         summary["finished_at_utc"] = datetime.now(timezone.utc).isoformat()
         save_json(output / "summary.json", summary)
     print(json.dumps({"status": summary["status"], "tests_run": summary.get("tests_run"),
+                      "tests_status": summary.get("tests_status"),
                       "all_result_bytes_equal": summary.get("all_result_bytes_equal"),
                       "all_result_fields_equal": summary.get("all_result_fields_equal"),
                       "evidence_directory": str(output), "errors": summary["errors"]},
