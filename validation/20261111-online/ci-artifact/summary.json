@@ -1,0 +1,98 @@
+{
+  "started_at_utc": "2026-11-11T08:34:24.911717+00:00",
+  "task_id": "PF1966-UV-T1",
+  "result_type": "published_table_numerical_replay",
+  "scientific_review_status": "review_required",
+  "commands": [
+    {
+      "label": "git-revision",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/home/runner/work/Chen-Qingyun-AI4Science/Chen-Qingyun-AI4Science",
+      "started_at_utc": "2026-11-11T08:34:24.942036+00:00",
+      "finished_at_utc": "2026-11-11T08:34:24.944043+00:00",
+      "exit_code": 0,
+      "stdout": "logs/git-revision.stdout.txt",
+      "stderr": "logs/git-revision.stderr.txt"
+    },
+    {
+      "label": "git-status",
+      "command": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "cwd": "/home/runner/work/Chen-Qingyun-AI4Science/Chen-Qingyun-AI4Science",
+      "started_at_utc": "2026-11-11T08:34:24.944055+00:00",
+      "finished_at_utc": "2026-11-11T08:34:24.953666+00:00",
+      "exit_code": 0,
+      "stdout": "logs/git-status.stdout.txt",
+      "stderr": "logs/git-status.stderr.txt"
+    },
+    {
+      "label": "original-delivery-verifier",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.16/x64/bin/python",
+        "scripts/verify_delivery.py"
+      ],
+      "cwd": "/tmp/chen-upstream-k0y4t8mn",
+      "started_at_utc": "2026-11-11T08:34:24.955359+00:00",
+      "finished_at_utc": "2026-11-11T08:34:24.978184+00:00",
+      "exit_code": 0,
+      "stdout": "logs/original-delivery-verifier.stdout.txt",
+      "stderr": "logs/original-delivery-verifier.stderr.txt"
+    },
+    {
+      "label": "all-tests",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.16/x64/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/home/runner/work/Chen-Qingyun-AI4Science/Chen-Qingyun-AI4Science",
+      "started_at_utc": "2026-11-11T08:34:24.978825+00:00",
+      "finished_at_utc": "2026-11-11T08:34:25.081108+00:00",
+      "exit_code": 0,
+      "stdout": "logs/all-tests.stdout.txt",
+      "stderr": "logs/all-tests.stderr.txt"
+    },
+    {
+      "label": "numerical-replay",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.16/x64/bin/python",
+        "-m",
+        "chen_research",
+        "--output",
+        "/home/runner/work/Chen-Qingyun-AI4Science/Chen-Qingyun-AI4Science/scratch/ci-acceptance/replay"
+      ],
+      "cwd": "/home/runner/work/Chen-Qingyun-AI4Science/Chen-Qingyun-AI4Science",
+      "started_at_utc": "2026-11-11T08:34:25.081286+00:00",
+      "finished_at_utc": "2026-11-11T08:34:25.111867+00:00",
+      "exit_code": 0,
+      "stdout": "logs/numerical-replay.stdout.txt",
+      "stderr": "logs/numerical-replay.stderr.txt"
+    }
+  ],
+  "quantum_calculation": "not_performed",
+  "experiment": "not_performed",
+  "future_hypotheses": "not_tested",
+  "model_api_called": false,
+  "website_modified": false,
+  "status": "passed",
+  "errors": [],
+  "upstream_files_verified": 19,
+  "source_commit": "8259c6a25d0c55ab6350490ac9011592386a3cb4",
+  "source_worktree_dirty": false,
+  "tests_run": 23,
+  "result_files_compared": 2,
+  "all_result_bytes_equal": true,
+  "all_result_fields_equal": true,
+  "finished_at_utc": "2026-11-11T08:34:25.113840+00:00"
+}

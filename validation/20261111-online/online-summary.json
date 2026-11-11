@@ -1,0 +1,24 @@
+{
+  "recorded_at_utc": "2026-11-11T08:43:20.355211+00:00",
+  "status": "passed",
+  "repository": "https://github.com/CCcolab/Chen-Qingyun-AI4Science",
+  "public": true,
+  "default_branch": "main",
+  "website": "https://cccolab.github.io/Chen-Qingyun-AI4Science/",
+  "deployed_commit": "8259c6a25d0c55ab6350490ac9011592386a3cb4",
+  "deployment_run": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/actions/runs/42988099719",
+  "research_ci_run": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/actions/runs/42988084688",
+  "tests_passed": 23,
+  "published_files_matching_baseline": 17,
+  "source_count": 51,
+  "achievement_lines": 9,
+  "scientific_review_status": "review_required",
+  "evidence": [
+    "github-release.json",
+    "http-acceptance.json",
+    "http-resolution.json",
+    "browser-observations.json",
+    "ci-artifact/summary.json"
+  ],
+  "historical_transient_failure_preserved": true
+}

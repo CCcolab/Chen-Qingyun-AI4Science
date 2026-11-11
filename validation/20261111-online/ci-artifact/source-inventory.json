@@ -1,0 +1,1058 @@
+[
+  {
+    "path": ".gitattributes",
+    "sha256": "c05f3edb88724bb78c47fd9c88f61589eadfa9f4676d00e89505f0f917cc1d3a"
+  },
+  {
+    "path": ".github/workflows/pages.yml",
+    "sha256": "62d3256cd2d8091ab80fe2c9add6f0a8dea3e21b9795c085f32231b8c4c6fedb"
+  },
+  {
+    "path": ".github/workflows/research-ci.yml",
+    "sha256": "8378b1d2d0c62abe515a7ba9599fb0e17abc9607ca1053974808e10658e238ad"
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "27f1674a4121b0cabca9823fcdb935fc246fbe951d0d306868aeabcaaf7ecfe7"
+  },
+  {
+    "path": "NOTICE.md",
+    "sha256": "5374e5dbeb8049a39850073f6ac2a95be948a7b53f9e62db63a7226fe76a69f6"
+  },
+  {
+    "path": "README.md",
+    "sha256": "dae97de3d6bf5f5bf0162c412cad9148f6377c2f13d415c40e002b535dbeb870"
+  },
+  {
+    "path": "README_zh-CN.md",
+    "sha256": "f8b1baca5be76d565fa786a4c4b88c82bdc574c26ab8fa943566b94b796c2f36"
+  },
+  {
+    "path": "SHA256SUMS",
+    "sha256": "60275b777259e44d7277ffae4f15f71f5f628b1ef5e57286119d8e2b348a507a"
+  },
+  {
+    "path": "audit/javascript-report.json",
+    "sha256": "8e147d7ae75f7e07be43e9db1f8404e772ec2ac295bdd2ed812f20dc63c0d411"
+  },
+  {
+    "path": "audit/site-manifest.json",
+    "sha256": "be6b104b660aa81d2cefb3a1616e85936660a1ae1a45e69b851b40763c7cffa9"
+  },
+  {
+    "path": "audit/validation-report.json",
+    "sha256": "7eded9a6475d61643ecdd83def59ac62270e055339ebea3d27d5946fe4a95609"
+  },
+  {
+    "path": "chen_research/__init__.py",
+    "sha256": "22426c7b141accd04a156946d124760bbbeb753bc3370cc05182f05852f629bd"
+  },
+  {
+    "path": "chen_research/__main__.py",
+    "sha256": "86cbce145a47cf6d7acbbc127e3e5ce0df12da6efcf7dd5d88dc4fc5780002a6"
+  },
+  {
+    "path": "chen_research/uv_replay.py",
+    "sha256": "67169496a4c795eaef9ca7f68f3659def4050529fde0863fec5f2ffcce8b04de"
+  },
+  {
+    "path": "data/pftb1966_table1.csv",
+    "sha256": "92af88d5c1307d0a01b418354d2620a0d9eb8a8c68766adedd8be0feec2ff29a"
+  },
+  {
+    "path": "data/sources.json",
+    "sha256": "5d898ddda4013b0361d4a33cb3cca964374fabe1f63c1b528218ac867adda0cc"
+  },
+  {
+    "path": "docs/GITHUB_HANDOFF_zh-CN.md",
+    "sha256": "d3fb79397cc32e51472c4388693d4fc9d4bd5ef95da01652099c666d282d04cc"
+  },
+  {
+    "path": "docs/GITHUB_PAGES_MIGRATION_zh-CN.md",
+    "sha256": "3900e9667c7a73bdba034e9d3d3744d29ef610066940027211103124eaf490b4"
+  },
+  {
+    "path": "docs/MIGRATION_zh-CN.md",
+    "sha256": "3e046fedc4732603791be76d804b6f186144be0ec5a7009fdfe0484b467b238c"
+  },
+  {
+    "path": "docs/NEXT_RESEARCH_GATES_zh-CN.md",
+    "sha256": "d2133c6ff3f4a160bc5545c3caeed659255044db04694dd849b17db64dfae937"
+  },
+  {
+    "path": "docs/PHASE1_ACCEPTANCE_20261111_zh-CN.md",
+    "sha256": "361a88d344ba51463363a54665901aebf9707b784b5e58ffbdd68f70bb7d27df"
+  },
+  {
+    "path": "docs/PHASE1_INTEGRATION_zh-CN.md",
+    "sha256": "c4a9dc4cefa6150e0cfc49945e316a6c995a3d44ea0c913570ccd41f20d02d8b"
+  },
+  {
+    "path": "docs/REMOTE_INITIAL_README_20261111.md",
+    "sha256": "5c68d727ad01304bc0300506d78ba2790e0922a234ed4143a62654dbcdb39db8"
+  },
+  {
+    "path": "docs/REMOTE_INTEGRATION_20261111.md",
+    "sha256": "7afd2a9a2867b090ae16d9c366fbd68f01e7f38d5618dff7000a7039c14a3b9a"
+  },
+  {
+    "path": "docs/RESEARCH_ROADMAP_zh-CN.md",
+    "sha256": "e8a219f4b971b7d5862b986a1ee0b5ab9fef86352e7d3653ac2462271e322155"
+  },
+  {
+    "path": "docs/WEBSITE_RESULT_CONTRACT_zh-CN.md",
+    "sha256": "ac8b9e82fd30907a5ec55c003b9c5daa095dccfbc5e09588e668375e12d64883"
+  },
+  {
+    "path": "docs/WSL2_ACCEPTANCE_zh-CN.md",
+    "sha256": "3fe7e720b6a358570bad1fe1bc6303d492b5827bbb3421775b425cc838e30f05"
+  },
+  {
+    "path": "docs/YOUMIND_HANDOFF_zh-CN.md",
+    "sha256": "15ba6adf07113d74439eba7e5e7e7764117a6c70061b245dbd61f3658a1f091e"
+  },
+  {
+    "path": "literature/related_work.json",
+    "sha256": "fa746224de1c6049fe975ae9c9dd0cd9e8e6a4cc5b372fde473ddd7f127e47a6"
+  },
+  {
+    "path": "literature/search_log.json",
+    "sha256": "fa71f956c394c0234c51c1f1719062c1213279ee7e4ed387e1c6ae296910fa17"
+  },
+  {
+    "path": "protocols/pftb1966_uv.json",
+    "sha256": "3439dbf5d535663672afd034c888fce4aacc3c4314657199f40b90252568735c"
+  },
+  {
+    "path": "protocols/research_queue.json",
+    "sha256": "3b123b5f14a4a8ba1bc94e4e7ade3ab87982f600a94c7c635f0bfd8be6e9c9f1"
+  },
+  {
+    "path": "provenance/website-baseline.json",
+    "sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329"
+  },
+  {
+    "path": "results/REPLAY_REPORT_zh-CN.md",
+    "sha256": "062aca44324f015450198a4bcc2ddba6aa98d896c31dbc81de407991d78b800b"
+  },
+  {
+    "path": "results/environment.json",
+    "sha256": "8cd6f137ee0bec64191d182f7492e9edd49c83d91fbd3e33b1ea134644776116"
+  },
+  {
+    "path": "results/pftb1966-uv-replay.json",
+    "sha256": "c83794634136e2bd08d09b806b400eea603cf1c27c753ca3db2951b9c2c99432"
+  },
+  {
+    "path": "results/website-candidate.json",
+    "sha256": "cd0ac49d0624cd5a8310c3d3bcadf7992fc677ec4d5e5a6644c0467d9a8f4ee1"
+  },
+  {
+    "path": "scripts/accept_phase1.py",
+    "sha256": "2cf7067303b54cc00f45288d6991df1c6ac24946f792f61ca27b10a722329560"
+  },
+  {
+    "path": "scripts/build_site.py",
+    "sha256": "3d45bed06a9e79a7b1de50f1b32788b71e5a60acfdee43119f66feac0461d40e"
+  },
+  {
+    "path": "scripts/check_site.py",
+    "sha256": "9a07ef33177216f19d1b23c243ef2565eab77460c32f46ede262bab0d9e05271"
+  },
+  {
+    "path": "scripts/validate_wsl.py",
+    "sha256": "ccadbc8560dae15b430ca5b652e9388c64f5534b8d50cc287530524c29bb50a9"
+  },
+  {
+    "path": "scripts/verify_delivery.py",
+    "sha256": "0bb8ec49913a55faceabd7424d2672a450403cd410a917068aa96046949ec35d"
+  },
+  {
+    "path": "scripts/verify_online.py",
+    "sha256": "0b2c4ef1f10ef0004d39933178be7b220e04c28c908639739cb0cedce4a82631"
+  },
+  {
+    "path": "site/.nojekyll",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "site/IONIC-ENTRY-RETEST.txt",
+    "sha256": "3462b056891a27c335cc2620deb87b245b6c9aea3bdaec607c8a14beca69fe9d"
+  },
+  {
+    "path": "site/QA.txt",
+    "sha256": "a60b5f382b31689fa17e2518b7079ef0660674fb62bddbbf564c7b74dfe51067"
+  },
+  {
+    "path": "site/README.txt",
+    "sha256": "6e15068b7240ae47d633df3f777e81fbb9e46146ee5f4ab70011f09119b6bbc9"
+  },
+  {
+    "path": "site/ROUTES.txt",
+    "sha256": "a734c356877d4534285ab7d71b9fe0f7a17abbced4de3c52f8e60d335301e418"
+  },
+  {
+    "path": "site/achievements/index.html",
+    "sha256": "d9b4024ff8bbe8519d8d77b0c6785165db3ae9fe4ed70214ca60ea218872107d"
+  },
+  {
+    "path": "site/data/achievement-lines.json",
+    "sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec"
+  },
+  {
+    "path": "site/data/public-sources.json",
+    "sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062"
+  },
+  {
+    "path": "site/index.html",
+    "sha256": "2d13bae2c39b5b41964fc6c50481309dd62eb058a6f68e61051e5d42539344a9"
+  },
+  {
+    "path": "site/pftb/index.html",
+    "sha256": "0d4396b85f8cfd772edcf8fe9bc192d845268399e1ed3834e1d83562639ba372"
+  },
+  {
+    "path": "site/topics/chen-reagent/index.html",
+    "sha256": "649a7e6f3b3431982eba13d5036e3cd2acc22fc40cfe791c0bb9a91aabfd7553"
+  },
+  {
+    "path": "site/topics/deoxyfluorination/index.html",
+    "sha256": "0c71ad2500ae5f094be1cd10cfd9415a376deb905e9d936d2628ef8143edad66"
+  },
+  {
+    "path": "site/topics/early-fluoroketones/index.html",
+    "sha256": "fcdc4df61f18e12ac168c4aab65b9f0438e987bd9f311997755c875cc615093b"
+  },
+  {
+    "path": "site/topics/f53/index.html",
+    "sha256": "942b97805e2e785192face1ef3718b4180c276f77b5133f526c70532cfd83175"
+  },
+  {
+    "path": "site/topics/fluorinated-small-rings/index.html",
+    "sha256": "a98fe98626644e80de5b4584114e32aa0842cc3a877a41f8a76f6543571bd239"
+  },
+  {
+    "path": "site/topics/fluoromonomers/index.html",
+    "sha256": "366a55eba14a054cc678016f8c71cd391921e1eaef4cd1fd0e22cc2ce42dd904"
+  },
+  {
+    "path": "site/topics/fluoroporphyrins/index.html",
+    "sha256": "84b4b2ed0e59fdb940bfa38e5d9c0326f3fce1335ba9d71b1b19108f57a63bbf"
+  },
+  {
+    "path": "site/topics/index.html",
+    "sha256": "3b891eb056f7d5d76681ff5395149e474ec934b0d9ab2d4729df9c0441d580ad"
+  },
+  {
+    "path": "site/topics/perfluorosulfonates/index.html",
+    "sha256": "6618d0d4d7a135e88c924ae3ecd420338e9613190447676f608af9939aea84ec"
+  },
+  {
+    "path": "site/topics/refrigerants/index.html",
+    "sha256": "4d41e38398b8ec12584c6700fd84da1c1b42f9bc1c722fba64a2c151ed6af6e7"
+  },
+  {
+    "path": "site/topics/single-electron-transfer/index.html",
+    "sha256": "64c162a1ccc9c69bc82bd2ff9de0b70aa12e1ac103fc7f0a56123b134d699bbb"
+  },
+  {
+    "path": "site/topics/sulfonyl-fluoride/index.html",
+    "sha256": "62beb639cb5448473dd799cf5e23d3a4a42b8e4ccd0204b02cadeb2b7d6d6032"
+  },
+  {
+    "path": "tests/test_accept_phase1.py",
+    "sha256": "dc6893455729fcd9292d96dd1b990b232b60acdfdcdd6abc30ff32eb43d46095"
+  },
+  {
+    "path": "tests/test_site_marker.py",
+    "sha256": "867010b58a93c4e913dc4865e3fe8241ee750293c79f59070fe421d5bd1f3e43"
+  },
+  {
+    "path": "tests/test_uv_replay.py",
+    "sha256": "7be24258f48825c8df0fbe10d9557fb35ef7c69a3ca5607d5ff17cf3b0cbec79"
+  },
+  {
+    "path": "tests/test_website_contract.py",
+    "sha256": "d62b1b47b259442f82005377b15ed9f54ad4d0ad9c8f3496493987bb12725779"
+  },
+  {
+    "path": "tools/check_js.mjs",
+    "sha256": "78aec6da520080fc1e8f0da5aecdf8d1127e59c779193c7b1aa2f5426b68d39b"
+  },
+  {
+    "path": "tools/check_site.py",
+    "sha256": "a14363401614b6928d4a56740f5ae2e919b569d4b1d888ad03daa8c8c4db2608"
+  },
+  {
+    "path": "tools/serve_site.py",
+    "sha256": "8c9bce6d5751f3e01a49aa12a6432176a04d5d8ca60a683dce967b8ab31384b9"
+  },
+  {
+    "path": "upstream/chen-qingyun-a2-citations-candidate.zip",
+    "sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e"
+  },
+  {
+    "path": "validation/20261111-browser/browser-observations.json",
+    "sha256": "dc8e8b1810fea518fe0b01bd7a4bae4f4cac63aa08663f5f59b39cec3dcc40e8"
+  },
+  {
+    "path": "validation/20261111-browser/http-project-path.json",
+    "sha256": "6637054cbd055a2af8ceec1524659b9b1cbd717be1c93766f5f17808188c9e87"
+  },
+  {
+    "path": "validation/20261111-host/host-evidence.json",
+    "sha256": "f1ff2507682de33b528be2c13d258ca83ca1cfeca5a347fc24c9d4fa005a2837"
+  },
+  {
+    "path": "validation/20261111-host/windows-os.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-host/windows-os.stdout.txt",
+    "sha256": "c9cc626885cc8870035bf95f67fc125a2d819f68fffb3717d8679204c3e9b238"
+  },
+  {
+    "path": "validation/20261111-host/wsl-list.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-host/wsl-list.stdout.txt",
+    "sha256": "44746d6288ab79914fdb1ef9131102d99a6bc7ad71d2ab51d23de4d2c7e8970f"
+  },
+  {
+    "path": "validation/20261111-host/wsl-status.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-host/wsl-status.stdout.txt",
+    "sha256": "99069716cca17093ac62f6ec8debd6c13c199fd6729f6f2ae362911ad0893bec"
+  },
+  {
+    "path": "validation/20261111-remote-integration/integration/environment.json",
+    "sha256": "b4c5adbd67030b173e9c912a18a13d08315c740fd12664218e12d85b0cfe6873"
+  },
+  {
+    "path": "validation/20261111-remote-integration/integration/logs/all-tests.stderr.txt",
+    "sha256": "89045ff183150af5e0baf965f03a537dc78b1a3075c550ce07e5e397f053faf2"
+  },
+  {
+    "path": "validation/20261111-remote-integration/integration/logs/all-tests.stdout.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-remote-integration/integration/logs/git-revision.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-remote-integration/integration/logs/git-revision.stdout.txt",
+    "sha256": "1bdcbea32b129e84519bc2f0cdca6f347bf528685305ad577e61534e9cfbc866"
+  },
+  {
+    "path": "validation/20261111-remote-integration/integration/logs/git-status.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-remote-integration/integration/logs/git-status.stdout.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-remote-integration/integration/logs/numerical-replay.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-remote-integration/integration/logs/numerical-replay.stdout.txt",
+    "sha256": "ff6ea793dbdc488bdbae193307fcad222798527f24a5a03a56f49f97b820b48c"
+  },
+  {
+    "path": "validation/20261111-remote-integration/integration/logs/original-delivery-verifier.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-remote-integration/integration/logs/original-delivery-verifier.stdout.txt",
+    "sha256": "9d55474e2f2cc571cb24195f870d3577bb843f6adb6c6399bafbe4526f160f71"
+  },
+  {
+    "path": "validation/20261111-remote-integration/integration/replay/pftb1966-uv-replay.json",
+    "sha256": "c83794634136e2bd08d09b806b400eea603cf1c27c753ca3db2951b9c2c99432"
+  },
+  {
+    "path": "validation/20261111-remote-integration/integration/replay/website-candidate.json",
+    "sha256": "cd0ac49d0624cd5a8310c3d3bcadf7992fc677ec4d5e5a6644c0467d9a8f4ee1"
+  },
+  {
+    "path": "validation/20261111-remote-integration/integration/result-comparison.json",
+    "sha256": "25a09e2b86a0b49c81b02d0e0b98fb3d140e3cad972fa5a123550a2399c8b5ca"
+  },
+  {
+    "path": "validation/20261111-remote-integration/integration/source-inventory.json",
+    "sha256": "caeead05e39f279aa1e1531a902a1ca5946921200e6ca4646c2f9e095cd2df30"
+  },
+  {
+    "path": "validation/20261111-remote-integration/integration/summary.json",
+    "sha256": "c12b8b35f985a62a451284593a4ba800f7d149b4534ecf2914c18138b54687d6"
+  },
+  {
+    "path": "validation/20261111-remote-integration/integration/upstream-integrity.json",
+    "sha256": "c64d2d086a2c70ab80989587cfbf95877e96e2e64f65c181a451d74e4750b107"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/clone-committed-integration.stderr.txt",
+    "sha256": "3ac9d93f3f490bd0685fb287443b0b79dd959c3130562a217f6fc03dfb818c9b"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/clone-committed-integration.stdout.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/cloned-commit.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/cloned-commit.stdout.txt",
+    "sha256": "1bdcbea32b129e84519bc2f0cdca6f347bf528685305ad577e61534e9cfbc866"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/integrated-acceptance.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/integrated-acceptance.stdout.txt",
+    "sha256": "80576b32b75a04a63fd7a615199ffb67d496633d9ed19fa80b2b3d9c9a1a4222"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/linux-filesystem.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/linux-filesystem.stdout.txt",
+    "sha256": "c75271b9397639a9d9d1263796016b924b5a58759121894a893a565fa875b9e9"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/linux-node-runtime.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/linux-node-runtime.stdout.txt",
+    "sha256": "8f4b3b2f2108b53f1e16656e2236979d1618896de80ca38af5dfe32bfe6988d6"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/linux-node-version.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/linux-node-version.stdout.txt",
+    "sha256": "adc2fc6c2cfc7713e5d938152d45594a33c82a28857fb99667a5a5388c399e1a"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/original-integrity.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/original-integrity.stdout.txt",
+    "sha256": "9d55474e2f2cc571cb24195f870d3577bb843f6adb6c6399bafbe4526f160f71"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/original-replay.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/original-replay.stdout.txt",
+    "sha256": "ff6ea793dbdc488bdbae193307fcad222798527f24a5a03a56f49f97b820b48c"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/original-tests.stderr.txt",
+    "sha256": "749903a3ec7d455ebe8577a21584b763b8b57af169f1a334cf673044b94d258a"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/original-tests.stdout.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/source-branch.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/source-branch.stdout.txt",
+    "sha256": "6403203dd5a0867eb14d104ee8a73730bd72dd9ad92e78d996a6dba0a5dcfc01"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/source-commit.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/source-commit.stdout.txt",
+    "sha256": "1bdcbea32b129e84519bc2f0cdca6f347bf528685305ad577e61534e9cfbc866"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/source-status.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/source-status.stdout.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/website-build.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/website-build.stdout.txt",
+    "sha256": "133cadd7ae97b996db619d6ec185f00038f443ece4038d987f224270a1ae3ac1"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/website-static-check.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-remote-integration/logs/website-static-check.stdout.txt",
+    "sha256": "3948da5e47ae51a2380399c615da192eb6e37fdb62f063dc4c941ac0e69baae2"
+  },
+  {
+    "path": "validation/20261111-remote-integration/node-runtime/SHASUMS256.txt",
+    "sha256": "496b662fcf38fca596f8d1dd2e95245ac1597dd49e0c3c60235b0b6f2c072900"
+  },
+  {
+    "path": "validation/20261111-remote-integration/node-runtime/provenance.json",
+    "sha256": "18d97e960f84002b8588039ef8bef99e408a05817583dced7cce24d2ac13ef9d"
+  },
+  {
+    "path": "validation/20261111-remote-integration/node-runtime/retrieval.json",
+    "sha256": "359f3229b03f67ae7960d411e01008fadb07a87e5880604864067ab3016ba13e"
+  },
+  {
+    "path": "validation/20261111-remote-integration/original-replay/pftb1966-uv-replay.json",
+    "sha256": "c83794634136e2bd08d09b806b400eea603cf1c27c753ca3db2951b9c2c99432"
+  },
+  {
+    "path": "validation/20261111-remote-integration/original-replay/website-candidate.json",
+    "sha256": "cd0ac49d0624cd5a8310c3d3bcadf7992fc677ec4d5e5a6644c0467d9a8f4ee1"
+  },
+  {
+    "path": "validation/20261111-remote-integration/original-result-comparison.json",
+    "sha256": "6dab67091eb3347253853aa8c1ac039a51032b4d941d6f906975dbcbd596929a"
+  },
+  {
+    "path": "validation/20261111-remote-integration/site-check.json",
+    "sha256": "0f17e24a2e5986dc383c057678e8a529d600601c3c75f8c9655e6c8331e02b40"
+  },
+  {
+    "path": "validation/20261111-remote-integration/site-dist/.nojekyll",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-remote-integration/site-dist/achievements/index.html",
+    "sha256": "d9b4024ff8bbe8519d8d77b0c6785165db3ae9fe4ed70214ca60ea218872107d"
+  },
+  {
+    "path": "validation/20261111-remote-integration/site-dist/data/achievement-lines.json",
+    "sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec"
+  },
+  {
+    "path": "validation/20261111-remote-integration/site-dist/data/public-sources.json",
+    "sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062"
+  },
+  {
+    "path": "validation/20261111-remote-integration/site-dist/index.html",
+    "sha256": "2d13bae2c39b5b41964fc6c50481309dd62eb058a6f68e61051e5d42539344a9"
+  },
+  {
+    "path": "validation/20261111-remote-integration/site-dist/pftb/index.html",
+    "sha256": "0d4396b85f8cfd772edcf8fe9bc192d845268399e1ed3834e1d83562639ba372"
+  },
+  {
+    "path": "validation/20261111-remote-integration/site-dist/topics/chen-reagent/index.html",
+    "sha256": "649a7e6f3b3431982eba13d5036e3cd2acc22fc40cfe791c0bb9a91aabfd7553"
+  },
+  {
+    "path": "validation/20261111-remote-integration/site-dist/topics/deoxyfluorination/index.html",
+    "sha256": "0c71ad2500ae5f094be1cd10cfd9415a376deb905e9d936d2628ef8143edad66"
+  },
+  {
+    "path": "validation/20261111-remote-integration/site-dist/topics/early-fluoroketones/index.html",
+    "sha256": "fcdc4df61f18e12ac168c4aab65b9f0438e987bd9f311997755c875cc615093b"
+  },
+  {
+    "path": "validation/20261111-remote-integration/site-dist/topics/f53/index.html",
+    "sha256": "942b97805e2e785192face1ef3718b4180c276f77b5133f526c70532cfd83175"
+  },
+  {
+    "path": "validation/20261111-remote-integration/site-dist/topics/fluorinated-small-rings/index.html",
+    "sha256": "a98fe98626644e80de5b4584114e32aa0842cc3a877a41f8a76f6543571bd239"
+  },
+  {
+    "path": "validation/20261111-remote-integration/site-dist/topics/fluoromonomers/index.html",
+    "sha256": "366a55eba14a054cc678016f8c71cd391921e1eaef4cd1fd0e22cc2ce42dd904"
+  },
+  {
+    "path": "validation/20261111-remote-integration/site-dist/topics/fluoroporphyrins/index.html",
+    "sha256": "84b4b2ed0e59fdb940bfa38e5d9c0326f3fce1335ba9d71b1b19108f57a63bbf"
+  },
+  {
+    "path": "validation/20261111-remote-integration/site-dist/topics/index.html",
+    "sha256": "3b891eb056f7d5d76681ff5395149e474ec934b0d9ab2d4729df9c0441d580ad"
+  },
+  {
+    "path": "validation/20261111-remote-integration/site-dist/topics/perfluorosulfonates/index.html",
+    "sha256": "6618d0d4d7a135e88c924ae3ecd420338e9613190447676f608af9939aea84ec"
+  },
+  {
+    "path": "validation/20261111-remote-integration/site-dist/topics/refrigerants/index.html",
+    "sha256": "4d41e38398b8ec12584c6700fd84da1c1b42f9bc1c722fba64a2c151ed6af6e7"
+  },
+  {
+    "path": "validation/20261111-remote-integration/site-dist/topics/single-electron-transfer/index.html",
+    "sha256": "64c162a1ccc9c69bc82bd2ff9de0b70aa12e1ac103fc7f0a56123b134d699bbb"
+  },
+  {
+    "path": "validation/20261111-remote-integration/site-dist/topics/sulfonyl-fluoride/index.html",
+    "sha256": "62beb639cb5448473dd799cf5e23d3a4a42b8e4ccd0204b02cadeb2b7d6d6032"
+  },
+  {
+    "path": "validation/20261111-remote-integration/summary.json",
+    "sha256": "203c4f77aa5a09ec54c5f5834a6772d6f5904b75b2b64d1a7712aa9848861e71"
+  },
+  {
+    "path": "validation/20261111-wsl2/integration/environment.json",
+    "sha256": "58fa3114f988796ea0ee4f556eda1d40da8547519b55333e036fb0719a103bf8"
+  },
+  {
+    "path": "validation/20261111-wsl2/integration/logs/all-tests.stderr.txt",
+    "sha256": "6bb1dc4e80e3b2859cc55d1602ede83e7153f52200545dc3aec39d0e0003172b"
+  },
+  {
+    "path": "validation/20261111-wsl2/integration/logs/all-tests.stdout.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2/integration/logs/git-revision.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2/integration/logs/git-revision.stdout.txt",
+    "sha256": "acb55234cec5398de441dd7a40bf422de0ce0a7c82f684cdadeb50d0f725f042"
+  },
+  {
+    "path": "validation/20261111-wsl2/integration/logs/git-status.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2/integration/logs/git-status.stdout.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2/integration/logs/numerical-replay.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2/integration/logs/numerical-replay.stdout.txt",
+    "sha256": "ff6ea793dbdc488bdbae193307fcad222798527f24a5a03a56f49f97b820b48c"
+  },
+  {
+    "path": "validation/20261111-wsl2/integration/logs/original-delivery-verifier.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2/integration/logs/original-delivery-verifier.stdout.txt",
+    "sha256": "9d55474e2f2cc571cb24195f870d3577bb843f6adb6c6399bafbe4526f160f71"
+  },
+  {
+    "path": "validation/20261111-wsl2/integration/replay/pftb1966-uv-replay.json",
+    "sha256": "c83794634136e2bd08d09b806b400eea603cf1c27c753ca3db2951b9c2c99432"
+  },
+  {
+    "path": "validation/20261111-wsl2/integration/replay/website-candidate.json",
+    "sha256": "cd0ac49d0624cd5a8310c3d3bcadf7992fc677ec4d5e5a6644c0467d9a8f4ee1"
+  },
+  {
+    "path": "validation/20261111-wsl2/integration/result-comparison.json",
+    "sha256": "3168ffe92c43084ebdd2a1f7c00eb226d64418b4c6a18d0c6504178c69c5976a"
+  },
+  {
+    "path": "validation/20261111-wsl2/integration/source-inventory.json",
+    "sha256": "917b768a990d751e5642616c55cd27497bc7898f31a4a7931d7ba4da0c168cbe"
+  },
+  {
+    "path": "validation/20261111-wsl2/integration/summary.json",
+    "sha256": "e1315a0cb2e0b4fee32c72b795acf80e058c78d7db77928ac7c5cb00e072f72a"
+  },
+  {
+    "path": "validation/20261111-wsl2/integration/upstream-integrity.json",
+    "sha256": "c64d2d086a2c70ab80989587cfbf95877e96e2e64f65c181a451d74e4750b107"
+  },
+  {
+    "path": "validation/20261111-wsl2/logs/clone-committed-integration.stderr.txt",
+    "sha256": "d81b63fba8a4515289f0af828e301358e1c0890b84324d8a011e7889273021e5"
+  },
+  {
+    "path": "validation/20261111-wsl2/logs/clone-committed-integration.stdout.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2/logs/cloned-commit.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2/logs/cloned-commit.stdout.txt",
+    "sha256": "acb55234cec5398de441dd7a40bf422de0ce0a7c82f684cdadeb50d0f725f042"
+  },
+  {
+    "path": "validation/20261111-wsl2/logs/integrated-acceptance.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2/logs/integrated-acceptance.stdout.txt",
+    "sha256": "775bf6f2dc3317d104ab1d56578b74f281c81f5a107fe37f01aa83bf1cb0d534"
+  },
+  {
+    "path": "validation/20261111-wsl2/logs/linux-filesystem.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2/logs/linux-filesystem.stdout.txt",
+    "sha256": "c75271b9397639a9d9d1263796016b924b5a58759121894a893a565fa875b9e9"
+  },
+  {
+    "path": "validation/20261111-wsl2/logs/original-integrity.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2/logs/original-integrity.stdout.txt",
+    "sha256": "9d55474e2f2cc571cb24195f870d3577bb843f6adb6c6399bafbe4526f160f71"
+  },
+  {
+    "path": "validation/20261111-wsl2/logs/original-replay.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2/logs/original-replay.stdout.txt",
+    "sha256": "ff6ea793dbdc488bdbae193307fcad222798527f24a5a03a56f49f97b820b48c"
+  },
+  {
+    "path": "validation/20261111-wsl2/logs/original-tests.stderr.txt",
+    "sha256": "e3db95ec654b1f1ea5637a32f368afe4df47e01c10c997e85175078b007911cd"
+  },
+  {
+    "path": "validation/20261111-wsl2/logs/original-tests.stdout.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2/logs/source-branch.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2/logs/source-branch.stdout.txt",
+    "sha256": "2fee2715acf586ce3802afb3a39fdfa6305e89f26cea48257a5dbcb2024a5835"
+  },
+  {
+    "path": "validation/20261111-wsl2/logs/source-commit.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2/logs/source-commit.stdout.txt",
+    "sha256": "acb55234cec5398de441dd7a40bf422de0ce0a7c82f684cdadeb50d0f725f042"
+  },
+  {
+    "path": "validation/20261111-wsl2/original-replay/pftb1966-uv-replay.json",
+    "sha256": "c83794634136e2bd08d09b806b400eea603cf1c27c753ca3db2951b9c2c99432"
+  },
+  {
+    "path": "validation/20261111-wsl2/original-replay/website-candidate.json",
+    "sha256": "cd0ac49d0624cd5a8310c3d3bcadf7992fc677ec4d5e5a6644c0467d9a8f4ee1"
+  },
+  {
+    "path": "validation/20261111-wsl2/original-result-comparison.json",
+    "sha256": "6e0532b1546fa9de72b3bfdab8a35e611a779ea2e91ce6d8678f026188c23a72"
+  },
+  {
+    "path": "validation/20261111-wsl2/summary.json",
+    "sha256": "5a488708ac4df977a661224729b29557118ba7e1847188aab5bfb3812125922c"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/integration/environment.json",
+    "sha256": "58d0786113664772002c67d2719dc460766ed4eaee0e1350aac1cbdbc34f6bbb"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/integration/logs/all-tests.stderr.txt",
+    "sha256": "6bb1dc4e80e3b2859cc55d1602ede83e7153f52200545dc3aec39d0e0003172b"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/integration/logs/all-tests.stdout.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/integration/logs/git-revision.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/integration/logs/git-revision.stdout.txt",
+    "sha256": "9b6f3208c76732d173c65ec073786a6973093e5759122fe866f1cf77cb7803fa"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/integration/logs/git-status.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/integration/logs/git-status.stdout.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/integration/logs/numerical-replay.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/integration/logs/numerical-replay.stdout.txt",
+    "sha256": "ff6ea793dbdc488bdbae193307fcad222798527f24a5a03a56f49f97b820b48c"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/integration/logs/original-delivery-verifier.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/integration/logs/original-delivery-verifier.stdout.txt",
+    "sha256": "9d55474e2f2cc571cb24195f870d3577bb843f6adb6c6399bafbe4526f160f71"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/integration/replay/pftb1966-uv-replay.json",
+    "sha256": "c83794634136e2bd08d09b806b400eea603cf1c27c753ca3db2951b9c2c99432"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/integration/replay/website-candidate.json",
+    "sha256": "cd0ac49d0624cd5a8310c3d3bcadf7992fc677ec4d5e5a6644c0467d9a8f4ee1"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/integration/result-comparison.json",
+    "sha256": "2346e4d1381d29875b5c43661323eee61231bbfd36cb17ce16b39b6e85ce52c0"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/integration/source-inventory.json",
+    "sha256": "72f86a986d10c7ba174f99fa29e52ffa724f23995c36284550632d39bd115fa7"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/integration/summary.json",
+    "sha256": "ca663be39f7e14946e292063ad81705252714b12f10f3e67c582821296742520"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/integration/upstream-integrity.json",
+    "sha256": "c64d2d086a2c70ab80989587cfbf95877e96e2e64f65c181a451d74e4750b107"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/clone-committed-integration.stderr.txt",
+    "sha256": "0f8c9caa31b268030ddecc4b0457f1d962e2eeb7bebdc0243aef8ea43792f6e5"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/clone-committed-integration.stdout.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/cloned-commit.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/cloned-commit.stdout.txt",
+    "sha256": "9b6f3208c76732d173c65ec073786a6973093e5759122fe866f1cf77cb7803fa"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/integrated-acceptance.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/integrated-acceptance.stdout.txt",
+    "sha256": "f3bcb4e8764a8e82fe7d1617d53fd3701d2b942f8e36fee243ffae0cfef8f975"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/linux-filesystem.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/linux-filesystem.stdout.txt",
+    "sha256": "c75271b9397639a9d9d1263796016b924b5a58759121894a893a565fa875b9e9"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/linux-node-runtime.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/linux-node-runtime.stdout.txt",
+    "sha256": "27244b6fc949d92b931c8778e356a2df14cc72cc579ca530cceeab60792598f2"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/linux-node-version.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/linux-node-version.stdout.txt",
+    "sha256": "adc2fc6c2cfc7713e5d938152d45594a33c82a28857fb99667a5a5388c399e1a"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/original-integrity.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/original-integrity.stdout.txt",
+    "sha256": "9d55474e2f2cc571cb24195f870d3577bb843f6adb6c6399bafbe4526f160f71"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/original-replay.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/original-replay.stdout.txt",
+    "sha256": "ff6ea793dbdc488bdbae193307fcad222798527f24a5a03a56f49f97b820b48c"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/original-tests.stderr.txt",
+    "sha256": "e3db95ec654b1f1ea5637a32f368afe4df47e01c10c997e85175078b007911cd"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/original-tests.stdout.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/source-branch.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/source-branch.stdout.txt",
+    "sha256": "2fee2715acf586ce3802afb3a39fdfa6305e89f26cea48257a5dbcb2024a5835"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/source-commit.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/source-commit.stdout.txt",
+    "sha256": "9b6f3208c76732d173c65ec073786a6973093e5759122fe866f1cf77cb7803fa"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/source-status.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/source-status.stdout.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/website-build.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/website-build.stdout.txt",
+    "sha256": "4b9065d64f9e110d7c65aeb6082577efc4043118df75d852219218252e060d77"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/website-static-check.stderr.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/logs/website-static-check.stdout.txt",
+    "sha256": "9fea05f8d5200cea3922aa1019923303bd8b5c9985128c52cf4e93c13d3c07c0"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/node-runtime/SHASUMS256.txt",
+    "sha256": "496b662fcf38fca596f8d1dd2e95245ac1597dd49e0c3c60235b0b6f2c072900"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/node-runtime/provenance.json",
+    "sha256": "8d35e283d418d335b87b8159de4f23fab3350cedc5da492648cc6f70ef2da9a8"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/node-runtime/retrieval.json",
+    "sha256": "359f3229b03f67ae7960d411e01008fadb07a87e5880604864067ab3016ba13e"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/original-replay/pftb1966-uv-replay.json",
+    "sha256": "c83794634136e2bd08d09b806b400eea603cf1c27c753ca3db2951b9c2c99432"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/original-replay/website-candidate.json",
+    "sha256": "cd0ac49d0624cd5a8310c3d3bcadf7992fc677ec4d5e5a6644c0467d9a8f4ee1"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/original-result-comparison.json",
+    "sha256": "58572a26dd613a657e2838ca56b94106bfc1610ce02e5dfe2194e03ac31492f6"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/site-check.json",
+    "sha256": "5ec52e0d44c858b74f70f1b887a7f347fcc7340bcf0bc324be96567607e6944e"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/site-dist/.nojekyll",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/site-dist/achievements/index.html",
+    "sha256": "d9b4024ff8bbe8519d8d77b0c6785165db3ae9fe4ed70214ca60ea218872107d"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/site-dist/data/achievement-lines.json",
+    "sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/site-dist/data/public-sources.json",
+    "sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/site-dist/index.html",
+    "sha256": "2d13bae2c39b5b41964fc6c50481309dd62eb058a6f68e61051e5d42539344a9"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/site-dist/pftb/index.html",
+    "sha256": "0d4396b85f8cfd772edcf8fe9bc192d845268399e1ed3834e1d83562639ba372"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/site-dist/topics/chen-reagent/index.html",
+    "sha256": "649a7e6f3b3431982eba13d5036e3cd2acc22fc40cfe791c0bb9a91aabfd7553"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/site-dist/topics/deoxyfluorination/index.html",
+    "sha256": "0c71ad2500ae5f094be1cd10cfd9415a376deb905e9d936d2628ef8143edad66"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/site-dist/topics/early-fluoroketones/index.html",
+    "sha256": "fcdc4df61f18e12ac168c4aab65b9f0438e987bd9f311997755c875cc615093b"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/site-dist/topics/f53/index.html",
+    "sha256": "942b97805e2e785192face1ef3718b4180c276f77b5133f526c70532cfd83175"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/site-dist/topics/fluorinated-small-rings/index.html",
+    "sha256": "a98fe98626644e80de5b4584114e32aa0842cc3a877a41f8a76f6543571bd239"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/site-dist/topics/fluoromonomers/index.html",
+    "sha256": "366a55eba14a054cc678016f8c71cd391921e1eaef4cd1fd0e22cc2ce42dd904"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/site-dist/topics/fluoroporphyrins/index.html",
+    "sha256": "84b4b2ed0e59fdb940bfa38e5d9c0326f3fce1335ba9d71b1b19108f57a63bbf"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/site-dist/topics/index.html",
+    "sha256": "3b891eb056f7d5d76681ff5395149e474ec934b0d9ab2d4729df9c0441d580ad"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/site-dist/topics/perfluorosulfonates/index.html",
+    "sha256": "6618d0d4d7a135e88c924ae3ecd420338e9613190447676f608af9939aea84ec"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/site-dist/topics/refrigerants/index.html",
+    "sha256": "4d41e38398b8ec12584c6700fd84da1c1b42f9bc1c722fba64a2c151ed6af6e7"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/site-dist/topics/single-electron-transfer/index.html",
+    "sha256": "64c162a1ccc9c69bc82bd2ff9de0b70aa12e1ac103fc7f0a56123b134d699bbb"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/site-dist/topics/sulfonyl-fluoride/index.html",
+    "sha256": "62beb639cb5448473dd799cf5e23d3a4a42b8e4ccd0204b02cadeb2b7d6d6032"
+  },
+  {
+    "path": "validation/20261111-wsl2-migration/summary.json",
+    "sha256": "fd15629d7b5acab769e22101cca6c1a68d785a8566c0e7b5e75fe233a9a94d90"
+  },
+  {
+    "path": "validation/protected-parent-files.json",
+    "sha256": "37ddfed166f8c62ec1d9fa2691a28108a33b389a24125ce894d88a8a1172b8ee"
+  }
+]

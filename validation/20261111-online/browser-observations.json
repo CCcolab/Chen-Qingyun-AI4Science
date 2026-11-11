@@ -1,0 +1,38 @@
+{
+  "date_local": "2026-11-11",
+  "timezone": "Asia/Shanghai",
+  "scope": "Actual Chrome interaction with the public GitHub Pages site after deployment",
+  "base_url": "https://cccolab.github.io/Chen-Qingyun-AI4Science/",
+  "deployment_commit": "8259c6a25d0c55ab6350490ac9011592386a3cb4",
+  "homepage": {
+    "source_cards": 51,
+    "copy_buttons": 51,
+    "achievement_lines": 9,
+    "citation_CQ_H22_click_status": "已复制引用",
+    "search_CQ_H22": "主索引 1 / 49 条"
+  },
+  "a08_route": [
+    "topics/index.html",
+    "achievements/index.html#record-fluorinated-ionic-liquids",
+    "index.html#source-cq-h22"
+  ],
+  "pftb": {
+    "direct_and_refreshed_hash": "#s/T03/boundary/R92C",
+    "direct_and_refreshed_selected": ["三、电子效应的论据与限制", "边界", "第48页 · 具体反应"],
+    "changed_hash": "#s/T04/observation/R92B",
+    "changed_selected": ["四、直接引文中的采用与评议", "观察", "第44页 · 机理评议"],
+    "back_hash": "#s/T04/observation/R92C",
+    "forward_hash": "#s/T04/observation/R92B",
+    "visible_state_matched_hash": true
+  },
+  "browser_log_messages": [{
+    "level": "error",
+    "timestamp_utc": "2026-11-11T08:38:28.691Z",
+    "message": "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+    "observed_during": "Cross-page navigation to index.html#source-cq-h22",
+    "page_function_failure_observed": false,
+    "origin_attribution": "not established"
+  }],
+  "not_claimed": ["independent system clipboard readback", "forced clipboard rejection", "JavaScript-disabled browser session", "scientific signoff"],
+  "scientific_review_status": "review_required"
+}

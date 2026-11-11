@@ -1,0 +1,26 @@
+{
+  "python_version": "3.12.16",
+  "python_executable": "/opt/hostedtoolcache/Python/3.12.16/x64/bin/python",
+  "operating_system": "Linux",
+  "kernel": "7.0.0-1017-azure",
+  "machine": "x86_64",
+  "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+  "working_directory": "/home/runner/work/Chen-Qingyun-AI4Science/Chen-Qingyun-AI4Science",
+  "wsl2_kernel_detected": false,
+  "third_party_python_dependencies": [],
+  "os_release": {
+    "NAME": "Ubuntu",
+    "ID": "ubuntu",
+    "PRETTY_NAME": "Ubuntu 24.04.5 LTS",
+    "VERSION_ID": "24.04",
+    "VERSION": "24.04.5 LTS (Noble Numbat)",
+    "VERSION_CODENAME": "noble",
+    "ID_LIKE": "debian",
+    "HOME_URL": "https://www.ubuntu.com/",
+    "SUPPORT_URL": "https://help.ubuntu.com/",
+    "BUG_REPORT_URL": "https://bugs.launchpad.net/ubuntu/",
+    "PRIVACY_POLICY_URL": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy",
+    "UBUNTU_CODENAME": "noble",
+    "LOGO": "ubuntu-logo"
+  }
+}

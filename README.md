@@ -2,6 +2,8 @@
 
 正式源码仓库：[CCcolab/Chen-Qingyun-AI4Science](https://github.com/CCcolab/Chen-Qingyun-AI4Science)，默认分支 `main`。YouMind 负责网页制作和导出，GitHub 保存源码并使用 GitHub Pages 发布。网站内容保持原作者归属；研究结果继续保留 `review_required`。
 
+公开网站：[陈庆云院士学术成就](https://cccolab.github.io/Chen-Qingyun-AI4Science/)。2026-11-11 已完成 GitHub Actions 发布和线上验收；见[上线验收记录](docs/ONLINE_ACCEPTANCE_20261111_zh-CN.md)。
+
 本项目同时保留两份独立材料：
 
 - 网站：`upstream/chen-qingyun-a2-citations-candidate.zip`，21 个原始成员完整解到 `site/`，包含 15 个 HTML、两份原始 JSON。ZIP 指纹与研究交接文档一致，预览页没有替代源码。
