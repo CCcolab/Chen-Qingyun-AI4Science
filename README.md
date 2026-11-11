@@ -1,6 +1,6 @@
 # 陈庆云学术成就网站与 AI 辅助研究
 
-本地迁移准备项目，目标仓库拟名 `CCcolab/Chen-Qingyun-AI4Science`。仓库尚未创建，当前未设置远程地址、推送或部署。计划由 YouMind 制作和导出网页，由 GitHub 保存源码并使用 GitHub Pages 发布。
+正式源码仓库：[CCcolab/Chen-Qingyun-AI4Science](https://github.com/CCcolab/Chen-Qingyun-AI4Science)，默认分支 `main`。YouMind 负责网页制作和导出，GitHub 保存源码并使用 GitHub Pages 发布。网站内容保持原作者归属；研究结果继续保留 `review_required`。
 
 本项目同时保留两份独立材料：
 
@@ -23,3 +23,5 @@ python3 -m http.server 8000 --bind 127.0.0.1 --directory scratch/site-dist
 网站和研究原成果均归原作者；工程测试通过不代表新的实验、量化计算、机理验证或科学审定。尚未确定再分发许可的原论文全文、传记及照片不加入网站产物。
 
 [迁移与发布交接](docs/GITHUB_PAGES_MIGRATION_zh-CN.md) · [研究接入说明](docs/PHASE1_INTEGRATION_zh-CN.md) · [候选结果接口](docs/WEBSITE_RESULT_CONTRACT_zh-CN.md) · [后续研究入口](docs/NEXT_RESEARCH_GATES_zh-CN.md)
+
+原包及首次本地验收文档保留当时状态；后续线上执行以 GitHub Actions 和实际部署记录为准。仓库原初始提交及其 README 均已保留在历史中，见[初始仓库说明存档](docs/REMOTE_INITIAL_README_20261111.md)。
