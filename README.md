@@ -4,11 +4,6 @@
 
 公开网站：[陈庆云院士学术成就](https://cccolab.github.io/Chen-Qingyun-AI4Science/)。2026-11-11 已完成 GitHub Actions 发布和线上验收；见[上线验收记录](docs/ONLINE_ACCEPTANCE_20261111_zh-CN.md)。
 
-本项目同时保留两份独立材料：
-
-- 网站：`upstream/chen-qingyun-a2-citations-candidate.zip`，21 个原始成员完整解到 `site/`，包含 15 个 HTML、两份原始 JSON。ZIP 指纹与研究交接文档一致，预览页没有替代源码。
-- 研究：保留启动包的科学代码、数据、协议和历史结果；测试文件仅留本机，不再同步到 GitHub。原 SHA 清单、[原始说明](README_zh-CN.md)与历史环境记录保留，当前分发范围见[同步策略](docs/LOCAL_TESTS_POLICY_zh-CN.md)。PF1966-UV-T1 仅为原表数值重放，网站候选结果保持 `review_required`。
-
 ## 本地检查
 
 Python 3.10+，无需模型 API 密钥或第三方 Python 库：
