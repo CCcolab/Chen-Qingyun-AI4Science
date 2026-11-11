@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "record_type": "scientific_review",
+  "review_id": "93c6e336-d4e2-4dc0-8d30-eda35915752f",
+  "run_id": "ca336d0c-dd92-4b8d-b920-e837c76a3498",
+  "task_id": "PF1966-UV-T1",
+  "binding": {
+    "run_manifest_sha256": "898a94bbdcc78d985d2589ceb3cf75e1a2f9135350ebda0e92361ee7ed069c87",
+    "policy_sha256": "35e69a209e4102ddc46857a50540945bea6f7c25fd344b6c0c0cadd2305ff8f1",
+    "inputs_sha256": {
+      "data": "92af88d5c1307d0a01b418354d2620a0d9eb8a8c68766adedd8be0feec2ff29a",
+      "protocol": "3439dbf5d535663672afd034c888fce4aacc3c4314657199f40b90252568735c",
+      "sources": "5d898ddda4013b0361d4a33cb3cca964374fabe1f63c1b528218ac867adda0cc"
+    },
+    "code_sha256": {
+      "chen_research/__init__.py": "22426c7b141accd04a156946d124760bbbeb753bc3370cc05182f05852f629bd",
+      "chen_research/__main__.py": "54c1d11fd726c5a4cc2a4e4a11226c4bfca3af156925dc8c01c772dd06dac260",
+      "chen_research/input_contract.py": "f089b5a14376ba7493a0421b7c435226e5fef843e4262e3f2cb04a3760814401",
+      "chen_research/review_gate.py": "30c8cb4b2ebfd4c58e564b5a935ba7c9b13fec2191f01c47b533c167467566c8",
+      "chen_research/run_record.py": "48f8ebe9e305610507031fbd13eb87475e5d62dc1bb1e996511f45eb45608e7a",
+      "chen_research/uv_replay.py": "c42c2f6525a9d44a127f3c3a0385dc6ebc8e79197acb1593ca4111599d76486c",
+      "scripts/accept_phase1.py": "35e9dc5a988f325bb37c682a05ef7cf31e1453be8e301de11467e60f09fae51b"
+    },
+    "complete_result_sha256": "4e69073ce8e96bd5ffa217cd89b67522e839ede99d2ded056d44f120c76141dd",
+    "candidate_result_sha256": "93498a5c6b430ad02e11f7078d0e2cbbcd62cfc3aab3fee4875ae43b45500cc2",
+    "environment_sha256": "de07ea930e58c13eea4a32581a6866975459a0d5f4245b0fff9ca178b8714c2d",
+    "publication_payload_sha256": "8d1ad359fffd6a2af5871a4ab57f454a45c275c45e66d9d82734958ae4ca2967"
+  },
+  "reviewer": {
+    "reviewer_id": null,
+    "full_name": null,
+    "affiliation": null
+  },
+  "decision": "pending",
+  "reviewed_at_utc": null,
+  "checks": {
+    "source_transcription": false,
+    "original_attribution": false,
+    "units_and_arithmetic": false,
+    "sensitivity_and_uncertainty": false,
+    "claim_boundaries": false,
+    "publication_text": false
+  },
+  "source_evidence": {
+    "source_pdf_sha256": "b97a7b641968561a1387d82c9b01fb8b2973c2a47e2e36c07ce85db2831302be",
+    "scan_page_sha256": "7db29ab674d3625139a32954268dd878945bfb6cfe327464d801ead7cc4ce5c5",
+    "transcription_status": "pending"
+  },
+  "attestation": {
+    "method": "openssh-detached",
+    "namespace": "chen-qingyun-scientific-review-v1",
+    "status": "unsigned"
+  },
+  "comments": ""
+}

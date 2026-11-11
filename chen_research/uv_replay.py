@@ -8,15 +8,15 @@ H is the C6H14 entry in the original table; B is EtOH or Et2O, not benzene.
 
 from __future__ import annotations
 
-import csv
 import hashlib
 import json
 import math
 from pathlib import Path
 
-
-class ReproducibilityError(ValueError):
-    """Inputs do not qualify for this narrowly defined reproduction."""
+from .input_contract import (
+    CONTRACT_VERSION, DATA_SHA256, PROTOCOL_SHA256, SOURCE_REGISTRY_SHA256,
+    ReproducibilityError, assert_exact, validate_inputs, validate_observations, validate_sources,
+)
 
 
 COMPOUNDS = {"nC3F7I": "C3F7I", "iC3F7I": "C3F7I", "tC4F9I": "C4F9I"}
@@ -34,37 +34,8 @@ def digest(path: Path) -> str:
 
 
 def load_observations(path: Path) -> dict[tuple[str, str], float]:
-    values = {}
-    with path.open(encoding="utf-8", newline="") as handle:
-        reader = csv.DictReader(handle)
-        if set(reader.fieldnames or []) != COLUMNS:
-            raise ReproducibilityError("CSV 字段或单位不符合本任务合同")
-        for row in reader:
-            compound, solvent = row["compound_id"], row["solvent"]
-            if compound not in COMPOUNDS:
-                raise ReproducibilityError("原表没有该分子的直接测量，不能补作实测")
-            if row["formula"] != COMPOUNDS[compound]:
-                raise ReproducibilityError("化学实体与分子式不匹配")
-            if solvent not in (BASELINE, *DONORS, "CCl4"):
-                raise ReproducibilityError("溶剂须保持原表记号；B 不代表苯")
-            if (row["source_id"], row["pdf_page"], row["printed_page"], row["table_number"]) != ("PF01", "4", "21", "1"):
-                raise ReproducibilityError("来源与定位不匹配")
-            try:
-                value = float(row["lambda_max_nm"])
-            except (ValueError, TypeError) as exc:
-                raise ReproducibilityError("波长须为有效的 nm 数值") from exc
-            if not math.isfinite(value) or not 200 <= value <= 400:
-                raise ReproducibilityError("数值不在本表 UV 波长的任务范围内")
-            key = (compound, solvent)
-            if key in values:
-                raise ReproducibilityError("同一分子和溶剂存在重复记录")
-            values[key] = value
-    required = {(c, s) for c in COMPOUNDS for s in (BASELINE, *DONORS)}
-    if not required <= values.keys():
-        raise ReproducibilityError("缺少配对波长，不能计算完整三分子比较")
-    if set(values) - required not in (set(), {("tC4F9I", "CCl4")}):
-        raise ReproducibilityError("额外记录不属于原表已转录的观测")
-    return values
+    validate_sources(Path(__file__).resolve().parents[1] / "data/sources.json")
+    return validate_observations(path)
 
 
 def shifts(lambda_h: float, lambda_b: float) -> dict[str, float]:
@@ -103,11 +74,9 @@ def overlap_half_width(high: tuple[float, float], low: tuple[float, float], metr
     return (left + right) / 2
 
 
-def replay(csv_path: Path, protocol_path: Path) -> dict:
-    values = load_observations(csv_path)
-    protocol = json.loads(protocol_path.read_text(encoding="utf-8"))
-    if protocol.get("task_id") != "PF1966-UV-T1" or protocol.get("baseline_solvent") != BASELINE:
-        raise ReproducibilityError("协议不属于已定义的原表重放任务")
+def replay(csv_path: Path, protocol_path: Path, sources_path: Path | None = None) -> dict:
+    validated = validate_inputs(csv_path, protocol_path, sources_path)
+    values, protocol = validated["values"], validated["protocol"]
     u = protocol["display_rounding_half_width_nm"]
     if u != 0.05 or protocol["experimental_uncertainty_nm"] is not None:
         raise ReproducibilityError("不得把展示舍入假设改写成原实验误差")
@@ -143,19 +112,27 @@ def replay(csv_path: Path, protocol_path: Path) -> dict:
                                 "nominal_order": order, "matches_three_iodide_order": order == EXPECTED_ORDER,
                                 "adjacent_comparisons": adjacent})
     return {
-        "schema_version": "1.0", "task_id": "PF1966-UV-T1", "source_id": "PF01",
+        "schema_version": "2.0", "input_contract_version": CONTRACT_VERSION,
+        "task_id": "PF1966-UV-T1", "source_id": "PF01",
         "result_type": "published_table_numerical_replay",
         "numerical_status": "nominal_three_iodide_order_reproduced" if all(
             c["matches_three_iodide_order"] for c in comparisons) else "nominal_order_discrepancy",
         "scientific_review_status": "review_required",
+        "original_authors": protocol["original_authors"],
+        "publication_year": protocol["publication_year"], "source_url": protocol["source_url"],
+        "location": protocol["location"],
         "source_pdf_sha256": protocol["source_pdf_sha256"],
-        "data_sha256": digest(csv_path), "protocol_sha256": digest(protocol_path),
+        "data_sha256": DATA_SHA256, "protocol_sha256": PROTOCOL_SHA256,
+        "source_registry_sha256": SOURCE_REGISTRY_SHA256,
+        "validator_code_sha256": digest(Path(__file__).with_name("input_contract.py")),
         "code_sha256": digest(Path(__file__)), "observations_count": len(values),
+        "observation_ids": validated["observation_ids"],
+        "measurement_id_pairs": validated["measurement_id_pairs"],
         "used_observations_count": 9, "excluded_from_comparison": ([{
             "compound_id": "tC4F9I", "solvent": "CCl4", "reason": "不属于本合同的 C6H14—给体溶剂配对"}]
             if ("tC4F9I", "CCl4") in values else []),
         "source_location": "1966, 32(1), printed p.21, Table 1; PDF p.4",
-        "transcription_review": "AI 逐格对照原扫描页；尚无独立化学专家复核签认",
+        "transcription_review": "继承封存包转录；本轮未重新核验原扫描，独立专业签认待补",
         "experimental_uncertainty_nm": None,
         "display_rounding_assumption": {"half_width_nm": u, "interpretation":
             "按一位小数的通常舍入作独立有界扰动诊断，不是仪器精度、测量误差或置信区间"},
@@ -167,18 +144,41 @@ def replay(csv_path: Path, protocol_path: Path) -> dict:
             "novel_chemistry": "not_claimed",
             "unmeasured_iodides": ["C2F5I", "CF3I"],
             "entity_warning": "原表第三个测量对象为 n-C3F7I，不能替换为 C2F5I；B 是给体溶剂不是苯",
-            "phase1_status": "仅形成可审阅数值重放，不等于模型服务、WSL 验收或网站已接入"},
+            "phase1_status": "原表数值重放候选；独立专业签认及审定发布待完成，工程环境另见绑定运行记录"},
     }
 
 
 def write_outputs(result: dict, output_dir: Path) -> None:
-    output_dir.mkdir(parents=True, exist_ok=True)
+    root = Path(__file__).resolve().parents[1]
+    expected = replay(root / "data/pftb1966_table1.csv", root / "protocols/pftb1966_uv.json",
+                      root / "data/sources.json")
+    assert_exact(expected, result, "result")
+    output_dir = Path(output_dir)
+    targets = [output_dir / name for name in ("pftb1966-uv-replay.json", "website-candidate.json")]
+    if any(path.exists() or path.is_symlink() for path in targets):
+        raise ReproducibilityError("输出已存在；请使用新的运行目录，不覆盖封存结果或候选历史")
     text = json.dumps(result, ensure_ascii=False, indent=2, allow_nan=False) + "\n"
-    (output_dir / "pftb1966-uv-replay.json").write_text(text, encoding="utf-8")
-    export = {"task_id": result["task_id"], "result_type": result["result_type"],
+    export = {"schema_version": result["schema_version"],
+              "input_contract_version": result["input_contract_version"],
+              "task_id": result["task_id"], "result_type": result["result_type"],
               "publication_status": "review_required", "source_ids": ["PF01"],
+              "original_authors": result["original_authors"], "publication_year": result["publication_year"],
+              "source_url": result["source_url"], "location": result["location"],
+              "source_pdf_sha256": result["source_pdf_sha256"],
+              "protocol_sha256": result["protocol_sha256"],
+              "source_registry_sha256": result["source_registry_sha256"],
+              "validator_code_sha256": result["validator_code_sha256"],
+              "observation_ids": result["observation_ids"],
+              "measurement_id_pairs": result["measurement_id_pairs"],
               "numeric_summary": result["measurements_and_derived_shifts"],
+              "comparisons": result["comparisons"],
+              "experimental_uncertainty_nm": result["experimental_uncertainty_nm"],
+              "display_rounding_assumption": result["display_rounding_assumption"],
+              "transcription_review": result["transcription_review"],
               "boundaries": result["boundaries"],
               "data_sha256": result["data_sha256"], "code_sha256": result["code_sha256"]}
-    (output_dir / "website-candidate.json").write_text(
-        json.dumps(export, ensure_ascii=False, indent=2, allow_nan=False) + "\n", encoding="utf-8")
+    candidate_text = json.dumps(export, ensure_ascii=False, indent=2, allow_nan=False) + "\n"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    for path, content in zip(targets, (text, candidate_text)):
+        with path.open("x", encoding="utf-8", newline="\n") as handle:
+            handle.write(content)

@@ -1,0 +1,24 @@
+{
+  "review_date": "2026-11-11",
+  "sources": [
+    {
+      "source_id": "PF01",
+      "authors": [
+        "陈庆云",
+        "蒋锡夔",
+        "陈秉启",
+        "梁梦兰"
+      ],
+      "title": "全氟和多氟型有机化合物的化学特性——全氟叔丁基碘以及全氟烷基的诱导效应顺序",
+      "year": 1966,
+      "venue": "化学学报 32(1), 18–25",
+      "url": "https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18",
+      "inspected_location": "印刷 p.21，表1；PDF 第4页",
+      "transcribed_field": "lambda_max（毫微米，数值同 nm）；没有把相邻 ε 列作为波长",
+      "cached_pdf_sha256": "b97a7b641968561a1387d82c9b01fb8b2973c2a47e2e36c07ce85db2831302be",
+      "material_included": false,
+      "boundary": "原表数值可重放；不重现实验，不证明亲卤机理、游离阴离子或四基团普适排序"
+    }
+  ],
+  "private_materials_note": "传记深读用于研究选题边界，书稿全文及图片不随包分发。原来源编号未改写。"
+}

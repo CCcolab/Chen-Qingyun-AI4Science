@@ -7,6 +7,7 @@ on:
       - 'chen_research/**'
       - 'data/**'
       - 'protocols/**'
+      - 'reviews/**'
       - 'literature/**'
       - 'results/**'
       - 'scripts/**'
@@ -23,6 +24,7 @@ on:
       - 'chen_research/**'
       - 'data/**'
       - 'protocols/**'
+      - 'reviews/**'
       - 'literature/**'
       - 'results/**'
       - 'scripts/**'
@@ -57,13 +59,19 @@ jobs:
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: '24.13.1'
-      - name: Verify retained sources and replay; tests remain local
+      - name: Verify sealed v1 bytes and v2 numerical agreement; run zero distributed tests
         run: python scripts/accept_phase1.py --skip-tests --output scratch/ci-acceptance
+      - name: Verify complete run and prepare pending scientific review packet
+        run: |
+          python scripts/review_result.py verify-run --run scratch/ci-acceptance/current-run/run-manifest.json
+          python scripts/review_result.py preview --run scratch/ci-acceptance/current-run/run-manifest.json --output scratch/ci-acceptance/review-packet
+          python scripts/review_result.py empty-catalog --output scratch/ci-acceptance/reviewed-results.json
+          python scripts/review_result.py policy-status
       - name: Verify website baseline and Pages-relative routes
         run: python scripts/check_site.py --require-node --output scratch/ci-site-check.json
       - name: Build website without publishing
         run: python scripts/build_site.py --require-node --output scratch/site-dist
-      - name: Keep review-required candidate and evidence
+      - name: Keep review-required v2 run bundle and separate v1 comparison evidence
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:

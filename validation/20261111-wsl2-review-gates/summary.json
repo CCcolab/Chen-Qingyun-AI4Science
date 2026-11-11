@@ -1,0 +1,63 @@
+{
+  "status": "failed",
+  "started_at_utc": "2026-11-11T10:18:26.248867+00:00",
+  "commands": [
+    {
+      "label": "source-commit",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research",
+      "exit_code": 0,
+      "stdout": "logs/source-commit.stdout.txt",
+      "stderr": "logs/source-commit.stderr.txt"
+    },
+    {
+      "label": "source-branch",
+      "command": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "cwd": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research",
+      "exit_code": 0,
+      "stdout": "logs/source-branch.stdout.txt",
+      "stderr": "logs/source-branch.stderr.txt"
+    },
+    {
+      "label": "source-status",
+      "command": [
+        "git",
+        "status",
+        "--porcelain",
+        "--",
+        ".",
+        ":(exclude)validation/20261111-wsl2-review-gates/**"
+      ],
+      "cwd": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research",
+      "exit_code": 0,
+      "stdout": "logs/source-status.stdout.txt",
+      "stderr": "logs/source-status.stderr.txt"
+    }
+  ],
+  "errors": [
+    "Commit all source changes before formal WSL acceptance"
+  ],
+  "scientific_review_status": "review_required",
+  "result_type": "published_table_numerical_replay",
+  "model_api_called": false,
+  "quantum_calculation": "not_performed",
+  "experiment": "not_performed",
+  "future_hypotheses": "not_tested",
+  "GitHub_Actions_executed": false,
+  "website_modified": false,
+  "original_scan_reverified_by_this_run": false,
+  "independent_transcription_signoff": "pending",
+  "archive_sha256": "623127d317b3a4ecc51052e43816286a3dd04eb95f41fc8bf7c3bb8d76bc2d4f",
+  "source_commit": "c7aed91e9d553a45fb1a13752d0fa61cd68a8106",
+  "source_branch": "research/input-review-gates-20261111",
+  "source_worktree_dirty": true,
+  "finished_at_utc": "2026-11-11T10:18:27.601480+00:00"
+}

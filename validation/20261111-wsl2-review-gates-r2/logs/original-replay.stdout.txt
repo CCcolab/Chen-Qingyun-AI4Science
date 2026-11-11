@@ -1,0 +1,2 @@
+PF1966-UV-T1 nominal_three_iodide_order_reproduced
+仅为原表数值重放；实验、机理、量子计算及四基团普适排序均未验证。

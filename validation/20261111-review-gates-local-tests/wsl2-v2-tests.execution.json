@@ -1,0 +1,9 @@
+{
+  "started_at_utc": "2026-11-11T10:18:24.5562382Z",
+  "finished_at_utc": "2026-11-11T10:18:48.5552909Z",
+  "source_commit": "c7aed91e9d553a45fb1a13752d0fa61cd68a8106",
+  "environment": "WSL 2 Ubuntu-24.04",
+  "command": "python3 -X utf8 -B -m unittest discover -s tests -v",
+  "exit_code": 0,
+  "test_sources_distributed": false
+}

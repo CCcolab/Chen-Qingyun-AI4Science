@@ -1,0 +1,62 @@
+{
+  "recorded_at_utc": "2026-11-11T10:20:58.5783019Z",
+  "environment": "WSL 2 Ubuntu-24.04",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "scripts/review_result.py",
+        "verify-run",
+        "--run",
+        "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/validation/20261111-wsl2-review-gates-r2/integration/current-run/run-manifest.json"
+      ],
+      "exit_code": 0,
+      "stdout": "logs/verify-run.stdout.txt",
+      "stderr": "logs/verify-run.stderr.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "scripts/review_result.py",
+        "preview",
+        "--run",
+        "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/validation/20261111-wsl2-review-gates-r2/integration/current-run/run-manifest.json",
+        "--output",
+        "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/validation/20261111-wsl2-review-gates-r2/review-packet"
+      ],
+      "exit_code": 0,
+      "stdout": "logs/preview.stdout.txt",
+      "stderr": "logs/preview.stderr.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "scripts/review_result.py",
+        "empty-catalog",
+        "--output",
+        "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/validation/20261111-wsl2-review-gates-r2/reviewed-results.json"
+      ],
+      "exit_code": 0,
+      "stdout": "logs/empty-catalog.stdout.txt",
+      "stderr": "logs/empty-catalog.stderr.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "scripts/review_result.py",
+        "policy-status"
+      ],
+      "exit_code": 0,
+      "stdout": "logs/policy-status.stdout.txt",
+      "stderr": "logs/policy-status.stderr.txt"
+    }
+  ],
+  "unsigned_export_exit_code": 2,
+  "unsigned_export_created_directory": false,
+  "scientific_review_status": "review_required",
+  "approved_record_count": 0
+}

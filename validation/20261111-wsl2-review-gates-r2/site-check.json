@@ -1,0 +1,6201 @@
+{
+  "checked_at_utc": "2026-11-11T10:19:59.760292+00:00",
+  "status": "passed",
+  "scope": "static byte integrity, identities, links and optional JavaScript syntax",
+  "browser_navigation_tested": false,
+  "deployed_site_tested": false,
+  "scientific_review_status": "review_required",
+  "website_modified": false,
+  "errors": [],
+  "warnings": [],
+  "file_checks": [
+    {
+      "path": "index.html",
+      "equal": true,
+      "expected_sha256": "2d13bae2c39b5b41964fc6c50481309dd62eb058a6f68e61051e5d42539344a9",
+      "actual_sha256": "2d13bae2c39b5b41964fc6c50481309dd62eb058a6f68e61051e5d42539344a9",
+      "expected_bytes": 142901,
+      "actual_bytes": 142901
+    },
+    {
+      "path": "pftb/index.html",
+      "equal": true,
+      "expected_sha256": "0d4396b85f8cfd772edcf8fe9bc192d845268399e1ed3834e1d83562639ba372",
+      "actual_sha256": "0d4396b85f8cfd772edcf8fe9bc192d845268399e1ed3834e1d83562639ba372",
+      "expected_bytes": 97584,
+      "actual_bytes": 97584
+    },
+    {
+      "path": "topics/f53/index.html",
+      "equal": true,
+      "expected_sha256": "942b97805e2e785192face1ef3718b4180c276f77b5133f526c70532cfd83175",
+      "actual_sha256": "942b97805e2e785192face1ef3718b4180c276f77b5133f526c70532cfd83175",
+      "expected_bytes": 8145,
+      "actual_bytes": 8145
+    },
+    {
+      "path": "topics/refrigerants/index.html",
+      "equal": true,
+      "expected_sha256": "4d41e38398b8ec12584c6700fd84da1c1b42f9bc1c722fba64a2c151ed6af6e7",
+      "actual_sha256": "4d41e38398b8ec12584c6700fd84da1c1b42f9bc1c722fba64a2c151ed6af6e7",
+      "expected_bytes": 6227,
+      "actual_bytes": 6227
+    },
+    {
+      "path": "topics/fluoromonomers/index.html",
+      "equal": true,
+      "expected_sha256": "366a55eba14a054cc678016f8c71cd391921e1eaef4cd1fd0e22cc2ce42dd904",
+      "actual_sha256": "366a55eba14a054cc678016f8c71cd391921e1eaef4cd1fd0e22cc2ce42dd904",
+      "expected_bytes": 6450,
+      "actual_bytes": 6450
+    },
+    {
+      "path": "topics/perfluorosulfonates/index.html",
+      "equal": true,
+      "expected_sha256": "6618d0d4d7a135e88c924ae3ecd420338e9613190447676f608af9939aea84ec",
+      "actual_sha256": "6618d0d4d7a135e88c924ae3ecd420338e9613190447676f608af9939aea84ec",
+      "expected_bytes": 5272,
+      "actual_bytes": 5272
+    },
+    {
+      "path": "topics/chen-reagent/index.html",
+      "equal": true,
+      "expected_sha256": "649a7e6f3b3431982eba13d5036e3cd2acc22fc40cfe791c0bb9a91aabfd7553",
+      "actual_sha256": "649a7e6f3b3431982eba13d5036e3cd2acc22fc40cfe791c0bb9a91aabfd7553",
+      "expected_bytes": 10199,
+      "actual_bytes": 10199
+    },
+    {
+      "path": "topics/single-electron-transfer/index.html",
+      "equal": true,
+      "expected_sha256": "64c162a1ccc9c69bc82bd2ff9de0b70aa12e1ac103fc7f0a56123b134d699bbb",
+      "actual_sha256": "64c162a1ccc9c69bc82bd2ff9de0b70aa12e1ac103fc7f0a56123b134d699bbb",
+      "expected_bytes": 5839,
+      "actual_bytes": 5839
+    },
+    {
+      "path": "topics/fluoroporphyrins/index.html",
+      "equal": true,
+      "expected_sha256": "84b4b2ed0e59fdb940bfa38e5d9c0326f3fce1335ba9d71b1b19108f57a63bbf",
+      "actual_sha256": "84b4b2ed0e59fdb940bfa38e5d9c0326f3fce1335ba9d71b1b19108f57a63bbf",
+      "expected_bytes": 5969,
+      "actual_bytes": 5969
+    },
+    {
+      "path": "topics/early-fluoroketones/index.html",
+      "equal": true,
+      "expected_sha256": "fcdc4df61f18e12ac168c4aab65b9f0438e987bd9f311997755c875cc615093b",
+      "actual_sha256": "fcdc4df61f18e12ac168c4aab65b9f0438e987bd9f311997755c875cc615093b",
+      "expected_bytes": 7023,
+      "actual_bytes": 7023
+    },
+    {
+      "path": "topics/fluorinated-small-rings/index.html",
+      "equal": true,
+      "expected_sha256": "a98fe98626644e80de5b4584114e32aa0842cc3a877a41f8a76f6543571bd239",
+      "actual_sha256": "a98fe98626644e80de5b4584114e32aa0842cc3a877a41f8a76f6543571bd239",
+      "expected_bytes": 5892,
+      "actual_bytes": 5892
+    },
+    {
+      "path": "topics/deoxyfluorination/index.html",
+      "equal": true,
+      "expected_sha256": "0c71ad2500ae5f094be1cd10cfd9415a376deb905e9d936d2628ef8143edad66",
+      "actual_sha256": "0c71ad2500ae5f094be1cd10cfd9415a376deb905e9d936d2628ef8143edad66",
+      "expected_bytes": 5510,
+      "actual_bytes": 5510
+    },
+    {
+      "path": "topics/sulfonyl-fluoride/index.html",
+      "equal": true,
+      "expected_sha256": "62beb639cb5448473dd799cf5e23d3a4a42b8e4ccd0204b02cadeb2b7d6d6032",
+      "actual_sha256": "62beb639cb5448473dd799cf5e23d3a4a42b8e4ccd0204b02cadeb2b7d6d6032",
+      "expected_bytes": 5003,
+      "actual_bytes": 5003
+    },
+    {
+      "path": "topics/index.html",
+      "equal": true,
+      "expected_sha256": "3b891eb056f7d5d76681ff5395149e474ec934b0d9ab2d4729df9c0441d580ad",
+      "actual_sha256": "3b891eb056f7d5d76681ff5395149e474ec934b0d9ab2d4729df9c0441d580ad",
+      "expected_bytes": 1367,
+      "actual_bytes": 1367
+    },
+    {
+      "path": "achievements/index.html",
+      "equal": true,
+      "expected_sha256": "d9b4024ff8bbe8519d8d77b0c6785165db3ae9fe4ed70214ca60ea218872107d",
+      "actual_sha256": "d9b4024ff8bbe8519d8d77b0c6785165db3ae9fe4ed70214ca60ea218872107d",
+      "expected_bytes": 22706,
+      "actual_bytes": 22706
+    },
+    {
+      "path": "data/public-sources.json",
+      "equal": true,
+      "expected_sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+      "actual_sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+      "expected_bytes": 33608,
+      "actual_bytes": 33608
+    },
+    {
+      "path": "data/achievement-lines.json",
+      "equal": true,
+      "expected_sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+      "actual_sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+      "expected_bytes": 39768,
+      "actual_bytes": 39768
+    },
+    {
+      "path": "README.txt",
+      "equal": true,
+      "expected_sha256": "6e15068b7240ae47d633df3f777e81fbb9e46146ee5f4ab70011f09119b6bbc9",
+      "actual_sha256": "6e15068b7240ae47d633df3f777e81fbb9e46146ee5f4ab70011f09119b6bbc9",
+      "expected_bytes": 336,
+      "actual_bytes": 336
+    },
+    {
+      "path": "ROUTES.txt",
+      "equal": true,
+      "expected_sha256": "a734c356877d4534285ab7d71b9fe0f7a17abbced4de3c52f8e60d335301e418",
+      "actual_sha256": "a734c356877d4534285ab7d71b9fe0f7a17abbced4de3c52f8e60d335301e418",
+      "expected_bytes": 949,
+      "actual_bytes": 949
+    },
+    {
+      "path": "QA.txt",
+      "equal": true,
+      "expected_sha256": "a60b5f382b31689fa17e2518b7079ef0660674fb62bddbbf564c7b74dfe51067",
+      "actual_sha256": "a60b5f382b31689fa17e2518b7079ef0660674fb62bddbbf564c7b74dfe51067",
+      "expected_bytes": 290,
+      "actual_bytes": 290
+    },
+    {
+      "path": "IONIC-ENTRY-RETEST.txt",
+      "equal": true,
+      "expected_sha256": "3462b056891a27c335cc2620deb87b245b6c9aea3bdaec607c8a14beca69fe9d",
+      "actual_sha256": "3462b056891a27c335cc2620deb87b245b6c9aea3bdaec607c8a14beca69fe9d",
+      "expected_bytes": 741,
+      "actual_bytes": 741
+    }
+  ],
+  "link_checks": [
+    {
+      "source": "achievements/index.html",
+      "value": "#main",
+      "attribute": "href",
+      "line": 12,
+      "target": "achievements/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#top",
+      "attribute": "href",
+      "line": 16,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "#achievement-lines-preview",
+      "attribute": "href",
+      "line": 16,
+      "target": "achievements/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#topic-preview",
+      "attribute": "href",
+      "line": 16,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#timeline",
+      "attribute": "href",
+      "line": 16,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#research",
+      "attribute": "href",
+      "line": 16,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#people",
+      "attribute": "href",
+      "line": 16,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#evidence",
+      "attribute": "href",
+      "line": 16,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#about",
+      "attribute": "href",
+      "line": 16,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html",
+      "attribute": "href",
+      "line": 17,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../topics/index.html",
+      "attribute": "href",
+      "line": 17,
+      "target": "topics/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-index",
+      "attribute": "href",
+      "line": 17,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "#group-early",
+      "attribute": "href",
+      "line": 22,
+      "target": "achievements/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "#group-industry",
+      "attribute": "href",
+      "line": 22,
+      "target": "achievements/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "#group-methods",
+      "attribute": "href",
+      "line": 22,
+      "target": "achievements/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "#group-community",
+      "attribute": "href",
+      "line": 22,
+      "target": "achievements/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "#line-a01",
+      "attribute": "href",
+      "line": 22,
+      "target": "achievements/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "#line-a02",
+      "attribute": "href",
+      "line": 22,
+      "target": "achievements/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "#line-a03",
+      "attribute": "href",
+      "line": 22,
+      "target": "achievements/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "#line-a04",
+      "attribute": "href",
+      "line": 22,
+      "target": "achievements/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "#line-a05",
+      "attribute": "href",
+      "line": 22,
+      "target": "achievements/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "#line-a06",
+      "attribute": "href",
+      "line": 22,
+      "target": "achievements/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "#line-a07",
+      "attribute": "href",
+      "line": 22,
+      "target": "achievements/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "#line-a08",
+      "attribute": "href",
+      "line": 22,
+      "target": "achievements/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "#line-a09",
+      "attribute": "href",
+      "line": 22,
+      "target": "achievements/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "#achievement-detail",
+      "attribute": "href",
+      "line": 22,
+      "target": "achievements/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../topics/early-fluoroketones/index.html#record-inventor-certificate",
+      "attribute": "href",
+      "line": 24,
+      "target": "topics/early-fluoroketones/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 24,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h02",
+      "attribute": "href",
+      "line": 24,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-r01",
+      "attribute": "href",
+      "line": 24,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-r02",
+      "attribute": "href",
+      "line": 24,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-r03",
+      "attribute": "href",
+      "line": 24,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h12",
+      "attribute": "href",
+      "line": 24,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../topics/fluoromonomers/index.html#record-fluorinated-oils",
+      "attribute": "href",
+      "line": 25,
+      "target": "topics/fluoromonomers/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 25,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-r28",
+      "attribute": "href",
+      "line": 25,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-s1",
+      "attribute": "href",
+      "line": 25,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-pf01",
+      "attribute": "href",
+      "line": 25,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h13",
+      "attribute": "href",
+      "line": 25,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../pftb/index.html#contribution",
+      "attribute": "href",
+      "line": 26,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../pftb/index.html#team-follow-up-1980",
+      "attribute": "href",
+      "line": 26,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-pf01",
+      "attribute": "href",
+      "line": 26,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 26,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h13",
+      "attribute": "href",
+      "line": 26,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../topics/f53/index.html#record-industrial-application",
+      "attribute": "href",
+      "line": 27,
+      "target": "topics/f53/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 27,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h03",
+      "attribute": "href",
+      "line": 27,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h04",
+      "attribute": "href",
+      "line": 27,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h05",
+      "attribute": "href",
+      "line": 27,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h14",
+      "attribute": "href",
+      "line": 27,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h15",
+      "attribute": "href",
+      "line": 27,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-r04",
+      "attribute": "href",
+      "line": 27,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-r12",
+      "attribute": "href",
+      "line": 27,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../topics/refrigerants/index.html#record-refrigerant-pilot",
+      "attribute": "href",
+      "line": 28,
+      "target": "topics/refrigerants/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 28,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-s1",
+      "attribute": "href",
+      "line": 28,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-r28",
+      "attribute": "href",
+      "line": 28,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h24",
+      "attribute": "href",
+      "line": 28,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../topics/perfluorosulfonates/index.html#record-sulfonate-cleavage",
+      "attribute": "href",
+      "line": 29,
+      "target": "topics/perfluorosulfonates/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../topics/chen-reagent/index.html#record-reagent-identity",
+      "attribute": "href",
+      "line": 29,
+      "target": "topics/chen-reagent/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h07",
+      "attribute": "href",
+      "line": 29,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h08",
+      "attribute": "href",
+      "line": 29,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h16",
+      "attribute": "href",
+      "line": 29,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h17",
+      "attribute": "href",
+      "line": 29,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h18",
+      "attribute": "href",
+      "line": 29,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h23",
+      "attribute": "href",
+      "line": 29,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h10",
+      "attribute": "href",
+      "line": 29,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-r05",
+      "attribute": "href",
+      "line": 29,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-r08",
+      "attribute": "href",
+      "line": 29,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-r21",
+      "attribute": "href",
+      "line": 29,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../topics/single-electron-transfer/index.html#record-ccl-activation",
+      "attribute": "href",
+      "line": 30,
+      "target": "topics/single-electron-transfer/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 30,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-r06",
+      "attribute": "href",
+      "line": 30,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h09",
+      "attribute": "href",
+      "line": 30,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../topics/fluorinated-small-rings/index.html#record-small-rings",
+      "attribute": "href",
+      "line": 31,
+      "target": "topics/fluorinated-small-rings/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../topics/fluoroporphyrins/index.html#record-porphyrin-collaboration",
+      "attribute": "href",
+      "line": 31,
+      "target": "topics/fluoroporphyrins/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../topics/deoxyfluorination/index.html#record-deoxyfluorination-systems",
+      "attribute": "href",
+      "line": 31,
+      "target": "topics/deoxyfluorination/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../topics/sulfonyl-fluoride/index.html#record-late-functional-groups",
+      "attribute": "href",
+      "line": 31,
+      "target": "topics/sulfonyl-fluoride/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "#record-fluorinated-ionic-liquids",
+      "attribute": "href",
+      "line": 31,
+      "target": "achievements/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-r07",
+      "attribute": "href",
+      "line": 31,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-r08",
+      "attribute": "href",
+      "line": 31,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-r09",
+      "attribute": "href",
+      "line": 31,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-r10",
+      "attribute": "href",
+      "line": 31,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-r11",
+      "attribute": "href",
+      "line": 31,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-r15",
+      "attribute": "href",
+      "line": 31,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-r16",
+      "attribute": "href",
+      "line": 31,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-r17",
+      "attribute": "href",
+      "line": 31,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h09",
+      "attribute": "href",
+      "line": 31,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h10",
+      "attribute": "href",
+      "line": 31,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h11",
+      "attribute": "href",
+      "line": 31,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h19",
+      "attribute": "href",
+      "line": 31,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h20",
+      "attribute": "href",
+      "line": 31,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h21",
+      "attribute": "href",
+      "line": 31,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h22",
+      "attribute": "href",
+      "line": 31,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "#record-publication-index",
+      "attribute": "href",
+      "line": 32,
+      "target": "achievements/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 32,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h06",
+      "attribute": "href",
+      "line": 32,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-r28",
+      "attribute": "href",
+      "line": 32,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h22",
+      "attribute": "href",
+      "line": 33,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 34,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-r28",
+      "attribute": "href",
+      "line": 34,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 34,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#source-cq-h06",
+      "attribute": "href",
+      "line": 34,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#case-pftb",
+      "attribute": "href",
+      "line": 36,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../pftb/index.html",
+      "attribute": "href",
+      "line": 36,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#case-f53",
+      "attribute": "href",
+      "line": 37,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../topics/f53/index.html",
+      "attribute": "href",
+      "line": 37,
+      "target": "topics/f53/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#case-refrigerant",
+      "attribute": "href",
+      "line": 38,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../topics/refrigerants/index.html",
+      "attribute": "href",
+      "line": 38,
+      "target": "topics/refrigerants/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#case-reagent",
+      "attribute": "href",
+      "line": 39,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../topics/chen-reagent/index.html",
+      "attribute": "href",
+      "line": 39,
+      "target": "topics/chen-reagent/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#case-activation",
+      "attribute": "href",
+      "line": 40,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../topics/single-electron-transfer/index.html",
+      "attribute": "href",
+      "line": 40,
+      "target": "topics/single-electron-transfer/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#case-porphyrin",
+      "attribute": "href",
+      "line": 41,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../topics/fluoroporphyrins/index.html",
+      "attribute": "href",
+      "line": 41,
+      "target": "topics/fluoroporphyrins/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "achievements/index.html",
+      "value": "../index.html#top",
+      "attribute": "href",
+      "line": 63,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#main",
+      "attribute": "href",
+      "line": 12,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#top",
+      "attribute": "href",
+      "line": 16,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#achievement-lines-preview",
+      "attribute": "href",
+      "line": 16,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#topic-preview",
+      "attribute": "href",
+      "line": 16,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#timeline",
+      "attribute": "href",
+      "line": 16,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#research",
+      "attribute": "href",
+      "line": 16,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#people",
+      "attribute": "href",
+      "line": 16,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#evidence",
+      "attribute": "href",
+      "line": 16,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#about",
+      "attribute": "href",
+      "line": 16,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "achievements/index.html#achievement-lines-preview",
+      "attribute": "href",
+      "line": 22,
+      "target": "achievements/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "achievements/index.html#achievement-detail",
+      "attribute": "href",
+      "line": 22,
+      "target": "achievements/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#group-early",
+      "attribute": "href",
+      "line": 26,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#group-industry",
+      "attribute": "href",
+      "line": 26,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#group-methods",
+      "attribute": "href",
+      "line": 26,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#group-community",
+      "attribute": "href",
+      "line": 26,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#line-a01",
+      "attribute": "href",
+      "line": 26,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#line-a02",
+      "attribute": "href",
+      "line": 26,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#line-a03",
+      "attribute": "href",
+      "line": 26,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#line-a04",
+      "attribute": "href",
+      "line": 26,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#line-a05",
+      "attribute": "href",
+      "line": 26,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#line-a06",
+      "attribute": "href",
+      "line": 26,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#line-a07",
+      "attribute": "href",
+      "line": 26,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#line-a08",
+      "attribute": "href",
+      "line": 26,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#line-a09",
+      "attribute": "href",
+      "line": 26,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#achievement-detail",
+      "attribute": "href",
+      "line": 26,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/early-fluoroketones/index.html#record-inventor-certificate",
+      "attribute": "href",
+      "line": 28,
+      "target": "topics/early-fluoroketones/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h01",
+      "attribute": "href",
+      "line": 28,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h02",
+      "attribute": "href",
+      "line": 28,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r01",
+      "attribute": "href",
+      "line": 28,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r02",
+      "attribute": "href",
+      "line": 28,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r03",
+      "attribute": "href",
+      "line": 28,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h12",
+      "attribute": "href",
+      "line": 28,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/fluoromonomers/index.html#record-fluorinated-oils",
+      "attribute": "href",
+      "line": 29,
+      "target": "topics/fluoromonomers/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h01",
+      "attribute": "href",
+      "line": 29,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r28",
+      "attribute": "href",
+      "line": 29,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-s1",
+      "attribute": "href",
+      "line": 29,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-pf01",
+      "attribute": "href",
+      "line": 29,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h13",
+      "attribute": "href",
+      "line": 29,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "pftb/index.html#contribution",
+      "attribute": "href",
+      "line": 30,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "pftb/index.html#team-follow-up-1980",
+      "attribute": "href",
+      "line": 30,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-pf01",
+      "attribute": "href",
+      "line": 30,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h01",
+      "attribute": "href",
+      "line": 30,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h13",
+      "attribute": "href",
+      "line": 30,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/f53/index.html#record-industrial-application",
+      "attribute": "href",
+      "line": 31,
+      "target": "topics/f53/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h01",
+      "attribute": "href",
+      "line": 31,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h03",
+      "attribute": "href",
+      "line": 31,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h04",
+      "attribute": "href",
+      "line": 31,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h05",
+      "attribute": "href",
+      "line": 31,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h14",
+      "attribute": "href",
+      "line": 31,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h15",
+      "attribute": "href",
+      "line": 31,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r04",
+      "attribute": "href",
+      "line": 31,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r12",
+      "attribute": "href",
+      "line": 31,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/refrigerants/index.html#record-refrigerant-pilot",
+      "attribute": "href",
+      "line": 32,
+      "target": "topics/refrigerants/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h01",
+      "attribute": "href",
+      "line": 32,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-s1",
+      "attribute": "href",
+      "line": 32,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r28",
+      "attribute": "href",
+      "line": 32,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h24",
+      "attribute": "href",
+      "line": 32,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/perfluorosulfonates/index.html#record-sulfonate-cleavage",
+      "attribute": "href",
+      "line": 33,
+      "target": "topics/perfluorosulfonates/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/chen-reagent/index.html#record-reagent-identity",
+      "attribute": "href",
+      "line": 33,
+      "target": "topics/chen-reagent/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h07",
+      "attribute": "href",
+      "line": 33,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h08",
+      "attribute": "href",
+      "line": 33,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h16",
+      "attribute": "href",
+      "line": 33,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h17",
+      "attribute": "href",
+      "line": 33,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h18",
+      "attribute": "href",
+      "line": 33,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h23",
+      "attribute": "href",
+      "line": 33,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h10",
+      "attribute": "href",
+      "line": 33,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r05",
+      "attribute": "href",
+      "line": 33,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r08",
+      "attribute": "href",
+      "line": 33,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r21",
+      "attribute": "href",
+      "line": 33,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/single-electron-transfer/index.html#record-ccl-activation",
+      "attribute": "href",
+      "line": 34,
+      "target": "topics/single-electron-transfer/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h01",
+      "attribute": "href",
+      "line": 34,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r06",
+      "attribute": "href",
+      "line": 34,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h09",
+      "attribute": "href",
+      "line": 34,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/fluorinated-small-rings/index.html#record-small-rings",
+      "attribute": "href",
+      "line": 35,
+      "target": "topics/fluorinated-small-rings/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/fluoroporphyrins/index.html#record-porphyrin-collaboration",
+      "attribute": "href",
+      "line": 35,
+      "target": "topics/fluoroporphyrins/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/deoxyfluorination/index.html#record-deoxyfluorination-systems",
+      "attribute": "href",
+      "line": 35,
+      "target": "topics/deoxyfluorination/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/sulfonyl-fluoride/index.html#record-late-functional-groups",
+      "attribute": "href",
+      "line": 35,
+      "target": "topics/sulfonyl-fluoride/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#record-fluorinated-ionic-liquids",
+      "attribute": "href",
+      "line": 35,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r07",
+      "attribute": "href",
+      "line": 35,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r08",
+      "attribute": "href",
+      "line": 35,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r09",
+      "attribute": "href",
+      "line": 35,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r10",
+      "attribute": "href",
+      "line": 35,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r11",
+      "attribute": "href",
+      "line": 35,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r15",
+      "attribute": "href",
+      "line": 35,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r16",
+      "attribute": "href",
+      "line": 35,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r17",
+      "attribute": "href",
+      "line": 35,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h09",
+      "attribute": "href",
+      "line": 35,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h10",
+      "attribute": "href",
+      "line": 35,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h11",
+      "attribute": "href",
+      "line": 35,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h19",
+      "attribute": "href",
+      "line": 35,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h20",
+      "attribute": "href",
+      "line": 35,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h21",
+      "attribute": "href",
+      "line": 35,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h22",
+      "attribute": "href",
+      "line": 35,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#record-publication-index",
+      "attribute": "href",
+      "line": 36,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h01",
+      "attribute": "href",
+      "line": 36,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h06",
+      "attribute": "href",
+      "line": 36,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r28",
+      "attribute": "href",
+      "line": 36,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://doi.org/10.1002/ejic.201000171",
+      "attribute": "href",
+      "line": 37,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://cn.govopendata.com/renminribao/1989/02/11/3/",
+      "attribute": "href",
+      "line": 38,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#case-pftb",
+      "attribute": "href",
+      "line": 40,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "pftb/index.html",
+      "attribute": "href",
+      "line": 40,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#case-f53",
+      "attribute": "href",
+      "line": 41,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/f53/index.html",
+      "attribute": "href",
+      "line": 41,
+      "target": "topics/f53/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#case-refrigerant",
+      "attribute": "href",
+      "line": 42,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/refrigerants/index.html",
+      "attribute": "href",
+      "line": 42,
+      "target": "topics/refrigerants/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#case-reagent",
+      "attribute": "href",
+      "line": 43,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/chen-reagent/index.html",
+      "attribute": "href",
+      "line": 43,
+      "target": "topics/chen-reagent/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#case-activation",
+      "attribute": "href",
+      "line": 44,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/single-electron-transfer/index.html",
+      "attribute": "href",
+      "line": 44,
+      "target": "topics/single-electron-transfer/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#case-porphyrin",
+      "attribute": "href",
+      "line": 45,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/fluoroporphyrins/index.html",
+      "attribute": "href",
+      "line": 45,
+      "target": "topics/fluoroporphyrins/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/f53/index.html",
+      "attribute": "href",
+      "line": 47,
+      "target": "topics/f53/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/refrigerants/index.html",
+      "attribute": "href",
+      "line": 47,
+      "target": "topics/refrigerants/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/fluoromonomers/index.html",
+      "attribute": "href",
+      "line": 47,
+      "target": "topics/fluoromonomers/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/perfluorosulfonates/index.html",
+      "attribute": "href",
+      "line": 47,
+      "target": "topics/perfluorosulfonates/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/chen-reagent/index.html",
+      "attribute": "href",
+      "line": 47,
+      "target": "topics/chen-reagent/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/single-electron-transfer/index.html",
+      "attribute": "href",
+      "line": 47,
+      "target": "topics/single-electron-transfer/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/fluoroporphyrins/index.html",
+      "attribute": "href",
+      "line": 47,
+      "target": "topics/fluoroporphyrins/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/early-fluoroketones/index.html",
+      "attribute": "href",
+      "line": 47,
+      "target": "topics/early-fluoroketones/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/fluorinated-small-rings/index.html",
+      "attribute": "href",
+      "line": 47,
+      "target": "topics/fluorinated-small-rings/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/deoxyfluorination/index.html",
+      "attribute": "href",
+      "line": 47,
+      "target": "topics/deoxyfluorination/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/sulfonyl-fluoride/index.html",
+      "attribute": "href",
+      "line": 47,
+      "target": "topics/sulfonyl-fluoride/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "pftb/index.html",
+      "attribute": "href",
+      "line": 52,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18",
+      "attribute": "href",
+      "line": 52,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#overview",
+      "attribute": "href",
+      "line": 52,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://sioc-journal.cn/Jwk_yjhx/CN/abstract/abstract325798.shtml",
+      "attribute": "href",
+      "line": 53,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://pubs.acs.org/doi/10.1021/es401525n",
+      "attribute": "href",
+      "line": 53,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#overview",
+      "attribute": "href",
+      "line": 53,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://sioc.cas.cn/dncqy/sp/",
+      "attribute": "href",
+      "line": 54,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://sioc.cas.cn/kxj/ml/cqy/jnc/",
+      "attribute": "href",
+      "line": 54,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#overview",
+      "attribute": "href",
+      "line": 54,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://pubs.rsc.org/en/content/articlelanding/1989/c3/c39890000705",
+      "attribute": "href",
+      "line": 55,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://pubs.acs.org/doi/10.1021/acs.orglett.6b02580",
+      "attribute": "href",
+      "line": 55,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#overview",
+      "attribute": "href",
+      "line": 55,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://pubs.acs.org/doi/abs/10.1021/jo9900937",
+      "attribute": "href",
+      "line": 56,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#overview",
+      "attribute": "href",
+      "line": 56,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://pubs.acs.org/doi/10.1021/ja070855c",
+      "attribute": "href",
+      "line": 57,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#overview",
+      "attribute": "href",
+      "line": 57,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#line-a01",
+      "attribute": "href",
+      "line": 61,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h02",
+      "attribute": "href",
+      "line": 61,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#line-a01",
+      "attribute": "href",
+      "line": 61,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h12",
+      "attribute": "href",
+      "line": 61,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#line-a02",
+      "attribute": "href",
+      "line": 61,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h01",
+      "attribute": "href",
+      "line": 61,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#line-a02",
+      "attribute": "href",
+      "line": 61,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h13",
+      "attribute": "href",
+      "line": 61,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#line-a04",
+      "attribute": "href",
+      "line": 61,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h04",
+      "attribute": "href",
+      "line": 61,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#line-a04",
+      "attribute": "href",
+      "line": 61,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h03",
+      "attribute": "href",
+      "line": 61,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#line-a06",
+      "attribute": "href",
+      "line": 61,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h17",
+      "attribute": "href",
+      "line": 61,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#line-a06",
+      "attribute": "href",
+      "line": 61,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h18",
+      "attribute": "href",
+      "line": 61,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#line-a08",
+      "attribute": "href",
+      "line": 61,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-h20",
+      "attribute": "href",
+      "line": 61,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://geodesic.mathdoc.fr/item/DAN_1960_134_6_a25/",
+      "attribute": "href",
+      "line": 61,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#case-pftb",
+      "attribute": "href",
+      "line": 61,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#case-reagent",
+      "attribute": "href",
+      "line": 61,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#case-f53",
+      "attribute": "href",
+      "line": 61,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#d03",
+      "attribute": "href",
+      "line": 61,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://sioc.cas.cn/dncqy/sp/",
+      "attribute": "href",
+      "line": 62,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18",
+      "attribute": "href",
+      "line": 62,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "pftb/index.html#team-follow-up-1980",
+      "attribute": "href",
+      "line": 63,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/f53/index.html#record-industrial-application",
+      "attribute": "href",
+      "line": 63,
+      "target": "topics/f53/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/chen-reagent/index.html#record-reagent-identity",
+      "attribute": "href",
+      "line": 63,
+      "target": "topics/chen-reagent/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "pftb/index.html#arguments",
+      "attribute": "href",
+      "line": 63,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "pftb/index.html#reception",
+      "attribute": "href",
+      "line": 63,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "pftb/index.html#sources",
+      "attribute": "href",
+      "line": 64,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://poleznayamodel.ru/patent/11/117491.html",
+      "attribute": "href",
+      "line": 68,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://cn.govopendata.com/renminribao/1982/04/08/3/",
+      "attribute": "href",
+      "line": 69,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://www.cas.cn/zt/kjzt/kjzlzqzl/kjzlzq/202406/t20240621_5022275.shtml",
+      "attribute": "href",
+      "line": 70,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://sioc.cas.cn/kxj/ml/hwy/xscj/202308/t20230823_6866952.html",
+      "attribute": "href",
+      "line": 71,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://cn.govopendata.com/renminribao/1989/02/11/3/",
+      "attribute": "href",
+      "line": 72,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/zylzml0174/art/2023/art_af6c81873fd1471a9f3c1957e73d4de9.html",
+      "attribute": "href",
+      "line": 73,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/zylzml0174/art/2023/art_c7b5650a0a91477594053980bbbb6dd5.html",
+      "attribute": "href",
+      "line": 74,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://doi.org/10.1021/jo0207269",
+      "attribute": "href",
+      "line": 75,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://doi.org/10.1002/anie.201709663",
+      "attribute": "href",
+      "line": 76,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://doi.org/10.1021/acs.langmuir.3c01623",
+      "attribute": "href",
+      "line": 77,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://www.mathnet.ru/php/person.phtml?option_lang=eng&personid=108185",
+      "attribute": "href",
+      "line": 78,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/zylzml0174/art/2023/art_a4ee037c94d64df08c3671e611a43589.html",
+      "attribute": "href",
+      "line": 79,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://www.sioc.ac.cn/kxj/ml/hwy/xscj/202308/t20230823_6866954.html",
+      "attribute": "href",
+      "line": 80,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://www.sioc.ac.cn/kxj/ml/hwy/xscj/202308/t20230823_6866955.html",
+      "attribute": "href",
+      "line": 81,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/zylzml0174/art/2023/art_bf002a4c386d49cba0c7fa5c65ad231b.html",
+      "attribute": "href",
+      "line": 82,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://doi.org/10.1039/A706552C",
+      "attribute": "href",
+      "line": 83,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://orgsyn.org/demo.aspx?prep=v87p0126",
+      "attribute": "href",
+      "line": 84,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://doi.org/10.1002/ejoc.200500027",
+      "attribute": "href",
+      "line": 85,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://doi.org/10.1021/acs.orglett.2c00356",
+      "attribute": "href",
+      "line": 86,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://doi.org/10.1021/jo020431v",
+      "attribute": "href",
+      "line": 87,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://doi.org/10.1002/ejic.201000171",
+      "attribute": "href",
+      "line": 88,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://pubs.rsc.org/en/content/articlehtml/2016/ra/c6ra09011g",
+      "attribute": "href",
+      "line": 89,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://www.sciencedirect.com/science/article/abs/pii/S0022113901004699",
+      "attribute": "href",
+      "line": 90,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-pf01",
+      "attribute": "href",
+      "line": 91,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18",
+      "attribute": "href",
+      "line": 91,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r01",
+      "attribute": "href",
+      "line": 92,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://geodesic.mathdoc.fr/item/DAN_1960_134_6_a25/",
+      "attribute": "href",
+      "line": 92,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r02",
+      "attribute": "href",
+      "line": 93,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://link.springer.com/article/10.1007/BF00904766",
+      "attribute": "href",
+      "line": 93,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r03",
+      "attribute": "href",
+      "line": 94,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.196609471",
+      "attribute": "href",
+      "line": 94,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r04",
+      "attribute": "href",
+      "line": 95,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://sioc-journal.cn/Jwk_yjhx/CN/abstract/abstract325798.shtml",
+      "attribute": "href",
+      "line": 95,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r05",
+      "attribute": "href",
+      "line": 96,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://pubs.rsc.org/en/content/articlelanding/1989/c3/c39890000705",
+      "attribute": "href",
+      "line": 96,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r06",
+      "attribute": "href",
+      "line": 97,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://pubs.acs.org/doi/abs/10.1021/jo9900937",
+      "attribute": "href",
+      "line": 97,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r07",
+      "attribute": "href",
+      "line": 98,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://pubmed.ncbi.nlm.nih.gov/10814377/",
+      "attribute": "href",
+      "line": 98,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r08",
+      "attribute": "href",
+      "line": 99,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://orgsyn.org/demo.aspx?prep=v80p0172",
+      "attribute": "href",
+      "line": 99,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r10",
+      "attribute": "href",
+      "line": 100,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://pubs.acs.org/doi/10.1021/ja070855c",
+      "attribute": "href",
+      "line": 100,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r12",
+      "attribute": "href",
+      "line": 101,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://pubs.acs.org/doi/10.1021/es401525n",
+      "attribute": "href",
+      "line": 101,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r13",
+      "attribute": "href",
+      "line": 102,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://pubs.acs.org/doi/10.1021/acs.orglett.6b02580",
+      "attribute": "href",
+      "line": 102,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r14",
+      "attribute": "href",
+      "line": 103,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://research.ucc.ie/en/publications/methyl-fluorosulfonyldifluoroacetate-mfsda-an-underutilised-reage/",
+      "attribute": "href",
+      "line": 103,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r15",
+      "attribute": "href",
+      "line": 104,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://pubs.acs.org/doi/10.1021/acs.orglett.0c03238",
+      "attribute": "href",
+      "line": 104,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r16",
+      "attribute": "href",
+      "line": 105,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://pubs.acs.org/doi/10.1021/acs.orglett.0c00484",
+      "attribute": "href",
+      "line": 105,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r17",
+      "attribute": "href",
+      "line": 106,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://onlinelibrary.wiley.com/doi/abs/10.1002/cjoc.202000662",
+      "attribute": "href",
+      "line": 106,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r18",
+      "attribute": "href",
+      "line": 107,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://www.sciencedirect.com/science/article/abs/pii/S0022113921000713",
+      "attribute": "href",
+      "line": 107,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r19",
+      "attribute": "href",
+      "line": 108,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://www.nature.com/articles/s43586-021-00042-1",
+      "attribute": "href",
+      "line": 108,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r21",
+      "attribute": "href",
+      "line": 109,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://sioc-journal.cn/Jwk_hxxb/EN/10.6023/A23090434",
+      "attribute": "href",
+      "line": 109,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r22",
+      "attribute": "href",
+      "line": 110,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://pubs.acs.org/doi/10.1021/acs.oprd.3c00493",
+      "attribute": "href",
+      "line": 110,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r23",
+      "attribute": "href",
+      "line": 111,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://snu.elsevierpure.com/en/publications/trifluoromethylation-on-a-nucleoside-sugar-scaffold-design-and-sy-2/",
+      "attribute": "href",
+      "line": 111,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r24",
+      "attribute": "href",
+      "line": 112,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://publikationen.bibliothek.kit.edu/1000197061",
+      "attribute": "href",
+      "line": 112,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r25",
+      "attribute": "href",
+      "line": 113,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://hxsje.cbpt.cnki.net/portal/journal/portal/client/paper/3dea1a2a47f994056edc5708988460b7",
+      "attribute": "href",
+      "line": 113,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-cq-r28",
+      "attribute": "href",
+      "line": 114,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://sioc.cas.cn/dncqy/sp/",
+      "attribute": "href",
+      "line": 114,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#source-s1",
+      "attribute": "href",
+      "line": 115,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://sioc.cas.cn/kxj/ml/cqy/jnc/",
+      "attribute": "href",
+      "line": 115,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://www.thieme-connect.de/products/ejournals/abstract/10.1055/s-2006-926266",
+      "attribute": "href",
+      "line": 116,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/fluorinated-small-rings/index.html",
+      "attribute": "href",
+      "line": 116,
+      "target": "topics/fluorinated-small-rings/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://pubs.rsc.org/en/content/articlelanding/2008/cc/b811831k",
+      "attribute": "href",
+      "line": 116,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/fluoroporphyrins/index.html",
+      "attribute": "href",
+      "line": 116,
+      "target": "topics/fluoroporphyrins/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#d01",
+      "attribute": "href",
+      "line": 118,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#d02",
+      "attribute": "href",
+      "line": 118,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#d03",
+      "attribute": "href",
+      "line": 118,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#d04",
+      "attribute": "href",
+      "line": 118,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "#d05",
+      "attribute": "href",
+      "line": 118,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://geodesic.mathdoc.fr/item/DAN_1960_134_6_a25/",
+      "attribute": "href",
+      "line": 119,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://link.springer.com/article/10.1007/BF00904766",
+      "attribute": "href",
+      "line": 119,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.196609471",
+      "attribute": "href",
+      "line": 119,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://pubmed.ncbi.nlm.nih.gov/10814377/",
+      "attribute": "href",
+      "line": 120,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://orgsyn.org/demo.aspx?prep=v80p0172",
+      "attribute": "href",
+      "line": 120,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://research.ucc.ie/en/publications/methyl-fluorosulfonyldifluoroacetate-mfsda-an-underutilised-reage/",
+      "attribute": "href",
+      "line": 120,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://www.nature.com/articles/s43586-021-00042-1",
+      "attribute": "href",
+      "line": 120,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://snu.elsevierpure.com/en/publications/trifluoromethylation-on-a-nucleoside-sugar-scaffold-design-and-sy-2/",
+      "attribute": "href",
+      "line": 120,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://pubs.acs.org/doi/10.1021/acs.orglett.0c03238",
+      "attribute": "href",
+      "line": 121,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://pubs.acs.org/doi/10.1021/acs.orglett.0c00484",
+      "attribute": "href",
+      "line": 121,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://onlinelibrary.wiley.com/doi/abs/10.1002/cjoc.202000662",
+      "attribute": "href",
+      "line": 121,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://www.sciencedirect.com/science/article/abs/pii/S0022113921000713",
+      "attribute": "href",
+      "line": 121,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#case-reagent",
+      "attribute": "href",
+      "line": 122,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "https://pubs.acs.org/doi/10.1021/acs.orglett.6b02580",
+      "attribute": "href",
+      "line": 122,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://snu.elsevierpure.com/en/publications/trifluoromethylation-on-a-nucleoside-sugar-scaffold-design-and-sy-2/",
+      "attribute": "href",
+      "line": 122,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://pubs.acs.org/doi/10.1021/acs.oprd.3c00493",
+      "attribute": "href",
+      "line": 122,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://publikationen.bibliothek.kit.edu/1000197061",
+      "attribute": "href",
+      "line": 122,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://sioc-journal.cn/Jwk_hxxb/EN/10.6023/A23090434",
+      "attribute": "href",
+      "line": 123,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "https://hxsje.cbpt.cnki.net/portal/journal/portal/client/paper/3dea1a2a47f994056edc5708988460b7",
+      "attribute": "href",
+      "line": 123,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "index.html",
+      "value": "#top",
+      "attribute": "href",
+      "line": 126,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "../index.html#topic-preview",
+      "attribute": "href",
+      "line": 315,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#main",
+      "attribute": "href",
+      "line": 316,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#top",
+      "attribute": "href",
+      "line": 320,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#contribution",
+      "attribute": "href",
+      "line": 322,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#arguments",
+      "attribute": "href",
+      "line": 323,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#reception",
+      "attribute": "href",
+      "line": 324,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#questions",
+      "attribute": "href",
+      "line": 325,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#sources",
+      "attribute": "href",
+      "line": 326,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#arguments",
+      "attribute": "href",
+      "line": 344,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#reception",
+      "attribute": "href",
+      "line": 345,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "../index.html#source-pf01",
+      "attribute": "href",
+      "line": 396,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#arguments",
+      "attribute": "href",
+      "line": 398,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#sources",
+      "attribute": "href",
+      "line": 399,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "../index.html#source-pf01",
+      "attribute": "href",
+      "line": 406,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#arguments",
+      "attribute": "href",
+      "line": 408,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#sources",
+      "attribute": "href",
+      "line": 409,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "../index.html#source-pf01",
+      "attribute": "href",
+      "line": 416,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#arguments",
+      "attribute": "href",
+      "line": 418,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#sources",
+      "attribute": "href",
+      "line": 419,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "../index.html#source-pf01",
+      "attribute": "href",
+      "line": 456,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "../index.html#source-pf01",
+      "attribute": "href",
+      "line": 486,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "../index.html#source-pf01",
+      "attribute": "href",
+      "line": 517,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "../index.html#source-pf01",
+      "attribute": "href",
+      "line": 581,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "../index.html#source-pf01",
+      "attribute": "href",
+      "line": 585,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "../index.html#source-pf01",
+      "attribute": "href",
+      "line": 589,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "../index.html#source-pf01",
+      "attribute": "href",
+      "line": 593,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "../index.html#source-pf01",
+      "attribute": "href",
+      "line": 597,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#sources",
+      "attribute": "href",
+      "line": 622,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#sources",
+      "attribute": "href",
+      "line": 631,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#sources",
+      "attribute": "href",
+      "line": 640,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#sources",
+      "attribute": "href",
+      "line": 687,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#sources",
+      "attribute": "href",
+      "line": 697,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#sources",
+      "attribute": "href",
+      "line": 714,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#sources",
+      "attribute": "href",
+      "line": 731,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "../index.html#source-pf01",
+      "attribute": "href",
+      "line": 771,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "../index.html#source-pf01",
+      "attribute": "href",
+      "line": 783,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "../index.html#source-pf01",
+      "attribute": "href",
+      "line": 795,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "../index.html#source-cq-h13",
+      "attribute": "href",
+      "line": 806,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "../index.html#source-pf01",
+      "attribute": "href",
+      "line": 806,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "../index.html#source-cq-h13",
+      "attribute": "href",
+      "line": 806,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "../topics/fluoromonomers/index.html#record-fluorinated-oils",
+      "attribute": "href",
+      "line": 806,
+      "target": "topics/fluoromonomers/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "../index.html#source-pf01",
+      "attribute": "href",
+      "line": 830,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18",
+      "attribute": "href",
+      "line": 836,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "https://ismar.org/wp-content/uploads/TAMU/1967/TAMU-NMR-Newsletter-105-June-1967.pdf",
+      "attribute": "href",
+      "line": 851,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "https://ismar.org/wp-content/uploads/TAMU/1967/TAMU-NMR-Newsletter-105-June-1967.pdf",
+      "attribute": "href",
+      "line": 862,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "https://www.russchemrev.org/RCR930pdf",
+      "attribute": "href",
+      "line": 877,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "https://doi.org/10.1002/anie.202113727",
+      "attribute": "href",
+      "line": 888,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "https://pubs.acs.org/doi/10.1021/jacs.2c10479",
+      "attribute": "href",
+      "line": 899,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "https://doi.org/10.1016/j.jfluchem.2004.12.007",
+      "attribute": "href",
+      "line": 914,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#line-a06",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#topic-preview",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-index",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-r05",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-r07",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-r08",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-r22",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-r05",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-r07",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-r08",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-r13",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-r23",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-r14",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-r21",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-r22",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-r24",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-r05",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-r07",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-r08",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-r13",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-r14",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-r21",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-r22",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-r23",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-r24",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "https://pubs.rsc.org/en/content/articlelanding/1989/c3/c39890000705",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "https://pubmed.ncbi.nlm.nih.gov/10814377/",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "https://orgsyn.org/demo.aspx?prep=v80p0172",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "https://pubs.acs.org/doi/10.1021/acs.orglett.6b02580",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "https://research.ucc.ie/en/publications/methyl-fluorosulfonyldifluoroacetate-mfsda-an-underutilised-reage/",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "https://sioc-journal.cn/Jwk_hxxb/EN/10.6023/A23090434",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "https://pubs.acs.org/doi/10.1021/acs.oprd.3c00493",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "https://snu.elsevierpure.com/en/publications/trifluoromethylation-on-a-nucleoside-sugar-scaffold-design-and-sy-2/",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "https://publikationen.bibliothek.kit.edu/1000197061",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#topic-preview",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-r05",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-h17",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-h18",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-r08",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-h23",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-h10",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/chen-reagent/index.html",
+      "value": "../../index.html#source-cq-r21",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/deoxyfluorination/index.html",
+      "value": "../../index.html#line-a08",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/deoxyfluorination/index.html",
+      "value": "../../index.html#topic-preview",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/deoxyfluorination/index.html",
+      "value": "../../index.html#source-index",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/deoxyfluorination/index.html",
+      "value": "../../index.html#source-cq-r15",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/deoxyfluorination/index.html",
+      "value": "../../index.html#source-cq-r17",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/deoxyfluorination/index.html",
+      "value": "../../index.html#source-cq-r15",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/deoxyfluorination/index.html",
+      "value": "../../index.html#source-cq-r17",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/deoxyfluorination/index.html",
+      "value": "https://pubs.acs.org/doi/10.1021/acs.orglett.0c03238",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/deoxyfluorination/index.html",
+      "value": "https://onlinelibrary.wiley.com/doi/abs/10.1002/cjoc.202000662",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/deoxyfluorination/index.html",
+      "value": "../../index.html#topic-preview",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/deoxyfluorination/index.html",
+      "value": "../../index.html#source-cq-r15",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/deoxyfluorination/index.html",
+      "value": "../../index.html#source-cq-r17",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/deoxyfluorination/index.html",
+      "value": "../../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/early-fluoroketones/index.html",
+      "value": "../../index.html#line-a01",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/early-fluoroketones/index.html",
+      "value": "../../index.html#topic-preview",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/early-fluoroketones/index.html",
+      "value": "../../index.html#source-index",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/early-fluoroketones/index.html",
+      "value": "../../index.html#source-cq-r01",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/early-fluoroketones/index.html",
+      "value": "../../index.html#source-cq-r02",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/early-fluoroketones/index.html",
+      "value": "../../index.html#source-cq-r03",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/early-fluoroketones/index.html",
+      "value": "../../index.html#source-cq-r28",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/early-fluoroketones/index.html",
+      "value": "../../index.html#source-cq-r01",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/early-fluoroketones/index.html",
+      "value": "../../index.html#source-cq-r02",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/early-fluoroketones/index.html",
+      "value": "../../index.html#source-cq-r03",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/early-fluoroketones/index.html",
+      "value": "../../index.html#source-cq-r28",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/early-fluoroketones/index.html",
+      "value": "https://geodesic.mathdoc.fr/item/DAN_1960_134_6_a25/",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/early-fluoroketones/index.html",
+      "value": "https://link.springer.com/article/10.1007/BF00904766",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/early-fluoroketones/index.html",
+      "value": "https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.196609471",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/early-fluoroketones/index.html",
+      "value": "https://sioc.cas.cn/dncqy/sp/",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/early-fluoroketones/index.html",
+      "value": "../../index.html#topic-preview",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/early-fluoroketones/index.html",
+      "value": "../../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/early-fluoroketones/index.html",
+      "value": "../../index.html#source-cq-h12",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/early-fluoroketones/index.html",
+      "value": "../../index.html#source-cq-r01",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/early-fluoroketones/index.html",
+      "value": "../../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/early-fluoroketones/index.html",
+      "value": "../../index.html#source-cq-h02",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/f53/index.html",
+      "value": "../../index.html#line-a04",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/f53/index.html",
+      "value": "../../index.html#topic-preview",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/f53/index.html",
+      "value": "../../index.html#source-index",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/f53/index.html",
+      "value": "../../index.html#source-cq-r04",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/f53/index.html",
+      "value": "../../index.html#source-cq-r12",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/f53/index.html",
+      "value": "../../index.html#source-cq-r04",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/f53/index.html",
+      "value": "../../index.html#source-cq-r12",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/f53/index.html",
+      "value": "../../index.html#source-cq-r04",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/f53/index.html",
+      "value": "../../index.html#source-s1",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/f53/index.html",
+      "value": "../../index.html#source-cq-r12",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/f53/index.html",
+      "value": "https://sioc-journal.cn/Jwk_yjhx/CN/abstract/abstract325798.shtml",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/f53/index.html",
+      "value": "https://sioc.cas.cn/kxj/ml/cqy/jnc/",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/f53/index.html",
+      "value": "https://pubs.acs.org/doi/10.1021/es401525n",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/f53/index.html",
+      "value": "../../index.html#topic-preview",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/f53/index.html",
+      "value": "../../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/f53/index.html",
+      "value": "../../index.html#source-cq-h04",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/f53/index.html",
+      "value": "../../index.html#source-cq-h05",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/f53/index.html",
+      "value": "../../index.html#source-cq-h14",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/f53/index.html",
+      "value": "../../index.html#source-cq-h15",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/f53/index.html",
+      "value": "../../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/f53/index.html",
+      "value": "../../index.html#source-cq-h04",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/f53/index.html",
+      "value": "../../index.html#source-cq-h03",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/f53/index.html",
+      "value": "../../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/f53/index.html",
+      "value": "../refrigerants/index.html#record-refrigerant-pilot",
+      "attribute": "href",
+      "line": 2,
+      "target": "topics/refrigerants/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluorinated-small-rings/index.html",
+      "value": "../../index.html#line-a08",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluorinated-small-rings/index.html",
+      "value": "../../index.html#topic-preview",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluorinated-small-rings/index.html",
+      "value": "../../index.html#source-index",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluorinated-small-rings/index.html",
+      "value": "../../index.html#source-cq-r07",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluorinated-small-rings/index.html",
+      "value": "../../index.html#source-cq-r08",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluorinated-small-rings/index.html",
+      "value": "../../index.html#source-cq-r09",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluorinated-small-rings/index.html",
+      "value": "../../index.html#source-cq-r07",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluorinated-small-rings/index.html",
+      "value": "../../index.html#source-cq-r08",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluorinated-small-rings/index.html",
+      "value": "../../index.html#source-cq-r09",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluorinated-small-rings/index.html",
+      "value": "https://pubmed.ncbi.nlm.nih.gov/10814377/",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/fluorinated-small-rings/index.html",
+      "value": "https://orgsyn.org/demo.aspx?prep=v80p0172",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/fluorinated-small-rings/index.html",
+      "value": "https://doi.org/10.1055/s-2006-926266",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/fluorinated-small-rings/index.html",
+      "value": "../../index.html#topic-preview",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluorinated-small-rings/index.html",
+      "value": "../../index.html#source-cq-r07",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluorinated-small-rings/index.html",
+      "value": "../../index.html#source-cq-r08",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluorinated-small-rings/index.html",
+      "value": "../../index.html#source-cq-h21",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluorinated-small-rings/index.html",
+      "value": "../../index.html#source-cq-r09",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoromonomers/index.html",
+      "value": "../../index.html#line-a02",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoromonomers/index.html",
+      "value": "../../index.html#topic-preview",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoromonomers/index.html",
+      "value": "../../index.html#source-index",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoromonomers/index.html",
+      "value": "../../index.html#source-cq-r28",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoromonomers/index.html",
+      "value": "../../index.html#source-s1",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoromonomers/index.html",
+      "value": "../../index.html#source-cq-r28",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoromonomers/index.html",
+      "value": "https://sioc.cas.cn/dncqy/sp/",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/fluoromonomers/index.html",
+      "value": "https://sioc.cas.cn/kxj/ml/cqy/jnc/",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/fluoromonomers/index.html",
+      "value": "../../index.html#topic-preview",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoromonomers/index.html",
+      "value": "../../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoromonomers/index.html",
+      "value": "../../index.html#source-cq-r28",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoromonomers/index.html",
+      "value": "../../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoromonomers/index.html",
+      "value": "../../index.html#source-pf01",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoromonomers/index.html",
+      "value": "../../pftb/index.html#contribution",
+      "attribute": "href",
+      "line": 2,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoromonomers/index.html",
+      "value": "../../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoromonomers/index.html",
+      "value": "../../index.html#source-cq-h13",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoromonomers/index.html",
+      "value": "../../pftb/index.html#team-follow-up-1980",
+      "attribute": "href",
+      "line": 2,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoroporphyrins/index.html",
+      "value": "../../index.html#line-a08",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoroporphyrins/index.html",
+      "value": "../../index.html#topic-preview",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoroporphyrins/index.html",
+      "value": "../../index.html#source-index",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoroporphyrins/index.html",
+      "value": "../../index.html#source-cq-r10",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoroporphyrins/index.html",
+      "value": "../../index.html#source-cq-r11",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoroporphyrins/index.html",
+      "value": "../../index.html#source-cq-r10",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoroporphyrins/index.html",
+      "value": "../../index.html#source-cq-r11",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoroporphyrins/index.html",
+      "value": "https://pubs.acs.org/doi/10.1021/ja070855c",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/fluoroporphyrins/index.html",
+      "value": "https://pubs.rsc.org/en/content/articlelanding/2008/cc/b811831k",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/fluoroporphyrins/index.html",
+      "value": "../../index.html#topic-preview",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoroporphyrins/index.html",
+      "value": "../../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoroporphyrins/index.html",
+      "value": "../../index.html#source-cq-h09",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoroporphyrins/index.html",
+      "value": "../../index.html#source-cq-h19",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoroporphyrins/index.html",
+      "value": "../../index.html#source-cq-r10",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoroporphyrins/index.html",
+      "value": "../../index.html#source-cq-r11",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoroporphyrins/index.html",
+      "value": "../../index.html#source-cq-h20",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/fluoroporphyrins/index.html",
+      "value": "../single-electron-transfer/index.html#record-ccl-activation",
+      "attribute": "href",
+      "line": 2,
+      "target": "topics/single-electron-transfer/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/index.html",
+      "value": "../index.html#topic-preview",
+      "attribute": "href",
+      "line": 1,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/index.html",
+      "value": "f53/index.html",
+      "attribute": "href",
+      "line": 1,
+      "target": "topics/f53/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/index.html",
+      "value": "refrigerants/index.html",
+      "attribute": "href",
+      "line": 1,
+      "target": "topics/refrigerants/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/index.html",
+      "value": "fluoromonomers/index.html",
+      "attribute": "href",
+      "line": 1,
+      "target": "topics/fluoromonomers/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/index.html",
+      "value": "perfluorosulfonates/index.html",
+      "attribute": "href",
+      "line": 1,
+      "target": "topics/perfluorosulfonates/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/index.html",
+      "value": "chen-reagent/index.html",
+      "attribute": "href",
+      "line": 1,
+      "target": "topics/chen-reagent/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/index.html",
+      "value": "single-electron-transfer/index.html",
+      "attribute": "href",
+      "line": 1,
+      "target": "topics/single-electron-transfer/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/index.html",
+      "value": "fluoroporphyrins/index.html",
+      "attribute": "href",
+      "line": 1,
+      "target": "topics/fluoroporphyrins/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/index.html",
+      "value": "early-fluoroketones/index.html",
+      "attribute": "href",
+      "line": 1,
+      "target": "topics/early-fluoroketones/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/index.html",
+      "value": "fluorinated-small-rings/index.html",
+      "attribute": "href",
+      "line": 1,
+      "target": "topics/fluorinated-small-rings/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/index.html",
+      "value": "deoxyfluorination/index.html",
+      "attribute": "href",
+      "line": 1,
+      "target": "topics/deoxyfluorination/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/index.html",
+      "value": "sulfonyl-fluoride/index.html",
+      "attribute": "href",
+      "line": 1,
+      "target": "topics/sulfonyl-fluoride/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/index.html",
+      "value": "../achievements/index.html#record-fluorinated-ionic-liquids",
+      "attribute": "href",
+      "line": 1,
+      "target": "achievements/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/index.html",
+      "value": "../pftb/index.html",
+      "attribute": "href",
+      "line": 1,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/index.html",
+      "value": "../index.html#source-index",
+      "attribute": "href",
+      "line": 1,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/perfluorosulfonates/index.html",
+      "value": "../../index.html#line-a06",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/perfluorosulfonates/index.html",
+      "value": "../../index.html#topic-preview",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/perfluorosulfonates/index.html",
+      "value": "../../index.html#source-index",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/perfluorosulfonates/index.html",
+      "value": "../../index.html#source-cq-r04",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/perfluorosulfonates/index.html",
+      "value": "https://sioc-journal.cn/Jwk_yjhx/CN/abstract/abstract325798.shtml",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/perfluorosulfonates/index.html",
+      "value": "../../index.html#topic-preview",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/perfluorosulfonates/index.html",
+      "value": "../../index.html#source-cq-h07",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/perfluorosulfonates/index.html",
+      "value": "../../index.html#source-cq-h08",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/perfluorosulfonates/index.html",
+      "value": "../../index.html#source-cq-h16",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/refrigerants/index.html",
+      "value": "../../index.html#line-a05",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/refrigerants/index.html",
+      "value": "../../index.html#topic-preview",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/refrigerants/index.html",
+      "value": "../../index.html#source-index",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/refrigerants/index.html",
+      "value": "../../index.html#source-cq-r28",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/refrigerants/index.html",
+      "value": "../../index.html#source-s1",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/refrigerants/index.html",
+      "value": "../../index.html#source-cq-r28",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/refrigerants/index.html",
+      "value": "https://sioc.cas.cn/kxj/ml/cqy/jnc/",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/refrigerants/index.html",
+      "value": "https://sioc.cas.cn/dncqy/sp/",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/refrigerants/index.html",
+      "value": "../../index.html#topic-preview",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/refrigerants/index.html",
+      "value": "../../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/refrigerants/index.html",
+      "value": "../f53/index.html#record-industrial-application",
+      "attribute": "href",
+      "line": 2,
+      "target": "topics/f53/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/refrigerants/index.html",
+      "value": "../../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/refrigerants/index.html",
+      "value": "../../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/refrigerants/index.html",
+      "value": "../../index.html#source-cq-h24",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/single-electron-transfer/index.html",
+      "value": "../../index.html#line-a07",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/single-electron-transfer/index.html",
+      "value": "../../index.html#topic-preview",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/single-electron-transfer/index.html",
+      "value": "../../index.html#source-index",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/single-electron-transfer/index.html",
+      "value": "../../index.html#source-cq-r04",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/single-electron-transfer/index.html",
+      "value": "../../index.html#source-cq-r06",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/single-electron-transfer/index.html",
+      "value": "https://sioc-journal.cn/Jwk_yjhx/CN/abstract/abstract325798.shtml",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/single-electron-transfer/index.html",
+      "value": "https://pubs.acs.org/doi/abs/10.1021/jo9900937",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/single-electron-transfer/index.html",
+      "value": "../../index.html#topic-preview",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/single-electron-transfer/index.html",
+      "value": "../../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/single-electron-transfer/index.html",
+      "value": "../../index.html#source-cq-r06",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/single-electron-transfer/index.html",
+      "value": "../../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/single-electron-transfer/index.html",
+      "value": "../../index.html#source-cq-h09",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/single-electron-transfer/index.html",
+      "value": "../fluoroporphyrins/index.html#record-porphyrin-collaboration",
+      "attribute": "href",
+      "line": 2,
+      "target": "topics/fluoroporphyrins/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/single-electron-transfer/index.html",
+      "value": "../../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/sulfonyl-fluoride/index.html",
+      "value": "../../index.html#line-a08",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/sulfonyl-fluoride/index.html",
+      "value": "../../index.html#topic-preview",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/sulfonyl-fluoride/index.html",
+      "value": "../../index.html#source-index",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/sulfonyl-fluoride/index.html",
+      "value": "../../index.html#source-cq-r16",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/sulfonyl-fluoride/index.html",
+      "value": "https://pubs.acs.org/doi/10.1021/acs.orglett.0c00484",
+      "attribute": "href",
+      "line": 2,
+      "status": "external_or_nonfile_scheme_not_fetched"
+    },
+    {
+      "source": "topics/sulfonyl-fluoride/index.html",
+      "value": "../../index.html#topic-preview",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/sulfonyl-fluoride/index.html",
+      "value": "../../index.html#source-cq-h10",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/sulfonyl-fluoride/index.html",
+      "value": "../../index.html#source-cq-r16",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/sulfonyl-fluoride/index.html",
+      "value": "../../index.html#source-cq-h11",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "topics/sulfonyl-fluoride/index.html",
+      "value": "../../index.html#source-cq-h01",
+      "attribute": "href",
+      "line": 2,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/early-fluoroketones/index.html#record-inventor-certificate",
+      "attribute": "JSON:achievement-lines.lines[0].routes",
+      "line": null,
+      "target": "topics/early-fluoroketones/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/fluoromonomers/index.html#record-fluorinated-oils",
+      "attribute": "JSON:achievement-lines.lines[1].routes",
+      "line": null,
+      "target": "topics/fluoromonomers/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "pftb/index.html#contribution",
+      "attribute": "JSON:achievement-lines.lines[2].routes",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "pftb/index.html#team-follow-up-1980",
+      "attribute": "JSON:achievement-lines.lines[2].routes",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/f53/index.html#record-industrial-application",
+      "attribute": "JSON:achievement-lines.lines[3].routes",
+      "line": null,
+      "target": "topics/f53/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/refrigerants/index.html#record-refrigerant-pilot",
+      "attribute": "JSON:achievement-lines.lines[4].routes",
+      "line": null,
+      "target": "topics/refrigerants/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/perfluorosulfonates/index.html#record-sulfonate-cleavage",
+      "attribute": "JSON:achievement-lines.lines[5].routes",
+      "line": null,
+      "target": "topics/perfluorosulfonates/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/chen-reagent/index.html#record-reagent-identity",
+      "attribute": "JSON:achievement-lines.lines[5].routes",
+      "line": null,
+      "target": "topics/chen-reagent/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/single-electron-transfer/index.html#record-ccl-activation",
+      "attribute": "JSON:achievement-lines.lines[6].routes",
+      "line": null,
+      "target": "topics/single-electron-transfer/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/fluorinated-small-rings/index.html#record-small-rings",
+      "attribute": "JSON:achievement-lines.lines[7].routes",
+      "line": null,
+      "target": "topics/fluorinated-small-rings/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/fluoroporphyrins/index.html#record-porphyrin-collaboration",
+      "attribute": "JSON:achievement-lines.lines[7].routes",
+      "line": null,
+      "target": "topics/fluoroporphyrins/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/deoxyfluorination/index.html#record-deoxyfluorination-systems",
+      "attribute": "JSON:achievement-lines.lines[7].routes",
+      "line": null,
+      "target": "topics/deoxyfluorination/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/sulfonyl-fluoride/index.html#record-late-functional-groups",
+      "attribute": "JSON:achievement-lines.lines[7].routes",
+      "line": null,
+      "target": "topics/sulfonyl-fluoride/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "topics/index.html#record-fluorinated-ionic-liquids",
+      "attribute": "JSON:achievement-lines.lines[7].routes",
+      "line": null,
+      "target": "topics/index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "index.html",
+      "value": "index.html#record-publication-index",
+      "attribute": "JSON:achievement-lines.lines[8].routes",
+      "line": null,
+      "target": "index.html",
+      "status": "valid_static_local_link"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T01/all/R92A",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T01/all/R92B",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T01/all/R92C",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T01/boundary/R92A",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T01/boundary/R92B",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T01/boundary/R92C",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T01/conditions/R92A",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T01/conditions/R92B",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T01/conditions/R92C",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T01/interpretation/R92A",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T01/interpretation/R92B",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T01/interpretation/R92C",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T01/observation/R92A",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T01/observation/R92B",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T01/observation/R92C",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T01/reception/R92A",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T01/reception/R92B",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T01/reception/R92C",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T02/all/R92A",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T02/all/R92B",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T02/all/R92C",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T02/boundary/R92A",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T02/boundary/R92B",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T02/boundary/R92C",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T02/conditions/R92A",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T02/conditions/R92B",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T02/conditions/R92C",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T02/interpretation/R92A",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T02/interpretation/R92B",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T02/interpretation/R92C",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T02/observation/R92A",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T02/observation/R92B",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T02/observation/R92C",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T02/reception/R92A",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T02/reception/R92B",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T02/reception/R92C",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T03/all/R92A",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T03/all/R92B",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T03/all/R92C",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T03/boundary/R92A",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T03/boundary/R92B",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T03/boundary/R92C",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T03/conditions/R92A",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T03/conditions/R92B",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T03/conditions/R92C",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T03/interpretation/R92A",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T03/interpretation/R92B",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T03/interpretation/R92C",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T03/observation/R92A",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T03/observation/R92B",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T03/observation/R92C",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T03/reception/R92A",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T03/reception/R92B",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T03/reception/R92C",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T04/all/R92A",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T04/all/R92B",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T04/all/R92C",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T04/boundary/R92A",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T04/boundary/R92B",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T04/boundary/R92C",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T04/conditions/R92A",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T04/conditions/R92B",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T04/conditions/R92C",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T04/interpretation/R92A",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T04/interpretation/R92B",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T04/interpretation/R92C",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T04/observation/R92A",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T04/observation/R92B",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T04/observation/R92C",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T04/reception/R92A",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T04/reception/R92B",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    },
+    {
+      "source": "pftb/index.html",
+      "value": "#s/T04/reception/R92C",
+      "attribute": "dynamic_state_contract",
+      "line": null,
+      "target": "pftb/index.html",
+      "status": "valid_pftb_dynamic_state"
+    }
+  ],
+  "javascript_checks": [
+    {
+      "page": "index.html",
+      "script_index": 0,
+      "line": 117,
+      "sha256": "727841c42aa6cd9dd83b7ce19196b300ed730bcd2686cc6ab719ad2f571ed941",
+      "status": "passed",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "page": "index.html",
+      "script_index": 1,
+      "line": 128,
+      "sha256": "75a165a999234c3af2cc7ac9b9e64d2af6f9ce5be096f7a881f3adf86bdff82a",
+      "status": "passed",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "page": "index.html",
+      "script_index": 3,
+      "line": 131,
+      "sha256": "0469d569d863f5b582a1213dc4a42f472a2b5f4075b6efcf0a5230f7dc652a2f",
+      "status": "passed",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "page": "index.html",
+      "script_index": 5,
+      "line": 815,
+      "sha256": "76556e82d69097a77eb74eea748defd1e0f402ccbe89de617eb05647bb5ccefa",
+      "status": "passed",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "page": "pftb/index.html",
+      "script_index": 0,
+      "line": 7,
+      "sha256": "0da982a0f801fd590308fb2ed11e97e2c26ccf573aeaf1a55060572eed386318",
+      "status": "passed",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "page": "pftb/index.html",
+      "script_index": 2,
+      "line": 989,
+      "sha256": "984cde3008a42f8eeb9cbc845c5f9da7e0d3c656a217e0927d557f37ee805763",
+      "status": "passed",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "protected_json_checks": [
+    {
+      "path": "data/public-sources.json",
+      "equal": true,
+      "expected_sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+      "actual_sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062"
+    },
+    {
+      "path": "data/achievement-lines.json",
+      "equal": true,
+      "expected_sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+      "actual_sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec"
+    }
+  ],
+  "baseline_member_count": 21,
+  "deployment_marker": {
+    "path": ".nojekyll",
+    "present": true,
+    "accepted": true,
+    "bytes": 0,
+    "is_symlink": false,
+    "role": "GitHub Pages deployment marker; not an original ZIP member"
+  },
+  "public_source_ids": [
+    "PF01",
+    "CQ-R01",
+    "CQ-R02",
+    "CQ-R03",
+    "CQ-R04",
+    "CQ-R05",
+    "CQ-R06",
+    "CQ-R07",
+    "CQ-R08",
+    "CQ-R09",
+    "CQ-R10",
+    "CQ-R11",
+    "CQ-R12",
+    "CQ-R13",
+    "CQ-R14",
+    "CQ-R15",
+    "CQ-R16",
+    "CQ-R17",
+    "CQ-R18",
+    "CQ-R19",
+    "CQ-R21",
+    "CQ-R22",
+    "CQ-R23",
+    "CQ-R24",
+    "CQ-R25",
+    "CQ-R28",
+    "S1",
+    "CQ-H01",
+    "CQ-H02",
+    "CQ-H03",
+    "CQ-H04",
+    "CQ-H05",
+    "CQ-H06",
+    "CQ-H07",
+    "CQ-H08",
+    "CQ-H09",
+    "CQ-H10",
+    "CQ-H11",
+    "CQ-H12",
+    "CQ-H13",
+    "CQ-H14",
+    "CQ-H15",
+    "CQ-H16",
+    "CQ-H17",
+    "CQ-H18",
+    "CQ-H19",
+    "CQ-H20",
+    "CQ-H21",
+    "CQ-H22",
+    "CQ-H23",
+    "CQ-H24"
+  ],
+  "public_source_count": 51,
+  "achievement_line_ids": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "A06",
+    "A07",
+    "A08",
+    "A09"
+  ],
+  "html_count": 15,
+  "pftb_state_contract": {
+    "chapters": [
+      "T01",
+      "T02",
+      "T03",
+      "T04"
+    ],
+    "views": [
+      "all",
+      "boundary",
+      "conditions",
+      "interpretation",
+      "observation",
+      "reception"
+    ],
+    "reception_contexts": [
+      "R92A",
+      "R92B",
+      "R92C"
+    ],
+    "canonical_states": [
+      "#s/T01/all/R92A",
+      "#s/T01/all/R92B",
+      "#s/T01/all/R92C",
+      "#s/T01/boundary/R92A",
+      "#s/T01/boundary/R92B",
+      "#s/T01/boundary/R92C",
+      "#s/T01/conditions/R92A",
+      "#s/T01/conditions/R92B",
+      "#s/T01/conditions/R92C",
+      "#s/T01/interpretation/R92A",
+      "#s/T01/interpretation/R92B",
+      "#s/T01/interpretation/R92C",
+      "#s/T01/observation/R92A",
+      "#s/T01/observation/R92B",
+      "#s/T01/observation/R92C",
+      "#s/T01/reception/R92A",
+      "#s/T01/reception/R92B",
+      "#s/T01/reception/R92C",
+      "#s/T02/all/R92A",
+      "#s/T02/all/R92B",
+      "#s/T02/all/R92C",
+      "#s/T02/boundary/R92A",
+      "#s/T02/boundary/R92B",
+      "#s/T02/boundary/R92C",
+      "#s/T02/conditions/R92A",
+      "#s/T02/conditions/R92B",
+      "#s/T02/conditions/R92C",
+      "#s/T02/interpretation/R92A",
+      "#s/T02/interpretation/R92B",
+      "#s/T02/interpretation/R92C",
+      "#s/T02/observation/R92A",
+      "#s/T02/observation/R92B",
+      "#s/T02/observation/R92C",
+      "#s/T02/reception/R92A",
+      "#s/T02/reception/R92B",
+      "#s/T02/reception/R92C",
+      "#s/T03/all/R92A",
+      "#s/T03/all/R92B",
+      "#s/T03/all/R92C",
+      "#s/T03/boundary/R92A",
+      "#s/T03/boundary/R92B",
+      "#s/T03/boundary/R92C",
+      "#s/T03/conditions/R92A",
+      "#s/T03/conditions/R92B",
+      "#s/T03/conditions/R92C",
+      "#s/T03/interpretation/R92A",
+      "#s/T03/interpretation/R92B",
+      "#s/T03/interpretation/R92C",
+      "#s/T03/observation/R92A",
+      "#s/T03/observation/R92B",
+      "#s/T03/observation/R92C",
+      "#s/T03/reception/R92A",
+      "#s/T03/reception/R92B",
+      "#s/T03/reception/R92C",
+      "#s/T04/all/R92A",
+      "#s/T04/all/R92B",
+      "#s/T04/all/R92C",
+      "#s/T04/boundary/R92A",
+      "#s/T04/boundary/R92B",
+      "#s/T04/boundary/R92C",
+      "#s/T04/conditions/R92A",
+      "#s/T04/conditions/R92B",
+      "#s/T04/conditions/R92C",
+      "#s/T04/interpretation/R92A",
+      "#s/T04/interpretation/R92B",
+      "#s/T04/interpretation/R92C",
+      "#s/T04/observation/R92A",
+      "#s/T04/observation/R92B",
+      "#s/T04/observation/R92C",
+      "#s/T04/reception/R92A",
+      "#s/T04/reception/R92B",
+      "#s/T04/reception/R92C"
+    ],
+    "validation": "static identities and source handlers; browser state execution requires separate validation"
+  },
+  "node_executable": "/tmp/chen-phase1-wsl2-2ri6v9fj/node-runtime/node-v24.13.1-linux-x64/bin/node",
+  "node_version": "v24.13.1",
+  "member_count": 22
+}

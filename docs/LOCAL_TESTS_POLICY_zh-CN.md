@@ -8,7 +8,7 @@
 
 - 本机保留测试时：`python3 scripts/accept_phase1.py --output scratch/new-local-acceptance`，核验原 19 项成员、在快照运行原完整包检查并执行本地测试。
 - GitHub 或无测试的克隆：`python3 scripts/accept_phase1.py --skip-tests --output scratch/new-source-check`，核验原清单中仍分发的 18 项成员；明确排除 `tests/test_uv_replay.py`，不运行原完整包验收器和单元测试。输出 `tests_run: 0`、`tests_status: not_run_by_distribution_policy`，不声称测试通过。
-- 两种模式都实际运行 PF1966-UV-T1、逐字节及逐字段比较两份结果，并保留 `review_required`。
+- 两种模式都执行封存 v1 重放并逐字节及逐字段比较两份历史结果；另执行 v2 严格入口，比较数学结果和科学边界、核验完整运行快照，并保留 `review_required`。v2 增加溯源字段，不声称它与 v1 全文逐字节相同。封存 v1 在 Windows 的 CRLF 与历史 LF 不同；正式字节验收使用 WSL/Linux。
 - CI 和 Pages 使用第二种模式，仍检查网站原文件指纹、JavaScript 语法、来源编号、站内链接和发布产物范围。
 
 `validate_wsl.py` 仍可从本机原 ZIP 在 Linux 临时文件系统执行原 9 项测试；克隆已提交分支的集成阶段改用无测试分发模式。需要完整本机测试时，应另外在保留 `tests/` 的原本机项目运行第一条命令。
