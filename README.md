@@ -1,31 +1,45 @@
-# 陈庆云院士科学成就的 AI 辅助研究
+# 陈庆云院士学术成就与传承平台
 
-本平台围绕陈庆云院士及合作者的科学研究，以原始文献、数据和具体问题为依据，运用 AI 辅助核读、结构与对象消歧、数值复算、竞争解释比较和未来研究设计。
+本平台以纪念陈庆云院士、介绍其生平与开拓性学术成就、传承其治学精神为宗旨。我们沿着研究历程、原始文献与合作记录，呈现陈先生和合作者在有机氟化学领域的探索，也让这些科学问题成为公众阅读、青年学习与后续研究的起点。
 
-[学术成就网站](https://cccolab.github.io/Chen-Qingyun-AI4Science/) · [全氟酮化学早期研究专题](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html) · [A01 研究记录](research/a01/README.md) · [研究路线图](docs/RESEARCH_ROADMAP_zh-CN.md)
+[访问学术成就网站](https://cccolab.github.io/Chen-Qingyun-AI4Science/) · [研究历程](https://cccolab.github.io/Chen-Qingyun-AI4Science/#timeline) · [人物与传承](https://cccolab.github.io/Chen-Qingyun-AI4Science/#people) · [资料与依据](https://cccolab.github.io/Chen-Qingyun-AI4Science/#evidence)
 
-## 研究目标
+## 从人物与历史走近科学
 
-- **复现**：重建原研究的问题、对象、观察与论证；对有完整数据和方法的结果开展独立复算。
-- **验证**：比较可检验的竞争解释，通过适当的计算、对照和不确定性分析，研究原结论的适用范围。
-- **拓展**：从原始证据和已有研究的缺口出发，提出可证伪的新问题，经查新和专业研究后推进。
+平台首先呈现陈先生的研究道路、重要工作、合作关系与育人学风。阅读专题时，可以从“当时面对什么问题、陈先生与合作者做了什么、证据记在哪里、后来怎样发展”进入，而后查阅原始论文和专业研究记录。
 
-## 当前重点：全氟酮化学早期研究
+## 八条科研成果线与一条学术传承线
 
-“六氟丙酮反应与六氟双酚A（双酚AF）制备”按原始出处分为三个独立研究分支：
+| 编号 | 内容 | 阅读入口 |
+|---|---|---|
+| A01 | 全氟酮化学早期研究：六氟丙酮与双酚AF | [早期研究专题](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html) |
+| A02 | 含氟单体、氟橡胶与氟油 | [材料研究专题](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html) |
+| A03 | 全氟叔丁基（PFtB）早期研究 | [PFtB专题](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html) |
+| A04 | F-53铬雾抑制剂 | [工业研究专题](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/f53/index.html) |
+| A05 | 制冷剂与配套技术 | [制冷剂专题](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html) |
+| A06 | 磺酸酯、二氟卡宾与三氟甲基化 | [磺酸酯](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html) · [陈试剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html) |
+| A07 | 单电子转移与C–Cl活化 | [反应方法专题](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html) |
+| A08 | 交叉研究与晚年拓展 | [成果线细读](https://cccolab.github.io/Chen-Qingyun-AI4Science/#line-a08) |
+| A09 | 学科建设与人才培养 | [人物与传承](https://cccolab.github.io/Chen-Qingyun-AI4Science/#line-a09) |
 
-1. [双酚AF制备记录与计量重建](research/a01/bisphenol-af-yield/README.md)：核对说明书数字与计量假设，保留未解释残差，不称实验复现。
-2. [含氟衍生物物性复核](research/a01/molar-refraction/README.md)：复核指定论文的折射性质，不移用为双酚AF结构或性能验证。
-3. [噁唑酮反应性模型](research/a01/oxazolone-model/README.md)：限定同一CF₃／CH₃—苯胺／苯模型，逐项核查现代量化证据。
+九条线构成资料导航架构，编号不表示贡献排名。各线的原文取得、专业核校和新增研究进度按条目分别记录；现有专题展示不代表各线均已完成研究开发或资料已完整。
 
-本轮在同一M0的CF₃底物参照完成中心核梯度及C6-y／C10-y四个位移，五点均取得合格电子终态与完整核梯度。两列互易差仍为`0.0014977575105072183 Eh/bohr²`，约为原绝对门槛的14.98倍；相对旧A的有符号变化为`−1.1336298130141913e-6 Eh/bohr²`，小于预先声明的`4e-5`对照尺度。本次未解析出局部互易差的SCF精度影响，不能据此排除SCF或其他数值因素。
+## AI辅助资料整理与研究
 
-一阶能量／梯度差分对照两列通过；对角二阶FD2中C6-y未达诊断容差、C10-y通过，未通过项继续保留。少数列不能授予CF₃完整曲率或局部极小值资格，尚不能解释原文反应性差异，也不作势垒或机理认定。实际结果见[A01公开进展v2](research/a01/public-progress.v2.json)及[本轮报告](research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/results-v1/RESULTS_zh-CN.md)；[原v1记录](research/a01/public-progress.v1.json)保留，全部保持`review_required`、`release_eligible=false`。
+AI服务于原文检索与核读、名称和结构比对、资料关联、数值重放与问题整理。关键事实与科学论断逐项回到原始来源，并保留专业核校与审阅状态。
 
-已有 PF1966-UV-T1 工作属于三种碘代物溶剂位移的原表数值重放，保持待审；不作为光谱实验复现或机理验证。
+目前的早期资料试点包括[A01研究记录](research/a01/README.md)和[A03原表数值重放](results/REPLAY_REPORT_zh-CN.md)。A01中的现代模型工作属于阶段数值诊断，尚不能解释原文的定性反应性差异，也不能据此称历史实验成果已被复现或验证。平台新增AI解释与候选计算保持待科学审阅（`review_required`），专业细节放在相应研究记录中。历史已发表成果和机构学术评价依其原始来源呈现。
 
-## 研究边界
+未来研究从原始材料与已有研究的具体缺口出发，先查新、明确问题和方法，再决定是否开展计算或实验。已发表成果保留陈庆云院士及原作者、合作者的归属，平台新增整理、分析与假设分别标明。
 
-已发表成果保留原作者与合作团队归属。平台的新分析、复算和未来假设单独标识，并保留可核对的来源与研究条件。
+## 平台建设与历史材料
 
-AI 辅助分析不能替代原始材料和专业判断。原表数值重放、量化计算、实验验证与未来假设分别记录；尚未开展的工作不写为已完成，未经充分查新的设想不称首次发现。
+当前建设方向见[平台宗旨](docs/PLATFORM_PURPOSE_zh-CN.md)与[平台路线图](docs/PLATFORM_ROADMAP_zh-CN.md)。本仓库保存网站源码、来源登记及分项研究资料，支持内容持续整理与公开查阅。
+
+以下文件保留2026-11-11首期研究实施包的原始身份和字节，其环境、部署与研究状态属于当时快照：
+
+- [原首期实施包说明](README_zh-CN.md)
+- [原研究候选路线图](docs/RESEARCH_ROADMAP_zh-CN.md)
+- [原GitHub研究交接方案](docs/GITHUB_HANDOFF_zh-CN.md)
+
+这些历史实施材料与上面的现行平台目标分开保存。

@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "presentation_id": "PLATFORM-HERITAGE-20261114-v1",
+  "created_at_utc": "2026-11-13T23:38:18.219446+00:00",
+  "publication_kind": "platform_editorial_presentation",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "authorization": "User platform-positioning correction dated 2026-11-14: commemorate Chen Qingyun, present documented scientific contributions and academic transmission, and keep the AI pilot subordinate to those purposes",
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "previous_presentation_commit": "74775199743f06f447278ef6aadff526ee604274",
+  "scientific_revision": {
+    "path": "provenance/a01-site-revision.v2.json",
+    "sha256": "9d1a800ae978b4eef814aa4c0b4c99f6faa35f79b7fd4315edc1aa430a2ad845"
+  },
+  "public_progress": {
+    "path": "research/a01/public-progress.v2.json",
+    "sha256": "0168bad2419df9a16c18fa832116afa3722a783f0186f933c7e7d5b1f6eb7823"
+  },
+  "current_registry": {
+    "path": "research/a01/public-progress.current.json",
+    "sha256": "590b0df398766c8d5908d8cf9da775f71c6412e9364465b0b8b5fd34cd610f10"
+  },
+  "editorial_documents": [
+    {
+      "path": "README.md",
+      "sha256": "c5879296ce8be32c1275e77eaebba2138e8a0b8df55cc058d80d9a1e6644b0fa",
+      "bytes": 4326
+    },
+    {
+      "path": "docs/PLATFORM_PURPOSE_zh-CN.md",
+      "sha256": "85340277bafd18a5579a48176c7f1d44eb42259e2fd2ee547a956bb1451d576a",
+      "bytes": 4855
+    },
+    {
+      "path": "docs/PLATFORM_ROADMAP_zh-CN.md",
+      "sha256": "c9ed69f246bfa8c9ca6ce956003eea9cacc712b8e6574ce8f390a39459326970",
+      "bytes": 5576
+    }
+  ],
+  "protected": {
+    "website_members": {
+      "data/public-sources.json": {
+        "sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+        "bytes": 33608
+      },
+      "data/achievement-lines.json": {
+        "sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+        "bytes": 39768
+      },
+      "pftb/index.html": {
+        "sha256": "0d4396b85f8cfd772edcf8fe9bc192d845268399e1ed3834e1d83562639ba372",
+        "bytes": 97584
+      }
+    },
+    "source_ids": [
+      "PF01",
+      "CQ-R01",
+      "CQ-R02",
+      "CQ-R03",
+      "CQ-R04",
+      "CQ-R05",
+      "CQ-R06",
+      "CQ-R07",
+      "CQ-R08",
+      "CQ-R09",
+      "CQ-R10",
+      "CQ-R11",
+      "CQ-R12",
+      "CQ-R13",
+      "CQ-R14",
+      "CQ-R15",
+      "CQ-R16",
+      "CQ-R17",
+      "CQ-R18",
+      "CQ-R19",
+      "CQ-R21",
+      "CQ-R22",
+      "CQ-R23",
+      "CQ-R24",
+      "CQ-R25",
+      "CQ-R28",
+      "S1",
+      "CQ-H01",
+      "CQ-H02",
+      "CQ-H03",
+      "CQ-H04",
+      "CQ-H05",
+      "CQ-H06",
+      "CQ-H07",
+      "CQ-H08",
+      "CQ-H09",
+      "CQ-H10",
+      "CQ-H11",
+      "CQ-H12",
+      "CQ-H13",
+      "CQ-H14",
+      "CQ-H15",
+      "CQ-H16",
+      "CQ-H17",
+      "CQ-H18",
+      "CQ-H19",
+      "CQ-H20",
+      "CQ-H21",
+      "CQ-H22",
+      "CQ-H23",
+      "CQ-H24"
+    ],
+    "achievement_line_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A04",
+      "A05",
+      "A06",
+      "A07",
+      "A08",
+      "A09"
+    ],
+    "html_routes": [
+      "achievements/index.html",
+      "index.html",
+      "pftb/index.html",
+      "topics/chen-reagent/index.html",
+      "topics/deoxyfluorination/index.html",
+      "topics/early-fluoroketones/index.html",
+      "topics/f53/index.html",
+      "topics/fluorinated-small-rings/index.html",
+      "topics/fluoromonomers/index.html",
+      "topics/fluoroporphyrins/index.html",
+      "topics/index.html",
+      "topics/perfluorosulfonates/index.html",
+      "topics/refrigerants/index.html",
+      "topics/single-electron-transfer/index.html",
+      "topics/sulfonyl-fluoride/index.html"
+    ],
+    "historical_documents": [
+      {
+        "path": "README_zh-CN.md",
+        "sha256": "f8b1baca5be76d565fa786a4c4b88c82bdc574c26ab8fa943566b94b796c2f36",
+        "bytes": 3111
+      },
+      {
+        "path": "docs/RESEARCH_ROADMAP_zh-CN.md",
+        "sha256": "e8a219f4b971b7d5862b986a1ee0b5ab9fef86352e7d3653ac2462271e322155",
+        "bytes": 9584
+      },
+      {
+        "path": "docs/GITHUB_HANDOFF_zh-CN.md",
+        "sha256": "d3fb79397cc32e51472c4388693d4fc9d4bd5ef95da01652099c666d282d04cc",
+        "bytes": 4586
+      }
+    ]
+  },
+  "changes": [
+    {
+      "path": "index.html",
+      "old_sha256": "2c0a07d52696e4cbc022c412d0c05fd5a44d0bbf0794cdecc8ae7b0a32c195b6",
+      "old_bytes": 143190,
+      "new_sha256": "58757f679cd6bcfb7441eead967ae68a7f59f79197ee80697e485a1c81631671",
+      "new_bytes": 143945,
+      "reason": "Clarify the commemorative platform, documented contributions and transmission; present AI research as a bounded supporting pilot"
+    },
+    {
+      "path": "topics/early-fluoroketones/index.html",
+      "old_sha256": "d5ee6e5f7be664b61ee8527e4b318d621ce7fa62fa003823bc23504d5803eefb",
+      "old_bytes": 179828,
+      "new_sha256": "a5618abe6b60d9e32672c348429cc5aae3c6d982cf4a3f86922112e75b138ac5",
+      "new_bytes": 182306,
+      "reason": "Clarify the historical perfluoroketone achievement and supporting AI pilot outside the unchanged evidence-bound scientific progress block"
+    },
+    {
+      "path": "achievements/index.html",
+      "old_sha256": "37e80a8dbeeaa3e40711f1afdcc698ae18b32cfb5c65f547c44c82175db970fb",
+      "old_bytes": 22886,
+      "new_sha256": "e1b97aef4608f493dda4f2919f58d882611f6c0427c052cf9e3886ccced11cb7",
+      "new_bytes": 23077,
+      "reason": "Retain stable historical achievement identities while clarifying contributions and academic transmission before the AI pilot"
+    }
+  ],
+  "boundary": "An editorial overlay only: no new calculation, scientific release, reinterpretation of existing results or promotion of AI evidence; the original scientific v1/v2 records and current registry remain unchanged.",
+  "publish_allowlist": "Exactly the original 15 HTML routes, two original JSON files and the existing empty .nojekyll marker; no research-data route is added."
+}

@@ -16,6 +16,19 @@ PROGRESS_PATH = 'research/a01/public-progress.v1.json'
 REVISION_V2_PATH = 'provenance/a01-site-revision.v2.json'
 PROGRESS_V2_PATH = 'research/a01/public-progress.v2.json'
 CURRENT_PATH = 'research/a01/public-progress.current.json'
+PRESENTATION_PATH = 'provenance/platform-presentation.v1.json'
+PRESENTATION_ID = 'PLATFORM-HERITAGE-20261114-v1'
+PRESENTATION_PREVIOUS_COMMIT = '74775199743f06f447278ef6aadff526ee604274'
+REVISION_V2_SHA256 = '9d1a800ae978b4eef814aa4c0b4c99f6faa35f79b7fd4315edc1aa430a2ad845'
+PROGRESS_V2_SHA256 = '0168bad2419df9a16c18fa832116afa3722a783f0186f933c7e7d5b1f6eb7823'
+CURRENT_SHA256 = '590b0df398766c8d5908d8cf9da775f71c6412e9364465b0b8b5fd34cd610f10'
+PRESENTATION_DOCUMENTS = ('README.md', 'docs/PLATFORM_PURPOSE_zh-CN.md',
+                          'docs/PLATFORM_ROADMAP_zh-CN.md')
+HISTORICAL_DOCUMENTS = {
+    'README_zh-CN.md': {'sha256': 'f8b1baca5be76d565fa786a4c4b88c82bdc574c26ab8fa943566b94b796c2f36', 'bytes': 3111},
+    'docs/RESEARCH_ROADMAP_zh-CN.md': {'sha256': 'e8a219f4b971b7d5862b986a1ee0b5ab9fef86352e7d3653ac2462271e322155', 'bytes': 9584},
+    'docs/GITHUB_HANDOFF_zh-CN.md': {'sha256': 'd3fb79397cc32e51472c4388693d4fc9d4bd5ef95da01652099c666d282d04cc', 'bytes': 4586},
+}
 REVISION_V1_SHA256 = '47c875aceb4b37b17a38bfd96eca694b08f3c321b396c2d0f5da4181a72b11bd'
 PROGRESS_V1_SHA256 = 'eca8d0ae472c3e49c99d7f8f03cb3e317bc860e5ec29ab95de65c7276f1cd7dd'
 TOPIC_PATH = 'topics/early-fluoroketones/index.html'
@@ -68,14 +81,112 @@ def current_progress_path(root: Path) -> str:
     return current_publication(root)['public_progress']
 
 
+def presentation_document_bindings(root: Path) -> list[dict]:
+    """Bind the three current editorial documents without changing originals."""
+    return [{'path': name, 'sha256': digest(project_file(root, name)),
+             'bytes': project_file(root, name).stat().st_size}
+            for name in PRESENTATION_DOCUMENTS]
+
+
+def presentation_protected_bindings(root: Path, entries: dict) -> dict:
+    """Read-only protection checks for this one presentation-only overlay."""
+    protected = {}
+    for name in ('data/public-sources.json', 'data/achievement-lines.json', 'pftb/index.html'):
+        path = project_file(root, 'site/'+name)
+        expected = entries[name]
+        if digest(path) != expected['sha256'] or path.stat().st_size != expected['bytes']:
+            raise ValueError('Presentation must retain the original protected website bytes: '+name)
+        protected[name] = {'sha256': expected['sha256'], 'bytes': expected['bytes']}
+    source_ids = [row['id'] for row in read_json(root/'site/data/public-sources.json')['sources']]
+    line_ids = [row['id'] for row in read_json(root/'site/data/achievement-lines.json')['lines']]
+    if len(source_ids) != 51 or len(set(source_ids)) != 51 or any(not value for value in source_ids):
+        raise ValueError('Presentation must preserve the 51 stable source identities')
+    if len(line_ids) != 9 or set(line_ids) != {'A'+str(n).zfill(2) for n in range(1, 10)}:
+        raise ValueError('Presentation must preserve the nine achievement identities')
+    routes = sorted(name for name in entries if name.endswith('.html'))
+    actual_routes = sorted(path.relative_to(root/'site').as_posix()
+                           for path in (root/'site').rglob('*.html'))
+    if len(routes) != 15 or actual_routes != routes:
+        raise ValueError('Presentation must preserve exactly the original 15 HTML routes')
+    historical = []
+    for name, expected in HISTORICAL_DOCUMENTS.items():
+        path = project_file(root, name)
+        if digest(path) != expected['sha256'] or path.stat().st_size != expected['bytes']:
+            raise ValueError('Historical implementation document bytes changed: '+name)
+        historical.append({'path': name, **expected})
+    return {'website_members': protected, 'source_ids': source_ids,
+            'achievement_line_ids': line_ids, 'html_routes': routes,
+            'historical_documents': historical}
+
+
+def apply_presentation_overlay(root: Path, entries: dict, *, chain: list) -> tuple[dict, dict | None]:
+    """Apply the independent editorial layer after the frozen scientific chain.
+
+    The overlay changes three existing HTML presentations only. It does not
+    select, regenerate or upgrade an A01 scientific record.
+    """
+    if not (root/PRESENTATION_PATH).exists():
+        return entries, None
+    if chain != [REVISION_PATH, REVISION_V2_PATH]:
+        raise ValueError('Platform presentation requires the frozen v1-to-v2 scientific chain')
+    path = project_file(root, PRESENTATION_PATH)
+    data = read_json(path)
+    if (data.get('schema_version') != '1.0'
+            or data.get('presentation_id') != PRESENTATION_ID
+            or data.get('publication_kind') != 'platform_editorial_presentation'
+            or data.get('scientific_review_status') != 'review_required'
+            or data.get('release_eligible') is not False
+            or data.get('scientific_data_unchanged') is not True
+            or data.get('original_baseline_sha256') != BASELINE_SHA256
+            or data.get('original_archive_sha256') != ARCHIVE_SHA256
+            or data.get('previous_presentation_commit') != PRESENTATION_PREVIOUS_COMMIT):
+        raise ValueError('Unsupported platform presentation contract')
+    bindings = [('scientific_revision', REVISION_V2_PATH, REVISION_V2_SHA256),
+                ('public_progress', PROGRESS_V2_PATH, PROGRESS_V2_SHA256),
+                ('current_registry', CURRENT_PATH, CURRENT_SHA256)]
+    for field, name, expected in bindings:
+        if data.get(field) != {'path': name, 'sha256': expected} or digest(project_file(root, name)) != expected:
+            raise ValueError('Platform presentation must retain the frozen scientific binding: '+field)
+    if data.get('editorial_documents') != presentation_document_bindings(root):
+        raise ValueError('Current platform documents differ from the presentation binding')
+    if data.get('protected') != presentation_protected_bindings(root, entries):
+        raise ValueError('Protected platform identities differ from the presentation binding')
+    changes = data.get('changes')
+    if not isinstance(changes, list) or len(changes) != 3:
+        raise ValueError('Presentation must explicitly bind the three authorized HTML paths')
+    updated, seen = {name: dict(value) for name, value in entries.items()}, set()
+    for item in changes:
+        name = item.get('path')
+        if name not in ALLOWED_CHANGES or name in seen:
+            raise ValueError('Unauthorized or duplicate presentation path: '+str(name))
+        seen.add(name)
+        old = entries[name]
+        if item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']:
+            raise ValueError('Presentation predecessor bytes differ: '+name)
+        value, size = item.get('new_sha256'), item.get('new_bytes')
+        if (not isinstance(value, str) or not SHA.fullmatch(value) or value == old['sha256']
+                or not isinstance(size, int) or isinstance(size, bool) or size <= 0
+                or not isinstance(item.get('reason'), str) or not item['reason'].strip()):
+            raise ValueError('Incomplete platform presentation change: '+name)
+        updated[name] = {**old, 'sha256': value, 'bytes': size,
+                         'presentation_id': PRESENTATION_ID}
+    return updated, {'path': PRESENTATION_PATH, 'sha256': digest(path),
+        'presentation_id': PRESENTATION_ID, 'publication_kind': 'platform_editorial_presentation',
+        'changed_paths': sorted(seen), 'previous_presentation_commit': PRESENTATION_PREVIOUS_COMMIT,
+        'scientific_data_unchanged': True, 'scientific_review_status': 'review_required',
+        'release_eligible': False}
+
+
 def effective_website_entries(root: Path, baseline: dict, *, verify_current=True,
-                              revision_chain=None) -> tuple[dict, dict]:
+                              revision_chain=None, include_presentation=True) -> tuple[dict, dict]:
     """Apply immutable historical declarations, then check only the final bytes.
 
     A historical revision describes its own old/new bytes. It must not require
     the current website to retain that historical edition's final HTML.
     ``verify_current=False`` is used only to prepare a new explicit revision;
     production checks always use the default and verify every effective member.
+    ``include_presentation=False`` reads the unchanged scientific predecessor
+    chain when creating its independent platform presentation declaration.
     """
     baseline_path = root/'provenance/website-baseline.json'
     if digest(baseline_path) != BASELINE_SHA256:
@@ -150,6 +261,11 @@ def effective_website_entries(root: Path, baseline: dict, *, verify_current=True
         stages.append({'path': name, 'sha256': digest(revision_path),
             'revision_id': revision['revision_id'], 'changed_paths': sorted(seen),
             'public_progress_sha256': public['sha256'], 'evidence_archive_commit': commit})
+    presentation = None
+    if include_presentation:
+        entries, presentation = apply_presentation_overlay(root, entries, chain=chain)
+        if presentation:
+            all_changed.update(presentation['changed_paths'])
     if verify_current:
         for member in all_changed:
             current = project_file(root, 'site/'+member)
@@ -164,4 +280,4 @@ def effective_website_entries(root: Path, baseline: dict, *, verify_current=True
         'public_progress_sha256': public['sha256'], 'current_evidence_commit': commit,
         'evidence_commit_s1': stages[0]['evidence_archive_commit'],
         'publication_kind': 'a01_research_progress', 'scientific_review_status': 'review_required',
-        'release_eligible': False}
+        'release_eligible': False, 'presentation': presentation}
