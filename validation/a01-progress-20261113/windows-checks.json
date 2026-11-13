@@ -1,0 +1,122 @@
+{
+  "started_utc": "2026-11-13T10:40:28.857829+00:00",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\chenx\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "node_path": "C:\\Program Files\\nodejs\\node.EXE",
+  "node_version_observation": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.EXE",
+      "--version"
+    ],
+    "returncode": 0,
+    "stdout": "v24.13.1\n",
+    "stderr": ""
+  },
+  "git_HEAD_before_archive_of_this_candidate": {
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "580cb2734026342851e1f93fcbf1b7a86ee33fd1\n",
+    "stderr": ""
+  },
+  "scope": "Saved-evidence/A01-page/source-replay/static-build checks; no DFT or model API",
+  "distributed_tests_expected": 0,
+  "checks": [
+    {
+      "argv": [
+        "C:\\Users\\chenx\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/check_a01_progress.py",
+        "--output",
+        "D:\\AI4Science\\Chen-Qingyun-2029\\A01-publication-20261113\\scratch\\a01-final-checks-windows-v1\\a01-progress.json"
+      ],
+      "returncode": 0,
+      "label": "a01-progress",
+      "elapsed_seconds": 0.17464733123779297
+    },
+    {
+      "argv": [
+        "C:\\Users\\chenx\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/check_site.py",
+        "--require-node",
+        "--output",
+        "D:\\AI4Science\\Chen-Qingyun-2029\\A01-publication-20261113\\scratch\\a01-final-checks-windows-v1\\site-check.json"
+      ],
+      "returncode": 0,
+      "label": "site",
+      "elapsed_seconds": 0.7060775756835938
+    },
+    {
+      "argv": [
+        "C:\\Users\\chenx\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/accept_phase1.py",
+        "--skip-tests",
+        "--output",
+        "D:\\AI4Science\\Chen-Qingyun-2029\\A01-publication-20261113\\scratch\\a01-final-checks-windows-v1\\source-check"
+      ],
+      "returncode": 1,
+      "label": "source",
+      "elapsed_seconds": 2.575343370437622
+    },
+    {
+      "argv": [
+        "C:\\Users\\chenx\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "scripts/build_site.py",
+        "--require-node",
+        "--output",
+        "D:\\AI4Science\\Chen-Qingyun-2029\\A01-publication-20261113\\scratch\\a01-final-checks-windows-v1\\site-dist"
+      ],
+      "returncode": 0,
+      "label": "build",
+      "elapsed_seconds": 1.1301414966583252
+    }
+  ],
+  "source_fingerprints": [
+    {
+      "path": "scripts/check_a01_progress.py",
+      "sha256": "a2f6611a726bf036168da24e1f87d1d4fb61aabfce785141a2d5a816fdea2e91",
+      "size_bytes": 22444
+    },
+    {
+      "path": "scripts/check_site.py",
+      "sha256": "d3d0ee95d3364ef2c4485855ee710cd863a471e5c837a53eab5711d24d371193",
+      "size_bytes": 20322
+    },
+    {
+      "path": "scripts/accept_phase1.py",
+      "sha256": "b6beed60f1f74540c205db1bff0916d5337434732744536236684260ce91e976",
+      "size_bytes": 12645
+    },
+    {
+      "path": "scripts/build_site.py",
+      "sha256": "15b65cac24ca27be938a6a730cf85fcf483fcec30866ad997339a7535bee90da",
+      "size_bytes": 3210
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "sha256": "edbd849a7a69fcab6e0d8a0a83d391cc3e40499fcad5efe4068ab70c94685fc9",
+      "size_bytes": 6008
+    },
+    {
+      "path": "scripts/render_a01_progress.py",
+      "sha256": "786bb51f4f93c88b4ea628f6c4e2f266e7a17e016008efae67f058d9967c6317",
+      "size_bytes": 8908
+    },
+    {
+      "path": "research/a01/public-progress.v1.json",
+      "sha256": "eca8d0ae472c3e49c99d7f8f03cb3e317bc860e5ec29ab95de65c7276f1cd7dd",
+      "size_bytes": 19293
+    },
+    {
+      "path": "provenance/a01-site-revision.v1.json",
+      "sha256": "47c875aceb4b37b17a38bfd96eca694b08f3c321b396c2d0f5da4181a72b11bd",
+      "size_bytes": 2820
+    }
+  ],
+  "source_files_unchanged": true,
+  "finished_utc": "2026-11-13T10:40:34.241900+00:00",
+  "status": "failed"
+}

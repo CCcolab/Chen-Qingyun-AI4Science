@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "created_utc": "2026-11-13T10:49:20.355712+00:00",
+  "scope": "Real local A01/source/static-site checks and Chromium, not DFT or scientific signoff",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "required_WSL_checks": {
+    "a01-progress": true,
+    "site": true,
+    "source": true,
+    "build": true
+  },
+  "all_required_WSL_checks_passed": true,
+  "Windows": {
+    "a01_and_site_and_build": "passed",
+    "sealed_v1_replay": "fields_equal_bytes_differ",
+    "difference": "Confirmed CRLF versus LF only; original files and strict acceptance retained"
+  },
+  "initial_WSL_failure": "Node unavailable; retained as actual failed record, then native verified Node supplied locally",
+  "distributed_unit_tests_run": 0,
+  "new_DFT_or_model_calls_by_checks": 0,
+  "browser_cases": 8,
+  "browser_widths": [
+    320,
+    360,
+    1280
+  ],
+  "both_root_and_repo_prefix_checked": true,
+  "no_JavaScript_progress_and_native_evidence_expansion_checked": true,
+  "browser_source_matches_actual_builds": [
+    {
+      "path": "index.html",
+      "sha256": "2c0a07d52696e4cbc022c412d0c05fd5a44d0bbf0794cdecc8ae7b0a32c195b6",
+      "source_and_both_builds_equal": true
+    },
+    {
+      "path": "topics/early-fluoroketones/index.html",
+      "sha256": "9368219b6781ab5fa93d12ccddec11834a1407e97f0fbe4db33fa5dea5675903",
+      "source_and_both_builds_equal": true
+    },
+    {
+      "path": "achievements/index.html",
+      "sha256": "37e80a8dbeeaa3e40711f1afdcc698ae18b32cfb5c65f547c44c82175db970fb",
+      "source_and_both_builds_equal": true
+    },
+    {
+      "path": "pftb/index.html",
+      "sha256": "0d4396b85f8cfd772edcf8fe9bc192d845268399e1ed3834e1d83562639ba372",
+      "source_and_both_builds_equal": true
+    }
+  ],
+  "receipts": [
+    {
+      "path": "validation/a01-progress-20261113/windows-checks.json",
+      "sha256": "c85d265ab53c9b2c9d37dad13eaf4f87de028dbde800f681e6b97345ab01653c",
+      "size_bytes": 4150,
+      "original_local_source": "D:\\AI4Science\\Chen-Qingyun-2029\\A01-publication-20261113\\scratch\\a01-final-checks-windows-v1\\local-checks.json"
+    },
+    {
+      "path": "validation/a01-progress-20261113/windows-newline-diagnosis.json",
+      "sha256": "86c38231fd2afc03ca94d928717dfa7e5a410d393520385302802f905d911189",
+      "size_bytes": 504,
+      "original_local_source": "D:\\AI4Science\\Chen-Qingyun-2029\\A01-publication-20261113\\scratch\\a01-final-checks-windows-v1\\newline-diagnosis.json"
+    },
+    {
+      "path": "validation/a01-progress-20261113/wsl-initial-checks.json",
+      "sha256": "613d05fcf6dab6ebdd657339de8ee8945f14f4d6dc057f31414b6a8bd383f1f0",
+      "size_bytes": 3557,
+      "original_local_source": "D:\\AI4Science\\Chen-Qingyun-2029\\A01-publication-20261113\\scratch\\a01-final-checks-wsl-v1\\local-checks.json"
+    },
+    {
+      "path": "validation/a01-progress-20261113/wsl-source-summary.json",
+      "sha256": "50d6c2c366374e07dfc891a070345a2a1bb2d51ca0ae503fd9003db3b14dba85",
+      "size_bytes": 2385,
+      "original_local_source": "D:\\AI4Science\\Chen-Qingyun-2029\\A01-publication-20261113\\scratch\\a01-final-checks-wsl-v1\\source-check\\summary.json"
+    },
+    {
+      "path": "validation/a01-progress-20261113/wsl-native-node-checks.json",
+      "sha256": "78726cba9bce597eda4e03bbbb3a7f0cbffde4bbed014ba03b8a319575cd3c5d",
+      "size_bytes": 3262,
+      "original_local_source": "D:\\AI4Science\\Chen-Qingyun-2029\\A01-publication-20261113\\scratch\\a01-final-checks-wsl-v2\\local-checks.json"
+    },
+    {
+      "path": "validation/a01-progress-20261113/browser-check.json",
+      "sha256": "19d828845e771203e2109cd54d84ae7b60ee18955ab05a10c1b5c7e13dc96b54",
+      "size_bytes": 6396,
+      "original_local_source": "D:\\AI4Science\\Chen-Qingyun-2029\\A01-publication-20261113\\scratch\\a01-browser-source-v2\\browser-check.json"
+    },
+    {
+      "path": "validation/a01-progress-20261113/node-tool-record.json",
+      "sha256": "fe12902231b0e11bd8482d74d73d416c9cf3e624bcbca64c649b4349e08fb9bf",
+      "size_bytes": 1308,
+      "original_local_source": "D:\\AI4Science\\Chen-Qingyun-2029\\Chen_Qingyun_AI_Research\\scratch\\a01-publication-20261113\\node-linux-v24.13.1\\tool-record.json"
+    }
+  ],
+  "full_local_evidence": "Full per-link records, stdout/stderr, screenshots and build artifacts remain in local handoff; these receipts do not claim every local file is published",
+  "archive_commit_policy": "Candidate source was validated before the page commit; actual source fingerprints are recorded, not retroactively labelled as an execution commit"
+}

@@ -19,6 +19,9 @@ import shutil
 import subprocess
 import tempfile
 from urllib.parse import unquote, urlsplit
+import zipfile
+
+from a01_publication_contract import effective_website_entries
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -124,6 +127,15 @@ def inspect_site(*, require_node: bool = False) -> dict:
             expected[name] = entry
         if len(expected) != 21:
             errors.append("Expected exactly 21 unique baseline members")
+        expected, revision = effective_website_entries(ROOT, baseline)
+        report["website_revision"] = revision
+        report["website_modified"] = revision["present"]
+        if revision["present"]:
+            from check_a01_progress import inspect_progress
+            progress = inspect_progress(ROOT)
+            report["a01_progress_consistency"] = progress
+            if progress["status"] != "passed":
+                errors.extend("A01 progress: " + message for message in progress["errors"])
         actual, deployment_marker, member_errors = check_member_set(SITE, set(expected))
         report["baseline_member_count"] = len(expected)
         report["deployment_marker"] = deployment_marker
@@ -138,7 +150,7 @@ def inspect_site(*, require_node: bool = False) -> dict:
                                           "expected_sha256": entry["sha256"], "actual_sha256": actual_hash,
                                           "expected_bytes": entry["bytes"], "actual_bytes": actual_size})
             if not equal:
-                errors.append(f"Original website member changed or missing: {name}")
+                errors.append(f"Website member differs from original baseline or explicit A01 revision: {name}")
         for name, expected_hash in PROTECTED_JSON.items():
             actual_hash = digest(SITE / name)
             equal = actual_hash == expected_hash
@@ -179,6 +191,21 @@ def inspect_site(*, require_node: bool = False) -> dict:
                                        if f"source-{source.lower()}" not in home.ids)
         if absent_source_anchors:
             errors.append(f"Public source anchors missing from homepage: {absent_source_anchors}")
+        # An authorized A01 title/entry edit must not silently rewrite the
+        # homepage's original source-register payloads either.
+        with zipfile.ZipFile(ROOT / "upstream/chen-qingyun-a2-citations-candidate.zip") as source_zip:
+            original_home = Page("original-export/index.html")
+            original_home.feed(source_zip.read("index.html").decode("utf-8"))
+            original_home.close()
+        report["homepage_original_source_payloads"] = []
+        for identifier in ("public-sources", "citation-original-data"):
+            old_payloads = [s["text"] for s in original_home.scripts if s["attributes"].get("id") == identifier]
+            new_payloads = [s["text"] for s in home.scripts if s["attributes"].get("id") == identifier]
+            equal = (len(old_payloads) == len(new_payloads) == 1
+                     and json.loads(old_payloads[0]) == json.loads(new_payloads[0]))
+            report["homepage_original_source_payloads"].append({"id": identifier, "equal": equal})
+            if not equal:
+                errors.append(f"Original homepage source payload changed: {identifier}")
 
         pftb = pages["pftb/index.html"]
         data_scripts = [script for script in pftb.scripts

@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "revision_id": "A01-PROGRESS-20261113-v1",
+  "created_at_utc": "2026-11-13T10:39:35.669722+00:00",
+  "publication_kind": "a01_research_progress",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "authorization": "User task dated 2026-11-13: publish the actual single-center SCF stage and A01 progress without scientific-release promotion",
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "evidence_commit_s1": "580cb2734026342851e1f93fcbf1b7a86ee33fd1",
+  "public_progress": {
+    "path": "research/a01/public-progress.v1.json",
+    "sha256": "eca8d0ae472c3e49c99d7f8f03cb3e317bc860e5ec29ab95de65c7276f1cd7dd"
+  },
+  "changes": [
+    {
+      "path": "index.html",
+      "old_sha256": "2d13bae2c39b5b41964fc6c50481309dd62eb058a6f68e61051e5d42539344a9",
+      "old_bytes": 142901,
+      "new_sha256": "2c0a07d52696e4cbc022c412d0c05fd5a44d0bbf0794cdecc8ae7b0a32c195b6",
+      "new_bytes": 143190,
+      "source_evidence_commit": "580cb2734026342851e1f93fcbf1b7a86ee33fd1",
+      "reason": "Authorized A01 display-title, topic-entry and homepage research-status clarification; original source payloads and other achievement content retained"
+    },
+    {
+      "path": "topics/early-fluoroketones/index.html",
+      "old_sha256": "fcdc4df61f18e12ac168c4aab65b9f0438e987bd9f311997755c875cc615093b",
+      "old_bytes": 7023,
+      "new_sha256": "9368219b6781ab5fa93d12ccddec11834a1407e97f0fbe4db33fa5dea5675903",
+      "new_bytes": 40845,
+      "source_evidence_commit": "580cb2734026342851e1f93fcbf1b7a86ee33fd1",
+      "reason": "Authorized A01 historical-source clarification, separate research branches and evidence-bound pending-review progress block"
+    },
+    {
+      "path": "achievements/index.html",
+      "old_sha256": "d9b4024ff8bbe8519d8d77b0c6785165db3ae9fe4ed70214ca60ea218872107d",
+      "old_bytes": 22706,
+      "new_sha256": "37e80a8dbeeaa3e40711f1afdcc698ae18b32cfb5c65f547c44c82175db970fb",
+      "new_bytes": 22886,
+      "source_evidence_commit": "580cb2734026342851e1f93fcbf1b7a86ee33fd1",
+      "reason": "Authorized A01 display-title clarification; stable achievement identity and other lines retained"
+    }
+  ],
+  "protected": "Original baseline and export archive; PFtB; the two original JSON files and 51 source identities; every baseline member outside these explicit changes",
+  "publish_allowlist": "Unchanged 15 original HTML routes, two original JSON files and empty .nojekyll; A01 progress is static HTML, not a new published JSON route",
+  "boundary": "Public progress is not PF1966 reviewed-result export or scientific approval. No original evidence baseline is refreshed."
+}

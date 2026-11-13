@@ -1,0 +1,70 @@
+{
+  "started_at_utc": "2026-11-13T10:41:15.483890+00:00",
+  "task_id": "PF1966-UV-T1",
+  "result_type": "published_table_numerical_replay",
+  "scientific_review_status": "review_required",
+  "commands": [
+    {
+      "label": "git-revision",
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/mnt/d/AI4Science/Chen-Qingyun-2029/A01-publication-20261113",
+      "started_at_utc": "2026-11-13T10:41:17.939090+00:00",
+      "finished_at_utc": "2026-11-13T10:41:17.962435+00:00",
+      "exit_code": 0,
+      "stdout": "logs/git-revision.stdout.txt",
+      "stderr": "logs/git-revision.stderr.txt"
+    },
+    {
+      "label": "git-status",
+      "command": [
+        "git",
+        "status",
+        "--porcelain"
+      ],
+      "cwd": "/mnt/d/AI4Science/Chen-Qingyun-2029/A01-publication-20261113",
+      "started_at_utc": "2026-11-13T10:41:17.962458+00:00",
+      "finished_at_utc": "2026-11-13T10:41:19.125398+00:00",
+      "exit_code": 0,
+      "stdout": "logs/git-status.stdout.txt",
+      "stderr": "logs/git-status.stderr.txt"
+    },
+    {
+      "label": "numerical-replay",
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "chen_research",
+        "--output",
+        "/mnt/d/AI4Science/Chen-Qingyun-2029/A01-publication-20261113/scratch/a01-final-checks-wsl-v1/source-check/replay"
+      ],
+      "cwd": "/mnt/d/AI4Science/Chen-Qingyun-2029/A01-publication-20261113",
+      "started_at_utc": "2026-11-13T10:41:19.125461+00:00",
+      "finished_at_utc": "2026-11-13T10:41:19.196263+00:00",
+      "exit_code": 0,
+      "stdout": "logs/numerical-replay.stdout.txt",
+      "stderr": "logs/numerical-replay.stderr.txt"
+    }
+  ],
+  "quantum_calculation": "not_performed",
+  "experiment": "not_performed",
+  "future_hypotheses": "not_tested",
+  "model_api_called": false,
+  "website_modified": false,
+  "status": "passed",
+  "errors": [],
+  "test_execution_policy": "local_only_not_run",
+  "tests_run": 0,
+  "tests_status": "not_run_by_distribution_policy",
+  "upstream_files_verified": 18,
+  "source_commit": "580cb2734026342851e1f93fcbf1b7a86ee33fd1",
+  "source_worktree_dirty": true,
+  "original_delivery_verifier": "not_run_original_test_member_not_distributed",
+  "result_files_compared": 2,
+  "all_result_bytes_equal": true,
+  "all_result_fields_equal": true,
+  "finished_at_utc": "2026-11-13T10:41:19.224747+00:00"
+}

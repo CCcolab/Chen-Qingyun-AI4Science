@@ -78,7 +78,7 @@ def render_block(data, data_sha256):
         '<h3>三条独立研究分支</h3><div class="a01-branches">'+branches+'</div>',
         '<details><summary>前序结果与解释范围</summary><ol>'+history+'</ol><p>原文反应时长与分离收率不换算成速率常数。</p></details>',
         '<h3>原始材料核读范围</h3><p>'+esc(data['primary_materials']['public_summary'])+'</p>',
-        '<h3>固定提交证据</h3><ul class="a01-evidence">'+''.join(evidence)+'</ul>',
+        '<details class="a01-evidence-details"><summary>展开固定提交证据（'+str(len(data['evidence']))+'项）</summary><ul class="a01-evidence">'+''.join(evidence)+'</ul></details>',
         '<p class="a01-small">证据归档提交：<code>'+esc(archive or '待建立')+'</code>。这是后补归档身份，执行时源码提交号仍为未知，运行代码以实际SHA-256绑定。完整本机原始包的公开下载状态见证据索引；未提供下载URL的包不能视为已经公开。</p>',
         '</article>', '<script type="application/json" id="a01-public-progress">'+encoded+'</script>', END]
     return '\n'.join(lines)

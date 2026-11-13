@@ -1,4 +1,7 @@
-"""Stage the preserved static website; publish no research data, logs or handoff documents."""
+"""Stage the explicit static-site allowlist, including pending-review A01 HTML progress.
+
+No research directory, raw logs or new JSON route is copied into Pages.
+"""
 
 from __future__ import annotations
 
@@ -9,6 +12,7 @@ from pathlib import Path
 import shutil
 
 from check_site import BASELINE, SITE, inspect_site
+from a01_publication_contract import effective_website_entries
 
 
 def main() -> int:
@@ -28,7 +32,8 @@ def main() -> int:
                          ensure_ascii=False))
         return 1
     baseline = json.loads(BASELINE.read_text(encoding="utf-8"))
-    members = [entry for entry in baseline["files"] if Path(entry["path"]).suffix in {".html", ".json"}]
+    effective, revision = effective_website_entries(BASELINE.parent.parent, baseline)
+    members = [entry for entry in effective.values() if Path(entry["path"]).suffix in {".html", ".json"}]
     if len(members) != 17 or sum(entry["path"].endswith(".html") for entry in members) != 15:
         raise ValueError("The publish allowlist must contain exactly 15 HTML and two JSON files")
     output.mkdir(parents=True, exist_ok=True)
@@ -47,7 +52,9 @@ def main() -> int:
         raise ValueError("The publish directory contains unexpected members")
     print(json.dumps({"status": "passed", "output": str(output), "html_count": 15,
                       "json_count": 2, "published_member_count": len(published),
-                      "all_source_bytes_preserved": True,
+                      "all_source_bytes_preserved": not revision["present"],
+                      "original_baseline_bytes_preserved": True,
+                      "explicit_website_revision": revision,
                       "published_files": sorted(published), "scientific_review_status": "review_required",
                       "website_deployed": False, "warnings": checked["warnings"]}, ensure_ascii=False))
     return 0

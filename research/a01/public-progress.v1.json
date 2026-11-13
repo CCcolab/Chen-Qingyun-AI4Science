@@ -6,7 +6,7 @@
   "release_eligible": false,
   "timezone": "Asia/Shanghai",
   "updated_at_utc": "2026-11-13T10:00:52.606549+00:00",
-  "evidence_archive_commit": null,
+  "evidence_archive_commit": "580cb2734026342851e1f93fcbf1b7a86ee33fd1",
   "publication_contract": {
     "path": "research/a01/public-progress-contract.v1.json",
     "sha256": "cd7794cfe464e9866bfe5dfc6f8677cbcef787653ede4ff6819a42d439e736a1"
@@ -187,42 +187,42 @@
       "date": "2026-11-12",
       "summary": "核清12.511659／29.531754 kcal/mol是非驻点选定几何相对各自底物＋苯胺的单点电子能差，不构成合格DFT势垒；两侧停止结构不构成收敛终态。",
       "report_path": "research/a01/STAGE_HISTORY_20261113_zh-CN.md",
-      "fixed_url": null
+      "fixed_url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/580cb2734026342851e1f93fcbf1b7a86ee33fd1/research/a01/STAGE_HISTORY_20261113_zh-CN.md#qualification-20261112"
     },
     {
       "stage_id": "t1-continuation-20261112",
       "date": "2026-11-12",
       "summary": "选定T1仅为非驻点能量／梯度探针；苯胺在受限模型内取得条件性局部极小数值支持，两侧底物参照继续精修。未得到DFT势垒或正式IRC。",
       "report_path": "research/a01/STAGE_HISTORY_20261113_zh-CN.md",
-      "fixed_url": null
+      "fixed_url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/580cb2734026342851e1f93fcbf1b7a86ee33fd1/research/a01/STAGE_HISTORY_20261113_zh-CN.md#t1-continuation-20261112"
     },
     {
       "stage_id": "reference-continuation-20261112-v2",
       "date": "2026-11-12",
       "summary": "CH₃优化与独立梯度通过；CF₃最后完整第18点仍未合格，第19点SCF中断。停止来自单项2400秒SIGALRM，不是7200秒累计期限；该阶段完整曲率未运行。",
       "report_path": "research/a01/STAGE_HISTORY_20261113_zh-CN.md",
-      "fixed_url": null
+      "fixed_url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/580cb2734026342851e1f93fcbf1b7a86ee33fd1/research/a01/STAGE_HISTORY_20261113_zh-CN.md#reference-continuation-20261112-v2"
     },
     {
       "stage_id": "reference-curvature-20261113-v3",
       "date": "2026-11-13",
       "summary": "两侧各157完整梯度和78列、72振动模齐全，诊断谱均0虚频。CH₃通过既定数值一致性检查，支持该受限模型内局部极小；CF₃最大反对称0.0014988913693417868 Eh/bohr²未通过，不能以零虚频补足资格。",
       "report_path": "research/a01/STAGE_HISTORY_20261113_zh-CN.md",
-      "fixed_url": null
+      "fixed_url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/580cb2734026342851e1f93fcbf1b7a86ee33fd1/research/a01/STAGE_HISTORY_20261113_zh-CN.md#reference-curvature-20261113-v3"
     },
     {
       "stage_id": "point-diagnosis-execution-20261113-v1",
       "date": "2026-11-13",
       "summary": "A五点重复性通过，互易差0.0014988911403202325 Eh/bohr²。B中心主循环第4轮orbital范数9.689037768617906e-10，末次额外检查1.6225317681152e-9，核梯度前停止；后四点未执行，SCF精度对互易误差的影响未知。",
       "report_path": "research/a01/STAGE_HISTORY_20261113_zh-CN.md",
-      "fixed_url": null
+      "fixed_url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/580cb2734026342851e1f93fcbf1b7a86ee33fd1/research/a01/STAGE_HISTORY_20261113_zh-CN.md#point-diagnosis-execution-20261113-v1"
     },
     {
       "stage_id": "A01-M0-CF3-CENTER-TERMINAL-SCF-20261113-v1",
       "date": "2026-11-13",
       "summary": "同一中心电子终态残差检查通过。本轮核梯度调用0；中心结果不提升CF₃完整曲率或势垒资格。",
       "report_path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/REPORT_zh-CN.md",
-      "fixed_url": null
+      "fixed_url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/580cb2734026342851e1f93fcbf1b7a86ee33fd1/research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/REPORT_zh-CN.md"
     }
   ],
   "evidence": [
@@ -232,7 +232,7 @@
       "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-summary.v1.json",
       "sha256": "3de9e61cd9e05ab7764b14cbefb03251c28951bc8d9e645739ae53e438202803",
       "size_bytes": 4823,
-      "fixed_url": null
+      "fixed_url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/580cb2734026342851e1f93fcbf1b7a86ee33fd1/research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-summary.v1.json"
     },
     {
       "id": "center-electronic-result",
@@ -240,7 +240,7 @@
       "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-evidence/center-result.v1.json",
       "sha256": "74dbe97903adba0db8aeccd0f711f3d14b3d11dfde394dde85f2e597fa30508e",
       "size_bytes": 1266,
-      "fixed_url": null
+      "fixed_url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/580cb2734026342851e1f93fcbf1b7a86ee33fd1/research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-evidence/center-result.v1.json"
     },
     {
       "id": "center-raw-result",
@@ -248,7 +248,7 @@
       "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-evidence/point/result.json",
       "sha256": "1cd73bb41d7cea4c0704a0a93f1bca0bab4076dc8d41201fff710ad8a5ea0c4e",
       "size_bytes": 11996,
-      "fixed_url": null
+      "fixed_url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/580cb2734026342851e1f93fcbf1b7a86ee33fd1/research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-evidence/point/result.json"
     },
     {
       "id": "center-scf-log",
@@ -256,7 +256,7 @@
       "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-evidence/pyscf.log",
       "sha256": "a48a332e2ff0bf70c88f00097810b3e3684e3c5d1db8b40176ed525fc9f793c2",
       "size_bytes": 7591,
-      "fixed_url": null
+      "fixed_url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/580cb2734026342851e1f93fcbf1b7a86ee33fd1/research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-evidence/pyscf.log"
     },
     {
       "id": "center-final-diagnostics",
@@ -264,7 +264,7 @@
       "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-evidence/final-scf-diagnostics.v1.json",
       "sha256": "cb72826d70441c128def22ad6d02f15ed24a875d485b3c600b0df920a2acbe29",
       "size_bytes": 449,
-      "fixed_url": null
+      "fixed_url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/580cb2734026342851e1f93fcbf1b7a86ee33fd1/research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-evidence/final-scf-diagnostics.v1.json"
     },
     {
       "id": "center-process",
@@ -272,7 +272,7 @@
       "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-evidence/process-result.v1.json",
       "sha256": "3e774adff2b93bc523119ea83eb56e4ec5096496bc711d1acdd8ab386f5eb949",
       "size_bytes": 467,
-      "fixed_url": null
+      "fixed_url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/580cb2734026342851e1f93fcbf1b7a86ee33fd1/research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-evidence/process-result.v1.json"
     },
     {
       "id": "center-budget",
@@ -280,7 +280,7 @@
       "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-evidence/budget.v1.json",
       "sha256": "b6041a0961a069466a880196cde3c6563f7f62be21de1d693b50a0974a470cea",
       "size_bytes": 1118,
-      "fixed_url": null
+      "fixed_url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/580cb2734026342851e1f93fcbf1b7a86ee33fd1/research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-evidence/budget.v1.json"
     },
     {
       "id": "center-report",
@@ -288,7 +288,7 @@
       "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/REPORT_zh-CN.md",
       "sha256": "87230c18ee350108357df3083e4bda03ee1cf228bc9636528c70560af235cfe9",
       "size_bytes": 4529,
-      "fixed_url": null
+      "fixed_url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/580cb2734026342851e1f93fcbf1b7a86ee33fd1/research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/REPORT_zh-CN.md"
     },
     {
       "id": "center-protocol",
@@ -296,7 +296,7 @@
       "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/PROTOCOL_zh-CN.md",
       "sha256": "0ec906edcc68e058d011a1155dccbd75f43b3e8024b72c6e3177add8dab35011",
       "size_bytes": 3389,
-      "fixed_url": null
+      "fixed_url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/580cb2734026342851e1f93fcbf1b7a86ee33fd1/research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/PROTOCOL_zh-CN.md"
     },
     {
       "id": "center-contract",
@@ -304,7 +304,7 @@
       "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/contract.v1.json",
       "sha256": "f57a7fe8ac237c4cf32c203a20ba324d0b3cf94cd020b0f7d9f901bc06802e81",
       "size_bytes": 6778,
-      "fixed_url": null
+      "fixed_url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/580cb2734026342851e1f93fcbf1b7a86ee33fd1/research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/contract.v1.json"
     },
     {
       "id": "center-input",
@@ -312,7 +312,7 @@
       "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/input.v1.json",
       "sha256": "ba4c38c8421124c9e3d93efc742bff48c9c7ec655a5af6e751b6b56e1a35711e",
       "size_bytes": 3944,
-      "fixed_url": null
+      "fixed_url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/580cb2734026342851e1f93fcbf1b7a86ee33fd1/research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/input.v1.json"
     },
     {
       "id": "center-worker",
@@ -320,7 +320,7 @@
       "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/worker_scf.py",
       "sha256": "83512006f1a6f0c3e5652ec1cfc55043e83407e4bd459c6a2087c31ed6a84423",
       "size_bytes": 23131,
-      "fixed_url": null
+      "fixed_url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/580cb2734026342851e1f93fcbf1b7a86ee33fd1/research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/worker_scf.py"
     },
     {
       "id": "center-controller",
@@ -328,7 +328,7 @@
       "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/controller.py",
       "sha256": "e1fafbc631e68d56a5b9f7083702aab0ac5ca1b9255e066e29f09d720e46bdec",
       "size_bytes": 9405,
-      "fixed_url": null
+      "fixed_url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/580cb2734026342851e1f93fcbf1b7a86ee33fd1/research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/controller.py"
     },
     {
       "id": "progress-publication-contract",
@@ -336,7 +336,7 @@
       "path": "research/a01/public-progress-contract.v1.json",
       "sha256": "cd7794cfe464e9866bfe5dfc6f8677cbcef787653ede4ff6819a42d439e736a1",
       "size_bytes": 2211,
-      "fixed_url": null
+      "fixed_url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/580cb2734026342851e1f93fcbf1b7a86ee33fd1/research/a01/public-progress-contract.v1.json"
     },
     {
       "id": "original-reading-registry",
@@ -344,7 +344,7 @@
       "path": "research/a01/sources.v2.json",
       "sha256": "0b72a4a6c0cb201eee4c2ea94a9dc188ab377f63fd4690d81c9967ee8a5c5705",
       "size_bytes": 6011,
-      "fixed_url": null
+      "fixed_url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/580cb2734026342851e1f93fcbf1b7a86ee33fd1/research/a01/sources.v2.json"
     },
     {
       "id": "stage-history",
@@ -352,7 +352,7 @@
       "path": "research/a01/STAGE_HISTORY_20261113_zh-CN.md",
       "sha256": "869642dde155b8f9176d583ca95ec69d5e0aff74848d0fcc4e650eeb0124bbe7",
       "size_bytes": 3312,
-      "fixed_url": null
+      "fixed_url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/580cb2734026342851e1f93fcbf1b7a86ee33fd1/research/a01/STAGE_HISTORY_20261113_zh-CN.md"
     },
     {
       "id": "stage-history-json",
@@ -360,7 +360,7 @@
       "path": "research/a01/stage-history.v1.json",
       "sha256": "97d0f907c1d989f15750d35bd009de1cb0885f480428bdfb4ba5e70382d08e41",
       "size_bytes": 5451,
-      "fixed_url": null
+      "fixed_url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/580cb2734026342851e1f93fcbf1b7a86ee33fd1/research/a01/stage-history.v1.json"
     }
   ],
   "completed": [

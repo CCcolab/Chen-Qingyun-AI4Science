@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'chen_research/**'
+      - 'research/**'
       - 'data/**'
       - 'protocols/**'
       - 'literature/**'
@@ -21,6 +22,7 @@ on:
   pull_request:
     paths:
       - 'chen_research/**'
+      - 'research/**'
       - 'data/**'
       - 'protocols/**'
       - 'literature/**'
@@ -61,6 +63,8 @@ jobs:
         run: python scripts/accept_phase1.py --skip-tests --output scratch/ci-acceptance
       - name: Verify website baseline and Pages-relative routes
         run: python scripts/check_site.py --require-node --output scratch/ci-site-check.json
+      - name: Verify A01 saved progress and static page without DFT or distributed tests
+        run: python scripts/check_a01_progress.py --output scratch/ci-a01-progress.json
       - name: Build website without publishing
         run: python scripts/build_site.py --require-node --output scratch/site-dist
       - name: Keep review-required candidate and evidence

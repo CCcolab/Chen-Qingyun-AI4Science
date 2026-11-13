@@ -11,6 +11,8 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import quote, urlencode, urlsplit
 from urllib.request import Request, urlopen
 
+from a01_publication_contract import PROGRESS_PATH, TOPIC_PATH, effective_website_entries, read_json
+
 
 ROOT = Path(__file__).resolve().parents[1]
 MAX_RESPONSE_BYTES = 2_000_000
@@ -66,7 +68,15 @@ def main() -> int:
 
     try:
         baseline = json.loads((ROOT / "provenance/website-baseline.json").read_text(encoding="utf-8"))
-        members = [entry for entry in baseline["files"]
+        effective, revision = effective_website_entries(ROOT, baseline)
+        report["website_revision"] = revision
+        if revision["present"]:
+            from check_a01_progress import inspect_progress
+            consistency = inspect_progress(ROOT)
+            report["local_a01_progress_consistency"] = consistency
+            if consistency["status"] != "passed":
+                raise ValueError("Local A01 progress and revision are not consistent: " + "; ".join(consistency["errors"]))
+        members = [entry for entry in effective.values()
                    if PurePosixPath(entry["path"]).suffix in {".html", ".json"}]
         names = [entry["path"] for entry in members]
         if (len(names) != 17 or len(set(names)) != 17
@@ -75,6 +85,7 @@ def main() -> int:
                     "data/public-sources.json", "data/achievement-lines.json"}):
             raise ValueError("Expected exactly the baseline's 15 HTML and two public JSON files")
         json_bodies = {}
+        html_bodies = {}
         expected_home = None
         for entry in members:
             name = entry["path"]
@@ -85,7 +96,7 @@ def main() -> int:
             local_bytes = local.read_bytes()
             if (local.is_symlink() or len(local_bytes) != entry["bytes"]
                     or hashlib.sha256(local_bytes).hexdigest() != entry["sha256"]):
-                raise ValueError(f"Local site bytes differ from the baseline: {name}")
+                raise ValueError(f"Local site bytes differ from the preserved baseline or explicit A01 revision: {name}")
             if name == "index.html":
                 expected_home = entry
             check, body = fetch(url_for(name))
@@ -99,6 +110,45 @@ def main() -> int:
                 report["errors"].append(f"Published response differs from the approved site: {name}")
             if name.endswith(".json") and check["equal"]:
                 json_bodies[name] = json.loads(body)
+            if name.endswith(".html") and check["status"] == 200 and "error" not in check:
+                html_bodies[name] = body
+
+        if revision["present"]:
+            from check_site import Page
+            progress = read_json(ROOT / PROGRESS_PATH)
+            online_topic = Page(TOPIC_PATH)
+            online_topic.feed(html_bodies.get(TOPIC_PATH, b"").decode("utf-8"))
+            online_topic.close()
+            records = [json.loads(script["text"]) for script in online_topic.scripts
+                       if script["attributes"].get("id") == "a01-public-progress"]
+            equal = len(records) == 1 and records[0] == progress
+            observed = records[0] if len(records) == 1 else None
+            actual_execution = observed.get("execution", {}) if isinstance(observed, dict) else {}
+            report["online_a01_progress"] = {"equal_to_public_record": equal,
+                "task_id": actual_execution.get("task_id"), "run_id": actual_execution.get("run_id"),
+                "stage_outcome": actual_execution.get("status"),
+                "finished_at_utc": actual_execution.get("finished_at_utc"),
+                "scientific_review_status": observed.get("scientific_review_status") if observed else None,
+                "release_eligible": observed.get("release_eligible") if observed else None,
+                "evidence_archive_commit": observed.get("evidence_archive_commit") if observed else None,
+                "unavailable_reason": None if observed else "Online page lacks a unique parseable A01 progress record",
+                "expected_task_id": progress["execution"]["task_id"],
+                "expected_run_id": progress["execution"]["run_id"]}
+            if not equal:
+                report["errors"].append("The matched online topic lacks the exact current A01 task/run, outcome or scientific boundaries")
+            report["fixed_a01_evidence_checks"] = []
+            for evidence in progress["evidence"]:
+                raw_url = ("https://raw.githubusercontent.com/CCcolab/Chen-Qingyun-AI4Science/"
+                           + progress["evidence_archive_commit"] + "/" + quote(evidence["path"], safe="/"))
+                check, _ = fetch(raw_url)
+                check.update(id=evidence["id"], fixed_url=evidence["fixed_url"],
+                             expected_sha256=evidence["sha256"], expected_bytes=evidence["size_bytes"])
+                check["equal"] = (check["status"] == 200 and "error" not in check
+                                  and check.get("actual_sha256") == evidence["sha256"]
+                                  and check.get("actual_bytes") == evidence["size_bytes"])
+                report["fixed_a01_evidence_checks"].append(check)
+                if not check["equal"]:
+                    report["errors"].append("Fixed S1 A01 evidence is unavailable or differs: " + evidence["path"])
 
         if expected_home is None:
             raise ValueError("The baseline lacks index.html")
@@ -131,7 +181,7 @@ def main() -> int:
 
         # These repository-only materials must not be part of the Pages artifact.
         excluded = ["results/website-candidate.json", "validation/",
-                    "upstream/chen-qingyun-a2-citations-candidate.zip"]
+                    "upstream/chen-qingyun-a2-citations-candidate.zip", PROGRESS_PATH]
         for name in excluded:
             check, _ = fetch(url_for(name))
             check.update(path=name, expected_status=404)

@@ -1,0 +1,274 @@
+{
+  "created_utc": "2026-11-13T10:38:16.822Z",
+  "scope": "Real loopback HTTP and headless Chromium; no quantum/backend calls",
+  "expected_task_id": "A01-M0-CF3-CENTER-TERMINAL-SCF-20261113-v1",
+  "evidence_commit": "580cb2734026342851e1f93fcbf1b7a86ee33fd1",
+  "checks": [
+    {
+      "prefix": "/",
+      "width": 320,
+      "page_errors": [],
+      "home_overflow": 0,
+      "topic_overflow": 0,
+      "heading": {
+        "top": 179.53125,
+        "visible": true,
+        "uncovered": true
+      },
+      "screenshot": "topic-root-320.png",
+      "source_anchor_present": true,
+      "achievements_overflow": 0,
+      "pftb_hash": "#s/T01/boundary/R92A",
+      "pftb_chapter_visible": true,
+      "pftb_overflow": 0,
+      "passed": true
+    },
+    {
+      "prefix": "/",
+      "width": 360,
+      "page_errors": [],
+      "home_overflow": 0,
+      "topic_overflow": 0,
+      "heading": {
+        "top": 179.1875,
+        "visible": true,
+        "uncovered": true
+      },
+      "screenshot": "topic-root-360.png",
+      "source_anchor_present": true,
+      "achievements_overflow": 0,
+      "pftb_hash": "#s/T01/boundary/R92A",
+      "pftb_chapter_visible": true,
+      "pftb_overflow": 0,
+      "passed": true
+    },
+    {
+      "prefix": "/",
+      "width": 1280,
+      "page_errors": [],
+      "home_overflow": 0,
+      "topic_overflow": 0,
+      "heading": {
+        "top": 183.875,
+        "visible": true,
+        "uncovered": true
+      },
+      "screenshot": "topic-root-1280.png",
+      "source_anchor_present": true,
+      "achievements_overflow": 0,
+      "pftb_hash": "#s/T01/boundary/R92A",
+      "pftb_chapter_visible": true,
+      "pftb_overflow": 0,
+      "passed": true
+    },
+    {
+      "prefix": "/",
+      "width": 360,
+      "javascript_disabled": true,
+      "static_progress_readable": true,
+      "native_evidence_expandable": true,
+      "passed": true
+    },
+    {
+      "prefix": "/Chen-Qingyun-AI4Science",
+      "width": 320,
+      "page_errors": [],
+      "home_overflow": 0,
+      "topic_overflow": 0,
+      "heading": {
+        "top": 179.53125,
+        "visible": true,
+        "uncovered": true
+      },
+      "screenshot": "topic-prefix-320.png",
+      "source_anchor_present": true,
+      "achievements_overflow": 0,
+      "pftb_hash": "#s/T01/boundary/R92A",
+      "pftb_chapter_visible": true,
+      "pftb_overflow": 0,
+      "passed": true
+    },
+    {
+      "prefix": "/Chen-Qingyun-AI4Science",
+      "width": 360,
+      "page_errors": [],
+      "home_overflow": 0,
+      "topic_overflow": 0,
+      "heading": {
+        "top": 179.1875,
+        "visible": true,
+        "uncovered": true
+      },
+      "screenshot": "topic-prefix-360.png",
+      "source_anchor_present": true,
+      "achievements_overflow": 0,
+      "pftb_hash": "#s/T01/boundary/R92A",
+      "pftb_chapter_visible": true,
+      "pftb_overflow": 0,
+      "passed": true
+    },
+    {
+      "prefix": "/Chen-Qingyun-AI4Science",
+      "width": 1280,
+      "page_errors": [],
+      "home_overflow": 0,
+      "topic_overflow": 0,
+      "heading": {
+        "top": 183.875,
+        "visible": true,
+        "uncovered": true
+      },
+      "screenshot": "topic-prefix-1280.png",
+      "source_anchor_present": true,
+      "achievements_overflow": 0,
+      "pftb_hash": "#s/T01/boundary/R92A",
+      "pftb_chapter_visible": true,
+      "pftb_overflow": 0,
+      "passed": true
+    },
+    {
+      "prefix": "/Chen-Qingyun-AI4Science",
+      "width": 360,
+      "javascript_disabled": true,
+      "static_progress_readable": true,
+      "native_evidence_expandable": true,
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "requests": [
+    {
+      "url": "/index.html",
+      "status": 200
+    },
+    {
+      "url": "/favicon.ico",
+      "status": 404
+    },
+    {
+      "url": "/topics/early-fluoroketones/index.html",
+      "status": 200
+    },
+    {
+      "url": "/index.html",
+      "status": 200
+    },
+    {
+      "url": "/achievements/index.html",
+      "status": 200
+    },
+    {
+      "url": "/pftb/index.html",
+      "status": 200
+    },
+    {
+      "url": "/index.html",
+      "status": 200
+    },
+    {
+      "url": "/topics/early-fluoroketones/index.html",
+      "status": 200
+    },
+    {
+      "url": "/index.html",
+      "status": 200
+    },
+    {
+      "url": "/achievements/index.html",
+      "status": 200
+    },
+    {
+      "url": "/pftb/index.html",
+      "status": 200
+    },
+    {
+      "url": "/index.html",
+      "status": 200
+    },
+    {
+      "url": "/topics/early-fluoroketones/index.html",
+      "status": 200
+    },
+    {
+      "url": "/index.html",
+      "status": 200
+    },
+    {
+      "url": "/achievements/index.html",
+      "status": 200
+    },
+    {
+      "url": "/pftb/index.html",
+      "status": 200
+    },
+    {
+      "url": "/topics/early-fluoroketones/index.html",
+      "status": 200
+    },
+    {
+      "url": "/Chen-Qingyun-AI4Science/index.html",
+      "status": 200
+    },
+    {
+      "url": "/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html",
+      "status": 200
+    },
+    {
+      "url": "/Chen-Qingyun-AI4Science/index.html",
+      "status": 200
+    },
+    {
+      "url": "/Chen-Qingyun-AI4Science/achievements/index.html",
+      "status": 200
+    },
+    {
+      "url": "/Chen-Qingyun-AI4Science/pftb/index.html",
+      "status": 200
+    },
+    {
+      "url": "/Chen-Qingyun-AI4Science/index.html",
+      "status": 200
+    },
+    {
+      "url": "/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html",
+      "status": 200
+    },
+    {
+      "url": "/Chen-Qingyun-AI4Science/index.html",
+      "status": 200
+    },
+    {
+      "url": "/Chen-Qingyun-AI4Science/achievements/index.html",
+      "status": 200
+    },
+    {
+      "url": "/Chen-Qingyun-AI4Science/pftb/index.html",
+      "status": 200
+    },
+    {
+      "url": "/Chen-Qingyun-AI4Science/index.html",
+      "status": 200
+    },
+    {
+      "url": "/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html",
+      "status": 200
+    },
+    {
+      "url": "/Chen-Qingyun-AI4Science/index.html",
+      "status": 200
+    },
+    {
+      "url": "/Chen-Qingyun-AI4Science/achievements/index.html",
+      "status": 200
+    },
+    {
+      "url": "/Chen-Qingyun-AI4Science/pftb/index.html",
+      "status": 200
+    },
+    {
+      "url": "/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html",
+      "status": 200
+    }
+  ],
+  "status": "passed"
+}

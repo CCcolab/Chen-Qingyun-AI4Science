@@ -1,0 +1,21 @@
+{
+  "rows": [
+    {
+      "reference": "pftb1966-uv-replay.json",
+      "all_fields_equal": true,
+      "byte_equal": false,
+      "equal_after_CRLF_to_LF": true,
+      "reference_bytes": 7691,
+      "generated_bytes": 7962
+    },
+    {
+      "reference": "website-candidate.json",
+      "all_fields_equal": true,
+      "byte_equal": false,
+      "equal_after_CRLF_to_LF": true,
+      "reference_bytes": 3813,
+      "generated_bytes": 3960
+    }
+  ],
+  "originals_modified": false
+}
