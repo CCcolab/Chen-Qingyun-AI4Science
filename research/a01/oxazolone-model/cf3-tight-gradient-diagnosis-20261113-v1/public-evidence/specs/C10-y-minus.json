@@ -1,0 +1,13 @@
+{
+  "stage": "TIGHT_GRADIENT",
+  "point_id": "C10-y-minus",
+  "plan_path": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/research/a01/oxazolone-model/cf3-curvature-diagnosis-20261113-v1/planned-inputs.v2.json",
+  "plan_sha256": "b00db278cc3d219b5c1aac5778ee7b36a469be7fc84d307598c7ffbe7a8524de",
+  "contract_path": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/contract.v1.json",
+  "contract_sha256": "c04697a81952d87fa7bacc2e3b07b59126650043556447a39625ec2ffa5e2a38",
+  "reservation_id": 5,
+  "shared_budget_path": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/shared-budget.json",
+  "global_started_epoch": 1794569568.9681668,
+  "global_deadline_epoch": 1794572568.9681668,
+  "expected_worker_sha256": "69d64c5a4981213dd598285ea3973ed0f32d3fae6bfb294e48fdfa0c23924bd9"
+}

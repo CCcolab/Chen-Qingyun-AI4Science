@@ -1,0 +1,11 @@
+{
+  "source": "hf.kernel post_kernel locals, full precision; no additional evaluation",
+  "orbital_gradient_backend_norm": 1.3978438137814099e-10,
+  "density_change_norm": 1.972578885874731e-10,
+  "delta_energy_Eh": 0.0,
+  "energy_Eh": -1262.3124361839941,
+  "scf_convergence_flag_at_post_kernel": true,
+  "backend_effective_final_conv_tol": 1e-11,
+  "backend_effective_final_conv_tol_grad": 3e-10,
+  "TIGHT_GRAD_CONV_TOL": true
+}

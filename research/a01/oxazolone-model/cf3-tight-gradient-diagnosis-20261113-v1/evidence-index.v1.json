@@ -1,0 +1,829 @@
+{
+  "schema_version": "1.0",
+  "task_id": "A01-M0-CF3-TIGHT-GRAD-20261113-v1",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "created_utc": "2026-11-13T12:01:31.173359+00:00",
+  "native_returncode": 0,
+  "lightweight_publication_candidates": [
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/worker_points.py",
+      "original_source_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/worker_points.py",
+      "sha256": "69d64c5a4981213dd598285ea3973ed0f32d3fae6bfb294e48fdfa0c23924bd9",
+      "size_bytes": 26564,
+      "kind": "formal",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/controller.py",
+      "original_source_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/controller.py",
+      "sha256": "1e192cd378d5913f05d8c8e69de70dc6561ceeeaa022bb9beb9e1bc00bbfe84f",
+      "size_bytes": 15668,
+      "kind": "formal",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/run_once.py",
+      "original_source_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/run_once.py",
+      "sha256": "a249efea79a24b664a4feb7039f5074f846e48a4c0b1e39cbd7b59540bd7a53d",
+      "size_bytes": 1744,
+      "kind": "formal",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/analyze_diagnosis.py",
+      "original_source_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/analyze_diagnosis.py",
+      "sha256": "c59e454492e2600a6d4bfdee44efbefe5fe768e79753b418723493a500b1dfdf",
+      "size_bytes": 32036,
+      "kind": "formal",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/contract.v1.json",
+      "original_source_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/contract.v1.json",
+      "sha256": "c04697a81952d87fa7bacc2e3b07b59126650043556447a39625ec2ffa5e2a38",
+      "size_bytes": 2643,
+      "kind": "formal",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/inputs.v1.json",
+      "original_source_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/inputs.v1.json",
+      "sha256": "9a8e783d56ab1602754f8c08372b9be648b7e363535f46fd41fc93e7f47a479a",
+      "size_bytes": 45646,
+      "kind": "formal",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/launch-manifest.v1.json",
+      "original_source_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/launch-manifest.v1.json",
+      "sha256": "d4fa69e0a34d69e77c94dc0356951be0fa146844c1a25526f0cf5afcfd96dc02",
+      "size_bytes": 1349,
+      "kind": "formal",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/PROTOCOL_zh-CN.md",
+      "original_source_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/PROTOCOL_zh-CN.md",
+      "sha256": "2034edda3a1ce4b9bf9273bcdc0b4b03d4f7e16bd8f3c2580fd4afc333152773",
+      "size_bytes": 6453,
+      "kind": "formal",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/results-v1/summary.json",
+      "original_source_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/results-v1/summary.json",
+      "sha256": "8174834bed05f474a9718964130600f2c32b347e56412e494be20fffc9f391ce",
+      "size_bytes": 187886,
+      "kind": "formal",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/results-v1/RESULTS_zh-CN.md",
+      "original_source_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/results-v1/RESULTS_zh-CN.md",
+      "sha256": "3935ea4c00fdba1e4132801bf2cade8d42e382be6047f599229fe5b42a1496c7",
+      "size_bytes": 2265,
+      "kind": "formal",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-summary.v1.json",
+      "original_source_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-summary.v1.json",
+      "sha256": "15d14c6cbbc15f824d4181dd6984c7c4047d85cfa44625ff0a376f9296903613",
+      "size_bytes": 52959,
+      "kind": "formal",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/saved-data-audit.v1.json",
+      "original_source_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/saved-data-audit.v1.json",
+      "sha256": "12701ccd4d98de131bdce78a7da67da179525053146c85830cf7a14c9265ffe5",
+      "size_bytes": 9655,
+      "kind": "formal",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/controller-result.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/controller-result.json",
+      "sha256": "21692da37307aeee9cdfbe0f41db98d2f93c942739f20ddc2183a2ba9d769024",
+      "size_bytes": 16021,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/campaign-status.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/campaign-status.json",
+      "sha256": "21692da37307aeee9cdfbe0f41db98d2f93c942739f20ddc2183a2ba9d769024",
+      "size_bytes": 16021,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/shared-budget.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/shared-budget.json",
+      "sha256": "2c6b81cc50740fda4ef7c58b01bbcc8b8422c448d8990ec865c50bcd94efd3ce",
+      "size_bytes": 7730,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/native-launch-result.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/native-launch-result.json",
+      "sha256": "622912cf2de67a383a41b7e17ab3364823fd5f3d10e4c7cf90fb8a926b8751e8",
+      "size_bytes": 355,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/center/result.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/center/result.json",
+      "sha256": "c5daa979f36751653e09bce416a69781f0f90148ee4a50e1a11973801249b0c6",
+      "size_bytes": 15346,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/center/status.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/center/status.json",
+      "sha256": "c5daa979f36751653e09bce416a69781f0f90148ee4a50e1a11973801249b0c6",
+      "size_bytes": 15346,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/center/electronic-result.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/center/electronic-result.json",
+      "sha256": "772dffd63a80b20a4e5f25f9ac7219ddbd50e12ba1c72cd8e41af6d16dcd82af",
+      "size_bytes": 11788,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/center/final-scf-diagnostics.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/center/final-scf-diagnostics.json",
+      "sha256": "e3530f9dbf1f525b7e648726c36cd2e994b9af701a7179fc93108c4cefb42961",
+      "size_bytes": 450,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/center/checkpoint-validation.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/center/checkpoint-validation.json",
+      "sha256": "aa41eda439d5aef76d3e285f6fdb9435dcb027d0df0648d3749b70cfcebc2f22",
+      "size_bytes": 436,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/center/electronic-history.jsonl",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/center/electronic-history.jsonl",
+      "sha256": "58354023a751a6c86756ce04fd579cc478e0e14415a12884658aa15032afe11a",
+      "size_bytes": 1768,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/center/input.xyz",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/center/input.xyz",
+      "sha256": "4202cdd0a6a3036ae7e1da0a646c5f0414f07a822440eb33ca944c26723adc88",
+      "size_bytes": 1409,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/center/pyscf.log",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/center/pyscf.log",
+      "sha256": "8fbbbda33b32188d4b8f2814250f63da4dc76882ba0b1fb8a7e312de3f0e9165",
+      "size_bytes": 6200,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/center/requested-spec.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/center/requested-spec.json",
+      "sha256": "610139143c7a4c73eecb6f8eb119bb1759ff64f40572b00d99837ec6c3220eb7",
+      "size_bytes": 938,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/processes/center.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/center.json",
+      "sha256": "e719be9ee5ecbd04b65cdb9180b7d2b331fc44fbba6ca09e450997f6ad103b33",
+      "size_bytes": 1115,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/processes/center.stdout.log",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/center.stdout.log",
+      "sha256": "cdd8d59e7dd9105ac676f865ee65131a2f1dc1ae03d312a0575e6a975ad33157",
+      "size_bytes": 62599,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/processes/center.stderr.log",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/center.stderr.log",
+      "sha256": "d89f959b6627955ae558c63afb6b315077a7ab742fe04a88af531be04f972769",
+      "size_bytes": 93,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/specs/center.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/specs/center.json",
+      "sha256": "610139143c7a4c73eecb6f8eb119bb1759ff64f40572b00d99837ec6c3220eb7",
+      "size_bytes": 938,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C6-y-plus/result.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-plus/result.json",
+      "sha256": "93a3782c4d3dbbca56cf253b321c5239079484155dd9b41a38d37f9e0fa5d650",
+      "size_bytes": 15274,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C6-y-plus/status.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-plus/status.json",
+      "sha256": "93a3782c4d3dbbca56cf253b321c5239079484155dd9b41a38d37f9e0fa5d650",
+      "size_bytes": 15274,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C6-y-plus/electronic-result.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-plus/electronic-result.json",
+      "sha256": "212b5bfa58fe62d1c25720c2c67d4c21108f99031cbdf224155127fc48482660",
+      "size_bytes": 11765,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C6-y-plus/final-scf-diagnostics.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-plus/final-scf-diagnostics.json",
+      "sha256": "a99940c74f485dc4362e7bc1a1491de8a86833cab03cfe8682c4fd86c91fc77c",
+      "size_bytes": 431,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C6-y-plus/checkpoint-validation.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-plus/checkpoint-validation.json",
+      "sha256": "615dc46b1b5c3b2f2f2f7757253e8f11b571977b5ce44c033b884ca6ae33e631",
+      "size_bytes": 436,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C6-y-plus/electronic-history.jsonl",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-plus/electronic-history.jsonl",
+      "sha256": "f35511531b2371d0e097a4f03f2845881f142dca30b43c9417cc24a352d9a63a",
+      "size_bytes": 10692,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C6-y-plus/input.xyz",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-plus/input.xyz",
+      "sha256": "5957bc1df57bca7914c47e58190666db27802147e69f58451ade1be36173a498",
+      "size_bytes": 1409,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C6-y-plus/pyscf.log",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-plus/pyscf.log",
+      "sha256": "442001a471f02591ffc5038f1b33fa4e5e4a3714d21ee94afcab3278b7ab8b3a",
+      "size_bytes": 16514,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C6-y-plus/requested-spec.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-plus/requested-spec.json",
+      "sha256": "28953bb421bcf4122ac4b992bfef53f44b170f4b42465a7ad4c966d9821ff6f6",
+      "size_bytes": 941,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/processes/C6-y-plus.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C6-y-plus.json",
+      "sha256": "400edfa72072d9ccd448fa9f4302e573c8e7415d804f945588c9dc2715054620",
+      "size_bytes": 1130,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/processes/C6-y-plus.stdout.log",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C6-y-plus.stdout.log",
+      "sha256": "00e1a6d6e0e86d9121726d9a78daf80518b2ef18e58f709e71164f320cba3a58",
+      "size_bytes": 62605,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/processes/C6-y-plus.stderr.log",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C6-y-plus.stderr.log",
+      "sha256": "d89f959b6627955ae558c63afb6b315077a7ab742fe04a88af531be04f972769",
+      "size_bytes": 93,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/specs/C6-y-plus.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/specs/C6-y-plus.json",
+      "sha256": "28953bb421bcf4122ac4b992bfef53f44b170f4b42465a7ad4c966d9821ff6f6",
+      "size_bytes": 941,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C6-y-minus/result.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-minus/result.json",
+      "sha256": "f6e18f681eea3ca2ad6fa61f4f7f061aae3daf3675a08c93bd68b7f7cab684b3",
+      "size_bytes": 15304,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C6-y-minus/status.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-minus/status.json",
+      "sha256": "f6e18f681eea3ca2ad6fa61f4f7f061aae3daf3675a08c93bd68b7f7cab684b3",
+      "size_bytes": 15304,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C6-y-minus/electronic-result.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-minus/electronic-result.json",
+      "sha256": "3502de8a6869a5cded76ca5c41317744f6c8ac0e52ab729b79ad1f3f48028a1b",
+      "size_bytes": 11788,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C6-y-minus/final-scf-diagnostics.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-minus/final-scf-diagnostics.json",
+      "sha256": "a7fce2064d51e599ea7d04b3c0daf155bbe2f855b0864e613fa820e377f86d93",
+      "size_bytes": 447,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C6-y-minus/checkpoint-validation.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-minus/checkpoint-validation.json",
+      "sha256": "615dc46b1b5c3b2f2f2f7757253e8f11b571977b5ce44c033b884ca6ae33e631",
+      "size_bytes": 436,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C6-y-minus/electronic-history.jsonl",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-minus/electronic-history.jsonl",
+      "sha256": "fe19cf4f3089e54a9d356bc50cb5f335d02da5f8aabb4faef2c18de1b3d41979",
+      "size_bytes": 8697,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C6-y-minus/input.xyz",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-minus/input.xyz",
+      "sha256": "d6df2804d8dd515dbb3642fbcebc56bb04b668effb7381e3dde0c31578c51ccb",
+      "size_bytes": 1409,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C6-y-minus/pyscf.log",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-minus/pyscf.log",
+      "sha256": "750b4066752e89f9511f549bfd2e27700f960c77778ecda0faa2a35b7f7952fb",
+      "size_bytes": 14291,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C6-y-minus/requested-spec.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-minus/requested-spec.json",
+      "sha256": "42cb24789dd6a22b6d77a7ce1fbbaeb249f2985d7fff60a7892e1b5202188463",
+      "size_bytes": 942,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/processes/C6-y-minus.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C6-y-minus.json",
+      "sha256": "629bde01b28d2f5c8916986b55adc85f12ec7feff390cfc277470c00999231a2",
+      "size_bytes": 1134,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/processes/C6-y-minus.stdout.log",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C6-y-minus.stdout.log",
+      "sha256": "489b054774f9364de215018fd75fd70337e7344432e1fb17f423711b08f59fec",
+      "size_bytes": 62607,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/processes/C6-y-minus.stderr.log",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C6-y-minus.stderr.log",
+      "sha256": "d89f959b6627955ae558c63afb6b315077a7ab742fe04a88af531be04f972769",
+      "size_bytes": 93,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/specs/C6-y-minus.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/specs/C6-y-minus.json",
+      "sha256": "42cb24789dd6a22b6d77a7ce1fbbaeb249f2985d7fff60a7892e1b5202188463",
+      "size_bytes": 942,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C10-y-plus/result.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-plus/result.json",
+      "sha256": "540904123ee6d4e4ed0f99552a5965622f3709e18a01a12ac16e8bbeb242785e",
+      "size_bytes": 15301,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C10-y-plus/status.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-plus/status.json",
+      "sha256": "540904123ee6d4e4ed0f99552a5965622f3709e18a01a12ac16e8bbeb242785e",
+      "size_bytes": 15301,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C10-y-plus/electronic-result.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-plus/electronic-result.json",
+      "sha256": "e4dbeb9981e66706f1a2956e3f73dde34afde919fbda2dbfa82753753e8fd117",
+      "size_bytes": 11791,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C10-y-plus/final-scf-diagnostics.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-plus/final-scf-diagnostics.json",
+      "sha256": "edad86c6774a7aade78d645f21dc0d77984c9ffbdd2d3412f418e78bd6ab1c80",
+      "size_bytes": 448,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C10-y-plus/checkpoint-validation.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-plus/checkpoint-validation.json",
+      "sha256": "615dc46b1b5c3b2f2f2f7757253e8f11b571977b5ce44c033b884ca6ae33e631",
+      "size_bytes": 436,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C10-y-plus/electronic-history.jsonl",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-plus/electronic-history.jsonl",
+      "sha256": "4ec0f7c85c0e09835e7e5f93e8e12fbbb007494d12f00ee707fb572225a7549d",
+      "size_bytes": 11076,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C10-y-plus/input.xyz",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-plus/input.xyz",
+      "sha256": "0000ca08076b4527725f58205d4729287808492bb7a832798886abee73ccb982",
+      "size_bytes": 1409,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C10-y-plus/pyscf.log",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-plus/pyscf.log",
+      "sha256": "5325b13c12d9e066e01e4a8439ce19250c7b17e4515778b60c9599e4aea35a3b",
+      "size_bytes": 17031,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C10-y-plus/requested-spec.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-plus/requested-spec.json",
+      "sha256": "f07075c9db3889a9edb9f966744dd34abd3917d77b9cd5d6c2b7d3a5976bb93b",
+      "size_bytes": 942,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/processes/C10-y-plus.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C10-y-plus.json",
+      "sha256": "9a43f3e424e56b1a5b30c14188ee2f52ca1e6b46fade3558b5ded3e8f8ced1ff",
+      "size_bytes": 1136,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/processes/C10-y-plus.stdout.log",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C10-y-plus.stdout.log",
+      "sha256": "39219dd17065d21f7c53c0e39f37e0f10a640358fb6cb1a0cb40ab30d82c2a10",
+      "size_bytes": 62606,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/processes/C10-y-plus.stderr.log",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C10-y-plus.stderr.log",
+      "sha256": "d89f959b6627955ae558c63afb6b315077a7ab742fe04a88af531be04f972769",
+      "size_bytes": 93,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/specs/C10-y-plus.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/specs/C10-y-plus.json",
+      "sha256": "f07075c9db3889a9edb9f966744dd34abd3917d77b9cd5d6c2b7d3a5976bb93b",
+      "size_bytes": 942,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C10-y-minus/result.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-minus/result.json",
+      "sha256": "a867abb6a299ba28e2f97f704a9bb3faf27f15eb60d2180bb8f8e301340d4e94",
+      "size_bytes": 15311,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C10-y-minus/status.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-minus/status.json",
+      "sha256": "a867abb6a299ba28e2f97f704a9bb3faf27f15eb60d2180bb8f8e301340d4e94",
+      "size_bytes": 15311,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C10-y-minus/electronic-result.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-minus/electronic-result.json",
+      "sha256": "a5568df7af38d99fc7319f6bbd8c93bbf990b94823bdd87f9ed3bdd48dc30ef3",
+      "size_bytes": 11798,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C10-y-minus/final-scf-diagnostics.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-minus/final-scf-diagnostics.json",
+      "sha256": "5a81759e03b92d5ce65897d3e78d77e9a6914af2ebda1f00b6cb33f1defb89c6",
+      "size_bytes": 450,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C10-y-minus/checkpoint-validation.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-minus/checkpoint-validation.json",
+      "sha256": "615dc46b1b5c3b2f2f2f7757253e8f11b571977b5ce44c033b884ca6ae33e631",
+      "size_bytes": 436,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C10-y-minus/electronic-history.jsonl",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-minus/electronic-history.jsonl",
+      "sha256": "2d58069797640ab469a4a0fcba6d05d262145670598fd351882f709c66470117",
+      "size_bytes": 10886,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C10-y-minus/input.xyz",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-minus/input.xyz",
+      "sha256": "41b0ddaeef123f1f743da43db36fe0232e292da66d469087ffbf86fa39809e30",
+      "size_bytes": 1409,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C10-y-minus/pyscf.log",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-minus/pyscf.log",
+      "sha256": "675fcdafcd37c15f39098ba9c5aa99033cf8bb775a9fb97ca8822dbe23464705",
+      "size_bytes": 16816,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/points/C10-y-minus/requested-spec.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-minus/requested-spec.json",
+      "sha256": "10e213df91fd60b05dac885f15bfdcb9bac6c20e3060d6c5d281f444f6519997",
+      "size_bytes": 943,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/processes/C10-y-minus.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C10-y-minus.json",
+      "sha256": "6ea8bae4c68fbb91c3b0a75bcbe45a215fdcaee3f5d11b2563417dc5f5892a0c",
+      "size_bytes": 1140,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/processes/C10-y-minus.stdout.log",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C10-y-minus.stdout.log",
+      "sha256": "3a0f7eec880207fc386153339304ec19e1a1082e366c3d0c9d614f3057782cb5",
+      "size_bytes": 62609,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/processes/C10-y-minus.stderr.log",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C10-y-minus.stderr.log",
+      "sha256": "d89f959b6627955ae558c63afb6b315077a7ab742fe04a88af531be04f972769",
+      "size_bytes": 93,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/specs/C10-y-minus.json",
+      "original_source_path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/specs/C10-y-minus.json",
+      "sha256": "10e213df91fd60b05dac885f15bfdcb9bac6c20e3060d6c5d281f444f6519997",
+      "size_bytes": 943,
+      "kind": "new_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/baseline-light/old-A/center.result.json",
+      "original_source_path": "scratch/m0-cf3-point-diagnosis-20261113-v1/points/A-center/result.json",
+      "sha256": "a95fda9ad8dcc8d91d4924429de9cd5a5ccfd0521e716bb1f75a08045a2823fb",
+      "size_bytes": 13125,
+      "kind": "baseline_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/baseline-light/old-v3/center.result.json",
+      "original_source_path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0001/result.json",
+      "sha256": "76b54b6d021f132f34e527dbfefdee54d4015990eacf34d54281a558a2f37360",
+      "size_bytes": 6557,
+      "kind": "baseline_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/baseline-light/old-A/C6-y-plus.result.json",
+      "original_source_path": "scratch/m0-cf3-point-diagnosis-20261113-v1/points/A-C6-y-plus/result.json",
+      "sha256": "a9b57d2a3c9a12308110b4eff2ce28747fb2eccf38041495350eab61ded506c2",
+      "size_bytes": 13109,
+      "kind": "baseline_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/baseline-light/old-v3/C6-y-plus.result.json",
+      "original_source_path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0034/result.json",
+      "sha256": "c19b9799582876491eda18390c0faf6963ef16cdf4420a91368c633fcc2b92e3",
+      "size_bytes": 6551,
+      "kind": "baseline_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/baseline-light/old-A/C6-y-minus.result.json",
+      "original_source_path": "scratch/m0-cf3-point-diagnosis-20261113-v1/points/A-C6-y-minus/result.json",
+      "sha256": "9e6404daddabf58191fdcacf0486ce60b2bd84021d3ccae70e291fedcaadf43f",
+      "size_bytes": 13110,
+      "kind": "baseline_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/baseline-light/old-v3/C6-y-minus.result.json",
+      "original_source_path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0035/result.json",
+      "sha256": "05fd229cf851a11d92111b4fcc4daacf014fe9eaded9a29fcd837200b3f9b688",
+      "size_bytes": 6565,
+      "kind": "baseline_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/baseline-light/old-A/C10-y-plus.result.json",
+      "original_source_path": "scratch/m0-cf3-point-diagnosis-20261113-v1/points/A-C10-y-plus/result.json",
+      "sha256": "29eaddf6d3dff9a13552dc76749e326c7ceb08c6149ee8d61aa9210d2993d7e7",
+      "size_bytes": 13118,
+      "kind": "baseline_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/baseline-light/old-v3/C10-y-plus.result.json",
+      "original_source_path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0058/result.json",
+      "sha256": "129090305857ffa6a2dfb2169a1817ca7a78323aa464a44d2b4baebfdfe0a569",
+      "size_bytes": 6564,
+      "kind": "baseline_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/baseline-light/old-A/C10-y-minus.result.json",
+      "original_source_path": "scratch/m0-cf3-point-diagnosis-20261113-v1/points/A-C10-y-minus/result.json",
+      "sha256": "20ac416628b0b768d3628e744af1e4380fe0061782dd1d86f2127216d44a7fed",
+      "size_bytes": 13127,
+      "kind": "baseline_raw",
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-evidence/baseline-light/old-v3/C10-y-minus.result.json",
+      "original_source_path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0059/result.json",
+      "sha256": "5d47873a95485c430571e65be65a3ef6e7cdbe1c6d2a0708c1a9b1d34bb6474a",
+      "size_bytes": 6565,
+      "kind": "baseline_raw",
+      "copied_without_modification": true
+    }
+  ],
+  "source_map": "public-evidence/source-map.v1.json",
+  "local_only_archive": {
+    "path": "scratch/m0-cf3-tight-gradient-archive-tools-20261113-v1/terminal-archive-v1/review-bundle.v1.zip",
+    "sha256": "4f8ea9cb23450d3d213fcc724c7dd2f79b3de460990baab0245d7d3818e17b67",
+    "size_bytes": 12109483,
+    "distribution": "local_only",
+    "member_count": 115,
+    "contains_checkpoints": true,
+    "contains_seed_snapshots": true,
+    "published_to_GitHub": false
+  },
+  "local_only_sources": [
+    {
+      "path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/center/gradient.npy",
+      "sha256": "ff58852a6c7a7e99a6a9d3aab79d2490e1ed7ec1b8fce0a9710b8feb58565544",
+      "size_bytes": 752
+    },
+    {
+      "path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-plus/gradient.npy",
+      "sha256": "9bb6b1f05c67933e58fb0d38a1587bfcace3fcf95a8124e430cce94cdd041302",
+      "size_bytes": 752
+    },
+    {
+      "path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-minus/gradient.npy",
+      "sha256": "3fcee2f46a3dee598e0ae75c3eeb6647243b163cc670c391adf6f215238c068c",
+      "size_bytes": 752
+    },
+    {
+      "path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-plus/gradient.npy",
+      "sha256": "8e0af9f25472383090a405c0e78a17fc02cd18e8e899e83f1b9a0014aed932af",
+      "size_bytes": 752
+    },
+    {
+      "path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-minus/gradient.npy",
+      "sha256": "81eea5f26f93d727e8995ac8c184a87bb631814793496273d822fc198010ba87",
+      "size_bytes": 752
+    },
+    {
+      "path": "scratch/m0-cf3-point-diagnosis-20261113-v1/points/A-center/gradient.npy",
+      "sha256": "dd38242f65d72c7c60459884f641d8b09ecf6d11ff476694650e00e2b887d7a4",
+      "size_bytes": 752
+    },
+    {
+      "path": "scratch/m0-cf3-point-diagnosis-20261113-v1/points/A-C6-y-plus/gradient.npy",
+      "sha256": "9c614bfdf78e27b5b1e2a2dd7017870f6ad21183c95e0a7c859122061dd6c9c6",
+      "size_bytes": 752
+    },
+    {
+      "path": "scratch/m0-cf3-point-diagnosis-20261113-v1/points/A-C6-y-minus/gradient.npy",
+      "sha256": "8eae0ce6e42d9190da307e02b659fa62c4699bb51818f21fafefe0d376d515cd",
+      "size_bytes": 752
+    },
+    {
+      "path": "scratch/m0-cf3-point-diagnosis-20261113-v1/points/A-C10-y-plus/gradient.npy",
+      "sha256": "ca6e5190f3ecb90e89fd5f6ccab660f0ec2afd791d57ad4e1acd71f804214891",
+      "size_bytes": 752
+    },
+    {
+      "path": "scratch/m0-cf3-point-diagnosis-20261113-v1/points/A-C10-y-minus/gradient.npy",
+      "sha256": "67ef6548a17398fe31c4d9c8b4e703f716f06014d75aeeeff7563e70214d4600",
+      "size_bytes": 752
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0001/gradient.npy",
+      "sha256": "a705e8a773c164c585dcaf3ef8cdd980d15861c7ed3609f37dca09558c6725dd",
+      "size_bytes": 752
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0034/gradient.npy",
+      "sha256": "33b488b4ba1b2910b9fc2a759e26b8374be5f8f41ccf8e519f24f7db3d98100c",
+      "size_bytes": 752
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0035/gradient.npy",
+      "sha256": "145e5f3e31fa9ff815c5bfb569c77b916000f1132362801e16ff3ba76663d826",
+      "size_bytes": 752
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0058/gradient.npy",
+      "sha256": "1dd8dcc736218096f27daa1a75cda409c3ca5cb770496f14e39c87c8251e9261",
+      "size_bytes": 752
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0059/gradient.npy",
+      "sha256": "fb6fa4476511da70138186792d050794047ceb1772bed0f6136bad1eda9ab804",
+      "size_bytes": 752
+    }
+  ],
+  "scientific_boundary": "No mixed/new full Hessian, full curvature/minimum qualification, spectrum, saddle, IRC, barrier, or mechanism; unknown is not zero",
+  "execution_commit": null,
+  "publication_note": "Stage archive/publication commits do not identify the execution-time code; frozen source SHA records do."
+}

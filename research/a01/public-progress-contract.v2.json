@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "contract_id": "A01-PUBLIC-RESEARCH-PROGRESS-20261113-v2",
+  "publication_kind": "a01_research_progress",
+  "stage_kind": "cf3_scf_precision_reciprocity_diagnosis",
+  "purpose": "Publish the actual same-M0 center nuclear gradient and four-displacement SCF-precision diagnosis without granting complete-curvature, barrier or mechanism qualification",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "human_scientific_signoff": "absent",
+  "data_path": "research/a01/public-progress.v2.json",
+  "actual_result_source": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-summary.v1.json",
+  "previous_public_progress": "research/a01/public-progress.v1.json",
+  "unknown_numeric_policy": "null with reason; an unavailable or uncomputed value is never replaced by zero",
+  "scientific_boundaries": {
+    "authorized_system": "Same neutral restricted 26-atom CF3 substrate of M0; PBE0/def2-SVP/ddCOSMO benzene",
+    "authorized_points": "Fresh center plus C6-y and C10-y positive/negative displacements at h=0.0005 bohr",
+    "internal_SCF_energy_target_Eh": 1e-12,
+    "internal_SCF_orbital_target": 1e-10,
+    "actual_final_orbital_norm_max": 1e-9,
+    "local_columns_are_complete_Hessian": false,
+    "new_frequencies_generated": false,
+    "CF3_full_curvature": "not_qualified",
+    "CH3_result_replaced": false,
+    "root_cause": "unknown",
+    "DFT_barrier": "not_qualified",
+    "mechanism_confirmed": false,
+    "new_experiment": false,
+    "novelty_claimed": false,
+    "published_authorship": "Original chemical findings and observations retain their original authors"
+  },
+  "evidence_identity": {
+    "execution_commit": null,
+    "execution_identity": "Actual worker, controller, protocol and analyzer SHA256",
+    "S3": "New scientific evidence and unlinked progress edition, preserving prior S1/S2 bytes",
+    "S4": "Current registry, fixed S3 links and chained page revision; not the execution commit",
+    "fixed_URL_policy": "Use full S3 SHA for the new edition's evidence blob URLs; local binary archives have no invented download URL",
+    "no_self_reference": "The current registry contains paths; the page revision binds progress bytes and the preceding revision, never itself or its own future commit"
+  },
+  "website": {
+    "topic_path": "site/topics/early-fluoroketones/index.html",
+    "renderer": "scripts/render_a01_progress.py",
+    "static_HTML_and_embedded_data_must_match_source": true,
+    "Pages_member_set_expanded_by_this_contract": false,
+    "old_YouMind_baseline_retained": true,
+    "protected_PFtB_and_two_original_JSON_and_51_sources_retained": true,
+    "immutable_prior_progress_and_revision_retained": true
+  },
+  "PF1966_UV_T1_candidate_contract_modified": false,
+  "approved_scientific_result_generated": false,
+  "new_quantum_calls_by_publication": 0,
+  "local_test_distribution_policy": "tests/ and test/ remain local; publication checks execute no DFT or model APIs and claim no distributed unit tests"
+}

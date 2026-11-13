@@ -11,7 +11,8 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import quote, urlencode, urlsplit
 from urllib.request import Request, urlopen
 
-from a01_publication_contract import PROGRESS_PATH, TOPIC_PATH, effective_website_entries, read_json
+from a01_publication_contract import (PROGRESS_PATH, PROGRESS_V2_PATH, CURRENT_PATH,
+    TOPIC_PATH, current_progress_path, effective_website_entries, read_json)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -115,7 +116,7 @@ def main() -> int:
 
         if revision["present"]:
             from check_site import Page
-            progress = read_json(ROOT / PROGRESS_PATH)
+            progress = read_json(ROOT / current_progress_path(ROOT))
             online_topic = Page(TOPIC_PATH)
             online_topic.feed(html_bodies.get(TOPIC_PATH, b"").decode("utf-8"))
             online_topic.close()
@@ -181,7 +182,8 @@ def main() -> int:
 
         # These repository-only materials must not be part of the Pages artifact.
         excluded = ["results/website-candidate.json", "validation/",
-                    "upstream/chen-qingyun-a2-citations-candidate.zip", PROGRESS_PATH]
+                    "upstream/chen-qingyun-a2-citations-candidate.zip", PROGRESS_PATH,
+                    PROGRESS_V2_PATH, CURRENT_PATH]
         for name in excluded:
             check, _ = fetch(url_for(name))
             check.update(path=name, expected_status=404)

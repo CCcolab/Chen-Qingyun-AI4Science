@@ -1,0 +1,319 @@
+
+
+******** <class 'pyscf.solvent._attach_solvent.ddCOSMODFRKS'> ********
+method = ddCOSMODFRKS
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+diis_damp = 0
+SCF conv_tol = 1e-12
+SCF conv_tol_grad = 1e-10
+SCF max_cycles = 120
+direct_scf = False
+chkfile to save SCF result = /mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-plus/scf.chk
+max_memory 4000 MB (current use 117 MB)
+XC library pyscf.dft.libxc version 7.0.0
+    S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+XC functionals = PBE0
+    C. Adamo and V. Barone.,  J. Chem. Phys. 110, 6158 (1999)
+    M. Ernzerhof and G. E. Scuseria.,  J. Chem. Phys. 110, 5029 (1999)
+radial grids: 
+    Treutler-Ahlrichs [JCP 102, 346 (1995); DOI:10.1063/1.469408] (M4) radial grids
+    
+becke partition: Becke, JCP 88, 2547 (1988); DOI:10.1063/1.454033
+pruning grids: <function nwchem_prune at 0x7f2f6d166b60>
+grids dens level: 2
+symmetrized grids: False
+atomic radii adjust function: <function treutler_atomic_radii_adjust at 0x7f2f6d167100>
+small_rho_cutoff = 0
+******** <class 'pyscf.solvent.ddcosmo.ddCOSMO'> ********
+lebedev_order = 17 (110 grids per sphere)
+lmax = 6
+eta = 0.1
+eps = 2.2706
+frozen = False
+equilibrium_solvation = True
+radial grids: 
+    Treutler-Ahlrichs [JCP 102, 346 (1995); DOI:10.1063/1.469408] (M4) radial grids
+    
+becke partition: Becke, JCP 88, 2547 (1988); DOI:10.1063/1.454033
+pruning grids: <function nwchem_prune at 0x7f2f6d166b60>
+grids dens level: 1
+symmetrized grids: False
+atomic radii adjust function: <function treutler_atomic_radii_adjust at 0x7f2f6d167100>
+Overwritten attributes  post_kernel  of <class 'pyscf.solvent._attach_solvent.ddCOSMODFRKS'>
+tot grids = 264392
+******** <class 'pyscf.df.df.DF'> ********
+auxbasis = None
+max_memory = 4000
+tot grids = 121800
+ddCOSMO E_diel = -0.0052741682105892
+Solvent Energy = -0.0052741682105892
+init E= -1262.31244561635
+  HOMO = -0.278728397937443  LUMO = -0.123849012431116  gap/eV = 4.21448
+ddCOSMO E_diel = -0.00527428962949702
+Solvent Energy = -0.00527428962949702
+cycle= 1 E= -1262.31243617896  delta_E= 9.44e-06  |g|= 7.73e-05  |ddm|= 0.00106
+  HOMO = -0.27873029658342  LUMO = -0.123850200590563  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527451672846875
+Solvent Energy = -0.00527451672846875
+cycle= 2 E= -1262.31243617898  delta_E= -2.59e-11  |g|= 8.71e-05  |ddm|= 0.000237
+  HOMO = -0.278730535810649  LUMO = -0.123850680771121  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527435418819863
+Solvent Energy = -0.00527435418819863
+cycle= 3 E= -1262.31243618079  delta_E= -1.81e-09  |g|= 1.65e-05  |ddm|= 0.000104
+  HOMO = -0.278730924139777  LUMO = -0.123850837890712  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527441578960005
+Solvent Energy = -0.00527441578960005
+cycle= 4 E= -1262.31243618084  delta_E= -4.82e-11  |g|= 8.51e-06  |ddm|= 2.39e-05
+  HOMO = -0.278730663291786  LUMO = -0.12385074074581  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438187510134
+Solvent Energy = -0.00527438187510134
+cycle= 5 E= -1262.31243618085  delta_E= -8.64e-12  |g|= 1.96e-06  |ddm|= 1.03e-05
+  HOMO = -0.278730631563561  LUMO = -0.123850718772378  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527439008327772
+Solvent Energy = -0.00527439008327772
+cycle= 6 E= -1262.31243618086  delta_E= -4.09e-12  |g|= 9.18e-07  |ddm|= 2.85e-06
+  HOMO = -0.278730665545827  LUMO = -0.123850732339615  gap/eV = 4.21450
+ddCOSMO E_diel = -0.0052743871839372
+Solvent Energy = -0.0052743871839372
+cycle= 7 E= -1262.31243618085  delta_E= 9.09e-13  |g|= 2.36e-07  |ddm|= 1.04e-06
+  HOMO = -0.278730668032491  LUMO = -0.123850735883747  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438846178147
+Solvent Energy = -0.00527438846178147
+cycle= 8 E= -1262.31243618086  delta_E= -3.64e-12  |g|= 8.09e-08  |ddm|= 3.13e-07
+  HOMO = -0.278730668031063  LUMO = -0.123850737289156  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438797144662
+Solvent Energy = -0.00527438797144662
+cycle= 9 E= -1262.31243618086  delta_E= -9.09e-13  |g|= 1.86e-08  |ddm|= 8.78e-08
+  HOMO = -0.278730667814297  LUMO = -0.123850737092069  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438799287686
+Solvent Energy = -0.00527438799287686
+cycle= 10 E= -1262.31243618086  delta_E= 2.27e-12  |g|= 1.23e-08  |ddm|= 1.16e-08
+  HOMO = -0.278730667643887  LUMO = -0.123850736872989  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438800054683
+Solvent Energy = -0.00527438800054683
+cycle= 11 E= -1262.31243618086  delta_E= -2.27e-12  |g|= 8.59e-09  |ddm|= 9.3e-09
+  HOMO = -0.278730667571176  LUMO = -0.123850736725194  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438801662872
+Solvent Energy = -0.00527438801662872
+cycle= 12 E= -1262.31243618086  delta_E=    0  |g|= 5.4e-09  |ddm|= 4.35e-09
+  HOMO = -0.27873066746551  LUMO = -0.123850736613061  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438801480107
+Solvent Energy = -0.00527438801480107
+cycle= 13 E= -1262.31243618086  delta_E= 1.82e-12  |g|= 5.66e-09  |ddm|= 3.38e-09
+  HOMO = -0.27873066753381  LUMO = -0.123850736597731  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438802963055
+Solvent Energy = -0.00527438802963055
+cycle= 14 E= -1262.31243618086  delta_E= -9.09e-13  |g|= 3.39e-09  |ddm|= 4.09e-09
+  HOMO = -0.278730667357389  LUMO = -0.123850736491311  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438804378898
+Solvent Energy = -0.00527438804378898
+cycle= 15 E= -1262.31243618086  delta_E=    0  |g|= 6.29e-09  |ddm|= 5.31e-09
+  HOMO = -0.278730667484984  LUMO = -0.123850736392732  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438804316953
+Solvent Energy = -0.00527438804316953
+cycle= 16 E= -1262.31243618085  delta_E= 3.18e-12  |g|= 5.1e-09  |ddm|= 9.4e-09
+  HOMO = -0.2787306674834  LUMO = -0.123850736350806  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438808715458
+Solvent Energy = -0.00527438808715458
+cycle= 17 E= -1262.31243618086  delta_E= -1.36e-12  |g|= 8.24e-09  |ddm|= 8.31e-09
+  HOMO = -0.278730667549757  LUMO = -0.123850736453698  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438805987892
+Solvent Energy = -0.00527438805987892
+cycle= 18 E= -1262.31243618085  delta_E= 1.36e-12  |g|= 4.06e-09  |ddm|= 4.72e-09
+  HOMO = -0.278730667580898  LUMO = -0.123850736532151  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438804450398
+Solvent Energy = -0.00527438804450398
+cycle= 19 E= -1262.31243618085  delta_E= 9.09e-13  |g|= 2.39e-09  |ddm|= 2.48e-09
+  HOMO = -0.278730667589961  LUMO = -0.123850736580661  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438803489068
+Solvent Energy = -0.00527438803489068
+cycle= 20 E= -1262.31243618086  delta_E= -3.18e-12  |g|= 1.56e-09  |ddm|= 1.73e-09
+  HOMO = -0.278730667589985  LUMO = -0.123850736605762  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438803093285
+Solvent Energy = -0.00527438803093285
+cycle= 21 E= -1262.31243618086  delta_E= 4.55e-13  |g|= 1.54e-09  |ddm|= 8.96e-10
+  HOMO = -0.278730667572662  LUMO = -0.123850736614053  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438802701303
+Solvent Energy = -0.00527438802701303
+cycle= 22 E= -1262.31243618086  delta_E= -4.55e-13  |g|= 1.94e-09  |ddm|= 1.07e-09
+  HOMO = -0.278730667573935  LUMO = -0.123850736621293  gap/eV = 4.21450
+ddCOSMO E_diel = -0.005274388027527
+Solvent Energy = -0.005274388027527
+cycle= 23 E= -1262.31243618086  delta_E= -4.55e-13  |g|= 1.85e-09  |ddm|= 5.07e-10
+  HOMO = -0.278730667552109  LUMO = -0.123850736616244  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438803223351
+Solvent Energy = -0.00527438803223351
+cycle= 24 E= -1262.31243618085  delta_E= 3.64e-12  |g|= 1.89e-09  |ddm|= 1.28e-09
+  HOMO = -0.278730667561186  LUMO = -0.123850736604577  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438803346922
+Solvent Energy = -0.00527438803346922
+cycle= 25 E= -1262.31243618085  delta_E= -9.09e-13  |g|= 1.51e-09  |ddm|= 1.33e-09
+  HOMO = -0.278730667550501  LUMO = -0.123850736575756  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438804524434
+Solvent Energy = -0.00527438804524434
+cycle= 26 E= -1262.31243618086  delta_E= -9.09e-13  |g|= 1.29e-09  |ddm|= 1.77e-09
+  HOMO = -0.278730667549846  LUMO = -0.123850736559572  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438804811268
+Solvent Energy = -0.00527438804811268
+cycle= 27 E= -1262.31243618086  delta_E= -1.36e-12  |g|= 1.45e-09  |ddm|= 6.85e-10
+  HOMO = -0.278730667553937  LUMO = -0.123850736554751  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438804689255
+Solvent Energy = -0.00527438804689255
+cycle= 28 E= -1262.31243618086  delta_E= -9.09e-13  |g|= 1.22e-09  |ddm|= 4.66e-10
+  HOMO = -0.278730667558078  LUMO = -0.123850736556662  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438804386206
+Solvent Energy = -0.00527438804386206
+cycle= 29 E= -1262.31243618086  delta_E= 9.09e-13  |g|= 8.4e-10  |ddm|= 4.52e-10
+  HOMO = -0.278730667561342  LUMO = -0.123850736561671  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438804074283
+Solvent Energy = -0.00527438804074283
+cycle= 30 E= -1262.31243618086  delta_E= 4.55e-13  |g|= 5.6e-10  |ddm|= 4.22e-10
+  HOMO = -0.278730667560693  LUMO = -0.123850736567071  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438803749336
+Solvent Energy = -0.00527438803749336
+cycle= 31 E= -1262.31243618086  delta_E= 1.36e-12  |g|= 5.4e-10  |ddm|= 4.7e-10
+  HOMO = -0.278730667561168  LUMO = -0.123850736573266  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438803521965
+Solvent Energy = -0.00527438803521965
+cycle= 32 E= -1262.31243618086  delta_E= -2.27e-12  |g|= 7.06e-10  |ddm|= 3.42e-10
+  HOMO = -0.278730667559164  LUMO = -0.123850736578587  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438803486612
+Solvent Energy = -0.00527438803486612
+cycle= 33 E= -1262.31243618085  delta_E= 3.18e-12  |g|= 6.86e-10  |ddm|= 3.24e-10
+  HOMO = -0.278730667561567  LUMO = -0.123850736583791  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438803463584
+Solvent Energy = -0.00527438803463584
+cycle= 34 E= -1262.31243618086  delta_E= -1.36e-12  |g|= 7.12e-10  |ddm|= 2.71e-10
+  HOMO = -0.278730667560819  LUMO = -0.123850736584092  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438803718441
+Solvent Energy = -0.00527438803718441
+cycle= 35 E= -1262.31243618085  delta_E= 9.09e-13  |g|= 3.94e-10  |ddm|= 3.79e-10
+  HOMO = -0.278730667559692  LUMO = -0.123850736581643  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438803974179
+Solvent Energy = -0.00527438803974179
+cycle= 36 E= -1262.31243618085  delta_E= 4.55e-13  |g|= 3.21e-10  |ddm|= 3.45e-10
+  HOMO = -0.278730667559367  LUMO = -0.123850736578523  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438804135228
+Solvent Energy = -0.00527438804135228
+cycle= 37 E= -1262.31243618086  delta_E= -3.64e-12  |g|= 4.33e-10  |ddm|= 2.28e-10
+  HOMO = -0.278730667559618  LUMO = -0.123850736575808  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438804184315
+Solvent Energy = -0.00527438804184315
+cycle= 38 E= -1262.31243618086  delta_E= -4.55e-13  |g|= 4.53e-10  |ddm|= 1.24e-10
+  HOMO = -0.27873066756015  LUMO = -0.123850736573917  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438804147067
+Solvent Energy = -0.00527438804147067
+cycle= 39 E= -1262.31243618086  delta_E= -4.55e-13  |g|= 3.75e-10  |ddm|= 1.15e-10
+  HOMO = -0.278730667560088  LUMO = -0.123850736572781  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438804042514
+Solvent Energy = -0.00527438804042514
+cycle= 40 E= -1262.31243618086  delta_E= 2.73e-12  |g|= 2.32e-10  |ddm|= 1.63e-10
+  HOMO = -0.27873066755992  LUMO = -0.123850736572541  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438803912554
+Solvent Energy = -0.00527438803912554
+cycle= 41 E= -1262.31243618086  delta_E=    0  |g|= 1.65e-10  |ddm|= 1.84e-10
+  HOMO = -0.278730667559403  LUMO = -0.123850736573001  gap/eV = 4.21450
+ddCOSMO E_diel = -0.0052743880381358
+Solvent Energy = -0.0052743880381358
+cycle= 42 E= -1262.31243618085  delta_E= 1.36e-12  |g|= 2.18e-10  |ddm|= 1.43e-10
+  HOMO = -0.278730667559755  LUMO = -0.123850736574436  gap/eV = 4.21450
+ddCOSMO E_diel = -0.0052743880373537
+Solvent Energy = -0.0052743880373537
+cycle= 43 E= -1262.31243618085  delta_E=    0  |g|= 2.96e-10  |ddm|= 1.16e-10
+  HOMO = -0.27873066755994  LUMO = -0.123850736575849  gap/eV = 4.21450
+ddCOSMO E_diel = -0.0052743880373742
+Solvent Energy = -0.0052743880373742
+cycle= 44 E= -1262.31243618086  delta_E= -1.36e-12  |g|= 2.7e-10  |ddm|= 6.5e-11
+  HOMO = -0.278730667559879  LUMO = -0.123850736576761  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438803799535
+Solvent Energy = -0.00527438803799535
+cycle= 45 E= -1262.31243618086  delta_E= -2.73e-12  |g|= 1.67e-10  |ddm|= 1.03e-10
+  HOMO = -0.2787306675598  LUMO = -0.12385073657711  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438803883946
+Solvent Energy = -0.00527438803883946
+cycle= 46 E= -1262.31243618085  delta_E= 4.55e-12  |g|= 8.16e-11  |ddm|= 1.19e-10
+  HOMO = -0.278730667559826  LUMO = -0.123850736577022  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438803956665
+Solvent Energy = -0.00527438803956665
+cycle= 47 E= -1262.31243618085  delta_E=    0  |g|= 1.26e-10  |ddm|= 9.88e-11
+  HOMO = -0.278730667559973  LUMO = -0.123850736576657  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438804000906
+Solvent Energy = -0.00527438804000906
+cycle= 48 E= -1262.31243618086  delta_E= -2.27e-12  |g|= 1.74e-10  |ddm|= 6.23e-11
+  HOMO = -0.278730667560062  LUMO = -0.123850736576142  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438804008108
+Solvent Energy = -0.00527438804008108
+cycle= 49 E= -1262.31243618085  delta_E= 1.82e-12  |g|= 1.69e-10  |ddm|= 3.23e-11
+  HOMO = -0.278730667560058  LUMO = -0.123850736575617  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438803980183
+Solvent Energy = -0.00527438803980183
+cycle= 50 E= -1262.31243618086  delta_E= -3.18e-12  |g|= 1.18e-10  |ddm|= 5.19e-11
+  HOMO = -0.278730667559918  LUMO = -0.12385073657518  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438803936981
+Solvent Energy = -0.00527438803936981
+cycle= 51 E= -1262.31243618085  delta_E= 4.55e-12  |g|= 5.75e-11  |ddm|= 6.69e-11
+  HOMO = -0.278730667559894  LUMO = -0.123850736575033  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438803887356
+Solvent Energy = -0.00527438803887356
+cycle= 52 E= -1262.31243618086  delta_E= -5.91e-12  |g|= 6.16e-11  |ddm|= 7.07e-11
+  HOMO = -0.278730667559913  LUMO = -0.12385073657513  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438803851395
+Solvent Energy = -0.00527438803851395
+cycle= 53 E= -1262.31243618086  delta_E= 3.18e-12  |g|= 1.05e-10  |ddm|= 4.93e-11
+  HOMO = -0.2787306675599  LUMO = -0.12385073657536  gap/eV = 4.21450
+ddCOSMO E_diel = -0.0052743880384014
+Solvent Energy = -0.0052743880384014
+cycle= 54 E= -1262.31243618086  delta_E=    0  |g|= 1.13e-10  |ddm|= 2.29e-11
+  HOMO = -0.27873066755986  LUMO = -0.123850736575618  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438803852728
+Solvent Energy = -0.00527438803852728
+cycle= 55 E= -1262.31243618086  delta_E= -1.82e-12  |g|= 8.58e-11  |ddm|= 2.96e-11
+  HOMO = -0.278730667559833  LUMO = -0.123850736575835  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438803880229
+Solvent Energy = -0.00527438803880229
+cycle= 56 E= -1262.31243618086  delta_E= -9.09e-13  |g|= 4.1e-11  |ddm|= 4.26e-11
+  HOMO = -0.278730667560012  LUMO = -0.123850736575594  gap/eV = 4.21450
+ddCOSMO E_diel = -0.00527438803955452
+Solvent Energy = -0.00527438803955452
+Extra cycle  E= -1262.31243618086  delta_E= 9.09e-13  |g|= 7.71e-11  |ddm|= 1.14e-10
+converged SCF energy = -1262.31243618086
+
+
+******** <class 'pyscf.solvent.grad.pcm.ddCOSMOGradients'> for <class 'pyscf.solvent._attach_solvent.ddCOSMODFRKS'> ********
+unit = Eh/Bohr
+max_memory 4000 MB (current use 918 MB)
+grid_response = True
+--------------- ddCOSMODFRKS (+ddCOSMO) gradients ---------------
+         x                y                z
+0 O     0.0000074198    -0.0000050185     0.0000040195
+1 C    -0.0000162107     0.0000179160    -0.0000024022
+2 O     0.0000239574    -0.0000060818     0.0000050171
+3 C    -0.0000147711     0.0000071335    -0.0000148544
+4 C    -0.0000094096    -0.0000644125    -0.0000310649
+5 C    -0.0000025445     0.0000067635    -0.0000159175
+6 C    -0.0000040576    -0.0000007658     0.0000030336
+7 C     0.0000143894    -0.0000007225     0.0000009078
+8 C     0.0000333897    -0.0000469278    -0.0000105725
+9 C    -0.0000710285     0.0001437599     0.0001022325
+10 N     0.0000014120     0.0000020058     0.0000083851
+11 C     0.0000029102    -0.0000071350    -0.0000036761
+12 C    -0.0000018531    -0.0000029121     0.0000044127
+13 C     0.0000002142     0.0000001261     0.0000038876
+14 F    -0.0000056628     0.0000042078    -0.0000002976
+15 F     0.0000039573     0.0000031355    -0.0000062221
+16 F    -0.0000008531    -0.0000016507     0.0000020121
+17 C    -0.0000052489    -0.0000020623     0.0000046309
+18 F     0.0000039606     0.0000034303    -0.0000029650
+19 F     0.0000060882    -0.0000006476     0.0000038313
+20 F    -0.0000002941    -0.0000010885     0.0000023672
+21 H    -0.0000000988    -0.0000015792    -0.0000021338
+22 H    -0.0000010007    -0.0000003893    -0.0000001230
+23 H     0.0000025717     0.0000036962    -0.0000042663
+24 H    -0.0000045393     0.0000019825    -0.0000019836
+25 H     0.0000373021    -0.0000527637    -0.0000482585
+----------------------------------------------

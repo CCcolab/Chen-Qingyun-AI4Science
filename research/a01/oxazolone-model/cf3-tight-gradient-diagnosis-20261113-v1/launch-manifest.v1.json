@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "task_id": "A01-M0-CF3-TIGHT-GRAD-20261113-v1",
+  "new_quantum_calls_at_freeze": 0,
+  "original_source_fingerprints_verified": 94,
+  "files": [
+    {
+      "path": "contract.v1.json",
+      "sha256": "c04697a81952d87fa7bacc2e3b07b59126650043556447a39625ec2ffa5e2a38",
+      "size_bytes": 2643
+    },
+    {
+      "path": "inputs.v1.json",
+      "sha256": "9a8e783d56ab1602754f8c08372b9be648b7e363535f46fd41fc93e7f47a479a",
+      "size_bytes": 45646
+    },
+    {
+      "path": "worker_points.py",
+      "sha256": "69d64c5a4981213dd598285ea3973ed0f32d3fae6bfb294e48fdfa0c23924bd9",
+      "size_bytes": 26564
+    },
+    {
+      "path": "controller.py",
+      "sha256": "1e192cd378d5913f05d8c8e69de70dc6561ceeeaa022bb9beb9e1bc00bbfe84f",
+      "size_bytes": 15668
+    },
+    {
+      "path": "run_once.py",
+      "sha256": "a249efea79a24b664a4feb7039f5074f846e48a4c0b1e39cbd7b59540bd7a53d",
+      "size_bytes": 1744
+    },
+    {
+      "path": "analyze_diagnosis.py",
+      "sha256": "c59e454492e2600a6d4bfdee44efbefe5fe768e79753b418723493a500b1dfdf",
+      "size_bytes": 32036
+    },
+    {
+      "path": "PROTOCOL_zh-CN.md",
+      "sha256": "2034edda3a1ce4b9bf9273bcdc0b4b03d4f7e16bd8f3c2580fd4afc333152773",
+      "size_bytes": 6453
+    }
+  ],
+  "scientific_review_status": "review_required",
+  "release_eligible": false
+}

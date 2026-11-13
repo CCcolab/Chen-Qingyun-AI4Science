@@ -1,0 +1,1326 @@
+{
+  "schema_version": "1.0",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "status": "PREPARED_NOT_EXECUTED",
+  "source_plan": "research/a01/oxazolone-model/cf3-curvature-diagnosis-20261113-v1/planned-inputs.v2.json",
+  "source_plan_sha256": "b00db278cc3d219b5c1aac5778ee7b36a469be7fc84d307598c7ffbe7a8524de",
+  "species_manifest": {
+    "formula": "C12H5F6NO2",
+    "symbols": [
+      "O",
+      "C",
+      "O",
+      "C",
+      "C",
+      "C",
+      "C",
+      "C",
+      "C",
+      "C",
+      "N",
+      "C",
+      "C",
+      "C",
+      "F",
+      "F",
+      "F",
+      "C",
+      "F",
+      "F",
+      "F",
+      "H",
+      "H",
+      "H",
+      "H",
+      "H"
+    ],
+    "atom_maps": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      15,
+      19,
+      20,
+      21,
+      100,
+      101,
+      102,
+      103,
+      104
+    ]
+  },
+  "points": [
+    {
+      "point_id": "center",
+      "old_evaluation": 1,
+      "coordinate_0": null,
+      "sign": 0,
+      "step_bohr": 0.0005,
+      "coordinates_bohr": [
+        [
+          -4.211630350208959,
+          -0.8887409485957611,
+          -4.435422459769594
+        ],
+        [
+          -2.7906010500328366,
+          -0.5328587801505471,
+          -2.7406948090800443
+        ],
+        [
+          -0.2817296711135929,
+          -1.2280588979629068,
+          -2.845194422021729
+        ],
+        [
+          0.7673965540702238,
+          -0.5505816850059828,
+          -0.6013405900419759
+        ],
+        [
+          3.4295065746309326,
+          -1.085326917468345,
+          -0.2385696606148551
+        ],
+        [
+          4.849089137190428,
+          -2.2626514796518933,
+          -2.145290757779861
+        ],
+        [
+          7.3997652607742035,
+          -2.754376005979309,
+          -1.7493833122929978
+        ],
+        [
+          8.536195923954283,
+          -2.078734241873652,
+          0.5333712106150574
+        ],
+        [
+          7.124892086679619,
+          -0.9062613969347612,
+          2.433687871140949
+        ],
+        [
+          4.576881055336774,
+          -0.40688112734308673,
+          2.0575597647898425
+        ],
+        [
+          -0.7317978538432257,
+          0.5148819717349667,
+          1.003676857150589
+        ],
+        [
+          -3.0620639190202485,
+          0.6392936131075068,
+          -0.14218674660552405
+        ],
+        [
+          -5.218071438039393,
+          1.6156220380214932,
+          0.8354438254519534
+        ],
+        [
+          -5.376466019619687,
+          2.7439013596145054,
+          3.4617069661611644
+        ],
+        [
+          -6.090581755159041,
+          5.163561407650422,
+          3.333418334532122
+        ],
+        [
+          -7.101064694073314,
+          1.5100059067035305,
+          4.835083264247195
+        ],
+        [
+          -3.221836168385843,
+          2.6659299711193993,
+          4.723231919200048
+        ],
+        [
+          -7.67056515472025,
+          1.646398144795793,
+          -0.6638115778683917
+        ],
+        [
+          -7.425579759140925,
+          2.948760845415924,
+          -2.802492541913713
+        ],
+        [
+          -9.527963327168745,
+          2.725283997788829,
+          0.6519644296221538
+        ],
+        [
+          -8.4259238322273,
+          -0.6823768169360758,
+          -1.2435374288927625
+        ],
+        [
+          3.9421926340654063,
+          -2.783012485561365,
+          -3.9228258385343167
+        ],
+        [
+          8.509633142977826,
+          -3.6699419077638535,
+          -3.228708166491124
+        ],
+        [
+          10.54124617183732,
+          -2.468501159033056,
+          0.8361521857312033
+        ],
+        [
+          8.02334385978418,
+          -0.3817587093000131,
+          4.216002992952167
+        ],
+        [
+          3.435732573420208,
+          0.5064233144758644,
+          3.5134565185519233
+        ]
+      ],
+      "coordinate_reuse": "Use these full-precision saved Bohr coordinates; XYZ is a human-readable snapshot",
+      "old_result": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0001/result.json",
+      "old_energy_Eh": -1262.312436219101,
+      "old_gradient": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0001/gradient.npy",
+      "old_XYZ": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0001/input.xyz",
+      "initial_density_checkpoint": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/initial-scf-guess.chk",
+      "initial_density_checkpoint_sha256": "470c5f44d33883ba254ef75e82576e7e190b7c8f694cb26c1ba4e57c441f7100",
+      "seed_role": "Archived original pre-center seed",
+      "maximum_coordinate_definition_residual_bohr": 0.0,
+      "XYZ_snapshot": "research/a01/oxazolone-model/cf3-curvature-diagnosis-20261113-v1/inputs-v1/center.xyz",
+      "XYZ_snapshot_SHA256": "99e1a11e39cbce0dd1fbc24a9a9b17ecb730a6358c65431a2d3bb38fae379485"
+    },
+    {
+      "point_id": "C6-y-plus",
+      "old_evaluation": 34,
+      "coordinate_0": 16,
+      "sign": 1,
+      "step_bohr": 0.0005,
+      "coordinates_bohr": [
+        [
+          -4.211630350208959,
+          -0.8887409485957611,
+          -4.435422459769594
+        ],
+        [
+          -2.7906010500328366,
+          -0.5328587801505471,
+          -2.7406948090800443
+        ],
+        [
+          -0.2817296711135929,
+          -1.2280588979629068,
+          -2.845194422021729
+        ],
+        [
+          0.7673965540702238,
+          -0.5505816850059828,
+          -0.6013405900419759
+        ],
+        [
+          3.4295065746309326,
+          -1.085326917468345,
+          -0.2385696606148551
+        ],
+        [
+          4.849089137190428,
+          -2.262151479651893,
+          -2.145290757779861
+        ],
+        [
+          7.3997652607742035,
+          -2.754376005979309,
+          -1.7493833122929978
+        ],
+        [
+          8.536195923954283,
+          -2.078734241873652,
+          0.5333712106150574
+        ],
+        [
+          7.124892086679619,
+          -0.9062613969347612,
+          2.433687871140949
+        ],
+        [
+          4.576881055336774,
+          -0.40688112734308673,
+          2.0575597647898425
+        ],
+        [
+          -0.7317978538432257,
+          0.5148819717349667,
+          1.003676857150589
+        ],
+        [
+          -3.0620639190202485,
+          0.6392936131075068,
+          -0.14218674660552405
+        ],
+        [
+          -5.218071438039393,
+          1.6156220380214932,
+          0.8354438254519534
+        ],
+        [
+          -5.376466019619687,
+          2.7439013596145054,
+          3.4617069661611644
+        ],
+        [
+          -6.090581755159041,
+          5.163561407650422,
+          3.333418334532122
+        ],
+        [
+          -7.101064694073314,
+          1.5100059067035305,
+          4.835083264247195
+        ],
+        [
+          -3.221836168385843,
+          2.6659299711193993,
+          4.723231919200048
+        ],
+        [
+          -7.67056515472025,
+          1.646398144795793,
+          -0.6638115778683917
+        ],
+        [
+          -7.425579759140925,
+          2.948760845415924,
+          -2.802492541913713
+        ],
+        [
+          -9.527963327168745,
+          2.725283997788829,
+          0.6519644296221538
+        ],
+        [
+          -8.4259238322273,
+          -0.6823768169360758,
+          -1.2435374288927625
+        ],
+        [
+          3.9421926340654063,
+          -2.783012485561365,
+          -3.9228258385343167
+        ],
+        [
+          8.509633142977826,
+          -3.6699419077638535,
+          -3.228708166491124
+        ],
+        [
+          10.54124617183732,
+          -2.468501159033056,
+          0.8361521857312033
+        ],
+        [
+          8.02334385978418,
+          -0.3817587093000131,
+          4.216002992952167
+        ],
+        [
+          3.435732573420208,
+          0.5064233144758644,
+          3.5134565185519233
+        ]
+      ],
+      "coordinate_reuse": "Use these full-precision saved Bohr coordinates; XYZ is a human-readable snapshot",
+      "old_result": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0034/result.json",
+      "old_energy_Eh": -1262.3124361839987,
+      "old_gradient": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0034/gradient.npy",
+      "old_XYZ": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0034/input.xyz",
+      "initial_density_checkpoint": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0001/scf.chk",
+      "initial_density_checkpoint_sha256": "d2a3ff02ff35a2bad2b73ed8040fab9995d0ca3681dc74060ad6b46910955db1",
+      "seed_role": "Archived v3 converged center density; identical seed for every displaced point",
+      "maximum_coordinate_definition_residual_bohr": 1.6696713456276768e-16,
+      "XYZ_snapshot": "research/a01/oxazolone-model/cf3-curvature-diagnosis-20261113-v1/inputs-v1/C6-y-plus.xyz",
+      "XYZ_snapshot_SHA256": "01195c95c710994dbf280f68a5494d5177772df99f06f5206e98a5bda73f47df"
+    },
+    {
+      "point_id": "C6-y-minus",
+      "old_evaluation": 35,
+      "coordinate_0": 16,
+      "sign": -1,
+      "step_bohr": 0.0005,
+      "coordinates_bohr": [
+        [
+          -4.211630350208959,
+          -0.8887409485957611,
+          -4.435422459769594
+        ],
+        [
+          -2.7906010500328366,
+          -0.5328587801505471,
+          -2.7406948090800443
+        ],
+        [
+          -0.2817296711135929,
+          -1.2280588979629068,
+          -2.845194422021729
+        ],
+        [
+          0.7673965540702238,
+          -0.5505816850059828,
+          -0.6013405900419759
+        ],
+        [
+          3.4295065746309326,
+          -1.085326917468345,
+          -0.2385696606148551
+        ],
+        [
+          4.849089137190428,
+          -2.2631514796518934,
+          -2.145290757779861
+        ],
+        [
+          7.3997652607742035,
+          -2.754376005979309,
+          -1.7493833122929978
+        ],
+        [
+          8.536195923954283,
+          -2.078734241873652,
+          0.5333712106150574
+        ],
+        [
+          7.124892086679619,
+          -0.9062613969347612,
+          2.433687871140949
+        ],
+        [
+          4.576881055336774,
+          -0.40688112734308673,
+          2.0575597647898425
+        ],
+        [
+          -0.7317978538432257,
+          0.5148819717349667,
+          1.003676857150589
+        ],
+        [
+          -3.0620639190202485,
+          0.6392936131075068,
+          -0.14218674660552405
+        ],
+        [
+          -5.218071438039393,
+          1.6156220380214932,
+          0.8354438254519534
+        ],
+        [
+          -5.376466019619687,
+          2.7439013596145054,
+          3.4617069661611644
+        ],
+        [
+          -6.090581755159041,
+          5.163561407650422,
+          3.333418334532122
+        ],
+        [
+          -7.101064694073314,
+          1.5100059067035305,
+          4.835083264247195
+        ],
+        [
+          -3.221836168385843,
+          2.6659299711193993,
+          4.723231919200048
+        ],
+        [
+          -7.67056515472025,
+          1.646398144795793,
+          -0.6638115778683917
+        ],
+        [
+          -7.425579759140925,
+          2.948760845415924,
+          -2.802492541913713
+        ],
+        [
+          -9.527963327168745,
+          2.725283997788829,
+          0.6519644296221538
+        ],
+        [
+          -8.4259238322273,
+          -0.6823768169360758,
+          -1.2435374288927625
+        ],
+        [
+          3.9421926340654063,
+          -2.783012485561365,
+          -3.9228258385343167
+        ],
+        [
+          8.509633142977826,
+          -3.6699419077638535,
+          -3.228708166491124
+        ],
+        [
+          10.54124617183732,
+          -2.468501159033056,
+          0.8361521857312033
+        ],
+        [
+          8.02334385978418,
+          -0.3817587093000131,
+          4.216002992952167
+        ],
+        [
+          3.435732573420208,
+          0.5064233144758644,
+          3.5134565185519233
+        ]
+      ],
+      "coordinate_reuse": "Use these full-precision saved Bohr coordinates; XYZ is a human-readable snapshot",
+      "old_result": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0035/result.json",
+      "old_energy_Eh": -1262.3124361900418,
+      "old_gradient": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0035/gradient.npy",
+      "old_XYZ": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0035/input.xyz",
+      "initial_density_checkpoint": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0001/scf.chk",
+      "initial_density_checkpoint_sha256": "d2a3ff02ff35a2bad2b73ed8040fab9995d0ca3681dc74060ad6b46910955db1",
+      "seed_role": "Archived v3 converged center density; identical seed for every displaced point",
+      "maximum_coordinate_definition_residual_bohr": 1.6696713456276768e-16,
+      "XYZ_snapshot": "research/a01/oxazolone-model/cf3-curvature-diagnosis-20261113-v1/inputs-v1/C6-y-minus.xyz",
+      "XYZ_snapshot_SHA256": "0d2224c56e78d3362ea9a3d84899db7365542f64ae737714280560f6475212be"
+    },
+    {
+      "point_id": "C10-y-plus",
+      "old_evaluation": 58,
+      "coordinate_0": 28,
+      "sign": 1,
+      "step_bohr": 0.0005,
+      "coordinates_bohr": [
+        [
+          -4.211630350208959,
+          -0.8887409485957611,
+          -4.435422459769594
+        ],
+        [
+          -2.7906010500328366,
+          -0.5328587801505471,
+          -2.7406948090800443
+        ],
+        [
+          -0.2817296711135929,
+          -1.2280588979629068,
+          -2.845194422021729
+        ],
+        [
+          0.7673965540702238,
+          -0.5505816850059828,
+          -0.6013405900419759
+        ],
+        [
+          3.4295065746309326,
+          -1.085326917468345,
+          -0.2385696606148551
+        ],
+        [
+          4.849089137190428,
+          -2.2626514796518933,
+          -2.145290757779861
+        ],
+        [
+          7.3997652607742035,
+          -2.754376005979309,
+          -1.7493833122929978
+        ],
+        [
+          8.536195923954283,
+          -2.078734241873652,
+          0.5333712106150574
+        ],
+        [
+          7.124892086679619,
+          -0.9062613969347612,
+          2.433687871140949
+        ],
+        [
+          4.576881055336774,
+          -0.40638112734308673,
+          2.0575597647898425
+        ],
+        [
+          -0.7317978538432257,
+          0.5148819717349667,
+          1.003676857150589
+        ],
+        [
+          -3.0620639190202485,
+          0.6392936131075068,
+          -0.14218674660552405
+        ],
+        [
+          -5.218071438039393,
+          1.6156220380214932,
+          0.8354438254519534
+        ],
+        [
+          -5.376466019619687,
+          2.7439013596145054,
+          3.4617069661611644
+        ],
+        [
+          -6.090581755159041,
+          5.163561407650422,
+          3.333418334532122
+        ],
+        [
+          -7.101064694073314,
+          1.5100059067035305,
+          4.835083264247195
+        ],
+        [
+          -3.221836168385843,
+          2.6659299711193993,
+          4.723231919200048
+        ],
+        [
+          -7.67056515472025,
+          1.646398144795793,
+          -0.6638115778683917
+        ],
+        [
+          -7.425579759140925,
+          2.948760845415924,
+          -2.802492541913713
+        ],
+        [
+          -9.527963327168745,
+          2.725283997788829,
+          0.6519644296221538
+        ],
+        [
+          -8.4259238322273,
+          -0.6823768169360758,
+          -1.2435374288927625
+        ],
+        [
+          3.9421926340654063,
+          -2.783012485561365,
+          -3.9228258385343167
+        ],
+        [
+          8.509633142977826,
+          -3.6699419077638535,
+          -3.228708166491124
+        ],
+        [
+          10.54124617183732,
+          -2.468501159033056,
+          0.8361521857312033
+        ],
+        [
+          8.02334385978418,
+          -0.3817587093000131,
+          4.216002992952167
+        ],
+        [
+          3.435732573420208,
+          0.5064233144758644,
+          3.5134565185519233
+        ]
+      ],
+      "coordinate_reuse": "Use these full-precision saved Bohr coordinates; XYZ is a human-readable snapshot",
+      "old_result": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0058/result.json",
+      "old_energy_Eh": -1262.3124361808523,
+      "old_gradient": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0058/gradient.npy",
+      "old_XYZ": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0058/input.xyz",
+      "initial_density_checkpoint": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0001/scf.chk",
+      "initial_density_checkpoint_sha256": "d2a3ff02ff35a2bad2b73ed8040fab9995d0ca3681dc74060ad6b46910955db1",
+      "seed_role": "Archived v3 converged center density; identical seed for every displaced point",
+      "maximum_coordinate_definition_residual_bohr": 4.336808689942018e-19,
+      "XYZ_snapshot": "research/a01/oxazolone-model/cf3-curvature-diagnosis-20261113-v1/inputs-v1/C10-y-plus.xyz",
+      "XYZ_snapshot_SHA256": "993f5593afa03faaddc5a491f2787f90007c32b64ff93ed6195548c3c2ba2681"
+    },
+    {
+      "point_id": "C10-y-minus",
+      "old_evaluation": 59,
+      "coordinate_0": 28,
+      "sign": -1,
+      "step_bohr": 0.0005,
+      "coordinates_bohr": [
+        [
+          -4.211630350208959,
+          -0.8887409485957611,
+          -4.435422459769594
+        ],
+        [
+          -2.7906010500328366,
+          -0.5328587801505471,
+          -2.7406948090800443
+        ],
+        [
+          -0.2817296711135929,
+          -1.2280588979629068,
+          -2.845194422021729
+        ],
+        [
+          0.7673965540702238,
+          -0.5505816850059828,
+          -0.6013405900419759
+        ],
+        [
+          3.4295065746309326,
+          -1.085326917468345,
+          -0.2385696606148551
+        ],
+        [
+          4.849089137190428,
+          -2.2626514796518933,
+          -2.145290757779861
+        ],
+        [
+          7.3997652607742035,
+          -2.754376005979309,
+          -1.7493833122929978
+        ],
+        [
+          8.536195923954283,
+          -2.078734241873652,
+          0.5333712106150574
+        ],
+        [
+          7.124892086679619,
+          -0.9062613969347612,
+          2.433687871140949
+        ],
+        [
+          4.576881055336774,
+          -0.40738112734308674,
+          2.0575597647898425
+        ],
+        [
+          -0.7317978538432257,
+          0.5148819717349667,
+          1.003676857150589
+        ],
+        [
+          -3.0620639190202485,
+          0.6392936131075068,
+          -0.14218674660552405
+        ],
+        [
+          -5.218071438039393,
+          1.6156220380214932,
+          0.8354438254519534
+        ],
+        [
+          -5.376466019619687,
+          2.7439013596145054,
+          3.4617069661611644
+        ],
+        [
+          -6.090581755159041,
+          5.163561407650422,
+          3.333418334532122
+        ],
+        [
+          -7.101064694073314,
+          1.5100059067035305,
+          4.835083264247195
+        ],
+        [
+          -3.221836168385843,
+          2.6659299711193993,
+          4.723231919200048
+        ],
+        [
+          -7.67056515472025,
+          1.646398144795793,
+          -0.6638115778683917
+        ],
+        [
+          -7.425579759140925,
+          2.948760845415924,
+          -2.802492541913713
+        ],
+        [
+          -9.527963327168745,
+          2.725283997788829,
+          0.6519644296221538
+        ],
+        [
+          -8.4259238322273,
+          -0.6823768169360758,
+          -1.2435374288927625
+        ],
+        [
+          3.9421926340654063,
+          -2.783012485561365,
+          -3.9228258385343167
+        ],
+        [
+          8.509633142977826,
+          -3.6699419077638535,
+          -3.228708166491124
+        ],
+        [
+          10.54124617183732,
+          -2.468501159033056,
+          0.8361521857312033
+        ],
+        [
+          8.02334385978418,
+          -0.3817587093000131,
+          4.216002992952167
+        ],
+        [
+          3.435732573420208,
+          0.5064233144758644,
+          3.5134565185519233
+        ]
+      ],
+      "coordinate_reuse": "Use these full-precision saved Bohr coordinates; XYZ is a human-readable snapshot",
+      "old_result": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0059/result.json",
+      "old_energy_Eh": -1262.3124361900725,
+      "old_gradient": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0059/gradient.npy",
+      "old_XYZ": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0059/input.xyz",
+      "initial_density_checkpoint": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0001/scf.chk",
+      "initial_density_checkpoint_sha256": "d2a3ff02ff35a2bad2b73ed8040fab9995d0ca3681dc74060ad6b46910955db1",
+      "seed_role": "Archived v3 converged center density; identical seed for every displaced point",
+      "maximum_coordinate_definition_residual_bohr": 4.336808689942018e-19,
+      "XYZ_snapshot": "research/a01/oxazolone-model/cf3-curvature-diagnosis-20261113-v1/inputs-v1/C10-y-minus.xyz",
+      "XYZ_snapshot_SHA256": "024e2bed132f1cbad2a2776f0610c108a8e1c3382012ae66e29b309e30ffc66a"
+    }
+  ],
+  "input_identity_rule": "Identical full-precision Bohr arrays and archived seeds to A; do not seed from new center or reuse B results",
+  "source_fingerprints": [
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/research-record.v1.json",
+      "sha256": "e4effb299bc3b00203acb8074b7b4a1815c919e5e1fe625efd47b0a1ae6df4e4",
+      "size_bytes": 1073564
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/analyze_saved_gradients.py",
+      "sha256": "2231ecd5b3da796838f89cc19cd580db489476fb274a4acbcdd5862b02b12bfa",
+      "size_bytes": 5102
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/audit-cf3-v1/column-checks.csv",
+      "sha256": "2219f2dab34c203e9ae3d52a772c34dbf5bb084e2f253c34f70e6d34829d17a0",
+      "size_bytes": 22531
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/audit-cf3-v1/curvature-audit.json",
+      "sha256": "d35e3696702af281f99332b30cff5f505474481a28cdd1e80e717452ce3dcb55",
+      "size_bytes": 573302
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/audit-cf3-v1/CURVATURE_AUDIT_zh-CN.md",
+      "sha256": "58a7f0f5814e44a6ba930f176d97f79eac574e656b142b309f5474e2ce738a00",
+      "size_bytes": 1734
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/audit-cf3-v1/frequency-checks.csv",
+      "sha256": "fd60df3e02f5e99095daef36f02fec973e5966dee7dfd3b3d9aa1397fdc51d11",
+      "size_bytes": 5418
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/audit-ch3-v1/column-checks.csv",
+      "sha256": "02cf4e1a513113d25270b230d89dc0d6c57b3a6a77f527ea2768e4e4b4d54c09",
+      "size_bytes": 22387
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/audit-ch3-v1/curvature-audit.json",
+      "sha256": "c47d5813efd3288e12a3b6e3f71cb645a8712d0416dcaad1e1ce343f66cba580",
+      "size_bytes": 573074
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/audit-ch3-v1/CURVATURE_AUDIT_zh-CN.md",
+      "sha256": "02d14094eb9f1d0693fbad193a715e92f9c09b923ab016f954cfabd2dc59337b",
+      "size_bytes": 1728
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/audit-ch3-v1/frequency-checks.csv",
+      "sha256": "e173db58eeec786e24c9f0e4dedf15d5219e8ac36c7c60712256f5ab96d61f7f",
+      "size_bytes": 5416
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/audit_curvature.py",
+      "sha256": "d9e28d7a2be95ff4f4c8f462a0e3876ac45c1bb9d0f3dfb356133420cf30c16b",
+      "size_bytes": 32471
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/audit_partial_curvature.py",
+      "sha256": "0443f985ab47be6eaebf9587b69f9ba5332a6c19767cf3eae6d8685f5fbd6535",
+      "size_bytes": 14725
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/audit_reference_identity.py",
+      "sha256": "42908da8f23071f20647b4fb6578cc3f423b9694e96960de5730c38a9089d562",
+      "size_bytes": 19941
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/contract.v1.json",
+      "sha256": "2a30c3759630d6c3f764f7c12f46af48541370ef6f59607eb196fb7c92ad53ce",
+      "size_bytes": 2959
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/curvature-admission.v1.json",
+      "sha256": "4a7f60221106bdd4513e8c846df8b8cde559bac6b9b3d83f2c28b59a10b9118e",
+      "size_bytes": 10636
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/engine-review.json",
+      "sha256": "ed0cbf7801cd52e36df7244def66c765fe1e4af7c52464fcf2e2d6a50dfba342",
+      "size_bytes": 5371
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/ENGINE_REVIEW_zh-CN.md",
+      "sha256": "e2cd44babd8eaf3912e5d4d0a8bbe1b4fec0a77da7dd306c421c51d61f7aec14",
+      "size_bytes": 5813
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/final-budget-review.json",
+      "sha256": "b06b2eb1f3f5fc114cc7daf6d290515e08c2d33b25cf264e72fa213dd07d05bf",
+      "size_bytes": 262904
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/final-review.json",
+      "sha256": "e1679ec2b3e9cfd1b752946da7e6d1a94eb3256e6268573882340d50bfdbfaf1",
+      "size_bytes": 683047
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/FINAL_BUDGET_REVIEW_zh-CN.md",
+      "sha256": "38d63a2b819f666a6ae0b3c8e119a41599b084fe8a3247255fdae2e4c0e953f4",
+      "size_bytes": 2528
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/FINAL_REVIEW_zh-CN.md",
+      "sha256": "b02b6da674403a27a7783b13eb9c3ea1f00ea128db72dcb8c78c319510816288",
+      "size_bytes": 2580
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/gradient-diagnostics-v1/gradient-diagnostics.json",
+      "sha256": "20ceacb2c194969633625b865a75abbf08b1b9034a2a0a161f1528b9581adbd6",
+      "size_bytes": 6605
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/historical-budget.json",
+      "sha256": "7f171c9faf7c4eb605c154e9bfd8a2cd5b3451f554104d182000d31e58dea55e",
+      "size_bytes": 115073
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/HISTORICAL_BUDGET_zh-CN.md",
+      "sha256": "3a1b63451ac2565c89504ae94a27436f45c661383d413a948c84d28f61d48db1",
+      "size_bytes": 3508
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/input-review.json",
+      "sha256": "8e61e4af79064d54dbba0603b6715a9af4816cc2763179655bd6392924d59a1c",
+      "size_bytes": 32608
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/INPUT_REVIEW_zh-CN.md",
+      "sha256": "7e9a4f5a01a7b3b37fd65a7f3a37b68fad09b04db87a32b74534d3f28a08a93b",
+      "size_bytes": 2191
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/inputs.v1.json",
+      "sha256": "32f4f6d79d381fe4965c510cb04c793f7bf03b8c46084e74cee36c0cb2fe4165",
+      "size_bytes": 4139
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/make_review_bundle.py",
+      "sha256": "8d888dd75b235ffb3a25955634e9f645481cd2c972a6b9ead4b9beda9f8fe5a4",
+      "size_bytes": 25975
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/orchestrate.py",
+      "sha256": "c5c5a0b60471f613e9e04333ee0dbae1cd8a75d6a9a2c56a6e1654cdb27ff092",
+      "size_bytes": 27281
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/package_results.py",
+      "sha256": "8edba52ff0f16d5c3f9bb4f0572ec56a6a97e436a3e27f4721927a50b44fea3e",
+      "size_bytes": 28252
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/plan.v1.json",
+      "sha256": "21accf13bd60f319256ef21c367102de5e72a082e2134939cd5b4bcf230c2b7c",
+      "size_bytes": 724
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/prepare_run.py",
+      "sha256": "4ea7989c17814d41ceab85dcedfa016d869081fc2376aeed8f4d9a847266016a",
+      "size_bytes": 10933
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/PROTOCOL_zh-CN.md",
+      "sha256": "74f97f1b9f6451fc6d57b6cf03e2c01400cbaa5c70d8a0357cae3d801c0d518e",
+      "size_bytes": 4296
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/read_progress.py",
+      "sha256": "77252dee6ab6e8f47c7127eaf3a12e081afd171d2d7ff7f6426db543bc0d1e27",
+      "size_bytes": 6119
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/reference-identity-v1/core-contact-distances.csv",
+      "sha256": "315ee2afe56554d842392e92f648bcc8fe1b00742480a11751ae4aa6662ad4b3",
+      "size_bytes": 5910
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/reference-identity-v1/reference-identity.json",
+      "sha256": "33ead54a46cf3e348bbf8a7f13b6f0351621ecc52d1426c45412a2d01dea6d7d",
+      "size_bytes": 108670
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/reference-identity-v1/REFERENCE_IDENTITY_zh-CN.md",
+      "sha256": "87a0cab15c22499a55d8655f04f8fb6e1d8913c391559f1fd7b002b07d3e7696",
+      "size_bytes": 1356
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/reference-identity-v1/registered-bond-distances.csv",
+      "sha256": "174f444a0431eeefa5104d728f23d098abcd8f4beaac965aa1186ad43094b2a4",
+      "size_bytes": 15661
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/REPORT_zh-CN.md",
+      "sha256": "bc5348c2ad13a2b4afe7648c554ef2bc4e94197506ddc62a14cec9f3c4e0760c",
+      "size_bytes": 8312
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/results-v1/RESULTS_zh-CN.md",
+      "sha256": "fa9679830b0fe2ea11efe4ac5fe80a03309b7a270d63b947be680eebb223d082",
+      "size_bytes": 1366
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/results-v1/summary.csv",
+      "sha256": "ecd959660c699ecb93da65f7a38ea08dc621fb1b73684ed937904a9a4e4e6372",
+      "size_bytes": 657
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/results-v1/summary.json",
+      "sha256": "96859b9635a33712341fd18abb8385d6693a5e0cd68d485beb80d00880091957",
+      "size_bytes": 1556651
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/REVIEW_GUIDE_zh-CN.md",
+      "sha256": "6b48c673f8ad7a7549e5f8599475109676b5321287dba97b72d86b3176640b9f",
+      "size_bytes": 3192
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/run_case.py",
+      "sha256": "f9bb187d323ad0e645628781140315b7aa46aaccc99cf0463a8222f7aa0531e8",
+      "size_bytes": 39931
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/runner-delta.v1.json",
+      "sha256": "473f79013b633f0bb65ad8fe0c30cff8daf1818eb2401b4e164f4a3333ccd61e",
+      "size_bytes": 2372
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/sources-v1/CF3/gradient.npy",
+      "sha256": "f25becca8d8db935b56658c912330f29486a50dbca888c6d23a7d393bd9158fb",
+      "size_bytes": 752
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/sources-v1/CF3/input.xyz",
+      "sha256": "5b22cb3f5e32d344837d7d45182d3a47f6a8fb0234e181451d204f3bb3f69ab5",
+      "size_bytes": 1371
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/sources-v1/CF3/leaf-result.json",
+      "sha256": "a635b94e2079c31ef235085ea2d2144769ac6b1e8f9a372321ec3d43f8f8a0e8",
+      "size_bytes": 6550
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/sources-v1/CF3/pyscf.log",
+      "sha256": "80de1724cd6fd0948235139d92ca1694de34559f2712e5afa66ed17de51ed5ca",
+      "size_bytes": 6382
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/sources-v1/CF3/scf.chk",
+      "sha256": "b68f4afee59d050be2674be031882ebf0b35f4da261754679b6dade484884168",
+      "size_bytes": 841608
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/sources-v1/CH3/final.xyz",
+      "sha256": "572c74c29e54616ba7f373391f1097eeef64db4faec2a97e5c3a19aeb301b9c3",
+      "size_bytes": 1367
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/sources-v1/CH3/gradient.npy",
+      "sha256": "298fc85fe55bb203278a002d9da7bb1ac750561ff72e8041483ea4558bc3e4be",
+      "size_bytes": 752
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/sources-v1/CH3/leaf-result.json",
+      "sha256": "8518c4c377355d6988dc2bae091cf198d7ba85230eac7892238064a2649a8714",
+      "size_bytes": 6565
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/sources-v1/CH3/pyscf.log",
+      "sha256": "8ee7d012a6911dd85c1a7be29d48a6906ba1ffcec4a0d9f547a72d225f7e2876",
+      "size_bytes": 4771
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/sources-v1/CH3/qualification-result.json",
+      "sha256": "4151856b8dd4d584b92fea06ad5bfcc4ee3540355ae2f8a9c9f83a5950ebd60a",
+      "size_bytes": 3943
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/sources-v1/CH3/scf.chk",
+      "sha256": "09c6f695d5e76b588e2ded51568820ed510af57506a5da05540becbc382ce3ea",
+      "size_bytes": 587120
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/specs-v1/substrate-CF3-curvature-template.json",
+      "sha256": "164ac5ec6fd5844332c53d341904240a1c6649656df0d0837891df1811c450ee",
+      "size_bytes": 1238
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/specs-v1/substrate-CF3-minimum.json",
+      "sha256": "32679f3b0a1b98506380d906389e80c1ab007fb00801dc13620f59ced7a7cc47",
+      "size_bytes": 1945
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/specs-v1/substrate-CH3-curvature-template.json",
+      "sha256": "b72db4bb34bb74f3aea7c238093226b5f7501b478f789c2bd26ce6e51dadd3a4",
+      "size_bytes": 4168
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/summarize_campaign.py",
+      "sha256": "0b06cdeec51866af51fac28e35e42642c14dae1129ee6ccc8f54798447548258",
+      "size_bytes": 28688
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/write_report.py",
+      "sha256": "af697f19722b992c10df733042690ef34e0b7023e7307855372f7ea28a913be9",
+      "size_bytes": 21006
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/raw-evidence-manifest.v1.json",
+      "sha256": "dc0f08aeab0f460a445e8cec2cf74d34cd4d085ca08f111a76b6eaaa9a1d3322",
+      "size_bytes": 1030208
+    },
+    {
+      "path": "research/a01/oxazolone-model/reference-curvature-20261113-v3/current-qualification.v1.json",
+      "sha256": "a91095d2fae825ce191f2f71856af3cdb16a8488e3f1f6c0a76440b6be807a14",
+      "size_bytes": 265623
+    },
+    {
+      "path": "research/a01/study.v8.json",
+      "sha256": "04def387e8b01371418bbf56cfc6736aacd679b8d8f6575b5f1f47ad88125d44",
+      "size_bytes": 264094
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-curvature-diagnosis-20261113-v1/budget-analysis/budget-plan.v1.json",
+      "sha256": "5173861a883399ed7f73b5e0ed854d1b427b3cba037c0d6e1dd9db84820eebe7",
+      "size_bytes": 67530
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-curvature-diagnosis-20261113-v1/saved-matrix-analysis/saved-matrix-localization.json",
+      "sha256": "d5b846a854c0a05672eda0781aa55ea619e0f3df3cd7be67aa1c0086fec57b1b",
+      "size_bytes": 1265884
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-curvature-diagnosis-20261113-v1/engine-analysis/saved-engine-analysis.json",
+      "sha256": "a1c872a5e7458be509df2f63057da31f284ce420f54429e49006fbf6c155cbe2",
+      "size_bytes": 133949
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/spec.json",
+      "sha256": "18bb2a39519d0af7357796f4b806df14801ddd34bf64043be0f7b0be770eed28",
+      "size_bytes": 1982
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/source-input.xyz",
+      "sha256": "99e1a11e39cbce0dd1fbc24a9a9b17ecb730a6358c65431a2d3bb38fae379485",
+      "size_bytes": 1371
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/initial-scf-guess.chk",
+      "sha256": "470c5f44d33883ba254ef75e82576e7e190b7c8f694cb26c1ba4e57c441f7100",
+      "size_bytes": 841608
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0001/result.json",
+      "sha256": "76b54b6d021f132f34e527dbfefdee54d4015990eacf34d54281a558a2f37360",
+      "size_bytes": 6557
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0001/scf.chk",
+      "sha256": "d2a3ff02ff35a2bad2b73ed8040fab9995d0ca3681dc74060ad6b46910955db1",
+      "size_bytes": 841608
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0001/input.xyz",
+      "sha256": "99e1a11e39cbce0dd1fbc24a9a9b17ecb730a6358c65431a2d3bb38fae379485",
+      "size_bytes": 1371
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0001/gradient.npy",
+      "sha256": "a705e8a773c164c585dcaf3ef8cdd980d15861c7ed3609f37dca09558c6725dd",
+      "size_bytes": 752
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0034/result.json",
+      "sha256": "c19b9799582876491eda18390c0faf6963ef16cdf4420a91368c633fcc2b92e3",
+      "size_bytes": 6551
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0034/input.xyz",
+      "sha256": "01195c95c710994dbf280f68a5494d5177772df99f06f5206e98a5bda73f47df",
+      "size_bytes": 1371
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0034/gradient.npy",
+      "sha256": "33b488b4ba1b2910b9fc2a759e26b8374be5f8f41ccf8e519f24f7db3d98100c",
+      "size_bytes": 752
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0034/scf.chk",
+      "sha256": "855e08509e7e4565d39beae2f4e449de70e3d0ee018fad40d30ccc534fd7e65e",
+      "size_bytes": 841600
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0035/result.json",
+      "sha256": "05fd229cf851a11d92111b4fcc4daacf014fe9eaded9a29fcd837200b3f9b688",
+      "size_bytes": 6565
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0035/input.xyz",
+      "sha256": "0d2224c56e78d3362ea9a3d84899db7365542f64ae737714280560f6475212be",
+      "size_bytes": 1371
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0035/gradient.npy",
+      "sha256": "145e5f3e31fa9ff815c5bfb569c77b916000f1132362801e16ff3ba76663d826",
+      "size_bytes": 752
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0035/scf.chk",
+      "sha256": "75ff358932944b8cc948b4a90320b91f7c65c321997d7cc1505749fc1c1e467d",
+      "size_bytes": 841608
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0058/result.json",
+      "sha256": "129090305857ffa6a2dfb2169a1817ca7a78323aa464a44d2b4baebfdfe0a569",
+      "size_bytes": 6564
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0058/input.xyz",
+      "sha256": "993f5593afa03faaddc5a491f2787f90007c32b64ff93ed6195548c3c2ba2681",
+      "size_bytes": 1371
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0058/gradient.npy",
+      "sha256": "1dd8dcc736218096f27daa1a75cda409c3ca5cb770496f14e39c87c8251e9261",
+      "size_bytes": 752
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0058/scf.chk",
+      "sha256": "23687c2b35200bd3f0f86829510357516051ae7e6a6574fbf28ae6ca7a2c75bc",
+      "size_bytes": 841608
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0059/result.json",
+      "sha256": "5d47873a95485c430571e65be65a3ef6e7cdbe1c6d2a0708c1a9b1d34bb6474a",
+      "size_bytes": 6565
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0059/input.xyz",
+      "sha256": "024e2bed132f1cbad2a2776f0610c108a8e1c3382012ae66e29b309e30ffc66a",
+      "size_bytes": 1371
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0059/gradient.npy",
+      "sha256": "fb6fa4476511da70138186792d050794047ceb1772bed0f6136bad1eda9ab804",
+      "size_bytes": 752
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0059/scf.chk",
+      "sha256": "d2c609be9c535e07c4d49fccb24022960f6d764801b8e769e7c04fd7bf33211a",
+      "size_bytes": 841608
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-curvature-diagnosis-20261113-v1/planned-inputs.v1.json",
+      "sha256": "0033aa7c6de1bb3424e6a2e972bb7021f864cc761309e9102659a2ffef8ad0ee",
+      "size_bytes": 43700
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-curvature-diagnosis-20261113-v1/saved-matrix-analysis/saved-matrix-localization.v2.json",
+      "sha256": "e5ba2d604f01d258dcf6dd496833b768218888e08edc99765ee4d16c88ed9bb0",
+      "size_bytes": 1250807
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-curvature-diagnosis-20261113-v1/saved-matrix-analysis/LABEL_ERRATUM_zh-CN.md",
+      "sha256": "c1a9e15ad5a45dc75da9145fe6c7006c9158bd14adb144507eaa375a3a619ab4",
+      "size_bytes": 1764
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-curvature-diagnosis-20261113-v1/saved-matrix-analysis/correct_saved_matrix_labels.py",
+      "sha256": "ec799f788c98183d7463835205c2fc11b09c881ed1189cf32b9f3e64b1b40b5f",
+      "size_bytes": 6834
+    }
+  ],
+  "derivation_sources": [
+    {
+      "path": "research/a01/oxazolone-model/cf3-point-diagnosis-execution-20261113-v1/worker_point.py",
+      "sha256": "1ae403af2b963fccd922093dd3d5abeda0153c0f4c76d4e4b11ce57e10b5c1ad",
+      "size_bytes": 22601
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/worker_scf.py",
+      "sha256": "83512006f1a6f0c3e5652ec1cfc55043e83407e4bd459c6a2087c31ed6a84423",
+      "size_bytes": 23131
+    }
+  ],
+  "baseline_A_points": [
+    {
+      "path": "scratch/m0-cf3-point-diagnosis-20261113-v1/points/A-center/result.json",
+      "sha256": "a95fda9ad8dcc8d91d4924429de9cd5a5ccfd0521e716bb1f75a08045a2823fb"
+    },
+    {
+      "path": "scratch/m0-cf3-point-diagnosis-20261113-v1/points/A-C6-y-plus/result.json",
+      "sha256": "a9b57d2a3c9a12308110b4eff2ce28747fb2eccf38041495350eab61ded506c2"
+    },
+    {
+      "path": "scratch/m0-cf3-point-diagnosis-20261113-v1/points/A-C6-y-minus/result.json",
+      "sha256": "9e6404daddabf58191fdcacf0486ce60b2bd84021d3ccae70e291fedcaadf43f"
+    },
+    {
+      "path": "scratch/m0-cf3-point-diagnosis-20261113-v1/points/A-C10-y-plus/result.json",
+      "sha256": "29eaddf6d3dff9a13552dc76749e326c7ceb08c6149ee8d61aa9210d2993d7e7"
+    },
+    {
+      "path": "scratch/m0-cf3-point-diagnosis-20261113-v1/points/A-C10-y-minus/result.json",
+      "sha256": "20ac416628b0b768d3628e744af1e4380fe0061782dd1d86f2127216d44a7fed"
+    }
+  ]
+}

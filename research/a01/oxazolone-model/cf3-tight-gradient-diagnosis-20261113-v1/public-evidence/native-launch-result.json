@@ -1,0 +1,11 @@
+{
+  "started_epoch": 1794569568.337295,
+  "finished_epoch": 1794571116.7553155,
+  "returncode": 0,
+  "native_wait_completed": true,
+  "retry_performed": false,
+  "controller_pid": 375,
+  "controller_sha256": "1e192cd378d5913f05d8c8e69de70dc6561ceeeaa022bb9beb9e1bc00bbfe84f",
+  "scientific_review_status": "review_required",
+  "release_eligible": false
+}

@@ -1,0 +1,15 @@
+{
+  "symbols": true,
+  "charges": true,
+  "seed_geometry_is_archived_center": true,
+  "charge_spin": true,
+  "basis": true,
+  "cart": true,
+  "AO_labels": true,
+  "AO_count": true,
+  "seed_density_electrons": 154.00000000000003,
+  "expected_electrons": 154,
+  "restricted_occupations": true,
+  "electron_count_passed": true,
+  "role": "Archived center density is an initial guess at each displaced geometry; never fresh SCF evidence"
+}

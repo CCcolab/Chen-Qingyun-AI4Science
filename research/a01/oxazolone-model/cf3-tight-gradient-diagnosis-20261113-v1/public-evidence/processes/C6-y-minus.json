@@ -1,0 +1,21 @@
+{
+  "stage": "TIGHT_GRADIENT",
+  "point_id": "C6-y-minus",
+  "reservation_id": 3,
+  "output": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-minus",
+  "result_path": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-minus/result.json",
+  "started_epoch": 1794570058.937713,
+  "returncode": 0,
+  "timed_out": false,
+  "external_stop": false,
+  "stdout": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C6-y-minus.stdout.log",
+  "stderr": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C6-y-minus.stderr.log",
+  "finished_epoch": 1794570368.379161,
+  "elapsed_seconds": 309.44144797325134,
+  "worker_result_sha256": "f6e18f681eea3ca2ad6fa61f4f7f061aae3daf3675a08c93bd68b7f7cab684b3",
+  "worker_status": "completed",
+  "scf_started": true,
+  "electronic_complete": true,
+  "gradient_started": true,
+  "gradient_complete": true
+}

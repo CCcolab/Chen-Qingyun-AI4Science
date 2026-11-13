@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "task_id": "A01-M0-CF3-TIGHT-GRAD-20261113-v1",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "created_utc": "2026-11-13T12:01:31.159857+00:00",
+  "raw_archive": {
+    "path": "scratch/m0-cf3-tight-gradient-archive-tools-20261113-v1/terminal-archive-v1/review-bundle.v1.zip",
+    "sha256": "4f8ea9cb23450d3d213fcc724c7dd2f79b3de460990baab0245d7d3818e17b67",
+    "size_bytes": 12109483,
+    "distribution": "local_only",
+    "member_count": 115,
+    "contains_checkpoints": true,
+    "contains_seed_snapshots": true,
+    "published_to_GitHub": false
+  },
+  "raw_archive_contains_late_public_manifest": false,
+  "raw_member_manifest_sha256": "db3eaa324cbfff865de254edb9e159d9d5227a632d2155790cc81b6df04f8449",
+  "archive_note": "ZIP stays local; SHA publicly identifies the private original packet. This record was written after ZIP completion to avoid a self-reference."
+}

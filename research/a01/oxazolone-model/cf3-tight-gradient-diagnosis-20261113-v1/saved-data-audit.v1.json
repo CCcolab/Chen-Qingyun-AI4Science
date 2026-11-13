@@ -1,0 +1,321 @@
+{
+  "schema_version": "1.0",
+  "created_utc": "2026-11-13T12:00:08.884728+00:00",
+  "task_id": "A01-M0-CF3-TIGHT-GRAD-20261113-v1",
+  "run_id": "A01-M0-CF3-TIGHT-GRAD-20261113-v1@1794569568.9681668",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "audit_kind": "Separate saved-data arithmetic and provenance checks; no independent quantum rerun, experiment or scientific sign-off",
+  "new_quantum_calls": 0,
+  "model_API_calls": 0,
+  "status": "passed",
+  "checks": [
+    {
+      "check": "native_controller_wait_completed_and_actual_returncode_zero",
+      "passed": true
+    },
+    {
+      "check": "center:npy_shape_finite_and_identical_to_JSON",
+      "passed": true
+    },
+    {
+      "check": "center:npy_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "center:process_result_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "center:fixed_full_Bohr_geometry_and_old_seed",
+      "passed": true
+    },
+    {
+      "check": "center:real_successful_complete_point",
+      "passed": true
+    },
+    {
+      "check": "center:actual_terminal_orbital_requirement",
+      "passed": true
+    },
+    {
+      "check": "center:public_point_qualification",
+      "passed": true
+    },
+    {
+      "check": "C6-y-plus:npy_shape_finite_and_identical_to_JSON",
+      "passed": true
+    },
+    {
+      "check": "C6-y-plus:npy_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "C6-y-plus:process_result_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "C6-y-plus:fixed_full_Bohr_geometry_and_old_seed",
+      "passed": true
+    },
+    {
+      "check": "C6-y-plus:real_successful_complete_point",
+      "passed": true
+    },
+    {
+      "check": "C6-y-plus:actual_terminal_orbital_requirement",
+      "passed": true
+    },
+    {
+      "check": "C6-y-plus:public_point_qualification",
+      "passed": true
+    },
+    {
+      "check": "C6-y-minus:npy_shape_finite_and_identical_to_JSON",
+      "passed": true
+    },
+    {
+      "check": "C6-y-minus:npy_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "C6-y-minus:process_result_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "C6-y-minus:fixed_full_Bohr_geometry_and_old_seed",
+      "passed": true
+    },
+    {
+      "check": "C6-y-minus:real_successful_complete_point",
+      "passed": true
+    },
+    {
+      "check": "C6-y-minus:actual_terminal_orbital_requirement",
+      "passed": true
+    },
+    {
+      "check": "C6-y-minus:public_point_qualification",
+      "passed": true
+    },
+    {
+      "check": "C10-y-plus:npy_shape_finite_and_identical_to_JSON",
+      "passed": true
+    },
+    {
+      "check": "C10-y-plus:npy_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "C10-y-plus:process_result_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "C10-y-plus:fixed_full_Bohr_geometry_and_old_seed",
+      "passed": true
+    },
+    {
+      "check": "C10-y-plus:real_successful_complete_point",
+      "passed": true
+    },
+    {
+      "check": "C10-y-plus:actual_terminal_orbital_requirement",
+      "passed": true
+    },
+    {
+      "check": "C10-y-plus:public_point_qualification",
+      "passed": true
+    },
+    {
+      "check": "C10-y-minus:npy_shape_finite_and_identical_to_JSON",
+      "passed": true
+    },
+    {
+      "check": "C10-y-minus:npy_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "C10-y-minus:process_result_fingerprint",
+      "passed": true
+    },
+    {
+      "check": "C10-y-minus:fixed_full_Bohr_geometry_and_old_seed",
+      "passed": true
+    },
+    {
+      "check": "C10-y-minus:real_successful_complete_point",
+      "passed": true
+    },
+    {
+      "check": "C10-y-minus:actual_terminal_orbital_requirement",
+      "passed": true
+    },
+    {
+      "check": "C10-y-minus:public_point_qualification",
+      "passed": true
+    },
+    {
+      "check": "C6-y:full_sampled_column_arithmetic",
+      "passed": true
+    },
+    {
+      "check": "C6-y:energy_FD1_arithmetic",
+      "passed": true
+    },
+    {
+      "check": "C6-y:energy_FD2_arithmetic",
+      "passed": true
+    },
+    {
+      "check": "C10-y:full_sampled_column_arithmetic",
+      "passed": true
+    },
+    {
+      "check": "C10-y:energy_FD1_arithmetic",
+      "passed": true
+    },
+    {
+      "check": "C10-y:energy_FD2_arithmetic",
+      "passed": true
+    },
+    {
+      "check": "sampled_reciprocal_arithmetic",
+      "passed": true
+    },
+    {
+      "check": "actual_worker_process_elapsed_sum",
+      "passed": true
+    },
+    {
+      "check": "cumulative_lower_bound_arithmetic",
+      "passed": true
+    },
+    {
+      "check": "ledger_audits_all_pass",
+      "passed": true
+    },
+    {
+      "check": "review_status_and_release_boundary",
+      "passed": true
+    },
+    {
+      "check": "analysis_source_pins_unchanged",
+      "passed": true
+    }
+  ],
+  "source_fingerprints": [
+    {
+      "path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/public-summary.v1.json",
+      "sha256": "15d14c6cbbc15f824d4181dd6984c7c4047d85cfa44625ff0a376f9296903613",
+      "size_bytes": 52959
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/analyze_diagnosis.py",
+      "sha256": "c59e454492e2600a6d4bfdee44efbefe5fe768e79753b418723493a500b1dfdf",
+      "size_bytes": 32036
+    },
+    {
+      "path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/shared-budget.json",
+      "sha256": "2c6b81cc50740fda4ef7c58b01bbcc8b8422c448d8990ec865c50bcd94efd3ce",
+      "size_bytes": 7730
+    },
+    {
+      "path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/native-launch-result.json",
+      "sha256": "622912cf2de67a383a41b7e17ab3364823fd5f3d10e4c7cf90fb8a926b8751e8",
+      "size_bytes": 355
+    },
+    {
+      "path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/center/result.json",
+      "sha256": "c5daa979f36751653e09bce416a69781f0f90148ee4a50e1a11973801249b0c6",
+      "size_bytes": 15346
+    },
+    {
+      "path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/center/gradient.npy",
+      "sha256": "ff58852a6c7a7e99a6a9d3aab79d2490e1ed7ec1b8fce0a9710b8feb58565544",
+      "size_bytes": 752
+    },
+    {
+      "path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/center.json",
+      "sha256": "e719be9ee5ecbd04b65cdb9180b7d2b331fc44fbba6ca09e450997f6ad103b33",
+      "size_bytes": 1115
+    },
+    {
+      "path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-plus/result.json",
+      "sha256": "93a3782c4d3dbbca56cf253b321c5239079484155dd9b41a38d37f9e0fa5d650",
+      "size_bytes": 15274
+    },
+    {
+      "path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-plus/gradient.npy",
+      "sha256": "9bb6b1f05c67933e58fb0d38a1587bfcace3fcf95a8124e430cce94cdd041302",
+      "size_bytes": 752
+    },
+    {
+      "path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C6-y-plus.json",
+      "sha256": "400edfa72072d9ccd448fa9f4302e573c8e7415d804f945588c9dc2715054620",
+      "size_bytes": 1130
+    },
+    {
+      "path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-minus/result.json",
+      "sha256": "f6e18f681eea3ca2ad6fa61f4f7f061aae3daf3675a08c93bd68b7f7cab684b3",
+      "size_bytes": 15304
+    },
+    {
+      "path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-minus/gradient.npy",
+      "sha256": "3fcee2f46a3dee598e0ae75c3eeb6647243b163cc670c391adf6f215238c068c",
+      "size_bytes": 752
+    },
+    {
+      "path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C6-y-minus.json",
+      "sha256": "629bde01b28d2f5c8916986b55adc85f12ec7feff390cfc277470c00999231a2",
+      "size_bytes": 1134
+    },
+    {
+      "path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-plus/result.json",
+      "sha256": "540904123ee6d4e4ed0f99552a5965622f3709e18a01a12ac16e8bbeb242785e",
+      "size_bytes": 15301
+    },
+    {
+      "path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-plus/gradient.npy",
+      "sha256": "8e0af9f25472383090a405c0e78a17fc02cd18e8e899e83f1b9a0014aed932af",
+      "size_bytes": 752
+    },
+    {
+      "path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C10-y-plus.json",
+      "sha256": "9a43f3e424e56b1a5b30c14188ee2f52ca1e6b46fade3558b5ded3e8f8ced1ff",
+      "size_bytes": 1136
+    },
+    {
+      "path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-minus/result.json",
+      "sha256": "a867abb6a299ba28e2f97f704a9bb3faf27f15eb60d2180bb8f8e301340d4e94",
+      "size_bytes": 15311
+    },
+    {
+      "path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-minus/gradient.npy",
+      "sha256": "81eea5f26f93d727e8995ac8c184a87bb631814793496273d822fc198010ba87",
+      "size_bytes": 752
+    },
+    {
+      "path": "scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C10-y-minus.json",
+      "sha256": "6ea8bae4c68fbb91c3b0a75bcbe45a215fdcaee3f5d11b2563417dc5f5892a0c",
+      "size_bytes": 1140
+    }
+  ],
+  "scientific_findings": {
+    "local_reciprocal_error_Eh_bohr2": 0.0014977575105072183,
+    "local_reciprocal_threshold_Eh_bohr2": 0.0001,
+    "local_pair_threshold_passed": false,
+    "precision_effect": "no_resolved_change_at_declared_comparison_scale_does_not_exclude_SCF_effects",
+    "FD1_C6_C10_passed": [
+      true,
+      true
+    ],
+    "diagnostic_FD2_C6_C10_passed": [
+      false,
+      true
+    ],
+    "full_curvature_or_minimum_awarded": false,
+    "imaginary_frequency_count": null,
+    "root_cause": "not_established",
+    "CH3": "retained_without_new_calculation"
+  }
+}

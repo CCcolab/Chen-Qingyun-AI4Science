@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "task_id": "A01-M0-CF3-TIGHT-GRAD-20261113-v1",
+  "created_utc": "2026-11-13T11:26:53.571746+00:00",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scope": "Five fresh SCF/nuclear-gradient evaluations of fixed CF3 center and C6-y/C10-y +/- points; diagnose only SCF-precision sensitivity of the two sampled Hessian columns",
+  "limits": {
+    "shared_wall_seconds": 3000,
+    "per_point_wall_seconds": 480,
+    "max_SCF_attempts": 5,
+    "max_gradient_reservations": 5,
+    "max_workers": 1,
+    "threads_per_worker": 4,
+    "memory_mb_soft_per_worker": 4000,
+    "max_SCF_cycles_per_point": 120
+  },
+  "internal_targets": {
+    "conv_tol": 1e-12,
+    "conv_tol_grad": 1e-10
+  },
+  "final_orbital_norm_max": 1e-09,
+  "center_raw_gradient_gate": {
+    "atom_norm_rms_max_Eh_bohr": 0.0003,
+    "atom_norm_max_max_Eh_bohr": 0.00045
+  },
+  "historical_recorded_worker_hours_lower_bound": 20.55026662453337,
+  "normal_extra_cycle": true,
+  "no_changed_PySCF_convergence_function": true,
+  "no_new_energy_or_density_acceptance_threshold": true,
+  "no_retry_refund_extension_parameter_change_or_followup_quantum": true,
+  "stage": "TIGHT_GRADIENT",
+  "point_order": [
+    "center",
+    "C6-y-plus",
+    "C6-y-minus",
+    "C10-y-plus",
+    "C10-y-minus"
+  ],
+  "fixed_model": {
+    "method": "DF-RKS",
+    "xc": "PBE0",
+    "basis": "def2-svp",
+    "solvent": "ddCOSMO",
+    "epsilon": 2.2706,
+    "grid_level": 2,
+    "solvent_grid_level": 1,
+    "lmax": 6,
+    "lebedev_order": 17,
+    "equilibrium_solvation": true,
+    "frozen": false,
+    "charge": 0,
+    "spin": 0,
+    "electrons": 154,
+    "AO_count": 319,
+    "grid_response": true,
+    "auxbasis_response": true,
+    "additional_D3_D4": false
+  },
+  "worker": "worker_points.py",
+  "worker_sha256": "69d64c5a4981213dd598285ea3973ed0f32d3fae6bfb294e48fdfa0c23924bd9",
+  "inputs": "inputs.v1.json",
+  "inputs_sha256": "9a8e783d56ab1602754f8c08372b9be648b7e363535f46fd41fc93e7f47a479a",
+  "source_plan": "research/a01/oxazolone-model/cf3-curvature-diagnosis-20261113-v1/planned-inputs.v2.json",
+  "source_plan_sha256": "b00db278cc3d219b5c1aac5778ee7b36a469be7fc84d307598c7ffbe7a8524de",
+  "existing_full_Hessian_criteria_retained": {
+    "maximum_absolute_antisymmetry_Eh_bohr2": 0.0001,
+    "relative_Frobenius_antisymmetry": 0.001,
+    "both_required": true
+  },
+  "interpretation": "A completed two-column precision comparison cannot be spliced into or certify any full Hessian. No stationary/minimum/saddle/IRC/barrier/mechanism qualification.",
+  "CH3": "Retain archived results without recomputation or reinterpretation"
+}

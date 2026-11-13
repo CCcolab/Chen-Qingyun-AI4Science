@@ -14,7 +14,8 @@ import re
 from urllib.parse import quote
 
 from a01_publication_contract import (COMMIT, PROGRESS_PATH, REVISION_PATH, SHA,
-    TOPIC_PATH, digest, effective_website_entries, project_file, read_json)
+    PROGRESS_V2_PATH, TOPIC_PATH, current_progress_path, digest,
+    effective_website_entries, project_file, read_json)
 
 ROOT = Path(__file__).resolve().parents[1]
 TITLE = '全氟酮化学早期研究：六氟丙酮反应与六氟双酚A（双酚AF）制备'
@@ -42,7 +43,15 @@ def timestamp(value, offset):
     return parsed
 
 
-def inspect_progress(root: Path = ROOT, *, require_page=True, allow_unlinked=False) -> dict:
+def inspect_progress(root: Path = ROOT, *, require_page=True, allow_unlinked=False,
+                     progress_path=None) -> dict:
+    selected = progress_path or current_progress_path(root)
+    if selected == PROGRESS_V2_PATH:
+        from a01_progress_v2 import inspect_diagnosis_progress
+        return inspect_diagnosis_progress(root, require_page=require_page,
+            allow_unlinked=allow_unlinked)
+    if selected != PROGRESS_PATH:
+        raise ValueError('Unsupported explicit A01 progress data path')
     report = {'status': 'failed', 'scope': 'A01 saved evidence, public JSON and static page consistency',
         'scientific_review_status': 'review_required', 'release_eligible': False,
         'DFT_started_by_check': False, 'distributed_tests_run': 0,
@@ -283,17 +292,32 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path)
     parser.add_argument('--data-only', action='store_true', help='Preparation check, without page/revision checks')
-    parser.add_argument('--allow-unlinked', action='store_true', help='Permit null S1 while preparing the archive commit')
+    parser.add_argument('--allow-unlinked', action='store_true', help='Permit a null archive commit only while preparing an evidence edition')
+    parser.add_argument('--data', choices=[PROGRESS_PATH, PROGRESS_V2_PATH],
+                        help='Explicit edition for archive preparation or historical verification')
     args = parser.parse_args()
     if args.output and args.output.exists():
         parser.error('--output must be a fresh JSON evidence path')
-    report = inspect_progress(require_page=not args.data_only, allow_unlinked=args.allow_unlinked)
+    report = inspect_progress(require_page=not args.data_only, allow_unlinked=args.allow_unlinked,
+                              progress_path=args.data)
+    # S3 may contain the real new evidence before S4 changes the current page.
+    # Check that saved successor too; keep the historical page as current until
+    # its separately bound revision and registry are created.
+    if (args.data is None and current_progress_path(ROOT) == PROGRESS_PATH
+            and (ROOT/PROGRESS_V2_PATH).is_file()):
+        successor = inspect_progress(require_page=False, allow_unlinked=True,
+                                     progress_path=PROGRESS_V2_PATH)
+        report['prepared_successor_data_check'] = successor
+        if successor['status'] != 'passed':
+            report['errors'].extend('Prepared v2 data: '+message for message in successor['errors'])
+            report['status'] = 'failed'
     if args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)
         with args.output.open('x', encoding='utf-8', newline='\n') as stream:
             json.dump(report, stream, ensure_ascii=False, indent=2, allow_nan=False); stream.write('\n')
     print(json.dumps({'status': report['status'], 'scientific_stage_outcome': report.get('scientific_stage_outcome'),
         'evidence_checks': len(report['evidence_checks']), 'source_field_checks': len(report['source_field_checks']),
+        'prepared_successor_status': report.get('prepared_successor_data_check', {}).get('status'),
         'DFT_started_by_check': False, 'distributed_tests_run': 0, 'errors': report['errors']}, ensure_ascii=False))
     return 0 if report['status'] == 'passed' else 1
 

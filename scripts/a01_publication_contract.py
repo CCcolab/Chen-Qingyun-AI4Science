@@ -13,6 +13,11 @@ BASELINE_SHA256 = '5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab
 ARCHIVE_SHA256 = 'fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e'
 REVISION_PATH = 'provenance/a01-site-revision.v1.json'
 PROGRESS_PATH = 'research/a01/public-progress.v1.json'
+REVISION_V2_PATH = 'provenance/a01-site-revision.v2.json'
+PROGRESS_V2_PATH = 'research/a01/public-progress.v2.json'
+CURRENT_PATH = 'research/a01/public-progress.current.json'
+REVISION_V1_SHA256 = '47c875aceb4b37b17a38bfd96eca694b08f3c321b396c2d0f5da4181a72b11bd'
+PROGRESS_V1_SHA256 = 'eca8d0ae472c3e49c99d7f8f03cb3e317bc860e5ec29ab95de65c7276f1cd7dd'
 TOPIC_PATH = 'topics/early-fluoroketones/index.html'
 ALLOWED_CHANGES = {TOPIC_PATH, 'index.html', 'achievements/index.html'}
 SHA = re.compile(r'[0-9a-f]{64}')
@@ -38,7 +43,40 @@ def project_file(root: Path, name: str) -> Path:
     return candidate
 
 
-def effective_website_entries(root: Path, baseline: dict) -> tuple[dict, dict]:
+def current_publication(root: Path) -> dict:
+    """Resolve the explicit current edition, retaining the original v1 fallback.
+
+    The registry contains paths, not its own digest or an eventual commit SHA.
+    Its only supported successor is this authorized five-point diagnosis.
+    """
+    if not (root/CURRENT_PATH).exists():
+        return {'public_progress': PROGRESS_PATH, 'revision_chain': [REVISION_PATH],
+                'current_revision': REVISION_PATH, 'legacy': True}
+    registry = read_json(project_file(root, CURRENT_PATH))
+    if (registry.get('schema_version') != '1.0'
+            or registry.get('registry_kind') != 'a01_public_progress_current'
+            or registry.get('scientific_review_status') != 'review_required'
+            or registry.get('release_eligible') is not False
+            or registry.get('public_progress') != PROGRESS_V2_PATH
+            or registry.get('current_revision') != REVISION_V2_PATH
+            or registry.get('revision_chain') != [REVISION_PATH, REVISION_V2_PATH]):
+        raise ValueError('Unsupported current A01 progress registry')
+    return {**registry, 'legacy': False}
+
+
+def current_progress_path(root: Path) -> str:
+    return current_publication(root)['public_progress']
+
+
+def effective_website_entries(root: Path, baseline: dict, *, verify_current=True,
+                              revision_chain=None) -> tuple[dict, dict]:
+    """Apply immutable historical declarations, then check only the final bytes.
+
+    A historical revision describes its own old/new bytes. It must not require
+    the current website to retain that historical edition's final HTML.
+    ``verify_current=False`` is used only to prepare a new explicit revision;
+    production checks always use the default and verify every effective member.
+    """
     baseline_path = root/'provenance/website-baseline.json'
     if digest(baseline_path) != BASELINE_SHA256:
         raise ValueError('Original YouMind baseline bytes changed; a revision must not refresh it')
@@ -47,57 +85,83 @@ def effective_website_entries(root: Path, baseline: dict) -> tuple[dict, dict]:
     if digest(project_file(root, 'upstream/chen-qingyun-a2-citations-candidate.zip')) != ARCHIVE_SHA256:
         raise ValueError('Original YouMind export ZIP bytes changed')
     entries = {entry['path']: dict(entry) for entry in baseline['files']}
-    revision_path = root/REVISION_PATH
-    if not revision_path.exists():
+    selected = current_publication(root)
+    chain = revision_chain if revision_chain is not None else selected['revision_chain']
+    if chain not in ([REVISION_PATH], [REVISION_PATH, REVISION_V2_PATH]):
+        raise ValueError('Unsupported A01 revision chain')
+    if not (root/REVISION_PATH).exists():
+        if not selected['legacy']:
+            raise ValueError('Current A01 registry requires its immutable v1 predecessor')
         return entries, {'present': False, 'changed_paths': [], 'original_baseline_preserved': True}
-    revision = read_json(project_file(root, REVISION_PATH))
-    if revision.get('schema_version') != '1.0' or revision.get('revision_id') != 'A01-PROGRESS-20261113-v1':
-        raise ValueError('Unsupported A01 page revision contract')
-    if (revision.get('publication_kind') != 'a01_research_progress'
-            or revision.get('scientific_review_status') != 'review_required'
-            or revision.get('release_eligible') is not False):
-        raise ValueError('A01 page revision is public progress only, pending scientific review')
-    if revision.get('original_baseline_sha256') != BASELINE_SHA256 or revision.get('original_archive_sha256') != ARCHIVE_SHA256:
-        raise ValueError('Revision does not bind the preserved original source identities')
-    commit = revision.get('evidence_commit_s1')
-    if not isinstance(commit, str) or not COMMIT.fullmatch(commit):
-        raise ValueError('A01 page revision requires a fixed S1 evidence commit')
-    public = revision.get('public_progress', {})
-    if public.get('path') != PROGRESS_PATH or not isinstance(public.get('sha256'), str) or not SHA.fullmatch(public['sha256']):
-        raise ValueError('A01 revision must bind its separate public progress data')
-    if digest(project_file(root, PROGRESS_PATH)) != public['sha256']:
-        raise ValueError('A01 progress bytes differ from page revision binding')
-    progress = read_json(root/PROGRESS_PATH)
-    if progress.get('evidence_archive_commit') != commit:
-        raise ValueError('A01 page and progress record refer to different evidence commits')
-    changes = revision.get('changes')
-    if not isinstance(changes, list) or not 1 <= len(changes) <= len(ALLOWED_CHANGES):
-        raise ValueError('Revision must explicitly enumerate one to three authorized HTML changes')
-    seen = set()
-    for item in changes:
-        name = item.get('path')
-        if name not in ALLOWED_CHANGES or name in seen:
-            raise ValueError('Unauthorized or duplicate revised website path: '+str(name))
-        seen.add(name)
-        old = entries.get(name)
-        if old is None or item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']:
-            raise ValueError('Revision old bytes must match original baseline: '+name)
-        value, size = item.get('new_sha256'), item.get('new_bytes')
-        if (not isinstance(value, str) or not SHA.fullmatch(value) or value == old['sha256']
-                or not isinstance(size, int) or isinstance(size, bool) or size <= 0
-                or not isinstance(item.get('reason'), str) or not item['reason'].strip()
-                or item.get('source_evidence_commit') != commit):
-            raise ValueError('Incomplete A01 page revision record: '+name)
-        current = project_file(root, 'site/'+name)
-        if digest(current) != value or current.stat().st_size != size:
-            raise ValueError('Revised website bytes differ from explicitly authorized revision: '+name)
-        entries[name] = {**old, 'sha256': value, 'bytes': size,
-                         'original_sha256': old['sha256'], 'revision_id': revision['revision_id']}
-    if TOPIC_PATH not in seen:
-        raise ValueError('An A01 progress revision must update its existing topic page')
-    return entries, {'present': True, 'path': REVISION_PATH, 'sha256': digest(revision_path),
-        'revision_id': revision['revision_id'], 'changed_paths': sorted(seen),
+    stages, all_changed = [], set()
+    for edition, name in enumerate(chain, 1):
+        revision_path = project_file(root, name)
+        revision = read_json(revision_path)
+        if edition == 1:
+            if digest(revision_path) != REVISION_V1_SHA256 or digest(project_file(root, PROGRESS_PATH)) != PROGRESS_V1_SHA256:
+                raise ValueError('The original public progress and revision v1 are immutable')
+        if (revision.get('schema_version') != ('1.0' if edition == 1 else '2.0')
+                or revision.get('revision_id') != 'A01-PROGRESS-20261113-v'+str(edition)):
+            raise ValueError('Unsupported A01 page revision contract')
+        if (revision.get('publication_kind') != 'a01_research_progress'
+                or revision.get('scientific_review_status') != 'review_required'
+                or revision.get('release_eligible') is not False):
+            raise ValueError('A01 page revision is public progress only, pending scientific review')
+        if revision.get('original_baseline_sha256') != BASELINE_SHA256 or revision.get('original_archive_sha256') != ARCHIVE_SHA256:
+            raise ValueError('Revision does not bind the preserved original source identities')
+        if edition == 2 and revision.get('previous_revision') != {'path': REVISION_PATH, 'sha256': REVISION_V1_SHA256}:
+            raise ValueError('A01 revision v2 must bind its immutable v1 predecessor')
+        commit = revision.get('evidence_commit_s1' if edition == 1 else 'evidence_commit_s3')
+        if not isinstance(commit, str) or not COMMIT.fullmatch(commit):
+            raise ValueError('A01 page revision requires a fixed evidence commit')
+        public = revision.get('public_progress', {})
+        progress_name = PROGRESS_PATH if edition == 1 else PROGRESS_V2_PATH
+        if public.get('path') != progress_name or not isinstance(public.get('sha256'), str) or not SHA.fullmatch(public['sha256']):
+            raise ValueError('A01 revision must bind its separate public progress data')
+        if digest(project_file(root, progress_name)) != public['sha256']:
+            raise ValueError('A01 progress bytes differ from page revision binding')
+        progress = read_json(root/progress_name)
+        if progress.get('evidence_archive_commit') != commit:
+            raise ValueError('A01 page and progress record refer to different evidence commits')
+        changes = revision.get('changes')
+        if not isinstance(changes, list) or not 1 <= len(changes) <= len(ALLOWED_CHANGES):
+            raise ValueError('Revision must explicitly enumerate one to three authorized HTML changes')
+        seen = set()
+        for item in changes:
+            member = item.get('path')
+            if member not in ALLOWED_CHANGES or member in seen:
+                raise ValueError('Unauthorized or duplicate revised website path: '+str(member))
+            seen.add(member)
+            old = entries.get(member)
+            if old is None or item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']:
+                raise ValueError('Revision old bytes must match the preceding effective edition: '+member)
+            value, size = item.get('new_sha256'), item.get('new_bytes')
+            if (not isinstance(value, str) or not SHA.fullmatch(value) or value == old['sha256']
+                    or not isinstance(size, int) or isinstance(size, bool) or size <= 0
+                    or not isinstance(item.get('reason'), str) or not item['reason'].strip()
+                    or item.get('source_evidence_commit') != commit):
+                raise ValueError('Incomplete A01 page revision record: '+member)
+            entries[member] = {**old, 'sha256': value, 'bytes': size,
+                'original_sha256': old.get('original_sha256', old['sha256']),
+                'revision_id': revision['revision_id']}
+        if TOPIC_PATH not in seen:
+            raise ValueError('An A01 progress revision must update its existing topic page')
+        all_changed.update(seen)
+        stages.append({'path': name, 'sha256': digest(revision_path),
+            'revision_id': revision['revision_id'], 'changed_paths': sorted(seen),
+            'public_progress_sha256': public['sha256'], 'evidence_archive_commit': commit})
+    if verify_current:
+        for member in all_changed:
+            current = project_file(root, 'site/'+member)
+            if digest(current) != entries[member]['sha256'] or current.stat().st_size != entries[member]['bytes']:
+                raise ValueError('Current website bytes differ from the final authorized revision: '+member)
+    latest = stages[-1]
+    return entries, {'present': True, 'path': latest['path'], 'sha256': latest['sha256'],
+        'revision_id': latest['revision_id'], 'changed_paths': sorted(all_changed),
+        'current_revision_changed_paths': latest['changed_paths'],
+        'revision_chain': stages, 'public_progress_path': public['path'],
         'original_baseline_preserved': True, 'original_baseline_sha256': BASELINE_SHA256,
-        'public_progress_sha256': public['sha256'], 'evidence_commit_s1': commit,
+        'public_progress_sha256': public['sha256'], 'current_evidence_commit': commit,
+        'evidence_commit_s1': stages[0]['evidence_archive_commit'],
         'publication_kind': 'a01_research_progress', 'scientific_review_status': 'review_required',
         'release_eligible': False}

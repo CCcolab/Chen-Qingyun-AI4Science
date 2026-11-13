@@ -1,0 +1,131 @@
+
+
+******** <class 'pyscf.solvent._attach_solvent.ddCOSMODFRKS'> ********
+method = ddCOSMODFRKS
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+diis_damp = 0
+SCF conv_tol = 1e-12
+SCF conv_tol_grad = 1e-10
+SCF max_cycles = 120
+direct_scf = False
+chkfile to save SCF result = /mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/center/scf.chk
+max_memory 4000 MB (current use 116 MB)
+XC library pyscf.dft.libxc version 7.0.0
+    S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+XC functionals = PBE0
+    C. Adamo and V. Barone.,  J. Chem. Phys. 110, 6158 (1999)
+    M. Ernzerhof and G. E. Scuseria.,  J. Chem. Phys. 110, 5029 (1999)
+radial grids: 
+    Treutler-Ahlrichs [JCP 102, 346 (1995); DOI:10.1063/1.469408] (M4) radial grids
+    
+becke partition: Becke, JCP 88, 2547 (1988); DOI:10.1063/1.454033
+pruning grids: <function nwchem_prune at 0x7ff03e7e6b60>
+grids dens level: 2
+symmetrized grids: False
+atomic radii adjust function: <function treutler_atomic_radii_adjust at 0x7ff03e7e7100>
+small_rho_cutoff = 0
+******** <class 'pyscf.solvent.ddcosmo.ddCOSMO'> ********
+lebedev_order = 17 (110 grids per sphere)
+lmax = 6
+eta = 0.1
+eps = 2.2706
+frozen = False
+equilibrium_solvation = True
+radial grids: 
+    Treutler-Ahlrichs [JCP 102, 346 (1995); DOI:10.1063/1.469408] (M4) radial grids
+    
+becke partition: Becke, JCP 88, 2547 (1988); DOI:10.1063/1.454033
+pruning grids: <function nwchem_prune at 0x7ff03e7e6b60>
+grids dens level: 1
+symmetrized grids: False
+atomic radii adjust function: <function treutler_atomic_radii_adjust at 0x7ff03e7e7100>
+Overwritten attributes  post_kernel  of <class 'pyscf.solvent._attach_solvent.ddCOSMODFRKS'>
+tot grids = 264392
+******** <class 'pyscf.df.df.DF'> ********
+auxbasis = None
+max_memory = 4000
+tot grids = 121800
+ddCOSMO E_diel = -0.00527431843879374
+Solvent Energy = -0.00527431843879374
+init E= -1262.3124362191
+  HOMO = -0.278732953167675  LUMO = -0.123851131078299  gap/eV = 4.21455
+ddCOSMO E_diel = -0.00527431817162666
+Solvent Energy = -0.00527431817162666
+cycle= 1 E= -1262.3124362191  delta_E= -9.09e-13  |g|= 4.93e-08  |ddm|= 8.55e-08
+  HOMO = -0.278732954701004  LUMO = -0.123851131691248  gap/eV = 4.21455
+ddCOSMO E_diel = -0.00527431869714222
+Solvent Energy = -0.00527431869714222
+cycle= 2 E= -1262.3124362191  delta_E= -2.27e-12  |g|= 9.45e-08  |ddm|= 1.62e-07
+  HOMO = -0.278732953734711  LUMO = -0.123851131115806  gap/eV = 4.21455
+ddCOSMO E_diel = -0.00527431833741767
+Solvent Energy = -0.00527431833741767
+cycle= 3 E= -1262.3124362191  delta_E= 4.55e-13  |g|= 5.05e-09  |ddm|= 1.07e-07
+  HOMO = -0.278732953701606  LUMO = -0.123851131159202  gap/eV = 4.21455
+ddCOSMO E_diel = -0.00527431834653253
+Solvent Energy = -0.00527431834653253
+cycle= 4 E= -1262.3124362191  delta_E= 2.27e-12  |g|= 9.69e-10  |ddm|= 4.63e-09
+  HOMO = -0.278732953705656  LUMO = -0.123851131178302  gap/eV = 4.21455
+ddCOSMO E_diel = -0.00527431834789789
+Solvent Energy = -0.00527431834789789
+cycle= 5 E= -1262.3124362191  delta_E= -9.09e-13  |g|= 3.09e-10  |ddm|= 7.92e-10
+  HOMO = -0.278732953707186  LUMO = -0.123851131185301  gap/eV = 4.21455
+ddCOSMO E_diel = -0.00527431834842254
+Solvent Energy = -0.00527431834842254
+cycle= 6 E= -1262.3124362191  delta_E=    0  |g|= 1.87e-10  |ddm|= 2.53e-10
+  HOMO = -0.278732953704981  LUMO = -0.123851131186838  gap/eV = 4.21455
+ddCOSMO E_diel = -0.00527431834753203
+Solvent Energy = -0.00527431834753203
+cycle= 7 E= -1262.3124362191  delta_E= 4.55e-13  |g|= 1.66e-10  |ddm|= 2.55e-10
+  HOMO = -0.278732953703324  LUMO = -0.123851131187501  gap/eV = 4.21455
+ddCOSMO E_diel = -0.00527431834688541
+Solvent Energy = -0.00527431834688541
+cycle= 8 E= -1262.31243621909  delta_E= 2.27e-12  |g|= 3.01e-10  |ddm|= 1.89e-10
+  HOMO = -0.278732953706174  LUMO = -0.123851131190327  gap/eV = 4.21455
+ddCOSMO E_diel = -0.00527431834794528
+Solvent Energy = -0.00527431834794528
+cycle= 9 E= -1262.3124362191  delta_E= -9.09e-13  |g|= 5.3e-11  |ddm|= 3.18e-10
+  HOMO = -0.278732953706907  LUMO = -0.123851131196619  gap/eV = 4.21455
+ddCOSMO E_diel = -0.00527431834793447
+Solvent Energy = -0.00527431834793447
+Extra cycle  E= -1262.3124362191  delta_E= -1.36e-12  |g|= 5.94e-11  |ddm|= 1.46e-10
+converged SCF energy = -1262.3124362191
+
+
+******** <class 'pyscf.solvent.grad.pcm.ddCOSMOGradients'> for <class 'pyscf.solvent._attach_solvent.ddCOSMODFRKS'> ********
+unit = Eh/Bohr
+max_memory 4000 MB (current use 918 MB)
+grid_response = True
+--------------- ddCOSMODFRKS (+ddCOSMO) gradients ---------------
+         x                y                z
+0 O     0.0000071824    -0.0000048648     0.0000038412
+1 C    -0.0000158283     0.0000174200    -0.0000023687
+2 O     0.0000219608    -0.0000070055     0.0000050886
+3 C    -0.0000134045     0.0000043450    -0.0000185655
+4 C     0.0000015971    -0.0000157947     0.0000063084
+5 C    -0.0000026408     0.0000062316    -0.0000057482
+6 C    -0.0000021697     0.0000021809     0.0000025615
+7 C     0.0000052066    -0.0000023966     0.0000014230
+8 C    -0.0000019194    -0.0000025266    -0.0000073320
+9 C    -0.0000016809     0.0000092154     0.0000010398
+10 N     0.0000001019     0.0000022475     0.0000087199
+11 C     0.0000034567    -0.0000068043    -0.0000036032
+12 C    -0.0000021627    -0.0000028254     0.0000045382
+13 C     0.0000001462    -0.0000000201     0.0000034242
+14 F    -0.0000056886     0.0000043020    -0.0000001914
+15 F     0.0000039128     0.0000031518    -0.0000060860
+16 F    -0.0000007523    -0.0000016274     0.0000021395
+17 C    -0.0000049088    -0.0000021032     0.0000048319
+18 F     0.0000038936     0.0000034535    -0.0000030510
+19 F     0.0000059943    -0.0000006156     0.0000038430
+20 F    -0.0000003946    -0.0000011478     0.0000022958
+21 H    -0.0000015523    -0.0000035872    -0.0000003934
+22 H    -0.0000007981    -0.0000000675    -0.0000003779
+23 H     0.0000012231     0.0000013480    -0.0000020683
+24 H    -0.0000004615    -0.0000007781    -0.0000011737
+25 H    -0.0000003132    -0.0000017310     0.0000009044
+----------------------------------------------

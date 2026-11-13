@@ -8,6 +8,7 @@ import hashlib
 import html
 import json
 from pathlib import Path
+from a01_publication_contract import current_progress_path
 
 ROOT = Path(__file__).resolve().parents[1]
 BEGIN = '<!-- A01_PUBLIC_PROGRESS_BEGIN -->'
@@ -26,6 +27,9 @@ def number(value, digits=12):
 
 def render_block(data, data_sha256):
     """Return the complete marker block; checks compare these exact bytes."""
+    if data.get('schema_version') == '2.0':
+        from a01_progress_v2 import render_diagnosis_block
+        return render_diagnosis_block(data, data_sha256)
     execution = data['execution']
     result = execution['result']
     resources = execution['resources']
@@ -97,14 +101,19 @@ def replace_block(page, block):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--data', type=Path, default=ROOT/'research/a01/public-progress.v1.json')
+    parser.add_argument('--data', type=Path, help='Defaults to the explicitly registered current edition')
     parser.add_argument('--page', type=Path, default=ROOT/'site/topics/early-fluoroketones/index.html')
     parser.add_argument('--write', action='store_true')
     args = parser.parse_args()
-    content = args.data.read_bytes()
-    block = render_block(json.loads(content), hashlib.sha256(content).hexdigest())
+    data_path = args.data or ROOT/current_progress_path(ROOT)
+    content = data_path.read_bytes()
+    data = json.loads(content)
+    block = render_block(data, hashlib.sha256(content).hexdigest())
     page = args.page.read_bytes().decode('utf-8')
     generated = replace_block(page, block)
+    if data.get('schema_version') == '2.0':
+        generated = generated.replace('本轮现代中心电子检查与双酚AF制备机制分开登记。',
+            '现代噁唑酮模型数值诊断与双酚AF制备机制分开登记。', 1)
     if args.write:
         args.page.write_bytes(generated.encode('utf-8'))
     elif generated != page:

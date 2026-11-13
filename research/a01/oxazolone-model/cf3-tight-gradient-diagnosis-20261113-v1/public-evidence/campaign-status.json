@@ -1,0 +1,394 @@
+{
+  "schema_version": "1.0",
+  "task_id": "A01-M0-CF3-TIGHT-GRAD-20261113-v1",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "status": "completed_five_point_diagnosis",
+  "started_epoch": 1794569568.9681668,
+  "execution_commit": null,
+  "execution_code_sha256": {
+    "controller": "1e192cd378d5913f05d8c8e69de70dc6561ceeeaa022bb9beb9e1bc00bbfe84f",
+    "worker": "69d64c5a4981213dd598285ea3973ed0f32d3fae6bfb294e48fdfa0c23924bd9",
+    "contract": "c04697a81952d87fa7bacc2e3b07b59126650043556447a39625ec2ffa5e2a38",
+    "manifest": "d4fa69e0a34d69e77c94dc0356951be0fa146844c1a25526f0cf5afcfd96dc02"
+  },
+  "processes": [
+    {
+      "stage": "TIGHT_GRADIENT",
+      "point_id": "center",
+      "reservation_id": 1,
+      "output": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/center",
+      "result_path": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/center/result.json",
+      "started_epoch": 1794569569.3484128,
+      "returncode": 0,
+      "timed_out": false,
+      "external_stop": false,
+      "stdout": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/center.stdout.log",
+      "stderr": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/center.stderr.log",
+      "finished_epoch": 1794569693.1345308,
+      "elapsed_seconds": 123.7861180305481,
+      "worker_result_sha256": "c5daa979f36751653e09bce416a69781f0f90148ee4a50e1a11973801249b0c6",
+      "worker_status": "completed",
+      "scf_started": true,
+      "electronic_complete": true,
+      "gradient_started": true,
+      "gradient_complete": true
+    },
+    {
+      "stage": "TIGHT_GRADIENT",
+      "point_id": "C6-y-plus",
+      "reservation_id": 2,
+      "output": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-plus",
+      "result_path": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-plus/result.json",
+      "started_epoch": 1794569693.9322305,
+      "returncode": 0,
+      "timed_out": false,
+      "external_stop": false,
+      "stdout": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C6-y-plus.stdout.log",
+      "stderr": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C6-y-plus.stderr.log",
+      "finished_epoch": 1794570058.1580858,
+      "elapsed_seconds": 364.2258553504944,
+      "worker_result_sha256": "93a3782c4d3dbbca56cf253b321c5239079484155dd9b41a38d37f9e0fa5d650",
+      "worker_status": "completed",
+      "scf_started": true,
+      "electronic_complete": true,
+      "gradient_started": true,
+      "gradient_complete": true
+    },
+    {
+      "stage": "TIGHT_GRADIENT",
+      "point_id": "C6-y-minus",
+      "reservation_id": 3,
+      "output": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-minus",
+      "result_path": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-minus/result.json",
+      "started_epoch": 1794570058.937713,
+      "returncode": 0,
+      "timed_out": false,
+      "external_stop": false,
+      "stdout": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C6-y-minus.stdout.log",
+      "stderr": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C6-y-minus.stderr.log",
+      "finished_epoch": 1794570368.379161,
+      "elapsed_seconds": 309.44144797325134,
+      "worker_result_sha256": "f6e18f681eea3ca2ad6fa61f4f7f061aae3daf3675a08c93bd68b7f7cab684b3",
+      "worker_status": "completed",
+      "scf_started": true,
+      "electronic_complete": true,
+      "gradient_started": true,
+      "gradient_complete": true
+    },
+    {
+      "stage": "TIGHT_GRADIENT",
+      "point_id": "C10-y-plus",
+      "reservation_id": 4,
+      "output": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-plus",
+      "result_path": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-plus/result.json",
+      "started_epoch": 1794570369.2153199,
+      "returncode": 0,
+      "timed_out": false,
+      "external_stop": false,
+      "stdout": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C10-y-plus.stdout.log",
+      "stderr": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C10-y-plus.stderr.log",
+      "finished_epoch": 1794570744.0893338,
+      "elapsed_seconds": 374.87401390075684,
+      "worker_result_sha256": "540904123ee6d4e4ed0f99552a5965622f3709e18a01a12ac16e8bbeb242785e",
+      "worker_status": "completed",
+      "scf_started": true,
+      "electronic_complete": true,
+      "gradient_started": true,
+      "gradient_complete": true
+    },
+    {
+      "stage": "TIGHT_GRADIENT",
+      "point_id": "C10-y-minus",
+      "reservation_id": 5,
+      "output": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-minus",
+      "result_path": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-minus/result.json",
+      "started_epoch": 1794570745.5205617,
+      "returncode": 0,
+      "timed_out": false,
+      "external_stop": false,
+      "stdout": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C10-y-minus.stdout.log",
+      "stderr": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/processes/C10-y-minus.stderr.log",
+      "finished_epoch": 1794571116.3225646,
+      "elapsed_seconds": 370.8020029067993,
+      "worker_result_sha256": "a867abb6a299ba28e2f97f704a9bb3faf27f15eb60d2180bb8f8e301340d4e94",
+      "worker_status": "completed",
+      "scf_started": true,
+      "electronic_complete": true,
+      "gradient_started": true,
+      "gradient_complete": true
+    }
+  ],
+  "center_gradient_gate": {
+    "passed": true,
+    "atom_norm_RMS_Eh_bohr": 1.0411961604956927e-05,
+    "atom_norm_max_Eh_bohr": 2.3655935071660374e-05,
+    "RMS_threshold_Eh_bohr": 0.0003,
+    "max_threshold_Eh_bohr": 0.00045,
+    "role": "Raw center force-balance diagnostic only, not curvature or orbital stability",
+    "worker_flag_agrees": true
+  },
+  "displacement_admission": {
+    "admitted": true,
+    "reasons": [],
+    "remaining_seconds": 2875.425239801407,
+    "original_or_current_bad_curvature_is_not_a_gate": true
+  },
+  "stop_reason": "five_fixed_points_complete",
+  "full_Hessian_qualified": false,
+  "formal_IRC": "not_performed",
+  "target_saddle_or_mechanism": "not_performed",
+  "model_API_called": false,
+  "finished_epoch": 1794571116.730112,
+  "wall_elapsed_seconds": 1547.7619452476501,
+  "workers_elapsed_seconds": 1543.12943816185,
+  "historical_worker_hours_lower_bound": 20.55026662453337,
+  "known_worker_hours_lower_bound_including_this_batch": 20.978913690689442,
+  "budget_snapshot": {
+    "contract_sha256": "c04697a81952d87fa7bacc2e3b07b59126650043556447a39625ec2ffa5e2a38",
+    "plan_sha256": "b00db278cc3d219b5c1aac5778ee7b36a469be7fc84d307598c7ffbe7a8524de",
+    "started_epoch": 1794569568.9681668,
+    "deadline_epoch": 1794572568.9681668,
+    "total_scf_attempts": 5,
+    "SCF_started": 5,
+    "SCF_complete": 5,
+    "gradient_reservations": 5,
+    "gradient_started": 5,
+    "completed_gradients": 5,
+    "reservations": [
+      {
+        "id": 1,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "center",
+        "worker_output": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/center",
+        "reserved_epoch": 1794569569.3422816
+      },
+      {
+        "id": 2,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "C6-y-plus",
+        "worker_output": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-plus",
+        "reserved_epoch": 1794569693.9255416
+      },
+      {
+        "id": 3,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "C6-y-minus",
+        "worker_output": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C6-y-minus",
+        "reserved_epoch": 1794570058.9248743
+      },
+      {
+        "id": 4,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "C10-y-plus",
+        "worker_output": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-plus",
+        "reserved_epoch": 1794570369.193468
+      },
+      {
+        "id": 5,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "C10-y-minus",
+        "worker_output": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-tight-gradient-diagnosis-20261113-v1/points/C10-y-minus",
+        "reserved_epoch": 1794570745.5144231
+      }
+    ],
+    "events": [
+      {
+        "event": "reserve",
+        "reservation_id": 1,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "center",
+        "epoch": 1794569569.3422816
+      },
+      {
+        "event": "SCF_started",
+        "reservation_id": 1,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "center",
+        "epoch": 1794569570.8621657,
+        "time_role": "Controller observation, not exact native entry timestamp"
+      },
+      {
+        "event": "SCF_complete",
+        "reservation_id": 1,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "center",
+        "epoch": 1794569633.7779257,
+        "time_role": "Controller observation, not exact native entry timestamp"
+      },
+      {
+        "event": "gradient_started",
+        "reservation_id": 1,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "center",
+        "epoch": 1794569633.782009,
+        "time_role": "Controller observation, not exact native entry timestamp"
+      },
+      {
+        "event": "gradient_completed",
+        "reservation_id": 1,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "center",
+        "epoch": 1794569692.6299896,
+        "time_role": "Controller observation, not exact native entry timestamp"
+      },
+      {
+        "event": "reserve",
+        "reservation_id": 2,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "C6-y-plus",
+        "epoch": 1794569693.9255416
+      },
+      {
+        "event": "SCF_started",
+        "reservation_id": 2,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "C6-y-plus",
+        "epoch": 1794569694.9402373,
+        "time_role": "Controller observation, not exact native entry timestamp"
+      },
+      {
+        "event": "SCF_complete",
+        "reservation_id": 2,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "C6-y-plus",
+        "epoch": 1794570000.3275995,
+        "time_role": "Controller observation, not exact native entry timestamp"
+      },
+      {
+        "event": "gradient_started",
+        "reservation_id": 2,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "C6-y-plus",
+        "epoch": 1794570000.3322008,
+        "time_role": "Controller observation, not exact native entry timestamp"
+      },
+      {
+        "event": "gradient_completed",
+        "reservation_id": 2,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "C6-y-plus",
+        "epoch": 1794570058.1624184,
+        "time_role": "Controller observation, not exact native entry timestamp"
+      },
+      {
+        "event": "reserve",
+        "reservation_id": 3,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "C6-y-minus",
+        "epoch": 1794570058.9248743
+      },
+      {
+        "event": "SCF_started",
+        "reservation_id": 3,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "C6-y-minus",
+        "epoch": 1794570059.9463975,
+        "time_role": "Controller observation, not exact native entry timestamp"
+      },
+      {
+        "event": "SCF_complete",
+        "reservation_id": 3,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "C6-y-minus",
+        "epoch": 1794570311.0072355,
+        "time_role": "Controller observation, not exact native entry timestamp"
+      },
+      {
+        "event": "gradient_started",
+        "reservation_id": 3,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "C6-y-minus",
+        "epoch": 1794570311.0130904,
+        "time_role": "Controller observation, not exact native entry timestamp"
+      },
+      {
+        "event": "gradient_completed",
+        "reservation_id": 3,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "C6-y-minus",
+        "epoch": 1794570368.383638,
+        "time_role": "Controller observation, not exact native entry timestamp"
+      },
+      {
+        "event": "reserve",
+        "reservation_id": 4,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "C10-y-plus",
+        "epoch": 1794570369.193468
+      },
+      {
+        "event": "SCF_started",
+        "reservation_id": 4,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "C10-y-plus",
+        "epoch": 1794570370.2247865,
+        "time_role": "Controller observation, not exact native entry timestamp"
+      },
+      {
+        "event": "SCF_complete",
+        "reservation_id": 4,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "C10-y-plus",
+        "epoch": 1794570683.66467,
+        "time_role": "Controller observation, not exact native entry timestamp"
+      },
+      {
+        "event": "gradient_started",
+        "reservation_id": 4,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "C10-y-plus",
+        "epoch": 1794570683.6703403,
+        "time_role": "Controller observation, not exact native entry timestamp"
+      },
+      {
+        "event": "gradient_completed",
+        "reservation_id": 4,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "C10-y-plus",
+        "epoch": 1794570744.0943294,
+        "time_role": "Controller observation, not exact native entry timestamp"
+      },
+      {
+        "event": "reserve",
+        "reservation_id": 5,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "C10-y-minus",
+        "epoch": 1794570745.5144231
+      },
+      {
+        "event": "SCF_started",
+        "reservation_id": 5,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "C10-y-minus",
+        "epoch": 1794570746.5284655,
+        "time_role": "Controller observation, not exact native entry timestamp"
+      },
+      {
+        "event": "SCF_complete",
+        "reservation_id": 5,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "C10-y-minus",
+        "epoch": 1794571058.4316442,
+        "time_role": "Controller observation, not exact native entry timestamp"
+      },
+      {
+        "event": "gradient_started",
+        "reservation_id": 5,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "C10-y-minus",
+        "epoch": 1794571058.4356656,
+        "time_role": "Controller observation, not exact native entry timestamp"
+      },
+      {
+        "event": "gradient_completed",
+        "reservation_id": 5,
+        "stage": "TIGHT_GRADIENT",
+        "point_id": "C10-y-minus",
+        "epoch": 1794571116.3282385,
+        "time_role": "Controller observation, not exact native entry timestamp"
+      }
+    ]
+  },
+  "controller_intended_returncode": 0
+}
