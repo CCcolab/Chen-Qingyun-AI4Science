@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0",
+  "revision_id": "A01-PROGRESS-20261113-v2",
+  "created_at_utc": "2026-11-13T12:05:58.157184+00:00",
+  "publication_kind": "a01_research_progress",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "authorization": "User task dated 2026-11-13: same-M0 CF3 center gradient and C6-y/C10-y precision diagnosis, then archive and publish actual results",
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "previous_revision": {
+    "path": "provenance/a01-site-revision.v1.json",
+    "sha256": "47c875aceb4b37b17a38bfd96eca694b08f3c321b396c2d0f5da4181a72b11bd"
+  },
+  "evidence_commit_s3": "b6d14b1877595ee61cf3df5948fda2a8f631ae62",
+  "public_progress": {
+    "path": "research/a01/public-progress.v2.json",
+    "sha256": "0168bad2419df9a16c18fa832116afa3722a783f0186f933c7e7d5b1f6eb7823"
+  },
+  "changes": [
+    {
+      "path": "topics/early-fluoroketones/index.html",
+      "old_sha256": "9368219b6781ab5fa93d12ccddec11834a1407e97f0fbe4db33fa5dea5675903",
+      "old_bytes": 40845,
+      "new_sha256": "d5ee6e5f7be664b61ee8527e4b318d621ce7fa62fa003823bc23504d5803eefb",
+      "new_bytes": 179828,
+      "source_evidence_commit": "b6d14b1877595ee61cf3df5948fda2a8f631ae62",
+      "reason": "Actual same-M0 CF3 center-gradient and four-displacement SCF-precision diagnosis; complete curvature, barriers and mechanism remain unqualified"
+    }
+  ],
+  "protected": "Original YouMind baseline/ZIP, immutable v1 progress and revision, PFtB, two original JSON files, 51 source identities, and every effective page outside the explicitly listed topic",
+  "publish_allowlist": "Unchanged 15 original HTML routes, two original JSON files and empty .nojekyll; research JSON remains repository-only",
+  "boundary": "Public research progress is not scientific approval, complete-curvature qualification, a DFT barrier or mechanism confirmation."
+}

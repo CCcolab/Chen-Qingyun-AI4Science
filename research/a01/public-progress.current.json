@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "registry_kind": "a01_public_progress_current",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "public_progress": "research/a01/public-progress.v2.json",
+  "current_revision": "provenance/a01-site-revision.v2.json",
+  "revision_chain": [
+    "provenance/a01-site-revision.v1.json",
+    "provenance/a01-site-revision.v2.json"
+  ],
+  "history_policy": "Original v1 public data and revision retain their exact bytes; apply each historical declaration before checking only the final current HTML"
+}
