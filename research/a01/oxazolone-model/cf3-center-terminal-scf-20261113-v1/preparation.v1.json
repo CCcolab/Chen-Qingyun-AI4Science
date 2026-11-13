@@ -1,0 +1,9 @@
+{
+  "new_quantum_calls": 0,
+  "status": "PREPARED_NOT_EXECUTED",
+  "worker_sha256": "83512006f1a6f0c3e5652ec1cfc55043e83407e4bd459c6a2087c31ed6a84423",
+  "contract_sha256": "f57a7fe8ac237c4cf32c203a20ba324d0b3cf94cd020b0f7d9f901bc06802e81",
+  "AST_SCF_kernel_calls": 1,
+  "AST_nuclear_gradient_method_references": 0,
+  "history_lower_bound": 20.51079460605307
+}

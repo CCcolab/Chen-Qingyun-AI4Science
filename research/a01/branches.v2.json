@@ -1,0 +1,79 @@
+{
+  "schema_version": "2.0",
+  "achievement_line": "A01",
+  "title": "全氟酮化学早期研究：六氟丙酮反应与六氟双酚A（双酚AF）制备",
+  "edition_date": "2026-11-13",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "historical_evaluation": {
+    "claim": "开创全氟酮化学，并获得制备六氟双酚A的苏联专利",
+    "attributed_to": "中国科学院上海有机化学研究所历史生平介绍",
+    "source": "https://www.sioc.cas.cn/dncqy/sp/",
+    "evidence_role": "Institutional historical evaluation; not platform proof of international priority or industrial-process validation"
+  },
+  "compound_identity": {
+    "preferred_name": "六氟双酚A（双酚AF）",
+    "synonyms": [
+      "Bisphenol AF",
+      "BPAF",
+      "Hexafluorobisphenol A"
+    ],
+    "CAS": "1478-61-1",
+    "formula": "C15H10F6O2",
+    "structural_description": "(p-HO-C6H4)2C(CF3)2",
+    "reference": "https://pubchem.ncbi.nlm.nih.gov/compound/73864",
+    "boundary": "Product is a bisphenol; hexafluoroacetone is the perfluoroketone. Name equivalence does not independently authenticate a historical sample or close the certificate evidence."
+  },
+  "branches": [
+    {
+      "branch_id": "A01-AF",
+      "title": "双酚AF制备记录与计量重建",
+      "original_authors_in_registered_order": [
+        "I. L. Knuniants",
+        "陈庆云",
+        "N. P. Gambaryan"
+      ],
+      "source_ids": [
+        "CQ-H02"
+      ],
+      "scope": "以第117491号说明书指定原料和产物质量，在明确计量约定下重建收率账本。",
+      "boundary": "原98%收率基准仍待解释；不等于新合成、纯度测量或工艺／机理验证。"
+    },
+    {
+      "branch_id": "A01-MR",
+      "title": "含氟衍生物物性复核",
+      "original_authors_in_registered_order": [
+        "陈庆云",
+        "N. P. Gambaryan",
+        "I. L. Knuniants"
+      ],
+      "source_ids": [
+        "CQ-H12"
+      ],
+      "scope": "复核1960年133卷指定衍生物的折射率、密度与质量约定下的摩尔折射数字。",
+      "boundary": "仅对应该文物性；不验证双酚AF结构、制备收率或性能。"
+    },
+    {
+      "branch_id": "A01-OX",
+      "title": "噁唑酮反应性模型",
+      "original_authors_in_registered_order": [
+        "E. M. Rokhlin",
+        "N. P. Gambaryan",
+        "陈庆云",
+        "I. L. Knuniants"
+      ],
+      "source_ids": [
+        "CQ-R01"
+      ],
+      "scope": "研究1960年134卷CF₃／CH₃衍生物与苯胺的定性对照，苯为介质。",
+      "boundary": "本轮只查同一CF₃底物中心电子终态，不验证双酚AF制备机制或原实验反应速率。"
+    }
+  ],
+  "current_progress": "public-progress.v1.json",
+  "stage_history": "stage-history.v1.json",
+  "history_policy": "Original v1 registry, source IDs, authors, reports and raw values remain unchanged",
+  "cross_branch_evidence_policy": "Each branch retains its own sources, collaborators, objects and observables; membership in A01 is not mutual scientific validation",
+  "source_reread_scope": "AI reading of 133(5) p1113–1116 and134(6) p1367–1370; separate rereading of p1113/p1367 and one SU117491 specification scan; professional transcription signoff pending, grant front page absent",
+  "novelty_status": "not_claimed_systematic_originality_review_not_complete",
+  "experimental_validation": "not_performed"
+}

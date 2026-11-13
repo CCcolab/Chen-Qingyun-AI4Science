@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-11-13T09:54:50.204879+00:00",
+  "new_quantum_calls": 0,
+  "scope": "Read proc cmdlines and existing raw paths only; no backend import",
+  "prior_transport_request": "exec_command returned aborted by user after 822.1s, without session ID or execution output",
+  "raw_directory_exists": false,
+  "live_matching_processes": [],
+  "proc_entries_unreadable_or_disappeared": [],
+  "prior_SCf_reservation": 0,
+  "actual_SCf_started": 0
+}

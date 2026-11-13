@@ -1,0 +1,267 @@
+{
+  "schema_version": "1.0",
+  "task_id": "A01-M0-CF3-CENTER-TERMINAL-SCF-20261113-v1",
+  "created_utc": "2026-11-13T09:21:09.314415+00:00",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scope": "One original CF3 center SCF only; normal extra-cycle retained; zero nuclear gradients",
+  "limits": {
+    "shared_wall_seconds": 600,
+    "per_point_wall_seconds": 480,
+    "max_SCF_attempts": 1,
+    "max_gradient_reservations": 0,
+    "max_workers": 1,
+    "threads_per_worker": 4,
+    "memory_mb_soft_per_worker": 4000,
+    "max_SCF_cycles_per_point": 120
+  },
+  "internal_targets": {
+    "conv_tol": 1e-12,
+    "conv_tol_grad": 1e-10
+  },
+  "final_orbital_norm_max": 1e-09,
+  "historical_recorded_worker_hours_lower_bound": 20.51079460605307,
+  "normal_extra_cycle": true,
+  "no_changed_PySCF_convergence_function": true,
+  "no_new_energy_or_density_acceptance_threshold": true,
+  "no_retry_extension_parameter_change_or_followup_quantum": true,
+  "fixed_model": {
+    "method": "DF-RKS",
+    "xc": "PBE0",
+    "basis": "def2-svp",
+    "solvent": "ddCOSMO",
+    "epsilon": 2.2706,
+    "grid_level": 2,
+    "solvent_grid_level": 1,
+    "lmax": 6,
+    "lebedev_order": 17,
+    "equilibrium_solvation": true,
+    "frozen": false,
+    "charge": 0,
+    "spin": 0,
+    "electrons": 154
+  },
+  "center": {
+    "point_id": "center",
+    "old_evaluation": 1,
+    "coordinate_0": null,
+    "sign": 0,
+    "step_bohr": 0.0005,
+    "coordinates_bohr": [
+      [
+        -4.211630350208959,
+        -0.8887409485957611,
+        -4.435422459769594
+      ],
+      [
+        -2.7906010500328366,
+        -0.5328587801505471,
+        -2.7406948090800443
+      ],
+      [
+        -0.2817296711135929,
+        -1.2280588979629068,
+        -2.845194422021729
+      ],
+      [
+        0.7673965540702238,
+        -0.5505816850059828,
+        -0.6013405900419759
+      ],
+      [
+        3.4295065746309326,
+        -1.085326917468345,
+        -0.2385696606148551
+      ],
+      [
+        4.849089137190428,
+        -2.2626514796518933,
+        -2.145290757779861
+      ],
+      [
+        7.3997652607742035,
+        -2.754376005979309,
+        -1.7493833122929978
+      ],
+      [
+        8.536195923954283,
+        -2.078734241873652,
+        0.5333712106150574
+      ],
+      [
+        7.124892086679619,
+        -0.9062613969347612,
+        2.433687871140949
+      ],
+      [
+        4.576881055336774,
+        -0.40688112734308673,
+        2.0575597647898425
+      ],
+      [
+        -0.7317978538432257,
+        0.5148819717349667,
+        1.003676857150589
+      ],
+      [
+        -3.0620639190202485,
+        0.6392936131075068,
+        -0.14218674660552405
+      ],
+      [
+        -5.218071438039393,
+        1.6156220380214932,
+        0.8354438254519534
+      ],
+      [
+        -5.376466019619687,
+        2.7439013596145054,
+        3.4617069661611644
+      ],
+      [
+        -6.090581755159041,
+        5.163561407650422,
+        3.333418334532122
+      ],
+      [
+        -7.101064694073314,
+        1.5100059067035305,
+        4.835083264247195
+      ],
+      [
+        -3.221836168385843,
+        2.6659299711193993,
+        4.723231919200048
+      ],
+      [
+        -7.67056515472025,
+        1.646398144795793,
+        -0.6638115778683917
+      ],
+      [
+        -7.425579759140925,
+        2.948760845415924,
+        -2.802492541913713
+      ],
+      [
+        -9.527963327168745,
+        2.725283997788829,
+        0.6519644296221538
+      ],
+      [
+        -8.4259238322273,
+        -0.6823768169360758,
+        -1.2435374288927625
+      ],
+      [
+        3.9421926340654063,
+        -2.783012485561365,
+        -3.9228258385343167
+      ],
+      [
+        8.509633142977826,
+        -3.6699419077638535,
+        -3.228708166491124
+      ],
+      [
+        10.54124617183732,
+        -2.468501159033056,
+        0.8361521857312033
+      ],
+      [
+        8.02334385978418,
+        -0.3817587093000131,
+        4.216002992952167
+      ],
+      [
+        3.435732573420208,
+        0.5064233144758644,
+        3.5134565185519233
+      ]
+    ],
+    "coordinate_reuse": "Use these full-precision saved Bohr coordinates; XYZ is a human-readable snapshot",
+    "old_result": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0001/result.json",
+    "old_energy_Eh": -1262.312436219101,
+    "old_gradient": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0001/gradient.npy",
+    "old_XYZ": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0001/input.xyz",
+    "initial_density_checkpoint": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/initial-scf-guess.chk",
+    "initial_density_checkpoint_sha256": "470c5f44d33883ba254ef75e82576e7e190b7c8f694cb26c1ba4e57c441f7100",
+    "seed_role": "Archived original pre-center seed",
+    "maximum_coordinate_definition_residual_bohr": 0.0,
+    "XYZ_snapshot": "research/a01/oxazolone-model/cf3-curvature-diagnosis-20261113-v1/inputs-v1/center.xyz",
+    "XYZ_snapshot_SHA256": "99e1a11e39cbce0dd1fbc24a9a9b17ecb730a6358c65431a2d3bb38fae379485"
+  },
+  "species_manifest": {
+    "formula": "C12H5F6NO2",
+    "symbols": [
+      "O",
+      "C",
+      "O",
+      "C",
+      "C",
+      "C",
+      "C",
+      "C",
+      "C",
+      "C",
+      "N",
+      "C",
+      "C",
+      "C",
+      "F",
+      "F",
+      "F",
+      "C",
+      "F",
+      "F",
+      "F",
+      "H",
+      "H",
+      "H",
+      "H",
+      "H"
+    ],
+    "atom_maps": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      15,
+      19,
+      20,
+      21,
+      100,
+      101,
+      102,
+      103,
+      104
+    ]
+  },
+  "plan_source": "research/a01/oxazolone-model/cf3-curvature-diagnosis-20261113-v1/planned-inputs.v2.json",
+  "plan_sha256": "b00db278cc3d219b5c1aac5778ee7b36a469be7fc84d307598c7ffbe7a8524de",
+  "worker_sha256": "83512006f1a6f0c3e5652ec1cfc55043e83407e4bd459c6a2087c31ed6a84423",
+  "previous_worker_sha256": "1ae403af2b963fccd922093dd3d5abeda0153c0f4c76d4e4b11ce57e10b5c1ad",
+  "execution_commit": null,
+  "execution_identity": "Archived code and input fingerprints; later publication commit is not the execution commit",
+  "previous_background": {
+    "B_main_cycle4_orbital_norm": 9.689037768617906e-10,
+    "B_terminal_orbital_norm": 1.6225317681152e-09,
+    "A_reciprocal_difference_Eh_bohr2": 0.0014988911403202325,
+    "B_nuclear_gradient": "not_started",
+    "cause": "unknown"
+  },
+  "scientific_boundary": "Passing center electronic check is not complete curvature, Hessian, spectrum, barrier, mechanism or experimental validation"
+}

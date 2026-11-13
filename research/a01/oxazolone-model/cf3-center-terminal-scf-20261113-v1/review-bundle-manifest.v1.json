@@ -1,0 +1,308 @@
+{
+  "schema_version": "1.0",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "archive": {
+    "visibility": "local_only",
+    "url": null,
+    "sha256": "6ae92d7111b551d9dbd2434dde855ef36c69783fc4c40829fe3cebb959771cb4",
+    "size_bytes": 2519799,
+    "local_project_relative_path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/review-bundle.v1.zip",
+    "reason": "Complete raw checkpoint/seed are local evidence; no public download has been created"
+  },
+  "ZIP_members": 59,
+  "every_member_SHA_and_bytes_verified": true,
+  "payload": [
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/archive_results.py",
+      "sha256": "bfb235e1bfe4eef1fcc580ff28958c49948a2675c2a4cf574c77e2f070198df0",
+      "size_bytes": 19969
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/audit_checkpoint.py",
+      "sha256": "7ae8569de082aad465c2ca95966e8c2609fd39b451145ecd85355beccdfa5973",
+      "size_bytes": 4650
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/center-comparison.v1.json",
+      "sha256": "27677ddbd9b93d48c51dbf8a7905b9d20a4a22d5683edae7440b19a776b257e7",
+      "size_bytes": 2461
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/contract.v1.json",
+      "sha256": "f57a7fe8ac237c4cf32c203a20ba324d0b3cf94cd020b0f7d9f901bc06802e81",
+      "size_bytes": 6778
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/controller.py",
+      "sha256": "e1fafbc631e68d56a5b9f7083702aab0ac5ca1b9255e066e29f09d720e46bdec",
+      "size_bytes": 9405
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/entry-verification.v1.json",
+      "sha256": "decacbf784deb0d440c9af39fc006419077549c179c869ae03f79218d0ef418f",
+      "size_bytes": 2268
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/independent-checkpoint-review.v1.json",
+      "sha256": "52f9a2cecd0e8088fbfc3a4fd3614d88fd9b8287c0420414c724609f3f89dce9",
+      "size_bytes": 2047
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/input.v1.json",
+      "sha256": "ba4c38c8421124c9e3d93efc742bff48c9c7ec655a5af6e751b6b56e1a35711e",
+      "size_bytes": 3944
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/launch-manifest.v1.json",
+      "sha256": "95d2f9951934870a4eb419ae601eb12d34b2ac1f888e615ec55b74d4c3786159",
+      "size_bytes": 1489
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/native-exit-observation.v1.json",
+      "sha256": "c6197433fd3bc83b38c6e46a7e93f8abe07a85a005495fbabf8269eef8e322f1",
+      "size_bytes": 312
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/prelaunch-state.v1.json",
+      "sha256": "6a98a990b04ef547acf9636f40bf9314cceae14b8c1b5b32d137544d5e897831",
+      "size_bytes": 456
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/preparation.v1.json",
+      "sha256": "7e6eadad3cdab259d93e1c852f8e45e9e14aee70113f25665bb4465c786a040d",
+      "size_bytes": 362
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/prepare_scf_only.py",
+      "sha256": "90e8debb254abe6335c342aaef325b626cff53cbe284c34ef9a10ba2e29cfe46",
+      "size_bytes": 11119
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/PROTOCOL_zh-CN.md",
+      "sha256": "0ec906edcc68e058d011a1155dccbd75f43b3e8024b72c6e3177add8dab35011",
+      "size_bytes": 3389
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-evidence/budget.v1.json",
+      "sha256": "b6041a0961a069466a880196cde3c6563f7f62be21de1d693b50a0974a470cea",
+      "size_bytes": 1118
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-evidence/center-result.v1.json",
+      "sha256": "74dbe97903adba0db8aeccd0f711f3d14b3d11dfde394dde85f2e597fa30508e",
+      "size_bytes": 1266
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-evidence/checkpoint-validation.v1.json",
+      "sha256": "aa41eda439d5aef76d3e285f6fdb9435dcb027d0df0648d3749b70cfcebc2f22",
+      "size_bytes": 436
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-evidence/controller-result.v1.json",
+      "sha256": "7c04f4742915032c063cf317fa45c4b5cd769440adb7932ad4a9761d32bbbe06",
+      "size_bytes": 16176
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-evidence/electronic-history.v1.jsonl",
+      "sha256": "f5a2911080cae524228b507460eef947ec39e0ceb6dc3b5d3a0fca369d84593f",
+      "size_bytes": 4536
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-evidence/final-scf-diagnostics.v1.json",
+      "sha256": "cb72826d70441c128def22ad6d02f15ed24a875d485b3c600b0df920a2acbe29",
+      "size_bytes": 449
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-evidence/input.xyz",
+      "sha256": "4202cdd0a6a3036ae7e1da0a646c5f0414f07a822440eb33ca944c26723adc88",
+      "size_bytes": 1409
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-evidence/point/result.json",
+      "sha256": "1cd73bb41d7cea4c0704a0a93f1bca0bab4076dc8d41201fff710ad8a5ea0c4e",
+      "size_bytes": 11996
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-evidence/process-result.v1.json",
+      "sha256": "3e774adff2b93bc523119ea83eb56e4ec5096496bc711d1acdd8ab386f5eb949",
+      "size_bytes": 467
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-evidence/pyscf.log",
+      "sha256": "a48a332e2ff0bf70c88f00097810b3e3684e3c5d1db8b40176ed525fc9f793c2",
+      "size_bytes": 7591
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-evidence/requested-spec.v1.json",
+      "sha256": "d4ee91aae2bb7014c84fc6636d07fd2f17efc32aa339fccb582c228a3119159a",
+      "size_bytes": 927
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-evidence/source-map.v1.json",
+      "sha256": "6edab0f10eefabefb971a374240b58d7fcac0b411fe0045d60331c6c4886a45b",
+      "size_bytes": 3215
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/read_start_state.py",
+      "sha256": "4c845f70e1e76c8e5e856a6bfb1056ebd26b13fea7f233360f5aae9b2273e663",
+      "size_bytes": 1895
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/REPORT_zh-CN.md",
+      "sha256": "87230c18ee350108357df3083e4bda03ee1cf228bc9636528c70560af235cfe9",
+      "size_bytes": 4529
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/run_once_and_review.py",
+      "sha256": "5e81e9ec54772c700059daf33b359f95732e5374eb2b3b41ee8974fbff7fdb1b",
+      "size_bytes": 1740
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/verify_entry.py",
+      "sha256": "15bf9e954f8bedaaef5dcb89b79dbf8611a4786637e6f1041823c7893b8fcb36",
+      "size_bytes": 6152
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/worker-from-prior.diff",
+      "sha256": "843d53062fc731d0fc2ceca5e20d80436877b2fff7235fd3f326e2422762456f",
+      "size_bytes": 14087
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/worker_scf.py",
+      "sha256": "83512006f1a6f0c3e5652ec1cfc55043e83407e4bd459c6a2087c31ed6a84423",
+      "size_bytes": 23131
+    },
+    {
+      "path": "scratch/m0-cf3-center-terminal-scf-20261113-v1/point/checkpoint-validation.json",
+      "sha256": "aa41eda439d5aef76d3e285f6fdb9435dcb027d0df0648d3749b70cfcebc2f22",
+      "size_bytes": 436
+    },
+    {
+      "path": "scratch/m0-cf3-center-terminal-scf-20261113-v1/point/electronic-history.jsonl",
+      "sha256": "f5a2911080cae524228b507460eef947ec39e0ceb6dc3b5d3a0fca369d84593f",
+      "size_bytes": 4536
+    },
+    {
+      "path": "scratch/m0-cf3-center-terminal-scf-20261113-v1/point/electronic-result.json",
+      "sha256": "a366def5beac5b5838d9883428e845ead9379458196a1e50ece790bc958a2009",
+      "size_bytes": 11778
+    },
+    {
+      "path": "scratch/m0-cf3-center-terminal-scf-20261113-v1/point/final-scf-diagnostics.json",
+      "sha256": "cb72826d70441c128def22ad6d02f15ed24a875d485b3c600b0df920a2acbe29",
+      "size_bytes": 449
+    },
+    {
+      "path": "scratch/m0-cf3-center-terminal-scf-20261113-v1/point/hf-kernel-source.py",
+      "sha256": "b4bc09b9ded7fdde3102174b3db98236d76ac6925f03c22315009fd2caebf06f",
+      "size_bytes": 7207
+    },
+    {
+      "path": "scratch/m0-cf3-center-terminal-scf-20261113-v1/point/initial-density.npy",
+      "sha256": "2471b2f16dd58b06223cd8e8ae20249c7ea4cd688103a7051eb9fcbeadd58362",
+      "size_bytes": 814216
+    },
+    {
+      "path": "scratch/m0-cf3-center-terminal-scf-20261113-v1/point/initial-scf-guess.chk",
+      "sha256": "470c5f44d33883ba254ef75e82576e7e190b7c8f694cb26c1ba4e57c441f7100",
+      "size_bytes": 841608
+    },
+    {
+      "path": "scratch/m0-cf3-center-terminal-scf-20261113-v1/point/input.xyz",
+      "sha256": "4202cdd0a6a3036ae7e1da0a646c5f0414f07a822440eb33ca944c26723adc88",
+      "size_bytes": 1409
+    },
+    {
+      "path": "scratch/m0-cf3-center-terminal-scf-20261113-v1/point/pyscf.log",
+      "sha256": "a48a332e2ff0bf70c88f00097810b3e3684e3c5d1db8b40176ed525fc9f793c2",
+      "size_bytes": 7591
+    },
+    {
+      "path": "scratch/m0-cf3-center-terminal-scf-20261113-v1/point/requested-spec.json",
+      "sha256": "d4ee91aae2bb7014c84fc6636d07fd2f17efc32aa339fccb582c228a3119159a",
+      "size_bytes": 927
+    },
+    {
+      "path": "scratch/m0-cf3-center-terminal-scf-20261113-v1/point/result.json",
+      "sha256": "1cd73bb41d7cea4c0704a0a93f1bca0bab4076dc8d41201fff710ad8a5ea0c4e",
+      "size_bytes": 11996
+    },
+    {
+      "path": "scratch/m0-cf3-center-terminal-scf-20261113-v1/point/scf.chk",
+      "sha256": "106016292956e75d8efe426da02eda4b50803b7461a340de3dfb2d3e692a676e",
+      "size_bytes": 841608
+    },
+    {
+      "path": "scratch/m0-cf3-center-terminal-scf-20261113-v1/point/status.json",
+      "sha256": "1cd73bb41d7cea4c0704a0a93f1bca0bab4076dc8d41201fff710ad8a5ea0c4e",
+      "size_bytes": 11996
+    },
+    {
+      "path": "scratch/m0-cf3-center-terminal-scf-20261113-v1/point/worker_snapshot.py",
+      "sha256": "83512006f1a6f0c3e5652ec1cfc55043e83407e4bd459c6a2087c31ed6a84423",
+      "size_bytes": 23131
+    },
+    {
+      "path": "scratch/m0-cf3-center-terminal-scf-20261113-v1/process-result.json",
+      "sha256": "3e774adff2b93bc523119ea83eb56e4ec5096496bc711d1acdd8ab386f5eb949",
+      "size_bytes": 467
+    },
+    {
+      "path": "scratch/m0-cf3-center-terminal-scf-20261113-v1/requested-spec.json",
+      "sha256": "d4ee91aae2bb7014c84fc6636d07fd2f17efc32aa339fccb582c228a3119159a",
+      "size_bytes": 927
+    },
+    {
+      "path": "scratch/m0-cf3-center-terminal-scf-20261113-v1/result.json",
+      "sha256": "7c04f4742915032c063cf317fa45c4b5cd769440adb7932ad4a9761d32bbbe06",
+      "size_bytes": 16176
+    },
+    {
+      "path": "scratch/m0-cf3-center-terminal-scf-20261113-v1/shared-budget.json",
+      "sha256": "b6041a0961a069466a880196cde3c6563f7f62be21de1d693b50a0974a470cea",
+      "size_bytes": 1118
+    },
+    {
+      "path": "scratch/m0-cf3-center-terminal-scf-20261113-v1/snapshot-contract.v1.json",
+      "sha256": "f57a7fe8ac237c4cf32c203a20ba324d0b3cf94cd020b0f7d9f901bc06802e81",
+      "size_bytes": 6778
+    },
+    {
+      "path": "scratch/m0-cf3-center-terminal-scf-20261113-v1/snapshot-controller.py",
+      "sha256": "e1fafbc631e68d56a5b9f7083702aab0ac5ca1b9255e066e29f09d720e46bdec",
+      "size_bytes": 9405
+    },
+    {
+      "path": "scratch/m0-cf3-center-terminal-scf-20261113-v1/snapshot-worker_scf.py",
+      "sha256": "83512006f1a6f0c3e5652ec1cfc55043e83407e4bd459c6a2087c31ed6a84423",
+      "size_bytes": 23131
+    },
+    {
+      "path": "scratch/m0-cf3-center-terminal-scf-20261113-v1/stderr.log",
+      "sha256": "d89f959b6627955ae558c63afb6b315077a7ab742fe04a88af531be04f972769",
+      "size_bytes": 93
+    },
+    {
+      "path": "scratch/m0-cf3-center-terminal-scf-20261113-v1/stdout.log",
+      "sha256": "ea5df439830e3b1f96fbc0f835064aabdd17ee6f92f2ae35e988e3ad83c4d124",
+      "size_bytes": 55737
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-curvature-diagnosis-20261113-v1/planned-inputs.v2.json",
+      "sha256": "b00db278cc3d219b5c1aac5778ee7b36a469be7fc84d307598c7ffbe7a8524de",
+      "size_bytes": 45234
+    },
+    {
+      "path": "scratch/m0-reference-curvature-20261113-v3/curvature-v1/substrate-CF3-curvature/evaluations/0001/result.json",
+      "sha256": "76b54b6d021f132f34e527dbfefdee54d4015990eacf34d54281a558a2f37360",
+      "size_bytes": 6557
+    },
+    {
+      "path": "research/a01/oxazolone-model/cf3-point-diagnosis-execution-20261113-v1/results-v1/summary.json",
+      "sha256": "b59e9d0f6f02a46318dec4812b92fa398fccec24410b5c5d1ed397c39332d4a0",
+      "size_bytes": 154504
+    }
+  ],
+  "late_file_policy": "public-summary, evidence-index, external archive manifest and research-record are generated after packet finalization to avoid circular hashes"
+}

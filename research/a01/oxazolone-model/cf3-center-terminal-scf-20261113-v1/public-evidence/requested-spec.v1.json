@@ -1,0 +1,13 @@
+{
+  "stage": "CENTER_SCF_ONLY",
+  "point_id": "center",
+  "plan_path": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/research/a01/oxazolone-model/cf3-curvature-diagnosis-20261113-v1/planned-inputs.v2.json",
+  "plan_sha256": "b00db278cc3d219b5c1aac5778ee7b36a469be7fc84d307598c7ffbe7a8524de",
+  "contract_path": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/contract.v1.json",
+  "contract_sha256": "f57a7fe8ac237c4cf32c203a20ba324d0b3cf94cd020b0f7d9f901bc06802e81",
+  "reservation_id": 1,
+  "shared_budget_path": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-center-terminal-scf-20261113-v1/shared-budget.json",
+  "global_started_epoch": 1794563909.951558,
+  "global_deadline_epoch": 1794564509.951558,
+  "expected_worker_sha256": "83512006f1a6f0c3e5652ec1cfc55043e83407e4bd459c6a2087c31ed6a84423"
+}

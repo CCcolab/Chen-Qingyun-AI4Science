@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scope": "Static AST, pure counters, synthetic terminal predicates and real CLI --validate-only. No actual DFT or native-timeout claim.",
+  "new_quantum_calls": 0,
+  "backend_imported": false,
+  "actual_native_hard_timeout_tested": false,
+  "worker_sha256": "83512006f1a6f0c3e5652ec1cfc55043e83407e4bd459c6a2087c31ed6a84423",
+  "controller_sha256": "e1fafbc631e68d56a5b9f7083702aab0ac5ca1b9255e066e29f09d720e46bdec",
+  "checks": [
+    {
+      "check": "fixed_center_input_and_seed_validated_without_backend",
+      "passed": true
+    },
+    {
+      "check": "reject_point_id",
+      "passed": true
+    },
+    {
+      "check": "reject_stage",
+      "passed": true
+    },
+    {
+      "check": "reject_reservation_id",
+      "passed": true
+    },
+    {
+      "check": "reject_expected_worker_sha256",
+      "passed": true
+    },
+    {
+      "check": "reject_plan_sha256",
+      "passed": true
+    },
+    {
+      "check": "reject_contract_sha256",
+      "passed": true
+    },
+    {
+      "check": "reject_global_deadline_epoch",
+      "passed": true
+    },
+    {
+      "check": "existing_output_rejected_without_change",
+      "passed": true
+    },
+    {
+      "check": "real_CLI_validate_only_exit0_no_output",
+      "passed": true,
+      "returncode": 0,
+      "stdout": "{\"entry_validation\": \"passed\", \"new_quantum_calls\": 0, \"output_created\": false}\n",
+      "stderr": ""
+    },
+    {
+      "check": "exactly_one_SCF_kernel_call_in_source",
+      "passed": true
+    },
+    {
+      "check": "no_nuclear_gradient_or_extra_Fock_entry_on_any_code_path",
+      "passed": true
+    },
+    {
+      "check": "synthetic_terminal_predicate_1e-10",
+      "passed": true
+    },
+    {
+      "check": "synthetic_terminal_predicate_1e-09",
+      "passed": true
+    },
+    {
+      "check": "synthetic_terminal_predicate_1.00001e-09",
+      "passed": true
+    },
+    {
+      "check": "synthetic_terminal_predicate_1.6e-09",
+      "passed": true
+    },
+    {
+      "check": "single_reservation_zero_gradients",
+      "passed": true
+    },
+    {
+      "check": "second_attempt_rejected_no_refund_or_ledger_change",
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

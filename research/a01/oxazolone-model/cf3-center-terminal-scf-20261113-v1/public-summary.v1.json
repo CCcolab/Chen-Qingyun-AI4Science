@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "task_id": "A01-M0-CF3-CENTER-TERMINAL-SCF-20261113-v1",
+  "run_id": "A01-M0-CF3-CENTER-TERMINAL-SCF-20261113-v1:center",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "execution_commit": null,
+  "started_at": "2026-11-13T09:58:29.951558+00:00",
+  "finished_at": "2026-11-13T10:00:52.606549+00:00",
+  "display_timezone": "Asia/Shanghai",
+  "result": {
+    "status": "center_electronic_terminal_check_passed",
+    "center_electronic_check_passed": true,
+    "scf_converged": true,
+    "energy_Eh": -1262.3124362190952,
+    "delta_energy_Eh": 3.183231456205249e-12,
+    "orbital_gradient_backend_norm": 1.149604674925448e-10,
+    "density_change_norm": 2.0168325945868175e-10,
+    "TIGHT_GRAD_CONV_TOL": true,
+    "electrons": 154.0,
+    "AO_count": 319,
+    "gradient_started": false,
+    "nuclear_gradient_calls": 0
+  },
+  "resources": {
+    "SCF_attempts": 1,
+    "SCF_started": 1,
+    "SCF_complete": 1,
+    "gradient_reservations": 0,
+    "worker_elapsed_seconds": 142.09926652908325,
+    "worker_elapsed_hours": 0.0394720184803009,
+    "execution_wall_seconds": 142.6621823310852,
+    "historical_worker_hours_lower_bound": 20.51079460605307,
+    "cumulative_recorded_worker_hours_lower_bound": 20.55026662453337,
+    "complete_historical_or_CPU_hours": null
+  },
+  "parameters": {
+    "internal_conv_tol": 1e-12,
+    "internal_conv_tol_grad": 1e-10,
+    "max_cycle": 120,
+    "terminal_orbital_max": 1e-09
+  },
+  "code_fingerprints": {
+    "worker": "83512006f1a6f0c3e5652ec1cfc55043e83407e4bd459c6a2087c31ed6a84423",
+    "controller": "e1fafbc631e68d56a5b9f7083702aab0ac5ca1b9255e066e29f09d720e46bdec",
+    "contract": "f57a7fe8ac237c4cf32c203a20ba324d0b3cf94cd020b0f7d9f901bc06802e81"
+  },
+  "actual_software": {
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "numpy": "2.5.2",
+    "pyscf": "2.14.0",
+    "pyscf_module": "/home/cascade/.local/lib/python3.12/site-packages/pyscf/__init__.py",
+    "threads": 4,
+    "TIGHT_GRAD_CONV_TOL": true
+  },
+  "software_source_fingerprints": [
+    {
+      "path": "/home/cascade/.local/lib/python3.12/site-packages/pyscf/__init__.py",
+      "sha256": "18d7ca2dba59d89e69256917990b01606af5999a8e22d7adec5edd4565850451",
+      "size_bytes": 4626
+    },
+    {
+      "path": "/home/cascade/.local/lib/python3.12/site-packages/pyscf/scf/hf.py",
+      "sha256": "34ea1a9057da3a2d5aa37fe51d4e7305580bcb8e0118a5f17ba95ba5bb36c22f",
+      "size_bytes": 94652
+    },
+    {
+      "path": "/home/cascade/.local/lib/python3.12/site-packages/pyscf/dft/rks.py",
+      "sha256": "fcc8d3dbd03df368f3b70f3ce5999be6a19c608a6ff0bdc1890074616f0befa8",
+      "size_bytes": 20305
+    },
+    {
+      "path": "/home/cascade/.local/lib/python3.12/site-packages/pyscf/solvent/ddcosmo.py",
+      "sha256": "3c4cf5d0b2a8c6e6a4d33ad1a0d6c8c6445a3c058ef2837ef8645a5a81c928d3",
+      "size_bytes": 36163
+    },
+    {
+      "path": "/home/cascade/.local/lib/python3.12/site-packages/pyscf/solvent/_attach_solvent.py",
+      "sha256": "d6d55d480c7fbb49481fbea792956a53d603fc1ed3f762fa96d6c652f07fb9a6",
+      "size_bytes": 32797
+    },
+    {
+      "path": "/home/cascade/.local/lib/python3.12/site-packages/pyscf/df/df_jk.py",
+      "sha256": "7f4e8c3a930b8f55d1656b0bd6d24dcca7fe365ba5de00cfcebcebf813347cee",
+      "size_bytes": 25198
+    }
+  ],
+  "actual_worker_returncode": 0,
+  "actual_controller_returncode": 0,
+  "result_source": {
+    "path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-evidence/center-result.v1.json",
+    "sha256": "74dbe97903adba0db8aeccd0f711f3d14b3d11dfde394dde85f2e597fa30508e",
+    "size_bytes": 1266
+  },
+  "raw_archive": {
+    "visibility": "local_only",
+    "url": null,
+    "sha256": "6ae92d7111b551d9dbd2434dde855ef36c69783fc4c40829fe3cebb959771cb4",
+    "size_bytes": 2519799,
+    "local_project_relative_path": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/review-bundle.v1.zip",
+    "reason": "Complete raw checkpoint/seed are local evidence; no public download has been created"
+  },
+  "full_curvature_qualified": false,
+  "SCF_effect_on_reciprocal_error": "unknown",
+  "cause": "unknown",
+  "barrier_ranking_qualified": false,
+  "new_full_curvature_result": null,
+  "new_full_curvature_null_reason": "Not computed in this center-electronic-only protocol",
+  "remaining_work": [
+    "Four displaced points under a new protocol",
+    "Complete qualified curvature",
+    "Target saddle and path validation only after reference qualification"
+  ],
+  "published_authorship": "Historical findings remain attributed to their original authors; this is a modern platform numerical diagnostic",
+  "nuclear_gradient_response_metadata": "Grid/auxbasis fields inherit model intent; no nuclear gradient was calculated or tested in this trial"
+}

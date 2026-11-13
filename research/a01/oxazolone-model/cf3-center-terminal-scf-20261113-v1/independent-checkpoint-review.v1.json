@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scope": "Saved HDF5 checkpoint read and ledger arithmetic, separate from worker; no PySCF import or new quantum evaluation",
+  "new_quantum_calls": 0,
+  "checks": {
+    "zero_gradient_attempts": true,
+    "exactly_one_SCF_reservation": true,
+    "worker_gradient_never_started": true,
+    "native_worker_returncode_present": true,
+    "saved_molecule_geometry_Bohr_matches": true,
+    "saved_molecule_symbols_match": true,
+    "saved_checkpoint_SHA_matches_worker": true,
+    "saved_restricted_occupation_0_2": true,
+    "saved_electron_count_154": true,
+    "saved_AO_count_matches": true,
+    "saved_energy_finite_and_matches": true,
+    "saved_occupation_matches_worker": true
+  },
+  "all_available_checks_passed": true,
+  "checkpoint": {
+    "energy_Eh": -1262.3124362190952,
+    "electrons": 154.0,
+    "AO_count": 319,
+    "geometry_max_difference_bohr": 0.0,
+    "h5py_version": "3.16.0",
+    "numpy_version": "2.5.2"
+  },
+  "source_fingerprints": {
+    "scratch/m0-cf3-center-terminal-scf-20261113-v1/result.json": {
+      "sha256": "7c04f4742915032c063cf317fa45c4b5cd769440adb7932ad4a9761d32bbbe06",
+      "size_bytes": 16176
+    },
+    "scratch/m0-cf3-center-terminal-scf-20261113-v1/point/result.json": {
+      "sha256": "1cd73bb41d7cea4c0704a0a93f1bca0bab4076dc8d41201fff710ad8a5ea0c4e",
+      "size_bytes": 11996
+    },
+    "scratch/m0-cf3-center-terminal-scf-20261113-v1/process-result.json": {
+      "sha256": "3e774adff2b93bc523119ea83eb56e4ec5096496bc711d1acdd8ab386f5eb949",
+      "size_bytes": 467
+    },
+    "scratch/m0-cf3-center-terminal-scf-20261113-v1/shared-budget.json": {
+      "sha256": "b6041a0961a069466a880196cde3c6563f7f62be21de1d693b50a0974a470cea",
+      "size_bytes": 1118
+    },
+    "scratch/m0-cf3-center-terminal-scf-20261113-v1/point/scf.chk": {
+      "sha256": "106016292956e75d8efe426da02eda4b50803b7461a340de3dfb2d3e692a676e",
+      "size_bytes": 841608
+    }
+  },
+  "sources_unchanged": true
+}

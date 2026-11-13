@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "new_quantum_calls_by_preparation": 0,
+  "files": [
+    {
+      "path": "worker_scf.py",
+      "sha256": "83512006f1a6f0c3e5652ec1cfc55043e83407e4bd459c6a2087c31ed6a84423",
+      "size_bytes": 23131
+    },
+    {
+      "path": "controller.py",
+      "sha256": "e1fafbc631e68d56a5b9f7083702aab0ac5ca1b9255e066e29f09d720e46bdec",
+      "size_bytes": 9405
+    },
+    {
+      "path": "audit_checkpoint.py",
+      "sha256": "7ae8569de082aad465c2ca95966e8c2609fd39b451145ecd85355beccdfa5973",
+      "size_bytes": 4650
+    },
+    {
+      "path": "run_once_and_review.py",
+      "sha256": "5e81e9ec54772c700059daf33b359f95732e5374eb2b3b41ee8974fbff7fdb1b",
+      "size_bytes": 1740
+    },
+    {
+      "path": "contract.v1.json",
+      "sha256": "f57a7fe8ac237c4cf32c203a20ba324d0b3cf94cd020b0f7d9f901bc06802e81",
+      "size_bytes": 6778
+    },
+    {
+      "path": "input.v1.json",
+      "sha256": "ba4c38c8421124c9e3d93efc742bff48c9c7ec655a5af6e751b6b56e1a35711e",
+      "size_bytes": 3944
+    },
+    {
+      "path": "PROTOCOL_zh-CN.md",
+      "sha256": "0ec906edcc68e058d011a1155dccbd75f43b3e8024b72c6e3177add8dab35011",
+      "size_bytes": 3389
+    },
+    {
+      "path": "entry-verification.v1.json",
+      "sha256": "decacbf784deb0d440c9af39fc006419077549c179c869ae03f79218d0ef418f",
+      "size_bytes": 2268
+    }
+  ],
+  "single_actual_controller_launch": true,
+  "no_retry": true
+}

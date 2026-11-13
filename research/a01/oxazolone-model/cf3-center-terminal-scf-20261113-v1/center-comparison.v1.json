@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "old_B": {
+    "internal_conv_tol": 1e-12,
+    "internal_conv_tol_grad": 1e-09,
+    "energy_Eh": -1262.312436219098,
+    "final_scf_diagnostics": {
+      "source": "hf.kernel post_kernel locals, full precision; no additional evaluation",
+      "orbital_gradient_backend_norm": 1.6225317681152e-09,
+      "density_change_norm": 2.874302195765336e-09,
+      "delta_energy_Eh": -3.637978807091713e-12,
+      "energy_Eh": -1262.312436219098,
+      "scf_convergence_flag_at_post_kernel": true,
+      "backend_effective_final_conv_tol": 1e-11,
+      "backend_effective_final_conv_tol_grad": 3.0000000000000004e-09,
+      "TIGHT_GRAD_CONV_TOL": true
+    },
+    "main_cycle4_orbital_norm": 9.689037768617906e-10,
+    "nuclear_gradient_started": false
+  },
+  "current": {
+    "schema_version": "1.0",
+    "task_id": "A01-M0-CF3-CENTER-TERMINAL-SCF-20261113-v1",
+    "scientific_review_status": "review_required",
+    "release_eligible": false,
+    "status": "center_electronic_terminal_check_passed",
+    "center_electronic_check_passed": true,
+    "scf_started": true,
+    "scf_converged": true,
+    "SCF_complete": true,
+    "energy_Eh": -1262.3124362190952,
+    "final_scf_diagnostics": {
+      "source": "hf.kernel post_kernel locals, full precision; no additional evaluation",
+      "orbital_gradient_backend_norm": 1.149604674925448e-10,
+      "density_change_norm": 2.0168325945868175e-10,
+      "delta_energy_Eh": 3.183231456205249e-12,
+      "energy_Eh": -1262.3124362190952,
+      "scf_convergence_flag_at_post_kernel": true,
+      "backend_effective_final_conv_tol": 1e-11,
+      "backend_effective_final_conv_tol_grad": 3e-10,
+      "TIGHT_GRAD_CONV_TOL": true
+    },
+    "final_electron_count": 154.0,
+    "AO_count": 319,
+    "identity_checks_passed": true,
+    "gradient_started": false,
+    "nuclear_gradient_calls": 0,
+    "actual_worker_returncode": 0,
+    "source_worker_result_sha256": "1cd73bb41d7cea4c0704a0a93f1bca0bab4076dc8d41201fff710ad8a5ea0c4e",
+    "raw_data_distribution": "Complete checkpoint/seed remain local; this is the lightweight saved-result projection"
+  },
+  "changed_factor": "Internal orbital target only: 1e-9 to 1e-10",
+  "delta_current_minus_old_B_energy_Eh": 2.7284841053187847e-12,
+  "not_inferred": "No conclusion on reciprocal nuclear-gradient error, complete Hessian, barrier, mechanism or orbital stability"
+}

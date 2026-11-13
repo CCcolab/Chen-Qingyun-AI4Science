@@ -1,0 +1,40 @@
+{
+  "contract_sha256": "f57a7fe8ac237c4cf32c203a20ba324d0b3cf94cd020b0f7d9f901bc06802e81",
+  "plan_sha256": "b00db278cc3d219b5c1aac5778ee7b36a469be7fc84d307598c7ffbe7a8524de",
+  "started_epoch": 1794563909.951558,
+  "deadline_epoch": 1794564509.951558,
+  "total_scf_attempts": 1,
+  "SCF_started": 1,
+  "SCF_complete": 1,
+  "gradient_reservations": 0,
+  "gradient_started": 0,
+  "completed_gradients": 0,
+  "reservations": [
+    {
+      "id": 1,
+      "stage": "CENTER_SCF_ONLY",
+      "point_id": "center",
+      "worker_output": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-center-terminal-scf-20261113-v1/point",
+      "reserved_epoch": 1794563909.9563317
+    }
+  ],
+  "events": [
+    {
+      "event": "reserve",
+      "reservation_id": 1,
+      "epoch": 1794563909.9563317
+    },
+    {
+      "event": "SCF_started",
+      "reservation_id": 1,
+      "epoch": 1794563911.487816,
+      "time_role": "controller observation"
+    },
+    {
+      "event": "SCF_complete",
+      "reservation_id": 1,
+      "epoch": 1794564052.0709226,
+      "time_role": "controller observation"
+    }
+  ]
+}

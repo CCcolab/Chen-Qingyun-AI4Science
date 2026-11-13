@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "mapping": [
+    {
+      "public_path": "controller-result.v1.json",
+      "original_raw": "scratch/m0-cf3-center-terminal-scf-20261113-v1/result.json",
+      "sha256": "7c04f4742915032c063cf317fa45c4b5cd769440adb7932ad4a9761d32bbbe06",
+      "size_bytes": 16176,
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "process-result.v1.json",
+      "original_raw": "scratch/m0-cf3-center-terminal-scf-20261113-v1/process-result.json",
+      "sha256": "3e774adff2b93bc523119ea83eb56e4ec5096496bc711d1acdd8ab386f5eb949",
+      "size_bytes": 467,
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "budget.v1.json",
+      "original_raw": "scratch/m0-cf3-center-terminal-scf-20261113-v1/shared-budget.json",
+      "sha256": "b6041a0961a069466a880196cde3c6563f7f62be21de1d693b50a0974a470cea",
+      "size_bytes": 1118,
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "requested-spec.v1.json",
+      "original_raw": "scratch/m0-cf3-center-terminal-scf-20261113-v1/requested-spec.json",
+      "sha256": "d4ee91aae2bb7014c84fc6636d07fd2f17efc32aa339fccb582c228a3119159a",
+      "size_bytes": 927,
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "point/result.json",
+      "original_raw": "scratch/m0-cf3-center-terminal-scf-20261113-v1/point/result.json",
+      "sha256": "1cd73bb41d7cea4c0704a0a93f1bca0bab4076dc8d41201fff710ad8a5ea0c4e",
+      "size_bytes": 11996,
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "checkpoint-validation.v1.json",
+      "original_raw": "scratch/m0-cf3-center-terminal-scf-20261113-v1/point/checkpoint-validation.json",
+      "sha256": "aa41eda439d5aef76d3e285f6fdb9435dcb027d0df0648d3749b70cfcebc2f22",
+      "size_bytes": 436,
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "input.xyz",
+      "original_raw": "scratch/m0-cf3-center-terminal-scf-20261113-v1/point/input.xyz",
+      "sha256": "4202cdd0a6a3036ae7e1da0a646c5f0414f07a822440eb33ca944c26723adc88",
+      "size_bytes": 1409,
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "final-scf-diagnostics.v1.json",
+      "original_raw": "scratch/m0-cf3-center-terminal-scf-20261113-v1/point/final-scf-diagnostics.json",
+      "sha256": "cb72826d70441c128def22ad6d02f15ed24a875d485b3c600b0df920a2acbe29",
+      "size_bytes": 449,
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "electronic-history.v1.jsonl",
+      "original_raw": "scratch/m0-cf3-center-terminal-scf-20261113-v1/point/electronic-history.jsonl",
+      "sha256": "f5a2911080cae524228b507460eef947ec39e0ceb6dc3b5d3a0fca369d84593f",
+      "size_bytes": 4536,
+      "copied_without_modification": true
+    },
+    {
+      "public_path": "pyscf.log",
+      "original_raw": "scratch/m0-cf3-center-terminal-scf-20261113-v1/point/pyscf.log",
+      "sha256": "a48a332e2ff0bf70c88f00097810b3e3684e3c5d1db8b40176ed525fc9f793c2",
+      "size_bytes": 7591,
+      "copied_without_modification": true
+    }
+  ],
+  "checkpoint_and_seed_copied_to_public": false
+}

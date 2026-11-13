@@ -1,0 +1,12 @@
+{
+  "started_epoch": 1794563909.969093,
+  "returncode": 0,
+  "timed_out": false,
+  "external_stop": false,
+  "output": "/mnt/d/AI4Science/Chen-Qingyun-2029/Chen_Qingyun_AI_Research/scratch/m0-cf3-center-terminal-scf-20261113-v1/point",
+  "SCF_reservations": 1,
+  "gradient_reservations": 0,
+  "finished_epoch": 1794564052.0683596,
+  "elapsed_seconds": 142.09926652908325,
+  "worker_result_sha256": "1cd73bb41d7cea4c0704a0a93f1bca0bab4076dc8d41201fff710ad8a5ea0c4e"
+}

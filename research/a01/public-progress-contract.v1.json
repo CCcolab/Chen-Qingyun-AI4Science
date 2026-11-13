@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "A01-PUBLIC-RESEARCH-PROGRESS-20261113-v1",
+  "publication_kind": "a01_research_progress",
+  "purpose": "Publish traceable actual research stages, including scientific failure or pre-execution blocking, without promotion to reviewed scientific results",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "human_scientific_signoff": "absent",
+  "data_path": "research/a01/public-progress.v1.json",
+  "actual_result_source": "research/a01/oxazolone-model/cf3-center-terminal-scf-20261113-v1/public-summary.v1.json",
+  "allowed_actual_outcomes": ["passed", "failed", "blocked_before_execution"],
+  "unknown_numeric_policy": "null with reason; never substitute zero for an uncomputed quantity",
+  "scientific_boundaries": {
+    "center_electronic_check_is_full_curvature_qualification": false,
+    "center_electronic_check_is_barrier_or_mechanism_validation": false,
+    "CF3_full_curvature": "not_qualified",
+    "SCF_precision_effect_on_antisymmetry": "unknown",
+    "root_cause": "unknown",
+    "new_experiment": false,
+    "published_authorship": "Original chemical findings and observations retain their original authors"
+  },
+  "evidence_identity": {
+    "execution_commit": null,
+    "execution_identity": "Actual worker and controller SHA256",
+    "S1": "Evidence archive and public research records",
+    "S2": "Page/data revision referencing known S1 evidence; not the execution commit",
+    "fixed_URL_policy": "Use full S1 SHA for evidence blob URLs; locally retained archives have no fabricated download URL"
+  },
+  "website": {
+    "topic_path": "site/topics/early-fluoroketones/index.html",
+    "renderer": "scripts/render_a01_progress.py",
+    "static_HTML_and_embedded_data_must_match_source": true,
+    "Pages_member_set_expanded_by_this_contract": false,
+    "old_YouMind_baseline_retained": true,
+    "protected_PFtB_and_two_original_JSON_and_51_sources_retained": true
+  },
+  "PF1966_UV_T1_candidate_contract_modified": false,
+  "approved_scientific_result_generated": false,
+  "new_quantum_calls_by_publication": 0,
+  "local_test_distribution_policy": "tests/ and test/ remain local; CI must not claim to run them"
+}
