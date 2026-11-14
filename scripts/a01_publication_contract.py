@@ -44,6 +44,12 @@ PRESENTATION_V6_SHA256 = '1077f6b2e3a78be65ea4b50e81907b629f96c9b3599fcf440493c2
 PRESENTATION_V7_PATH = 'provenance/platform-presentation.v7.json'
 PRESENTATION_V7_ID = 'PLATFORM-CHEN-REAGENT-CAS-20261114-v7'
 PRESENTATION_V7_PREVIOUS_COMMIT = 'f42d99bdd78d63e149b17e5d95c094ad68e9cc9d'
+PRESENTATION_V7_SHA256 = '2463a97b3bf74b629f1863892d75f36276c97bf9a111905b47cc6179b62eaa7f'
+PRESENTATION_V8_PATH = 'provenance/platform-presentation.v8.json'
+PRESENTATION_V8_ID = 'PLATFORM-PUBLIC-ACADEMIC-20261114-v8'
+PRESENTATION_V8_PREVIOUS_COMMIT = '9ced00530776228af60cdec24c8a830b2fbce06c'
+PUBLIC_PRESENTATION_SNAPSHOT = 'provenance/public-presentation-previous'
+PUBLIC_ACADEMIC_DOCUMENT = 'docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md'
 CHEN_REAGENT_CAS_SOURCE_PATH = 'content/chen-reagent-cas-source.v1.json'
 PRESENTATION_V6_ALLOWED_PATHS = {'index.html', 'achievements/index.html',
                                  'topics/chen-reagent/index.html'}
@@ -115,6 +121,42 @@ def project_file(root: Path, name: str) -> Path:
     if candidate.is_symlink() or not candidate.is_file() or not candidate.resolve().is_relative_to(root.resolve()):
         raise ValueError('Missing or nonregular evidence: '+name)
     return candidate
+
+
+def historical_website_member(root: Path, name: str) -> Path:
+    """Read a prior HTML promise from its fixed snapshot during a successor."""
+    prefix = PUBLIC_PRESENTATION_SNAPSHOT+'/site/' if (
+        (root/PRESENTATION_V8_PATH).exists() and name.endswith('.html')) else 'site/'
+    return project_file(root, prefix+name)
+
+
+def historical_public_readme_binding(root: Path) -> dict:
+    declaration = project_file(root, PRESENTATION_V6_PATH)
+    if digest(declaration) != PRESENTATION_V6_SHA256:
+        raise ValueError('The historical Chen reagent presentation v6 is immutable')
+    documents = read_json(declaration).get('editorial_documents')
+    matches = [row for row in documents if row.get('path') == 'README.md'] if isinstance(documents, list) else []
+    if len(matches) != 1:
+        raise ValueError('The frozen v6 declaration must identify one README binding')
+    expected = matches[0]
+    name = PUBLIC_PRESENTATION_SNAPSHOT+'/README.md'
+    snapshot = project_file(root, name)
+    if digest(snapshot) != expected['sha256'] or snapshot.stat().st_size != expected['bytes']:
+        raise ValueError('The previous public README snapshot differs from its fixed v6 bytes')
+    return {'original_path': 'README.md', 'snapshot_path': name,
+            'sha256': expected['sha256'], 'bytes': expected['bytes']}
+
+
+def presentation_v6_document_bindings(root: Path) -> list[dict]:
+    historical = historical_public_readme_binding(root) if (root/PRESENTATION_V8_PATH).exists() else None
+    bindings = []
+    for name in ('README.md', CHEN_REAGENT_CONTENT_PATH, CHEN_REAGENT_DOCUMENT):
+        if name == 'README.md' and historical is not None:
+            bindings.append({'path': name, 'sha256': historical['sha256'], 'bytes': historical['bytes']})
+        else:
+            path = project_file(root, name)
+            bindings.append({'path': name, 'sha256': digest(path), 'bytes': path.stat().st_size})
+    return bindings
 
 
 def current_publication(root: Path) -> dict:
@@ -246,7 +288,7 @@ def protected_heritage_block_bindings(root: Path) -> list[dict]:
     """Check the ten existing historical blocks against their frozen bytes."""
     bindings = []
     for (name, marker), (expected_sha, expected_size) in FROZEN_HERITAGE_BLOCKS.items():
-        page = project_file(root, 'site/'+name).read_bytes().decode('utf-8')
+        page = historical_website_member(root, name).read_bytes().decode('utf-8')
         begin, end = '<!-- '+marker+'_BEGIN -->', '<!-- '+marker+'_END -->'
         if page.count(begin) != 1 or page.count(end) != 1 or page.index(end) < page.index(begin):
             raise ValueError('A frozen heritage block is missing or ambiguous: '+name+' '+marker)
@@ -302,7 +344,7 @@ def presentation_protected_bindings(root: Path, entries: dict) -> dict:
     """Read-only protection checks for this one presentation-only overlay."""
     protected = {}
     for name in ('data/public-sources.json', 'data/achievement-lines.json', 'pftb/index.html'):
-        path = project_file(root, 'site/'+name)
+        path = historical_website_member(root, name)
         expected = entries[name]
         if digest(path) != expected['sha256'] or path.stat().st_size != expected['bytes']:
             raise ValueError('Presentation must retain the original protected website bytes: '+name)
@@ -397,6 +439,8 @@ def apply_presentation_v1(root: Path, entries: dict, *, chain: list,
 
 def apply_presentation_overlay(root: Path, entries: dict, *, chain: list) -> tuple[dict, dict | None]:
     """Apply v1, then this bounded historical-content successor if present."""
+    if (root/PRESENTATION_V8_PATH).exists() and not (root/PRESENTATION_V7_PATH).exists():
+        raise ValueError('Public academic presentation v8 requires its fixed v7 predecessor')
     if (root/PRESENTATION_V7_PATH).exists() and not (root/PRESENTATION_V6_PATH).exists():
         raise ValueError('CAS source supplement v7 requires its fixed v6 predecessor')
     if (root/PRESENTATION_V6_PATH).exists() and not (root/PRESENTATION_V5_PATH).exists():
@@ -664,7 +708,7 @@ def apply_heritage_enrichment(root: Path, entries: dict, previous_report: dict) 
     if data.get('protected_website_members') != protected:
         raise ValueError('Historical enrichment changed a protected website binding')
     for name, expected in protected.items():
-        current = project_file(root, 'site/'+name)
+        current = historical_website_member(root, name)
         if digest(current) != expected['sha256'] or current.stat().st_size != expected['bytes']:
             raise ValueError('Historical enrichment changed protected website bytes: '+name)
     # v2's existing document and content checks continue to verify the first
@@ -738,7 +782,7 @@ def apply_chen_reagent_achievement(root: Path, entries: dict, previous_report: d
     if data.get('protected_website_members') != protected:
         raise ValueError('Chen reagent presentation changed a protected website binding')
     for name, expected in protected.items():
-        current = project_file(root, 'site/'+name)
+        current = historical_website_member(root, name)
         if digest(current) != expected['sha256'] or current.stat().st_size != expected['bytes']:
             raise ValueError('Chen reagent presentation changed protected website bytes: '+name)
     if data.get('protected_heritage_blocks') != protected_heritage_block_bindings(root):
@@ -747,10 +791,7 @@ def apply_chen_reagent_achievement(root: Path, entries: dict, previous_report: d
         raise ValueError('The historical v5 README snapshot differs from its v6 binding')
     if data.get('historical_achievement_content') != chen_reagent_achievement_binding(root):
         raise ValueError('The Chen reagent historical record differs from its v6 binding')
-    documents = [{'path': name, 'sha256': digest(project_file(root, name)),
-                  'bytes': project_file(root, name).stat().st_size}
-                 for name in ('README.md', CHEN_REAGENT_CONTENT_PATH, CHEN_REAGENT_DOCUMENT)]
-    if data.get('editorial_documents') != documents:
+    if data.get('editorial_documents') != presentation_v6_document_bindings(root):
         raise ValueError('The current Chen reagent editorial files differ from their v6 bindings')
     changes = data.get('changes')
     if not isinstance(changes, list) or not 1 <= len(changes) <= len(allowed):
@@ -839,6 +880,124 @@ def apply_chen_reagent_cas_source(root: Path, entries: dict, previous_report: di
         'presentation_id': PRESENTATION_V7_ID, 'publication_kind': required['publication_kind'],
         'changed_paths': sorted(seen), 'previous_presentation_commit': PRESENTATION_V7_PREVIOUS_COMMIT,
         'source_supplement_path': CHEN_REAGENT_CAS_SOURCE_PATH,
+        **{key: required[key] for key in ('scientific_review_status', 'scientific_review_scope',
+            'scientific_data_unchanged', 'historical_achievement_independent_of_AI_review', 'release_eligible')}}
+    return apply_public_academic_presentation(root, updated,
+        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})
+
+
+def public_presentation_snapshot_bindings(root: Path, entries: dict) -> list[dict]:
+    bindings = []
+    for name in sorted(name for name in entries if name.endswith('.html')):
+        snapshot_name = PUBLIC_PRESENTATION_SNAPSHOT+'/site/'+name
+        snapshot, expected = project_file(root, snapshot_name), entries[name]
+        if digest(snapshot) != expected['sha256'] or snapshot.stat().st_size != expected['bytes']:
+            raise ValueError('Previous public HTML snapshot differs from its fixed v7 bytes: '+name)
+        bindings.append({'path': name, 'snapshot_path': snapshot_name,
+                         'sha256': expected['sha256'], 'bytes': expected['bytes']})
+    if len(bindings) != 15:
+        raise ValueError('The previous public presentation must retain fifteen HTML snapshots')
+    return bindings
+
+
+def embedded_json_records(source: str) -> list:
+    """Read embedded JSON values without executing page scripts."""
+    class Records(HTMLParser):
+        def __init__(self):
+            super().__init__(); self.active = None; self.records = []
+        def handle_starttag(self, tag, attrs):
+            values = dict(attrs)
+            if tag == 'script' and values.get('type', '').lower() in {'application/json', 'application/ld+json'}:
+                self.active = [values.get('id'), values['type'].lower(), '']
+        def handle_data(self, value):
+            if self.active is not None:
+                self.active[2] += value
+        def handle_endtag(self, tag):
+            if tag == 'script' and self.active is not None:
+                ident, kind, body = self.active
+                self.records.append([ident, kind, json.loads(body)])
+                self.active = None
+    parser = Records(); parser.feed(source); parser.close()
+    return parser.records
+
+
+def apply_public_academic_presentation(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:
+    """Bind public wording changes while retaining historical and scientific data."""
+    if not (root/PRESENTATION_V8_PATH).exists():
+        return entries, previous_report
+    if digest(project_file(root, PRESENTATION_V7_PATH)) != PRESENTATION_V7_SHA256:
+        raise ValueError('The preceding CAS source presentation v7 is immutable')
+    path = project_file(root, PRESENTATION_V8_PATH); data = read_json(path)
+    snapshots = public_presentation_snapshot_bindings(root, entries)
+    documents = [{'path': name, 'sha256': digest(project_file(root, name)),
+                  'bytes': project_file(root, name).stat().st_size}
+                 for name in ('README.md', PUBLIC_ACADEMIC_DOCUMENT)]
+    required = {'schema_version': '8.0', 'presentation_id': PRESENTATION_V8_ID,
+        'publication_kind': 'platform_public_academic_presentation',
+        'previous_presentation_commit': PRESENTATION_V8_PREVIOUS_COMMIT,
+        'previous_presentation': {'path': PRESENTATION_V7_PATH, 'sha256': PRESENTATION_V7_SHA256},
+        'original_baseline_sha256': BASELINE_SHA256, 'original_archive_sha256': ARCHIVE_SHA256,
+        'historical_website_snapshots': snapshots,
+        'historical_readme_snapshot': historical_public_readme_binding(root),
+        'editorial_documents': documents, 'scientific_review_status': 'review_required',
+        'scientific_review_scope': 'unchanged_platform_research_only', 'release_eligible': False,
+        'scientific_data_unchanged': True, 'historical_achievement_independent_of_AI_review': True,
+        'M0_resumed': False}
+    if any(data.get(key) != value for key, value in required.items()) or any(
+            data.get(key) is not required[key] for key in ('release_eligible', 'scientific_data_unchanged',
+                'historical_achievement_independent_of_AI_review', 'M0_resumed')) or any(
+            type(data.get(key)) is not int or data[key] != 0 for key in ('new_quantum_calls', 'new_model_API_calls')):
+        raise ValueError('Unsupported public academic presentation v8')
+    # Only two public phrases may change in the complete PFtB scientific page.
+    previous_pf = project_file(root, PUBLIC_PRESENTATION_SNAPSHOT+'/site/pftb/index.html').read_bytes()
+    expected_pf = previous_pf
+    for old, new in [('首版的 AI 价值是', '本专题的 AI 价值是'),
+                     ('早期研究”首版静态页面', '早期研究”专题静态页面')]:
+        old, new = old.encode('utf-8'), new.encode('utf-8')
+        if expected_pf.count(old) != 1:
+            raise ValueError('Ambiguous historical PFtB public phrase')
+        expected_pf = expected_pf.replace(old, new)
+    if project_file(root, 'site/pftb/index.html').read_bytes() != expected_pf:
+        raise ValueError('PFtB must retain its complete bytes except the two authorized public phrases')
+    from render_a01_progress import BEGIN, END
+    old_a01 = project_file(root, PUBLIC_PRESENTATION_SNAPSHOT+'/site/'+TOPIC_PATH).read_bytes().decode('utf-8')
+    now_a01 = project_file(root, 'site/'+TOPIC_PATH).read_bytes().decode('utf-8')
+    for source in (old_a01, now_a01):
+        if source.count(BEGIN) != 1 or source.count(END) != 1:
+            raise ValueError('A01 requires its complete scientific progress block')
+    if old_a01[old_a01.index(BEGIN):old_a01.index(END)+len(END)] != now_a01[now_a01.index(BEGIN):now_a01.index(END)+len(END)]:
+        raise ValueError('Public wording changes must retain the exact A01 scientific progress block')
+    for snapshot in snapshots:
+        name = snapshot['path']
+        if embedded_json_records(project_file(root, 'site/'+name).read_text('utf-8')) != embedded_json_records(
+                project_file(root, snapshot['snapshot_path']).read_text('utf-8')):
+            raise ValueError('Public wording changes must retain embedded JSON values: '+name)
+    changes = data.get('changes'); routes = {name for name in entries if name.endswith('.html')}
+    if not isinstance(changes, list) or not 1 <= len(changes) <= len(routes):
+        raise ValueError('Public presentation must enumerate its edited existing HTML pages')
+    updated, seen = {name: dict(value) for name, value in entries.items()}, set()
+    for item in changes:
+        name = item.get('path')
+        if name not in routes or name in seen:
+            raise ValueError('Unauthorized or duplicate public presentation path: '+str(name))
+        seen.add(name); old = entries[name]
+        value, size = item.get('new_sha256'), item.get('new_bytes')
+        if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']
+                or not isinstance(value, str) or not SHA.fullmatch(value) or value == old['sha256']
+                or not isinstance(size, int) or isinstance(size, bool) or size <= 0
+                or not isinstance(item.get('reason'), str) or not item['reason'].strip()):
+            raise ValueError('Incomplete public academic presentation change: '+name)
+        updated[name] = {**old, 'sha256': value, 'bytes': size, 'presentation_id': PRESENTATION_V8_ID}
+    if data.get('allowed_html_paths') != sorted(seen):
+        raise ValueError('The public presentation allowlist must name exactly its edited pages')
+    for name, expected in entries.items():
+        if name not in seen:
+            current = project_file(root, 'site/'+name)
+            if digest(current) != expected['sha256'] or current.stat().st_size != expected['bytes']:
+                raise ValueError('Public presentation changed an unlisted website member: '+name)
+    report = {'path': PRESENTATION_V8_PATH, 'sha256': digest(path), 'presentation_id': PRESENTATION_V8_ID,
+        'publication_kind': required['publication_kind'], 'changed_paths': sorted(seen),
+        'previous_presentation_commit': PRESENTATION_V8_PREVIOUS_COMMIT,
         **{key: required[key] for key in ('scientific_review_status', 'scientific_review_scope',
             'scientific_data_unchanged', 'historical_achievement_independent_of_AI_review', 'release_eligible')}}
     return updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}

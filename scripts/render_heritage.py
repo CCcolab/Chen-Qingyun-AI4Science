@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 from collections import Counter
+from copy import deepcopy
 import hashlib
 import html
 from html.parser import HTMLParser
@@ -19,7 +20,7 @@ from urllib.parse import quote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT = 'content/heritage-20261114.v2.json'
-DOCUMENT = 'docs/HERITAGE_ENRICHMENT_20261114_zh-CN.md'
+DOCUMENT = 'docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md'
 PREVIOUS_CONTENT = 'content/heritage-20261114.v1.json'
 PREVIOUS_SHA256 = 'ba2aac21a10ed38ed6a4d796c904fa6fb539afd7f2fa370fc91b4274fb54d135'
 PAGE_MARKERS = {
@@ -35,6 +36,71 @@ CONTEXT_PATHS = {
 }
 LINE_IDS = {'A'+str(index).zfill(2) for index in range(1, 10)}
 SOURCE_ID = re.compile(r'HERITAGE-S[0-9]{2,}')
+
+# Apply only to narrative fields. Titles, names, quotations and the embedded
+# source payload retain their original wording and identity.
+PUBLIC_NARRATIVE_FIELDS = {
+    'text', 'contribution', 'status', 'kind', 'note', 'ai_status', 'detail',
+    'current_treatment', 'next_document', 'remaining_gap', 'source_identity',
+    'locator', 'history_identity', 'AI_identity',
+}
+QUOTED_TEXT = re.compile(r'(《[^》]*》|“[^”]*”|‘[^’]*’|"[^"\n]*")')
+
+
+def public_text(value: str) -> str:
+    """Remove editorial-batch wording outside quoted passages and titles."""
+    replacements = (
+        ('第二版重读', '已核读'), ('已分工逐章核读', '已逐章核读'),
+        ('本轮新增核见', '已核见'), ('本轮整页核见', '整页已核见'),
+        ('本轮补见', '已核读'), ('本轮核读登记', '资料登记'),
+        ('本轮已', '已'), ('本轮未', '尚未'), ('本轮只', '仅'),
+        ('本轮仅', '仅'), ('本轮确认', '已确认'), ('本轮核读', '已核读'),
+        ('本轮不续算', 'M0保持暂停'),
+        ('不是本轮取得的完整专利说明书', '尚未取得完整专利说明书'),
+        ('不是新取得的工艺实验报告', '不作为工艺实验报告'),
+        ('全文／补充资料', '全文／支持信息（SI）'),
+        ('原文和补充资料', '原文和支持信息（SI）'),
+        ('平台新增AI核读', '平台AI辅助研究的核读'),
+        ('平台新增机制结论', '平台AI辅助研究的机制结论'),
+        ('平台新增实验验证', '平台实验验证'),
+        ('平台新增实验', '平台实验'),
+    )
+    parts = QUOTED_TEXT.split(value)
+    for index in range(0, len(parts), 2):
+        part = parts[index]
+        # This identifies an editorial registration, not a scientific citation.
+        part = re.sub(r'^既有CQ-[RH]\d+来源的本轮核读登记。', '', part)
+        for old, new in replacements:
+            part = part.replace(old, new)
+        parts[index] = part
+    return ''.join(parts)
+
+
+def public_projection(value):
+    """Return display-only prose; never mutate the evidence collection."""
+    value = deepcopy(value)
+
+    def project(item):
+        if isinstance(item, list):
+            return [project(child) for child in item]
+        if not isinstance(item, dict):
+            return item
+        for key, child in item.items():
+            if key == 'm0_status' and child == 'M0继续暂停，仅保存此前阶段记录；本轮为历史资料补充，不开展量化计算或模型API调用。':
+                item[key] = '历史资料整理与AI研究分开，M0保持暂停。'
+            elif key == 'ai_status' and child == '本轮为史料整理，未登记本线已完成的复现计算或实验结果。':
+                item[key] = '尚无本成果线已完成的平台复现计算或实验验证结果。'
+            elif key == 'ai_status' and isinstance(child, str):
+                item[key] = public_text(child).replace('本轮为史料整理', '历史资料整理')
+            elif key == 'reading_scope' and isinstance(child, list):
+                item[key] = [public_text(row) for row in child]
+            elif key in PUBLIC_NARRATIVE_FIELDS and isinstance(child, str):
+                item[key] = public_text(child)
+            elif isinstance(child, (dict, list)):
+                item[key] = project(child)
+        return item
+
+    return project(value)
 
 
 def esc(value) -> str:
@@ -259,6 +325,7 @@ def _boundary(data: dict) -> str:
 
 
 def render_life(data: dict, sources: dict) -> str:
+    data = public_projection(data)
     cards = []
     for row in data['biography']:
         cards.append('<article class="heritage-card"><p class="heritage-meta">'+esc(row['period'])+'</p><h3>'+esc(row['title'])+'</h3><p>'+esc(row['text'])+'</p>'+_locator(row, sources)+'</article>')
@@ -266,36 +333,41 @@ def render_life(data: dict, sources: dict) -> str:
 
 
 def _story_card(row: dict, sources: dict, *, prefix='') -> str:
+    row = public_projection(row)
     people = '、'.join(row['people'])
     tags = ''.join('<span class="heritage-tag">'+esc(value)+'</span>' for value in row['line_ids'])
     return ('<article class="heritage-card" id="heritage-story-'+esc(row['id'].lower())+'"><p class="heritage-meta">'+esc(row['theme'])+'</p><h3>'+esc(row['title'])+'</h3><p class="heritage-meta">人物：'+esc(people)+'</p><p>'+esc(row['text'])+'</p>'+tags+'<p class="heritage-meta">资料性质：'+esc(row['source_identity'])+'</p>'+_locator(row, sources, prefix=prefix)+'<details><summary>仍待补齐的材料</summary><p>'+esc(row['remaining_gap'])+'</p></details></article>')
 
 
 def render_featured_stories(data: dict, sources: dict) -> str:
+    data = public_projection(data)
     cards = ''.join(_story_card(row, sources) for row in data['stories'] if row['featured'])
     if not cards:
-        cards = '<p>尚无达到本次编辑选择条件的故事。</p>'
+        cards = '<p>相关故事及出处尚待整理。</p>'
     return '<section id="heritage-stories" class="wrap heritage-section"><h2>人物与合作的故事</h2><p>故事分别标示传记叙述、口述回忆或转引的资料性质，保留参与者与待补原件。</p><div class="heritage-grid">'+cards+'</div><p><a href="achievements/index.html#heritage-stories-all">查看全部故事与出处</a></p></section>'
 
 
 def render_sources(data: dict, sources: dict) -> str:
+    original_data = data
+    data = public_projection(data)
     rows = []
     for row in data['sources']:
         title = esc(row['title'])
         if row['url'] is not None:
             title = '<a href="'+esc(safe_url(row['url'], row['id']))+'" rel="noopener noreferrer">'+title+'</a>'
-        rows.append('<article class="heritage-card" id="'+esc(source_anchor(row['id']))+'"><h3>'+esc(row['id'])+' · '+title+'</h3><p class="heritage-meta">'+esc(row['kind'])+'</p><p>定位：'+esc(row['locator'])+'</p><p>'+esc(row['note'])+'</p>'+('<p>关联原登记：'+render_references(row['legacy_source_ids'], sources)+'</p>' if row['legacy_source_ids'] else '')+'</article>')
+        rows.append('<article class="heritage-card" id="'+esc(source_anchor(row['id']))+'"><h3>'+esc(row['id'])+' · '+title+'</h3><p class="heritage-meta">'+esc(row['kind'])+'</p><p>定位：'+esc(row['locator'])+'</p><p>'+esc(row['note'])+'</p></article>')
     gaps = []
     for row in data['source_gaps']:
         gaps.append('<article class="heritage-card"><h4>'+esc(row['title'])+'</h4><p>'+esc(row['detail'])+'</p><p>当前处理：'+esc(row['current_treatment'])+'</p>'+_locator(row, sources)+'</article>')
     book = data['book']
     authors = '、'.join(book['authors']) if isinstance(book['authors'], list) else book['authors']
     reading = '<ul>'+''.join('<li>'+esc(value)+'</li>' for value in book['reading_scope'])+'</ul>'
-    payload = json.dumps(data, ensure_ascii=False, indent=2, allow_nan=False).replace('&', '\\u0026').replace('<', '\\u003c').replace('>', '\\u003e')
-    return ('<section id="heritage-sources" class="wrap heritage-section"><h2>本次资料来源与证据缺口</h2><p>补充资料使用独立 HERITAGE-S 编号；原有51条来源登记及编号保持原样。</p><details><summary>本次阅读范围与书本身份</summary><p>'+esc(authors)+'：《'+esc(book['title'])+'》。'+esc(book['edition_note'])+'</p><p class="heritage-meta">本机文件身份：'+esc(book['file_name'])+'；SHA256 '+esc(book['sha256'])+'；PDF共'+esc(book['page_count'])+'页。正文页码映射的偏移量为'+esc(book['printed_page_to_pdf_offset'])+'页。</p>'+reading+'</details><div class="heritage-grid">'+''.join(rows)+'</div><details><summary>具体缺口及当前处理</summary><div class="heritage-grid">'+''.join(gaps)+'</div></details><details><summary>历史资料与新增AI工作的关系</summary>'+_boundary(data)+'<p>'+esc(data['scope']['m0_status'])+'</p></details><script id="heritage-content" type="application/json">\n'+payload+'\n</script></section>')
+    payload = json.dumps(original_data, ensure_ascii=False, indent=2, allow_nan=False).replace('&', '\\u0026').replace('<', '\\u003c').replace('>', '\\u003e')
+    return ('<section id="heritage-sources" class="wrap heritage-section"><h2>资料来源与待核事项</h2><p>各项资料注明来源、文献定位与待核事项。</p><details><summary>文献范围与书本信息</summary><p>'+esc(authors)+'：《'+esc(book['title'])+'》。'+esc(book['edition_note'])+'</p><p class="heritage-meta">资料文件信息：'+esc(book['file_name'])+'；SHA256 '+esc(book['sha256'])+'；PDF共'+esc(book['page_count'])+'页。正文页码映射的偏移量为'+esc(book['printed_page_to_pdf_offset'])+'页。</p>'+reading+'</details><div class="heritage-grid">'+''.join(rows)+'</div><details><summary>待核事项与当前处理</summary><div class="heritage-grid">'+''.join(gaps)+'</div></details><details><summary>历史资料与平台AI辅助研究</summary>'+_boundary(data)+'<p>'+esc(data['scope']['m0_status'])+'</p></details><script id="heritage-content" type="application/json">\n'+payload+'\n</script></section>')
 
 
 def render_inventory(data: dict, sources: dict) -> str:
+    data = public_projection(data)
     cards = []
     for row in sorted(data['lines'], key=lambda value: value['line_id']):
         notes = '<div class="heritage-achievement-notes"><h4>成果与合作</h4>'+''.join(
@@ -305,15 +377,17 @@ def render_inventory(data: dict, sources: dict) -> str:
         for item in row['materials']:
             materials.append('<li><span class="heritage-tag">'+esc(item['status'])+'</span>'+esc(item['text'])+_locator(item, sources, prefix='../index.html')+'</li>')
         gaps = ''.join('<li>'+esc(value)+'</li>' for value in row['gaps'])
-        cards.append('<article class="heritage-card" id="heritage-line-'+row['line_id'].lower()+'"><p class="heritage-meta">'+row['line_id']+'</p><h3>'+esc(row['title'])+'</h3><p>'+esc(row['contribution'])+'</p>'+notes+'<details><summary>现有材料及来源定位</summary><ul>'+''.join(materials)+'</ul></details><h4>明确缺口</h4><ul>'+gaps+'</ul><p><strong>优先补齐资料：</strong>'+esc(row['next_document'])+'</p><p class="heritage-meta">AI工作状态：'+esc(row['ai_status'])+'</p></article>')
-    return _style('heritage-achievements-style')+'\n<section id="heritage-inventory" class="wrap heritage-section"><h2>九条成果与传承线：资料盘点</h2>'+_boundary(data)+'<div class="heritage-grid">'+''.join(cards)+'</div></section>'
+        cards.append('<article class="heritage-card" id="heritage-line-'+row['line_id'].lower()+'"><p class="heritage-meta">'+row['line_id']+'</p><h3>'+esc(row['title'])+'</h3><p>'+esc(row['contribution'])+'</p>'+notes+'<details><summary>现有材料及来源定位</summary><ul>'+''.join(materials)+'</ul></details><h4>待核事项</h4><ul>'+gaps+'</ul><p><strong>待补文献：</strong>'+esc(row['next_document'])+'</p><p class="heritage-meta">平台AI辅助研究：'+esc(row['ai_status'])+'</p></article>')
+    return _style('heritage-achievements-style')+'\n<section id="heritage-inventory" class="wrap heritage-section"><h2>九条成果与传承线：资料</h2>'+_boundary(data)+'<div class="heritage-grid">'+''.join(cards)+'</div></section>'
 
 
 def render_all_stories(data: dict, sources: dict) -> str:
+    data = public_projection(data)
     return '<section id="heritage-stories-all" class="wrap heritage-section"><h2>全部人物与合作故事</h2><p>以下为历史资料整理，各则均保留资料性质、页码或定位与尚缺原件。</p><div class="heritage-grid">'+''.join(_story_card(row, sources, prefix='../index.html') for row in data['stories'])+'</div></section>'
 
 
 def render_achievement_note(row: dict, sources: dict, *, prefix='', heading='h3') -> str:
+    row = public_projection(row)
     if heading not in {'h3', 'h5'}:
         raise ValueError('Unsupported achievement-note heading level')
     return ('<'+heading+'>'+esc(row['title'])+'</'+heading+'><p>'+esc(row['text'])+'</p>'
@@ -322,6 +396,7 @@ def render_achievement_note(row: dict, sources: dict, *, prefix='', heading='h3'
 
 
 def render_topic_context(context: dict, data: dict, sources: dict) -> str:
+    data = public_projection(data)
     line = next(row for row in data['lines'] if row['line_id'] == context['line_id'])
     stories = {row['id']: row for row in data['stories']}
     cards = ['<article class="heritage-card">'+render_achievement_note(
@@ -333,10 +408,10 @@ def render_topic_context(context: dict, data: dict, sources: dict) -> str:
             '<li><a href="../../achievements/index.html#heritage-story-'+esc(identifier.lower())+'">'
             +esc(stories[identifier]['title'])+'</a></li>' for identifier in context['story_ids'])+'</ul></div>'
     return (_style('heritage-context-style')+'\n<section id="heritage-context" class="heritage-section">'
-        '<h2>成果与合作的资料补充</h2><p>以下按'+esc(context['line_id'])+'成果线补充传记与公开资料中的历史记录，'
-        '保留参与者、来源定位及待核事项；平台新增AI研究另行登记。</p><div class="heritage-grid">'
+        '<h2>成果与合作</h2><p>以下按'+esc(context['line_id'])+'成果线呈现传记与公开资料中的历史记录，'
+        '保留参与者、来源定位及待核事项；平台AI辅助研究另行登记。</p><div class="heritage-grid">'
         +''.join(cards)+'</div>'+related+'<p><a href="../../achievements/index.html#heritage-line-'
-        +esc(context['line_id'].lower())+'">查看本成果线的资料盘点</a> · '
+        +esc(context['line_id'].lower())+'">查看本成果线的资料</a> · '
         '<a href="../../achievements/index.html#heritage-stories-all">查看全部合作与育人故事</a></p></section>')
 
 
@@ -350,12 +425,12 @@ def _md_refs(refs: list, sources: dict) -> str:
 
 
 def render_inventory_markdown(data: dict, sources: dict) -> str:
+    data = public_projection(data)
     book = data['book']
     authors = '、'.join(book['authors']) if isinstance(book['authors'], list) else book['authors']
-    rows = ['# 陈庆云院士成果与合作资料补充', '', '资料日期：'+_md(data['date'])+'。本文件由历史资料数据生成，不执行计算。', '',
-        '本轮使用v2资料集；前版资料集与资料盘点文档保留，不覆盖历史记录。', '',
-        '## 资料身份与阅读范围', '', _md(authors)+'：《'+_md(book['title'])+'》。'+_md(book['edition_note']), '',
-        '本机文件：'+_md(book['file_name'])+'；SHA256 `'+book['sha256']+'`；PDF '+str(book['page_count'])+'页，正文页码映射偏移量 '+str(book['printed_page_to_pdf_offset'])+'。', '']
+    rows = ['# 陈庆云院士学术成就与合作资料', '', '资料截至：'+_md(data['date'])+'。', '',
+        '## 文献范围与书本信息', '', _md(authors)+'：《'+_md(book['title'])+'》。'+_md(book['edition_note']), '',
+        '资料文件：'+_md(book['file_name'])+'；SHA256 `'+book['sha256']+'`；PDF '+str(book['page_count'])+'页，正文页码映射偏移量 '+str(book['printed_page_to_pdf_offset'])+'。', '']
     rows += ['- '+_md(value) for value in book['reading_scope']]
     rows += ['', '## 生平与学术历程', '']
     for row in data['biography']:
@@ -371,27 +446,25 @@ def render_inventory_markdown(data: dict, sources: dict) -> str:
         rows += ['现有材料：', '']
         for item in row['materials']:
             rows += ['- **'+_md(item['status'])+'**：'+_md(item['text'])+'；出处：'+_md_refs(item['source_refs'], sources)+'；定位：'+_md(item['locator'])+'。']
-        rows += ['', '明确缺口：', '']+['- '+_md(value) for value in row['gaps']]
-        rows += ['', '优先补齐资料：'+_md(row['next_document']), '', 'AI工作状态：'+_md(row['ai_status']), '']
+        rows += ['', '待核事项：', '']+['- '+_md(value) for value in row['gaps']]
+        rows += ['', '待补文献：'+_md(row['next_document']), '', '平台AI辅助研究：'+_md(row['ai_status']), '']
     rows += ['## 人物与合作故事', '']
     for row in data['stories']:
         rows += ['### '+_md(row['title']), '', '主题：'+_md(row['theme'])+'；关联：'+_md('、'.join(row['line_ids']))+'；人物：'+_md('、'.join(row['people']))+'。', '',
             _md(row['text']), '', '资料性质：'+_md(row['source_identity']), '',
             '出处：'+_md_refs(row['source_refs'], sources)+'；定位：'+_md(row['locator'])+'。', '', '仍待补齐：'+_md(row['remaining_gap']), '']
-    rows += ['## 补充来源登记', '']
+    rows += ['## 资料来源', '']
     for row in data['sources']:
         rows += ['### '+row['id']+' · '+_md(row['title']), '', '资料类型：'+_md(row['kind'])+'；定位：'+_md(row['locator'])+'。', '', _md(row['note']), '']
         if row['url']:
             rows += ['来源链接：['+_md(row['title'])+'](<'+safe_url(row['url'], row['id'])+'>)', '']
-        if row['legacy_source_ids']:
-            rows += ['关联原有来源：'+_md_refs(row['legacy_source_ids'], sources), '']
-    rows += ['## 具体证据缺口与当前处理', '']
+    rows += ['## 待核事项与当前处理', '']
     for row in data['source_gaps']:
         rows += ['### '+_md(row['title']), '', _md(row['detail']), '', '当前处理：'+_md(row['current_treatment']), '',
             '出处：'+_md_refs(row['source_refs'], sources)+'；定位：'+_md(row['locator'])+'。', '']
-    rows += ['## 历史资料与新增AI工作分开登记', '', _md(data['scope']['history_identity']), '',
+    rows += ['## 历史成果与平台AI辅助研究', '', _md(data['scope']['history_identity']), '',
         _md(data['scope']['AI_identity']), '', _md(data['scope']['m0_status']), '',
-        '原有51条来源JSON、稳定编号、PFtB正文与科研记录不由本生成器修改。新增资料不是新实验、原刊独立复验或新增量化结果。', '']
+        '历史成果归原作者及合作团队；历史资料的整理不构成平台新开展的实验验证或量化结果。', '']
     return '\n'.join(rows)
 
 

@@ -1,0 +1,257 @@
+{
+  "schema_version": "8.0",
+  "presentation_id": "PLATFORM-PUBLIC-ACADEMIC-20261114-v8",
+  "created_at_utc": "2026-11-14T04:45:09.965853+00:00",
+  "publication_kind": "platform_public_academic_presentation",
+  "scientific_review_status": "review_required",
+  "scientific_review_scope": "unchanged_platform_research_only",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "new_quantum_calls": 0,
+  "new_model_API_calls": 0,
+  "M0_resumed": false,
+  "authorization": "User task dated 2026-11-14: present academic and heritage content directly in the public README and website without developmental, supplement or edition labels; retain the original research identities and sources",
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "previous_presentation_commit": "9ced00530776228af60cdec24c8a830b2fbce06c",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v7.json",
+    "sha256": "2463a97b3bf74b629f1863892d75f36276c97bf9a111905b47cc6179b62eaa7f"
+  },
+  "allowed_html_paths": [
+    "achievements/index.html",
+    "index.html",
+    "pftb/index.html",
+    "topics/chen-reagent/index.html",
+    "topics/deoxyfluorination/index.html",
+    "topics/early-fluoroketones/index.html",
+    "topics/fluoromonomers/index.html",
+    "topics/fluoroporphyrins/index.html",
+    "topics/index.html",
+    "topics/perfluorosulfonates/index.html",
+    "topics/refrigerants/index.html",
+    "topics/single-electron-transfer/index.html",
+    "topics/sulfonyl-fluoride/index.html"
+  ],
+  "historical_website_snapshots": [
+    {
+      "path": "achievements/index.html",
+      "snapshot_path": "provenance/public-presentation-previous/site/achievements/index.html",
+      "sha256": "26efdd912492b9ef0055e2ba60589db4d373f5857398671e3d2d47e51fb23949",
+      "bytes": 94418
+    },
+    {
+      "path": "index.html",
+      "snapshot_path": "provenance/public-presentation-previous/site/index.html",
+      "sha256": "2b9e4a22edb1a7d1c5bfe59af226a4815310354542dbf089f28f5d1b220613a5",
+      "bytes": 254164
+    },
+    {
+      "path": "pftb/index.html",
+      "snapshot_path": "provenance/public-presentation-previous/site/pftb/index.html",
+      "sha256": "0d4396b85f8cfd772edcf8fe9bc192d845268399e1ed3834e1d83562639ba372",
+      "bytes": 97584
+    },
+    {
+      "path": "topics/chen-reagent/index.html",
+      "snapshot_path": "provenance/public-presentation-previous/site/topics/chen-reagent/index.html",
+      "sha256": "e5ef73695a890465fedf03da7a4d39984aae30a902da7e4e7d6eaf0600ef0149",
+      "bytes": 19830
+    },
+    {
+      "path": "topics/deoxyfluorination/index.html",
+      "snapshot_path": "provenance/public-presentation-previous/site/topics/deoxyfluorination/index.html",
+      "sha256": "6a448d3a052040e83fb2bb8b9497a75ed22151aee4c50d5456755c1320b63fb8",
+      "bytes": 5476
+    },
+    {
+      "path": "topics/early-fluoroketones/index.html",
+      "snapshot_path": "provenance/public-presentation-previous/site/topics/early-fluoroketones/index.html",
+      "sha256": "f40e31b9be7439c502854ad2b75ae6cf26d2d894e36cbb68b6d5d29aef0c0d11",
+      "bytes": 182585
+    },
+    {
+      "path": "topics/f53/index.html",
+      "snapshot_path": "provenance/public-presentation-previous/site/topics/f53/index.html",
+      "sha256": "a6349eb302e88d3176b086f83e9f1b62c008e8616f5f034365a4274756addeab",
+      "bytes": 8111
+    },
+    {
+      "path": "topics/fluorinated-small-rings/index.html",
+      "snapshot_path": "provenance/public-presentation-previous/site/topics/fluorinated-small-rings/index.html",
+      "sha256": "abe1d15c5aedfe81531fc6b178b5e2ee98d1a598325ef2ffeeb3cff4b496f2f3",
+      "bytes": 5858
+    },
+    {
+      "path": "topics/fluoromonomers/index.html",
+      "snapshot_path": "provenance/public-presentation-previous/site/topics/fluoromonomers/index.html",
+      "sha256": "baaf7d82224cea22e9da1205e193c24ab6c44b97f0e93da2748224251d4ce836",
+      "bytes": 10457
+    },
+    {
+      "path": "topics/fluoroporphyrins/index.html",
+      "snapshot_path": "provenance/public-presentation-previous/site/topics/fluoroporphyrins/index.html",
+      "sha256": "4e5d37c031fc49224d5147a83a1a665119f2cbb4ac1456613f7411c7568364d3",
+      "bytes": 5944
+    },
+    {
+      "path": "topics/index.html",
+      "snapshot_path": "provenance/public-presentation-previous/site/topics/index.html",
+      "sha256": "cfda9c0892c48082f8ec945d2b65bf46fdf419f2907653cfd91454e3c7fa09e0",
+      "bytes": 4970
+    },
+    {
+      "path": "topics/perfluorosulfonates/index.html",
+      "snapshot_path": "provenance/public-presentation-previous/site/topics/perfluorosulfonates/index.html",
+      "sha256": "e660092c3fcf6458092179e94144b0d21306a02303b2eb306b6fdcf02cc7f5f3",
+      "bytes": 8765
+    },
+    {
+      "path": "topics/refrigerants/index.html",
+      "snapshot_path": "provenance/public-presentation-previous/site/topics/refrigerants/index.html",
+      "sha256": "1e032070347a39624fa6639d1bd3e7265709436922a12f358fbe497f1cc9abae",
+      "bytes": 10567
+    },
+    {
+      "path": "topics/single-electron-transfer/index.html",
+      "snapshot_path": "provenance/public-presentation-previous/site/topics/single-electron-transfer/index.html",
+      "sha256": "c3b6c7aa0124d50510abe7303f64e70e36dc6abd36788164c52d91f719538c01",
+      "bytes": 10271
+    },
+    {
+      "path": "topics/sulfonyl-fluoride/index.html",
+      "snapshot_path": "provenance/public-presentation-previous/site/topics/sulfonyl-fluoride/index.html",
+      "sha256": "d091dc39d740c10a0fb65a85367b34ebe1a1a2fcb749905ea5cbb987778d40df",
+      "bytes": 4969
+    }
+  ],
+  "historical_readme_snapshot": {
+    "original_path": "README.md",
+    "snapshot_path": "provenance/public-presentation-previous/README.md",
+    "sha256": "30548c6e966604028863beb58c39ae849c95c546d0bc047dc2d3dd4f0bd8dd3d",
+    "bytes": 6971
+  },
+  "editorial_documents": [
+    {
+      "path": "README.md",
+      "sha256": "6d0554307543965795d9bf86cc7b33501cac966493275d5206c5bef82c031d57",
+      "bytes": 5458
+    },
+    {
+      "path": "docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "sha256": "cedd6549296183099e5b17ee38d671c6582659ad9ef2eb811eba01ac53a7785c",
+      "bytes": 68459
+    }
+  ],
+  "changes": [
+    {
+      "path": "achievements/index.html",
+      "old_sha256": "26efdd912492b9ef0055e2ba60589db4d373f5857398671e3d2d47e51fb23949",
+      "old_bytes": 94418,
+      "new_sha256": "f96e38b9f01ef38fd34ce573088fb72a16fd0f1d01c05f44575db08deb84e3b4",
+      "new_bytes": 94360,
+      "reason": "Present academic content directly through public headings and labels, retaining the frozen source data, stable identities and historical attribution"
+    },
+    {
+      "path": "index.html",
+      "old_sha256": "2b9e4a22edb1a7d1c5bfe59af226a4815310354542dbf089f28f5d1b220613a5",
+      "old_bytes": 254164,
+      "new_sha256": "b06eb2063b278af084f8732f5316c010070749faa77f4a908940df250e734a10",
+      "new_bytes": 253360,
+      "reason": "Present academic content directly through public headings and labels, retaining the frozen source data, stable identities and historical attribution"
+    },
+    {
+      "path": "pftb/index.html",
+      "old_sha256": "0d4396b85f8cfd772edcf8fe9bc192d845268399e1ed3834e1d83562639ba372",
+      "old_bytes": 97584,
+      "new_sha256": "42ca404f2ed70b7a3b0b5d8b0eb742a2509e5a5a70fd0be36a65028e61cbd1f6",
+      "new_bytes": 97587,
+      "reason": "Replace only the two authorized developmental display phrases; preserve every other PFtB byte, including scientific text, site-data and scripts"
+    },
+    {
+      "path": "topics/chen-reagent/index.html",
+      "old_sha256": "e5ef73695a890465fedf03da7a4d39984aae30a902da7e4e7d6eaf0600ef0149",
+      "old_bytes": 19830,
+      "new_sha256": "328830c2fc3cc808113786ed24f5b5e199681e3189120903802b0cf179af02fd",
+      "new_bytes": 19799,
+      "reason": "Present academic content directly through public headings and labels, retaining the frozen source data, stable identities and historical attribution"
+    },
+    {
+      "path": "topics/deoxyfluorination/index.html",
+      "old_sha256": "6a448d3a052040e83fb2bb8b9497a75ed22151aee4c50d5456755c1320b63fb8",
+      "old_bytes": 5476,
+      "new_sha256": "1188d2abb779d0074a6c297c6dca83b3f1b76eaa613cfccc56785ea4cad5e6bf",
+      "new_bytes": 5484,
+      "reason": "Present academic content directly through public headings and labels, retaining the frozen source data, stable identities and historical attribution"
+    },
+    {
+      "path": "topics/early-fluoroketones/index.html",
+      "old_sha256": "f40e31b9be7439c502854ad2b75ae6cf26d2d894e36cbb68b6d5d29aef0c0d11",
+      "old_bytes": 182585,
+      "new_sha256": "3bf89b24ddf8e32bc5b4174e344103b6574d99876a4bb504c0cb8455b069495f",
+      "new_bytes": 182563,
+      "reason": "Revise public introductory wording while retaining the complete frozen A01 scientific progress block and all embedded JSON values"
+    },
+    {
+      "path": "topics/fluoromonomers/index.html",
+      "old_sha256": "baaf7d82224cea22e9da1205e193c24ab6c44b97f0e93da2748224251d4ce836",
+      "old_bytes": 10457,
+      "new_sha256": "b9ab9c6bc5d05b054e606cfd5b5cf6f3592bcb9811e31fa0c9599174c2651c09",
+      "new_bytes": 10436,
+      "reason": "Present academic content directly through public headings and labels, retaining the frozen source data, stable identities and historical attribution"
+    },
+    {
+      "path": "topics/fluoroporphyrins/index.html",
+      "old_sha256": "4e5d37c031fc49224d5147a83a1a665119f2cbb4ac1456613f7411c7568364d3",
+      "old_bytes": 5944,
+      "new_sha256": "5751fc484cc7d8eb62f9d39b7d4f7a85b74311945667ed7740f864d09b13d68e",
+      "new_bytes": 5952,
+      "reason": "Present academic content directly through public headings and labels, retaining the frozen source data, stable identities and historical attribution"
+    },
+    {
+      "path": "topics/index.html",
+      "old_sha256": "cfda9c0892c48082f8ec945d2b65bf46fdf419f2907653cfd91454e3c7fa09e0",
+      "old_bytes": 4970,
+      "new_sha256": "dd16eca5d83ad4d82442440f041e903a76659b7082c0cac9688cc9785f46ed4f",
+      "new_bytes": 4970,
+      "reason": "Present academic content directly through public headings and labels, retaining the frozen source data, stable identities and historical attribution"
+    },
+    {
+      "path": "topics/perfluorosulfonates/index.html",
+      "old_sha256": "e660092c3fcf6458092179e94144b0d21306a02303b2eb306b6fdcf02cc7f5f3",
+      "old_bytes": 8765,
+      "new_sha256": "38128ea2a303279bf33449ce29401b3160a16ecf864e2e841057ccb3c423bfe7",
+      "new_bytes": 8744,
+      "reason": "Present academic content directly through public headings and labels, retaining the frozen source data, stable identities and historical attribution"
+    },
+    {
+      "path": "topics/refrigerants/index.html",
+      "old_sha256": "1e032070347a39624fa6639d1bd3e7265709436922a12f358fbe497f1cc9abae",
+      "old_bytes": 10567,
+      "new_sha256": "5243bf715fa5af64f0a6beeb88b235a5008cb5279b7525383fd085809f6096c8",
+      "new_bytes": 10546,
+      "reason": "Present academic content directly through public headings and labels, retaining the frozen source data, stable identities and historical attribution"
+    },
+    {
+      "path": "topics/single-electron-transfer/index.html",
+      "old_sha256": "c3b6c7aa0124d50510abe7303f64e70e36dc6abd36788164c52d91f719538c01",
+      "old_bytes": 10271,
+      "new_sha256": "06eb41f02942070321aff63dfcb199c83d42d0ab1232f01e3c2787003eeb1391",
+      "new_bytes": 10247,
+      "reason": "Present academic content directly through public headings and labels, retaining the frozen source data, stable identities and historical attribution"
+    },
+    {
+      "path": "topics/sulfonyl-fluoride/index.html",
+      "old_sha256": "d091dc39d740c10a0fb65a85367b34ebe1a1a2fcb749905ea5cbb987778d40df",
+      "old_bytes": 4969,
+      "new_sha256": "8053b7f912d64d2a72476fa4cb08db9be02fea00bb9fb68f669f0265e8873aa1",
+      "new_bytes": 4977,
+      "reason": "Present academic content directly through public headings and labels, retaining the frozen source data, stable identities and historical attribution"
+    }
+  ],
+  "historical_snapshot_origin": "Exact original bytes exported with git show from fixed commit 9ced00530776228af60cdec24c8a830b2fbce06c. Historical declarations and original marker-block promises are checked against these controlled snapshots, while current public files have independent successor bindings.",
+  "data_identity_note": "The original site JSON files, both heritage collection JSON files, Chen reagent achievement data, CAS source data, old reports and v1-v7 declarations remain unchanged. Embedded JSON values on every HTML page remain equal to the preceding public page. The complete A01 scientific block is retained, and PFtB permits exactly two specified public phrase replacements only.",
+  "boundary": "This is a public wording and presentation change, not a new historical priority decision, experimental verification, computational result or mechanism claim. Scientific review flags continue to describe the unchanged platform AI research; historical achievements remain attributed to their original researchers independently of that review.",
+  "publish_allowlist": "The existing fifteen HTML routes, two original JSON files and empty .nojekyll marker only. Historical snapshots and the stable academic document are repository records, not additional Pages routes."
+}
