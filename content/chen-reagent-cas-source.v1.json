@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "source_id": "CR-S03",
+  "registration": "independent_official_source_addendum",
+  "title": "陈庆云",
+  "collection_title": "功名流千古 风德昭后人",
+  "publisher": "中国科学院",
+  "url": "https://www.cas.cn/zt/rwzt/2024qm/202403/t20240328_5010119.shtml",
+  "publication_date": "2024-03-28",
+  "use_status": "scoped_summary",
+  "summary": "中国科学院人物专题明确氟磺酰基二氟乙酸甲酯被称为陈试剂，并概述其国内外应用；本补充用于名称与历史学术评价。",
+  "locator": "人物正文科研贡献段（全氟磺酸、二氟卡宾与三氟甲基化研究段）",
+  "verified_scope": "已核读机构原页正文与发布日期；未将机构概括当作1989原文反应条件或当前市场统计。",
+  "parent_achievement_packet": {
+    "path": "content/chen-reagent-achievement.v1.json",
+    "sha256": "8d13ee4ecaa36a2208867c2510531c8b0d6eb1e06abb8da52c36dc0d7265bcb1"
+  },
+  "display": {
+    "home_and_achievements_first_evidence_link": "中国科学院人物专题",
+    "topic_source_anchor": "cr-source-s03",
+    "topic_evidence_section": "chen-reagent-evidence"
+  },
+  "boundary": {
+    "history_and_new_AI_separate": true,
+    "original_51_source_registry_modified": false,
+    "prior_achievement_packet_modified": false,
+    "new_quantum_calls": 0,
+    "new_model_API_calls": 0,
+    "M0_status": "paused",
+    "existing_AI_scientific_review_status": "review_required",
+    "existing_AI_release_eligible": false
+  }
+}

@@ -40,6 +40,11 @@ PRESENTATION_V5_SHA256 = '7ac60223b0e540de62671017728acd54e66d07e8de2721006c476c
 PRESENTATION_V6_PATH = 'provenance/platform-presentation.v6.json'
 PRESENTATION_V6_ID = 'PLATFORM-CHEN-REAGENT-20261114-v6'
 PRESENTATION_V6_PREVIOUS_COMMIT = '172ac5f80cb4b38d1bb75b1d03cf328487460618'
+PRESENTATION_V6_SHA256 = '1077f6b2e3a78be65ea4b50e81907b629f96c9b3599fcf440493c204b33dbcf3'
+PRESENTATION_V7_PATH = 'provenance/platform-presentation.v7.json'
+PRESENTATION_V7_ID = 'PLATFORM-CHEN-REAGENT-CAS-20261114-v7'
+PRESENTATION_V7_PREVIOUS_COMMIT = 'f42d99bdd78d63e149b17e5d95c094ad68e9cc9d'
+CHEN_REAGENT_CAS_SOURCE_PATH = 'content/chen-reagent-cas-source.v1.json'
 PRESENTATION_V6_ALLOWED_PATHS = {'index.html', 'achievements/index.html',
                                  'topics/chen-reagent/index.html'}
 CHEN_REAGENT_CONTENT_PATH = 'content/chen-reagent-achievement.v1.json'
@@ -392,6 +397,8 @@ def apply_presentation_v1(root: Path, entries: dict, *, chain: list,
 
 def apply_presentation_overlay(root: Path, entries: dict, *, chain: list) -> tuple[dict, dict | None]:
     """Apply v1, then this bounded historical-content successor if present."""
+    if (root/PRESENTATION_V7_PATH).exists() and not (root/PRESENTATION_V6_PATH).exists():
+        raise ValueError('CAS source supplement v7 requires its fixed v6 predecessor')
     if (root/PRESENTATION_V6_PATH).exists() and not (root/PRESENTATION_V5_PATH).exists():
         raise ValueError('Chen reagent presentation v6 requires its fixed v5 predecessor')
     if (root/PRESENTATION_V5_PATH).exists() and not (root/PRESENTATION_V4_PATH).exists():
@@ -770,6 +777,70 @@ def apply_chen_reagent_achievement(root: Path, entries: dict, previous_report: d
         'scientific_data_unchanged': True, 'scientific_review_status': 'review_required',
         'scientific_review_scope': 'unchanged_platform_research_only',
         'historical_achievement_independent_of_AI_review': True, 'release_eligible': False}
+    return apply_chen_reagent_cas_source(root, updated,
+        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})
+
+
+def chen_reagent_cas_source_binding(root: Path) -> dict:
+    path = project_file(root, CHEN_REAGENT_CAS_SOURCE_PATH)
+    value = read_json(path)
+    if not isinstance(value, dict) or not value:
+        raise ValueError('The CAS source supplement must be a nonempty JSON object')
+    return {'path': CHEN_REAGENT_CAS_SOURCE_PATH, 'sha256': digest(path),
+            'bytes': path.stat().st_size, 'source_id': 'CR-S03',
+            'url': 'https://www.cas.cn/zt/rwzt/2024qm/202403/t20240328_5010119.shtml'}
+
+
+def apply_chen_reagent_cas_source(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:
+    """Add the requested institutional source; inherit all v6 protections."""
+    if not (root/PRESENTATION_V7_PATH).exists():
+        return entries, previous_report
+    if digest(project_file(root, PRESENTATION_V6_PATH)) != PRESENTATION_V6_SHA256:
+        raise ValueError('The preceding Chen reagent presentation v6 is immutable')
+    path = project_file(root, PRESENTATION_V7_PATH)
+    data = read_json(path)
+    required = {'schema_version': '7.0', 'presentation_id': PRESENTATION_V7_ID,
+        'publication_kind': 'platform_historical_source_supplement',
+        'previous_presentation_commit': PRESENTATION_V7_PREVIOUS_COMMIT,
+        'previous_presentation': {'path': PRESENTATION_V6_PATH, 'sha256': PRESENTATION_V6_SHA256},
+        'original_baseline_sha256': BASELINE_SHA256, 'original_archive_sha256': ARCHIVE_SHA256,
+        'allowed_html_paths': sorted(PRESENTATION_V6_ALLOWED_PATHS),
+        'source_supplement': chen_reagent_cas_source_binding(root),
+        'scientific_review_status': 'review_required',
+        'scientific_review_scope': 'unchanged_platform_research_only',
+        'release_eligible': False, 'scientific_data_unchanged': True,
+        'historical_achievement_independent_of_AI_review': True, 'M0_resumed': False}
+    if any(data.get(key) != value for key, value in required.items()) or any(
+            data.get(key) is not required[key] for key in ('release_eligible',
+                'scientific_data_unchanged', 'historical_achievement_independent_of_AI_review', 'M0_resumed')) or any(
+            type(data.get(key)) is not int or data[key] != 0
+            for key in ('new_quantum_calls', 'new_model_API_calls')):
+        raise ValueError('Unsupported CAS historical source supplement v7')
+    # The immutable v6 layer has already checked every other website member,
+    # all ten heritage blocks, the old achievement packet, README and report.
+    changes = data.get('changes')
+    if not isinstance(changes, list) or not 1 <= len(changes) <= len(PRESENTATION_V6_ALLOWED_PATHS):
+        raise ValueError('CAS source supplement must enumerate its existing HTML changes')
+    updated, seen = {name: dict(value) for name, value in entries.items()}, set()
+    for item in changes:
+        name = item.get('path')
+        if name not in PRESENTATION_V6_ALLOWED_PATHS or name in seen:
+            raise ValueError('Unauthorized or duplicate CAS source supplement path: '+str(name))
+        seen.add(name)
+        old = entries[name]
+        value, size = item.get('new_sha256'), item.get('new_bytes')
+        if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']
+                or not isinstance(value, str) or not SHA.fullmatch(value) or value == old['sha256']
+                or not isinstance(size, int) or isinstance(size, bool) or size <= 0
+                or not isinstance(item.get('reason'), str) or not item['reason'].strip()):
+            raise ValueError('Incomplete CAS source supplement change: '+name)
+        updated[name] = {**old, 'sha256': value, 'bytes': size, 'presentation_id': PRESENTATION_V7_ID}
+    report = {'path': PRESENTATION_V7_PATH, 'sha256': digest(path),
+        'presentation_id': PRESENTATION_V7_ID, 'publication_kind': required['publication_kind'],
+        'changed_paths': sorted(seen), 'previous_presentation_commit': PRESENTATION_V7_PREVIOUS_COMMIT,
+        'source_supplement_path': CHEN_REAGENT_CAS_SOURCE_PATH,
+        **{key: required[key] for key in ('scientific_review_status', 'scientific_review_scope',
+            'scientific_data_unchanged', 'historical_achievement_independent_of_AI_review', 'release_eligible')}}
     return updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}
 
 

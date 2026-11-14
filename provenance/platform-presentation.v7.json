@@ -1,0 +1,63 @@
+{
+  "schema_version": "7.0",
+  "presentation_id": "PLATFORM-CHEN-REAGENT-CAS-20261114-v7",
+  "created_at_utc": "2026-11-14T03:23:56.203454+00:00",
+  "publication_kind": "platform_historical_source_supplement",
+  "scientific_review_status": "review_required",
+  "scientific_review_scope": "unchanged_platform_research_only",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "new_quantum_calls": 0,
+  "new_model_API_calls": 0,
+  "M0_resumed": false,
+  "authorization": "User-supplied CAS biographical article dated 2024-03-28 is added as the explicit institutional source for the methyl Chen reagent naming, within the same authorized historical achievement publication task",
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "previous_presentation_commit": "f42d99bdd78d63e149b17e5d95c094ad68e9cc9d",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v6.json",
+    "sha256": "1077f6b2e3a78be65ea4b50e81907b629f96c9b3599fcf440493c204b33dbcf3"
+  },
+  "allowed_html_paths": [
+    "achievements/index.html",
+    "index.html",
+    "topics/chen-reagent/index.html"
+  ],
+  "source_supplement": {
+    "path": "content/chen-reagent-cas-source.v1.json",
+    "sha256": "2125b9eaba7853ab02c378ca7c1d78265bbef2895bb2fa512a2cb53981de05cf",
+    "bytes": 1518,
+    "source_id": "CR-S03",
+    "url": "https://www.cas.cn/zt/rwzt/2024qm/202403/t20240328_5010119.shtml"
+  },
+  "changes": [
+    {
+      "path": "achievements/index.html",
+      "old_sha256": "17278b49eb4263a28bef7c15dc8edc5899bc87c0fac9270e80cf95a79c2fdc1b",
+      "old_bytes": 94308,
+      "new_sha256": "26efdd912492b9ef0055e2ba60589db4d373f5857398671e3d2d47e51fb23949",
+      "new_bytes": 94418,
+      "reason": "Add the CAS naming evidence within the existing A06 achievement while preserving the original collection and archival blocks"
+    },
+    {
+      "path": "index.html",
+      "old_sha256": "36902b6e7686067f9f75bc8ade8e18fd610fb1a8996c0f5e4f2794a976c5f227",
+      "old_bytes": 254054,
+      "new_sha256": "2b9e4a22edb1a7d1c5bfe59af226a4815310354542dbf089f28f5d1b220613a5",
+      "new_bytes": 254164,
+      "reason": "Add the user-supplied CAS 2024 biographical source as the first institutional evidence link for the Chen reagent achievement"
+    },
+    {
+      "path": "topics/chen-reagent/index.html",
+      "old_sha256": "eb828255e97dbf6b4809fb3858ebb9131698c70738418020f7b4ef8126325114",
+      "old_bytes": 19247,
+      "new_sha256": "e5ef73695a890465fedf03da7a4d39984aae30a902da7e4e7d6eaf0600ef0149",
+      "new_bytes": 19830,
+      "reason": "Add the separate CR-S03 CAS historical-source entry and its explicit methyl-reagent naming evidence without replacing the frozen achievement packet"
+    }
+  ],
+  "inherited_protection_scope": "The immutable v6 chain retains its README, original achievement packet and report, v1-v6 declarations, all other website members and the ten existing heritage marker blocks; no new document snapshot is required.",
+  "boundary": "The CAS article is a historical institutional source for nomenclature and achievement attribution. It is not a new platform experiment, computational result, complete mechanism proof, priority audit or present-day industrial certification. Scientific review flags continue to describe unchanged platform research only; the historical achievement remains independent of that review.",
+  "publish_allowlist": "Only the three existing authorized HTML pages change; the additional source JSON remains a repository record represented in those pages, with no new Pages data route."
+}
