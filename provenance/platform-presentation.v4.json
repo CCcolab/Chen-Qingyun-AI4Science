@@ -1,0 +1,164 @@
+{
+  "schema_version": "4.0",
+  "presentation_id": "PLATFORM-NAVIGATION-20261114-v4",
+  "created_at_utc": "2026-11-14T02:14:32.936101+00:00",
+  "publication_kind": "platform_navigation_consistency",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "new_quantum_calls": 0,
+  "new_model_API_calls": 0,
+  "authorization": "User task dated 2026-11-14: comprehensively check and correct numbering, duplicated presentation, hierarchy and links on the home, achievement summary and topic pages; synchronize GitHub and website",
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "previous_presentation_commit": "c21ae7aa3c424eedce27a7131480eb82bb8461e6",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v3.json",
+    "sha256": "2b290301102abd8cacb5a2d73f7393d8c4f851285a882a08df42eecd960ed286"
+  },
+  "allowed_html_paths": [
+    "achievements/index.html",
+    "index.html",
+    "topics/chen-reagent/index.html",
+    "topics/deoxyfluorination/index.html",
+    "topics/early-fluoroketones/index.html",
+    "topics/f53/index.html",
+    "topics/fluorinated-small-rings/index.html",
+    "topics/fluoromonomers/index.html",
+    "topics/fluoroporphyrins/index.html",
+    "topics/index.html",
+    "topics/perfluorosulfonates/index.html",
+    "topics/refrigerants/index.html",
+    "topics/single-electron-transfer/index.html",
+    "topics/sulfonyl-fluoride/index.html"
+  ],
+  "protected_website_members": {
+    "pftb/index.html": {
+      "sha256": "0d4396b85f8cfd772edcf8fe9bc192d845268399e1ed3834e1d83562639ba372",
+      "bytes": 97584
+    },
+    "data/public-sources.json": {
+      "sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+      "bytes": 33608
+    },
+    "data/achievement-lines.json": {
+      "sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+      "bytes": 39768
+    }
+  },
+  "changes": [
+    {
+      "path": "achievements/index.html",
+      "old_sha256": "1df52f0a124c3bc39ba3cad1650db696faa00183b261be5f7159405f9e393f56",
+      "old_bytes": 55311,
+      "new_sha256": "b976c5316707c16961946892661144048b64c889ae8d21018d34250ecbf9b65c",
+      "new_bytes": 53954,
+      "reason": "Align the achievement summary and its topic directory with the nine stable historical lines while preserving the source inventory and story content"
+    },
+    {
+      "path": "index.html",
+      "old_sha256": "3973cafa912b1d171da3b0c6d6c2acae2d34c2024f271640e4490f70d08ece46",
+      "old_bytes": 205790,
+      "new_sha256": "2b66df2d646f75c7efdfba659e45a600a2437cdd3a3a78f0184f021c4e5bd160",
+      "new_bytes": 202562,
+      "reason": "Consolidate selected reading and historical chronology under the nine achievement lines; preserve stable anchors and distinguish source preparation from separate AI research"
+    },
+    {
+      "path": "topics/chen-reagent/index.html",
+      "old_sha256": "649a7e6f3b3431982eba13d5036e3cd2acc22fc40cfe791c0bb9a91aabfd7553",
+      "old_bytes": 10199,
+      "new_sha256": "406d3a52f0ec0b2c4bb6ab4e5b0a187caa877c4edb813e720f584fc15a171ac6",
+      "new_bytes": 10165,
+      "reason": "Clarify the topic's parent achievement line, return links, subordinate reading and already registered source status without changing scientific results"
+    },
+    {
+      "path": "topics/deoxyfluorination/index.html",
+      "old_sha256": "0c71ad2500ae5f094be1cd10cfd9415a376deb905e9d936d2628ef8143edad66",
+      "old_bytes": 5510,
+      "new_sha256": "6a448d3a052040e83fb2bb8b9497a75ed22151aee4c50d5456755c1320b63fb8",
+      "new_bytes": 5476,
+      "reason": "Clarify the topic's parent achievement line, return links, subordinate reading and already registered source status without changing scientific results"
+    },
+    {
+      "path": "topics/early-fluoroketones/index.html",
+      "old_sha256": "d082ff249dc4c8acd060267a653512aacc952f0e5549a68526f29464f6703596",
+      "old_bytes": 182619,
+      "new_sha256": "f40e31b9be7439c502854ad2b75ae6cf26d2d894e36cbb68b6d5d29aef0c0d11",
+      "new_bytes": 182585,
+      "reason": "Clarify the topic's parent achievement line, return links, subordinate reading and already registered source status without changing scientific results"
+    },
+    {
+      "path": "topics/f53/index.html",
+      "old_sha256": "942b97805e2e785192face1ef3718b4180c276f77b5133f526c70532cfd83175",
+      "old_bytes": 8145,
+      "new_sha256": "a6349eb302e88d3176b086f83e9f1b62c008e8616f5f034365a4274756addeab",
+      "new_bytes": 8111,
+      "reason": "Clarify the topic's parent achievement line, return links, subordinate reading and already registered source status without changing scientific results"
+    },
+    {
+      "path": "topics/fluorinated-small-rings/index.html",
+      "old_sha256": "a98fe98626644e80de5b4584114e32aa0842cc3a877a41f8a76f6543571bd239",
+      "old_bytes": 5892,
+      "new_sha256": "abe1d15c5aedfe81531fc6b178b5e2ee98d1a598325ef2ffeeb3cff4b496f2f3",
+      "new_bytes": 5858,
+      "reason": "Clarify the topic's parent achievement line, return links, subordinate reading and already registered source status without changing scientific results"
+    },
+    {
+      "path": "topics/fluoromonomers/index.html",
+      "old_sha256": "366a55eba14a054cc678016f8c71cd391921e1eaef4cd1fd0e22cc2ce42dd904",
+      "old_bytes": 6450,
+      "new_sha256": "4b958f831002d80338df67968b01dba9a1a274adbf94493c2baebef22603636e",
+      "new_bytes": 6416,
+      "reason": "Clarify the topic's parent achievement line, return links, subordinate reading and already registered source status without changing scientific results"
+    },
+    {
+      "path": "topics/fluoroporphyrins/index.html",
+      "old_sha256": "84b4b2ed0e59fdb940bfa38e5d9c0326f3fce1335ba9d71b1b19108f57a63bbf",
+      "old_bytes": 5969,
+      "new_sha256": "4e5d37c031fc49224d5147a83a1a665119f2cbb4ac1456613f7411c7568364d3",
+      "new_bytes": 5944,
+      "reason": "Clarify the topic's parent achievement line, return links, subordinate reading and already registered source status without changing scientific results"
+    },
+    {
+      "path": "topics/index.html",
+      "old_sha256": "3b891eb056f7d5d76681ff5395149e474ec934b0d9ab2d4729df9c0441d580ad",
+      "old_bytes": 1367,
+      "new_sha256": "cfda9c0892c48082f8ec945d2b65bf46fdf419f2907653cfd91454e3c7fa09e0",
+      "new_bytes": 4970,
+      "reason": "Group the topic directory under the nine stable achievement lines, including PFtB and academic transmission, with thematic pages as subordinate routes"
+    },
+    {
+      "path": "topics/perfluorosulfonates/index.html",
+      "old_sha256": "6618d0d4d7a135e88c924ae3ecd420338e9613190447676f608af9939aea84ec",
+      "old_bytes": 5272,
+      "new_sha256": "964c0d205f8d831e689f2e3e4cc88cd0a0abbe0695d11976a69aafa0971b391a",
+      "new_bytes": 5238,
+      "reason": "Clarify the topic's parent achievement line, return links, subordinate reading and already registered source status without changing scientific results"
+    },
+    {
+      "path": "topics/refrigerants/index.html",
+      "old_sha256": "4d41e38398b8ec12584c6700fd84da1c1b42f9bc1c722fba64a2c151ed6af6e7",
+      "old_bytes": 6227,
+      "new_sha256": "dfb8d4b1e9e596fb21722dec091a006da064f20e85e6e55593618c07902415eb",
+      "new_bytes": 6193,
+      "reason": "Clarify the topic's parent achievement line, return links, subordinate reading and already registered source status without changing scientific results"
+    },
+    {
+      "path": "topics/single-electron-transfer/index.html",
+      "old_sha256": "64c162a1ccc9c69bc82bd2ff9de0b70aa12e1ac103fc7f0a56123b134d699bbb",
+      "old_bytes": 5839,
+      "new_sha256": "973d48b98b28d43ee062e2b5798f172f882a0e4225d63f0d25f78a0fb34efa8e",
+      "new_bytes": 5805,
+      "reason": "Clarify the topic's parent achievement line, return links, subordinate reading and already registered source status without changing scientific results"
+    },
+    {
+      "path": "topics/sulfonyl-fluoride/index.html",
+      "old_sha256": "62beb639cb5448473dd799cf5e23d3a4a42b8e4ccd0204b02cadeb2b7d6d6032",
+      "old_bytes": 5003,
+      "new_sha256": "d091dc39d740c10a0fb65a85367b34ebe1a1a2fcb749905ea5cbb987778d40df",
+      "new_bytes": 4969,
+      "reason": "Clarify the topic's parent achievement line, return links, subordinate reading and already registered source status without changing scientific results"
+    }
+  ],
+  "boundary": "Editorial navigation and already documented source-status corrections only. Preserve original PFtB page bytes, the two source-data JSON files, all 51 source identities, nine achievement identities, research JSON and the exact A01 technical progress block. This revision performs no new scientific computation and grants no new scientific qualification."
+}

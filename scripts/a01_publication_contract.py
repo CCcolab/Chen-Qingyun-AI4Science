@@ -28,6 +28,10 @@ PRESENTATION_V2_SHA256 = '91434b5bc8fb51e96b604a6c6437cb363c92370347f22fcbd2a825
 PRESENTATION_V3_PATH = 'provenance/platform-presentation.v3.json'
 PRESENTATION_V3_ID = 'PLATFORM-NUMBERING-20261114-v3'
 PRESENTATION_V3_PREVIOUS_COMMIT = '50cdd20cd8dfd188986d242baa383d68bd6a6a3f'
+PRESENTATION_V3_SHA256 = '2b290301102abd8cacb5a2d73f7393d8c4f851285a882a08df42eecd960ed286'
+PRESENTATION_V4_PATH = 'provenance/platform-presentation.v4.json'
+PRESENTATION_V4_ID = 'PLATFORM-NAVIGATION-20261114-v4'
+PRESENTATION_V4_PREVIOUS_COMMIT = 'c21ae7aa3c424eedce27a7131480eb82bb8461e6'
 NUMBERING_PATHS = {'index.html', 'achievements/index.html'}
 HERITAGE_CONTENT_PATH = 'content/heritage-20261114.v1.json'
 PRESENTATION_V2_DOCUMENTS = ('README.md', 'docs/PLATFORM_ROADMAP_zh-CN.md',
@@ -388,6 +392,8 @@ def inspect_line_numbering(path: Path) -> dict:
 def apply_numbering_correction(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:
     """Apply only the two-page hierarchy correction without refreshing v2."""
     if not (root/PRESENTATION_V3_PATH).exists():
+        if (root/PRESENTATION_V4_PATH).exists():
+            raise ValueError('Navigation revision v4 requires its fixed v3 predecessor')
         return entries, previous_report
     if digest(project_file(root, PRESENTATION_V2_PATH)) != PRESENTATION_V2_SHA256:
         raise ValueError('The preceding historical presentation v2 is immutable')
@@ -426,6 +432,70 @@ def apply_numbering_correction(root: Path, entries: dict, previous_report: dict)
     report = {'path': PRESENTATION_V3_PATH, 'sha256': digest(path),
         'presentation_id': PRESENTATION_V3_ID, 'publication_kind': 'platform_navigation_correction',
         'changed_paths': sorted(seen), 'previous_presentation_commit': PRESENTATION_V3_PREVIOUS_COMMIT,
+        'scientific_data_unchanged': True, 'scientific_review_status': 'review_required',
+        'release_eligible': False}
+    return apply_navigation_revision(root, updated,
+        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})
+
+
+def apply_navigation_revision(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:
+    """Apply a bounded editorial revision; preserve the original PFtB and data."""
+    if not (root/PRESENTATION_V4_PATH).exists():
+        return entries, previous_report
+    if digest(project_file(root, PRESENTATION_V3_PATH)) != PRESENTATION_V3_SHA256:
+        raise ValueError('The preceding navigation presentation v3 is immutable')
+    path = project_file(root, PRESENTATION_V4_PATH)
+    data = read_json(path)
+    if (data.get('schema_version') != '4.0'
+            or data.get('presentation_id') != PRESENTATION_V4_ID
+            or data.get('publication_kind') != 'platform_navigation_consistency'
+            or data.get('scientific_review_status') != 'review_required'
+            or data.get('release_eligible') is not False
+            or data.get('scientific_data_unchanged') is not True
+            or data.get('new_quantum_calls') != 0
+            or data.get('new_model_API_calls') != 0
+            or data.get('original_baseline_sha256') != BASELINE_SHA256
+            or data.get('original_archive_sha256') != ARCHIVE_SHA256
+            or data.get('previous_presentation_commit') != PRESENTATION_V4_PREVIOUS_COMMIT
+            or data.get('previous_presentation') != {'path': PRESENTATION_V3_PATH,
+                                                    'sha256': PRESENTATION_V3_SHA256}):
+        raise ValueError('Unsupported editorial navigation revision v4 contract')
+    allowed = {name for name in entries if name.endswith('.html') and name != 'pftb/index.html'}
+    if len(allowed) != 14 or data.get('allowed_html_paths') != sorted(allowed):
+        raise ValueError('Navigation revision must retain the original fourteen editable HTML routes')
+    protected = {name: {'sha256': entries[name]['sha256'], 'bytes': entries[name]['bytes']}
+                 for name in ('pftb/index.html', 'data/public-sources.json', 'data/achievement-lines.json')}
+    if data.get('protected_website_members') != protected:
+        raise ValueError('Navigation revision changed the protected PFtB or source-data binding')
+    # The preceding v1-v3 checks already bind the research JSON, heritage data,
+    # original source IDs and routes. The displayed technical block stays exact.
+    from render_a01_progress import BEGIN, END, render_block
+    topic = project_file(root, 'site/'+TOPIC_PATH).read_text('utf-8')
+    if (topic.count(BEGIN) != 1 or topic.count(END) != 1
+            or topic[topic.index(BEGIN):topic.index(END)+len(END)]
+            != render_block(read_json(root/PROGRESS_V2_PATH), PROGRESS_V2_SHA256)):
+        raise ValueError('Navigation revision must retain the exact A01 scientific progress block')
+    changes = data.get('changes')
+    if not isinstance(changes, list) or not 1 <= len(changes) <= len(allowed):
+        raise ValueError('Navigation revision must enumerate its edited existing HTML pages')
+    updated, seen = {name: dict(value) for name, value in entries.items()}, set()
+    for item in changes:
+        name = item.get('path')
+        if name not in allowed or name in seen:
+            raise ValueError('Unauthorized or duplicate navigation revision path: '+str(name))
+        seen.add(name)
+        old = entries[name]
+        if item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']:
+            raise ValueError('Navigation revision must bind its actual v3 predecessor: '+name)
+        value, size = item.get('new_sha256'), item.get('new_bytes')
+        if (not isinstance(value, str) or not SHA.fullmatch(value) or value == old['sha256']
+                or not isinstance(size, int) or isinstance(size, bool) or size <= 0
+                or not isinstance(item.get('reason'), str) or not item['reason'].strip()):
+            raise ValueError('Incomplete navigation revision change: '+name)
+        updated[name] = {**old, 'sha256': value, 'bytes': size, 'presentation_id': PRESENTATION_V4_ID}
+    report = {'path': PRESENTATION_V4_PATH, 'sha256': digest(path),
+        'presentation_id': PRESENTATION_V4_ID, 'publication_kind': 'platform_navigation_consistency',
+        'changed_paths': sorted(seen), 'previous_presentation_commit': PRESENTATION_V4_PREVIOUS_COMMIT,
         'scientific_data_unchanged': True, 'scientific_review_status': 'review_required',
         'release_eligible': False}
     return updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}

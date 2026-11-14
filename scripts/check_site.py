@@ -110,6 +110,11 @@ def inspect_site(*, require_node: bool = False) -> dict:
               "javascript_checks": [], "protected_json_checks": []}
     errors = report["errors"]
     try:
+        from check_navigation import inspect_navigation
+        navigation = inspect_navigation(ROOT)
+        report["navigation_consistency"] = navigation
+        if navigation["status"] != "passed":
+            errors.extend("Navigation: " + message for message in navigation["errors"])
         if (ROOT / "content/heritage-20261114.v1.json").is_file():
             from render_heritage import inspect_heritage
             heritage = inspect_heritage(ROOT)
