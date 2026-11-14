@@ -121,6 +121,12 @@ def inspect_site(*, require_node: bool = False) -> dict:
             report["heritage_consistency"] = heritage
             if heritage["status"] != "passed":
                 errors.extend("Heritage content: " + message for message in heritage["errors"])
+        if (ROOT / "content/a01-historical-achievements.v1.json").is_file():
+            from render_a01_history import inspect_a01_history
+            a01_history = inspect_a01_history(ROOT)
+            report["a01_historical_content_consistency"] = a01_history
+            if a01_history.get("status") != "passed":
+                errors.append("A01 historical content did not pass its source-derived rendering check")
         baseline = json.loads(BASELINE.read_text(encoding="utf-8"))
         if baseline["archive_sha256"] != ARCHIVE_SHA256:
             errors.append("Website baseline does not identify the approved source ZIP")

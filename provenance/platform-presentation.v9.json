@@ -1,0 +1,110 @@
+{
+  "schema_version": "9.0",
+  "presentation_id": "PLATFORM-A01-HISTORICAL-20261114-v9",
+  "created_at_utc": "2026-11-14T05:22:47.190391+00:00",
+  "publication_kind": "a01_source_attributed_historical_achievement",
+  "scientific_review_status": "review_required",
+  "scientific_review_scope": "unchanged_platform_research_only",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "M0_resumed": false,
+  "new_quantum_calls": 0,
+  "new_model_API_calls": 0,
+  "authorization": "User request dated 2026-11-14: continue A01 achievement excavation using the biography, original research and relevant institutional reports; keep historical achievements and platform AI research separate, preserve the M0 pause, and synchronize the repository and website",
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "previous_presentation_commit": "6eb2cf5117aeeba29160263845e1f5604a8b3102",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v8.json",
+    "sha256": "ab2b362cb5c90dc4b782f8989cc127a31944c49998ee45fbded8b8a7ac77c962"
+  },
+  "allowed_html_paths": [
+    "achievements/index.html",
+    "index.html",
+    "topics/early-fluoroketones/index.html"
+  ],
+  "historical_website_snapshots": [
+    {
+      "path": "achievements/index.html",
+      "snapshot_path": "provenance/a01-history-previous/site/achievements/index.html",
+      "sha256": "f96e38b9f01ef38fd34ce573088fb72a16fd0f1d01c05f44575db08deb84e3b4",
+      "bytes": 94360
+    },
+    {
+      "path": "index.html",
+      "snapshot_path": "provenance/a01-history-previous/site/index.html",
+      "sha256": "b06eb2063b278af084f8732f5316c010070749faa77f4a908940df250e734a10",
+      "bytes": 253360
+    },
+    {
+      "path": "topics/early-fluoroketones/index.html",
+      "snapshot_path": "provenance/a01-history-previous/site/topics/early-fluoroketones/index.html",
+      "sha256": "3bf89b24ddf8e32bc5b4174e344103b6574d99876a4bb504c0cb8455b069495f",
+      "bytes": 182563
+    }
+  ],
+  "historical_readme_snapshot": {
+    "original_path": "README.md",
+    "snapshot_path": "provenance/a01-history-previous/README.md",
+    "sha256": "6d0554307543965795d9bf86cc7b33501cac966493275d5206c5bef82c031d57",
+    "bytes": 5458
+  },
+  "editorial_documents": [
+    {
+      "path": "README.md",
+      "sha256": "eec96a7d0d128190c289258bf12136b161ecf6792e0d3258ff6d9cdd6fe85a46",
+      "bytes": 6362
+    },
+    {
+      "path": "research/a01/README.md",
+      "sha256": "b203799322002384f74cc7a6b5717e5146b920f945112d69783504654c1e919d",
+      "bytes": 5924
+    },
+    {
+      "path": "content/a01-historical-achievements.v1.json",
+      "sha256": "f59916dd0ab0cc5d23684c102ffeaeb6936632f13975017d367ec7242408b8bd",
+      "bytes": 27827
+    },
+    {
+      "path": "docs/A01_HISTORICAL_ACHIEVEMENTS_zh-CN.md",
+      "sha256": "30f0d767f751088facc2811c16996f8896c64197cfef7b1e18a0e6472d185e3f",
+      "bytes": 11125
+    },
+    {
+      "path": "scripts/render_a01_history.py",
+      "sha256": "16c207c427850512935fb41c31a3867fdde5f8c3765dcacaa0198420201465c5",
+      "bytes": 13055
+    }
+  ],
+  "changes": [
+    {
+      "path": "achievements/index.html",
+      "old_sha256": "f96e38b9f01ef38fd34ce573088fb72a16fd0f1d01c05f44575db08deb84e3b4",
+      "old_bytes": 94360,
+      "new_sha256": "bc6aab77dd77a9c0f335a8fc4eb25228fec18bba931699eeb82139031088d7e5",
+      "new_bytes": 94543,
+      "reason": "Present source-attributed A01 early perfluoroketone achievements, original-paper scope, cooperation and unresolved source questions separately from unchanged platform AI research"
+    },
+    {
+      "path": "index.html",
+      "old_sha256": "b06eb2063b278af084f8732f5316c010070749faa77f4a908940df250e734a10",
+      "old_bytes": 253360,
+      "new_sha256": "d3fef56d84b9cda82dff9a868424a6e9673518183ca10536177e357d8e833987",
+      "new_bytes": 253609,
+      "reason": "Present source-attributed A01 early perfluoroketone achievements, original-paper scope, cooperation and unresolved source questions separately from unchanged platform AI research"
+    },
+    {
+      "path": "topics/early-fluoroketones/index.html",
+      "old_sha256": "3bf89b24ddf8e32bc5b4174e344103b6574d99876a4bb504c0cb8455b069495f",
+      "old_bytes": 182563,
+      "new_sha256": "ae82cb0d0fab34a49dd48cd52fb17f131b5e4d7cd2b92505e8c7fbb24dd29488",
+      "new_bytes": 230449,
+      "reason": "Present source-attributed A01 early perfluoroketone achievements, original-paper scope, cooperation and unresolved source questions separately from unchanged platform AI research"
+    }
+  ],
+  "historical_snapshot_origin": "Exact original bytes exported with git show from fixed commit 6eb2cf5117aeeba29160263845e1f5604a8b3102. Only the three changed HTML pages and previous public README are snapshotted. The immutable v8 declaration verifies these snapshots; its other website members remain bound to current bytes.",
+  "data_identity_note": "All previous embedded JSON records, the complete A01 scientific progress block, original YouMind data, stable source and line identities, and the complete PFtB scientific page remain unchanged. The A01 topic exposes one separately attributed historical evidence JSON record matching the new source file.",
+  "boundary": "This declaration binds identity, attribution and presentation scope. It does not certify historical priority, professional translation or transcription, experimental reproduction, quantum-mechanical results, a qualified barrier or a mechanism. No M0 computation or model API call was started.",
+  "publish_allowlist": "The existing fifteen HTML routes, two original JSON files and empty .nojekyll marker only. New source records, documents and historical snapshots are repository evidence, not new Pages routes."
+}

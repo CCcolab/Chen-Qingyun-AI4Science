@@ -48,6 +48,17 @@ PRESENTATION_V7_SHA256 = '2463a97b3bf74b629f1863892d75f36276c97bf9a111905b47cc61
 PRESENTATION_V8_PATH = 'provenance/platform-presentation.v8.json'
 PRESENTATION_V8_ID = 'PLATFORM-PUBLIC-ACADEMIC-20261114-v8'
 PRESENTATION_V8_PREVIOUS_COMMIT = '9ced00530776228af60cdec24c8a830b2fbce06c'
+PRESENTATION_V8_SHA256 = 'ab2b362cb5c90dc4b782f8989cc127a31944c49998ee45fbded8b8a7ac77c962'
+PRESENTATION_V9_PATH = 'provenance/platform-presentation.v9.json'
+PRESENTATION_V9_ID = 'PLATFORM-A01-HISTORICAL-20261114-v9'
+PRESENTATION_V9_PREVIOUS_COMMIT = '6eb2cf5117aeeba29160263845e1f5604a8b3102'
+A01_HISTORY_SNAPSHOT = 'provenance/a01-history-previous'
+A01_HISTORY_CONTENT = 'content/a01-historical-achievements.v1.json'
+A01_HISTORY_DOCUMENT = 'docs/A01_HISTORICAL_ACHIEVEMENTS_zh-CN.md'
+A01_HISTORY_DOCUMENTS = ('README.md', 'research/a01/README.md', A01_HISTORY_CONTENT,
+                         A01_HISTORY_DOCUMENT, 'scripts/render_a01_history.py')
+A01_HISTORY_ALLOWED_PATHS = {'index.html', 'achievements/index.html',
+                            'topics/early-fluoroketones/index.html'}
 PUBLIC_PRESENTATION_SNAPSHOT = 'provenance/public-presentation-previous'
 PUBLIC_ACADEMIC_DOCUMENT = 'docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md'
 CHEN_REAGENT_CAS_SOURCE_PATH = 'content/chen-reagent-cas-source.v1.json'
@@ -439,6 +450,8 @@ def apply_presentation_v1(root: Path, entries: dict, *, chain: list,
 
 def apply_presentation_overlay(root: Path, entries: dict, *, chain: list) -> tuple[dict, dict | None]:
     """Apply v1, then this bounded historical-content successor if present."""
+    if (root/PRESENTATION_V9_PATH).exists() and not (root/PRESENTATION_V8_PATH).exists():
+        raise ValueError('A01 historical presentation requires its fixed v8 predecessor')
     if (root/PRESENTATION_V8_PATH).exists() and not (root/PRESENTATION_V7_PATH).exists():
         raise ValueError('Public academic presentation v8 requires its fixed v7 predecessor')
     if (root/PRESENTATION_V7_PATH).exists() and not (root/PRESENTATION_V6_PATH).exists():
@@ -921,6 +934,44 @@ def embedded_json_records(source: str) -> list:
     return parser.records
 
 
+def a01_history_predecessor_member(root: Path, name: str) -> Path:
+    """Read only the three permitted v8 pages from their immutable predecessor.
+
+    A v9 content addition cannot refresh a v8 promise. Other v8 pages continue
+    to be checked against the actual website, including PFtB in its entirety.
+    """
+    if not (root/PRESENTATION_V9_PATH).exists() or name not in A01_HISTORY_ALLOWED_PATHS:
+        return project_file(root, 'site/'+name)
+    declaration = project_file(root, PRESENTATION_V8_PATH)
+    if digest(declaration) != PRESENTATION_V8_SHA256:
+        raise ValueError('The preceding public academic presentation v8 is immutable')
+    matches = [row for row in read_json(declaration).get('changes', []) if row.get('path') == name]
+    if len(matches) != 1:
+        raise ValueError('The fixed v8 declaration must identify one predecessor page: '+name)
+    expected = matches[0]
+    snapshot = project_file(root, A01_HISTORY_SNAPSHOT+'/site/'+name)
+    if digest(snapshot) != expected['new_sha256'] or snapshot.stat().st_size != expected['new_bytes']:
+        raise ValueError('A01 historical predecessor differs from fixed v8 bytes: '+name)
+    return snapshot
+
+
+def a01_history_predecessor_readme(root: Path) -> Path:
+    if not (root/PRESENTATION_V9_PATH).exists():
+        return project_file(root, 'README.md')
+    declaration = project_file(root, PRESENTATION_V8_PATH)
+    if digest(declaration) != PRESENTATION_V8_SHA256:
+        raise ValueError('The preceding public academic presentation v8 is immutable')
+    matches = [row for row in read_json(declaration).get('editorial_documents', [])
+               if row.get('path') == 'README.md']
+    if len(matches) != 1:
+        raise ValueError('The fixed v8 declaration must identify one README binding')
+    expected = matches[0]
+    snapshot = project_file(root, A01_HISTORY_SNAPSHOT+'/README.md')
+    if digest(snapshot) != expected['sha256'] or snapshot.stat().st_size != expected['bytes']:
+        raise ValueError('A01 historical predecessor README differs from fixed v8 bytes')
+    return snapshot
+
+
 def apply_public_academic_presentation(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:
     """Bind public wording changes while retaining historical and scientific data."""
     if not (root/PRESENTATION_V8_PATH).exists():
@@ -929,9 +980,10 @@ def apply_public_academic_presentation(root: Path, entries: dict, previous_repor
         raise ValueError('The preceding CAS source presentation v7 is immutable')
     path = project_file(root, PRESENTATION_V8_PATH); data = read_json(path)
     snapshots = public_presentation_snapshot_bindings(root, entries)
-    documents = [{'path': name, 'sha256': digest(project_file(root, name)),
-                  'bytes': project_file(root, name).stat().st_size}
-                 for name in ('README.md', PUBLIC_ACADEMIC_DOCUMENT)]
+    documents = []
+    for name in ('README.md', PUBLIC_ACADEMIC_DOCUMENT):
+        document = a01_history_predecessor_readme(root) if name == 'README.md' else project_file(root, name)
+        documents.append({'path': name, 'sha256': digest(document), 'bytes': document.stat().st_size})
     required = {'schema_version': '8.0', 'presentation_id': PRESENTATION_V8_ID,
         'publication_kind': 'platform_public_academic_presentation',
         'previous_presentation_commit': PRESENTATION_V8_PREVIOUS_COMMIT,
@@ -969,7 +1021,7 @@ def apply_public_academic_presentation(root: Path, entries: dict, previous_repor
         raise ValueError('Public wording changes must retain the exact A01 scientific progress block')
     for snapshot in snapshots:
         name = snapshot['path']
-        if embedded_json_records(project_file(root, 'site/'+name).read_text('utf-8')) != embedded_json_records(
+        if embedded_json_records(a01_history_predecessor_member(root, name).read_text('utf-8')) != embedded_json_records(
                 project_file(root, snapshot['snapshot_path']).read_text('utf-8')):
             raise ValueError('Public wording changes must retain embedded JSON values: '+name)
     changes = data.get('changes'); routes = {name for name in entries if name.endswith('.html')}
@@ -1000,6 +1052,103 @@ def apply_public_academic_presentation(root: Path, entries: dict, previous_repor
         'previous_presentation_commit': PRESENTATION_V8_PREVIOUS_COMMIT,
         **{key: required[key] for key in ('scientific_review_status', 'scientific_review_scope',
             'scientific_data_unchanged', 'historical_achievement_independent_of_AI_review', 'release_eligible')}}
+    return apply_a01_historical_achievement(root, updated,
+        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})
+
+
+def a01_history_snapshot_bindings(root: Path, entries: dict) -> list[dict]:
+    bindings = []
+    for name in sorted(A01_HISTORY_ALLOWED_PATHS):
+        snapshot, expected = a01_history_predecessor_member(root, name), entries[name]
+        if digest(snapshot) != expected['sha256'] or snapshot.stat().st_size != expected['bytes']:
+            raise ValueError('A01 historical snapshot differs from its predecessor entry: '+name)
+        bindings.append({'path': name, 'snapshot_path': snapshot.relative_to(root).as_posix(),
+                         'sha256': expected['sha256'], 'bytes': expected['bytes']})
+    return bindings
+
+
+def apply_a01_historical_achievement(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:
+    """Publish source-attributed A01 history without changing scientific results.
+
+    Bindings certify content identity and bounded scope, not historical priority,
+    professional transcription, the original experiments or an AI mechanism.
+    """
+    if not (root/PRESENTATION_V9_PATH).exists():
+        return entries, previous_report
+    if digest(project_file(root, PRESENTATION_V8_PATH)) != PRESENTATION_V8_SHA256:
+        raise ValueError('The preceding public academic presentation v8 is immutable')
+    path = project_file(root, PRESENTATION_V9_PATH); data = read_json(path)
+    snapshots = a01_history_snapshot_bindings(root, entries)
+    old_readme = a01_history_predecessor_readme(root)
+    readme_snapshot = {'original_path': 'README.md',
+        'snapshot_path': old_readme.relative_to(root).as_posix(),
+        'sha256': digest(old_readme), 'bytes': old_readme.stat().st_size}
+    documents = [{'path': name, 'sha256': digest(project_file(root, name)),
+                  'bytes': project_file(root, name).stat().st_size} for name in A01_HISTORY_DOCUMENTS]
+    required = {'schema_version': '9.0', 'presentation_id': PRESENTATION_V9_ID,
+        'publication_kind': 'a01_source_attributed_historical_achievement',
+        'previous_presentation_commit': PRESENTATION_V9_PREVIOUS_COMMIT,
+        'previous_presentation': {'path': PRESENTATION_V8_PATH, 'sha256': PRESENTATION_V8_SHA256},
+        'original_baseline_sha256': BASELINE_SHA256, 'original_archive_sha256': ARCHIVE_SHA256,
+        'historical_website_snapshots': snapshots, 'historical_readme_snapshot': readme_snapshot,
+        'editorial_documents': documents, 'allowed_html_paths': sorted(A01_HISTORY_ALLOWED_PATHS),
+        'scientific_review_status': 'review_required', 'release_eligible': False,
+        'scientific_data_unchanged': True, 'historical_achievement_independent_of_AI_review': True,
+        'M0_resumed': False}
+    if any(data.get(key) != value for key, value in required.items()) or any(
+            data.get(key) is not required[key] for key in ('release_eligible', 'scientific_data_unchanged',
+                'historical_achievement_independent_of_AI_review', 'M0_resumed')) or any(
+            type(data.get(key)) is not int or data[key] != 0 for key in ('new_quantum_calls', 'new_model_API_calls')):
+        raise ValueError('Unsupported source-attributed A01 historical presentation')
+    content = read_json(project_file(root, A01_HISTORY_CONTENT))
+    if not isinstance(content, dict) or content.get('achievement_line') != 'A01':
+        raise ValueError('A01 historical content requires its separate A01 source record')
+    from render_a01_progress import BEGIN, END
+    previous = a01_history_predecessor_member(root, TOPIC_PATH).read_bytes().decode('utf-8')
+    current = project_file(root, 'site/'+TOPIC_PATH).read_bytes().decode('utf-8')
+    for source in (previous, current):
+        if source.count(BEGIN) != 1 or source.count(END) != 1 or source.index(END) < source.index(BEGIN):
+            raise ValueError('A01 history must preserve its unambiguous complete scientific progress block')
+    if previous[previous.index(BEGIN):previous.index(END)+len(END)] != current[current.index(BEGIN):current.index(END)+len(END)]:
+        raise ValueError('A01 historical presentation cannot change frozen scientific progress')
+    for snapshot in snapshots:
+        name = snapshot['path']
+        prior_records = embedded_json_records(project_file(root, snapshot['snapshot_path']).read_text('utf-8'))
+        now_records = embedded_json_records(project_file(root, 'site/'+name).read_text('utf-8'))
+        additions = [row for row in now_records if row[0] == 'a01-historical-achievements']
+        retained = [row for row in now_records if row[0] != 'a01-historical-achievements']
+        if retained != prior_records:
+            raise ValueError('A01 historical presentation must retain every existing embedded JSON record: '+name)
+        if len(additions) > 1 or any(row[1] != 'application/json' or row[2] != content for row in additions):
+            raise ValueError('Added A01 historical JSON must match the separate source record: '+name)
+        if name == TOPIC_PATH and len(additions) != 1:
+            raise ValueError('The A01 historical topic must expose its exact separate source JSON')
+    changes = data.get('changes')
+    if not isinstance(changes, list) or len(changes) != len(A01_HISTORY_ALLOWED_PATHS):
+        raise ValueError('A01 historical presentation must enumerate exactly its three existing HTML pages')
+    updated, seen = {name: dict(value) for name, value in entries.items()}, set()
+    for item in changes:
+        name = item.get('path')
+        if name not in A01_HISTORY_ALLOWED_PATHS or name in seen:
+            raise ValueError('Unauthorized or duplicate A01 historical path: '+str(name))
+        seen.add(name); old = entries[name]
+        value, size = item.get('new_sha256'), item.get('new_bytes')
+        if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']
+                or not isinstance(value, str) or not SHA.fullmatch(value) or value == old['sha256']
+                or type(size) is not int or size <= 0
+                or not isinstance(item.get('reason'), str) or not item['reason'].strip()):
+            raise ValueError('Incomplete A01 historical presentation change: '+name)
+        updated[name] = {**old, 'sha256': value, 'bytes': size, 'presentation_id': PRESENTATION_V9_ID}
+    for name, expected in updated.items():
+        current = project_file(root, 'site/'+name)
+        if digest(current) != expected['sha256'] or current.stat().st_size != expected['bytes']:
+            raise ValueError('A01 historical publication differs from its bounded website identity: '+name)
+    report = {'path': PRESENTATION_V9_PATH, 'sha256': digest(path), 'presentation_id': PRESENTATION_V9_ID,
+        'publication_kind': required['publication_kind'], 'changed_paths': sorted(seen),
+        'previous_presentation_commit': PRESENTATION_V9_PREVIOUS_COMMIT,
+        'historical_sources_path': A01_HISTORY_CONTENT,
+        **{key: required[key] for key in ('scientific_review_status', 'scientific_data_unchanged',
+            'historical_achievement_independent_of_AI_review', 'release_eligible')}}
     return updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}
 
 

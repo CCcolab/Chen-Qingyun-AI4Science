@@ -12,6 +12,14 @@
 
 [认识陈试剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#chen-reagent-contribution) · [成果与证据说明](docs/CHEN_REAGENT_ACHIEVEMENT_zh-CN.md)
 
+## 早期学术成果：全氟酮化学
+
+陈庆云与克鲁扬茨、甘巴里扬等合作者围绕六氟丙酮开展实验化学研究。1960年《Fluorinated ketones》第一报的出版商摘要直接联系了多类基本反应与六氟双酚A制备；第117491号发明文书保存制备对象与单体用途提议。另两篇原刊展示了通过加成方向、化学转化和衍生物比较来判断结构的研究方法。
+
+[A01原始学术成果与证据](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-original-achievements) · [论文、证书与合作记录](docs/A01_HISTORICAL_ACHIEVEMENTS_zh-CN.md)
+
+每项说明原作者、原文位置和实际核读范围：1960年第一报目前只取得出版商摘要；两篇Doklady论文已核读原扫描共8页。平台的AI核译与新增分析另行登记，保持待科学审阅，M0继续暂停。
+
 ## 生平、成果与学术传承
 
 平台以《氟缘笃志：陈庆云传》、原始论文和机构公开资料为依据，介绍陈先生的研究道路，沿九条成果线呈现开拓性成就、具名合作与育人故事。各项资料注明出处、资料性质和待核原件；原始论文、机构回顾与访谈转引分别呈现。
