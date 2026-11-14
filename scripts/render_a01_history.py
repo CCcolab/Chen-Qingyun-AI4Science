@@ -6,6 +6,7 @@ import hashlib
 from html import escape
 import json
 from pathlib import Path
+from public_line_labels import project_html
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -157,7 +158,7 @@ def rendered_blocks(root: Path) -> tuple[dict, dict]:
     blocks = {}
     for name, marker in MARKERS.items():
         body = topic_history(data) if name == TOPIC else history_summary(data, name)
-        blocks[name] = '<!-- '+marker+':BEGIN -->\n'+body+'\n<!-- '+marker+':END -->'
+        blocks[name] = '<!-- '+marker+':BEGIN -->\n'+project_html(body, name)+'\n<!-- '+marker+':END -->'
     return data, blocks
 
 

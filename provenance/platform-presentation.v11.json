@@ -1,0 +1,2258 @@
+{
+  "schema_version": "11.0",
+  "presentation_id": "PLATFORM-PUBLIC-LINE-LABELS-20261114-v11",
+  "created_at_utc": "2026-11-14T08:47:47.401616+00:00",
+  "publication_kind": "platform_public_line_labels",
+  "authorization": "User request dated 2026-11-14: use consistent A01/A03 table names without the early-research qualifier and show achievement names with visible A01-A09 references throughout the public presentation",
+  "previous_presentation_commit": "be48dfc22988d7e4870b2e747b7752db88e1d245",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v10.json",
+    "sha256": "65954e3ff6b484a010fa5052f5331eab55149d23a468ae354ab236462598ffd3"
+  },
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "allowed_html_paths": [
+    "achievements/index.html",
+    "index.html",
+    "topics/chen-reagent/index.html",
+    "topics/deoxyfluorination/index.html",
+    "topics/early-fluoroketones/index.html",
+    "topics/f53/index.html",
+    "topics/fluorinated-small-rings/index.html",
+    "topics/fluoromonomers/index.html",
+    "topics/fluoroporphyrins/index.html",
+    "topics/index.html",
+    "topics/perfluorosulfonates/index.html",
+    "topics/refrigerants/index.html",
+    "topics/single-electron-transfer/index.html",
+    "topics/sulfonyl-fluoride/index.html"
+  ],
+  "editorial_documents": [
+    {
+      "path": "README.md",
+      "sha256": "16db2665cb7ac90f8f0eb2a7e6e55b5cd2736a50e4ed66144180f524cb9aa836",
+      "bytes": 6628
+    },
+    {
+      "path": "research/a01/README.md",
+      "sha256": "2b868919fd404f0d7ab453bd48da9360509508b75bc5fc156cd62b822b79af66",
+      "bytes": 6227
+    },
+    {
+      "path": "docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "sha256": "8ea379f801fd15ffa8bc1829cc932e6273d97ffc38371d4b6a0fed53a4c4eadc",
+      "bytes": 69254
+    },
+    {
+      "path": "docs/PLATFORM_PURPOSE_zh-CN.md",
+      "sha256": "4e222f9c5eaf36189ce0bb3fc5dc925db1c00704cda526778f7c3e368ec01c4e",
+      "bytes": 5056
+    },
+    {
+      "path": "docs/PLATFORM_ROADMAP_zh-CN.md",
+      "sha256": "24209ec12e3688f86ec4098f304d5bd58aeeb3d9ce795f9e2805de81d6812ac0",
+      "bytes": 6997
+    },
+    {
+      "path": "docs/CHEN_REAGENT_ACHIEVEMENT_zh-CN.md",
+      "sha256": "aff472de27abf8d24eede857e77ae6aa0ce9d5a3a99cf774319250e08ee9128e",
+      "bytes": 2350
+    },
+    {
+      "path": "docs/A01_FIRST_REPORT_zh-CN.md",
+      "sha256": "f0b084ea67ab26a09da6f32158bc6e8e1219af46b551b8c39ed5bfb57dec9a18",
+      "bytes": 7864
+    },
+    {
+      "path": "scripts/render_heritage.py",
+      "sha256": "27601353b9e4ed3c1a2129074a7e6eb9e6e16598a01cc36207a0320f9a44dafb",
+      "bytes": 41039
+    },
+    {
+      "path": "scripts/render_a01_history.py",
+      "sha256": "b394d27a930f615407383fd99269907e850db11978e4a81bf1e40e03160abbef",
+      "bytes": 15868
+    },
+    {
+      "path": "scripts/public_line_labels.py",
+      "sha256": "5309aade33395ac33759d2ce2e1d20206883401ab83683b866e9ebd281c60854",
+      "bytes": 9652
+    },
+    {
+      "path": "content/achievement-labels.v1.json",
+      "sha256": "b63cec91955db4431480bb9bd9d886e794bc4a5f67ec5e36352c9cee91231cf8",
+      "bytes": 564
+    },
+    {
+      "path": "scripts/check_site.py",
+      "sha256": "0f43747faa721f49f261639e7b11376f36f0dea23a6357f19004c2eaa6c1b487",
+      "bytes": 21682
+    },
+    {
+      "path": "scripts/check_navigation.py",
+      "sha256": "64ea7d6020a11b8fed8731998a2d0b1f142333239844090ae3b0d7536e313636",
+      "bytes": 9884
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "sha256": "24c110c4004de129ed12fcc1896b600820b5f52a18453cb5ebd2f8e77e8e2a41",
+      "bytes": 109818
+    }
+  ],
+  "label_projection": {
+    "module": "scripts/public_line_labels.py",
+    "mapping": "content/achievement-labels.v1.json"
+  },
+  "reconstruction_kind": "deduplicated_exact_utf8_text_edits",
+  "reverse_text_patch_pool": [
+    {
+      "old": "",
+      "new": "（磺酸酯、二氟卡宾与三氟甲基化）"
+    },
+    {
+      "old": " ",
+      "new": "（全氟酮化学："
+    },
+    {
+      "old": " ",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "）"
+    },
+    {
+      "old": " ",
+      "new": "（"
+    },
+    {
+      "old": " ",
+      "new": "（全氟叔丁基（"
+    },
+    {
+      "old": " 早期研究",
+      "new": "）化学）"
+    },
+    {
+      "old": " 陈试剂",
+      "new": "（磺酸酯、二氟卡宾"
+    },
+    {
+      "old": "磺酸酯与二氟卡宾",
+      "new": "陈试剂"
+    },
+    {
+      "old": "p class=\"",
+      "new": ""
+    },
+    {
+      "old": "eritage-meta\"",
+      "new": "3"
+    },
+    {
+      "old": "</p><h3>",
+      "new": "（全氟酮化学："
+    },
+    {
+      "old": "</p><h3>",
+      "new": "（"
+    },
+    {
+      "old": "</p><h3>",
+      "new": "（全氟叔丁基（"
+    },
+    {
+      "old": "A01 · ",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "A01（"
+    },
+    {
+      "old": "早期研究",
+      "new": ""
+    },
+    {
+      "old": "反应",
+      "new": ""
+    },
+    {
+      "old": "六氟",
+      "new": ""
+    },
+    {
+      "old": "制备",
+      "new": "F）"
+    },
+    {
+      "old": "A02 · ",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "A02（"
+    },
+    {
+      "old": "A03 · ",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "A03（全氟叔丁基（"
+    },
+    {
+      "old": "A04 · ",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "A04（"
+    },
+    {
+      "old": "A05 · ",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "A05（"
+    },
+    {
+      "old": "A06 · ",
+      "new": ""
+    },
+    {
+      "old": "陈试剂与三氟甲基化：",
+      "new": "A06（"
+    },
+    {
+      "old": "研究",
+      "new": "与三氟甲基化） · 陈试剂"
+    },
+    {
+      "old": "A07 · ",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "A07（"
+    },
+    {
+      "old": "A08 · ",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "A08（"
+    },
+    {
+      "old": "A09 · ",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "A09（"
+    },
+    {
+      "old": " · ",
+      "new": "（全氟酮化学："
+    },
+    {
+      "old": " · ",
+      "new": "（"
+    },
+    {
+      "old": " · ",
+      "new": "（全氟叔丁基（"
+    },
+    {
+      "old": "、磺酸酯与二氟卡宾",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "（学科建设与人才培养）"
+    },
+    {
+      "old": "",
+      "new": "（全氟酮化学：六氟丙酮与双酚AF）"
+    },
+    {
+      "old": "",
+      "new": "（F-53铬雾抑制剂）"
+    },
+    {
+      "old": "",
+      "new": "（交叉研究与晚年拓展）"
+    },
+    {
+      "old": "",
+      "new": "（含氟单体、氟橡胶与氟油）"
+    },
+    {
+      "old": "",
+      "new": "（制冷剂与配套技术）"
+    },
+    {
+      "old": "",
+      "new": "（单电子转移与C–Cl活化）"
+    },
+    {
+      "old": "",
+      "new": "（全氟叔丁基（PFtB）化学）"
+    },
+    {
+      "old": "A01—A09",
+      "new": "九条成果线"
+    },
+    {
+      "old": "早期研究",
+      "new": "化学"
+    },
+    {
+      "old": "：",
+      "new": "（"
+    },
+    {
+      "old": "早期研究",
+      "new": "：六氟丙酮与双酚AF）"
+    },
+    {
+      "old": "六氟双酚A（",
+      "new": ""
+    },
+    {
+      "old": "）制备",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "from public_line_labels import project_html, project_markdown\n"
+    },
+    {
+      "old": "",
+      "new": "project_markdown("
+    },
+    {
+      "old": "",
+      "new": ")"
+    },
+    {
+      "old": "",
+      "new": "{name: {marker: project_html(body, name) for marker, body in markers.items()}\n            for name, markers in "
+    },
+    {
+      "old": "",
+      "new": ".items()}"
+    },
+    {
+      "old": "",
+      "new": "from public_line_labels import project_html\n"
+    },
+    {
+      "old": "",
+      "new": "project_html("
+    },
+    {
+      "old": "",
+      "new": ", name)"
+    }
+  ],
+  "reversible_text_files": [
+    {
+      "path": "site/achievements/index.html",
+      "old_sha256": "145b2dc12dbfbb093e487e03e7176fbe6cd02f782f944e1609d93bbb8200dc2b",
+      "old_bytes": 94705,
+      "new_sha256": "eb85fe01abc800fd7d8f29bbf90513a967cb4023caa8d76fdf2976fac35433a8",
+      "new_bytes": 95504,
+      "edits": [
+        {
+          "old_offset": 7226,
+          "replacement": 0
+        },
+        {
+          "old_offset": 7842,
+          "replacement": 0
+        },
+        {
+          "old_offset": 9381,
+          "replacement": 1
+        },
+        {
+          "old_offset": 9403,
+          "replacement": 2
+        },
+        {
+          "old_offset": 9406,
+          "replacement": 3
+        },
+        {
+          "old_offset": 9437,
+          "replacement": 4
+        },
+        {
+          "old_offset": 9471,
+          "replacement": 3
+        },
+        {
+          "old_offset": 9502,
+          "replacement": 5
+        },
+        {
+          "old_offset": 9507,
+          "replacement": 6
+        },
+        {
+          "old_offset": 9615,
+          "replacement": 4
+        },
+        {
+          "old_offset": 9620,
+          "replacement": 2
+        },
+        {
+          "old_offset": 9636,
+          "replacement": 3
+        },
+        {
+          "old_offset": 9667,
+          "replacement": 4
+        },
+        {
+          "old_offset": 9692,
+          "replacement": 3
+        },
+        {
+          "old_offset": 9792,
+          "replacement": 7
+        },
+        {
+          "old_offset": 9820,
+          "replacement": 3
+        },
+        {
+          "old_offset": 9824,
+          "replacement": 8
+        },
+        {
+          "old_offset": 9879,
+          "replacement": 4
+        },
+        {
+          "old_offset": 9898,
+          "replacement": 2
+        },
+        {
+          "old_offset": 9905,
+          "replacement": 2
+        },
+        {
+          "old_offset": 9912,
+          "replacement": 3
+        },
+        {
+          "old_offset": 9943,
+          "replacement": 4
+        },
+        {
+          "old_offset": 9971,
+          "replacement": 3
+        },
+        {
+          "old_offset": 10061,
+          "replacement": 4
+        },
+        {
+          "old_offset": 10089,
+          "replacement": 3
+        },
+        {
+          "old_offset": 12407,
+          "replacement": 9
+        },
+        {
+          "old_offset": 12417,
+          "replacement": 10
+        },
+        {
+          "old_offset": 12434,
+          "replacement": 11
+        },
+        {
+          "old_offset": 12463,
+          "replacement": 2
+        },
+        {
+          "old_offset": 12466,
+          "replacement": 3
+        },
+        {
+          "old_offset": 15552,
+          "replacement": 9
+        },
+        {
+          "old_offset": 15562,
+          "replacement": 10
+        },
+        {
+          "old_offset": 15579,
+          "replacement": 12
+        },
+        {
+          "old_offset": 15620,
+          "replacement": 3
+        },
+        {
+          "old_offset": 20441,
+          "replacement": 9
+        },
+        {
+          "old_offset": 20451,
+          "replacement": 10
+        },
+        {
+          "old_offset": 20468,
+          "replacement": 13
+        },
+        {
+          "old_offset": 20480,
+          "replacement": 6
+        },
+        {
+          "old_offset": 23331,
+          "replacement": 9
+        },
+        {
+          "old_offset": 23341,
+          "replacement": 10
+        },
+        {
+          "old_offset": 23358,
+          "replacement": 12
+        },
+        {
+          "old_offset": 23370,
+          "replacement": 2
+        },
+        {
+          "old_offset": 23386,
+          "replacement": 3
+        },
+        {
+          "old_offset": 26654,
+          "replacement": 9
+        },
+        {
+          "old_offset": 26664,
+          "replacement": 10
+        },
+        {
+          "old_offset": 26681,
+          "replacement": 12
+        },
+        {
+          "old_offset": 26713,
+          "replacement": 3
+        },
+        {
+          "old_offset": 32050,
+          "replacement": 9
+        },
+        {
+          "old_offset": 32060,
+          "replacement": 10
+        },
+        {
+          "old_offset": 32077,
+          "replacement": 12
+        },
+        {
+          "old_offset": 32127,
+          "replacement": 3
+        },
+        {
+          "old_offset": 39592,
+          "replacement": 9
+        },
+        {
+          "old_offset": 39602,
+          "replacement": 10
+        },
+        {
+          "old_offset": 39619,
+          "replacement": 12
+        },
+        {
+          "old_offset": 39645,
+          "replacement": 2
+        },
+        {
+          "old_offset": 39652,
+          "replacement": 2
+        },
+        {
+          "old_offset": 39659,
+          "replacement": 3
+        },
+        {
+          "old_offset": 45152,
+          "replacement": 9
+        },
+        {
+          "old_offset": 45162,
+          "replacement": 10
+        },
+        {
+          "old_offset": 45179,
+          "replacement": 12
+        },
+        {
+          "old_offset": 45214,
+          "replacement": 3
+        },
+        {
+          "old_offset": 49378,
+          "replacement": 9
+        },
+        {
+          "old_offset": 49388,
+          "replacement": 10
+        },
+        {
+          "old_offset": 49405,
+          "replacement": 12
+        },
+        {
+          "old_offset": 49440,
+          "replacement": 3
+        },
+        {
+          "old_offset": 57416,
+          "replacement": 14
+        },
+        {
+          "old_offset": 57488,
+          "replacement": 15
+        },
+        {
+          "old_offset": 57503,
+          "replacement": 16
+        },
+        {
+          "old_offset": 57530,
+          "replacement": 17
+        },
+        {
+          "old_offset": 57539,
+          "replacement": 18
+        },
+        {
+          "old_offset": 57552,
+          "replacement": 19
+        },
+        {
+          "old_offset": 59032,
+          "replacement": 20
+        },
+        {
+          "old_offset": 59103,
+          "replacement": 21
+        },
+        {
+          "old_offset": 59136,
+          "replacement": 3
+        },
+        {
+          "old_offset": 60132,
+          "replacement": 22
+        },
+        {
+          "old_offset": 60191,
+          "replacement": 23
+        },
+        {
+          "old_offset": 60195,
+          "replacement": 6
+        },
+        {
+          "old_offset": 61150,
+          "replacement": 24
+        },
+        {
+          "old_offset": 61207,
+          "replacement": 25
+        },
+        {
+          "old_offset": 61211,
+          "replacement": 2
+        },
+        {
+          "old_offset": 61227,
+          "replacement": 3
+        },
+        {
+          "old_offset": 62360,
+          "replacement": 26
+        },
+        {
+          "old_offset": 62426,
+          "replacement": 27
+        },
+        {
+          "old_offset": 62450,
+          "replacement": 3
+        },
+        {
+          "old_offset": 63395,
+          "replacement": 28
+        },
+        {
+          "old_offset": 63448,
+          "replacement": 29
+        },
+        {
+          "old_offset": 63502,
+          "replacement": 30
+        },
+        {
+          "old_offset": 64882,
+          "replacement": 31
+        },
+        {
+          "old_offset": 64939,
+          "replacement": 32
+        },
+        {
+          "old_offset": 64957,
+          "replacement": 2
+        },
+        {
+          "old_offset": 64964,
+          "replacement": 2
+        },
+        {
+          "old_offset": 64971,
+          "replacement": 3
+        },
+        {
+          "old_offset": 65835,
+          "replacement": 33
+        },
+        {
+          "old_offset": 65892,
+          "replacement": 34
+        },
+        {
+          "old_offset": 65919,
+          "replacement": 3
+        },
+        {
+          "old_offset": 68111,
+          "replacement": 35
+        },
+        {
+          "old_offset": 68181,
+          "replacement": 36
+        },
+        {
+          "old_offset": 68208,
+          "replacement": 3
+        },
+        {
+          "old_offset": 70353,
+          "replacement": 37
+        },
+        {
+          "old_offset": 70378,
+          "replacement": 2
+        },
+        {
+          "old_offset": 70381,
+          "replacement": 3
+        },
+        {
+          "old_offset": 70443,
+          "replacement": 38
+        },
+        {
+          "old_offset": 70480,
+          "replacement": 3
+        },
+        {
+          "old_offset": 70542,
+          "replacement": 39
+        },
+        {
+          "old_offset": 70550,
+          "replacement": 6
+        },
+        {
+          "old_offset": 70625,
+          "replacement": 38
+        },
+        {
+          "old_offset": 70633,
+          "replacement": 2
+        },
+        {
+          "old_offset": 70649,
+          "replacement": 3
+        },
+        {
+          "old_offset": 70711,
+          "replacement": 38
+        },
+        {
+          "old_offset": 70739,
+          "replacement": 3
+        },
+        {
+          "old_offset": 70801,
+          "replacement": 0
+        },
+        {
+          "old_offset": 70814,
+          "replacement": 40
+        },
+        {
+          "old_offset": 70903,
+          "replacement": 38
+        },
+        {
+          "old_offset": 70925,
+          "replacement": 2
+        },
+        {
+          "old_offset": 70932,
+          "replacement": 2
+        },
+        {
+          "old_offset": 70939,
+          "replacement": 3
+        },
+        {
+          "old_offset": 71001,
+          "replacement": 38
+        },
+        {
+          "old_offset": 71032,
+          "replacement": 3
+        },
+        {
+          "old_offset": 71094,
+          "replacement": 38
+        },
+        {
+          "old_offset": 71125,
+          "replacement": 3
+        },
+        {
+          "old_offset": 71991,
+          "replacement": 41
+        },
+        {
+          "old_offset": 73104,
+          "replacement": 42
+        },
+        {
+          "old_offset": 74208,
+          "replacement": 43
+        },
+        {
+          "old_offset": 75598,
+          "replacement": 0
+        },
+        {
+          "old_offset": 76900,
+          "replacement": 41
+        },
+        {
+          "old_offset": 76937,
+          "replacement": 44
+        },
+        {
+          "old_offset": 78171,
+          "replacement": 41
+        },
+        {
+          "old_offset": 79199,
+          "replacement": 44
+        },
+        {
+          "old_offset": 79236,
+          "replacement": 41
+        },
+        {
+          "old_offset": 80707,
+          "replacement": 43
+        },
+        {
+          "old_offset": 80744,
+          "replacement": 44
+        },
+        {
+          "old_offset": 81985,
+          "replacement": 45
+        },
+        {
+          "old_offset": 83554,
+          "replacement": 46
+        },
+        {
+          "old_offset": 85038,
+          "replacement": 43
+        },
+        {
+          "old_offset": 85075,
+          "replacement": 46
+        },
+        {
+          "old_offset": 86614,
+          "replacement": 47
+        },
+        {
+          "old_offset": 86651,
+          "replacement": 41
+        },
+        {
+          "old_offset": 88112,
+          "replacement": 0
+        },
+        {
+          "old_offset": 88149,
+          "replacement": 44
+        },
+        {
+          "old_offset": 89680,
+          "replacement": 41
+        },
+        {
+          "old_offset": 91028,
+          "replacement": 41
+        },
+        {
+          "old_offset": 92474,
+          "replacement": 41
+        }
+      ]
+    },
+    {
+      "path": "site/index.html",
+      "old_sha256": "db95743f8eec1476fa797e1c5ef22cebf7a77411e3ff7d7b3ecd1fd34b5f597c",
+      "old_bytes": 253768,
+      "new_sha256": "51a0d1a3f903722c61994f24d54645e744ca83e7f61b7d9475cef883f8a7e0ee",
+      "new_bytes": 254766,
+      "edits": [
+        {
+          "old_offset": 9262,
+          "replacement": 0
+        },
+        {
+          "old_offset": 10124,
+          "replacement": 0
+        },
+        {
+          "old_offset": 24054,
+          "replacement": 43
+        },
+        {
+          "old_offset": 25363,
+          "replacement": 41
+        },
+        {
+          "old_offset": 25400,
+          "replacement": 44
+        },
+        {
+          "old_offset": 26614,
+          "replacement": 44
+        },
+        {
+          "old_offset": 26651,
+          "replacement": 41
+        },
+        {
+          "old_offset": 28083,
+          "replacement": 43
+        },
+        {
+          "old_offset": 28120,
+          "replacement": 44
+        },
+        {
+          "old_offset": 29348,
+          "replacement": 45
+        },
+        {
+          "old_offset": 30711,
+          "replacement": 41
+        },
+        {
+          "old_offset": 33626,
+          "replacement": 1
+        },
+        {
+          "old_offset": 33648,
+          "replacement": 2
+        },
+        {
+          "old_offset": 33651,
+          "replacement": 3
+        },
+        {
+          "old_offset": 33682,
+          "replacement": 4
+        },
+        {
+          "old_offset": 33716,
+          "replacement": 3
+        },
+        {
+          "old_offset": 33747,
+          "replacement": 5
+        },
+        {
+          "old_offset": 33752,
+          "replacement": 6
+        },
+        {
+          "old_offset": 33860,
+          "replacement": 4
+        },
+        {
+          "old_offset": 33865,
+          "replacement": 2
+        },
+        {
+          "old_offset": 33881,
+          "replacement": 3
+        },
+        {
+          "old_offset": 33912,
+          "replacement": 4
+        },
+        {
+          "old_offset": 33937,
+          "replacement": 3
+        },
+        {
+          "old_offset": 34037,
+          "replacement": 7
+        },
+        {
+          "old_offset": 34065,
+          "replacement": 3
+        },
+        {
+          "old_offset": 34069,
+          "replacement": 8
+        },
+        {
+          "old_offset": 34124,
+          "replacement": 4
+        },
+        {
+          "old_offset": 34143,
+          "replacement": 2
+        },
+        {
+          "old_offset": 34150,
+          "replacement": 2
+        },
+        {
+          "old_offset": 34157,
+          "replacement": 3
+        },
+        {
+          "old_offset": 34188,
+          "replacement": 4
+        },
+        {
+          "old_offset": 34216,
+          "replacement": 3
+        },
+        {
+          "old_offset": 34306,
+          "replacement": 4
+        },
+        {
+          "old_offset": 34334,
+          "replacement": 3
+        },
+        {
+          "old_offset": 34880,
+          "replacement": 14
+        },
+        {
+          "old_offset": 34952,
+          "replacement": 15
+        },
+        {
+          "old_offset": 34967,
+          "replacement": 16
+        },
+        {
+          "old_offset": 34994,
+          "replacement": 17
+        },
+        {
+          "old_offset": 35003,
+          "replacement": 18
+        },
+        {
+          "old_offset": 35016,
+          "replacement": 19
+        },
+        {
+          "old_offset": 36478,
+          "replacement": 20
+        },
+        {
+          "old_offset": 36549,
+          "replacement": 21
+        },
+        {
+          "old_offset": 36582,
+          "replacement": 3
+        },
+        {
+          "old_offset": 37510,
+          "replacement": 22
+        },
+        {
+          "old_offset": 37569,
+          "replacement": 23
+        },
+        {
+          "old_offset": 37573,
+          "replacement": 6
+        },
+        {
+          "old_offset": 40387,
+          "replacement": 24
+        },
+        {
+          "old_offset": 40444,
+          "replacement": 25
+        },
+        {
+          "old_offset": 40448,
+          "replacement": 2
+        },
+        {
+          "old_offset": 40464,
+          "replacement": 3
+        },
+        {
+          "old_offset": 43308,
+          "replacement": 26
+        },
+        {
+          "old_offset": 43374,
+          "replacement": 27
+        },
+        {
+          "old_offset": 43398,
+          "replacement": 3
+        },
+        {
+          "old_offset": 45858,
+          "replacement": 28
+        },
+        {
+          "old_offset": 45911,
+          "replacement": 29
+        },
+        {
+          "old_offset": 45965,
+          "replacement": 30
+        },
+        {
+          "old_offset": 49004,
+          "replacement": 31
+        },
+        {
+          "old_offset": 49061,
+          "replacement": 32
+        },
+        {
+          "old_offset": 49079,
+          "replacement": 2
+        },
+        {
+          "old_offset": 49086,
+          "replacement": 2
+        },
+        {
+          "old_offset": 49093,
+          "replacement": 3
+        },
+        {
+          "old_offset": 51331,
+          "replacement": 33
+        },
+        {
+          "old_offset": 51388,
+          "replacement": 34
+        },
+        {
+          "old_offset": 51415,
+          "replacement": 3
+        },
+        {
+          "old_offset": 54746,
+          "replacement": 35
+        },
+        {
+          "old_offset": 54816,
+          "replacement": 36
+        },
+        {
+          "old_offset": 54843,
+          "replacement": 3
+        },
+        {
+          "old_offset": 56902,
+          "replacement": 37
+        },
+        {
+          "old_offset": 56927,
+          "replacement": 2
+        },
+        {
+          "old_offset": 56930,
+          "replacement": 3
+        },
+        {
+          "old_offset": 56989,
+          "replacement": 38
+        },
+        {
+          "old_offset": 57026,
+          "replacement": 3
+        },
+        {
+          "old_offset": 57085,
+          "replacement": 39
+        },
+        {
+          "old_offset": 57093,
+          "replacement": 6
+        },
+        {
+          "old_offset": 57165,
+          "replacement": 38
+        },
+        {
+          "old_offset": 57173,
+          "replacement": 2
+        },
+        {
+          "old_offset": 57189,
+          "replacement": 3
+        },
+        {
+          "old_offset": 57248,
+          "replacement": 38
+        },
+        {
+          "old_offset": 57276,
+          "replacement": 3
+        },
+        {
+          "old_offset": 57335,
+          "replacement": 0
+        },
+        {
+          "old_offset": 57348,
+          "replacement": 40
+        },
+        {
+          "old_offset": 57434,
+          "replacement": 38
+        },
+        {
+          "old_offset": 57456,
+          "replacement": 2
+        },
+        {
+          "old_offset": 57463,
+          "replacement": 2
+        },
+        {
+          "old_offset": 57470,
+          "replacement": 3
+        },
+        {
+          "old_offset": 57529,
+          "replacement": 38
+        },
+        {
+          "old_offset": 57560,
+          "replacement": 3
+        },
+        {
+          "old_offset": 57619,
+          "replacement": 38
+        },
+        {
+          "old_offset": 57650,
+          "replacement": 3
+        },
+        {
+          "old_offset": 61763,
+          "replacement": 42
+        },
+        {
+          "old_offset": 61971,
+          "replacement": 42
+        },
+        {
+          "old_offset": 62186,
+          "replacement": 45
+        },
+        {
+          "old_offset": 62923,
+          "replacement": 45
+        },
+        {
+          "old_offset": 63086,
+          "replacement": 43
+        },
+        {
+          "old_offset": 63258,
+          "replacement": 43
+        },
+        {
+          "old_offset": 63629,
+          "replacement": 0
+        },
+        {
+          "old_offset": 64039,
+          "replacement": 0
+        },
+        {
+          "old_offset": 64407,
+          "replacement": 44
+        },
+        {
+          "old_offset": 65378,
+          "replacement": 42
+        },
+        {
+          "old_offset": 65426,
+          "replacement": 48
+        },
+        {
+          "old_offset": 66250,
+          "replacement": 42
+        }
+      ]
+    },
+    {
+      "path": "site/topics/chen-reagent/index.html",
+      "old_sha256": "328830c2fc3cc808113786ed24f5b5e199681e3189120903802b0cf179af02fd",
+      "old_bytes": 19799,
+      "new_sha256": "14f08afd4062c0ae171f24e5fb225e5968b003e885edc206baf08ca352b630df",
+      "new_bytes": 19991,
+      "edits": [
+        {
+          "old_offset": 3965,
+          "replacement": 0
+        },
+        {
+          "old_offset": 4292,
+          "replacement": 0
+        },
+        {
+          "old_offset": 14798,
+          "replacement": 0
+        },
+        {
+          "old_offset": 18092,
+          "replacement": 0
+        }
+      ]
+    },
+    {
+      "path": "site/topics/deoxyfluorination/index.html",
+      "old_sha256": "1188d2abb779d0074a6c297c6dca83b3f1b76eaa613cfccc56785ea4cad5e6bf",
+      "old_bytes": 5484,
+      "new_sha256": "2aca9c13eb46f9fedfb02a2adfdc9423c207465f58608bcd671838d4d8045df5",
+      "new_bytes": 5550,
+      "edits": [
+        {
+          "old_offset": 2172,
+          "replacement": 44
+        },
+        {
+          "old_offset": 4820,
+          "replacement": 44
+        }
+      ]
+    },
+    {
+      "path": "site/topics/early-fluoroketones/index.html",
+      "old_sha256": "e34de5ddf39154b37dec507b3242e23cd73c587b51ac6394993f5e576c0e085d",
+      "old_bytes": 250562,
+      "new_sha256": "a6da86d7f9ff0f35a5ea044252297a23e5ed71db829f2d184e3ab38a70dce9a2",
+      "new_bytes": 250938,
+      "edits": [
+        {
+          "old_offset": 2310,
+          "replacement": 42
+        },
+        {
+          "old_offset": 2897,
+          "replacement": 42
+        },
+        {
+          "old_offset": 3906,
+          "replacement": 42
+        },
+        {
+          "old_offset": 13861,
+          "replacement": 42
+        },
+        {
+          "old_offset": 20013,
+          "replacement": 42
+        },
+        {
+          "old_offset": 21856,
+          "replacement": 42
+        },
+        {
+          "old_offset": 33273,
+          "replacement": 42
+        },
+        {
+          "old_offset": 36308,
+          "replacement": 42
+        }
+      ]
+    },
+    {
+      "path": "site/topics/f53/index.html",
+      "old_sha256": "a6349eb302e88d3176b086f83e9f1b62c008e8616f5f034365a4274756addeab",
+      "old_bytes": 8111,
+      "new_sha256": "8def3379a75dda6665d7cb3ee6c32193fc7a61ec6b31098abbefe9218fea39fe",
+      "new_bytes": 8161,
+      "edits": [
+        {
+          "old_offset": 2180,
+          "replacement": 43
+        },
+        {
+          "old_offset": 6095,
+          "replacement": 43
+        }
+      ]
+    },
+    {
+      "path": "site/topics/fluorinated-small-rings/index.html",
+      "old_sha256": "abe1d15c5aedfe81531fc6b178b5e2ee98d1a598325ef2ffeeb3cff4b496f2f3",
+      "old_bytes": 5858,
+      "new_sha256": "2413c83d4319746f41e940c04fe48bdeda28244235f5a9e8697285c187ba412d",
+      "new_bytes": 5924,
+      "edits": [
+        {
+          "old_offset": 2160,
+          "replacement": 44
+        },
+        {
+          "old_offset": 5057,
+          "replacement": 44
+        }
+      ]
+    },
+    {
+      "path": "site/topics/fluoromonomers/index.html",
+      "old_sha256": "b9ab9c6bc5d05b054e606cfd5b5cf6f3592bcb9811e31fa0c9599174c2651c09",
+      "old_bytes": 10436,
+      "new_sha256": "780541f4a1762919c757a6be86b5551fb5ce0679d2778b8a9772d87fc70add94",
+      "new_bytes": 10553,
+      "edits": [
+        {
+          "old_offset": 2190,
+          "replacement": 45
+        },
+        {
+          "old_offset": 4592,
+          "replacement": 45
+        },
+        {
+          "old_offset": 8085,
+          "replacement": 45
+        }
+      ]
+    },
+    {
+      "path": "site/topics/fluoroporphyrins/index.html",
+      "old_sha256": "5751fc484cc7d8eb62f9d39b7d4f7a85b74311945667ed7740f864d09b13d68e",
+      "old_bytes": 5952,
+      "new_sha256": "24b6bb744b594573487847c89bbb35571ea56bc15d444ebeac3339379dbc1875",
+      "new_bytes": 6018,
+      "edits": [
+        {
+          "old_offset": 2160,
+          "replacement": 44
+        },
+        {
+          "old_offset": 4750,
+          "replacement": 44
+        }
+      ]
+    },
+    {
+      "path": "site/topics/index.html",
+      "old_sha256": "dd16eca5d83ad4d82442440f041e903a76659b7082c0cac9688cc9785f46ed4f",
+      "old_bytes": 4970,
+      "new_sha256": "44a5690d1e65195b9ff191d2a7ec37487070cdfafb191ae107962d5e0d7ab73c",
+      "new_bytes": 5055,
+      "edits": [
+        {
+          "old_offset": 2142,
+          "replacement": 49
+        },
+        {
+          "old_offset": 2280,
+          "replacement": 37
+        },
+        {
+          "old_offset": 2305,
+          "replacement": 2
+        },
+        {
+          "old_offset": 2308,
+          "replacement": 3
+        },
+        {
+          "old_offset": 2563,
+          "replacement": 38
+        },
+        {
+          "old_offset": 2600,
+          "replacement": 3
+        },
+        {
+          "old_offset": 2812,
+          "replacement": 39
+        },
+        {
+          "old_offset": 2820,
+          "replacement": 6
+        },
+        {
+          "old_offset": 3034,
+          "replacement": 38
+        },
+        {
+          "old_offset": 3042,
+          "replacement": 2
+        },
+        {
+          "old_offset": 3058,
+          "replacement": 3
+        },
+        {
+          "old_offset": 3236,
+          "replacement": 38
+        },
+        {
+          "old_offset": 3264,
+          "replacement": 3
+        },
+        {
+          "old_offset": 3468,
+          "replacement": 38
+        },
+        {
+          "old_offset": 3514,
+          "replacement": 3
+        },
+        {
+          "old_offset": 3777,
+          "replacement": 38
+        },
+        {
+          "old_offset": 3799,
+          "replacement": 2
+        },
+        {
+          "old_offset": 3806,
+          "replacement": 2
+        },
+        {
+          "old_offset": 3813,
+          "replacement": 3
+        },
+        {
+          "old_offset": 4027,
+          "replacement": 38
+        },
+        {
+          "old_offset": 4058,
+          "replacement": 3
+        },
+        {
+          "old_offset": 4550,
+          "replacement": 44
+        },
+        {
+          "old_offset": 4680,
+          "replacement": 38
+        },
+        {
+          "old_offset": 4711,
+          "replacement": 3
+        }
+      ]
+    },
+    {
+      "path": "site/topics/perfluorosulfonates/index.html",
+      "old_sha256": "38128ea2a303279bf33449ce29401b3160a16ecf864e2e841057ccb3c423bfe7",
+      "old_bytes": 8744,
+      "new_sha256": "85a6f4330edb7607f61ca217b71d2ef6c12cb1af0d48aaaebf737acf3a212ea5",
+      "new_bytes": 8888,
+      "edits": [
+        {
+          "old_offset": 2178,
+          "replacement": 0
+        },
+        {
+          "old_offset": 4281,
+          "replacement": 0
+        },
+        {
+          "old_offset": 6907,
+          "replacement": 0
+        }
+      ]
+    },
+    {
+      "path": "site/topics/refrigerants/index.html",
+      "old_sha256": "5243bf715fa5af64f0a6beeb88b235a5008cb5279b7525383fd085809f6096c8",
+      "old_bytes": 10546,
+      "new_sha256": "5d9b5a355b949f67c5de252727f8d4e4e7533abab8a666c49a0f932170153c4e",
+      "new_bytes": 10636,
+      "edits": [
+        {
+          "old_offset": 2166,
+          "replacement": 46
+        },
+        {
+          "old_offset": 4666,
+          "replacement": 46
+        },
+        {
+          "old_offset": 7862,
+          "replacement": 46
+        }
+      ]
+    },
+    {
+      "path": "site/topics/single-electron-transfer/index.html",
+      "old_sha256": "06eb41f02942070321aff63dfcb199c83d42d0ab1232f01e3c2787003eeb1391",
+      "old_bytes": 10247,
+      "new_sha256": "79c84f89e25e576a03f34153b9eb85a5ff73815c8265a0222930d889390ea947",
+      "new_bytes": 10355,
+      "edits": [
+        {
+          "old_offset": 2178,
+          "replacement": 47
+        },
+        {
+          "old_offset": 4670,
+          "replacement": 47
+        },
+        {
+          "old_offset": 7474,
+          "replacement": 47
+        }
+      ]
+    },
+    {
+      "path": "site/topics/sulfonyl-fluoride/index.html",
+      "old_sha256": "8053b7f912d64d2a72476fa4cb08db9be02fea00bb9fb68f669f0265e8873aa1",
+      "old_bytes": 4977,
+      "new_sha256": "fe944efbbfa5a7814015235f4ae3aae101db4046b0c9419986d6855d7ed15b49",
+      "new_bytes": 5043,
+      "edits": [
+        {
+          "old_offset": 2178,
+          "replacement": 44
+        },
+        {
+          "old_offset": 4184,
+          "replacement": 44
+        }
+      ]
+    },
+    {
+      "path": "README.md",
+      "old_sha256": "7bc7125d6eb1ab45f192b250478bc4ad719be508178a67932e4ce2654c3f3a78",
+      "old_bytes": 6420,
+      "new_sha256": "16db2665cb7ac90f8f0eb2a7e6e55b5cd2736a50e4ed66144180f524cb9aa836",
+      "new_bytes": 6628,
+      "edits": [
+        {
+          "old_offset": 1146,
+          "replacement": 0
+        },
+        {
+          "old_offset": 1948,
+          "replacement": 42
+        },
+        {
+          "old_offset": 3533,
+          "replacement": 16
+        },
+        {
+          "old_offset": 3870,
+          "replacement": 50
+        },
+        {
+          "old_offset": 5377,
+          "replacement": 42
+        },
+        {
+          "old_offset": 5421,
+          "replacement": 48
+        },
+        {
+          "old_offset": 5478,
+          "replacement": 42
+        }
+      ]
+    },
+    {
+      "path": "research/a01/README.md",
+      "old_sha256": "a7b5fb969b53a3259c334eb55c378586b000563aabfd500ee031f4c7db099739",
+      "old_bytes": 6163,
+      "new_sha256": "2b868919fd404f0d7ab453bd48da9360509508b75bc5fc156cd62b822b79af66",
+      "new_bytes": 6227,
+      "edits": [
+        {
+          "old_offset": 5,
+          "replacement": 51
+        },
+        {
+          "old_offset": 23,
+          "replacement": 52
+        },
+        {
+          "old_offset": 42,
+          "replacement": 42
+        }
+      ]
+    },
+    {
+      "path": "docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "old_sha256": "cedd6549296183099e5b17ee38d671c6582659ad9ef2eb811eba01ac53a7785c",
+      "old_bytes": 68459,
+      "new_sha256": "8ea379f801fd15ffa8bc1829cc932e6273d97ffc38371d4b6a0fed53a4c4eadc",
+      "new_bytes": 69254,
+      "edits": [
+        {
+          "old_offset": 6999,
+          "replacement": 37
+        },
+        {
+          "old_offset": 7024,
+          "replacement": 2
+        },
+        {
+          "old_offset": 7027,
+          "replacement": 3
+        },
+        {
+          "old_offset": 9118,
+          "replacement": 38
+        },
+        {
+          "old_offset": 9155,
+          "replacement": 3
+        },
+        {
+          "old_offset": 12593,
+          "replacement": 39
+        },
+        {
+          "old_offset": 12601,
+          "replacement": 6
+        },
+        {
+          "old_offset": 14608,
+          "replacement": 38
+        },
+        {
+          "old_offset": 14616,
+          "replacement": 2
+        },
+        {
+          "old_offset": 14632,
+          "replacement": 3
+        },
+        {
+          "old_offset": 16866,
+          "replacement": 38
+        },
+        {
+          "old_offset": 16894,
+          "replacement": 3
+        },
+        {
+          "old_offset": 20716,
+          "replacement": 38
+        },
+        {
+          "old_offset": 20762,
+          "replacement": 3
+        },
+        {
+          "old_offset": 26133,
+          "replacement": 38
+        },
+        {
+          "old_offset": 26155,
+          "replacement": 2
+        },
+        {
+          "old_offset": 26162,
+          "replacement": 2
+        },
+        {
+          "old_offset": 26169,
+          "replacement": 3
+        },
+        {
+          "old_offset": 30131,
+          "replacement": 38
+        },
+        {
+          "old_offset": 30162,
+          "replacement": 3
+        },
+        {
+          "old_offset": 33066,
+          "replacement": 38
+        },
+        {
+          "old_offset": 33097,
+          "replacement": 3
+        },
+        {
+          "old_offset": 38684,
+          "replacement": 41
+        },
+        {
+          "old_offset": 39418,
+          "replacement": 42
+        },
+        {
+          "old_offset": 40175,
+          "replacement": 43
+        },
+        {
+          "old_offset": 41185,
+          "replacement": 0
+        },
+        {
+          "old_offset": 42137,
+          "replacement": 41
+        },
+        {
+          "old_offset": 42143,
+          "replacement": 44
+        },
+        {
+          "old_offset": 43018,
+          "replacement": 41
+        },
+        {
+          "old_offset": 43723,
+          "replacement": 44
+        },
+        {
+          "old_offset": 43729,
+          "replacement": 41
+        },
+        {
+          "old_offset": 44777,
+          "replacement": 43
+        },
+        {
+          "old_offset": 44783,
+          "replacement": 44
+        },
+        {
+          "old_offset": 45584,
+          "replacement": 45
+        },
+        {
+          "old_offset": 46697,
+          "replacement": 46
+        },
+        {
+          "old_offset": 47986,
+          "replacement": 43
+        },
+        {
+          "old_offset": 47992,
+          "replacement": 46
+        },
+        {
+          "old_offset": 49127,
+          "replacement": 47
+        },
+        {
+          "old_offset": 49133,
+          "replacement": 41
+        },
+        {
+          "old_offset": 50220,
+          "replacement": 0
+        },
+        {
+          "old_offset": 50226,
+          "replacement": 44
+        },
+        {
+          "old_offset": 51425,
+          "replacement": 41
+        },
+        {
+          "old_offset": 52418,
+          "replacement": 41
+        },
+        {
+          "old_offset": 53552,
+          "replacement": 41
+        }
+      ]
+    },
+    {
+      "path": "docs/PLATFORM_PURPOSE_zh-CN.md",
+      "old_sha256": "85340277bafd18a5579a48176c7f1d44eb42259e2fd2ee547a956bb1451d576a",
+      "old_bytes": 4855,
+      "new_sha256": "4e222f9c5eaf36189ce0bb3fc5dc925db1c00704cda526778f7c3e368ec01c4e",
+      "new_bytes": 5056,
+      "edits": [
+        {
+          "old_offset": 740,
+          "replacement": 49
+        },
+        {
+          "old_offset": 788,
+          "replacement": 42
+        },
+        {
+          "old_offset": 794,
+          "replacement": 44
+        },
+        {
+          "old_offset": 818,
+          "replacement": 41
+        },
+        {
+          "old_offset": 1014,
+          "replacement": 16
+        },
+        {
+          "old_offset": 1041,
+          "replacement": 17
+        },
+        {
+          "old_offset": 1050,
+          "replacement": 53
+        },
+        {
+          "old_offset": 1074,
+          "replacement": 54
+        },
+        {
+          "old_offset": 1163,
+          "replacement": 50
+        },
+        {
+          "old_offset": 3764,
+          "replacement": 42
+        },
+        {
+          "old_offset": 3782,
+          "replacement": 48
+        },
+        {
+          "old_offset": 3821,
+          "replacement": 42
+        }
+      ]
+    },
+    {
+      "path": "docs/PLATFORM_ROADMAP_zh-CN.md",
+      "old_sha256": "045e37f94478890cb12bdab1d70c1c75636d4952adc602dc5d511f2cb27753b6",
+      "old_bytes": 6496,
+      "new_sha256": "24209ec12e3688f86ec4098f304d5bd58aeeb3d9ce795f9e2805de81d6812ac0",
+      "new_bytes": 6997,
+      "edits": [
+        {
+          "old_offset": 647,
+          "replacement": 42
+        },
+        {
+          "old_offset": 704,
+          "replacement": 46
+        },
+        {
+          "old_offset": 784,
+          "replacement": 45
+        },
+        {
+          "old_offset": 790,
+          "replacement": 0
+        },
+        {
+          "old_offset": 796,
+          "replacement": 47
+        },
+        {
+          "old_offset": 802,
+          "replacement": 44
+        },
+        {
+          "old_offset": 1662,
+          "replacement": 42
+        },
+        {
+          "old_offset": 2904,
+          "replacement": 49
+        },
+        {
+          "old_offset": 3798,
+          "replacement": 42
+        },
+        {
+          "old_offset": 3804,
+          "replacement": 48
+        },
+        {
+          "old_offset": 4061,
+          "replacement": 42
+        },
+        {
+          "old_offset": 4252,
+          "replacement": 42
+        },
+        {
+          "old_offset": 4459,
+          "replacement": 48
+        }
+      ]
+    },
+    {
+      "path": "docs/CHEN_REAGENT_ACHIEVEMENT_zh-CN.md",
+      "old_sha256": "3dbe6da43c1155ef733728fc5d3e4704ad982760561cdca6252f0e58362929f0",
+      "old_bytes": 2302,
+      "new_sha256": "aff472de27abf8d24eede857e77ae6aa0ce9d5a3a99cf774319250e08ee9128e",
+      "new_bytes": 2350,
+      "edits": [
+        {
+          "old_offset": 1814,
+          "replacement": 0
+        }
+      ]
+    },
+    {
+      "path": "docs/A01_FIRST_REPORT_zh-CN.md",
+      "old_sha256": "b6de9df1b0dd742ba038bc6bc80ad6ef3ea61663a4f4eadb151345df9cb4f339",
+      "old_bytes": 7770,
+      "new_sha256": "f0b084ea67ab26a09da6f32158bc6e8e1219af46b551b8c39ed5bfb57dec9a18",
+      "new_bytes": 7864,
+      "edits": [
+        {
+          "old_offset": 1281,
+          "replacement": 42
+        },
+        {
+          "old_offset": 7699,
+          "replacement": 42
+        }
+      ]
+    },
+    {
+      "path": "scripts/render_heritage.py",
+      "old_sha256": "f63ceebaac35c67f6072e6ad57379b268737953621967ce9a5536e4f605ade3f",
+      "old_bytes": 40839,
+      "new_sha256": "27601353b9e4ed3c1a2129074a7e6eb9e6e16598a01cc36207a0320f9a44dafb",
+      "new_bytes": 41039,
+      "edits": [
+        {
+          "old_offset": 589,
+          "replacement": 55
+        },
+        {
+          "old_offset": 29160,
+          "replacement": 56
+        },
+        {
+          "old_offset": 29175,
+          "replacement": 57
+        },
+        {
+          "old_offset": 30160,
+          "replacement": 58
+        },
+        {
+          "old_offset": 30166,
+          "replacement": 59
+        }
+      ]
+    },
+    {
+      "path": "scripts/render_a01_history.py",
+      "old_sha256": "894c8fe1f76beae187ea0f9d105f6ae71cf8beec4c7a4005c7c780e62ea6fe8c",
+      "old_bytes": 15804,
+      "new_sha256": "b394d27a930f615407383fd99269907e850db11978e4a81bf1e40e03160abbef",
+      "new_bytes": 15868,
+      "edits": [
+        {
+          "old_offset": 205,
+          "replacement": 60
+        },
+        {
+          "old_offset": 13463,
+          "replacement": 61
+        },
+        {
+          "old_offset": 13467,
+          "replacement": 62
+        }
+      ]
+    }
+  ],
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "M0_resumed": false,
+  "historical_achievement_independent_of_AI_review": true,
+  "new_quantum_calls": 0,
+  "new_model_API_calls": 0,
+  "changes": [
+    {
+      "path": "achievements/index.html",
+      "old_sha256": "145b2dc12dbfbb093e487e03e7176fbe6cd02f782f944e1609d93bbb8200dc2b",
+      "old_bytes": 94705,
+      "new_sha256": "eb85fe01abc800fd7d8f29bbf90513a967cb4023caa8d76fdf2976fac35433a8",
+      "new_bytes": 95504,
+      "reason": "Use canonical achievement-line names in visible prose and accessibility labels, consolidating repeated card titles into one descriptive heading; retain source data, technical identities and the frozen scientific progress block"
+    },
+    {
+      "path": "index.html",
+      "old_sha256": "db95743f8eec1476fa797e1c5ef22cebf7a77411e3ff7d7b3ecd1fd34b5f597c",
+      "old_bytes": 253768,
+      "new_sha256": "51a0d1a3f903722c61994f24d54645e744ca83e7f61b7d9475cef883f8a7e0ee",
+      "new_bytes": 254766,
+      "reason": "Use canonical achievement-line names in visible prose and accessibility labels, consolidating repeated card titles into one descriptive heading; retain source data, technical identities and the frozen scientific progress block"
+    },
+    {
+      "path": "topics/chen-reagent/index.html",
+      "old_sha256": "328830c2fc3cc808113786ed24f5b5e199681e3189120903802b0cf179af02fd",
+      "old_bytes": 19799,
+      "new_sha256": "14f08afd4062c0ae171f24e5fb225e5968b003e885edc206baf08ca352b630df",
+      "new_bytes": 19991,
+      "reason": "Use canonical achievement-line names in visible prose and accessibility labels, consolidating repeated card titles into one descriptive heading; retain source data, technical identities and the frozen scientific progress block"
+    },
+    {
+      "path": "topics/deoxyfluorination/index.html",
+      "old_sha256": "1188d2abb779d0074a6c297c6dca83b3f1b76eaa613cfccc56785ea4cad5e6bf",
+      "old_bytes": 5484,
+      "new_sha256": "2aca9c13eb46f9fedfb02a2adfdc9423c207465f58608bcd671838d4d8045df5",
+      "new_bytes": 5550,
+      "reason": "Use canonical achievement-line names in visible prose and accessibility labels, consolidating repeated card titles into one descriptive heading; retain source data, technical identities and the frozen scientific progress block"
+    },
+    {
+      "path": "topics/early-fluoroketones/index.html",
+      "old_sha256": "e34de5ddf39154b37dec507b3242e23cd73c587b51ac6394993f5e576c0e085d",
+      "old_bytes": 250562,
+      "new_sha256": "a6da86d7f9ff0f35a5ea044252297a23e5ed71db829f2d184e3ab38a70dce9a2",
+      "new_bytes": 250938,
+      "reason": "Use canonical achievement-line names in visible prose and accessibility labels, consolidating repeated card titles into one descriptive heading; retain source data, technical identities and the frozen scientific progress block"
+    },
+    {
+      "path": "topics/f53/index.html",
+      "old_sha256": "a6349eb302e88d3176b086f83e9f1b62c008e8616f5f034365a4274756addeab",
+      "old_bytes": 8111,
+      "new_sha256": "8def3379a75dda6665d7cb3ee6c32193fc7a61ec6b31098abbefe9218fea39fe",
+      "new_bytes": 8161,
+      "reason": "Use canonical achievement-line names in visible prose and accessibility labels, consolidating repeated card titles into one descriptive heading; retain source data, technical identities and the frozen scientific progress block"
+    },
+    {
+      "path": "topics/fluorinated-small-rings/index.html",
+      "old_sha256": "abe1d15c5aedfe81531fc6b178b5e2ee98d1a598325ef2ffeeb3cff4b496f2f3",
+      "old_bytes": 5858,
+      "new_sha256": "2413c83d4319746f41e940c04fe48bdeda28244235f5a9e8697285c187ba412d",
+      "new_bytes": 5924,
+      "reason": "Use canonical achievement-line names in visible prose and accessibility labels, consolidating repeated card titles into one descriptive heading; retain source data, technical identities and the frozen scientific progress block"
+    },
+    {
+      "path": "topics/fluoromonomers/index.html",
+      "old_sha256": "b9ab9c6bc5d05b054e606cfd5b5cf6f3592bcb9811e31fa0c9599174c2651c09",
+      "old_bytes": 10436,
+      "new_sha256": "780541f4a1762919c757a6be86b5551fb5ce0679d2778b8a9772d87fc70add94",
+      "new_bytes": 10553,
+      "reason": "Use canonical achievement-line names in visible prose and accessibility labels, consolidating repeated card titles into one descriptive heading; retain source data, technical identities and the frozen scientific progress block"
+    },
+    {
+      "path": "topics/fluoroporphyrins/index.html",
+      "old_sha256": "5751fc484cc7d8eb62f9d39b7d4f7a85b74311945667ed7740f864d09b13d68e",
+      "old_bytes": 5952,
+      "new_sha256": "24b6bb744b594573487847c89bbb35571ea56bc15d444ebeac3339379dbc1875",
+      "new_bytes": 6018,
+      "reason": "Use canonical achievement-line names in visible prose and accessibility labels, consolidating repeated card titles into one descriptive heading; retain source data, technical identities and the frozen scientific progress block"
+    },
+    {
+      "path": "topics/index.html",
+      "old_sha256": "dd16eca5d83ad4d82442440f041e903a76659b7082c0cac9688cc9785f46ed4f",
+      "old_bytes": 4970,
+      "new_sha256": "44a5690d1e65195b9ff191d2a7ec37487070cdfafb191ae107962d5e0d7ab73c",
+      "new_bytes": 5055,
+      "reason": "Use canonical achievement-line names in visible prose and accessibility labels, consolidating repeated card titles into one descriptive heading; retain source data, technical identities and the frozen scientific progress block"
+    },
+    {
+      "path": "topics/perfluorosulfonates/index.html",
+      "old_sha256": "38128ea2a303279bf33449ce29401b3160a16ecf864e2e841057ccb3c423bfe7",
+      "old_bytes": 8744,
+      "new_sha256": "85a6f4330edb7607f61ca217b71d2ef6c12cb1af0d48aaaebf737acf3a212ea5",
+      "new_bytes": 8888,
+      "reason": "Use canonical achievement-line names in visible prose and accessibility labels, consolidating repeated card titles into one descriptive heading; retain source data, technical identities and the frozen scientific progress block"
+    },
+    {
+      "path": "topics/refrigerants/index.html",
+      "old_sha256": "5243bf715fa5af64f0a6beeb88b235a5008cb5279b7525383fd085809f6096c8",
+      "old_bytes": 10546,
+      "new_sha256": "5d9b5a355b949f67c5de252727f8d4e4e7533abab8a666c49a0f932170153c4e",
+      "new_bytes": 10636,
+      "reason": "Use canonical achievement-line names in visible prose and accessibility labels, consolidating repeated card titles into one descriptive heading; retain source data, technical identities and the frozen scientific progress block"
+    },
+    {
+      "path": "topics/single-electron-transfer/index.html",
+      "old_sha256": "06eb41f02942070321aff63dfcb199c83d42d0ab1232f01e3c2787003eeb1391",
+      "old_bytes": 10247,
+      "new_sha256": "79c84f89e25e576a03f34153b9eb85a5ff73815c8265a0222930d889390ea947",
+      "new_bytes": 10355,
+      "reason": "Use canonical achievement-line names in visible prose and accessibility labels, consolidating repeated card titles into one descriptive heading; retain source data, technical identities and the frozen scientific progress block"
+    },
+    {
+      "path": "topics/sulfonyl-fluoride/index.html",
+      "old_sha256": "8053b7f912d64d2a72476fa4cb08db9be02fea00bb9fb68f669f0265e8873aa1",
+      "old_bytes": 4977,
+      "new_sha256": "fe944efbbfa5a7814015235f4ae3aae101db4046b0c9419986d6855d7ed15b49",
+      "new_bytes": 5043,
+      "reason": "Use canonical achievement-line names in visible prose and accessibility labels, consolidating repeated card titles into one descriptive heading; retain source data, technical identities and the frozen scientific progress block"
+    }
+  ],
+  "boundary": "Only names in public prose/accessibility labels and placement of duplicate card navigation headings change. Primary headings carry the ID and canonical name; side columns keep their original chronology, and duplicate heritage headings are combined. Original JSON, scientific source evidence, source/task identifiers, URLs, anchors, code/pre blocks, the complete frozen A01 scientific progress block and the complete PFtB archive retain their bytes. Scientific review remains required and M0 remains paused.",
+  "reconstruction": "Ordered UTF-8 byte offsets and a deduplicated old/new text-segment pool reconstruct each exact fixed be48dfc predecessor in memory. The unchanged v1-v10 contracts validate those complete predecessor bytes. Current HTML and prose must additionally equal the shared label-only projection. No complete page/site/document snapshot is added.",
+  "publish_allowlist": "The existing fifteen HTML pages, two original JSON files and empty .nojekyll marker only. The canonical label mapping is embedded by static rendering; it does not add a public site member."
+}

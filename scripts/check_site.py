@@ -127,6 +127,11 @@ def inspect_site(*, require_node: bool = False) -> dict:
             report["a01_historical_content_consistency"] = a01_history
             if a01_history.get("status") != "passed":
                 errors.append("A01 historical content did not pass its source-derived rendering check")
+        if (ROOT / "content/achievement-labels.v1.json").is_file():
+            from public_line_labels import inspect_line_labels
+            labels = inspect_line_labels(ROOT)
+            report["achievement_label_consistency"] = labels
+            errors.extend(labels["errors"])
         baseline = json.loads(BASELINE.read_text(encoding="utf-8"))
         if baseline["archive_sha256"] != ARCHIVE_SHA256:
             errors.append("Website baseline does not identify the approved source ZIP")

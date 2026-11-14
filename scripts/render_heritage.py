@@ -15,6 +15,7 @@ import html
 from html.parser import HTMLParser
 import json
 from pathlib import Path
+from public_line_labels import project_html, project_markdown
 import re
 from urllib.parse import quote, urlsplit
 
@@ -465,7 +466,7 @@ def render_inventory_markdown(data: dict, sources: dict) -> str:
     rows += ['## 历史成果与平台AI辅助研究', '', _md(data['scope']['history_identity']), '',
         _md(data['scope']['AI_identity']), '', _md(data['scope']['m0_status']), '',
         '历史成果归原作者及合作团队；历史资料的整理不构成平台新开展的实验验证或量化结果。', '']
-    return '\n'.join(rows)
+    return project_markdown('\n'.join(rows))
 
 
 def marker_block(name: str, body: str) -> str:
@@ -487,7 +488,8 @@ def render_blocks(data: dict, sources: dict) -> dict:
     for context in data['topic_contexts']:
         blocks[context['path']] = {'HERITAGE_CONTEXT': marker_block(
             'HERITAGE_CONTEXT', render_topic_context(context, data, sources))}
-    return blocks
+    return {name: {marker: project_html(body, name) for marker, body in markers.items()}
+            for name, markers in blocks.items()}
 
 
 def replace_marker_blocks(original: str, blocks: dict) -> str:

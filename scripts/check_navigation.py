@@ -10,6 +10,7 @@ import re
 from urllib.parse import unquote, urlsplit
 
 from a01_publication_contract import inspect_line_numbering
+from public_line_labels import display_text
 
 ROOT = Path(__file__).resolve().parents[1]
 DIRECTORY = 'topics/index.html'
@@ -146,7 +147,7 @@ def inspect_navigation(root: Path = ROOT) -> dict:
             def topic_check(name=name, owner=owner):
                 anchors = links(page(name))
                 belonging = one((a for a in anchors if '所属成果线' in a.text()), 'Topic ownership link')
-                if belonging.text() != '所属成果线 '+owner or destination(site, name, belonging) != ('index.html', 'line-'+owner.lower()):
+                if belonging.text() != display_text('所属成果线 '+owner) or destination(site, name, belonging) != ('index.html', 'line-'+owner.lower()):
                     raise ValueError('Topic ownership must match source registry '+owner)
                 indexes = [a for a in anchors if '专题索引' in a.text()]
                 if len(indexes) < 2 or not any(a.text().startswith('返回专题索引') for a in indexes):

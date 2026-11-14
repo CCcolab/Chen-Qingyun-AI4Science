@@ -63,6 +63,31 @@ PRESENTATION_V9_SHA256 = '462fdbfe1c4bd6f0c32f39e2597764037b4562904f0acec4cce00f
 PRESENTATION_V10_PATH = 'provenance/platform-presentation.v10.json'
 PRESENTATION_V10_ID = 'PLATFORM-A01-FIRST-REPORT-20261114-v10'
 PRESENTATION_V10_PREVIOUS_COMMIT = '14fe8326f2cc42a4d424337f358f3c9386295a95'
+PRESENTATION_V10_SHA256 = '65954e3ff6b484a010fa5052f5331eab55149d23a468ae354ab236462598ffd3'
+PRESENTATION_V11_PATH = 'provenance/platform-presentation.v11.json'
+PRESENTATION_V11_ID = 'PLATFORM-PUBLIC-LINE-LABELS-20261114-v11'
+PRESENTATION_V11_PREVIOUS_COMMIT = 'be48dfc22988d7e4870b2e747b7752db88e1d245'
+PUBLIC_LABEL_MARKDOWN = ('README.md', 'research/a01/README.md',
+    'docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md', 'docs/PLATFORM_PURPOSE_zh-CN.md',
+    'docs/PLATFORM_ROADMAP_zh-CN.md', 'docs/CHEN_REAGENT_ACHIEVEMENT_zh-CN.md',
+    'docs/A01_FIRST_REPORT_zh-CN.md')
+PUBLIC_LABEL_RENDERERS = ('scripts/render_heritage.py', 'scripts/render_a01_history.py')
+PUBLIC_LABEL_DOCUMENTS = (*PUBLIC_LABEL_MARKDOWN, *PUBLIC_LABEL_RENDERERS,
+    'scripts/public_line_labels.py', 'content/achievement-labels.v1.json',
+    'scripts/check_site.py', 'scripts/check_navigation.py', 'scripts/a01_publication_contract.py')
+# Fixed be48dfc predecessor identities for the only editable prose/renderers.
+# The v10-bound subset is also checked by its immutable historical declaration.
+PUBLIC_LABEL_PREDECESSOR_DOCUMENTS = {
+    'README.md': ('7bc7125d6eb1ab45f192b250478bc4ad719be508178a67932e4ce2654c3f3a78', 6420),
+    'research/a01/README.md': ('a7b5fb969b53a3259c334eb55c378586b000563aabfd500ee031f4c7db099739', 6163),
+    'docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md': ('cedd6549296183099e5b17ee38d671c6582659ad9ef2eb811eba01ac53a7785c', 68459),
+    'docs/PLATFORM_PURPOSE_zh-CN.md': ('85340277bafd18a5579a48176c7f1d44eb42259e2fd2ee547a956bb1451d576a', 4855),
+    'docs/PLATFORM_ROADMAP_zh-CN.md': ('045e37f94478890cb12bdab1d70c1c75636d4952adc602dc5d511f2cb27753b6', 6496),
+    'docs/CHEN_REAGENT_ACHIEVEMENT_zh-CN.md': ('3dbe6da43c1155ef733728fc5d3e4704ad982760561cdca6252f0e58362929f0', 2302),
+    'docs/A01_FIRST_REPORT_zh-CN.md': ('b6de9df1b0dd742ba038bc6bc80ad6ef3ea61663a4f4eadb151345df9cb4f339', 7770),
+    'scripts/render_heritage.py': ('f63ceebaac35c67f6072e6ad57379b268737953621967ce9a5536e4f605ade3f', 40839),
+    'scripts/render_a01_history.py': ('894c8fe1f76beae187ea0f9d105f6ae71cf8beec4c7a4005c7c780e62ea6fe8c', 15804),
+}
 A01_FIRST_REPORT_SNAPSHOT = 'provenance/a01-first-report-previous'
 A01_FIRST_REPORT_CONTENT = 'content/a01-historical-achievements.v2.json'
 A01_FIRST_REPORT_DOCUMENTS = ('README.md', 'research/a01/README.md',
@@ -146,6 +171,65 @@ def project_file(root: Path, name: str) -> Path:
     return candidate
 
 
+def label_predecessor_bytes(root: Path, name: str) -> bytes:
+    """Reconstruct pre-label bytes with bounded, deduplicated text edits.
+
+    Existing historical contracts consume these bytes; final website checks
+    still read the actual files. No complete predecessor page is stored.
+    """
+    current = project_file(root, name).read_bytes()
+    if not (root/PRESENTATION_V11_PATH).exists():
+        return current
+    data = read_json(project_file(root, PRESENTATION_V11_PATH))
+    if not isinstance(data, dict):
+        raise ValueError('Public-label presentation must be a JSON object')
+    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')
+    if not isinstance(files, list) or not isinstance(pool, list):
+        raise ValueError('Public labels require their exact reversible text patch records')
+    matches = [row for row in files if isinstance(row, dict) and row.get('path') == name]
+    if not matches:
+        return current
+    if len(matches) != 1:
+        raise ValueError('Duplicate public-label predecessor record: '+name)
+    record = matches[0]
+    if (hashlib.sha256(current).hexdigest() != record.get('new_sha256')
+            or len(current) != record.get('new_bytes')):
+        raise ValueError('Current file differs from its exact public-label patch: '+name)
+    edits = record.get('edits')
+    if not isinstance(edits, list) or not edits:
+        raise ValueError('Public-label changes require nonempty text edits: '+name)
+    chunks, cursor, old_end, delta = [], 0, 0, 0
+    for edit in edits:
+        if not isinstance(edit, dict) or set(edit) != {'old_offset', 'replacement'}:
+            raise ValueError('Invalid reversible public-label text edit: '+name)
+        offset, replacement = edit['old_offset'], edit['replacement']
+        if (type(offset) is not int or offset < old_end or type(replacement) is not int
+                or not 0 <= replacement < len(pool)):
+            raise ValueError('Overlapping or invalid public-label text edit: '+name)
+        pair = pool[replacement]
+        if (not isinstance(pair, dict) or set(pair) != {'old', 'new'}
+                or not all(isinstance(pair.get(key), str) for key in ('old', 'new'))
+                or pair['old'] == pair['new']):
+            raise ValueError('Invalid public-label text replacement pool')
+        before, after = pair['old'].encode('utf-8'), pair['new'].encode('utf-8')
+        position = offset+delta
+        if position < cursor or current[position:position+len(after)] != after:
+            raise ValueError('Public-label replacement differs at its exact offset: '+name)
+        chunks.extend((current[cursor:position], before))
+        cursor, old_end = position+len(after), offset+len(before)
+        delta += len(after)-len(before)
+    rebuilt = b''.join((*chunks, current[cursor:]))
+    if (hashlib.sha256(rebuilt).hexdigest() != record.get('old_sha256')
+            or len(rebuilt) != record.get('old_bytes')):
+        raise ValueError('Public-label predecessor cannot be reconstructed exactly: '+name)
+    return rebuilt
+
+
+def label_predecessor_binding(root: Path, name: str) -> dict:
+    content = label_predecessor_bytes(root, name)
+    return {'path': name, 'sha256': hashlib.sha256(content).hexdigest(), 'bytes': len(content)}
+
+
 def historical_website_member(root: Path, name: str) -> Path:
     """Read a prior HTML promise from its fixed snapshot during a successor."""
     prefix = PUBLIC_PRESENTATION_SNAPSHOT+'/site/' if (
@@ -177,8 +261,7 @@ def presentation_v6_document_bindings(root: Path) -> list[dict]:
         if name == 'README.md' and historical is not None:
             bindings.append({'path': name, 'sha256': historical['sha256'], 'bytes': historical['bytes']})
         else:
-            path = project_file(root, name)
-            bindings.append({'path': name, 'sha256': digest(path), 'bytes': path.stat().st_size})
+            bindings.append(label_predecessor_binding(root, name))
     return bindings
 
 
@@ -237,8 +320,8 @@ def presentation_v1_snapshot_bindings(root: Path) -> list[dict]:
         # Only README and the current platform roadmap are editable in v2.
         # The platform-purpose document remains an unchanged current document.
         if item['path'] == 'docs/PLATFORM_PURPOSE_zh-CN.md':
-            current = project_file(root, item['path'])
-            if digest(current) != item['sha256'] or current.stat().st_size != item['bytes']:
+            current = label_predecessor_binding(root, item['path'])
+            if current['sha256'] != item['sha256'] or current['bytes'] != item['bytes']:
                 raise ValueError('The platform-purpose document is unchanged in this content edition')
         snapshots.append({'original_path': item['path'], 'snapshot_path': name,
                           'sha256': item['sha256'], 'bytes': item['bytes']})
@@ -254,8 +337,7 @@ def presentation_v2_document_bindings(root: Path) -> list[dict]:
             bindings.append({'path': name, 'sha256': historical_readme['sha256'],
                              'bytes': historical_readme['bytes']})
         else:
-            path = project_file(root, name)
-            bindings.append({'path': name, 'sha256': digest(path), 'bytes': path.stat().st_size})
+            bindings.append(label_predecessor_binding(root, name))
     return bindings
 
 
@@ -462,6 +544,8 @@ def apply_presentation_v1(root: Path, entries: dict, *, chain: list,
 
 def apply_presentation_overlay(root: Path, entries: dict, *, chain: list) -> tuple[dict, dict | None]:
     """Apply v1, then this bounded historical-content successor if present."""
+    if (root/PRESENTATION_V11_PATH).exists() and not (root/PRESENTATION_V10_PATH).exists():
+        raise ValueError('Public line labels require their fixed v10 predecessor')
     if (root/PRESENTATION_V10_PATH).exists() and not (root/PRESENTATION_V9_PATH).exists():
         raise ValueError('A01 first-report presentation requires its fixed v9 predecessor')
     if (root/PRESENTATION_V9_PATH).exists() and not (root/PRESENTATION_V8_PATH).exists():
@@ -538,53 +622,84 @@ def apply_presentation_overlay(root: Path, entries: dict, *, chain: list) -> tup
     return apply_numbering_correction(root, updated, {**report, 'presentation_chain': [v1, report]})
 
 
-def inspect_line_numbering(path: Path) -> dict:
-    """Check the hierarchy of the nine primary cards and their two archives."""
+def inspect_line_numbering(path: Path, *, source: str | None = None,
+                           label_location: str = 'auto') -> dict:
+    """Check current heading IDs or explicitly reconstructed legacy side IDs.
+
+    v11 puts the public ID/name in each card's main heading and reserves its
+    side column for chronology. Historical v3-v10 replay explicitly supplies
+    the reconstructed source and keeps its original side-label rule.
+    """
     expected = {'record-fluorinated-ionic-liquids': 'line-a08',
                 'record-publication-index': 'line-a09'}
+    line_ids = ['line-a'+str(n).zfill(2) for n in range(1, 10)]
+    expected_numbers = ['A'+str(n).zfill(2) for n in range(1, 10)]
+    if label_location not in {'auto', 'side', 'heading'}:
+        raise ValueError('Unknown primary achievement label location')
+    if (label_location == 'auto' and source is None
+            and any((parent/PRESENTATION_V11_PATH).is_file() for parent in path.resolve().parents)):
+        label_location = 'heading'
 
     class NumberingParser(HTMLParser):
         def __init__(self):
             super().__init__(convert_charrefs=True)
-            self.stack, self.labels, self.records = [], [], []
-            self.active_label = None
+            self.stack, self.cards, self.labels, self.records = [], [], [], []
+            self.active_labels = []
 
         def handle_starttag(self, tag, attrs):
             values = dict(attrs)
-            ident = values.get('id')
+            ident, classes = values.get('id'), values.get('class', '').split()
             ancestor_ids = [row[1] for row in self.stack]
             if ident in expected:
                 self.records.append((ident, expected[ident] in ancestor_ids))
-            if ('achievement-detail' in ancestor_ids
-                    and 'case-side' in values.get('class', '').split()):
-                self.active_label = {'depth': len(self.stack), 'text': ''}
+            if ('achievement-detail' in ancestor_ids and tag == 'article' and 'case' in classes):
+                self.cards.append(ident)
+            owners = [row for row in self.stack if row[1] in line_ids and 'case' in row[2]]
+            owner = owners[-1][1] if owners else None
+            kind = ('side' if 'case-side' in classes else 'heading' if (
+                tag == 'h3' and self.stack and 'case-main' in self.stack[-1][2]) else None)
+            if 'achievement-detail' in ancestor_ids and owner is not None and kind is not None:
+                self.active_labels.append({'depth': len(self.stack), 'owner': owner,
+                                           'kind': kind, 'text': ''})
             if tag not in {'area', 'base', 'br', 'col', 'embed', 'hr', 'img',
                            'input', 'link', 'meta', 'param', 'source', 'track', 'wbr'}:
-                self.stack.append((tag, ident))
+                self.stack.append((tag, ident, classes))
 
         def handle_data(self, value):
-            if self.active_label is not None:
-                self.active_label['text'] += value
+            for label in self.active_labels:
+                label['text'] += value
 
         def handle_endtag(self, tag):
             for position in range(len(self.stack)-1, -1, -1):
                 if self.stack[position][0] == tag:
-                    if self.active_label is not None and position == self.active_label['depth']:
-                        self.labels.append(self.active_label['text'].strip())
-                        self.active_label = None
+                    closed = [label for label in self.active_labels if label['depth'] >= position]
+                    self.labels.extend(closed)
+                    self.active_labels = [label for label in self.active_labels if label['depth'] < position]
                     del self.stack[position:]
                     break
 
     page = NumberingParser()
-    page.feed(path.read_text('utf-8'))
+    page.feed(path.read_text('utf-8') if source is None else source)
     page.close()
-    labels = [re.match(r'(A0[1-9])\b', value) for value in page.labels]
-    numbers = [match.group(1) if match else None for match in labels]
-    if numbers != ['A'+str(n).zfill(2) for n in range(1, 10)]:
+    if page.cards != line_ids:
+        raise ValueError('The nine primary card IDs must be line-a01 through line-a09 once, in order')
+    groups = {kind: [row for row in page.labels if row['kind'] == kind] for kind in ('side', 'heading')}
+    def numbers(kind):
+        return [match.group(1) if (match := re.match(r'(A0[1-9])\b', row['text'].strip())) else None
+                for row in groups[kind]]
+    if label_location == 'auto':
+        label_location = 'heading' if numbers('heading') == expected_numbers else 'side'
+    labels, values = groups[label_location], numbers(label_location)
+    if [row['owner'] for row in labels] != line_ids or values != expected_numbers:
         raise ValueError('The primary achievement cards must be numbered A01 through A09 once, in order')
+    if label_location == 'heading' and ([row['owner'] for row in groups['side']] != line_ids or any(
+            re.search(r'(?<![A-Za-z0-9_-])A0[1-9](?![A-Za-z0-9_-])', row['text'])
+            for row in groups['side'])):
+        raise ValueError('Current primary card side columns must contain chronology without duplicate achievement IDs')
     if sorted(page.records) != sorted((name, True) for name in expected):
         raise ValueError('Each supplemental archive must appear once within its own achievement line')
-    return {'primary_line_labels': numbers, 'supplemental_archives_nested': True}
+    return {'primary_line_labels': values, 'label_location': label_location,
+            'supplemental_archives_nested': True}
 
 
 def apply_numbering_correction(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:
@@ -625,7 +740,8 @@ def apply_numbering_correction(root: Path, entries: dict, previous_report: dict)
                 or not isinstance(size, int) or isinstance(size, bool) or size <= 0
                 or not isinstance(item.get('reason'), str) or not item['reason'].strip()):
             raise ValueError('Incomplete numbering correction: '+name)
-        inspect_line_numbering(project_file(root, 'site/'+name))
+        inspect_line_numbering(project_file(root, 'site/'+name),
+            source=label_predecessor_bytes(root, 'site/'+name).decode('utf-8'), label_location='side')
         updated[name] = {**old, 'sha256': value, 'bytes': size, 'presentation_id': PRESENTATION_V3_ID}
     report = {'path': PRESENTATION_V3_PATH, 'sha256': digest(path),
         'presentation_id': PRESENTATION_V3_ID, 'publication_kind': 'platform_navigation_correction',
@@ -670,7 +786,7 @@ def apply_navigation_revision(root: Path, entries: dict, previous_report: dict) 
     # The preceding v1-v3 checks already bind the research JSON, heritage data,
     # original source IDs and routes. The displayed technical block stays exact.
     from render_a01_progress import BEGIN, END, render_block
-    topic = project_file(root, 'site/'+TOPIC_PATH).read_text('utf-8')
+    topic = label_predecessor_bytes(root, 'site/'+TOPIC_PATH).decode('utf-8')
     if (topic.count(BEGIN) != 1 or topic.count(END) != 1
             or topic[topic.index(BEGIN):topic.index(END)+len(END)]
             != render_block(read_json(root/PROGRESS_V2_PATH), PROGRESS_V2_SHA256)):
@@ -996,8 +1112,11 @@ def apply_public_academic_presentation(root: Path, entries: dict, previous_repor
     snapshots = public_presentation_snapshot_bindings(root, entries)
     documents = []
     for name in ('README.md', PUBLIC_ACADEMIC_DOCUMENT):
-        document = a01_history_predecessor_readme(root) if name == 'README.md' else project_file(root, name)
-        documents.append({'path': name, 'sha256': digest(document), 'bytes': document.stat().st_size})
+        if name == 'README.md':
+            document = a01_history_predecessor_readme(root)
+            documents.append({'path': name, 'sha256': digest(document), 'bytes': document.stat().st_size})
+        else:
+            documents.append(label_predecessor_binding(root, name))
     required = {'schema_version': '8.0', 'presentation_id': PRESENTATION_V8_ID,
         'publication_kind': 'platform_public_academic_presentation',
         'previous_presentation_commit': PRESENTATION_V8_PREVIOUS_COMMIT,
@@ -1023,11 +1142,11 @@ def apply_public_academic_presentation(root: Path, entries: dict, previous_repor
         if expected_pf.count(old) != 1:
             raise ValueError('Ambiguous historical PFtB public phrase')
         expected_pf = expected_pf.replace(old, new)
-    if project_file(root, 'site/pftb/index.html').read_bytes() != expected_pf:
+    if label_predecessor_bytes(root, 'site/pftb/index.html') != expected_pf:
         raise ValueError('PFtB must retain its complete bytes except the two authorized public phrases')
     from render_a01_progress import BEGIN, END
     old_a01 = project_file(root, PUBLIC_PRESENTATION_SNAPSHOT+'/site/'+TOPIC_PATH).read_bytes().decode('utf-8')
-    now_a01 = project_file(root, 'site/'+TOPIC_PATH).read_bytes().decode('utf-8')
+    now_a01 = label_predecessor_bytes(root, 'site/'+TOPIC_PATH).decode('utf-8')
     for source in (old_a01, now_a01):
         if source.count(BEGIN) != 1 or source.count(END) != 1:
             raise ValueError('A01 requires its complete scientific progress block')
@@ -1035,7 +1154,9 @@ def apply_public_academic_presentation(root: Path, entries: dict, previous_repor
         raise ValueError('Public wording changes must retain the exact A01 scientific progress block')
     for snapshot in snapshots:
         name = snapshot['path']
-        if embedded_json_records(a01_history_predecessor_member(root, name).read_text('utf-8')) != embedded_json_records(
+        source = (a01_history_predecessor_member(root, name).read_bytes() if name in A01_HISTORY_ALLOWED_PATHS
+                  else label_predecessor_bytes(root, 'site/'+name))
+        if embedded_json_records(source.decode('utf-8')) != embedded_json_records(
                 project_file(root, snapshot['snapshot_path']).read_text('utf-8')):
             raise ValueError('Public wording changes must retain embedded JSON values: '+name)
     changes = data.get('changes'); routes = {name for name in entries if name.endswith('.html')}
@@ -1058,8 +1179,8 @@ def apply_public_academic_presentation(root: Path, entries: dict, previous_repor
         raise ValueError('The public presentation allowlist must name exactly its edited pages')
     for name, expected in entries.items():
         if name not in seen:
-            current = project_file(root, 'site/'+name)
-            if digest(current) != expected['sha256'] or current.stat().st_size != expected['bytes']:
+            current = label_predecessor_binding(root, 'site/'+name)
+            if current['sha256'] != expected['sha256'] or current['bytes'] != expected['bytes']:
                 raise ValueError('Public presentation changed an unlisted website member: '+name)
     report = {'path': PRESENTATION_V8_PATH, 'sha256': digest(path), 'presentation_id': PRESENTATION_V8_ID,
         'publication_kind': required['publication_kind'], 'changed_paths': sorted(seen),
@@ -1083,7 +1204,7 @@ def a01_history_snapshot_bindings(root: Path, entries: dict) -> list[dict]:
 
 def a01_first_report_predecessor_bytes(root: Path, name: str) -> bytes:
     """Reconstruct v9 using one saved marker; reject every outside-marker edit."""
-    current = project_file(root, 'site/'+name).read_bytes()
+    current = label_predecessor_bytes(root, 'site/'+name)
     if not (root/PRESENTATION_V10_PATH).exists() or name not in A01_FIRST_REPORT_MARKERS:
         return current
     declaration = project_file(root, PRESENTATION_V9_PATH)
@@ -1156,7 +1277,7 @@ def apply_a01_historical_achievement(root: Path, entries: dict, previous_report:
         raise ValueError('A01 historical content requires its separate A01 source record')
     from render_a01_progress import BEGIN, END
     previous = a01_history_predecessor_member(root, TOPIC_PATH).read_bytes().decode('utf-8')
-    current = project_file(root, 'site/'+TOPIC_PATH).read_bytes().decode('utf-8')
+    current = label_predecessor_bytes(root, 'site/'+TOPIC_PATH).decode('utf-8')
     for source in (previous, current):
         if source.count(BEGIN) != 1 or source.count(END) != 1 or source.index(END) < source.index(BEGIN):
             raise ValueError('A01 history must preserve its unambiguous complete scientific progress block')
@@ -1228,9 +1349,7 @@ def apply_a01_first_report(root: Path, entries: dict, previous_report: dict) -> 
     if digest(project_file(root, PRESENTATION_V9_PATH)) != PRESENTATION_V9_SHA256:
         raise ValueError('The preceding A01 historical presentation v9 is immutable')
     path = project_file(root, PRESENTATION_V10_PATH); data = read_json(path)
-    documents = [{'path': name, 'sha256': digest(project_file(root, name)),
-                  'bytes': project_file(root, name).stat().st_size}
-                 for name in A01_FIRST_REPORT_DOCUMENTS]
+    documents = [label_predecessor_binding(root, name) for name in A01_FIRST_REPORT_DOCUMENTS]
     required = {'schema_version': '10.0', 'presentation_id': PRESENTATION_V10_ID,
         'publication_kind': 'a01_first_report_primary_reading',
         'previous_presentation_commit': PRESENTATION_V10_PREVIOUS_COMMIT,
@@ -1255,7 +1374,7 @@ def apply_a01_first_report(root: Path, entries: dict, previous_report: dict) -> 
         raise ValueError('First-report reading requires its separate v2 source evidence')
     for name in A01_FIRST_REPORT_MARKERS:
         previous = embedded_json_records(a01_first_report_predecessor_bytes(root, name).decode('utf-8'))
-        current = embedded_json_records(project_file(root, 'site/'+name).read_text('utf-8'))
+        current = embedded_json_records(label_predecessor_bytes(root, 'site/'+name).decode('utf-8'))
         prior_other = [row for row in previous if row[0] != 'a01-historical-achievements']
         current_other = [row for row in current if row[0] != 'a01-historical-achievements']
         new_source = [row for row in current if row[0] == 'a01-historical-achievements']
@@ -1282,13 +1401,113 @@ def apply_a01_first_report(root: Path, entries: dict, previous_report: dict) -> 
             raise ValueError('Incomplete first-report marker presentation: '+name)
         updated[name] = {**old, 'sha256': value, 'bytes': size, 'presentation_id': PRESENTATION_V10_ID}
     for name, expected in updated.items():
-        member = project_file(root, 'site/'+name)
-        if digest(member) != expected['sha256'] or member.stat().st_size != expected['bytes']:
+        member = label_predecessor_binding(root, 'site/'+name)
+        if member['sha256'] != expected['sha256'] or member['bytes'] != expected['bytes']:
             raise ValueError('First-report website differs from its bounded identity: '+name)
     report = {'path': PRESENTATION_V10_PATH, 'sha256': digest(path), 'presentation_id': PRESENTATION_V10_ID,
         'publication_kind': required['publication_kind'], 'changed_paths': sorted(seen),
         'previous_presentation_commit': PRESENTATION_V10_PREVIOUS_COMMIT,
         'historical_sources_path': A01_FIRST_REPORT_CONTENT, 'marker_only_html_changes': True,
+        **{key: required[key] for key in ('scientific_review_status', 'scientific_data_unchanged',
+            'historical_achievement_independent_of_AI_review', 'release_eligible')}}
+    return apply_public_line_labels(root, updated,
+        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})
+
+
+def apply_public_line_labels(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:
+    """Apply one deterministic label projection after replaying every old promise.
+
+    The text patches reconstruct exact v10 pages, not a refreshed baseline.
+    Current pages must additionally equal the shared names-only projection.
+    """
+    if not (root/PRESENTATION_V11_PATH).exists():
+        return entries, previous_report
+    if digest(project_file(root, PRESENTATION_V10_PATH)) != PRESENTATION_V10_SHA256:
+        raise ValueError('The preceding first-report presentation v10 is immutable')
+    from public_line_labels import project_html, project_markdown
+    path = project_file(root, PRESENTATION_V11_PATH); data = read_json(path)
+    if not isinstance(data, dict):
+        raise ValueError('Public-label presentation must be a JSON object')
+    routes = sorted(name for name in entries if name.endswith('.html') and name != 'pftb/index.html')
+    documents = [{'path': name, 'sha256': digest(project_file(root, name)),
+                  'bytes': project_file(root, name).stat().st_size} for name in PUBLIC_LABEL_DOCUMENTS]
+    required = {'schema_version': '11.0', 'presentation_id': PRESENTATION_V11_ID,
+        'publication_kind': 'platform_public_line_labels',
+        'previous_presentation_commit': PRESENTATION_V11_PREVIOUS_COMMIT,
+        'previous_presentation': {'path': PRESENTATION_V10_PATH, 'sha256': PRESENTATION_V10_SHA256},
+        'original_baseline_sha256': BASELINE_SHA256, 'original_archive_sha256': ARCHIVE_SHA256,
+        'allowed_html_paths': routes, 'editorial_documents': documents,
+        'label_projection': {'module': 'scripts/public_line_labels.py',
+                             'mapping': 'content/achievement-labels.v1.json'},
+        'reconstruction_kind': 'deduplicated_exact_utf8_text_edits',
+        'scientific_review_status': 'review_required', 'release_eligible': False,
+        'scientific_data_unchanged': True, 'M0_resumed': False,
+        'historical_achievement_independent_of_AI_review': True}
+    if (len(routes) != 14 or any(data.get(key) != value for key, value in required.items())
+            or any(data.get(key) is not required[key] for key in ('release_eligible',
+                'scientific_data_unchanged', 'M0_resumed', 'historical_achievement_independent_of_AI_review'))
+            or any(type(data.get(key)) is not int or data[key] != 0
+                   for key in ('new_quantum_calls', 'new_model_API_calls'))):
+        raise ValueError('Unsupported names-only public line-label presentation v11')
+    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')
+    allowed_files = {'site/'+name for name in routes} | set(PUBLIC_LABEL_PREDECESSOR_DOCUMENTS)
+    if (not isinstance(files, list) or not isinstance(pool, list) or not pool
+            or any(not isinstance(row, dict) or row.get('path') not in allowed_files for row in files)
+            or len({row['path'] for row in files}) != len(files)
+            or {row['path'] for row in files if row['path'].startswith('site/')} != {'site/'+name for name in routes}):
+        raise ValueError('Public labels must enumerate only their exact HTML/prose/renderer text patches')
+    if any(not isinstance(row.get('edits'), list) or not row['edits'] or any(
+            not isinstance(edit, dict) or type(edit.get('replacement')) is not int
+            for edit in row['edits']) for row in files):
+        raise ValueError('Public-label text-patch references must be nonempty integer-indexed edits')
+    used = {edit['replacement'] for row in files for edit in row['edits']}
+    if used != set(range(len(pool))):
+        raise ValueError('Public-label replacement pool must contain exactly its used text segments')
+    # These fixed identities include prose not otherwise bound in the old chain.
+    for name, (old_sha, old_size) in PUBLIC_LABEL_PREDECESSOR_DOCUMENTS.items():
+        old = label_predecessor_bytes(root, name)
+        if hashlib.sha256(old).hexdigest() != old_sha or len(old) != old_size:
+            raise ValueError('Public-label prose/renderer differs from its fixed be48dfc predecessor: '+name)
+        if name in PUBLIC_LABEL_MARKDOWN and project_markdown(old.decode('utf-8')).encode('utf-8') != project_file(root, name).read_bytes():
+            raise ValueError('Public prose must equal the shared label projection exactly: '+name)
+    changes = data.get('changes')
+    if (not isinstance(changes, list) or any(not isinstance(row, dict) for row in changes)
+            or [row.get('path') for row in changes] != routes):
+        raise ValueError('Public-label changes must enumerate exactly fourteen original HTML routes')
+    updated = {name: dict(value) for name, value in entries.items()}
+    json_scripts = re.compile(r'<script\b[^>]*\btype\s*=\s*[\"\']application/(?:ld\+)?json[\"\'][^>]*>.*?</script\s*>', re.I | re.S)
+    from render_a01_progress import BEGIN, END
+    for item in changes:
+        name = item['path']; old = entries[name]
+        before = label_predecessor_bytes(root, 'site/'+name)
+        after = project_file(root, 'site/'+name).read_bytes()
+        source = before.decode('utf-8'); current = after.decode('utf-8')
+        if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']
+                or hashlib.sha256(before).hexdigest() != old['sha256'] or len(before) != old['bytes']
+                or item.get('new_sha256') != hashlib.sha256(after).hexdigest() or item.get('new_bytes') != len(after)
+                or before == after or not isinstance(item.get('reason'), str) or not item['reason'].strip()):
+            raise ValueError('Public-label HTML differs from its complete old/new byte identities: '+name)
+        if project_html(source, name) != current:
+            raise ValueError('HTML differs from the exact names-only public projection: '+name)
+        if json_scripts.findall(source) != json_scripts.findall(current) or embedded_json_records(source) != embedded_json_records(current):
+            raise ValueError('Public line labels must preserve every complete embedded JSON record: '+name)
+        if name == TOPIC_PATH:
+            for value in (source, current):
+                if value.count(BEGIN) != 1 or value.count(END) != 1 or value.index(END) < value.index(BEGIN):
+                    raise ValueError('Public labels require the unambiguous complete frozen A01 scientific block')
+            if source[source.index(BEGIN):source.index(END)+len(END)] != current[current.index(BEGIN):current.index(END)+len(END)]:
+                raise ValueError('Public labels cannot alter any A01 scientific-progress byte')
+        updated[name] = {**old, 'sha256': item['new_sha256'], 'bytes': item['new_bytes'],
+                         'presentation_id': PRESENTATION_V11_ID}
+    # Includes both original JSON files and the entire unchanged PFtB archive.
+    for name, expected in updated.items():
+        member = project_file(root, 'site/'+name)
+        if digest(member) != expected['sha256'] or member.stat().st_size != expected['bytes']:
+            raise ValueError('Public line labels changed an unlisted or bound website byte: '+name)
+    report = {'path': PRESENTATION_V11_PATH, 'sha256': digest(path), 'presentation_id': PRESENTATION_V11_ID,
+        'publication_kind': required['publication_kind'], 'changed_paths': routes,
+        'previous_presentation_commit': PRESENTATION_V11_PREVIOUS_COMMIT,
+        'names_only_projection': True, 'exact_predecessor_reconstruction': True,
         **{key: required[key] for key in ('scientific_review_status', 'scientific_data_unchanged',
             'historical_achievement_independent_of_AI_review', 'release_eligible')}}
     return updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}

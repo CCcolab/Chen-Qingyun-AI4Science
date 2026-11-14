@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Public navigation labels; historical source data and research identifiers remain unchanged",
+  "labels": {
+    "A01": "全氟酮化学：六氟丙酮与双酚AF",
+    "A02": "含氟单体、氟橡胶与氟油",
+    "A03": "全氟叔丁基（PFtB）化学",
+    "A04": "F-53铬雾抑制剂",
+    "A05": "制冷剂与配套技术",
+    "A06": "磺酸酯、二氟卡宾与三氟甲基化",
+    "A07": "单电子转移与C–Cl活化",
+    "A08": "交叉研究与晚年拓展",
+    "A09": "学科建设与人才培养"
+  }
+}
