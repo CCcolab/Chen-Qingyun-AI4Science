@@ -32,8 +32,19 @@ PRESENTATION_V3_SHA256 = '2b290301102abd8cacb5a2d73f7393d8c4f851285a882a08df42ee
 PRESENTATION_V4_PATH = 'provenance/platform-presentation.v4.json'
 PRESENTATION_V4_ID = 'PLATFORM-NAVIGATION-20261114-v4'
 PRESENTATION_V4_PREVIOUS_COMMIT = 'c21ae7aa3c424eedce27a7131480eb82bb8461e6'
+PRESENTATION_V4_SHA256 = 'cfc0bc4d29c24a846bb76ceaf3246084d406393cc7d04ec105cad539c21e120b'
+PRESENTATION_V5_PATH = 'provenance/platform-presentation.v5.json'
+PRESENTATION_V5_ID = 'PLATFORM-HERITAGE-ENRICHMENT-20261114-v5'
+PRESENTATION_V5_PREVIOUS_COMMIT = 'a95bc602ba3529cfaeca5a51e307b9073823463e'
+PRESENTATION_V5_ALLOWED_PATHS = {'index.html', 'achievements/index.html',
+    'topics/fluoromonomers/index.html', 'topics/refrigerants/index.html',
+    'topics/perfluorosulfonates/index.html', 'topics/chen-reagent/index.html',
+    'topics/single-electron-transfer/index.html'}
 NUMBERING_PATHS = {'index.html', 'achievements/index.html'}
 HERITAGE_CONTENT_PATH = 'content/heritage-20261114.v1.json'
+HERITAGE_CONTENT_V2_PATH = 'content/heritage-20261114.v2.json'
+HERITAGE_ENRICHMENT_DOCUMENT = 'docs/HERITAGE_ENRICHMENT_20261114_zh-CN.md'
+PRESENTATION_V2_README_SNAPSHOT = 'provenance/platform-presentation-v2-documents/README.md'
 PRESENTATION_V2_DOCUMENTS = ('README.md', 'docs/PLATFORM_ROADMAP_zh-CN.md',
     HERITAGE_CONTENT_PATH, 'docs/HERITAGE_INVENTORY_20261114_zh-CN.md')
 PRESENTATION_V1_DOCUMENT_SNAPSHOTS = {
@@ -142,14 +153,39 @@ def presentation_v1_snapshot_bindings(root: Path) -> list[dict]:
 
 
 def presentation_v2_document_bindings(root: Path) -> list[dict]:
-    return [{'path': name, 'sha256': digest(project_file(root, name)),
-             'bytes': project_file(root, name).stat().st_size}
-            for name in PRESENTATION_V2_DOCUMENTS]
+    historical_readme = (historical_readme_snapshot_binding(root)
+                         if (root/PRESENTATION_V5_PATH).exists() else None)
+    bindings = []
+    for name in PRESENTATION_V2_DOCUMENTS:
+        if name == 'README.md' and historical_readme is not None:
+            bindings.append({'path': name, 'sha256': historical_readme['sha256'],
+                             'bytes': historical_readme['bytes']})
+        else:
+            path = project_file(root, name)
+            bindings.append({'path': name, 'sha256': digest(path), 'bytes': path.stat().st_size})
+    return bindings
 
 
-def heritage_content_binding(root: Path) -> dict:
+def historical_readme_snapshot_binding(root: Path) -> dict:
+    """Verify the v2 README snapshot against its already fixed promise."""
+    declaration = project_file(root, PRESENTATION_V2_PATH)
+    if digest(declaration) != PRESENTATION_V2_SHA256:
+        raise ValueError('The historical content presentation v2 is immutable')
+    documents = read_json(declaration).get('editorial_documents')
+    matches = [row for row in documents if row.get('path') == 'README.md'] if isinstance(documents, list) else []
+    if len(matches) != 1:
+        raise ValueError('The frozen v2 declaration must identify one README binding')
+    expected = matches[0]
+    snapshot = project_file(root, PRESENTATION_V2_README_SNAPSHOT)
+    if digest(snapshot) != expected['sha256'] or snapshot.stat().st_size != expected['bytes']:
+        raise ValueError('The historical v2 README snapshot differs from its fixed bytes')
+    return {'original_path': 'README.md', 'snapshot_path': PRESENTATION_V2_README_SNAPSHOT,
+            'sha256': expected['sha256'], 'bytes': expected['bytes']}
+
+
+def heritage_content_binding(root: Path, content_path: str = HERITAGE_CONTENT_PATH) -> dict:
     """Bind the small historical inventory shape; do not certify its claims."""
-    path = project_file(root, HERITAGE_CONTENT_PATH)
+    path = project_file(root, content_path)
     data = read_json(path)
     sources, lines = data.get('sources'), data.get('lines')
     if not isinstance(sources, list) or not sources or not all(isinstance(row, dict) for row in sources):
@@ -170,7 +206,7 @@ def heritage_content_binding(root: Path) -> dict:
             or not isinstance(data.get('stories'), list)
             or not isinstance(data.get('source_gaps'), list)):
         raise ValueError('Heritage inventory requires biography, stories and source_gaps records')
-    return {'path': HERITAGE_CONTENT_PATH, 'sha256': digest(path), 'bytes': path.stat().st_size,
+    return {'path': content_path, 'sha256': digest(path), 'bytes': path.stat().st_size,
         'content_classification': 'historical_heritage_materials',
         'supplemental_source_namespace': 'HERITAGE-S', 'supplemental_source_ids': ids,
         'stable_line_ids': line_ids,
@@ -276,6 +312,8 @@ def apply_presentation_v1(root: Path, entries: dict, *, chain: list,
 
 def apply_presentation_overlay(root: Path, entries: dict, *, chain: list) -> tuple[dict, dict | None]:
     """Apply v1, then this bounded historical-content successor if present."""
+    if (root/PRESENTATION_V5_PATH).exists() and not (root/PRESENTATION_V4_PATH).exists():
+        raise ValueError('Historical enrichment v5 requires its fixed v4 predecessor')
     successor_present = (root/PRESENTATION_V2_PATH).exists()
     if (root/PRESENTATION_V3_PATH).exists() and not successor_present:
         raise ValueError('Numbering correction v3 requires the historical content v2 predecessor')
@@ -441,6 +479,8 @@ def apply_numbering_correction(root: Path, entries: dict, previous_report: dict)
 def apply_navigation_revision(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:
     """Apply a bounded editorial revision; preserve the original PFtB and data."""
     if not (root/PRESENTATION_V4_PATH).exists():
+        if (root/PRESENTATION_V5_PATH).exists():
+            raise ValueError('Historical enrichment v5 requires its fixed v4 predecessor')
         return entries, previous_report
     if digest(project_file(root, PRESENTATION_V3_PATH)) != PRESENTATION_V3_SHA256:
         raise ValueError('The preceding navigation presentation v3 is immutable')
@@ -496,6 +536,83 @@ def apply_navigation_revision(root: Path, entries: dict, previous_report: dict) 
     report = {'path': PRESENTATION_V4_PATH, 'sha256': digest(path),
         'presentation_id': PRESENTATION_V4_ID, 'publication_kind': 'platform_navigation_consistency',
         'changed_paths': sorted(seen), 'previous_presentation_commit': PRESENTATION_V4_PREVIOUS_COMMIT,
+        'scientific_data_unchanged': True, 'scientific_review_status': 'review_required',
+        'release_eligible': False}
+    return apply_heritage_enrichment(root, updated,
+        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})
+
+
+def apply_heritage_enrichment(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:
+    """Bind new sourced history without replacing the preceding collection."""
+    if not (root/PRESENTATION_V5_PATH).exists():
+        return entries, previous_report
+    if digest(project_file(root, PRESENTATION_V4_PATH)) != PRESENTATION_V4_SHA256:
+        raise ValueError('The preceding historical navigation presentation v4 is immutable')
+    path = project_file(root, PRESENTATION_V5_PATH)
+    data = read_json(path)
+    if (data.get('schema_version') != '5.0'
+            or data.get('presentation_id') != PRESENTATION_V5_ID
+            or data.get('publication_kind') != 'platform_historical_enrichment'
+            or data.get('scientific_review_status') != 'review_required'
+            or data.get('release_eligible') is not False
+            or data.get('scientific_data_unchanged') is not True
+            or type(data.get('new_quantum_calls')) is not int or data['new_quantum_calls'] != 0
+            or type(data.get('new_model_API_calls')) is not int or data['new_model_API_calls'] != 0
+            or data.get('M0_resumed') is not False
+            or data.get('original_baseline_sha256') != BASELINE_SHA256
+            or data.get('original_archive_sha256') != ARCHIVE_SHA256
+            or data.get('previous_presentation_commit') != PRESENTATION_V5_PREVIOUS_COMMIT
+            or data.get('previous_presentation') != {'path': PRESENTATION_V4_PATH,
+                                                    'sha256': PRESENTATION_V4_SHA256}):
+        raise ValueError('Unsupported historical enrichment v5 contract')
+    allowed = PRESENTATION_V5_ALLOWED_PATHS
+    if not allowed <= entries.keys() or data.get('allowed_html_paths') != sorted(allowed):
+        raise ValueError('Historical enrichment must stay within its seven existing HTML routes')
+    # All website members outside this seven-page edit remain exact, including
+    # the complete PFtB page, source JSON, directory and A01 scientific page.
+    protected = {name: {'sha256': value['sha256'], 'bytes': value['bytes']}
+                 for name, value in entries.items() if name not in allowed}
+    if data.get('protected_website_members') != protected:
+        raise ValueError('Historical enrichment changed a protected website binding')
+    for name, expected in protected.items():
+        current = project_file(root, 'site/'+name)
+        if digest(current) != expected['sha256'] or current.stat().st_size != expected['bytes']:
+            raise ValueError('Historical enrichment changed protected website bytes: '+name)
+    # v2's existing document and content checks continue to verify the first
+    # collection and its report; v5 adds separate successor files only.
+    if data.get('previous_historical_content') != heritage_content_binding(root):
+        raise ValueError('The preceding historical content collection must remain unchanged')
+    if data.get('historical_content') != heritage_content_binding(root, HERITAGE_CONTENT_V2_PATH):
+        raise ValueError('The new historical collection differs from its v5 binding')
+    if data.get('historical_readme_snapshot') != historical_readme_snapshot_binding(root):
+        raise ValueError('The historical README snapshot differs from its v5 binding')
+    documents = [{'path': name, 'sha256': digest(project_file(root, name)),
+                  'bytes': project_file(root, name).stat().st_size}
+                 for name in ('README.md', HERITAGE_ENRICHMENT_DOCUMENT)]
+    if data.get('editorial_documents') != documents:
+        raise ValueError('The historical enrichment report differs from its v5 binding')
+    changes = data.get('changes')
+    if not isinstance(changes, list) or not 1 <= len(changes) <= len(allowed):
+        raise ValueError('Historical enrichment must enumerate its edited existing HTML pages')
+    updated, seen = {name: dict(value) for name, value in entries.items()}, set()
+    for item in changes:
+        name = item.get('path')
+        if name not in allowed or name in seen:
+            raise ValueError('Unauthorized or duplicate historical enrichment path: '+str(name))
+        seen.add(name)
+        old = entries[name]
+        if item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']:
+            raise ValueError('Historical enrichment must bind its actual v4 predecessor: '+name)
+        value, size = item.get('new_sha256'), item.get('new_bytes')
+        if (not isinstance(value, str) or not SHA.fullmatch(value) or value == old['sha256']
+                or not isinstance(size, int) or isinstance(size, bool) or size <= 0
+                or not isinstance(item.get('reason'), str) or not item['reason'].strip()):
+            raise ValueError('Incomplete historical enrichment change: '+name)
+        updated[name] = {**old, 'sha256': value, 'bytes': size, 'presentation_id': PRESENTATION_V5_ID}
+    report = {'path': PRESENTATION_V5_PATH, 'sha256': digest(path),
+        'presentation_id': PRESENTATION_V5_ID, 'publication_kind': 'platform_historical_enrichment',
+        'changed_paths': sorted(seen), 'previous_presentation_commit': PRESENTATION_V5_PREVIOUS_COMMIT,
+        'historical_content_path': HERITAGE_CONTENT_V2_PATH,
         'scientific_data_unchanged': True, 'scientific_review_status': 'review_required',
         'release_eligible': False}
     return updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}

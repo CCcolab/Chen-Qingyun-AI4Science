@@ -1,0 +1,223 @@
+{
+  "schema_version": "5.0",
+  "presentation_id": "PLATFORM-HERITAGE-ENRICHMENT-20261114-v5",
+  "created_at_utc": "2026-11-14T02:46:41.826633+00:00",
+  "publication_kind": "platform_historical_enrichment",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "new_quantum_calls": 0,
+  "new_model_API_calls": 0,
+  "M0_resumed": false,
+  "authorization": "User task dated 2026-11-14: enrich weaker historical achievement lines from the biography and institutional public sources; add sourced pioneering achievements, collaboration and mentoring stories, identify unresolved evidence, keep historical achievement separate from new AI research and synchronize GitHub and website without resuming M0",
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "previous_presentation_commit": "a95bc602ba3529cfaeca5a51e307b9073823463e",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v4.json",
+    "sha256": "cfc0bc4d29c24a846bb76ceaf3246084d406393cc7d04ec105cad539c21e120b"
+  },
+  "allowed_html_paths": [
+    "achievements/index.html",
+    "index.html",
+    "topics/chen-reagent/index.html",
+    "topics/fluoromonomers/index.html",
+    "topics/perfluorosulfonates/index.html",
+    "topics/refrigerants/index.html",
+    "topics/single-electron-transfer/index.html"
+  ],
+  "protected_website_members": {
+    "pftb/index.html": {
+      "sha256": "0d4396b85f8cfd772edcf8fe9bc192d845268399e1ed3834e1d83562639ba372",
+      "bytes": 97584
+    },
+    "topics/f53/index.html": {
+      "sha256": "a6349eb302e88d3176b086f83e9f1b62c008e8616f5f034365a4274756addeab",
+      "bytes": 8111
+    },
+    "topics/fluoroporphyrins/index.html": {
+      "sha256": "4e5d37c031fc49224d5147a83a1a665119f2cbb4ac1456613f7411c7568364d3",
+      "bytes": 5944
+    },
+    "topics/early-fluoroketones/index.html": {
+      "sha256": "f40e31b9be7439c502854ad2b75ae6cf26d2d894e36cbb68b6d5d29aef0c0d11",
+      "bytes": 182585
+    },
+    "topics/fluorinated-small-rings/index.html": {
+      "sha256": "abe1d15c5aedfe81531fc6b178b5e2ee98d1a598325ef2ffeeb3cff4b496f2f3",
+      "bytes": 5858
+    },
+    "topics/deoxyfluorination/index.html": {
+      "sha256": "6a448d3a052040e83fb2bb8b9497a75ed22151aee4c50d5456755c1320b63fb8",
+      "bytes": 5476
+    },
+    "topics/sulfonyl-fluoride/index.html": {
+      "sha256": "d091dc39d740c10a0fb65a85367b34ebe1a1a2fcb749905ea5cbb987778d40df",
+      "bytes": 4969
+    },
+    "topics/index.html": {
+      "sha256": "cfda9c0892c48082f8ec945d2b65bf46fdf419f2907653cfd91454e3c7fa09e0",
+      "bytes": 4970
+    },
+    "data/public-sources.json": {
+      "sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+      "bytes": 33608
+    },
+    "data/achievement-lines.json": {
+      "sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+      "bytes": 39768
+    },
+    "README.txt": {
+      "sha256": "6e15068b7240ae47d633df3f777e81fbb9e46146ee5f4ab70011f09119b6bbc9",
+      "bytes": 336
+    },
+    "ROUTES.txt": {
+      "sha256": "a734c356877d4534285ab7d71b9fe0f7a17abbced4de3c52f8e60d335301e418",
+      "bytes": 949
+    },
+    "QA.txt": {
+      "sha256": "a60b5f382b31689fa17e2518b7079ef0660674fb62bddbbf564c7b74dfe51067",
+      "bytes": 290
+    },
+    "IONIC-ENTRY-RETEST.txt": {
+      "sha256": "3462b056891a27c335cc2620deb87b245b6c9aea3bdaec607c8a14beca69fe9d",
+      "bytes": 741
+    }
+  },
+  "previous_historical_content": {
+    "path": "content/heritage-20261114.v1.json",
+    "sha256": "ba2aac21a10ed38ed6a4d796c904fa6fb539afd7f2fa370fc91b4274fb54d135",
+    "bytes": 35989,
+    "content_classification": "historical_heritage_materials",
+    "supplemental_source_namespace": "HERITAGE-S",
+    "supplemental_source_ids": [
+      "HERITAGE-S01",
+      "HERITAGE-S02",
+      "HERITAGE-S03",
+      "HERITAGE-S04"
+    ],
+    "stable_line_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A04",
+      "A05",
+      "A06",
+      "A07",
+      "A08",
+      "A09"
+    ],
+    "validation_scope": "File identity, namespace and basic inventory structure only; historical claims and citation quality require their separate review"
+  },
+  "historical_content": {
+    "path": "content/heritage-20261114.v2.json",
+    "sha256": "981876c28a6c863874a8bee8840477fcc04e0f117608d06a4a076b2d0d645350",
+    "bytes": 72392,
+    "content_classification": "historical_heritage_materials",
+    "supplemental_source_namespace": "HERITAGE-S",
+    "supplemental_source_ids": [
+      "HERITAGE-S01",
+      "HERITAGE-S02",
+      "HERITAGE-S03",
+      "HERITAGE-S04",
+      "HERITAGE-S05",
+      "HERITAGE-S06",
+      "HERITAGE-S07",
+      "HERITAGE-S08",
+      "HERITAGE-S09",
+      "HERITAGE-S10",
+      "HERITAGE-S11"
+    ],
+    "stable_line_ids": [
+      "A01",
+      "A02",
+      "A03",
+      "A04",
+      "A05",
+      "A06",
+      "A07",
+      "A08",
+      "A09"
+    ],
+    "validation_scope": "File identity, namespace and basic inventory structure only; historical claims and citation quality require their separate review"
+  },
+  "historical_readme_snapshot": {
+    "original_path": "README.md",
+    "snapshot_path": "provenance/platform-presentation-v2-documents/README.md",
+    "sha256": "c7f7737d8b7bc431843e28490bf3bcb5c2548ddb3a78c0916c95fafcffbe207b",
+    "bytes": 5234
+  },
+  "historical_snapshot_origin": "Exact README bytes retained from the fixed preceding a95bc602ba3529cfaeca5a51e307b9073823463e commit, checked against the immutable v2 declaration; old collection and inventory report remain at their original paths",
+  "editorial_documents": [
+    {
+      "path": "README.md",
+      "sha256": "8ce55233163a68f912817072feb81c7b9f313f6d6d2103a9e7157975763f35b2",
+      "bytes": 6057
+    },
+    {
+      "path": "docs/HERITAGE_ENRICHMENT_20261114_zh-CN.md",
+      "sha256": "5451cca7e591a98cbe4dc88330a70ad50e10c97dba1fa56720db9b8d15f179f4",
+      "bytes": 69129
+    }
+  ],
+  "changes": [
+    {
+      "path": "achievements/index.html",
+      "old_sha256": "b976c5316707c16961946892661144048b64c889ae8d21018d34250ecbf9b65c",
+      "old_bytes": 53954,
+      "new_sha256": "e5f562843b3c4d603a133355582ca7a27f244552e74a08e5619fe4e854803007",
+      "new_bytes": 90871,
+      "reason": "Enrich the nine-line historical inventory, specific collaborators and source gaps, retaining the first collection as a separate immutable edition"
+    },
+    {
+      "path": "index.html",
+      "old_sha256": "2b66df2d646f75c7efdfba659e45a600a2437cdd3a3a78f0184f021c4e5bd160",
+      "old_bytes": 202562,
+      "new_sha256": "88af4b54807c3aaa51802999ff959c5dc9ec340a86f658c732e5233140df1d56",
+      "new_bytes": 250303,
+      "reason": "Add newly sourced historical achievement, collaboration and mentoring stories, keeping platform AI research in its separate supporting role"
+    },
+    {
+      "path": "topics/chen-reagent/index.html",
+      "old_sha256": "406d3a52f0ec0b2c4bb6ab4e5b0a187caa877c4edb813e720f584fc15a171ac6",
+      "old_bytes": 10165,
+      "new_sha256": "8ef8f58c4f3ca2b981288e2f0c91d608d798ee66975388f8359af96fe8861593",
+      "new_bytes": 13568,
+      "reason": "Add source-located reagent-development cooperation and distinguish method submitters, checkers and remaining source gaps within A06"
+    },
+    {
+      "path": "topics/fluoromonomers/index.html",
+      "old_sha256": "4b958f831002d80338df67968b01dba9a1a274adbf94493c2baebef22603636e",
+      "old_bytes": 6416,
+      "new_sha256": "baaf7d82224cea22e9da1205e193c24ab6c44b97f0e93da2748224251d4ce836",
+      "new_bytes": 10457,
+      "reason": "Add source-located material-research collaboration and historical evidence gaps within A02"
+    },
+    {
+      "path": "topics/perfluorosulfonates/index.html",
+      "old_sha256": "964c0d205f8d831e689f2e3e4cc88cd0a0abbe0695d11976a69aafa0971b391a",
+      "old_bytes": 5238,
+      "new_sha256": "e660092c3fcf6458092179e94144b0d21306a02303b2eb306b6fdcf02cc7f5f3",
+      "new_bytes": 8765,
+      "reason": "Add source-located sulfonate research, collaborators and unverified original-document gaps within A06"
+    },
+    {
+      "path": "topics/refrigerants/index.html",
+      "old_sha256": "dfb8d4b1e9e596fb21722dec091a006da064f20e85e6e55593618c07902415eb",
+      "old_bytes": 6193,
+      "new_sha256": "1e032070347a39624fa6639d1bd3e7265709436922a12f358fbe497f1cc9abae",
+      "new_bytes": 10567,
+      "reason": "Add source-located refrigeration collaboration and separate engineering records and unresolved terminology within A05"
+    },
+    {
+      "path": "topics/single-electron-transfer/index.html",
+      "old_sha256": "973d48b98b28d43ee062e2b5798f172f882a0e4225d63f0d25f78a0fb34efa8e",
+      "old_bytes": 5805,
+      "new_sha256": "c3b6c7aa0124d50510abe7303f64e70e36dc6abd36788164c52d91f719538c01",
+      "new_bytes": 10271,
+      "reason": "Add source-located team contributions, training, distinct C-Cl reaction records and patent-catalog limits within A07"
+    }
+  ],
+  "boundary": "Historical enrichment retains each source, coauthor and unresolved evidence item. Scientific-review flags continue to describe the separate platform research and do not make historical contributions conditional on AI calculations. No new experiment, quantum result, model API service, mechanistic validation, priority judgment or current industrial or patent-legal-state certification is claimed.",
+  "publish_allowlist": "The existing 15 HTML routes and two original JSON files plus the empty .nojekyll marker only. New collection data and report are repository documents embedded into existing HTML; no new Pages JSON route, source PDF, extracted full text or page images are published."
+}

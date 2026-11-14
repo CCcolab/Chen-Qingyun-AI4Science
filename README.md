@@ -4,7 +4,13 @@
 
 [访问学术成就网站](https://cccolab.github.io/Chen-Qingyun-AI4Science/) · [研究历程](https://cccolab.github.io/Chen-Qingyun-AI4Science/#timeline) · [人物与传承](https://cccolab.github.io/Chen-Qingyun-AI4Science/#people) · [资料与依据](https://cccolab.github.io/Chen-Qingyun-AI4Science/#evidence)
 
-## 本轮资料更新（2026-11-14）
+## 资料补充第二版（2026-11-14）
+
+继续补充含氟材料、制冷剂配套、反应方法和学术传承中的具名贡献与合作。资料集现有13个生平节点、16则故事（本轮新增8则）和九条成果线的15项“成果与合作”说明，并把五个资料较薄的专题补充与其原文关联。每项标明出处、资料性质及待核原件；历史成果与平台新增AI研究分开，M0继续暂停。
+
+[第二版资料与待核事项](docs/HERITAGE_ENRICHMENT_20261114_zh-CN.md) · [全部故事与出处](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#heritage-stories-all) · [九条成果线](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#heritage-inventory) · [第二版结构化资料](content/heritage-20261114.v2.json)
+
+## 首版资料盘点（2026-11-14）
 
 按指定的《陈庆云传》重新分章核读，整理了13个生平节点、8则有页注的成长／合作／育人故事，以及九条成果线的现有材料、具体缺口和优先待补原件。原始论文、机构回顾、当事人访谈的传记转引分别标明；原PDF与完整抽取文本留在本机。
 

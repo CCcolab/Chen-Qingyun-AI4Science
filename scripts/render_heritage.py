@@ -1,8 +1,9 @@
 """Render the bounded 2026-11-14 historical-heritage content and inventory.
 
-Default: check existing marker blocks and the generated inventory document.
---write: replace only the five existing marker blocks and that document.
-No marker insertion, scientific-data change, network, model API or QM backend.
+Default: check source-bound marker blocks and the enrichment document.
+--write: replace five existing blocks, insert or update the five authorized
+topic-context blocks, and generate the new document. The v1 collection and
+document remain unchanged. No scientific-data change, network or QM backend.
 """
 from __future__ import annotations
 
@@ -17,11 +18,20 @@ import re
 from urllib.parse import quote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
-CONTENT = 'content/heritage-20261114.v1.json'
-DOCUMENT = 'docs/HERITAGE_INVENTORY_20261114_zh-CN.md'
+CONTENT = 'content/heritage-20261114.v2.json'
+DOCUMENT = 'docs/HERITAGE_ENRICHMENT_20261114_zh-CN.md'
+PREVIOUS_CONTENT = 'content/heritage-20261114.v1.json'
+PREVIOUS_SHA256 = 'ba2aac21a10ed38ed6a4d796c904fa6fb539afd7f2fa370fc91b4274fb54d135'
 PAGE_MARKERS = {
     'index.html': ('HERITAGE_LIFE', 'HERITAGE_STORIES', 'HERITAGE_SOURCES'),
     'achievements/index.html': ('HERITAGE_INVENTORY', 'HERITAGE_STORIES_ALL'),
+}
+CONTEXT_PATHS = {
+    'topics/fluoromonomers/index.html': 'A02',
+    'topics/refrigerants/index.html': 'A05',
+    'topics/perfluorosulfonates/index.html': 'A06',
+    'topics/chen-reagent/index.html': 'A06',
+    'topics/single-electron-transfer/index.html': 'A07',
 }
 LINE_IDS = {'A'+str(index).zfill(2) for index in range(1, 10)}
 SOURCE_ID = re.compile(r'HERITAGE-S[0-9]{2,}')
@@ -82,6 +92,9 @@ def validate_content(data: dict, legacy_sources: dict | list) -> dict:
     """Return a resolved source index; validate shape and refs, not truth claims."""
     if not isinstance(data, dict) or data.get('schema_version') != '1.0' or data.get('date') != '2026-11-14':
         raise ValueError('Expected the fixed historical content schema/date')
+    if (data.get('edition_id') != 'CQ-HERITAGE-COLLECTION-20261114-v2'
+            or data.get('previous_edition') != {'path': PREVIOUS_CONTENT, 'sha256': PREVIOUS_SHA256}):
+        raise ValueError('The enrichment must bind the exact immutable v1 collection')
     legacy = legacy_sources.get('sources') if isinstance(legacy_sources, dict) else legacy_sources
     _records(legacy, 'legacy sources', nonempty=True)
     _unique_ids(legacy, 'legacy sources')
@@ -156,7 +169,30 @@ def validate_content(data: dict, legacy_sources: dict | list) -> dict:
             text(item.get('text'), row['line_id']+'.materials.text')
             text(item.get('status'), row['line_id']+'.materials.status')
             refs(item, row['line_id']+'.materials['+str(number)+']')
+        for number, item in enumerate(_records(row.get('achievement_notes'), row['line_id']+'.achievement_notes', nonempty=True)):
+            location = row['line_id']+'.achievement_notes['+str(number)+']'
+            for key in ('title', 'text', 'remaining_gap'):
+                text(item.get(key), location+'.'+key)
+            refs(item, location, nonempty=True)
         text_list(row.get('gaps'), row['line_id']+'.gaps', nonempty=True)
+    contexts = _records(data.get('topic_contexts'), 'topic_contexts', nonempty=True)
+    _unique_ids(contexts, 'topic_contexts', 'path')
+    if {row['path'] for row in contexts} != set(CONTEXT_PATHS):
+        raise ValueError('The enrichment must enumerate the five authorized topic-context pages')
+    by_line, by_story = {row['line_id']: row for row in lines}, {row['id']: row for row in stories}
+    for row in contexts:
+        name, number = row['path'], row.get('line_id')
+        if number != CONTEXT_PATHS[name]:
+            raise ValueError('Topic context belongs to a different achievement line: '+name)
+        indices = row.get('note_indices')
+        if (not isinstance(indices, list) or len(indices) != len(set(indices))
+                or any(not isinstance(n, int) or isinstance(n, bool) or not 0 <= n < len(by_line[number]['achievement_notes']) for n in indices)):
+            raise ValueError('Topic context requires valid unique note indices: '+name)
+        selected = text_list(row.get('story_ids'), name+'.story_ids')
+        if len(selected) != len(set(selected)) or not (indices or selected):
+            raise ValueError('Topic context requires unique selections and nonempty content: '+name)
+        if any(identifier not in by_story or number not in by_story[identifier]['line_ids'] for identifier in selected):
+            raise ValueError('Topic context selects an unknown or unrelated story: '+name)
     gaps = _records(data.get('source_gaps'), 'source_gaps')
     _unique_ids(gaps, 'source_gaps')
     for row in gaps:
@@ -173,6 +209,8 @@ def validate_content(data: dict, legacy_sources: dict | list) -> dict:
 
 def load_content(root: Path = ROOT) -> tuple[dict, dict]:
     data = json.loads((root/CONTENT).read_bytes())
+    if hashlib.sha256((root/PREVIOUS_CONTENT).read_bytes()).hexdigest() != PREVIOUS_SHA256:
+        raise ValueError('The previous historical collection bytes changed')
     legacy = json.loads((root/'site/data/public-sources.json').read_bytes())
     return data, validate_content(data, legacy)
 
@@ -196,6 +234,8 @@ def _style(identifier: str) -> str:
 .heritage-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;max-width:100%;min-width:0}
 .heritage-card{min-width:0;max-width:100%;padding:1.1rem;border:1px solid #d9e2df;border-radius:14px;background:var(--card,#fff);overflow-wrap:anywhere}
 .heritage-card h3,.heritage-card h4{margin:.15rem 0 .65rem;line-height:1.45}
+.heritage-achievement-notes h5{font-size:1em;margin:.9rem 0 .3rem;line-height:1.5}
+.heritage-achievement-notes{border-top:1px solid #d9e2df;margin-top:1rem;padding-top:.6rem}
 .heritage-card p{margin:.5rem 0;line-height:1.8}
 .heritage-card ul{padding-left:1.3rem;margin:.55rem 0}
 .heritage-card li{margin:.4rem 0;line-height:1.7}
@@ -258,16 +298,46 @@ def render_sources(data: dict, sources: dict) -> str:
 def render_inventory(data: dict, sources: dict) -> str:
     cards = []
     for row in sorted(data['lines'], key=lambda value: value['line_id']):
+        notes = '<div class="heritage-achievement-notes"><h4>成果与合作</h4>'+''.join(
+            render_achievement_note(item, sources, prefix='../index.html', heading='h5')
+            for item in row['achievement_notes'])+'</div>'
         materials = []
         for item in row['materials']:
             materials.append('<li><span class="heritage-tag">'+esc(item['status'])+'</span>'+esc(item['text'])+_locator(item, sources, prefix='../index.html')+'</li>')
         gaps = ''.join('<li>'+esc(value)+'</li>' for value in row['gaps'])
-        cards.append('<article class="heritage-card" id="heritage-line-'+row['line_id'].lower()+'"><p class="heritage-meta">'+row['line_id']+'</p><h3>'+esc(row['title'])+'</h3><p>'+esc(row['contribution'])+'</p><details><summary>现有材料及来源定位</summary><ul>'+''.join(materials)+'</ul></details><h4>明确缺口</h4><ul>'+gaps+'</ul><p><strong>优先补齐资料：</strong>'+esc(row['next_document'])+'</p><p class="heritage-meta">AI工作状态：'+esc(row['ai_status'])+'</p></article>')
+        cards.append('<article class="heritage-card" id="heritage-line-'+row['line_id'].lower()+'"><p class="heritage-meta">'+row['line_id']+'</p><h3>'+esc(row['title'])+'</h3><p>'+esc(row['contribution'])+'</p>'+notes+'<details><summary>现有材料及来源定位</summary><ul>'+''.join(materials)+'</ul></details><h4>明确缺口</h4><ul>'+gaps+'</ul><p><strong>优先补齐资料：</strong>'+esc(row['next_document'])+'</p><p class="heritage-meta">AI工作状态：'+esc(row['ai_status'])+'</p></article>')
     return _style('heritage-achievements-style')+'\n<section id="heritage-inventory" class="wrap heritage-section"><h2>九条成果与传承线：资料盘点</h2>'+_boundary(data)+'<div class="heritage-grid">'+''.join(cards)+'</div></section>'
 
 
 def render_all_stories(data: dict, sources: dict) -> str:
     return '<section id="heritage-stories-all" class="wrap heritage-section"><h2>全部人物与合作故事</h2><p>以下为历史资料整理，各则均保留资料性质、页码或定位与尚缺原件。</p><div class="heritage-grid">'+''.join(_story_card(row, sources, prefix='../index.html') for row in data['stories'])+'</div></section>'
+
+
+def render_achievement_note(row: dict, sources: dict, *, prefix='', heading='h3') -> str:
+    if heading not in {'h3', 'h5'}:
+        raise ValueError('Unsupported achievement-note heading level')
+    return ('<'+heading+'>'+esc(row['title'])+'</'+heading+'><p>'+esc(row['text'])+'</p>'
+        +_locator(row, sources, prefix=prefix)+'<p class="heritage-meta">待核事项：'
+        +esc(row['remaining_gap'])+'</p>')
+
+
+def render_topic_context(context: dict, data: dict, sources: dict) -> str:
+    line = next(row for row in data['lines'] if row['line_id'] == context['line_id'])
+    stories = {row['id']: row for row in data['stories']}
+    cards = ['<article class="heritage-card">'+render_achievement_note(
+        line['achievement_notes'][index], sources, prefix='../../index.html')+'</article>'
+        for index in context['note_indices']]
+    related = ''
+    if context['story_ids']:
+        related = '<div class="heritage-related-stories"><h3>相关合作故事</h3><ul>'+''.join(
+            '<li><a href="../../achievements/index.html#heritage-story-'+esc(identifier.lower())+'">'
+            +esc(stories[identifier]['title'])+'</a></li>' for identifier in context['story_ids'])+'</ul></div>'
+    return (_style('heritage-context-style')+'\n<section id="heritage-context" class="heritage-section">'
+        '<h2>成果与合作的资料补充</h2><p>以下按'+esc(context['line_id'])+'成果线补充传记与公开资料中的历史记录，'
+        '保留参与者、来源定位及待核事项；平台新增AI研究另行登记。</p><div class="heritage-grid">'
+        +''.join(cards)+'</div>'+related+'<p><a href="../../achievements/index.html#heritage-line-'
+        +esc(context['line_id'].lower())+'">查看本成果线的资料盘点</a> · '
+        '<a href="../../achievements/index.html#heritage-stories-all">查看全部合作与育人故事</a></p></section>')
 
 
 def _md(value) -> str:
@@ -282,7 +352,8 @@ def _md_refs(refs: list, sources: dict) -> str:
 def render_inventory_markdown(data: dict, sources: dict) -> str:
     book = data['book']
     authors = '、'.join(book['authors']) if isinstance(book['authors'], list) else book['authors']
-    rows = ['# 陈庆云院士纪念与传承资料盘点', '', '资料日期：'+_md(data['date'])+'。本文件由历史资料数据生成，不执行计算。', '',
+    rows = ['# 陈庆云院士成果与合作资料补充', '', '资料日期：'+_md(data['date'])+'。本文件由历史资料数据生成，不执行计算。', '',
+        '本轮使用v2资料集；前版资料集与资料盘点文档保留，不覆盖历史记录。', '',
         '## 资料身份与阅读范围', '', _md(authors)+'：《'+_md(book['title'])+'》。'+_md(book['edition_note']), '',
         '本机文件：'+_md(book['file_name'])+'；SHA256 `'+book['sha256']+'`；PDF '+str(book['page_count'])+'页，正文页码映射偏移量 '+str(book['printed_page_to_pdf_offset'])+'。', '']
     rows += ['- '+_md(value) for value in book['reading_scope']]
@@ -292,7 +363,12 @@ def render_inventory_markdown(data: dict, sources: dict) -> str:
             '出处：'+_md_refs(row['source_refs'], sources)+'；定位：'+_md(row['locator'])+'。', '']
     rows += ['## 九条成果与传承线', '']
     for row in sorted(data['lines'], key=lambda value: value['line_id']):
-        rows += ['### '+row['line_id']+' · '+_md(row['title']), '', _md(row['contribution']), '', '现有材料：', '']
+        rows += ['### '+row['line_id']+' · '+_md(row['title']), '', _md(row['contribution']), '', '成果与合作：', '']
+        for item in row['achievement_notes']:
+            rows += ['#### '+_md(item['title']), '', _md(item['text']), '',
+                '出处：'+_md_refs(item['source_refs'], sources)+'；定位：'+_md(item['locator'])+'。', '',
+                '待核事项：'+_md(item['remaining_gap']), '']
+        rows += ['现有材料：', '']
         for item in row['materials']:
             rows += ['- **'+_md(item['status'])+'**：'+_md(item['text'])+'；出处：'+_md_refs(item['source_refs'], sources)+'；定位：'+_md(item['locator'])+'。']
         rows += ['', '明确缺口：', '']+['- '+_md(value) for value in row['gaps']]
@@ -324,7 +400,7 @@ def marker_block(name: str, body: str) -> str:
 
 
 def render_blocks(data: dict, sources: dict) -> dict:
-    return {
+    blocks = {
         'index.html': {
             'HERITAGE_LIFE': marker_block('HERITAGE_LIFE', render_life(data, sources)),
             'HERITAGE_STORIES': marker_block('HERITAGE_STORIES', render_featured_stories(data, sources)),
@@ -335,6 +411,10 @@ def render_blocks(data: dict, sources: dict) -> dict:
             'HERITAGE_STORIES_ALL': marker_block('HERITAGE_STORIES_ALL', render_all_stories(data, sources)),
         },
     }
+    for context in data['topic_contexts']:
+        blocks[context['path']] = {'HERITAGE_CONTEXT': marker_block(
+            'HERITAGE_CONTEXT', render_topic_context(context, data, sources))}
+    return blocks
 
 
 def replace_marker_blocks(original: str, blocks: dict) -> str:
@@ -355,6 +435,17 @@ def replace_marker_blocks(original: str, blocks: dict) -> str:
     for left, right, value, _ in reversed(ordered):
         result = result[:left]+value+result[right:]
     return result
+
+
+def update_page(name: str, original: str, blocks: dict, *, allow_context_insert=False) -> str:
+    """Only the authorized topic pages may acquire their first context block."""
+    if name in CONTEXT_PATHS:
+        begin, end = '<!-- HERITAGE_CONTEXT_BEGIN -->', '<!-- HERITAGE_CONTEXT_END -->'
+        if begin not in original and end not in original and allow_context_insert:
+            if original.count('</main>') != 1 or re.search(r'\bid=["\']heritage-context["\']', original):
+                raise ValueError('Topic context requires a single main boundary and unused identity: '+name)
+            return original.replace('</main>', '\n'+blocks['HERITAGE_CONTEXT']+'\n</main>', 1)
+    return replace_marker_blocks(original, blocks)
 
 
 class _Page(HTMLParser):
@@ -384,7 +475,8 @@ def check_rendered_page(name: str, value: str, data: dict) -> None:
     owned = [identifier for identifier in counts if identifier.startswith('heritage-')]
     if any(counts[identifier] != 1 for identifier in owned):
         raise ValueError('Duplicate generated heritage identity in '+name)
-    style_id = 'heritage-home-style' if name == 'index.html' else 'heritage-achievements-style'
+    style_id = ('heritage-home-style' if name == 'index.html' else
+                'heritage-context-style' if name in CONTEXT_PATHS else 'heritage-achievements-style')
     if counts[style_id] != 1:
         raise ValueError('Exactly one heritage stylesheet required in '+name)
     if name == 'index.html':
@@ -395,15 +487,17 @@ def check_rendered_page(name: str, value: str, data: dict) -> None:
         for source in data['sources']:
             if counts[source_anchor(source['id'])] != 1:
                 raise ValueError('Supplemental source anchor missing or duplicated')
+    elif name in CONTEXT_PATHS and counts['heritage-context'] != 1:
+        raise ValueError('Each selected topic requires one historical-context section')
 
 
 def inspect_heritage(root: Path = ROOT) -> dict:
-    """Check saved content, five static blocks and generated MD without writes.
+    """Check saved content, source-bound static blocks and MD without writes.
 
     This checks publication consistency and resolved source identities. It does
     not fetch citations, review historical truth or run any scientific model.
     """
-    report = {'status': 'failed', 'scope': 'Historical content/source references, five static marker blocks, unique generated identities, embedded JSON and generated inventory consistency',
+    report = {'status': 'failed', 'scope': 'Historical content/source references, five home/inventory blocks, authorized topic contexts, unique generated identities, embedded JSON and enrichment-document consistency',
         'content_path': CONTENT, 'errors': [], 'page_checks': [],
         'document_check': {'path': DOCUMENT}, 'source_references_resolved': False,
         'fact_review_performed': False, 'source_URLs_fetched': False,
@@ -414,11 +508,10 @@ def inspect_heritage(root: Path = ROOT) -> dict:
     try:
         content_bytes = (root/CONTENT).read_bytes()
         legacy_bytes = (root/'site/data/public-sources.json').read_bytes()
-        data = json.loads(content_bytes)
-        legacy = json.loads(legacy_bytes)
-        sources = validate_content(data, legacy)
+        data, sources = load_content(root)
         groups = data['biography']+data['stories']+data['source_gaps']
         groups += [item for line in data['lines'] for item in line['materials']]
+        groups += [item for line in data['lines'] for item in line['achievement_notes']]
         references = [value for row in groups for value in row['source_refs']]
         references += [value for row in data['sources'] for value in row['legacy_source_ids']]
         report.update(content_sha256=hashlib.sha256(content_bytes).hexdigest(),
@@ -428,20 +521,22 @@ def inspect_heritage(root: Path = ROOT) -> dict:
             biography_records=len(data['biography']), story_records=len(data['stories']),
             featured_stories=sum(row['featured'] for row in data['stories']),
             line_records=len(data['lines']), supplemental_sources=len(data['sources']),
-            source_gaps=len(data['source_gaps']))
+            source_gaps=len(data['source_gaps']),
+            achievement_notes=sum(len(row['achievement_notes']) for row in data['lines']),
+            topic_contexts=len(data['topic_contexts']), previous_edition_preserved=True)
         blocks = render_blocks(data, sources)
-        for name, names in PAGE_MARKERS.items():
+        for name, rendered in blocks.items():
             page = {'path': 'site/'+name, 'marker_checks': [],
                     'unique_generated_identities_and_payload': False}
             report['page_checks'].append(page)
             try:
                 original_bytes = (root/'site'/name).read_bytes()
                 original = original_bytes.decode('utf-8')
-                expected = replace_marker_blocks(original, blocks[name])
-                for marker in names:
+                expected = update_page(name, original, rendered)
+                for marker in rendered:
                     begin, end = '<!-- '+marker+'_BEGIN -->', '<!-- '+marker+'_END -->'
                     actual = original[original.index(begin):original.index(end)+len(end)]
-                    equal = actual == blocks[name][marker]
+                    equal = actual == rendered[marker]
                     page['marker_checks'].append({'marker': marker, 'equal': equal})
                     if not equal:
                         errors.append('Static heritage block differs from source data: '+name+' / '+marker)
@@ -472,7 +567,7 @@ def inspect_heritage(root: Path = ROOT) -> dict:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--write', action='store_true', help='Replace existing marker blocks and generate the inventory document')
+    parser.add_argument('--write', action='store_true', help='Update source-bound blocks, insert authorized topic contexts and generate the new enrichment document')
     args = parser.parse_args()
     if not args.write:
         report = inspect_heritage(ROOT)
@@ -482,10 +577,10 @@ def main() -> int:
         data, sources = load_content()
         blocks = render_blocks(data, sources)
         planned, different = {}, []
-        for name in PAGE_MARKERS:
+        for name, rendered in blocks.items():
             path = ROOT/'site'/name
             original = path.read_bytes().decode('utf-8')
-            expected = replace_marker_blocks(original, blocks[name])
+            expected = update_page(name, original, rendered, allow_context_insert=True)
             check_rendered_page(name, expected, data)
             planned[path] = expected.encode('utf-8')
             if original != expected:
