@@ -1,6 +1,7 @@
 """Stage the explicit static-site allowlist, including pending-review A01 HTML progress.
 
-No research directory, raw logs or new JSON route is copied into Pages.
+Only the dedicated static research/index.html is public; research code,
+raw logs and extra JSON remain excluded.
 """
 
 from __future__ import annotations
@@ -12,7 +13,7 @@ from pathlib import Path
 import shutil
 
 from check_site import BASELINE, SITE, inspect_site
-from a01_publication_contract import effective_website_entries
+from a01_publication_contract import effective_website_entries, publication_members
 
 
 def main() -> int:
@@ -33,9 +34,8 @@ def main() -> int:
         return 1
     baseline = json.loads(BASELINE.read_text(encoding="utf-8"))
     effective, revision = effective_website_entries(BASELINE.parent.parent, baseline)
-    members = [entry for entry in effective.values() if Path(entry["path"]).suffix in {".html", ".json"}]
-    if len(members) != 17 or sum(entry["path"].endswith(".html") for entry in members) != 15:
-        raise ValueError("The publish allowlist must contain exactly 15 HTML and two JSON files")
+    members = publication_members(BASELINE.parent.parent, effective)
+    html_count = sum(entry["path"].endswith(".html") for entry in members)
     output.mkdir(parents=True, exist_ok=True)
     copied = []
     for entry in members:
@@ -50,7 +50,7 @@ def main() -> int:
     published = {path.relative_to(output).as_posix() for path in output.rglob("*") if path.is_file()}
     if published != set(copied) | {".nojekyll"}:
         raise ValueError("The publish directory contains unexpected members")
-    print(json.dumps({"status": "passed", "output": str(output), "html_count": 15,
+    print(json.dumps({"status": "passed", "output": str(output), "html_count": html_count,
                       "json_count": 2, "published_member_count": len(published),
                       "all_source_bytes_preserved": not revision["present"],
                       "original_baseline_bytes_preserved": True,

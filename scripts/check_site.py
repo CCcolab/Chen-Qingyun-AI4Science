@@ -21,7 +21,7 @@ import tempfile
 from urllib.parse import unquote, urlsplit
 import zipfile
 
-from a01_publication_contract import effective_website_entries
+from a01_publication_contract import AI_RESEARCH_CONTENT, effective_website_entries, publication_members
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -132,6 +132,14 @@ def inspect_site(*, require_node: bool = False) -> dict:
             labels = inspect_line_labels(ROOT)
             report["achievement_label_consistency"] = labels
             errors.extend(labels["errors"])
+        if (ROOT / AI_RESEARCH_CONTENT).is_file():
+            from render_ai_research import inspect_ai_research
+            ai_research = inspect_ai_research(ROOT)
+            report["ai_research_consistency"] = ai_research
+            if ai_research.get("status") != "passed":
+                errors.extend("AI research: " + message for message in ai_research.get("errors", []))
+                if not ai_research.get("errors"):
+                    errors.append("AI research content did not pass its source-derived rendering check")
         baseline = json.loads(BASELINE.read_text(encoding="utf-8"))
         if baseline["archive_sha256"] != ARCHIVE_SHA256:
             errors.append("Website baseline does not identify the approved source ZIP")
@@ -150,6 +158,12 @@ def inspect_site(*, require_node: bool = False) -> dict:
         if len(expected) != 21:
             errors.append("Expected exactly 21 unique baseline members")
         expected, revision = effective_website_entries(ROOT, baseline)
+        publish_members = publication_members(ROOT, expected)
+        expected_html_count = sum(row["path"].endswith(".html") for row in publish_members)
+        report["publication_allowlist"] = {"html_count": expected_html_count,
+            "json_count": len(publish_members)-expected_html_count,
+            "member_count_with_marker": len(publish_members)+1,
+            "paths": [row["path"] for row in publish_members]}
         report["website_revision"] = revision
         report["website_modified"] = revision["present"]
         if revision["present"]:
@@ -206,8 +220,8 @@ def inspect_site(*, require_node: bool = False) -> dict:
                 if duplicates:
                     errors.append(f"Duplicate HTML anchor IDs in {name}: {duplicates}")
         report["html_count"] = len(pages)
-        if len(pages) != 15:
-            errors.append("Exactly 15 HTML pages must be preserved")
+        if len(pages) != expected_html_count:
+            errors.append("HTML pages must equal the exact original routes and explicitly authorized additions")
         home = pages["index.html"]
         absent_source_anchors = sorted(source for source in source_ids
                                        if f"source-{source.lower()}" not in home.ids)

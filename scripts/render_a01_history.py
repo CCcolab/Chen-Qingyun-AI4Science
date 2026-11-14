@@ -45,9 +45,9 @@ def history_summary(data: dict, name: str) -> str:
             '<p><a href="'+topic+'#a01-original-achievements">原始学术成果与证据 →</a> · '
             '<a href="'+topic+'#a01-first-report">1960年第一报原文与证据 →</a> · '
             '<a href="'+topic+'#record-inventor-certificate">发明人证书与合作故事 →</a> · '
-            '<a href="'+topic+'#a01-research-overview">平台AI辅助整理与研究 →</a></p>'
-            '<details><summary>出处与阅读范围</summary><p>已取得并核读第一报英译本647–653页全部影印页；俄文原刊与专业核译仍待核。传记、两篇Doklady原刊和117491号文书分别登记。'
-            '<a href="'+topic+'#a01-historical-sources">查看来源、作者与核读范围</a>。历史实验成果依原作者归属；平台新增释读待专业核校，M0继续暂停。</p></details></div></article>')
+            '<a href="'+prefix+'research/index.html#ai-a01">平台AI辅助整理与研究 →</a></p>'
+            '<details><summary>历史来源与合作署名</summary><p>1960年第一报英译本、相关Doklady原刊、117491号文书与传记分别作为历史来源登记，结合署名与具体实验记录理解合作者的共同贡献。'
+            '<a href="'+topic+'#a01-historical-sources">查看来源、作者与阅读范围</a>。历史成果按原作者与材料范围呈现。</p></details></div></article>')
 
 
 def topic_history(data: dict) -> str:

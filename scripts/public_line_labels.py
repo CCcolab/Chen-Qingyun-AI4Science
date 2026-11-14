@@ -27,7 +27,8 @@ RANGE = re.compile(r'(?<![A-Za-z0-9_-])A01\s*[—–－-]\s*A09(?![A-Za-z0-9_-])
 VOID = {'area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr'}
 DOCUMENTS = ('README.md', 'research/a01/README.md', 'docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md',
              'docs/PLATFORM_PURPOSE_zh-CN.md', 'docs/PLATFORM_ROADMAP_zh-CN.md',
-             'docs/CHEN_REAGENT_ACHIEVEMENT_zh-CN.md', 'docs/A01_FIRST_REPORT_zh-CN.md')
+             'docs/CHEN_REAGENT_ACHIEVEMENT_zh-CN.md', 'docs/A01_FIRST_REPORT_zh-CN.md',
+             'docs/AI_RESEARCH_zh-CN.md')
 
 
 def reference(identifier: str) -> str:

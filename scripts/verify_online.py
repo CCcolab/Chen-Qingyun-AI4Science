@@ -12,7 +12,8 @@ from urllib.parse import quote, urlencode, urlsplit
 from urllib.request import Request, urlopen
 
 from a01_publication_contract import (PROGRESS_PATH, PROGRESS_V2_PATH, CURRENT_PATH,
-    TOPIC_PATH, current_progress_path, effective_website_entries, read_json)
+    TOPIC_PATH, AI_RESEARCH_ROUTE, AI_RESEARCH_CONTENT, AI_RESEARCH_DOCUMENT, AI_RESEARCH_RENDERER,
+    PRESENTATION_V12_PATH, current_progress_path, effective_website_entries, publication_members, read_json)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -77,14 +78,10 @@ def main() -> int:
             report["local_a01_progress_consistency"] = consistency
             if consistency["status"] != "passed":
                 raise ValueError("Local A01 progress and revision are not consistent: " + "; ".join(consistency["errors"]))
-        members = [entry for entry in effective.values()
-                   if PurePosixPath(entry["path"]).suffix in {".html", ".json"}]
-        names = [entry["path"] for entry in members]
-        if (len(names) != 17 or len(set(names)) != 17
-                or sum(name.endswith(".html") for name in names) != 15
-                or {name for name in names if name.endswith(".json")} != {
-                    "data/public-sources.json", "data/achievement-lines.json"}):
-            raise ValueError("Expected exactly the baseline's 15 HTML and two public JSON files")
+        members = publication_members(ROOT, effective)
+        report["publication_allowlist"] = {"html_count": sum(row["path"].endswith(".html") for row in members),
+            "json_count": 2, "member_count_with_marker": len(members)+1,
+            "paths": [row["path"] for row in members]}
         json_bodies = {}
         html_bodies = {}
         expected_home = None
@@ -162,6 +159,17 @@ def main() -> int:
         report["homepage_directory_alias"] = alias
         if not alias["equal"]:
             report["errors"].append("The site directory URL does not serve the approved homepage")
+        if AI_RESEARCH_ROUTE in effective:
+            expected_research = effective[AI_RESEARCH_ROUTE]
+            alias, _ = fetch(url_for("research/"))
+            alias.update(expected_status=200, expected_bytes=expected_research["bytes"],
+                         expected_sha256=expected_research["sha256"])
+            alias["equal"] = (alias["status"] == 200 and "error" not in alias
+                              and alias.get("actual_bytes") == expected_research["bytes"]
+                              and alias.get("actual_sha256") == expected_research["sha256"])
+            report["ai_research_directory_alias"] = alias
+            if not alias["equal"]:
+                report["errors"].append("The research directory URL does not serve the approved second-level page")
 
         public = json_bodies.get("data/public-sources.json")
         achievements = json_bodies.get("data/achievement-lines.json")
@@ -184,6 +192,8 @@ def main() -> int:
         excluded = ["results/website-candidate.json", "validation/",
                     "upstream/chen-qingyun-a2-citations-candidate.zip", PROGRESS_PATH,
                     PROGRESS_V2_PATH, CURRENT_PATH]
+        if (ROOT/PRESENTATION_V12_PATH).is_file():
+            excluded.extend((AI_RESEARCH_CONTENT, AI_RESEARCH_DOCUMENT, AI_RESEARCH_RENDERER, PRESENTATION_V12_PATH))
         for name in excluded:
             check, _ = fetch(url_for(name))
             check.update(path=name, expected_status=404)
