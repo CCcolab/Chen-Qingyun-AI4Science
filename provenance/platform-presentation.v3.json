@@ -1,0 +1,35 @@
+{
+  "schema_version": "3.0",
+  "presentation_id": "PLATFORM-NUMBERING-20261114-v3",
+  "created_at_utc": "2026-11-14T02:01:28.463761+00:00",
+  "publication_kind": "platform_navigation_correction",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "new_quantum_calls": 0,
+  "authorization": "User correction dated 2026-11-14: eliminate the visually duplicated A08 in the nine-line achievement section",
+  "previous_presentation_commit": "50cdd20cd8dfd188986d242baa383d68bd6a6a3f",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v2.json",
+    "sha256": "91434b5bc8fb51e96b604a6c6437cb363c92370347f22fcbd2a825e5498f0348"
+  },
+  "changes": [
+    {
+      "path": "achievements/index.html",
+      "old_sha256": "e842155d38a5af4776b90b1451c489c1642890569c7bf9c3e5071f4919b81314",
+      "old_bytes": 55234,
+      "new_sha256": "1df52f0a124c3bc39ba3cad1650db696faa00183b261be5f7159405f9e393f56",
+      "new_bytes": 55311,
+      "reason": "Nest the two supplemental archives under A08 and A09 respectively; retain their stable anchors, prose and sources while removing duplicate primary-card labels"
+    },
+    {
+      "path": "index.html",
+      "old_sha256": "72fefa541349ff41addb2cf2250a28364eb8f0b4a41f82e7894b23e406acf9f2",
+      "old_bytes": 205713,
+      "new_sha256": "3973cafa912b1d171da3b0c6d6c2acae2d34c2024f271640e4490f70d08ece46",
+      "new_bytes": 205790,
+      "reason": "Nest the two supplemental archives under A08 and A09 respectively; retain their stable anchors, prose and sources while removing duplicate primary-card labels"
+    }
+  ],
+  "boundary": "Presentation hierarchy correction only. Original line identities, archive anchors, scholarly prose and citations are retained; historical achievement and scientific review states do not change."
+}

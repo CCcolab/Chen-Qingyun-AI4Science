@@ -5,6 +5,7 @@ This never grants scientific release or modifies the original baseline.
 from __future__ import annotations
 
 import hashlib
+from html.parser import HTMLParser
 import json
 from pathlib import Path, PurePosixPath
 import re
@@ -23,6 +24,11 @@ PRESENTATION_V1_SHA256 = '1ade23238a23977b47eaa6a7dd585509fdca3e270615914292e234
 PRESENTATION_V2_PATH = 'provenance/platform-presentation.v2.json'
 PRESENTATION_V2_ID = 'PLATFORM-HERITAGE-20261114-v2'
 PRESENTATION_V2_PREVIOUS_COMMIT = '4a42dff633e9f337768e3dc5e16f7c7af72af10d'
+PRESENTATION_V2_SHA256 = '91434b5bc8fb51e96b604a6c6437cb363c92370347f22fcbd2a825e5498f0348'
+PRESENTATION_V3_PATH = 'provenance/platform-presentation.v3.json'
+PRESENTATION_V3_ID = 'PLATFORM-NUMBERING-20261114-v3'
+PRESENTATION_V3_PREVIOUS_COMMIT = '50cdd20cd8dfd188986d242baa383d68bd6a6a3f'
+NUMBERING_PATHS = {'index.html', 'achievements/index.html'}
 HERITAGE_CONTENT_PATH = 'content/heritage-20261114.v1.json'
 PRESENTATION_V2_DOCUMENTS = ('README.md', 'docs/PLATFORM_ROADMAP_zh-CN.md',
     HERITAGE_CONTENT_PATH, 'docs/HERITAGE_INVENTORY_20261114_zh-CN.md')
@@ -267,6 +273,8 @@ def apply_presentation_v1(root: Path, entries: dict, *, chain: list,
 def apply_presentation_overlay(root: Path, entries: dict, *, chain: list) -> tuple[dict, dict | None]:
     """Apply v1, then this bounded historical-content successor if present."""
     successor_present = (root/PRESENTATION_V2_PATH).exists()
+    if (root/PRESENTATION_V3_PATH).exists() and not successor_present:
+        raise ValueError('Numbering correction v3 requires the historical content v2 predecessor')
     previous, v1 = apply_presentation_v1(root, entries, chain=chain,
         use_document_snapshots=successor_present)
     if not successor_present:
@@ -325,7 +333,102 @@ def apply_presentation_overlay(root: Path, entries: dict, *, chain: list) -> tup
         'changed_paths': sorted(seen), 'previous_presentation_commit': PRESENTATION_V2_PREVIOUS_COMMIT,
         'scientific_data_unchanged': True, 'scientific_review_status': 'review_required',
         'release_eligible': False}
-    return updated, {**report, 'presentation_chain': [v1, report]}
+    return apply_numbering_correction(root, updated, {**report, 'presentation_chain': [v1, report]})
+
+
+def inspect_line_numbering(path: Path) -> dict:
+    """Check the hierarchy of the nine primary cards and their two archives."""
+    expected = {'record-fluorinated-ionic-liquids': 'line-a08',
+                'record-publication-index': 'line-a09'}
+
+    class NumberingParser(HTMLParser):
+        def __init__(self):
+            super().__init__(convert_charrefs=True)
+            self.stack, self.labels, self.records = [], [], []
+            self.active_label = None
+
+        def handle_starttag(self, tag, attrs):
+            values = dict(attrs)
+            ident = values.get('id')
+            ancestor_ids = [row[1] for row in self.stack]
+            if ident in expected:
+                self.records.append((ident, expected[ident] in ancestor_ids))
+            if ('achievement-detail' in ancestor_ids
+                    and 'case-side' in values.get('class', '').split()):
+                self.active_label = {'depth': len(self.stack), 'text': ''}
+            if tag not in {'area', 'base', 'br', 'col', 'embed', 'hr', 'img',
+                           'input', 'link', 'meta', 'param', 'source', 'track', 'wbr'}:
+                self.stack.append((tag, ident))
+
+        def handle_data(self, value):
+            if self.active_label is not None:
+                self.active_label['text'] += value
+
+        def handle_endtag(self, tag):
+            for position in range(len(self.stack)-1, -1, -1):
+                if self.stack[position][0] == tag:
+                    if self.active_label is not None and position == self.active_label['depth']:
+                        self.labels.append(self.active_label['text'].strip())
+                        self.active_label = None
+                    del self.stack[position:]
+                    break
+
+    page = NumberingParser()
+    page.feed(path.read_text('utf-8'))
+    page.close()
+    labels = [re.match(r'(A0[1-9])\b', value) for value in page.labels]
+    numbers = [match.group(1) if match else None for match in labels]
+    if numbers != ['A'+str(n).zfill(2) for n in range(1, 10)]:
+        raise ValueError('The primary achievement cards must be numbered A01 through A09 once, in order')
+    if sorted(page.records) != sorted((name, True) for name in expected):
+        raise ValueError('Each supplemental archive must appear once within its own achievement line')
+    return {'primary_line_labels': numbers, 'supplemental_archives_nested': True}
+
+
+def apply_numbering_correction(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:
+    """Apply only the two-page hierarchy correction without refreshing v2."""
+    if not (root/PRESENTATION_V3_PATH).exists():
+        return entries, previous_report
+    if digest(project_file(root, PRESENTATION_V2_PATH)) != PRESENTATION_V2_SHA256:
+        raise ValueError('The preceding historical presentation v2 is immutable')
+    path = project_file(root, PRESENTATION_V3_PATH)
+    data = read_json(path)
+    if (data.get('schema_version') != '3.0'
+            or data.get('presentation_id') != PRESENTATION_V3_ID
+            or data.get('publication_kind') != 'platform_navigation_correction'
+            or data.get('scientific_review_status') != 'review_required'
+            or data.get('release_eligible') is not False
+            or data.get('scientific_data_unchanged') is not True
+            or data.get('new_quantum_calls') != 0
+            or data.get('previous_presentation_commit') != PRESENTATION_V3_PREVIOUS_COMMIT
+            or data.get('previous_presentation') != {'path': PRESENTATION_V2_PATH,
+                                                    'sha256': PRESENTATION_V2_SHA256}):
+        raise ValueError('Unsupported two-page numbering correction contract')
+    changes = data.get('changes')
+    if not isinstance(changes, list) or len(changes) != len(NUMBERING_PATHS):
+        raise ValueError('The numbering correction must enumerate its two existing HTML pages')
+    updated, seen = {name: dict(value) for name, value in entries.items()}, set()
+    for item in changes:
+        name = item.get('path')
+        if name not in NUMBERING_PATHS or name in seen:
+            raise ValueError('Unauthorized or duplicate numbering correction path: '+str(name))
+        seen.add(name)
+        old = entries[name]
+        if item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']:
+            raise ValueError('Numbering correction must bind the actual v2 predecessor: '+name)
+        value, size = item.get('new_sha256'), item.get('new_bytes')
+        if (not isinstance(value, str) or not SHA.fullmatch(value) or value == old['sha256']
+                or not isinstance(size, int) or isinstance(size, bool) or size <= 0
+                or not isinstance(item.get('reason'), str) or not item['reason'].strip()):
+            raise ValueError('Incomplete numbering correction: '+name)
+        inspect_line_numbering(project_file(root, 'site/'+name))
+        updated[name] = {**old, 'sha256': value, 'bytes': size, 'presentation_id': PRESENTATION_V3_ID}
+    report = {'path': PRESENTATION_V3_PATH, 'sha256': digest(path),
+        'presentation_id': PRESENTATION_V3_ID, 'publication_kind': 'platform_navigation_correction',
+        'changed_paths': sorted(seen), 'previous_presentation_commit': PRESENTATION_V3_PREVIOUS_COMMIT,
+        'scientific_data_unchanged': True, 'scientific_review_status': 'review_required',
+        'release_eligible': False}
+    return updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}
 
 
 def effective_website_entries(root: Path, baseline: dict, *, verify_current=True,
