@@ -110,6 +110,12 @@ def inspect_site(*, require_node: bool = False) -> dict:
               "javascript_checks": [], "protected_json_checks": []}
     errors = report["errors"]
     try:
+        if (ROOT / "content/heritage-20261114.v1.json").is_file():
+            from render_heritage import inspect_heritage
+            heritage = inspect_heritage(ROOT)
+            report["heritage_consistency"] = heritage
+            if heritage["status"] != "passed":
+                errors.extend("Heritage content: " + message for message in heritage["errors"])
         baseline = json.loads(BASELINE.read_text(encoding="utf-8"))
         if baseline["archive_sha256"] != ARCHIVE_SHA256:
             errors.append("Website baseline does not identify the approved source ZIP")

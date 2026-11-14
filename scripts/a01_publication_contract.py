@@ -19,6 +19,18 @@ CURRENT_PATH = 'research/a01/public-progress.current.json'
 PRESENTATION_PATH = 'provenance/platform-presentation.v1.json'
 PRESENTATION_ID = 'PLATFORM-HERITAGE-20261114-v1'
 PRESENTATION_PREVIOUS_COMMIT = '74775199743f06f447278ef6aadff526ee604274'
+PRESENTATION_V1_SHA256 = '1ade23238a23977b47eaa6a7dd585509fdca3e270615914292e2341721308782'
+PRESENTATION_V2_PATH = 'provenance/platform-presentation.v2.json'
+PRESENTATION_V2_ID = 'PLATFORM-HERITAGE-20261114-v2'
+PRESENTATION_V2_PREVIOUS_COMMIT = '4a42dff633e9f337768e3dc5e16f7c7af72af10d'
+HERITAGE_CONTENT_PATH = 'content/heritage-20261114.v1.json'
+PRESENTATION_V2_DOCUMENTS = ('README.md', 'docs/PLATFORM_ROADMAP_zh-CN.md',
+    HERITAGE_CONTENT_PATH, 'docs/HERITAGE_INVENTORY_20261114_zh-CN.md')
+PRESENTATION_V1_DOCUMENT_SNAPSHOTS = {
+    'README.md': 'provenance/platform-presentation-v1-documents/README.md',
+    'docs/PLATFORM_PURPOSE_zh-CN.md': 'provenance/platform-presentation-v1-documents/PLATFORM_PURPOSE_zh-CN.md',
+    'docs/PLATFORM_ROADMAP_zh-CN.md': 'provenance/platform-presentation-v1-documents/PLATFORM_ROADMAP_zh-CN.md',
+}
 REVISION_V2_SHA256 = '9d1a800ae978b4eef814aa4c0b4c99f6faa35f79b7fd4315edc1aa430a2ad845'
 PROGRESS_V2_SHA256 = '0168bad2419df9a16c18fa832116afa3722a783f0186f933c7e7d5b1f6eb7823'
 CURRENT_SHA256 = '590b0df398766c8d5908d8cf9da775f71c6412e9364465b0b8b5fd34cd610f10'
@@ -88,6 +100,73 @@ def presentation_document_bindings(root: Path) -> list[dict]:
             for name in PRESENTATION_DOCUMENTS]
 
 
+def presentation_v1_snapshot_bindings(root: Path) -> list[dict]:
+    """Check old document bytes against the immutable v1 promises, not today.
+
+    These three snapshots are exported from the fixed preceding commit. Their
+    exact SHA256 and byte counts must be the values already committed in v1;
+    neither current README edits nor this successor can refresh that promise.
+    """
+    path = project_file(root, PRESENTATION_PATH)
+    if digest(path) != PRESENTATION_V1_SHA256:
+        raise ValueError('The historical platform presentation v1 is immutable')
+    old = read_json(path).get('editorial_documents')
+    if (not isinstance(old, list) or len(old) != len(PRESENTATION_DOCUMENTS)
+            or [item.get('path') for item in old] != list(PRESENTATION_DOCUMENTS)):
+        raise ValueError('Unexpected historical v1 document binding set')
+    snapshots = []
+    for item in old:
+        name = PRESENTATION_V1_DOCUMENT_SNAPSHOTS[item['path']]
+        snapshot = project_file(root, name)
+        if digest(snapshot) != item['sha256'] or snapshot.stat().st_size != item['bytes']:
+            raise ValueError('Historical document snapshot differs from frozen v1 bytes: '+name)
+        # Only README and the current platform roadmap are editable in v2.
+        # The platform-purpose document remains an unchanged current document.
+        if item['path'] == 'docs/PLATFORM_PURPOSE_zh-CN.md':
+            current = project_file(root, item['path'])
+            if digest(current) != item['sha256'] or current.stat().st_size != item['bytes']:
+                raise ValueError('The platform-purpose document is unchanged in this content edition')
+        snapshots.append({'original_path': item['path'], 'snapshot_path': name,
+                          'sha256': item['sha256'], 'bytes': item['bytes']})
+    return snapshots
+
+
+def presentation_v2_document_bindings(root: Path) -> list[dict]:
+    return [{'path': name, 'sha256': digest(project_file(root, name)),
+             'bytes': project_file(root, name).stat().st_size}
+            for name in PRESENTATION_V2_DOCUMENTS]
+
+
+def heritage_content_binding(root: Path) -> dict:
+    """Bind the small historical inventory shape; do not certify its claims."""
+    path = project_file(root, HERITAGE_CONTENT_PATH)
+    data = read_json(path)
+    sources, lines = data.get('sources'), data.get('lines')
+    if not isinstance(sources, list) or not sources or not all(isinstance(row, dict) for row in sources):
+        raise ValueError('Heritage inventory requires its separate supplemental sources list')
+    ids = [row.get('source_id', row.get('id')) for row in sources]
+    if (not all(isinstance(value, str) and re.fullmatch(r'HERITAGE-S[0-9]{2,}', value) for value in ids)
+            or len(ids) != len(set(ids))):
+        raise ValueError('Supplemental heritage sources require unique HERITAGE-S identities')
+    original_ids = {row['id'] for row in read_json(root/'site/data/public-sources.json')['sources']}
+    if set(ids) & original_ids:
+        raise ValueError('Supplemental heritage sources cannot replace original source identities')
+    if not isinstance(lines, list) or not all(isinstance(row, dict) for row in lines):
+        raise ValueError('Heritage inventory requires its nine line records')
+    line_ids = [row.get('line_id') for row in lines]
+    if len(line_ids) != 9 or set(line_ids) != {'A'+str(n).zfill(2) for n in range(1, 10)}:
+        raise ValueError('Heritage inventory must retain exactly the stable A01-to-A09 identities')
+    if (not isinstance(data.get('biography'), (list, dict))
+            or not isinstance(data.get('stories'), list)
+            or not isinstance(data.get('source_gaps'), list)):
+        raise ValueError('Heritage inventory requires biography, stories and source_gaps records')
+    return {'path': HERITAGE_CONTENT_PATH, 'sha256': digest(path), 'bytes': path.stat().st_size,
+        'content_classification': 'historical_heritage_materials',
+        'supplemental_source_namespace': 'HERITAGE-S', 'supplemental_source_ids': ids,
+        'stable_line_ids': line_ids,
+        'validation_scope': 'File identity, namespace and basic inventory structure only; historical claims and citation quality require their separate review'}
+
+
 def presentation_protected_bindings(root: Path, entries: dict) -> dict:
     """Read-only protection checks for this one presentation-only overlay."""
     protected = {}
@@ -119,7 +198,8 @@ def presentation_protected_bindings(root: Path, entries: dict) -> dict:
             'historical_documents': historical}
 
 
-def apply_presentation_overlay(root: Path, entries: dict, *, chain: list) -> tuple[dict, dict | None]:
+def apply_presentation_v1(root: Path, entries: dict, *, chain: list,
+                          use_document_snapshots=False) -> tuple[dict, dict | None]:
     """Apply the independent editorial layer after the frozen scientific chain.
 
     The overlay changes three existing HTML presentations only. It does not
@@ -130,6 +210,8 @@ def apply_presentation_overlay(root: Path, entries: dict, *, chain: list) -> tup
     if chain != [REVISION_PATH, REVISION_V2_PATH]:
         raise ValueError('Platform presentation requires the frozen v1-to-v2 scientific chain')
     path = project_file(root, PRESENTATION_PATH)
+    if digest(path) != PRESENTATION_V1_SHA256:
+        raise ValueError('The historical platform presentation v1 is immutable')
     data = read_json(path)
     if (data.get('schema_version') != '1.0'
             or data.get('presentation_id') != PRESENTATION_ID
@@ -147,7 +229,12 @@ def apply_presentation_overlay(root: Path, entries: dict, *, chain: list) -> tup
     for field, name, expected in bindings:
         if data.get(field) != {'path': name, 'sha256': expected} or digest(project_file(root, name)) != expected:
             raise ValueError('Platform presentation must retain the frozen scientific binding: '+field)
-    if data.get('editorial_documents') != presentation_document_bindings(root):
+    if use_document_snapshots:
+        document_bindings = [{'path': row['original_path'], 'sha256': row['sha256'], 'bytes': row['bytes']}
+                             for row in presentation_v1_snapshot_bindings(root)]
+    else:
+        document_bindings = presentation_document_bindings(root)
+    if data.get('editorial_documents') != document_bindings:
         raise ValueError('Current platform documents differ from the presentation binding')
     if data.get('protected') != presentation_protected_bindings(root, entries):
         raise ValueError('Protected platform identities differ from the presentation binding')
@@ -175,6 +262,70 @@ def apply_presentation_overlay(root: Path, entries: dict, *, chain: list) -> tup
         'changed_paths': sorted(seen), 'previous_presentation_commit': PRESENTATION_PREVIOUS_COMMIT,
         'scientific_data_unchanged': True, 'scientific_review_status': 'review_required',
         'release_eligible': False}
+
+
+def apply_presentation_overlay(root: Path, entries: dict, *, chain: list) -> tuple[dict, dict | None]:
+    """Apply v1, then this bounded historical-content successor if present."""
+    successor_present = (root/PRESENTATION_V2_PATH).exists()
+    previous, v1 = apply_presentation_v1(root, entries, chain=chain,
+        use_document_snapshots=successor_present)
+    if not successor_present:
+        return previous, v1
+    if v1 is None:
+        raise ValueError('Historical content presentation v2 requires its immutable v1 predecessor')
+    path = project_file(root, PRESENTATION_V2_PATH)
+    data = read_json(path)
+    if (data.get('schema_version') != '2.0'
+            or data.get('presentation_id') != PRESENTATION_V2_ID
+            or data.get('publication_kind') != 'platform_historical_content'
+            or data.get('scientific_review_status') != 'review_required'
+            or data.get('release_eligible') is not False
+            or data.get('scientific_data_unchanged') is not True
+            or data.get('original_baseline_sha256') != BASELINE_SHA256
+            or data.get('original_archive_sha256') != ARCHIVE_SHA256
+            or data.get('previous_presentation_commit') != PRESENTATION_V2_PREVIOUS_COMMIT
+            or data.get('previous_presentation') != {'path': PRESENTATION_PATH, 'sha256': PRESENTATION_V1_SHA256}):
+        raise ValueError('Unsupported historical content presentation v2 contract')
+    for field, name, expected in [('scientific_revision', REVISION_V2_PATH, REVISION_V2_SHA256),
+            ('public_progress', PROGRESS_V2_PATH, PROGRESS_V2_SHA256),
+            ('current_registry', CURRENT_PATH, CURRENT_SHA256)]:
+        if data.get(field) != {'path': name, 'sha256': expected} or digest(project_file(root, name)) != expected:
+            raise ValueError('Historical content overlay changed the frozen scientific binding: '+field)
+    if data.get('historical_editorial_documents') != presentation_v1_snapshot_bindings(root):
+        raise ValueError('Historical v1 document snapshot binding changed')
+    if data.get('editorial_documents') != presentation_v2_document_bindings(root):
+        raise ValueError('Current heritage documents differ from the v2 declaration')
+    if data.get('historical_content') != heritage_content_binding(root):
+        raise ValueError('Supplemental historical content differs from the v2 declaration')
+    if data.get('protected') != presentation_protected_bindings(root, previous):
+        raise ValueError('Protected original platform identities changed')
+    if data.get('ai_research') != {'role': 'separate_supporting_pilot', 'new_quantum_calls': 0,
+                                  'new_model_API_calls': 0, 'scientific_data_unchanged': True}:
+        raise ValueError('Historical content cannot claim new AI scientific calculations')
+    changes = data.get('changes')
+    if not isinstance(changes, list) or not 1 <= len(changes) <= len(ALLOWED_CHANGES):
+        raise ValueError('Historical content v2 must enumerate its one-to-three existing HTML changes')
+    updated, seen = {name: dict(value) for name, value in previous.items()}, set()
+    for item in changes:
+        name = item.get('path')
+        if name not in ALLOWED_CHANGES or name in seen:
+            raise ValueError('Unauthorized or duplicate historical content HTML path: '+str(name))
+        seen.add(name)
+        old = previous[name]
+        if item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']:
+            raise ValueError('Historical content must bind the actual v1 HTML predecessor: '+name)
+        value, size = item.get('new_sha256'), item.get('new_bytes')
+        if (not isinstance(value, str) or not SHA.fullmatch(value) or value == old['sha256']
+                or not isinstance(size, int) or isinstance(size, bool) or size <= 0
+                or not isinstance(item.get('reason'), str) or not item['reason'].strip()):
+            raise ValueError('Incomplete historical content HTML change: '+name)
+        updated[name] = {**old, 'sha256': value, 'bytes': size, 'presentation_id': PRESENTATION_V2_ID}
+    report = {'path': PRESENTATION_V2_PATH, 'sha256': digest(path),
+        'presentation_id': PRESENTATION_V2_ID, 'publication_kind': 'platform_historical_content',
+        'changed_paths': sorted(seen), 'previous_presentation_commit': PRESENTATION_V2_PREVIOUS_COMMIT,
+        'scientific_data_unchanged': True, 'scientific_review_status': 'review_required',
+        'release_eligible': False}
+    return updated, {**report, 'presentation_chain': [v1, report]}
 
 
 def effective_website_entries(root: Path, baseline: dict, *, verify_current=True,

@@ -4,6 +4,14 @@
 
 [访问学术成就网站](https://cccolab.github.io/Chen-Qingyun-AI4Science/) · [研究历程](https://cccolab.github.io/Chen-Qingyun-AI4Science/#timeline) · [人物与传承](https://cccolab.github.io/Chen-Qingyun-AI4Science/#people) · [资料与依据](https://cccolab.github.io/Chen-Qingyun-AI4Science/#evidence)
 
+## 本轮资料更新（2026-11-14）
+
+按指定的《陈庆云传》重新分章核读，整理了13个生平节点、8则有页注的成长／合作／育人故事，以及九条成果线的现有材料、具体缺口和优先待补原件。原始论文、机构回顾、当事人访谈的传记转引分别标明；原PDF与完整抽取文本留在本机。
+
+[生平与九线资料盘点](docs/HERITAGE_INVENTORY_20261114_zh-CN.md) · [故事与出处](https://cccolab.github.io/Chen-Qingyun-AI4Science/#heritage-stories) · [逐线材料与缺口](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#heritage-inventory) · [结构化资料](content/heritage-20261114.v1.json)
+
+本轮补清了授予证书书影与独立说明书的区别，也登记了底本中的年代、姓名和化学对象异文。没有新增实验或量化计算，M0记录继续归档，不自动续算。
+
 ## 从人物与历史走近科学
 
 平台首先呈现陈先生的研究道路、重要工作、合作关系与育人学风。阅读专题时，可以从“当时面对什么问题、陈先生与合作者做了什么、证据记在哪里、后来怎样发展”进入，而后查阅原始论文和专业研究记录。
