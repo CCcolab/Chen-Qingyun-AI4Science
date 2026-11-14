@@ -1,0 +1,1245 @@
+{
+  "schema_version": "13.0",
+  "presentation_id": "PLATFORM-AI-DIRECT-RESULTS-20261114-v13",
+  "created_at_utc": "2026-11-14T12:04:46.240119+00:00",
+  "publication_kind": "platform_ai_research_direct_results",
+  "authorization": "User request dated 2026-11-14: deepen only A01 and A03 on the existing AI research page with direct results, evidence tables, meaning and limits; keep homepage, other research lines, scientific source files and paused M0 state unchanged",
+  "previous_presentation_commit": "858232daae36495e68645ae519441fd7d7a5a9d5",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v12.json",
+    "sha256": "aa9efd831558b47646b687e12be30724c4b8be89a0f98ccb8d06ef56cf04e81f"
+  },
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "allowed_html_paths": [
+    "research/index.html"
+  ],
+  "added_html_paths": [],
+  "allowed_achievement_lines": [
+    "A01",
+    "A03"
+  ],
+  "editorial_documents": [
+    {
+      "path": "content/ai-research-section.v1.json",
+      "sha256": "adabfe9f1a1cd652d117f7b9fc852bd7499487a9aa8a3139bccb47150033c301",
+      "bytes": 62264
+    },
+    {
+      "path": "scripts/render_ai_research.py",
+      "sha256": "729298ecb6146cba6b9a78bdc2074dabb10b6a2f551f7efaf4d0a4078e29f521",
+      "bytes": 34792
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "sha256": "7b6429b44a452837b73b10195020028f6a1955b76bfe991ecd5d3ad17f7c339e",
+      "bytes": 32304
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "sha256": "5bfcdb7a612e842b9d9857f485c0ef96142de73f0ff80cd94fd2445fc103227a",
+      "bytes": 139962
+    }
+  ],
+  "protected_website_members": {
+    "index.html": {
+      "sha256": "d9e96eb3dc370a9c076a1e0afbcc43b266a69491e63e11d421dc3d1c91698b19",
+      "bytes": 255067
+    },
+    "pftb/index.html": {
+      "sha256": "42ca404f2ed70b7a3b0b5d8b0eb742a2509e5a5a70fd0be36a65028e61cbd1f6",
+      "bytes": 97587
+    },
+    "topics/f53/index.html": {
+      "sha256": "8def3379a75dda6665d7cb3ee6c32193fc7a61ec6b31098abbefe9218fea39fe",
+      "bytes": 8161
+    },
+    "topics/refrigerants/index.html": {
+      "sha256": "5d9b5a355b949f67c5de252727f8d4e4e7533abab8a666c49a0f932170153c4e",
+      "bytes": 10636
+    },
+    "topics/fluoromonomers/index.html": {
+      "sha256": "780541f4a1762919c757a6be86b5551fb5ce0679d2778b8a9772d87fc70add94",
+      "bytes": 10553
+    },
+    "topics/perfluorosulfonates/index.html": {
+      "sha256": "85a6f4330edb7607f61ca217b71d2ef6c12cb1af0d48aaaebf737acf3a212ea5",
+      "bytes": 8888
+    },
+    "topics/chen-reagent/index.html": {
+      "sha256": "14f08afd4062c0ae171f24e5fb225e5968b003e885edc206baf08ca352b630df",
+      "bytes": 19991
+    },
+    "topics/single-electron-transfer/index.html": {
+      "sha256": "79c84f89e25e576a03f34153b9eb85a5ff73815c8265a0222930d889390ea947",
+      "bytes": 10355
+    },
+    "topics/fluoroporphyrins/index.html": {
+      "sha256": "24b6bb744b594573487847c89bbb35571ea56bc15d444ebeac3339379dbc1875",
+      "bytes": 6018
+    },
+    "topics/early-fluoroketones/index.html": {
+      "sha256": "a6da86d7f9ff0f35a5ea044252297a23e5ed71db829f2d184e3ab38a70dce9a2",
+      "bytes": 250938
+    },
+    "topics/fluorinated-small-rings/index.html": {
+      "sha256": "2413c83d4319746f41e940c04fe48bdeda28244235f5a9e8697285c187ba412d",
+      "bytes": 5924
+    },
+    "topics/deoxyfluorination/index.html": {
+      "sha256": "2aca9c13eb46f9fedfb02a2adfdc9423c207465f58608bcd671838d4d8045df5",
+      "bytes": 5550
+    },
+    "topics/sulfonyl-fluoride/index.html": {
+      "sha256": "fe944efbbfa5a7814015235f4ae3aae101db4046b0c9419986d6855d7ed15b49",
+      "bytes": 5043
+    },
+    "topics/index.html": {
+      "sha256": "44a5690d1e65195b9ff191d2a7ec37487070cdfafb191ae107962d5e0d7ab73c",
+      "bytes": 5055
+    },
+    "achievements/index.html": {
+      "sha256": "efb6d576b66c43dc697b4d492fb6eaf98c09b813adec7a12d0c952a1bf926ac0",
+      "bytes": 95440
+    },
+    "data/public-sources.json": {
+      "sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+      "bytes": 33608
+    },
+    "data/achievement-lines.json": {
+      "sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+      "bytes": 39768
+    },
+    "README.txt": {
+      "sha256": "6e15068b7240ae47d633df3f777e81fbb9e46146ee5f4ab70011f09119b6bbc9",
+      "bytes": 336
+    },
+    "ROUTES.txt": {
+      "sha256": "a734c356877d4534285ab7d71b9fe0f7a17abbced4de3c52f8e60d335301e418",
+      "bytes": 949
+    },
+    "QA.txt": {
+      "sha256": "a60b5f382b31689fa17e2518b7079ef0660674fb62bddbbf564c7b74dfe51067",
+      "bytes": 290
+    },
+    "IONIC-ENTRY-RETEST.txt": {
+      "sha256": "3462b056891a27c335cc2620deb87b245b6c9aea3bdaec607c8a14beca69fe9d",
+      "bytes": 741
+    }
+  },
+  "reconstruction_kind": "deduplicated_exact_utf8_text_edits",
+  "reverse_text_patch_pool": [
+    {
+      "old": "",
+      "new": ".result-nav{font-size:.9rem;display:flex;flex-wrap:wrap;gap:8px}.result-evidence{border-top:1px solid var(--line);margin:30px 0;padding-top:22px}.result-identity{color:var(--accent);font-size:.82rem;font-weight:700;letter-spacing:.03em}.result-evidence>h4{font:700 clamp(1.15rem,2.3vw,1.5rem)/1.6 var(--serif);margin:.4em 0}.result-table{overflow-x:auto;max-width:100%;margin:18px 0 12px;border:1px solid var(--line);background:#fff}.result-table:focus-visible{outline:3px solid #aa7545;outline-offset:2px}.result-table table{border-collapse:collapse;width:100%;min-width:660px;font-size:.88rem;line-height:1.7}.result-table caption{text-align:left;padding:14px 16px;color:var(--accent);font-weight:700;background:#edf2ec}.result-table th,.result-table td{text-align:left;vertical-align:top;padding:12px 14px;border-top:1px solid var(--line);overflow-wrap:anywhere}.result-table thead th{background:#f5f5ef}.result-table tbody th{font-weight:600;min-width:110px}.result-table td{min-width:100px}.research-line .table-note{color:var(--muted);font-size:.86rem;max-width:none}.scientific-meaning{border-left:3px solid #aa7545;padding:8px 18px;background:#f7f4eb}.result-limits{font-size:.9rem;color:var(--muted)}.result-sources{font-size:.9rem}.record-archive{border:1px solid var(--line);padding:16px;margin:26px 0}.record-archive summary{cursor:pointer;color:var(--accent);font-weight:600}.pending-work,.future-work{padding:14px 20px;margin:20px 0;background:#f5f1e8;border-left:3px solid #aa7545;scroll-margin-top:20px}.future-work{background:#edf3ef;border-color:var(--accent)}@media(max-width:640px){.research-line{padding:20px 18px}.result-table table{font-size:.83rem}.result-nav{font-size:.85rem}}"
+    },
+    {
+      "old": "",
+      "new": "nav class=\"result-nav\" aria-label=\"A01（全氟酮化学：六氟丙酮与双酚AF）研究状态\"><a href=\"#ai-a01-completed\">已完成工作</a> · <a href=\"#ai-a01-pending\">待核事项</a> · <a href=\"#ai-a01-future\">未来设想</a></nav><"
+    },
+    {
+      "old": "",
+      "new": " id=\"ai-a01-completed\""
+    },
+    {
+      "old": "有资料",
+      "new": "完成工作：原文"
+    },
+    {
+      "old": "结果",
+      "new": "数据复核"
+    },
+    {
+      "old": "",
+      "new": "><ul><li>已将1960年第一报英译本647–653页的反应讨论、结构式和实验鉴定关联，形成中文科学释读；下列历史成果归原作者。</li><li>已完成说明书质量—收率账本和指定衍生物摩尔折射的条件性数值重建，分别保留假设与未解释残差。完成计算不等于通过专业科学签认。</li></ul><article class=\"result-evidence\" id=\"a01-first-report-results\"><p class=\"result-identity\">历史论文记录 · 平台原文核读</p><h4>第一报揭示了哪些六氟丙酮反应？</h4><p>Knunyants、Ch’en Ch’ing-yun（陈庆云）、Gambaryan在1960年第一报中，把六氟丙酮反应组织为可继续转化和鉴定的产物体系。三位作者同属苏联科学院元素有机化合物研究所；原文未列个人分工，不按署名顺序推定贡献比例。</p><p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a01-first-report-results-table-1\"><table><caption id=\"a01-first-report-results-table-1\">反应、鉴定证据与原文位置</caption><thead><tr><th scope=\"col\">研究内容</th><th scope=\"col\">原文观察与证据</th><th scope=\"col\">英译本位置</th></tr></thead><tbody><tr><th scope=\"row\">醇加成产物与缩酮的不同稳定性</th><td>六氟丙酮与醇形成半缩酮，受热可分解回原反应物；转为对称或不对称缩酮后，原文记录其在所述酸、碱与苯胺处理中的不同稳定性。</td><td>p647讨论与结构式；p650实验段</td></tr><tr><th scope=\"row\">炔基有机镁加成与二醇构建</th><td>炔基有机镁试剂加成得到炔醇；使用双镁衍生物及后续偶联、与丙酮反应，分别构建对称或不对称含氟二醇。</td><td>p647–648结构式I–IV；p651相关实验</td></tr><tr><th scope=\"row\">羟基酮VII的C–C裂解与产物鉴定</th><td>羟基酮VII热分解得到六氟丙酮与苯乙酮；实验段分别以六氟丙酮氨基脲腙及苯乙酮二硝基苯腙与已知样品混熔无降点支持鉴定。</td><td>p648讨论、VII结构及裂解图；p651末段的两项混熔记录</td></tr><tr><th scope=\"row\">β-羟基酸、酯及衍生转化</th><td>Reformatskii型反应得到β-羟基酯VIII，再经水解等转化与已知酸IX、酰胺相关联；文中另列丙二酸及丙二酸酯相关产物。</td><td>p649讨论及VIII–X结构式；p652 VIII、IX、X实验段</td></tr></tbody></table></div><p class=\"scientific-meaning\"><b>科学意义：</b>原作者以产物转化、衍生物鉴定和未成功反应共同刻画含氟羰基化学；平台的贡献是把讨论、结构与实验出处对应起来，让后人能逐项追读这些开拓性工作。</p><ul class=\"result-limits\"><li>上述是历史实验记录的释读，不是平台新实验。混熔鉴定支持产物身份，不能单独证明唯一微观路径；原文稳定性和未反应结论各限于所试对象与条件。</li></ul><div class=\"result-sources\"><b>原文与结果出处</b><p class=\"links\"><a href=\"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n100\">第一报英译本 p.647（全文起页） →</a><a href=\"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n103\">p.650：醇衍生物及单体用途提议 →</a><a href=\"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n104\">p.651：二醇及裂解鉴定 →</a><a href=\"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n105\">p.652：酸酯、双酚与分析数据 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A01_FIRST_REPORT_zh-CN.md\">原文定位与中文释读 →</a></p></div></article><article class=\"result-evidence\" id=\"a01-bpaf-original\"><p class=\"result-identity\">两份独立历史记录</p><h4>双酚AF：论文与发明说明书分别记载了什么？</h4><p>第一报把六氟丙酮反应延伸至二酚的制备与鉴定。第117491号文书为发明人证书说明书；其网页镜像、传记中的授予证书书影和独立证书原件是不同材料。</p><p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a01-bpaf-original-table-1\"><table><caption id=\"a01-bpaf-original-table-1\">原值照录，保持各自实验身份</caption><thead><tr><th scope=\"col\">材料与对象</th><th scope=\"col\">产物质量</th><th scope=\"col\">原文收率</th><th scope=\"col\">原文熔点</th><th scope=\"col\">出处</th></tr></thead><tbody><tr><th scope=\"row\">第一报：双酚AF（XI）</th><td>29 g</td><td>90.5%</td><td>161–162°C</td><td>p.652；结构见p.649</td></tr><tr><th scope=\"row\">第117491号说明书：双酚AF</th><td>21.7 g</td><td>98%</td><td>161–162°C</td><td>单例说明书原图</td></tr><tr><th scope=\"row\">第一报：邻甲酚对应二酚（XII）</th><td>10.9 g</td><td>91%</td><td>134–135°C</td><td>p.652；结构见p.650</td></tr></tbody></table></div><p class=\"table-note\">XI原文元素分析Found：C 53.68%、H 2.98%、F 34.13%；Calculated：C 53.57%、H 2.97%、F 33.92%（p.652）。这两行原值不由平台现代原子量回算值替换。</p><p class=\"scientific-meaning\"><b>科学意义：</b>这些记录直接显示原团队从全氟酮反应走向含氟二酚制备，并用熔点与元素分析等支持产物鉴定；它们比单一历史评价更具体地呈现学术贡献。</p><ul class=\"result-limits\"><li>29 g／90.5%与21.7 g／98%不能合并成同一次实验，也不能仅据收率数字比较工艺优劣。XII是另一种甲基取代产物。</li><li>原作者提出XI、XII可作聚酯、聚氨酯等的潜在单体（p.650）；该提议不能写成该文已经测得聚合材料性能或实现产业采用。</li></ul><div class=\"result-sources\"><b>原文与结果出处</b><p class=\"links\"><a href=\"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n105\">p.652：酸酯、双酚与分析数据 →</a><a href=\"https://poleznayamodel.ru/patent/11/117491.html\">第117491号说明书镜像 →</a><a href=\"https://img.poleznayamodel.ru/img_pat/357/3573210.jpg\">说明书原图镜像 →</a><a href=\"../topics/early-fluoroketones/index.html#record-inventor-certificate\">证书书影与文书身份说明 →</a></p></div></article><article class=\"result-evidence\" id=\"a01-yield-results\"><p class=\"result-identity\">平台已完成 · 条件性数值重建</p><h4>质量账本能重建说明书所报的98%吗？</h4><p>说明书印出苯酚12.2 g、六氟丙酮11.2 g、产物21.7 g与98%。按目标名称作现代身份解析，以C₃F₆O＋2 C₆H₆O → C₁₅H₁₀F₆O₂＋H₂O作净计量，假设印出质量直接使用、纯度为1，名义限制试剂为苯酚。</p><p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a01-yield-results-table-1\"><table><caption id=\"a01-yield-results-table-1\">原报告与已保存的条件性重建</caption><thead><tr><th scope=\"col\">量</th><th scope=\"col\">数值</th><th scope=\"col\">身份</th></tr></thead><tbody><tr><th scope=\"row\">原报告收率</th><td>98%</td><td>说明书原值</td></tr><tr><th scope=\"row\">名义理论产物量</th><td>21.793205 g</td><td>固定假设下重建</td></tr><tr><th scope=\"row\">质量账本表观收率</th><td>99.572323%</td><td>21.7 g／名义理论量</td></tr><tr><th scope=\"row\">表观收率减原报告</th><td>+1.572323 个百分点</td><td>仍未解释的残差</td></tr></tbody></table></div><p class=\"table-note\">现代近似原子量约定：H=1.008、C=12.011、O=15.999、F=18.998403163。净计量式不是说明书原画结构式，也不是反应机理。</p><p class=\"table-note\">把三个质量各作独立±0.05 g显示舍入扰动，表观收率范围为98.937413%–100.212459%；原98%按±0.5个百分点的显示区间为97.5%–98.5%，两者不相交。两区间均不是实验不确定度或置信区间。</p><p class=\"scientific-meaning\"><b>科学意义：</b>结果把“98%如何得到”明确为理论量、原料身份与质量基准的追查问题；在所列假设下，单靠所设显示舍入不能使账本闭合。</p><ul class=\"result-limits\"><li>不据此修正原文产物质量或真实收率，不认定样品纯度、结构或材料性能，也不判定原作者实验或计算错误。原始收率基准仍待证据解释。</li></ul><div class=\"result-sources\"><b>原文与结果出处</b><p class=\"links\"><a href=\"https://img.poleznayamodel.ru/img_pat/357/3573210.jpg\">说明书原图 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/bisphenol-af-yield/README.md\">完整假设、结果与残差 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/bisphenol-af-yield/result.json\">已保存结果JSON →</a></p></div></article><article class=\"result-evidence\" id=\"a01-mr-results\"><p class=\"result-identity\">平台已完成 · 另一篇论文的物性复核</p><h4>衍生物I、V的摩尔折射重建：质量约定会改变判断吗？</h4><p>对象来自陈庆云、Gambaryan、Knuniants署名的1960年Doklady 133(5):1113–1116论文，与双酚AF制备记录分开。I、V主比较均采用20°C的折射率与相对密度。</p><p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a01-mr-results-table-1\"><table><caption id=\"a01-mr-results-table-1\">原文输入及原刊MR，两行对象各自独立</caption><thead><tr><th scope=\"col\">化合物／原页</th><th scope=\"col\">分子式</th><th scope=\"col\">n_D（20°C）</th><th scope=\"col\">d⁽²⁰⁾₄</th><th scope=\"col\">原刊found MR</th><th scope=\"col\">原刊“计算MR”</th></tr></thead><tbody><tr><th scope=\"row\">I／p.1115</th><td>C10H10F6O4</td><td>1.3720</td><td>1.3025</td><td>53.74</td><td>52.09</td></tr><tr><th scope=\"row\">V／p.1116</th><td>C10H13F6NO4</td><td>1.3840</td><td>1.4534</td><td>54.90</td><td>52.20</td></tr></tbody></table></div><p class=\"table-note\">MR按通常意义解释为cm³·mol⁻¹，原刊该段未另印单位。原刊“计算MR”的方法和加和常数未说明，不与本页Lorentz–Lorenz重建混同。</p><p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a01-mr-results-table-2\"><table><caption id=\"a01-mr-results-table-2\">Lorentz–Lorenz重建及相对原刊found MR的残差（cm³·mol⁻¹）</caption><thead><tr><th scope=\"col\">对象</th><th scope=\"col\">质量约定</th><th scope=\"col\">重建MR</th><th scope=\"col\">重建−原刊found MR</th><th scope=\"col\">所设舍入区间相交？</th></tr></thead><tbody><tr><th scope=\"row\">I</th><td>整数质量</td><td>53.744264</td><td>+0.004264</td><td>是</td></tr><tr><th scope=\"row\">I</th><td>现代近似原子量</td><td>53.775048</td><td>+0.035048</td><td>否</td></tr><tr><th scope=\"row\">V</th><td>整数质量</td><td>52.282137</td><td>-2.617863</td><td>否</td></tr><tr><th scope=\"row\">V</th><td>现代近似原子量</td><td>52.315504</td><td>-2.584496</td><td>否</td></tr></tbody></table></div><p class=\"table-note\">Rₘ=[(n_D²−1)/(n_D²+2)]·M/ρ；ρ≈d⁽²⁰⁾₄×1 g·cm⁻³。整数质量采用C=12、H=1、F=19、N=14、O=16，只是显式敏感性约定，未认定原作者当时使用这些常数。</p><p class=\"table-note\">折射率、密度各±0.00005及原刊MR±0.005只作独立显示舍入诊断；不是测量误差。I仅在整数质量约定下相容；V两种约定均保留残差。</p><p class=\"scientific-meaning\"><b>科学意义：</b>这项复核把历史数据的相容性落实到公式和质量约定：I的“相容”需要附条件，V则留下明确待查的缺口，便于后人继续寻找原始物性和表征证据。</p><ul class=\"result-limits\"><li>不是新的MR直接测量，也不能据此验证共轭解释、双酚AF结构或反应机理。V残差的原因尚未确定。III的分子式异文及IV混合温度输入仍保留在专业记录中。</li></ul><div class=\"result-sources\"><b>原文与结果出处</b><p class=\"links\"><a href=\"https://www.mathnet.ru/rus/dan23922\">原文目录与全文入口 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/molar-refraction/README.md\">物性复核说明 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/molar-refraction/result.json\">完整结果与舍入诊断 →</a></p></div></article><details class=\"record-archive\"><summary>专业记录与完整数据</summary"
+    },
+    {
+      "old": "",
+      "new": "/details><div class=\"pending-work\" id=\"ai-a01-pending\"><"
+    },
+    {
+      "old": "与边界",
+      "new": ""
+    },
+    {
+      "old": "AI核读需",
+      "new": "第一报俄文原刊、俄英逐句校勘、"
+    },
+    {
+      "old": "",
+      "new": "关键"
+    },
+    {
+      "old": "",
+      "new": "仍待完成"
+    },
+    {
+      "old": "双酚AF计量",
+      "new": "吡啶／哌啶"
+    },
+    {
+      "old": "衍生物物性及噁唑酮模型是",
+      "new": "氯／溴代乙酸酯和X投料列项"
+    },
+    {
+      "old": "个独立分支，不能互证。M0阶段诊断尚不能解释定性反应性，也不是历史实验或机理验证",
+      "new": "处异文保留"
+    },
+    {
+      "old": "旧进展JSON",
+      "new": "第117491号授予证书独立高清原件和档案来源待补；说明书的收率基准、原料"
+    },
+    {
+      "old": "",
+      "new": "样品纯度未明。传记证书书影已核见，不与独立原件混称。</li><li>I、V原刊“计算MR”的常数、真实测量不确定度及V残差原因待核；不静默更改原值。</li><li>M0噁唑酮模型仍为暂停的"
+    },
+    {
+      "old": "报告保留当时的材料取得状态；当前",
+      "new": "档案，完整曲率资格未闭合，不能承担合格势垒、机理或"
+    },
+    {
+      "old": "核读范围以第一报说明和现行历史档案为准，不把旧档案的“授予正页未取得”当作未见传记书影",
+      "new": "定性反应性解释"
+    },
+    {
+      "old": "p",
+      "new": "/div"
+    },
+    {
+      "old": "b",
+      "new": "div class=\"future-work\" id=\"ai-a01-future\""
+    },
+    {
+      "old": "下一步先补的证据：",
+      "new": "<h3>未来设想（尚未开展）"
+    },
+    {
+      "old": "b",
+      "new": "h3"
+    },
+    {
+      "old": "优",
+      "new": "<ul><li>"
+    },
+    {
+      "old": "补授予证书独立高",
+      "new": "追查同一成果的其他原始记录，厘"
+    },
+    {
+      "old": "扫描与来源档案",
+      "new": "收率和物性基准"
+    },
+    {
+      "old": "再补学位论文及原文",
+      "new": "并完成"
+    },
+    {
+      "old": "",
+      "new": "与结构签认"
+    },
+    {
+      "old": "p",
+      "new": "li"
+    },
+    {
+      "old": "<b>候选后续问题：</b>在保留原文观察与结构异文的基础上",
+      "new": "未来若考虑现代模型或实验"
+    },
+    {
+      "old": "哪些",
+      "new": "须另行明确具体对象、"
+    },
+    {
+      "old": "能区分",
+      "new": "和先行研究；这里不把"
+    },
+    {
+      "old": "？",
+      "new": "写成已完成发现，也不恢复M0计算。"
+    },
+    {
+      "old": "p",
+      "new": "li></ul></div"
+    },
+    {
+      "old": "",
+      "new": "nav class=\"result-nav\" aria-label=\"A03（全氟叔丁基（PFtB）化学）研究状态\"><a href=\"#ai-a03-completed\">已完成工作</a> · <a href=\"#ai-a03-pending\">待核事项</a> · <a href=\"#ai-a03-future\">未来设想</a></nav><"
+    },
+    {
+      "old": "",
+      "new": " id=\"ai-a03-completed\""
+    },
+    {
+      "old": "",
+      "new": "><ul><li>已转录1966年论文表1的10个波长记录；9个配对记录形成下列6项位移，另一条CCl₄记录不属于此配对任务。</li><li>已用固定公式保存波长差、波数蓝移及假定有界扰动诊断。单位换算与敏感性分析属于平台数值重放，不是独立光谱实验。</li></ul><article class=\"result-evidence\" id=\"a03-shift-results\"><p class=\"result-identity\">原表数据＋平台单位重放</p><h4>三种碘代物的六项紫外溶剂位移</h4><p>陈庆云、蒋锡夔、陈秉启、梁梦兰在1966年《化学学报》论文中研究全氟叔丁基碘及相应溴化物的制备、结构与反应，并用紫外溶剂位移讨论吸电性顺序。这里直接展示印刷p.21表1的对应波长和已保存换算值。</p><p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a03-shift-results-table-1\"><table><caption id=\"a03-shift-results-table-1\">λ为原表吸收峰λmax；波长单位nm，蓝移单位cm⁻¹</caption><thead><tr><th scope=\"col\">完整碘代物</th><th scope=\"col\">给体溶剂B</th><th scope=\"col\">λH／nm</th><th scope=\"col\">λB／nm</th><th scope=\"col\">原表δλ／nm</th><th scope=\"col\">换算Δν̃／cm⁻¹</th></tr></thead><tbody><tr><th scope=\"row\">全氟正丙基碘 n-C₃F₇I</th><td>乙醇</td><td>270.0</td><td>250.0</td><td>20.0</td><td>2962.963</td></tr><tr><th scope=\"row\">全氟异丙基碘 i-C₃F₇I</th><td>乙醇</td><td>274.0</td><td>250.0</td><td>24.0</td><td>3503.650</td></tr><tr><th scope=\"row\">全氟叔丁基碘 (CF₃)₃CI</th><td>乙醇</td><td>288.0</td><td>260.5</td><td>27.5</td><td>3665.494</td></tr><tr><th scope=\"row\">全氟正丙基碘 n-C₃F₇I</th><td>乙醚</td><td>270.0</td><td>256.0</td><td>14.0</td><td>2025.463</td></tr><tr><th scope=\"row\">全氟异丙基碘 i-C₃F₇I</th><td>乙醚</td><td>274.0</td><td>257.0</td><td>17.0</td><td>2414.155</td></tr><tr><th scope=\"row\">全氟叔丁基碘 (CF₃)₃CI</th><td>乙醚</td><td>288.0</td><td>264.0</td><td>24.0</td><td>3156.566</td></tr></tbody></table></div><p class=\"table-note\">H沿用原表C₆H₁₄记号，当前登记未进一步指定异构体；B是乙醇或乙醚的给体溶剂记号，不是苯。原单位毫微米的数值等于nm。</p><p class=\"table-note\">δλ=λH−λB；Δν̃=10⁷(1/λB−1/λH)，λ以nm计。正值表示蓝移。两个尺度来自同一批波长，不是两组独立实验。</p><p class=\"scientific-meaning\"><b>科学意义：</b>在乙醇和乙醚中，两种数值表达都保留名义顺序：全氟叔丁基碘＞全氟异丙基碘＞全氟正丙基碘。平台重放使原作者所用位移证据可逐项复核，并显示结论应保留完整分子与介质条件。</p><ul class=\"result-limits\"><li>本表没有CF₃I或C₂F₅I的直接数值；不能把n-C₃F₇I换成C₂F₅I，也不能把三种分子的位移直接升级为四种孤立基团的普适诱导顺序。</li><li>原作者的制备、结构鉴定和反应实验依原文归属；本任务只重放表格，不由这些换算裁决亲卤反应机制、游离阴离子或材料性能。</li></ul><div class=\"result-sources\"><b>原文与结果出处</b><p class=\"links\"><a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18\">1966原论文与PDF入口（p.21表1） →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/data/pftb1966_table1.csv\">原表波长转录 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/pftb1966-uv-replay.json\">六项结果与完整比较 →</a><a href=\"../pftb/index.html#contribution\">原作者的研究贡献与论证 →</a></p></div></article><article class=\"result-evidence\" id=\"a03-sensitivity-results\"><p class=\"result-identity\">平台已完成 · 假定扰动诊断</p><h4>同一名义顺序的数值裕量有多大？</h4><p>乙醇中，全氟叔丁基碘与全氟异丙基碘的波数蓝移最接近，名义差为161.844074 cm⁻¹。已保存结果采用每个相关峰位独立±u nm的有界扰动模型。</p><p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a03-sensitivity-results-table-1\"><table><caption id=\"a03-sensitivity-results-table-1\">同一对分子的两种比较尺度</caption><thead><tr><th scope=\"col\">比较量</th><th scope=\"col\">名义差</th><th scope=\"col\">区间首次接触的峰位半宽u</th></tr></thead><tbody><tr><th scope=\"row\">波长差δλ</th><td>3.5 nm</td><td>0.875 nm</td></tr><tr><th scope=\"row\">波数蓝移Δν̃</th><td>161.844074 cm⁻¹</td><td>0.288427 nm</td></tr></tbody></table></div><p class=\"table-note\">按每个峰独立±0.05 nm的显示舍入假设，保存结果中各相邻比较仍分离；真实测量不确定度未由原表提供，仍记为未知。</p><p class=\"scientific-meaning\"><b>科学意义：</b>单位变换保留了名义顺序，却改变了比较的数值裕量。这提示后续评价要区分显示精度、真实测量不确定度与物理解释，不能把某个阈值直接当作实验显著性。</p><ul class=\"result-limits\"><li>0.288427、0.875和±0.05 nm均属声明的数学扰动模型；不是仪器精度、实验误差、置信区间，也不构成对原论文的否定。</li></ul><div class=\"result-sources\"><b>原文与结果出处</b><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/REPLAY_REPORT_zh-CN.md\">重放与敏感性报告 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/protocols/pftb1966_uv.json\">固定协议与单位约定 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/pftb1966-uv-replay.json\">已保存比较结果 →</a></p></div></article><details class=\"record-archive\"><summary>专业记录与完整数据</summary"
+    },
+    {
+      "old": "",
+      "new": "/details><div class=\"pending-work\" id=\"ai-a03-pending\"><"
+    },
+    {
+      "old": "同一",
+      "new": ""
+    },
+    {
+      "old": "的单位变换不是",
+      "new": "转录仍待"
+    },
+    {
+      "old": "实验",
+      "new": "化学专家签认"
+    },
+    {
+      "old": "人为扰动不是",
+      "new": "未重新"
+    },
+    {
+      "old": "误差。三种",
+      "new": "光谱、重建"
+    },
+    {
+      "old": "碘代物的名义比较不能升级为四基团普适规律、游离阴离子观测",
+      "new": "谱线"
+    },
+    {
+      "old": "机理验证",
+      "new": "进行峰拟合"
+    },
+    {
+      "old": "",
+      "new": "真实峰位不确定度"
+    },
+    {
+      "old": "进行新",
+      "new": "知；当前重放协议未登记温度、浓度、光程、仪器及谱带归属，尚不足以定义现代"
+    },
+    {
+      "old": "实",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "证模型。</li><li>从完整碘代物位移到基团效应解释仍需额外证据，不能凭本表补造CF₃I"
+    },
+    {
+      "old": "峰拟合",
+      "new": "C₂F₅I数据"
+    },
+    {
+      "old": "量子化学计算；真实测量误差仍未知，独立化学专家转录签",
+      "new": ""
+    },
+    {
+      "old": "待补",
+      "new": "定反应机理"
+    },
+    {
+      "old": "b",
+      "new": "div class=\"future-work\" id=\"ai-a03-future\""
+    },
+    {
+      "old": "与原扫描的",
+      "new": ""
+    },
+    {
+      "old": "逐",
+      "new": "并从原始文献与相关记录补齐测量"
+    },
+    {
+      "old": "补引文原文",
+      "new": "件"
+    },
+    {
+      "old": "实验语境",
+      "new": "谱带归属"
+    },
+    {
+      "old": "p",
+      "new": "li>资料充分后，再论证如何用独立光谱测量或明确的现代模型区分溶剂相互作用与基团效应；此为待查新、待设计的问题，尚未启动。</li"
+    },
+    {
+      "old": "b",
+      "new": "/ul"
+    },
+    {
+      "old": "候选后续问题：",
+      "new": ""
+    },
+    {
+      "old": "b>原表所比较的是完整碘代物的溶剂位移，还是可独立搬用的基团常数？</p",
+      "new": "div"
+    },
+    {
+      "old": "",
+      "new": "      ],\r\n      \"completed_summary\": [\r\n        \"已将1960年第一报英译本647–653页的反应讨论、结构式和实验鉴定关联，形成中文科学释读；下列历史成果归原作者。\",\r\n        \"已完成说明书质量—收率账本和指定衍生物摩尔折射的条件性数值重建，分别保留假设与未解释残差。完成计算不等于通过专业科学签认。\"\r\n      ],\r\n      \"result_sections\": [\r\n        {\r\n          \"id\": \"a01-first-report-results\",\r\n          \"title\": \"第一报揭示了哪些六氟丙酮反应？\",\r\n          \"identity\": \"历史论文记录 · 平台原文核读\",\r\n          \"summary\": \"Knunyants、Ch’en Ch’ing-yun（陈庆云）、Gambaryan在1960年第一报中，把六氟丙酮反应组织为可继续转化和鉴定的产物体系。三位作者同属苏联科学院元素有机化合物研究所；原文未列个人分工，不按署名顺序推定贡献比例。\",\r\n          \"tables\": [\r\n            {\r\n              \"caption\": \"反应、鉴定证据与原文位置\",\r\n              \"columns\": [\r\n                \"研究内容\",\r\n                \"原文观察与证据\",\r\n                \"英译本位置\"\r\n              ],\r\n              \"rows\": [\r\n                [\r\n                  \"醇加成产物与缩酮的不同稳定性\",\r\n                  \"六氟丙酮与醇形成半缩酮，受热可分解回原反应物；转为对称或不对称缩酮后，原文记录其在所述酸、碱与苯胺处理中的不同稳定性。\",\r\n                  \"p647讨论与结构式；p650实验段\"\r\n                ],\r\n                [\r\n                  \"炔基有机镁加成与二醇构建\",\r\n                  \"炔基有机镁试剂加成得到炔醇；使用双镁衍生物及后续偶联、与丙酮反应，分别构建对称或不对称含氟二醇。\",\r\n                  \"p647–648结构式I–IV；p651相关实验\"\r\n                ],\r\n                [\r\n                  \"羟基酮VII的C–C裂解与产物鉴定\",\r\n                  \"羟基酮VII热分解得到六氟丙酮与苯乙酮；实验段分别以六氟丙酮氨基脲腙及苯乙酮二硝基苯腙与已知样品混熔无降点支持鉴定。\",\r\n                  \"p648讨论、VII结构及裂解图；p651末段的两项混熔记录\"\r\n                ],\r\n                [\r\n                  \"β-羟基酸、酯及衍生转化\",\r\n                  \"Reformatskii型反应得到β-羟基酯VIII，再经水解等转化与已知酸IX、酰胺相关联；文中另列丙二酸及丙二酸酯相关产物。\",\r\n                  \"p649讨论及VIII–X结构式；p652 VIII、IX、X实验段\"\r\n                ]\r\n              ],\r\n              \"notes\": []\r\n            }\r\n          ],\r\n          \"meaning\": \"原作者以产物转化、衍生物鉴定和未成功反应共同刻画含氟羰基化学；平台的贡献是把讨论、结构与实验出处对应起来，让后人能逐项追读这些开拓性工作。\",\r\n          \"caveats\": [\r\n            \"上述是历史实验记录的释读，不是平台新实验。混熔鉴定支持产物身份，不能单独证明唯一微观路径；原文稳定性和未反应结论各限于所试对象与条件。\"\r\n          ],\r\n          \"links\": [\r\n            {\r\n              \"title\": \"第一报英译本 p.647（全文起页）\",\r\n              \"url\": \"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n100\",\r\n              \"kind\": \"external\"\r\n            },\r\n            {\r\n              \"title\": \"p.650：醇衍生物及单体用途提议\",\r\n              \"url\": \"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n103\",\r\n              \"kind\": \"external\"\r\n            },\r\n            {\r\n              \"title\": \"p.651：二醇及裂解鉴定\",\r\n              \"url\": \"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n104\",\r\n              \"kind\": \"external\"\r\n            },\r\n            {\r\n              \"title\": \"p.652：酸酯、双酚与分析数据\",\r\n              \"url\": \"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n105\",\r\n              \"kind\": \"external\"\r\n            },\r\n            {\r\n              \"title\": \"原文定位与中文释读\",\r\n              \"url\": \"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A01_FIRST_REPORT_zh-CN.md\",\r\n              \"kind\": \"repo\"\r\n            }\r\n          ]\r\n        },\r\n        {\r\n          \"id\": \"a01-bpaf-original\",\r\n          \"title\": \"双酚AF：论文与发明说明书分别记载了什么？\",\r\n          \"identity\": \"两份独立历史记录\",\r\n          \"summary\": \"第一报把六氟丙酮反应延伸至二酚的制备与鉴定。第117491号文书为发明人证书说明书；其网页镜像、传记中的授予证书书影和独立证书原件是不同材料。\",\r\n          \"tables\": [\r\n            {\r\n              \"caption\": \"原值照录，保持各自实验身份\",\r\n              \"columns\": [\r\n                \"材料与对象\",\r\n                \"产物质量\",\r\n                \"原文收率\",\r\n                \"原文熔点\",\r\n                \"出处\"\r\n              ],\r\n              \"rows\": [\r\n                [\r\n                  \"第一报：双酚AF（XI）\",\r\n                  \"29 g\",\r\n                  \"90.5%\",\r\n                  \"161–162°C\",\r\n                  \"p.652；结构见p.649\"\r\n                ],\r\n                [\r\n                  \"第117491号说明书：双酚AF\",\r\n                  \"21.7 g\",\r\n                  \"98%\",\r\n                  \"161–162°C\",\r\n                  \"单例说明书原图\"\r\n                ],\r\n                [\r\n                  \"第一报：邻甲酚对应二酚（XII）\",\r\n                  \"10.9 g\",\r\n                  \"91%\",\r\n                  \"134–135°C\",\r\n                  \"p.652；结构见p.650\"\r\n                ]\r\n              ],\r\n              \"notes\": [\r\n                \"XI原文元素分析Found：C 53.68%、H 2.98%、F 34.13%；Calculated：C 53.57%、H 2.97%、F 33.92%（p.652）。这两行原值不由平台现代原子量回算值替换。\"\r\n              ]\r\n            }\r\n          ],\r\n          \"meaning\": \"这些记录直接显示原团队从全氟酮反应走向含氟二酚制备，并用熔点与元素分析等支持产物鉴定；它们比单一历史评价更具体地呈现学术贡献。\",\r\n          \"caveats\": [\r\n            \"29 g／90.5%与21.7 g／98%不能合并成同一次实验，也不能仅据收率数字比较工艺优劣。XII是另一种甲基取代产物。\",\r\n            \"原作者提出XI、XII可作聚酯、聚氨酯等的潜在单体（p.650）；该提议不能写成该文已经测得聚合材料性能或实现产业采用。\"\r\n          ],\r\n          \"links\": [\r\n            {\r\n              \"title\": \"p.652：酸酯、双酚与分析数据\",\r\n              \"url\": \"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n105\",\r\n              \"kind\": \"external\"\r\n            },\r\n            {\r\n              \"title\": \"第117491号说明书镜像\",\r\n              \"url\": \"https://poleznayamodel.ru/patent/11/117491.html\",\r\n              \"kind\": \"external\"\r\n            },\r\n            {\r\n              \"title\": \"说明书原图镜像\",\r\n              \"url\": \"https://img.poleznayamodel.ru/img_pat/357/3573210.jpg\",\r\n              \"kind\": \"external\"\r\n            },\r\n            {\r\n              \"title\": \"证书书影与文书身份说明\",\r\n              \"url\": \"../topics/early-fluoroketones/index.html#record-inventor-certificate\",\r\n              \"kind\": \"site\"\r\n            }\r\n          ]\r\n        },\r\n        {\r\n          \"id\": \"a01-yield-results\",\r\n          \"title\": \"质量账本能重建说明书所报的98%吗？\",\r\n          \"identity\": \"平台已完成 · 条件性数值重建\",\r\n          \"summary\": \"说明书印出苯酚12.2 g、六氟丙酮11.2 g、产物21.7 g与98%。按目标名称作现代身份解析，以C₃F₆O＋2 C₆H₆O → C₁₅H₁₀F₆O₂＋H₂O作净计量，假设印出质量直接使用、纯度为1，名义限制试剂为苯酚。\",\r\n          \"tables\": [\r\n            {\r\n              \"caption\": \"原报告与已保存的条件性重建\",\r\n              \"columns\": [\r\n                \"量\",\r\n                \"数值\",\r\n                \"身份\"\r\n              ],\r\n              \"rows\": [\r\n                [\r\n                  \"原报告收率\",\r\n                  \"98%\",\r\n                  \"说明书原值\"\r\n                ],\r\n                [\r\n                  \"名义理论产物量\",\r\n                  \"21.793205 g\",\r\n                  \"固定假设下重建\"\r\n                ],\r\n                [\r\n                  \"质量账本表观收率\",\r\n                  \"99.572323%\",\r\n                  \"21.7 g／名义理论量\"\r\n                ],\r\n                [\r\n                  \"表观收率减原报告\",\r\n                  \"+1.572323 个百分点\",\r\n                  \"仍未解释的残差\"\r\n                ]\r\n              ],\r\n              \"notes\": [\r\n                \"现代近似原子量约定：H=1.008、C=12.011、O=15.999、F=18.998403163。净计量式不是说明书原画结构式，也不是反应机理。\",\r\n                \"把三个质量各作独立±0.05 g显示舍入扰动，表观收率范围为98.937413%–100.212459%；原98%按±0.5个百分点的显示区间为97.5%–98.5%，两者不相交。两区间均不是实验不确定度或置信区间。\"\r\n              ]\r\n            }\r\n          ],\r\n          \"meaning\": \"结果把“98%如何得到”明确为理论量、原料身份与质量基准的追查问题；在所列假设下，单靠所设显示舍入不能使账本闭合。\",\r\n          \"caveats\": [\r\n            \"不据此修正原文产物质量或真实收率，不认定样品纯度、结构或材料性能，也不判定原作者实验或计算错误。原始收率基准仍待证据解释。\"\r\n          ],\r\n          \"links\": [\r\n            {\r\n              \"title\": \"说明书原图\",\r\n              \"url\": \"https://img.poleznayamodel.ru/img_pat/357/3573210.jpg\",\r\n              \"kind\": \"external\"\r\n            },\r\n            {\r\n              \"title\": \"完整假设、结果与残差\",\r\n              \"url\": \"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/bisphenol-af-yield/README.md\",\r\n              \"kind\": \"repo\"\r\n            },\r\n            {\r\n              \"title\": \"已保存结果JSON\",\r\n              \"url\": \"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/bisphenol-af-yield/result.json\",\r\n              \"kind\": \"repo\"\r\n            }\r\n          ]\r\n        },\r\n        {\r\n          \"id\": \"a01-mr-results\",\r\n          \"title\": \"衍生物I、V的摩尔折射重建：质量约定会改变判断吗？\",\r\n          \"identity\": \"平台已完成 · 另一篇论文的物性复核\",\r\n          \"summary\": \"对象来自陈庆云、Gambaryan、Knuniants署名的1960年Doklady 133(5):1113–1116论文，与双酚AF制备记录分开。I、V主比较均采用20°C的折射率与相对密度。\",\r\n          \"tables\": [\r\n            {\r\n              \"caption\": \"原文输入及原刊MR，两行对象各自独立\",\r\n              \"columns\": [\r\n                \"化合物／原页\",\r\n                \"分子式\",\r\n                \"n_D（20°C）\",\r\n                \"d⁽²⁰⁾₄\",\r\n                \"原刊found MR\",\r\n                \"原刊“计算MR”\"\r\n              ],\r\n              \"rows\": [\r\n                [\r\n                  \"I／p.1115\",\r\n                  \"C10H10F6O4\",\r\n                  \"1.3720\",\r\n                  \"1.3025\",\r\n                  \"53.74\",\r\n                  \"52.09\"\r\n                ],\r\n                [\r\n                  \"V／p.1116\",\r\n                  \"C10H13F6NO4\",\r\n                  \"1.3840\",\r\n                  \"1.4534\",\r\n                  \"54.90\",\r\n                  \"52.20\"\r\n                ]\r\n              ],\r\n              \"notes\": [\r\n                \"MR按通常意义解释为cm³·mol⁻¹，原刊该段未另印单位。原刊“计算MR”的方法和加和常数未说明，不与本页Lorentz–Lorenz重建混同。\"\r\n              ]\r\n            },\r\n            {\r\n              \"caption\": \"Lorentz–Lorenz重建及相对原刊found MR的残差（cm³·mol⁻¹）\",\r\n              \"columns\": [\r\n                \"对象\",\r\n                \"质量约定\",\r\n                \"重建MR\",\r\n                \"重建−原刊found MR\",\r\n                \"所设舍入区间相交？\"\r\n              ],\r\n              \"rows\": [\r\n                [\r\n                  \"I\",\r\n                  \"整数质量\",\r\n                  \"53.744264\",\r\n                  \"+0.004264\",\r\n                  \"是\"\r\n                ],\r\n                [\r\n                  \"I\",\r\n                  \"现代近似原子量\",\r\n                  \"53.775048\",\r\n                  \"+0.035048\",\r\n                  \"否\"\r\n                ],\r\n                [\r\n                  \"V\",\r\n                  \"整数质量\",\r\n                  \"52.282137\",\r\n                  \"-2.617863\",\r\n                  \"否\"\r\n                ],\r\n                [\r\n                  \"V\",\r\n                  \"现代近似原子量\",\r\n                  \"52.315504\",\r\n                  \"-2.584496\",\r\n                  \"否\"\r\n                ]\r\n              ],\r\n              \"notes\": [\r\n                \"Rₘ=[(n_D²−1)/(n_D²+2)]·M/ρ；ρ≈d⁽²⁰⁾₄×1 g·cm⁻³。整数质量采用C=12、H=1、F=19、N=14、O=16，只是显式敏感性约定，未认定原作者当时使用这些常数。\",\r\n                \"折射率、密度各±0.00005及原刊MR±0.005只作独立显示舍入诊断；不是测量误差。I仅在整数质量约定下相容；V两种约定均保留残差。\"\r\n              ]\r\n            }\r\n          ],\r\n          \"meaning\": \"这项复核把历史数据的相容性落实到公式和质量约定：I的“相容”需要附条件，V则留下明确待查的缺口，便于后人继续寻找原始物性和表征证据。\",\r\n          \"caveats\": [\r\n            \"不是新的MR直接测量，也不能据此验证共轭解释、双酚AF结构或反应机理。V残差的原因尚未确定。III的分子式异文及IV混合温度输入仍保留在专业记录中。\"\r\n          ],\r\n          \"links\": [\r\n            {\r\n              \"title\": \"原文目录与全文入口\",\r\n              \"url\": \"https://www.mathnet.ru/rus/dan23922\",\r\n              \"kind\": \"external\"\r\n            },\r\n            {\r\n              \"title\": \"物性复核说明\",\r\n              \"url\": \"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/molar-refraction/README.md\",\r\n              \"kind\": \"repo\"\r\n            },\r\n            {\r\n              \"title\": \"完整结果与舍入诊断\",\r\n              \"url\": \"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/molar-refraction/result.json\",\r\n              \"kind\": \"repo\"\r\n            }\r\n          ]\r\n        }\r\n      ],\r\n      \"pending_items\": [\r\n        \"第一报俄文原刊、俄英逐句校勘、专业核译与关键结构签认仍待完成；吡啶／哌啶、氯／溴代乙酸酯和X投料列项三处异文保留。\",\r\n        \"第117491号授予证书独立高清原件和档案来源待补；说明书的收率基准、原料与样品纯度未明。传记证书书影已核见，不与独立原件混称。\",\r\n        \"I、V原刊“计算MR”的常数、真实测量不确定度及V残差原因待核；不静默更改原值。\",\r\n        \"M0噁唑酮模型仍为暂停的阶段档案，完整曲率资格未闭合，不能承担合格势垒、机理或原文定性反应性解释。\"\r\n      ],\r\n      \"future_items\": [\r\n        \"先追查同一成果的其他原始记录，厘清收率和物性基准，并完成专业译校与结构签认。\",\r\n        \"未来若考虑现代模型或实验，须另行明确具体对象、可检验量和先行研究；这里不把候选解释写成已完成发现，也不恢复M0计算。\"\r\n      ],\r\n      \"result_checks\": [\r\n        {\r\n          \"section_id\": \"a01-yield-results\",\r\n          \"table\": 0,\r\n          \"row\": 0,\r\n          \"column\": 1,\r\n          \"path\": \"research/a01/bisphenol-af-yield/result.json\",\r\n          \"pointer\": \"/reported_yield_percent\",\r\n          \"format\": \".0f\",\r\n          \"suffix\": \"%\"\r\n        },\r\n        {\r\n          \"section_id\": \"a01-yield-results\",\r\n          \"table\": 0,\r\n          \"row\": 1,\r\n          \"column\": 1,\r\n          \"path\": \"research/a01/bisphenol-af-yield/result.json\",\r\n          \"pointer\": \"/nominal_theoretical_product_g\",\r\n          \"format\": \".6f\",\r\n          \"suffix\": \" g\"\r\n        },\r\n        {\r\n          \"section_id\": \"a01-yield-results\",\r\n          \"table\": 0,\r\n          \"row\": 2,\r\n          \"column\": 1,\r\n          \"path\": \"research/a01/bisphenol-af-yield/result.json\",\r\n          \"pointer\": \"/nominal_mass_based_apparent_yield_percent\",\r\n          \"format\": \".6f\",\r\n          \"suffix\": \"%\"\r\n        },\r\n        {\r\n          \"section_id\": \"a01-yield-results\",\r\n          \"table\": 0,\r\n          \"row\": 3,\r\n          \"column\": 1,\r\n          \"path\": \"research/a01/bisphenol-af-yield/result.json\",\r\n          \"pointer\": \"/residual_to_reported_yield_percentage_points\",\r\n          \"format\": \"+.6f\",\r\n          \"suffix\": \" 个百分点\"\r\n        },\r\n        {\r\n          \"section_id\": \"a01-mr-results\",\r\n          \"table\": 0,\r\n          \"row\": 0,\r\n          \"column\": 2,\r\n          \"path\": \"research/a01/molar-refraction/result.json\",\r\n          \"pointer\": \"/rows/0/reported_n_D\",\r\n          \"format\": \".4f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a01-mr-results\",\r\n          \"table\": 0,\r\n          \"row\": 0,\r\n          \"column\": 3,\r\n          \"path\": \"research/a01/molar-refraction/result.json\",\r\n          \"pointer\": \"/rows/0/reported_relative_density\",\r\n          \"format\": \".4f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a01-mr-results\",\r\n          \"table\": 0,\r\n          \"row\": 0,\r\n          \"column\": 4,\r\n          \"path\": \"research/a01/molar-refraction/result.json\",\r\n          \"pointer\": \"/rows/0/printed_found_MR_cm3_mol\",\r\n          \"format\": \".2f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a01-mr-results\",\r\n          \"table\": 0,\r\n          \"row\": 0,\r\n          \"column\": 5,\r\n          \"path\": \"research/a01/molar-refraction/result.json\",\r\n          \"pointer\": \"/rows/0/printed_calculated_MR_cm3_mol\",\r\n          \"format\": \".2f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a01-mr-results\",\r\n          \"table\": 1,\r\n          \"row\": 0,\r\n          \"column\": 2,\r\n          \"path\": \"research/a01/molar-refraction/result.json\",\r\n          \"pointer\": \"/rows/0/mass_conventions/integer_mass_convention/reconstructed_MR_cm3_mol\",\r\n          \"format\": \".6f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a01-mr-results\",\r\n          \"table\": 1,\r\n          \"row\": 0,\r\n          \"column\": 3,\r\n          \"path\": \"research/a01/molar-refraction/result.json\",\r\n          \"pointer\": \"/rows/0/mass_conventions/integer_mass_convention/reconstructed_minus_printed_found_cm3_mol\",\r\n          \"format\": \"+.6f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a01-mr-results\",\r\n          \"table\": 1,\r\n          \"row\": 1,\r\n          \"column\": 2,\r\n          \"path\": \"research/a01/molar-refraction/result.json\",\r\n          \"pointer\": \"/rows/0/mass_conventions/modern_approximate_atomic_weights/reconstructed_MR_cm3_mol\",\r\n          \"format\": \".6f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a01-mr-results\",\r\n          \"table\": 1,\r\n          \"row\": 1,\r\n          \"column\": 3,\r\n          \"path\": \"research/a01/molar-refraction/result.json\",\r\n          \"pointer\": \"/rows/0/mass_conventions/modern_approximate_atomic_weights/reconstructed_minus_printed_found_cm3_mol\",\r\n          \"format\": \"+.6f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a01-mr-results\",\r\n          \"table\": 0,\r\n          \"row\": 1,\r\n          \"column\": 2,\r\n          \"path\": \"research/a01/molar-refraction/result.json\",\r\n          \"pointer\": \"/rows/4/reported_n_D\",\r\n          \"format\": \".4f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a01-mr-results\",\r\n          \"table\": 0,\r\n          \"row\": 1,\r\n          \"column\": 3,\r\n          \"path\": \"research/a01/molar-refraction/result.json\",\r\n          \"pointer\": \"/rows/4/reported_relative_density\",\r\n          \"format\": \".4f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a01-mr-results\",\r\n          \"table\": 0,\r\n          \"row\": 1,\r\n          \"column\": 4,\r\n          \"path\": \"research/a01/molar-refraction/result.json\",\r\n          \"pointer\": \"/rows/4/printed_found_MR_cm3_mol\",\r\n          \"format\": \".2f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a01-mr-results\",\r\n          \"table\": 0,\r\n          \"row\": 1,\r\n          \"column\": 5,\r\n          \"path\": \"research/a01/molar-refraction/result.json\",\r\n          \"pointer\": \"/rows/4/printed_calculated_MR_cm3_mol\",\r\n          \"format\": \".2f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a01-mr-results\",\r\n          \"table\": 1,\r\n          \"row\": 2,\r\n          \"column\": 2,\r\n          \"path\": \"research/a01/molar-refraction/result.json\",\r\n          \"pointer\": \"/rows/4/mass_conventions/integer_mass_convention/reconstructed_MR_cm3_mol\",\r\n          \"format\": \".6f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a01-mr-results\",\r\n          \"table\": 1,\r\n          \"row\": 2,\r\n          \"column\": 3,\r\n          \"path\": \"research/a01/molar-refraction/result.json\",\r\n          \"pointer\": \"/rows/4/mass_conventions/integer_mass_convention/reconstructed_minus_printed_found_cm3_mol\",\r\n          \"format\": \"+.6f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a01-mr-results\",\r\n          \"table\": 1,\r\n          \"row\": 3,\r\n          \"column\": 2,\r\n          \"path\": \"research/a01/molar-refraction/result.json\",\r\n          \"pointer\": \"/rows/4/mass_conventions/modern_approximate_atomic_weights/reconstructed_MR_cm3_mol\",\r\n          \"format\": \".6f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a01-mr-results\",\r\n          \"table\": 1,\r\n          \"row\": 3,\r\n          \"column\": 3,\r\n          \"path\": \"research/a01/molar-refraction/result.json\",\r\n          \"pointer\": \"/rows/4/mass_conventions/modern_approximate_atomic_weights/reconstructed_minus_printed_found_cm3_mol\",\r\n          \"format\": \"+.6f\",\r\n          \"suffix\": \"\"\r\n        }\r\n"
+    },
+    {
+      "old": "",
+      "new": "        }\r\n      ],\r\n      \"completed_summary\": [\r\n        \"已转录1966年论文表1的10个波长记录；9个配对记录形成下列6项位移，另一条CCl₄记录不属于此配对任务。\",\r\n        \"已用固定公式保存波长差、波数蓝移及假定有界扰动诊断。单位换算与敏感性分析属于平台数值重放，不是独立光谱实验。\"\r\n      ],\r\n      \"result_sections\": [\r\n        {\r\n          \"id\": \"a03-shift-results\",\r\n          \"title\": \"三种碘代物的六项紫外溶剂位移\",\r\n          \"identity\": \"原表数据＋平台单位重放\",\r\n          \"summary\": \"陈庆云、蒋锡夔、陈秉启、梁梦兰在1966年《化学学报》论文中研究全氟叔丁基碘及相应溴化物的制备、结构与反应，并用紫外溶剂位移讨论吸电性顺序。这里直接展示印刷p.21表1的对应波长和已保存换算值。\",\r\n          \"tables\": [\r\n            {\r\n              \"caption\": \"λ为原表吸收峰λmax；波长单位nm，蓝移单位cm⁻¹\",\r\n              \"columns\": [\r\n                \"完整碘代物\",\r\n                \"给体溶剂B\",\r\n                \"λH／nm\",\r\n                \"λB／nm\",\r\n                \"原表δλ／nm\",\r\n                \"换算Δν̃／cm⁻¹\"\r\n              ],\r\n              \"rows\": [\r\n                [\r\n                  \"全氟正丙基碘 n-C₃F₇I\",\r\n                  \"乙醇\",\r\n                  \"270.0\",\r\n                  \"250.0\",\r\n                  \"20.0\",\r\n                  \"2962.963\"\r\n                ],\r\n                [\r\n                  \"全氟异丙基碘 i-C₃F₇I\",\r\n                  \"乙醇\",\r\n                  \"274.0\",\r\n                  \"250.0\",\r\n                  \"24.0\",\r\n                  \"3503.650\"\r\n                ],\r\n                [\r\n                  \"全氟叔丁基碘 (CF₃)₃CI\",\r\n                  \"乙醇\",\r\n                  \"288.0\",\r\n                  \"260.5\",\r\n                  \"27.5\",\r\n                  \"3665.494\"\r\n                ],\r\n                [\r\n                  \"全氟正丙基碘 n-C₃F₇I\",\r\n                  \"乙醚\",\r\n                  \"270.0\",\r\n                  \"256.0\",\r\n                  \"14.0\",\r\n                  \"2025.463\"\r\n                ],\r\n                [\r\n                  \"全氟异丙基碘 i-C₃F₇I\",\r\n                  \"乙醚\",\r\n                  \"274.0\",\r\n                  \"257.0\",\r\n                  \"17.0\",\r\n                  \"2414.155\"\r\n                ],\r\n                [\r\n                  \"全氟叔丁基碘 (CF₃)₃CI\",\r\n                  \"乙醚\",\r\n                  \"288.0\",\r\n                  \"264.0\",\r\n                  \"24.0\",\r\n                  \"3156.566\"\r\n                ]\r\n              ],\r\n              \"notes\": [\r\n                \"H沿用原表C₆H₁₄记号，当前登记未进一步指定异构体；B是乙醇或乙醚的给体溶剂记号，不是苯。原单位毫微米的数值等于nm。\",\r\n                \"δλ=λH−λB；Δν̃=10⁷(1/λB−1/λH)，λ以nm计。正值表示蓝移。两个尺度来自同一批波长，不是两组独立实验。\"\r\n              ]\r\n            }\r\n          ],\r\n          \"meaning\": \"在乙醇和乙醚中，两种数值表达都保留名义顺序：全氟叔丁基碘＞全氟异丙基碘＞全氟正丙基碘。平台重放使原作者所用位移证据可逐项复核，并显示结论应保留完整分子与介质条件。\",\r\n          \"caveats\": [\r\n            \"本表没有CF₃I或C₂F₅I的直接数值；不能把n-C₃F₇I换成C₂F₅I，也不能把三种分子的位移直接升级为四种孤立基团的普适诱导顺序。\",\r\n            \"原作者的制备、结构鉴定和反应实验依原文归属；本任务只重放表格，不由这些换算裁决亲卤反应机制、游离阴离子或材料性能。\"\r\n          ],\r\n          \"links\": [\r\n            {\r\n              \"title\": \"1966原论文与PDF入口（p.21表1）\",\r\n              \"url\": \"https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18\",\r\n              \"kind\": \"external\"\r\n            },\r\n            {\r\n              \"title\": \"原表波长转录\",\r\n              \"url\": \"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/data/pftb1966_table1.csv\",\r\n              \"kind\": \"repo\"\r\n            },\r\n            {\r\n              \"title\": \"六项结果与完整比较\",\r\n              \"url\": \"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/pftb1966-uv-replay.json\",\r\n              \"kind\": \"repo\"\r\n            },\r\n            {\r\n              \"title\": \"原作者的研究贡献与论证\",\r\n              \"url\": \"../pftb/index.html#contribution\",\r\n              \"kind\": \"site\"\r\n            }\r\n          ]\r\n        },\r\n        {\r\n          \"id\": \"a03-sensitivity-results\",\r\n          \"title\": \"同一名义顺序的数值裕量有多大？\",\r\n          \"identity\": \"平台已完成 · 假定扰动诊断\",\r\n          \"summary\": \"乙醇中，全氟叔丁基碘与全氟异丙基碘的波数蓝移最接近，名义差为161.844074 cm⁻¹。已保存结果采用每个相关峰位独立±u nm的有界扰动模型。\",\r\n          \"tables\": [\r\n            {\r\n              \"caption\": \"同一对分子的两种比较尺度\",\r\n              \"columns\": [\r\n                \"比较量\",\r\n                \"名义差\",\r\n                \"区间首次接触的峰位半宽u\"\r\n              ],\r\n              \"rows\": [\r\n                [\r\n                  \"波长差δλ\",\r\n                  \"3.5 nm\",\r\n                  \"0.875 nm\"\r\n                ],\r\n                [\r\n                  \"波数蓝移Δν̃\",\r\n                  \"161.844074 cm⁻¹\",\r\n                  \"0.288427 nm\"\r\n                ]\r\n              ],\r\n              \"notes\": [\r\n                \"按每个峰独立±0.05 nm的显示舍入假设，保存结果中各相邻比较仍分离；真实测量不确定度未由原表提供，仍记为未知。\"\r\n              ]\r\n            }\r\n          ],\r\n          \"meaning\": \"单位变换保留了名义顺序，却改变了比较的数值裕量。这提示后续评价要区分显示精度、真实测量不确定度与物理解释，不能把某个阈值直接当作实验显著性。\",\r\n          \"caveats\": [\r\n            \"0.288427、0.875和±0.05 nm均属声明的数学扰动模型；不是仪器精度、实验误差、置信区间，也不构成对原论文的否定。\"\r\n          ],\r\n          \"links\": [\r\n            {\r\n              \"title\": \"重放与敏感性报告\",\r\n              \"url\": \"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/REPLAY_REPORT_zh-CN.md\",\r\n              \"kind\": \"repo\"\r\n            },\r\n            {\r\n              \"title\": \"固定协议与单位约定\",\r\n              \"url\": \"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/protocols/pftb1966_uv.json\",\r\n              \"kind\": \"repo\"\r\n            },\r\n            {\r\n              \"title\": \"已保存比较结果\",\r\n              \"url\": \"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/pftb1966-uv-replay.json\",\r\n              \"kind\": \"repo\"\r\n            }\r\n          ]\r\n        }\r\n      ],\r\n      \"pending_items\": [\r\n        \"原表转录仍待独立化学专家签认；未重新测量光谱、重建完整谱线或进行峰拟合。\",\r\n        \"真实峰位不确定度未知；当前重放协议未登记温度、浓度、光程、仪器及谱带归属，尚不足以定义现代光谱验证模型。\",\r\n        \"从完整碘代物位移到基团效应解释仍需额外证据，不能凭本表补造CF₃I、C₂F₅I数据或认定反应机理。\"\r\n      ],\r\n      \"future_items\": [\r\n        \"先完成原表专业核校，并从原始文献与相关记录补齐测量条件和谱带归属。\",\r\n        \"资料充分后，再论证如何用独立光谱测量或明确的现代模型区分溶剂相互作用与基团效应；此为待查新、待设计的问题，尚未启动。\"\r\n      ],\r\n      \"result_checks\": [\r\n        {\r\n          \"section_id\": \"a03-shift-results\",\r\n          \"table\": 0,\r\n          \"row\": 0,\r\n          \"column\": 2,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/measurements_and_derived_shifts/0/lambda_h_nm\",\r\n          \"format\": \".1f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-shift-results\",\r\n          \"table\": 0,\r\n          \"row\": 0,\r\n          \"column\": 3,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/measurements_and_derived_shifts/0/lambda_b_nm\",\r\n          \"format\": \".1f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-shift-results\",\r\n          \"table\": 0,\r\n          \"row\": 0,\r\n          \"column\": 4,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/measurements_and_derived_shifts/0/delta_lambda_nm\",\r\n          \"format\": \".1f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-shift-results\",\r\n          \"table\": 0,\r\n          \"row\": 0,\r\n          \"column\": 5,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/measurements_and_derived_shifts/0/blue_shift_cm_inverse\",\r\n          \"format\": \".3f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-shift-results\",\r\n          \"table\": 0,\r\n          \"row\": 1,\r\n          \"column\": 2,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/measurements_and_derived_shifts/1/lambda_h_nm\",\r\n          \"format\": \".1f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-shift-results\",\r\n          \"table\": 0,\r\n          \"row\": 1,\r\n          \"column\": 3,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/measurements_and_derived_shifts/1/lambda_b_nm\",\r\n          \"format\": \".1f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-shift-results\",\r\n          \"table\": 0,\r\n          \"row\": 1,\r\n          \"column\": 4,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/measurements_and_derived_shifts/1/delta_lambda_nm\",\r\n          \"format\": \".1f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-shift-results\",\r\n          \"table\": 0,\r\n          \"row\": 1,\r\n          \"column\": 5,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/measurements_and_derived_shifts/1/blue_shift_cm_inverse\",\r\n          \"format\": \".3f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-shift-results\",\r\n          \"table\": 0,\r\n          \"row\": 2,\r\n          \"column\": 2,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/measurements_and_derived_shifts/2/lambda_h_nm\",\r\n          \"format\": \".1f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-shift-results\",\r\n          \"table\": 0,\r\n          \"row\": 2,\r\n          \"column\": 3,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/measurements_and_derived_shifts/2/lambda_b_nm\",\r\n          \"format\": \".1f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-shift-results\",\r\n          \"table\": 0,\r\n          \"row\": 2,\r\n          \"column\": 4,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/measurements_and_derived_shifts/2/delta_lambda_nm\",\r\n          \"format\": \".1f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-shift-results\",\r\n          \"table\": 0,\r\n          \"row\": 2,\r\n          \"column\": 5,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/measurements_and_derived_shifts/2/blue_shift_cm_inverse\",\r\n          \"format\": \".3f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-shift-results\",\r\n          \"table\": 0,\r\n          \"row\": 3,\r\n          \"column\": 2,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/measurements_and_derived_shifts/3/lambda_h_nm\",\r\n          \"format\": \".1f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-shift-results\",\r\n          \"table\": 0,\r\n          \"row\": 3,\r\n          \"column\": 3,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/measurements_and_derived_shifts/3/lambda_b_nm\",\r\n          \"format\": \".1f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-shift-results\",\r\n          \"table\": 0,\r\n          \"row\": 3,\r\n          \"column\": 4,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/measurements_and_derived_shifts/3/delta_lambda_nm\",\r\n          \"format\": \".1f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-shift-results\",\r\n          \"table\": 0,\r\n          \"row\": 3,\r\n          \"column\": 5,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/measurements_and_derived_shifts/3/blue_shift_cm_inverse\",\r\n          \"format\": \".3f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-shift-results\",\r\n          \"table\": 0,\r\n          \"row\": 4,\r\n          \"column\": 2,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/measurements_and_derived_shifts/4/lambda_h_nm\",\r\n          \"format\": \".1f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-shift-results\",\r\n          \"table\": 0,\r\n          \"row\": 4,\r\n          \"column\": 3,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/measurements_and_derived_shifts/4/lambda_b_nm\",\r\n          \"format\": \".1f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-shift-results\",\r\n          \"table\": 0,\r\n          \"row\": 4,\r\n          \"column\": 4,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/measurements_and_derived_shifts/4/delta_lambda_nm\",\r\n          \"format\": \".1f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-shift-results\",\r\n          \"table\": 0,\r\n          \"row\": 4,\r\n          \"column\": 5,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/measurements_and_derived_shifts/4/blue_shift_cm_inverse\",\r\n          \"format\": \".3f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-shift-results\",\r\n          \"table\": 0,\r\n          \"row\": 5,\r\n          \"column\": 2,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/measurements_and_derived_shifts/5/lambda_h_nm\",\r\n          \"format\": \".1f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-shift-results\",\r\n          \"table\": 0,\r\n          \"row\": 5,\r\n          \"column\": 3,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/measurements_and_derived_shifts/5/lambda_b_nm\",\r\n          \"format\": \".1f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-shift-results\",\r\n          \"table\": 0,\r\n          \"row\": 5,\r\n          \"column\": 4,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/measurements_and_derived_shifts/5/delta_lambda_nm\",\r\n          \"format\": \".1f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-shift-results\",\r\n          \"table\": 0,\r\n          \"row\": 5,\r\n          \"column\": 5,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/measurements_and_derived_shifts/5/blue_shift_cm_inverse\",\r\n          \"format\": \".3f\",\r\n          \"suffix\": \"\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-sensitivity-results\",\r\n          \"table\": 0,\r\n          \"row\": 0,\r\n          \"column\": 1,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/comparisons/0/adjacent_comparisons/0/nominal_gap\",\r\n          \"format\": \".1f\",\r\n          \"suffix\": \" nm\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-sensitivity-results\",\r\n          \"table\": 0,\r\n          \"row\": 0,\r\n          \"column\": 2,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/comparisons/0/adjacent_comparisons/0/first_overlap_common_wavelength_half_width_nm\",\r\n          \"format\": \".3f\",\r\n          \"suffix\": \" nm\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-sensitivity-results\",\r\n          \"table\": 0,\r\n          \"row\": 1,\r\n          \"column\": 1,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/comparisons/1/adjacent_comparisons/0/nominal_gap\",\r\n          \"format\": \".6f\",\r\n          \"suffix\": \" cm⁻¹\"\r\n        },\r\n        {\r\n          \"section_id\": \"a03-sensitivity-results\",\r\n          \"table\": 0,\r\n          \"row\": 1,\r\n          \"column\": 2,\r\n          \"path\": \"results/pftb1966-uv-replay.json\",\r\n          \"pointer\": \"/comparisons/1/adjacent_comparisons/0/first_overlap_common_wavelength_half_width_nm\",\r\n          \"format\": \".6f\",\r\n          \"suffix\": \" nm\"\r\n"
+    },
+    {
+      "old": "",
+      "new": "PAGE_CSS += \"\"\".result-nav{font-size:.9rem;display:flex;flex-wrap:wrap;gap:8px}.result-evidence{border-top:1px solid var(--line);margin:30px 0;padding-top:22px}.result-identity{color:var(--accent);font-size:.82rem;font-weight:700;letter-spacing:.03em}.result-evidence>h4{font:700 clamp(1.15rem,2.3vw,1.5rem)/1.6 var(--serif);margin:.4em 0}.result-table{overflow-x:auto;max-width:100%;margin:18px 0 12px;border:1px solid var(--line);background:#fff}.result-table:focus-visible{outline:3px solid #aa7545;outline-offset:2px}.result-table table{border-collapse:collapse;width:100%;min-width:660px;font-size:.88rem;line-height:1.7}.result-table caption{text-align:left;padding:14px 16px;color:var(--accent);font-weight:700;background:#edf2ec}.result-table th,.result-table td{text-align:left;vertical-align:top;padding:12px 14px;border-top:1px solid var(--line);overflow-wrap:anywhere}.result-table thead th{background:#f5f5ef}.result-table tbody th{font-weight:600;min-width:110px}.result-table td{min-width:100px}.research-line .table-note{color:var(--muted);font-size:.86rem;max-width:none}.scientific-meaning{border-left:3px solid #aa7545;padding:8px 18px;background:#f7f4eb}.result-limits{font-size:.9rem;color:var(--muted)}.result-sources{font-size:.9rem}.record-archive{border:1px solid var(--line);padding:16px;margin:26px 0}.record-archive summary{cursor:pointer;color:var(--accent);font-weight:600}.pending-work,.future-work{padding:14px 20px;margin:20px 0;background:#f5f1e8;border-left:3px solid #aa7545;scroll-margin-top:20px}.future-work{background:#edf3ef;border-color:var(--accent)}@media(max-width:640px){.research-line{padding:20px 18px}.result-table table{font-size:.83rem}.result-nav{font-size:.85rem}}\"\"\"\n\n\n"
+    },
+    {
+      "old": "",
+      "new": "        for result in line.get('result_sections', []):\n            yield from result['links']\n"
+    },
+    {
+      "old": "",
+      "new": "    validate_results(root, data)\n"
+    },
+    {
+      "old": "",
+      "new": "\n\ndef validate_results(root: Path, data: dict) -> None:\n    \"\"\"Check displayed numbers against saved results without rerunning science.\"\"\"\n    allowed = {'research/a01/bisphenol-af-yield/result.json',\n               'research/a01/molar-refraction/result.json', 'results/pftb1966-uv-replay.json'}\n    cached = {}\n    for line in data['lines']:\n        results = line.get('result_sections', [])\n        if line['id'] not in {'A01', 'A03'}:\n            if results:\n                raise ValueError('This presentation adds results only for A01 and A03')\n            continue\n        if len(results) != (4 if line['id'] == 'A01' else 2):\n            raise ValueError('Missing directly presented result sections: '+line['id'])\n        for field in ('completed_summary', 'pending_items', 'future_items'):\n            if not isinstance(line.get(field), list) or not line[field]:\n                raise ValueError('Missing completed/pending/future distinction: '+line['id'])\n            for value in line[field]:\n                nonempty(value, field)\n        ids = [row['id'] for row in results]\n        if len(set(ids)) != len(ids) or any(not re.fullmatch(r'a0[13]-[a-z-]+', ident) for ident in ids):\n            raise ValueError('Duplicate or unsafe result-section IDs')\n        for result in results:\n            for field in ('title', 'identity', 'summary', 'meaning'):\n                nonempty(result.get(field), 'result.'+field)\n            if not result.get('links') or not result.get('caveats'):\n                raise ValueError('Results require evidence and interpretation limits')\n            for table in result['tables']:\n                nonempty(table.get('caption'), 'table.caption')\n                if not table.get('columns') or not table.get('rows'):\n                    raise ValueError('Results require a complete table')\n                for row in table['rows']:\n                    if len(row) != len(table['columns']) or any(not isinstance(cell, str) for cell in row):\n                        raise ValueError('Table cells must match the declared columns')\n        if not line.get('result_checks'):\n            raise ValueError('Displayed numerical results must bind saved source fields')\n        sections = {row['id']: row for row in results}\n        for check in line['result_checks']:\n            path = check['path']\n            if path not in allowed:\n                raise ValueError('Unsupported saved numerical source: '+path)\n            if path not in cached:\n                cached[path] = json.loads((root/path).read_bytes())\n            value = cached[path]\n            for token in check['pointer'].strip('/').split('/'):\n                token = token.replace('~1', '/').replace('~0', '~')\n                value = value[int(token)] if isinstance(value, list) else value[token]\n            expected = format(value, check['format'])+check['suffix']\n            actual = sections[check['section_id']]['tables'][check['table']]['rows'][check['row']][check['column']]\n            if actual != expected:\n                raise ValueError('Displayed value differs from its saved source: '+path+'#'+check['pointer'])\n"
+    },
+    {
+      "old": "",
+      "new": "def render_results(line: dict) -> str:\n    out = ['<nav class=\"result-nav\" aria-label=\"'+esc(label(line))+'研究状态\">'\n           '<a href=\"#'+anchor(line)+'-completed\">已完成工作</a> · '\n           '<a href=\"#'+anchor(line)+'-pending\">待核事项</a> · '\n           '<a href=\"#'+anchor(line)+'-future\">未来设想</a></nav>',\n           '<h3 id=\"'+anchor(line)+'-completed\">已完成工作：原文与数据复核</h3><ul>'\n           +''.join('<li>'+esc(row)+'</li>' for row in line['completed_summary'])+'</ul>']\n    for result in line['result_sections']:\n        out += ['<article class=\"result-evidence\" id=\"'+result['id']+'\">'\n                '<p class=\"result-identity\">'+esc(result['identity'])+'</p><h4>'+esc(result['title'])\n                +'</h4><p>'+esc(result['summary'])+'</p>']\n        for index, table in enumerate(result['tables']):\n            ident = result['id']+'-table-'+str(index+1)\n            out += ['<p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"'+ident+'\">'\n                    '<table><caption id=\"'+ident+'\">'+esc(table['caption'])+'</caption><thead><tr>'\n                    +''.join('<th scope=\"col\">'+esc(column)+'</th>' for column in table['columns'])\n                    +'</tr></thead><tbody>']\n            for row in table['rows']:\n                out += ['<tr><th scope=\"row\">'+esc(row[0])+'</th>'\n                        +''.join('<td>'+esc(cell)+'</td>' for cell in row[1:])+'</tr>']\n            out += ['</tbody></table></div>']\n            out += ['<p class=\"table-note\">'+esc(note)+'</p>' for note in table['notes']]\n        out += ['<p class=\"scientific-meaning\"><b>科学意义：</b>'+esc(result['meaning'])+'</p>',\n                '<ul class=\"result-limits\">'+''.join('<li>'+esc(row)+'</li>' for row in result['caveats'])+'</ul>',\n                '<div class=\"result-sources\"><b>原文与结果出处</b>'+links_html(result['links'])+'</div></article>']\n    return ''.join(out)\n\n\n"
+    },
+    {
+      "old": "",
+      "new": "        if line.get('result_sections'):\n            body = render_results(line)+'<details class=\"record-archive\"><summary>专业记录与完整数据</summary><div class=\"record-grid\">'+records+'</div></details>'\n            body += '<div class=\"pending-work\" id=\"'+anchor(line)+'-pending\"><h3>待核事项</h3><ul>'+''.join('<li>'+esc(row)+'</li>' for row in line['pending_items'])+'</ul></div>'\n            body += '<div class=\"future-work\" id=\"'+anchor(line)+'-future\"><h3>未来设想（尚未开展）</h3><ul>'+''.join('<li>'+esc(row)+'</li>' for row in line['future_items'])+'</ul></div>'\n        else:\n            body = '<h3>已有资料与结果</h3><div class=\"record-grid\">'+records+'</div>'+prior\n            body += '<h3>待核事项与边界</h3><ul>'+''.join('<li>'+esc(row)+'</li>' for row in line['boundaries'])+'</ul><p><b>下一步先补的证据：</b>'+esc(line['next_step'])+'</p><p><b>候选后续问题：</b>'+esc(line['future_question'])+'</p>'\n"
+    },
+    {
+      "old": "'<h3>已有资料与结果</h3><",
+      "new": "+bo"
+    },
+    {
+      "old": "iv class=\"record-grid\">'+records+'</div>'+prior",
+      "new": "y"
+    },
+    {
+      "old": "'<h3>待核事项与边界</h3><ul>'+''.join('<li>'+esc(row)+'</li>' for row in line['boundaries'])\n            +'</ul><p><b>下一步先补的证据：</b>'+esc(line['next_step'])+'</p>'\n            '<p><b>候选后续问题：</b>'+esc(line['future_question'])+'</p>'\n            ",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "        if line.get('result_sections'):\n            rows += ['### 已完成工作：原文与数据复核', '']\n            rows += ['- '+value for value in line['completed_summary']]+['']\n            for result in line['result_sections']:\n                rows += ['#### '+result['title'], '', '**'+result['identity']+'**', '', result['summary'], '']\n                for table in result['tables']:\n                    rows += [table['caption'], '', '| '+' | '.join(table['columns'])+' |',\n                             '| '+' | '.join('---' for _ in table['columns'])+' |']\n                    rows += ['| '+' | '.join(cell.replace('|', '\\\\|') for cell in row)+' |' for row in table['rows']]\n                    rows += ['']+table['notes']+['']\n                rows += ['**科学意义：**'+result['meaning'], '']\n                rows += ['- '+value for value in result['caveats']]+['', markdown_links(result['links']), '']\n            rows += ['### 待核事项', '']+['- '+value for value in line['pending_items']]+['']\n            rows += ['### 未来设想（尚未开展）', '']+['- '+value for value in line['future_items']]+['']\n            rows += ['### 专业记录与完整数据', '']\n"
+    },
+    {
+      "old": "",
+      "new": "\n### 已完成工作：原文与数据复核\n\n- 已将1960年第一报英译本647–653页的反应讨论、结构式和实验鉴定关联，形成中文科学释读；下列历史成果归原作者。\n- 已完成说明书质量—收率账本和指定衍生物摩尔折射的条件性数值重建，分别保留假设与未解释残差。完成计算不等于通过专业科学签认。\n\n#### 第一报揭示了哪些六氟丙酮反应？\n\n**历史论文记录 · 平台原文核读**\n\nKnunyants、Ch’en Ch’ing-yun（陈庆云）、Gambaryan在1960年第一报中，把六氟丙酮反应组织为可继续转化和鉴定的产物体系。三位作者同属苏联科学院元素有机化合物研究所；原文未列个人分工，不按署名顺序推定贡献比例。\n\n反应、鉴定证据与原文位置\n\n| 研究内容 | 原文观察与证据 | 英译本位置 |\n| --- | --- | --- |\n| 醇加成产物与缩酮的不同稳定性 | 六氟丙酮与醇形成半缩酮，受热可分解回原反应物；转为对称或不对称缩酮后，原文记录其在所述酸、碱与苯胺处理中的不同稳定性。 | p647讨论与结构式；p650实验段 |\n| 炔基有机镁加成与二醇构建 | 炔基有机镁试剂加成得到炔醇；使用双镁衍生物及后续偶联、与丙酮反应，分别构建对称或不对称含氟二醇。 | p647–648结构式I–IV；p651相关实验 |\n| 羟基酮VII的C–C裂解与产物鉴定 | 羟基酮VII热分解得到六氟丙酮与苯乙酮；实验段分别以六氟丙酮氨基脲腙及苯乙酮二硝基苯腙与已知样品混熔无降点支持鉴定。 | p648讨论、VII结构及裂解图；p651末段的两项混熔记录 |\n| β-羟基酸、酯及衍生转化 | Reformatskii型反应得到β-羟基酯VIII，再经水解等转化与已知酸IX、酰胺相关联；文中另列丙二酸及丙二酸酯相关产物。 | p649讨论及VIII–X结构式；p652 VIII、IX、X实验段 |\n\n\n**科学意义：**原作者以产物转化、衍生物鉴定和未成功反应共同刻画含氟羰基化学；平台的贡献是把讨论、结构与实验出处对应起来，让后人能逐项追读这些开拓性工作。\n\n- 上述是历史实验记录的释读，不是平台新实验。混熔鉴定支持产物身份，不能单独证明唯一微观路径；原文稳定性和未反应结论各限于所试对象与条件。\n\n[第一报英译本 p.647（全文起页）](https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n100) · [p.650：醇衍生物及单体用途提议](https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n103) · [p.651：二醇及裂解鉴定](https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n104) · [p.652：酸酯、双酚与分析数据](https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n105) · [原文定位与中文释读](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A01_FIRST_REPORT_zh-CN.md)\n\n#### 双酚AF：论文与发明说明书分别记载了什么？\n\n**两份独立历史记录**\n\n第一报把六氟丙酮反应延伸至二酚的制备与鉴定。第117491号文书为发明人证书说明书；其网页镜像、传记中的授予证书书影和独立证书原件是不同材料。\n\n原值照录，保持各自实验身份\n\n| 材料与对象 | 产物质量 | 原文收率 | 原文熔点 | 出处 |\n| --- | --- | --- | --- | --- |\n| 第一报：双酚AF（XI） | 29 g | 90.5% | 161–162°C | p.652；结构见p.649 |\n| 第117491号说明书：双酚AF | 21.7 g | 98% | 161–162°C | 单例说明书原图 |\n| 第一报：邻甲酚对应二酚（XII） | 10.9 g | 91% | 134–135°C | p.652；结构见p.650 |\n\nXI原文元素分析Found：C 53.68%、H 2.98%、F 34.13%；Calculated：C 53.57%、H 2.97%、F 33.92%（p.652）。这两行原值不由平台现代原子量回算值替换。\n\n**科学意义：**这些记录直接显示原团队从全氟酮反应走向含氟二酚制备，并用熔点与元素分析等支持产物鉴定；它们比单一历史评价更具体地呈现学术贡献。\n\n- 29 g／90.5%与21.7 g／98%不能合并成同一次实验，也不能仅据收率数字比较工艺优劣。XII是另一种甲基取代产物。\n- 原作者提出XI、XII可作聚酯、聚氨酯等的潜在单体（p.650）；该提议不能写成该文已经测得聚合材料性能或实现产业采用。\n\n[p.652：酸酯、双酚与分析数据](https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n105) · [第117491号说明书镜像](https://poleznayamodel.ru/patent/11/117491.html) · [说明书原图镜像](https://img.poleznayamodel.ru/img_pat/357/3573210.jpg) · [证书书影与文书身份说明](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#record-inventor-certificate)\n\n#### 质量账本能重建说明书所报的98%吗？\n\n**平台已完成 · 条件性数值重建**\n\n说明书印出苯酚12.2 g、六氟丙酮11.2 g、产物21.7 g与98%。按目标名称作现代身份解析，以C₃F₆O＋2 C₆H₆O → C₁₅H₁₀F₆O₂＋H₂O作净计量，假设印出质量直接使用、纯度为1，名义限制试剂为苯酚。\n\n原报告与已保存的条件性重建\n\n| 量 | 数值 | 身份 |\n| --- | --- | --- |\n| 原报告收率 | 98% | 说明书原值 |\n| 名义理论产物量 | 21.793205 g | 固定假设下重建 |\n| 质量账本表观收率 | 99.572323% | 21.7 g／名义理论量 |\n| 表观收率减原报告 | +1.572323 个百分点 | 仍未解释的残差 |\n\n现代近似原子量约定：H=1.008、C=12.011、O=15.999、F=18.998403163。净计量式不是说明书原画结构式，也不是反应机理。\n把三个质量各作独立±0.05 g显示舍入扰动，表观收率范围为98.937413%–100.212459%；原98%按±0.5个百分点的显示区间为97.5%–98.5%，两者不相交。两区间均不是实验不确定度或置信区间。\n\n**科学意义：**结果把“98%如何得到”明确为理论量、原料身份与质量基准的追查问题；在所列假设下，单靠所设显示舍入不能使账本闭合。\n\n- 不据此修正原文产物质量或真实收率，不认定样品纯度、结构或材料性能，也不判定原作者实验或计算错误。原始收率基准仍待证据解释。\n\n[说明书原图](https://img.poleznayamodel.ru/img_pat/357/3573210.jpg) · [完整假设、结果与残差](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/bisphenol-af-yield/README.md) · [已保存结果JSON](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/bisphenol-af-yield/result.json)\n\n#### 衍生物I、V的摩尔折射重建：质量约定会改变判断吗？\n\n**平台已完成 · 另一篇论文的物性复核**\n\n对象来自陈庆云、Gambaryan、Knuniants署名的1960年Doklady 133(5):1113–1116论文，与双酚AF制备记录分开。I、V主比较均采用20°C的折射率与相对密度。\n\n原文输入及原刊MR，两行对象各自独立\n\n| 化合物／原页 | 分子式 | n_D（20°C） | d⁽²⁰⁾₄ | 原刊found MR | 原刊“计算MR” |\n| --- | --- | --- | --- | --- | --- |\n| I／p.1115 | C10H10F6O4 | 1.3720 | 1.3025 | 53.74 | 52.09 |\n| V／p.1116 | C10H13F6NO4 | 1.3840 | 1.4534 | 54.90 | 52.20 |\n\nMR按通常意义解释为cm³·mol⁻¹，原刊该段未另印单位。原刊“计算MR”的方法和加和常数未说明，不与本页Lorentz–Lorenz重建混同。\n\nLorentz–Lorenz重建及相对原刊found MR的残差（cm³·mol⁻¹）\n\n| 对象 | 质量约定 | 重建MR | 重建−原刊found MR | 所设舍入区间相交？ |\n| --- | --- | --- | --- | --- |\n| I | 整数质量 | 53.744264 | +0.004264 | 是 |\n| I | 现代近似原子量 | 53.775048 | +0.035048 | 否 |\n| V | 整数质量 | 52.282137 | -2.617863 | 否 |\n| V | 现代近似原子量 | 52.315504 | -2.584496 | 否 |\n\nRₘ=[(n_D²−1)/(n_D²+2)]·M/ρ；ρ≈d⁽²⁰⁾₄×1 g·cm⁻³。整数质量采用C=12、H=1、F=19、N=14、O=16，只是显式敏感性约定，未认定原作者当时使用这些常数。\n折射率、密度各±0.00005及原刊MR±0.005只作独立显示舍入诊断；不是测量误差。I仅在整数质量约定下相容；V两种约定均保留残差。\n\n**科学意义：**这项复核把历史数据的相容性落实到公式和质量约定：I的“相容”需要附条件，V则留下明确待查的缺口，便于后人继续寻找原始物性和表征证据。\n\n- 不是新的MR直接测量，也不能据此验证共轭解释、双酚AF结构或反应机理。V残差的原因尚未确定。III的分子式异文及IV混合温度输入仍保留在专业记录中。\n\n[原文目录与全文入口](https://www.mathnet.ru/rus/dan23922) · [物性复核说明](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/molar-refraction/README.md) · [完整结果与舍入诊断](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/molar-refraction/result.json)\n\n### 待核事项\n\n- 第一报俄文原刊、俄英逐句校勘、专业核译与关键结构签认仍待完成；吡啶／哌啶、氯／溴代乙酸酯和X投料列项三处异文保留。\n- 第117491号授予证书独立高清原件和档案来源待补；说明书的收率基准、原料与样品纯度未明。传记证书书影已核见，不与独立原件混称。\n- I、V原刊“计算MR”的常数、真实测量不确定度及V残差原因待核；不静默更改原值。\n- M0噁唑酮模型仍为暂停的阶段档案，完整曲率资格未闭合，不能承担合格势垒、机理或原文定性反应性解释。\n\n### 未来设想（尚未开展）\n\n- 先追查同一成果的其他原始记录，厘清收率和物性基准，并完成专业译校与结构签认。\n- 未来若考虑现代模型或实验，须另行明确具体对象、可检验量和先行研究；这里不把候选解释写成已完成发现，也不恢复M0计算。\n\n### 专业记录与完整数据\n"
+    },
+    {
+      "old": "",
+      "new": "\n### 已完成工作：原文与数据复核\n\n- 已转录1966年论文表1的10个波长记录；9个配对记录形成下列6项位移，另一条CCl₄记录不属于此配对任务。\n- 已用固定公式保存波长差、波数蓝移及假定有界扰动诊断。单位换算与敏感性分析属于平台数值重放，不是独立光谱实验。\n\n#### 三种碘代物的六项紫外溶剂位移\n\n**原表数据＋平台单位重放**\n\n陈庆云、蒋锡夔、陈秉启、梁梦兰在1966年《化学学报》论文中研究全氟叔丁基碘及相应溴化物的制备、结构与反应，并用紫外溶剂位移讨论吸电性顺序。这里直接展示印刷p.21表1的对应波长和已保存换算值。\n\nλ为原表吸收峰λmax；波长单位nm，蓝移单位cm⁻¹\n\n| 完整碘代物 | 给体溶剂B | λH／nm | λB／nm | 原表δλ／nm | 换算Δν̃／cm⁻¹ |\n| --- | --- | --- | --- | --- | --- |\n| 全氟正丙基碘 n-C₃F₇I | 乙醇 | 270.0 | 250.0 | 20.0 | 2962.963 |\n| 全氟异丙基碘 i-C₃F₇I | 乙醇 | 274.0 | 250.0 | 24.0 | 3503.650 |\n| 全氟叔丁基碘 (CF₃)₃CI | 乙醇 | 288.0 | 260.5 | 27.5 | 3665.494 |\n| 全氟正丙基碘 n-C₃F₇I | 乙醚 | 270.0 | 256.0 | 14.0 | 2025.463 |\n| 全氟异丙基碘 i-C₃F₇I | 乙醚 | 274.0 | 257.0 | 17.0 | 2414.155 |\n| 全氟叔丁基碘 (CF₃)₃CI | 乙醚 | 288.0 | 264.0 | 24.0 | 3156.566 |\n\nH沿用原表C₆H₁₄记号，当前登记未进一步指定异构体；B是乙醇或乙醚的给体溶剂记号，不是苯。原单位毫微米的数值等于nm。\nδλ=λH−λB；Δν̃=10⁷(1/λB−1/λH)，λ以nm计。正值表示蓝移。两个尺度来自同一批波长，不是两组独立实验。\n\n**科学意义：**在乙醇和乙醚中，两种数值表达都保留名义顺序：全氟叔丁基碘＞全氟异丙基碘＞全氟正丙基碘。平台重放使原作者所用位移证据可逐项复核，并显示结论应保留完整分子与介质条件。\n\n- 本表没有CF₃I或C₂F₅I的直接数值；不能把n-C₃F₇I换成C₂F₅I，也不能把三种分子的位移直接升级为四种孤立基团的普适诱导顺序。\n- 原作者的制备、结构鉴定和反应实验依原文归属；本任务只重放表格，不由这些换算裁决亲卤反应机制、游离阴离子或材料性能。\n\n[1966原论文与PDF入口（p.21表1）](https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18) · [原表波长转录](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/data/pftb1966_table1.csv) · [六项结果与完整比较](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/pftb1966-uv-replay.json) · [原作者的研究贡献与论证](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html#contribution)\n\n#### 同一名义顺序的数值裕量有多大？\n\n**平台已完成 · 假定扰动诊断**\n\n乙醇中，全氟叔丁基碘与全氟异丙基碘的波数蓝移最接近，名义差为161.844074 cm⁻¹。已保存结果采用每个相关峰位独立±u nm的有界扰动模型。\n\n同一对分子的两种比较尺度\n\n| 比较量 | 名义差 | 区间首次接触的峰位半宽u |\n| --- | --- | --- |\n| 波长差δλ | 3.5 nm | 0.875 nm |\n| 波数蓝移Δν̃ | 161.844074 cm⁻¹ | 0.288427 nm |\n\n按每个峰独立±0.05 nm的显示舍入假设，保存结果中各相邻比较仍分离；真实测量不确定度未由原表提供，仍记为未知。\n\n**科学意义：**单位变换保留了名义顺序，却改变了比较的数值裕量。这提示后续评价要区分显示精度、真实测量不确定度与物理解释，不能把某个阈值直接当作实验显著性。\n\n- 0.288427、0.875和±0.05 nm均属声明的数学扰动模型；不是仪器精度、实验误差、置信区间，也不构成对原论文的否定。\n\n[重放与敏感性报告](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/REPLAY_REPORT_zh-CN.md) · [固定协议与单位约定](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/protocols/pftb1966_uv.json) · [已保存比较结果](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/pftb1966-uv-replay.json)\n\n### 待核事项\n\n- 原表转录仍待独立化学专家签认；未重新测量光谱、重建完整谱线或进行峰拟合。\n- 真实峰位不确定度未知；当前重放协议未登记温度、浓度、光程、仪器及谱带归属，尚不足以定义现代光谱验证模型。\n- 从完整碘代物位移到基团效应解释仍需额外证据，不能凭本表补造CF₃I、C₂F₅I数据或认定反应机理。\n\n### 未来设想（尚未开展）\n\n- 先完成原表专业核校，并从原始文献与相关记录补齐测量条件和谱带归属。\n- 资料充分后，再论证如何用独立光谱测量或明确的现代模型区分溶剂相互作用与基团效应；此为待查新、待设计的问题，尚未启动。\n\n### 专业记录与完整数据\n"
+    },
+    {
+      "old": "",
+      "new": "PRESENTATION_V12_SHA256 = 'aa9efd831558b47646b687e12be30724c4b8be89a0f98ccb8d06ef56cf04e81f'\nPRESENTATION_V13_PATH = 'provenance/platform-presentation.v13.json'\nPRESENTATION_V13_ID = 'PLATFORM-AI-DIRECT-RESULTS-20261114-v13'\nPRESENTATION_V13_PREVIOUS_COMMIT = '858232daae36495e68645ae519441fd7d7a5a9d5'\n"
+    },
+    {
+      "old": "",
+      "new": "AI_RESULTS_PREDECESSOR_FILES = {\n    'site/research/index.html': ('634bcb1657be0186a534857501c15d23dd5b9660b28f48465c4019ea7be72739', 24464),\n    'content/ai-research-section.v1.json': ('2740f58d7579d73edc9dbebb392f21fc03f21507e0e28584826dfd8d406aba79', 22553),\n    'scripts/render_ai_research.py': ('793d13a52ccfdcf8d939d2468d29ab2ee50ce3a972898e722a9dd7103f7e959a', 25962),\n    'docs/AI_RESEARCH_zh-CN.md': ('3622e6ca97af8fce5581b86ff449308f0198c0679f1de2cdff1a7d1de1391a4e', 17305),\n    'scripts/a01_publication_contract.py': ('50da7b0b377ae7dd08a4bcd5ecb44cc98f8bcf0df21dd30c61ded534f44cb38d', 125747),\n}\nAI_RESULTS_DOCUMENTS = (AI_RESEARCH_CONTENT, AI_RESEARCH_RENDERER,\n    AI_RESEARCH_DOCUMENT, 'scripts/a01_publication_contract.py')\n"
+    },
+    {
+      "old": "",
+      "new": "def ai_results_predecessor_bytes(root: Path, name: str) -> bytes:\n    \"\"\"Undo only the five explicitly permitted v13 presentation files.\"\"\"\n    current = project_file(root, name).read_bytes()\n    if not (root/PRESENTATION_V13_PATH).exists():\n        return current\n    data = read_json(project_file(root, PRESENTATION_V13_PATH))\n    if not isinstance(data, dict):\n        raise ValueError('AI direct-results presentation must be a JSON object')\n    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')\n    if not isinstance(files, list) or not isinstance(pool, list):\n        raise ValueError('AI direct results require exact reversible text patch records')\n    matches = [row for row in files if isinstance(row, dict) and row.get('path') == name]\n    if not matches:\n        return current\n    if len(matches) != 1 or name not in AI_RESULTS_PREDECESSOR_FILES:\n        raise ValueError('Unauthorized or duplicate AI direct-results predecessor record: '+name)\n    record = matches[0]; old_sha, old_size = AI_RESULTS_PREDECESSOR_FILES[name]\n    if (record.get('old_sha256') != old_sha or record.get('old_bytes') != old_size\n            or hashlib.sha256(current).hexdigest() != record.get('new_sha256')\n            or len(current) != record.get('new_bytes')):\n        raise ValueError('AI direct-results file differs from its complete old/new identities: '+name)\n    edits = record.get('edits')\n    if not isinstance(edits, list) or not edits:\n        raise ValueError('AI direct-results changes require nonempty text edits: '+name)\n    chunks, cursor, old_end, delta = [], 0, 0, 0\n    for edit in edits:\n        if not isinstance(edit, dict) or set(edit) != {'old_offset', 'replacement'}:\n            raise ValueError('Invalid reversible AI direct-results text edit: '+name)\n        offset, replacement = edit['old_offset'], edit['replacement']\n        if (type(offset) is not int or offset < old_end or type(replacement) is not int\n                or not 0 <= replacement < len(pool)):\n            raise ValueError('Overlapping or invalid AI direct-results text edit: '+name)\n        pair = pool[replacement]\n        if (not isinstance(pair, dict) or set(pair) != {'old', 'new'}\n                or not all(isinstance(pair.get(key), str) for key in ('old', 'new'))\n                or pair['old'] == pair['new']):\n            raise ValueError('Invalid AI direct-results text replacement pool')\n        before, after = pair['old'].encode('utf-8'), pair['new'].encode('utf-8')\n        position = offset+delta\n        if position < cursor or current[position:position+len(after)] != after:\n            raise ValueError('AI direct-results replacement differs at its exact offset: '+name)\n        chunks.extend((current[cursor:position], before))\n        cursor, old_end = position+len(after), offset+len(before)\n        delta += len(after)-len(before)\n    rebuilt = b''.join((*chunks, current[cursor:]))\n    if hashlib.sha256(rebuilt).hexdigest() != old_sha or len(rebuilt) != old_size:\n        raise ValueError('AI direct-results predecessor cannot be reconstructed exactly: '+name)\n    return rebuilt\n\n\ndef ai_results_predecessor_binding(root: Path, name: str) -> dict:\n    content = ai_results_predecessor_bytes(root, name)\n    return {'path': name, 'sha256': hashlib.sha256(content).hexdigest(), 'bytes': len(content)}\n\n\n"
+    },
+    {
+      "old": "",
+      "new": "ai_results_"
+    },
+    {
+      "old": "oj",
+      "new": "ed"
+    },
+    {
+      "old": "",
+      "new": "essor_by"
+    },
+    {
+      "old": "_fil",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "s"
+    },
+    {
+      "old": ".read_bytes()",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "    if (root/PRESENTATION_V13_PATH).exists() and not (root/PRESENTATION_V12_PATH).exists():\n        raise ValueError('AI direct results require their fixed v12 predecessor')\n"
+    },
+    {
+      "old": "{'",
+      "new": "ai_results_"
+    },
+    {
+      "old": "ath': ",
+      "new": "redecessor_bi"
+    },
+    {
+      "old": "ame, 'sha256': ",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "n"
+    },
+    {
+      "old": "est(project_file",
+      "new": ""
+    },
+    {
+      "old": "),\n                  'bytes': project_file(root, name).stat().st_size}",
+      "new": ""
+    },
+    {
+      "old": "r",
+      "new": "d"
+    },
+    {
+      "old": "a",
+      "new": "co"
+    },
+    {
+      "old": "_t",
+      "new": ""
+    },
+    {
+      "old": "xt",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "hashlib.sha256(added).hex"
+    },
+    {
+      "old": "added",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "len("
+    },
+    {
+      "old": ".stat(",
+      "new": ""
+    },
+    {
+      "old": ".st_size",
+      "new": ""
+    },
+    {
+      "old": "t",
+      "new": "essor"
+    },
+    {
+      "old": "f",
+      "new": "b"
+    },
+    {
+      "old": "le",
+      "new": "nding"
+    },
+    {
+      "old": "digest(",
+      "new": ""
+    },
+    {
+      "old": ")",
+      "new": "['sha256']"
+    },
+    {
+      "old": ".",
+      "new": "['byte"
+    },
+    {
+      "old": "tat().st_size",
+      "new": "']"
+    },
+    {
+      "old": "",
+      "new": "    # A successor reconstructs the complete fixed renderer, source and output\n    # bindings above. Its current renderer is evaluated only on its own final\n    # source/output below, never on a predecessor edition.\n    if not (root/PRESENTATION_V13_PATH).exists():\n    "
+    },
+    {
+      "old": "",
+      "new": "    "
+    },
+    {
+      "old": "",
+      "new": "        **{key: required[key] for key in ('scientific_review_status', 'scientific_data_unchanged',\n            'historical_achievement_independent_of_AI_review', 'release_eligible', 'M0_resumed')}}\n    return apply_ai_direct_results(root, updated,\n        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})\n\n\ndef apply_ai_direct_results(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:\n    \"\"\"Deepen only A01/A03 results on the existing static research page.\"\"\"\n    if not (root/PRESENTATION_V13_PATH).exists():\n        return entries, previous_report\n    if digest(project_file(root, PRESENTATION_V12_PATH)) != PRESENTATION_V12_SHA256:\n        raise ValueError('The preceding AI research presentation v12 is immutable')\n    path = project_file(root, PRESENTATION_V13_PATH); data = read_json(path)\n    if not isinstance(data, dict):\n        raise ValueError('AI direct-results presentation must be a JSON object')\n    documents = [{'path': name, 'sha256': digest(project_file(root, name)),\n                  'bytes': project_file(root, name).stat().st_size} for name in AI_RESULTS_DOCUMENTS]\n    protected = {name: {'sha256': row['sha256'], 'bytes': row['bytes']}\n                 for name, row in entries.items() if name != AI_RESEARCH_ROUTE}\n    required = {'schema_version': '13.0', 'presentation_id': PRESENTATION_V13_ID,\n        'publication_kind': 'platform_ai_research_direct_results',\n        'previous_presentation_commit': PRESENTATION_V13_PREVIOUS_COMMIT,\n        'previous_presentation': {'path': PRESENTATION_V12_PATH, 'sha256': PRESENTATION_V12_SHA256},\n        'original_baseline_sha256': BASELINE_SHA256, 'original_archive_sha256': ARCHIVE_SHA256,\n        'allowed_html_paths': [AI_RESEARCH_ROUTE], 'added_html_paths': [],\n        'allowed_achievement_lines': ['A01', 'A03'], 'editorial_documents': documents,\n        'protected_website_members': protected,\n        'reconstruction_kind': 'deduplicated_exact_utf8_text_edits',\n        'scientific_review_status': 'review_required', 'release_eligible': False,\n        'scientific_data_unchanged': True, 'M0_resumed': False,\n        'historical_achievement_independent_of_AI_review': True}\n    if (any(data.get(key) != value for key, value in required.items())\n            or any(data.get(key) is not required[key] for key in ('release_eligible',\n                'scientific_data_unchanged', 'M0_resumed', 'historical_achievement_independent_of_AI_review'))\n            or any(type(data.get(key)) is not int or data[key] != 0\n                   for key in ('new_quantum_calls', 'new_model_API_calls'))\n            or not isinstance(data.get('authorization'), str) or not data['authorization'].strip()):\n        raise ValueError('Unsupported bounded AI direct-results presentation v13')\n    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')\n    if (not isinstance(files, list) or not files or not isinstance(pool, list) or not pool\n            or any(not isinstance(row, dict) or row.get('path') not in AI_RESULTS_PREDECESSOR_FILES for row in files)\n            or len({row['path'] for row in files}) != len(files)\n            or any(not isinstance(row.get('edits'), list) or not row['edits'] or any(\n                not isinstance(edit, dict) or type(edit.get('replacement')) is not int\n                for edit in row['edits']) for row in files)):\n        raise ValueError('AI direct results may enumerate only their five authorized predecessor text files')\n    used = {edit['replacement'] for row in files for edit in row['edits']}\n    if used != set(range(len(pool))):\n        raise ValueError('AI direct-results replacement pool must contain exactly its used text segments')\n    changed_files = set()\n    for name, (old_sha, old_size) in AI_RESULTS_PREDECESSOR_FILES.items():\n        old = ai_results_predecessor_bytes(root, name)\n        if hashlib.sha256(old).hexdigest() != old_sha or len(old) != old_size:\n            raise ValueError('AI direct-results predecessor differs from fixed 858232d bytes: '+name)\n        if old != project_file(root, name).read_bytes():\n            changed_files.add(name)\n    if {row['path'] for row in files} != changed_files:\n        raise ValueError('AI direct-results patches must enumerate every and only changed predecessor file')\n    previous_content = json.loads(ai_results_predecessor_bytes(root, AI_RESEARCH_CONTENT))\n    current_content = read_json(project_file(root, AI_RESEARCH_CONTENT))\n    if ({key: value for key, value in previous_content.items() if key != 'lines'}\n            != {key: value for key, value in current_content.items() if key != 'lines'}):\n        raise ValueError('AI direct results cannot alter research metadata, homepage notes or heritage')\n    before_lines, after_lines = previous_content.get('lines'), current_content.get('lines')\n    line_ids = ['A'+str(n).zfill(2) for n in range(1, 9)]\n    if (not isinstance(before_lines, list) or not isinstance(after_lines, list)\n            or any(not isinstance(row, dict) for row in before_lines+after_lines)\n            or [row.get('id') for row in before_lines] != line_ids\n            or [row.get('id') for row in after_lines] != line_ids):\n        raise ValueError('AI direct results must preserve the eight ordered canonical research lines')\n    changed_lines = []\n    for before_line, after_line in zip(before_lines, after_lines):\n        identifier = before_line['id']\n        if identifier not in {'A01', 'A03'} and before_line != after_line:\n            raise ValueError('AI direct results changed an unauthorized research line: '+identifier)\n        if any(before_line.get(key) != after_line.get(key) for key in ('name', 'home_summary')):\n            raise ValueError('AI direct results must preserve canonical names and homepage summaries: '+identifier)\n        if before_line != after_line:\n            changed_lines.append(identifier)\n    if changed_lines != ['A01', 'A03']:\n        raise ValueError('AI direct results must deepen exactly A01 and A03')\n    changes = data.get('changes')\n    if (not isinstance(changes, list) or len(changes) != 1\n            or not isinstance(changes[0], dict) or changes[0].get('path') != AI_RESEARCH_ROUTE\n            or data.get('additions') != []):\n        raise ValueError('AI direct results may change only the existing research HTML route')\n    item = changes[0]; old = entries[AI_RESEARCH_ROUTE]\n    before = ai_results_predecessor_bytes(root, 'site/'+AI_RESEARCH_ROUTE)\n    after = project_file(root, 'site/'+AI_RESEARCH_ROUTE).read_bytes()\n    if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']\n            or hashlib.sha256(before).hexdigest() != old['sha256'] or len(before) != old['bytes']\n            or item.get('new_sha256') != hashlib.sha256(after).hexdigest() or item.get('new_bytes') != len(after)\n            or before == after or not isinstance(item.get('reason'), str) or not item['reason'].strip()):\n        raise ValueError('AI direct-results HTML differs from its complete old/new byte identities')\n    from public_line_labels import project_html, project_markdown\n    if project_html(after.decode('utf-8'), AI_RESEARCH_ROUTE) != after.decode('utf-8'):\n        raise ValueError('AI direct results must retain canonical named achievement references')\n    document = project_file(root, AI_RESEARCH_DOCUMENT).read_text('utf-8')\n    if project_markdown(document) != document:\n        raise ValueError('AI direct-results prose must retain canonical named achievement references')\n    json_scripts = re.compile(r'<script\\b[^>]*\\btype\\s*=\\s*[\\\"\\']application/(?:ld\\+)?json[\\\"\\'][^>]*>.*?</script\\s*>', re.I | re.S)\n    if json_scripts.findall(before.decode('utf-8')) != json_scripts.findall(after.decode('utf-8')):\n        raise ValueError('AI direct results cannot replace or add an embedded JSON record')\n    updated = {name: dict(row) for name, row in entries.items()}\n    updated[AI_RESEARCH_ROUTE] = {**old, 'sha256': item['new_sha256'], 'bytes': item['new_bytes'],\n                                'presentation_id': PRESENTATION_V13_ID}\n    for name, expected in updated.items():\n        member = project_file(root, 'site/'+name)\n        if digest(member) != expected['sha256'] or member.stat().st_size != expected['bytes']:\n            raise ValueError('AI direct results changed an unlisted or bound website byte: '+name)\n    members = publication_members(root, updated)\n    from render_ai_research import inspect_ai_research\n    consistency = inspect_ai_research(root)\n    if consistency.get('status') != 'passed':\n        raise ValueError('AI direct results differ from their source-derived rendering: '+str(consistency.get('errors', [])))\n    report = {'path': PRESENTATION_V13_PATH, 'sha256': digest(path), 'presentation_id': PRESENTATION_V13_ID,\n        'publication_kind': required['publication_kind'], 'changed_paths': [AI_RESEARCH_ROUTE],\n        'added_paths': [], 'changed_achievement_lines': changed_lines,\n        'previous_presentation_commit': PRESENTATION_V13_PREVIOUS_COMMIT,\n        'exact_predecessor_reconstruction': True, 'source_derived_rendering': True,\n        'homepage_and_other_routes_unchanged': True, 'original_embedded_json_bytes_preserved': True,\n        'published_html_count': len(members)-2, 'published_json_count': 2,\n        'published_member_count_with_marker': len(members)+1,\n"
+    }
+  ],
+  "reversible_text_files": [
+    {
+      "path": "site/research/index.html",
+      "old_sha256": "634bcb1657be0186a534857501c15d23dd5b9660b28f48465c4019ea7be72739",
+      "old_bytes": 24464,
+      "new_sha256": "85374c976a94a3ff601e203633285418b8250262eab5eef2a627bb3de1e4b580",
+      "new_bytes": 46038,
+      "edits": [
+        {
+          "old_offset": 3072,
+          "replacement": 0
+        },
+        {
+          "old_offset": 5840,
+          "replacement": 1
+        },
+        {
+          "old_offset": 5842,
+          "replacement": 2
+        },
+        {
+          "old_offset": 5846,
+          "replacement": 3
+        },
+        {
+          "old_offset": 5858,
+          "replacement": 4
+        },
+        {
+          "old_offset": 5868,
+          "replacement": 5
+        },
+        {
+          "old_offset": 8314,
+          "replacement": 6
+        },
+        {
+          "old_offset": 8329,
+          "replacement": 7
+        },
+        {
+          "old_offset": 8351,
+          "replacement": 8
+        },
+        {
+          "old_offset": 8377,
+          "replacement": 9
+        },
+        {
+          "old_offset": 8389,
+          "replacement": 10
+        },
+        {
+          "old_offset": 8392,
+          "replacement": 11
+        },
+        {
+          "old_offset": 8409,
+          "replacement": 12
+        },
+        {
+          "old_offset": 8448,
+          "replacement": 13
+        },
+        {
+          "old_offset": 8576,
+          "replacement": 14
+        },
+        {
+          "old_offset": 8592,
+          "replacement": 15
+        },
+        {
+          "old_offset": 8598,
+          "replacement": 16
+        },
+        {
+          "old_offset": 8652,
+          "replacement": 17
+        },
+        {
+          "old_offset": 8795,
+          "replacement": 18
+        },
+        {
+          "old_offset": 8798,
+          "replacement": 19
+        },
+        {
+          "old_offset": 8800,
+          "replacement": 20
+        },
+        {
+          "old_offset": 8829,
+          "replacement": 21
+        },
+        {
+          "old_offset": 8831,
+          "replacement": 22
+        },
+        {
+          "old_offset": 8837,
+          "replacement": 23
+        },
+        {
+          "old_offset": 8864,
+          "replacement": 24
+        },
+        {
+          "old_offset": 8888,
+          "replacement": 25
+        },
+        {
+          "old_offset": 8927,
+          "replacement": 26
+        },
+        {
+          "old_offset": 8932,
+          "replacement": 27
+        },
+        {
+          "old_offset": 8935,
+          "replacement": 27
+        },
+        {
+          "old_offset": 8937,
+          "replacement": 28
+        },
+        {
+          "old_offset": 9016,
+          "replacement": 29
+        },
+        {
+          "old_offset": 9034,
+          "replacement": 30
+        },
+        {
+          "old_offset": 9055,
+          "replacement": 31
+        },
+        {
+          "old_offset": 9060,
+          "replacement": 32
+        },
+        {
+          "old_offset": 11702,
+          "replacement": 33
+        },
+        {
+          "old_offset": 11704,
+          "replacement": 34
+        },
+        {
+          "old_offset": 11708,
+          "replacement": 3
+        },
+        {
+          "old_offset": 11720,
+          "replacement": 4
+        },
+        {
+          "old_offset": 11730,
+          "replacement": 35
+        },
+        {
+          "old_offset": 12474,
+          "replacement": 36
+        },
+        {
+          "old_offset": 12489,
+          "replacement": 7
+        },
+        {
+          "old_offset": 12511,
+          "replacement": 37
+        },
+        {
+          "old_offset": 12523,
+          "replacement": 38
+        },
+        {
+          "old_offset": 12550,
+          "replacement": 39
+        },
+        {
+          "old_offset": 12559,
+          "replacement": 40
+        },
+        {
+          "old_offset": 12583,
+          "replacement": 41
+        },
+        {
+          "old_offset": 12604,
+          "replacement": 42
+        },
+        {
+          "old_offset": 12691,
+          "replacement": 43
+        },
+        {
+          "old_offset": 12715,
+          "replacement": 44
+        },
+        {
+          "old_offset": 12718,
+          "replacement": 45
+        },
+        {
+          "old_offset": 12733,
+          "replacement": 46
+        },
+        {
+          "old_offset": 12739,
+          "replacement": 47
+        },
+        {
+          "old_offset": 12742,
+          "replacement": 48
+        },
+        {
+          "old_offset": 12754,
+          "replacement": 49
+        },
+        {
+          "old_offset": 12835,
+          "replacement": 50
+        },
+        {
+          "old_offset": 12855,
+          "replacement": 18
+        },
+        {
+          "old_offset": 12858,
+          "replacement": 51
+        },
+        {
+          "old_offset": 12860,
+          "replacement": 20
+        },
+        {
+          "old_offset": 12889,
+          "replacement": 21
+        },
+        {
+          "old_offset": 12891,
+          "replacement": 22
+        },
+        {
+          "old_offset": 12909,
+          "replacement": 52
+        },
+        {
+          "old_offset": 12939,
+          "replacement": 53
+        },
+        {
+          "old_offset": 12945,
+          "replacement": 54
+        },
+        {
+          "old_offset": 12963,
+          "replacement": 55
+        },
+        {
+          "old_offset": 12980,
+          "replacement": 27
+        },
+        {
+          "old_offset": 12983,
+          "replacement": 56
+        },
+        {
+          "old_offset": 12986,
+          "replacement": 57
+        },
+        {
+          "old_offset": 12988,
+          "replacement": 58
+        },
+        {
+          "old_offset": 13011,
+          "replacement": 59
+        }
+      ]
+    },
+    {
+      "path": "content/ai-research-section.v1.json",
+      "old_sha256": "2740f58d7579d73edc9dbebb392f21fc03f21507e0e28584826dfd8d406aba79",
+      "old_bytes": 22553,
+      "new_sha256": "adabfe9f1a1cd652d117f7b9fc852bd7499487a9aa8a3139bccb47150033c301",
+      "new_bytes": 62264,
+      "edits": [
+        {
+          "old_offset": 6112,
+          "replacement": 60
+        },
+        {
+          "old_offset": 10589,
+          "replacement": 61
+        }
+      ]
+    },
+    {
+      "path": "scripts/render_ai_research.py",
+      "old_sha256": "793d13a52ccfdcf8d939d2468d29ab2ee50ce3a972898e722a9dd7103f7e959a",
+      "old_bytes": 25962,
+      "new_sha256": "729298ecb6146cba6b9a78bdc2074dabb10b6a2f551f7efaf4d0a4078e29f521",
+      "new_bytes": 34792,
+      "edits": [
+        {
+          "old_offset": 4398,
+          "replacement": 62
+        },
+        {
+          "old_offset": 4897,
+          "replacement": 63
+        },
+        {
+          "old_offset": 9386,
+          "replacement": 64
+        },
+        {
+          "old_offset": 9402,
+          "replacement": 65
+        },
+        {
+          "old_offset": 11759,
+          "replacement": 66
+        },
+        {
+          "old_offset": 12531,
+          "replacement": 67
+        },
+        {
+          "old_offset": 12933,
+          "replacement": 68
+        },
+        {
+          "old_offset": 12966,
+          "replacement": 69
+        },
+        {
+          "old_offset": 13027,
+          "replacement": 70
+        },
+        {
+          "old_offset": 16979,
+          "replacement": 71
+        }
+      ]
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "old_sha256": "3622e6ca97af8fce5581b86ff449308f0198c0679f1de2cdff1a7d1de1391a4e",
+      "old_bytes": 17305,
+      "new_sha256": "7b6429b44a452837b73b10195020028f6a1955b76bfe991ecd5d3ad17f7c339e",
+      "new_bytes": 32304,
+      "edits": [
+        {
+          "old_offset": 1567,
+          "replacement": 72
+        },
+        {
+          "old_offset": 6459,
+          "replacement": 73
+        }
+      ]
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "old_sha256": "50da7b0b377ae7dd08a4bcd5ecb44cc98f8bcf0df21dd30c61ded534f44cb38d",
+      "old_bytes": 125747,
+      "new_sha256": "5bfcdb7a612e842b9d9857f485c0ef96142de73f0ff80cd94fd2445fc103227a",
+      "new_bytes": 139962,
+      "edits": [
+        {
+          "old_offset": 4684,
+          "replacement": 74
+        },
+        {
+          "old_offset": 6420,
+          "replacement": 75
+        },
+        {
+          "old_offset": 13883,
+          "replacement": 76
+        },
+        {
+          "old_offset": 14198,
+          "replacement": 77
+        },
+        {
+          "old_offset": 14200,
+          "replacement": 78
+        },
+        {
+          "old_offset": 14204,
+          "replacement": 79
+        },
+        {
+          "old_offset": 14205,
+          "replacement": 80
+        },
+        {
+          "old_offset": 14210,
+          "replacement": 81
+        },
+        {
+          "old_offset": 14222,
+          "replacement": 82
+        },
+        {
+          "old_offset": 39897,
+          "replacement": 83
+        },
+        {
+          "old_offset": 110280,
+          "replacement": 84
+        },
+        {
+          "old_offset": 110283,
+          "replacement": 85
+        },
+        {
+          "old_offset": 110290,
+          "replacement": 86
+        },
+        {
+          "old_offset": 110307,
+          "replacement": 87
+        },
+        {
+          "old_offset": 110308,
+          "replacement": 88
+        },
+        {
+          "old_offset": 110336,
+          "replacement": 89
+        },
+        {
+          "old_offset": 113360,
+          "replacement": 77
+        },
+        {
+          "old_offset": 113362,
+          "replacement": 78
+        },
+        {
+          "old_offset": 113366,
+          "replacement": 79
+        },
+        {
+          "old_offset": 113367,
+          "replacement": 80
+        },
+        {
+          "old_offset": 113372,
+          "replacement": 81
+        },
+        {
+          "old_offset": 113384,
+          "replacement": 82
+        },
+        {
+          "old_offset": 113736,
+          "replacement": 77
+        },
+        {
+          "old_offset": 113738,
+          "replacement": 78
+        },
+        {
+          "old_offset": 113742,
+          "replacement": 79
+        },
+        {
+          "old_offset": 113743,
+          "replacement": 80
+        },
+        {
+          "old_offset": 113748,
+          "replacement": 81
+        },
+        {
+          "old_offset": 113761,
+          "replacement": 90
+        },
+        {
+          "old_offset": 113763,
+          "replacement": 91
+        },
+        {
+          "old_offset": 113765,
+          "replacement": 92
+        },
+        {
+          "old_offset": 113768,
+          "replacement": 93
+        },
+        {
+          "old_offset": 114599,
+          "replacement": 77
+        },
+        {
+          "old_offset": 114601,
+          "replacement": 78
+        },
+        {
+          "old_offset": 114605,
+          "replacement": 79
+        },
+        {
+          "old_offset": 114606,
+          "replacement": 80
+        },
+        {
+          "old_offset": 114611,
+          "replacement": 81
+        },
+        {
+          "old_offset": 114631,
+          "replacement": 82
+        },
+        {
+          "old_offset": 116100,
+          "replacement": 77
+        },
+        {
+          "old_offset": 116102,
+          "replacement": 78
+        },
+        {
+          "old_offset": 116106,
+          "replacement": 79
+        },
+        {
+          "old_offset": 116107,
+          "replacement": 80
+        },
+        {
+          "old_offset": 116112,
+          "replacement": 81
+        },
+        {
+          "old_offset": 116180,
+          "replacement": 94
+        },
+        {
+          "old_offset": 116187,
+          "replacement": 95
+        },
+        {
+          "old_offset": 116222,
+          "replacement": 96
+        },
+        {
+          "old_offset": 116227,
+          "replacement": 97
+        },
+        {
+          "old_offset": 116234,
+          "replacement": 98
+        },
+        {
+          "old_offset": 116450,
+          "replacement": 90
+        },
+        {
+          "old_offset": 116452,
+          "replacement": 91
+        },
+        {
+          "old_offset": 116454,
+          "replacement": 92
+        },
+        {
+          "old_offset": 116457,
+          "replacement": 93
+        },
+        {
+          "old_offset": 116498,
+          "replacement": 90
+        },
+        {
+          "old_offset": 116500,
+          "replacement": 91
+        },
+        {
+          "old_offset": 116502,
+          "replacement": 92
+        },
+        {
+          "old_offset": 116505,
+          "replacement": 93
+        },
+        {
+          "old_offset": 116843,
+          "replacement": 77
+        },
+        {
+          "old_offset": 116845,
+          "replacement": 78
+        },
+        {
+          "old_offset": 116849,
+          "replacement": 99
+        },
+        {
+          "old_offset": 116851,
+          "replacement": 100
+        },
+        {
+          "old_offset": 116853,
+          "replacement": 101
+        },
+        {
+          "old_offset": 116887,
+          "replacement": 102
+        },
+        {
+          "old_offset": 116900,
+          "replacement": 103
+        },
+        {
+          "old_offset": 116933,
+          "replacement": 104
+        },
+        {
+          "old_offset": 116935,
+          "replacement": 105
+        },
+        {
+          "old_offset": 117113,
+          "replacement": 106
+        },
+        {
+          "old_offset": 117172,
+          "replacement": 107
+        },
+        {
+          "old_offset": 117212,
+          "replacement": 107
+        },
+        {
+          "old_offset": 117258,
+          "replacement": 107
+        },
+        {
+          "old_offset": 118005,
+          "replacement": 108
+        }
+      ]
+    }
+  ],
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "M0_resumed": false,
+  "historical_achievement_independent_of_AI_review": true,
+  "new_quantum_calls": 0,
+  "new_model_API_calls": 0,
+  "changes": [
+    {
+      "path": "research/index.html",
+      "old_sha256": "634bcb1657be0186a534857501c15d23dd5b9660b28f48465c4019ea7be72739",
+      "old_bytes": 24464,
+      "new_sha256": "85374c976a94a3ff601e203633285418b8250262eab5eef2a627bb3de1e4b580",
+      "new_bytes": 46038,
+      "reason": "Show A01/A03 existing research results and evidence tables directly, with completed, pending and future items distinguished; preserve all other routes and scientific source bytes"
+    }
+  ],
+  "additions": [],
+  "boundary": "Only research/index.html and its existing content registry, renderer, explanatory document and publication contract change. Content metadata, heritage, the other six research lines and A01/A03 homepage summaries retain their values. All other website members, original public JSON, scientific source records and the frozen M0 progress remain unchanged. No calculation or model call is performed.",
+  "reconstruction": "Ordered UTF-8 byte offsets and a deduplicated old/new text-segment pool reconstruct exactly five permitted fixed 858232d predecessor files in memory. V12 checks its complete frozen source, renderer and output bindings; v1-v11 retain their exact historical replay. V13 checks final source-derived rendering with the current renderer. No complete predecessor page, source document or site snapshot is added.",
+  "publish_allowlist": "Unchanged: sixteen static HTML pages, the two original public JSON files and an empty .nojekyll marker, nineteen regular published files. No route or extra public JSON is added."
+}

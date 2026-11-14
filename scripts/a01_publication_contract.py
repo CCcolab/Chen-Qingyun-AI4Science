@@ -71,6 +71,10 @@ PRESENTATION_V11_SHA256 = 'd6eb2a3faed6f030a28ca5b63e3f3512144c9246f39467d300fc2
 PRESENTATION_V12_PATH = 'provenance/platform-presentation.v12.json'
 PRESENTATION_V12_ID = 'PLATFORM-AI-RESEARCH-20261114-v12'
 PRESENTATION_V12_PREVIOUS_COMMIT = '1c3c6a0f329d5259a53e94bee9227b7a5cb35523'
+PRESENTATION_V12_SHA256 = 'aa9efd831558b47646b687e12be30724c4b8be89a0f98ccb8d06ef56cf04e81f'
+PRESENTATION_V13_PATH = 'provenance/platform-presentation.v13.json'
+PRESENTATION_V13_ID = 'PLATFORM-AI-DIRECT-RESULTS-20261114-v13'
+PRESENTATION_V13_PREVIOUS_COMMIT = '858232daae36495e68645ae519441fd7d7a5a9d5'
 AI_RESEARCH_ROUTE = 'research/index.html'
 AI_RESEARCH_CONTENT = 'content/ai-research-section.v1.json'
 AI_RESEARCH_RENDERER = 'scripts/render_ai_research.py'
@@ -93,6 +97,15 @@ AI_RESEARCH_DOCUMENTS = ('README.md', 'scripts/render_a01_history.py',
     'scripts/public_line_labels.py', 'scripts/a01_publication_contract.py',
     'scripts/check_site.py', 'scripts/build_site.py', 'scripts/verify_online.py',
     AI_RESEARCH_CONTENT, AI_RESEARCH_RENDERER, AI_RESEARCH_DOCUMENT)
+AI_RESULTS_PREDECESSOR_FILES = {
+    'site/research/index.html': ('634bcb1657be0186a534857501c15d23dd5b9660b28f48465c4019ea7be72739', 24464),
+    'content/ai-research-section.v1.json': ('2740f58d7579d73edc9dbebb392f21fc03f21507e0e28584826dfd8d406aba79', 22553),
+    'scripts/render_ai_research.py': ('793d13a52ccfdcf8d939d2468d29ab2ee50ce3a972898e722a9dd7103f7e959a', 25962),
+    'docs/AI_RESEARCH_zh-CN.md': ('3622e6ca97af8fce5581b86ff449308f0198c0679f1de2cdff1a7d1de1391a4e', 17305),
+    'scripts/a01_publication_contract.py': ('50da7b0b377ae7dd08a4bcd5ecb44cc98f8bcf0df21dd30c61ded534f44cb38d', 125747),
+}
+AI_RESULTS_DOCUMENTS = (AI_RESEARCH_CONTENT, AI_RESEARCH_RENDERER,
+    AI_RESEARCH_DOCUMENT, 'scripts/a01_publication_contract.py')
 PUBLIC_LABEL_MARKDOWN = ('README.md', 'research/a01/README.md',
     'docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md', 'docs/PLATFORM_PURPOSE_zh-CN.md',
     'docs/PLATFORM_ROADMAP_zh-CN.md', 'docs/CHEN_REAGENT_ACHIEVEMENT_zh-CN.md',
@@ -197,13 +210,68 @@ def project_file(root: Path, name: str) -> Path:
     return candidate
 
 
+def ai_results_predecessor_bytes(root: Path, name: str) -> bytes:
+    """Undo only the five explicitly permitted v13 presentation files."""
+    current = project_file(root, name).read_bytes()
+    if not (root/PRESENTATION_V13_PATH).exists():
+        return current
+    data = read_json(project_file(root, PRESENTATION_V13_PATH))
+    if not isinstance(data, dict):
+        raise ValueError('AI direct-results presentation must be a JSON object')
+    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')
+    if not isinstance(files, list) or not isinstance(pool, list):
+        raise ValueError('AI direct results require exact reversible text patch records')
+    matches = [row for row in files if isinstance(row, dict) and row.get('path') == name]
+    if not matches:
+        return current
+    if len(matches) != 1 or name not in AI_RESULTS_PREDECESSOR_FILES:
+        raise ValueError('Unauthorized or duplicate AI direct-results predecessor record: '+name)
+    record = matches[0]; old_sha, old_size = AI_RESULTS_PREDECESSOR_FILES[name]
+    if (record.get('old_sha256') != old_sha or record.get('old_bytes') != old_size
+            or hashlib.sha256(current).hexdigest() != record.get('new_sha256')
+            or len(current) != record.get('new_bytes')):
+        raise ValueError('AI direct-results file differs from its complete old/new identities: '+name)
+    edits = record.get('edits')
+    if not isinstance(edits, list) or not edits:
+        raise ValueError('AI direct-results changes require nonempty text edits: '+name)
+    chunks, cursor, old_end, delta = [], 0, 0, 0
+    for edit in edits:
+        if not isinstance(edit, dict) or set(edit) != {'old_offset', 'replacement'}:
+            raise ValueError('Invalid reversible AI direct-results text edit: '+name)
+        offset, replacement = edit['old_offset'], edit['replacement']
+        if (type(offset) is not int or offset < old_end or type(replacement) is not int
+                or not 0 <= replacement < len(pool)):
+            raise ValueError('Overlapping or invalid AI direct-results text edit: '+name)
+        pair = pool[replacement]
+        if (not isinstance(pair, dict) or set(pair) != {'old', 'new'}
+                or not all(isinstance(pair.get(key), str) for key in ('old', 'new'))
+                or pair['old'] == pair['new']):
+            raise ValueError('Invalid AI direct-results text replacement pool')
+        before, after = pair['old'].encode('utf-8'), pair['new'].encode('utf-8')
+        position = offset+delta
+        if position < cursor or current[position:position+len(after)] != after:
+            raise ValueError('AI direct-results replacement differs at its exact offset: '+name)
+        chunks.extend((current[cursor:position], before))
+        cursor, old_end = position+len(after), offset+len(before)
+        delta += len(after)-len(before)
+    rebuilt = b''.join((*chunks, current[cursor:]))
+    if hashlib.sha256(rebuilt).hexdigest() != old_sha or len(rebuilt) != old_size:
+        raise ValueError('AI direct-results predecessor cannot be reconstructed exactly: '+name)
+    return rebuilt
+
+
+def ai_results_predecessor_binding(root: Path, name: str) -> dict:
+    content = ai_results_predecessor_bytes(root, name)
+    return {'path': name, 'sha256': hashlib.sha256(content).hexdigest(), 'bytes': len(content)}
+
+
 def ai_research_predecessor_bytes(root: Path, name: str) -> bytes:
     """Reconstruct the fixed v11 edition before replaying its older promises.
 
     The successor stores only ordered changed UTF-8 segments. Both complete
     identities are checked; no predecessor page or document is copied.
     """
-    current = project_file(root, name).read_bytes()
+    current = ai_results_predecessor_bytes(root, name)
     if not (root/PRESENTATION_V12_PATH).exists():
         return current
     data = read_json(project_file(root, PRESENTATION_V12_PATH))
@@ -632,6 +700,8 @@ def apply_presentation_v1(root: Path, entries: dict, *, chain: list,
 
 def apply_presentation_overlay(root: Path, entries: dict, *, chain: list) -> tuple[dict, dict | None]:
     """Apply v1, then this bounded historical-content successor if present."""
+    if (root/PRESENTATION_V13_PATH).exists() and not (root/PRESENTATION_V12_PATH).exists():
+        raise ValueError('AI direct results require their fixed v12 predecessor')
     if (root/PRESENTATION_V12_PATH).exists() and not (root/PRESENTATION_V11_PATH).exists():
         raise ValueError('AI research presentation requires its fixed v11 predecessor')
     if (root/PRESENTATION_V11_PATH).exists() and not (root/PRESENTATION_V10_PATH).exists():
@@ -1634,8 +1704,7 @@ def apply_ai_research_section(root: Path, entries: dict, previous_report: dict) 
     path = project_file(root, PRESENTATION_V12_PATH); data = read_json(path)
     if not isinstance(data, dict):
         raise ValueError('AI research presentation must be a JSON object')
-    documents = [{'path': name, 'sha256': digest(project_file(root, name)),
-                  'bytes': project_file(root, name).stat().st_size} for name in AI_RESEARCH_DOCUMENTS]
+    documents = [ai_results_predecessor_binding(root, name) for name in AI_RESEARCH_DOCUMENTS]
     protected = {name: {'sha256': row['sha256'], 'bytes': row['bytes']}
                  for name, row in entries.items() if name not in AI_RESEARCH_ALLOWED_PATHS}
     required = {'schema_version': '12.0', 'presentation_id': PRESENTATION_V12_ID,
@@ -1673,13 +1742,13 @@ def apply_ai_research_section(root: Path, entries: dict, previous_report: dict) 
         old = ai_research_predecessor_bytes(root, name)
         if hashlib.sha256(old).hexdigest() != old_sha or len(old) != old_size:
             raise ValueError('AI research predecessor differs from its fixed 1c3c6a0 identity: '+name)
-        if old != project_file(root, name).read_bytes():
+        if old != ai_results_predecessor_bytes(root, name):
             changed_files.add(name)
     if {row['path'] for row in files} != changed_files:
         raise ValueError('AI research text patches must enumerate every and only changed predecessor file')
     from public_line_labels import project_html, project_markdown
     for name in ('README.md', AI_RESEARCH_DOCUMENT):
-        current = project_file(root, name).read_text('utf-8')
+        current = ai_results_predecessor_bytes(root, name).decode('utf-8')
         if project_markdown(current) != current:
             raise ValueError('AI research prose must retain canonical named achievement references: '+name)
     changes = data.get('changes')
@@ -1691,7 +1760,7 @@ def apply_ai_research_section(root: Path, entries: dict, previous_report: dict) 
     for item in changes:
         name = item['path']; old = entries[name]
         before = ai_research_predecessor_bytes(root, 'site/'+name)
-        after = project_file(root, 'site/'+name).read_bytes()
+        after = ai_results_predecessor_bytes(root, 'site/'+name)
         source, current = before.decode('utf-8'), after.decode('utf-8')
         if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']
                 or hashlib.sha256(before).hexdigest() != old['sha256'] or len(before) != old['bytes']
@@ -1709,23 +1778,27 @@ def apply_ai_research_section(root: Path, entries: dict, previous_report: dict) 
             or not isinstance(additions[0], dict) or additions[0].get('path') != AI_RESEARCH_ROUTE
             or AI_RESEARCH_ROUTE in entries):
         raise ValueError('AI research may add exactly research/index.html')
-    addition = additions[0]; added = project_file(root, 'site/'+AI_RESEARCH_ROUTE)
-    if (addition.get('sha256') != digest(added) or addition.get('bytes') != added.stat().st_size
+    addition = additions[0]; added = ai_results_predecessor_bytes(root, 'site/'+AI_RESEARCH_ROUTE)
+    if (addition.get('sha256') != hashlib.sha256(added).hexdigest() or addition.get('bytes') != len(added)
             or type(addition.get('bytes')) is not int or addition['bytes'] <= 0
             or not isinstance(addition.get('reason'), str) or not addition['reason'].strip()
-            or project_html(added.read_text('utf-8'), AI_RESEARCH_ROUTE) != added.read_text('utf-8')):
+            or project_html(added.decode('utf-8'), AI_RESEARCH_ROUTE) != added.decode('utf-8')):
         raise ValueError('The new AI research route differs from its exact static HTML binding')
     updated[AI_RESEARCH_ROUTE] = {'path': AI_RESEARCH_ROUTE, 'sha256': addition['sha256'],
         'bytes': addition['bytes'], 'presentation_id': PRESENTATION_V12_ID}
     for name, expected in updated.items():
-        member = project_file(root, 'site/'+name)
-        if digest(member) != expected['sha256'] or member.stat().st_size != expected['bytes']:
+        member = ai_results_predecessor_binding(root, 'site/'+name)
+        if member['sha256'] != expected['sha256'] or member['bytes'] != expected['bytes']:
             raise ValueError('AI research changed an unlisted or bound website byte: '+name)
     members = publication_members(root, updated)
-    from render_ai_research import inspect_ai_research
-    consistency = inspect_ai_research(root)
-    if consistency.get('status') != 'passed':
-        raise ValueError('AI research differs from its source-derived rendering: '+str(consistency.get('errors', [])))
+    # A successor reconstructs the complete fixed renderer, source and output
+    # bindings above. Its current renderer is evaluated only on its own final
+    # source/output below, never on a predecessor edition.
+    if not (root/PRESENTATION_V13_PATH).exists():
+        from render_ai_research import inspect_ai_research
+        consistency = inspect_ai_research(root)
+        if consistency.get('status') != 'passed':
+            raise ValueError('AI research differs from its source-derived rendering: '+str(consistency.get('errors', [])))
     report = {'path': PRESENTATION_V12_PATH, 'sha256': digest(path), 'presentation_id': PRESENTATION_V12_ID,
         'publication_kind': required['publication_kind'],
         'changed_paths': sorted(AI_RESEARCH_ALLOWED_PATHS | {AI_RESEARCH_ROUTE}),
@@ -1733,6 +1806,129 @@ def apply_ai_research_section(root: Path, entries: dict, previous_report: dict) 
         'exact_predecessor_reconstruction': True, 'original_embedded_json_bytes_preserved': True,
         'source_derived_rendering': True, 'published_html_count': len(members)-2,
         'published_json_count': 2, 'published_member_count_with_marker': len(members)+1,
+        **{key: required[key] for key in ('scientific_review_status', 'scientific_data_unchanged',
+            'historical_achievement_independent_of_AI_review', 'release_eligible', 'M0_resumed')}}
+    return apply_ai_direct_results(root, updated,
+        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})
+
+
+def apply_ai_direct_results(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:
+    """Deepen only A01/A03 results on the existing static research page."""
+    if not (root/PRESENTATION_V13_PATH).exists():
+        return entries, previous_report
+    if digest(project_file(root, PRESENTATION_V12_PATH)) != PRESENTATION_V12_SHA256:
+        raise ValueError('The preceding AI research presentation v12 is immutable')
+    path = project_file(root, PRESENTATION_V13_PATH); data = read_json(path)
+    if not isinstance(data, dict):
+        raise ValueError('AI direct-results presentation must be a JSON object')
+    documents = [{'path': name, 'sha256': digest(project_file(root, name)),
+                  'bytes': project_file(root, name).stat().st_size} for name in AI_RESULTS_DOCUMENTS]
+    protected = {name: {'sha256': row['sha256'], 'bytes': row['bytes']}
+                 for name, row in entries.items() if name != AI_RESEARCH_ROUTE}
+    required = {'schema_version': '13.0', 'presentation_id': PRESENTATION_V13_ID,
+        'publication_kind': 'platform_ai_research_direct_results',
+        'previous_presentation_commit': PRESENTATION_V13_PREVIOUS_COMMIT,
+        'previous_presentation': {'path': PRESENTATION_V12_PATH, 'sha256': PRESENTATION_V12_SHA256},
+        'original_baseline_sha256': BASELINE_SHA256, 'original_archive_sha256': ARCHIVE_SHA256,
+        'allowed_html_paths': [AI_RESEARCH_ROUTE], 'added_html_paths': [],
+        'allowed_achievement_lines': ['A01', 'A03'], 'editorial_documents': documents,
+        'protected_website_members': protected,
+        'reconstruction_kind': 'deduplicated_exact_utf8_text_edits',
+        'scientific_review_status': 'review_required', 'release_eligible': False,
+        'scientific_data_unchanged': True, 'M0_resumed': False,
+        'historical_achievement_independent_of_AI_review': True}
+    if (any(data.get(key) != value for key, value in required.items())
+            or any(data.get(key) is not required[key] for key in ('release_eligible',
+                'scientific_data_unchanged', 'M0_resumed', 'historical_achievement_independent_of_AI_review'))
+            or any(type(data.get(key)) is not int or data[key] != 0
+                   for key in ('new_quantum_calls', 'new_model_API_calls'))
+            or not isinstance(data.get('authorization'), str) or not data['authorization'].strip()):
+        raise ValueError('Unsupported bounded AI direct-results presentation v13')
+    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')
+    if (not isinstance(files, list) or not files or not isinstance(pool, list) or not pool
+            or any(not isinstance(row, dict) or row.get('path') not in AI_RESULTS_PREDECESSOR_FILES for row in files)
+            or len({row['path'] for row in files}) != len(files)
+            or any(not isinstance(row.get('edits'), list) or not row['edits'] or any(
+                not isinstance(edit, dict) or type(edit.get('replacement')) is not int
+                for edit in row['edits']) for row in files)):
+        raise ValueError('AI direct results may enumerate only their five authorized predecessor text files')
+    used = {edit['replacement'] for row in files for edit in row['edits']}
+    if used != set(range(len(pool))):
+        raise ValueError('AI direct-results replacement pool must contain exactly its used text segments')
+    changed_files = set()
+    for name, (old_sha, old_size) in AI_RESULTS_PREDECESSOR_FILES.items():
+        old = ai_results_predecessor_bytes(root, name)
+        if hashlib.sha256(old).hexdigest() != old_sha or len(old) != old_size:
+            raise ValueError('AI direct-results predecessor differs from fixed 858232d bytes: '+name)
+        if old != project_file(root, name).read_bytes():
+            changed_files.add(name)
+    if {row['path'] for row in files} != changed_files:
+        raise ValueError('AI direct-results patches must enumerate every and only changed predecessor file')
+    previous_content = json.loads(ai_results_predecessor_bytes(root, AI_RESEARCH_CONTENT))
+    current_content = read_json(project_file(root, AI_RESEARCH_CONTENT))
+    if ({key: value for key, value in previous_content.items() if key != 'lines'}
+            != {key: value for key, value in current_content.items() if key != 'lines'}):
+        raise ValueError('AI direct results cannot alter research metadata, homepage notes or heritage')
+    before_lines, after_lines = previous_content.get('lines'), current_content.get('lines')
+    line_ids = ['A'+str(n).zfill(2) for n in range(1, 9)]
+    if (not isinstance(before_lines, list) or not isinstance(after_lines, list)
+            or any(not isinstance(row, dict) for row in before_lines+after_lines)
+            or [row.get('id') for row in before_lines] != line_ids
+            or [row.get('id') for row in after_lines] != line_ids):
+        raise ValueError('AI direct results must preserve the eight ordered canonical research lines')
+    changed_lines = []
+    for before_line, after_line in zip(before_lines, after_lines):
+        identifier = before_line['id']
+        if identifier not in {'A01', 'A03'} and before_line != after_line:
+            raise ValueError('AI direct results changed an unauthorized research line: '+identifier)
+        if any(before_line.get(key) != after_line.get(key) for key in ('name', 'home_summary')):
+            raise ValueError('AI direct results must preserve canonical names and homepage summaries: '+identifier)
+        if before_line != after_line:
+            changed_lines.append(identifier)
+    if changed_lines != ['A01', 'A03']:
+        raise ValueError('AI direct results must deepen exactly A01 and A03')
+    changes = data.get('changes')
+    if (not isinstance(changes, list) or len(changes) != 1
+            or not isinstance(changes[0], dict) or changes[0].get('path') != AI_RESEARCH_ROUTE
+            or data.get('additions') != []):
+        raise ValueError('AI direct results may change only the existing research HTML route')
+    item = changes[0]; old = entries[AI_RESEARCH_ROUTE]
+    before = ai_results_predecessor_bytes(root, 'site/'+AI_RESEARCH_ROUTE)
+    after = project_file(root, 'site/'+AI_RESEARCH_ROUTE).read_bytes()
+    if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']
+            or hashlib.sha256(before).hexdigest() != old['sha256'] or len(before) != old['bytes']
+            or item.get('new_sha256') != hashlib.sha256(after).hexdigest() or item.get('new_bytes') != len(after)
+            or before == after or not isinstance(item.get('reason'), str) or not item['reason'].strip()):
+        raise ValueError('AI direct-results HTML differs from its complete old/new byte identities')
+    from public_line_labels import project_html, project_markdown
+    if project_html(after.decode('utf-8'), AI_RESEARCH_ROUTE) != after.decode('utf-8'):
+        raise ValueError('AI direct results must retain canonical named achievement references')
+    document = project_file(root, AI_RESEARCH_DOCUMENT).read_text('utf-8')
+    if project_markdown(document) != document:
+        raise ValueError('AI direct-results prose must retain canonical named achievement references')
+    json_scripts = re.compile(r'<script\b[^>]*\btype\s*=\s*[\"\']application/(?:ld\+)?json[\"\'][^>]*>.*?</script\s*>', re.I | re.S)
+    if json_scripts.findall(before.decode('utf-8')) != json_scripts.findall(after.decode('utf-8')):
+        raise ValueError('AI direct results cannot replace or add an embedded JSON record')
+    updated = {name: dict(row) for name, row in entries.items()}
+    updated[AI_RESEARCH_ROUTE] = {**old, 'sha256': item['new_sha256'], 'bytes': item['new_bytes'],
+                                'presentation_id': PRESENTATION_V13_ID}
+    for name, expected in updated.items():
+        member = project_file(root, 'site/'+name)
+        if digest(member) != expected['sha256'] or member.stat().st_size != expected['bytes']:
+            raise ValueError('AI direct results changed an unlisted or bound website byte: '+name)
+    members = publication_members(root, updated)
+    from render_ai_research import inspect_ai_research
+    consistency = inspect_ai_research(root)
+    if consistency.get('status') != 'passed':
+        raise ValueError('AI direct results differ from their source-derived rendering: '+str(consistency.get('errors', [])))
+    report = {'path': PRESENTATION_V13_PATH, 'sha256': digest(path), 'presentation_id': PRESENTATION_V13_ID,
+        'publication_kind': required['publication_kind'], 'changed_paths': [AI_RESEARCH_ROUTE],
+        'added_paths': [], 'changed_achievement_lines': changed_lines,
+        'previous_presentation_commit': PRESENTATION_V13_PREVIOUS_COMMIT,
+        'exact_predecessor_reconstruction': True, 'source_derived_rendering': True,
+        'homepage_and_other_routes_unchanged': True, 'original_embedded_json_bytes_preserved': True,
+        'published_html_count': len(members)-2, 'published_json_count': 2,
+        'published_member_count_with_marker': len(members)+1,
         **{key: required[key] for key in ('scientific_review_status', 'scientific_data_unchanged',
             'historical_achievement_independent_of_AI_review', 'release_eligible', 'M0_resumed')}}
     return updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}

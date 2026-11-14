@@ -31,6 +31,9 @@ PAGE_CSS = """:root{color-scheme:light;--ink:#172b29;--muted:#506660;--accent:#1
 HOME_CSS = """#research .ai-line-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}#research .ai-line-card{padding:22px 24px;background:var(--white);border:1px solid var(--line);min-width:0}#research .ai-line-card h3{font-size:21px;line-height:1.5;margin:0 0 10px}#research .ai-line-card p{font-size:14px;color:var(--soft);margin:0 0 12px}#research .ai-line-card a{font-size:14px;color:var(--teal);font-weight:650}#research .ai-reading-note{font-size:14px;color:var(--soft);margin:22px 0 0}@media(max-width:640px){#research .ai-line-grid{grid-template-columns:1fr}}"""
 
 
+PAGE_CSS += """.result-nav{font-size:.9rem;display:flex;flex-wrap:wrap;gap:8px}.result-evidence{border-top:1px solid var(--line);margin:30px 0;padding-top:22px}.result-identity{color:var(--accent);font-size:.82rem;font-weight:700;letter-spacing:.03em}.result-evidence>h4{font:700 clamp(1.15rem,2.3vw,1.5rem)/1.6 var(--serif);margin:.4em 0}.result-table{overflow-x:auto;max-width:100%;margin:18px 0 12px;border:1px solid var(--line);background:#fff}.result-table:focus-visible{outline:3px solid #aa7545;outline-offset:2px}.result-table table{border-collapse:collapse;width:100%;min-width:660px;font-size:.88rem;line-height:1.7}.result-table caption{text-align:left;padding:14px 16px;color:var(--accent);font-weight:700;background:#edf2ec}.result-table th,.result-table td{text-align:left;vertical-align:top;padding:12px 14px;border-top:1px solid var(--line);overflow-wrap:anywhere}.result-table thead th{background:#f5f5ef}.result-table tbody th{font-weight:600;min-width:110px}.result-table td{min-width:100px}.research-line .table-note{color:var(--muted);font-size:.86rem;max-width:none}.scientific-meaning{border-left:3px solid #aa7545;padding:8px 18px;background:#f7f4eb}.result-limits{font-size:.9rem;color:var(--muted)}.result-sources{font-size:.9rem}.record-archive{border:1px solid var(--line);padding:16px;margin:26px 0}.record-archive summary{cursor:pointer;color:var(--accent);font-weight:600}.pending-work,.future-work{padding:14px 20px;margin:20px 0;background:#f5f1e8;border-left:3px solid #aa7545;scroll-margin-top:20px}.future-work{background:#edf3ef;border-color:var(--accent)}@media(max-width:640px){.research-line{padding:20px 18px}.result-table table{font-size:.83rem}.result-nav{font-size:.85rem}}"""
+
+
 def esc(value: str) -> str:
     return html.escape(value, quote=True)
 
@@ -52,6 +55,8 @@ def nonempty(value, where: str) -> str:
 def all_link_records(data: dict):
     for line in data['lines']:
         yield from line['source_links']
+        for result in line.get('result_sections', []):
+            yield from result['links']
         for record in line['records']:
             yield from record['links']
         for work in line.get('prior_work', []):
@@ -125,7 +130,60 @@ def load_content(root: Path = ROOT) -> dict:
                 raise ValueError('External citations require HTTPS')
         else:
             raise ValueError('Unknown link kind: '+item['kind'])
+    validate_results(root, data)
     return data
+
+
+def validate_results(root: Path, data: dict) -> None:
+    """Check displayed numbers against saved results without rerunning science."""
+    allowed = {'research/a01/bisphenol-af-yield/result.json',
+               'research/a01/molar-refraction/result.json', 'results/pftb1966-uv-replay.json'}
+    cached = {}
+    for line in data['lines']:
+        results = line.get('result_sections', [])
+        if line['id'] not in {'A01', 'A03'}:
+            if results:
+                raise ValueError('This presentation adds results only for A01 and A03')
+            continue
+        if len(results) != (4 if line['id'] == 'A01' else 2):
+            raise ValueError('Missing directly presented result sections: '+line['id'])
+        for field in ('completed_summary', 'pending_items', 'future_items'):
+            if not isinstance(line.get(field), list) or not line[field]:
+                raise ValueError('Missing completed/pending/future distinction: '+line['id'])
+            for value in line[field]:
+                nonempty(value, field)
+        ids = [row['id'] for row in results]
+        if len(set(ids)) != len(ids) or any(not re.fullmatch(r'a0[13]-[a-z-]+', ident) for ident in ids):
+            raise ValueError('Duplicate or unsafe result-section IDs')
+        for result in results:
+            for field in ('title', 'identity', 'summary', 'meaning'):
+                nonempty(result.get(field), 'result.'+field)
+            if not result.get('links') or not result.get('caveats'):
+                raise ValueError('Results require evidence and interpretation limits')
+            for table in result['tables']:
+                nonempty(table.get('caption'), 'table.caption')
+                if not table.get('columns') or not table.get('rows'):
+                    raise ValueError('Results require a complete table')
+                for row in table['rows']:
+                    if len(row) != len(table['columns']) or any(not isinstance(cell, str) for cell in row):
+                        raise ValueError('Table cells must match the declared columns')
+        if not line.get('result_checks'):
+            raise ValueError('Displayed numerical results must bind saved source fields')
+        sections = {row['id']: row for row in results}
+        for check in line['result_checks']:
+            path = check['path']
+            if path not in allowed:
+                raise ValueError('Unsupported saved numerical source: '+path)
+            if path not in cached:
+                cached[path] = json.loads((root/path).read_bytes())
+            value = cached[path]
+            for token in check['pointer'].strip('/').split('/'):
+                token = token.replace('~1', '/').replace('~0', '~')
+                value = value[int(token)] if isinstance(value, list) else value[token]
+            expected = format(value, check['format'])+check['suffix']
+            actual = sections[check['section_id']]['tables'][check['table']]['rows'][check['row']][check['column']]
+            if actual != expected:
+                raise ValueError('Displayed value differs from its saved source: '+path+'#'+check['pointer'])
 
 
 def links_html(links: list[dict]) -> str:
@@ -162,6 +220,34 @@ def render_future(data: dict) -> str:
         '</div></section>\n<!-- AI_RESEARCH_FUTURE:END -->')
 
 
+def render_results(line: dict) -> str:
+    out = ['<nav class="result-nav" aria-label="'+esc(label(line))+'研究状态">'
+           '<a href="#'+anchor(line)+'-completed">已完成工作</a> · '
+           '<a href="#'+anchor(line)+'-pending">待核事项</a> · '
+           '<a href="#'+anchor(line)+'-future">未来设想</a></nav>',
+           '<h3 id="'+anchor(line)+'-completed">已完成工作：原文与数据复核</h3><ul>'
+           +''.join('<li>'+esc(row)+'</li>' for row in line['completed_summary'])+'</ul>']
+    for result in line['result_sections']:
+        out += ['<article class="result-evidence" id="'+result['id']+'">'
+                '<p class="result-identity">'+esc(result['identity'])+'</p><h4>'+esc(result['title'])
+                +'</h4><p>'+esc(result['summary'])+'</p>']
+        for index, table in enumerate(result['tables']):
+            ident = result['id']+'-table-'+str(index+1)
+            out += ['<p class="table-note">宽表可横向滑动，查看完整列。</p><div class="result-table" role="region" tabindex="0" aria-labelledby="'+ident+'">'
+                    '<table><caption id="'+ident+'">'+esc(table['caption'])+'</caption><thead><tr>'
+                    +''.join('<th scope="col">'+esc(column)+'</th>' for column in table['columns'])
+                    +'</tr></thead><tbody>']
+            for row in table['rows']:
+                out += ['<tr><th scope="row">'+esc(row[0])+'</th>'
+                        +''.join('<td>'+esc(cell)+'</td>' for cell in row[1:])+'</tr>']
+            out += ['</tbody></table></div>']
+            out += ['<p class="table-note">'+esc(note)+'</p>' for note in table['notes']]
+        out += ['<p class="scientific-meaning"><b>科学意义：</b>'+esc(result['meaning'])+'</p>',
+                '<ul class="result-limits">'+''.join('<li>'+esc(row)+'</li>' for row in result['caveats'])+'</ul>',
+                '<div class="result-sources"><b>原文与结果出处</b>'+links_html(result['links'])+'</div></article>']
+    return ''.join(out)
+
+
 def render_page(data: dict) -> str:
     sections = []
     for line in data['lines']:
@@ -175,16 +261,20 @@ def render_page(data: dict) -> str:
                     +esc(work['authors'])+'</p><p class="citation">'+esc(work['citation'])
                     +'</p><p>'+esc(work['scope'])+'</p>'+links_html(work['links'])+'</div>')
             prior += '</div>'
+        if line.get('result_sections'):
+            body = render_results(line)+'<details class="record-archive"><summary>专业记录与完整数据</summary><div class="record-grid">'+records+'</div></details>'
+            body += '<div class="pending-work" id="'+anchor(line)+'-pending"><h3>待核事项</h3><ul>'+''.join('<li>'+esc(row)+'</li>' for row in line['pending_items'])+'</ul></div>'
+            body += '<div class="future-work" id="'+anchor(line)+'-future"><h3>未来设想（尚未开展）</h3><ul>'+''.join('<li>'+esc(row)+'</li>' for row in line['future_items'])+'</ul></div>'
+        else:
+            body = '<h3>已有资料与结果</h3><div class="record-grid">'+records+'</div>'+prior
+            body += '<h3>待核事项与边界</h3><ul>'+''.join('<li>'+esc(row)+'</li>' for row in line['boundaries'])+'</ul><p><b>下一步先补的证据：</b>'+esc(line['next_step'])+'</p><p><b>候选后续问题：</b>'+esc(line['future_question'])+'</p>'
         sections.append('<section class="research-line" id="'+anchor(line)+'" aria-labelledby="'
             +anchor(line)+'-title"><span class="status">研究资料与问题</span><h2 id="'
             +anchor(line)+'-title">'+esc(label(line))+'</h2>'
             '<h3>科学问题</h3><p>'+esc(line['question'])+'</p>'
             '<h3>AI怎样辅助</h3><p>'+esc(line['ai_role'])+'</p>'
-            '<h3>已有资料与结果</h3><div class="record-grid">'+records+'</div>'+prior
-            +'<h3>待核事项与边界</h3><ul>'+''.join('<li>'+esc(row)+'</li>' for row in line['boundaries'])
-            +'</ul><p><b>下一步先补的证据：</b>'+esc(line['next_step'])+'</p>'
-            '<p><b>候选后续问题：</b>'+esc(line['future_question'])+'</p>'
-            '<div class="evidence"><h3>史料与成果入口</h3>'+links_html(line['source_links'])
+            +body
+            +'<div class="evidence"><h3>史料与成果入口</h3>'+links_html(line['source_links'])
             +'<p class="top"><a href="#research-index">返回八条成果线目录 ↑</a></p></div></section>')
     heritage = data['heritage']
     index = ''.join('<li><a href="#'+anchor(line)+'">'+esc(label(line))+'</a></li>' for line in data['lines'])
@@ -228,6 +318,21 @@ def render_document(data: dict) -> str:
         data['future_note'], '', label(data['heritage'])+'作为独立学术传承线，另见[人物与传承](https://cccolab.github.io/Chen-Qingyun-AI4Science/index.html#line-a09)。', '']
     for line in data['lines']:
         rows += ['## '+label(line), '', '**科学问题：**'+line['question'], '', '**AI怎样辅助：**'+line['ai_role'], '', '### 已有资料与结果', '']
+        if line.get('result_sections'):
+            rows += ['### 已完成工作：原文与数据复核', '']
+            rows += ['- '+value for value in line['completed_summary']]+['']
+            for result in line['result_sections']:
+                rows += ['#### '+result['title'], '', '**'+result['identity']+'**', '', result['summary'], '']
+                for table in result['tables']:
+                    rows += [table['caption'], '', '| '+' | '.join(table['columns'])+' |',
+                             '| '+' | '.join('---' for _ in table['columns'])+' |']
+                    rows += ['| '+' | '.join(cell.replace('|', '\\|') for cell in row)+' |' for row in table['rows']]
+                    rows += ['']+table['notes']+['']
+                rows += ['**科学意义：**'+result['meaning'], '']
+                rows += ['- '+value for value in result['caveats']]+['', markdown_links(result['links']), '']
+            rows += ['### 待核事项', '']+['- '+value for value in line['pending_items']]+['']
+            rows += ['### 未来设想（尚未开展）', '']+['- '+value for value in line['future_items']]+['']
+            rows += ['### 专业记录与完整数据', '']
         for record in line['records']:
             rows += ['**'+record['title']+'。**'+record['summary'], '', markdown_links(record['links']), '']
         for work in line.get('prior_work', []):
