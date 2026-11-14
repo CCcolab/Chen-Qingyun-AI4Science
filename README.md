@@ -4,6 +4,14 @@
 
 [访问学术成就网站](https://cccolab.github.io/Chen-Qingyun-AI4Science/) · [研究历程](https://cccolab.github.io/Chen-Qingyun-AI4Science/#timeline) · [人物与传承](https://cccolab.github.io/Chen-Qingyun-AI4Science/#people) · [资料与依据](https://cccolab.github.io/Chen-Qingyun-AI4Science/#evidence)
 
+## 代表性学术成果：陈试剂
+
+氟磺酰基二氟乙酸甲酯（MFSDA，FSO₂CF₂CO₂Me）被称为“陈试剂”。1989年，陈庆云与吴生文报道其在碘化亚铜体系中的三氟甲基化用途，使这一甲酯成为向有机分子引入三氟甲基的合成工具。2018年后续原论文题名直接使用“Chen’s reagent”，展示了这项成果的命名与研究接续；后续改进保留实际作者归属。
+
+这是A06成果线下的代表性子专题，与同线的磺酸酯、二氟卡宾研究相联系；九条成果线编号保持。甲酯的既有分子身份、1989方法开发和后续研究分别呈现。
+
+[认识陈试剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#chen-reagent-contribution) · [成果与证据说明](docs/CHEN_REAGENT_ACHIEVEMENT_zh-CN.md) · [结构化成果记录](content/chen-reagent-achievement.v1.json)
+
 ## 资料补充第二版（2026-11-14）
 
 继续补充含氟材料、制冷剂配套、反应方法和学术传承中的具名贡献与合作。资料集现有13个生平节点、16则故事（本轮新增8则）和九条成果线的15项“成果与合作”说明，并把五个资料较薄的专题补充与其原文关联。每项标明出处、资料性质及待核原件；历史成果与平台新增AI研究分开，M0继续暂停。

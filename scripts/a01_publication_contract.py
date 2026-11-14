@@ -36,6 +36,15 @@ PRESENTATION_V4_SHA256 = 'cfc0bc4d29c24a846bb76ceaf3246084d406393cc7d04ec105cad5
 PRESENTATION_V5_PATH = 'provenance/platform-presentation.v5.json'
 PRESENTATION_V5_ID = 'PLATFORM-HERITAGE-ENRICHMENT-20261114-v5'
 PRESENTATION_V5_PREVIOUS_COMMIT = 'a95bc602ba3529cfaeca5a51e307b9073823463e'
+PRESENTATION_V5_SHA256 = '7ac60223b0e540de62671017728acd54e66d07e8de2721006c476c8d1734bed9'
+PRESENTATION_V6_PATH = 'provenance/platform-presentation.v6.json'
+PRESENTATION_V6_ID = 'PLATFORM-CHEN-REAGENT-20261114-v6'
+PRESENTATION_V6_PREVIOUS_COMMIT = '172ac5f80cb4b38d1bb75b1d03cf328487460618'
+PRESENTATION_V6_ALLOWED_PATHS = {'index.html', 'achievements/index.html',
+                                 'topics/chen-reagent/index.html'}
+CHEN_REAGENT_CONTENT_PATH = 'content/chen-reagent-achievement.v1.json'
+CHEN_REAGENT_DOCUMENT = 'docs/CHEN_REAGENT_ACHIEVEMENT_zh-CN.md'
+PRESENTATION_V5_README_SNAPSHOT = 'provenance/platform-presentation-v5-documents/README.md'
 PRESENTATION_V5_ALLOWED_PATHS = {'index.html', 'achievements/index.html',
     'topics/fluoromonomers/index.html', 'topics/refrigerants/index.html',
     'topics/perfluorosulfonates/index.html', 'topics/chen-reagent/index.html',
@@ -51,6 +60,20 @@ PRESENTATION_V1_DOCUMENT_SNAPSHOTS = {
     'README.md': 'provenance/platform-presentation-v1-documents/README.md',
     'docs/PLATFORM_PURPOSE_zh-CN.md': 'provenance/platform-presentation-v1-documents/PLATFORM_PURPOSE_zh-CN.md',
     'docs/PLATFORM_ROADMAP_zh-CN.md': 'provenance/platform-presentation-v1-documents/PLATFORM_ROADMAP_zh-CN.md',
+}
+# Exact complete marker-block bytes from fixed commit 172ac5f, including the
+# marker comments. They can be checked in a shallow CI checkout without Git.
+FROZEN_HERITAGE_BLOCKS = {
+    ('achievements/index.html', 'HERITAGE_INVENTORY'): ('691b8ea25e1143daa670b97b59dc66f16b74e7a137cc1a5053e33fcf44bb45af', 46861),
+    ('achievements/index.html', 'HERITAGE_STORIES_ALL'): ('01b9679241342037c3839bdab4e50bf03f59ef5a839707b53ffb22743c685370', 22082),
+    ('index.html', 'HERITAGE_LIFE'): ('fb541b99d2d6c9f1e5c6291908a9251dc7321c5eb24b27976e994461771e4346', 10640),
+    ('index.html', 'HERITAGE_STORIES'): ('640391a25a838ee4ca40598697852e0cc9e83d116cc952a7f732d1360f1d3d18', 8361),
+    ('index.html', 'HERITAGE_SOURCES'): ('98ff5228de42ea0ec044a3a6911a72d0053e7f45e3776b11267fd28e4481aafe', 91313),
+    ('topics/chen-reagent/index.html', 'HERITAGE_CONTEXT'): ('145f3456b28ab158f45d0819ccd41a47c93f595ef23c5176267b215b306bd692', 3401),
+    ('topics/fluoromonomers/index.html', 'HERITAGE_CONTEXT'): ('b1fec849d5d4b0e32271d7dc14f4634848f7392df37a6ec7dea62bfd1e2fe50a', 4039),
+    ('topics/perfluorosulfonates/index.html', 'HERITAGE_CONTEXT'): ('00427d0543b055482a051a5da8b703daa3312e89a6f62f1fccb2c2ad395df9fd', 3525),
+    ('topics/refrigerants/index.html', 'HERITAGE_CONTEXT'): ('76b69ca078c8ce82624e740ce9598fc754f537d17178c4e8ae5b8e4a9395320c', 4372),
+    ('topics/single-electron-transfer/index.html', 'HERITAGE_CONTEXT'): ('4541764b3da3f99c8bf76c56ad76f30acbe482009d7b800e0251cec7868453e7', 4464),
 }
 REVISION_V2_SHA256 = '9d1a800ae978b4eef814aa4c0b4c99f6faa35f79b7fd4315edc1aa430a2ad845'
 PROGRESS_V2_SHA256 = '0168bad2419df9a16c18fa832116afa3722a783f0186f933c7e7d5b1f6eb7823'
@@ -183,6 +206,63 @@ def historical_readme_snapshot_binding(root: Path) -> dict:
             'sha256': expected['sha256'], 'bytes': expected['bytes']}
 
 
+def historical_v5_readme_snapshot_binding(root: Path) -> dict:
+    """Verify the previous README against the immutable v5 declaration."""
+    declaration = project_file(root, PRESENTATION_V5_PATH)
+    if digest(declaration) != PRESENTATION_V5_SHA256:
+        raise ValueError('The historical enrichment presentation v5 is immutable')
+    documents = read_json(declaration).get('editorial_documents')
+    matches = [row for row in documents if row.get('path') == 'README.md'] if isinstance(documents, list) else []
+    if len(matches) != 1:
+        raise ValueError('The frozen v5 declaration must identify one README binding')
+    expected = matches[0]
+    snapshot = project_file(root, PRESENTATION_V5_README_SNAPSHOT)
+    if digest(snapshot) != expected['sha256'] or snapshot.stat().st_size != expected['bytes']:
+        raise ValueError('The historical v5 README snapshot differs from its fixed bytes')
+    return {'original_path': 'README.md', 'snapshot_path': PRESENTATION_V5_README_SNAPSHOT,
+            'sha256': expected['sha256'], 'bytes': expected['bytes']}
+
+
+def presentation_v5_document_bindings(root: Path) -> list[dict]:
+    historical_readme = (historical_v5_readme_snapshot_binding(root)
+                         if (root/PRESENTATION_V6_PATH).exists() else None)
+    bindings = []
+    for name in ('README.md', HERITAGE_ENRICHMENT_DOCUMENT):
+        if name == 'README.md' and historical_readme is not None:
+            bindings.append({'path': name, 'sha256': historical_readme['sha256'],
+                             'bytes': historical_readme['bytes']})
+        else:
+            path = project_file(root, name)
+            bindings.append({'path': name, 'sha256': digest(path), 'bytes': path.stat().st_size})
+    return bindings
+
+
+def protected_heritage_block_bindings(root: Path) -> list[dict]:
+    """Check the ten existing historical blocks against their frozen bytes."""
+    bindings = []
+    for (name, marker), (expected_sha, expected_size) in FROZEN_HERITAGE_BLOCKS.items():
+        page = project_file(root, 'site/'+name).read_bytes().decode('utf-8')
+        begin, end = '<!-- '+marker+'_BEGIN -->', '<!-- '+marker+'_END -->'
+        if page.count(begin) != 1 or page.count(end) != 1 or page.index(end) < page.index(begin):
+            raise ValueError('A frozen heritage block is missing or ambiguous: '+name+' '+marker)
+        block = page[page.index(begin):page.index(end)+len(end)].encode('utf-8')
+        if hashlib.sha256(block).hexdigest() != expected_sha or len(block) != expected_size:
+            raise ValueError('A frozen heritage block changed: '+name+' '+marker)
+        bindings.append({'path': name, 'marker': marker, 'sha256': expected_sha, 'bytes': expected_size})
+    return bindings
+
+
+def chen_reagent_achievement_binding(root: Path) -> dict:
+    """Bind file identity and JSON shape, without certifying historical claims."""
+    path = project_file(root, CHEN_REAGENT_CONTENT_PATH)
+    value = read_json(path)
+    if not isinstance(value, dict) or not value:
+        raise ValueError('The Chen reagent historical record must be a nonempty JSON object')
+    return {'path': CHEN_REAGENT_CONTENT_PATH, 'sha256': digest(path), 'bytes': path.stat().st_size,
+            'content_classification': 'source_attributed_historical_achievement', 'achievement_line': 'A06',
+            'validation_scope': 'File identity and JSON object shape only; source interpretation and historical priority require their separate evidence review'}
+
+
 def heritage_content_binding(root: Path, content_path: str = HERITAGE_CONTENT_PATH) -> dict:
     """Bind the small historical inventory shape; do not certify its claims."""
     path = project_file(root, content_path)
@@ -312,6 +392,8 @@ def apply_presentation_v1(root: Path, entries: dict, *, chain: list,
 
 def apply_presentation_overlay(root: Path, entries: dict, *, chain: list) -> tuple[dict, dict | None]:
     """Apply v1, then this bounded historical-content successor if present."""
+    if (root/PRESENTATION_V6_PATH).exists() and not (root/PRESENTATION_V5_PATH).exists():
+        raise ValueError('Chen reagent presentation v6 requires its fixed v5 predecessor')
     if (root/PRESENTATION_V5_PATH).exists() and not (root/PRESENTATION_V4_PATH).exists():
         raise ValueError('Historical enrichment v5 requires its fixed v4 predecessor')
     successor_present = (root/PRESENTATION_V2_PATH).exists()
@@ -586,10 +668,7 @@ def apply_heritage_enrichment(root: Path, entries: dict, previous_report: dict) 
         raise ValueError('The new historical collection differs from its v5 binding')
     if data.get('historical_readme_snapshot') != historical_readme_snapshot_binding(root):
         raise ValueError('The historical README snapshot differs from its v5 binding')
-    documents = [{'path': name, 'sha256': digest(project_file(root, name)),
-                  'bytes': project_file(root, name).stat().st_size}
-                 for name in ('README.md', HERITAGE_ENRICHMENT_DOCUMENT)]
-    if data.get('editorial_documents') != documents:
+    if data.get('editorial_documents') != presentation_v5_document_bindings(root):
         raise ValueError('The historical enrichment report differs from its v5 binding')
     changes = data.get('changes')
     if not isinstance(changes, list) or not 1 <= len(changes) <= len(allowed):
@@ -615,6 +694,82 @@ def apply_heritage_enrichment(root: Path, entries: dict, previous_report: dict) 
         'historical_content_path': HERITAGE_CONTENT_V2_PATH,
         'scientific_data_unchanged': True, 'scientific_review_status': 'review_required',
         'release_eligible': False}
+    return apply_chen_reagent_achievement(root, updated,
+        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})
+
+
+def apply_chen_reagent_achievement(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:
+    """Highlight a sourced historical achievement within three existing pages."""
+    if not (root/PRESENTATION_V6_PATH).exists():
+        return entries, previous_report
+    if digest(project_file(root, PRESENTATION_V5_PATH)) != PRESENTATION_V5_SHA256:
+        raise ValueError('The preceding historical enrichment presentation v5 is immutable')
+    path = project_file(root, PRESENTATION_V6_PATH)
+    data = read_json(path)
+    if (data.get('schema_version') != '6.0'
+            or data.get('presentation_id') != PRESENTATION_V6_ID
+            or data.get('publication_kind') != 'platform_historical_achievement'
+            or data.get('scientific_review_status') != 'review_required'
+            or data.get('scientific_review_scope') != 'unchanged_platform_research_only'
+            or data.get('release_eligible') is not False
+            or data.get('historical_achievement_independent_of_AI_review') is not True
+            or data.get('scientific_data_unchanged') is not True
+            or type(data.get('new_quantum_calls')) is not int or data['new_quantum_calls'] != 0
+            or type(data.get('new_model_API_calls')) is not int or data['new_model_API_calls'] != 0
+            or data.get('M0_resumed') is not False
+            or data.get('original_baseline_sha256') != BASELINE_SHA256
+            or data.get('original_archive_sha256') != ARCHIVE_SHA256
+            or data.get('previous_presentation_commit') != PRESENTATION_V6_PREVIOUS_COMMIT
+            or data.get('previous_presentation') != {'path': PRESENTATION_V5_PATH,
+                                                    'sha256': PRESENTATION_V5_SHA256}):
+        raise ValueError('Unsupported Chen reagent historical achievement presentation v6')
+    allowed = PRESENTATION_V6_ALLOWED_PATHS
+    if not allowed <= entries.keys() or data.get('allowed_html_paths') != sorted(allowed):
+        raise ValueError('Chen reagent presentation must stay within its three existing HTML routes')
+    protected = {name: {'sha256': value['sha256'], 'bytes': value['bytes']}
+                 for name, value in entries.items() if name not in allowed}
+    if data.get('protected_website_members') != protected:
+        raise ValueError('Chen reagent presentation changed a protected website binding')
+    for name, expected in protected.items():
+        current = project_file(root, 'site/'+name)
+        if digest(current) != expected['sha256'] or current.stat().st_size != expected['bytes']:
+            raise ValueError('Chen reagent presentation changed protected website bytes: '+name)
+    if data.get('protected_heritage_blocks') != protected_heritage_block_bindings(root):
+        raise ValueError('Chen reagent presentation changed a frozen heritage block binding')
+    if data.get('historical_readme_snapshot') != historical_v5_readme_snapshot_binding(root):
+        raise ValueError('The historical v5 README snapshot differs from its v6 binding')
+    if data.get('historical_achievement_content') != chen_reagent_achievement_binding(root):
+        raise ValueError('The Chen reagent historical record differs from its v6 binding')
+    documents = [{'path': name, 'sha256': digest(project_file(root, name)),
+                  'bytes': project_file(root, name).stat().st_size}
+                 for name in ('README.md', CHEN_REAGENT_CONTENT_PATH, CHEN_REAGENT_DOCUMENT)]
+    if data.get('editorial_documents') != documents:
+        raise ValueError('The current Chen reagent editorial files differ from their v6 bindings')
+    changes = data.get('changes')
+    if not isinstance(changes, list) or not 1 <= len(changes) <= len(allowed):
+        raise ValueError('Chen reagent presentation must enumerate its edited existing HTML pages')
+    updated, seen = {name: dict(value) for name, value in entries.items()}, set()
+    for item in changes:
+        name = item.get('path')
+        if name not in allowed or name in seen:
+            raise ValueError('Unauthorized or duplicate Chen reagent achievement path: '+str(name))
+        seen.add(name)
+        old = entries[name]
+        if item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']:
+            raise ValueError('Chen reagent presentation must bind its actual v5 predecessor: '+name)
+        value, size = item.get('new_sha256'), item.get('new_bytes')
+        if (not isinstance(value, str) or not SHA.fullmatch(value) or value == old['sha256']
+                or not isinstance(size, int) or isinstance(size, bool) or size <= 0
+                or not isinstance(item.get('reason'), str) or not item['reason'].strip()):
+            raise ValueError('Incomplete Chen reagent historical achievement change: '+name)
+        updated[name] = {**old, 'sha256': value, 'bytes': size, 'presentation_id': PRESENTATION_V6_ID}
+    report = {'path': PRESENTATION_V6_PATH, 'sha256': digest(path),
+        'presentation_id': PRESENTATION_V6_ID, 'publication_kind': 'platform_historical_achievement',
+        'changed_paths': sorted(seen), 'previous_presentation_commit': PRESENTATION_V6_PREVIOUS_COMMIT,
+        'historical_content_path': CHEN_REAGENT_CONTENT_PATH,
+        'scientific_data_unchanged': True, 'scientific_review_status': 'review_required',
+        'scientific_review_scope': 'unchanged_platform_research_only',
+        'historical_achievement_independent_of_AI_review': True, 'release_eligible': False}
     return updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}
 
 

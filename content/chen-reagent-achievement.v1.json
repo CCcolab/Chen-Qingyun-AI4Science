@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "achievement_id": "CHEN-REAGENT-1989",
+  "date": "2026-11-14",
+  "line_id": "A06",
+  "classification": "historical_academic_achievement",
+  "title": "陈试剂与三氟甲基化",
+  "entity": {
+    "Chinese_name": "氟磺酰基二氟乙酸甲酯",
+    "English_name": "methyl fluorosulfonyldifluoroacetate",
+    "abbreviation": "MFSDA",
+    "condensed_structure": "FSO2CF2CO2Me",
+    "linear_connectivity": "F–S(=O)2–CF2–C(=O)–O–CH3",
+    "Me": "CH3",
+    "not_identical_to": [
+      "对应酸型FSO2CF2CO2H",
+      "TFDA硅酯FSO2CF2CO2SiMe3"
+    ]
+  },
+  "original_work": {
+    "year": 1989,
+    "authors": [
+      "Qing-Yun Chen",
+      "Sheng-Wen Wu"
+    ],
+    "Chinese_authors": [
+      "陈庆云",
+      "吴生文"
+    ],
+    "source_id": "CQ-R05",
+    "contribution": "在碘化亚铜存在下，以该甲酯为三氟甲基来源，使芳基、烯基及烷基卤化物发生三氟甲基化。",
+    "scope": "由原出版社作者摘要支持；不补写未核配比或催化量，不据此称首次合成该分子。"
+  },
+  "naming_evidence": {
+    "institution_source_id": "CR-S02",
+    "later_primary_paper_source_id": "CR-S01",
+    "meaning": "机构资料与后续原论文直接使用陈试剂／Chen’s reagent这一名称。",
+    "later_work_attribution": "2018年铜(II)体系改进归Zhao等实际作者；陈庆云未列该文作者。"
+  },
+  "sources": [
+    {
+      "id": "CQ-R05",
+      "registration": "reuse_unchanged_original_51_source_registry",
+      "title": "Methyl fluorosulphonyldifluoroacetate; a new trifluoromethylating agent",
+      "authors": [
+        "Qing-Yun Chen",
+        "Sheng-Wen Wu"
+      ],
+      "year": 1989,
+      "venue": "J. Chem. Soc., Chem. Commun.",
+      "pages": "705–706",
+      "doi": "10.1039/C39890000705",
+      "url": "https://pubs.rsc.org/en/content/articlelanding/1989/c3/c39890000705",
+      "verified_scope": "原出版社检索的题录和作者摘要；直接页面访问受限，全文未取得"
+    },
+    {
+      "id": "CR-S01",
+      "registration": "new_separate_achievement_source_namespace",
+      "title": "Copper(II)-catalyzed trifluoromethylation of iodoarenes using Chen’s reagent",
+      "authors_display": "Shiyu Zhao等",
+      "year": 2018,
+      "venue": "Organic Chemistry Frontiers",
+      "volume": 5,
+      "pages": "1143–1147",
+      "doi": "10.1039/C8QO00025E",
+      "url": "https://pubs.rsc.org/en/content/articlepdf/2018/qo/c8qo00025e",
+      "verified_scope": "原出版社PDF第1143页题名、作者、摘要及引言；不声称本轮全文实验或SI复验"
+    },
+    {
+      "id": "CR-S02",
+      "registration": "new_separate_achievement_source_namespace",
+      "title": "名誉主任：陈庆云院士",
+      "institution": "上海应用技术大学上海绿色氟代制药工程技术研究中心",
+      "date": "2024-01-09",
+      "url": "https://sercgft.sit.edu.cn/info/1111/1311.htm",
+      "verified_scope": "机构公开介绍“二氟卡宾化学与三氟甲基化试剂”部分；用于名称和历史身份，不将其全部评价当作新查新结论"
+    }
+  ],
+  "presentation": {
+    "home_anchor": "chen-reagent-achievement",
+    "achievements_anchor": "chen-reagent-achievement",
+    "topic_anchor": "chen-reagent-contribution",
+    "topic_evidence_anchor": "chen-reagent-evidence",
+    "new_primary_achievement_line_added": false
+  },
+  "pending_items": [
+    "1989原论文全文、原始实验记录与条件转录的专业核校",
+    "各实体和后续方法逐项核对，不从冠名推定统一机理或个人独有归属"
+  ],
+  "platform_research_boundary": {
+    "history_and_new_AI_separate": true,
+    "M0_status": "paused",
+    "new_quantum_calls": 0,
+    "new_model_API_calls": 0,
+    "existing_AI_scientific_review_status": "review_required",
+    "existing_AI_release_eligible": false
+  }
+}
