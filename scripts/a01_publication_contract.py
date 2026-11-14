@@ -59,6 +59,18 @@ A01_HISTORY_DOCUMENTS = ('README.md', 'research/a01/README.md', A01_HISTORY_CONT
                          A01_HISTORY_DOCUMENT, 'scripts/render_a01_history.py')
 A01_HISTORY_ALLOWED_PATHS = {'index.html', 'achievements/index.html',
                             'topics/early-fluoroketones/index.html'}
+PRESENTATION_V9_SHA256 = '462fdbfe1c4bd6f0c32f39e2597764037b4562904f0acec4cce00f08c9797017'
+PRESENTATION_V10_PATH = 'provenance/platform-presentation.v10.json'
+PRESENTATION_V10_ID = 'PLATFORM-A01-FIRST-REPORT-20261114-v10'
+PRESENTATION_V10_PREVIOUS_COMMIT = '14fe8326f2cc42a4d424337f358f3c9386295a95'
+A01_FIRST_REPORT_SNAPSHOT = 'provenance/a01-first-report-previous'
+A01_FIRST_REPORT_CONTENT = 'content/a01-historical-achievements.v2.json'
+A01_FIRST_REPORT_DOCUMENTS = ('README.md', 'research/a01/README.md',
+    'scripts/render_a01_history.py', A01_FIRST_REPORT_CONTENT, 'docs/A01_FIRST_REPORT_zh-CN.md')
+A01_FIRST_REPORT_OLD_DOCUMENTS = ('README.md', 'research/a01/README.md', 'scripts/render_a01_history.py')
+A01_FIRST_REPORT_MARKERS = {'index.html': 'A01_HISTORY_HOME',
+    'achievements/index.html': 'A01_HISTORY_SUMMARY',
+    'topics/early-fluoroketones/index.html': 'A01_HISTORY_TOPIC'}
 PUBLIC_PRESENTATION_SNAPSHOT = 'provenance/public-presentation-previous'
 PUBLIC_ACADEMIC_DOCUMENT = 'docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md'
 CHEN_REAGENT_CAS_SOURCE_PATH = 'content/chen-reagent-cas-source.v1.json'
@@ -450,6 +462,8 @@ def apply_presentation_v1(root: Path, entries: dict, *, chain: list,
 
 def apply_presentation_overlay(root: Path, entries: dict, *, chain: list) -> tuple[dict, dict | None]:
     """Apply v1, then this bounded historical-content successor if present."""
+    if (root/PRESENTATION_V10_PATH).exists() and not (root/PRESENTATION_V9_PATH).exists():
+        raise ValueError('A01 first-report presentation requires its fixed v9 predecessor')
     if (root/PRESENTATION_V9_PATH).exists() and not (root/PRESENTATION_V8_PATH).exists():
         raise ValueError('A01 historical presentation requires its fixed v8 predecessor')
     if (root/PRESENTATION_V8_PATH).exists() and not (root/PRESENTATION_V7_PATH).exists():
@@ -1067,6 +1081,42 @@ def a01_history_snapshot_bindings(root: Path, entries: dict) -> list[dict]:
     return bindings
 
 
+def a01_first_report_predecessor_bytes(root: Path, name: str) -> bytes:
+    """Reconstruct v9 using one saved marker; reject every outside-marker edit."""
+    current = project_file(root, 'site/'+name).read_bytes()
+    if not (root/PRESENTATION_V10_PATH).exists() or name not in A01_FIRST_REPORT_MARKERS:
+        return current
+    declaration = project_file(root, PRESENTATION_V9_PATH)
+    if digest(declaration) != PRESENTATION_V9_SHA256:
+        raise ValueError('The preceding A01 historical presentation v9 is immutable')
+    marker = A01_FIRST_REPORT_MARKERS[name]
+    begin, end = ('<!-- '+marker+':BEGIN -->').encode(), ('<!-- '+marker+':END -->').encode()
+    if current.count(begin) != 1 or current.count(end) != 1 or current.index(end) < current.index(begin):
+        raise ValueError('First-report marker is missing or ambiguous: '+name)
+    old_block = project_file(root, A01_FIRST_REPORT_SNAPSHOT+'/markers/'+marker+'.html').read_bytes()
+    if (old_block.count(begin) != 1 or old_block.count(end) != 1
+            or not old_block.startswith(begin) or not old_block.endswith(end)):
+        raise ValueError('Invalid saved first-report predecessor marker: '+name)
+    rebuilt = current[:current.index(begin)]+old_block+current[current.index(end)+len(end):]
+    matches = [row for row in read_json(declaration)['changes'] if row['path'] == name]
+    if len(matches) != 1 or hashlib.sha256(rebuilt).hexdigest() != matches[0]['new_sha256'] or len(rebuilt) != matches[0]['new_bytes']:
+        raise ValueError('A01 first-report content changed outside its single authorized marker: '+name)
+    return rebuilt
+
+
+def a01_first_report_predecessor_document(root: Path, name: str) -> Path:
+    if not (root/PRESENTATION_V10_PATH).exists() or name not in A01_FIRST_REPORT_OLD_DOCUMENTS:
+        return project_file(root, name)
+    declaration = project_file(root, PRESENTATION_V9_PATH)
+    if digest(declaration) != PRESENTATION_V9_SHA256:
+        raise ValueError('The preceding A01 historical presentation v9 is immutable')
+    matches = [row for row in read_json(declaration)['editorial_documents'] if row['path'] == name]
+    snapshot = project_file(root, A01_FIRST_REPORT_SNAPSHOT+'/'+name)
+    if len(matches) != 1 or digest(snapshot) != matches[0]['sha256'] or snapshot.stat().st_size != matches[0]['bytes']:
+        raise ValueError('First-report document snapshot differs from fixed v9 bytes: '+name)
+    return snapshot
+
+
 def apply_a01_historical_achievement(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:
     """Publish source-attributed A01 history without changing scientific results.
 
@@ -1083,8 +1133,9 @@ def apply_a01_historical_achievement(root: Path, entries: dict, previous_report:
     readme_snapshot = {'original_path': 'README.md',
         'snapshot_path': old_readme.relative_to(root).as_posix(),
         'sha256': digest(old_readme), 'bytes': old_readme.stat().st_size}
-    documents = [{'path': name, 'sha256': digest(project_file(root, name)),
-                  'bytes': project_file(root, name).stat().st_size} for name in A01_HISTORY_DOCUMENTS]
+    documents = [{'path': name, 'sha256': digest(a01_first_report_predecessor_document(root, name)),
+                  'bytes': a01_first_report_predecessor_document(root, name).stat().st_size}
+                 for name in A01_HISTORY_DOCUMENTS]
     required = {'schema_version': '9.0', 'presentation_id': PRESENTATION_V9_ID,
         'publication_kind': 'a01_source_attributed_historical_achievement',
         'previous_presentation_commit': PRESENTATION_V9_PREVIOUS_COMMIT,
@@ -1114,7 +1165,7 @@ def apply_a01_historical_achievement(root: Path, entries: dict, previous_report:
     for snapshot in snapshots:
         name = snapshot['path']
         prior_records = embedded_json_records(project_file(root, snapshot['snapshot_path']).read_text('utf-8'))
-        now_records = embedded_json_records(project_file(root, 'site/'+name).read_text('utf-8'))
+        now_records = embedded_json_records(a01_first_report_predecessor_bytes(root, name).decode('utf-8'))
         additions = [row for row in now_records if row[0] == 'a01-historical-achievements']
         retained = [row for row in now_records if row[0] != 'a01-historical-achievements']
         if retained != prior_records:
@@ -1140,13 +1191,104 @@ def apply_a01_historical_achievement(root: Path, entries: dict, previous_report:
             raise ValueError('Incomplete A01 historical presentation change: '+name)
         updated[name] = {**old, 'sha256': value, 'bytes': size, 'presentation_id': PRESENTATION_V9_ID}
     for name, expected in updated.items():
-        current = project_file(root, 'site/'+name)
-        if digest(current) != expected['sha256'] or current.stat().st_size != expected['bytes']:
+        current = a01_first_report_predecessor_bytes(root, name)
+        if hashlib.sha256(current).hexdigest() != expected['sha256'] or len(current) != expected['bytes']:
             raise ValueError('A01 historical publication differs from its bounded website identity: '+name)
     report = {'path': PRESENTATION_V9_PATH, 'sha256': digest(path), 'presentation_id': PRESENTATION_V9_ID,
         'publication_kind': required['publication_kind'], 'changed_paths': sorted(seen),
         'previous_presentation_commit': PRESENTATION_V9_PREVIOUS_COMMIT,
         'historical_sources_path': A01_HISTORY_CONTENT,
+        **{key: required[key] for key in ('scientific_review_status', 'scientific_data_unchanged',
+            'historical_achievement_independent_of_AI_review', 'release_eligible')}}
+    return apply_a01_first_report(root, updated,
+        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})
+
+
+def a01_first_report_snapshot_bindings(root: Path) -> list[dict]:
+    result = []
+    for name, marker in sorted(A01_FIRST_REPORT_MARKERS.items()):
+        rebuilt = a01_first_report_predecessor_bytes(root, name)
+        path = A01_FIRST_REPORT_SNAPSHOT+'/markers/'+marker+'.html'
+        saved = project_file(root, path)
+        result.append({'path': name, 'marker': marker, 'snapshot_path': path,
+            'sha256': digest(saved), 'bytes': saved.stat().st_size,
+            'reconstructed_page_sha256': hashlib.sha256(rebuilt).hexdigest(),
+            'reconstructed_page_bytes': len(rebuilt)})
+    for name in A01_FIRST_REPORT_OLD_DOCUMENTS:
+        saved = a01_first_report_predecessor_document(root, name)
+        result.append({'path': name, 'snapshot_path': saved.relative_to(root).as_posix(),
+                       'sha256': digest(saved), 'bytes': saved.stat().st_size})
+    return result
+
+
+def apply_a01_first_report(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:
+    """Bind source reading inside three existing markers, preserving v1 evidence."""
+    if not (root/PRESENTATION_V10_PATH).exists():
+        return entries, previous_report
+    if digest(project_file(root, PRESENTATION_V9_PATH)) != PRESENTATION_V9_SHA256:
+        raise ValueError('The preceding A01 historical presentation v9 is immutable')
+    path = project_file(root, PRESENTATION_V10_PATH); data = read_json(path)
+    documents = [{'path': name, 'sha256': digest(project_file(root, name)),
+                  'bytes': project_file(root, name).stat().st_size}
+                 for name in A01_FIRST_REPORT_DOCUMENTS]
+    required = {'schema_version': '10.0', 'presentation_id': PRESENTATION_V10_ID,
+        'publication_kind': 'a01_first_report_primary_reading',
+        'previous_presentation_commit': PRESENTATION_V10_PREVIOUS_COMMIT,
+        'previous_presentation': {'path': PRESENTATION_V9_PATH, 'sha256': PRESENTATION_V9_SHA256},
+        'original_baseline_sha256': BASELINE_SHA256, 'original_archive_sha256': ARCHIVE_SHA256,
+        'allowed_html_paths': sorted(A01_FIRST_REPORT_MARKERS),
+        'allowed_marker_blocks': A01_FIRST_REPORT_MARKERS,
+        'historical_snapshots': a01_first_report_snapshot_bindings(root),
+        'editorial_documents': documents, 'historical_v1_records_retained': True,
+        'scientific_review_status': 'review_required', 'release_eligible': False,
+        'scientific_data_unchanged': True, 'M0_resumed': False,
+        'historical_achievement_independent_of_AI_review': True}
+    if any(data.get(key) != value for key, value in required.items()) or any(
+            data.get(key) is not required[key] for key in ('release_eligible', 'scientific_data_unchanged',
+                'historical_v1_records_retained', 'M0_resumed', 'historical_achievement_independent_of_AI_review')) or any(
+            type(data.get(key)) is not int or data[key] != 0 for key in ('new_quantum_calls', 'new_model_API_calls')):
+        raise ValueError('Unsupported A01 first-report primary reading presentation')
+    content = read_json(project_file(root, A01_FIRST_REPORT_CONTENT))
+    if (not isinstance(content, dict) or content.get('achievement_line') != 'A01'
+            or content.get('schema_version') != '2.0'
+            or not isinstance(content.get('first_report'), dict) or not content['first_report']):
+        raise ValueError('First-report reading requires its separate v2 source evidence')
+    for name in A01_FIRST_REPORT_MARKERS:
+        previous = embedded_json_records(a01_first_report_predecessor_bytes(root, name).decode('utf-8'))
+        current = embedded_json_records(project_file(root, 'site/'+name).read_text('utf-8'))
+        prior_other = [row for row in previous if row[0] != 'a01-historical-achievements']
+        current_other = [row for row in current if row[0] != 'a01-historical-achievements']
+        new_source = [row for row in current if row[0] == 'a01-historical-achievements']
+        if prior_other != current_other or len(new_source) > 1:
+            raise ValueError('First-report reading cannot replace other embedded source records: '+name)
+        if any(row[1] != 'application/json' or row[2] != content for row in new_source):
+            raise ValueError('First-report embedded source differs from its v2 evidence: '+name)
+        if name == TOPIC_PATH and len(new_source) != 1:
+            raise ValueError('First-report topic requires one separate v2 source record')
+    changes = data.get('changes')
+    if not isinstance(changes, list) or len(changes) != len(A01_FIRST_REPORT_MARKERS):
+        raise ValueError('First-report presentation requires exactly three existing marker pages')
+    updated, seen = {name: dict(value) for name, value in entries.items()}, set()
+    for item in changes:
+        name = item.get('path')
+        if name not in A01_FIRST_REPORT_MARKERS or name in seen:
+            raise ValueError('Unauthorized or duplicate first-report path: '+str(name))
+        seen.add(name); old = entries[name]
+        value, size = item.get('new_sha256'), item.get('new_bytes')
+        if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']
+                or not isinstance(value, str) or not SHA.fullmatch(value) or value == old['sha256']
+                or type(size) is not int or size <= 0
+                or not isinstance(item.get('reason'), str) or not item['reason'].strip()):
+            raise ValueError('Incomplete first-report marker presentation: '+name)
+        updated[name] = {**old, 'sha256': value, 'bytes': size, 'presentation_id': PRESENTATION_V10_ID}
+    for name, expected in updated.items():
+        member = project_file(root, 'site/'+name)
+        if digest(member) != expected['sha256'] or member.stat().st_size != expected['bytes']:
+            raise ValueError('First-report website differs from its bounded identity: '+name)
+    report = {'path': PRESENTATION_V10_PATH, 'sha256': digest(path), 'presentation_id': PRESENTATION_V10_ID,
+        'publication_kind': required['publication_kind'], 'changed_paths': sorted(seen),
+        'previous_presentation_commit': PRESENTATION_V10_PREVIOUS_COMMIT,
+        'historical_sources_path': A01_FIRST_REPORT_CONTENT, 'marker_only_html_changes': True,
         **{key: required[key] for key in ('scientific_review_status', 'scientific_data_unchanged',
             'historical_achievement_independent_of_AI_review', 'release_eligible')}}
     return updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}

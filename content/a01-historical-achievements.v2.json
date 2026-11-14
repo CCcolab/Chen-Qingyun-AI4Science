@@ -1,0 +1,666 @@
+{
+  "schema_version": "2.0",
+  "achievement_line": "A01",
+  "title": "全氟酮化学早期研究：六氟丙酮反应与六氟双酚A制备",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scope": "留苏期间，陈庆云与合作者围绕六氟丙酮的反应及其衍生物开展实验研究，涉及基本反应、六氟双酚A制备、加成方向与产物结构鉴定。以下依原始论文、发明文书、传记和机构资料介绍这条学术成果线。",
+  "historical_evaluation": {
+    "statement": "上海有机所生平资料评价：陈庆云留苏期间深入研究六氟丙酮反应，开创全氟酮化学，并取得制备六氟双酚A的苏联专利。",
+    "source_id": "A01-HIST-SIOC",
+    "limitation": "这是机构的历史学术评价。平台以具体论文和文书说明其研究内容，不把现代计算当作国际优先权证明；机构关于工业沿用的回顾不等于平台已完成当代工业采用调查。"
+  },
+  "sources": [
+    {
+      "id": "A01-HIST-P1960",
+      "title": "Fluorinated ketones — Communication 1. Perfluoroacetone and its reactions with alcohols, organometallic compounds, and compounds containing mobile hydrogen",
+      "url": "https://link.springer.com/article/10.1007/BF00910798",
+      "locator": "英译期刊印页647–653，Internet Archive馆藏leaf100–106；DOI10.1007/BF00910798；p647译者原刊说明与作者表",
+      "material_type": "历史英译期刊公开馆藏的七页影印图及整期OCR",
+      "read_scope": "已取得并逐页目视核读英译本p647–653七页影印图，以整期OCR辅助定位；未取得俄文原刊，未作俄英逐句校勘。不是出版社PDF下载。",
+      "authors": [
+        "I. L. Knunyants",
+        "Ch'en Ch'ing-yun（陈庆云）",
+        "N. P. Gambaryan"
+      ],
+      "note": "p647列作者Knunyants、Ch'en Ch'ing-yun、Gambaryan及同一机构，注明原刊1960年第4期686–692页、原稿1958-07-26提交。该文与1962年Some reactions of hexafluoroacetone分开登记。",
+      "access_url": "https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n100"
+    },
+    {
+      "id": "CQ-H12",
+      "title": "Сопряжение связей в 1,1-бис-(трифторметил)-2-нитроэтилене и гексафторизопропилиденмалоновом эфире",
+      "url": "https://www.mathnet.ru/links/45339c5078a0fc0eab6eab0df3527ff9/dan23922.pdf",
+      "locator": "Доклады Академии наук СССР,1960,133(5):1113–1116；反应方向和鉴定链p1113–1115；实验部分p1115–1116",
+      "material_type": "原始论文扫描",
+      "read_scope": "本机原扫描4页均已渲染并核读；关键结构和俄语化学表述仍待独立专业核译签认。",
+      "authors": [
+        "陈庆云",
+        "N. P. Gambaryan",
+        "I. L. Knuniants"
+      ],
+      "note": "按p1113原刊署名顺序。该文I、IV等编号只在本篇有效；研究对象是六氟丙酮相关烯烃衍生物，不是双酚AF制备。"
+    },
+    {
+      "id": "CQ-R01",
+      "title": "2-Фенил-4-гексафторизопропилиденоксазолон-5",
+      "url": "https://www.mathnet.ru/links/5f0f232ab0ba1fe58f1d88f43738bbce/dan24193.pdf",
+      "locator": "Доклады Академии наук СССР,1960,134(6):1367–1370；制备p1367；表1 p1368；解释及再加成p1369；实验p1370",
+      "material_type": "原始论文扫描",
+      "read_scope": "本机原扫描4页均已渲染并核读；原结构转录、反应位点及表格仍待独立专业签认。",
+      "authors": [
+        "E. M. Rokhlin",
+        "N. P. Gambaryan",
+        "陈庆云",
+        "I. L. Knuniants"
+      ],
+      "note": "按p1367原刊署名顺序。制备路线直接使用六氟丙酮，亲核反应对象则为其噁唑酮衍生物；不能移用于双酚AF机制。"
+    },
+    {
+      "id": "CQ-H02",
+      "title": "第117491号发明人证书所附说明书：双（对羟基苯基）六氟丙烷的制备方法",
+      "url": "https://poleznayamodel.ru/patent/11/117491.html",
+      "locator": "现存单张说明书扫描：标题、署名、申请栏、实例及用途陈述；原图https://img.poleznayamodel.ru/img_pat/357/3573210.jpg",
+      "material_type": "第三方镜像提供的历史发明说明书扫描",
+      "read_scope": "已核读原扫描图，不只依赖网页OCR；现有一页不保证原始案卷完整。",
+      "authors": [
+        "И. Л. Кнунянц",
+        "Чэнь-Цинь-Юнь（陈庆云）",
+        "Н. П. Гамбарян"
+      ],
+      "note": "按说明书印刷顺序；与传记p29所载同号证书书影分开登记。现代名六氟双酚A／双酚AF为身份对应，不冒充原件已印出结构式、CAS或现代谱图。"
+    },
+    {
+      "id": "A01-HIST-BIO",
+      "title": "氟缘笃志：陈庆云传",
+      "url": null,
+      "locator": "朱晶、刘超著；用户提供研究底本，印刷p23–33、114、123–124；正文物理页=印刷页+26",
+      "material_type": "传记叙述、访谈转引、图注与论著目录",
+      "read_scope": "相关页文字已核读，p23、28、29、31、33、114、123、124整页目视核对；未取得传记所据全部访谈原档、校样及原始通信。",
+      "authors": [
+        "朱晶",
+        "刘超"
+      ],
+      "note": "页码只据本地研究底本；部分出版排版字段仍有占位符，不预设与市售印本逐页相同。原PDF、全文抽取和书影仅留本机。"
+    },
+    {
+      "id": "A01-HIST-CERT-IMAGE",
+      "title": "第117491号发明人证书书影",
+      "url": null,
+      "locator": "《陈庆云传》印刷p29图3-4，物理PDF第55页；优先权、国家登记及末尾手写日期栏",
+      "material_type": "传记刊载的证书照片",
+      "read_scope": "已对整页及原图局部放大核读；优先权与登记日期可辨，俄文姓名及手写日期仍待专业签认。",
+      "authors": [
+        "陈庆云",
+        "И. Л. Кнунянц",
+        "Н. П. Гамбарян"
+      ],
+      "note": "姓名按证书具名顺序登记，不能据排列推定贡献比例或法律权利排序；不是从官方档案独立取得的证书原件。"
+    },
+    {
+      "id": "A01-HIST-SIOC",
+      "title": "上海有机所：陈庆云院士生平",
+      "url": "https://sioc.cas.cn/dncqy/",
+      "locator": "生平栏目，留苏期间研究六氟丙酮、全氟酮化学及六氟双酚A制备段",
+      "material_type": "机构公开生平资料",
+      "read_scope": "已核读公开生平相关段落；作为历史评价与背景，不替代逐篇原始实验数据。",
+      "authors": [],
+      "note": "发布机构：中国科学院上海有机化学研究所。工业沿用叙述注明为机构回顾，不外推为平台独立调查。"
+    },
+    {
+      "id": "A01-HIST-CAS2024",
+      "title": "中国科学院人物专题：陈庆云",
+      "url": "https://www.cas.cn/zt/rwzt/2024qm/202403/t20240328_5010119.shtml",
+      "locator": "2024-03-28，生平与有机氟化学贡献概述",
+      "material_type": "机构人物纪念专题",
+      "read_scope": "已核读公开页面；用于生平和学术贡献总体背景。",
+      "authors": [],
+      "note": "该页未展开A01具体反应，不作为六氟丙酮实验条件、产率、反应机理的证据。"
+    },
+    {
+      "id": "A01-HIST-R1962",
+      "title": "Some reactions of hexafluoroacetone",
+      "url": "https://link.springer.com/article/10.1007/BF00904766",
+      "locator": "11:633–640(1962)，DOI10.1007/BF00904766；作者表及参考文献[9]、[14]",
+      "material_type": "出版社题录、摘要及参考文献",
+      "read_scope": "只核读公开题录、摘要和参考文献，未取得订阅全文。",
+      "authors": [
+        "I. I. Knunyants",
+        "N. P. Gambaryan",
+        "Ch'en Ch'ing-yun",
+        "E. M. Rokhlin"
+      ],
+      "note": "保留出版社I.I.与其他材料I.L.的缩写异文；传记作者数与顺序、相关1960书目卷页差异均待原刊核定。"
+    },
+    {
+      "id": "A01-HIST-EP1983",
+      "title": "EP0054227B1 — Process for the preparation of hexafluoraceton, and the use of the solution obtained by this process",
+      "url": "https://patents.google.com/patent/EP0054227B1/en",
+      "locator": "公开日1983-09-28；原PDF印页2前言行1–9及相邻结构图；https://patentimages.storage.googleapis.com/11/5b/cc/865c66b3060a12/EP0054227B1.pdf",
+      "material_type": "后续技术专利的公开元数据与原始PDF",
+      "read_scope": "专利首页元数据及第2页前言/结构图，未通读所有实验段。",
+      "authors": [
+        "Peter-Paul Rammelt",
+        "Günter Siegemund"
+      ],
+      "note": "authors栏为该专利列明的发明人。前言明确回引Knunyants等1960年俄文686–692及英译647–653、具体649–650；只据此说明后续技术引用。"
+    },
+    {
+      "id": "A01-HIST-SIOC-PHOTOS",
+      "title": "上海有机所：陈庆云院士生平图集",
+      "url": "https://sioc.cas.cn/dncqy/sptj/",
+      "locator": "留苏时期答辩答谢宴会照片图注",
+      "material_type": "机构历史照片图注",
+      "read_scope": "核读相关图注日期，用于标记不同事件的日期待核。",
+      "authors": [],
+      "note": "图注所标1960-06-30不自动替代传记的答辩日期，也不与归程日期强行统一。"
+    }
+  ],
+  "achievement_cards": [
+    {
+      "id": "A01-HIST-01",
+      "title": "六氟丙酮的基本反应谱系",
+      "question": "六氟丙酮怎样与醇、炔基金属试剂、活泼氢化合物及酚反应？所得产物有哪些稳定性与后续转化特征？",
+      "observations": [
+        "英译本p647、650报告醇加成形成半缩酮，受热可回到原反应物；进一步转为缩酮后，所述水解行为和稳定性与半缩酮不同。",
+        "p647–648、651报告炔基有机镁加成所得炔醇及对称、不对称二醇，并继续研究这些产物的转化。",
+        "p648、651报道羟基酮VII热分解为六氟丙酮与苯乙酮，分别以氨基脲腙和二硝基苯腙与已知样品混熔无降点支持产物鉴定。",
+        "p649、652报告β-羟基酸、酯及相关衍生转化；p649的结构图和p652实验段还直接记有双酚XI与邻甲酚对应产物XII。"
+      ],
+      "author_interpretation": "作者将部分羟基化产物未按通常脱水方向转化、羟基酮VII反而发生C–C断裂，解释为连在双CF₃取代碳上的羟基难以脱除。这是作者据特定反应作出的解释，没有给出自由能垒或唯一微观路径。",
+      "significance": "陈庆云与I. L. Knunyants、N. P. Gambaryan围绕同一含氟羰基建立多类产物及其相互转化的实验研究，既研究能发生的反应，也保留未反应与异常裂解的观察。",
+      "source_refs": [
+        {
+          "source_id": "A01-HIST-P1960",
+          "locator": "p647–650讨论与结构式；p650–652实验；p652摘要；p653参考文献；馆藏leaf100–106"
+        }
+      ],
+      "limits": [
+        "中文释读依据历史英译本，俄文原刊未取得，专业核译与结构签认仍待完成。",
+        "原文条件、反应图和实验段有待核异文，不据此自动生成现代实验协议。",
+        "反应收率、未反应记录和衍生物鉴定不等于速率常数、势垒或唯一机理。",
+        "不据此裁定国际优先权或当代工业普遍采用。"
+      ]
+    },
+    {
+      "id": "A01-HIST-02",
+      "title": "六氟双酚A制备与第117491号发明人证书",
+      "question": "早期文书提出怎样的制备对象和材料用途？证书、说明书及传记各自能够说明什么？",
+      "observations": [
+        "第117491号说明书记载陈庆云与Knunyants、Gambaryan共同提出的六氟双酚A制备及缩聚单体用途；原实例保留21.7g、98%记录。",
+        "1960年第一报p649给出双酚XI结构式，p652另有实验记录：所得XI 29g、90.5%，熔点161–162°C，并列元素分析。它与说明书属于不同材料中的实验记录，数值不能互换。",
+        "《陈庆云传》p29图3-4保存同号发明人证书书影；证书与说明书分别登记。"
+      ],
+      "author_interpretation": "说明书称无水HF为催化剂，第一报讨论段将其作为溶剂；文中提出双酚可作聚酯、聚氨酯等的单体。这些表述不等于建立催化循环或完成聚合与性能验证。",
+      "significance": "这项历史材料单体成果有明确的制备对象、共同发明人和用途提议，可沿原文追溯其科学内容。",
+      "source_refs": [
+        {
+          "source_id": "CQ-H02",
+          "locator": "说明书标题、署名、实例21.7g/98%及用途陈述"
+        },
+        {
+          "source_id": "A01-HIST-P1960",
+          "locator": "p649 XI结构式；p650单体用途提议；p652 XI实验与元素分析"
+        },
+        {
+          "source_id": "A01-HIST-CERT-IMAGE",
+          "locator": "传记p29图3-4"
+        }
+      ],
+      "limits": [
+        "论文29g/90.5%与说明书21.7g/98%分列，不将其当作同一次实验，不以一条更改另一条，也不能仅凭百分数比较工艺优劣。",
+        "说明书98%理论收率的原计量基准仍待核；不修正原产物质量，不由数字差异认定纯度。",
+        "熔点及历史元素分析为原文鉴定证据，不构成平台现代纯度测定或唯一结构确认。",
+        "原料名未明确水合状态与纯度；传记另一段水合物瓶子的回忆不替代这些实例的投料身份。",
+        "未进行该制备的实验复现，单体用途提议也不等于材料性能或当代工业采用验证。"
+      ]
+    },
+    {
+      "id": "A01-HIST-03",
+      "title": "以加成方向与化学转化判断结构",
+      "question": "双键两端的双CF₃与酯基或硝基怎样竞争影响加成方向？产物结构如何得到化学证据支持？",
+      "observations": [
+        "133卷论文以六氟丙酮相关不饱和衍生物为对象讨论取代基竞争，其中I为六氟异丙叉丙二酸二乙酯。",
+        "I与氨形成加成产物V，作者将V水解、脱羧，转化为已知六氟缬氨酸VI，用该转化链支持结构归属。"
+      ],
+      "author_interpretation": "作者据加成方向讨论双CF₃的作用，并以两个酯基偏离共面的构象设想解释结果。构象与电子效应解释不是直接测得的扭转角或电荷。",
+      "significance": "陈庆云、N. P. Gambaryan、I. L. Knuniants把电子效应问题落实到可观察的反应方向和结构鉴定链，连接新产物研究与有明确对象的化学论断。",
+      "source_refs": [
+        {
+          "source_id": "CQ-H12",
+          "locator": "p1113问题设置；p1114 I→V→VI及讨论；p1115构象解释"
+        }
+      ],
+      "limits": [
+        "酯基、硝基及双CF₃的比较限于原指定体系，不能泛化为所有含氟反应的速率顺序。",
+        "关键结构与中文系统命名仍待专业核译签认。",
+        "不是双酚AF制备机制，也没有过渡态或势垒证据。"
+      ]
+    },
+    {
+      "id": "A01-HIST-04",
+      "title": "不同转化会合到同一腙的鉴定链",
+      "question": "含双CF₃的硝基烯烃与含氮亲核试剂反应后，怎样交叉检查生成物身份？",
+      "observations": [
+        "同文报道硝基烯烃IV与2,4-二硝基苯肼、苯胺的反应。",
+        "苯胺所得产物经酸性水解／2,4-二硝基苯肼处理，得到与另一途径相同的腙；与已知样品混熔无降点，为产物身份提供交叉佐证。"
+      ],
+      "author_interpretation": "原文以方括号中的醛表示转化路径，未见单独分离、表征它的记录。作者还提出加成后失去亚硝酸根的路径，并推测含氮产物的互变异构形式；阴离子VII也不是已分离或直接检测的物种。",
+      "significance": "原研究以相互关联的化学转化检查结构，展示从产物证据形成解释的过程；保留陈庆云、Gambaryan、Knuniants的原始贡献。",
+      "source_refs": [
+        {
+          "source_id": "CQ-H12",
+          "locator": "p1114下部反应式与说明；p1116实验部分的水解、腙及样品比较"
+        }
+      ],
+      "limits": [
+        "相同衍生物不证明唯一微观机理。",
+        "亚硝酸根不能误译为硝酸根；关键结构和互变异构命名待专业签认。",
+        "该文IV是硝基烯烃，与134卷的噁唑酮IV不同。",
+        "历史熔点或衍生物比较不等同现代谱学唯一结构确认。"
+      ]
+    },
+    {
+      "id": "A01-HIST-05",
+      "title": "从六氟丙酮制备到噁唑酮的多位点反应",
+      "question": "从六氟丙酮得到的含氟噁唑酮有何后续反应？亲核作用是否始终局限于同一位置？",
+      "observations": [
+        "134卷论文报道六氟丙酮与2-苯基噁唑酮-5反应通向不饱和酸I；I也可从六氟丙酮与马尿酸反应得到，再闭环形成含氟噁唑酮IV。",
+        "表1列有水、醇、氨、苯胺等的开环产物与实验记录；四项星号对照注明非氟类似物在相同条件下不反应。",
+        "脚注记载IV在过量氨下得到α-氨基酰胺XI；另有甲酯V加氨得到XII的实验。XII经亚硝酸处理可恢复不饱和酯V。"
+      ],
+      "author_interpretation": "作者以形成强共轭体系解释所提中间体的后续变化，并以CF₃的共轭及诱导效应解释IV的亲核反应性；原文保留推测语气，没有实测电荷、定量速率或势垒。",
+      "significance": "Rokhlin、Gambaryan、陈庆云、Knuniants研究的是制备与衍生转化相连的反应网络；过量氨的后续加成提示应按具体对象、位点和条件理解氟取代作用。",
+      "source_refs": [
+        {
+          "source_id": "CQ-R01",
+          "locator": "p1367制备；p1368表1及脚注；p1369解释和氨再加成；p1370酯XII实验"
+        }
+      ],
+      "limits": [
+        "表中溶剂、时间和产率不能直接反推统一动力学常数。",
+        "作者所提中间体不能写成已分离物种。",
+        "该衍生反应分支与苯酚/HF双酚AF制备分别登记。",
+        "现有苯胺/苯M0只涉及受限模型，继续暂停，不代替原反应网络的实验或机理。",
+        "反应网络中的VII→XI箭头不当作已单独实施、记录的实验；以具体产物与原文实验段区分证据。"
+      ]
+    }
+  ],
+  "followup_use": {
+    "title": "后续技术文献中的明确引用",
+    "observation": "1983年公开的EP0054227B1在前言回引上述1960论文及双酚路线。",
+    "source_refs": [
+      {
+        "source_id": "A01-HIST-EP1983",
+        "locator": "原PDF印页2行1–9及相邻结构图；公开元数据1983-09-28"
+      },
+      {
+        "source_id": "A01-HIST-P1960",
+        "locator": "英译9:647–653(1960)，双酚结构与用途见p649–650；俄文原刊仍待取得"
+      }
+    ],
+    "boundary": "属于该专利的技术引用，不证明现今各大厂商普遍沿用，也不裁定优先权或专利法律范围。"
+  },
+  "cooperation": [
+    {
+      "id": "A01-HIST-COOP-01",
+      "title": "在合作指导中形成研究问题",
+      "narrative": "《陈庆云传》记述陈庆云留苏期间在I. L. Knunyants与N. P. Gambaryan指导下研究六氟丙酮，甘巴里扬直接指导日常科研。年表将其学位研究题名记为《六氟丙酮的反应》。",
+      "source_refs": [
+        {
+          "source_id": "A01-HIST-BIO",
+          "locator": "p23、25–26及年表p114"
+        },
+        {
+          "source_id": "A01-HIST-CAS2024",
+          "locator": "生平段：1956–1960留苏攻读副博士"
+        }
+      ],
+      "boundary": "研究题名中文转述据传记，原学位论文题名页尚未取得；不据机构简历确定具体答辩日。"
+    },
+    {
+      "id": "A01-HIST-COOP-02",
+      "title": "把合作者贡献留在署名中",
+      "narrative": "传记p29记述导师支持陈庆云在共轭衍生物论文中首署，以及陈庆云坚持保留甘巴里扬贡献的经历。133卷论文原刊最终署名顺序确为陈庆云、甘巴里扬、克鲁扬茨。",
+      "source_refs": [
+        {
+          "source_id": "A01-HIST-BIO",
+          "locator": "p29署名故事，未附该段专列档案脚注"
+        },
+        {
+          "source_id": "CQ-H12",
+          "locator": "p1113首页作者表"
+        }
+      ],
+      "boundary": "校样经过与个人动机仅据传记叙述；最终署名不能独立证明这些过程。此故事不能套用于第117491号发明文书。"
+    },
+    {
+      "id": "A01-HIST-COOP-03",
+      "title": "严谨要求与平等讨论的研究训练",
+      "narrative": "传记对留苏学术集体的回忆，将严格要求与平等讨论并置，呈现陈庆云早期研究训练的合作背景。",
+      "source_refs": [
+        {
+          "source_id": "A01-HIST-BIO",
+          "locator": "p30–31；p31所引2018-01-26访谈"
+        }
+      ],
+      "boundary": "这是有出处的研究训练回忆，尚未取得完整访谈原档；不能用作具体反应机理的证据。"
+    }
+  ],
+  "certificate": {
+    "statement": "第117491号材料分为发明人证书书影和发明说明书：前者保存于传记p29图3-4，后者为第三方镜像的扫描。机构与传记常称苏联专利，原文文种应同时保留。",
+    "fields": [
+      {
+        "label": "编号",
+        "value": "117491",
+        "status": "证书书影与说明书相符；专业核译待签认"
+      },
+      {
+        "label": "说明书文种",
+        "value": "发明人证书所附发明说明书",
+        "status": "原件标题可辨；与证书分开登记"
+      },
+      {
+        "label": "说明书申请日及申请号",
+        "value": "1958-07-19；604379/23",
+        "status": "印刷字段已辨读；专业核译待签认"
+      },
+      {
+        "label": "证书优先权日",
+        "value": "1958-07-19",
+        "status": "书影可辨；专业核译待签认"
+      },
+      {
+        "label": "国家登记日",
+        "value": "1958-11-20",
+        "status": "书影可辨；与申请、授予及刊发日期区分"
+      },
+      {
+        "label": "证书末尾手写日期",
+        "value": "候选1959-02-18，日期日字待核",
+        "status": "未核实；不列作正式授予日"
+      },
+      {
+        "label": "官方刊发日期与公报号",
+        "value": null,
+        "status": "尚未取得独立官方公报或原始案卷"
+      },
+      {
+        "label": "传记的年份叙述",
+        "value": "1959年获得苏联专利",
+        "status": "传记p28的历史叙述；不替代各文书日期字段"
+      }
+    ],
+    "source_refs": [
+      {
+        "source_id": "CQ-H02",
+        "locator": "标题、申请栏及署名"
+      },
+      {
+        "source_id": "A01-HIST-CERT-IMAGE",
+        "locator": "p29图3-4，优先权、登记与末尾手写日期"
+      },
+      {
+        "source_id": "A01-HIST-BIO",
+        "locator": "p28–29"
+      }
+    ],
+    "boundary": "证书与说明书具名顺序不同，分别保留，不由排列推断贡献比例。尚未从官方档案独立取得证书正面；p31青年专家会议光荣证书是另一材料。原文未明确的授予、刊发日期不补定。"
+  },
+  "gaps": [
+    {
+      "id": "A01-HIST-G01",
+      "question": "历史英译本与俄文原刊的题名、页码及表述如何校勘？",
+      "needed_evidence": "英译本p647–653七页影印图和整期OCR已取得并核读；p647译者说明明确原刊1960年第4期686–692，与传记页码及1983专利回引相符。两篇Doklady所引p684仍作为书目异文保留，俄文原刊尚未取得，不能悄然统一。"
+    },
+    {
+      "id": "A01-HIST-G02",
+      "question": "反应物、产物结构与俄语化学断言能否获得专业签认？",
+      "needed_evidence": "第一报英译本、两篇Doklady原图、说明书及专业化学核译；对结构连接、编号、互变异构与作者解释分别签认。第一报尚未完成俄英逐句校勘，不跨文章复用罗马编号。"
+    },
+    {
+      "id": "A01-HIST-G03",
+      "question": "第117491号证书的独立原图、手写日期及公开记录是什么？",
+      "needed_evidence": "官方证书/案卷或更清晰原照片、俄语专业转录、官方公报号；厘清申请、优先权、登记、授予、印制与刊发。现有1959叙述及手写日候选不代替这些字段。"
+    },
+    {
+      "id": "A01-HIST-G04",
+      "question": "原说明书98%理论收率使用什么计量基准？",
+      "needed_evidence": "原始实验记录、投料身份与含量、收率计算约定；不凭计量残差更改原产品质量或认定纯度。"
+    },
+    {
+      "id": "A01-HIST-G05",
+      "question": "活泼亚甲基、酚和胺相关1960条目的正式书目信息是什么？",
+      "needed_evidence": "取得传记p123[3]所列5:112–113及[4]所列5:114–116原刊；1962出版社参考文献[14]另列4:114。核对卷号、题名、完整作者，不能漏掉Rokhlin或自动合并异文。"
+    },
+    {
+      "id": "A01-HIST-G06",
+      "question": "1962论文的完整作者表和姓名异文如何核定？",
+      "needed_evidence": "原刊首页及标准书目。传记与出版社作者数、顺序存在差异；保留出版社I.I.与其他材料I.L.缩写异文。"
+    },
+    {
+      "id": "A01-HIST-G07",
+      "question": "学位论文及答辩、宴会、归程的日期分别为何？",
+      "needed_evidence": "学位论文题名页、答辩档案、原照片背注。传记p31/p114记答辩1960-06-15、归程06-29；机构宴会图注标06-30，各事件分列待核。"
+    },
+    {
+      "id": "A01-HIST-G08",
+      "question": "合作故事所据校样与访谈能否取得？",
+      "needed_evidence": "133卷论文校样、作者通信及传记所据访谈原档；在此之前，过程与动机保持‘传记记述’，只把最终作者表列作可独立观察的事实。"
+    },
+    {
+      "id": "A01-HIST-G09",
+      "question": "第一报中丙二酸反应的碱应如何核定？",
+      "needed_evidence": "英译p649讨论写pyridine（吡啶），p652 IX实验写piperidine（哌啶）。两处原图已核读，需俄文原刊或作者实验记录确认；不擅自选一个写入新协议。"
+    },
+    {
+      "id": "A01-HIST-G10",
+      "question": "Reformatskii反应的卤代乙酸酯是哪一种？",
+      "needed_evidence": "p649结构图写ClCH₂COOC₂H₅，p652 VIII实验段写ethyl bromoacetate。保留氯/溴异文，取得俄文原刊及原始记录后核定。"
+    },
+    {
+      "id": "A01-HIST-G11",
+      "question": "X的实验投料记录是否完整？",
+      "needed_evidence": "p649讨论及结构图涉及丙二酸酯，p652 X实验段的投料列项未列丙二酸酯。不得自行补齐缺项或转为可执行实验配方，需俄文原刊、勘误或原实验记录。"
+    }
+  ],
+  "platform_work": {
+    "summary": "平台新增工作的身份是AI辅助核读、科学问题梳理和证据关联，原始实验及历史贡献属于陈庆云与其合作者。",
+    "completed": [
+      "关联传记、机构生平、原始论文与发明文书，分别保存历史贡献和平台新增研究。",
+      "取得并逐页目视核读1960年第一报英译本p647–653七页影印图，以整期OCR辅助定位，形成中文科学释读。",
+      "从原结构图、实验与衍生物混熔记录梳理基本反应谱系，分开登记原文观察和作者解释。",
+      "分列论文XI的29g/90.5%与第117491号说明书21.7g/98%记录，保留各自来源与证据边界。",
+      "保留两篇Doklady共8页的原有核读与三项衍生物成果记录；记录英译内部三项待核异文。"
+    ],
+    "not_claimed": [
+      "未进行六氟双酚A制备的实验复现、现代结构确认或性能验证。",
+      "既有计量重建与原表数值重放不作为新的历史实验或新发现。",
+      "现代CF₃/CH₃噁唑酮模型的局部诊断不构成双酚AF机制、合格势垒或原文反应性差异的解释。",
+      "未完成国际优先权审查或当代工业路线采用调查。",
+      "没有启动新量化计算或调用模型API；中文核译不等于实验复现或现代机理验证。"
+    ],
+    "m0_status": "paused",
+    "next_questions": [
+      "取得俄文原刊1960年第4期686–692，核定p684引文异文并完成俄英校勘。",
+      "优先解决吡啶/哌啶、卤代乙酸酯及X投料列项异文，经专业签认再评估任何现代复现协议。",
+      "继续核定证书日期、原收率基准与合作史料；现代科学问题另立边界，不自动恢复M0计算。"
+    ]
+  },
+  "evidence": {
+    "biography_sha256": "731a5ae47f75f136eaec9e8e09021ddaaad30c0aaefd545f8c3c85857ca26d61",
+    "pdfs": [
+      {
+        "source_id": "CQ-H12",
+        "sha256": "fc88042708adc563e5cc6910aa4e3e05c32f52e9055480f980fef50d9e278b87",
+        "bytes": 621170
+      },
+      {
+        "source_id": "CQ-R01",
+        "sha256": "ea6b42bd6e976fa82219cf4ed0a48357f46d6d7cdd9d9619144e3a80bc714175",
+        "bytes": 550229
+      },
+      {
+        "source_id": "A01-HIST-EP1983",
+        "sha256": "a02df3944db3d9b03775f9588c223a12afedfad633434a6ffdb8b99797f12972",
+        "bytes": 440790
+      }
+    ],
+    "source_acquisition_status": "第一报历史英译本p647–653七页影印图及整期OCR已从Internet Archive公开馆藏取得并核读；俄文原刊未取得，未作俄英逐句校勘，未宣称取得出版社PDF。两篇Doklady及117491单页说明书已在本机核读，证书仅传记书影；1962论文仍仅公开题录、摘要和参考文献。原件、整期OCR和页图仅留本机。",
+    "first_report_facsimile_pages": [
+      {
+        "printed_page": 647,
+        "leaf": 100,
+        "sha256": "c44942dc12437e3679d179187ba54da0c3559ca7e56e086c588d4a06ef94f06e",
+        "bytes": 668957,
+        "source_url": "https://archive.org/download/sim_russian-chemical-bulletin_1960-04_4/page/n100.jpg"
+      },
+      {
+        "printed_page": 648,
+        "leaf": 101,
+        "sha256": "c2c2808a0deb64eeed39c5f82face5def263ef13d512ca782add35e2016b91c4",
+        "bytes": 598607,
+        "source_url": "https://archive.org/download/sim_russian-chemical-bulletin_1960-04_4/page/n101.jpg"
+      },
+      {
+        "printed_page": 649,
+        "leaf": 102,
+        "sha256": "28841087f68c71b41207511b0e3311954bef14aadd5cc73c577105afbfdff2fb",
+        "bytes": 551168,
+        "source_url": "https://archive.org/download/sim_russian-chemical-bulletin_1960-04_4/page/n102.jpg"
+      },
+      {
+        "printed_page": 650,
+        "leaf": 103,
+        "sha256": "744eacff0626bdb70b4bff5c9ccd74b8263bb1f3b972ca119918310efd831d51",
+        "bytes": 678786,
+        "source_url": "https://archive.org/download/sim_russian-chemical-bulletin_1960-04_4/page/n103.jpg"
+      },
+      {
+        "printed_page": 651,
+        "leaf": 104,
+        "sha256": "756172736fbda2f524d3b625a04e2e742b83ebdb30724d80208ef7c0023f1413",
+        "bytes": 1015716,
+        "source_url": "https://archive.org/download/sim_russian-chemical-bulletin_1960-04_4/page/n104.jpg"
+      },
+      {
+        "printed_page": 652,
+        "leaf": 105,
+        "sha256": "0a6c9a41b6974296815559856a37a0e35c3d1e1bbc5a96e55f171bc301c8ccee",
+        "bytes": 874162,
+        "source_url": "https://archive.org/download/sim_russian-chemical-bulletin_1960-04_4/page/n105.jpg"
+      },
+      {
+        "printed_page": 653,
+        "leaf": 106,
+        "sha256": "126932d89c95dc984f4b9c8498386b0bb78ac9980847f02cbcb74df618d73d6a",
+        "bytes": 354321,
+        "source_url": "https://archive.org/download/sim_russian-chemical-bulletin_1960-04_4/page/n106.jpg"
+      }
+    ],
+    "first_report_issue_ocr": {
+      "sha256": "2421f46aa2c4f604b1947c88495c6ccf578e005d86cf8fb6d778881b521822a6",
+      "bytes": 517700,
+      "read_scope": "整期OCR用于定位、逐段对照；本文核读范围为印页647–653，不作为结构图的替代"
+    }
+  },
+  "first_report": {
+    "title": "1960年《Fluorinated ketones》第一报：中文科学释读",
+    "read_scope": "已取得历史英译本印页647–653七页影印图并逐页目视核读，整期OCR用于定位和对照；未取得俄文原刊，未作俄英逐句校勘。",
+    "archive_url": "https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n100",
+    "pages": [
+      647,
+      648,
+      649,
+      650,
+      651,
+      652,
+      653
+    ],
+    "russian_original_obtained": false,
+    "contributions": [
+      {
+        "id": "A01-FIRST-C01",
+        "title": "醇加成产物与缩酮的不同稳定性",
+        "observation": "六氟丙酮与醇形成半缩酮，受热可分解回原反应物；转为对称或不对称缩酮后，原文记录其在所述酸、碱与苯胺处理中的不同稳定性。",
+        "interpretation": "原作者借产物及其后续行为刻画该含氟羰基体系，强调半缩酮与缩酮不能作为同一物种概括。",
+        "boundary": "不是平衡常数或反应速率测定；所述耐水解性限于原测试对象和条件，不是所有缩酮的普遍结论。",
+        "locator": "p647讨论与结构式；p650实验段"
+      },
+      {
+        "id": "A01-FIRST-C02",
+        "title": "炔基有机镁加成与二醇构建",
+        "observation": "炔基有机镁试剂加成得到炔醇；使用双镁衍生物及后续偶联、与丙酮反应，分别构建对称或不对称含氟二醇。",
+        "interpretation": "作者将六氟丙酮的羰基加成延伸为一组可继续转化的含氟骨架，并与文献中的三氟丙酮反应作比较。",
+        "boundary": "不同试剂与条件的产率不能直接解释为相对速率；没有提供反应势垒或现代机理验证。",
+        "locator": "p647–648结构式I–IV；p651相关实验"
+      },
+      {
+        "id": "A01-FIRST-C03",
+        "title": "羟基酮VII的C–C裂解与产物鉴定",
+        "observation": "羟基酮VII热分解得到六氟丙酮与苯乙酮；实验段分别以六氟丙酮氨基脲腙及苯乙酮二硝基苯腙与已知样品混熔无降点支持鉴定。",
+        "interpretation": "作者据这一裂解方向及相关未脱水记录，解释连在双CF₃取代碳上的羟基难以脱除。",
+        "boundary": "衍生物鉴定支持产物身份，不证明唯一微观路径；作者关于羟基行为的解释不等于量化势垒证据。",
+        "locator": "p648讨论、VII结构及裂解图；p651末段的两项混熔记录"
+      },
+      {
+        "id": "A01-FIRST-C04",
+        "title": "β-羟基酸、酯及衍生转化",
+        "observation": "Reformatskii型反应得到β-羟基酯VIII，再经水解等转化与已知酸IX、酰胺相关联；文中另列丙二酸及丙二酸酯相关产物。",
+        "interpretation": "作者把羟基保留、未按所试路径脱水等观察与双CF₃取代产物的化学行为联系起来。",
+        "boundary": "p649与p652存在吡啶/哌啶、氯/溴代乙酸酯异文，X实验投料列项未列丙二酸酯；不得自行修成新实验协议。",
+        "locator": "p649讨论及VIII–X结构式；p652 VIII、IX、X实验段"
+      }
+    ],
+    "selected_data": [
+      {
+        "id": "A01-FIRST-D01",
+        "object": "六氟双酚A／双酚AF，XI",
+        "value": "29g；原文收率90.5%；熔点161–162°C。",
+        "locator": "p652 XI实验段；结构式见p649",
+        "boundary": "原论文实验记录；与117491说明书21.7g、98%分开，不更改、互换或认作同一次实验。"
+      },
+      {
+        "id": "A01-FIRST-D02",
+        "object": "邻甲酚对应的二酚XII",
+        "value": "10.9g；原文收率91%；熔点134–135°C。",
+        "locator": "p652 XII实验段；结构式见p650",
+        "boundary": "这是另一种甲基取代产物，不是双酚AF的另一收率；不是平台实验。"
+      },
+      {
+        "id": "A01-FIRST-D03",
+        "object": "对甲酚与六氟丙酮",
+        "value": "作者脚注记载，在所述条件下不反应。",
+        "locator": "p649脚注",
+        "boundary": "限于所述条件；不能扩大为对甲酚在一切条件下都不反应，也没有给出检测限或动力学常数。"
+      },
+      {
+        "id": "A01-FIRST-D04",
+        "object": "XI、XII的单体用途提议",
+        "value": "作者提出可用于制备聚酯、聚氨酯等的潜在单体。",
+        "locator": "p650首段，XII结构式之后",
+        "boundary": "是材料用途提议；该段未展示聚合实验、材料性能或工业采用调查。"
+      },
+      {
+        "id": "A01-FIRST-D05",
+        "object": "XI的历史元素分析",
+        "value": "Found：C53.68%、H2.98%、F34.13%；Calculated：C53.57%、H2.97%、F33.92%。",
+        "locator": "p652 XI实验段，分子式C₁₅H₁₀F₆O₂相邻",
+        "boundary": "逐项登记原文所报实测值与计算值；不将其换算成现代纯度，也不凭这些数字认定唯一结构。"
+      }
+    ],
+    "bibliography": {
+      "authors": [
+        "I. L. Knunyants",
+        "Ch'en Ch'ing-yun",
+        "N. P. Gambaryan"
+      ],
+      "affiliation": "Institute of Heteroorganic Compounds, Academy of Sciences of the USSR",
+      "english_pages": "9:647–653(1960)",
+      "russian_pages_as_translator_note": "Izvestiya Akademii Nauk SSSR, Otdelenie Khimicheskikh Nauk, No.4,686–692,April1960（据英译p647译者说明）",
+      "received": "1958-07-26（p647原稿提交日期）",
+      "issue_date": "1960-04"
+    },
+    "source_note": "公开馆藏提供历史英译期刊影印图，七页含作者表、正文、结构式、实验、摘要与参考文献；出版社题录与馆藏首页用于核定篇目身份。p647将三位作者列于同一机构，未给出个人角色分工，不按署名顺序推定贡献比例。",
+    "boundary": "这是基于历史英译本的中文科学释读，专业核译和结构签认待完成；俄文原刊尚未取得，不能称已作俄英逐句校勘。原始成果归原作者，平台未进行实验复现、势垒或机理认证；M0暂停，没有启动新量化计算或调用模型API。"
+  }
+}

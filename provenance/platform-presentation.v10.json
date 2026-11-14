@@ -1,0 +1,135 @@
+{
+  "schema_version": "10.0",
+  "presentation_id": "PLATFORM-A01-FIRST-REPORT-20261114-v10",
+  "created_at_utc": "2026-11-14T07:45:29.473446+00:00",
+  "publication_kind": "a01_first_report_primary_reading",
+  "authorization": "User request dated 2026-11-14: acquire and read the original 1960 first report, continue source-grounded A01 academic achievements, keep the M0 pause and synchronize GitHub and Pages",
+  "previous_presentation_commit": "14fe8326f2cc42a4d424337f358f3c9386295a95",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v9.json",
+    "sha256": "462fdbfe1c4bd6f0c32f39e2597764037b4562904f0acec4cce00f08c9797017"
+  },
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "allowed_html_paths": [
+    "achievements/index.html",
+    "index.html",
+    "topics/early-fluoroketones/index.html"
+  ],
+  "allowed_marker_blocks": {
+    "index.html": "A01_HISTORY_HOME",
+    "achievements/index.html": "A01_HISTORY_SUMMARY",
+    "topics/early-fluoroketones/index.html": "A01_HISTORY_TOPIC"
+  },
+  "historical_snapshots": [
+    {
+      "path": "achievements/index.html",
+      "marker": "A01_HISTORY_SUMMARY",
+      "snapshot_path": "provenance/a01-first-report-previous/markers/A01_HISTORY_SUMMARY.html",
+      "sha256": "aba14e754ed6872346d33d6ff51c8bba13f09d0f09dfb262a0106b6bd01c8d34",
+      "bytes": 1488,
+      "reconstructed_page_sha256": "bc6aab77dd77a9c0f335a8fc4eb25228fec18bba931699eeb82139031088d7e5",
+      "reconstructed_page_bytes": 94543
+    },
+    {
+      "path": "index.html",
+      "marker": "A01_HISTORY_HOME",
+      "snapshot_path": "provenance/a01-first-report-previous/markers/A01_HISTORY_HOME.html",
+      "sha256": "667ab4b3e1f6c55a71e5ed70f73fb5bafc970a01bd8c28872822b589f659610e",
+      "bytes": 1470,
+      "reconstructed_page_sha256": "d3fef56d84b9cda82dff9a868424a6e9673518183ca10536177e357d8e833987",
+      "reconstructed_page_bytes": 253609
+    },
+    {
+      "path": "topics/early-fluoroketones/index.html",
+      "marker": "A01_HISTORY_TOPIC",
+      "snapshot_path": "provenance/a01-first-report-previous/markers/A01_HISTORY_TOPIC.html",
+      "sha256": "ae97221e73aca6e2e12befbcadf5817695afd6d6fc585eabda3867befa861a84",
+      "bytes": 55031,
+      "reconstructed_page_sha256": "ae82cb0d0fab34a49dd48cd52fb17f131b5e4d7cd2b92505e8c7fbb24dd29488",
+      "reconstructed_page_bytes": 230449
+    },
+    {
+      "path": "README.md",
+      "snapshot_path": "provenance/a01-first-report-previous/README.md",
+      "sha256": "eec96a7d0d128190c289258bf12136b161ecf6792e0d3258ff6d9cdd6fe85a46",
+      "bytes": 6362
+    },
+    {
+      "path": "research/a01/README.md",
+      "snapshot_path": "provenance/a01-first-report-previous/research/a01/README.md",
+      "sha256": "b203799322002384f74cc7a6b5717e5146b920f945112d69783504654c1e919d",
+      "bytes": 5924
+    },
+    {
+      "path": "scripts/render_a01_history.py",
+      "snapshot_path": "provenance/a01-first-report-previous/scripts/render_a01_history.py",
+      "sha256": "16c207c427850512935fb41c31a3867fdde5f8c3765dcacaa0198420201465c5",
+      "bytes": 13055
+    }
+  ],
+  "editorial_documents": [
+    {
+      "path": "README.md",
+      "sha256": "7bc7125d6eb1ab45f192b250478bc4ad719be508178a67932e4ce2654c3f3a78",
+      "bytes": 6420
+    },
+    {
+      "path": "research/a01/README.md",
+      "sha256": "a7b5fb969b53a3259c334eb55c378586b000563aabfd500ee031f4c7db099739",
+      "bytes": 6163
+    },
+    {
+      "path": "scripts/render_a01_history.py",
+      "sha256": "894c8fe1f76beae187ea0f9d105f6ae71cf8beec4c7a4005c7c780e62ea6fe8c",
+      "bytes": 15804
+    },
+    {
+      "path": "content/a01-historical-achievements.v2.json",
+      "sha256": "c27a28b6922358d52e7bde69c9c6f56df06ac20efe58affc0706c5a0b4b20db8",
+      "bytes": 39364
+    },
+    {
+      "path": "docs/A01_FIRST_REPORT_zh-CN.md",
+      "sha256": "b6de9df1b0dd742ba038bc6bc80ad6ef3ea61663a4f4eadb151345df9cb4f339",
+      "bytes": 7770
+    }
+  ],
+  "historical_v1_records_retained": true,
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "M0_resumed": false,
+  "historical_achievement_independent_of_AI_review": true,
+  "new_quantum_calls": 0,
+  "new_model_API_calls": 0,
+  "changes": [
+    {
+      "path": "achievements/index.html",
+      "old_sha256": "bc6aab77dd77a9c0f335a8fc4eb25228fec18bba931699eeb82139031088d7e5",
+      "old_bytes": 94543,
+      "new_sha256": "145b2dc12dbfbb093e487e03e7176fbe6cd02f782f944e1609d93bbb8200dc2b",
+      "new_bytes": 94705,
+      "reason": "Present the acquired 1960 first-report evidence and qualified AI reading inside the existing A01 history marker, retaining the prior evidence and unchanged scientific model records"
+    },
+    {
+      "path": "index.html",
+      "old_sha256": "d3fef56d84b9cda82dff9a868424a6e9673518183ca10536177e357d8e833987",
+      "old_bytes": 253609,
+      "new_sha256": "db95743f8eec1476fa797e1c5ef22cebf7a77411e3ff7d7b3ecd1fd34b5f597c",
+      "new_bytes": 253768,
+      "reason": "Present the acquired 1960 first-report evidence and qualified AI reading inside the existing A01 history marker, retaining the prior evidence and unchanged scientific model records"
+    },
+    {
+      "path": "topics/early-fluoroketones/index.html",
+      "old_sha256": "ae82cb0d0fab34a49dd48cd52fb17f131b5e4d7cd2b92505e8c7fbb24dd29488",
+      "old_bytes": 230449,
+      "new_sha256": "e34de5ddf39154b37dec507b3242e23cd73c587b51ac6394993f5e576c0e085d",
+      "new_bytes": 250562,
+      "reason": "Present the acquired 1960 first-report evidence and qualified AI reading inside the existing A01 history marker, retaining the prior evidence and unchanged scientific model records"
+    }
+  ],
+  "boundary": "This source-reading record preserves the published v1 evidence, original authorship and review requirements. It does not certify professional translation, experimental reproduction, material performance, historical priority, a barrier or mechanism. M0 remains paused.",
+  "reconstruction": "Three saved marker blocks are substituted into the current pages to reconstruct the exact immutable v9 page SHA-256 and byte counts. Every outside-marker byte is consequently protected. Only the three changed documents have complete predecessor snapshots; no full page or whole site is copied.",
+  "publish_allowlist": "The existing fifteen HTML pages, two original JSON files and empty .nojekyll marker only. Raw article pages and OCR are not published by this declaration."
+}
