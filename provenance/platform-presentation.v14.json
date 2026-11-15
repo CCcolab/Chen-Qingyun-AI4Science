@@ -1,0 +1,529 @@
+{
+  "schema_version": "14.0",
+  "presentation_id": "PLATFORM-REFERENCES-20261115-v14",
+  "created_at_utc": "2026-11-15T00:17:42.231856+00:00",
+  "publication_kind": "platform_final_references",
+  "authorization": "User correction dated 2026-11-15: move the materials-basis statement out of the biography/achievement introduction and use a final References section, not acknowledgements; include the biography and the actual websites/databases used",
+  "previous_presentation_commit": "f70a8e797a3fe4b70cf21d8f3b86dd679a59306d",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v13.json",
+    "sha256": "263b465d22b1a56b8364a0540a65f742948664f9e50e64d759543685768468cc"
+  },
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "allowed_html_paths": [
+    "index.html"
+  ],
+  "added_html_paths": [],
+  "editorial_documents": [
+    {
+      "path": "README.md",
+      "sha256": "d7772373c93e0dbb3b175aa5885f90ec3213e66708de7fb4942b221755675bf7",
+      "bytes": 9331
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "sha256": "7a4dc86795cd5af326c661afc311ac9b0807bb6d3a116e9e6eafabafc6aa3b38",
+      "bytes": 152291
+    }
+  ],
+  "protected_website_members": {
+    "pftb/index.html": {
+      "sha256": "42ca404f2ed70b7a3b0b5d8b0eb742a2509e5a5a70fd0be36a65028e61cbd1f6",
+      "bytes": 97587
+    },
+    "topics/f53/index.html": {
+      "sha256": "8def3379a75dda6665d7cb3ee6c32193fc7a61ec6b31098abbefe9218fea39fe",
+      "bytes": 8161
+    },
+    "topics/refrigerants/index.html": {
+      "sha256": "5d9b5a355b949f67c5de252727f8d4e4e7533abab8a666c49a0f932170153c4e",
+      "bytes": 10636
+    },
+    "topics/fluoromonomers/index.html": {
+      "sha256": "780541f4a1762919c757a6be86b5551fb5ce0679d2778b8a9772d87fc70add94",
+      "bytes": 10553
+    },
+    "topics/perfluorosulfonates/index.html": {
+      "sha256": "85a6f4330edb7607f61ca217b71d2ef6c12cb1af0d48aaaebf737acf3a212ea5",
+      "bytes": 8888
+    },
+    "topics/chen-reagent/index.html": {
+      "sha256": "14f08afd4062c0ae171f24e5fb225e5968b003e885edc206baf08ca352b630df",
+      "bytes": 19991
+    },
+    "topics/single-electron-transfer/index.html": {
+      "sha256": "79c84f89e25e576a03f34153b9eb85a5ff73815c8265a0222930d889390ea947",
+      "bytes": 10355
+    },
+    "topics/fluoroporphyrins/index.html": {
+      "sha256": "24b6bb744b594573487847c89bbb35571ea56bc15d444ebeac3339379dbc1875",
+      "bytes": 6018
+    },
+    "topics/early-fluoroketones/index.html": {
+      "sha256": "a6da86d7f9ff0f35a5ea044252297a23e5ed71db829f2d184e3ab38a70dce9a2",
+      "bytes": 250938
+    },
+    "topics/fluorinated-small-rings/index.html": {
+      "sha256": "2413c83d4319746f41e940c04fe48bdeda28244235f5a9e8697285c187ba412d",
+      "bytes": 5924
+    },
+    "topics/deoxyfluorination/index.html": {
+      "sha256": "2aca9c13eb46f9fedfb02a2adfdc9423c207465f58608bcd671838d4d8045df5",
+      "bytes": 5550
+    },
+    "topics/sulfonyl-fluoride/index.html": {
+      "sha256": "fe944efbbfa5a7814015235f4ae3aae101db4046b0c9419986d6855d7ed15b49",
+      "bytes": 5043
+    },
+    "topics/index.html": {
+      "sha256": "44a5690d1e65195b9ff191d2a7ec37487070cdfafb191ae107962d5e0d7ab73c",
+      "bytes": 5055
+    },
+    "achievements/index.html": {
+      "sha256": "efb6d576b66c43dc697b4d492fb6eaf98c09b813adec7a12d0c952a1bf926ac0",
+      "bytes": 95440
+    },
+    "data/public-sources.json": {
+      "sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+      "bytes": 33608
+    },
+    "data/achievement-lines.json": {
+      "sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+      "bytes": 39768
+    },
+    "README.txt": {
+      "sha256": "6e15068b7240ae47d633df3f777e81fbb9e46146ee5f4ab70011f09119b6bbc9",
+      "bytes": 336
+    },
+    "ROUTES.txt": {
+      "sha256": "a734c356877d4534285ab7d71b9fe0f7a17abbced4de3c52f8e60d335301e418",
+      "bytes": 949
+    },
+    "QA.txt": {
+      "sha256": "a60b5f382b31689fa17e2518b7079ef0660674fb62bddbbf564c7b74dfe51067",
+      "bytes": 290
+    },
+    "IONIC-ENTRY-RETEST.txt": {
+      "sha256": "3462b056891a27c335cc2620deb87b245b6c9aea3bdaec607c8a14beca69fe9d",
+      "bytes": 741
+    },
+    "research/index.html": {
+      "sha256": "85374c976a94a3ff601e203633285418b8250262eab5eef2a627bb3de1e4b580",
+      "bytes": 46038
+    }
+  },
+  "reconstruction_kind": "deduplicated_exact_utf8_text_edits",
+  "reverse_text_patch_pool": [
+    {
+      "old": "平台以《氟缘笃志：陈庆云传》、原始论文和机构公开资料为依据，介绍",
+      "new": "沿着"
+    },
+    {
+      "old": "沿",
+      "new": "按"
+    },
+    {
+      "old": "",
+      "new": "\n## 参考资料\n\n本平台实际参考的主要图书、机构网站、原文档案与文献数据库如下。具体论文、页码及核读范围见各条资料引用。\n\n- **传记**：朱晶、刘超：《氟缘笃志：陈庆云传》。用于生平、研究历程、合作与育人故事；具体页码见各条引文。\n- **中国科学院网站**：[陈庆云人物专题](https://www.cas.cn/zt/rwzt/2024qm/202403/t20240328_5010119.shtml) · [“上海氟”，何以为？](https://www.cas.cn/zt/kjzt/kjzlzqzl/kjzlzq/202406/t20240621_5022275.shtml)。用于机构介绍、历史回顾与学术评价，注明报道来源和语境。\n- **中国科学院上海有机化学研究所**：[陈庆云院士纪念专题](https://sioc.cas.cn/dncqy/)。用于生平、图集、学术活动及机构回顾。\n- **中国科学家博物馆**：[陈庆云：六十余年研究一种化学元素](https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/bd0292/art/2023/art_e2d76717639749c0a6713c2b08a9971a.html)。用于研究经历与合作、育人报道；转引回忆保留具名出处。\n- **Math-Net.Ru 文献档案**：[1960年俄文论文目录与原刊入口](https://www.mathnet.ru/rus/dan23922)。用于早期俄文论文书目和原刊扫描定位。\n- **Internet Archive 期刊档案**：[1960年第一报历史英译本影印页](https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n100)。用于《Fluorinated ketones》第一报英译本核读，与俄文原刊分别登记。\n- **期刊与出版社**：[《化学学报》](https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18) · [RSC](https://pubs.rsc.org/en/content/articlelanding/1989/c3/c39890000705) · [Springer Nature Link](https://link.springer.com/article/10.1007/BF00910798)。用于原论文入口、书目与摘要；是否取得全文及核读范围按具体条目标注。\n- **PubMed 文献数据库**：[2001年镍体系论文记录](https://pubmed.ncbi.nlm.nih.gov/11421787/)。用于论文书目和作者摘要检索；数据库记录不作为已核读全文的证明。\n"
+    },
+    {
+      "old": "",
+      "new": "<!-- REFERENCES:BEGIN -->\n<section class=\"shell-section\" id=\"references\"><div class=\"wrap\"><div class=\"section-head\"><div><div class=\"kicker\">REFERENCE MATERIALS</div><h2>参考资料</h2></div><p>本平台实际参考的主要图书、机构网站、原文档案与文献数据库如下。具体论文、页码及核读范围见各条资料引用。</p></div><ul>\n<li style=\"margin-bottom:18px\"><b>传记</b>：朱晶、刘超：《氟缘笃志：陈庆云传》。用于生平、研究历程、合作与育人故事；具体页码见各条引文。</li>\n<li style=\"margin-bottom:18px\"><b>中国科学院网站</b>：<a href=\"https://www.cas.cn/zt/rwzt/2024qm/202403/t20240328_5010119.shtml\">陈庆云人物专题</a> · <a href=\"https://www.cas.cn/zt/kjzt/kjzlzqzl/kjzlzq/202406/t20240621_5022275.shtml\">“上海氟”，何以为？</a>。用于机构介绍、历史回顾与学术评价，注明报道来源和语境。</li>\n<li style=\"margin-bottom:18px\"><b>中国科学院上海有机化学研究所</b>：<a href=\"https://sioc.cas.cn/dncqy/\">陈庆云院士纪念专题</a>。用于生平、图集、学术活动及机构回顾。</li>\n<li style=\"margin-bottom:18px\"><b>中国科学家博物馆</b>：<a href=\"https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/bd0292/art/2023/art_e2d76717639749c0a6713c2b08a9971a.html\">陈庆云：六十余年研究一种化学元素</a>。用于研究经历与合作、育人报道；转引回忆保留具名出处。</li>\n<li style=\"margin-bottom:18px\"><b>Math-Net.Ru 文献档案</b>：<a href=\"https://www.mathnet.ru/rus/dan23922\">1960年俄文论文目录与原刊入口</a>。用于早期俄文论文书目和原刊扫描定位。</li>\n<li style=\"margin-bottom:18px\"><b>Internet Archive 期刊档案</b>：<a href=\"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n100\">1960年第一报历史英译本影印页</a>。用于《Fluorinated ketones》第一报英译本核读，与俄文原刊分别登记。</li>\n<li style=\"margin-bottom:18px\"><b>期刊与出版社</b>：<a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18\">《化学学报》</a> · <a href=\"https://pubs.rsc.org/en/content/articlelanding/1989/c3/c39890000705\">RSC</a> · <a href=\"https://link.springer.com/article/10.1007/BF00910798\">Springer Nature Link</a>。用于原论文入口、书目与摘要；是否取得全文及核读范围按具体条目标注。</li>\n<li style=\"margin-bottom:18px\"><b>PubMed 文献数据库</b>：<a href=\"https://pubmed.ncbi.nlm.nih.gov/11421787/\">2001年镍体系论文记录</a>。用于论文书目和作者摘要检索；数据库记录不作为已核读全文的证明。</li>\n</ul></div></section>\n<!-- REFERENCES:END -->\n"
+    },
+    {
+      "old": "",
+      "new": "PRESENTATION_V13_SHA256 = '263b465d22b1a56b8364a0540a65f742948664f9e50e64d759543685768468cc'\nPRESENTATION_V14_PATH = 'provenance/platform-presentation.v14.json'\nPRESENTATION_V14_ID = 'PLATFORM-REFERENCES-20261115-v14'\nPRESENTATION_V14_PREVIOUS_COMMIT = 'f70a8e797a3fe4b70cf21d8f3b86dd679a59306d'\nREFERENCES_PREDECESSOR_FILES = {\n    'README.md': ('3031d7cb2b65282f50d60c0dcac561a5c8f86e31497be2016e0875e5a61d11e7', 7366),\n    'site/index.html': ('d9e96eb3dc370a9c076a1e0afbcc43b266a69491e63e11d421dc3d1c91698b19', 255067),\n    'scripts/a01_publication_contract.py': ('5bfcdb7a612e842b9d9857f485c0ef96142de73f0ff80cd94fd2445fc103227a', 139962),\n}\nREFERENCES_DOCUMENTS = ('README.md', 'scripts/a01_publication_contract.py')\n"
+    },
+    {
+      "old": "",
+      "new": "def references_predecessor_bytes(root: Path, name: str) -> bytes:\n    \"\"\"Undo only the three explicitly permitted v14 presentation files.\"\"\"\n    current = project_file(root, name).read_bytes()\n    if not (root/PRESENTATION_V14_PATH).exists():\n        return current\n    data = read_json(project_file(root, PRESENTATION_V14_PATH))\n    if not isinstance(data, dict):\n        raise ValueError('References presentation must be a JSON object')\n    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')\n    if not isinstance(files, list) or not isinstance(pool, list):\n        raise ValueError('References require exact reversible text patch records')\n    matches = [row for row in files if isinstance(row, dict) and row.get('path') == name]\n    if not matches:\n        return current\n    if len(matches) != 1 or name not in REFERENCES_PREDECESSOR_FILES:\n        raise ValueError('Unauthorized or duplicate References predecessor record: '+name)\n    record = matches[0]; old_sha, old_size = REFERENCES_PREDECESSOR_FILES[name]\n    if (record.get('old_sha256') != old_sha or record.get('old_bytes') != old_size\n            or hashlib.sha256(current).hexdigest() != record.get('new_sha256')\n            or len(current) != record.get('new_bytes')):\n        raise ValueError('References file differs from its complete old/new identities: '+name)\n    edits = record.get('edits')\n    if not isinstance(edits, list) or not edits:\n        raise ValueError('References changes require nonempty text edits: '+name)\n    chunks, cursor, old_end, delta = [], 0, 0, 0\n    for edit in edits:\n        if not isinstance(edit, dict) or set(edit) != {'old_offset', 'replacement'}:\n            raise ValueError('Invalid reversible References text edit: '+name)\n        offset, replacement = edit['old_offset'], edit['replacement']\n        if (type(offset) is not int or offset < old_end or type(replacement) is not int\n                or not 0 <= replacement < len(pool)):\n            raise ValueError('Overlapping or invalid References text edit: '+name)\n        pair = pool[replacement]\n        if (not isinstance(pair, dict) or set(pair) != {'old', 'new'}\n                or not all(isinstance(pair.get(key), str) for key in ('old', 'new'))\n                or pair['old'] == pair['new']):\n            raise ValueError('Invalid References text replacement pool')\n        before, after = pair['old'].encode('utf-8'), pair['new'].encode('utf-8')\n        position = offset+delta\n        if position < cursor or current[position:position+len(after)] != after:\n            raise ValueError('References replacement differs at its exact offset: '+name)\n        chunks.extend((current[cursor:position], before))\n        cursor, old_end = position+len(after), offset+len(before)\n        delta += len(after)-len(before)\n    rebuilt = b''.join((*chunks, current[cursor:]))\n    if hashlib.sha256(rebuilt).hexdigest() != old_sha or len(rebuilt) != old_size:\n        raise ValueError('References predecessor cannot be reconstructed exactly: '+name)\n    return rebuilt\n\n\ndef references_predecessor_binding(root: Path, name: str) -> dict:\n    content = references_predecessor_bytes(root, name)\n    return {'path': name, 'sha256': hashlib.sha256(content).hexdigest(), 'bytes': len(content)}\n\n\n"
+    },
+    {
+      "old": "",
+      "new": "references_"
+    },
+    {
+      "old": "oj",
+      "new": "ed"
+    },
+    {
+      "old": "",
+      "new": "essor_by"
+    },
+    {
+      "old": "_fil",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "s"
+    },
+    {
+      "old": ".read_bytes()",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "    if (root/PRESENTATION_V14_PATH).exists() and not (root/PRESENTATION_V13_PATH).exists():\n        raise ValueError('References presentation requires its fixed v13 predecessor')\n"
+    },
+    {
+      "old": "{'",
+      "new": "references_"
+    },
+    {
+      "old": "ath': ",
+      "new": "redecessor_bi"
+    },
+    {
+      "old": "ame, 'sha256': ",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "n"
+    },
+    {
+      "old": "est(project_file",
+      "new": ""
+    },
+    {
+      "old": "),\n                  'bytes': project_file(root, name).stat().st_size}",
+      "new": ""
+    },
+    {
+      "old": "read_",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": ".loads"
+    },
+    {
+      "old": "r",
+      "new": "d"
+    },
+    {
+      "old": "a",
+      "new": "co"
+    },
+    {
+      "old": "_t",
+      "new": ""
+    },
+    {
+      "old": "xt",
+      "new": ""
+    },
+    {
+      "old": "t",
+      "new": "essor"
+    },
+    {
+      "old": "f",
+      "new": "b"
+    },
+    {
+      "old": "le",
+      "new": "nding"
+    },
+    {
+      "old": "digest(",
+      "new": ""
+    },
+    {
+      "old": ")",
+      "new": "['sha256']"
+    },
+    {
+      "old": ".",
+      "new": "['byte"
+    },
+    {
+      "old": "tat().st_size",
+      "new": "']"
+    },
+    {
+      "old": "",
+      "new": "        'published_member_count_with_marker': len(members)+1,\n        **{key: required[key] for key in ('scientific_review_status', 'scientific_data_unchanged',\n            'historical_achievement_independent_of_AI_review', 'release_eligible', 'M0_resumed')}}\n    return apply_references_presentation(root, updated,\n        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})\n\n\ndef apply_references_presentation(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:\n    \"\"\"Move source context to a final references section, preserving research.\"\"\"\n    if not (root/PRESENTATION_V14_PATH).exists():\n        return entries, previous_report\n    if digest(project_file(root, PRESENTATION_V13_PATH)) != PRESENTATION_V13_SHA256:\n        raise ValueError('The preceding direct-results presentation v13 is immutable')\n    path = project_file(root, PRESENTATION_V14_PATH); data = read_json(path)\n    documents = [{'path': name, 'sha256': digest(project_file(root, name)),\n                  'bytes': project_file(root, name).stat().st_size} for name in REFERENCES_DOCUMENTS]\n    required = {'schema_version': '14.0', 'presentation_id': PRESENTATION_V14_ID,\n        'publication_kind': 'platform_final_references',\n        'previous_presentation_commit': PRESENTATION_V14_PREVIOUS_COMMIT,\n        'previous_presentation': {'path': PRESENTATION_V13_PATH, 'sha256': PRESENTATION_V13_SHA256},\n        'original_baseline_sha256': BASELINE_SHA256, 'original_archive_sha256': ARCHIVE_SHA256,\n        'allowed_html_paths': ['index.html'], 'added_html_paths': [], 'additions': [],\n        'editorial_documents': documents,\n        'protected_website_members': {name: {'sha256': row['sha256'], 'bytes': row['bytes']}\n            for name, row in entries.items() if name != 'index.html'},\n        'reconstruction_kind': 'deduplicated_exact_utf8_text_edits',\n        'scientific_review_status': 'review_required', 'release_eligible': False,\n        'scientific_data_unchanged': True, 'M0_resumed': False,\n        'historical_achievement_independent_of_AI_review': True}\n    if (not isinstance(data, dict) or any(data.get(key) != value for key, value in required.items())\n            or any(data.get(key) is not required[key] for key in ('release_eligible',\n                'scientific_data_unchanged', 'M0_resumed', 'historical_achievement_independent_of_AI_review'))\n            or any(type(data.get(key)) is not int or data[key] != 0\n                   for key in ('new_quantum_calls', 'new_model_API_calls'))\n            or not isinstance(data.get('authorization'), str) or not data['authorization'].strip()):\n        raise ValueError('Unsupported bounded references presentation v14')\n    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')\n    if (not isinstance(files, list) or not isinstance(pool, list) or not pool\n            or any(not isinstance(row, dict) for row in files)\n            or {row.get('path') for row in files} != set(REFERENCES_PREDECESSOR_FILES)\n            or len(files) != len(REFERENCES_PREDECESSOR_FILES)\n            or any(not isinstance(row.get('edits'), list) or not row['edits'] or any(\n                not isinstance(edit, dict) or type(edit.get('replacement')) is not int\n                for edit in row['edits']) for row in files)):\n        raise ValueError('References presentation must enumerate its three exact text edits')\n    if {edit['replacement'] for row in files for edit in row['edits']} != set(range(len(pool))):\n        raise ValueError('References replacement pool must contain exactly its used text segments')\n    for name, (old_sha, old_size) in REFERENCES_PREDECESSOR_FILES.items():\n        old = references_predecessor_bytes(root, name)\n        if hashlib.sha256(old).hexdigest() != old_sha or len(old) != old_size:\n            raise ValueError('References predecessor differs from fixed f70a8e7: '+name)\n        if old == project_file(root, name).read_bytes():\n            raise ValueError('References declaration lists an unchanged predecessor file: '+name)\n    changes = data.get('changes')\n    if (not isinstance(changes, list) or len(changes) != 1\n            or not isinstance(changes[0], dict) or changes[0].get('path') != 'index.html'):\n        raise ValueError('References may change only the existing homepage')\n    item = changes[0]; old = entries['index.html']\n    before = references_predecessor_bytes(root, 'site/index.html')\n    after = project_file(root, 'site/index.html').read_bytes()\n    if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']\n            or hashlib.sha256(before).hexdigest() != old['sha256'] or len(before) != old['bytes']\n            or item.get('new_sha256') != hashlib.sha256(after).hexdigest() or item.get('new_bytes') != len(after)\n            or not isinstance(item.get('reason'), str) or not item['reason'].strip()):\n        raise ValueError('References homepage differs from its complete old/new identities')\n    source, current = before.decode('utf-8'), after.decode('utf-8')\n    begin, end = '<!-- REFERENCES:BEGIN -->', '<!-- REFERENCES:END -->'\n    if current.count(begin) != 1 or current.count(end) != 1:\n        raise ValueError('References homepage requires exactly one complete final block')\n    a, b = current.index(begin), current.index(end)+len(end)\n    if a >= b or not current[b:].startswith('\\n</main>'):\n        raise ValueError('References must be the final main-content section')\n    block = current[a:b]\n    if (current[:a]+current[b+1:] != source or block.count('id=\"references\"') != 1\n            or '<h2>参考资料</h2>' not in block or block.count('<li ') != 8\n            or '致谢' in block or 'ACKNOWLEDGEMENTS' in current):\n        raise ValueError('The homepage change must consist only of the final references block')\n    readme = project_file(root, 'README.md').read_text('utf-8')\n    previous_readme = references_predecessor_bytes(root, 'README.md').decode('utf-8')\n    old_intro = '平台以《氟缘笃志：陈庆云传》、原始论文和机构公开资料为依据，介绍陈先生的研究道路，沿九条成果线呈现开拓性成就、具名合作与育人故事。'\n    new_intro = '沿着陈先生的研究道路，按九条成果线呈现开拓性成就、具名合作与育人故事。'\n    marker = '## 参考资料'\n    if (readme.count(marker) != 1 or readme.rsplit('\\n## ', 1)[1].splitlines()[0] != '参考资料'\n            or readme.split(marker)[0].rstrip() != previous_readme.replace(old_intro, new_intro, 1).rstrip()\n            or readme.count('《氟缘笃志：陈庆云传》') != 1\n            or '《氟缘笃志：陈庆云传》' not in readme.split(marker)[1]\n            or readme.split(marker)[1].count('\\n- **') != 8 or '致谢' in readme):\n        raise ValueError('README must move its source context to final references only')\n    from public_line_labels import project_html, project_markdown\n    if project_html(current, 'index.html') != current or project_markdown(readme) != readme:\n        raise ValueError('References must preserve canonical named achievement references')\n    updated = {name: dict(row) for name, row in entries.items()}\n    updated['index.html'] = {**old, 'sha256': item['new_sha256'], 'bytes': item['new_bytes'],\n                              'presentation_id': PRESENTATION_V14_ID}\n    for name, expected in updated.items():\n        member = project_file(root, 'site/'+name)\n        if digest(member) != expected['sha256'] or member.stat().st_size != expected['bytes']:\n            raise ValueError('References changed an unlisted website byte: '+name)\n    members = publication_members(root, updated)\n    report = {'path': PRESENTATION_V14_PATH, 'sha256': digest(path), 'presentation_id': PRESENTATION_V14_ID,\n        'publication_kind': required['publication_kind'], 'changed_paths': ['index.html'],\n        'added_paths': [], 'previous_presentation_commit': PRESENTATION_V14_PREVIOUS_COMMIT,\n        'exact_predecessor_reconstruction': True, 'homepage_final_references_only': True,\n        'research_and_other_routes_unchanged': True, 'original_embedded_json_bytes_preserved': True,\n"
+    }
+  ],
+  "reversible_text_files": [
+    {
+      "path": "README.md",
+      "old_sha256": "3031d7cb2b65282f50d60c0dcac561a5c8f86e31497be2016e0875e5a61d11e7",
+      "old_bytes": 7366,
+      "new_sha256": "d7772373c93e0dbb3b175aa5885f90ec3213e66708de7fb4942b221755675bf7",
+      "new_bytes": 9331,
+      "edits": [
+        {
+          "old_offset": 2574,
+          "replacement": 0
+        },
+        {
+          "old_offset": 2697,
+          "replacement": 1
+        },
+        {
+          "old_offset": 7366,
+          "replacement": 2
+        }
+      ]
+    },
+    {
+      "path": "site/index.html",
+      "old_sha256": "d9e96eb3dc370a9c076a1e0afbcc43b266a69491e63e11d421dc3d1c91698b19",
+      "old_bytes": 255067,
+      "new_sha256": "8b3532ee45c0fb33912f20a3bd7943043a348f10a370b9c6716e9edf3c0abf41",
+      "new_bytes": 257766,
+      "edits": [
+        {
+          "old_offset": 203891,
+          "replacement": 3
+        }
+      ]
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "old_sha256": "5bfcdb7a612e842b9d9857f485c0ef96142de73f0ff80cd94fd2445fc103227a",
+      "old_bytes": 139962,
+      "new_sha256": "7a4dc86795cd5af326c661afc311ac9b0807bb6d3a116e9e6eafabafc6aa3b38",
+      "new_bytes": 152291,
+      "edits": [
+        {
+          "old_offset": 4987,
+          "replacement": 4
+        },
+        {
+          "old_offset": 14927,
+          "replacement": 5
+        },
+        {
+          "old_offset": 15081,
+          "replacement": 6
+        },
+        {
+          "old_offset": 15083,
+          "replacement": 7
+        },
+        {
+          "old_offset": 15087,
+          "replacement": 8
+        },
+        {
+          "old_offset": 15088,
+          "replacement": 9
+        },
+        {
+          "old_offset": 15093,
+          "replacement": 10
+        },
+        {
+          "old_offset": 15105,
+          "replacement": 11
+        },
+        {
+          "old_offset": 44295,
+          "replacement": 12
+        },
+        {
+          "old_offset": 123814,
+          "replacement": 13
+        },
+        {
+          "old_offset": 123817,
+          "replacement": 14
+        },
+        {
+          "old_offset": 123824,
+          "replacement": 15
+        },
+        {
+          "old_offset": 123841,
+          "replacement": 16
+        },
+        {
+          "old_offset": 123842,
+          "replacement": 17
+        },
+        {
+          "old_offset": 123870,
+          "replacement": 18
+        },
+        {
+          "old_offset": 126916,
+          "replacement": 6
+        },
+        {
+          "old_offset": 126918,
+          "replacement": 7
+        },
+        {
+          "old_offset": 126922,
+          "replacement": 8
+        },
+        {
+          "old_offset": 126923,
+          "replacement": 9
+        },
+        {
+          "old_offset": 126928,
+          "replacement": 10
+        },
+        {
+          "old_offset": 126940,
+          "replacement": 11
+        },
+        {
+          "old_offset": 127269,
+          "replacement": 19
+        },
+        {
+          "old_offset": 127278,
+          "replacement": 20
+        },
+        {
+          "old_offset": 127279,
+          "replacement": 6
+        },
+        {
+          "old_offset": 127281,
+          "replacement": 7
+        },
+        {
+          "old_offset": 127285,
+          "replacement": 8
+        },
+        {
+          "old_offset": 127286,
+          "replacement": 9
+        },
+        {
+          "old_offset": 127291,
+          "replacement": 10
+        },
+        {
+          "old_offset": 129337,
+          "replacement": 6
+        },
+        {
+          "old_offset": 129339,
+          "replacement": 7
+        },
+        {
+          "old_offset": 129343,
+          "replacement": 8
+        },
+        {
+          "old_offset": 129344,
+          "replacement": 9
+        },
+        {
+          "old_offset": 129349,
+          "replacement": 10
+        },
+        {
+          "old_offset": 129382,
+          "replacement": 11
+        },
+        {
+          "old_offset": 130170,
+          "replacement": 6
+        },
+        {
+          "old_offset": 130172,
+          "replacement": 7
+        },
+        {
+          "old_offset": 130176,
+          "replacement": 8
+        },
+        {
+          "old_offset": 130177,
+          "replacement": 9
+        },
+        {
+          "old_offset": 130182,
+          "replacement": 10
+        },
+        {
+          "old_offset": 130211,
+          "replacement": 21
+        },
+        {
+          "old_offset": 130213,
+          "replacement": 22
+        },
+        {
+          "old_offset": 130215,
+          "replacement": 23
+        },
+        {
+          "old_offset": 130218,
+          "replacement": 24
+        },
+        {
+          "old_offset": 131001,
+          "replacement": 6
+        },
+        {
+          "old_offset": 131003,
+          "replacement": 7
+        },
+        {
+          "old_offset": 131007,
+          "replacement": 25
+        },
+        {
+          "old_offset": 131009,
+          "replacement": 26
+        },
+        {
+          "old_offset": 131011,
+          "replacement": 27
+        },
+        {
+          "old_offset": 131045,
+          "replacement": 28
+        },
+        {
+          "old_offset": 131058,
+          "replacement": 29
+        },
+        {
+          "old_offset": 131091,
+          "replacement": 30
+        },
+        {
+          "old_offset": 131093,
+          "replacement": 31
+        },
+        {
+          "old_offset": 132158,
+          "replacement": 32
+        }
+      ]
+    }
+  ],
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "M0_resumed": false,
+  "historical_achievement_independent_of_AI_review": true,
+  "new_quantum_calls": 0,
+  "new_model_API_calls": 0,
+  "changes": [
+    {
+      "path": "index.html",
+      "old_sha256": "d9e96eb3dc370a9c076a1e0afbcc43b266a69491e63e11d421dc3d1c91698b19",
+      "old_bytes": 255067,
+      "new_sha256": "8b3532ee45c0fb33912f20a3bd7943043a348f10a370b9c6716e9edf3c0abf41",
+      "new_bytes": 257766,
+      "reason": "Add the final references section with the biography and actual institutional websites, original-paper archives and databases; preserve all earlier homepage content and all scientific records"
+    }
+  ],
+  "additions": [],
+  "boundary": "Only the README introductory sentence and final references section, a single final REFERENCES block on the homepage and the publication contract change. Remove that block with its trailing newline to restore the complete previous homepage. All research pages, source JSON, original embedded JSON and paused M0 progress remain byte-identical.",
+  "reconstruction": "Three fixed f70a8e7 predecessor files are reconstructed in memory using ordered exact UTF-8 text edits and a deduplicated replacement pool. No complete predecessor page or document is added. Existing v1-v13 declarations retain their original byte identities.",
+  "publish_allowlist": "Unchanged: sixteen static HTML pages, two original public JSON files and an empty .nojekyll marker, nineteen regular published files."
+}

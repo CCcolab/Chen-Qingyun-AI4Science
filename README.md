@@ -22,7 +22,7 @@
 
 ## 生平、成果与学术传承
 
-平台以《氟缘笃志：陈庆云传》、原始论文和机构公开资料为依据，介绍陈先生的研究道路，沿九条成果线呈现开拓性成就、具名合作与育人故事。各项资料注明出处、资料性质和待核原件；原始论文、机构回顾与访谈转引分别呈现。
+沿着陈先生的研究道路，按九条成果线呈现开拓性成就、具名合作与育人故事。各项资料注明出处、资料性质和待核原件；原始论文、机构回顾与访谈转引分别呈现。
 
 [学术成果与资料](docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md) · [合作与育人故事](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#heritage-stories-all) · [九条成果线](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#heritage-inventory)
 
@@ -66,3 +66,16 @@ AI帮助后人阅读和关联原始资料，并从具体科学问题出发，支
 ## 资料与研究说明
 
 [学术成果与资料](docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md)汇集各成果线的出处、合作故事和待核事项。历史研究依原作者与原始证据呈现，平台AI辅助分析按其实际结果、适用范围和审阅状态单独登记。
+
+## 参考资料
+
+本平台实际参考的主要图书、机构网站、原文档案与文献数据库如下。具体论文、页码及核读范围见各条资料引用。
+
+- **传记**：朱晶、刘超：《氟缘笃志：陈庆云传》。用于生平、研究历程、合作与育人故事；具体页码见各条引文。
+- **中国科学院网站**：[陈庆云人物专题](https://www.cas.cn/zt/rwzt/2024qm/202403/t20240328_5010119.shtml) · [“上海氟”，何以为？](https://www.cas.cn/zt/kjzt/kjzlzqzl/kjzlzq/202406/t20240621_5022275.shtml)。用于机构介绍、历史回顾与学术评价，注明报道来源和语境。
+- **中国科学院上海有机化学研究所**：[陈庆云院士纪念专题](https://sioc.cas.cn/dncqy/)。用于生平、图集、学术活动及机构回顾。
+- **中国科学家博物馆**：[陈庆云：六十余年研究一种化学元素](https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/bd0292/art/2023/art_e2d76717639749c0a6713c2b08a9971a.html)。用于研究经历与合作、育人报道；转引回忆保留具名出处。
+- **Math-Net.Ru 文献档案**：[1960年俄文论文目录与原刊入口](https://www.mathnet.ru/rus/dan23922)。用于早期俄文论文书目和原刊扫描定位。
+- **Internet Archive 期刊档案**：[1960年第一报历史英译本影印页](https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n100)。用于《Fluorinated ketones》第一报英译本核读，与俄文原刊分别登记。
+- **期刊与出版社**：[《化学学报》](https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18) · [RSC](https://pubs.rsc.org/en/content/articlelanding/1989/c3/c39890000705) · [Springer Nature Link](https://link.springer.com/article/10.1007/BF00910798)。用于原论文入口、书目与摘要；是否取得全文及核读范围按具体条目标注。
+- **PubMed 文献数据库**：[2001年镍体系论文记录](https://pubmed.ncbi.nlm.nih.gov/11421787/)。用于论文书目和作者摘要检索；数据库记录不作为已核读全文的证明。

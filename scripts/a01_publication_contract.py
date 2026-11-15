@@ -75,6 +75,16 @@ PRESENTATION_V12_SHA256 = 'aa9efd831558b47646b687e12be30724c4b8be89a0f98ccb8d06e
 PRESENTATION_V13_PATH = 'provenance/platform-presentation.v13.json'
 PRESENTATION_V13_ID = 'PLATFORM-AI-DIRECT-RESULTS-20261114-v13'
 PRESENTATION_V13_PREVIOUS_COMMIT = '858232daae36495e68645ae519441fd7d7a5a9d5'
+PRESENTATION_V13_SHA256 = '263b465d22b1a56b8364a0540a65f742948664f9e50e64d759543685768468cc'
+PRESENTATION_V14_PATH = 'provenance/platform-presentation.v14.json'
+PRESENTATION_V14_ID = 'PLATFORM-REFERENCES-20261115-v14'
+PRESENTATION_V14_PREVIOUS_COMMIT = 'f70a8e797a3fe4b70cf21d8f3b86dd679a59306d'
+REFERENCES_PREDECESSOR_FILES = {
+    'README.md': ('3031d7cb2b65282f50d60c0dcac561a5c8f86e31497be2016e0875e5a61d11e7', 7366),
+    'site/index.html': ('d9e96eb3dc370a9c076a1e0afbcc43b266a69491e63e11d421dc3d1c91698b19', 255067),
+    'scripts/a01_publication_contract.py': ('5bfcdb7a612e842b9d9857f485c0ef96142de73f0ff80cd94fd2445fc103227a', 139962),
+}
+REFERENCES_DOCUMENTS = ('README.md', 'scripts/a01_publication_contract.py')
 AI_RESEARCH_ROUTE = 'research/index.html'
 AI_RESEARCH_CONTENT = 'content/ai-research-section.v1.json'
 AI_RESEARCH_RENDERER = 'scripts/render_ai_research.py'
@@ -210,9 +220,64 @@ def project_file(root: Path, name: str) -> Path:
     return candidate
 
 
+def references_predecessor_bytes(root: Path, name: str) -> bytes:
+    """Undo only the three explicitly permitted v14 presentation files."""
+    current = project_file(root, name).read_bytes()
+    if not (root/PRESENTATION_V14_PATH).exists():
+        return current
+    data = read_json(project_file(root, PRESENTATION_V14_PATH))
+    if not isinstance(data, dict):
+        raise ValueError('References presentation must be a JSON object')
+    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')
+    if not isinstance(files, list) or not isinstance(pool, list):
+        raise ValueError('References require exact reversible text patch records')
+    matches = [row for row in files if isinstance(row, dict) and row.get('path') == name]
+    if not matches:
+        return current
+    if len(matches) != 1 or name not in REFERENCES_PREDECESSOR_FILES:
+        raise ValueError('Unauthorized or duplicate References predecessor record: '+name)
+    record = matches[0]; old_sha, old_size = REFERENCES_PREDECESSOR_FILES[name]
+    if (record.get('old_sha256') != old_sha or record.get('old_bytes') != old_size
+            or hashlib.sha256(current).hexdigest() != record.get('new_sha256')
+            or len(current) != record.get('new_bytes')):
+        raise ValueError('References file differs from its complete old/new identities: '+name)
+    edits = record.get('edits')
+    if not isinstance(edits, list) or not edits:
+        raise ValueError('References changes require nonempty text edits: '+name)
+    chunks, cursor, old_end, delta = [], 0, 0, 0
+    for edit in edits:
+        if not isinstance(edit, dict) or set(edit) != {'old_offset', 'replacement'}:
+            raise ValueError('Invalid reversible References text edit: '+name)
+        offset, replacement = edit['old_offset'], edit['replacement']
+        if (type(offset) is not int or offset < old_end or type(replacement) is not int
+                or not 0 <= replacement < len(pool)):
+            raise ValueError('Overlapping or invalid References text edit: '+name)
+        pair = pool[replacement]
+        if (not isinstance(pair, dict) or set(pair) != {'old', 'new'}
+                or not all(isinstance(pair.get(key), str) for key in ('old', 'new'))
+                or pair['old'] == pair['new']):
+            raise ValueError('Invalid References text replacement pool')
+        before, after = pair['old'].encode('utf-8'), pair['new'].encode('utf-8')
+        position = offset+delta
+        if position < cursor or current[position:position+len(after)] != after:
+            raise ValueError('References replacement differs at its exact offset: '+name)
+        chunks.extend((current[cursor:position], before))
+        cursor, old_end = position+len(after), offset+len(before)
+        delta += len(after)-len(before)
+    rebuilt = b''.join((*chunks, current[cursor:]))
+    if hashlib.sha256(rebuilt).hexdigest() != old_sha or len(rebuilt) != old_size:
+        raise ValueError('References predecessor cannot be reconstructed exactly: '+name)
+    return rebuilt
+
+
+def references_predecessor_binding(root: Path, name: str) -> dict:
+    content = references_predecessor_bytes(root, name)
+    return {'path': name, 'sha256': hashlib.sha256(content).hexdigest(), 'bytes': len(content)}
+
+
 def ai_results_predecessor_bytes(root: Path, name: str) -> bytes:
     """Undo only the five explicitly permitted v13 presentation files."""
-    current = project_file(root, name).read_bytes()
+    current = references_predecessor_bytes(root, name)
     if not (root/PRESENTATION_V13_PATH).exists():
         return current
     data = read_json(project_file(root, PRESENTATION_V13_PATH))
@@ -700,6 +765,8 @@ def apply_presentation_v1(root: Path, entries: dict, *, chain: list,
 
 def apply_presentation_overlay(root: Path, entries: dict, *, chain: list) -> tuple[dict, dict | None]:
     """Apply v1, then this bounded historical-content successor if present."""
+    if (root/PRESENTATION_V14_PATH).exists() and not (root/PRESENTATION_V13_PATH).exists():
+        raise ValueError('References presentation requires its fixed v13 predecessor')
     if (root/PRESENTATION_V13_PATH).exists() and not (root/PRESENTATION_V12_PATH).exists():
         raise ValueError('AI direct results require their fixed v12 predecessor')
     if (root/PRESENTATION_V12_PATH).exists() and not (root/PRESENTATION_V11_PATH).exists():
@@ -1821,8 +1888,7 @@ def apply_ai_direct_results(root: Path, entries: dict, previous_report: dict) ->
     path = project_file(root, PRESENTATION_V13_PATH); data = read_json(path)
     if not isinstance(data, dict):
         raise ValueError('AI direct-results presentation must be a JSON object')
-    documents = [{'path': name, 'sha256': digest(project_file(root, name)),
-                  'bytes': project_file(root, name).stat().st_size} for name in AI_RESULTS_DOCUMENTS]
+    documents = [references_predecessor_binding(root, name) for name in AI_RESULTS_DOCUMENTS]
     protected = {name: {'sha256': row['sha256'], 'bytes': row['bytes']}
                  for name, row in entries.items() if name != AI_RESEARCH_ROUTE}
     required = {'schema_version': '13.0', 'presentation_id': PRESENTATION_V13_ID,
@@ -1860,12 +1926,12 @@ def apply_ai_direct_results(root: Path, entries: dict, previous_report: dict) ->
         old = ai_results_predecessor_bytes(root, name)
         if hashlib.sha256(old).hexdigest() != old_sha or len(old) != old_size:
             raise ValueError('AI direct-results predecessor differs from fixed 858232d bytes: '+name)
-        if old != project_file(root, name).read_bytes():
+        if old != references_predecessor_bytes(root, name):
             changed_files.add(name)
     if {row['path'] for row in files} != changed_files:
         raise ValueError('AI direct-results patches must enumerate every and only changed predecessor file')
     previous_content = json.loads(ai_results_predecessor_bytes(root, AI_RESEARCH_CONTENT))
-    current_content = read_json(project_file(root, AI_RESEARCH_CONTENT))
+    current_content = json.loads(references_predecessor_bytes(root, AI_RESEARCH_CONTENT))
     if ({key: value for key, value in previous_content.items() if key != 'lines'}
             != {key: value for key, value in current_content.items() if key != 'lines'}):
         raise ValueError('AI direct results cannot alter research metadata, homepage notes or heritage')
@@ -1894,7 +1960,7 @@ def apply_ai_direct_results(root: Path, entries: dict, previous_report: dict) ->
         raise ValueError('AI direct results may change only the existing research HTML route')
     item = changes[0]; old = entries[AI_RESEARCH_ROUTE]
     before = ai_results_predecessor_bytes(root, 'site/'+AI_RESEARCH_ROUTE)
-    after = project_file(root, 'site/'+AI_RESEARCH_ROUTE).read_bytes()
+    after = references_predecessor_bytes(root, 'site/'+AI_RESEARCH_ROUTE)
     if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']
             or hashlib.sha256(before).hexdigest() != old['sha256'] or len(before) != old['bytes']
             or item.get('new_sha256') != hashlib.sha256(after).hexdigest() or item.get('new_bytes') != len(after)
@@ -1903,7 +1969,7 @@ def apply_ai_direct_results(root: Path, entries: dict, previous_report: dict) ->
     from public_line_labels import project_html, project_markdown
     if project_html(after.decode('utf-8'), AI_RESEARCH_ROUTE) != after.decode('utf-8'):
         raise ValueError('AI direct results must retain canonical named achievement references')
-    document = project_file(root, AI_RESEARCH_DOCUMENT).read_text('utf-8')
+    document = references_predecessor_bytes(root, AI_RESEARCH_DOCUMENT).decode('utf-8')
     if project_markdown(document) != document:
         raise ValueError('AI direct-results prose must retain canonical named achievement references')
     json_scripts = re.compile(r'<script\b[^>]*\btype\s*=\s*[\"\']application/(?:ld\+)?json[\"\'][^>]*>.*?</script\s*>', re.I | re.S)
@@ -1913,8 +1979,8 @@ def apply_ai_direct_results(root: Path, entries: dict, previous_report: dict) ->
     updated[AI_RESEARCH_ROUTE] = {**old, 'sha256': item['new_sha256'], 'bytes': item['new_bytes'],
                                 'presentation_id': PRESENTATION_V13_ID}
     for name, expected in updated.items():
-        member = project_file(root, 'site/'+name)
-        if digest(member) != expected['sha256'] or member.stat().st_size != expected['bytes']:
+        member = references_predecessor_binding(root, 'site/'+name)
+        if member['sha256'] != expected['sha256'] or member['bytes'] != expected['bytes']:
             raise ValueError('AI direct results changed an unlisted or bound website byte: '+name)
     members = publication_members(root, updated)
     from render_ai_research import inspect_ai_research
@@ -1928,6 +1994,110 @@ def apply_ai_direct_results(root: Path, entries: dict, previous_report: dict) ->
         'exact_predecessor_reconstruction': True, 'source_derived_rendering': True,
         'homepage_and_other_routes_unchanged': True, 'original_embedded_json_bytes_preserved': True,
         'published_html_count': len(members)-2, 'published_json_count': 2,
+        'published_member_count_with_marker': len(members)+1,
+        **{key: required[key] for key in ('scientific_review_status', 'scientific_data_unchanged',
+            'historical_achievement_independent_of_AI_review', 'release_eligible', 'M0_resumed')}}
+    return apply_references_presentation(root, updated,
+        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})
+
+
+def apply_references_presentation(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:
+    """Move source context to a final references section, preserving research."""
+    if not (root/PRESENTATION_V14_PATH).exists():
+        return entries, previous_report
+    if digest(project_file(root, PRESENTATION_V13_PATH)) != PRESENTATION_V13_SHA256:
+        raise ValueError('The preceding direct-results presentation v13 is immutable')
+    path = project_file(root, PRESENTATION_V14_PATH); data = read_json(path)
+    documents = [{'path': name, 'sha256': digest(project_file(root, name)),
+                  'bytes': project_file(root, name).stat().st_size} for name in REFERENCES_DOCUMENTS]
+    required = {'schema_version': '14.0', 'presentation_id': PRESENTATION_V14_ID,
+        'publication_kind': 'platform_final_references',
+        'previous_presentation_commit': PRESENTATION_V14_PREVIOUS_COMMIT,
+        'previous_presentation': {'path': PRESENTATION_V13_PATH, 'sha256': PRESENTATION_V13_SHA256},
+        'original_baseline_sha256': BASELINE_SHA256, 'original_archive_sha256': ARCHIVE_SHA256,
+        'allowed_html_paths': ['index.html'], 'added_html_paths': [], 'additions': [],
+        'editorial_documents': documents,
+        'protected_website_members': {name: {'sha256': row['sha256'], 'bytes': row['bytes']}
+            for name, row in entries.items() if name != 'index.html'},
+        'reconstruction_kind': 'deduplicated_exact_utf8_text_edits',
+        'scientific_review_status': 'review_required', 'release_eligible': False,
+        'scientific_data_unchanged': True, 'M0_resumed': False,
+        'historical_achievement_independent_of_AI_review': True}
+    if (not isinstance(data, dict) or any(data.get(key) != value for key, value in required.items())
+            or any(data.get(key) is not required[key] for key in ('release_eligible',
+                'scientific_data_unchanged', 'M0_resumed', 'historical_achievement_independent_of_AI_review'))
+            or any(type(data.get(key)) is not int or data[key] != 0
+                   for key in ('new_quantum_calls', 'new_model_API_calls'))
+            or not isinstance(data.get('authorization'), str) or not data['authorization'].strip()):
+        raise ValueError('Unsupported bounded references presentation v14')
+    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')
+    if (not isinstance(files, list) or not isinstance(pool, list) or not pool
+            or any(not isinstance(row, dict) for row in files)
+            or {row.get('path') for row in files} != set(REFERENCES_PREDECESSOR_FILES)
+            or len(files) != len(REFERENCES_PREDECESSOR_FILES)
+            or any(not isinstance(row.get('edits'), list) or not row['edits'] or any(
+                not isinstance(edit, dict) or type(edit.get('replacement')) is not int
+                for edit in row['edits']) for row in files)):
+        raise ValueError('References presentation must enumerate its three exact text edits')
+    if {edit['replacement'] for row in files for edit in row['edits']} != set(range(len(pool))):
+        raise ValueError('References replacement pool must contain exactly its used text segments')
+    for name, (old_sha, old_size) in REFERENCES_PREDECESSOR_FILES.items():
+        old = references_predecessor_bytes(root, name)
+        if hashlib.sha256(old).hexdigest() != old_sha or len(old) != old_size:
+            raise ValueError('References predecessor differs from fixed f70a8e7: '+name)
+        if old == project_file(root, name).read_bytes():
+            raise ValueError('References declaration lists an unchanged predecessor file: '+name)
+    changes = data.get('changes')
+    if (not isinstance(changes, list) or len(changes) != 1
+            or not isinstance(changes[0], dict) or changes[0].get('path') != 'index.html'):
+        raise ValueError('References may change only the existing homepage')
+    item = changes[0]; old = entries['index.html']
+    before = references_predecessor_bytes(root, 'site/index.html')
+    after = project_file(root, 'site/index.html').read_bytes()
+    if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']
+            or hashlib.sha256(before).hexdigest() != old['sha256'] or len(before) != old['bytes']
+            or item.get('new_sha256') != hashlib.sha256(after).hexdigest() or item.get('new_bytes') != len(after)
+            or not isinstance(item.get('reason'), str) or not item['reason'].strip()):
+        raise ValueError('References homepage differs from its complete old/new identities')
+    source, current = before.decode('utf-8'), after.decode('utf-8')
+    begin, end = '<!-- REFERENCES:BEGIN -->', '<!-- REFERENCES:END -->'
+    if current.count(begin) != 1 or current.count(end) != 1:
+        raise ValueError('References homepage requires exactly one complete final block')
+    a, b = current.index(begin), current.index(end)+len(end)
+    if a >= b or not current[b:].startswith('\n</main>'):
+        raise ValueError('References must be the final main-content section')
+    block = current[a:b]
+    if (current[:a]+current[b+1:] != source or block.count('id="references"') != 1
+            or '<h2>参考资料</h2>' not in block or block.count('<li ') != 8
+            or '致谢' in block or 'ACKNOWLEDGEMENTS' in current):
+        raise ValueError('The homepage change must consist only of the final references block')
+    readme = project_file(root, 'README.md').read_text('utf-8')
+    previous_readme = references_predecessor_bytes(root, 'README.md').decode('utf-8')
+    old_intro = '平台以《氟缘笃志：陈庆云传》、原始论文和机构公开资料为依据，介绍陈先生的研究道路，沿九条成果线呈现开拓性成就、具名合作与育人故事。'
+    new_intro = '沿着陈先生的研究道路，按九条成果线呈现开拓性成就、具名合作与育人故事。'
+    marker = '## 参考资料'
+    if (readme.count(marker) != 1 or readme.rsplit('\n## ', 1)[1].splitlines()[0] != '参考资料'
+            or readme.split(marker)[0].rstrip() != previous_readme.replace(old_intro, new_intro, 1).rstrip()
+            or readme.count('《氟缘笃志：陈庆云传》') != 1
+            or '《氟缘笃志：陈庆云传》' not in readme.split(marker)[1]
+            or readme.split(marker)[1].count('\n- **') != 8 or '致谢' in readme):
+        raise ValueError('README must move its source context to final references only')
+    from public_line_labels import project_html, project_markdown
+    if project_html(current, 'index.html') != current or project_markdown(readme) != readme:
+        raise ValueError('References must preserve canonical named achievement references')
+    updated = {name: dict(row) for name, row in entries.items()}
+    updated['index.html'] = {**old, 'sha256': item['new_sha256'], 'bytes': item['new_bytes'],
+                              'presentation_id': PRESENTATION_V14_ID}
+    for name, expected in updated.items():
+        member = project_file(root, 'site/'+name)
+        if digest(member) != expected['sha256'] or member.stat().st_size != expected['bytes']:
+            raise ValueError('References changed an unlisted website byte: '+name)
+    members = publication_members(root, updated)
+    report = {'path': PRESENTATION_V14_PATH, 'sha256': digest(path), 'presentation_id': PRESENTATION_V14_ID,
+        'publication_kind': required['publication_kind'], 'changed_paths': ['index.html'],
+        'added_paths': [], 'previous_presentation_commit': PRESENTATION_V14_PREVIOUS_COMMIT,
+        'exact_predecessor_reconstruction': True, 'homepage_final_references_only': True,
+        'research_and_other_routes_unchanged': True, 'original_embedded_json_bytes_preserved': True,
         'published_member_count_with_marker': len(members)+1,
         **{key: required[key] for key in ('scientific_review_status', 'scientific_data_unchanged',
             'historical_achievement_independent_of_AI_review', 'release_eligible', 'M0_resumed')}}
