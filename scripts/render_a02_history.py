@@ -40,11 +40,15 @@ def load(root: Path) -> dict:
     technical = data.get('technical_records', [])
     if [r['id'] for r in technical] != ['a02-technical-hfp','a02-technical-rubber','a02-technical-oil']:
         raise ValueError('A02 technical records must keep three independently attributed objects')
-    for row in data['history_cards']+data['cooperation']+[data['paper']]+technical:
+    team = data.get('team_records', [])
+    if ([r['id'] for r in team] != ['a02-team-hfp','a02-team-rubber','a02-team-oil']
+            or any(r.get('original_records_obtained') is not False for r in team)):
+        raise ValueError('Team history must distinguish three objects with technical originals still pending')
+    for row in data['history_cards']+data['cooperation']+[data['paper']]+technical+team:
         if not row['source_refs'] or any(s not in sources for s in row['source_refs']):
             raise ValueError('Missing A02 source attribution')
-    for row in technical:
-        if row['original_pdf_obtained'] and not re.fullmatch(r'[a-f0-9]{64}', row['pdf_sha256'] or ''):
+    for row in technical+team:
+        if row.get('original_pdf_obtained') and not re.fullmatch(r'[a-f0-9]{64}', row['pdf_sha256'] or ''):
             raise ValueError('Acquired technical original must have a document fingerprint')
         for table in row['tables']:
             if not table['columns'] or any(len(r)!=len(table['columns']) for r in table['rows']):
@@ -65,9 +69,12 @@ def listing(rows):
     return '<ul>'+''.join('<li>'+esc(row)+'</li>' for row in rows)+'</ul>'
 
 
-def technical_html(data: dict) -> str:
-    out = ['<article id="a02-technical-records"><span class="status">技术与物性原始记录</span><h2>制取、材料与氟油：证据分别呈现</h2><p>以下资料按原作者与材料身份单列。他组同期方法、机构成果登记及相关材料实测各有用途；与陈先生团队历史工作的关联，须由原始档案逐项建立。</p>']
-    for record in data['technical_records']:
+def technical_html(data: dict, *, team=False) -> str:
+    if team:
+        out = ['<article id="a02-team-records"><span class="status">陈先生团队的研究贡献与合作</span><h2>单体制取、低温分离与材料接续</h2><p>依据传记与机构公开资料，呈现陈先生及合作者解决的具体问题。下列三项的同期技术原件仍未取得，已有叙述与待核原件分别标明；公开检索未取得原件，不表示档案不存在或历史成就不成立。</p>']
+    else:
+        out = ['<article id="a02-technical-records"><span class="status">技术与物性原始记录</span><h2>制取、材料与氟油：证据分别呈现</h2><p>以下资料按原作者与材料身份单列。他组同期方法、机构成果登记及相关材料实测各有用途；与陈先生团队历史工作的关联，须由原始档案逐项建立。</p>']
+    for record in data['team_records' if team else 'technical_records']:
         out += ['<section id="'+esc(record['id'])+'"><h3>'+esc(record['title'])+'</h3><p class="a02-locator">'+esc(record['identity'])+'</p><p>'+esc(record['description'])+'</p>']
         for i, table in enumerate(record['tables']):
             caption=record['id']+'-table-'+str(i+1)
@@ -84,14 +91,15 @@ def render_block(data: dict) -> str:
     cards = data['history_cards']
     out = [BEGIN, '<style id="a02-academic-css">header h1{text-wrap:balance}#a02-paper-table{overflow-x:auto;max-width:100%}#a02-paper-table table{border-collapse:collapse;min-width:650px;width:100%;font-size:.9rem}#a02-paper-table th,#a02-paper-table td{border:1px solid var(--line);padding:12px;text-align:left;vertical-align:top}#a02-paper-table th{background:#edf3ee}.a02-meaning{border-left:3px solid #aa7545;padding:8px 16px;background:#f7f4eb}.a02-locator{font-size:.88rem;color:var(--muted)}#a02-primary-sources{overflow-wrap:anywhere}</style>',
            '<article id="topic-fluoromonomers" data-topic-slug="fluoromonomers" data-topic-type="dossier"><span class="status">A02 · 原始学术成果与合作</span><h2>'+esc(data['title'])+'</h2><p>'+esc(data['intro'])+'</p>',
-           '<nav aria-label="A02专题导航"><a href="#a02-monomers">单体与分离</a> · <a href="#a02-materials">氟橡胶与团队</a> · <a href="#record-fluorinated-oils">氟油</a> · <a href="#a02-technical-records">技术与物性记录</a> · <a href="#a02-vdf-1980">1980年原刊</a> · <a href="#a02-cooperation">合作故事</a> · <a href="#refs">来源与待核事项</a></nav>']
+           '<nav aria-label="A02专题导航"><a href="#a02-monomers">单体与分离</a> · <a href="#a02-materials">氟橡胶与团队</a> · <a href="#record-fluorinated-oils">氟油</a> · <a href="#a02-team-records">团队贡献与原件追查</a> · <a href="#a02-vdf-1980">1980年原刊</a> · <a href="#a02-cooperation">合作故事</a> · <a href="#a02-technical-records">相关技术背景</a> · <a href="#refs">来源与待核事项</a></nav>']
     out.insert(2, '<style>.a02-technical-table{overflow-x:auto;max-width:100%}.a02-technical-table table{border-collapse:collapse;min-width:650px;width:100%;font-size:.9rem}.a02-technical-table th,.a02-technical-table td{border:1px solid var(--line);padding:12px;text-align:left;vertical-align:top}.a02-technical-table th{background:#edf3ee}#a02-technical-records section+section{margin-top:36px;border-top:1px solid var(--line);padding-top:24px}</style>')
+    out.insert(3, '<style>#a02-team-records section+section{margin-top:36px;border-top:1px solid var(--line);padding-top:24px}#a02-context-background>summary{cursor:pointer;padding:20px;font-weight:700;color:var(--teal);border:1px solid var(--line)}#a02-context-background{margin:24px 0}</style>')
     for card in cards[:2]:
         out += ['<section id="'+esc(card['id'])+'"><h3>'+esc(card['title'])+'</h3><p>'+esc(card['text'])+'</p><p class="a02-meaning"><b>学术意义：</b>'+esc(card['meaning'])+'</p><p class="a02-locator">'+esc(card['locator'])+' · '+refs(card['source_refs'], data)+'</p></section>']
     out += ['<p><a href="../../research/index.html#ai-a02">AI辅助资料整理与研究 →</a> · <a href="'+REPO+DOCUMENT+'">完整学术贡献与证据说明 →</a></p></article>']
     card = cards[2]
     out += ['<article id="record-fluorinated-oils"><span class="status">A02 · 氟油研究</span><h2>'+esc(card['title'])+'</h2><p>'+esc(card['text'])+'</p><p class="a02-meaning"><b>学术意义：</b>'+esc(card['meaning'])+'</p><p class="a02-locator">'+esc(card['locator'])+' · '+refs(card['source_refs'],data)+'</p>'+listing(card['limits'])+'</article>']
-    out += [technical_html(data)]
+    out += [technical_html(data, team=True)]
     paper = data['paper']
     out += ['<article id="a02-vdf-1980"><span class="status">原始论文 · AI辅助核读</span><h2>'+esc(paper['title'])+'</h2><p><b>原作者：</b>'+esc('、'.join(paper['authors']))+'；'+esc(paper['citation'])+'。</p><p>'+esc(paper['question'])+'</p><p><b>核读范围：</b>'+esc(paper['reading_scope'])+'</p>',
             '<p id="a02-table-caption"><b>原文观察、鉴定依据及其范围</b>（宽表可横向滑动）</p><div id="a02-paper-table" role="region" tabindex="0" aria-labelledby="a02-table-caption"><table><thead><tr><th scope="col">研究对象／比较</th><th scope="col">原文结果与证据</th><th scope="col">原刊定位</th></tr></thead><tbody>']
@@ -102,7 +110,7 @@ def render_block(data: dict) -> str:
             '<article id="a02-cooperation"><span class="status">合作与研究接续</span><h2>共同攻关怎样支持学术成果</h2>']
     for story in data['cooperation']:
         out += ['<h3>'+esc(story['title'])+'</h3><p>'+esc(story['text'])+'</p><p class="a02-locator">'+esc(story['locator'])+' · '+refs(story['source_refs'],data)+'</p>']
-    out += ['</article><article id="refs"><span class="status">来源与证据范围</span><h2 id="a02-primary-sources">原始来源及资料性质</h2><ul>']
+    out += ['</article><details id="a02-context-background"><summary>同期他组与相关材料背景（与陈团队成果分别归属）</summary>',technical_html(data),'</details><article id="refs"><span class="status">来源与证据范围</span><h2 id="a02-primary-sources">原始来源及资料性质</h2><ul>']
     for source in data['sources']:
         title = '<a href="'+esc(source['url'])+'">'+esc(source['title'])+'</a>' if source['url'] else esc(source['title'])
         out += ['<li id="'+esc(source['anchor'])+'"><b>'+esc(source['id'])+'</b> · '+title+'；'+esc(source['kind'])+'。'+esc(source['locator'])+'</li>']
@@ -115,7 +123,16 @@ def render_document(data: dict) -> str:
     for card in data['history_cards']:
         out += ['## '+card['title'],'',card['text'],'','**学术意义：**'+card['meaning'],'','出处：'+card['locator']+'；'+'、'.join(card['source_refs'])+'。','']
         out += ['- '+s for s in card.get('limits',[])]+['']
-    out += ['## 制取、材料与氟油：技术与物性记录','','他组同期方法、机构成果登记及相关材料实测按原作者和材料身份分别呈现；与陈先生团队工作的关联仍须原始档案支持。','']
+    out += ['## 陈先生团队：具体贡献与原件追查','','依据传记与机构资料细化研究对象和合作分工；同期技术原件仍待取得，不以其他团队数据填补。公开检索未取得不表示原件不存在或原成就不成立。','']
+    for record in data['team_records']:
+        out += ['### '+record['title'],'',record['identity'],'',record['description'],'']
+        for table in record['tables']:
+            out += ['**'+table['caption']+'**','','| '+' | '.join(table['columns'])+' |','|'+'|'.join('---' for _ in table['columns'])+'|']
+            out += ['| '+' | '.join(row)+' |' for row in table['rows']]
+            out += ['']+['- '+s for s in table['notes']]+['']
+        out += ['**署名与合作：**'+record['attribution'],'','**学术意义与范围：**'+record['meaning'],'','待取得原件：','']+['- '+s for s in record['pending']]+['','已核读范围：'+record['reading_scope'],'','出处：'+'、'.join(record['source_refs'])+'。','']
+        out += ['['+v['title']+']('+v['url']+')' for v in record['links']]+['']
+    out += ['## 同期他组与相关材料背景','','以下不作陈团队同期原始成果证据；原作者、材料身份和原报数据保留。','']
     for record in data['technical_records']:
         out += ['### '+record['title'],'',record['identity'],'',record['description'],'']
         for table in record['tables']:
@@ -167,10 +184,12 @@ def inspect_a02_history(root: Path=ROOT) -> dict:
         page=PageLinks(expected)
         if any(v!=1 for v in page.ids.values()) or page.json_payloads:
             raise ValueError('A02 cannot duplicate identities or add embedded source JSON')
-        for ident in ['topic-fluoromonomers','record-fluorinated-oils','refs','ref-r28','ref-s1','a02-vdf-1980','a02-technical-records']+[r['id'] for r in data['technical_records']]:
+        for ident in ['topic-fluoromonomers','record-fluorinated-oils','refs','ref-r28','ref-s1','a02-vdf-1980','a02-technical-records','a02-team-records','a02-context-background']+[r['id'] for r in data['technical_records']+data['team_records']]:
             if page.ids[ident]!=1:raise ValueError('A02 lost a source or topic identity: '+ident)
         for url in page.links:check_link(root,PAGE,url,{PAGE:expected})
-        report.update(status='passed',source_sha256=hashlib.sha256((root/CONTENT).read_bytes()).hexdigest(),history_cards=3,cooperation_stories=2,technical_records=len(data['technical_records']),technical_tables=sum(len(r['tables']) for r in data['technical_records']),primary_observations=len(data['paper']['observations']),original_pdf_redistributed=False)
+        if expected.index('id="a02-team-records"') >= expected.index('id="a02-technical-records"'):
+            raise ValueError('Attributed team work must precede contextual technical records')
+        report.update(status='passed',source_sha256=hashlib.sha256((root/CONTENT).read_bytes()).hexdigest(),history_cards=3,cooperation_stories=2,team_records=len(data['team_records']),new_team_technical_originals=0,technical_records=len(data['technical_records']),technical_tables=sum(len(r['tables']) for r in data['technical_records']),primary_observations=len(data['paper']['observations']),original_pdf_redistributed=False)
     except (OSError,ValueError,KeyError,TypeError) as error:report['errors'].append(str(error))
     return report
 

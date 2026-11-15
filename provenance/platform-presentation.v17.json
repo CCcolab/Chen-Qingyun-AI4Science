@@ -1,0 +1,1674 @@
+{
+  "schema_version": "17.0",
+  "presentation_id": "PLATFORM-A02-TEAM-RECORDS-20261115-v17",
+  "created_at_utc": "2026-11-15T02:05:17.511994+00:00",
+  "publication_kind": "platform_a02_team_records",
+  "authorization": "User request dated 2026-11-15: prioritize Chen Qingyun and his team’s original A02 records; trace preparation and low-temperature separation of hexafluoropropylene, fluororubber No. 2 and No. 3, and telomer fluorobromo oils; clarify sourced personal contributions and cooperation, list specific unavailable originals, preserve all earlier technical-background records and tables, keep historical achievements separate from new AI work, keep M0 paused, then synchronize GitHub and website",
+  "previous_presentation_commit": "936ca1d990c0d3f695dd7281b1b01aaa07662a10",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v16.json",
+    "sha256": "6b975e980d176ecc481449ca5a96ffadadfecae2eb64d97dfdafb75b85b4a3c0"
+  },
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "allowed_html_paths": [
+    "achievements/index.html",
+    "research/index.html",
+    "topics/fluoromonomers/index.html"
+  ],
+  "added_html_paths": [],
+  "allowed_achievement_lines": [
+    "A02"
+  ],
+  "editorial_documents": [
+    {
+      "path": "content/a02-academic-achievements.v1.json",
+      "sha256": "51c77cc96b4b9db06d695bc5ffdae311ffb2082048ec98adbbe98de9b0b078eb",
+      "bytes": 38173
+    },
+    {
+      "path": "scripts/render_a02_history.py",
+      "sha256": "47df27ddd51f676847e718a18dc8c57429ac743de13b95eb6eec8d8a5653be1d",
+      "bytes": 18491
+    },
+    {
+      "path": "docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "sha256": "2fa00a8628b9d3d0af028e1472ca852119ad019710b4e846b6ce6b4423e593d8",
+      "bytes": 29258
+    },
+    {
+      "path": "content/ai-research-section.v1.json",
+      "sha256": "99cba00df70792791a76e50ff4deb7ad20cea58dfef7f6fc4446918cff256b75",
+      "bytes": 65891
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "sha256": "c354182622f067853bf6b5b0d6310a6f81aa9f7615361a2febb5f9eb9b60107e",
+      "bytes": 35191
+    },
+    {
+      "path": "scripts/render_ai_research.py",
+      "sha256": "729298ecb6146cba6b9a78bdc2074dabb10b6a2f551f7efaf4d0a4078e29f521",
+      "bytes": 34792
+    },
+    {
+      "path": "scripts/public_line_labels.py",
+      "sha256": "27776862621369ea922d97cc5a1d0ff927f1ec2aa5cbe93a0cacf66fee27f695",
+      "bytes": 9737
+    },
+    {
+      "path": "scripts/check_site.py",
+      "sha256": "70b9d2e3c2a8cd13cec93530ec9092761fe8731eccae7aa055ba280c4dfe1fae",
+      "bytes": 23307
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "sha256": "665aedd2071d06da0530a345aa454c37a5535172fb260fd1e2a3ee449a40698e",
+      "bytes": 204809
+    },
+    {
+      "path": "scripts/render_heritage.py",
+      "sha256": "07b1698b1c0485accd96cc0a6d6730bb164258e003737c9f370919920768f27d",
+      "bytes": 42653
+    },
+    {
+      "path": "docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "sha256": "ae083f26ea6a5699f5443335569fb10f95d7a12db24c449489b9cead2fd30072",
+      "bytes": 69712
+    }
+  ],
+  "protected_website_members": {
+    "index.html": {
+      "sha256": "8b3532ee45c0fb33912f20a3bd7943043a348f10a370b9c6716e9edf3c0abf41",
+      "bytes": 257766
+    },
+    "pftb/index.html": {
+      "sha256": "42ca404f2ed70b7a3b0b5d8b0eb742a2509e5a5a70fd0be36a65028e61cbd1f6",
+      "bytes": 97587
+    },
+    "topics/f53/index.html": {
+      "sha256": "8def3379a75dda6665d7cb3ee6c32193fc7a61ec6b31098abbefe9218fea39fe",
+      "bytes": 8161
+    },
+    "topics/refrigerants/index.html": {
+      "sha256": "5d9b5a355b949f67c5de252727f8d4e4e7533abab8a666c49a0f932170153c4e",
+      "bytes": 10636
+    },
+    "topics/perfluorosulfonates/index.html": {
+      "sha256": "85a6f4330edb7607f61ca217b71d2ef6c12cb1af0d48aaaebf737acf3a212ea5",
+      "bytes": 8888
+    },
+    "topics/chen-reagent/index.html": {
+      "sha256": "14f08afd4062c0ae171f24e5fb225e5968b003e885edc206baf08ca352b630df",
+      "bytes": 19991
+    },
+    "topics/single-electron-transfer/index.html": {
+      "sha256": "79c84f89e25e576a03f34153b9eb85a5ff73815c8265a0222930d889390ea947",
+      "bytes": 10355
+    },
+    "topics/fluoroporphyrins/index.html": {
+      "sha256": "24b6bb744b594573487847c89bbb35571ea56bc15d444ebeac3339379dbc1875",
+      "bytes": 6018
+    },
+    "topics/early-fluoroketones/index.html": {
+      "sha256": "a6da86d7f9ff0f35a5ea044252297a23e5ed71db829f2d184e3ab38a70dce9a2",
+      "bytes": 250938
+    },
+    "topics/fluorinated-small-rings/index.html": {
+      "sha256": "2413c83d4319746f41e940c04fe48bdeda28244235f5a9e8697285c187ba412d",
+      "bytes": 5924
+    },
+    "topics/deoxyfluorination/index.html": {
+      "sha256": "2aca9c13eb46f9fedfb02a2adfdc9423c207465f58608bcd671838d4d8045df5",
+      "bytes": 5550
+    },
+    "topics/sulfonyl-fluoride/index.html": {
+      "sha256": "fe944efbbfa5a7814015235f4ae3aae101db4046b0c9419986d6855d7ed15b49",
+      "bytes": 5043
+    },
+    "topics/index.html": {
+      "sha256": "44a5690d1e65195b9ff191d2a7ec37487070cdfafb191ae107962d5e0d7ab73c",
+      "bytes": 5055
+    },
+    "data/public-sources.json": {
+      "sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+      "bytes": 33608
+    },
+    "data/achievement-lines.json": {
+      "sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+      "bytes": 39768
+    },
+    "README.txt": {
+      "sha256": "6e15068b7240ae47d633df3f777e81fbb9e46146ee5f4ab70011f09119b6bbc9",
+      "bytes": 336
+    },
+    "ROUTES.txt": {
+      "sha256": "a734c356877d4534285ab7d71b9fe0f7a17abbced4de3c52f8e60d335301e418",
+      "bytes": 949
+    },
+    "QA.txt": {
+      "sha256": "a60b5f382b31689fa17e2518b7079ef0660674fb62bddbbf564c7b74dfe51067",
+      "bytes": 290
+    },
+    "IONIC-ENTRY-RETEST.txt": {
+      "sha256": "3462b056891a27c335cc2620deb87b245b6c9aea3bdaec607c8a14beca69fe9d",
+      "bytes": 741
+    }
+  },
+  "reconstruction_kind": "deduplicated_exact_utf8_text_edits",
+  "reverse_text_patch_pool": [
+    {
+      "old": "",
+      "new": ","
+    },
+    {
+      "old": "",
+      "new": "    \"传记p.37从二氟一氯甲烷制四氟乙烯的观察谈起；与机构TFE／PTFE记载的原料、过程层次及批次关系待原始工艺核对，不武断判定矛盾或拼成单一路线。\",\n    \"《陈庆云访谈》2018-01-03原录音／逐字稿、六氟丙烯同期试制和装置原件未取得；低温分馏分工仍据传记。\",\n    \"FJ-23登记与晚近1号授奖回顾分列；1966原证书、历史2号／3号技术物性附件待核。\",\n    \"氟溴油传记引《中国科学院》2009版p.291缺册次；已定位较早版馆藏与电子书检索途径，未取得目标原页。\"\n"
+    },
+    {
+      "old": "",
+      "new": "AI工作包括"
+    },
+    {
+      "old": "完成",
+      "new": "有原刊核读，以及"
+    },
+    {
+      "old": "",
+      "new": "与机构材料的对读"
+    },
+    {
+      "old": "1980年调聚",
+      "new": ""
+    },
+    {
+      "old": "刊以及1963",
+      "new": "料／牌号消歧"
+    },
+    {
+      "old": "1986年相关",
+      "new": "来源定位和原件缺口整理。陈团队的贡献叙述与同期原始"
+    },
+    {
+      "old": "原文的AI辅助核读、对象消歧和数据提取；机构成果登记另按其",
+      "new": ""
+    },
+    {
+      "old": "层级记录",
+      "new": "分开：本次公开追查未取得新的六氟丙烯试制／装置、2号／3号技术物性或早期氟溴油原件"
+    },
+    {
+      "old": "历史成果及",
+      "new": "其"
+    },
+    {
+      "old": "组实测均归原作者、合作者，不将同期背景或",
+      "new": "团队和"
+    },
+    {
+      "old": "数据移归陈先生",
+      "new": "仅作背景"
+    },
+    {
+      "old": "，",
+      "new": "；"
+    },
+    {
+      "old": "",
+      "new": "    },\n    {\n      \"id\": \"A02-TEAM-MMCS2025\",\n      \"anchor\": \"a02-source-mmcs2025\",\n      \"title\": \"中国科学家博物馆：陈庆云专题报道（上海有机所供稿）\",\n      \"url\": \"https://www.mmcs.org.cn/xwz/kxjrl/art/2025/art_63580329680c4348b69105bfbcb7749c.html\",\n      \"kind\": \"机构供稿的历史回顾，非同期试制报告\",\n      \"locator\": \"2025-01-26；六氟丙烯首项任务、团队条件探索与1963年迁沪段\"\n    },\n    {\n      \"id\": \"A02-TEAM-IC-HISTORY\",\n      \"anchor\": \"a02-source-ic-history\",\n      \"title\": \"中国科学院化学研究所：历史沿革\",\n      \"url\": \"https://ic.cas.cn/about/lsyg/\",\n      \"kind\": \"机构第一方沿革，非人员交接原件\",\n      \"locator\": \"发展历程：有机氟工作于1963年并入上海有机所\"\n    },\n    {\n      \"id\": \"A02-TEAM-JIANG-RECOLLECTION\",\n      \"anchor\": \"a02-source-jiang-recollection\",\n      \"title\": \"黎占亭：蒋锡夔院士诞辰100周年纪念（复旦大学网页）\",\n      \"url\": \"https://chenjiang.fudan.edu.cn/0b/95/c48389a789397/page.htm\",\n      \"kind\": \"学者纪念回顾，非1966年发明证书或技术附件\",\n      \"locator\": \"第5节“研制中国第一块氟橡胶”：组长／副组长、1号与1966年证书叙述；无FJ-23编号或证书图\"\n    },\n    {\n      \"id\": \"A02-TEAM-CATALOG\",\n      \"anchor\": \"a02-source-catalog\",\n      \"title\": \"CiNii Books：《中国科学院》1994版馆藏目录\",\n      \"url\": \"https://ci.nii.ac.jp/ncid/BA71150630\",\n      \"kind\": \"书目与馆藏记录，不是2009版正文\",\n      \"locator\": \"NCID BA71150630；上、中、下三册；ISBN 7800920984。仅用于提示核对版次／册次\"\n    },\n    {\n      \"id\": \"A02-TEAM-GALE\",\n      \"anchor\": \"a02-source-gale\",\n      \"title\": \"NTU图书馆保存的Gale《当代中国丛书》介绍\",\n      \"url\": \"https://www.lib.ntu.edu.tw/doc/CL/ebook/2012/12_china.pdf\",\n      \"kind\": \"电子书丛书介绍，不含目标《中国科学院》第291页\",\n      \"locator\": \"2页介绍册：2009纸本与2011电子书；提供图书馆版本追查入口，不能证明目标页内容\"\n"
+    },
+    {
+      "old": "氟油",
+      "new": "陈团队单体试制／装置／分离"
+    },
+    {
+      "old": "始配方／交付和历史",
+      "new": "件；"
+    },
+    {
+      "old": "",
+      "new": "逐牌号技术"
+    },
+    {
+      "old": "",
+      "new": "；早期氟溴油所引原页和交付"
+    },
+    {
+      "old": "；相关1963／1986技术记录的身份衔接",
+      "new": ""
+    },
+    {
+      "old": "补陈团队单体",
+      "new": "优先取得2018本人访谈原录与1960–1963"
+    },
+    {
+      "old": "／",
+      "new": "、装置及"
+    },
+    {
+      "old": "",
+      "new": "档案；并追1966证书"
+    },
+    {
+      "old": "历史",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "技术附件"
+    },
+    {
+      "old": "氟溴油原始物性档案；新取得的他组同期及相关材料原文按范围单列",
+      "new": "2009版《中国科学院》正确册次p.291"
+    },
+    {
+      "old": "核读",
+      "new": "细化据传记的单体路线、分离及合作贡献，列明原件定位与未取得项；"
+    },
+    {
+      "old": "、",
+      "new": "已读，其他团队和"
+    },
+    {
+      "old": "1963／1986技术原文与机构登记",
+      "new": "材料仅作背景"
+    },
+    {
+      "old": "提取有条件的物性记录；",
+      "new": ""
+    },
+    {
+      "old": "复",
+      "new": "科学计"
+    },
+    {
+      "old": "、",
+      "new": "或"
+    },
+    {
+      "old": "或材料性能验证",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "  ],\n  \"team_records\": [\n    {\n      \"id\": \"a02-team-hfp\",\n      \"title\": \"六氟丙烯：从副产物观察到制取与分离问题\",\n      \"identity\": \"陈先生团队工作 · 据传记与机构回顾；同期试制／装置原件未取得\",\n      \"description\": \"据传记p.35–37，陈庆云1960年秋加入蒋锡夔的氟橡胶组后，首项任务是改善六氟丙烯来源。已有样品并未解决原料供给；新的裂解路线还必须解决副产物多、低温分离困难的问题。机构供稿也将贡献具体落在六氟丙烯获取与团队条件探索上。\",\n      \"tables\": [\n        {\n          \"caption\": \"传记所记研究问题与技术环节\",\n          \"columns\": [\n            \"环节\",\n            \"传记中的具体叙述\",\n            \"仍需原件确认\"\n          ],\n          \"rows\": [\n            [\n              \"实验观察\",\n              \"在二氟一氯甲烷高温裂解制四氟乙烯的研究中，延长裂解时间时发现少量六氟丙烯\",\n              \"实验日期、操作者、投料与原始组成记录\"\n            ],\n            [\n              \"路线探索\",\n              \"陈与蒋等讨论条件优化，使研究目标转向获得更多六氟丙烯\",\n              \"具体工况、停留时间、转化率、选择性及收率\"\n            ],\n            [\n              \"分离难题\",\n              \"低温冷凝、分馏后按沸点差异分收，副产物分离成为关键环节\",\n              \"装置图、分馏温度／压力、馏分和纯度记录\"\n            ],\n            [\n              \"研究条件\",\n              \"高温炉、低温分馏仪和检测仪器需要自行制作\",\n              \"设计者、制作人员、图纸、仪器型号及检测校准档案\"\n            ]\n          ],\n          \"notes\": [\n            \"这是历史研究过程的释读，不是可执行的现代实验协议。书中600–700°C属于四氟乙烯裂解的背景叙述，不能当作已核实的陈团队新路线工况。\"\n          ]\n        },\n        {\n          \"caption\": \"原料称谓与过程层次分别登记\",\n          \"columns\": [\n            \"来源\",\n            \"所载起点或过程\",\n            \"目前处理\"\n          ],\n          \"rows\": [\n            [\n              \"传记p.37\",\n              \"从二氟一氯甲烷制四氟乙烯的观察谈起，随后讨论直接裂解获取六氟丙烯；同段也提四氟乙烯气体裂解\",\n              \"保留上下文，尚未取得完整流程原件\"\n            ],\n            [\n              \"上海有机所生平\",\n              \"四氟乙烯高温裂解路线\",\n              \"保留机构原叙述，不自动等同传记全部流程\"\n            ],\n            [\n              \"上海有机所纪念资料\",\n              \"聚四氟乙烯高温裂解路线\",\n              \"与其他记载分列，待原料链和批次证据核对\"\n            ]\n          ],\n          \"notes\": [\n            \"这些称谓可能涉及起始原料、中间体或不同操作阶段；现阶段既不直接认定互相矛盾，也不拼接成已经证实的单一工艺。他组1963年论文不能解决陈团队的路线身份。\"\n          ]\n        }\n      ],\n      \"attribution\": \"据传记，蒋锡夔与陈庆云等共同讨论任务；陈与技术人员承担低温分馏实验，另有同事保障冷冻介质和物资。书中未列参与这些操作的完整姓名，也没有“陈指导技术人员”的上下级表述。留苏期间的操作经验与新任务的联系，仍按传记叙述身份保留。\",\n      \"meaning\": \"开拓性贡献应具体呈现为围绕单体供应，把裂解观察、条件探索与复杂混合物分离结合起来，为后续材料工作创造原料条件；不缩写成个人独立完成全部橡胶，也不在缺少原表时添加产率或优先权结论。\",\n      \"pending\": [\n        \"已定位《陈庆云访谈》2018-01-03、学术成长资料采集工程数据库（传记p.36注①）；原录音／逐字稿尚未取得。p.37工艺段未另给同期试制报告编号。\",\n        \"1960–1963年试制报告、实验本、装置图、自制仪器和低温分离原表尚未取得；具体档号、人员署名与合作分工待核。\",\n        \"单体交付批次、纯度及化学所—上海有机所之间的技术移交原件待核。化学所沿革确认1963年机构接续，不能替代交接文件。\"\n      ],\n      \"source_refs\": [\n        \"HERITAGE-S01\",\n        \"CQ-R28\",\n        \"S1\",\n        \"A02-TEAM-MMCS2025\",\n        \"A02-TEAM-IC-HISTORY\"\n      ],\n      \"original_records_obtained\": false,\n      \"reading_scope\": \"已重读传记印刷p.35–37及p.114；机构回顾已读。未读取采集数据库原访谈或同期技术原件。\",\n      \"links\": [\n        {\n          \"title\": \"机构供稿：六氟丙烯任务与团队贡献\",\n          \"url\": \"https://www.mmcs.org.cn/xwz/kxjrl/art/2025/art_63580329680c4348b69105bfbcb7749c.html\"\n        },\n        {\n          \"title\": \"化学所1963年研究接续记录\",\n          \"url\": \"https://ic.cas.cn/about/lsyg/\"\n        }\n      ]\n    },\n    {\n      \"id\": \"a02-team-rubber\",\n      \"title\": \"氟橡胶2号、3号：材料接续与授奖原件追查\",\n      \"identity\": \"团队历史接续已有叙述 · 逐牌号技术与物性原件待核\",\n      \"description\": \"传记p.37将2号、3号的后续研制与六氟丙烯等单体工作联系起来；没有逐牌号给出共聚组成、配比和物性。陈先生1960年加入前的1号成果、其后承担的单体任务及团队材料工作仍分别归属。\",\n      \"tables\": [\n        {\n          \"caption\": \"可追查的证书线索及其资格\",\n          \"columns\": [\n            \"已有资料\",\n            \"能确认的记录\",\n            \"尚不能确认\"\n          ],\n          \"rows\": [\n            [\n              \"化学所获奖目录\",\n              \"1966年FJ-23合成方法及旧目录主要完成人登记\",\n              \"原证书编号、技术附件及与历史1号／2号／3号的对应\"\n            ],\n            [\n              \"黎占亭纪念文第5节\",\n              \"回顾组长蒋锡夔、副组长胡亚东及课题组接续，并把1966年发明证书联系到1号\",\n              \"该文未列FJ-23编号或证书图，不能凭同年授奖建立身份等号\"\n            ],\n            [\n              \"传记p.35–37\",\n              \"区分陈加入前的1号与其加入后的六氟丙烯及2号／3号工作\",\n              \"逐牌号试制日期、聚合记录、样品号、实测物性和逐人分工\"\n            ]\n          ],\n          \"notes\": [\n            \"新增回顾只提供查档方向。FJ-23、历史1号／2号／3号及现代商品牌号之间的对应，须有原始书面依据。\"\n          ]\n        }\n      ],\n      \"attribution\": \"先期1号按蒋锡夔、胡亚东等团队成果介绍；陈先生的单体获取和分离贡献另列。旧目录保留胡亚东、蒋锡夔、蒋丽金、路之康、王秀岗名单，不因一份项目名单替其他工作补作者或否定参与。\",\n      \"meaning\": \"材料成果依赖单体、聚合、表征、放大等合作环节；只有补齐逐牌号原件，才能进一步说明具体材料改进及各环节贡献。\",\n      \"pending\": [\n        \"1966年发明证书原图、编号与技术附件未取得；需要同时核对FJ-23登记和1号授奖回顾。\",\n        \"2号、3号同期任务书、试制／鉴定报告、聚合配方、样品编号和原始物性表未取得；不填补配比、强度、耐温或寿命数值。\",\n        \"化学所、上海有机所与试制／生产单位间的样品、单体及技术交接文件未取得。\"\n      ],\n      \"source_refs\": [\n        \"HERITAGE-S01\",\n        \"A02-TECH-FJ23\",\n        \"A02-TECH-FJ23-OLD\",\n        \"A02-TEAM-JIANG-RECOLLECTION\"\n      ],\n      \"original_records_obtained\": false,\n      \"reading_scope\": \"传记、机构成果登记与纪念文已核对；未取得历史2号／3号原始技术附件或物性原表。\",\n      \"links\": [\n        {\n          \"title\": \"黎占亭回顾：研究组与1966年证书线索\",\n          \"url\": \"https://chenjiang.fudan.edu.cn/0b/95/c48389a789397/page.htm\"\n        }\n      ]\n    },\n    {\n      \"id\": \"a02-team-oil\",\n      \"title\": \"早期调聚氟溴油：原料、研究室与实验厂接续\",\n      \"identity\": \"据传记转引的历史成果 · 所引原页、配方和物性原件未取得\",\n      \"description\": \"传记p.39记陈庆云与研究室同事以三氟溴乙烯为原料开展调聚氟溴陀螺油研究，随后接续到上海有机所实验厂生产；年表p.115把1964年的卤代烷／含氟烯烃调聚与制备氟油联系起来。两处没有给出完整配方、馏分、定量物性或人员分工表。\",\n      \"tables\": [\n        {\n          \"caption\": \"传记引据与下一份应取得的原件\",\n          \"columns\": [\n            \"现有依据\",\n            \"已到达的位置\",\n            \"待取得资料\"\n          ],\n          \"rows\": [\n            [\n              \"传记p.39注②\",\n              \"引《中国科学院》编辑委员会编，2009年，第291页；未标册次\",\n              \"2009版版权页、目录／册次页、p.291及相邻页\"\n            ],\n            [\n              \"CiNii同名1994版书目\",\n              \"上、中、下三册；只是较早版馆藏记录\",\n              \"核对2009版实际册次与页码，不能以1994版目录替代原页\"\n            ],\n            [\n              \"图书馆保存的Gale丛书介绍\",\n              \"提供电子书版本追查途径；介绍册不含目标页\",\n              \"通过合法馆藏取得目标书页，再追其原始引据或档号\"\n            ],\n            [\n              \"年表1964年条目及研究室—实验厂叙述\",\n              \"有历史研究与生产接续的记述\",\n              \"同批油品配方、密度／黏度／凝点原表、放大与交付记录\"\n            ]\n          ],\n          \"notes\": [\n            \"仅取得目录与丛书介绍，不等于取得《中国科学院》2009版正文。原页未明册次前，不预设在上、中或下册。\"\n          ]\n        }\n      ],\n      \"attribution\": \"陈与研究室同事的调聚研究、实验厂放大和使用单位检测应分别追踪；现有材料未列全部人员及逐人任务，暂不补姓名或个人份额。早期氟溴油与机构全氟烃油、后来的氟氯液体分别登记。\",\n      \"meaning\": \"可以说明陈先生的含氟反应研究与特定液体材料需求相衔接；对产品身份、性能和工厂协作的进一步评价，仍依赖原始技术与交付证据。\",\n      \"pending\": [\n        \"2009版《中国科学院》正确册次的p.291及相邻页仍未取得，传记转引尚未闭合。\",\n        \"1964年前后调聚氟溴油的实验记录、配方／工艺报告、馏分与批次标识、原始物性及测试条件仍未取得。\",\n        \"实验厂放大、供样、应用测试与交接原件及完整分工仍待核；没有已核实档号，不推定资料不存在或涉密。\"\n      ],\n      \"source_refs\": [\n        \"HERITAGE-S01\",\n        \"A02-TEAM-CATALOG\",\n        \"A02-TEAM-GALE\"\n      ],\n      \"original_records_obtained\": false,\n      \"reading_scope\": \"已核传记p.39注②及年表p.115；馆藏书目与电子书介绍可读，目标2009版书页未取得。\",\n      \"links\": [\n        {\n          \"title\": \"CiNii同名1994版馆藏目录（非2009原页）\",\n          \"url\": \"https://ci.nii.ac.jp/ncid/BA71150630\"\n        },\n        {\n          \"title\": \"图书馆电子书丛书介绍（非目标正文）\",\n          \"url\": \"https://www.lib.ntu.edu.tw/doc/CL/ebook/2012/12_china.pdf\"\n        }\n      ]\n    }\n"
+    },
+    {
+      "old": "",
+      "new": "    team = data.get('team_records', [])\n    if ([r['id'] for r in team] != ['a02-team-hfp','a02-team-rubber','a02-team-oil']\n            or any(r.get('original_records_obtained') is not False for r in team)):\n        raise ValueError('Team history must distinguish three objects with technical originals still pending')\n"
+    },
+    {
+      "old": "",
+      "new": "+team"
+    },
+    {
+      "old": "[",
+      "new": ".get("
+    },
+    {
+      "old": "]",
+      "new": ")"
+    },
+    {
+      "old": "",
+      "new": ", *, team=False"
+    },
+    {
+      "old": "",
+      "new": "    if team:\n        out = ['<article id=\"a02-team-records\"><span class=\"status\">陈先生团队的研究贡献与合作</span><h2>单体制取、低温分离与材料接续</h2><p>依据传记与机构公开资料，呈现陈先生及合作者解决的具体问题。下列三项的同期技术原件仍未取得，已有叙述与待核原件分别标明；公开检索未取得原件，不表示档案不存在或历史成就不成立。</p>']\n    else:\n    "
+    },
+    {
+      "old": "",
+      "new": "am_records' if team else 'te"
+    },
+    {
+      "old": "chnic",
+      "new": ""
+    },
+    {
+      "old": "l",
+      "new": "m"
+    },
+    {
+      "old": "技术",
+      "new": "团队贡献"
+    },
+    {
+      "old": "物性记录",
+      "new": "原件追查"
+    },
+    {
+      "old": "",
+      "new": "a02-technical-records\">相关技术背景</a> · <a href=\"#"
+    },
+    {
+      "old": "",
+      "new": "    out.insert(3, '<style>#a02-team-records section+section{margin-top:36px;border-top:1px solid var(--line);padding-top:24px}#a02-context-background>summary{cursor:pointer;padding:20px;font-weight:700;color:var(--teal);border:1px solid var(--line)}#a02-context-background{margin:24px 0}</style>')\n"
+    },
+    {
+      "old": "",
+      "new": ", team=True"
+    },
+    {
+      "old": "",
+      "new": "><details id=\"a02-context-background\"><summary>同期他组与相关材料背景（与陈团队成果分别归属）</summary>',technical_html(data),'</details"
+    },
+    {
+      "old": "制取、材料",
+      "new": "陈先生团队：具体贡献"
+    },
+    {
+      "old": "氟油：技术与物性记录",
+      "new": "原件追查"
+    },
+    {
+      "old": "他组",
+      "new": "依据传记与机构资料细化研究对象和合作分工；"
+    },
+    {
+      "old": "方法、机构成果登记及相关材料实测按",
+      "new": "技术"
+    },
+    {
+      "old": "作者和材料身份分别呈现；与陈先生",
+      "new": "件仍待取得，不以其他"
+    },
+    {
+      "old": "工作的关联仍须",
+      "new": "数据填补。公开检索未取得不表示"
+    },
+    {
+      "old": "始档案支持",
+      "new": "件不存在或原成就不成立"
+    },
+    {
+      "old": "",
+      "new": "    for record in data['team_records']:\n        out += ['### '+record['title'],'',record['identity'],'',record['description'],'']\n        for table in record['tables']:\n            out += ['**'+table['caption']+'**','','| '+' | '.join(table['columns'])+' |','|'+'|'.join('---' for _ in table['columns'])+'|']\n            out += ['| '+' | '.join(row)+' |' for row in table['rows']]\n            out += ['']+['- '+s for s in table['notes']]+['']\n        out += ['**署名与合作：**'+record['attribution'],'','**学术意义与范围：**'+record['meaning'],'','待取得原件：','']+['- '+s for s in record['pending']]+['','已核读范围：'+record['reading_scope'],'','出处：'+'、'.join(record['source_refs'])+'。','']\n        out += ['['+v['title']+']('+v['url']+')' for v in record['links']]+['']\n    out += ['## 同期他组与相关材料背景','','以下不作陈团队同期原始成果证据；原作者、材料身份和原报数据保留。','']\n"
+    },
+    {
+      "old": "",
+      "new": ",'a02-team-records','a02-context-background'"
+    },
+    {
+      "old": "",
+      "new": "+data['team_records']"
+    },
+    {
+      "old": "",
+      "new": "        if expected.index('id=\"a02-team-records\"') >= expected.index('id=\"a02-technical-records\"'):\n            raise ValueError('Attributed team work must precede contextual technical records')\n"
+    },
+    {
+      "old": "",
+      "new": ",team_records=len(data['team_records']),new_team_technical_originals=0"
+    },
+    {
+      "old": "",
+      "new": "依据传记与机构资料细化研究对象和合作分工；同期技术原件仍待取得，不以其他团队数据填补。公开检索未取得不表示原件不存在或原成就不成立。\n\n### 六氟丙烯：从副产物观察到制取与分离问题\n\n陈先生团队工作 · 据传记与机构回顾；同期试制／装置原件未取得\n\n据传记p.35–37，陈庆云1960年秋加入蒋锡夔的氟橡胶组后，首项任务是改善六氟丙烯来源。已有样品并未解决原料供给；新的裂解路线还必须解决副产物多、低温分离困难的问题。机构供稿也将贡献具体落在六氟丙烯获取与团队条件探索上。\n\n**传记所记研究问题与技术环节**\n\n| 环节 | 传记中的具体叙述 | 仍需原件确认 |\n|---|---|---|\n| 实验观察 | 在二氟一氯甲烷高温裂解制四氟乙烯的研究中，延长裂解时间时发现少量六氟丙烯 | 实验日期、操作者、投料与原始组成记录 |\n| 路线探索 | 陈与蒋等讨论条件优化，使研究目标转向获得更多六氟丙烯 | 具体工况、停留时间、转化率、选择性及收率 |\n| 分离难题 | 低温冷凝、分馏后按沸点差异分收，副产物分离成为关键环节 | 装置图、分馏温度／压力、馏分和纯度记录 |\n| 研究条件 | 高温炉、低温分馏仪和检测仪器需要自行制作 | 设计者、制作人员、图纸、仪器型号及检测校准档案 |\n\n- 这是历史研究过程的释读，不是可执行的现代实验协议。书中600–700°C属于四氟乙烯裂解的背景叙述，不能当作已核实的陈团队新路线工况。\n\n**原料称谓与过程层次分别登记**\n\n| 来源 | 所载起点或过程 | 目前处理 |\n|---|---|---|\n| 传记p.37 | 从二氟一氯甲烷制四氟乙烯的观察谈起，随后讨论直接裂解获取六氟丙烯；同段也提四氟乙烯气体裂解 | 保留上下文，尚未取得完整流程原件 |\n| 上海有机所生平 | 四氟乙烯高温裂解路线 | 保留机构原叙述，不自动等同传记全部流程 |\n| 上海有机所纪念资料 | 聚四氟乙烯高温裂解路线 | 与其他记载分列，待原料链和批次证据核对 |\n\n- 这些称谓可能涉及起始原料、中间体或不同操作阶段；现阶段既不直接认定互相矛盾，也不拼接成已经证实的单一工艺。"
+    },
+    {
+      "old": "",
+      "new": "1963年论文不能解决陈团队的路线身份。\n\n**署名与合作：**据传记，蒋锡夔与陈庆云等共同讨论任务；陈与技术人员承担低温分馏实验，另有同事保障冷冻介质和物资。书中未列参与这些操作的完整姓名，也没有“陈指导技术人员”的上下级表述。留苏期间的操作经验与新任务的联系，仍按传记叙述身份保留。\n\n**学术意义与范围：**开拓性贡献应具体呈现为围绕单体供应，把裂解观察、条件探索与复杂混合物分离结合起来，为后续材料工作创造原料条件；不缩写成个人独立完成全部橡胶，也不在缺少原表时添加产率或优先权结论。\n\n待取得原件：\n\n- 已定位《陈庆云访谈》2018-01-03、学术成长资料采集工程数据库（传记p.36注①）；原录音／逐字稿尚未取得。p.37工艺段未另给"
+    },
+    {
+      "old": "",
+      "new": "试制报告编号。\n- 1960–1963年试制报告、实验本、装置图、自制仪器和低温分离原表尚未取得；具体档号、人员署名与合作分工待核。\n- 单体交付批次、纯度及化学所—上海有机所之间的技术移交原件待核。化学所沿革确认1963年机构接续，不能替代交接文件。\n\n已核读范围：已重读传记印刷p.35–37及p.114；机构回顾已读。未读取采集数据库原访谈或同期技术原件。\n\n出处：HERITAGE-S01、CQ-R28、S1、A02-TEAM-MMCS2025、A02-TEAM-IC-HISTORY。\n\n[机构供稿：六氟丙烯任务与团队贡献](https://www.mmcs.org.cn/xwz/kxjrl/art/2025/art_63580329680c4348b69105bfbcb7749c.html)\n[化学所1963年研究接续记录](https://ic.cas.cn/about/lsyg/)\n\n### 氟橡胶2号、3号：材料接续与授奖原件追查\n\n团队历史接续已有叙述 · 逐牌号技术与物性原件待核\n\n传记p.37将2号、3号的后续研制与六氟丙烯等单体工作联系起来；没有逐牌号给出共聚组成、配比和物性。陈先生1960年加入前的1号成果、其后承担的单体任务及团队材料工作仍分别归属。\n\n**可追查的证书线索及其资格**\n\n| 已有资料 | 能确认的记录 | 尚不能确认 |\n|---|---|---|\n| 化学所获奖目录 | 1966年FJ-23合成"
+    },
+    {
+      "old": "",
+      "new": "及旧目录主要完成人登记 | 原证书编号、技术附件及与历史1号／2号／3号的对应 |\n| 黎占亭纪念文第5节 | 回顾组长蒋锡夔、副组长胡亚东及课题组接续，并把1966年发明证书联系到1号 | 该文未列FJ-23编号或证书图，不能凭同年授奖建立身份等号 |\n| 传记p.35–37 | 区分陈加入前的1号与其加入后的六氟丙烯及2号／3号工作 | 逐牌号试制日期、聚合记录、样品号、实测物性和逐人分工 |\n\n- 新增回顾只提供查档方向。FJ-23、历史1号／2号／3号及现代商品牌号之间的对应，须有原始书面依据。\n\n**署名与合作：**先期1号按蒋锡夔、胡亚东等团队成果介绍；陈先生的单体获取和分离贡献另列。旧目录保留胡亚东、蒋锡夔、蒋丽金、路之康、王秀岗名单，不因一份项目名单替其他工作补作者或否定参与。\n\n**学术意义与范围：**材料成果依赖单体、聚合、表征、放大等合作环节；只有补齐逐牌号原件，才能进一步说明具体材料改进及各环节贡献。\n\n待取得原件：\n\n- 1966年发明证书原图、编号与技术附件未取得；需要同时核对FJ-23登记和1号授奖回顾。\n- 2号、3号同期任务书、试制／鉴定报告、聚合配方、样品编号和原始物性表未取得；不填补配比、强度、耐温或寿命数值。\n- 化学所、上海有机所与试制／生产单位间的样品、单体及技术交接文件未取得。\n\n已核读范围：传记"
+    },
+    {
+      "old": "",
+      "new": "与纪念文已核对；未取得历史2号／3号原始技术附件或物性原表。\n\n出处：HERITAGE-S01、A02-TECH-FJ23、A02-TECH-FJ23-OLD、A02-TEAM-JIANG-RECOLLECTION。\n\n[黎占亭回顾：研究组与1966年证书线索](https://chenjiang.fudan.edu.cn/0b/95/c48389a789397/page.htm)\n\n### 早期调聚氟溴油：原料、研究室与实验厂接续\n\n据传记转引的历史成果 · 所引原页、配方和物性原件未取得\n\n传记p.39记陈庆云与研究室同事以三氟溴乙烯为原料开展调聚氟溴陀螺油研究，随后接续到上海有机所实验厂生产；年表p.115把1964年的卤代烷／含氟烯烃调聚与制备氟油联系起来。两处没有给出完整配方、馏分、定量物性或人员分工表。\n\n**传记引据与下一份应取得的原件**\n\n| 现有依据 | 已到达的位置 | 待取得资料 |\n|---|---|---|\n| 传记p.39注② | 引《中国科学院》编辑委员会编，2009年，第291页；未标册次 | 2009版版权页、目录／册次页、p.291"
+    },
+    {
+      "old": "",
+      "new": "相邻页 |\n| CiNii同名1994版书目 | 上、中、下三册；只是较早版馆藏记录 | 核对2009版实际册次与页码，不能以1994版目录替代原页 |\n| 图书馆保存的Gale丛书介绍 | 提供电子书版本追查途径；介绍册不含目标页 | 通过合法馆藏取得目标书页，再追其原始引据或档号 |\n| 年表1964年条目及研究室—实验厂叙述 | 有历史研究与生产接续的记述 | 同批油品配方、密度／黏度／凝点原表、放大与交付记录 |\n\n- 仅取得目录与丛书介绍，不等于取得《中国科学院》2009版正文。原页未明册次前，不预设在上、中或下册。\n\n**署名与合作：**陈与研究室同事的调聚研究、实验厂放大和使用单位检测应分别追踪；现有材料未列全部人员及逐人任务，暂不补姓名或个人份额。早期氟溴油与机构全氟烃油、后来的氟氯液体分别登记。\n\n**学术意义与范围：**可以说明陈先生的含氟反应研究与特定液体材料需求相衔接；对产品身份、性能和工厂协作的进一步评价，仍依赖原始技术与交付证据。\n\n待取得原件：\n\n- 2009版《中国科学院》正确册次的p.291及相邻页仍未取得，传记转引尚未闭合。\n- 1964年前后调聚氟溴油的实验记录、配方／工艺报告、馏分与批次标识、原始物性及测试条件仍未取得。\n- 实验厂放大、供样、应用测试与交接原件及完整分工仍待核；没有已核实档号，不推定资料不存在或涉密。\n\n已核读范围：已核传记p.39注②及年表p.115；馆藏书目与电子书介绍可读，目标2009版书页未取得。\n\n出处：HERITAGE-S01、A02-TEAM-CATALOG、A02-TEAM-GALE。\n\n[CiNii同名1994版馆藏目录（非2009原页）](https://ci.nii.ac.jp/ncid/BA71150630)\n[图书馆电子书丛书介绍（非目标正文）](https://www.lib.ntu.edu.tw/doc/CL/ebook/2012/12_china.pdf)\n\n## 同期他组与"
+    },
+    {
+      "old": "实测按",
+      "new": "背景\n\n以下不作陈团队同期原始成果证据；"
+    },
+    {
+      "old": "和",
+      "new": "、"
+    },
+    {
+      "old": "分别呈现；与陈先生团队工作的关联仍须",
+      "new": "和"
+    },
+    {
+      "old": "始档案支持",
+      "new": "报数据保留"
+    },
+    {
+      "old": "",
+      "new": "- 传记p.37从二氟一氯甲烷制四氟乙烯的观察谈起；与机构TFE／PTFE记载的原料、过程层次及批次关系待原始工艺核对，不武断判定矛盾或拼成单一路线。\n- 《陈庆云访谈》2018-01-03原录音／逐字稿、六氟丙烯同期试制和装置原件未取得；低温分馏分工仍据传记。\n- FJ-23登记与晚近1号授奖回顾分列；1966原证书、历史2号／3号技术物性附件待核。\n- 氟溴油传记引《中国科学院》2009版p.291缺册次；已定位较早版馆藏与电子书检索途径，未取得目标原页。\n"
+    },
+    {
+      "old": "",
+      "new": "- **A02-TEAM-MMCS2025**：[中国科学家博物馆：陈庆云专题报道（上海有机所供稿）](https://www.mmcs.org.cn/xwz/kxjrl/art/2025/art_63580329680c4348b69105bfbcb7749c.html)。机构供稿的历史回顾，非同期试制报告；2025-01-26；六氟丙烯首项任务、团队条件探索与1963年迁沪段。\n- **A02-TEAM-IC-HISTORY**：[中国科学院化学研究所：历史沿革](https://ic.cas.cn/about/lsyg/)。机构第一方沿革，非人员交接原件；发展历程：有机氟工作于1963年并入上海有机所。\n- **A02-TEAM-JIANG-RECOLLECTION**：[黎占亭：蒋锡夔院士诞辰100周年纪念（复旦大学网页）](https://chenjiang.fudan.edu.cn/0b/95/c48389a789397/page.htm)。学者纪念回顾，非1966年发明证书或技术附件；第5节“研制中国第一块氟橡胶”：组长／副组长、1号与1966年证书叙述；无FJ-23编号或证书图。\n- **A02-TEAM-CATALOG**：[CiNii Books：《中国科学院》1994版馆藏目录](https://ci.nii.ac.jp/ncid/BA71150630)。书目与馆藏记录，不是2009版正文；NCID BA71150630；上、中、下三册；ISBN 7800920984。仅用于提示核对版次／册次。\n- **A02-TEAM-GALE**：[NTU图书馆保存的Gale《当代中国丛书》介绍](https://www.lib.ntu.edu.tw/doc/CL/ebook/2012/12_china.pdf)。电子书丛书介绍，不含目标《中国科学院》第291页；2页介绍册：2009纸本与2011电子书；提供图书馆版本追查入口，不能证明目标页内容。\n"
+    },
+    {
+      "old": "",
+      "new": "        },\r\n        {\r\n          \"title\": \"陈先生团队：具体贡献与原件追查\",\r\n          \"summary\": \"已重读传记p.35–39，细化裂解观察、低温分离、自制仪器与合作分工，列明2018本人访谈、同期试制／装置、历史2号／3号及早期油品原件的追查位置。尚未取得这些新的同期技术原件；后出回顾、馆藏目录与原件分开。\",\r\n          \"links\": [\r\n            {\r\n              \"title\": \"团队贡献、来源分列与原件待核清单\",\r\n              \"url\": \"../topics/fluoromonomers/index.html#a02-team-records\",\r\n              \"kind\": \"site\"\r\n            }\r\n          ]\r\n"
+    },
+    {
+      "old": "",
+      "new": "        \"本人访谈原录、当年试制和装置原件仍待取得；传记中二氟一氯甲烷及机构TFE／PTFE记载分别呈现，不由AI拼接为已经证实的工艺。\"\r\n"
+    },
+    {
+      "old": "补陈团队",
+      "new": "取得2018本人访谈原录与"
+    },
+    {
+      "old": "2单体",
+      "new": "3"
+    },
+    {
+      "old": "原始配方与物性表，以及调聚氟溴油的配方、验收",
+      "new": "技术附件"
+    },
+    {
+      "old": "交付档案；相关材料数据不替代这些原件",
+      "new": "2009版《中国科学院》正确册次p.291"
+    },
+    {
+      "old": "",
+      "new": "**陈先生团队：具体贡献与原件追查。**已重读传记p.35–39，细化裂解观察、低温分离、自制仪器与合作分工，列明2018本人访谈、同期试制／装置、历史2号／3号及早期油品原件的追查位置。尚未取得这些新的同期技术原件；后出回顾、馆藏目录与原件分开。\n\n[团队贡献、来源分列与原件待核清单](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#a02-team-records)\n\n"
+    },
+    {
+      "old": "",
+      "new": "- 本人访谈原录、当年试制和装置原件仍待取得；传记中二氟一氯甲烷及机构TFE／PTFE记载分别呈现，不由AI拼接为已经证实的工艺。\n"
+    },
+    {
+      "old": "",
+      "new": "<style>#a02-team-records section+section{margin-top:36px;border-top:1px solid var(--line);padding-top:24px}#a02-context-background>summary{cursor:pointer;padding:20px;font-weight:700;color:var(--teal);border:1px solid var(--line)}#a02-context-background{margin:24px 0}</style>\n"
+    },
+    {
+      "old": "",
+      "new": "<article id=\"a02-team-records\"><span class=\"status\">陈先生团队的研究贡献与合作</span><h2>单体制取、低温分离与材料接续</h2><p>依据传记与机构公开资料，呈现陈先生及合作者解决的具体问题。下列三项的同期技术原件仍未取得，已有叙述与待核原件分别标明；公开检索未取得原件，不表示档案不存在或历史成就不成立。</p>\n<section id=\"a02-team-hfp\"><h3>六氟丙烯：从副产物观察到制取与分离问题</h3><p class=\"a02-locator\">陈先生团队工作 · 据传记与机构回顾；同期试制／装置原件未取得</p><p>据传记p.35–37，陈庆云1960年秋加入蒋锡夔的氟橡胶组后，首项任务是改善六氟丙烯来源。已有样品并未解决原料供给；新的裂解路线还必须解决副产物多、低温分离困难的问题。机构供稿也将贡献具体落在六氟丙烯获取与团队条件探索上。</p>\n<p id=\"a02-team-hfp-table-1\"><b>传记所记研究问题与技术环节</b>（宽表可横向滑动）</p><div class=\"a02-technical-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a02-team-hfp-table-1\"><table><thead><tr><th scope=\"col\">环节</th><th scope=\"col\">传记中的具体叙述</th><th scope=\"col\">仍需原件确认</th></tr></thead><tbody>\n<tr><th scope=\"row\">实验观察</th><td>在二氟一氯甲烷高温裂解制四氟乙烯的研究中，延长裂解时间时发现少量六氟丙烯</td><td>实验日期、操作者、投料与原始组成记录</td></tr>\n<tr><th scope=\"row\">路线探索</th><td>陈与蒋等讨论条件优化，使研究目标转向获得更多六氟丙烯</td><td>具体工况、停留时间、转化率、选择性及收率</td></tr>\n<tr><th scope=\"row\">分离难题</th><td>低温冷凝、分馏后按沸点差异分收，副产物分离成为关键环节</td><td>装置图、分馏温度／压力、馏分和纯度记录</td></tr>\n<tr><th scope=\"row\">研究条件</th><td>高温炉、低温分馏仪和检测仪器需要自行制作</td><td>设计者、制作人员、图纸、仪器型号及检测校准档案</td></tr>\n</tbody></table></div><ul><li>这是历史研究过程的释读，不是可执行的现代实验协议。书中600–700°C属于四氟乙烯裂解的背景叙述，不能当作已核实的陈团队新路线工况。</li></ul>\n<p id=\"a02-team-hfp-table-2\"><b>原料称谓与过程层次分别登记</b>（宽表可横向滑动）</p><div class=\"a02-technical-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a02-team-hfp-table-2\"><table><thead><tr><th scope=\"col\">来源</th><th scope=\"col\">所载起点或过程</th><th scope=\"col\">目前处理</th></tr></thead><tbody>\n<tr><th scope=\"row\">传记p.37</th><td>从二氟一氯甲烷制四氟乙烯的观察谈起，随后讨论直接裂解获取六氟丙烯；同段也提四氟乙烯气体裂解</td><td>保留上下文，尚未取得完整流程原件</td></tr>\n<tr><th scope=\"row\">上海有机所生平</th><td>四氟乙烯高温裂解路线</td><td>保留机构原叙述，不自动等同传记全部流程</td></tr>\n<tr><th scope=\"row\">上海有机所纪念资料</th><td>聚四氟乙烯高温裂解路线</td><td>与其他记载分列，待原料链和批次证据核对</td></tr>\n</tbody></table></div><ul><li>这些称谓可能涉及起始原料、中间体或不同操作阶段；现阶段既不直接认定互相矛盾，也不拼接成已经证实的单一工艺。他组1963年论文不能解决陈团队的路线身份。</li></ul>\n<p><b>署名与合作：</b>据传记，蒋锡夔与陈庆云等共同讨论任务；陈与技术人员承担低温分馏实验，另有同事保障冷冻介质和物资。书中未列参与这些操作的完整姓名，也没有“陈指导技术人员”的上下级表述。留苏期间的操作经验与新任务的联系，仍按传记叙述身份保留。</p><p class=\"a02-meaning\"><b>学术意义与范围：</b>开拓性贡献应具体呈现为围绕单体供应，把裂解观察、条件探索与复杂混合物分离结合起来，为后续材料工作创造原料条件；不缩写成个人独立完成全部橡胶，也不在缺少原表时添加产率或优先权结论。</p><h4>待核事项</h4><ul><li>已定位《陈庆云访谈》2018-01-03、学术成长资料采集工程数据库（传记p.36注①）；原录音／逐字稿尚未取得。p.37工艺段未另给同期试制报告编号。</li><li>1960–1963年试制报告、实验本、装置图、自制仪器和低温分离原表尚未取得；具体档号、人员署名与合作分工待核。</li><li>单体交付批次、纯度及化学所—上海有机所之间的技术移交原件待核。化学所沿革确认1963年机构接续，不能替代交接文件。</li></ul>\n<p class=\"a02-locator\">已重读传记印刷p.35–37及p.114；机构回顾已读。未读取采集数据库原访谈或同期技术原件。 · <a href=\"#a02-source-book\">HERITAGE-S01</a> · <a href=\"#ref-r28\">CQ-R28</a> · <a href=\"#ref-s1\">S1</a> · <a href=\"#a02-source-mmcs2025\">A02-TEAM-MMCS2025</a> · <a href=\"#a02-source-ic-history\">A02-TEAM-IC-HISTORY</a></p><p><a href=\"https://www.mmcs.org.cn/xwz/kxjrl/art/2025/art_63580329680c4348b69105bfbcb7749c.html\">机构供稿：六氟丙烯任务与团队贡献</a> · <a href=\"https://ic.cas.cn/about/lsyg/\">化学所1963年研究接续记录</a></p></section>\n<section id=\"a02-team-rubber\"><h3>氟橡胶2号、3号：材料接续与授奖原件追查</h3><p class=\"a02-locator\">团队历史接续已有叙述 · 逐牌号技术与物性原件待核</p><p>传记p.37将2号、3号的后续研制与六氟丙烯等单体工作联系起来；没有逐牌号给出共聚组成、配比和物性。陈先生1960年加入前的1号成果、其后承担的单体任务及团队材料工作仍分别归属。</p>\n<p id=\"a02-team-rubber-table-1\"><b>可追查的证书线索及其资格</b>（宽表可横向滑动）</p><div class=\"a02-technical-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a02-team-rubber-table-1\"><table><thead><tr><th scope=\"col\">已有资料</th><th scope=\"col\">能确认的记录</th><th scope=\"col\">尚不能确认</th></tr></thead><tbody>\n<tr><th scope=\"row\">化学所获奖目录</th><td>1966年FJ-23合成方法及旧目录主要完成人登记</td><td>原证书编号、技术附件及与历史1号／2号／3号的对应</td></tr>\n<tr><th scope=\"row\">黎占亭纪念文第5节</th><td>回顾组长蒋锡夔、副组长胡亚东及课题组接续，并把1966年发明证书联系到1号</td><td>该文未列FJ-23编号或证书图，不能凭同年授奖建立身份等号</td></tr>\n<tr><th scope=\"row\">传记p.35–37</th><td>区分陈加入前的1号与其加入后的六氟丙烯及2号／3号工作</td><td>逐牌号试制日期、聚合记录、样品号、实测物性和逐人分工</td></tr>\n</tbody></table></div><ul><li>新增回顾只提供查档方向。FJ-23、历史1号／2号／3号及现代商品牌号之间的对应，须有原始书面依据。</li></ul>\n<p><b>署名与合作：</b>先期1号按蒋锡夔、胡亚东等团队成果介绍；陈先生的单体获取和分离贡献另列。旧目录保留胡亚东、蒋锡夔、蒋丽金、路之康、王秀岗名单，不因一份项目名单替其他工作补作者或否定参与。</p><p class=\"a02-meaning\"><b>学术意义与范围：</b>材料成果依赖单体、聚合、表征、放大等合作环节；只有补齐逐牌号原件，才能进一步说明具体材料改进及各环节贡献。</p><h4>待核事项</h4><ul><li>1966年发明证书原图、编号与技术附件未取得；需要同时核对FJ-23登记和1号授奖回顾。</li><li>2号、3号同期任务书、试制／鉴定报告、聚合配方、样品编号和原始物性表未取得；不填补配比、强度、耐温或寿命数值。</li><li>化学所、上海有机所与试制／生产单位间的样品、单体及技术交接文件未取得。</li></ul>\n<p class=\"a02-locator\">传记、机构成果登记与纪念文已核对；未取得历史2号／3号原始技术附件或物性原表。 · <a href=\"#a02-source-book\">HERITAGE-S01</a> · <a href=\"#a02-source-fj23\">A02-TECH-FJ23</a> · <a href=\"#a02-source-fj23-old\">A02-TECH-FJ23-OLD</a> · <a href=\"#a02-source-jiang-recollection\">A02-TEAM-JIANG-RECOLLECTION</a></p><p><a href=\"https://chenjiang.fudan.edu.cn/0b/95/c48389a789397/page.htm\">黎占亭回顾：研究组与1966年证书线索</a></p></section>\n<section id=\"a02-team-oil\"><h3>早期调聚氟溴油：原料、研究室与实验厂接续</h3><p class=\"a02-locator\">据传记转引的历史成果 · 所引原页、配方和物性原件未取得</p><p>传记p.39记陈庆云与研究室同事以三氟溴乙烯为原料开展调聚氟溴陀螺油研究，随后接续到上海有机所实验厂生产；年表p.115把1964年的卤代烷／含氟烯烃调聚与制备氟油联系起来。两处没有给出完整配方、馏分、定量物性或人员分工表。</p>\n<p id=\"a02-team-oil-table-1\"><b>传记引据与下一份应取得的原件</b>（宽表可横向滑动）</p><div class=\"a02-technical-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a02-team-oil-table-1\"><table><thead><tr><th scope=\"col\">现有依据</th><th scope=\"col\">已到达的位置</th><th scope=\"col\">待取得资料</th></tr></thead><tbody>\n<tr><th scope=\"row\">传记p.39注②</th><td>引《中国科学院》编辑委员会编，2009年，第291页；未标册次</td><td>2009版版权页、目录／册次页、p.291及相邻页</td></tr>\n<tr><th scope=\"row\">CiNii同名1994版书目</th><td>上、中、下三册；只是较早版馆藏记录</td><td>核对2009版实际册次与页码，不能以1994版目录替代原页</td></tr>\n<tr><th scope=\"row\">图书馆保存的Gale丛书介绍</th><td>提供电子书版本追查途径；介绍册不含目标页</td><td>通过合法馆藏取得目标书页，再追其原始引据或档号</td></tr>\n<tr><th scope=\"row\">年表1964年条目及研究室—实验厂叙述</th><td>有历史研究与生产接续的记述</td><td>同批油品配方、密度／黏度／凝点原表、放大与交付记录</td></tr>\n</tbody></table></div><ul><li>仅取得目录与丛书介绍，不等于取得《中国科学院》2009版正文。原页未明册次前，不预设在上、中或下册。</li></ul>\n<p><b>署名与合作：</b>陈与研究室同事的调聚研究、实验厂放大和使用单位检测应分别追踪；现有材料未列全部人员及逐人任务，暂不补姓名或个人份额。早期氟溴油与机构全氟烃油、后来的氟氯液体分别登记。</p><p class=\"a02-meaning\"><b>学术意义与范围：</b>可以说明陈先生的含氟反应研究与特定液体材料需求相衔接；对产品身份、性能和工厂协作的进一步评价，仍依赖原始技术与交付证据。</p><h4>待核事项</h4><ul><li>2009版《中国科学院》正确册次的p.291及相邻页仍未取得，传记转引尚未闭合。</li><li>1964年前后调聚氟溴油的实验记录、配方／工艺报告、馏分与批次标识、原始物性及测试条件仍未取得。</li><li>实验厂放大、供样、应用测试与交接原件及完整分工仍待核；没有已核实档号，不推定资料不存在或涉密。</li></ul>\n<p class=\"a02-locator\">已核传记p.39注②及年表p.115；馆藏书目与电子书介绍可读，目标2009版书页未取得。 · <a href=\"#a02-source-book\">HERITAGE-S01</a> · <a href=\"#a02-source-catalog\">A02-TEAM-CATALOG</a> · <a href=\"#a02-source-gale\">A02-TEAM-GALE</a></p><p><a href=\"https://ci.nii.ac.jp/ncid/BA71150630\">CiNii同名1994版馆藏目录（非2009原页）</a> · <a href=\"https://www.lib.ntu.edu.tw/doc/CL/ebook/2012/12_china.pdf\">图书馆电子书丛书介绍（非目标正文）</a></p></section>\n</article>\n<article id=\"a02-vdf-1980\"><span class=\"status\">原始论文 · AI辅助核读</span><h2>偏氟乙烯与全卤代烷烃的调聚反应及其产物的研究</h2><p><b>原作者：</b>陈庆云、马振中、蒋锡夔、张元发、贾世茂；《化学学报》1980，38(2)：175–184。</p><p>同一偏氟乙烯单体与不同全卤代烷烃反应，会得到怎样的短链骨架和端基？怎样结合多种表征与化学转化判断主要加成方向，并将产物继续转化？</p><p><b>核读范围：</b>已取得期刊官网公开PDF，并逐页核读印刷p.175–184全部10页，关联结构图式、三张表及中英文摘要。结构转录与科学解释仍待专业签认。</p>\n<p id=\"a02-table-caption\"><b>原文观察、鉴定依据及其范围</b>（宽表可横向滑动）</p><div id=\"a02-paper-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a02-table-caption\"><table><thead><tr><th scope=\"col\">研究对象／比较</th><th scope=\"col\">原文结果与证据</th><th scope=\"col\">原刊定位</th></tr></thead><tbody>\n<tr><th scope=\"row\">两种调聚剂，两类产物系列</th><td>四氯化碳体系分离鉴定CCl₃(CH₂CF₂)ₙCl（n=1–6）；全氟叔丁基碘体系为(CF₃)₃C(CH₂CF₂)ₙI（n=1、2）。这里的n范围限于论文所研究的产物。</td><td>p.175、179</td></tr>\n<tr><th scope=\"row\">主要加成方向与少量异构线索</th><td>GC、¹⁹F NMR及化学转化共同支持主要单加成结构CCl₃CH₂CF₂Cl和(CF₃)₃CCH₂CF₂I；作者仍保留可能存在极少量反向异构体的线索。</td><td>p.175–176</td></tr>\n<tr><th scope=\"row\">碘端基位置的紫外证据</th><td>单加成物(CF₃)₃CCH₂CF₂I原报λmax为274–276 nm，二加成物为270 nm。作者以约275 nm的吸收支持–CF₂I端基归属，并结合其他鉴定证据。</td><td>p.176讨论；p.179实验</td></tr>\n<tr><th scope=\"row\">端基衍生：烯烃、酰胺与羧酸</th><td>部分调聚物经后续转化得到烯烃、含氟酰胺与羧酸。正文图式、实验及英文摘要中胺处理使用二乙胺；中文摘要的胺名异文另列待核。</td><td>p.177–182；英文摘要p.183</td></tr>\n<tr><th scope=\"row\">调聚酸系列的原始物性记录</th><td>表3酸式为Cl(CF₂CH₂)ₙCOOH。n=3原报收率86.0%、熔点70–72°C；n=4为93.0%、97–99°C。这些是原作者实验记录，本平台未重算收率。</td><td>p.178表3；p.182水解条目</td></tr>\n</tbody></table></div><p class=\"a02-meaning\"><b>科学意义：</b>这项工作把偏氟乙烯的调聚由“得到低聚物”推进到骨架、端基和主要加成方向的具体辨识，再通过衍生转化连接到新的含氟中间体与材料辅助组分。原作者对部分羧酸盐乳化用途的描述，提供了基础反应与材料需求相联系的研究线索。</p><ul><li>原文对极性因素的讨论保留原作者解释身份；主要方向不等于100%选择性，谱学与化学互证也不是平台新机理验证。</li><li>所列调聚物、调聚氟溴陀螺油、全氟烃油及氟橡胶牌号不是同一化学对象；产物系列与历史工业产品不能只凭名称相似等同。</li><li>表3的n按该酸式独立定义，不把不同表的编号或计数混用。收率、熔点和紫外数值为历史原报值，不是平台新实验或现代性能认证。</li><li>部分调聚羧酸碱金属盐的乳化用途属原文定性报告；未从该文取得可直接引用的定量乳化性能对照，不据此推断产业采用或环境安全。</li></ul>\n<p><a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1980/V38/I2/175\">官方论文入口 →</a> · <a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/article/downloadArticleFile.do?attachType=PDF&amp;id=342478\">期刊原文PDF →</a></p><p class=\"a02-locator\"><a href=\"#a02-source-paper\">A02-P1980</a></p></article>\n<article id=\"a02-cooperation\"><span class=\"status\">合作与研究接续</span><h2>共同攻关怎样支持学术成果</h2>\n<h3>制取单体，离不开分离、仪器与原料保障</h3><p>传记记述，六氟丙烯研究要同时面对反应与分离：仪器需要自行制作，技术人员承担低温分离，其他同事保障冷冻介质和物资。陈先生在留苏时期积累的实验经验，也参与到这项新任务中。材料进展由各环节共同支撑。</p><p class=\"a02-locator\">p35–37；p36注①陈庆云访谈2018-01-03 · <a href=\"#a02-source-book\">HERITAGE-S01</a></p>\n<h3>1963年南迁：让聚合经验与工业条件相接</h3><p>1963年7月，陈庆云随蒋锡夔课题组由北京迁往上海。传记所引回忆强调，北京的高分子实验经验与上海的原料、厂家和技术条件互补；机构报道还记述了人员与仪器一同迁移的情景。这是研究团队与工业环境的整合。</p><p class=\"a02-locator\">p38–39；p38注②陈庆云访谈2018-01-26，p39注①陈庆云访谈2018-01-03；年表p115首条 · <a href=\"#a02-source-book\">HERITAGE-S01</a> · <a href=\"#a02-source-cas\">HERITAGE-S04</a></p>\n</article><details id=\"a02-context-background\"><summary>同期他组与相关材料背景（与陈团队成果分别归属）</summary>\n"
+    },
+    {
+      "old": "<article id=\"a02-vdf-1980\"><span class=\"status\">原始论文 · AI辅助核读</span><h2>偏氟乙烯与全卤代烷烃的调聚反应及其产物的研究</h2><p><b>原作者：</b>陈庆云、马振中、蒋锡夔、张元发、贾世茂；《化学学报》1980，38(2)：175–184。</p><p>同一偏氟乙烯单体与不同全卤代烷烃反应，会得到怎样的短链骨架和端基？怎样结合多种表征与化学转化判断主要加成方向，并将产物继续转化？</p><p><b>核读范围：</b>已取得期刊官网公开PDF，并逐页核读印刷p.175–184全部10页，关联结构图式、三张表及中英文摘要。结构转录与科学解释仍待专业签认。</p>\n<p id=\"a02-table-caption\"><b>原文观察、鉴定依据及其范围</b>（宽表可横向滑动）</p><div id=\"a02-paper-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a02-table-caption\"><table><thead><tr><th scope=\"col\">研究对象／比较</th><th scope=\"col\">原文结果与证据</th><th scope=\"col\">原刊定位</th></tr></thead><tbody>\n<tr><th scope=\"row\">两种调聚剂，两类产物系列</th><td>四氯化碳体系分离鉴定CCl₃(CH₂CF₂)ₙCl（n=1–6）；全氟叔丁基碘体系为(CF₃)₃C(CH₂CF₂)ₙI（n=1、2）。这里的n范围限于论文所研究的产物。</td><td>p.175、179</td></tr>\n<tr><th scope=\"row\">主要加成方向与少量异构线索</th><td>GC、¹⁹F NMR及化学转化共同支持主要单加成结构CCl₃CH₂CF₂Cl和(CF₃)₃CCH₂CF₂I；作者仍保留可能存在极少量反向异构体的线索。</td><td>p.175–176</td></tr>\n<tr><th scope=\"row\">碘端基位置的紫外证据</th><td>单加成物(CF₃)₃CCH₂CF₂I原报λmax为274–276 nm，二加成物为270 nm。作者以约275 nm的吸收支持–CF₂I端基归属，并结合其他鉴定证据。</td><td>p.176讨论；p.179实验</td></tr>\n<tr><th scope=\"row\">端基衍生：烯烃、酰胺与羧酸</th><td>部分调聚物经后续转化得到烯烃、含氟酰胺与羧酸。正文图式、实验及英文摘要中胺处理使用二乙胺；中文摘要的胺名异文另列待核。</td><td>p.177–182；英文摘要p.183</td></tr>\n<tr><th scope=\"row\">调聚酸系列的原始物性记录</th><td>表3酸式为Cl(CF₂CH₂)ₙCOOH。n=3原报收率86.0%、熔点70–72°C；n=4为93.0%、97–99°C。这些是原作者实验记录，本平台未重算收率。</td><td>p.178表3；p.182水解条目</td></tr>\n</tbody></table>",
+      "new": ""
+    },
+    {
+      "old": "iv><p cl",
+      "new": "et"
+    },
+    {
+      "old": "ss=\"a02-meaning\"><b>科学意义：</b>这项工作把偏氟乙烯的调聚由“得到低聚物”推进到骨架、端基和主要加成方向的具体辨识，再通过衍生转化连接到新的含氟中间体与材料辅助组分。原作者对部分羧酸盐乳化用途的描述，提供了基础反应与材料需求相联系的研究线索。</p><ul><li>原文对极性因素的讨论保留原作者解释身份；主要方向不等于100%选择性，谱学与化学互证也不是平台新机理验证。</li><li>所列调聚物、调聚氟溴陀螺油、全氟烃油及氟橡胶牌号不是同一化学对象；产物系列与历史工业产品不能只凭名称相似等同。</li><li>表3的n按该酸式独立定义，不把不同表的编号或计数混用。收率、熔点和紫外数值为历史原报值，不是平台新实验或现代性能认证。</li><li>部分调聚羧酸碱金属盐的乳化用途属原文定性报告；未从该文取得可直接引用的定量乳化性能对照，不据此推断产业采用或环境安全。</li></ul>\n<p><a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1980/V38/I2/175\">官方论文入口 →</a> · <a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/article/downloadArticleF",
+      "new": ""
+    },
+    {
+      "old": "e.do?attachType=PDF&amp;id=342478\">期刊原文PDF →</a></p><p cla",
+      "new": ""
+    },
+    {
+      "old": "s=\"a02-locator\"><a href=\"#a02-source-paper\">A02-P1980</a></p></article>\n<article id=\"a02-cooperation\"><span class=\"status\">合作与研究接续</span><h2>共同攻关怎样支持学术成果</h2>\n<h3>制取单体，离不开分离、仪器与原料保障</h3><p>传记记述，六氟丙烯研究要同时面对反应与分离：仪器需要自行制作，技术人员承担低温分离，其他同事保障冷冻介质和物资。陈先生在留苏时期积累的实验经验，也参与到这项新任务中。材料进展由各环节共同支撑。</p><p class=\"a02-locator\">p35–37；p36注①陈庆云访谈2018-01-03 · <a href=\"#a02-source-book\">HERITAGE-S01</a></p>\n<h3>1963年南迁：让聚合经验与工业条件相接</h3><p>1963年7月，陈庆云随蒋锡夔课题组由北京迁往上海。传记所引回忆强调，北京的高分子实验经验与上海的原料、厂家和技术条件互补；机构报道还记述了人员与仪器一同迁移的情景。这是研究团队与工业环境的整合。</p><p class=\"a02-locator\">p38–39；p38注②陈庆云访谈2018-01-26，p39注①陈庆云访谈2018-01-03；年表p115首条 · <a href=\"#a02-source-book\">HERITAGE-S01</a> · <a href=\"#a02-source-cas\">HERITAGE-S04</a></p>\n</article",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "<li id=\"a02-source-mmcs2025\"><b>A02-TEAM-MMCS2025</b> · <a href=\"https://www.mmcs.org.cn/xwz/kxjrl/art/2025/art_63580329680c4348b69105bfbcb7749c.html\">中国科学家博物馆：陈庆云专题报道（上海有机所供稿）</a>；机构供稿的历史回顾，非同期试制报告。2025-01-26；六氟丙烯首项任务、团队条件探索与1963年迁沪段</li>\n<li id=\"a02-source-ic-history\"><b>A02-TEAM-IC-HISTORY</b> · <a href=\"https://ic.cas.cn/about/lsyg/\">中国科学院化学研究所：历史沿革</a>；机构第一方沿革，非人员交接原件。发展历程：有机氟工作于1963年并入上海有机所</li>\n<li id=\"a02-source-jiang-recollection\"><b>A02-TEAM-JIANG-RECOLLECTION</b> · <a href=\"https://chenjiang.fudan.edu.cn/0b/95/c48389a789397/page.htm\">黎占亭：蒋锡夔院士诞辰100周年纪念（复旦大学网页）</a>；学者纪念回顾，非1966年发明证书或技术附件。第5节“研制中国第一块氟橡胶”：组长／副组长、1号与1966年证书叙述；无FJ-23编号或证书图</li>\n<li id=\"a02-source-catalog\"><b>A02-TEAM-CATALOG</b> · <a href=\"https://ci.nii.ac.jp/ncid/BA71150630\">CiNii Books：《中国科学院》1994版馆藏目录</a>；书目与馆藏记录，不是2009版正文。NCID BA71150630；上、中、下三册；ISBN 7800920984。仅用于提示核对版次／册次</li>\n<li id=\"a02-source-gale\"><b>A02-TEAM-GALE</b> · <a href=\"https://www.lib.ntu.edu.tw/doc/CL/ebook/2012/12_china.pdf\">NTU图书馆保存的Gale《当代中国丛书》介绍</a>；电子书丛书介绍，不含目标《中国科学院》第291页。2页介绍册：2009纸本与2011电子书；提供图书馆版本追查入口，不能证明目标页内容</li>\n"
+    },
+    {
+      "old": "",
+      "new": "li>传记p.37从二氟一氯甲烷制四氟乙烯的观察谈起；与机构TFE／PTFE记载的原料、过程层次及批次关系待原始工艺核对，不武断判定矛盾或拼成单一路线。</li><li>《陈庆云访谈》2018-01-03原录音／逐字稿、六氟丙烯同期试制和装置原件未取得；低温分馏分工仍据传记。</li><li>FJ-23登记与晚近1号授奖回顾分列；1966原证书、历史2号／3号技术物性附件待核。</li><li>氟溴油传记引《中国科学院》2009版p.291缺册次；已定位较早版馆藏与电子书检索途径，未取得目标原页。</li><"
+    },
+    {
+      "old": "",
+      "new": "div class=\"record\"><h4>陈先生团队：具体贡献与原件追查</h4><p>已重读传记p.35–39，细化裂解观察、低温分离、自制仪器与合作分工，列明2018本人访谈、同期试制／装置、历史2号／3号及早期油品原件的追查位置。尚未取得这些新的同期技术原件；后出回顾、馆藏目录与原件分开。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#a02-team-records\">团队贡献、来源分列与原件待核清单 →</a></p></div><"
+    },
+    {
+      "old": "",
+      "new": "li>本人访谈原录、当年试制和装置原件仍待取得；传记中二氟一氯甲烷及机构TFE／PTFE记载分别呈现，不由AI拼接为已经证实的工艺。</li><"
+    },
+    {
+      "old": "",
+      "new": "\nPRESENTATION_V16_SHA256 = '6b975e980d176ecc481449ca5a96ffadadfecae2eb64d97dfdafb75b85b4a3c0'\nPRESENTATION_V17_PATH = 'provenance/platform-presentation.v17.json'\nPRESENTATION_V17_ID = 'PLATFORM-A02-TEAM-RECORDS-20261115-v17'\nPRESENTATION_V17_PREVIOUS_COMMIT = '936ca1d990c0d3f695dd7281b1b01aaa07662a10'\nA02_TEAM_PREDECESSOR_FILES = {\n    'content/a02-academic-achievements.v1.json': ('79bc1cdfc8898a7e6c9e6615ca4cf6961d9ec05f1891ecf30f2531f5dc2f07c1', 23565),\n    'scripts/render_a02_history.py': ('1b529caa86ad9240f376c63f29e67d67022b9ddaefe13aaa87fd88c21b090d1d', 15796),\n    'docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md': ('f36d7ac151847c284c3ea2fd08f0816739d392a998b9c05f596c052a5cfb947d', 18023),\n    'content/ai-research-section.v1.json': ('40d2e84da4fd6060f34b83fd8a15171acf3ce7cea22f2053d6fa23aa80afeb28', 65074),\n    'docs/AI_RESEARCH_zh-CN.md': ('51f74114ec4434281a91beeebae0ece1eb3151aa189846e8b4aa90ceae65847c', 34544),\n    'site/topics/fluoromonomers/index.html': ('40cfb1665973b58bec414fd65a6d6ede3a24444c513df5cab01671b0598ade19', 30347),\n    'site/research/index.html': ('4137819f6c923b6cf2f7e5592f609705c8ac3ab62c513012ada1c2ed8f8303c5', 48320),\n    'site/achievements/index.html': ('58367575451a3f7bb38b75d427af62bd11954d14d848603410f0fdb95a563753', 95787),\n    'docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md': ('8dfe0a92f4fd91af063dd907bf677e84db5e3f348d9a57acd6ac12ae9d4e4e97', 69628),\n    'scripts/a01_publication_contract.py': ('292718663d46a8c80a57eeb8bc13b3586e5997883a92af1783dbc30d2b5ee1ce', 187171),\n}\nA02_TEAM_DOCUMENTS = A02_DOCUMENTS\n"
+    },
+    {
+      "old": "",
+      "new": "def team_predecessor_bytes(root: Path, name: str) -> bytes:\n    \"\"\"Undo only the ten explicitly permitted v17 presentation files.\"\"\"\n    current = project_file(root, name).read_bytes()\n    if not (root/PRESENTATION_V17_PATH).exists():\n        return current\n    data = read_json(project_file(root, PRESENTATION_V17_PATH))\n    if not isinstance(data, dict):\n        raise ValueError('A02 team presentation must be a JSON object')\n    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')\n    if not isinstance(files, list) or not isinstance(pool, list):\n        raise ValueError('A02 team require exact reversible text patch records')\n    matches = [row for row in files if isinstance(row, dict) and row.get('path') == name]\n    if not matches:\n        return current\n    if len(matches) != 1 or name not in A02_TEAM_PREDECESSOR_FILES:\n        raise ValueError('Unauthorized or duplicate A02 team predecessor record: '+name)\n    record = matches[0]; old_sha, old_size = A02_TEAM_PREDECESSOR_FILES[name]\n    if (record.get('old_sha256') != old_sha or record.get('old_bytes') != old_size\n            or hashlib.sha256(current).hexdigest() != record.get('new_sha256')\n            or len(current) != record.get('new_bytes')):\n        raise ValueError('A02 team file differs from its complete old/new identities: '+name)\n    edits = record.get('edits')\n    if not isinstance(edits, list) or not edits:\n        raise ValueError('A02 team changes require nonempty text edits: '+name)\n    chunks, cursor, old_end, delta = [], 0, 0, 0\n    for edit in edits:\n        if not isinstance(edit, dict) or set(edit) != {'old_offset', 'replacement'}:\n            raise ValueError('Invalid reversible A02 team text edit: '+name)\n        offset, replacement = edit['old_offset'], edit['replacement']\n        if (type(offset) is not int or offset < old_end or type(replacement) is not int\n                or not 0 <= replacement < len(pool)):\n            raise ValueError('Overlapping or invalid A02 team text edit: '+name)\n        pair = pool[replacement]\n        if (not isinstance(pair, dict) or set(pair) != {'old', 'new'}\n                or not all(isinstance(pair.get(key), str) for key in ('old', 'new'))\n                or pair['old'] == pair['new']):\n            raise ValueError('Invalid A02 team text replacement pool')\n        before, after = pair['old'].encode('utf-8'), pair['new'].encode('utf-8')\n        position = offset+delta\n        if position < cursor or current[position:position+len(after)] != after:\n            raise ValueError('A02 team replacement differs at its exact offset: '+name)\n        chunks.extend((current[cursor:position], before))\n        cursor, old_end = position+len(after), offset+len(before)\n        delta += len(after)-len(before)\n    rebuilt = b''.join((*chunks, current[cursor:]))\n    if hashlib.sha256(rebuilt).hexdigest() != old_sha or len(rebuilt) != old_size:\n        raise ValueError('A02 team predecessor cannot be reconstructed exactly: '+name)\n    return rebuilt\n\n\n\ndef team_predecessor_binding(root: Path, name: str) -> dict:\n    content = team_predecessor_bytes(root, name)\n    return {'path': name, 'sha256': hashlib.sha256(content).hexdigest(), 'bytes': len(content)}\n\n\n"
+    },
+    {
+      "old": "",
+      "new": "team_"
+    },
+    {
+      "old": "oj",
+      "new": "ed"
+    },
+    {
+      "old": "",
+      "new": "essor_by"
+    },
+    {
+      "old": "_fil",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "s"
+    },
+    {
+      "old": ".read_bytes()",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "    if (root/PRESENTATION_V17_PATH).exists() and not (root/PRESENTATION_V16_PATH).exists():\n        raise ValueError('A02 team records require their fixed v16 predecessor')\n"
+    },
+    {
+      "old": "{'pa",
+      "new": ""
+    },
+    {
+      "old": "h': n",
+      "new": "e"
+    },
+    {
+      "old": "",
+      "new": "_pr"
+    },
+    {
+      "old": ", '",
+      "new": "dece"
+    },
+    {
+      "old": "ha256': ",
+      "new": "sor_bin"
+    },
+    {
+      "old": "",
+      "new": "n"
+    },
+    {
+      "old": "est(project_file",
+      "new": ""
+    },
+    {
+      "old": "),\n                  'bytes': project_file(root, name).stat().st_size}",
+      "new": ""
+    },
+    {
+      "old": "read_",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": ".loads"
+    },
+    {
+      "old": "",
+      "new": "_predecessor_bytes(root,inventory).decode('utf-8'); new_doc=team_predecessor_bytes(root,inventory).decode('utf-8')\n    pattern=r'^### A02[^\\n]*\\n.*?(?=^### A0[3-9]|\\Z)'\n    if (len(re.findall(pattern,old_doc,re.S|re.M))!=1 or len(re.findall(pattern,new_doc,re.S|re.M))!=1\n            or re.sub(pattern,'<A02-ONLY/>',old_doc,flags=re.S|re.M)!=re.sub(pattern,'<A02-ONLY/>',new_doc,flags=re.S|re.M)):\n        raise ValueError('Only A02 may change in the shared academic document')\n    for name in (AI_RESEARCH_DOCUMENT,A02_HISTORY_DOCUMENT,inventory):\n        prose=team_predecessor_bytes(root,name).decode('utf-8')\n        if project_markdown(prose)!=prose:\n            raise ValueError('Technical prose lost canonical named achievement references: '+name)\n    for name,expected in updated.items():\n        member=team_predecessor_binding(root,'site/'+name)\n        if member['sha256']!=expected['sha256'] or member['bytes']!=expected['bytes']:\n            raise ValueError('Technical records changed an unlisted website byte: '+name)\n    # Replay v16 using its fixed source/renderer/output bytes; inspect only the final layer.\n    if not (root/PRESENTATION_V17_PATH).exists():\n        from render_a02_history import inspect_a02_history\n        from render_ai_research import inspect_ai_research\n        for label,check in (('A02 history',inspect_a02_history(root)),('AI record',inspect_ai_research(root))):\n            if check.get('status')!='passed':\n                raise ValueError(label+' differs from its source-derived rendering: '+str(check.get('errors',[])))\n    members=publication_members(root,updated)\n    report={'path':PRESENTATION_V16_PATH,'sha256':digest(path),'presentation_id':PRESENTATION_V16_ID,\n        'publication_kind':required['publication_kind'],'changed_paths':sorted(A02_ALLOWED_ROUTES),'added_paths':[],\n        'changed_achievement_lines':['A02'],'previous_presentation_commit':PRESENTATION_V16_PREVIOUS_COMMIT,\n        'exact_predecessor_reconstruction':True,'existing_A02_claims_and_1980_paper_preserved':True,\n        'source_derived_rendering':True,'homepage_A01_and_original_source_data_unchanged':True,\n        'original_embedded_json_bytes_preserved':True,'published_member_count_with_marker':len(members)+1,\n        **{key:required[key] for key in ('scientific_review_status','scientific_data_unchanged',\n            'historical_achievement_independent_of_AI_review','release_eligible','M0_resumed')}}\n    return apply_a02_team_presentation(root, updated,\n        {**report,'presentation_chain':[*previous_report['presentation_chain'],report]})\n\n\ndef apply_a02_team_presentation(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:\n    \"\"\"Present attributed team-history evidence, retaining the previous technical background.\"\"\"\n    if not (root/PRESENTATION_V17_PATH).exists():\n        return entries, previous_report\n    if digest(project_file(root, PRESENTATION_V16_PATH)) != PRESENTATION_V16_SHA256:\n        raise ValueError('The preceding A02 technical presentation v16 is immutable')\n    path = project_file(root, PRESENTATION_V17_PATH); data = read_json(path)\n    documents = [{'path': name, 'sha256': digest(project_file(root, name)),\n                  'bytes': project_file(root, name).stat().st_size} for name in A02_TEAM_DOCUMENTS]\n    required = {'schema_version': '17.0', 'presentation_id': PRESENTATION_V17_ID,\n        'publication_kind': 'platform_a02_team_records',\n        'previous_presentation_commit': PRESENTATION_V17_PREVIOUS_COMMIT,\n        'previous_presentation': {'path': PRESENTATION_V16_PATH, 'sha256': PRESENTATION_V16_SHA256},\n        'original_baseline_sha256': BASELINE_SHA256, 'original_archive_sha256': ARCHIVE_SHA256,\n        'allowed_html_paths': sorted(A02_ALLOWED_ROUTES), 'added_html_paths': [], 'additions': [],\n        'allowed_achievement_lines': ['A02'], 'editorial_documents': documents,\n        'protected_website_members': {name: {'sha256': row['sha256'], 'bytes': row['bytes']}\n            for name, row in entries.items() if name not in A02_ALLOWED_ROUTES},\n        'reconstruction_kind': 'deduplicated_exact_utf8_text_edits',\n        'scientific_review_status': 'review_required', 'release_eligible': False,\n        'scientific_data_unchanged': True, 'M0_resumed': False,\n        'historical_achievement_independent_of_AI_review': True}\n    if (not isinstance(data, dict) or any(data.get(key) != value for key, value in required.items())\n            or any(data.get(key) is not required[key] for key in ('release_eligible',\n                'scientific_data_unchanged', 'M0_resumed', 'historical_achievement_independent_of_AI_review'))\n            or any(type(data.get(key)) is not int or data[key] != 0 for key in ('new_quantum_calls', 'new_model_API_calls'))\n            or not isinstance(data.get('authorization'), str) or not data['authorization'].strip()):\n        raise ValueError('Unsupported bounded A02 team presentation v17')\n    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')\n    if (not isinstance(files, list) or not files or not isinstance(pool, list) or not pool\n            or any(not isinstance(row, dict) or row.get('path') not in A02_TEAM_PREDECESSOR_FILES for row in files)\n            or len({row['path'] for row in files}) != len(files)\n            or any(not isinstance(row.get('edits'), list) or not row['edits'] or any(\n                not isinstance(edit, dict) or type(edit.get('replacement')) is not int for edit in row['edits']) for row in files)):\n        raise ValueError('A02 team records may enumerate only the ten fixed predecessor text files')\n    if {edit['replacement'] for row in files for edit in row['edits']} != set(range(len(pool))):\n        raise ValueError('Team replacement pool must contain exactly its used segments')\n    changed = set()\n    for name, (sha, size) in A02_TEAM_PREDECESSOR_FILES.items():\n        old = team_predecessor_bytes(root, name)\n        if hashlib.sha256(old).hexdigest() != sha or len(old) != size:\n            raise ValueError('A02 team predecessor differs from fixed 936ca1d: '+name)\n        if old != project_file(root, name).read_bytes():\n            changed.add(name)\n    if {row['path'] for row in files} != changed:\n        raise ValueError('Team patches must enumerate every and only changed predecessor file')\n    old_ai = json.loads(team_predecessor_bytes(root, AI_RESEARCH_CONTENT))\n    current_ai = read_json(project_file(root, AI_RESEARCH_CONTENT))\n    if ({k:v for k,v in old_ai.items() if k != 'lines'} != {k:v for k,v in current_ai.items() if k != 'lines'}\n            or [r.get('id') for r in old_ai['lines']] != ['A'+str(n).zfill(2) for n in range(1,9)]\n            or [r.get('id') for r in current_ai['lines']] != [r.get('id') for r in old_ai['lines']]):\n        raise ValueError('Team records must preserve AI metadata and all eight scientific lines')\n    for old_line, new_line in zip(old_ai['lines'], current_ai['lines']):\n        if old_line['id'] != 'A02' and old_line != new_line:\n            raise ValueError('Team records may update only the A02 AI entry')\n        if any(old_line.get(k) != new_line.get(k) for k in ('name','home_summary')):\n            raise ValueError('A02 team records must preserve public names and homepage summaries')\n    if old_ai['lines'][1] == current_ai['lines'][1]:\n        raise ValueError('Team records must update the A02 AI entry')\n    old_history = json.loads(team_predecessor_bytes(root, A02_HISTORY_CONTENT))\n    history = read_json(project_file(root, A02_HISTORY_CONTENT))\n    mutable = {'team_records','sources','pending','ai_scope','inventory_update','team_retrieval_date'}\n    if ({k:v for k,v in old_history.items() if k not in mutable} != {k:v for k,v in history.items() if k not in mutable}\n            or history.get('achievement_line') != 'A02' or history.get('scientific_review_status') != 'review_required'\n            or history.get('release_eligible') is not False or history.get('m0_status') != 'paused'\n            or history.get('new_quantum_calls') != 0 or history.get('new_experiments') != 0):\n        raise ValueError('Team records must preserve existing A02 historical claims and the 1980 paper')\n    team_records = history.get('team_records')\n    if (not isinstance(team_records, list) or any(not isinstance(row, dict) for row in team_records)\n            or [row.get('id') for row in team_records] != ['a02-team-hfp','a02-team-rubber','a02-team-oil']\n            or any(row.get('original_records_obtained') is not False for row in team_records)):\n        raise ValueError('Expected three attributed A02 team records with original records still unavailable')\n    if (not isinstance(history.get('sources'), list)\n            or history['sources'][:len(old_history['sources'])] != old_history['sources']):\n        raise ValueError('Team records may append sources, preserving every existing source object')\n    changes = data.get('changes')\n    if (not isinstance(changes, list) or any(not isinstance(row, dict) for row in changes)\n            or [row.get('path') for row in changes] != sorted(A02_ALLOWED_ROUTES)):\n        raise ValueError('Team records may update exactly the A02 topic, AI record and inventory')\n    from public_line_labels import project_html, project_markdown\n    json_scripts = re.compile(r'<script\\b[^>]*\\btype\\s*=\\s*[\\\"\\']application/(?:ld\\+)?json[\\\"\\'][^>]*>.*?</script\\s*>', re.I | re.S)\n    updated = {name:dict(row) for name,row in entries.items()}\n    for item in changes:\n        name=item['path']; old=entries[name]\n        before=team_predecessor_bytes(root,'site/'+name); after=project_file(root,'site/'+name).read_bytes()\n        source,current=before.decode('utf-8'),after.decode('utf-8')\n        if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']\n                or hashlib.sha256(before).hexdigest() != old['sha256'] or len(before) != old['bytes']\n                or item.get('new_sha256') != hashlib.sha256(after).hexdigest() or item.get('new_bytes') != len(after)\n                or before == after or not isinstance(item.get('reason'),str) or not item['reason'].strip()):\n            raise ValueError('Team HTML differs from complete old/new identities: '+name)\n        if json_scripts.findall(source) != json_scripts.findall(current):\n            raise ValueError('Team records must preserve every embedded source JSON byte')\n        if not set(re.findall(r'\\bid=\"([^\\\"]+)\"',source)) <= set(re.findall(r'\\bid=\"([^\\\"]+)\"',current)):\n            raise ValueError('Team records cannot remove existing navigation/source IDs')\n        if project_html(current,name) != current:\n            raise ValueError('Team records must retain canonical named achievement references')\n        if name == A02_HISTORY_ROUTE:\n            begin,end='<!-- A02_ACADEMIC_HISTORY:BEGIN -->','<!-- A02_ACADEMIC_HISTORY:END -->'\n            if any(value.count(begin)!=1 or value.count(end)!=1 for value in (source,current)):\n                raise ValueError('Team topic requires one complete existing A02 marker')\n            strip=lambda value:value[:value.index(begin)]+'<A02-HISTORY/>'+value[value.index(end)+len(end):]\n            if strip(source) != strip(current):\n                raise ValueError('Team topic may change only inside the A02 historical marker')\n            background = r'<article\\b[^>]*\\bid=\"a02-technical-records\"[^>]*>.*?</article>'\n            if (len(re.findall(background, source, re.S)) != 1\n                    or re.findall(background, source, re.S) != re.findall(background, current, re.S)):\n                raise ValueError('Team records must preserve the complete existing technical-background article')\n            team = r'<article\\b[^>]*\\bid=\"a02-team-records\"[^>]*>.*?</article>'\n            if (len(re.findall(team, current, re.S)) != 1\n                    or current.index('id=\"a02-team-records\"') > current.index('id=\"a02-technical-records\"')):\n                raise ValueError('Attributed A02 team records must precede other-team technical background')\n        else:\n            pattern = (r'<section\\b[^>]*\\bid=\"ai-a02\"[^>]*>.*?</section>' if name==AI_RESEARCH_ROUTE\n                       else r'<article\\b[^>]*\\bid=\"heritage-line-a02\"[^>]*>.*?</article>')\n            if (len(re.findall(pattern,source,re.S))!=1 or len(re.findall(pattern,current,re.S))!=1\n                    or re.sub(pattern,'<A02-ONLY/>',source,flags=re.S)!=re.sub(pattern,'<A02-ONLY/>',current,flags=re.S)):\n                raise ValueError('Team records changed outside the A02 entry: '+name)\n        updated[name]={**old,'sha256':item['new_sha256'],'bytes':item['new_bytes'],'presentation_id':PRESENTATION_V17_ID}\n    inventory='docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md'\n    old_doc=team"
+    },
+    {
+      "old": "6",
+      "new": "7"
+    },
+    {
+      "old": "and_",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "_and_technical_background"
+    }
+  ],
+  "reversible_text_files": [
+    {
+      "path": "content/a02-academic-achievements.v1.json",
+      "old_sha256": "79bc1cdfc8898a7e6c9e6615ca4cf6961d9ec05f1891ecf30f2531f5dc2f07c1",
+      "old_bytes": 23565,
+      "new_sha256": "51c77cc96b4b9db06d695bc5ffdae311ffb2082048ec98adbbe98de9b0b078eb",
+      "new_bytes": 38173,
+      "edits": [
+        {
+          "old_offset": 9549,
+          "replacement": 0
+        },
+        {
+          "old_offset": 9550,
+          "replacement": 1
+        },
+        {
+          "old_offset": 9576,
+          "replacement": 2
+        },
+        {
+          "old_offset": 9579,
+          "replacement": 3
+        },
+        {
+          "old_offset": 9591,
+          "replacement": 4
+        },
+        {
+          "old_offset": 9594,
+          "replacement": 5
+        },
+        {
+          "old_offset": 9610,
+          "replacement": 6
+        },
+        {
+          "old_offset": 9626,
+          "replacement": 7
+        },
+        {
+          "old_offset": 9645,
+          "replacement": 8
+        },
+        {
+          "old_offset": 9734,
+          "replacement": 9
+        },
+        {
+          "old_offset": 9749,
+          "replacement": 10
+        },
+        {
+          "old_offset": 9767,
+          "replacement": 11
+        },
+        {
+          "old_offset": 9839,
+          "replacement": 12
+        },
+        {
+          "old_offset": 9955,
+          "replacement": 13
+        },
+        {
+          "old_offset": 13265,
+          "replacement": 14
+        },
+        {
+          "old_offset": 13503,
+          "replacement": 15
+        },
+        {
+          "old_offset": 13512,
+          "replacement": 16
+        },
+        {
+          "old_offset": 13550,
+          "replacement": 17
+        },
+        {
+          "old_offset": 13556,
+          "replacement": 18
+        },
+        {
+          "old_offset": 13590,
+          "replacement": 19
+        },
+        {
+          "old_offset": 13662,
+          "replacement": 20
+        },
+        {
+          "old_offset": 13686,
+          "replacement": 21
+        },
+        {
+          "old_offset": 13701,
+          "replacement": 22
+        },
+        {
+          "old_offset": 13704,
+          "replacement": 23
+        },
+        {
+          "old_offset": 13721,
+          "replacement": 24
+        },
+        {
+          "old_offset": 13724,
+          "replacement": 25
+        },
+        {
+          "old_offset": 13841,
+          "replacement": 26
+        },
+        {
+          "old_offset": 13857,
+          "replacement": 27
+        },
+        {
+          "old_offset": 13866,
+          "replacement": 28
+        },
+        {
+          "old_offset": 13907,
+          "replacement": 29
+        },
+        {
+          "old_offset": 13949,
+          "replacement": 30
+        },
+        {
+          "old_offset": 13955,
+          "replacement": 31
+        },
+        {
+          "old_offset": 13964,
+          "replacement": 32
+        },
+        {
+          "old_offset": 23559,
+          "replacement": 33
+        }
+      ]
+    },
+    {
+      "path": "scripts/render_a02_history.py",
+      "old_sha256": "1b529caa86ad9240f376c63f29e67d67022b9ddaefe13aaa87fd88c21b090d1d",
+      "old_bytes": 15796,
+      "new_sha256": "47df27ddd51f676847e718a18dc8c57429ac743de13b95eb6eec8d8a5653be1d",
+      "new_bytes": 18491,
+      "edits": [
+        {
+          "old_offset": 1823,
+          "replacement": 34
+        },
+        {
+          "old_offset": 1905,
+          "replacement": 35
+        },
+        {
+          "old_offset": 2082,
+          "replacement": 35
+        },
+        {
+          "old_offset": 2098,
+          "replacement": 36
+        },
+        {
+          "old_offset": 2122,
+          "replacement": 37
+        },
+        {
+          "old_offset": 3194,
+          "replacement": 38
+        },
+        {
+          "old_offset": 3204,
+          "replacement": 39
+        },
+        {
+          "old_offset": 3595,
+          "replacement": 40
+        },
+        {
+          "old_offset": 5985,
+          "replacement": 41
+        },
+        {
+          "old_offset": 5991,
+          "replacement": 42
+        },
+        {
+          "old_offset": 6002,
+          "replacement": 43
+        },
+        {
+          "old_offset": 6011,
+          "replacement": 44
+        },
+        {
+          "old_offset": 6133,
+          "replacement": 45
+        },
+        {
+          "old_offset": 6630,
+          "replacement": 46
+        },
+        {
+          "old_offset": 7539,
+          "replacement": 47
+        },
+        {
+          "old_offset": 9183,
+          "replacement": 48
+        },
+        {
+          "old_offset": 10414,
+          "replacement": 49
+        },
+        {
+          "old_offset": 10432,
+          "replacement": 50
+        },
+        {
+          "old_offset": 10468,
+          "replacement": 51
+        },
+        {
+          "old_offset": 10480,
+          "replacement": 52
+        },
+        {
+          "old_offset": 10534,
+          "replacement": 53
+        },
+        {
+          "old_offset": 10588,
+          "replacement": 54
+        },
+        {
+          "old_offset": 10612,
+          "replacement": 55
+        },
+        {
+          "old_offset": 10636,
+          "replacement": 56
+        },
+        {
+          "old_offset": 14607,
+          "replacement": 57
+        },
+        {
+          "old_offset": 14652,
+          "replacement": 58
+        },
+        {
+          "old_offset": 14825,
+          "replacement": 59
+        },
+        {
+          "old_offset": 14970,
+          "replacement": 60
+        }
+      ]
+    },
+    {
+      "path": "docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "old_sha256": "f36d7ac151847c284c3ea2fd08f0816739d392a998b9c05f596c052a5cfb947d",
+      "old_bytes": 18023,
+      "new_sha256": "2fa00a8628b9d3d0af028e1472ca852119ad019710b4e846b6ce6b4423e593d8",
+      "new_bytes": 29258,
+      "edits": [
+        {
+          "old_offset": 2610,
+          "replacement": 49
+        },
+        {
+          "old_offset": 2628,
+          "replacement": 50
+        },
+        {
+          "old_offset": 2660,
+          "replacement": 61
+        },
+        {
+          "old_offset": 2666,
+          "replacement": 62
+        },
+        {
+          "old_offset": 2672,
+          "replacement": 63
+        },
+        {
+          "old_offset": 2678,
+          "replacement": 64
+        },
+        {
+          "old_offset": 2699,
+          "replacement": 65
+        },
+        {
+          "old_offset": 2702,
+          "replacement": 66
+        },
+        {
+          "old_offset": 2714,
+          "replacement": 67
+        },
+        {
+          "old_offset": 2732,
+          "replacement": 68
+        },
+        {
+          "old_offset": 2747,
+          "replacement": 69
+        },
+        {
+          "old_offset": 2804,
+          "replacement": 70
+        },
+        {
+          "old_offset": 15315,
+          "replacement": 71
+        },
+        {
+          "old_offset": 15350,
+          "replacement": 2
+        },
+        {
+          "old_offset": 15353,
+          "replacement": 3
+        },
+        {
+          "old_offset": 15365,
+          "replacement": 4
+        },
+        {
+          "old_offset": 15368,
+          "replacement": 5
+        },
+        {
+          "old_offset": 15384,
+          "replacement": 6
+        },
+        {
+          "old_offset": 15400,
+          "replacement": 7
+        },
+        {
+          "old_offset": 15419,
+          "replacement": 8
+        },
+        {
+          "old_offset": 15508,
+          "replacement": 9
+        },
+        {
+          "old_offset": 15523,
+          "replacement": 10
+        },
+        {
+          "old_offset": 15541,
+          "replacement": 11
+        },
+        {
+          "old_offset": 15613,
+          "replacement": 12
+        },
+        {
+          "old_offset": 15729,
+          "replacement": 13
+        },
+        {
+          "old_offset": 18023,
+          "replacement": 72
+        }
+      ]
+    },
+    {
+      "path": "content/ai-research-section.v1.json",
+      "old_sha256": "40d2e84da4fd6060f34b83fd8a15171acf3ce7cea22f2053d6fa23aa80afeb28",
+      "old_bytes": 65074,
+      "new_sha256": "99cba00df70792791a76e50ff4deb7ad20cea58dfef7f6fc4446918cff256b75",
+      "new_bytes": 65891,
+      "edits": [
+        {
+          "old_offset": 31930,
+          "replacement": 73
+        },
+        {
+          "old_offset": 32709,
+          "replacement": 0
+        },
+        {
+          "old_offset": 32711,
+          "replacement": 74
+        },
+        {
+          "old_offset": 32747,
+          "replacement": 75
+        },
+        {
+          "old_offset": 32769,
+          "replacement": 76
+        },
+        {
+          "old_offset": 32782,
+          "replacement": 21
+        },
+        {
+          "old_offset": 32797,
+          "replacement": 22
+        },
+        {
+          "old_offset": 32800,
+          "replacement": 23
+        },
+        {
+          "old_offset": 32817,
+          "replacement": 77
+        },
+        {
+          "old_offset": 32886,
+          "replacement": 78
+        }
+      ]
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "old_sha256": "51f74114ec4434281a91beeebae0ece1eb3151aa189846e8b4aa90ceae65847c",
+      "old_bytes": 34544,
+      "new_sha256": "c354182622f067853bf6b5b0d6310a6f81aa9f7615361a2febb5f9eb9b60107e",
+      "new_bytes": 35191,
+      "edits": [
+        {
+          "old_offset": 16951,
+          "replacement": 79
+        },
+        {
+          "old_offset": 17676,
+          "replacement": 80
+        },
+        {
+          "old_offset": 17714,
+          "replacement": 75
+        },
+        {
+          "old_offset": 17736,
+          "replacement": 76
+        },
+        {
+          "old_offset": 17749,
+          "replacement": 21
+        },
+        {
+          "old_offset": 17764,
+          "replacement": 22
+        },
+        {
+          "old_offset": 17767,
+          "replacement": 23
+        },
+        {
+          "old_offset": 17784,
+          "replacement": 77
+        },
+        {
+          "old_offset": 17853,
+          "replacement": 78
+        }
+      ]
+    },
+    {
+      "path": "site/topics/fluoromonomers/index.html",
+      "old_sha256": "40cfb1665973b58bec414fd65a6d6ede3a24444c513df5cab01671b0598ade19",
+      "old_bytes": 30347,
+      "new_sha256": "ab2ecad195b1cb610f97c5a1d6b2e77a1207cad9188e52b59569627cfddfe17b",
+      "new_bytes": 45066,
+      "edits": [
+        {
+          "old_offset": 3398,
+          "replacement": 81
+        },
+        {
+          "old_offset": 4152,
+          "replacement": 41
+        },
+        {
+          "old_offset": 4158,
+          "replacement": 42
+        },
+        {
+          "old_offset": 4169,
+          "replacement": 43
+        },
+        {
+          "old_offset": 4178,
+          "replacement": 44
+        },
+        {
+          "old_offset": 4300,
+          "replacement": 45
+        },
+        {
+          "old_offset": 7043,
+          "replacement": 82
+        },
+        {
+          "old_offset": 16329,
+          "replacement": 83
+        },
+        {
+          "old_offset": 18803,
+          "replacement": 84
+        },
+        {
+          "old_offset": 18812,
+          "replacement": 85
+        },
+        {
+          "old_offset": 20046,
+          "replacement": 86
+        },
+        {
+          "old_offset": 20115,
+          "replacement": 87
+        },
+        {
+          "old_offset": 24051,
+          "replacement": 88
+        },
+        {
+          "old_offset": 25474,
+          "replacement": 89
+        },
+        {
+          "old_offset": 25520,
+          "replacement": 2
+        },
+        {
+          "old_offset": 25523,
+          "replacement": 3
+        },
+        {
+          "old_offset": 25535,
+          "replacement": 4
+        },
+        {
+          "old_offset": 25538,
+          "replacement": 5
+        },
+        {
+          "old_offset": 25554,
+          "replacement": 6
+        },
+        {
+          "old_offset": 25570,
+          "replacement": 7
+        },
+        {
+          "old_offset": 25589,
+          "replacement": 8
+        },
+        {
+          "old_offset": 25678,
+          "replacement": 9
+        },
+        {
+          "old_offset": 25693,
+          "replacement": 10
+        },
+        {
+          "old_offset": 25711,
+          "replacement": 11
+        },
+        {
+          "old_offset": 25783,
+          "replacement": 12
+        },
+        {
+          "old_offset": 25899,
+          "replacement": 13
+        }
+      ]
+    },
+    {
+      "path": "site/research/index.html",
+      "old_sha256": "4137819f6c923b6cf2f7e5592f609705c8ac3ab62c513012ada1c2ed8f8303c5",
+      "old_bytes": 48320,
+      "new_sha256": "4b4db2f971bfed41f29325dd8e60313b3ec1dfce40caf743418c42955dd3e48c",
+      "new_bytes": 48993,
+      "edits": [
+        {
+          "old_offset": 27045,
+          "replacement": 90
+        },
+        {
+          "old_offset": 27807,
+          "replacement": 91
+        },
+        {
+          "old_offset": 27854,
+          "replacement": 75
+        },
+        {
+          "old_offset": 27876,
+          "replacement": 76
+        },
+        {
+          "old_offset": 27889,
+          "replacement": 21
+        },
+        {
+          "old_offset": 27904,
+          "replacement": 22
+        },
+        {
+          "old_offset": 27907,
+          "replacement": 23
+        },
+        {
+          "old_offset": 27924,
+          "replacement": 77
+        },
+        {
+          "old_offset": 27993,
+          "replacement": 78
+        }
+      ]
+    },
+    {
+      "path": "site/achievements/index.html",
+      "old_sha256": "58367575451a3f7bb38b75d427af62bd11954d14d848603410f0fdb95a563753",
+      "old_bytes": 95787,
+      "new_sha256": "afab8c345bcceb12584ba7b3c00d15daf5f4a87a0eb6d1777e52ab719093755d",
+      "new_bytes": 95871,
+      "edits": [
+        {
+          "old_offset": 19919,
+          "replacement": 15
+        },
+        {
+          "old_offset": 19928,
+          "replacement": 16
+        },
+        {
+          "old_offset": 19966,
+          "replacement": 17
+        },
+        {
+          "old_offset": 19972,
+          "replacement": 18
+        },
+        {
+          "old_offset": 20006,
+          "replacement": 19
+        },
+        {
+          "old_offset": 20400,
+          "replacement": 20
+        },
+        {
+          "old_offset": 20424,
+          "replacement": 21
+        },
+        {
+          "old_offset": 20439,
+          "replacement": 22
+        },
+        {
+          "old_offset": 20442,
+          "replacement": 23
+        },
+        {
+          "old_offset": 20459,
+          "replacement": 24
+        },
+        {
+          "old_offset": 20462,
+          "replacement": 25
+        },
+        {
+          "old_offset": 20610,
+          "replacement": 26
+        },
+        {
+          "old_offset": 20626,
+          "replacement": 27
+        },
+        {
+          "old_offset": 20635,
+          "replacement": 28
+        },
+        {
+          "old_offset": 20676,
+          "replacement": 29
+        },
+        {
+          "old_offset": 20718,
+          "replacement": 30
+        },
+        {
+          "old_offset": 20724,
+          "replacement": 31
+        },
+        {
+          "old_offset": 20733,
+          "replacement": 32
+        }
+      ]
+    },
+    {
+      "path": "docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "old_sha256": "8dfe0a92f4fd91af063dd907bf677e84db5e3f348d9a57acd6ac12ae9d4e4e97",
+      "old_bytes": 69628,
+      "new_sha256": "ae083f26ea6a5699f5443335569fb10f95d7a12db24c449489b9cead2fd30072",
+      "new_bytes": 69712,
+      "edits": [
+        {
+          "old_offset": 12079,
+          "replacement": 15
+        },
+        {
+          "old_offset": 12088,
+          "replacement": 16
+        },
+        {
+          "old_offset": 12126,
+          "replacement": 17
+        },
+        {
+          "old_offset": 12132,
+          "replacement": 18
+        },
+        {
+          "old_offset": 12166,
+          "replacement": 19
+        },
+        {
+          "old_offset": 12520,
+          "replacement": 20
+        },
+        {
+          "old_offset": 12544,
+          "replacement": 21
+        },
+        {
+          "old_offset": 12559,
+          "replacement": 22
+        },
+        {
+          "old_offset": 12562,
+          "replacement": 23
+        },
+        {
+          "old_offset": 12579,
+          "replacement": 24
+        },
+        {
+          "old_offset": 12582,
+          "replacement": 25
+        },
+        {
+          "old_offset": 12703,
+          "replacement": 26
+        },
+        {
+          "old_offset": 12719,
+          "replacement": 27
+        },
+        {
+          "old_offset": 12728,
+          "replacement": 28
+        },
+        {
+          "old_offset": 12769,
+          "replacement": 29
+        },
+        {
+          "old_offset": 12811,
+          "replacement": 30
+        },
+        {
+          "old_offset": 12817,
+          "replacement": 31
+        },
+        {
+          "old_offset": 12826,
+          "replacement": 32
+        }
+      ]
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "old_sha256": "292718663d46a8c80a57eeb8bc13b3586e5997883a92af1783dbc30d2b5ee1ce",
+      "old_bytes": 187171,
+      "new_sha256": "665aedd2071d06da0530a345aa454c37a5535172fb260fd1e2a3ee449a40698e",
+      "new_bytes": 204809,
+      "edits": [
+        {
+          "old_offset": 8972,
+          "replacement": 92
+        },
+        {
+          "old_offset": 19339,
+          "replacement": 93
+        },
+        {
+          "old_offset": 19491,
+          "replacement": 94
+        },
+        {
+          "old_offset": 19493,
+          "replacement": 95
+        },
+        {
+          "old_offset": 19497,
+          "replacement": 96
+        },
+        {
+          "old_offset": 19498,
+          "replacement": 97
+        },
+        {
+          "old_offset": 19503,
+          "replacement": 98
+        },
+        {
+          "old_offset": 19515,
+          "replacement": 99
+        },
+        {
+          "old_offset": 58479,
+          "replacement": 100
+        },
+        {
+          "old_offset": 168882,
+          "replacement": 101
+        },
+        {
+          "old_offset": 168887,
+          "replacement": 102
+        },
+        {
+          "old_offset": 168894,
+          "replacement": 103
+        },
+        {
+          "old_offset": 168895,
+          "replacement": 104
+        },
+        {
+          "old_offset": 168899,
+          "replacement": 105
+        },
+        {
+          "old_offset": 168909,
+          "replacement": 106
+        },
+        {
+          "old_offset": 168910,
+          "replacement": 107
+        },
+        {
+          "old_offset": 168938,
+          "replacement": 108
+        },
+        {
+          "old_offset": 171904,
+          "replacement": 94
+        },
+        {
+          "old_offset": 171906,
+          "replacement": 95
+        },
+        {
+          "old_offset": 171910,
+          "replacement": 96
+        },
+        {
+          "old_offset": 171911,
+          "replacement": 97
+        },
+        {
+          "old_offset": 171916,
+          "replacement": 98
+        },
+        {
+          "old_offset": 171928,
+          "replacement": 99
+        },
+        {
+          "old_offset": 172221,
+          "replacement": 109
+        },
+        {
+          "old_offset": 172230,
+          "replacement": 110
+        },
+        {
+          "old_offset": 172231,
+          "replacement": 94
+        },
+        {
+          "old_offset": 172233,
+          "replacement": 95
+        },
+        {
+          "old_offset": 172237,
+          "replacement": 96
+        },
+        {
+          "old_offset": 172238,
+          "replacement": 97
+        },
+        {
+          "old_offset": 172243,
+          "replacement": 98
+        },
+        {
+          "old_offset": 173320,
+          "replacement": 109
+        },
+        {
+          "old_offset": 173329,
+          "replacement": 110
+        },
+        {
+          "old_offset": 173330,
+          "replacement": 94
+        },
+        {
+          "old_offset": 173332,
+          "replacement": 95
+        },
+        {
+          "old_offset": 173336,
+          "replacement": 96
+        },
+        {
+          "old_offset": 173337,
+          "replacement": 97
+        },
+        {
+          "old_offset": 173342,
+          "replacement": 98
+        },
+        {
+          "old_offset": 174928,
+          "replacement": 94
+        },
+        {
+          "old_offset": 174930,
+          "replacement": 95
+        },
+        {
+          "old_offset": 174934,
+          "replacement": 96
+        },
+        {
+          "old_offset": 174935,
+          "replacement": 97
+        },
+        {
+          "old_offset": 174940,
+          "replacement": 98
+        },
+        {
+          "old_offset": 174959,
+          "replacement": 99
+        },
+        {
+          "old_offset": 177377,
+          "replacement": 111
+        },
+        {
+          "old_offset": 178051,
+          "replacement": 41
+        },
+        {
+          "old_offset": 178057,
+          "replacement": 42
+        },
+        {
+          "old_offset": 178330,
+          "replacement": 41
+        },
+        {
+          "old_offset": 178336,
+          "replacement": 42
+        },
+        {
+          "old_offset": 178839,
+          "replacement": 112
+        },
+        {
+          "old_offset": 178901,
+          "replacement": 112
+        },
+        {
+          "old_offset": 179114,
+          "replacement": 112
+        },
+        {
+          "old_offset": 179202,
+          "replacement": 113
+        },
+        {
+          "old_offset": 179216,
+          "replacement": 114
+        }
+      ]
+    }
+  ],
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "M0_resumed": false,
+  "historical_achievement_independent_of_AI_review": true,
+  "new_quantum_calls": 0,
+  "new_model_API_calls": 0,
+  "changes": [
+    {
+      "path": "achievements/index.html",
+      "old_sha256": "58367575451a3f7bb38b75d427af62bd11954d14d848603410f0fdb95a563753",
+      "old_bytes": 95787,
+      "new_sha256": "afab8c345bcceb12584ba7b3c00d15daf5f4a87a0eb6d1777e52ab719093755d",
+      "new_bytes": 95871,
+      "reason": "Present Chen Qingyun and team’s attributed A02 contributions before unchanged other-team background, with concrete original-document search status and historical/AI separation; keep M0 paused"
+    },
+    {
+      "path": "research/index.html",
+      "old_sha256": "4137819f6c923b6cf2f7e5592f609705c8ac3ab62c513012ada1c2ed8f8303c5",
+      "old_bytes": 48320,
+      "new_sha256": "4b4db2f971bfed41f29325dd8e60313b3ec1dfce40caf743418c42955dd3e48c",
+      "new_bytes": 48993,
+      "reason": "Present Chen Qingyun and team’s attributed A02 contributions before unchanged other-team background, with concrete original-document search status and historical/AI separation; keep M0 paused"
+    },
+    {
+      "path": "topics/fluoromonomers/index.html",
+      "old_sha256": "40cfb1665973b58bec414fd65a6d6ede3a24444c513df5cab01671b0598ade19",
+      "old_bytes": 30347,
+      "new_sha256": "ab2ecad195b1cb610f97c5a1d6b2e77a1207cad9188e52b59569627cfddfe17b",
+      "new_bytes": 45066,
+      "reason": "Present Chen Qingyun and team’s attributed A02 contributions before unchanged other-team background, with concrete original-document search status and historical/AI separation; keep M0 paused"
+    }
+  ],
+  "additions": [],
+  "boundary": "Only A02 team-history records, appended sources, unresolved document searches, AI reading scope and inventory update change. The previous history cards, collaboration, 1980 paper, three technical-background objects and complete technical-background HTML article remain identical. The new team records are attributed readings from biography and institutional sources, with original contemporaneous technical records still unavailable. Homepage, README, seven other scientific lines, A01, PFtB and original source JSON remain identical. M0 is paused; no quantum calculation, model service or experiment is represented.",
+  "reconstruction": "Ten permitted fixed 936ca1d predecessor files are reconstructed in memory using ordered exact UTF-8 text edits and a deduplicated replacement pool. No complete predecessor page or document is added. Existing v1-v16 declarations retain their original byte identities.",
+  "publish_allowlist": "Unchanged: sixteen static HTML pages, two original public JSON files and an empty .nojekyll marker, nineteen regular published files."
+}
