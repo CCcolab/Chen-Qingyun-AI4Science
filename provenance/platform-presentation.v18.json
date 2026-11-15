@@ -1,0 +1,1334 @@
+{
+  "schema_version": "18.0",
+  "presentation_id": "PLATFORM-A02-CITED-SOURCES-20261115-v18",
+  "created_at_utc": "2026-11-15T03:05:44.475783+00:00",
+  "publication_kind": "platform_a02_cited_sources",
+  "authorization": "User request dated 2026-11-15: continue tracing original A02 sources cited in the Chen Qingyun biography, distinguishing the official 2018 oral-history project catalogue and bibliographic or library leads for the 2009 institutional history from actually obtained recordings and book pages; keep prior historical and team records unchanged, qualify unresolved items, separate historical achievements from new AI work, keep M0 paused, then synchronize GitHub and the website",
+  "previous_presentation_commit": "98e079c03d1d969bc69d0979deb29d921afd5bc2",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v17.json",
+    "sha256": "b635b2950e37d5387e8fb68da12109ca585833b769eec38cf25911eb86563ee1"
+  },
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "allowed_html_paths": [
+    "achievements/index.html",
+    "research/index.html",
+    "topics/fluoromonomers/index.html"
+  ],
+  "added_html_paths": [],
+  "allowed_achievement_lines": [
+    "A02"
+  ],
+  "editorial_documents": [
+    {
+      "path": "content/a02-academic-achievements.v1.json",
+      "sha256": "2c60f209710ded6ec24f90a6170c0e721fcf1540f4bcbef0c29d492d9b6e69ef",
+      "bytes": 48818
+    },
+    {
+      "path": "scripts/render_a02_history.py",
+      "sha256": "0d598601ccbbd0064bc95b513055c32c7342459937a5504d5f7af74167be8e9c",
+      "bytes": 21602
+    },
+    {
+      "path": "docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "sha256": "1209c6a935d402b09602b67be54a5c0f7086d00426f80c6c4971df0a3927cabe",
+      "bytes": 37328
+    },
+    {
+      "path": "content/ai-research-section.v1.json",
+      "sha256": "2f3a63d3f431939b169877c4a40ddba867f1dd918e2a5d96b2cbd5f5f049870a",
+      "bytes": 66703
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "sha256": "0ed766353417b7f70de17729d0d2876e7a12a0a6270e690ea587d77b14150aa0",
+      "bytes": 35833
+    },
+    {
+      "path": "scripts/render_ai_research.py",
+      "sha256": "729298ecb6146cba6b9a78bdc2074dabb10b6a2f551f7efaf4d0a4078e29f521",
+      "bytes": 34792
+    },
+    {
+      "path": "scripts/public_line_labels.py",
+      "sha256": "27776862621369ea922d97cc5a1d0ff927f1ec2aa5cbe93a0cacf66fee27f695",
+      "bytes": 9737
+    },
+    {
+      "path": "scripts/check_site.py",
+      "sha256": "70b9d2e3c2a8cd13cec93530ec9092761fe8731eccae7aa055ba280c4dfe1fae",
+      "bytes": 23307
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "sha256": "90000776a713ff4cc0441efd52d9c54f6dce3fec5872d27867b1f2109a73efdc",
+      "bytes": 223315
+    },
+    {
+      "path": "scripts/render_heritage.py",
+      "sha256": "07b1698b1c0485accd96cc0a6d6730bb164258e003737c9f370919920768f27d",
+      "bytes": 42653
+    },
+    {
+      "path": "docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "sha256": "e9c71d5f3a7ad148882aae13847f9bce64d48d8858666285f7c42fbada5181a9",
+      "bytes": 69708
+    }
+  ],
+  "protected_website_members": {
+    "index.html": {
+      "sha256": "8b3532ee45c0fb33912f20a3bd7943043a348f10a370b9c6716e9edf3c0abf41",
+      "bytes": 257766
+    },
+    "pftb/index.html": {
+      "sha256": "42ca404f2ed70b7a3b0b5d8b0eb742a2509e5a5a70fd0be36a65028e61cbd1f6",
+      "bytes": 97587
+    },
+    "topics/f53/index.html": {
+      "sha256": "8def3379a75dda6665d7cb3ee6c32193fc7a61ec6b31098abbefe9218fea39fe",
+      "bytes": 8161
+    },
+    "topics/refrigerants/index.html": {
+      "sha256": "5d9b5a355b949f67c5de252727f8d4e4e7533abab8a666c49a0f932170153c4e",
+      "bytes": 10636
+    },
+    "topics/perfluorosulfonates/index.html": {
+      "sha256": "85a6f4330edb7607f61ca217b71d2ef6c12cb1af0d48aaaebf737acf3a212ea5",
+      "bytes": 8888
+    },
+    "topics/chen-reagent/index.html": {
+      "sha256": "14f08afd4062c0ae171f24e5fb225e5968b003e885edc206baf08ca352b630df",
+      "bytes": 19991
+    },
+    "topics/single-electron-transfer/index.html": {
+      "sha256": "79c84f89e25e576a03f34153b9eb85a5ff73815c8265a0222930d889390ea947",
+      "bytes": 10355
+    },
+    "topics/fluoroporphyrins/index.html": {
+      "sha256": "24b6bb744b594573487847c89bbb35571ea56bc15d444ebeac3339379dbc1875",
+      "bytes": 6018
+    },
+    "topics/early-fluoroketones/index.html": {
+      "sha256": "a6da86d7f9ff0f35a5ea044252297a23e5ed71db829f2d184e3ab38a70dce9a2",
+      "bytes": 250938
+    },
+    "topics/fluorinated-small-rings/index.html": {
+      "sha256": "2413c83d4319746f41e940c04fe48bdeda28244235f5a9e8697285c187ba412d",
+      "bytes": 5924
+    },
+    "topics/deoxyfluorination/index.html": {
+      "sha256": "2aca9c13eb46f9fedfb02a2adfdc9423c207465f58608bcd671838d4d8045df5",
+      "bytes": 5550
+    },
+    "topics/sulfonyl-fluoride/index.html": {
+      "sha256": "fe944efbbfa5a7814015235f4ae3aae101db4046b0c9419986d6855d7ed15b49",
+      "bytes": 5043
+    },
+    "topics/index.html": {
+      "sha256": "44a5690d1e65195b9ff191d2a7ec37487070cdfafb191ae107962d5e0d7ab73c",
+      "bytes": 5055
+    },
+    "data/public-sources.json": {
+      "sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+      "bytes": 33608
+    },
+    "data/achievement-lines.json": {
+      "sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+      "bytes": 39768
+    },
+    "README.txt": {
+      "sha256": "6e15068b7240ae47d633df3f777e81fbb9e46146ee5f4ab70011f09119b6bbc9",
+      "bytes": 336
+    },
+    "ROUTES.txt": {
+      "sha256": "a734c356877d4534285ab7d71b9fe0f7a17abbced4de3c52f8e60d335301e418",
+      "bytes": 949
+    },
+    "QA.txt": {
+      "sha256": "a60b5f382b31689fa17e2518b7079ef0660674fb62bddbbf564c7b74dfe51067",
+      "bytes": 290
+    },
+    "IONIC-ENTRY-RETEST.txt": {
+      "sha256": "3462b056891a27c335cc2620deb87b245b6c9aea3bdaec607c8a14beca69fe9d",
+      "bytes": 741
+    }
+  },
+  "reconstruction_kind": "deduplicated_exact_utf8_text_edits",
+  "reverse_text_patch_pool": [
+    {
+      "old": "",
+      "new": ","
+    },
+    {
+      "old": "",
+      "new": "    \"2018本人访谈已定位采集项目与学术检索入口，完整原录、当次档号和采访者仍待核；5月15日照片不转作1月3日采访证据。\",\n    \"2009版《中国科学院》p.291册次仍未核定；新提供的《中国科学院年鉴·2009》（科学出版社）与目标书分开，需调阅正确分册版权页、目录及p.290–292。\"\n"
+    },
+    {
+      "old": "，以及传记与机构材料的",
+      "new": "、"
+    },
+    {
+      "old": "读、原料／牌号",
+      "new": "象"
+    },
+    {
+      "old": "",
+      "new": "和引据追踪。已区分2018访谈元数据"
+    },
+    {
+      "old": "来源定位和原件缺口整理。陈团队的贡献叙述与同期原始技术证据分开：本次",
+      "new": "项目目录、"
+    },
+    {
+      "old": "追查",
+      "new": "专题片、馆藏及目标书页；访谈原录和2009版《中国科学院》p.291均"
+    },
+    {
+      "old": "",
+      "new": "，册次仍待核。历史成果仍归陈先生及原合作者，其他团队资料仅作背景；未"
+    },
+    {
+      "old": "的",
+      "new": "增"
+    },
+    {
+      "old": "／",
+      "new": "、"
+    },
+    {
+      "old": "。其他团队和相关材料仅作背景",
+      "new": ""
+    },
+    {
+      "old": "新增",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "    },\n    {\n      \"id\": \"A02-TRACE-MMCS-PROJECT\",\n      \"anchor\": \"a02-source-mmcs-project\",\n      \"title\": \"中国科学家博物馆：陈庆云采集专题\",\n      \"url\": \"https://www.mmcs.org.cn/kxjfc/kxjfc/cqy9449/index.html\",\n      \"kind\": \"采集项目公开目录，非当次访谈原录\",\n      \"locator\": \"采集小组栏：负责人黄智静，承建上海有机所；不据此指定2018-01-03当次采访者\"\n    },\n    {\n      \"id\": \"A02-TRACE-MMCS-SEARCH\",\n      \"anchor\": \"a02-source-mmcs-search\",\n      \"title\": \"中国科学家博物馆学术版：资料检索\",\n      \"url\": \"https://www.mmcs.org.cn/xsb/zljs/index.html\",\n      \"kind\": \"资料检索公开入口，目标原录未取得\",\n      \"locator\": \"口述文字、音视频、档案／图纸／研究报告类别；已核读的公开页显示系统升级提示，不能判断馆藏有无\"\n    },\n    {\n      \"id\": \"A02-TRACE-MMCS-VIDEO\",\n      \"anchor\": \"a02-source-mmcs-video\",\n      \"title\": \"中国科学家博物馆：陈庆云影音再现\",\n      \"url\": \"https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/yyzx0231/index.html\",\n      \"kind\": \"已展开的公开影音目录，非2018访谈档号\",\n      \"locator\": \"已展开的公开目录第一页列有人物专题片；未见2018-01-03原录直链，不据此断言其他馆藏不存在\"\n    },\n    {\n      \"id\": \"A02-TRACE-LAS-YEARBOOK\",\n      \"anchor\": \"a02-source-las-yearbook\",\n      \"title\": \"文献情报中心：《中国科学院年鉴·2009》馆藏\",\n      \"url\": \"https://www.las.ac.cn/front/book/detail?id=58be6463c35e65fb5e16727919db598a\",\n      \"kind\": \"已核读的纸本馆藏元数据；非目标历史著作\",\n      \"locator\": \"科学出版社，2009，ISBN9787030252586；与传记所引当代中国出版社《中国科学院》分开\"\n    },\n    {\n      \"id\": \"A02-TRACE-IHNS-DATABASE\",\n      \"anchor\": \"a02-source-ihns-database\",\n      \"title\": \"自然科学史研究所图书馆：共和国国史数据库\",\n      \"url\": \"https://www.ihns.ac.cn/njgsz/zcbm/lytsg/zydh/sjkdh/zwbk/202310/t20231026_6909863.html\",\n      \"kind\": \"机构数据库访问说明，未取得库内目标书页\",\n      \"locator\": \"标明所内IP访问并提供检索入口；不代表已经读取《中国科学院》2009版正文\"\n    },\n    {\n      \"id\": \"A02-TRACE-EASL-CATALOG\",\n      \"anchor\": \"a02-source-easl-catalog\",\n      \"title\": \"EASL 2015：共和国国史数据库介绍\",\n      \"url\": \"https://www.easl.org/images/Presentations/2015/2015-Vendors-2%20Seth%20Curley%20-%20Vista%20Goosuu.pdf\",\n      \"kind\": \"数据库演示文稿，非目标书原文\",\n      \"locator\": \"PDF第12页目录截图列2009年《中国科学院（上）／（下）》；同屏不同书重复ISBN，不以此判断实际分册、ISBN或p.291归属\"\n"
+    },
+    {
+      "old": "陈",
+      "new": "2018本人访谈原录／档号；2009版《中国科学院》p.291册次与原文；"
+    },
+    {
+      "old": "／分离原件；",
+      "new": "、"
+    },
+    {
+      "old": "逐牌号",
+      "new": "及早期油品"
+    },
+    {
+      "old": "物性；早期氟溴油所引",
+      "new": ""
+    },
+    {
+      "old": "页和交付",
+      "new": "件"
+    },
+    {
+      "old": "原刊",
+      "new": ""
+    },
+    {
+      "old": "与异文",
+      "new": ""
+    },
+    {
+      "old": "取得",
+      "new": "调阅"
+    },
+    {
+      "old": "本人",
+      "new": "-01-03上海"
+    },
+    {
+      "old": "1960–1963试制、装置",
+      "new": "馆藏档号，以"
+    },
+    {
+      "old": "低温分离档案；并追1966证书、2号／3号技术附件和",
+      "new": ""
+    },
+    {
+      "old": "正确",
+      "new": "各分"
+    },
+    {
+      "old": "次",
+      "new": "版权／目录和目标册"
+    },
+    {
+      "old": "1",
+      "new": "0–292；年鉴不替代目标著作"
+    },
+    {
+      "old": "细化据传记的单体路线",
+      "new": "核访谈项目"
+    },
+    {
+      "old": "分离及合作贡献",
+      "new": "动态影音目录与馆藏身份"
+    },
+    {
+      "old": "明原件定位与",
+      "new": "出精确调阅清单；完整访谈和2009目标书页"
+    },
+    {
+      "old": "项；1980原刊已读，其他团队和相关材料仅作背景",
+      "new": "、册次待核"
+    },
+    {
+      "old": "",
+      "new": "  ],\n  \"source_trace\": [\n    {\n      \"id\": \"a02-trace-interview\",\n      \"title\": \"2018年本人访谈：原录定位与采集项目\",\n      \"identity\": \"已核引用元数据与项目目录 · 完整文字稿／音视频及当次档号待取得\",\n      \"description\": \"传记p.36注①引用《陈庆云访谈》2018-01-03；同书p.6注①进一步记访谈地点上海、资料存于采集工程数据库。这些是后出传记对原访谈的引据，不等于平台已取得该次原录，也不能保证p.37每一技术句都是它的逐字转录。\",\n      \"tables\": [\n        {\n          \"caption\": \"访谈来源各层次的实际状态\",\n          \"columns\": [\n            \"定位事项\",\n            \"已核资料\",\n            \"仍需确认\"\n          ],\n          \"rows\": [\n            [\n              \"当次访谈\",\n              \"题名、2018-01-03、上海、采集工程数据库存地（据传记脚注）\",\n              \"当次采访者、时长、馆藏档号、完整文字稿及录音／录像\"\n            ],\n            [\n              \"采集项目\",\n              \"博物馆列负责人黄智静、承建单位上海有机所\",\n              \"项目负责人不自动等于1月3日采访者或A02问题的转录者\"\n            ],\n            [\n              \"另一采访日期\",\n              \"书前彩页图注记2018-05-15黄智静、朱晶采访\",\n              \"与1月3日分列，不能合并成同一次访谈\"\n            ],\n            [\n              \"学术资料检索\",\n              \"已定位口述、音视频、研究报告等类别；可读公开页显示系统升级提示\",\n              \"未取得该次条目或原录；页面提示不证明资料不存在\"\n            ],\n            [\n              \"公众影音目录\",\n              \"已展开的公开目录列有人物专题片《砥志研思七十年，一片丹心兴邦梦》，专题目录标2021-09-06\",\n              \"专题片不代替2018-01-03完整原录，未见二者的原始身份对应\"\n            ]\n          ],\n          \"notes\": [\n            \"此栏是平台AI辅助资料定位工作，不授予新的工艺、产率或机理结论；网页导航参数不作为档号。\"\n          ]\n        }\n      ],\n      \"scope\": \"未取得完整访谈。原书照片仅用于本机核对图注，不公开分发；公开只登记项目身份和不同采访日期的边界。\",\n      \"pending\": [\n        \"拟调阅：2018-01-03上海《陈庆云访谈》的原始目录记录、采访者、录制时长、馆藏档号、完整逐字稿及原录。\",\n        \"取得原录后定位六氟丙烯首项任务、裂解／低温分离、自制装置及协作者的实际段落；再追所提试制报告、实验本、图纸和交接文件。当前未取得这些原件。\"\n      ],\n      \"source_refs\": [\n        \"HERITAGE-S01\",\n        \"A02-TRACE-MMCS-PROJECT\",\n        \"A02-TRACE-MMCS-SEARCH\",\n        \"A02-TRACE-MMCS-VIDEO\"\n      ],\n      \"original_obtained\": false,\n      \"links\": [\n        {\n          \"title\": \"采集项目目录\",\n          \"url\": \"https://www.mmcs.org.cn/kxjfc/kxjfc/cqy9449/index.html\"\n        },\n        {\n          \"title\": \"学术资料检索入口\",\n          \"url\": \"https://www.mmcs.org.cn/xsb/zljs/index.html\"\n        },\n        {\n          \"title\": \"公开影音目录（专题片）\",\n          \"url\": \"https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/yyzx0231/index.html\"\n        }\n      ]\n    },\n    {\n      \"id\": \"a02-trace-book2009\",\n      \"title\": \"《中国科学院》2009版第291页：册次仍待核\",\n      \"identity\": \"已核传记引据及相关馆藏身份 · 目标册次、目录和原页未取得\",\n      \"description\": \"传记p.39注②所引为《中国科学院》编辑委员会编、当代中国出版社、2009年、第291页，未注明册次。应先核各分册题名页、版权页和目录，再取相应册的原文；不能用同年年鉴或较早版的页码替代。\",\n      \"tables\": [\n        {\n          \"caption\": \"目标著作与候选入口分别辨识\",\n          \"columns\": [\n            \"资料\",\n            \"已核资料的身份\",\n            \"不能据此认定\"\n          ],\n          \"rows\": [\n            [\n              \"传记所引《中国科学院》\",\n              \"当代中国出版社，2009，p.291；注释缺册次\",\n              \"尚不能确认上、中或下册，也未取得所引原文\"\n            ],\n            [\n              \"《中国科学院年鉴·2009》馆藏\",\n              \"文献情报中心馆藏：科学出版社，ISBN9787030252586\",\n              \"书名、出版社与目标不同；年鉴不是传记所引著作\"\n            ],\n            [\n              \"较早版《中国科学院》馆藏\",\n              \"CiNii列1994版上、中、下三册的馆藏目录记录\",\n              \"不能把1994版册次、ISBN或分页直接转给2009版\"\n            ],\n            [\n              \"2009相关数据库目录线索\",\n              \"2015年数据库介绍截图有上／下记录，但未给目标版权页、完整目录和正文；同屏不同书重复ISBN\",\n              \"不能据展示片段排除中册、确定分册ISBN或认定p.291所在册\"\n            ],\n            [\n              \"合法数据库途径\",\n              \"自然科学史研究所图书馆列共和国国史数据库，说明所内IP访问；原有Gale介绍亦只到丛书层级\",\n              \"目前尚未从中取得目标书页，不以入口可见充当原文已取得\"\n            ]\n          ],\n          \"notes\": [\n            \"2009版实际册次仍待核定。馆藏目录、演示截图、丛书介绍与目标正文分别登记；未检得不等于馆藏或档案不存在。\"\n          ]\n        }\n      ],\n      \"scope\": \"目标p.291原文未取得，所载合作分工、配方、物性和书内引据均未据原页复核。数据库访问说明仅用于选择合法调阅途径。\",\n      \"pending\": [\n        \"拟调阅：2009版《中国科学院》各实际分册题名页、版权页、完整目录及分页范围，确认所引p.291的册次。\",\n        \"册次确认后取得p.290–292及必要相邻页，保留页眉、章节名和书内脚注；核对三氟溴乙烯调聚氟油、人员、研究室与实验厂的原文。\",\n        \"再据原页追早期氟溴油配方、分馏／批次、密度／黏度／凝点原表、装置与放大／交付报告；当前这些原件仍待取得。\"\n      ],\n      \"source_refs\": [\n        \"HERITAGE-S01\",\n        \"A02-TEAM-CATALOG\",\n        \"A02-TEAM-GALE\",\n        \"A02-TRACE-LAS-YEARBOOK\",\n        \"A02-TRACE-IHNS-DATABASE\",\n        \"A02-TRACE-EASL-CATALOG\"\n      ],\n      \"original_obtained\": false,\n      \"volume_confirmed\": false,\n      \"links\": [\n        {\n          \"title\": \"年鉴馆藏（与目标书分开）\",\n          \"url\": \"https://www.las.ac.cn/front/book/detail?id=58be6463c35e65fb5e16727919db598a\"\n        },\n        {\n          \"title\": \"1994版馆藏目录（非2009原页）\",\n          \"url\": \"https://ci.nii.ac.jp/ncid/BA71150630\"\n        },\n        {\n          \"title\": \"合法机构数据库访问说明\",\n          \"url\": \"https://www.ihns.ac.cn/njgsz/zcbm/lytsg/zydh/sjkdh/zwbk/202310/t20231026_6909863.html\"\n        },\n        {\n          \"title\": \"2009相关目录截图（演示PDF第12页，非原书）\",\n          \"url\": \"https://www.easl.org/images/Presentations/2015/2015-Vendors-2%20Seth%20Curley%20-%20Vista%20Goosuu.pdf\"\n        }\n      ]\n    }\n"
+    },
+    {
+      "old": "",
+      "new": "    trace = data.get('source_trace', [])\n    if ([r['id'] for r in trace] != ['a02-trace-interview','a02-trace-book2009']\n            or any(r.get('original_obtained') is not False for r in trace)\n            or trace[1].get('volume_confirmed') is not False):\n        raise ValueError('Cited-source tracing must keep interview originals and book volume unresolved')\n"
+    },
+    {
+      "old": "",
+      "new": "+trace"
+    },
+    {
+      "old": "",
+      "new": "def source_trace_html(data: dict) -> str:\n    out = ['<article id=\"a02-source-trace\"><span class=\"status\">AI辅助资料整理 · 引据追踪</span><h2>本人访谈与所引书页：已核信息与原件缺口</h2><p>这一部分记录平台对传记引据的定位工作。原始访谈和目标书页尚未取得，以下目录信息不作为新增历史成果、工艺参数或材料性能证据。</p>']\n    for record in data['source_trace']:\n        out += ['<section id=\"'+esc(record['id'])+'\"><h3>'+esc(record['title'])+'</h3><p class=\"a02-locator\">'+esc(record['identity'])+'</p><p>'+esc(record['description'])+'</p>']\n        for i, table in enumerate(record['tables']):\n            caption=record['id']+'-table-'+str(i+1)\n            out += ['<p id=\"'+caption+'\"><b>'+esc(table['caption'])+'</b>（宽表可横向滑动）</p><div class=\"a02-technical-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"'+caption+'\"><table><thead><tr>'+''.join('<th scope=\"col\">'+esc(v)+'</th>' for v in table['columns'])+'</tr></thead><tbody>']\n            out += ['<tr><th scope=\"row\">'+esc(row[0])+'</th>'+''.join('<td>'+esc(v)+'</td>' for v in row[1:])+'</tr>' for row in table['rows']]\n            out += ['</tbody></table></div>'+listing(table['notes'])]\n        out += ['<p class=\"a02-meaning\"><b>证据范围：</b>'+esc(record['scope'])+'</p><h4>待取得的原件</h4>'+listing(record['pending']),'<p class=\"a02-locator\">'+refs(record['source_refs'],data)+'</p><p>'+' · '.join('<a href=\"'+esc(v['url'])+'\">'+esc(v['title'])+'</a>' for v in record['links'])+'</p></section>']\n    return '\\n'.join(out+['</article>'])\n\n\n"
+    },
+    {
+      "old": "",
+      "new": "',source_trace_html(data),'"
+    },
+    {
+      "old": "",
+      "new": "    out += ['## AI辅助资料整理：本人访谈与所引书页','','以下是传记引据的定位工作；原始访谈和目标书页尚未取得，目录信息不作为新增历史成果、工艺或性能证据。','']\n    for record in data['source_trace']:\n        out += ['### '+record['title'],'',record['identity'],'',record['description'],'']\n        for table in record['tables']:\n            out += ['**'+table['caption']+'**','','| '+' | '.join(table['columns'])+' |','|'+'|'.join('---' for _ in table['columns'])+'|']\n            out += ['| '+' | '.join(row)+' |' for row in table['rows']]\n            out += ['']+['- '+s for s in table['notes']]+['']\n        out += ['**证据范围：**'+record['scope'],'','待取得的原件：','']+['- '+s for s in record['pending']]+['','出处：'+'、'.join(record['source_refs'])+'。','']\n        out += ['['+v['title']+']('+v['url']+')' for v in record['links']]+['']\n"
+    },
+    {
+      "old": "",
+      "new": ",'a02-source-trace'"
+    },
+    {
+      "old": "",
+      "new": "+data['source_trace']"
+    },
+    {
+      "old": "",
+      "new": "source_trace_records=len(data['source_trace']),book_2009_volume_confirmed=False,interview_original_obtained=False,"
+    },
+    {
+      "old": "",
+      "new": "## AI辅助资料整理：本人访谈与所引书页\n\n以下是传记引据的定位工作；原始访谈和目标书页尚未取得，目录信息不作为新增历史成果、工艺或性能证据。\n\n### 2018年本人访谈：原录定位与采集项目\n\n已核引用元数据与项目目录 · 完整文字稿／音视频及当次档号待取得\n\n传记p.36注①引用《陈庆云访谈》2018-01-03；同书p.6注①进一步记访谈地点上海、资料存于采集工程数据库。这些是后出传记对原访谈的引据，不等于平台已取得该次原录，也不能保证p.37每一技术句都是它的逐字转录。\n\n**访谈来源各层次的实际状态**\n\n| 定位事项 | 已核资料 | 仍需确认 |\n|---|---|---|\n| 当次访谈 | 题名、2018-01-03、上海、采集工程数据库存地（据传记脚注） | 当次采访者、时长、馆藏档号、完整文字稿及录音／录像 |\n| 采集项目 | 博物馆列负责人黄智静、承建单位上海有机所 | 项目负责人不自动等于1月3日采访者或A02（含氟单体、氟橡胶与氟油）问题的转录者 |\n| 另一采访日期 | 书前彩页图注记2018-05-15黄智静、朱晶采访 | 与1月3日分列，不能合并成同一次访谈 |\n| 学术资料检索 | 已定位口述、音视频、研究报告等类别；可读公开页显示系统升级提示 | 未取得该次条目或原录；页面提示不证明资料不存在 |\n| 公众影音目录 | 已展开的公开目录列有人物专题片《砥志研思七十年，一片丹心兴邦梦》，专题目录标2021-09-06 | 专题片不代替2018-01-03完整原录，未见二者的原始身份对应 |\n\n- 此栏是平台AI辅助资料定位工作，不授予新的工艺、产率或机理结论；网页导航参数不作为档号。\n\n**证据范围：**未取得完整访谈。原书照片仅用于本机核对图注，不公开分发；公开只登记项目身份和不同采访日期的边界。\n\n待取得的原件：\n\n- 拟调阅：2018-01-03上海《陈庆云访谈》的原始目录记录、采访者、录制时长、馆藏档号、完整逐字稿及原录。\n- 取得原录后定位六氟丙烯首项任务、裂解／低温分离、自制装置及协作者的实际段落；再追所提试制报告、实验本、图纸和交接文件。当前未取得这些原件。\n\n出处：HERITAGE-S01、A02-TRACE-MMCS-PROJECT、A02-TRACE-MMCS-SEARCH、A02-TRACE-MMCS-VIDEO。\n\n[采集项目目录](https://www.mmcs.org.cn/kxjfc/kxjfc/cqy9449/index.html)\n[学术资料检索入口](https://www.mmcs.org.cn/xsb/zljs/index.html)\n[公开影音目录（专题片）](https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/yyzx0231/index.html)\n\n### 《中国科学院》2009版第291页：册次仍待核\n\n已核传记引据及相关馆藏身份 · 目标册次、目录和原页未取得\n\n传记p.39注②所引为《中国科学院》编辑委员会编、当代中国出版社、2009年、第291页，未注明册次。应先核各分册题名页、版权页和目录，再取相应册的原文；不能用同年年鉴或较早版的页码替代。\n\n**目标著作与候选入口分别辨识**\n\n| 资料 | 已核资料的身份 | 不能据此认定 |\n|---|---|---|\n| 传记所引《中国科学院》 | 当代中国出版社，2009，p.291；注释缺册次 | 尚不能确认上、中或下册，也未取得所引原文 |\n| 《中国科学院年鉴·2009》馆藏 | 文献情报中心馆藏：科学出版社，ISBN9787030252586 | 书名、出版社与目标不同；年鉴不是传记所引著作 |\n| 较早版《中国科学院》馆藏 | CiNii列1994版上、中、下三册的馆藏目录记录 | 不能把1994版册次、ISBN或分页直接转给2009版 |\n| 2009相关数据库目录线索 | 2015年数据库介绍截图有上／下记录，但未给目标版权页、完整目录和正文；同屏不同书重复ISBN | 不能据展示片段排除中册、确定分册ISBN或认定p.291所在册 |\n| 合法数据库途径 | 自然科学史研究所图书馆列共和国国史数据库，说明所内IP访问；原有Gale介绍亦只到丛书层级 | 目前尚未从中取得目标书页，不以入口可见充当原文已取得 |\n\n- 2009版实际册次仍待核定。馆藏目录、演示截图、丛书介绍与目标正文分别登记；未检得不等于馆藏或档案不存在。\n\n**证据范围：**目标p.291原文未取得，所载合作分工、配方、物性和书内引据均未据原页复核。数据库访问说明仅用于选择合法调阅途径。\n\n待取得的原件：\n\n- 拟调阅：2009版《中国科学院》各实际分册题名页、版权页、完整目录及分页范围，确认所引p.291的册次。\n- 册次确认后取得p.290–292及必要相邻页，保留页眉、章节名和书内脚注；核对三氟溴乙烯调聚氟油、人员、研究室与实验厂的原文。\n- 再据原页追早期氟溴油配方、分馏／批次、密度／黏度／凝点原表、装置与放大／交付报告；当前这些原件仍待取得。\n\n出处：HERITAGE-S01、A02-TEAM-CATALOG、A02-TEAM-GALE、A02-TRACE-LAS-YEARBOOK、A02-TRACE-IHNS-DATABASE、A02-TRACE-EASL-CATALOG。\n\n[年鉴馆藏（与目标书分开）](https://www.las.ac.cn/front/book/detail?id=58be6463c35e65fb5e16727919db598a)\n[1994版馆藏目录（非2009原页）](https://ci.nii.ac.jp/ncid/BA71150630)\n[合法机构数据库访问说明](https://www.ihns.ac.cn/njgsz/zcbm/lytsg/zydh/sjkdh/zwbk/202310/t20231026_6909863.html)\n[2009相关目录截图（演示PDF第12页，非原书）](https://www.easl.org/images/Presentations/2015/2015-Vendors-2%20Seth%20Curley%20-%20Vista%20Goosuu.pdf)\n\n"
+    },
+    {
+      "old": "",
+      "new": "- 2018本人访谈已定位采集项目与学术检索入口，完整原录、当次档号和采访者仍待核；5月15日照片不转作1月3日采访证据。\n- 2009版《中国科学院》p.291册次仍未核定；新提供的《中国科学院年鉴·2009》（科学出版社）与目标书分开，需调阅正确分册版权页、目录及p.290–292。\n"
+    },
+    {
+      "old": "",
+      "new": "- **A02-TRACE-MMCS-PROJECT**：[中国科学家博物馆：陈庆云采集专题](https://www.mmcs.org.cn/kxjfc/kxjfc/cqy9449/index.html)。采集项目公开目录，非当次访谈原录；采集小组栏：负责人黄智静，承建上海有机所；不据此指定2018-01-03当次采访者。\n- **A02-TRACE-MMCS-SEARCH**：[中国科学家博物馆学术版：资料检索](https://www.mmcs.org.cn/xsb/zljs/index.html)。资料检索公开入口，目标原录未取得；口述文字、音视频、档案／图纸／研究报告类别；已核读的公开页显示系统升级提示，不能判断馆藏有无。\n- **A02-TRACE-MMCS-VIDEO**：[中国科学家博物馆：陈庆云影音再现](https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/yyzx0231/index.html)。已展开的公开影音目录，非2018访谈档号；已展开的公开目录第一页列有人物专题片；未见2018-01-03原录直链，不据此断言其他馆藏不存在。\n- **A02-TRACE-LAS-YEARBOOK**：[文献情报中心：《中国科学院年鉴·2009》馆藏](https://www.las.ac.cn/front/book/detail?id=58be6463c35e65fb5e16727919db598a)。已核读的纸本馆藏元数据；非目标历史著作；科学出版社，2009，ISBN9787030252586；与传记所引当代中国出版社《中国科学院》分开。\n- **A02-TRACE-IHNS-DATABASE**：[自然科学史研究所图书馆：共和国国史数据库](https://www.ihns.ac.cn/njgsz/zcbm/lytsg/zydh/sjkdh/zwbk/202310/t20231026_6909863.html)。机构数据库访问说明，未取得库内目标书页；标明所内IP访问并提供检索入口；不代表已经读取《中国科学院》2009版正文。\n- **A02-TRACE-EASL-CATALOG**：[EASL 2015：共和国国史数据库介绍](https://www.easl.org/images/Presentations/2015/2015-Vendors-2%20Seth%20Curley%20-%20Vista%20Goosuu.pdf)。数据库演示文稿，非目标书原文；PDF第12页目录截图列2009年《中国科学院（上）／（下）》；同屏不同书重复ISBN，不以此判断实际分册、ISBN或p.291归属。\n"
+    },
+    {
+      "old": "",
+      "new": "        },\r\n        {\r\n          \"title\": \"本人访谈与所引书页：引据追踪\",\r\n          \"summary\": \"已核2018访谈的引用元数据与采集项目，读取动态影音目录，并将《中国科学院年鉴·2009》与传记所引著作分开。完整访谈、2009版《中国科学院》p.291原文及其册次仍待核；已列具体调阅书页与后续技术原件需求。\",\r\n          \"links\": [\r\n            {\r\n              \"title\": \"已核定位、资料身份与待取得原件\",\r\n              \"url\": \"../topics/fluoromonomers/index.html#a02-source-trace\",\r\n              \"kind\": \"site\"\r\n            }\r\n          ]\r\n"
+    },
+    {
+      "old": "",
+      "new": "        \"馆藏目录、人物专题片及访问入口不等于访谈原录或书页已取得；2009年年鉴与所引《中国科学院》不同，目标册次保持待核。\"\r\n"
+    },
+    {
+      "old": "",
+      "new": "**本人访谈与所引书页：引据追踪。**已核2018访谈的引用元数据与采集项目，读取动态影音目录，并将《中国科学院年鉴·2009》与传记所引著作分开。完整访谈、2009版《中国科学院》p.291原文及其册次仍待核；已列具体调阅书页与后续技术原件需求。\n\n[已核定位、资料身份与待取得原件](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#a02-source-trace)\n\n"
+    },
+    {
+      "old": "",
+      "new": "- 馆藏目录、人物专题片及访问入口不等于访谈原录或书页已取得；2009年年鉴与所引《中国科学院》不同，目标册次保持待核。\n"
+    },
+    {
+      "old": "",
+      "new": "\n<article id=\"a02-source-trace\"><span class=\"status\">AI辅助资料整理 · 引据追踪</span><h2>本人访谈与所引书页：已核信息与原件缺口</h2><p>这一部分记录平台对传记引据的定位工作。原始访谈和目标书页尚未取得，以下目录信息不作为新增历史成果、工艺参数或材料性能证据。</p>\n<section id=\"a02-trace-interview\"><h3>2018年本人访谈：原录定位与采集项目</h3><p class=\"a02-locator\">已核引用元数据与项目目录 · 完整文字稿／音视频及当次档号待取得</p><p>传记p.36注①引用《陈庆云访谈》2018-01-03；同书p.6注①进一步记访谈地点上海、资料存于采集工程数据库。这些是后出传记对原访谈的引据，不等于平台已取得该次原录，也不能保证p.37每一技术句都是它的逐字转录。</p>\n<p id=\"a02-trace-interview-table-1\"><b>访谈来源各层次的实际状态</b>（宽表可横向滑动）</p><div class=\"a02-technical-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a02-trace-interview-table-1\"><table><thead><tr><th scope=\"col\">定位事项</th><th scope=\"col\">已核资料</th><th scope=\"col\">仍需确认</th></tr></thead><tbody>\n<tr><th scope=\"row\">当次访谈</th><td>题名、2018-01-03、上海、采集工程数据库存地（据传记脚注）</td><td>当次采访者、时长、馆藏档号、完整文字稿及录音／录像</td></tr>\n<tr><th scope=\"row\">采集项目</th><td>博物馆列负责人黄智静、承建单位上海有机所</td><td>项目负责人不自动等于1月3日采访者或A02（含氟单体、氟橡胶与氟油）问题的转录者</td></tr>\n<tr><th scope=\"row\">另一采访日期</th><td>书前彩页图注记2018-05-15黄智静、朱晶采访</td><td>与1月3日分列，不能合并成同一次访谈</td></tr>\n<tr><th scope=\"row\">学术资料检索</th><td>已定位口述、音视频、研究报告等类别；可读公开页显示系统升级提示</td><td>未取得该次条目或原录；页面提示不证明资料不存在</td></tr>\n<tr><th scope=\"row\">公众影音目录</th><td>已展开的公开目录列有人物专题片《砥志研思七十年，一片丹心兴邦梦》，专题目录标2021-09-06</td><td>专题片不代替2018-01-03完整原录，未见二者的原始身份对应</td></tr>\n</tbody></table></div><ul><li>此栏是平台AI辅助资料定位工作，不授予新的工艺、产率或机理结论；网页导航参数不作为档号。</li></ul>\n<p class=\"a02-meaning\"><b>证据范围：</b>未取得完整访谈。原书照片仅用于本机核对图注，不公开分发；公开只登记项目身份和不同采访日期的边界。</p><h4>待取得的原件</h4><ul><li>拟调阅：2018-01-03上海《陈庆云访谈》的原始目录记录、采访者、录制时长、馆藏档号、完整逐字稿及原录。</li><li>取得原录后定位六氟丙烯首项任务、裂解／低温分离、自制装置及协作者的实际段落；再追所提试制报告、实验本、图纸和交接文件。当前未取得这些原件。</li></ul>\n<p class=\"a02-locator\"><a href=\"#a02-source-book\">HERITAGE-S01</a> · <a href=\"#a02-source-mmcs-project\">A02-TRACE-MMCS-PROJECT</a> · <a href=\"#a02-source-mmcs-search\">A02-TRACE-MMCS-SEARCH</a> · <a href=\"#a02-source-mmcs-video\">A02-TRACE-MMCS-VIDEO</a></p><p><a href=\"https://www.mmcs.org.cn/kxjfc/kxjfc/cqy9449/index.html\">采集项目目录</a> · <a href=\"https://www.mmcs.org.cn/xsb/zljs/index.html\">学术资料检索入口</a> · <a href=\"https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/yyzx0231/index.html\">公开影音目录（专题片）</a></p></section>\n<section id=\"a02-trace-book2009\"><h3>《中国科学院》2009版第291页：册次仍待核</h3><p class=\"a02-locator\">已核传记引据及相关馆藏身份 · 目标册次、目录和原页未取得</p><p>传记p.39注②所引为《中国科学院》编辑委员会编、当代中国出版社、2009年、第291页，未注明册次。应先核各分册题名页、版权页和目录，再取相应册的原文；不能用同年年鉴或较早版的页码替代。</p>\n<p id=\"a02-trace-book2009-table-1\"><b>目标著作与候选入口分别辨识</b>（宽表可横向滑动）</p><div class=\"a02-technical-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a02-trace-book2009-table-1\"><table><thead><tr><th scope=\"col\">资料</th><th scope=\"col\">已核资料的身份</th><th scope=\"col\">不能据此认定</th></tr></thead><tbody>\n<tr><th scope=\"row\">传记所引《中国科学院》</th><td>当代中国出版社，2009，p.291；注释缺册次</td><td>尚不能确认上、中或下册，也未取得所引原文</td></tr>\n<tr><th scope=\"row\">《中国科学院年鉴·2009》馆藏</th><td>文献情报中心馆藏：科学出版社，ISBN9787030252586</td><td>书名、出版社与目标不同；年鉴不是传记所引著作</td></tr>\n<tr><th scope=\"row\">较早版《中国科学院》馆藏</th><td>CiNii列1994版上、中、下三册的馆藏目录记录</td><td>不能把1994版册次、ISBN或分页直接转给2009版</td></tr>\n<tr><th scope=\"row\">2009相关数据库目录线索</th><td>2015年数据库介绍截图有上／下记录，但未给目标版权页、完整目录和正文；同屏不同书重复ISBN</td><td>不能据展示片段排除中册、确定分册ISBN或认定p.291所在册</td></tr>\n<tr><th scope=\"row\">合法数据库途径</th><td>自然科学史研究所图书馆列共和国国史数据库，说明所内IP访问；原有Gale介绍亦只到丛书层级</td><td>目前尚未从中取得目标书页，不以入口可见充当原文已取得</td></tr>\n</tbody></table></div><ul><li>2009版实际册次仍待核定。馆藏目录、演示截图、丛书介绍与目标正文分别登记；未检得不等于馆藏或档案不存在。</li></ul>\n<p class=\"a02-meaning\"><b>证据范围：</b>目标p.291原文未取得，所载合作分工、配方、物性和书内引据均未据原页复核。数据库访问说明仅用于选择合法调阅途径。</p><h4>待取得的原件</h4><ul><li>拟调阅：2009版《中国科学院》各实际分册题名页、版权页、完整目录及分页范围，确认所引p.291的册次。</li><li>册次确认后取得p.290–292及必要相邻页，保留页眉、章节名和书内脚注；核对三氟溴乙烯调聚氟油、人员、研究室与实验厂的原文。</li><li>再据原页追早期氟溴油配方、分馏／批次、密度／黏度／凝点原表、装置与放大／交付报告；当前这些原件仍待取得。</li></ul>\n<p class=\"a02-locator\"><a href=\"#a02-source-book\">HERITAGE-S01</a> · <a href=\"#a02-source-catalog\">A02-TEAM-CATALOG</a> · <a href=\"#a02-source-gale\">A02-TEAM-GALE</a> · <a href=\"#a02-source-las-yearbook\">A02-TRACE-LAS-YEARBOOK</a> · <a href=\"#a02-source-ihns-database\">A02-TRACE-IHNS-DATABASE</a> · <a href=\"#a02-source-easl-catalog\">A02-TRACE-EASL-CATALOG</a></p><p><a href=\"https://www.las.ac.cn/front/book/detail?id=58be6463c35e65fb5e16727919db598a\">年鉴馆藏（与目标书分开）</a> · <a href=\"https://ci.nii.ac.jp/ncid/BA71150630\">1994版馆藏目录（非2009原页）</a> · <a href=\"https://www.ihns.ac.cn/njgsz/zcbm/lytsg/zydh/sjkdh/zwbk/202310/t20231026_6909863.html\">合法机构数据库访问说明</a> · <a href=\"https://www.easl.org/images/Presentations/2015/2015-Vendors-2%20Seth%20Curley%20-%20Vista%20Goosuu.pdf\">2009相关目录截图（演示PDF第12页，非原书）</a></p></section>\n</article>\n"
+    },
+    {
+      "old": "",
+      "new": "<li id=\"a02-source-mmcs-project\"><b>A02-TRACE-MMCS-PROJECT</b> · <a href=\"https://www.mmcs.org.cn/kxjfc/kxjfc/cqy9449/index.html\">中国科学家博物馆：陈庆云采集专题</a>；采集项目公开目录，非当次访谈原录。采集小组栏：负责人黄智静，承建上海有机所；不据此指定2018-01-03当次采访者</li>\n<li id=\"a02-source-mmcs-search\"><b>A02-TRACE-MMCS-SEARCH</b> · <a href=\"https://www.mmcs.org.cn/xsb/zljs/index.html\">中国科学家博物馆学术版：资料检索</a>；资料检索公开入口，目标原录未取得。口述文字、音视频、档案／图纸／研究报告类别；已核读的公开页显示系统升级提示，不能判断馆藏有无</li>\n<li id=\"a02-source-mmcs-video\"><b>A02-TRACE-MMCS-VIDEO</b> · <a href=\"https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/yyzx0231/index.html\">中国科学家博物馆：陈庆云影音再现</a>；已展开的公开影音目录，非2018访谈档号。已展开的公开目录第一页列有人物专题片；未见2018-01-03原录直链，不据此断言其他馆藏不存在</li>\n<li id=\"a02-source-las-yearbook\"><b>A02-TRACE-LAS-YEARBOOK</b> · <a href=\"https://www.las.ac.cn/front/book/detail?id=58be6463c35e65fb5e16727919db598a\">文献情报中心：《中国科学院年鉴·2009》馆藏</a>；已核读的纸本馆藏元数据；非目标历史著作。科学出版社，2009，ISBN9787030252586；与传记所引当代中国出版社《中国科学院》分开</li>\n<li id=\"a02-source-ihns-database\"><b>A02-TRACE-IHNS-DATABASE</b> · <a href=\"https://www.ihns.ac.cn/njgsz/zcbm/lytsg/zydh/sjkdh/zwbk/202310/t20231026_6909863.html\">自然科学史研究所图书馆：共和国国史数据库</a>；机构数据库访问说明，未取得库内目标书页。标明所内IP访问并提供检索入口；不代表已经读取《中国科学院》2009版正文</li>\n<li id=\"a02-source-easl-catalog\"><b>A02-TRACE-EASL-CATALOG</b> · <a href=\"https://www.easl.org/images/Presentations/2015/2015-Vendors-2%20Seth%20Curley%20-%20Vista%20Goosuu.pdf\">EASL 2015：共和国国史数据库介绍</a>；数据库演示文稿，非目标书原文。PDF第12页目录截图列2009年《中国科学院（上）／（下）》；同屏不同书重复ISBN，不以此判断实际分册、ISBN或p.291归属</li>\n"
+    },
+    {
+      "old": "",
+      "new": "li>2018本人访谈已定位采集项目与学术检索入口，完整原录、当次档号和采访者仍待核；5月15日照片不转作1月3日采访证据。</li><li>2009版《中国科学院》p.291册次仍未核定；新提供的《中国科学院年鉴·2009》（科学出版社）与目标书分开，需调阅正确分册版权页、目录及p.290–292。</li><"
+    },
+    {
+      "old": "",
+      "new": "div class=\"record\"><h4>本人访谈与所引书页：引据追踪</h4><p>已核2018访谈的引用元数据与采集项目，读取动态影音目录，并将《中国科学院年鉴·2009》与传记所引著作分开。完整访谈、2009版《中国科学院》p.291原文及其册次仍待核；已列具体调阅书页与后续技术原件需求。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#a02-source-trace\">已核定位、资料身份与待取得原件 →</a></p></div><"
+    },
+    {
+      "old": "",
+      "new": "li>馆藏目录、人物专题片及访问入口不等于访谈原录或书页已取得；2009年年鉴与所引《中国科学院》不同，目标册次保持待核。</li><"
+    },
+    {
+      "old": "",
+      "new": "\nPRESENTATION_V17_SHA256 = 'b635b2950e37d5387e8fb68da12109ca585833b769eec38cf25911eb86563ee1'\nPRESENTATION_V18_PATH = 'provenance/platform-presentation.v18.json'\nPRESENTATION_V18_ID = 'PLATFORM-A02-CITED-SOURCES-20261115-v18'\nPRESENTATION_V18_PREVIOUS_COMMIT = '98e079c03d1d969bc69d0979deb29d921afd5bc2'\nA02_SOURCE_TRACE_PREDECESSOR_FILES = {\n    'content/a02-academic-achievements.v1.json': ('51c77cc96b4b9db06d695bc5ffdae311ffb2082048ec98adbbe98de9b0b078eb', 38173),\n    'scripts/render_a02_history.py': ('47df27ddd51f676847e718a18dc8c57429ac743de13b95eb6eec8d8a5653be1d', 18491),\n    'docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md': ('2fa00a8628b9d3d0af028e1472ca852119ad019710b4e846b6ce6b4423e593d8', 29258),\n    'content/ai-research-section.v1.json': ('99cba00df70792791a76e50ff4deb7ad20cea58dfef7f6fc4446918cff256b75', 65891),\n    'docs/AI_RESEARCH_zh-CN.md': ('c354182622f067853bf6b5b0d6310a6f81aa9f7615361a2febb5f9eb9b60107e', 35191),\n    'site/topics/fluoromonomers/index.html': ('ab2ecad195b1cb610f97c5a1d6b2e77a1207cad9188e52b59569627cfddfe17b', 45066),\n    'site/research/index.html': ('4b4db2f971bfed41f29325dd8e60313b3ec1dfce40caf743418c42955dd3e48c', 48993),\n    'site/achievements/index.html': ('afab8c345bcceb12584ba7b3c00d15daf5f4a87a0eb6d1777e52ab719093755d', 95871),\n    'docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md': ('ae083f26ea6a5699f5443335569fb10f95d7a12db24c449489b9cead2fd30072', 69712),\n    'scripts/a01_publication_contract.py': ('665aedd2071d06da0530a345aa454c37a5535172fb260fd1e2a3ee449a40698e', 204809),\n}\nA02_SOURCE_TRACE_DOCUMENTS = A02_DOCUMENTS\n"
+    },
+    {
+      "old": "",
+      "new": "def trace_predecessor_bytes(root: Path, name: str) -> bytes:\n    \"\"\"Undo only the ten explicitly permitted v18 presentation files.\"\"\"\n    current = project_file(root, name).read_bytes()\n    if not (root/PRESENTATION_V18_PATH).exists():\n        return current\n    data = read_json(project_file(root, PRESENTATION_V18_PATH))\n    if not isinstance(data, dict):\n        raise ValueError('A02 source-trace presentation must be a JSON object')\n    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')\n    if not isinstance(files, list) or not isinstance(pool, list):\n        raise ValueError('A02 source-trace require exact reversible text patch records')\n    matches = [row for row in files if isinstance(row, dict) and row.get('path') == name]\n    if not matches:\n        return current\n    if len(matches) != 1 or name not in A02_SOURCE_TRACE_PREDECESSOR_FILES:\n        raise ValueError('Unauthorized or duplicate A02 source-trace predecessor record: '+name)\n    record = matches[0]; old_sha, old_size = A02_SOURCE_TRACE_PREDECESSOR_FILES[name]\n    if (record.get('old_sha256') != old_sha or record.get('old_bytes') != old_size\n            or hashlib.sha256(current).hexdigest() != record.get('new_sha256')\n            or len(current) != record.get('new_bytes')):\n        raise ValueError('A02 source-trace file differs from its complete old/new identities: '+name)\n    edits = record.get('edits')\n    if not isinstance(edits, list) or not edits:\n        raise ValueError('A02 source-trace changes require nonempty text edits: '+name)\n    chunks, cursor, old_end, delta = [], 0, 0, 0\n    for edit in edits:\n        if not isinstance(edit, dict) or set(edit) != {'old_offset', 'replacement'}:\n            raise ValueError('Invalid reversible A02 source-trace text edit: '+name)\n        offset, replacement = edit['old_offset'], edit['replacement']\n        if (type(offset) is not int or offset < old_end or type(replacement) is not int\n                or not 0 <= replacement < len(pool)):\n            raise ValueError('Overlapping or invalid A02 source-trace text edit: '+name)\n        pair = pool[replacement]\n        if (not isinstance(pair, dict) or set(pair) != {'old', 'new'}\n                or not all(isinstance(pair.get(key), str) for key in ('old', 'new'))\n                or pair['old'] == pair['new']):\n            raise ValueError('Invalid A02 source-trace text replacement pool')\n        before, after = pair['old'].encode('utf-8'), pair['new'].encode('utf-8')\n        position = offset+delta\n        if position < cursor or current[position:position+len(after)] != after:\n            raise ValueError('A02 source-trace replacement differs at its exact offset: '+name)\n        chunks.extend((current[cursor:position], before))\n        cursor, old_end = position+len(after), offset+len(before)\n        delta += len(after)-len(before)\n    rebuilt = b''.join((*chunks, current[cursor:]))\n    if hashlib.sha256(rebuilt).hexdigest() != old_sha or len(rebuilt) != old_size:\n        raise ValueError('A02 source-trace predecessor cannot be reconstructed exactly: '+name)\n    return rebuilt\n\n\n\ndef trace_predecessor_binding(root: Path, name: str) -> dict:\n    content = trace_predecessor_bytes(root, name)\n    return {'path': name, 'sha256': hashlib.sha256(content).hexdigest(), 'bytes': len(content)}\n\n\n"
+    },
+    {
+      "old": "",
+      "new": "trace_"
+    },
+    {
+      "old": "oj",
+      "new": "ed"
+    },
+    {
+      "old": "",
+      "new": "essor_by"
+    },
+    {
+      "old": "_fil",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "s"
+    },
+    {
+      "old": ".read_bytes()",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "    if (root/PRESENTATION_V18_PATH).exists() and not (root/PRESENTATION_V17_PATH).exists():\n        raise ValueError('A02 cited sources require their fixed v17 predecessor')\n"
+    },
+    {
+      "old": "{'",
+      "new": "trace_"
+    },
+    {
+      "old": "ath': ",
+      "new": "redecessor_bi"
+    },
+    {
+      "old": "ame, 'sha256': ",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "n"
+    },
+    {
+      "old": "est(project_file",
+      "new": ""
+    },
+    {
+      "old": "),\n                  'bytes': project_file(root, name).stat().st_size}",
+      "new": ""
+    },
+    {
+      "old": "read_",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": ".loads"
+    },
+    {
+      "old": "",
+      "new": "_predecessor_bytes(root,inventory).decode('utf-8'); new_doc=trace_predecessor_bytes(root,inventory).decode('utf-8')\n    pattern=r'^### A02[^\\n]*\\n.*?(?=^### A0[3-9]|\\Z)'\n    if (len(re.findall(pattern,old_doc,re.S|re.M))!=1 or len(re.findall(pattern,new_doc,re.S|re.M))!=1\n            or re.sub(pattern,'<A02-ONLY/>',old_doc,flags=re.S|re.M)!=re.sub(pattern,'<A02-ONLY/>',new_doc,flags=re.S|re.M)):\n        raise ValueError('Only A02 may change in the shared academic document')\n    for name in (AI_RESEARCH_DOCUMENT,A02_HISTORY_DOCUMENT,inventory):\n        prose=trace_predecessor_bytes(root,name).decode('utf-8')\n        if project_markdown(prose)!=prose:\n            raise ValueError('Team prose lost canonical named achievement references: '+name)\n    for name,expected in updated.items():\n        member=trace_predecessor_binding(root,'site/'+name)\n        if member['sha256']!=expected['sha256'] or member['bytes']!=expected['bytes']:\n            raise ValueError('Team records changed an unlisted website byte: '+name)\n    # Replay v17 from fixed source/renderer/output bytes; inspect only the final layer.\n    if not (root/PRESENTATION_V18_PATH).exists():\n        from render_a02_history import inspect_a02_history\n        from render_ai_research import inspect_ai_research\n        for label,check in (('A02 history',inspect_a02_history(root)),('AI record',inspect_ai_research(root))):\n            if check.get('status')!='passed':\n                raise ValueError(label+' differs from its source-derived rendering: '+str(check.get('errors',[])))\n    members=publication_members(root,updated)\n    report={'path':PRESENTATION_V17_PATH,'sha256':digest(path),'presentation_id':PRESENTATION_V17_ID,\n        'publication_kind':required['publication_kind'],'changed_paths':sorted(A02_ALLOWED_ROUTES),'added_paths':[],\n        'changed_achievement_lines':['A02'],'previous_presentation_commit':PRESENTATION_V17_PREVIOUS_COMMIT,\n        'exact_predecessor_reconstruction':True,'existing_A02_claims_1980_paper_and_technical_background_preserved':True,\n        'source_derived_rendering':True,'homepage_A01_and_original_source_data_unchanged':True,\n        'original_embedded_json_bytes_preserved':True,'published_member_count_with_marker':len(members)+1,\n        **{key:required[key] for key in ('scientific_review_status','scientific_data_unchanged',\n            'historical_achievement_independent_of_AI_review','release_eligible','M0_resumed')}}\n    return apply_a02_source_trace_presentation(root, updated,\n        {**report,'presentation_chain':[*previous_report['presentation_chain'],report]})\n\n\ndef apply_a02_source_trace_presentation(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:\n    \"\"\"Trace cited sources without promoting catalogue metadata to obtained original records.\"\"\"\n    if not (root/PRESENTATION_V18_PATH).exists():\n        return entries, previous_report\n    if digest(project_file(root, PRESENTATION_V17_PATH)) != PRESENTATION_V17_SHA256:\n        raise ValueError('The preceding A02 team presentation v17 is immutable')\n    path = project_file(root, PRESENTATION_V18_PATH); data = read_json(path)\n    documents = [{'path': name, 'sha256': digest(project_file(root, name)),\n                  'bytes': project_file(root, name).stat().st_size} for name in A02_SOURCE_TRACE_DOCUMENTS]\n    required = {'schema_version': '18.0', 'presentation_id': PRESENTATION_V18_ID,\n        'publication_kind': 'platform_a02_cited_sources',\n        'previous_presentation_commit': PRESENTATION_V18_PREVIOUS_COMMIT,\n        'previous_presentation': {'path': PRESENTATION_V17_PATH, 'sha256': PRESENTATION_V17_SHA256},\n        'original_baseline_sha256': BASELINE_SHA256, 'original_archive_sha256': ARCHIVE_SHA256,\n        'allowed_html_paths': sorted(A02_ALLOWED_ROUTES), 'added_html_paths': [], 'additions': [],\n        'allowed_achievement_lines': ['A02'], 'editorial_documents': documents,\n        'protected_website_members': {name: {'sha256': row['sha256'], 'bytes': row['bytes']}\n            for name, row in entries.items() if name not in A02_ALLOWED_ROUTES},\n        'reconstruction_kind': 'deduplicated_exact_utf8_text_edits',\n        'scientific_review_status': 'review_required', 'release_eligible': False,\n        'scientific_data_unchanged': True, 'M0_resumed': False,\n        'historical_achievement_independent_of_AI_review': True}\n    if (not isinstance(data, dict) or any(data.get(key) != value for key, value in required.items())\n            or any(data.get(key) is not required[key] for key in ('release_eligible',\n                'scientific_data_unchanged', 'M0_resumed', 'historical_achievement_independent_of_AI_review'))\n            or any(type(data.get(key)) is not int or data[key] != 0 for key in ('new_quantum_calls', 'new_model_API_calls'))\n            or not isinstance(data.get('authorization'), str) or not data['authorization'].strip()):\n        raise ValueError('Unsupported bounded A02 cited-source presentation v18')\n    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')\n    if (not isinstance(files, list) or not files or not isinstance(pool, list) or not pool\n            or any(not isinstance(row, dict) or row.get('path') not in A02_SOURCE_TRACE_PREDECESSOR_FILES for row in files)\n            or len({row['path'] for row in files}) != len(files)\n            or any(not isinstance(row.get('edits'), list) or not row['edits'] or any(\n                not isinstance(edit, dict) or type(edit.get('replacement')) is not int for edit in row['edits']) for row in files)):\n        raise ValueError('A02 cited-source records may enumerate only the ten fixed predecessor text files')\n    if {edit['replacement'] for row in files for edit in row['edits']} != set(range(len(pool))):\n        raise ValueError('Team replacement pool must contain exactly its used segments')\n    changed = set()\n    for name, (sha, size) in A02_SOURCE_TRACE_PREDECESSOR_FILES.items():\n        old = trace_predecessor_bytes(root, name)\n        if hashlib.sha256(old).hexdigest() != sha or len(old) != size:\n            raise ValueError('A02 cited-source predecessor differs from fixed 98e079c: '+name)\n        if old != project_file(root, name).read_bytes():\n            changed.add(name)\n    if {row['path'] for row in files} != changed:\n        raise ValueError('Team patches must enumerate every and only changed predecessor file')\n    old_ai = json.loads(trace_predecessor_bytes(root, AI_RESEARCH_CONTENT))\n    current_ai = read_json(project_file(root, AI_RESEARCH_CONTENT))\n    if ({k:v for k,v in old_ai.items() if k != 'lines'} != {k:v for k,v in current_ai.items() if k != 'lines'}\n            or [r.get('id') for r in old_ai['lines']] != ['A'+str(n).zfill(2) for n in range(1,9)]\n            or [r.get('id') for r in current_ai['lines']] != [r.get('id') for r in old_ai['lines']]):\n        raise ValueError('Team records must preserve AI metadata and all eight scientific lines')\n    for old_line, new_line in zip(old_ai['lines'], current_ai['lines']):\n        if old_line['id'] != 'A02' and old_line != new_line:\n            raise ValueError('Team records may update only the A02 AI entry')\n        if any(old_line.get(k) != new_line.get(k) for k in ('name','home_summary')):\n            raise ValueError('A02 team records must preserve public names and homepage summaries')\n    if old_ai['lines'][1] == current_ai['lines'][1]:\n        raise ValueError('Team records must update the A02 AI entry')\n    old_history = json.loads(trace_predecessor_bytes(root, A02_HISTORY_CONTENT))\n    history = read_json(project_file(root, A02_HISTORY_CONTENT))\n    mutable = {'source_trace','sources','pending','ai_scope','inventory_update'}\n    if ({k:v for k,v in old_history.items() if k not in mutable} != {k:v for k,v in history.items() if k not in mutable}\n            or history.get('achievement_line') != 'A02' or history.get('scientific_review_status') != 'review_required'\n            or history.get('release_eligible') is not False or history.get('m0_status') != 'paused'\n            or history.get('new_quantum_calls') != 0 or history.get('new_experiments') != 0):\n        raise ValueError('Team records must preserve existing A02 historical claims and the 1980 paper')\n    team_records = history.get('team_records')\n    if (not isinstance(team_records, list) or any(not isinstance(row, dict) for row in team_records)\n            or [row.get('id') for row in team_records] != ['a02-team-hfp','a02-team-rubber','a02-team-oil']\n            or any(row.get('original_records_obtained') is not False for row in team_records)):\n        raise ValueError('Expected three attributed A02 team records with original records still unavailable')\n    if (not isinstance(history.get('sources'), list)\n            or history['sources'][:len(old_history['sources'])] != old_history['sources']):\n        raise ValueError('Team records may append sources, preserving every existing source object')\n    source_trace = history.get('source_trace')\n    if (not isinstance(source_trace, list) or len(source_trace) != 2\n            or any(not isinstance(row, dict) for row in source_trace)):\n        raise ValueError('Expected exactly two separately qualified cited-source trace records')\n    changes = data.get('changes')\n    if (not isinstance(changes, list) or any(not isinstance(row, dict) for row in changes)\n            or [row.get('path') for row in changes] != sorted(A02_ALLOWED_ROUTES)):\n        raise ValueError('Team records may update exactly the A02 topic, AI record and inventory')\n    from public_line_labels import project_html, project_markdown\n    json_scripts = re.compile(r'<script\\b[^>]*\\btype\\s*=\\s*[\\\"\\']application/(?:ld\\+)?json[\\\"\\'][^>]*>.*?</script\\s*>', re.I | re.S)\n    updated = {name:dict(row) for name,row in entries.items()}\n    for item in changes:\n        name=item['path']; old=entries[name]\n        before=trace_predecessor_bytes(root,'site/'+name); after=project_file(root,'site/'+name).read_bytes()\n        source,current=before.decode('utf-8'),after.decode('utf-8')\n        if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']\n                or hashlib.sha256(before).hexdigest() != old['sha256'] or len(before) != old['bytes']\n                or item.get('new_sha256') != hashlib.sha256(after).hexdigest() or item.get('new_bytes') != len(after)\n                or before == after or not isinstance(item.get('reason'),str) or not item['reason'].strip()):\n            raise ValueError('Team HTML differs from complete old/new identities: '+name)\n        if json_scripts.findall(source) != json_scripts.findall(current):\n            raise ValueError('Team records must preserve every embedded source JSON byte')\n        if not set(re.findall(r'\\bid=\"([^\\\"]+)\"',source)) <= set(re.findall(r'\\bid=\"([^\\\"]+)\"',current)):\n            raise ValueError('Team records cannot remove existing navigation/source IDs')\n        if project_html(current,name) != current:\n            raise ValueError('Team records must retain canonical named achievement references')\n        if name == A02_HISTORY_ROUTE:\n            begin,end='<!-- A02_ACADEMIC_HISTORY:BEGIN -->','<!-- A02_ACADEMIC_HISTORY:END -->'\n            if any(value.count(begin)!=1 or value.count(end)!=1 for value in (source,current)):\n                raise ValueError('Team topic requires one complete existing A02 marker')\n            strip=lambda value:value[:value.index(begin)]+'<A02-HISTORY/>'+value[value.index(end)+len(end):]\n            if strip(source) != strip(current):\n                raise ValueError('Team topic may change only inside the A02 historical marker')\n            background = r'<article\\b[^>]*\\bid=\"a02-technical-records\"[^>]*>.*?</article>'\n            if (len(re.findall(background, source, re.S)) != 1\n                    or re.findall(background, source, re.S) != re.findall(background, current, re.S)):\n                raise ValueError('Team records must preserve the complete existing technical-background article')\n            team = r'<article\\b[^>]*\\bid=\"a02-team-records\"[^>]*>.*?</article>'\n            if (len(re.findall(team, current, re.S)) != 1\n                    or current.index('id=\"a02-team-records\"') > current.index('id=\"a02-technical-records\"')):\n                raise ValueError('Attributed A02 team records must precede other-team technical background')\n            if re.findall(team, source, re.S) != re.findall(team, current, re.S):\n                raise ValueError('Cited sources must preserve the complete existing team-history article')\n            trace = r'<article\\b[^>]*\\bid=\"a02-source-trace\"[^>]*>.*?</article>'\n            if len(re.findall(trace, current, re.S)) != 1:\n                raise ValueError('Expected one independent A02 cited-source trace article')\n        else:\n            pattern = (r'<section\\b[^>]*\\bid=\"ai-a02\"[^>]*>.*?</section>' if name==AI_RESEARCH_ROUTE\n                       else r'<article\\b[^>]*\\bid=\"heritage-line-a02\"[^>]*>.*?</article>')\n            if (len(re.findall(pattern,source,re.S))!=1 or len(re.findall(pattern,current,re.S))!=1\n                    or re.sub(pattern,'<A02-ONLY/>',source,flags=re.S)!=re.sub(pattern,'<A02-ONLY/>',current,flags=re.S)):\n                raise ValueError('Team records changed outside the A02 entry: '+name)\n        updated[name]={**old,'sha256':item['new_sha256'],'bytes':item['new_bytes'],'presentation_id':PRESENTATION_V18_ID}\n    inventory='docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md'\n    old_doc=trace"
+    },
+    {
+      "old": "7",
+      "new": "8"
+    },
+    {
+      "old": "cla",
+      "new": "h"
+    },
+    {
+      "old": "m",
+      "new": ""
+    },
+    {
+      "old": "_1980",
+      "new": "tory"
+    },
+    {
+      "old": "_and",
+      "new": ""
+    },
+    {
+      "old": "b",
+      "new": ""
+    },
+    {
+      "old": "ckgrou",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "_team_records"
+    }
+  ],
+  "reversible_text_files": [
+    {
+      "path": "content/a02-academic-achievements.v1.json",
+      "old_sha256": "51c77cc96b4b9db06d695bc5ffdae311ffb2082048ec98adbbe98de9b0b078eb",
+      "old_bytes": 38173,
+      "new_sha256": "2c60f209710ded6ec24f90a6170c0e721fcf1540f4bcbef0c29d492d9b6e69ef",
+      "new_bytes": 48818,
+      "edits": [
+        {
+          "old_offset": 10160,
+          "replacement": 0
+        },
+        {
+          "old_offset": 10161,
+          "replacement": 1
+        },
+        {
+          "old_offset": 10219,
+          "replacement": 2
+        },
+        {
+          "old_offset": 10255,
+          "replacement": 3
+        },
+        {
+          "old_offset": 10282,
+          "replacement": 4
+        },
+        {
+          "old_offset": 10285,
+          "replacement": 5
+        },
+        {
+          "old_offset": 10393,
+          "replacement": 6
+        },
+        {
+          "old_offset": 10408,
+          "replacement": 7
+        },
+        {
+          "old_offset": 10411,
+          "replacement": 8
+        },
+        {
+          "old_offset": 10432,
+          "replacement": 9
+        },
+        {
+          "old_offset": 10491,
+          "replacement": 10
+        },
+        {
+          "old_offset": 10631,
+          "replacement": 11
+        },
+        {
+          "old_offset": 16040,
+          "replacement": 12
+        },
+        {
+          "old_offset": 16278,
+          "replacement": 13
+        },
+        {
+          "old_offset": 16308,
+          "replacement": 14
+        },
+        {
+          "old_offset": 16337,
+          "replacement": 15
+        },
+        {
+          "old_offset": 16352,
+          "replacement": 16
+        },
+        {
+          "old_offset": 16385,
+          "replacement": 17
+        },
+        {
+          "old_offset": 16404,
+          "replacement": 18
+        },
+        {
+          "old_offset": 16422,
+          "replacement": 19
+        },
+        {
+          "old_offset": 16462,
+          "replacement": 20
+        },
+        {
+          "old_offset": 16472,
+          "replacement": 21
+        },
+        {
+          "old_offset": 16493,
+          "replacement": 22
+        },
+        {
+          "old_offset": 16522,
+          "replacement": 23
+        },
+        {
+          "old_offset": 16616,
+          "replacement": 24
+        },
+        {
+          "old_offset": 16625,
+          "replacement": 25
+        },
+        {
+          "old_offset": 16632,
+          "replacement": 26
+        },
+        {
+          "old_offset": 16660,
+          "replacement": 27
+        },
+        {
+          "old_offset": 16693,
+          "replacement": 28
+        },
+        {
+          "old_offset": 16720,
+          "replacement": 29
+        },
+        {
+          "old_offset": 16747,
+          "replacement": 30
+        },
+        {
+          "old_offset": 38167,
+          "replacement": 31
+        }
+      ]
+    },
+    {
+      "path": "scripts/render_a02_history.py",
+      "old_sha256": "47df27ddd51f676847e718a18dc8c57429ac743de13b95eb6eec8d8a5653be1d",
+      "old_bytes": 18491,
+      "new_sha256": "0d598601ccbbd0064bc95b513055c32c7342459937a5504d5f7af74167be8e9c",
+      "new_bytes": 21602,
+      "edits": [
+        {
+          "old_offset": 2143,
+          "replacement": 32
+        },
+        {
+          "old_offset": 2230,
+          "replacement": 33
+        },
+        {
+          "old_offset": 2412,
+          "replacement": 33
+        },
+        {
+          "old_offset": 5757,
+          "replacement": 34
+        },
+        {
+          "old_offset": 10390,
+          "replacement": 35
+        },
+        {
+          "old_offset": 14873,
+          "replacement": 36
+        },
+        {
+          "old_offset": 17016,
+          "replacement": 37
+        },
+        {
+          "old_offset": 17082,
+          "replacement": 38
+        },
+        {
+          "old_offset": 17845,
+          "replacement": 39
+        }
+      ]
+    },
+    {
+      "path": "docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "old_sha256": "2fa00a8628b9d3d0af028e1472ca852119ad019710b4e846b6ce6b4423e593d8",
+      "old_bytes": 29258,
+      "new_sha256": "1209c6a935d402b09602b67be54a5c0f7086d00426f80c6c4971df0a3927cabe",
+      "new_bytes": 37328,
+      "edits": [
+        {
+          "old_offset": 23036,
+          "replacement": 40
+        },
+        {
+          "old_offset": 24988,
+          "replacement": 41
+        },
+        {
+          "old_offset": 25055,
+          "replacement": 2
+        },
+        {
+          "old_offset": 25091,
+          "replacement": 3
+        },
+        {
+          "old_offset": 25118,
+          "replacement": 4
+        },
+        {
+          "old_offset": 25121,
+          "replacement": 5
+        },
+        {
+          "old_offset": 25229,
+          "replacement": 6
+        },
+        {
+          "old_offset": 25244,
+          "replacement": 7
+        },
+        {
+          "old_offset": 25247,
+          "replacement": 8
+        },
+        {
+          "old_offset": 25268,
+          "replacement": 9
+        },
+        {
+          "old_offset": 25327,
+          "replacement": 10
+        },
+        {
+          "old_offset": 25467,
+          "replacement": 11
+        },
+        {
+          "old_offset": 29258,
+          "replacement": 42
+        }
+      ]
+    },
+    {
+      "path": "content/ai-research-section.v1.json",
+      "old_sha256": "99cba00df70792791a76e50ff4deb7ad20cea58dfef7f6fc4446918cff256b75",
+      "old_bytes": 65891,
+      "new_sha256": "2f3a63d3f431939b169877c4a40ddba867f1dd918e2a5d96b2cbd5f5f049870a",
+      "new_bytes": 66703,
+      "edits": [
+        {
+          "old_offset": 32585,
+          "replacement": 43
+        },
+        {
+          "old_offset": 33548,
+          "replacement": 0
+        },
+        {
+          "old_offset": 33550,
+          "replacement": 44
+        },
+        {
+          "old_offset": 33586,
+          "replacement": 20
+        },
+        {
+          "old_offset": 33596,
+          "replacement": 21
+        },
+        {
+          "old_offset": 33617,
+          "replacement": 22
+        },
+        {
+          "old_offset": 33646,
+          "replacement": 23
+        },
+        {
+          "old_offset": 33740,
+          "replacement": 24
+        },
+        {
+          "old_offset": 33749,
+          "replacement": 25
+        },
+        {
+          "old_offset": 33756,
+          "replacement": 26
+        }
+      ]
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "old_sha256": "c354182622f067853bf6b5b0d6310a6f81aa9f7615361a2febb5f9eb9b60107e",
+      "old_bytes": 35191,
+      "new_sha256": "0ed766353417b7f70de17729d0d2876e7a12a0a6270e690ea587d77b14150aa0",
+      "new_bytes": 35833,
+      "edits": [
+        {
+          "old_offset": 17446,
+          "replacement": 45
+        },
+        {
+          "old_offset": 18345,
+          "replacement": 46
+        },
+        {
+          "old_offset": 18383,
+          "replacement": 20
+        },
+        {
+          "old_offset": 18393,
+          "replacement": 21
+        },
+        {
+          "old_offset": 18414,
+          "replacement": 22
+        },
+        {
+          "old_offset": 18443,
+          "replacement": 23
+        },
+        {
+          "old_offset": 18537,
+          "replacement": 24
+        },
+        {
+          "old_offset": 18546,
+          "replacement": 25
+        },
+        {
+          "old_offset": 18553,
+          "replacement": 26
+        }
+      ]
+    },
+    {
+      "path": "site/topics/fluoromonomers/index.html",
+      "old_sha256": "ab2ecad195b1cb610f97c5a1d6b2e77a1207cad9188e52b59569627cfddfe17b",
+      "old_bytes": 45066,
+      "new_sha256": "caaecd0cf044617acf14e07dd8ac6b08fe9391b41506886bb66d6b513c2fb0dd",
+      "new_bytes": 55310,
+      "edits": [
+        {
+          "old_offset": 24267,
+          "replacement": 47
+        },
+        {
+          "old_offset": 38093,
+          "replacement": 48
+        },
+        {
+          "old_offset": 40131,
+          "replacement": 49
+        },
+        {
+          "old_offset": 40209,
+          "replacement": 2
+        },
+        {
+          "old_offset": 40245,
+          "replacement": 3
+        },
+        {
+          "old_offset": 40272,
+          "replacement": 4
+        },
+        {
+          "old_offset": 40275,
+          "replacement": 5
+        },
+        {
+          "old_offset": 40383,
+          "replacement": 6
+        },
+        {
+          "old_offset": 40398,
+          "replacement": 7
+        },
+        {
+          "old_offset": 40401,
+          "replacement": 8
+        },
+        {
+          "old_offset": 40422,
+          "replacement": 9
+        },
+        {
+          "old_offset": 40481,
+          "replacement": 10
+        },
+        {
+          "old_offset": 40621,
+          "replacement": 11
+        }
+      ]
+    },
+    {
+      "path": "site/research/index.html",
+      "old_sha256": "4b4db2f971bfed41f29325dd8e60313b3ec1dfce40caf743418c42955dd3e48c",
+      "old_bytes": 48993,
+      "new_sha256": "0e469bd1e8c4a1bb7d9e7d75cda1a9a728d404de77b64c31e3f714de3822a61f",
+      "new_bytes": 49661,
+      "edits": [
+        {
+          "old_offset": 27560,
+          "replacement": 50
+        },
+        {
+          "old_offset": 28502,
+          "replacement": 51
+        },
+        {
+          "old_offset": 28549,
+          "replacement": 20
+        },
+        {
+          "old_offset": 28559,
+          "replacement": 21
+        },
+        {
+          "old_offset": 28580,
+          "replacement": 22
+        },
+        {
+          "old_offset": 28609,
+          "replacement": 23
+        },
+        {
+          "old_offset": 28703,
+          "replacement": 24
+        },
+        {
+          "old_offset": 28712,
+          "replacement": 25
+        },
+        {
+          "old_offset": 28719,
+          "replacement": 26
+        }
+      ]
+    },
+    {
+      "path": "site/achievements/index.html",
+      "old_sha256": "afab8c345bcceb12584ba7b3c00d15daf5f4a87a0eb6d1777e52ab719093755d",
+      "old_bytes": 95871,
+      "new_sha256": "df20daf429c46e89e99085550067e8c1e9f7e283b10b7e8269f38da6a9d380ff",
+      "new_bytes": 95867,
+      "edits": [
+        {
+          "old_offset": 19919,
+          "replacement": 13
+        },
+        {
+          "old_offset": 19949,
+          "replacement": 14
+        },
+        {
+          "old_offset": 19978,
+          "replacement": 15
+        },
+        {
+          "old_offset": 19993,
+          "replacement": 16
+        },
+        {
+          "old_offset": 20026,
+          "replacement": 17
+        },
+        {
+          "old_offset": 20045,
+          "replacement": 18
+        },
+        {
+          "old_offset": 20063,
+          "replacement": 19
+        },
+        {
+          "old_offset": 20425,
+          "replacement": 20
+        },
+        {
+          "old_offset": 20435,
+          "replacement": 21
+        },
+        {
+          "old_offset": 20456,
+          "replacement": 22
+        },
+        {
+          "old_offset": 20485,
+          "replacement": 23
+        },
+        {
+          "old_offset": 20579,
+          "replacement": 24
+        },
+        {
+          "old_offset": 20588,
+          "replacement": 25
+        },
+        {
+          "old_offset": 20595,
+          "replacement": 26
+        },
+        {
+          "old_offset": 20654,
+          "replacement": 27
+        },
+        {
+          "old_offset": 20687,
+          "replacement": 28
+        },
+        {
+          "old_offset": 20714,
+          "replacement": 29
+        },
+        {
+          "old_offset": 20741,
+          "replacement": 30
+        }
+      ]
+    },
+    {
+      "path": "docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "old_sha256": "ae083f26ea6a5699f5443335569fb10f95d7a12db24c449489b9cead2fd30072",
+      "old_bytes": 69712,
+      "new_sha256": "e9c71d5f3a7ad148882aae13847f9bce64d48d8858666285f7c42fbada5181a9",
+      "new_bytes": 69708,
+      "edits": [
+        {
+          "old_offset": 12079,
+          "replacement": 13
+        },
+        {
+          "old_offset": 12109,
+          "replacement": 14
+        },
+        {
+          "old_offset": 12138,
+          "replacement": 15
+        },
+        {
+          "old_offset": 12153,
+          "replacement": 16
+        },
+        {
+          "old_offset": 12186,
+          "replacement": 17
+        },
+        {
+          "old_offset": 12205,
+          "replacement": 18
+        },
+        {
+          "old_offset": 12223,
+          "replacement": 19
+        },
+        {
+          "old_offset": 12545,
+          "replacement": 20
+        },
+        {
+          "old_offset": 12555,
+          "replacement": 21
+        },
+        {
+          "old_offset": 12576,
+          "replacement": 22
+        },
+        {
+          "old_offset": 12605,
+          "replacement": 23
+        },
+        {
+          "old_offset": 12699,
+          "replacement": 24
+        },
+        {
+          "old_offset": 12708,
+          "replacement": 25
+        },
+        {
+          "old_offset": 12715,
+          "replacement": 26
+        },
+        {
+          "old_offset": 12747,
+          "replacement": 27
+        },
+        {
+          "old_offset": 12780,
+          "replacement": 28
+        },
+        {
+          "old_offset": 12807,
+          "replacement": 29
+        },
+        {
+          "old_offset": 12834,
+          "replacement": 30
+        }
+      ]
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "old_sha256": "665aedd2071d06da0530a345aa454c37a5535172fb260fd1e2a3ee449a40698e",
+      "old_bytes": 204809,
+      "new_sha256": "90000776a713ff4cc0441efd52d9c54f6dce3fec5872d27867b1f2109a73efdc",
+      "new_bytes": 223315,
+      "edits": [
+        {
+          "old_offset": 10522,
+          "replacement": 52
+        },
+        {
+          "old_offset": 20889,
+          "replacement": 53
+        },
+        {
+          "old_offset": 21036,
+          "replacement": 54
+        },
+        {
+          "old_offset": 21038,
+          "replacement": 55
+        },
+        {
+          "old_offset": 21042,
+          "replacement": 56
+        },
+        {
+          "old_offset": 21043,
+          "replacement": 57
+        },
+        {
+          "old_offset": 21048,
+          "replacement": 58
+        },
+        {
+          "old_offset": 21060,
+          "replacement": 59
+        },
+        {
+          "old_offset": 63265,
+          "replacement": 60
+        },
+        {
+          "old_offset": 185402,
+          "replacement": 61
+        },
+        {
+          "old_offset": 185405,
+          "replacement": 62
+        },
+        {
+          "old_offset": 185412,
+          "replacement": 63
+        },
+        {
+          "old_offset": 185429,
+          "replacement": 64
+        },
+        {
+          "old_offset": 185430,
+          "replacement": 65
+        },
+        {
+          "old_offset": 185458,
+          "replacement": 66
+        },
+        {
+          "old_offset": 188379,
+          "replacement": 54
+        },
+        {
+          "old_offset": 188381,
+          "replacement": 55
+        },
+        {
+          "old_offset": 188385,
+          "replacement": 56
+        },
+        {
+          "old_offset": 188386,
+          "replacement": 57
+        },
+        {
+          "old_offset": 188391,
+          "replacement": 58
+        },
+        {
+          "old_offset": 188403,
+          "replacement": 59
+        },
+        {
+          "old_offset": 188686,
+          "replacement": 67
+        },
+        {
+          "old_offset": 188695,
+          "replacement": 68
+        },
+        {
+          "old_offset": 188696,
+          "replacement": 54
+        },
+        {
+          "old_offset": 188698,
+          "replacement": 55
+        },
+        {
+          "old_offset": 188702,
+          "replacement": 56
+        },
+        {
+          "old_offset": 188703,
+          "replacement": 57
+        },
+        {
+          "old_offset": 188708,
+          "replacement": 58
+        },
+        {
+          "old_offset": 189760,
+          "replacement": 67
+        },
+        {
+          "old_offset": 189769,
+          "replacement": 68
+        },
+        {
+          "old_offset": 189770,
+          "replacement": 54
+        },
+        {
+          "old_offset": 189772,
+          "replacement": 55
+        },
+        {
+          "old_offset": 189776,
+          "replacement": 56
+        },
+        {
+          "old_offset": 189777,
+          "replacement": 57
+        },
+        {
+          "old_offset": 189782,
+          "replacement": 58
+        },
+        {
+          "old_offset": 191867,
+          "replacement": 54
+        },
+        {
+          "old_offset": 191869,
+          "replacement": 55
+        },
+        {
+          "old_offset": 191873,
+          "replacement": 56
+        },
+        {
+          "old_offset": 191874,
+          "replacement": 57
+        },
+        {
+          "old_offset": 191879,
+          "replacement": 58
+        },
+        {
+          "old_offset": 191898,
+          "replacement": 59
+        },
+        {
+          "old_offset": 195004,
+          "replacement": 69
+        },
+        {
+          "old_offset": 196456,
+          "replacement": 70
+        },
+        {
+          "old_offset": 196518,
+          "replacement": 70
+        },
+        {
+          "old_offset": 196731,
+          "replacement": 70
+        },
+        {
+          "old_offset": 196812,
+          "replacement": 71
+        },
+        {
+          "old_offset": 196816,
+          "replacement": 72
+        },
+        {
+          "old_offset": 196818,
+          "replacement": 73
+        },
+        {
+          "old_offset": 196829,
+          "replacement": 74
+        },
+        {
+          "old_offset": 196844,
+          "replacement": 75
+        },
+        {
+          "old_offset": 196846,
+          "replacement": 76
+        },
+        {
+          "old_offset": 196854,
+          "replacement": 77
+        }
+      ]
+    }
+  ],
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "M0_resumed": false,
+  "historical_achievement_independent_of_AI_review": true,
+  "new_quantum_calls": 0,
+  "new_model_API_calls": 0,
+  "changes": [
+    {
+      "path": "achievements/index.html",
+      "old_sha256": "afab8c345bcceb12584ba7b3c00d15daf5f4a87a0eb6d1777e52ab719093755d",
+      "old_bytes": 95871,
+      "new_sha256": "df20daf429c46e89e99085550067e8c1e9f7e283b10b7e8269f38da6a9d380ff",
+      "new_bytes": 95867,
+      "reason": "Present two qualified A02 cited-source trace records and actual original-access status, preserving attributed team history, technical background, historical/AI separation and paused M0 status"
+    },
+    {
+      "path": "research/index.html",
+      "old_sha256": "4b4db2f971bfed41f29325dd8e60313b3ec1dfce40caf743418c42955dd3e48c",
+      "old_bytes": 48993,
+      "new_sha256": "0e469bd1e8c4a1bb7d9e7d75cda1a9a728d404de77b64c31e3f714de3822a61f",
+      "new_bytes": 49661,
+      "reason": "Present two qualified A02 cited-source trace records and actual original-access status, preserving attributed team history, technical background, historical/AI separation and paused M0 status"
+    },
+    {
+      "path": "topics/fluoromonomers/index.html",
+      "old_sha256": "ab2ecad195b1cb610f97c5a1d6b2e77a1207cad9188e52b59569627cfddfe17b",
+      "old_bytes": 45066,
+      "new_sha256": "caaecd0cf044617acf14e07dd8ac6b08fe9391b41506886bb66d6b513c2fb0dd",
+      "new_bytes": 55310,
+      "reason": "Present two qualified A02 cited-source trace records and actual original-access status, preserving attributed team history, technical background, historical/AI separation and paused M0 status"
+    }
+  ],
+  "additions": [],
+  "boundary": "Only two A02 cited-source trace records, appended sources, pending original-document searches, AI reading scope and inventory update change. The previous historical cards, collaboration, 1980 paper, technical records, team records, and complete technical-background and team-history HTML articles remain identical. Official catalogues, project organizers, bibliographic metadata and search entry points are individually qualified; they do not establish that underlying original recordings or the cited book page have been obtained. Homepage, README, seven other scientific lines, A01, PFtB and original source JSON remain identical. M0 is paused; no quantum calculation, model service or experiment is represented.",
+  "reconstruction": "Ten permitted fixed 98e079c predecessor files are reconstructed in memory using ordered exact UTF-8 text edits and a deduplicated replacement pool. No complete predecessor page or document is added. Existing v1-v17 declarations retain their original byte identities.",
+  "publish_allowlist": "Unchanged: sixteen static HTML pages, two original public JSON files and an empty .nojekyll marker, nineteen regular published files."
+}

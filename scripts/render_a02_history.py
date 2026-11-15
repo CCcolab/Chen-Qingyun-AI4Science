@@ -44,10 +44,15 @@ def load(root: Path) -> dict:
     if ([r['id'] for r in team] != ['a02-team-hfp','a02-team-rubber','a02-team-oil']
             or any(r.get('original_records_obtained') is not False for r in team)):
         raise ValueError('Team history must distinguish three objects with technical originals still pending')
-    for row in data['history_cards']+data['cooperation']+[data['paper']]+technical+team:
+    trace = data.get('source_trace', [])
+    if ([r['id'] for r in trace] != ['a02-trace-interview','a02-trace-book2009']
+            or any(r.get('original_obtained') is not False for r in trace)
+            or trace[1].get('volume_confirmed') is not False):
+        raise ValueError('Cited-source tracing must keep interview originals and book volume unresolved')
+    for row in data['history_cards']+data['cooperation']+[data['paper']]+technical+team+trace:
         if not row['source_refs'] or any(s not in sources for s in row['source_refs']):
             raise ValueError('Missing A02 source attribution')
-    for row in technical+team:
+    for row in technical+team+trace:
         if row.get('original_pdf_obtained') and not re.fullmatch(r'[a-f0-9]{64}', row['pdf_sha256'] or ''):
             raise ValueError('Acquired technical original must have a document fingerprint')
         for table in row['tables']:
@@ -87,6 +92,19 @@ def technical_html(data: dict, *, team=False) -> str:
     return '\n'.join(out)
 
 
+def source_trace_html(data: dict) -> str:
+    out = ['<article id="a02-source-trace"><span class="status">AI辅助资料整理 · 引据追踪</span><h2>本人访谈与所引书页：已核信息与原件缺口</h2><p>这一部分记录平台对传记引据的定位工作。原始访谈和目标书页尚未取得，以下目录信息不作为新增历史成果、工艺参数或材料性能证据。</p>']
+    for record in data['source_trace']:
+        out += ['<section id="'+esc(record['id'])+'"><h3>'+esc(record['title'])+'</h3><p class="a02-locator">'+esc(record['identity'])+'</p><p>'+esc(record['description'])+'</p>']
+        for i, table in enumerate(record['tables']):
+            caption=record['id']+'-table-'+str(i+1)
+            out += ['<p id="'+caption+'"><b>'+esc(table['caption'])+'</b>（宽表可横向滑动）</p><div class="a02-technical-table" role="region" tabindex="0" aria-labelledby="'+caption+'"><table><thead><tr>'+''.join('<th scope="col">'+esc(v)+'</th>' for v in table['columns'])+'</tr></thead><tbody>']
+            out += ['<tr><th scope="row">'+esc(row[0])+'</th>'+''.join('<td>'+esc(v)+'</td>' for v in row[1:])+'</tr>' for row in table['rows']]
+            out += ['</tbody></table></div>'+listing(table['notes'])]
+        out += ['<p class="a02-meaning"><b>证据范围：</b>'+esc(record['scope'])+'</p><h4>待取得的原件</h4>'+listing(record['pending']),'<p class="a02-locator">'+refs(record['source_refs'],data)+'</p><p>'+' · '.join('<a href="'+esc(v['url'])+'">'+esc(v['title'])+'</a>' for v in record['links'])+'</p></section>']
+    return '\n'.join(out+['</article>'])
+
+
 def render_block(data: dict) -> str:
     cards = data['history_cards']
     out = [BEGIN, '<style id="a02-academic-css">header h1{text-wrap:balance}#a02-paper-table{overflow-x:auto;max-width:100%}#a02-paper-table table{border-collapse:collapse;min-width:650px;width:100%;font-size:.9rem}#a02-paper-table th,#a02-paper-table td{border:1px solid var(--line);padding:12px;text-align:left;vertical-align:top}#a02-paper-table th{background:#edf3ee}.a02-meaning{border-left:3px solid #aa7545;padding:8px 16px;background:#f7f4eb}.a02-locator{font-size:.88rem;color:var(--muted)}#a02-primary-sources{overflow-wrap:anywhere}</style>',
@@ -110,7 +128,7 @@ def render_block(data: dict) -> str:
             '<article id="a02-cooperation"><span class="status">合作与研究接续</span><h2>共同攻关怎样支持学术成果</h2>']
     for story in data['cooperation']:
         out += ['<h3>'+esc(story['title'])+'</h3><p>'+esc(story['text'])+'</p><p class="a02-locator">'+esc(story['locator'])+' · '+refs(story['source_refs'],data)+'</p>']
-    out += ['</article><details id="a02-context-background"><summary>同期他组与相关材料背景（与陈团队成果分别归属）</summary>',technical_html(data),'</details><article id="refs"><span class="status">来源与证据范围</span><h2 id="a02-primary-sources">原始来源及资料性质</h2><ul>']
+    out += ['</article>',source_trace_html(data),'<details id="a02-context-background"><summary>同期他组与相关材料背景（与陈团队成果分别归属）</summary>',technical_html(data),'</details><article id="refs"><span class="status">来源与证据范围</span><h2 id="a02-primary-sources">原始来源及资料性质</h2><ul>']
     for source in data['sources']:
         title = '<a href="'+esc(source['url'])+'">'+esc(source['title'])+'</a>' if source['url'] else esc(source['title'])
         out += ['<li id="'+esc(source['anchor'])+'"><b>'+esc(source['id'])+'</b> · '+title+'；'+esc(source['kind'])+'。'+esc(source['locator'])+'</li>']
@@ -151,6 +169,15 @@ def render_document(data: dict) -> str:
     out += ['## 合作与研究接续','']
     for s in data['cooperation']:
         out += ['### '+s['title'],'',s['text'],'','出处：'+s['locator']+'；'+'、'.join(s['source_refs'])+'。','']
+    out += ['## AI辅助资料整理：本人访谈与所引书页','','以下是传记引据的定位工作；原始访谈和目标书页尚未取得，目录信息不作为新增历史成果、工艺或性能证据。','']
+    for record in data['source_trace']:
+        out += ['### '+record['title'],'',record['identity'],'',record['description'],'']
+        for table in record['tables']:
+            out += ['**'+table['caption']+'**','','| '+' | '.join(table['columns'])+' |','|'+'|'.join('---' for _ in table['columns'])+'|']
+            out += ['| '+' | '.join(row)+' |' for row in table['rows']]
+            out += ['']+['- '+s for s in table['notes']]+['']
+        out += ['**证据范围：**'+record['scope'],'','待取得的原件：','']+['- '+s for s in record['pending']]+['','出处：'+'、'.join(record['source_refs'])+'。','']
+        out += ['['+v['title']+']('+v['url']+')' for v in record['links']]+['']
     out += ['## 待核事项','']+['- '+s for s in data['pending']]+['','## AI辅助工作的范围','',data['ai_scope'],'','## 来源与原文定位','']
     for s in data['sources']:
         title = '['+s['title']+']('+s['url']+')' if s['url'] else s['title']
@@ -184,12 +211,12 @@ def inspect_a02_history(root: Path=ROOT) -> dict:
         page=PageLinks(expected)
         if any(v!=1 for v in page.ids.values()) or page.json_payloads:
             raise ValueError('A02 cannot duplicate identities or add embedded source JSON')
-        for ident in ['topic-fluoromonomers','record-fluorinated-oils','refs','ref-r28','ref-s1','a02-vdf-1980','a02-technical-records','a02-team-records','a02-context-background']+[r['id'] for r in data['technical_records']+data['team_records']]:
+        for ident in ['topic-fluoromonomers','record-fluorinated-oils','refs','ref-r28','ref-s1','a02-vdf-1980','a02-technical-records','a02-team-records','a02-context-background','a02-source-trace']+[r['id'] for r in data['technical_records']+data['team_records']+data['source_trace']]:
             if page.ids[ident]!=1:raise ValueError('A02 lost a source or topic identity: '+ident)
         for url in page.links:check_link(root,PAGE,url,{PAGE:expected})
         if expected.index('id="a02-team-records"') >= expected.index('id="a02-technical-records"'):
             raise ValueError('Attributed team work must precede contextual technical records')
-        report.update(status='passed',source_sha256=hashlib.sha256((root/CONTENT).read_bytes()).hexdigest(),history_cards=3,cooperation_stories=2,team_records=len(data['team_records']),new_team_technical_originals=0,technical_records=len(data['technical_records']),technical_tables=sum(len(r['tables']) for r in data['technical_records']),primary_observations=len(data['paper']['observations']),original_pdf_redistributed=False)
+        report.update(status='passed',source_sha256=hashlib.sha256((root/CONTENT).read_bytes()).hexdigest(),history_cards=3,cooperation_stories=2,team_records=len(data['team_records']),new_team_technical_originals=0,technical_records=len(data['technical_records']),technical_tables=sum(len(r['tables']) for r in data['technical_records']),primary_observations=len(data['paper']['observations']),source_trace_records=len(data['source_trace']),book_2009_volume_confirmed=False,interview_original_obtained=False,original_pdf_redistributed=False)
     except (OSError,ValueError,KeyError,TypeError) as error:report['errors'].append(str(error))
     return report
 
