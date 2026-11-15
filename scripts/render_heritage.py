@@ -367,8 +367,29 @@ def render_sources(data: dict, sources: dict) -> str:
     return ('<section id="heritage-sources" class="wrap heritage-section"><h2>资料来源与待核事项</h2><p>各项资料注明来源、文献定位与待核事项。</p><details><summary>文献范围与书本信息</summary><p>'+esc(authors)+'：《'+esc(book['title'])+'》。'+esc(book['edition_note'])+'</p><p class="heritage-meta">资料文件信息：'+esc(book['file_name'])+'；SHA256 '+esc(book['sha256'])+'；PDF共'+esc(book['page_count'])+'页。正文页码映射的偏移量为'+esc(book['printed_page_to_pdf_offset'])+'页。</p>'+reading+'</details><div class="heritage-grid">'+''.join(rows)+'</div><details><summary>待核事项与当前处理</summary><div class="heritage-grid">'+''.join(gaps)+'</div></details><details><summary>历史资料与平台AI辅助研究</summary>'+_boundary(data)+'<p>'+esc(data['scope']['m0_status'])+'</p></details><script id="heritage-content" type="application/json">\n'+payload+'\n</script></section>')
 
 
-def render_inventory(data: dict, sources: dict) -> str:
+def current_inventory(data: dict, root: Path = ROOT) -> dict:
+    """Project the acquired A02 paper without changing the historical register."""
     data = public_projection(data)
+    path = root/'content/a02-academic-achievements.v1.json'
+    if not path.is_file():
+        return data
+    acquired = json.loads(path.read_bytes())
+    if acquired.get('achievement_line') != 'A02' or acquired.get('scientific_review_status') != 'review_required':
+        raise ValueError('A02 inventory update requires its attributed, pending-review source')
+    update = acquired['inventory_update']
+    row = next(item for item in data['lines'] if item['line_id'] == 'A02')
+    material = next(item for item in row['materials'] if item['text'] == '1980年偏氟乙烯调聚论文')
+    material['status'] = update['paper_status']
+    material['locator'] = update['paper_locator']
+    row['gaps'] = [update['paper_gap'] if value == '氟油配方／交付档案及1980原刊结构和完整实验条件' else value for value in row['gaps']]
+    row['next_document'] = update['next_document']
+    row['ai_status'] = update['ai_status']
+    row['primary_entry'] = update['primary_entry']
+    return data
+
+
+def render_inventory(data: dict, sources: dict, root: Path = ROOT) -> str:
+    data = current_inventory(data, root)
     cards = []
     for row in sorted(data['lines'], key=lambda value: value['line_id']):
         notes = '<div class="heritage-achievement-notes"><h4>成果与合作</h4>'+''.join(
@@ -378,7 +399,8 @@ def render_inventory(data: dict, sources: dict) -> str:
         for item in row['materials']:
             materials.append('<li><span class="heritage-tag">'+esc(item['status'])+'</span>'+esc(item['text'])+_locator(item, sources, prefix='../index.html')+'</li>')
         gaps = ''.join('<li>'+esc(value)+'</li>' for value in row['gaps'])
-        cards.append('<article class="heritage-card" id="heritage-line-'+row['line_id'].lower()+'"><p class="heritage-meta">'+row['line_id']+'</p><h3>'+esc(row['title'])+'</h3><p>'+esc(row['contribution'])+'</p>'+notes+'<details><summary>现有材料及来源定位</summary><ul>'+''.join(materials)+'</ul></details><h4>待核事项</h4><ul>'+gaps+'</ul><p><strong>待补文献：</strong>'+esc(row['next_document'])+'</p><p class="heritage-meta">平台AI辅助研究：'+esc(row['ai_status'])+'</p></article>')
+        entry = '<p><a href="'+esc(row['primary_entry'])+'">1980年原刊与学术证据 →</a></p>' if row.get('primary_entry') else ''
+        cards.append('<article class="heritage-card" id="heritage-line-'+row['line_id'].lower()+'"><p class="heritage-meta">'+row['line_id']+'</p><h3>'+esc(row['title'])+'</h3><p>'+esc(row['contribution'])+'</p>'+notes+'<details><summary>现有材料及来源定位</summary><ul>'+''.join(materials)+'</ul></details><h4>待核事项</h4><ul>'+gaps+'</ul><p><strong>待补文献：</strong>'+esc(row['next_document'])+'</p><p class="heritage-meta">平台AI辅助研究：'+esc(row['ai_status'])+'</p>'+entry+'</article>')
     return _style('heritage-achievements-style')+'\n<section id="heritage-inventory" class="wrap heritage-section"><h2>九条成果与传承线：资料</h2>'+_boundary(data)+'<div class="heritage-grid">'+''.join(cards)+'</div></section>'
 
 
@@ -425,8 +447,8 @@ def _md_refs(refs: list, sources: dict) -> str:
     return '；'.join(_md(value)+'（'+_md(source_title(sources[value]))+'）' for value in refs) if refs else '暂无可回链来源'
 
 
-def render_inventory_markdown(data: dict, sources: dict) -> str:
-    data = public_projection(data)
+def render_inventory_markdown(data: dict, sources: dict, root: Path = ROOT) -> str:
+    data = current_inventory(data, root)
     book = data['book']
     authors = '、'.join(book['authors']) if isinstance(book['authors'], list) else book['authors']
     rows = ['# 陈庆云院士学术成就与合作资料', '', '资料截至：'+_md(data['date'])+'。', '',
@@ -449,6 +471,8 @@ def render_inventory_markdown(data: dict, sources: dict) -> str:
             rows += ['- **'+_md(item['status'])+'**：'+_md(item['text'])+'；出处：'+_md_refs(item['source_refs'], sources)+'；定位：'+_md(item['locator'])+'。']
         rows += ['', '待核事项：', '']+['- '+_md(value) for value in row['gaps']]
         rows += ['', '待补文献：'+_md(row['next_document']), '', '平台AI辅助研究：'+_md(row['ai_status']), '']
+        if row.get('primary_entry'):
+            rows += ['[1980年原刊与学术证据](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#a02-vdf-1980)', '']
     rows += ['## 人物与合作故事', '']
     for row in data['stories']:
         rows += ['### '+_md(row['title']), '', '主题：'+_md(row['theme'])+'；关联：'+_md('、'.join(row['line_ids']))+'；人物：'+_md('、'.join(row['people']))+'。', '',
@@ -473,7 +497,7 @@ def marker_block(name: str, body: str) -> str:
     return '<!-- '+name+'_BEGIN -->\n'+body+'\n<!-- '+name+'_END -->'
 
 
-def render_blocks(data: dict, sources: dict) -> dict:
+def render_blocks(data: dict, sources: dict, root: Path = ROOT) -> dict:
     blocks = {
         'index.html': {
             'HERITAGE_LIFE': marker_block('HERITAGE_LIFE', render_life(data, sources)),
@@ -481,7 +505,7 @@ def render_blocks(data: dict, sources: dict) -> dict:
             'HERITAGE_SOURCES': marker_block('HERITAGE_SOURCES', render_sources(data, sources)),
         },
         'achievements/index.html': {
-            'HERITAGE_INVENTORY': marker_block('HERITAGE_INVENTORY', render_inventory(data, sources)),
+            'HERITAGE_INVENTORY': marker_block('HERITAGE_INVENTORY', render_inventory(data, sources, root)),
             'HERITAGE_STORIES_ALL': marker_block('HERITAGE_STORIES_ALL', render_all_stories(data, sources)),
         },
     }
@@ -599,7 +623,7 @@ def inspect_heritage(root: Path = ROOT) -> dict:
             source_gaps=len(data['source_gaps']),
             achievement_notes=sum(len(row['achievement_notes']) for row in data['lines']),
             topic_contexts=len(data['topic_contexts']), previous_edition_preserved=True)
-        blocks = render_blocks(data, sources)
+        blocks = render_blocks(data, sources, root)
         for name, rendered in blocks.items():
             page = {'path': 'site/'+name, 'marker_checks': [],
                     'unique_generated_identities_and_payload': False}
@@ -622,7 +646,7 @@ def inspect_heritage(root: Path = ROOT) -> dict:
                 page['unique_generated_identities_and_payload'] = True
             except (OSError, ValueError, KeyError, TypeError) as error:
                 errors.append('Heritage page '+name+': '+str(error))
-        expected_document = render_inventory_markdown(data, sources).encode('utf-8')
+        expected_document = render_inventory_markdown(data, sources, root).encode('utf-8')
         path = root/DOCUMENT
         actual_document = path.read_bytes() if path.is_file() else None
         equal = actual_document == expected_document

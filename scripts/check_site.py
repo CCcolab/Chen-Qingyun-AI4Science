@@ -127,6 +127,14 @@ def inspect_site(*, require_node: bool = False) -> dict:
             report["a01_historical_content_consistency"] = a01_history
             if a01_history.get("status") != "passed":
                 errors.append("A01 historical content did not pass its source-derived rendering check")
+        if (ROOT / "content/a02-academic-achievements.v1.json").is_file():
+            from render_a02_history import inspect_a02_history
+            a02_history = inspect_a02_history(ROOT)
+            report["a02_historical_content_consistency"] = a02_history
+            if a02_history.get("status") != "passed":
+                errors.extend("A02 history: " + message for message in a02_history.get("errors", []))
+                if not a02_history.get("errors"):
+                    errors.append("A02 history differs from its source-derived rendering")
         if (ROOT / "content/achievement-labels.v1.json").is_file():
             from public_line_labels import inspect_line_labels
             labels = inspect_line_labels(ROOT)
