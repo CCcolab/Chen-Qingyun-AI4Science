@@ -149,6 +149,22 @@ A02_SOURCE_TRACE_PREDECESSOR_FILES = {
 }
 A02_SOURCE_TRACE_DOCUMENTS = A02_DOCUMENTS
 
+PRESENTATION_V18_SHA256 = '4fa6f43360d5343e119bb7b9e51e0671f1b4b4ef51ba065067459180a710dfd6'
+PRESENTATION_V19_PATH = 'provenance/platform-presentation.v19.json'
+PRESENTATION_V19_ID = 'PLATFORM-A02-ORIGINAL-FOLLOWUP-20261115-v19'
+PRESENTATION_V19_PREVIOUS_COMMIT = 'b107b56d597c02230e4dc9365bc6d36411a989a8'
+A02_ORIGINAL_FOLLOWUP_ROUTES = {'topics/fluoromonomers/index.html', 'research/index.html'}
+A02_ORIGINAL_FOLLOWUP_PREDECESSOR_FILES = {
+    'content/a02-academic-achievements.v1.json': ('2c60f209710ded6ec24f90a6170c0e721fcf1540f4bcbef0c29d492d9b6e69ef', 48818),
+    'docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md': ('1209c6a935d402b09602b67be54a5c0f7086d00426f80c6c4971df0a3927cabe', 37328),
+    'site/topics/fluoromonomers/index.html': ('caaecd0cf044617acf14e07dd8ac6b08fe9391b41506886bb66d6b513c2fb0dd', 55310),
+    'content/ai-research-section.v1.json': ('2f3a63d3f431939b169877c4a40ddba867f1dd918e2a5d96b2cbd5f5f049870a', 66703),
+    'docs/AI_RESEARCH_zh-CN.md': ('0ed766353417b7f70de17729d0d2876e7a12a0a6270e690ea587d77b14150aa0', 35833),
+    'site/research/index.html': ('0e469bd1e8c4a1bb7d9e7d75cda1a9a728d404de77b64c31e3f714de3822a61f', 49661),
+    'scripts/a01_publication_contract.py': ('90000776a713ff4cc0441efd52d9c54f6dce3fec5872d27867b1f2109a73efdc', 223315),
+}
+A02_ORIGINAL_FOLLOWUP_DOCUMENTS = A02_DOCUMENTS
+
 REFERENCES_PREDECESSOR_FILES = {
     'README.md': ('3031d7cb2b65282f50d60c0dcac561a5c8f86e31497be2016e0875e5a61d11e7', 7366),
     'site/index.html': ('d9e96eb3dc370a9c076a1e0afbcc43b266a69491e63e11d421dc3d1c91698b19', 255067),
@@ -290,9 +306,65 @@ def project_file(root: Path, name: str) -> Path:
     return candidate
 
 
+def original_followup_predecessor_bytes(root: Path, name: str) -> bytes:
+    """Undo only the seven explicitly permitted v19 presentation files."""
+    current = project_file(root, name).read_bytes()
+    if not (root/PRESENTATION_V19_PATH).exists():
+        return current
+    data = read_json(project_file(root, PRESENTATION_V19_PATH))
+    if not isinstance(data, dict):
+        raise ValueError('A02 original-followup presentation must be a JSON object')
+    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')
+    if not isinstance(files, list) or not isinstance(pool, list):
+        raise ValueError('A02 original-followup require exact reversible text patch records')
+    matches = [row for row in files if isinstance(row, dict) and row.get('path') == name]
+    if not matches:
+        return current
+    if len(matches) != 1 or name not in A02_ORIGINAL_FOLLOWUP_PREDECESSOR_FILES:
+        raise ValueError('Unauthorized or duplicate A02 original-followup predecessor record: '+name)
+    record = matches[0]; old_sha, old_size = A02_ORIGINAL_FOLLOWUP_PREDECESSOR_FILES[name]
+    if (record.get('old_sha256') != old_sha or record.get('old_bytes') != old_size
+            or hashlib.sha256(current).hexdigest() != record.get('new_sha256')
+            or len(current) != record.get('new_bytes')):
+        raise ValueError('A02 original-followup file differs from its complete old/new identities: '+name)
+    edits = record.get('edits')
+    if not isinstance(edits, list) or not edits:
+        raise ValueError('A02 original-followup changes require nonempty text edits: '+name)
+    chunks, cursor, old_end, delta = [], 0, 0, 0
+    for edit in edits:
+        if not isinstance(edit, dict) or set(edit) != {'old_offset', 'replacement'}:
+            raise ValueError('Invalid reversible A02 original-followup text edit: '+name)
+        offset, replacement = edit['old_offset'], edit['replacement']
+        if (type(offset) is not int or offset < old_end or type(replacement) is not int
+                or not 0 <= replacement < len(pool)):
+            raise ValueError('Overlapping or invalid A02 original-followup text edit: '+name)
+        pair = pool[replacement]
+        if (not isinstance(pair, dict) or set(pair) != {'old', 'new'}
+                or not all(isinstance(pair.get(key), str) for key in ('old', 'new'))
+                or pair['old'] == pair['new']):
+            raise ValueError('Invalid A02 original-followup text replacement pool')
+        before, after = pair['old'].encode('utf-8'), pair['new'].encode('utf-8')
+        position = offset+delta
+        if position < cursor or current[position:position+len(after)] != after:
+            raise ValueError('A02 original-followup replacement differs at its exact offset: '+name)
+        chunks.extend((current[cursor:position], before))
+        cursor, old_end = position+len(after), offset+len(before)
+        delta += len(after)-len(before)
+    rebuilt = b''.join((*chunks, current[cursor:]))
+    if hashlib.sha256(rebuilt).hexdigest() != old_sha or len(rebuilt) != old_size:
+        raise ValueError('A02 original-followup predecessor cannot be reconstructed exactly: '+name)
+    return rebuilt
+
+
+
+def original_followup_predecessor_binding(root: Path, name: str) -> dict:
+    content = original_followup_predecessor_bytes(root, name)
+    return {'path': name, 'sha256': hashlib.sha256(content).hexdigest(), 'bytes': len(content)}
+
+
 def trace_predecessor_bytes(root: Path, name: str) -> bytes:
     """Undo only the ten explicitly permitted v18 presentation files."""
-    current = project_file(root, name).read_bytes()
+    current = original_followup_predecessor_bytes(root, name)
     if not (root/PRESENTATION_V18_PATH).exists():
         return current
     data = read_json(project_file(root, PRESENTATION_V18_PATH))
@@ -1058,6 +1130,8 @@ def apply_presentation_v1(root: Path, entries: dict, *, chain: list,
 
 def apply_presentation_overlay(root: Path, entries: dict, *, chain: list) -> tuple[dict, dict | None]:
     """Apply v1, then this bounded historical-content successor if present."""
+    if (root/PRESENTATION_V19_PATH).exists() and not (root/PRESENTATION_V18_PATH).exists():
+        raise ValueError('A02 original-source follow-up requires its fixed v18 predecessor')
     if (root/PRESENTATION_V18_PATH).exists() and not (root/PRESENTATION_V17_PATH).exists():
         raise ValueError('A02 cited sources require their fixed v17 predecessor')
     if (root/PRESENTATION_V17_PATH).exists() and not (root/PRESENTATION_V16_PATH).exists():
@@ -2865,8 +2939,7 @@ def apply_a02_source_trace_presentation(root: Path, entries: dict, previous_repo
     if digest(project_file(root, PRESENTATION_V17_PATH)) != PRESENTATION_V17_SHA256:
         raise ValueError('The preceding A02 team presentation v17 is immutable')
     path = project_file(root, PRESENTATION_V18_PATH); data = read_json(path)
-    documents = [{'path': name, 'sha256': digest(project_file(root, name)),
-                  'bytes': project_file(root, name).stat().st_size} for name in A02_SOURCE_TRACE_DOCUMENTS]
+    documents = [original_followup_predecessor_binding(root, name) for name in A02_SOURCE_TRACE_DOCUMENTS]
     required = {'schema_version': '18.0', 'presentation_id': PRESENTATION_V18_ID,
         'publication_kind': 'platform_a02_cited_sources',
         'previous_presentation_commit': PRESENTATION_V18_PREVIOUS_COMMIT,
@@ -2900,12 +2973,12 @@ def apply_a02_source_trace_presentation(root: Path, entries: dict, previous_repo
         old = trace_predecessor_bytes(root, name)
         if hashlib.sha256(old).hexdigest() != sha or len(old) != size:
             raise ValueError('A02 cited-source predecessor differs from fixed 98e079c: '+name)
-        if old != project_file(root, name).read_bytes():
+        if old != original_followup_predecessor_bytes(root, name):
             changed.add(name)
     if {row['path'] for row in files} != changed:
         raise ValueError('Team patches must enumerate every and only changed predecessor file')
     old_ai = json.loads(trace_predecessor_bytes(root, AI_RESEARCH_CONTENT))
-    current_ai = read_json(project_file(root, AI_RESEARCH_CONTENT))
+    current_ai = json.loads(original_followup_predecessor_bytes(root, AI_RESEARCH_CONTENT))
     if ({k:v for k,v in old_ai.items() if k != 'lines'} != {k:v for k,v in current_ai.items() if k != 'lines'}
             or [r.get('id') for r in old_ai['lines']] != ['A'+str(n).zfill(2) for n in range(1,9)]
             or [r.get('id') for r in current_ai['lines']] != [r.get('id') for r in old_ai['lines']]):
@@ -2918,7 +2991,7 @@ def apply_a02_source_trace_presentation(root: Path, entries: dict, previous_repo
     if old_ai['lines'][1] == current_ai['lines'][1]:
         raise ValueError('Team records must update the A02 AI entry')
     old_history = json.loads(trace_predecessor_bytes(root, A02_HISTORY_CONTENT))
-    history = read_json(project_file(root, A02_HISTORY_CONTENT))
+    history = json.loads(original_followup_predecessor_bytes(root, A02_HISTORY_CONTENT))
     mutable = {'source_trace','sources','pending','ai_scope','inventory_update'}
     if ({k:v for k,v in old_history.items() if k not in mutable} != {k:v for k,v in history.items() if k not in mutable}
             or history.get('achievement_line') != 'A02' or history.get('scientific_review_status') != 'review_required'
@@ -2946,7 +3019,7 @@ def apply_a02_source_trace_presentation(root: Path, entries: dict, previous_repo
     updated = {name:dict(row) for name,row in entries.items()}
     for item in changes:
         name=item['path']; old=entries[name]
-        before=trace_predecessor_bytes(root,'site/'+name); after=project_file(root,'site/'+name).read_bytes()
+        before=trace_predecessor_bytes(root,'site/'+name); after=original_followup_predecessor_bytes(root,'site/'+name)
         source,current=before.decode('utf-8'),after.decode('utf-8')
         if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']
                 or hashlib.sha256(before).hexdigest() != old['sha256'] or len(before) != old['bytes']
@@ -2987,12 +3060,170 @@ def apply_a02_source_trace_presentation(root: Path, entries: dict, previous_repo
                 raise ValueError('Team records changed outside the A02 entry: '+name)
         updated[name]={**old,'sha256':item['new_sha256'],'bytes':item['new_bytes'],'presentation_id':PRESENTATION_V18_ID}
     inventory='docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md'
-    old_doc=trace_predecessor_bytes(root,inventory).decode('utf-8'); new_doc=project_file(root,inventory).read_text('utf-8')
+    old_doc=trace_predecessor_bytes(root,inventory).decode('utf-8'); new_doc=original_followup_predecessor_bytes(root,inventory).decode('utf-8')
     pattern=r'^### A02[^\n]*\n.*?(?=^### A0[3-9]|\Z)'
     if (len(re.findall(pattern,old_doc,re.S|re.M))!=1 or len(re.findall(pattern,new_doc,re.S|re.M))!=1
             or re.sub(pattern,'<A02-ONLY/>',old_doc,flags=re.S|re.M)!=re.sub(pattern,'<A02-ONLY/>',new_doc,flags=re.S|re.M)):
         raise ValueError('Only A02 may change in the shared academic document')
     for name in (AI_RESEARCH_DOCUMENT,A02_HISTORY_DOCUMENT,inventory):
+        prose=original_followup_predecessor_bytes(root,name).decode('utf-8')
+        if project_markdown(prose)!=prose:
+            raise ValueError('Team prose lost canonical named achievement references: '+name)
+    for name,expected in updated.items():
+        member=original_followup_predecessor_binding(root,'site/'+name)
+        if member['sha256']!=expected['sha256'] or member['bytes']!=expected['bytes']:
+            raise ValueError('Team records changed an unlisted website byte: '+name)
+    # Replay v18 from fixed source/renderer/output bytes; inspect only the final layer.
+    if not (root/PRESENTATION_V19_PATH).exists():
+        from render_a02_history import inspect_a02_history
+        from render_ai_research import inspect_ai_research
+        for label,check in (('A02 history',inspect_a02_history(root)),('AI record',inspect_ai_research(root))):
+            if check.get('status')!='passed':
+                raise ValueError(label+' differs from its source-derived rendering: '+str(check.get('errors',[])))
+    members=publication_members(root,updated)
+    report={'path':PRESENTATION_V18_PATH,'sha256':digest(path),'presentation_id':PRESENTATION_V18_ID,
+        'publication_kind':required['publication_kind'],'changed_paths':sorted(A02_ALLOWED_ROUTES),'added_paths':[],
+        'changed_achievement_lines':['A02'],'previous_presentation_commit':PRESENTATION_V18_PREVIOUS_COMMIT,
+        'exact_predecessor_reconstruction':True,'existing_A02_history_paper_technical_and_team_records_preserved':True,
+        'source_derived_rendering':True,'homepage_A01_and_original_source_data_unchanged':True,
+        'original_embedded_json_bytes_preserved':True,'published_member_count_with_marker':len(members)+1,
+        **{key:required[key] for key in ('scientific_review_status','scientific_data_unchanged',
+            'historical_achievement_independent_of_AI_review','release_eligible','M0_resumed')}}
+    return apply_a02_original_followup_presentation(root, updated,
+        {**report,'presentation_chain':[*previous_report['presentation_chain'],report]})
+
+
+def apply_a02_original_followup_presentation(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:
+    """Publish only refined trace data and the final A02 AI-record summary."""
+    if not (root/PRESENTATION_V19_PATH).exists():
+        return entries, previous_report
+    if digest(project_file(root, PRESENTATION_V18_PATH)) != PRESENTATION_V18_SHA256:
+        raise ValueError('The preceding A02 cited-source presentation v18 is immutable')
+    path = project_file(root, PRESENTATION_V19_PATH); data = read_json(path)
+    documents = [{'path': name, 'sha256': digest(project_file(root, name)),
+                  'bytes': project_file(root, name).stat().st_size} for name in A02_ORIGINAL_FOLLOWUP_DOCUMENTS]
+    required = {'schema_version': '19.0', 'presentation_id': PRESENTATION_V19_ID,
+        'publication_kind': 'platform_a02_original_followup',
+        'previous_presentation_commit': PRESENTATION_V19_PREVIOUS_COMMIT,
+        'previous_presentation': {'path': PRESENTATION_V18_PATH, 'sha256': PRESENTATION_V18_SHA256},
+        'original_baseline_sha256': BASELINE_SHA256, 'original_archive_sha256': ARCHIVE_SHA256,
+        'allowed_html_paths': sorted(A02_ORIGINAL_FOLLOWUP_ROUTES), 'added_html_paths': [], 'additions': [],
+        'allowed_achievement_lines': ['A02'], 'editorial_documents': documents,
+        'protected_website_members': {name: {'sha256': row['sha256'], 'bytes': row['bytes']}
+            for name, row in entries.items() if name not in A02_ORIGINAL_FOLLOWUP_ROUTES},
+        'reconstruction_kind': 'deduplicated_exact_utf8_text_edits',
+        'scientific_review_status': 'review_required', 'release_eligible': False,
+        'scientific_data_unchanged': True, 'M0_resumed': False,
+        'historical_achievement_independent_of_AI_review': True}
+    if (not isinstance(data, dict) or any(data.get(key) != value for key, value in required.items())
+            or any(data.get(key) is not required[key] for key in ('release_eligible',
+                'scientific_data_unchanged', 'M0_resumed', 'historical_achievement_independent_of_AI_review'))
+            or any(type(data.get(key)) is not int or data[key] != 0 for key in ('new_quantum_calls', 'new_model_API_calls'))
+            or not isinstance(data.get('authorization'), str) or not data['authorization'].strip()):
+        raise ValueError('Unsupported bounded A02 original-followup presentation v19')
+    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')
+    if (not isinstance(files, list) or not files or not isinstance(pool, list) or not pool
+            or any(not isinstance(row, dict) or row.get('path') not in A02_ORIGINAL_FOLLOWUP_PREDECESSOR_FILES for row in files)
+            or len({row['path'] for row in files}) != len(files)
+            or any(not isinstance(row.get('edits'), list) or not row['edits'] or any(
+                not isinstance(edit, dict) or type(edit.get('replacement')) is not int for edit in row['edits']) for row in files)):
+        raise ValueError('A02 original-followup records may enumerate only the seven fixed predecessor text files')
+    if {edit['replacement'] for row in files for edit in row['edits']} != set(range(len(pool))):
+        raise ValueError('Team replacement pool must contain exactly its used segments')
+    changed = set()
+    for name, (sha, size) in A02_ORIGINAL_FOLLOWUP_PREDECESSOR_FILES.items():
+        old = original_followup_predecessor_bytes(root, name)
+        if hashlib.sha256(old).hexdigest() != sha or len(old) != size:
+            raise ValueError('A02 original-followup predecessor differs from fixed b107b56: '+name)
+        if old != project_file(root, name).read_bytes():
+            changed.add(name)
+    if {row['path'] for row in files} != changed:
+        raise ValueError('Team patches must enumerate every and only changed predecessor file')
+    old_ai = json.loads(original_followup_predecessor_bytes(root, AI_RESEARCH_CONTENT))
+    current_ai = read_json(project_file(root, AI_RESEARCH_CONTENT))
+    try:
+        summary = current_ai['lines'][1]['records'][-1]['summary']
+    except (KeyError, IndexError, TypeError) as error:
+        raise ValueError('Missing final A02 AI-record summary') from error
+    if (not isinstance(summary, str) or not summary.strip()
+            or summary == old_ai['lines'][1]['records'][-1]['summary']):
+        raise ValueError('The final A02 AI-record summary must contain the authorized refinement')
+    expected_ai = json.loads(json.dumps(old_ai))
+    expected_ai['lines'][1]['records'][-1]['summary'] = summary
+    if current_ai != expected_ai:
+        raise ValueError('Only the final A02 AI-record summary may change in the complete AI registry')
+    old_history = json.loads(original_followup_predecessor_bytes(root, A02_HISTORY_CONTENT))
+    history = read_json(project_file(root, A02_HISTORY_CONTENT))
+    mutable = {'source_trace','sources'}
+    if ({k:v for k,v in old_history.items() if k not in mutable} != {k:v for k,v in history.items() if k not in mutable}
+            or history.get('achievement_line') != 'A02' or history.get('scientific_review_status') != 'review_required'
+            or history.get('release_eligible') is not False or history.get('m0_status') != 'paused'
+            or history.get('new_quantum_calls') != 0 or history.get('new_experiments') != 0):
+        raise ValueError('Team records must preserve existing A02 historical claims and the 1980 paper')
+    team_records = history.get('team_records')
+    if (not isinstance(team_records, list) or any(not isinstance(row, dict) for row in team_records)
+            or [row.get('id') for row in team_records] != ['a02-team-hfp','a02-team-rubber','a02-team-oil']
+            or any(row.get('original_records_obtained') is not False for row in team_records)):
+        raise ValueError('Expected three attributed A02 team records with original records still unavailable')
+    if (not isinstance(history.get('sources'), list)
+            or history['sources'][:len(old_history['sources'])] != old_history['sources']):
+        raise ValueError('Team records may append sources, preserving every existing source object')
+    source_trace = history.get('source_trace')
+    if (not isinstance(source_trace, list) or any(not isinstance(row, dict) for row in source_trace)
+            or [row.get('id') for row in source_trace] != ['a02-trace-interview','a02-trace-book2009']
+            or any(row.get('original_obtained') is not False for row in source_trace)
+            or source_trace[1].get('volume_confirmed') is not False):
+        raise ValueError('The same two trace records must retain unresolved originals and target-page volume')
+    changes = data.get('changes')
+    if (not isinstance(changes, list) or any(not isinstance(row, dict) for row in changes)
+            or [row.get('path') for row in changes] != sorted(A02_ORIGINAL_FOLLOWUP_ROUTES)):
+        raise ValueError('Original follow-up may update only the A02 topic and AI record routes')
+    from public_line_labels import project_html, project_markdown
+    json_scripts = re.compile(r'<script\b[^>]*\btype\s*=\s*[\"\']application/(?:ld\+)?json[\"\'][^>]*>.*?</script\s*>', re.I | re.S)
+    updated = {name:dict(row) for name,row in entries.items()}
+    for item in changes:
+        name=item['path']; old=entries[name]
+        before=original_followup_predecessor_bytes(root,'site/'+name); after=project_file(root,'site/'+name).read_bytes()
+        source,current=before.decode('utf-8'),after.decode('utf-8')
+        if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']
+                or hashlib.sha256(before).hexdigest() != old['sha256'] or len(before) != old['bytes']
+                or item.get('new_sha256') != hashlib.sha256(after).hexdigest() or item.get('new_bytes') != len(after)
+                or before == after or not isinstance(item.get('reason'),str) or not item['reason'].strip()):
+            raise ValueError('Team HTML differs from complete old/new identities: '+name)
+        if json_scripts.findall(source) != json_scripts.findall(current):
+            raise ValueError('Team records must preserve every embedded source JSON byte')
+        if not set(re.findall(r'\bid="([^\"]+)"',source)) <= set(re.findall(r'\bid="([^\"]+)"',current)):
+            raise ValueError('Team records cannot remove existing navigation/source IDs')
+        if project_html(current,name) != current:
+            raise ValueError('Team records must retain canonical named achievement references')
+        if name == A02_HISTORY_ROUTE:
+            begin,end='<!-- A02_ACADEMIC_HISTORY:BEGIN -->','<!-- A02_ACADEMIC_HISTORY:END -->'
+            if any(value.count(begin)!=1 or value.count(end)!=1 for value in (source,current)):
+                raise ValueError('Team topic requires one complete existing A02 marker')
+            strip=lambda value:value[:value.index(begin)]+'<A02-HISTORY/>'+value[value.index(end)+len(end):]
+            if strip(source) != strip(current):
+                raise ValueError('Team topic may change only inside the A02 historical marker')
+            background = r'<article\b[^>]*\bid="a02-technical-records"[^>]*>.*?</article>'
+            if (len(re.findall(background, source, re.S)) != 1
+                    or re.findall(background, source, re.S) != re.findall(background, current, re.S)):
+                raise ValueError('Team records must preserve the complete existing technical-background article')
+            team = r'<article\b[^>]*\bid="a02-team-records"[^>]*>.*?</article>'
+            if (len(re.findall(team, current, re.S)) != 1
+                    or current.index('id="a02-team-records"') > current.index('id="a02-technical-records"')):
+                raise ValueError('Attributed A02 team records must precede other-team technical background')
+            if re.findall(team, source, re.S) != re.findall(team, current, re.S):
+                raise ValueError('Cited sources must preserve the complete existing team-history article')
+            trace = r'<article\b[^>]*\bid="a02-source-trace"[^>]*>.*?</article>'
+            if len(re.findall(trace, current, re.S)) != 1:
+                raise ValueError('Expected one independent A02 cited-source trace article')
+        else:
+            pattern = (r'<section\b[^>]*\bid="ai-a02"[^>]*>.*?</section>' if name==AI_RESEARCH_ROUTE
+                       else r'<article\b[^>]*\bid="heritage-line-a02"[^>]*>.*?</article>')
+            if (len(re.findall(pattern,source,re.S))!=1 or len(re.findall(pattern,current,re.S))!=1
+                    or re.sub(pattern,'<A02-ONLY/>',source,flags=re.S)!=re.sub(pattern,'<A02-ONLY/>',current,flags=re.S)):
+                raise ValueError('Team records changed outside the A02 entry: '+name)
+        updated[name]={**old,'sha256':item['new_sha256'],'bytes':item['new_bytes'],'presentation_id':PRESENTATION_V19_ID}
+    for name in (AI_RESEARCH_DOCUMENT,A02_HISTORY_DOCUMENT):
         prose=project_file(root,name).read_text('utf-8')
         if project_markdown(prose)!=prose:
             raise ValueError('Team prose lost canonical named achievement references: '+name)
@@ -3006,10 +3237,11 @@ def apply_a02_source_trace_presentation(root: Path, entries: dict, previous_repo
         if check.get('status')!='passed':
             raise ValueError(label+' differs from its source-derived rendering: '+str(check.get('errors',[])))
     members=publication_members(root,updated)
-    report={'path':PRESENTATION_V18_PATH,'sha256':digest(path),'presentation_id':PRESENTATION_V18_ID,
-        'publication_kind':required['publication_kind'],'changed_paths':sorted(A02_ALLOWED_ROUTES),'added_paths':[],
-        'changed_achievement_lines':['A02'],'previous_presentation_commit':PRESENTATION_V18_PREVIOUS_COMMIT,
-        'exact_predecessor_reconstruction':True,'existing_A02_history_paper_technical_and_team_records_preserved':True,
+    report={'path':PRESENTATION_V19_PATH,'sha256':digest(path),'presentation_id':PRESENTATION_V19_ID,
+        'publication_kind':required['publication_kind'],'changed_paths':sorted(A02_ORIGINAL_FOLLOWUP_ROUTES),'added_paths':[],
+        'changed_achievement_lines':['A02'],'previous_presentation_commit':PRESENTATION_V19_PREVIOUS_COMMIT,
+        'exact_predecessor_reconstruction':True,'existing_A02_history_paper_technical_team_and_inventory_preserved':True,
+        'only_final_A02_AI_record_summary_changed':True,
         'source_derived_rendering':True,'homepage_A01_and_original_source_data_unchanged':True,
         'original_embedded_json_bytes_preserved':True,'published_member_count_with_marker':len(members)+1,
         **{key:required[key] for key in ('scientific_review_status','scientific_data_unchanged',

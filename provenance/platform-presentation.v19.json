@@ -1,0 +1,1434 @@
+{
+  "schema_version": "19.0",
+  "presentation_id": "PLATFORM-A02-ORIGINAL-FOLLOWUP-20261115-v19",
+  "created_at_utc": "2026-11-15T03:35:27.986338+00:00",
+  "publication_kind": "platform_a02_original_followup",
+  "authorization": "User request dated 2026-11-15 and root-approved seven-file/two-route scope: refine only the two existing A02 original-source trace records, append evidence sources, and refine only the final A02 AI-record summary; preserve all historical objects, prior twenty-source prefix, pending items, AI scope, inventory, renderers, other records and scientific data; original recordings, target pages and page-291 volume remain unavailable; keep M0 paused and review_required, then synchronize GitHub and the website",
+  "previous_presentation_commit": "b107b56d597c02230e4dc9365bc6d36411a989a8",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v18.json",
+    "sha256": "4fa6f43360d5343e119bb7b9e51e0671f1b4b4ef51ba065067459180a710dfd6"
+  },
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "allowed_html_paths": [
+    "research/index.html",
+    "topics/fluoromonomers/index.html"
+  ],
+  "added_html_paths": [],
+  "allowed_achievement_lines": [
+    "A02"
+  ],
+  "editorial_documents": [
+    {
+      "path": "content/a02-academic-achievements.v1.json",
+      "sha256": "38c157cd7b3246a5422ac7e44be6157001b9600425201872f129a7b989be4fa9",
+      "bytes": 52298
+    },
+    {
+      "path": "scripts/render_a02_history.py",
+      "sha256": "0d598601ccbbd0064bc95b513055c32c7342459937a5504d5f7af74167be8e9c",
+      "bytes": 21602
+    },
+    {
+      "path": "docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "sha256": "0535f885654dd45e34e255fe7a2049530a0d5c14f2356e00680a9d4084c6ee33",
+      "bytes": 40250
+    },
+    {
+      "path": "content/ai-research-section.v1.json",
+      "sha256": "3006f9133f0c59812468b177e86e55fc8d13d8e2fd92324bd9985f822ad3f930",
+      "bytes": 66752
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "sha256": "03bbc0a90435473814efbaaad4c092b6f8ab7786db02bc32bade32b4e86cb68a",
+      "bytes": 35882
+    },
+    {
+      "path": "scripts/render_ai_research.py",
+      "sha256": "729298ecb6146cba6b9a78bdc2074dabb10b6a2f551f7efaf4d0a4078e29f521",
+      "bytes": 34792
+    },
+    {
+      "path": "scripts/public_line_labels.py",
+      "sha256": "27776862621369ea922d97cc5a1d0ff927f1ec2aa5cbe93a0cacf66fee27f695",
+      "bytes": 9737
+    },
+    {
+      "path": "scripts/check_site.py",
+      "sha256": "70b9d2e3c2a8cd13cec93530ec9092761fe8731eccae7aa055ba280c4dfe1fae",
+      "bytes": 23307
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "sha256": "ec97c60295ef2de87702805dfcf5d401e992caaf1a8fe5315db490ec8b1d7559",
+      "bytes": 241381
+    },
+    {
+      "path": "scripts/render_heritage.py",
+      "sha256": "07b1698b1c0485accd96cc0a6d6730bb164258e003737c9f370919920768f27d",
+      "bytes": 42653
+    },
+    {
+      "path": "docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "sha256": "e9c71d5f3a7ad148882aae13847f9bce64d48d8858666285f7c42fbada5181a9",
+      "bytes": 69708
+    }
+  ],
+  "protected_website_members": {
+    "index.html": {
+      "sha256": "8b3532ee45c0fb33912f20a3bd7943043a348f10a370b9c6716e9edf3c0abf41",
+      "bytes": 257766
+    },
+    "pftb/index.html": {
+      "sha256": "42ca404f2ed70b7a3b0b5d8b0eb742a2509e5a5a70fd0be36a65028e61cbd1f6",
+      "bytes": 97587
+    },
+    "topics/f53/index.html": {
+      "sha256": "8def3379a75dda6665d7cb3ee6c32193fc7a61ec6b31098abbefe9218fea39fe",
+      "bytes": 8161
+    },
+    "topics/refrigerants/index.html": {
+      "sha256": "5d9b5a355b949f67c5de252727f8d4e4e7533abab8a666c49a0f932170153c4e",
+      "bytes": 10636
+    },
+    "topics/perfluorosulfonates/index.html": {
+      "sha256": "85a6f4330edb7607f61ca217b71d2ef6c12cb1af0d48aaaebf737acf3a212ea5",
+      "bytes": 8888
+    },
+    "topics/chen-reagent/index.html": {
+      "sha256": "14f08afd4062c0ae171f24e5fb225e5968b003e885edc206baf08ca352b630df",
+      "bytes": 19991
+    },
+    "topics/single-electron-transfer/index.html": {
+      "sha256": "79c84f89e25e576a03f34153b9eb85a5ff73815c8265a0222930d889390ea947",
+      "bytes": 10355
+    },
+    "topics/fluoroporphyrins/index.html": {
+      "sha256": "24b6bb744b594573487847c89bbb35571ea56bc15d444ebeac3339379dbc1875",
+      "bytes": 6018
+    },
+    "topics/early-fluoroketones/index.html": {
+      "sha256": "a6da86d7f9ff0f35a5ea044252297a23e5ed71db829f2d184e3ab38a70dce9a2",
+      "bytes": 250938
+    },
+    "topics/fluorinated-small-rings/index.html": {
+      "sha256": "2413c83d4319746f41e940c04fe48bdeda28244235f5a9e8697285c187ba412d",
+      "bytes": 5924
+    },
+    "topics/deoxyfluorination/index.html": {
+      "sha256": "2aca9c13eb46f9fedfb02a2adfdc9423c207465f58608bcd671838d4d8045df5",
+      "bytes": 5550
+    },
+    "topics/sulfonyl-fluoride/index.html": {
+      "sha256": "fe944efbbfa5a7814015235f4ae3aae101db4046b0c9419986d6855d7ed15b49",
+      "bytes": 5043
+    },
+    "topics/index.html": {
+      "sha256": "44a5690d1e65195b9ff191d2a7ec37487070cdfafb191ae107962d5e0d7ab73c",
+      "bytes": 5055
+    },
+    "achievements/index.html": {
+      "sha256": "df20daf429c46e89e99085550067e8c1e9f7e283b10b7e8269f38da6a9d380ff",
+      "bytes": 95867
+    },
+    "data/public-sources.json": {
+      "sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+      "bytes": 33608
+    },
+    "data/achievement-lines.json": {
+      "sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+      "bytes": 39768
+    },
+    "README.txt": {
+      "sha256": "6e15068b7240ae47d633df3f777e81fbb9e46146ee5f4ab70011f09119b6bbc9",
+      "bytes": 336
+    },
+    "ROUTES.txt": {
+      "sha256": "a734c356877d4534285ab7d71b9fe0f7a17abbced4de3c52f8e60d335301e418",
+      "bytes": 949
+    },
+    "QA.txt": {
+      "sha256": "a60b5f382b31689fa17e2518b7079ef0660674fb62bddbbf564c7b74dfe51067",
+      "bytes": 290
+    },
+    "IONIC-ENTRY-RETEST.txt": {
+      "sha256": "3462b056891a27c335cc2620deb87b245b6c9aea3bdaec607c8a14beca69fe9d",
+      "bytes": 741
+    }
+  },
+  "reconstruction_kind": "deduplicated_exact_utf8_text_edits",
+  "reverse_text_patch_pool": [
+    {
+      "old": "",
+      "new": "    },\n    {\n      \"id\": \"A02-TRACE-NLC2009\",\n      \"anchor\": \"a02-source-nlc2009\",\n      \"title\": \"国家图书馆：《中国科学院》2009年书目\",\n      \"url\": \"https://meta.nlc.cn/v2/detail/UCS01005727202?b_tit=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2\",\n      \"kind\": \"已核读的正式书目及馆藏链接，非原书正文\",\n      \"locator\": \"书目记录UCS01005727202：题名《中国科学院》，当代中国出版社、香港祖国出版社，2009；未提供目标分册、完整目录或p.290–292原页，书目号码不是技术档案号\"\n    },\n    {\n      \"id\": \"A02-TRACE-REPORT2019\",\n      \"anchor\": \"a02-source-report2019\",\n      \"title\": \"中国科学家博物馆：陈庆云：六十余年研究一种化学元素\",\n      \"url\": \"https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/bd0292/art/2023/art_e2d76717639749c0a6713c2b08a9971a.html\",\n      \"kind\": \"采集工程官方报道中的研究报告引据，报告原件未取得\",\n      \"locator\": \"网页标2021-10-29，文末署采集工程项目办公室／中国科协创新战略研究院；参考文献[1]列朱晶《氟缘笃志：陈庆云传》、采集工程研究报告、2019。仅据此登记调阅目标，不当作报告全文或当次访谈原录\"\n"
+    },
+    {
+      "old": "",
+      "new": "              \"具体报告线索（2019）\",\n              \"官方报道参考文献[1]列朱晶《氟缘笃志：陈庆云传》，老科学家学术成长资料采集工程研究报告，2019\",\n              \"报告正文、资料目录及附件未取得；不能与后来朱晶／刘超署名的公开图书或2018-01-03原录自动等同\"\n            ],\n            [\n"
+    },
+    {
+      "old": "",
+      "new": "或2019研究报告。研究报告是后出的学术成长研究文本，其官方引据只支持定向调阅；不作为1960年代试制报告"
+    },
+    {
+      "old": "；公开只登记项目身份和不同采访日期的边界",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "        \"定向调阅朱晶2019年《氟缘笃志：陈庆云传》采集工程研究报告的题名页、目录、原始资料索引和访谈附录；先查是否列出2018-01-03条目及档号，再追所引A02试制报告、实验本和装置图。报告及附件均待取得。\",\n"
+    },
+    {
+      "old": "",
+      "new": ","
+    },
+    {
+      "old": "",
+      "new": "        \"A02-TRACE-REPORT2019\"\n"
+    },
+    {
+      "old": "",
+      "new": "        },\n        {\n          \"title\": \"2019研究报告的官方引据（文末参考文献[1]）\",\n          \"url\": \"https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/bd0292/art/2023/art_e2d76717639749c0a6713c2b08a9971a.html\"\n"
+    },
+    {
+      "old": "传记引据",
+      "new": "2009年正式书目"
+    },
+    {
+      "old": "相关",
+      "new": ""
+    },
+    {
+      "old": "身份",
+      "new": "线索"
+    },
+    {
+      "old": "",
+      "new": "第290–292页"
+    },
+    {
+      "old": "页",
+      "new": "文"
+    },
+    {
+      "old": "应先",
+      "new": "国家图书馆已定位到题名、出版者和年份相符的2009年书目，记录号UCS01005727202；该详情尚不能确定所引页属于哪册，仍须"
+    },
+    {
+      "old": "各分册",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "完整"
+    },
+    {
+      "old": "，再取相应册的原文；不能用同年年鉴或较早版的页码替代",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "            ],\n            [\n              \"2009年正式书目\",\n              \"国家图书馆记录UCS01005727202列《中国科学院》，当代中国出版社、香港祖国出版社，2009\",\n              \"记录未提供目标册次、页数和目录，尚未取得第290–292页；不能将书目号码当作分册或技术档案号\"\n            ],\n            [\n              \"书目所列馆藏线索\",\n              \"国图详情的馆藏分布列有国家图书馆、湖北省图书馆、湖南图书馆等机构\",\n              \"馆藏链接不等于目标分册已调到或原页已取得；具体分册和可调阅状态须由馆方记录确认\"\n"
+    },
+    {
+      "old": "",
+      "new": "国图2009年书目身份已经核读；"
+    },
+    {
+      "old": "p.",
+      "new": "册次及第"
+    },
+    {
+      "old": "1原文",
+      "new": "0–292页仍"
+    },
+    {
+      "old": "所载",
+      "new": "相关"
+    },
+    {
+      "old": "、配方、物性",
+      "new": ""
+    },
+    {
+      "old": "均",
+      "new": "尚"
+    },
+    {
+      "old": "",
+      "new": "，配方与物性原表仍待另取"
+    },
+    {
+      "old": "数",
+      "new": "即使取得该历史著作书页，也须继续追其所"
+    },
+    {
+      "old": "库访问说明仅用于选择合法调阅途径",
+      "new": "同期技术记录，不能把后出史述直接当作实验原表"
+    },
+    {
+      "old": "拟",
+      "new": "按国图书目UCS01005727202及所列馆藏定向"
+    },
+    {
+      "old": "：",
+      "new": ""
+    },
+    {
+      "old": "版",
+      "new": "年"
+    },
+    {
+      "old": "",
+      "new": "：先取得"
+    },
+    {
+      "old": "",
+      "new": "再"
+    },
+    {
+      "old": "",
+      "new": "；不据书目所列ISBN直接指定分册"
+    },
+    {
+      "old": "",
+      "new": "        \"A02-TRACE-NLC2009\"\n"
+    },
+    {
+      "old": "",
+      "new": "        {\n          \"title\": \"国家图书馆2009年正式书目（册次与原页待核）\",\n          \"url\": \"https://meta.nlc.cn/v2/detail/UCS01005727202?b_tit=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2\"\n        },\n"
+    },
+    {
+      "old": "",
+      "new": "| 具体报告线索（2019） | 官方报道参考文献[1]列朱晶《氟缘笃志：陈庆云传》，老科学家学术成长资料采集工程研究报告，2019 | 报告正文、资料目录及附件未取得；不能与后来朱晶／刘超署名的公开图书或2018-01-03原录自动等同 |\n"
+    },
+    {
+      "old": "",
+      "new": "- 定向调阅朱晶2019年《氟缘笃志：陈庆云传》采集工程研究报告的题名页、目录、原始资料索引和访谈附录；先查是否列出2018-01-03条目及档号，再追所引A02（含氟单体、氟橡胶与氟油）试制报告、实验本和装置图。报告及附件均待取得。\n"
+    },
+    {
+      "old": "",
+      "new": "、A02-TRACE-REPORT2019"
+    },
+    {
+      "old": "",
+      "new": "[2019研究报告的官方引据（文末参考文献[1]）](https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/bd0292/art/2023/art_e2d76717639749c0a6713c2b08a9971a.html)\n"
+    },
+    {
+      "old": "",
+      "new": "| 2009年正式书目 | 国家图书馆记录UCS01005727202列《中国科学院》，当代中国出版社、香港祖国出版社，2009 | 记录未提供目标册次、页数和目录，尚未取得第290–292页；不能将书目号码当作分册或技术档案号 |\n| 书目所列馆藏线索 | 国图详情的馆藏分布列有国家图书馆、湖北省图书馆、湖南图书馆等机构 | 馆藏链接不等于目标分册已调到或原页已取得；具体分册和可调阅状态须由馆方记录确认 |\n"
+    },
+    {
+      "old": "",
+      "new": "、A02-TRACE-NLC2009"
+    },
+    {
+      "old": "",
+      "new": "[国家图书馆2009年正式书目（册次与原页待核）](https://meta.nlc.cn/v2/detail/UCS01005727202?b_tit=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2)\n"
+    },
+    {
+      "old": "",
+      "new": "- **A02-TRACE-NLC2009**：[国家图书馆：《中国科学院》2009年书目](https://meta.nlc.cn/v2/detail/UCS01005727202?b_tit=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2)。已核读的正式书目及馆藏链接，非原书正文；书目记录UCS01005727202：题名《中国科学院》，当代中国出版社、香港祖国出版社，2009；未提供目标分册、完整目录或p.290–292原页，书目号码不是技术档案号。\n- **A02-TRACE-REPORT2019**：[中国科学家博物馆：陈庆云：六十余年研究一种化学元素](https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/bd0292/art/2023/art_e2d76717639749c0a6713c2b08a9971a.html)。采集工程官方报道中的研究报告引据，报告原件未取得；网页标2021-10-29，文末署采集工程项目办公室／中国科协创新战略研究院；参考文献[1]列朱晶《氟缘笃志：陈庆云传》、采集工程研究报告、2019。仅据此登记调阅目标，不当作报告全文或当次访谈原录。\n"
+    },
+    {
+      "old": "",
+      "new": "<tr><th scope=\"row\">具体报告线索（2019）</th><td>官方报道参考文献[1]列朱晶《氟缘笃志：陈庆云传》，老科学家学术成长资料采集工程研究报告，2019</td><td>报告正文、资料目录及附件未取得；不能与后来朱晶／刘超署名的公开图书或2018-01-03原录自动等同</td></tr>\n"
+    },
+    {
+      "old": "",
+      "new": "。</li><li>定向调阅朱晶2019年《氟缘笃志：陈庆云传》采集工程研究报告的题名页、目录、原始资料索引和访谈附录；先查是否列出2018-01-03条目及档号，再追所引A02（含氟单体、氟橡胶与氟油）试制报告、实验本和装置图。报告及附件均待取得"
+    },
+    {
+      "old": "",
+      "new": " · <a href=\"#a02-source-report2019\">A02-TRACE-REPORT2019</a>"
+    },
+    {
+      "old": "",
+      "new": " · <a href=\"https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/bd0292/art/2023/art_e2d76717639749c0a6713c2b08a9971a.html\">2019研究报告的官方引据（文末参考文献[1]）</a>"
+    },
+    {
+      "old": "",
+      "new": "<tr><th scope=\"row\">2009年正式书目</th><td>国家图书馆记录UCS01005727202列《中国科学院》，当代中国出版社、香港祖国出版社，2009</td><td>记录未提供目标册次、页数和目录，尚未取得第290–292页；不能将书目号码当作分册或技术档案号</td></tr>\n<tr><th scope=\"row\">书目所列馆藏线索</th><td>国图详情的馆藏分布列有国家图书馆、湖北省图书馆、湖南图书馆等机构</td><td>馆藏链接不等于目标分册已调到或原页已取得；具体分册和可调阅状态须由馆方记录确认</td></tr>\n"
+    },
+    {
+      "old": "",
+      "new": " · <a href=\"#a02-source-nlc2009\">A02-TRACE-NLC2009</a>"
+    },
+    {
+      "old": "",
+      "new": "<a href=\"https://meta.nlc.cn/v2/detail/UCS01005727202?b_tit=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2\">国家图书馆2009年正式书目（册次与原页待核）</a> · "
+    },
+    {
+      "old": "",
+      "new": "<li id=\"a02-source-nlc2009\"><b>A02-TRACE-NLC2009</b> · <a href=\"https://meta.nlc.cn/v2/detail/UCS01005727202?b_tit=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2\">国家图书馆：《中国科学院》2009年书目</a>；已核读的正式书目及馆藏链接，非原书正文。书目记录UCS01005727202：题名《中国科学院》，当代中国出版社、香港祖国出版社，2009；未提供目标分册、完整目录或p.290–292原页，书目号码不是技术档案号</li>\n<li id=\"a02-source-report2019\"><b>A02-TRACE-REPORT2019</b> · <a href=\"https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/bd0292/art/2023/art_e2d76717639749c0a6713c2b08a9971a.html\">中国科学家博物馆：陈庆云：六十余年研究一种化学元素</a>；采集工程官方报道中的研究报告引据，报告原件未取得。网页标2021-10-29，文末署采集工程项目办公室／中国科协创新战略研究院；参考文献[1]列朱晶《氟缘笃志：陈庆云传》、采集工程研究报告、2019。仅据此登记调阅目标，不当作报告全文或当次访谈原录</li>\n"
+    },
+    {
+      "old": "2018访谈",
+      "new": "到与传记引据题名、出版者和年份相符"
+    },
+    {
+      "old": "引用元数据与采集项目，读取动态影音目录，并将《中",
+      "new": ""
+    },
+    {
+      "old": "科学院年鉴·",
+      "new": "图"
+    },
+    {
+      "old": "》与传记所引著作分开。完整访谈、2009版",
+      "new": "年"
+    },
+    {
+      "old": "p.",
+      "new": "书目，并定位朱晶2019年采集工程研究报告的官方引据。完整访谈、研究报告及附件、目标册次和第"
+    },
+    {
+      "old": "1",
+      "new": "0–292页"
+    },
+    {
+      "old": "及其册次",
+      "new": ""
+    },
+    {
+      "old": "待核",
+      "new": "未取得"
+    },
+    {
+      "old": "已列具体调阅书页",
+      "new": "同期试制、低温分离"
+    },
+    {
+      "old": "后续",
+      "new": "早期氟溴油"
+    },
+    {
+      "old": "需求",
+      "new": "继续待核"
+    },
+    {
+      "old": "",
+      "new": "PRESENTATION_V18_SHA256 = '4fa6f43360d5343e119bb7b9e51e0671f1b4b4ef51ba065067459180a710dfd6'\nPRESENTATION_V19_PATH = 'provenance/platform-presentation.v19.json'\nPRESENTATION_V19_ID = 'PLATFORM-A02-ORIGINAL-FOLLOWUP-20261115-v19'\nPRESENTATION_V19_PREVIOUS_COMMIT = 'b107b56d597c02230e4dc9365bc6d36411a989a8'\nA02_ORIGINAL_FOLLOWUP_ROUTES = {'topics/fluoromonomers/index.html', 'research/index.html'}\nA02_ORIGINAL_FOLLOWUP_PREDECESSOR_FILES = {\n    'content/a02-academic-achievements.v1.json': ('2c60f209710ded6ec24f90a6170c0e721fcf1540f4bcbef0c29d492d9b6e69ef', 48818),\n    'docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md': ('1209c6a935d402b09602b67be54a5c0f7086d00426f80c6c4971df0a3927cabe', 37328),\n    'site/topics/fluoromonomers/index.html': ('caaecd0cf044617acf14e07dd8ac6b08fe9391b41506886bb66d6b513c2fb0dd', 55310),\n    'content/ai-research-section.v1.json': ('2f3a63d3f431939b169877c4a40ddba867f1dd918e2a5d96b2cbd5f5f049870a', 66703),\n    'docs/AI_RESEARCH_zh-CN.md': ('0ed766353417b7f70de17729d0d2876e7a12a0a6270e690ea587d77b14150aa0', 35833),\n    'site/research/index.html': ('0e469bd1e8c4a1bb7d9e7d75cda1a9a728d404de77b64c31e3f714de3822a61f', 49661),\n    'scripts/a01_publication_contract.py': ('90000776a713ff4cc0441efd52d9c54f6dce3fec5872d27867b1f2109a73efdc', 223315),\n}\nA02_ORIGINAL_FOLLOWUP_DOCUMENTS = A02_DOCUMENTS\n\n"
+    },
+    {
+      "old": "",
+      "new": "def original_followup_predecessor_bytes(root: Path, name: str) -> bytes:\n    \"\"\"Undo only the seven explicitly permitted v19 presentation files.\"\"\"\n    current = project_file(root, name).read_bytes()\n    if not (root/PRESENTATION_V19_PATH).exists():\n        return current\n    data = read_json(project_file(root, PRESENTATION_V19_PATH))\n    if not isinstance(data, dict):\n        raise ValueError('A02 original-followup presentation must be a JSON object')\n    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')\n    if not isinstance(files, list) or not isinstance(pool, list):\n        raise ValueError('A02 original-followup require exact reversible text patch records')\n    matches = [row for row in files if isinstance(row, dict) and row.get('path') == name]\n    if not matches:\n        return current\n    if len(matches) != 1 or name not in A02_ORIGINAL_FOLLOWUP_PREDECESSOR_FILES:\n        raise ValueError('Unauthorized or duplicate A02 original-followup predecessor record: '+name)\n    record = matches[0]; old_sha, old_size = A02_ORIGINAL_FOLLOWUP_PREDECESSOR_FILES[name]\n    if (record.get('old_sha256') != old_sha or record.get('old_bytes') != old_size\n            or hashlib.sha256(current).hexdigest() != record.get('new_sha256')\n            or len(current) != record.get('new_bytes')):\n        raise ValueError('A02 original-followup file differs from its complete old/new identities: '+name)\n    edits = record.get('edits')\n    if not isinstance(edits, list) or not edits:\n        raise ValueError('A02 original-followup changes require nonempty text edits: '+name)\n    chunks, cursor, old_end, delta = [], 0, 0, 0\n    for edit in edits:\n        if not isinstance(edit, dict) or set(edit) != {'old_offset', 'replacement'}:\n            raise ValueError('Invalid reversible A02 original-followup text edit: '+name)\n        offset, replacement = edit['old_offset'], edit['replacement']\n        if (type(offset) is not int or offset < old_end or type(replacement) is not int\n                or not 0 <= replacement < len(pool)):\n            raise ValueError('Overlapping or invalid A02 original-followup text edit: '+name)\n        pair = pool[replacement]\n        if (not isinstance(pair, dict) or set(pair) != {'old', 'new'}\n                or not all(isinstance(pair.get(key), str) for key in ('old', 'new'))\n                or pair['old'] == pair['new']):\n            raise ValueError('Invalid A02 original-followup text replacement pool')\n        before, after = pair['old'].encode('utf-8'), pair['new'].encode('utf-8')\n        position = offset+delta\n        if position < cursor or current[position:position+len(after)] != after:\n            raise ValueError('A02 original-followup replacement differs at its exact offset: '+name)\n        chunks.extend((current[cursor:position], before))\n        cursor, old_end = position+len(after), offset+len(before)\n        delta += len(after)-len(before)\n    rebuilt = b''.join((*chunks, current[cursor:]))\n    if hashlib.sha256(rebuilt).hexdigest() != old_sha or len(rebuilt) != old_size:\n        raise ValueError('A02 original-followup predecessor cannot be reconstructed exactly: '+name)\n    return rebuilt\n\n\n\ndef original_followup_predecessor_binding(root: Path, name: str) -> dict:\n    content = original_followup_predecessor_bytes(root, name)\n    return {'path': name, 'sha256': hashlib.sha256(content).hexdigest(), 'bytes': len(content)}\n\n\n"
+    },
+    {
+      "old": "",
+      "new": "original_followup_"
+    },
+    {
+      "old": "oj",
+      "new": "ed"
+    },
+    {
+      "old": "",
+      "new": "essor_by"
+    },
+    {
+      "old": "_fil",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "s"
+    },
+    {
+      "old": ".read_bytes()",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "    if (root/PRESENTATION_V19_PATH).exists() and not (root/PRESENTATION_V18_PATH).exists():\n        raise ValueError('A02 original-source follow-up requires its fixed v18 predecessor')\n"
+    },
+    {
+      "old": "{'path': ",
+      "new": "origi"
+    },
+    {
+      "old": "m",
+      "new": "l_followup_pr"
+    },
+    {
+      "old": ", '",
+      "new": "dece"
+    },
+    {
+      "old": "ha256': ",
+      "new": "sor_bin"
+    },
+    {
+      "old": "",
+      "new": "n"
+    },
+    {
+      "old": "est(project_file",
+      "new": ""
+    },
+    {
+      "old": "),\n                  'bytes': project_file(root, name).stat().st_size}",
+      "new": ""
+    },
+    {
+      "old": "read_",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": ".loads"
+    },
+    {
+      "old": "r",
+      "new": "d"
+    },
+    {
+      "old": "a",
+      "new": "co"
+    },
+    {
+      "old": "_t",
+      "new": ""
+    },
+    {
+      "old": "xt",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "        prose=original_followup_predecessor_bytes(root,name).decode('utf-8')\n        if project_markdown(prose)!=prose:\n            raise ValueError('Team prose lost canonical named achievement references: '+name)\n    for name,expected in updated.items():\n        member=original_followup_predecessor_binding(root,'site/'+name)\n        if member['sha256']!=expected['sha256'] or member['bytes']!=expected['bytes']:\n            raise ValueError('Team records changed an unlisted website byte: '+name)\n    # Replay v18 from fixed source/renderer/output bytes; inspect only the final layer.\n    if not (root/PRESENTATION_V19_PATH).exists():\n        from render_a02_history import inspect_a02_history\n        from render_ai_research import inspect_ai_research\n        for label,check in (('A02 history',inspect_a02_history(root)),('AI record',inspect_ai_research(root))):\n            if check.get('status')!='passed':\n                raise ValueError(label+' differs from its source-derived rendering: '+str(check.get('errors',[])))\n    members=publication_members(root,updated)\n    report={'path':PRESENTATION_V18_PATH,'sha256':digest(path),'presentation_id':PRESENTATION_V18_ID,\n        'publication_kind':required['publication_kind'],'changed_paths':sorted(A02_ALLOWED_ROUTES),'added_paths':[],\n        'changed_achievement_lines':['A02'],'previous_presentation_commit':PRESENTATION_V18_PREVIOUS_COMMIT,\n        'exact_predecessor_reconstruction':True,'existing_A02_history_paper_technical_and_team_records_preserved':True,\n        'source_derived_rendering':True,'homepage_A01_and_original_source_data_unchanged':True,\n        'original_embedded_json_bytes_preserved':True,'published_member_count_with_marker':len(members)+1,\n        **{key:required[key] for key in ('scientific_review_status','scientific_data_unchanged',\n            'historical_achievement_independent_of_AI_review','release_eligible','M0_resumed')}}\n    return apply_a02_original_followup_presentation(root, updated,\n        {**report,'presentation_chain':[*previous_report['presentation_chain'],report]})\n\n\ndef apply_a02_original_followup_presentation(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:\n    \"\"\"Publish only refined trace data and the final A02 AI-record summary.\"\"\"\n    if not (root/PRESENTATION_V19_PATH).exists():\n        return entries, previous_report\n    if digest(project_file(root, PRESENTATION_V18_PATH)) != PRESENTATION_V18_SHA256:\n        raise ValueError('The preceding A02 cited-source presentation v18 is immutable')\n    path = project_file(root, PRESENTATION_V19_PATH); data = read_json(path)\n    documents = [{'path': name, 'sha256': digest(project_file(root, name)),\n                  'bytes': project_file(root, name).stat().st_size} for name in A02_ORIGINAL_FOLLOWUP_DOCUMENTS]\n    required = {'schema_version': '19.0', 'presentation_id': PRESENTATION_V19_ID,\n        'publication_kind': 'platform_a02_original_followup',\n        'previous_presentation_commit': PRESENTATION_V19_PREVIOUS_COMMIT,\n        'previous_presentation': {'path': PRESENTATION_V18_PATH, 'sha256': PRESENTATION_V18_SHA256},\n        'original_baseline_sha256': BASELINE_SHA256, 'original_archive_sha256': ARCHIVE_SHA256,\n        'allowed_html_paths': sorted(A02_ORIGINAL_FOLLOWUP_ROUTES), 'added_html_paths': [], 'additions': [],\n        'allowed_achievement_lines': ['A02'], 'editorial_documents': documents,\n        'protected_website_members': {name: {'sha256': row['sha256'], 'bytes': row['bytes']}\n            for name, row in entries.items() if name not in A02_ORIGINAL_FOLLOWUP_ROUTES},\n        'reconstruction_kind': 'deduplicated_exact_utf8_text_edits',\n        'scientific_review_status': 'review_required', 'release_eligible': False,\n        'scientific_data_unchanged': True, 'M0_resumed': False,\n        'historical_achievement_independent_of_AI_review': True}\n    if (not isinstance(data, dict) or any(data.get(key) != value for key, value in required.items())\n            or any(data.get(key) is not required[key] for key in ('release_eligible',\n                'scientific_data_unchanged', 'M0_resumed', 'historical_achievement_independent_of_AI_review'))\n            or any(type(data.get(key)) is not int or data[key] != 0 for key in ('new_quantum_calls', 'new_model_API_calls'))\n            or not isinstance(data.get('authorization'), str) or not data['authorization'].strip()):\n        raise ValueError('Unsupported bounded A02 original-followup presentation v19')\n    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')\n    if (not isinstance(files, list) or not files or not isinstance(pool, list) or not pool\n            or any(not isinstance(row, dict) or row.get('path') not in A02_ORIGINAL_FOLLOWUP_PREDECESSOR_FILES for row in files)\n            or len({row['path'] for row in files}) != len(files)\n            or any(not isinstance(row.get('edits'), list) or not row['edits'] or any(\n                not isinstance(edit, dict) or type(edit.get('replacement')) is not int for edit in row['edits']) for row in files)):\n        raise ValueError('A02 original-followup records may enumerate only the seven fixed predecessor text files')\n    if {edit['replacement'] for row in files for edit in row['edits']} != set(range(len(pool))):\n        raise ValueError('Team replacement pool must contain exactly its used segments')\n    changed = set()\n    for name, (sha, size) in A02_ORIGINAL_FOLLOWUP_PREDECESSOR_FILES.items():\n        old = original_followup_predecessor_bytes(root, name)\n        if hashlib.sha256(old).hexdigest() != sha or len(old) != size:\n            raise ValueError('A02 original-followup predecessor differs from fixed b107b56: '+name)\n        if old != project_file(root, name).read_bytes():\n            changed.add(name)\n    if {row['path'] for row in files} != changed:\n        raise ValueError('Team patches must enumerate every and only changed predecessor file')\n    old_ai = json.loads(original_followup_predecessor_bytes(root, AI_RESEARCH_CONTENT))\n    current_ai = read_json(project_file(root, AI_RESEARCH_CONTENT))\n    try:\n        summary = current_ai['lines'][1]['records'][-1]['summary']\n    except (KeyError, IndexError, TypeError) as error:\n        raise ValueError('Missing final A02 AI-record summary') from error\n    if (not isinstance(summary, str) or not summary.strip()\n            or summary == old_ai['lines'][1]['records'][-1]['summary']):\n        raise ValueError('The final A02 AI-record summary must contain the authorized refinement')\n    expected_ai = json.loads(json.dumps(old_ai))\n    expected_ai['lines'][1]['records'][-1]['summary'] = summary\n    if current_ai != expected_ai:\n        raise ValueError('Only the final A02 AI-record summary may change in the complete AI registry')\n    old_history = json.loads(original_followup_predecessor_bytes(root, A02_HISTORY_CONTENT))\n    history = read_json(project_file(root, A02_HISTORY_CONTENT))\n    mutable = {'source_trace','sources'}\n    if ({k:v for k,v in old_history.items() if k not in mutable} != {k:v for k,v in history.items() if k not in mutable}\n            or history.get('achievement_line') != 'A02' or history.get('scientific_review_status') != 'review_required'\n            or history.get('release_eligible') is not False or history.get('m0_status') != 'paused'\n            or history.get('new_quantum_calls') != 0 or history.get('new_experiments') != 0):\n        raise ValueError('Team records must preserve existing A02 historical claims and the 1980 paper')\n    team_records = history.get('team_records')\n    if (not isinstance(team_records, list) or any(not isinstance(row, dict) for row in team_records)\n            or [row.get('id') for row in team_records] != ['a02-team-hfp','a02-team-rubber','a02-team-oil']\n            or any(row.get('original_records_obtained') is not False for row in team_records)):\n        raise ValueError('Expected three attributed A02 team records with original records still unavailable')\n    if (not isinstance(history.get('sources'), list)\n            or history['sources'][:len(old_history['sources'])] != old_history['sources']):\n        raise ValueError('Team records may append sources, preserving every existing source object')\n    source_trace = history.get('source_trace')\n    if (not isinstance(source_trace, list) or any(not isinstance(row, dict) for row in source_trace)\n            or [row.get('id') for row in source_trace] != ['a02-trace-interview','a02-trace-book2009']\n            or any(row.get('original_obtained') is not False for row in source_trace)\n            or source_trace[1].get('volume_confirmed') is not False):\n        raise ValueError('The same two trace records must retain unresolved originals and target-page volume')\n    changes = data.get('changes')\n    if (not isinstance(changes, list) or any(not isinstance(row, dict) for row in changes)\n            or [row.get('path') for row in changes] != sorted(A02_ORIGINAL_FOLLOWUP_ROUTES)):\n        raise ValueError('Original follow-up may update only the A02 topic and AI record routes')\n    from public_line_labels import project_html, project_markdown\n    json_scripts = re.compile(r'<script\\b[^>]*\\btype\\s*=\\s*[\\\"\\']application/(?:ld\\+)?json[\\\"\\'][^>]*>.*?</script\\s*>', re.I | re.S)\n    updated = {name:dict(row) for name,row in entries.items()}\n    for item in changes:\n        name=item['path']; old=entries[name]\n        before=original_followup_predecessor_bytes(root,'site/'+name); after=project_file(root,'site/'+name).read_bytes()\n        source,current=before.decode('utf-8'),after.decode('utf-8')\n        if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']\n                or hashlib.sha256(before).hexdigest() != old['sha256'] or len(before) != old['bytes']\n                or item.get('new_sha256') != hashlib.sha256(after).hexdigest() or item.get('new_bytes') != len(after)\n                or before == after or not isinstance(item.get('reason'),str) or not item['reason'].strip()):\n            raise ValueError('Team HTML differs from complete old/new identities: '+name)\n        if json_scripts.findall(source) != json_scripts.findall(current):\n            raise ValueError('Team records must preserve every embedded source JSON byte')\n        if not set(re.findall(r'\\bid=\"([^\\\"]+)\"',source)) <= set(re.findall(r'\\bid=\"([^\\\"]+)\"',current)):\n            raise ValueError('Team records cannot remove existing navigation/source IDs')\n        if project_html(current,name) != current:\n            raise ValueError('Team records must retain canonical named achievement references')\n        if name == A02_HISTORY_ROUTE:\n            begin,end='<!-- A02_ACADEMIC_HISTORY:BEGIN -->','<!-- A02_ACADEMIC_HISTORY:END -->'\n            if any(value.count(begin)!=1 or value.count(end)!=1 for value in (source,current)):\n                raise ValueError('Team topic requires one complete existing A02 marker')\n            strip=lambda value:value[:value.index(begin)]+'<A02-HISTORY/>'+value[value.index(end)+len(end):]\n            if strip(source) != strip(current):\n                raise ValueError('Team topic may change only inside the A02 historical marker')\n            background = r'<article\\b[^>]*\\bid=\"a02-technical-records\"[^>]*>.*?</article>'\n            if (len(re.findall(background, source, re.S)) != 1\n                    or re.findall(background, source, re.S) != re.findall(background, current, re.S)):\n                raise ValueError('Team records must preserve the complete existing technical-background article')\n            team = r'<article\\b[^>]*\\bid=\"a02-team-records\"[^>]*>.*?</article>'\n            if (len(re.findall(team, current, re.S)) != 1\n                    or current.index('id=\"a02-team-records\"') > current.index('id=\"a02-technical-records\"')):\n                raise ValueError('Attributed A02 team records must precede other-team technical background')\n            if re.findall(team, source, re.S) != re.findall(team, current, re.S):\n                raise ValueError('Cited sources must preserve the complete existing team-history article')\n            trace = r'<article\\b[^>]*\\bid=\"a02-source-trace\"[^>]*>.*?</article>'\n            if len(re.findall(trace, current, re.S)) != 1:\n                raise ValueError('Expected one independent A02 cited-source trace article')\n        else:\n            pattern = (r'<section\\b[^>]*\\bid=\"ai-a02\"[^>]*>.*?</section>' if name==AI_RESEARCH_ROUTE\n                       else r'<article\\b[^>]*\\bid=\"heritage-line-a02\"[^>]*>.*?</article>')\n            if (len(re.findall(pattern,source,re.S))!=1 or len(re.findall(pattern,current,re.S))!=1\n                    or re.sub(pattern,'<A02-ONLY/>',source,flags=re.S)!=re.sub(pattern,'<A02-ONLY/>',current,flags=re.S)):\n                raise ValueError('Team records changed outside the A02 entry: '+name)\n        updated[name]={**old,'sha256':item['new_sha256'],'bytes':item['new_bytes'],'presentation_id':PRESENTATION_V19_ID}\n    for name in (AI_RESEARCH_DOCUMENT,A02_HISTORY_DOCUMENT):\n"
+    },
+    {
+      "old": "8",
+      "new": "9"
+    },
+    {
+      "old": "",
+      "new": "ORIGIN"
+    },
+    {
+      "old": "",
+      "new": "L_FO"
+    },
+    {
+      "old": "ED",
+      "new": "UP"
+    },
+    {
+      "old": "and_",
+      "new": ""
+    },
+    {
+      "old": "r",
+      "new": "and_inv"
+    },
+    {
+      "old": "c",
+      "new": "nt"
+    },
+    {
+      "old": "ds",
+      "new": "y"
+    },
+    {
+      "old": "",
+      "new": "        'only_final_A02_AI_record_summary_changed':True,\n"
+    }
+  ],
+  "reversible_text_files": [
+    {
+      "path": "content/a02-academic-achievements.v1.json",
+      "old_sha256": "2c60f209710ded6ec24f90a6170c0e721fcf1540f4bcbef0c29d492d9b6e69ef",
+      "old_bytes": 48818,
+      "new_sha256": "38c157cd7b3246a5422ac7e44be6157001b9600425201872f129a7b989be4fa9",
+      "new_bytes": 52298,
+      "edits": [
+        {
+          "old_offset": 19216,
+          "replacement": 0
+        },
+        {
+          "old_offset": 42386,
+          "replacement": 1
+        },
+        {
+          "old_offset": 43608,
+          "replacement": 2
+        },
+        {
+          "old_offset": 43668,
+          "replacement": 3
+        },
+        {
+          "old_offset": 43907,
+          "replacement": 4
+        },
+        {
+          "old_offset": 44278,
+          "replacement": 5
+        },
+        {
+          "old_offset": 44279,
+          "replacement": 6
+        },
+        {
+          "old_offset": 44751,
+          "replacement": 7
+        },
+        {
+          "old_offset": 44915,
+          "replacement": 8
+        },
+        {
+          "old_offset": 44930,
+          "replacement": 9
+        },
+        {
+          "old_offset": 44942,
+          "replacement": 10
+        },
+        {
+          "old_offset": 44976,
+          "replacement": 11
+        },
+        {
+          "old_offset": 44979,
+          "replacement": 12
+        },
+        {
+          "old_offset": 45147,
+          "replacement": 13
+        },
+        {
+          "old_offset": 45156,
+          "replacement": 14
+        },
+        {
+          "old_offset": 45189,
+          "replacement": 15
+        },
+        {
+          "old_offset": 45195,
+          "replacement": 16
+        },
+        {
+          "old_offset": 45733,
+          "replacement": 17
+        },
+        {
+          "old_offset": 47092,
+          "replacement": 18
+        },
+        {
+          "old_offset": 47098,
+          "replacement": 19
+        },
+        {
+          "old_offset": 47102,
+          "replacement": 20
+        },
+        {
+          "old_offset": 47121,
+          "replacement": 21
+        },
+        {
+          "old_offset": 47139,
+          "replacement": 22
+        },
+        {
+          "old_offset": 47172,
+          "replacement": 23
+        },
+        {
+          "old_offset": 47193,
+          "replacement": 24
+        },
+        {
+          "old_offset": 47196,
+          "replacement": 25
+        },
+        {
+          "old_offset": 47202,
+          "replacement": 26
+        },
+        {
+          "old_offset": 47284,
+          "replacement": 27
+        },
+        {
+          "old_offset": 47293,
+          "replacement": 28
+        },
+        {
+          "old_offset": 47300,
+          "replacement": 29
+        },
+        {
+          "old_offset": 47324,
+          "replacement": 30
+        },
+        {
+          "old_offset": 47393,
+          "replacement": 31
+        },
+        {
+          "old_offset": 47419,
+          "replacement": 32
+        },
+        {
+          "old_offset": 47987,
+          "replacement": 5
+        },
+        {
+          "old_offset": 47988,
+          "replacement": 33
+        },
+        {
+          "old_offset": 48081,
+          "replacement": 34
+        }
+      ]
+    },
+    {
+      "path": "docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "old_sha256": "1209c6a935d402b09602b67be54a5c0f7086d00426f80c6c4971df0a3927cabe",
+      "old_bytes": 37328,
+      "new_sha256": "0535f885654dd45e34e255fe7a2049530a0d5c14f2356e00680a9d4084c6ee33",
+      "new_bytes": 40250,
+      "edits": [
+        {
+          "old_offset": 23955,
+          "replacement": 35
+        },
+        {
+          "old_offset": 24875,
+          "replacement": 2
+        },
+        {
+          "old_offset": 24935,
+          "replacement": 3
+        },
+        {
+          "old_offset": 25168,
+          "replacement": 36
+        },
+        {
+          "old_offset": 25472,
+          "replacement": 37
+        },
+        {
+          "old_offset": 25723,
+          "replacement": 38
+        },
+        {
+          "old_offset": 25791,
+          "replacement": 8
+        },
+        {
+          "old_offset": 25806,
+          "replacement": 9
+        },
+        {
+          "old_offset": 25818,
+          "replacement": 10
+        },
+        {
+          "old_offset": 25852,
+          "replacement": 11
+        },
+        {
+          "old_offset": 25855,
+          "replacement": 12
+        },
+        {
+          "old_offset": 26000,
+          "replacement": 13
+        },
+        {
+          "old_offset": 26009,
+          "replacement": 14
+        },
+        {
+          "old_offset": 26042,
+          "replacement": 15
+        },
+        {
+          "old_offset": 26048,
+          "replacement": 16
+        },
+        {
+          "old_offset": 26404,
+          "replacement": 39
+        },
+        {
+          "old_offset": 27393,
+          "replacement": 18
+        },
+        {
+          "old_offset": 27399,
+          "replacement": 19
+        },
+        {
+          "old_offset": 27403,
+          "replacement": 20
+        },
+        {
+          "old_offset": 27422,
+          "replacement": 21
+        },
+        {
+          "old_offset": 27440,
+          "replacement": 22
+        },
+        {
+          "old_offset": 27473,
+          "replacement": 23
+        },
+        {
+          "old_offset": 27494,
+          "replacement": 24
+        },
+        {
+          "old_offset": 27497,
+          "replacement": 25
+        },
+        {
+          "old_offset": 27503,
+          "replacement": 26
+        },
+        {
+          "old_offset": 27581,
+          "replacement": 27
+        },
+        {
+          "old_offset": 27590,
+          "replacement": 28
+        },
+        {
+          "old_offset": 27597,
+          "replacement": 29
+        },
+        {
+          "old_offset": 27621,
+          "replacement": 30
+        },
+        {
+          "old_offset": 27690,
+          "replacement": 31
+        },
+        {
+          "old_offset": 27716,
+          "replacement": 32
+        },
+        {
+          "old_offset": 28188,
+          "replacement": 40
+        },
+        {
+          "old_offset": 28193,
+          "replacement": 41
+        },
+        {
+          "old_offset": 37328,
+          "replacement": 42
+        }
+      ]
+    },
+    {
+      "path": "site/topics/fluoromonomers/index.html",
+      "old_sha256": "caaecd0cf044617acf14e07dd8ac6b08fe9391b41506886bb66d6b513c2fb0dd",
+      "old_bytes": 55310,
+      "new_sha256": "dc4fd895c13fa819715542825469e808666016e2e1bb7532968c804bede02a6e",
+      "new_bytes": 58542,
+      "edits": [
+        {
+          "old_offset": 25692,
+          "replacement": 43
+        },
+        {
+          "old_offset": 26826,
+          "replacement": 2
+        },
+        {
+          "old_offset": 26886,
+          "replacement": 3
+        },
+        {
+          "old_offset": 27127,
+          "replacement": 44
+        },
+        {
+          "old_offset": 27612,
+          "replacement": 45
+        },
+        {
+          "old_offset": 27903,
+          "replacement": 46
+        },
+        {
+          "old_offset": 28044,
+          "replacement": 8
+        },
+        {
+          "old_offset": 28059,
+          "replacement": 9
+        },
+        {
+          "old_offset": 28071,
+          "replacement": 10
+        },
+        {
+          "old_offset": 28105,
+          "replacement": 11
+        },
+        {
+          "old_offset": 28108,
+          "replacement": 12
+        },
+        {
+          "old_offset": 28258,
+          "replacement": 13
+        },
+        {
+          "old_offset": 28267,
+          "replacement": 14
+        },
+        {
+          "old_offset": 28300,
+          "replacement": 15
+        },
+        {
+          "old_offset": 28306,
+          "replacement": 16
+        },
+        {
+          "old_offset": 28952,
+          "replacement": 47
+        },
+        {
+          "old_offset": 30155,
+          "replacement": 18
+        },
+        {
+          "old_offset": 30161,
+          "replacement": 19
+        },
+        {
+          "old_offset": 30165,
+          "replacement": 20
+        },
+        {
+          "old_offset": 30184,
+          "replacement": 21
+        },
+        {
+          "old_offset": 30202,
+          "replacement": 22
+        },
+        {
+          "old_offset": 30235,
+          "replacement": 23
+        },
+        {
+          "old_offset": 30256,
+          "replacement": 24
+        },
+        {
+          "old_offset": 30259,
+          "replacement": 25
+        },
+        {
+          "old_offset": 30265,
+          "replacement": 26
+        },
+        {
+          "old_offset": 30355,
+          "replacement": 27
+        },
+        {
+          "old_offset": 30364,
+          "replacement": 28
+        },
+        {
+          "old_offset": 30371,
+          "replacement": 29
+        },
+        {
+          "old_offset": 30395,
+          "replacement": 30
+        },
+        {
+          "old_offset": 30464,
+          "replacement": 31
+        },
+        {
+          "old_offset": 30490,
+          "replacement": 32
+        },
+        {
+          "old_offset": 31216,
+          "replacement": 48
+        },
+        {
+          "old_offset": 31223,
+          "replacement": 49
+        },
+        {
+          "old_offset": 47917,
+          "replacement": 50
+        }
+      ]
+    },
+    {
+      "path": "content/ai-research-section.v1.json",
+      "old_sha256": "2f3a63d3f431939b169877c4a40ddba867f1dd918e2a5d96b2cbd5f5f049870a",
+      "old_bytes": 66703,
+      "new_sha256": "3006f9133f0c59812468b177e86e55fc8d13d8e2fd92324bd9985f822ad3f930",
+      "new_bytes": 66752,
+      "edits": [
+        {
+          "old_offset": 32702,
+          "replacement": 51
+        },
+        {
+          "old_offset": 32715,
+          "replacement": 52
+        },
+        {
+          "old_offset": 32790,
+          "replacement": 53
+        },
+        {
+          "old_offset": 32811,
+          "replacement": 54
+        },
+        {
+          "old_offset": 32887,
+          "replacement": 55
+        },
+        {
+          "old_offset": 32891,
+          "replacement": 56
+        },
+        {
+          "old_offset": 32898,
+          "replacement": 57
+        },
+        {
+          "old_offset": 32913,
+          "replacement": 58
+        },
+        {
+          "old_offset": 32922,
+          "replacement": 59
+        },
+        {
+          "old_offset": 32949,
+          "replacement": 60
+        },
+        {
+          "old_offset": 32967,
+          "replacement": 61
+        }
+      ]
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "old_sha256": "0ed766353417b7f70de17729d0d2876e7a12a0a6270e690ea587d77b14150aa0",
+      "old_bytes": 35833,
+      "new_sha256": "03bbc0a90435473814efbaaad4c092b6f8ab7786db02bc32bade32b4e86cb68a",
+      "new_bytes": 35882,
+      "edits": [
+        {
+          "old_offset": 17501,
+          "replacement": 51
+        },
+        {
+          "old_offset": 17514,
+          "replacement": 52
+        },
+        {
+          "old_offset": 17589,
+          "replacement": 53
+        },
+        {
+          "old_offset": 17610,
+          "replacement": 54
+        },
+        {
+          "old_offset": 17686,
+          "replacement": 55
+        },
+        {
+          "old_offset": 17690,
+          "replacement": 56
+        },
+        {
+          "old_offset": 17697,
+          "replacement": 57
+        },
+        {
+          "old_offset": 17712,
+          "replacement": 58
+        },
+        {
+          "old_offset": 17721,
+          "replacement": 59
+        },
+        {
+          "old_offset": 17748,
+          "replacement": 60
+        },
+        {
+          "old_offset": 17766,
+          "replacement": 61
+        }
+      ]
+    },
+    {
+      "path": "site/research/index.html",
+      "old_sha256": "0e469bd1e8c4a1bb7d9e7d75cda1a9a728d404de77b64c31e3f714de3822a61f",
+      "old_bytes": 49661,
+      "new_sha256": "8a20ce07055fd8207c1038599cc9ccb9baf9e46d8d76233fcb09d4a82024df27",
+      "new_bytes": 49710,
+      "edits": [
+        {
+          "old_offset": 27639,
+          "replacement": 51
+        },
+        {
+          "old_offset": 27652,
+          "replacement": 52
+        },
+        {
+          "old_offset": 27727,
+          "replacement": 53
+        },
+        {
+          "old_offset": 27748,
+          "replacement": 54
+        },
+        {
+          "old_offset": 27824,
+          "replacement": 55
+        },
+        {
+          "old_offset": 27828,
+          "replacement": 56
+        },
+        {
+          "old_offset": 27835,
+          "replacement": 57
+        },
+        {
+          "old_offset": 27850,
+          "replacement": 58
+        },
+        {
+          "old_offset": 27859,
+          "replacement": 59
+        },
+        {
+          "old_offset": 27886,
+          "replacement": 60
+        },
+        {
+          "old_offset": 27904,
+          "replacement": 61
+        }
+      ]
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "old_sha256": "90000776a713ff4cc0441efd52d9c54f6dce3fec5872d27867b1f2109a73efdc",
+      "old_bytes": 223315,
+      "new_sha256": "ec97c60295ef2de87702805dfcf5d401e992caaf1a8fe5315db490ec8b1d7559",
+      "new_bytes": 241381,
+      "edits": [
+        {
+          "old_offset": 12090,
+          "replacement": 62
+        },
+        {
+          "old_offset": 22456,
+          "replacement": 63
+        },
+        {
+          "old_offset": 22604,
+          "replacement": 64
+        },
+        {
+          "old_offset": 22606,
+          "replacement": 65
+        },
+        {
+          "old_offset": 22610,
+          "replacement": 66
+        },
+        {
+          "old_offset": 22611,
+          "replacement": 67
+        },
+        {
+          "old_offset": 22616,
+          "replacement": 68
+        },
+        {
+          "old_offset": 22628,
+          "replacement": 69
+        },
+        {
+          "old_offset": 68168,
+          "replacement": 70
+        },
+        {
+          "old_offset": 203172,
+          "replacement": 71
+        },
+        {
+          "old_offset": 203183,
+          "replacement": 72
+        },
+        {
+          "old_offset": 203185,
+          "replacement": 73
+        },
+        {
+          "old_offset": 203189,
+          "replacement": 74
+        },
+        {
+          "old_offset": 203199,
+          "replacement": 75
+        },
+        {
+          "old_offset": 203200,
+          "replacement": 76
+        },
+        {
+          "old_offset": 203228,
+          "replacement": 77
+        },
+        {
+          "old_offset": 206199,
+          "replacement": 64
+        },
+        {
+          "old_offset": 206201,
+          "replacement": 65
+        },
+        {
+          "old_offset": 206205,
+          "replacement": 66
+        },
+        {
+          "old_offset": 206206,
+          "replacement": 67
+        },
+        {
+          "old_offset": 206211,
+          "replacement": 68
+        },
+        {
+          "old_offset": 206223,
+          "replacement": 69
+        },
+        {
+          "old_offset": 206507,
+          "replacement": 78
+        },
+        {
+          "old_offset": 206516,
+          "replacement": 79
+        },
+        {
+          "old_offset": 206517,
+          "replacement": 64
+        },
+        {
+          "old_offset": 206519,
+          "replacement": 65
+        },
+        {
+          "old_offset": 206523,
+          "replacement": 66
+        },
+        {
+          "old_offset": 206524,
+          "replacement": 67
+        },
+        {
+          "old_offset": 206529,
+          "replacement": 68
+        },
+        {
+          "old_offset": 207582,
+          "replacement": 78
+        },
+        {
+          "old_offset": 207591,
+          "replacement": 79
+        },
+        {
+          "old_offset": 207592,
+          "replacement": 64
+        },
+        {
+          "old_offset": 207594,
+          "replacement": 65
+        },
+        {
+          "old_offset": 207598,
+          "replacement": 66
+        },
+        {
+          "old_offset": 207599,
+          "replacement": 67
+        },
+        {
+          "old_offset": 207604,
+          "replacement": 68
+        },
+        {
+          "old_offset": 209953,
+          "replacement": 64
+        },
+        {
+          "old_offset": 209955,
+          "replacement": 65
+        },
+        {
+          "old_offset": 209959,
+          "replacement": 66
+        },
+        {
+          "old_offset": 209960,
+          "replacement": 67
+        },
+        {
+          "old_offset": 209965,
+          "replacement": 68
+        },
+        {
+          "old_offset": 209984,
+          "replacement": 69
+        },
+        {
+          "old_offset": 213572,
+          "replacement": 64
+        },
+        {
+          "old_offset": 213574,
+          "replacement": 65
+        },
+        {
+          "old_offset": 213578,
+          "replacement": 66
+        },
+        {
+          "old_offset": 213579,
+          "replacement": 67
+        },
+        {
+          "old_offset": 213584,
+          "replacement": 68
+        },
+        {
+          "old_offset": 213601,
+          "replacement": 80
+        },
+        {
+          "old_offset": 213603,
+          "replacement": 81
+        },
+        {
+          "old_offset": 213605,
+          "replacement": 82
+        },
+        {
+          "old_offset": 213608,
+          "replacement": 83
+        },
+        {
+          "old_offset": 214054,
+          "replacement": 84
+        },
+        {
+          "old_offset": 214964,
+          "replacement": 85
+        },
+        {
+          "old_offset": 215026,
+          "replacement": 85
+        },
+        {
+          "old_offset": 215115,
+          "replacement": 86
+        },
+        {
+          "old_offset": 215116,
+          "replacement": 87
+        },
+        {
+          "old_offset": 215120,
+          "replacement": 88
+        },
+        {
+          "old_offset": 215239,
+          "replacement": 85
+        },
+        {
+          "old_offset": 215344,
+          "replacement": 89
+        },
+        {
+          "old_offset": 215353,
+          "replacement": 90
+        },
+        {
+          "old_offset": 215355,
+          "replacement": 91
+        },
+        {
+          "old_offset": 215358,
+          "replacement": 92
+        },
+        {
+          "old_offset": 215378,
+          "replacement": 93
+        }
+      ]
+    }
+  ],
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "M0_resumed": false,
+  "historical_achievement_independent_of_AI_review": true,
+  "new_quantum_calls": 0,
+  "new_model_API_calls": 0,
+  "changes": [
+    {
+      "path": "research/index.html",
+      "old_sha256": "0e469bd1e8c4a1bb7d9e7d75cda1a9a728d404de77b64c31e3f714de3822a61f",
+      "old_bytes": 49661,
+      "new_sha256": "8a20ce07055fd8207c1038599cc9ccb9baf9e46d8d76233fcb09d4a82024df27",
+      "new_bytes": 49710,
+      "reason": "Refine existing A02 source positioning and only the final AI-record summary; preserve historical claims, prior sources, unresolved original-access status and paused M0"
+    },
+    {
+      "path": "topics/fluoromonomers/index.html",
+      "old_sha256": "caaecd0cf044617acf14e07dd8ac6b08fe9391b41506886bb66d6b513c2fb0dd",
+      "old_bytes": 55310,
+      "new_sha256": "dc4fd895c13fa819715542825469e808666016e2e1bb7532968c804bede02a6e",
+      "new_bytes": 58542,
+      "reason": "Refine existing A02 source positioning and only the final AI-record summary; preserve historical claims, prior sources, unresolved original-access status and paused M0"
+    }
+  ],
+  "additions": [],
+  "boundary": "Exactly seven permitted old files and two existing A02 topic/research HTML routes may change. Source data changes are limited to the two stable source_trace records and append-only sources preserving the complete twenty-object prefix. The complete AI registry may differ only in the final A02 record summary string. Original recordings, target book pages and the cited page-291 volume remain unresolved. Historical cards, cooperation, the 1980 paper, technical and team objects, existing team/background articles, pending items, ai_scope, inventory, renderers, homepage, README, A01, PFtB, original public JSON and M0 records remain identical. No new route, original scan, quantum calculation, model service or experiment is represented.",
+  "reconstruction": "Seven permitted fixed b107b56 predecessor files are reconstructed in memory using ordered exact UTF-8 text edits and a deduplicated replacement pool. No complete predecessor page or document is added. Existing v1-v18 declarations retain their original byte identities.",
+  "publish_allowlist": "Unchanged: sixteen static HTML pages, two original public JSON files and an empty .nojekyll marker, nineteen regular published files."
+}

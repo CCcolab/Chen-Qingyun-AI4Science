@@ -202,7 +202,7 @@ Rₘ=[(n_D²−1)/(n_D²+2)]·M/ρ；ρ≈d⁽²⁰⁾₄×1 g·cm⁻³。整数
 
 [团队贡献、来源分列与原件待核清单](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#a02-team-records)
 
-**本人访谈与所引书页：引据追踪。**已核2018访谈的引用元数据与采集项目，读取动态影音目录，并将《中国科学院年鉴·2009》与传记所引著作分开。完整访谈、2009版《中国科学院》p.291原文及其册次仍待核；已列具体调阅书页与后续技术原件需求。
+**本人访谈与所引书页：引据追踪。**已核到与传记引据题名、出版者和年份相符的国图2009年《中国科学院》书目，并定位朱晶2019年采集工程研究报告的官方引据。完整访谈、研究报告及附件、目标册次和第290–292页原文仍未取得；同期试制、低温分离与早期氟溴油技术原件继续待核。
 
 [已核定位、资料身份与待取得原件](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#a02-source-trace)
 
