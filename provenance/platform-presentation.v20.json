@@ -1,0 +1,2058 @@
+{
+  "schema_version": "20.0",
+  "presentation_id": "PLATFORM-A02-HOLDINGS-20261115-v20",
+  "created_at_utc": "2026-11-15T07:34:23.033948+00:00",
+  "publication_kind": "platform_a02_holdings",
+  "authorization": "User request dated 2026-11-15 and root-approved seven-old-file/two-route scope: refine only the existing book source-trace record, append evidence sources after the exact twenty-two-source prefix, and refine only the final A02 AI-record summary. The interview trace, all other A02 fields, all other AI fields, existing historical objects, pending items, AI scope, inventory, renderers and scientific data remain fixed. Catalogue extent is three volumes with page counts 377/454/630 without a volume-title mapping or original target-page access; keep M0 paused and review_required, then synchronize GitHub and the website",
+  "previous_presentation_commit": "11a927d4c10cfbe0a94a394e8f3e5ba2fbb2cf00",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v19.json",
+    "sha256": "1a056390024ec41126e36c8b8e6a5275415331ec6eeec524da9df8785e23d59b"
+  },
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "allowed_html_paths": [
+    "research/index.html",
+    "topics/fluoromonomers/index.html"
+  ],
+  "added_html_paths": [],
+  "allowed_achievement_lines": [
+    "A02"
+  ],
+  "editorial_documents": [
+    {
+      "path": "content/a02-academic-achievements.v1.json",
+      "sha256": "520e16d611f15f08519fa94e1857b0ad4b044b63799648b41ff675551c1c0617",
+      "bytes": 54017
+    },
+    {
+      "path": "scripts/render_a02_history.py",
+      "sha256": "0d598601ccbbd0064bc95b513055c32c7342459937a5504d5f7af74167be8e9c",
+      "bytes": 21602
+    },
+    {
+      "path": "docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "sha256": "20ec5748a84267ebb773e62c3574f40393c0f9fc6d7b2ae31c826545bb8d6396",
+      "bytes": 41445
+    },
+    {
+      "path": "content/ai-research-section.v1.json",
+      "sha256": "f27d998f4274f2202efcd4a036311c6c8cd1fff3b8a13b3e56512354a2d18aaf",
+      "bytes": 66739
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "sha256": "1ba9ed4363b1080b6dc51cd568a080fdf44b6f9ff5b3c25247dccacea7ef9704",
+      "bytes": 35869
+    },
+    {
+      "path": "scripts/render_ai_research.py",
+      "sha256": "729298ecb6146cba6b9a78bdc2074dabb10b6a2f551f7efaf4d0a4078e29f521",
+      "bytes": 34792
+    },
+    {
+      "path": "scripts/public_line_labels.py",
+      "sha256": "27776862621369ea922d97cc5a1d0ff927f1ec2aa5cbe93a0cacf66fee27f695",
+      "bytes": 9737
+    },
+    {
+      "path": "scripts/check_site.py",
+      "sha256": "70b9d2e3c2a8cd13cec93530ec9092761fe8731eccae7aa055ba280c4dfe1fae",
+      "bytes": 23307
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "sha256": "169e46ad2bb8cbaafeb93599b66e5268e5d351533cdfb12d1c5278de1d51bf99",
+      "bytes": 260043
+    },
+    {
+      "path": "scripts/render_heritage.py",
+      "sha256": "07b1698b1c0485accd96cc0a6d6730bb164258e003737c9f370919920768f27d",
+      "bytes": 42653
+    },
+    {
+      "path": "docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "sha256": "e9c71d5f3a7ad148882aae13847f9bce64d48d8858666285f7c42fbada5181a9",
+      "bytes": 69708
+    }
+  ],
+  "protected_website_members": {
+    "index.html": {
+      "sha256": "8b3532ee45c0fb33912f20a3bd7943043a348f10a370b9c6716e9edf3c0abf41",
+      "bytes": 257766
+    },
+    "pftb/index.html": {
+      "sha256": "42ca404f2ed70b7a3b0b5d8b0eb742a2509e5a5a70fd0be36a65028e61cbd1f6",
+      "bytes": 97587
+    },
+    "topics/f53/index.html": {
+      "sha256": "8def3379a75dda6665d7cb3ee6c32193fc7a61ec6b31098abbefe9218fea39fe",
+      "bytes": 8161
+    },
+    "topics/refrigerants/index.html": {
+      "sha256": "5d9b5a355b949f67c5de252727f8d4e4e7533abab8a666c49a0f932170153c4e",
+      "bytes": 10636
+    },
+    "topics/perfluorosulfonates/index.html": {
+      "sha256": "85a6f4330edb7607f61ca217b71d2ef6c12cb1af0d48aaaebf737acf3a212ea5",
+      "bytes": 8888
+    },
+    "topics/chen-reagent/index.html": {
+      "sha256": "14f08afd4062c0ae171f24e5fb225e5968b003e885edc206baf08ca352b630df",
+      "bytes": 19991
+    },
+    "topics/single-electron-transfer/index.html": {
+      "sha256": "79c84f89e25e576a03f34153b9eb85a5ff73815c8265a0222930d889390ea947",
+      "bytes": 10355
+    },
+    "topics/fluoroporphyrins/index.html": {
+      "sha256": "24b6bb744b594573487847c89bbb35571ea56bc15d444ebeac3339379dbc1875",
+      "bytes": 6018
+    },
+    "topics/early-fluoroketones/index.html": {
+      "sha256": "a6da86d7f9ff0f35a5ea044252297a23e5ed71db829f2d184e3ab38a70dce9a2",
+      "bytes": 250938
+    },
+    "topics/fluorinated-small-rings/index.html": {
+      "sha256": "2413c83d4319746f41e940c04fe48bdeda28244235f5a9e8697285c187ba412d",
+      "bytes": 5924
+    },
+    "topics/deoxyfluorination/index.html": {
+      "sha256": "2aca9c13eb46f9fedfb02a2adfdc9423c207465f58608bcd671838d4d8045df5",
+      "bytes": 5550
+    },
+    "topics/sulfonyl-fluoride/index.html": {
+      "sha256": "fe944efbbfa5a7814015235f4ae3aae101db4046b0c9419986d6855d7ed15b49",
+      "bytes": 5043
+    },
+    "topics/index.html": {
+      "sha256": "44a5690d1e65195b9ff191d2a7ec37487070cdfafb191ae107962d5e0d7ab73c",
+      "bytes": 5055
+    },
+    "achievements/index.html": {
+      "sha256": "df20daf429c46e89e99085550067e8c1e9f7e283b10b7e8269f38da6a9d380ff",
+      "bytes": 95867
+    },
+    "data/public-sources.json": {
+      "sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+      "bytes": 33608
+    },
+    "data/achievement-lines.json": {
+      "sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+      "bytes": 39768
+    },
+    "README.txt": {
+      "sha256": "6e15068b7240ae47d633df3f777e81fbb9e46146ee5f4ab70011f09119b6bbc9",
+      "bytes": 336
+    },
+    "ROUTES.txt": {
+      "sha256": "a734c356877d4534285ab7d71b9fe0f7a17abbced4de3c52f8e60d335301e418",
+      "bytes": 949
+    },
+    "QA.txt": {
+      "sha256": "a60b5f382b31689fa17e2518b7079ef0660674fb62bddbbf564c7b74dfe51067",
+      "bytes": 290
+    },
+    "IONIC-ENTRY-RETEST.txt": {
+      "sha256": "3462b056891a27c335cc2620deb87b245b6c9aea3bdaec607c8a14beca69fe9d",
+      "bytes": 741
+    }
+  },
+  "reconstruction_kind": "deduplicated_exact_utf8_text_edits",
+  "reverse_text_patch_pool": [
+    {
+      "old": "",
+      "new": "    },\n    {\n      \"id\": \"A02-TRACE-NLC2009-EXTENT\",\n      \"anchor\": \"a02-source-nlc2009-extent\",\n      \"title\": \"国家图书馆：《中国科学院》2009年详细编目数据\",\n      \"url\": \"https://meta.nlc.cn/api/v1/item/UCS01005727202/1/999?b_tit=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2\",\n      \"kind\": \"同一公开书目记录的载体形态及责任说明，非实体书或原页\",\n      \"locator\": \"载体形态记3册(377;454;630页)，责任说明记卷主编钱临照、谷羽；国图书目号006115647、书目库NLC01。未得分册题名映射、目录或第290–292页。书目号不作索书号，书目主编不作A02实验分工证据\"\n"
+    },
+    {
+      "old": "已核",
+      "new": "国图"
+    },
+    {
+      "old": "正式",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "记三册"
+    },
+    {
+      "old": "馆藏线索",
+      "new": "各册页数"
+    },
+    {
+      "old": "目标册次、目录和第",
+      "new": "所引p."
+    },
+    {
+      "old": "0–292",
+      "new": "1的分册归属和原"
+    },
+    {
+      "old": "原文未取得",
+      "new": "待核"
+    },
+    {
+      "old": "家",
+      "new": ""
+    },
+    {
+      "old": "书馆已定位到题",
+      "new": "同"
+    },
+    {
+      "old": "、出版者和年份相符的",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "详细"
+    },
+    {
+      "old": "",
+      "new": "记载体为3册(377;454;630页)"
+    },
+    {
+      "old": "记",
+      "new": "出版者为当代中国出版社、香港祖国出版社。册数和页数已有书目依据，但尚未取得分册题名、目"
+    },
+    {
+      "old": "号UCS01005727202；该详情尚",
+      "new": "及原页，"
+    },
+    {
+      "old": "",
+      "new": "据页数排列"
+    },
+    {
+      "old": "所引页",
+      "new": "p.291"
+    },
+    {
+      "old": "，仍须核题名页、版权页和完整目录",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "与载体形态"
+    },
+    {
+      "old": "书馆",
+      "new": ""
+    },
+    {
+      "old": "列《中国科学院》",
+      "new": ""
+    },
+    {
+      "old": "当代中国出版社、香港祖国出版社",
+      "new": "载体形态记3册(377;454;630页)"
+    },
+    {
+      "old": "",
+      "new": "尺寸"
+    },
+    {
+      "old": "009",
+      "new": "6cm"
+    },
+    {
+      "old": "",
+      "new": "这是书目所"
+    },
+    {
+      "old": "录",
+      "new": "，"
+    },
+    {
+      "old": "提供",
+      "new": ""
+    },
+    {
+      "old": "标",
+      "new": "视原书；分"
+    },
+    {
+      "old": "次、",
+      "new": "名称与这三组"
+    },
+    {
+      "old": "和目录，",
+      "new": "的对应、所引p.291归属"
+    },
+    {
+      "old": "取得第290–292页",
+      "new": "确认\"\n            ],\n            [\n              \"书目责任说明与定位号\",\n              \"责任说明记卷主编钱临照、谷羽"
+    },
+    {
+      "old": "不能将",
+      "new": "国图"
+    },
+    {
+      "old": "码当",
+      "new": "006115647，书目库NLC01\",\n              \"不据此分配原实验或章节贡献；书目号及各馆记录号均不"
+    },
+    {
+      "old": "分册或技术",
+      "new": "索书号、访谈"
+    },
+    {
+      "old": "案",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "演示截图不完整；册数已有国图详细书目依据，截图仍"
+    },
+    {
+      "old": "据展示片段排除中册、",
+      "new": ""
+    },
+    {
+      "old": "ISBN",
+      "new": "题名、章节"
+    },
+    {
+      "old": "认定",
+      "new": ""
+    },
+    {
+      "old": "所在册",
+      "new": "归属"
+    },
+    {
+      "old": "版实际",
+      "new": "年书目的"
+    },
+    {
+      "old": "次",
+      "new": "数和页数已核读，分册题名、目录及所引p.291归属"
+    },
+    {
+      "old": "定",
+      "new": "；三册均超过291页，不能仅凭页码排除任一册"
+    },
+    {
+      "old": "",
+      "new": "和编"
+    },
+    {
+      "old": "录、演示截图、丛",
+      "new": "数据不替代实体"
+    },
+    {
+      "old": "介绍与目标正文分别登记；",
+      "new": "原页，"
+    },
+    {
+      "old": "检",
+      "new": "取"
+    },
+    {
+      "old": "馆藏或档案",
+      "new": "原件"
+    },
+    {
+      "old": "国图",
+      "new": "已核的是"
+    },
+    {
+      "old": "",
+      "new": "国图"
+    },
+    {
+      "old": "身份已经核读；",
+      "new": "所记三册及页数，尚未"
+    },
+    {
+      "old": "标册次及",
+      "new": "视原书题名页、版权页、目录或"
+    },
+    {
+      "old": "仍未取得",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "不能确定传记所引p.291的分册归属。"
+    },
+    {
+      "old": "尚未",
+      "new": "待"
+    },
+    {
+      "old": "复",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "读"
+    },
+    {
+      "old": "。即使取得该历史著作书页，也须继续追其所据同期技术记录，不能把",
+      "new": "；"
+    },
+    {
+      "old": "",
+      "new": "不"
+    },
+    {
+      "old": "",
+      "new": "同期"
+    },
+    {
+      "old": "U",
+      "new": "号006115647（NL"
+    },
+    {
+      "old": "S",
+      "new": ""
+    },
+    {
+      "old": "005727202",
+      "new": "）"
+    },
+    {
+      "old": "所列",
+      "new": "各"
+    },
+    {
+      "old": "藏定向",
+      "new": "具体书目记录，"
+    },
+    {
+      "old": "：先取得各实际分",
+      "new": "三"
+    },
+    {
+      "old": "",
+      "new": "的"
+    },
+    {
+      "old": "及",
+      "new": "和"
+    },
+    {
+      "old": "",
+      "new": "册名称—"
+    },
+    {
+      "old": "范围，再确",
+      "new": "数对应。不能只凭整套ISBN或377／454／630页的排列"
+    },
+    {
+      "old": "",
+      "new": "定"
+    },
+    {
+      "old": "的册次；不据书目所列ISBN直接指定分",
+      "new": "属于哪"
+    },
+    {
+      "old": "",
+      "new": ","
+    },
+    {
+      "old": "",
+      "new": "        \"A02-TRACE-NLC2009-EXTENT\"\n"
+    },
+    {
+      "old": "",
+      "new": "三"
+    },
+    {
+      "old": "次与原",
+      "new": "及"
+    },
+    {
+      "old": "",
+      "new": "数已有书目依据，目标分册"
+    },
+    {
+      "old": "",
+      "new": "        },\n        {\n          \"title\": \"国图详细编目数据（含载体形态及责任说明）\",\n          \"url\": \"https://meta.nlc.cn/api/v1/item/UCS01005727202/1/999?b_tit=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2\"\n"
+    },
+    {
+      "old": "",
+      "new": "      \"catalogue_extent\": {\n        \"volume_count\": 3,\n        \"page_counts_as_catalogued\": [\n          377,\n          454,\n          630\n        ],\n        \"volume_title_mapping_confirmed\": false,\n        \"cited_page_volume_confirmed\": false,\n        \"original_book_pages_obtained\": false\n      }\n"
+    },
+    {
+      "old": "取得第290–292页",
+      "new": "确认 |\n| 书目责任说明与定位号 | 责任说明记卷主编钱临照、谷羽"
+    },
+    {
+      "old": "码当",
+      "new": "006115647，书目库NLC01 | 不据此分配原实验或章节贡献；书目号及各馆记录号均不"
+    },
+    {
+      "old": "",
+      "new": "、A02-TRACE-NLC2009-EXTENT"
+    },
+    {
+      "old": "",
+      "new": "[国图详细编目数据（含载体形态及责任说明）](https://meta.nlc.cn/api/v1/item/UCS01005727202/1/999?b_tit=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2)\n"
+    },
+    {
+      "old": "",
+      "new": "- **A02-TRACE-NLC2009-EXTENT**：[国家图书馆：《中国科学院》2009年详细编目数据](https://meta.nlc.cn/api/v1/item/UCS01005727202/1/999?b_tit=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2)。同一公开书目记录的载体形态及责任说明，非实体书或原页；载体形态记3册(377;454;630页)，责任说明记卷主编钱临照、谷羽；国图书目号006115647、书目库NLC01。未得分册题名映射、目录或第290–292页。书目号不作索书号，书目主编不作A02（含氟单体、氟橡胶与氟油）实验分工证据。\n"
+    },
+    {
+      "old": "取得第290–292页",
+      "new": "确认</td></tr>\n<tr><th scope=\"row\">书目责任说明与定位号</th><td>责任说明记卷主编钱临照、谷羽"
+    },
+    {
+      "old": "码当",
+      "new": "006115647，书目库NLC01</td><td>不据此分配原实验或章节贡献；书目号及各馆记录号均不"
+    },
+    {
+      "old": "",
+      "new": " · <a href=\"#a02-source-nlc2009-extent\">A02-TRACE-NLC2009-EXTENT</a>"
+    },
+    {
+      "old": "",
+      "new": "）</a> · <a href=\"https://meta.nlc.cn/api/v1/item/UCS01005727202/1/999?b_tit=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2\">国图详细编目数据（含载体形态及责任说明"
+    },
+    {
+      "old": "",
+      "new": "<li id=\"a02-source-nlc2009-extent\"><b>A02-TRACE-NLC2009-EXTENT</b> · <a href=\"https://meta.nlc.cn/api/v1/item/UCS01005727202/1/999?b_tit=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2\">国家图书馆：《中国科学院》2009年详细编目数据</a>；同一公开书目记录的载体形态及责任说明，非实体书或原页。载体形态记3册(377;454;630页)，责任说明记卷主编钱临照、谷羽；国图书目号006115647、书目库NLC01。未得分册题名映射、目录或第290–292页。书目号不作索书号，书目主编不作A02（含氟单体、氟橡胶与氟油）实验分工证据</li>\n"
+    },
+    {
+      "old": "已核到与传记引据题名、出版者和年份相符的",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "记3册(377;454;630页)"
+    },
+    {
+      "old": "并定位朱晶",
+      "new": "册数与页数已有书目依据；所引p."
+    },
+    {
+      "old": "0",
+      "new": "9"
+    },
+    {
+      "old": "9年采集工程研究报告",
+      "new": ""
+    },
+    {
+      "old": "官方引据。完整访谈、研究报告",
+      "new": "分册归属"
+    },
+    {
+      "old": "附件、目标册次和",
+      "new": ""
+    },
+    {
+      "old": "未取得；",
+      "new": "待核。朱晶2019年研究报告的资料索引、2018-01-03访谈原录，以及"
+    },
+    {
+      "old": "与",
+      "new": "和"
+    },
+    {
+      "old": "继续待核",
+      "new": "仍未取得"
+    },
+    {
+      "old": "",
+      "new": "PRESENTATION_V19_SHA256 = '1a056390024ec41126e36c8b8e6a5275415331ec6eeec524da9df8785e23d59b'\nPRESENTATION_V20_PATH = 'provenance/platform-presentation.v20.json'\nPRESENTATION_V20_ID = 'PLATFORM-A02-HOLDINGS-20261115-v20'\nPRESENTATION_V20_PREVIOUS_COMMIT = '11a927d4c10cfbe0a94a394e8f3e5ba2fbb2cf00'\nA02_HOLDINGS_ROUTES = {'topics/fluoromonomers/index.html', 'research/index.html'}\nA02_HOLDINGS_PREDECESSOR_FILES = {\n    'content/a02-academic-achievements.v1.json': ('38c157cd7b3246a5422ac7e44be6157001b9600425201872f129a7b989be4fa9', 52298),\n    'docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md': ('0535f885654dd45e34e255fe7a2049530a0d5c14f2356e00680a9d4084c6ee33', 40250),\n    'site/topics/fluoromonomers/index.html': ('dc4fd895c13fa819715542825469e808666016e2e1bb7532968c804bede02a6e', 58542),\n    'content/ai-research-section.v1.json': ('3006f9133f0c59812468b177e86e55fc8d13d8e2fd92324bd9985f822ad3f930', 66752),\n    'docs/AI_RESEARCH_zh-CN.md': ('03bbc0a90435473814efbaaad4c092b6f8ab7786db02bc32bade32b4e86cb68a', 35882),\n    'site/research/index.html': ('8a20ce07055fd8207c1038599cc9ccb9baf9e46d8d76233fcb09d4a82024df27', 49710),\n    'scripts/a01_publication_contract.py': ('ec97c60295ef2de87702805dfcf5d401e992caaf1a8fe5315db490ec8b1d7559', 241381),\n}\nA02_HOLDINGS_DOCUMENTS = A02_DOCUMENTS\n\n"
+    },
+    {
+      "old": "",
+      "new": "def holdings_predecessor_bytes(root: Path, name: str) -> bytes:\n    \"\"\"Undo only the seven explicitly permitted v20 presentation files.\"\"\"\n    current = project_file(root, name).read_bytes()\n    if not (root/PRESENTATION_V20_PATH).exists():\n        return current\n    data = read_json(project_file(root, PRESENTATION_V20_PATH))\n    if not isinstance(data, dict):\n        raise ValueError('A02 holdings presentation must be a JSON object')\n    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')\n    if not isinstance(files, list) or not isinstance(pool, list):\n        raise ValueError('A02 holdings require exact reversible text patch records')\n    matches = [row for row in files if isinstance(row, dict) and row.get('path') == name]\n    if not matches:\n        return current\n    if len(matches) != 1 or name not in A02_HOLDINGS_PREDECESSOR_FILES:\n        raise ValueError('Unauthorized or duplicate A02 holdings predecessor record: '+name)\n    record = matches[0]; old_sha, old_size = A02_HOLDINGS_PREDECESSOR_FILES[name]\n    if (record.get('old_sha256') != old_sha or record.get('old_bytes') != old_size\n            or hashlib.sha256(current).hexdigest() != record.get('new_sha256')\n            or len(current) != record.get('new_bytes')):\n        raise ValueError('A02 holdings file differs from its complete old/new identities: '+name)\n    edits = record.get('edits')\n    if not isinstance(edits, list) or not edits:\n        raise ValueError('A02 holdings changes require nonempty text edits: '+name)\n    chunks, cursor, old_end, delta = [], 0, 0, 0\n    for edit in edits:\n        if not isinstance(edit, dict) or set(edit) != {'old_offset', 'replacement'}:\n            raise ValueError('Invalid reversible A02 holdings text edit: '+name)\n        offset, replacement = edit['old_offset'], edit['replacement']\n        if (type(offset) is not int or offset < old_end or type(replacement) is not int\n                or not 0 <= replacement < len(pool)):\n            raise ValueError('Overlapping or invalid A02 holdings text edit: '+name)\n        pair = pool[replacement]\n        if (not isinstance(pair, dict) or set(pair) != {'old', 'new'}\n                or not all(isinstance(pair.get(key), str) for key in ('old', 'new'))\n                or pair['old'] == pair['new']):\n            raise ValueError('Invalid A02 holdings text replacement pool')\n        before, after = pair['old'].encode('utf-8'), pair['new'].encode('utf-8')\n        position = offset+delta\n        if position < cursor or current[position:position+len(after)] != after:\n            raise ValueError('A02 holdings replacement differs at its exact offset: '+name)\n        chunks.extend((current[cursor:position], before))\n        cursor, old_end = position+len(after), offset+len(before)\n        delta += len(after)-len(before)\n    rebuilt = b''.join((*chunks, current[cursor:]))\n    if hashlib.sha256(rebuilt).hexdigest() != old_sha or len(rebuilt) != old_size:\n        raise ValueError('A02 holdings predecessor cannot be reconstructed exactly: '+name)\n    return rebuilt\n\n\n\ndef holdings_predecessor_binding(root: Path, name: str) -> dict:\n    content = holdings_predecessor_bytes(root, name)\n    return {'path': name, 'sha256': hashlib.sha256(content).hexdigest(), 'bytes': len(content)}\n\n\n"
+    },
+    {
+      "old": "",
+      "new": "holdings_"
+    },
+    {
+      "old": "oj",
+      "new": "ed"
+    },
+    {
+      "old": "",
+      "new": "essor_by"
+    },
+    {
+      "old": "_fil",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "s"
+    },
+    {
+      "old": ".read_bytes()",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "    if (root/PRESENTATION_V20_PATH).exists() and not (root/PRESENTATION_V19_PATH).exists():\n        raise ValueError('A02 holdings presentation requires its fixed v19 predecessor')\n"
+    },
+    {
+      "old": "{'pat",
+      "new": ""
+    },
+    {
+      "old": "': name, 'sha256': ",
+      "new": "ol"
+    },
+    {
+      "old": "",
+      "new": "n"
+    },
+    {
+      "old": "",
+      "new": "s_predec"
+    },
+    {
+      "old": "t(p",
+      "new": "so"
+    },
+    {
+      "old": "oject",
+      "new": ""
+    },
+    {
+      "old": "f",
+      "new": "b"
+    },
+    {
+      "old": "le",
+      "new": "nding"
+    },
+    {
+      "old": "),\n                  'bytes': project_file(root, name).stat().st_size}",
+      "new": ""
+    },
+    {
+      "old": "read_",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": ".loads"
+    },
+    {
+      "old": "",
+      "new": "        prose=holdings_predecessor_bytes(root,name).decode('utf-8')\n        if project_markdown(prose)!=prose:\n            raise ValueError('Team prose lost canonical named achievement references: '+name)\n    for name,expected in updated.items():\n        member=holdings_predecessor_binding(root,'site/'+name)\n        if member['sha256']!=expected['sha256'] or member['bytes']!=expected['bytes']:\n            raise ValueError('Team records changed an unlisted website byte: '+name)\n    # Replay v19 from exact reconstructed bytes; inspect only the final layer.\n    if not (root/PRESENTATION_V20_PATH).exists():\n        from render_a02_history import inspect_a02_history\n        from render_ai_research import inspect_ai_research\n        for label,check in (('A02 history',inspect_a02_history(root)),('AI record',inspect_ai_research(root))):\n            if check.get('status')!='passed':\n                raise ValueError(label+' differs from its source-derived rendering: '+str(check.get('errors',[])))\n    members=publication_members(root,updated)\n    report={'path':PRESENTATION_V19_PATH,'sha256':digest(path),'presentation_id':PRESENTATION_V19_ID,\n        'publication_kind':required['publication_kind'],'changed_paths':sorted(A02_ORIGINAL_FOLLOWUP_ROUTES),'added_paths':[],\n        'changed_achievement_lines':['A02'],'previous_presentation_commit':PRESENTATION_V19_PREVIOUS_COMMIT,\n        'exact_predecessor_reconstruction':True,'existing_A02_history_paper_technical_team_and_inventory_preserved':True,\n        'only_final_A02_AI_record_summary_changed':True,\n        'source_derived_rendering':True,'homepage_A01_and_original_source_data_unchanged':True,\n        'original_embedded_json_bytes_preserved':True,'published_member_count_with_marker':len(members)+1,\n        **{key:required[key] for key in ('scientific_review_status','scientific_data_unchanged',\n            'historical_achievement_independent_of_AI_review','release_eligible','M0_resumed')}}\n    return apply_a02_holdings_presentation(root, updated,\n        {**report,'presentation_chain':[*previous_report['presentation_chain'],report]})\n\n\ndef validate_a02_holdings_history(old_history: dict, history: dict) -> None:\n    \"\"\"Keep catalogue identification separate from unobserved historical pages.\"\"\"\n    mutable = {'source_trace', 'sources'}\n    if ({k:v for k,v in old_history.items() if k not in mutable}\n            != {k:v for k,v in history.items() if k not in mutable}):\n        raise ValueError('Holdings may not change A02 history, pending, AI scope, inventory or scientific status')\n    old_sources, sources = old_history.get('sources'), history.get('sources')\n    if (not isinstance(old_sources, list) or len(old_sources) != 22\n            or not isinstance(sources, list) or len(sources) <= len(old_sources)\n            or sources[:len(old_sources)] != old_sources):\n        raise ValueError('Holdings must preserve the exact twenty-two-source prefix and append evidence')\n    old_trace, trace = old_history.get('source_trace'), history.get('source_trace')\n    ids = ['a02-trace-interview', 'a02-trace-book2009']\n    if (not isinstance(old_trace, list) or not isinstance(trace, list)\n            or len(old_trace) != 2 or len(trace) != 2\n            or any(not isinstance(row, dict) for row in trace)\n            or [row.get('id') for row in old_trace] != ids\n            or [row.get('id') for row in trace] != ids\n            or trace[0] != old_trace[0] or trace[1] == old_trace[1]\n            or trace[1].get('original_obtained') is not False\n            or trace[1].get('volume_confirmed') is not False):\n        raise ValueError('Only the existing book trace may change; interview and unresolved target-page status are fixed')\n    extent = trace[1].get('catalogue_extent')\n    expected_keys = {'volume_count', 'page_counts_as_catalogued',\n                     'volume_title_mapping_confirmed', 'cited_page_volume_confirmed',\n                     'original_book_pages_obtained'}\n    if (not isinstance(extent, dict) or set(extent) != expected_keys\n            or type(extent.get('volume_count')) is not int or extent['volume_count'] != 3\n            or not isinstance(extent.get('page_counts_as_catalogued'), list)\n            or any(type(value) is not int for value in extent['page_counts_as_catalogued'])\n            or extent['page_counts_as_catalogued'] != [377, 454, 630]\n            or any(extent.get(key) is not False for key in (\n                'volume_title_mapping_confirmed', 'cited_page_volume_confirmed',\n                'original_book_pages_obtained'))):\n        raise ValueError('Catalogue extent must remain exactly three stated page counts with unresolved mapping and original pages')\n\n\ndef apply_a02_holdings_presentation(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:\n    \"\"\"Publish only catalogue-qualified book trace and the final A02 AI-record summary.\"\"\"\n    if not (root/PRESENTATION_V20_PATH).exists():\n        return entries, previous_report\n    if digest(project_file(root, PRESENTATION_V19_PATH)) != PRESENTATION_V19_SHA256:\n        raise ValueError('The preceding A02 original-followup presentation v19 is immutable')\n    path = project_file(root, PRESENTATION_V20_PATH); data = read_json(path)\n    documents = [{'path': name, 'sha256': digest(project_file(root, name)),\n                  'bytes': project_file(root, name).stat().st_size} for name in A02_HOLDINGS_DOCUMENTS]\n    required = {'schema_version': '20.0', 'presentation_id': PRESENTATION_V20_ID,\n        'publication_kind': 'platform_a02_holdings',\n        'previous_presentation_commit': PRESENTATION_V20_PREVIOUS_COMMIT,\n        'previous_presentation': {'path': PRESENTATION_V19_PATH, 'sha256': PRESENTATION_V19_SHA256},\n        'original_baseline_sha256': BASELINE_SHA256, 'original_archive_sha256': ARCHIVE_SHA256,\n        'allowed_html_paths': sorted(A02_HOLDINGS_ROUTES), 'added_html_paths': [], 'additions': [],\n        'allowed_achievement_lines': ['A02'], 'editorial_documents': documents,\n        'protected_website_members': {name: {'sha256': row['sha256'], 'bytes': row['bytes']}\n            for name, row in entries.items() if name not in A02_HOLDINGS_ROUTES},\n        'reconstruction_kind': 'deduplicated_exact_utf8_text_edits',\n        'scientific_review_status': 'review_required', 'release_eligible': False,\n        'scientific_data_unchanged': True, 'M0_resumed': False,\n        'historical_achievement_independent_of_AI_review': True}\n    if (not isinstance(data, dict) or any(data.get(key) != value for key, value in required.items())\n            or any(data.get(key) is not required[key] for key in ('release_eligible',\n                'scientific_data_unchanged', 'M0_resumed', 'historical_achievement_independent_of_AI_review'))\n            or any(type(data.get(key)) is not int or data[key] != 0 for key in ('new_quantum_calls', 'new_model_API_calls'))\n            or not isinstance(data.get('authorization'), str) or not data['authorization'].strip()):\n        raise ValueError('Unsupported bounded A02 holdings presentation v20')\n    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')\n    if (not isinstance(files, list) or not files or not isinstance(pool, list) or not pool\n            or any(not isinstance(row, dict) or row.get('path') not in A02_HOLDINGS_PREDECESSOR_FILES for row in files)\n            or len({row['path'] for row in files}) != len(files)\n            or any(not isinstance(row.get('edits'), list) or not row['edits'] or any(\n                not isinstance(edit, dict) or type(edit.get('replacement')) is not int for edit in row['edits']) for row in files)):\n        raise ValueError('A02 holdings records may enumerate only the seven fixed predecessor text files')\n    if {edit['replacement'] for row in files for edit in row['edits']} != set(range(len(pool))):\n        raise ValueError('Team replacement pool must contain exactly its used segments')\n    changed = set()\n    for name, (sha, size) in A02_HOLDINGS_PREDECESSOR_FILES.items():\n        old = holdings_predecessor_bytes(root, name)\n        if hashlib.sha256(old).hexdigest() != sha or len(old) != size:\n            raise ValueError('A02 holdings predecessor differs from fixed 11a927d: '+name)\n        if old != project_file(root, name).read_bytes():\n            changed.add(name)\n    if {row['path'] for row in files} != changed:\n        raise ValueError('Team patches must enumerate every and only changed predecessor file')\n    old_ai = json.loads(holdings_predecessor_bytes(root, AI_RESEARCH_CONTENT))\n    current_ai = read_json(project_file(root, AI_RESEARCH_CONTENT))\n    try:\n        summary = current_ai['lines'][1]['records'][-1]['summary']\n    except (KeyError, IndexError, TypeError) as error:\n        raise ValueError('Missing final A02 AI-record summary') from error\n    if (not isinstance(summary, str) or not summary.strip()\n            or summary == old_ai['lines'][1]['records'][-1]['summary']):\n        raise ValueError('The final A02 AI-record summary must contain the authorized refinement')\n    expected_ai = json.loads(json.dumps(old_ai))\n    expected_ai['lines'][1]['records'][-1]['summary'] = summary\n    if current_ai != expected_ai:\n        raise ValueError('Only the final A02 AI-record summary may change in the complete AI registry')\n    old_history = json.loads(holdings_predecessor_bytes(root, A02_HISTORY_CONTENT))\n    history = read_json(project_file(root, A02_HISTORY_CONTENT))\n    validate_a02_holdings_history(old_history, history)\n    changes = data.get('changes')\n    if (not isinstance(changes, list) or any(not isinstance(row, dict) for row in changes)\n            or [row.get('path') for row in changes] != sorted(A02_HOLDINGS_ROUTES)):\n        raise ValueError('Original follow-up may update only the A02 topic and AI record routes')\n    from public_line_labels import project_html, project_markdown\n    json_scripts = re.compile(r'<script\\b[^>]*\\btype\\s*=\\s*[\\\"\\']application/(?:ld\\+)?json[\\\"\\'][^>]*>.*?</script\\s*>', re.I | re.S)\n    updated = {name:dict(row) for name,row in entries.items()}\n    for item in changes:\n        name=item['path']; old=entries[name]\n        before=holdings_predecessor_bytes(root,'site/'+name); after=project_file(root,'site/'+name).read_bytes()\n        source,current=before.decode('utf-8'),after.decode('utf-8')\n        if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']\n                or hashlib.sha256(before).hexdigest() != old['sha256'] or len(before) != old['bytes']\n                or item.get('new_sha256') != hashlib.sha256(after).hexdigest() or item.get('new_bytes') != len(after)\n                or before == after or not isinstance(item.get('reason'),str) or not item['reason'].strip()):\n            raise ValueError('Team HTML differs from complete old/new identities: '+name)\n        if json_scripts.findall(source) != json_scripts.findall(current):\n            raise ValueError('Team records must preserve every embedded source JSON byte')\n        if not set(re.findall(r'\\bid=\"([^\\\"]+)\"',source)) <= set(re.findall(r'\\bid=\"([^\\\"]+)\"',current)):\n            raise ValueError('Team records cannot remove existing navigation/source IDs')\n        if project_html(current,name) != current:\n            raise ValueError('Team records must retain canonical named achievement references')\n        if name == A02_HISTORY_ROUTE:\n            begin,end='<!-- A02_ACADEMIC_HISTORY:BEGIN -->','<!-- A02_ACADEMIC_HISTORY:END -->'\n            if any(value.count(begin)!=1 or value.count(end)!=1 for value in (source,current)):\n                raise ValueError('Team topic requires one complete existing A02 marker')\n            strip=lambda value:value[:value.index(begin)]+'<A02-HISTORY/>'+value[value.index(end)+len(end):]\n            if strip(source) != strip(current):\n                raise ValueError('Team topic may change only inside the A02 historical marker')\n            background = r'<article\\b[^>]*\\bid=\"a02-technical-records\"[^>]*>.*?</article>'\n            if (len(re.findall(background, source, re.S)) != 1\n                    or re.findall(background, source, re.S) != re.findall(background, current, re.S)):\n                raise ValueError('Team records must preserve the complete existing technical-background article')\n            team = r'<article\\b[^>]*\\bid=\"a02-team-records\"[^>]*>.*?</article>'\n            if (len(re.findall(team, current, re.S)) != 1\n                    or current.index('id=\"a02-team-records\"') > current.index('id=\"a02-technical-records\"')):\n                raise ValueError('Attributed A02 team records must precede other-team technical background')\n            if re.findall(team, source, re.S) != re.findall(team, current, re.S):\n                raise ValueError('Cited sources must preserve the complete existing team-history article')\n            trace = r'<article\\b[^>]*\\bid=\"a02-source-trace\"[^>]*>.*?</article>'\n            if len(re.findall(trace, current, re.S)) != 1:\n                raise ValueError('Expected one independent A02 cited-source trace article')\n        else:\n            pattern = (r'<section\\b[^>]*\\bid=\"ai-a02\"[^>]*>.*?</section>' if name==AI_RESEARCH_ROUTE\n                       else r'<article\\b[^>]*\\bid=\"heritage-line-a02\"[^>]*>.*?</article>')\n            if (len(re.findall(pattern,source,re.S))!=1 or len(re.findall(pattern,current,re.S))!=1\n                    or re.sub(pattern,'<A02-ONLY/>',source,flags=re.S)!=re.sub(pattern,'<A02-ONLY/>',current,flags=re.S)):\n                raise ValueError('Team records changed outside the A02 entry: '+name)\n        updated[name]={**old,'sha256':item['new_sha256'],'bytes':item['new_bytes'],'presentation_id':PRESENTATION_V20_ID}\n    for name in (AI_RESEARCH_DOCUMENT,A02_HISTORY_DOCUMENT):\n"
+    },
+    {
+      "old": "19",
+      "new": "20"
+    },
+    {
+      "old": "",
+      "new": "H"
+    },
+    {
+      "old": "RIG",
+      "new": "LD"
+    },
+    {
+      "old": "AL_FOLLOWUP",
+      "new": "GS"
+    },
+    {
+      "old": "",
+      "new": "        'only_book_trace_and_append_only_sources_changed':True,\n        'interview_trace_unchanged':True,\n        'catalogue_extent_without_volume_or_original_page_promotion':True,\n"
+    }
+  ],
+  "reversible_text_files": [
+    {
+      "path": "content/a02-academic-achievements.v1.json",
+      "old_sha256": "38c157cd7b3246a5422ac7e44be6157001b9600425201872f129a7b989be4fa9",
+      "old_bytes": 52298,
+      "new_sha256": "520e16d611f15f08519fa94e1857b0ad4b044b63799648b41ff675551c1c0617",
+      "new_bytes": 54017,
+      "edits": [
+        {
+          "old_offset": 20456,
+          "replacement": 0
+        },
+        {
+          "old_offset": 47140,
+          "replacement": 1
+        },
+        {
+          "old_offset": 47153,
+          "replacement": 2
+        },
+        {
+          "old_offset": 47165,
+          "replacement": 3
+        },
+        {
+          "old_offset": 47168,
+          "replacement": 4
+        },
+        {
+          "old_offset": 47184,
+          "replacement": 5
+        },
+        {
+          "old_offset": 47213,
+          "replacement": 6
+        },
+        {
+          "old_offset": 47223,
+          "replacement": 7
+        },
+        {
+          "old_offset": 47397,
+          "replacement": 8
+        },
+        {
+          "old_offset": 47403,
+          "replacement": 9
+        },
+        {
+          "old_offset": 47427,
+          "replacement": 10
+        },
+        {
+          "old_offset": 47464,
+          "replacement": 11
+        },
+        {
+          "old_offset": 47470,
+          "replacement": 12
+        },
+        {
+          "old_offset": 47473,
+          "replacement": 13
+        },
+        {
+          "old_offset": 47479,
+          "replacement": 14
+        },
+        {
+          "old_offset": 47517,
+          "replacement": 15
+        },
+        {
+          "old_offset": 47523,
+          "replacement": 16
+        },
+        {
+          "old_offset": 47544,
+          "replacement": 17
+        },
+        {
+          "old_offset": 48115,
+          "replacement": 18
+        },
+        {
+          "old_offset": 48136,
+          "replacement": 8
+        },
+        {
+          "old_offset": 48142,
+          "replacement": 19
+        },
+        {
+          "old_offset": 48168,
+          "replacement": 20
+        },
+        {
+          "old_offset": 48195,
+          "replacement": 21
+        },
+        {
+          "old_offset": 48243,
+          "replacement": 22
+        },
+        {
+          "old_offset": 48244,
+          "replacement": 23
+        },
+        {
+          "old_offset": 48265,
+          "replacement": 24
+        },
+        {
+          "old_offset": 48268,
+          "replacement": 25
+        },
+        {
+          "old_offset": 48274,
+          "replacement": 26
+        },
+        {
+          "old_offset": 48283,
+          "replacement": 27
+        },
+        {
+          "old_offset": 48289,
+          "replacement": 28
+        },
+        {
+          "old_offset": 48301,
+          "replacement": 29
+        },
+        {
+          "old_offset": 48319,
+          "replacement": 30
+        },
+        {
+          "old_offset": 48343,
+          "replacement": 31
+        },
+        {
+          "old_offset": 48361,
+          "replacement": 32
+        },
+        {
+          "old_offset": 48370,
+          "replacement": 33
+        },
+        {
+          "old_offset": 48388,
+          "replacement": 34
+        },
+        {
+          "old_offset": 49432,
+          "replacement": 35
+        },
+        {
+          "old_offset": 49438,
+          "replacement": 36
+        },
+        {
+          "old_offset": 49480,
+          "replacement": 37
+        },
+        {
+          "old_offset": 49487,
+          "replacement": 38
+        },
+        {
+          "old_offset": 49498,
+          "replacement": 39
+        },
+        {
+          "old_offset": 49878,
+          "replacement": 40
+        },
+        {
+          "old_offset": 49890,
+          "replacement": 41
+        },
+        {
+          "old_offset": 49902,
+          "replacement": 42
+        },
+        {
+          "old_offset": 49914,
+          "replacement": 43
+        },
+        {
+          "old_offset": 49917,
+          "replacement": 44
+        },
+        {
+          "old_offset": 49944,
+          "replacement": 45
+        },
+        {
+          "old_offset": 49983,
+          "replacement": 46
+        },
+        {
+          "old_offset": 49998,
+          "replacement": 47
+        },
+        {
+          "old_offset": 50074,
+          "replacement": 48
+        },
+        {
+          "old_offset": 50087,
+          "replacement": 49
+        },
+        {
+          "old_offset": 50093,
+          "replacement": 50
+        },
+        {
+          "old_offset": 50117,
+          "replacement": 51
+        },
+        {
+          "old_offset": 50144,
+          "replacement": 52
+        },
+        {
+          "old_offset": 50159,
+          "replacement": 53
+        },
+        {
+          "old_offset": 50192,
+          "replacement": 54
+        },
+        {
+          "old_offset": 50207,
+          "replacement": 55
+        },
+        {
+          "old_offset": 50213,
+          "replacement": 56
+        },
+        {
+          "old_offset": 50249,
+          "replacement": 57
+        },
+        {
+          "old_offset": 50354,
+          "replacement": 58
+        },
+        {
+          "old_offset": 50366,
+          "replacement": 59
+        },
+        {
+          "old_offset": 50427,
+          "replacement": 60
+        },
+        {
+          "old_offset": 50429,
+          "replacement": 61
+        },
+        {
+          "old_offset": 50432,
+          "replacement": 62
+        },
+        {
+          "old_offset": 50444,
+          "replacement": 63
+        },
+        {
+          "old_offset": 50453,
+          "replacement": 64
+        },
+        {
+          "old_offset": 50496,
+          "replacement": 65
+        },
+        {
+          "old_offset": 50523,
+          "replacement": 66
+        },
+        {
+          "old_offset": 50559,
+          "replacement": 67
+        },
+        {
+          "old_offset": 50565,
+          "replacement": 68
+        },
+        {
+          "old_offset": 50568,
+          "replacement": 69
+        },
+        {
+          "old_offset": 50586,
+          "replacement": 70
+        },
+        {
+          "old_offset": 50597,
+          "replacement": 71
+        },
+        {
+          "old_offset": 51246,
+          "replacement": 72
+        },
+        {
+          "old_offset": 51247,
+          "replacement": 73
+        },
+        {
+          "old_offset": 51392,
+          "replacement": 2
+        },
+        {
+          "old_offset": 51407,
+          "replacement": 74
+        },
+        {
+          "old_offset": 51410,
+          "replacement": 75
+        },
+        {
+          "old_offset": 51422,
+          "replacement": 76
+        },
+        {
+          "old_offset": 51550,
+          "replacement": 77
+        },
+        {
+          "old_offset": 52285,
+          "replacement": 72
+        },
+        {
+          "old_offset": 52286,
+          "replacement": 78
+        }
+      ]
+    },
+    {
+      "path": "docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "old_sha256": "0535f885654dd45e34e255fe7a2049530a0d5c14f2356e00680a9d4084c6ee33",
+      "old_bytes": 40250,
+      "new_sha256": "20ec5748a84267ebb773e62c3574f40393c0f9fc6d7b2ae31c826545bb8d6396",
+      "new_bytes": 41445,
+      "edits": [
+        {
+          "old_offset": 26667,
+          "replacement": 1
+        },
+        {
+          "old_offset": 26680,
+          "replacement": 2
+        },
+        {
+          "old_offset": 26692,
+          "replacement": 3
+        },
+        {
+          "old_offset": 26695,
+          "replacement": 4
+        },
+        {
+          "old_offset": 26711,
+          "replacement": 5
+        },
+        {
+          "old_offset": 26740,
+          "replacement": 6
+        },
+        {
+          "old_offset": 26750,
+          "replacement": 7
+        },
+        {
+          "old_offset": 26901,
+          "replacement": 8
+        },
+        {
+          "old_offset": 26907,
+          "replacement": 9
+        },
+        {
+          "old_offset": 26931,
+          "replacement": 10
+        },
+        {
+          "old_offset": 26968,
+          "replacement": 11
+        },
+        {
+          "old_offset": 26974,
+          "replacement": 12
+        },
+        {
+          "old_offset": 26977,
+          "replacement": 13
+        },
+        {
+          "old_offset": 26983,
+          "replacement": 14
+        },
+        {
+          "old_offset": 27021,
+          "replacement": 15
+        },
+        {
+          "old_offset": 27027,
+          "replacement": 16
+        },
+        {
+          "old_offset": 27048,
+          "replacement": 17
+        },
+        {
+          "old_offset": 27395,
+          "replacement": 18
+        },
+        {
+          "old_offset": 27401,
+          "replacement": 8
+        },
+        {
+          "old_offset": 27407,
+          "replacement": 19
+        },
+        {
+          "old_offset": 27433,
+          "replacement": 20
+        },
+        {
+          "old_offset": 27460,
+          "replacement": 21
+        },
+        {
+          "old_offset": 27508,
+          "replacement": 22
+        },
+        {
+          "old_offset": 27509,
+          "replacement": 23
+        },
+        {
+          "old_offset": 27515,
+          "replacement": 24
+        },
+        {
+          "old_offset": 27518,
+          "replacement": 25
+        },
+        {
+          "old_offset": 27524,
+          "replacement": 26
+        },
+        {
+          "old_offset": 27533,
+          "replacement": 27
+        },
+        {
+          "old_offset": 27539,
+          "replacement": 28
+        },
+        {
+          "old_offset": 27551,
+          "replacement": 29
+        },
+        {
+          "old_offset": 27569,
+          "replacement": 79
+        },
+        {
+          "old_offset": 27593,
+          "replacement": 31
+        },
+        {
+          "old_offset": 27611,
+          "replacement": 80
+        },
+        {
+          "old_offset": 27620,
+          "replacement": 33
+        },
+        {
+          "old_offset": 27638,
+          "replacement": 34
+        },
+        {
+          "old_offset": 28398,
+          "replacement": 35
+        },
+        {
+          "old_offset": 28404,
+          "replacement": 36
+        },
+        {
+          "old_offset": 28446,
+          "replacement": 37
+        },
+        {
+          "old_offset": 28453,
+          "replacement": 38
+        },
+        {
+          "old_offset": 28464,
+          "replacement": 39
+        },
+        {
+          "old_offset": 28716,
+          "replacement": 40
+        },
+        {
+          "old_offset": 28728,
+          "replacement": 41
+        },
+        {
+          "old_offset": 28740,
+          "replacement": 42
+        },
+        {
+          "old_offset": 28752,
+          "replacement": 43
+        },
+        {
+          "old_offset": 28755,
+          "replacement": 44
+        },
+        {
+          "old_offset": 28782,
+          "replacement": 45
+        },
+        {
+          "old_offset": 28821,
+          "replacement": 46
+        },
+        {
+          "old_offset": 28836,
+          "replacement": 47
+        },
+        {
+          "old_offset": 28884,
+          "replacement": 48
+        },
+        {
+          "old_offset": 28897,
+          "replacement": 49
+        },
+        {
+          "old_offset": 28903,
+          "replacement": 50
+        },
+        {
+          "old_offset": 28927,
+          "replacement": 51
+        },
+        {
+          "old_offset": 28954,
+          "replacement": 52
+        },
+        {
+          "old_offset": 28969,
+          "replacement": 53
+        },
+        {
+          "old_offset": 29002,
+          "replacement": 54
+        },
+        {
+          "old_offset": 29017,
+          "replacement": 55
+        },
+        {
+          "old_offset": 29023,
+          "replacement": 56
+        },
+        {
+          "old_offset": 29059,
+          "replacement": 57
+        },
+        {
+          "old_offset": 29164,
+          "replacement": 58
+        },
+        {
+          "old_offset": 29176,
+          "replacement": 59
+        },
+        {
+          "old_offset": 29233,
+          "replacement": 60
+        },
+        {
+          "old_offset": 29235,
+          "replacement": 61
+        },
+        {
+          "old_offset": 29238,
+          "replacement": 62
+        },
+        {
+          "old_offset": 29250,
+          "replacement": 63
+        },
+        {
+          "old_offset": 29259,
+          "replacement": 64
+        },
+        {
+          "old_offset": 29302,
+          "replacement": 65
+        },
+        {
+          "old_offset": 29329,
+          "replacement": 66
+        },
+        {
+          "old_offset": 29365,
+          "replacement": 67
+        },
+        {
+          "old_offset": 29371,
+          "replacement": 68
+        },
+        {
+          "old_offset": 29374,
+          "replacement": 69
+        },
+        {
+          "old_offset": 29392,
+          "replacement": 70
+        },
+        {
+          "old_offset": 29403,
+          "replacement": 71
+        },
+        {
+          "old_offset": 29947,
+          "replacement": 81
+        },
+        {
+          "old_offset": 29975,
+          "replacement": 2
+        },
+        {
+          "old_offset": 29990,
+          "replacement": 74
+        },
+        {
+          "old_offset": 29993,
+          "replacement": 75
+        },
+        {
+          "old_offset": 30005,
+          "replacement": 76
+        },
+        {
+          "old_offset": 30114,
+          "replacement": 82
+        },
+        {
+          "old_offset": 40250,
+          "replacement": 83
+        }
+      ]
+    },
+    {
+      "path": "site/topics/fluoromonomers/index.html",
+      "old_sha256": "dc4fd895c13fa819715542825469e808666016e2e1bb7532968c804bede02a6e",
+      "old_bytes": 58542,
+      "new_sha256": "8108f9a3674b61fecb4f2a1a6fb71b2b1a95745eff95bb243d9f5d27a9160f46",
+      "new_bytes": 59881,
+      "edits": [
+        {
+          "old_offset": 29016,
+          "replacement": 1
+        },
+        {
+          "old_offset": 29029,
+          "replacement": 2
+        },
+        {
+          "old_offset": 29041,
+          "replacement": 3
+        },
+        {
+          "old_offset": 29044,
+          "replacement": 4
+        },
+        {
+          "old_offset": 29060,
+          "replacement": 5
+        },
+        {
+          "old_offset": 29089,
+          "replacement": 6
+        },
+        {
+          "old_offset": 29099,
+          "replacement": 7
+        },
+        {
+          "old_offset": 29255,
+          "replacement": 8
+        },
+        {
+          "old_offset": 29261,
+          "replacement": 9
+        },
+        {
+          "old_offset": 29285,
+          "replacement": 10
+        },
+        {
+          "old_offset": 29322,
+          "replacement": 11
+        },
+        {
+          "old_offset": 29328,
+          "replacement": 12
+        },
+        {
+          "old_offset": 29331,
+          "replacement": 13
+        },
+        {
+          "old_offset": 29337,
+          "replacement": 14
+        },
+        {
+          "old_offset": 29375,
+          "replacement": 15
+        },
+        {
+          "old_offset": 29381,
+          "replacement": 16
+        },
+        {
+          "old_offset": 29402,
+          "replacement": 17
+        },
+        {
+          "old_offset": 30057,
+          "replacement": 18
+        },
+        {
+          "old_offset": 30069,
+          "replacement": 8
+        },
+        {
+          "old_offset": 30075,
+          "replacement": 19
+        },
+        {
+          "old_offset": 30101,
+          "replacement": 20
+        },
+        {
+          "old_offset": 30128,
+          "replacement": 21
+        },
+        {
+          "old_offset": 30176,
+          "replacement": 22
+        },
+        {
+          "old_offset": 30177,
+          "replacement": 23
+        },
+        {
+          "old_offset": 30189,
+          "replacement": 24
+        },
+        {
+          "old_offset": 30192,
+          "replacement": 25
+        },
+        {
+          "old_offset": 30198,
+          "replacement": 26
+        },
+        {
+          "old_offset": 30207,
+          "replacement": 27
+        },
+        {
+          "old_offset": 30213,
+          "replacement": 28
+        },
+        {
+          "old_offset": 30225,
+          "replacement": 29
+        },
+        {
+          "old_offset": 30243,
+          "replacement": 84
+        },
+        {
+          "old_offset": 30267,
+          "replacement": 31
+        },
+        {
+          "old_offset": 30285,
+          "replacement": 85
+        },
+        {
+          "old_offset": 30294,
+          "replacement": 33
+        },
+        {
+          "old_offset": 30312,
+          "replacement": 34
+        },
+        {
+          "old_offset": 31224,
+          "replacement": 35
+        },
+        {
+          "old_offset": 31230,
+          "replacement": 36
+        },
+        {
+          "old_offset": 31272,
+          "replacement": 37
+        },
+        {
+          "old_offset": 31279,
+          "replacement": 38
+        },
+        {
+          "old_offset": 31290,
+          "replacement": 39
+        },
+        {
+          "old_offset": 31615,
+          "replacement": 40
+        },
+        {
+          "old_offset": 31627,
+          "replacement": 41
+        },
+        {
+          "old_offset": 31639,
+          "replacement": 42
+        },
+        {
+          "old_offset": 31651,
+          "replacement": 43
+        },
+        {
+          "old_offset": 31654,
+          "replacement": 44
+        },
+        {
+          "old_offset": 31681,
+          "replacement": 45
+        },
+        {
+          "old_offset": 31720,
+          "replacement": 46
+        },
+        {
+          "old_offset": 31735,
+          "replacement": 47
+        },
+        {
+          "old_offset": 31818,
+          "replacement": 48
+        },
+        {
+          "old_offset": 31831,
+          "replacement": 49
+        },
+        {
+          "old_offset": 31837,
+          "replacement": 50
+        },
+        {
+          "old_offset": 31861,
+          "replacement": 51
+        },
+        {
+          "old_offset": 31888,
+          "replacement": 52
+        },
+        {
+          "old_offset": 31903,
+          "replacement": 53
+        },
+        {
+          "old_offset": 31936,
+          "replacement": 54
+        },
+        {
+          "old_offset": 31951,
+          "replacement": 55
+        },
+        {
+          "old_offset": 31957,
+          "replacement": 56
+        },
+        {
+          "old_offset": 31993,
+          "replacement": 57
+        },
+        {
+          "old_offset": 32098,
+          "replacement": 58
+        },
+        {
+          "old_offset": 32110,
+          "replacement": 59
+        },
+        {
+          "old_offset": 32179,
+          "replacement": 60
+        },
+        {
+          "old_offset": 32181,
+          "replacement": 61
+        },
+        {
+          "old_offset": 32184,
+          "replacement": 62
+        },
+        {
+          "old_offset": 32196,
+          "replacement": 63
+        },
+        {
+          "old_offset": 32205,
+          "replacement": 64
+        },
+        {
+          "old_offset": 32248,
+          "replacement": 65
+        },
+        {
+          "old_offset": 32275,
+          "replacement": 66
+        },
+        {
+          "old_offset": 32311,
+          "replacement": 67
+        },
+        {
+          "old_offset": 32317,
+          "replacement": 68
+        },
+        {
+          "old_offset": 32320,
+          "replacement": 69
+        },
+        {
+          "old_offset": 32338,
+          "replacement": 70
+        },
+        {
+          "old_offset": 32349,
+          "replacement": 71
+        },
+        {
+          "old_offset": 33182,
+          "replacement": 86
+        },
+        {
+          "old_offset": 33318,
+          "replacement": 2
+        },
+        {
+          "old_offset": 33333,
+          "replacement": 74
+        },
+        {
+          "old_offset": 33336,
+          "replacement": 75
+        },
+        {
+          "old_offset": 33348,
+          "replacement": 76
+        },
+        {
+          "old_offset": 33354,
+          "replacement": 87
+        },
+        {
+          "old_offset": 51149,
+          "replacement": 88
+        }
+      ]
+    },
+    {
+      "path": "content/ai-research-section.v1.json",
+      "old_sha256": "3006f9133f0c59812468b177e86e55fc8d13d8e2fd92324bd9985f822ad3f930",
+      "old_bytes": 66752,
+      "new_sha256": "f27d998f4274f2202efcd4a036311c6c8cd1fff3b8a13b3e56512354a2d18aaf",
+      "new_bytes": 66739,
+      "edits": [
+        {
+          "old_offset": 32696,
+          "replacement": 89
+        },
+        {
+          "old_offset": 32790,
+          "replacement": 11
+        },
+        {
+          "old_offset": 32796,
+          "replacement": 90
+        },
+        {
+          "old_offset": 32799,
+          "replacement": 91
+        },
+        {
+          "old_offset": 32815,
+          "replacement": 92
+        },
+        {
+          "old_offset": 32817,
+          "replacement": 93
+        },
+        {
+          "old_offset": 32848,
+          "replacement": 94
+        },
+        {
+          "old_offset": 32893,
+          "replacement": 95
+        },
+        {
+          "old_offset": 32941,
+          "replacement": 96
+        },
+        {
+          "old_offset": 32980,
+          "replacement": 97
+        },
+        {
+          "old_offset": 33010,
+          "replacement": 98
+        }
+      ]
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "old_sha256": "03bbc0a90435473814efbaaad4c092b6f8ab7786db02bc32bade32b4e86cb68a",
+      "old_bytes": 35882,
+      "new_sha256": "1ba9ed4363b1080b6dc51cd568a080fdf44b6f9ff5b3c25247dccacea7ef9704",
+      "new_bytes": 35869,
+      "edits": [
+        {
+          "old_offset": 17495,
+          "replacement": 89
+        },
+        {
+          "old_offset": 17589,
+          "replacement": 11
+        },
+        {
+          "old_offset": 17595,
+          "replacement": 90
+        },
+        {
+          "old_offset": 17598,
+          "replacement": 91
+        },
+        {
+          "old_offset": 17614,
+          "replacement": 92
+        },
+        {
+          "old_offset": 17616,
+          "replacement": 93
+        },
+        {
+          "old_offset": 17647,
+          "replacement": 94
+        },
+        {
+          "old_offset": 17692,
+          "replacement": 95
+        },
+        {
+          "old_offset": 17740,
+          "replacement": 96
+        },
+        {
+          "old_offset": 17779,
+          "replacement": 97
+        },
+        {
+          "old_offset": 17809,
+          "replacement": 98
+        }
+      ]
+    },
+    {
+      "path": "site/research/index.html",
+      "old_sha256": "8a20ce07055fd8207c1038599cc9ccb9baf9e46d8d76233fcb09d4a82024df27",
+      "old_bytes": 49710,
+      "new_sha256": "c6817f7bea64843a36e21009aa3997feaf57e315fccd7b3e1a5e9e6abaf98223",
+      "new_bytes": 49697,
+      "edits": [
+        {
+          "old_offset": 27633,
+          "replacement": 89
+        },
+        {
+          "old_offset": 27727,
+          "replacement": 11
+        },
+        {
+          "old_offset": 27733,
+          "replacement": 90
+        },
+        {
+          "old_offset": 27736,
+          "replacement": 91
+        },
+        {
+          "old_offset": 27752,
+          "replacement": 92
+        },
+        {
+          "old_offset": 27754,
+          "replacement": 93
+        },
+        {
+          "old_offset": 27785,
+          "replacement": 94
+        },
+        {
+          "old_offset": 27830,
+          "replacement": 95
+        },
+        {
+          "old_offset": 27878,
+          "replacement": 96
+        },
+        {
+          "old_offset": 27917,
+          "replacement": 97
+        },
+        {
+          "old_offset": 27947,
+          "replacement": 98
+        }
+      ]
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "old_sha256": "ec97c60295ef2de87702805dfcf5d401e992caaf1a8fe5315db490ec8b1d7559",
+      "old_bytes": 241381,
+      "new_sha256": "169e46ad2bb8cbaafeb93599b66e5268e5d351533cdfb12d1c5278de1d51bf99",
+      "new_bytes": 260043,
+      "edits": [
+        {
+          "old_offset": 13415,
+          "replacement": 99
+        },
+        {
+          "old_offset": 23781,
+          "replacement": 100
+        },
+        {
+          "old_offset": 23943,
+          "replacement": 101
+        },
+        {
+          "old_offset": 23945,
+          "replacement": 102
+        },
+        {
+          "old_offset": 23949,
+          "replacement": 103
+        },
+        {
+          "old_offset": 23950,
+          "replacement": 104
+        },
+        {
+          "old_offset": 23955,
+          "replacement": 105
+        },
+        {
+          "old_offset": 23967,
+          "replacement": 106
+        },
+        {
+          "old_offset": 72939,
+          "replacement": 107
+        },
+        {
+          "old_offset": 221653,
+          "replacement": 108
+        },
+        {
+          "old_offset": 221659,
+          "replacement": 109
+        },
+        {
+          "old_offset": 221680,
+          "replacement": 110
+        },
+        {
+          "old_offset": 221681,
+          "replacement": 111
+        },
+        {
+          "old_offset": 221683,
+          "replacement": 112
+        },
+        {
+          "old_offset": 221687,
+          "replacement": 113
+        },
+        {
+          "old_offset": 221693,
+          "replacement": 114
+        },
+        {
+          "old_offset": 221695,
+          "replacement": 115
+        },
+        {
+          "old_offset": 221709,
+          "replacement": 116
+        },
+        {
+          "old_offset": 224748,
+          "replacement": 101
+        },
+        {
+          "old_offset": 224750,
+          "replacement": 102
+        },
+        {
+          "old_offset": 224754,
+          "replacement": 103
+        },
+        {
+          "old_offset": 224755,
+          "replacement": 104
+        },
+        {
+          "old_offset": 224760,
+          "replacement": 105
+        },
+        {
+          "old_offset": 224772,
+          "replacement": 106
+        },
+        {
+          "old_offset": 225068,
+          "replacement": 117
+        },
+        {
+          "old_offset": 225077,
+          "replacement": 118
+        },
+        {
+          "old_offset": 225078,
+          "replacement": 101
+        },
+        {
+          "old_offset": 225080,
+          "replacement": 102
+        },
+        {
+          "old_offset": 225084,
+          "replacement": 103
+        },
+        {
+          "old_offset": 225085,
+          "replacement": 104
+        },
+        {
+          "old_offset": 225090,
+          "replacement": 105
+        },
+        {
+          "old_offset": 225915,
+          "replacement": 117
+        },
+        {
+          "old_offset": 225924,
+          "replacement": 118
+        },
+        {
+          "old_offset": 225925,
+          "replacement": 101
+        },
+        {
+          "old_offset": 225927,
+          "replacement": 102
+        },
+        {
+          "old_offset": 225931,
+          "replacement": 103
+        },
+        {
+          "old_offset": 225932,
+          "replacement": 104
+        },
+        {
+          "old_offset": 225937,
+          "replacement": 105
+        },
+        {
+          "old_offset": 228500,
+          "replacement": 101
+        },
+        {
+          "old_offset": 228502,
+          "replacement": 102
+        },
+        {
+          "old_offset": 228506,
+          "replacement": 103
+        },
+        {
+          "old_offset": 228507,
+          "replacement": 104
+        },
+        {
+          "old_offset": 228512,
+          "replacement": 105
+        },
+        {
+          "old_offset": 228531,
+          "replacement": 106
+        },
+        {
+          "old_offset": 232051,
+          "replacement": 119
+        },
+        {
+          "old_offset": 232960,
+          "replacement": 120
+        },
+        {
+          "old_offset": 233022,
+          "replacement": 120
+        },
+        {
+          "old_offset": 233112,
+          "replacement": 121
+        },
+        {
+          "old_offset": 233113,
+          "replacement": 122
+        },
+        {
+          "old_offset": 233118,
+          "replacement": 123
+        },
+        {
+          "old_offset": 233245,
+          "replacement": 120
+        },
+        {
+          "old_offset": 233444,
+          "replacement": 124
+        }
+      ]
+    }
+  ],
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "M0_resumed": false,
+  "historical_achievement_independent_of_AI_review": true,
+  "new_quantum_calls": 0,
+  "new_model_API_calls": 0,
+  "changes": [
+    {
+      "path": "research/index.html",
+      "old_sha256": "8a20ce07055fd8207c1038599cc9ccb9baf9e46d8d76233fcb09d4a82024df27",
+      "old_bytes": 49710,
+      "new_sha256": "c6817f7bea64843a36e21009aa3997feaf57e315fccd7b3e1a5e9e6abaf98223",
+      "new_bytes": 49697,
+      "reason": "Present catalogue-qualified 2009 book extent without identifying page-291 volume or claiming original pages; refine only the final A02 AI-record summary and preserve all historical claims and paused M0"
+    },
+    {
+      "path": "topics/fluoromonomers/index.html",
+      "old_sha256": "dc4fd895c13fa819715542825469e808666016e2e1bb7532968c804bede02a6e",
+      "old_bytes": 58542,
+      "new_sha256": "8108f9a3674b61fecb4f2a1a6fb71b2b1a95745eff95bb243d9f5d27a9160f46",
+      "new_bytes": 59881,
+      "reason": "Present catalogue-qualified 2009 book extent without identifying page-291 volume or claiming original pages; refine only the final A02 AI-record summary and preserve all historical claims and paused M0"
+    }
+  ],
+  "additions": [],
+  "boundary": "Exactly seven permitted old files and two existing A02 topic/research HTML routes may change. Only source_trace[1], the existing book record, and append-only sources may change in A02 source data; source_trace[0] is exactly unchanged as JSON data, both fixed IDs are retained, and the exact prior twenty-two-source prefix is unchanged. Catalogue extent is exactly three volumes and [377,454,630] pages; volume-title mapping, cited-page volume and original book pages remain false. The complete AI registry differs only in the final A02 record summary string. Historical cards, cooperation, paper, technical/team objects, complete team/background HTML articles, pending items, ai_scope, inventory, renderers, homepage, README, other eight lines, A01, PFtB, original public JSON and M0 records remain identical. No new route, historical original scan, quantum calculation, model service or experiment is represented.",
+  "reconstruction": "Seven permitted fixed 11a927d predecessor files are reconstructed in memory using ordered exact UTF-8 text edits and a deduplicated replacement pool. No complete predecessor page or document is added. Existing v1-v19 declarations retain their original byte identities.",
+  "publish_allowlist": "Unchanged: sixteen static HTML pages, two original public JSON files and an empty .nojekyll marker, nineteen regular published files."
+}
