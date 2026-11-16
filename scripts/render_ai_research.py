@@ -353,7 +353,7 @@ def render_page(data: dict) -> str:
             body += '<div class="future-work" id="'+anchor(line)+'-future"><h3>未来设想（尚未开展）</h3><ul>'+''.join('<li>'+esc(row)+'</li>' for row in line['future_items'])+'</ul></div>'
         else:
             body = '<h3>已有资料与结果</h3><div class="record-grid">'+records+'</div>'+prior
-            body += '<h3>待核事项与边界</h3><ul>'+''.join('<li>'+esc(row)+'</li>' for row in line['boundaries'])+'</ul><p><b>下一步先补的证据：</b>'+esc(line['next_step'])+'</p><p><b>候选后续问题：</b>'+esc(line['future_question'])+'</p>'
+            body += '<h3>'+esc(line.get('boundary_title', '待核事项与边界'))+'</h3><ul>'+''.join('<li>'+esc(row)+'</li>' for row in line['boundaries'])+'</ul><p><b>'+esc(line.get('next_step_title', '下一步先补的证据'))+'：</b>'+esc(line['next_step'])+'</p><p><b>候选后续问题：</b>'+esc(line['future_question'])+'</p>'
         sections.append('<section class="research-line" id="'+anchor(line)+'" aria-labelledby="'
             +anchor(line)+'-title"><span class="status">研究资料与问题</span><h2 id="'
             +anchor(line)+'-title">'+esc(label(line))+'</h2>'
@@ -423,8 +423,8 @@ def render_document(data: dict) -> str:
             rows += ['**'+record['title']+'。**'+record['summary'], '', markdown_links(record['links']), '']
         for work in line.get('prior_work', []):
             rows += ['**'+work['source_id']+' · '+work['title']+'。**'+work['authors']+'，'+work['citation'], '', work['scope'], '', markdown_links(work['links']), '']
-        rows += ['### 待核事项与边界', '']+['- '+row for row in line['boundaries']]
-        rows += ['', '**下一步先补的证据：**'+line['next_step'], '', '**候选后续问题：**'+line['future_question'], '']
+        rows += ['### '+line.get('boundary_title', '待核事项与边界'), '']+['- '+row for row in line['boundaries']]
+        rows += ['', '**'+line.get('next_step_title', '下一步先补的证据')+'：**'+line['next_step'], '', '**候选后续问题：**'+line['future_question'], '']
         rows += literature_markdown(line)
         rows += ['### 史料与成果入口', '', markdown_links(line['source_links']), '']
     rows += ['## 维护与静态一致性检查', '',
