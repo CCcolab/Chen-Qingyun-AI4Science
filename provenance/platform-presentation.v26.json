@@ -1,0 +1,927 @@
+{
+  "schema_version": "26.0",
+  "presentation_id": "PLATFORM-A02-BIOGRAPHY-NARRATIVE-20261116-v26",
+  "created_at_utc": "2026-11-16T12:26:30.486838+00:00",
+  "publication_kind": "platform_a02_biography_narrative",
+  "authorization": "User request dated 2026-11-16 to present A02 historical academic achievements and collaborative roles from the established biography and attributed sources. Keep platform AI reading separate and remove public retrieval logs/unresolved inventories. Do not resume M0 or new scientific computation.",
+  "previous_presentation_commit": "37ed9a5008d4623be30713d3c18c48b417d10cfd",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v25.json",
+    "sha256": "61b8e4ebc4e4800253d886a617b98c9590c370c5ae494731edc8135ebf15e9c1"
+  },
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "allowed_html_paths": [
+    "research/index.html",
+    "topics/fluoromonomers/index.html"
+  ],
+  "added_html_paths": [],
+  "additions": [],
+  "allowed_marker_blocks": {
+    "research/index.html": [
+      "ai-a02"
+    ],
+    "topics/fluoromonomers/index.html": [
+      "A02_ACADEMIC_HISTORY",
+      "HERITAGE_CONTEXT"
+    ]
+  },
+  "allowed_ai_json_pointers": [
+    "/lines/1/question",
+    "/lines/1/ai_role",
+    "/lines/1/records",
+    "/lines/1/boundaries",
+    "/lines/1/next_step",
+    "/lines/1/future_question"
+  ],
+  "allowed_new_files": [
+    "content/a02-biography-narrative.v1.json",
+    "scripts/render_a02_biography.py",
+    "scripts/a02_biography_publication.py",
+    "provenance/platform-presentation.v26.json"
+  ],
+  "editorial_documents": [
+    {
+      "path": "scripts/render_a02_history.py",
+      "sha256": "ede516085ede5def83987ccf779b7b17207333280e793c13d5f6b2cede8bdfc1",
+      "bytes": 22740
+    },
+    {
+      "path": "scripts/render_heritage.py",
+      "sha256": "5eaa5bb95ce5d49efa11481ecae9273671aef5584087e52260d4829fce3dd897",
+      "bytes": 43030
+    },
+    {
+      "path": "docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "sha256": "c58e296391b1141f33bf6b9e8f79635323fe1000554d4083600272164a60eb21",
+      "bytes": 9064
+    },
+    {
+      "path": "content/ai-research-section.v1.json",
+      "sha256": "a113f3b6f1170f3a2209b007a88e45e126ef36aa153b73f401e22488a1edefee",
+      "bytes": 95684
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "sha256": "fa475e7192d225c2a86ecff9bf227dab4427c207dd0b45b24386d2cc3bbd22b1",
+      "bytes": 56290
+    },
+    {
+      "path": "content/a02-biography-narrative.v1.json",
+      "sha256": "37418b8249618689d06840b2c9f3b6d73d2acff10dcfc6f5452db605b4543589",
+      "bytes": 8606
+    },
+    {
+      "path": "scripts/render_a02_biography.py",
+      "sha256": "e96f30bac5ac91fcd2c04da0b01458c734743bbce299f27852e8539afaf19fe6",
+      "bytes": 14464
+    },
+    {
+      "path": "scripts/a01_primary_publication.py",
+      "sha256": "eb8a9163af1d6bf9ef6d8360b985c1e658fe899f78a0fc6447c84dfa2ff9387a",
+      "bytes": 21159
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "sha256": "1c6789296e3b22344ceeea647481af6d12169c1b34a8a13fbcf8fbe0a762c738",
+      "bytes": 309961
+    },
+    {
+      "path": "scripts/a02_biography_publication.py",
+      "sha256": "0d65572fc5f9b4b6693050dc5009abcc2e98522e188fcc5ace53041bc39e88a5",
+      "bytes": 23298
+    }
+  ],
+  "protected_website_members": {
+    "index.html": {
+      "sha256": "8b3532ee45c0fb33912f20a3bd7943043a348f10a370b9c6716e9edf3c0abf41",
+      "bytes": 257766
+    },
+    "pftb/index.html": {
+      "sha256": "42ca404f2ed70b7a3b0b5d8b0eb742a2509e5a5a70fd0be36a65028e61cbd1f6",
+      "bytes": 97587
+    },
+    "topics/f53/index.html": {
+      "sha256": "8def3379a75dda6665d7cb3ee6c32193fc7a61ec6b31098abbefe9218fea39fe",
+      "bytes": 8161
+    },
+    "topics/refrigerants/index.html": {
+      "sha256": "5d9b5a355b949f67c5de252727f8d4e4e7533abab8a666c49a0f932170153c4e",
+      "bytes": 10636
+    },
+    "topics/perfluorosulfonates/index.html": {
+      "sha256": "85a6f4330edb7607f61ca217b71d2ef6c12cb1af0d48aaaebf737acf3a212ea5",
+      "bytes": 8888
+    },
+    "topics/chen-reagent/index.html": {
+      "sha256": "14f08afd4062c0ae171f24e5fb225e5968b003e885edc206baf08ca352b630df",
+      "bytes": 19991
+    },
+    "topics/single-electron-transfer/index.html": {
+      "sha256": "79c84f89e25e576a03f34153b9eb85a5ff73815c8265a0222930d889390ea947",
+      "bytes": 10355
+    },
+    "topics/fluoroporphyrins/index.html": {
+      "sha256": "24b6bb744b594573487847c89bbb35571ea56bc15d444ebeac3339379dbc1875",
+      "bytes": 6018
+    },
+    "topics/fluorinated-small-rings/index.html": {
+      "sha256": "2413c83d4319746f41e940c04fe48bdeda28244235f5a9e8697285c187ba412d",
+      "bytes": 5924
+    },
+    "topics/deoxyfluorination/index.html": {
+      "sha256": "2aca9c13eb46f9fedfb02a2adfdc9423c207465f58608bcd671838d4d8045df5",
+      "bytes": 5550
+    },
+    "topics/sulfonyl-fluoride/index.html": {
+      "sha256": "fe944efbbfa5a7814015235f4ae3aae101db4046b0c9419986d6855d7ed15b49",
+      "bytes": 5043
+    },
+    "topics/index.html": {
+      "sha256": "44a5690d1e65195b9ff191d2a7ec37487070cdfafb191ae107962d5e0d7ab73c",
+      "bytes": 5055
+    },
+    "achievements/index.html": {
+      "sha256": "df20daf429c46e89e99085550067e8c1e9f7e283b10b7e8269f38da6a9d380ff",
+      "bytes": 95867
+    },
+    "data/public-sources.json": {
+      "sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+      "bytes": 33608
+    },
+    "data/achievement-lines.json": {
+      "sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+      "bytes": 39768
+    },
+    "README.txt": {
+      "sha256": "6e15068b7240ae47d633df3f777e81fbb9e46146ee5f4ab70011f09119b6bbc9",
+      "bytes": 336
+    },
+    "ROUTES.txt": {
+      "sha256": "a734c356877d4534285ab7d71b9fe0f7a17abbced4de3c52f8e60d335301e418",
+      "bytes": 949
+    },
+    "QA.txt": {
+      "sha256": "a60b5f382b31689fa17e2518b7079ef0660674fb62bddbbf564c7b74dfe51067",
+      "bytes": 290
+    },
+    "IONIC-ENTRY-RETEST.txt": {
+      "sha256": "3462b056891a27c335cc2620deb87b245b6c9aea3bdaec607c8a14beca69fe9d",
+      "bytes": 741
+    },
+    "topics/early-fluoroketones/index.html": {
+      "sha256": "eeffdcd82cca6ae6549db9d21b7059ac4c9db94cdc60337ffc3a6a75ae06af88",
+      "bytes": 257826
+    }
+  },
+  "reconstruction_kind": "deduplicated_exact_utf8_text_edits",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "M0_resumed": false,
+  "historical_achievement_independent_of_AI_review": true,
+  "new_quantum_calls": 0,
+  "new_model_API_calls": 0,
+  "changes": [
+    {
+      "path": "research/index.html",
+      "old_sha256": "1d5aaf560e21a37bcd865984207f4f931c9b8aee54533a3b3d8f0e87a732fc3c",
+      "old_bytes": 79210,
+      "new_sha256": "893f3f543cd573cf79275e3b46e9a20cad615ac4670f6a9bbcb5f4799817df02",
+      "new_bytes": 77246,
+      "reason": "Present biography-led A02 academic work and collaborative contributions, separating original history from platform AI reading and local unresolved records."
+    },
+    {
+      "path": "topics/fluoromonomers/index.html",
+      "old_sha256": "6972664021418b4337e5bb7785cc6bd77d5d7a96968bdfd41a6a8d7812fa2fa1",
+      "old_bytes": 60217,
+      "new_sha256": "ff79d077f5b74b8580ef06ac5e7c4c622b98c4f562daf9f75ae530e6f9ba199b",
+      "new_bytes": 18224,
+      "reason": "Present biography-led A02 academic work and collaborative contributions, separating original history from platform AI reading and local unresolved records."
+    }
+  ],
+  "reversible_text_files": [
+    {
+      "path": "scripts/render_a02_history.py",
+      "old_sha256": "0d598601ccbbd0064bc95b513055c32c7342459937a5504d5f7af74167be8e9c",
+      "old_bytes": 21602,
+      "new_sha256": "ede516085ede5def83987ccf779b7b17207333280e793c13d5f6b2cede8bdfc1",
+      "new_bytes": 22740,
+      "edits": [
+        {
+          "old_offset": 7785,
+          "replacement": 0
+        },
+        {
+          "old_offset": 13409,
+          "replacement": 1
+        },
+        {
+          "old_offset": 18346,
+          "replacement": 2
+        },
+        {
+          "old_offset": 18726,
+          "replacement": 3
+        },
+        {
+          "old_offset": 19142,
+          "replacement": 4
+        },
+        {
+          "old_offset": 19500,
+          "replacement": 2
+        }
+      ]
+    },
+    {
+      "path": "scripts/render_heritage.py",
+      "old_sha256": "07b1698b1c0485accd96cc0a6d6730bb164258e003737c9f370919920768f27d",
+      "old_bytes": 42653,
+      "new_sha256": "5eaa5bb95ce5d49efa11481ecae9273671aef5584087e52260d4829fce3dd897",
+      "new_bytes": 43030,
+      "edits": [
+        {
+          "old_offset": 31683,
+          "replacement": 5
+        }
+      ]
+    },
+    {
+      "path": "docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "old_sha256": "8e714347897b88902c12b714769dee46c59f0788e8b87e82f07a3414c2a1fc85",
+      "old_bytes": 41787,
+      "new_sha256": "c58e296391b1141f33bf6b9e8f79635323fe1000554d4083600272164a60eb21",
+      "new_bytes": 9064,
+      "edits": [
+        {
+          "old_offset": 55,
+          "replacement": 6
+        },
+        {
+          "old_offset": 99,
+          "replacement": 7
+        },
+        {
+          "old_offset": 359,
+          "replacement": 8
+        },
+        {
+          "old_offset": 409,
+          "replacement": 9
+        },
+        {
+          "old_offset": 693,
+          "replacement": 10
+        },
+        {
+          "old_offset": 903,
+          "replacement": 11
+        },
+        {
+          "old_offset": 999,
+          "replacement": 12
+        },
+        {
+          "old_offset": 1162,
+          "replacement": 13
+        },
+        {
+          "old_offset": 1219,
+          "replacement": 14
+        },
+        {
+          "old_offset": 1452,
+          "replacement": 15
+        },
+        {
+          "old_offset": 1593,
+          "replacement": 16
+        },
+        {
+          "old_offset": 1630,
+          "replacement": 17
+        },
+        {
+          "old_offset": 1794,
+          "replacement": 18
+        },
+        {
+          "old_offset": 1853,
+          "replacement": 19
+        },
+        {
+          "old_offset": 2096,
+          "replacement": 20
+        },
+        {
+          "old_offset": 2282,
+          "replacement": 21
+        },
+        {
+          "old_offset": 2370,
+          "replacement": 22
+        },
+        {
+          "old_offset": 2607,
+          "replacement": 23
+        },
+        {
+          "old_offset": 2657,
+          "replacement": 24
+        },
+        {
+          "old_offset": 2857,
+          "replacement": 25
+        },
+        {
+          "old_offset": 2920,
+          "replacement": 26
+        },
+        {
+          "old_offset": 3010,
+          "replacement": 27
+        },
+        {
+          "old_offset": 3328,
+          "replacement": 28
+        },
+        {
+          "old_offset": 3373,
+          "replacement": 29
+        },
+        {
+          "old_offset": 4106,
+          "replacement": 30
+        },
+        {
+          "old_offset": 4296,
+          "replacement": 31
+        },
+        {
+          "old_offset": 4341,
+          "replacement": 32
+        },
+        {
+          "old_offset": 4857,
+          "replacement": 33
+        },
+        {
+          "old_offset": 21007,
+          "replacement": 34
+        },
+        {
+          "old_offset": 21340,
+          "replacement": 35
+        },
+        {
+          "old_offset": 22217,
+          "replacement": 36
+        },
+        {
+          "old_offset": 22401,
+          "replacement": 37
+        },
+        {
+          "old_offset": 22583,
+          "replacement": 38
+        },
+        {
+          "old_offset": 22606,
+          "replacement": 39
+        }
+      ]
+    },
+    {
+      "path": "content/ai-research-section.v1.json",
+      "old_sha256": "6cbea7f1efeec435ebbaca9d80b39431e7fc14f9b27ecae6bf3c4847eb8d9bf4",
+      "old_bytes": 97792,
+      "new_sha256": "a113f3b6f1170f3a2209b007a88e45e126ef36aa153b73f401e22488a1edefee",
+      "new_bytes": 95684,
+      "edits": [
+        {
+          "old_offset": 31960,
+          "replacement": 40
+        },
+        {
+          "old_offset": 32295,
+          "replacement": 41
+        },
+        {
+          "old_offset": 32621,
+          "replacement": 42
+        },
+        {
+          "old_offset": 32838,
+          "replacement": 43
+        },
+        {
+          "old_offset": 33208,
+          "replacement": 44
+        },
+        {
+          "old_offset": 33395,
+          "replacement": 45
+        },
+        {
+          "old_offset": 33653,
+          "replacement": 46
+        },
+        {
+          "old_offset": 34087,
+          "replacement": 47
+        },
+        {
+          "old_offset": 35569,
+          "replacement": 48
+        },
+        {
+          "old_offset": 36076,
+          "replacement": 49
+        },
+        {
+          "old_offset": 36320,
+          "replacement": 50
+        },
+        {
+          "old_offset": 37576,
+          "replacement": 51
+        }
+      ]
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "old_sha256": "b2a97edbfece2aad7691eb0e18e23cc142802145a427b9569c4a14ef8176ec46",
+      "old_bytes": 58068,
+      "new_sha256": "fa475e7192d225c2a86ecff9bf227dab4427c207dd0b45b24386d2cc3bbd22b1",
+      "new_bytes": 56290,
+      "edits": [
+        {
+          "old_offset": 16791,
+          "replacement": 52
+        },
+        {
+          "old_offset": 16907,
+          "replacement": 53
+        },
+        {
+          "old_offset": 17103,
+          "replacement": 54
+        },
+        {
+          "old_offset": 17346,
+          "replacement": 55
+        },
+        {
+          "old_offset": 17486,
+          "replacement": 56
+        },
+        {
+          "old_offset": 17773,
+          "replacement": 57
+        },
+        {
+          "old_offset": 18034,
+          "replacement": 58
+        },
+        {
+          "old_offset": 18385,
+          "replacement": 59
+        },
+        {
+          "old_offset": 20078,
+          "replacement": 60
+        },
+        {
+          "old_offset": 21284,
+          "replacement": 61
+        },
+        {
+          "old_offset": 21483,
+          "replacement": 62
+        }
+      ]
+    },
+    {
+      "path": "site/topics/fluoromonomers/index.html",
+      "old_sha256": "6972664021418b4337e5bb7785cc6bd77d5d7a96968bdfd41a6a8d7812fa2fa1",
+      "old_bytes": 60217,
+      "new_sha256": "ff79d077f5b74b8580ef06ac5e7c4c622b98c4f562daf9f75ae530e6f9ba199b",
+      "new_bytes": 18224,
+      "edits": [
+        {
+          "old_offset": 2458,
+          "replacement": 63
+        },
+        {
+          "old_offset": 19235,
+          "replacement": 64
+        },
+        {
+          "old_offset": 56103,
+          "replacement": 65
+        }
+      ]
+    },
+    {
+      "path": "site/research/index.html",
+      "old_sha256": "1d5aaf560e21a37bcd865984207f4f931c9b8aee54533a3b3d8f0e87a732fc3c",
+      "old_bytes": 79210,
+      "new_sha256": "893f3f543cd573cf79275e3b46e9a20cad615ac4670f6a9bbcb5f4799817df02",
+      "new_bytes": 77246,
+      "edits": [
+        {
+          "old_offset": 27554,
+          "replacement": 66
+        }
+      ]
+    },
+    {
+      "path": "scripts/a01_primary_publication.py",
+      "old_sha256": "7e10bf18334117a005fced60d7110d31c04184d768c32ad4cd3e2fe80bfa1c5b",
+      "old_bytes": 20493,
+      "new_sha256": "eb8a9163af1d6bf9ef6d8360b985c1e658fe899f78a0fc6447c84dfa2ff9387a",
+      "new_bytes": 21159,
+      "edits": [
+        {
+          "old_offset": 208,
+          "replacement": 67
+        },
+        {
+          "old_offset": 8089,
+          "replacement": 68
+        },
+        {
+          "old_offset": 8274,
+          "replacement": 68
+        },
+        {
+          "old_offset": 11697,
+          "replacement": 68
+        },
+        {
+          "old_offset": 11994,
+          "replacement": 69
+        },
+        {
+          "old_offset": 12233,
+          "replacement": 68
+        },
+        {
+          "old_offset": 12423,
+          "replacement": 68
+        },
+        {
+          "old_offset": 15486,
+          "replacement": 68
+        },
+        {
+          "old_offset": 15955,
+          "replacement": 68
+        },
+        {
+          "old_offset": 16152,
+          "replacement": 70
+        },
+        {
+          "old_offset": 17084,
+          "replacement": 71
+        },
+        {
+          "old_offset": 18933,
+          "replacement": 72
+        },
+        {
+          "old_offset": 19153,
+          "replacement": 73
+        },
+        {
+          "old_offset": 20401,
+          "replacement": 74
+        }
+      ]
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "old_sha256": "7689978367a4a9c7b846fc21a191cb284d7d11f7b0a6b1759d51da2aa41c2e59",
+      "old_bytes": 309731,
+      "new_sha256": "1c6789296e3b22344ceeea647481af6d12169c1b34a8a13fbcf8fbe0a762c738",
+      "new_bytes": 309961,
+      "edits": [
+        {
+          "old_offset": 96041,
+          "replacement": 75
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": ") -> str:",
+      "new": ", root: Path = ROOT) -> str:\n    if (root/'content/a02-biography-narrative.v1.json').exists():\n        from render_a02_biography import render_block as render_biography_block\n        return render_biography_block(root)"
+    },
+    {
+      "old": ") -> str:",
+      "new": ", root: Path = ROOT) -> str:\n    if (root/'content/a02-biography-narrative.v1.json').exists():\n        from render_a02_biography import load as load_biography, render_document as render_biography_document\n        return render_biography_document(load_biography(root))"
+    },
+    {
+      "old": "",
+      "new": ", root"
+    },
+    {
+      "old": "",
+      "new": "    if (root/'content/a02-biography-narrative.v1.json').exists():\n        from render_a02_biography import render_heritage_context\n        context = '<!-- HERITAGE_CONTEXT_BEGIN -->\\n'+project_html(render_heritage_context(root),ROUTE)+'\\n<!-- HERITAGE_CONTEXT_END -->'\n        s, count = re.subn(r'<!-- HERITAGE_CONTEXT_BEGIN -->.*?<!-- HERITAGE_CONTEXT_END -->',lambda _:context,s,flags=re.S)\n        if count != 1:\n            raise ValueError('Expected one A02 historical navigation marker')\n"
+    },
+    {
+      "old": "",
+      "new": "    if (root/'content/a02-biography-narrative.v1.json').exists():\n        from render_a02_biography import inspect_biography\n        return inspect_biography(root)\n"
+    },
+    {
+      "old": "",
+      "new": "        if (context['path'] == 'topics/fluoromonomers/index.html'\n                and (root/'content/a02-biography-narrative.v1.json').exists()):\n            from render_a02_biography import render_heritage_context\n            blocks[context['path']] = {'HERITAGE_CONTEXT': marker_block(\n                'HERITAGE_CONTEXT', render_heritage_context(root))}\n            continue\n"
+    },
+    {
+      "old": "与分离，到材料需求和调聚化学",
+      "new": "制取与低温分离到氟橡胶和氟油"
+    },
+    {
+      "old": "这条成果线连接三类不同工作：六氟丙烯等单体的制取与分离、团队的氟橡胶研究，以及调聚氟油和短链含氟产物化学。以下按对象、原始出处和合作关系分别介绍陈庆云与合作者的具体贡献",
+      "new": "以《氟缘笃志：陈庆云传》为主线，这条成果线呈现陈庆云与合作者怎样把单体来源、反应与分离、聚合材料和应用需求连接起来。六氟丙烯的制取与低温分离是材料研究的基础工作；氟橡胶2号、3号及调聚氟溴油则体现了团队研究与生产条件的接续"
+    },
+    {
+      "old": "从单体制取与分离突破材料原料瓶颈",
+      "new": "六氟丙烯：把制取与分离作为同一个研究问题"
+    },
+    {
+      "old": "陈庆云回国后加入蒋锡夔的氟橡胶课题组，重点探索六氟丙烯的新制取路线，并解决副产物分离问题。机构生平将这项工作概括为：以四氟乙烯裂解路线替代原有电解氟化途径，为六氟丙烯的工业化生产提供依据",
+      "new": "1960年秋，陈庆云回国后加入蒋锡夔的氟橡胶课题组。传记记述，当时氟橡胶已有样品，但六氟丙烯的获取仍是原料瓶颈；陈先生承担的新任务，是探索更适合获取这种单体的路线与条件"
+    },
+    {
+      "old": "**学术意义：**贡献具体落在单体来源及分离这一材料基础环节；从已有材料样品向可扩大制备的原料条件推进，不能只用笼统“研制氟橡胶”掩盖研究对象",
+      "new": "在二氟一氯甲烷裂解制四氟乙烯的工作中，延长裂解时间会出现少量六氟丙烯。陈庆云与蒋锡夔等围绕这一观察讨论、探索条件，把目标推进到增加六氟丙烯的获取。传记记载，经过两年多的努力，找到了制取条件，为大量制备提供依据"
+    },
+    {
+      "old": "出处：p35–37；p36注①陈庆云访谈2018-01-03；年表p114；HERITAGE-S01、CQ-R28",
+      "new": "裂解产物复杂，使分离成为这项工作的关键组成部分。研究需要高温加热、冷冻和低温分馏，高温炉、低温分馏与检测仪器也要自行制作。陈庆云等承担低温分馏实验，研究室同事保障冷冻介质和物资；他在留苏期间积累的操作经验在这一任务中发挥了作用"
+    },
+    {
+      "old": "- 不补造工艺数据，不把研究路线改进写成个人独立完成某吨级生产项目；不将回忆中的条件描述改成现代实验操作协议",
+      "new": "**学术意义：**具体贡献既在单体来源，也在把复杂产物分开这一实验基础环节。只有把反应条件和分离同时解决，新的含氟原料才能进一步服务聚合材料研究"
+    },
+    {
+      "old": "## 氟橡胶1号既有成果与后续材料工作分列",
+      "new": "出处：传记35–37页，尤其36页任务说明、37页裂解观察与低温分馏；上海有机所生平的六氟丙烯段；HERITAGE-S01、CQ-R28。"
+    },
+    {
+      "old": "氟橡胶1号是蒋锡夔、胡亚东等团队在陈先生加入前已有的阶段成果。陈先生加入后承担的六氟丙烯工作，与后续材料改进相联系；传记另记团队陆续开展氟橡胶2号、3号研究。",
+      "new": "## 氟橡胶：单体研究支持2号、3号的团队接续"
+    },
+    {
+      "old": "**学术意义：**把已有材料、原料改进与后续牌号分开，既能说明研究接续，也保存共同攻关的真实分工",
+      "new": "陈庆云加入以前，蒋锡夔、胡亚东等课题组成员已经开展氟橡胶研究并研制出后来命名的氟橡胶1号。传记把这一前期成果与陈先生加入后的单体任务分别叙述，保存了共同攻关的接续关系"
+    },
+    {
+      "old": "出处：p35–37；HERITAGE-S01",
+      "new": "传记37页明确记载，陈庆云等人陆续研制成功氟橡胶2号和3号，并把六氟丙烯、偏氟乙烯、四氟乙烯的共聚研究与这些材料工作联系起来。六氟丙烯来源的改善，使单体研究与聚合材料发展形成了相互支持的关系"
+    },
+    {
+      "old": "- 不把先期1号成果全部归陈先生，不把书中历史牌号直接等同今日商业牌号，不从传记单句推定精确共聚比例或材料性能",
+      "new": "**学术意义：**陈先生的材料贡献应与单体制取、低温分离及团队聚合工作一起理解。这里保留历史1号、2号、3号的原称，不将每个牌号自行配上现代商品名称、组成比例或性能指标"
+    },
+    {
+      "old": "## 调聚氟溴油：从化学对象走向实验厂协作",
+      "new": "出处：传记35–37页；36页课题组与1号前期工作，37页2号、3号研制成功的记述；HERITAGE-S01。"
+    },
+    {
+      "old": "调入上海后，陈庆云与同事参加调聚氟溴陀螺油研究，并与实验厂的放大和应用相衔接。传记把这一工作与航天仪器所需支承液联系起来，年表将1964年的调聚研究目的记为制备氟油。",
+      "new": "## 调聚氟溴陀螺油：从材料需求到实验厂生产"
+    },
+    {
+      "old": "**学术意义：**材料研究不仅是得到化合物，还涉及面向特定用途的液体对象、分离与工程接续；调聚反应为后续研究提供了具体科学问题",
+      "new": "传记以航天陀螺支承液的需求介绍这一工作：陀螺悬浮和稳定运转需要合适的液体材料。迁沪后，陈庆云与研究室同事开展调聚氟溴陀螺油研究，书中记载其方法以三氟溴乙烯为原料"
+    },
+    {
+      "old": "出处：p39、注②；年表p115（1964年条目）；HERITAGE-S01、HERITAGE-S04",
+      "new": "传记39页明确记述，氟溴油研制成功后，在上海有机所实验厂生产，并应用于航天工业。这是一条由研究室的调聚化学研究，接续到实验厂生产和应用需求的合作链"
+    },
+    {
+      "old": "- 只陈述传记及其转引范围。全氟烃油、调聚氟溴陀螺油、后来的氟氯油分别登记；不把机构所有氟油成果并为陈先生一项个人成果，也不把历史“目前/依然”平移成2026年现状",
+      "new": "**学术意义：**这项成果把具体含氟反应与功能液体需求联系起来，显示研究不仅在于合成，也包括产物性质与用途的衔接。早期调聚氟溴油、其他团队的全氟烃油和后来的氟氯液体各按其研究对象与原作者介绍"
+    },
+    {
+      "old": "## 陈先生团队：具体贡献与原件追查",
+      "new": "出处：传记39页“氟油研制与调聚反应”节；相关组织与工厂背景参见机构报道；HERITAGE-S01、HERITAGE-S04。"
+    },
+    {
+      "old": "依据传记与机构资料细化研究对象和合作分工；同期技术原件仍待取得，不以其他团队数据填补。公开检索未取得不表示原件不存在或原成就不成立。",
+      "new": "## 共同攻关：研究、分离、保障与生产"
+    },
+    {
+      "old": "### 六氟丙烯：从副产物观察到制取与分离问题",
+      "new": "传记中的材料成果来自相互配合的工作环节。以下按书中明确叙述的人物和团队角色介绍，不按职务或后来声望补分个人份额。"
+    },
+    {
+      "old": "陈先生团队工作 · 据传记与机构回顾；同期试制／装置原件未取得",
+      "new": "| 人物与团队 | 具体工作 | 出处 |\n| --- | --- | --- |\n| 蒋锡夔、胡亚东等课题组成员 | 蒋锡夔任组长、胡亚东任副组长；在陈庆云加入前开展氟橡胶1号等前期工作。 | 传记35–36页 |\n| 陈庆云与蒋锡夔等 | 围绕六氟丙烯来源讨论研究任务，探索裂解制取条件，使单体工作服务后续材料研究。 | 传记36–37页 |\n| 陈庆云等实验人员 | 承担低温分馏实验，结合反应与分离解决原料获取问题；留苏操作经验与新任务相接。 | 传记37页 |\n| 研究室的保障人员 | 承担冷冻介质等物资保障，与实验人员共同支撑低温分离。 | 传记37页 |\n| 陈庆云与研究室同事、上海有机所实验厂 | 研究室开展调聚氟溴油研究，实验厂接续生产，面向航天应用需求。 | 传记39页 |"
+    },
+    {
+      "old": "据传记p.35–37，陈庆云1960年秋加入蒋锡夔的氟橡胶组后，首项任务是改善六氟丙烯来源。已有样品并未解决原料供给；新的裂解路线还必须解决副产物多、低温分离困难的问题。机构供稿也将贡献具体落在六氟丙烯获取与团队条件探索上。",
+      "new": "### 1963年迁沪：让研究经验与工业条件结合"
+    },
+    {
+      "old": "**传记所记研究问题与技术环节**",
+      "new": "1963年7月，陈庆云随蒋锡夔课题组由北京迁往上海。传记38–39页把北京的高分子与实验经验、上海的原料和工业条件相联系。机构报道还记录了人员与仪器一同迁移的情景：色谱仪和高温炉随团队南迁，使已有研究能够更快接续。这一组织变化为后续氟化学和材料研究提供了条件。"
+    },
+    {
+      "old": "| 环节 | 传记中的具体叙述 | 仍需原件确认 |\n|---|---|---|\n| 实验观察 | 在二氟一氯甲烷高温裂解制四氟乙烯的研究中，延长裂解时间时发现少量六氟丙烯 | 实验日期、操作者、投料与原始组成记录 |\n| 路线探索 | 陈与蒋等讨论条件优化，使研究目标转向获得更多六氟丙烯 | 具体工况、停留时间、转化率、选择性及收率 |\n| 分离难题 | 低温冷凝、分馏后按沸点差异分收，副产物分离成为关键环节 | 装置图、分馏温度／压力、馏分和纯度记录 |\n| 研究条件 | 高温炉、低温分馏仪和检测仪器需要自行制作 | 设计者、制作人员、图纸、仪器型号及检测校准档案 |",
+      "new": "出处：传记38–39页；中国科学院《“上海氟”，何以为？》第2节。"
+    },
+    {
+      "old": "- 这是历史研究过程的释读，不是可执行的现代实验协议。书中600–700°C属于四氟乙烯裂解的背景叙述，不能当作已核实的陈团队新路线工况。",
+      "new": "## 后续基础研究：调聚产物的骨架与端基转化"
+    },
+    {
+      "old": "**原料称谓与过程层次分别登记**",
+      "new": "陈庆云、马振中、蒋锡夔、张元发、贾世茂在1980年《化学学报》论文中研究偏氟乙烯与全卤代烷烃的调聚及产物转化。原刊把具体骨架、端基、光谱与化学转化关联起来，体现了从含氟材料需求走向基础反应研究的接续。以下保留已整理的原刊观察及其出处，成果归原作者。"
+    },
+    {
+      "old": "| 来源 | 所载起点或过程 | 目前处理 |\n|---|---|---|\n| 传记p.37 | 从二氟一氯甲烷制四氟乙烯的观察谈起，随后讨论直接裂解获取六氟丙烯；同段也提四氟乙烯气体裂解 | 保留上下文，尚未取得完整流程原件 |\n| 上海有机所生平 | 四氟乙烯高温裂解路线 | 保留机构原叙述，不自动等同传记全部流程 |\n| 上海有机所纪念资料 | 聚四氟乙烯高温裂解路线 | 与其他记载分列，待原料链和批次证据核对 |",
+      "new": "**原论文：**偏氟乙烯与全卤代烷烃的调聚反应及其产物的研究；《化学学报》1980，38(2)：175–184。"
+    },
+    {
+      "old": "- 这些称谓可能涉及起始原料、中间体或不同操作阶段；现阶段既不直接认定互相矛盾，也不拼接成已经证实的单一工艺。他组1963年论文不能解决陈团队的路线身份。\n\n**署名与合作：**据传记，蒋锡夔与陈庆云等共同讨论任务；陈与技术人员承担低温分馏实验，另有同事保障冷冻介质和物资。书中未列参与这些操作的完整姓名，也没有“陈指导技术人员”的上下级表述。留苏期间的操作经验与新任务的联系，仍按传记叙述身份保留。\n\n**学术意义与范围：**开拓性贡献应具体呈现为围绕单体供应，把裂解观察、条件探索与复杂混合物分离结合起来，为后续材料工作创造原料条件；不缩写成个人独立完成全部橡胶，也不在缺少原表时添加产率或优先权结论。\n\n待取得原件：\n\n- 已定位《陈庆云访谈》2018-01-03、学术成长资料采集工程数据库（传记p.36注①）；原录音／逐字稿尚未取得。p.37工艺段未另给同期试制报告编号。\n- 1960–1963年试制报告、实验本、装置图、自制仪器和低温分离原表尚未取得；具体档号、人员署名与合作分工待核。\n- 单体交付批次、纯度及化学所—上海有机所之间的技术移交原件待核。化学所沿革确认1963年机构接续，不能替代交接文件。\n\n已核读范围：已重读传记印刷p.35–37及p.114；机构回顾已读。未读取采集数据库原访谈或同期技术原件。\n\n出处：HERITAGE-S01、CQ-R28、S1、A02-TEAM-MMCS2025、A02-TEAM-IC-HISTORY。\n\n[机构供稿：六氟丙烯任务与团队贡献](https://www.mmcs.org.cn/xwz/kxjrl/art/2025/art_63580329680c4348b69105bfbcb7749c.html)\n[化学所1963年研究接续记录](https://ic.cas.cn/about/lsyg/)\n\n### 氟橡胶2号、3号：材料接续与授奖原件追查\n\n团队历史接续已有叙述 · 逐牌号技术与物性原件待核\n\n传记p.37将2号、3号的后续研制与六氟丙烯等单体工作联系起来；没有逐牌号给出共聚组成、配比和物性。陈先生1960年加入前的1号成果、其后承担的单体任务及团队材料工作仍分别归属。\n\n**可追查的证书线索及其资格**\n\n| 已有资料 | 能确认的记录 | 尚不能确认 |\n|---|---|---|\n| 化学所获奖目录 | 1966年FJ-23合成方法及旧目录主要完成人登记 | 原证书编号、技术附件及与历史1号／2号／3号的对应 |\n| 黎占亭纪念文第5节 | 回顾组长蒋锡夔、副组长胡亚东及课题组接续，并把1966年发明证书联系到1号 | 该文未列FJ-23编号或证书图，不能凭同年授奖建立身份等号 |\n| 传记p.35–37 | 区分陈加入前的1号与其加入后的六氟丙烯及2号／3号工作 | 逐牌号试制日期、聚合记录、样品号、实测物性和逐人分工 |\n\n- 新增回顾只提供查档方向。FJ-23、历史1号／2号／3号及现代商品牌号之间的对应，须有原始书面依据。\n\n**署名与合作：**先期1号按蒋锡夔、胡亚东等团队成果介绍；陈先生的单体获取和分离贡献另列。旧目录保留胡亚东、蒋锡夔、蒋丽金、路之康、王秀岗名单，不因一份项目名单替其他工作补作者或否定参与。\n\n**学术意义与范围：**材料成果依赖单体、聚合、表征、放大等合作环节；只有补齐逐牌号原件，才能进一步说明具体材料改进及各环节贡献。\n\n待取得原件：\n\n- 1966年发明证书原图、编号与技术附件未取得；需要同时核对FJ-23登记和1号授奖回顾。\n- 2号、3号同期任务书、试制／鉴定报告、聚合配方、样品编号和原始物性表未取得；不填补配比、强度、耐温或寿命数值。\n- 化学所、上海有机所与试制／生产单位间的样品、单体及技术交接文件未取得。\n\n已核读范围：传记、机构成果登记与纪念文已核对；未取得历史2号／3号原始技术附件或物性原表。\n\n出处：HERITAGE-S01、A02-TECH-FJ23、A02-TECH-FJ23-OLD、A02-TEAM-JIANG-RECOLLECTION。\n\n[黎占亭回顾：研究组与1966年证书线索](https://chenjiang.fudan.edu.cn/0b/95/c48389a789397/page.htm)\n\n### 早期调聚氟溴油：原料、研究室与实验厂接续\n\n据传记转引的历史成果 · 所引原页、配方和物性原件未取得\n\n传记p.39记陈庆云与研究室同事以三氟溴乙烯为原料开展调聚氟溴陀螺油研究，随后接续到上海有机所实验厂生产；年表p.115把1964年的卤代烷／含氟烯烃调聚与制备氟油联系起来。两处没有给出完整配方、馏分、定量物性或人员分工表。\n\n**传记引据与下一份应取得的原件**\n\n| 现有依据 | 已到达的位置 | 待取得资料 |\n|---|---|---|\n| 传记p.39注② | 引《中国科学院》编辑委员会编，2009年，第291页；未标册次 | 2009版版权页、目录／册次页、p.291及相邻页 |\n| CiNii同名1994版书目 | 上、中、下三册；只是较早版馆藏记录 | 核对2009版实际册次与页码，不能以1994版目录替代原页 |\n| 图书馆保存的Gale丛书介绍 | 提供电子书版本追查途径；介绍册不含目标页 | 通过合法馆藏取得目标书页，再追其原始引据或档号 |\n| 年表1964年条目及研究室—实验厂叙述 | 有历史研究与生产接续的记述 | 同批油品配方、密度／黏度／凝点原表、放大与交付记录 |\n\n- 仅取得目录与丛书介绍，不等于取得《中国科学院》2009版正文。原页未明册次前，不预设在上、中或下册。\n\n**署名与合作：**陈与研究室同事的调聚研究、实验厂放大和使用单位检测应分别追踪；现有材料未列全部人员及逐人任务，暂不补姓名或个人份额。早期氟溴油与机构全氟烃油、后来的氟氯液体分别登记。\n\n**学术意义与范围：**可以说明陈先生的含氟反应研究与特定液体材料需求相衔接；对产品身份、性能和工厂协作的进一步评价，仍依赖原始技术与交付证据。\n\n待取得原件：\n\n- 2009版《中国科学院》正确册次的p.291及相邻页仍未取得，传记转引尚未闭合。\n- 1964年前后调聚氟溴油的实验记录、配方／工艺报告、馏分与批次标识、原始物性及测试条件仍未取得。\n- 实验厂放大、供样、应用测试与交接原件及完整分工仍待核；没有已核实档号，不推定资料不存在或涉密。\n\n已核读范围：已核传记p.39注②及年表p.115；馆藏书目与电子书介绍可读，目标2009版书页未取得。\n\n出处：HERITAGE-S01、A02-TEAM-CATALOG、A02-TEAM-GALE。\n\n[CiNii同名1994版馆藏目录（非2009原页）](https://ci.nii.ac.jp/ncid/BA71150630)\n[图书馆电子书丛书介绍（非目标正文）](https://www.lib.ntu.edu.tw/doc/CL/ebook/2012/12_china.pdf)\n\n## 同期他组与相关材料背景\n\n以下不作陈团队同期原始成果证据；原作者、材料身份和原报数据保留。\n\n### 六氟丙烯制取与低温分离：同期公开原文\n\n1963年他组原始论文 · 陈团队归属尚未连接\n\n孙家珍、高国经的《四氟乙烯和全氟丙烯的辐射共聚合》记载了聚四氟乙烯热裂、低温分馏与单体色谱检查。原作者属中国科学院应用化学研究所；该文提供同期方法证据，不作为陈庆云课题组的试制或供料记录。\n\n**原刊p.123的原料与分离记录**\n\n| 环节 | 原文记录 | 可以支持的范围 |\n|---|---|---|\n| 单体来源 | 四氟乙烯和全氟丙烯均由热裂聚四氟乙烯得到 | 确认该论文使用PTFE原料，不能替陈团队确定投料 |\n| 分离 | 经低温分馏 | 有同期分离方法记载；未提供可用于本项目的装置与分馏温度表 |\n| 组成检查 | Al₂O₃吸附柱气相色谱，原文报告只有一个组分 | 未给定量纯度、检出限或可复查色谱图，不能写成100%纯 |\n\n- 文中的−78°C是共聚反应条件，不是上述低温分馏的温度。共聚动力学与转化率也不转作陈团队2号／3号胶的技术数据。\n\n**署名与合作：**孙家珍、高国经／中国科学院应用化学研究所；文中未见明确的陈庆云、蒋锡夔、胡亚东或化学所供料署名。未署名不证明绝无联系，目前仅未建立关联。\n\n**学术意义与范围：**把“裂解—分离—组成检查”落实到可读的同期原文，同时明确哪些环节还不能连接到陈先生承担的路线与低温分离工作。\n\n待核事项：\n\n- 陈团队1960–1962年原始试制报告、装置图、投料、收率、纯度及移交批次仍待取得。\n- 机构生平的“四氟乙烯”与纪念册的“聚四氟乙烯”仍分列，不能用另一团队论文替两者作校订。\n\n核读范围：原刊p.123–130，全部8页已目视核读\n\n出处：A02-TECH-HFP1963。\n\n[期刊原文目录](https://www.gfzxb.org/cn/article/7088538)\n[官方原刊PDF](https://www.gfzxb.org/rc-pub/front/front-article/download/7088538/lowqualitypdf/%E5%9B%9B%E6%B0%9F%E4%B9%99%E7%83%AF%E5%92%8C%E5%85%A8%E6%B0%9F%E4%B8%99%E7%83%AF%E7%9A%84%E8%BE%90%E5%B0%84%E5%85%B1%E8%81%9A%E5%90%88.pdf)\n\n本机原刊PDF的SHA-256：`8fcedd74df43ae4f91dd76070ec56ef293fb5caa6edfca8aaf6c5fa38b182e0f`；不分发原文扫描件。\n\n### 氟橡胶2号、3号：成果登记与原始技术缺口\n\n机构第一方成果登记及历史回顾 · 尚非逐牌号技术原件\n\n化学所现行获奖总表列出1966年“氟橡胶FJ-23的合成方法”。这一登记提供了可追查的成果名称与团队线索，但FJ-23与传记中的2号、3号之间，尚未取得足以建立对应关系的原始文书。\n\n**机构登记与已有叙述各自能说明什么**\n\n| 资料 | 所载记录 | 证据边界 |\n|---|---|---|\n| 化学所现行获奖总表 | 1966年；氟橡胶FJ-23的合成方法；国家发明奖；无等级；单位排序1 | 是机构历史元数据，不是原发明证书、配方或物性表 |\n| 化学所旧获奖目录 | 列主要完成人：胡亚东、蒋锡夔、蒋丽金、路之康、王秀岗 | 依旧目录检索记录保留名单；原授奖文书和分工仍待核 |\n| 传记所记2号、3号接续 | 陈先生加入后的单体、分离和团队材料工作分别记载 | 不从序号推定精确单体比例，也不据不同项目名单否定或扩大个人贡献 |\n\n- 不把FJ-23、历史2号／3号和现代F26／F246自动画等号；现代厂商工艺及其他胶种物性不填入历史试制表。\n\n**署名与合作：**有明确完成人字段的登记保留原名单；陈先生承担的六氟丙烯与分离工作仍依其传记及原始资料另行归属，不按名单差异互相替代。\n\n**学术意义与范围：**把集体成果、单体基础工作和后续材料牌号分开，给后续追查合成、鉴定和技术交接档案确定具体项目名称。\n\n待核事项：\n\n- 历史2号、3号的同期合成报告、逐牌号单体组成、聚合及检测条件、实测物性表仍未取得。\n- FJ-23原授奖证书、技术说明及与2号／3号的身份桥待核；不能补造配比、强度、耐温或寿命数值。\n\n核读范围：现行机构获奖总表已读取；具名旧目录通过公开检索记录定位，未取得授奖原件\n\n出处：A02-TECH-FJ23、A02-TECH-FJ23-OLD、HERITAGE-S01。\n\n[化学所现行获奖总表](https://ic.cas.cn/results/hj/hjgk/)\n[旧获奖目录（具名登记）](https://www.ic.cas.cn/kycg/hj/index_13.html)\n\n### 氟氯系列液体：原始物性与跨所供样记录\n\n1986年相关机构材料实测 · 非陈个人成果或早期氟溴油性能表\n\n杨义、范滇元（上海光机所）的《氟氯系列折射率匹配液的研究和应用》报告FL-G系列液体的光学、电学与应用测试。论文致谢明确上海有机所附属工厂提供试样，中国科大实习生刘文旭参加部分测试。\n\n**原刊p.50表1：实测量与作者修正值分列**\n\n| 原刊型号 | n_D（钠线实测） | n₁.₀₆μm（作者色散修正） |\n|---|---|---|\n| FL-G-5 | 1.3870 | 1.371 |\n| FL-G-35 | 1.3914 | 1.375 |\n| FL-G-100 | 1.3937 | 1.377 |\n| FL-G-330 | 1.3975 | 1.381 |\n\n- 折射率无量纲；原文未报告测量温度。1.06 μm列由作者按色散关系修正，不写成该波长的直接实测，也不是平台新增计算。\n- 型号后的5、35、100、330只按原刊牌号保留，不解释为已测黏度。原表1.3870等数值按原图记录，不自行改成1.4870。\n\n**原刊p.50表2：特定装置下的耐压记录**\n\n| 原刊型号 | 耐压 | 耐压时间 |\n|---|---|---|\n| FL-G-100 | >20 kV | >1.5 min |\n| FL-G-330 | >20 kV | >1.5 min |\n\n- 原文电极直径3 mm、间距1.0 mm。以上为该测试条件下的原报值，不外推为长期寿命或一般介电强度。\n\n**署名与合作：**作者及测量工作按上海光机所杨义、范滇元署名；供样按上海有机所附属工厂致谢登记，莫国贤姓名可辨，另一供样者姓名首字仍待核；刘文旭参与部分测试。未据此认定陈先生参与这篇论文。\n\n**学术意义与范围：**这份原刊把工厂试样与有条件的光学、电学测量及器件应用联系起来，能具体展示供样—测量—应用的合作。它提供相关氟氯材料物性，仍不能填补早期调聚氟溴陀螺油的数据空缺。\n\n待核事项：\n\n- FL-G各型号的批次、完整配方、测量温度及与历史调聚产品的身份链待核。\n- 陈团队早期氟溴陀螺油的原始密度、黏度、凝点、质量验收及交付档案仍待取得；不得用本表代替。\n\n核读范围：原刊p.49–51及续p.40，PDF全部4页已目视核读\n\n出处：A02-TECH-FL1986。\n\n[1986年官方原文PDF](https://www.researching.cn/ArticlePdf/m00001/1986/13/1/1986-01-0049.pdf)\n\n本机原刊PDF的SHA-256：`65fd88297752f1411b279d315a68a7399244aebbd0a90d766b8a4f407ef736d4`；不分发原文扫描件。\n\n## 1980年偏氟乙烯调聚原刊\n\n偏氟乙烯与全卤代烷烃的调聚反应及其产物的研究\n\n原作者：陈庆云、马振中、蒋锡夔、张元发、贾世茂；《化学学报》1980，38(2)：175–184。\n\n同一偏氟乙烯单体与不同全卤代烷烃反应，会得到怎样的短链骨架和端基？怎样结合多种表征与化学转化判断主要加成方向，并将产物继续转化？\n\n核读范围：已取得原刊175–184页并核读全部10页；指定胺名、中英文结构编号及产物式的文内对照已完成。文献观察、原作者解释与平台核校分开，不授予真实样品结构或机理认证。\n\n| 研究对象／比较 | 原文结果与证据 | 原刊定位 |\n|---|---|---",
+      "new": "| 研究对象 | 原文结果与证据 | 原刊定位 |\n| --- | --- | --- "
+    },
+    {
+      "old": "**科学意义：**这项工作把偏氟乙烯的调聚由“得到低聚物”推进到骨架、端基和主要加成方向的具体辨识，再通过衍生转化连接到新的含氟中间体与材料辅助组分。原作者对部分羧酸盐乳化用途的描述，提供了基础反应与材料需求相联系的研究线索",
+      "new": "这篇论文研究具体调聚产物及衍生转化；它与早期航天氟溴陀螺油是不同层次的记录。原作者的定性解释、所报数值和平台资料整理分别标明，文献整理不作新的实验或机理验证"
+    },
+    {
+      "old": "- 原文对极性因素的讨论保留原作者解释身份；主要方向不等于100%选择性，谱学与化学互证也不是平台新机理验证。\n- 所列调聚物、调聚氟溴陀螺油、全氟烃油及氟橡胶牌号不是同一化学对象；产物系列与历史工业产品不能只凭名称相似等同。\n- 表3的n按该酸式独立定义，不把不同表的编号或计数混用。收率、熔点和紫外数值为历史原报值，不是平台新实验或现代性能认证。\n- 部分调聚羧酸碱金属盐的乳化用途属原文定性报告；未从该文取得可直接引用的定量乳化性能对照，不据此推断产业采用或环境安全。\n- 指定胺名、编号和产物式对照已完成；中文正文与英文摘要对两种烯烃的不同记述仍并列保存，不据此选择一版作为实际实验产物或裁定异文成因。",
+      "new": "## AI辅助资料整理与历史成果分开呈现"
+    },
+    {
+      "old": "[官方论文入口](https://sioc-journal.cn/Jwk_hxxb/CN/Y1980/V38/I2/175) · [原刊PDF](https://sioc-journal.cn/Jwk_hxxb/CN/article/downloadArticleFile.do?attachType=PDF&id=342478)",
+      "new": "平台以传记和机构资料介绍既有历史成果；AI用于关联人物、化学对象、原文与用途，并核对平台新增引用的转录和解释。具体文献对照放在下一层AI资料页。资料整理不是超过原作者工作的科学新发现，也不作为历史成就成立的前置认证。平台新增释读保持review_required、release_eligible=false；M0继续暂停。"
+    },
+    {
+      "old": "已取得PDF的SHA-256：`867cce89df4f116e11854e7a28968c8286894a5f18b68c719ca203ab58a718d7`。原文PDF留本机，网页不分发全文；AI核读不代替专业结构签认。",
+      "new": "[A02（含氟单体、氟橡胶与氟油）AI资料整理](https://cccolab.github.io/Chen-Qingyun-AI4Science/research/index.html#ai-a02)"
+    },
+    {
+      "old": "合作与研究接续",
+      "new": "参考资料"
+    },
+    {
+      "old": "### 制取单体，离不开分离、仪器与原料保障\n\n传记记述，六氟丙烯研究要同时面对反应与分离：仪器需要自行制作，技术人员承担低温分离，其他同事保障冷冻介质和物资。陈先生在留苏时期积累的实验经验，也参与到这项新任务中。材料进展由各环节共同支撑。\n\n出处：p35–37；p36注①陈庆云访谈2018-01-03；HERITAGE-S01。\n\n### 1963年南迁：让聚合经验与工业条件相接\n\n1963年7月，陈庆云随蒋锡夔课题组由北京迁往上海。传记所引回忆强调，北京的高分子实验经验与上海的原料、厂家和技术条件互补；机构报道还记述了人员与仪器一同迁移的情景。这是研究团队与工业环境的整合。\n\n出处：p38–39；p38注②陈庆云访谈2018-01-26，p39注①陈庆云访谈2018-01-03；年表p115首条；HERITAGE-S01、HERITAGE-S04。\n\n## AI辅助资料整理：本人访谈与所引书页\n\n以下是传记引据的定位工作；原始访谈和目标书页尚未取得，目录信息不作为新增历史成果、工艺或性能证据。\n\n### 2018年本人访谈：原录定位与采集项目\n\n已核引用元数据与项目目录 · 完整文字稿／音视频及当次档号待取得\n\n传记p.36注①引用《陈庆云访谈》2018-01-03；同书p.6注①进一步记访谈地点上海、资料存于采集工程数据库。这些是后出传记对原访谈的引据，不等于平台已取得该次原录，也不能保证p.37每一技术句都是它的逐字转录。\n\n**访谈来源各层次的实际状态**\n\n| 定位事项 | 已核资料 | 仍需确认 |\n|---|---|---|\n| 当次访谈 | 题名、2018-01-03、上海、采集工程数据库存地（据传记脚注） | 当次采访者、时长、馆藏档号、完整文字稿及录音／录像 |\n| 具体报告线索（2019） | 官方报道参考文献[1]列朱晶《氟缘笃志：陈庆云传》，老科学家学术成长资料采集工程研究报告，2019 | 报告正文、资料目录及附件未取得；不能与后来朱晶／刘超署名的公开图书或2018-01-03原录自动等同 |\n| 采集项目 | 博物馆列负责人黄智静、承建单位上海有机所 | 项目负责人不自动等于1月3日采访者或A02（含氟单体、氟橡胶与氟油）问题的转录者 |\n| 另一采访日期 | 书前彩页图注记2018-05-15黄智静、朱晶采访 | 与1月3日分列，不能合并成同一次访谈 |\n| 学术资料检索 | 已定位口述、音视频、研究报告等类别；可读公开页显示系统升级提示 | 未取得该次条目或原录；页面提示不证明资料不存在 |\n| 公众影音目录 | 已展开的公开目录列有人物专题片《砥志研思七十年，一片丹心兴邦梦》，专题目录标2021-09-06 | 专题片不代替2018-01-03完整原录，未见二者的原始身份对应 |\n\n- 此栏是平台AI辅助资料定位工作，不授予新的工艺、产率或机理结论；网页导航参数不作为档号。\n\n**证据范围：**未取得完整访谈或2019研究报告。研究报告是后出的学术成长研究文本，其官方引据只支持定向调阅；不作为1960年代试制报告。原书照片仅用于本机核对图注，不公开分发。\n\n待取得的原件：\n\n- 拟调阅：2018-01-03上海《陈庆云访谈》的原始目录记录、采访者、录制时长、馆藏档号、完整逐字稿及原录。\n- 定向调阅朱晶2019年《氟缘笃志：陈庆云传》采集工程研究报告的题名页、目录、原始资料索引和访谈附录；先查是否列出2018-01-03条目及档号，再追所引A02（含氟单体、氟橡胶与氟油）试制报告、实验本和装置图。报告及附件均待取得。\n- 取得原录后定位六氟丙烯首项任务、裂解／低温分离、自制装置及协作者的实际段落；再追所提试制报告、实验本、图纸和交接文件。当前未取得这些原件。\n\n出处：HERITAGE-S01、A02-TRACE-MMCS-PROJECT、A02-TRACE-MMCS-SEARCH、A02-TRACE-MMCS-VIDEO、A02-TRACE-REPORT2019。\n\n[采集项目目录](https://www.mmcs.org.cn/kxjfc/kxjfc/cqy9449/index.html)\n[学术资料检索入口](https://www.mmcs.org.cn/xsb/zljs/index.html)\n[公开影音目录（专题片）](https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/yyzx0231/index.html)\n[2019研究报告的官方引据（文末参考文献[1]）](https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/bd0292/art/2023/art_e2d76717639749c0a6713c2b08a9971a.html)\n\n### 《中国科学院》2009版第291页：册次仍待核\n\n国图2009年书目记三册及各册页数 · 所引p.291的分册归属和原页待核\n\n传记p.39注②所引为《中国科学院》编辑委员会编、当代中国出版社、2009年、第291页，未注明册次。国图同名2009年详细书目记载体为3册(377;454;630页)，出版者为当代中国出版社、香港祖国出版社。册数和页数已有书目依据，但尚未取得分册题名、目录及原页，不能据页数排列确定p.291属于哪册。\n\n**目标著作与候选入口分别辨识**\n\n| 资料 | 已核资料的身份 | 不能据此认定 |\n|---|---|---|\n| 传记所引《中国科学院》 | 当代中国出版社，2009，p.291；注释缺册次 | 尚不能确认上、中或下册，也未取得所引原文 |\n| 2009年正式书目与载体形态 | 国图记录UCS01005727202，载体形态记3册(377;454;630页)，尺寸26cm | 这是书目所记，未目视原书；分册名称与这三组页数的对应、所引p.291归属尚未确认 |\n| 书目责任说明与定位号 | 责任说明记卷主编钱临照、谷羽；国图书目号006115647，书目库NLC01 | 不据此分配原实验或章节贡献；书目号及各馆记录号均不作索书号、访谈档号 |\n| 书目所列馆藏线索 | 国图详情的馆藏分布列有国家图书馆、湖北省图书馆、湖南图书馆等机构 | 馆藏链接不等于目标分册已调到或原页已取得；具体分册和可调阅状态须由馆方记录确认 |\n| 《中国科学院年鉴·2009》馆藏 | 文献情报中心馆藏：科学出版社，ISBN9787030252586 | 书名、出版社与目标不同；年鉴不是传记所引著作 |\n| 较早版《中国科学院》馆藏 | CiNii列1994版上、中、下三册的馆藏目录记录 | 不能把1994版册次、ISBN或分页直接转给2009版 |\n| 2009相关数据库目录线索 | 2015年数据库介绍截图有上／下记录，但未给目标版权页、完整目录和正文；同屏不同书重复ISBN | 演示截图不完整；册数已有国图详细书目依据，截图仍不能确定分册题名、章节或p.291归属 |\n| 合法数据库途径 | 自然科学史研究所图书馆列共和国国史数据库，说明所内IP访问；原有Gale介绍亦只到丛书层级 | 目前尚未从中取得目标书页，不以入口可见充当原文已取得 |\n\n- 2009年书目的册数和页数已核读，分册题名、目录及所引p.291归属仍待核；三册均超过291页，不能仅凭页码排除任一册。馆藏和编目数据不替代实体书原页，未取得不等于原件不存在。\n\n**证据范围：**已核的是2009年国图书目所记三册及页数，尚未目视原书题名页、版权页、目录或第290–292页，不能确定传记所引p.291的分册归属。相关合作分工和书内引据待据原页核读，配方与物性原表仍待另取；后出史述不直接当作同期实验原表。\n\n待取得的原件：\n\n- 按国图书目号006115647（NLC01）及各馆具体书目记录，调阅2009年《中国科学院》三册的题名页、版权页、完整目录和分册名称—页数对应。不能只凭整套ISBN或377／454／630页的排列认定所引p.291属于哪册。\n- 册次确认后取得p.290–292及必要相邻页，保留页眉、章节名和书内脚注；核对三氟溴乙烯调聚氟油、人员、研究室与实验厂的原文。\n- 再据原页追早期氟溴油配方、分馏／批次、密度／黏度／凝点原表、装置与放大／交付报告；当前这些原件仍待取得。\n\n出处：HERITAGE-S01、A02-TEAM-CATALOG、A02-TEAM-GALE、A02-TRACE-LAS-YEARBOOK、A02-TRACE-IHNS-DATABASE、A02-TRACE-EASL-CATALOG、A02-TRACE-NLC2009、A02-TRACE-NLC2009-EXTENT。\n\n[国家图书馆2009年书目（三册及页数已有书目依据，目标分册待核）](https://meta.nlc.cn/v2/detail/UCS01005727202?b_tit=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2)\n[国图详细编目数据（含载体形态及责任说明）](https://meta.nlc.cn/api/v1/item/UCS01005727202/1/999?b_tit=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2)\n[年鉴馆藏（与目标书分开）](https://www.las.ac.cn/front/book/detail?id=58be6463c35e65fb5e16727919db598a)\n[1994版馆藏目录（非2009原页）](https://ci.nii.ac.jp/ncid/BA71150630)\n[合法机构数据库访问说明](https://www.ihns.ac.cn/njgsz/zcbm/lytsg/zydh/sjkdh/zwbk/202310/t20231026_6909863.html)\n[2009相关目录截图（演示PDF第12页，非原书）](https://www.easl.org/images/Presentations/2015/2015-Vendors-2%20Seth%20Curley%20-%20Vista%20Goosuu.pdf)\n\n## 待核事项\n\n- 六氟丙烯原始试制、低温分离装置及交付档案待补；氟橡胶1号前期成果、后续2号／3号的原始牌号、组成与技术交接记录分别核对。\n- 调聚氟溴陀螺油所引2009年机构史p.291原页、配方和实测质量档案待补，不把传记中的历史应用时态平移为当代现状。\n- 机构生平写“四氟乙烯”，纪念资料S1写“聚四氟乙烯”；两种投料称谓的关系待原始路线与装置记录核对，不预设为同一物料。\n- 1963年他组原文确认PTFE热裂与低温分馏的同期技术，但与陈团队供料、合作和原始装置的关联仍未建立；不能借它消除两机构投料称谓差异。\n- FJ-23与历史2号／3号之间的对应文书，以及2号／3号原始配方和实测物性表仍缺；不以现代商业牌号填表。\n- 1986年FL-G氟氯液体与早期调聚氟溴陀螺油分列；前者有物性原报值和供样致谢，不能直接归陈个人或代作后者性能证据。\n- 传记p.37从二氟一氯甲烷制四氟乙烯的观察谈起；与机构TFE／PTFE记载的原料、过程层次及批次关系待原始工艺核对，不武断判定矛盾或拼成单一路线。\n- 《陈庆云访谈》2018-01-03原录音／逐字稿、六氟丙烯同期试制和装置原件未取得；低温分馏分工仍据传记。\n- FJ-23登记与晚近1号授奖回顾分列；1966原证书、历史2号／3号技术物性附件待核。\n- 氟溴油传记引《中国科学院》2009版p.291缺册次；已定位较早版馆藏与电子书检索途径，未取得目标原页。\n- 2018本人访谈已定位采集项目与学术检索入口，完整原录、当次档号和采访者仍待核；5月15日照片不转作1月3日采访证据。\n- 2009版《中国科学院》p.291册次仍未核定；新提供的《中国科学院年鉴·2009》（科学出版社）与目标书分开，需调阅正确分册版权页、目录及p.290–292。\n\n## AI辅助工作的范围\n\n平台AI工作包括已有原刊核读、对象消歧和引据追踪。已区分2018访谈元数据、项目目录、公开专题片、馆藏及目标书页；访谈原录和2009版《中国科学院》p.291均未取得，册次仍待核。历史成果仍归陈先生及原合作者，其他团队资料仅作背景；未新增六氟丙烯试制、装置、2号／3号技术物性或早期氟溴油原件。尚未开展本线新的复算、量化计算、实验或材料性能验证。M0继续暂停；释读保持review_required、release_eligible=false。 指定胺名、结构编号和产物式的AI辅助文献核校已完成，对照与原页见下一层研究资料；历史成果正文与平台新增释读分开，文字校勘不作实验或机理验证。\n\n## 来源与原文定位\n\n- **HERITAGE-S01**：朱晶、刘超：《氟缘笃志：陈庆云传》。传记叙述、书中转引访谈及年表；本地研究底本印刷p.35–39、114–115；原PDF与书页不公开分发。\n- **CQ-R28**：[上海有机所：陈庆云院士生平](https://sioc.cas.cn/dncqy/sp/)。机构历史回顾；科研贡献中的六氟丙烯路线段。\n- **S1**：[上海有机所：陈庆云纪念资料](https://sioc.cas.cn/kxj/ml/cqy/jnc/)。机构纪念资料；六氟丙烯与研究范围相关段落。\n- **HERITAGE-S04**：[中国科学院：“上海氟”，何以为？](https://www.cas.cn/zt/kjzt/kjzlzqzl/kjzlzq/202406/t20240621_5022275.shtml)。机构历史报道；第1–2节：机构氟油、团队迁沪与实验厂背景，不能合并各团队归属。\n- **A02-P1980**：[陈庆云等：偏氟乙烯与全卤代烷烃的调聚反应及其产物的研究](https://sioc-journal.cn/Jwk_hxxb/CN/Y1980/V38/I2/175)。原始论文，官方PDF已取得并AI核读全部10页；1980，38(2)：175–184；既有书目登记CQ-H13所指论文。\n- **A02-TECH-HFP1963**：[孙家珍、高国经：四氟乙烯和全氟丙烯的辐射共聚合](https://www.gfzxb.org/cn/article/7088538)。他组同期原始论文，原刊扫描已取得并核读8页；《高分子通讯》1963，p.123–130；原料与低温分馏见p.123。原刊／目录月份和“辐射／幅射”题名字形分别登记。\n- **A02-TECH-FJ23**：[中国科学院化学研究所：获奖概况](https://ic.cas.cn/results/hj/hjgk/)。机构第一方历史成果登记，非原始技术说明；1966年“氟橡胶FJ-23的合成方法”条目。\n- **A02-TECH-FJ23-OLD**：[中国科学院化学研究所：旧获奖目录](https://www.ic.cas.cn/kycg/hj/index_13.html)。机构旧目录检索记录，具名字段；原授奖文书未取得；1966年FJ-23条目及主要完成人。\n- **A02-TECH-FL1986**：[杨义、范滇元：氟氯系列折射率匹配液的研究和应用](https://www.researching.cn/ArticlePdf/m00001/1986/13/1/1986-01-0049.pdf)。不同作者的相关材料原始论文，全部4页已取得并核读；《中国激光》1986，13(1)：49–51，续40；p.50表1、表2及续p.40供样致谢。\n- **A02-TEAM-MMCS2025**：[中国科学家博物馆：陈庆云专题报道（上海有机所供稿）](https://www.mmcs.org.cn/xwz/kxjrl/art/2025/art_63580329680c4348b69105bfbcb7749c.html)。机构供稿的历史回顾，非同期试制报告；2025-01-26；六氟丙烯首项任务、团队条件探索与1963年迁沪段。\n- **A02-TEAM-IC-HISTORY**：[中国科学院化学研究所：历史沿革](https://ic.cas.cn/about/lsyg/)。机构第一方沿革，非人员交接原件；发展历程：有机氟工作于1963年并入上海有机所。\n- **A02-TEAM-JIANG-RECOLLECTION**：[黎占亭：蒋锡夔院士诞辰100周年纪念（复旦大学网页）](https://chenjiang.fudan.edu.cn/0b/95/c48389a789397/page.htm)。学者纪念回顾，非1966年发明证书或技术附件；第5节“研制中国第一块氟橡胶”：组长／副组长、1号与1966年证书叙述；无FJ-23编号或证书图。\n- **A02-TEAM-CATALOG**：[CiNii Books：《中国科学院》1994版馆藏目录](https://ci.nii.ac.jp/ncid/BA71150630)。书目与馆藏记录，不是2009版正文；NCID BA71150630；上、中、下三册；ISBN 7800920984。仅用于提示核对版次／册次。\n- **A02-TEAM-GALE**：[NTU图书馆保存的Gale《当代中国丛书》介绍](https://www.lib.ntu.edu.tw/doc/CL/ebook/2012/12_china.pdf)。电子书丛书介绍，不含目标《中国科学院》第291页；2页介绍册：2009纸本与2011电子书；提供图书馆版本追查入口，不能证明目标页内容。\n- **A02-TRACE-MMCS-PROJECT**：[中国科学家博物馆：陈庆云采集专题](https://www.mmcs.org.cn/kxjfc/kxjfc/cqy9449/index.html)。采集项目公开目录，非当次访谈原录；采集小组栏：负责人黄智静，承建上海有机所；不据此指定2018-01-03当次采访者。\n- **A02-TRACE-MMCS-SEARCH**：[中国科学家博物馆学术版：资料检索](https://www.mmcs.org.cn/xsb/zljs/index.html)。资料检索公开入口，目标原录未取得；口述文字、音视频、档案／图纸／研究报告类别；已核读的公开页显示系统升级提示，不能判断馆藏有无。\n- **A02-TRACE-MMCS-VIDEO**：[中国科学家博物馆：陈庆云影音再现](https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/yyzx0231/index.html)。已展开的公开影音目录，非2018访谈档号；已展开的公开目录第一页列有人物专题片；未见2018-01-03原录直链，不据此断言其他馆藏不存在。\n- **A02-TRACE-LAS-YEARBOOK**：[文献情报中心：《中国科学院年鉴·2009》馆藏](https://www.las.ac.cn/front/book/detail?id=58be6463c35e65fb5e16727919db598a)。已核读的纸本馆藏元数据；非目标历史著作；科学出版社，2009，ISBN9787030252586；与传记所引当代中国出版社《中国科学院》分开。\n- **A02-TRACE-IHNS-DATABASE**：[自然科学史研究所图书馆：共和国国史数据库](https://www.ihns.ac.cn/njgsz/zcbm/lytsg/zydh/sjkdh/zwbk/202310/t20231026_6909863.html)。机构数据库访问说明，未取得库内目标书页；标明所内IP访问并提供检索入口；不代表已经读取《中国科学院》2009版正文。\n- **A02-TRACE-EASL-CATALOG**：[EASL 2015：共和国国史数据库介绍](https://www.easl.org/images/Presentations/2015/2015-Vendors-2%20Seth%20Curley%20-%20Vista%20Goosuu.pdf)。数据库演示文稿，非目标书原文；PDF第12页目录截图列2009年《中国科学院（上）／（下）》；同屏不同书重复ISBN，不以此判断实际分册、ISBN或p.291归属。\n- **A02-TRACE-NLC2009**：[国家图书馆：《中国科学院》2009年书目](https://meta.nlc.cn/v2/detail/UCS01005727202?b_tit=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2)。已核读的正式书目及馆藏链接，非原书正文；书目记录UCS01005727202：题名《中国科学院》，当代中国出版社、香港祖国出版社，2009；未提供目标分册、完整目录或p.290–292原页，书目号码不是技术档案号。\n- **A02-TRACE-REPORT2019**：[中国科学家博物馆：陈庆云：六十余年研究一种化学元素](https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/bd0292/art/2023/art_e2d76717639749c0a6713c2b08a9971a.html)。采集工程官方报道中的研究报告引据，报告原件未取得；网页标2021-10-29，文末署采集工程项目办公室／中国科协创新战略研究院；参考文献[1]列朱晶《氟缘笃志：陈庆云传》、采集工程研究报告、2019。仅据此登记调阅目标，不当作报告全文或当次访谈原录。\n- **A02-TRACE-NLC2009-EXTENT**：[国家图书馆：《中国科学院》2009年详细编目数据](https://meta.nlc.cn/api/v1/item/UCS01005727202/1/999?b_tit=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2)。同一公开书目记录的载体形态及责任说明，非实体书或原页；载体形态记3册(377;454;630页)，责任说明记卷主编钱临照、谷羽；国图书目号006115647、书目库NLC01。未得分册题名映射、目录或第290–292页。书目号不作索书号，书目主编不作A02（含氟单体、氟橡胶与氟油）实验分工证据",
+      "new": "- **HERITAGE-S01** · 朱晶、刘超：《氟缘笃志：陈庆云传》；参考底本35–39页：氟橡胶1号与六氟丙烯、迁沪、氟油研制与调聚反应。\n- **CQ-R28** · [上海有机所：陈庆云院士生平](https://sioc.cas.cn/dncqy/)；生平中的六氟丙烯制取贡献段；作为机构历史评价。\n- **HERITAGE-S04** · [中国科学院：“上海氟”，何以为？](https://www.cas.cn/zt/kjzt/kjzlzqzl/kjzlzq/202406/t20240621_5022275.shtml)；2024-06-21，第2节研究力量迁沪与实验条件；机构整体氟油成果与个人工作分开。\n- **A02-P1980** · [《偏氟乙烯与全卤代烷烃的调聚反应及其产物的研究》](https://sioc-journal.cn/Jwk_hxxb/CN/Y1980/V38/I2/175)；《化学学报》1980，38(2)：175–184；陈庆云、马振中、蒋锡夔、张元发、贾世茂"
+    },
+    {
+      "old": "怎样得到适合聚合的单体，并区分单体、材料与调聚反应各自的贡献？\",\r\n      \"ai_role\": \"对照传记、机构记载与原刊图式，区分单体、材料与调聚产物；关联结构、表征和衍生转化，保留原文异文与专业核校状态",
+      "new": "六氟丙烯制取与低温分离怎样支持氟橡胶研究，调聚氟溴油又怎样连接航天需求？\",\r\n      \"ai_role\": \"以传记主线关联人物、化学对象、原文与用途；整理已有原刊中的具体转化，核对平台新增引用的转录和解释。历史成果与平台AI整理分别呈现"
+    },
+    {
+      "old": "单体、材料与氟油的历史贡献\",\r\n          \"summary\": \"已核对传记印刷p.35–39、114–115并与机构资料对照，区分氟橡胶1号的前期团队成果、陈先生参与的六氟丙烯制取与分离，以及后续材料和氟油工作",
+      "new": "传记主线：单体、氟橡胶与氟油\",\r\n          \"summary\": \"依据传记35–39页，呈现六氟丙烯来源与低温分离、氟橡胶2号和3号研制成功，以及调聚氟溴陀螺油从研究室到实验厂生产的接续；按书中叙述保留陈庆云与合作者的分工"
+    },
+    {
+      "old": "具体贡献、合作与出处\",\r\n              \"url\": \"../topics/fluoromonomers/index.html#topic-fluoromonomer",
+      "new": "单体与低温分离\",\r\n              \"url\": \"../topics/fluoromonomers/index.html#a02-monomers\",\r\n              \"kind\": \"site\"\r\n            },\r\n            {\r\n              \"title\": \"氟橡胶研究接续\",\r\n              \"url\": \"../topics/fluoromonomers/index.html#a02-materials\",\r\n              \"kind\": \"site\"\r\n            },\r\n            {\r\n              \"title\": \"调聚氟溴油与合作\",\r\n              \"url\": \"../topics/fluoromonomers/index.html#record-fluorinated-oil"
+    },
+    {
+      "old": "1980年调聚原刊：从书目走向原文证据\",\r\n          \"summary\": \"已取得并核读《化学学报》175–184页全部10页，关联两类调聚产物、主要加成方向、光谱及化学转化证据。原文观察和数值在专题直接展示，归原作者；不作为平台新实验",
+      "new": "原作者的后续调聚研究\",\r\n          \"summary\": \"依据已取得并整理的1980年《化学学报》175–184页原刊，把两类调聚产物、主要加成方向、光谱与化学转化关联。具体研究及原报数据归陈庆云、马振中、蒋锡夔、张元发、贾世茂；与早期航天氟溴油分别介绍"
+    },
+    {
+      "old": "文证据及历史数值",
+      "new": "刊观察与转化"
+    },
+    {
+      "old": "完整核读与待核事项",
+      "new": "学术贡献与参考资料"
+    },
+    {
+      "old": "对象消歧、异文与未完成研究\",\r\n          \"summary\": \"已分开材料牌号、两类调聚产物和不同氟油；本轮完成1980原刊指定胺名、结构编号及产物式对照，保留正文与英文摘要对两种烯烃的不同记载。少量反向异构体线索仍限于四氯化碳体系过渡馏分，未开展新增实验或材料性能验",
+      "new": "平台AI整理的性质\",\r\n          \"summary\": \"平台整理人物—对象—原文—用途的对应，并保存指定原文字样和结构编号的文献对照。这是对既有历史成果的资料展开，不属于超过原作者工作的新科学发现，也不作为历史成果成立的前置认"
+    },
+    {
+      "old": "来源层级与待核证据\",\r\n              \"url\": \"../topics/fluoromonomers/index.html#refs\",\r\n              \"kind\": \"site\"\r\n            }\r\n          ]\r\n        },\r\n        {\r\n          \"title\": \"制取、材料与氟油技术记录：来源分级\",\r\n          \"summary\": \"新取得并核读1963年他组原文与1986年有机所工厂供样的氟氯液体论文，分别提取低温分馏证据、折射率实测与作者修正值、耐压条件和合作分工；另定位FJ-23机构获奖登记。它们不自动等同陈团队制取记录、历史2号／3号或早期氟溴陀螺油。\",\r\n          \"links\": [\r\n            {\r\n              \"title\": \"技术记录、原报物性与待核关联\",\r\n              \"url\": \"../topics/fluoromonomers/index.html#a02-technical-records\",\r\n              \"kind\": \"site\"\r\n            }\r\n          ]\r\n        },\r\n        {\r\n          \"title\": \"陈先生团队：具体贡献与原件追查\",\r\n          \"summary\": \"已重读传记p.35–39，细化裂解观察、低温分离、自制仪器与合作分工，列明2018本人访谈、同期试制／装置、历史2号／3号及早期油品原件的追查位置。尚未取得这些新的同期技术原件；后出回顾、馆藏目录与原件分开。\",\r\n          \"links\": [\r\n            {\r\n              \"title\": \"团队贡献、来源分列与原件待核清单",
+      "new": "合作分工与出处"
+    },
+    {
+      "old": "\r\n          ]\r\n        },\r\n        {\r\n          \"title\": \"本人访谈与所引书页：引据追踪\",\r\n          \"summary\": \"国图2009年《中国科学院》详细书目记3册(377;454;630页)，册数与页数已有书目依据；所引p.291的分册归属及第290–292页原文仍待核。朱晶2019年研究报告的资料索引、2018-01-03访谈原录，以及同期试制、低温分离和早期氟溴油技术原件仍未取得。\",\r\n          \"links\": [",
+      "new": ","
+    },
+    {
+      "old": "已核定位、资料身份与待取得原件\",\r\n              \"url\": \"../topics/fluoromonomers/index.html#a02-source-trace",
+      "new": "AI整理与历史成果的关系\",\r\n              \"url\": \"../topics/fluoromonomers/index.html#a02-ai-materials"
+    },
+    {
+      "old": "原作者实验、机构回顾与平台AI释读分别呈现；氟橡胶1号前期团队成果不全部归陈先生，不同氟油和后续牌号分别登记。\",\r\n        \"原刊支持主要加成方向；四氯化碳体系过渡馏分的弱峰是作者保留极少量反向异构体可能性的依据，不把该线索推广至两类体系。原作者的极性解释不作平台机制确认，乳化用途也不升级为定量性能或环境安全结论。\",\r\n        \"1980原刊已取得并核读；指定胺名、中英文编号及产物式的文内对照已经完成。不同记载并列，尚未据此独立认证样品结构、真实产物或机理；M0继续暂停。\",\r\n        \"同期他组研究、相关机构材料实测、机构成果登记与陈先生本人工作分开；原文n_D实测及1.06 μm作者色散修正值不混为平台新测量。\",\r\n        \"本人访谈原录、当年试制和装置原件仍待取得；传记中二氟一氯甲烷及机构TFE／PTFE记载分别呈现，不由AI拼接为已经证实的工艺。\",\r\n        \"馆藏目录、人物专题片及访问入口不等于访谈原录或书页已取得；2009年年鉴与所引《中国科学院》不同，目标册次保持待核",
+      "new": "叙述以传记与机构资料为主线，原作者成果归原作者；1号前期工作、陈先生加入后的单体任务及2号／3号材料工作分别介绍。\",\r\n        \"早期调聚氟溴油、其他团队全氟烃油、后来的氟氯液体和1980年具体调聚产物分别评价；不自行补配历史牌号的现代商品对应、组成比例或性能指标。\",\r\n        \"平台文献整理不作新增实验、结构或机理验证；原文观察和原作者解释分开，新增释读保持review_required、release_eligible=false，M0继续暂停"
+    },
+    {
+      "old": "优先调阅2018-01-03上海访谈原录与馆藏档号，以及2009版《中国科学院》各分册版权／目录和目标册p.290–292；年鉴不替代目标著作。\",\r\n      \"future_question\": \"在原始工况、产物分布和表征证据充分后，能否分别比较加成方向、端基转化与物性，而不把不同调聚剂、产物和工程对象混为同一体系？",
+      "new": "围绕已记载成果完善人物—化学对象—原文—用途的资料关联；新增引用对照对应出处，不以重复核验取代学术内容。\",\r\n      \"future_question\": \"若后续拟开展现代模型或实验，应先限定具体材料与可检验问题，并与原作者工作比较；当前没有启动新计算或实验。"
+    },
+    {
+      "old": "怎样得到适合聚合的单体，并区分单体、材料与调聚反应各自的贡献",
+      "new": "六氟丙烯制取与低温分离怎样支持氟橡胶研究，调聚氟溴油又怎样连接航天需求"
+    },
+    {
+      "old": "对照传记、机构记载与原刊图式，区分单体、材料与调聚产物；关联结构、表征和衍生转化，保留原文异文与专业核校状态",
+      "new": "以传记主线关联人物、化学对象、原文与用途；整理已有原刊中的具体转化，核对平台新增引用的转录和解释。历史成果与平台AI整理分别呈现"
+    },
+    {
+      "old": "单体、材料与氟油的历史贡献。**已核对传记印刷p.35–39、114–115并与机构资料对照，区分氟橡胶1号的前期团队成果、陈先生参与的六氟丙烯制取与分离，以及后续材料和氟油工作",
+      "new": "传记主线：单体、氟橡胶与氟油。**依据传记35–39页，呈现六氟丙烯来源与低温分离、氟橡胶2号和3号研制成功，以及调聚氟溴陀螺油从研究室到实验厂生产的接续；按书中叙述保留陈庆云与合作者的分工"
+    },
+    {
+      "old": "具体贡献、合作与出处](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#topic-fluoromonomer",
+      "new": "单体与低温分离](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#a02-monomers) · [氟橡胶研究接续](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#a02-materials) · [调聚氟溴油与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#record-fluorinated-oil"
+    },
+    {
+      "old": "1980年调聚原刊：从书目走向原文证据。**已取得并核读《化学学报》175–184页全部10页，关联两类调聚产物、主要加成方向、光谱及化学转化证据。原文观察和数值在专题直接展示，归原作者；不作为平台新实验",
+      "new": "原作者的后续调聚研究。**依据已取得并整理的1980年《化学学报》175–184页原刊，把两类调聚产物、主要加成方向、光谱与化学转化关联。具体研究及原报数据归陈庆云、马振中、蒋锡夔、张元发、贾世茂；与早期航天氟溴油分别介绍"
+    },
+    {
+      "old": "文证据及历史数值](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#a02-vdf-1980) · [完整核读与待核事项",
+      "new": "刊观察与转化](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#a02-vdf-1980) · [学术贡献与参考资料"
+    },
+    {
+      "old": "对象消歧、异文与未完成研究。**已分开材料牌号、两类调聚产物和不同氟油；本轮完成1980原刊指定胺名、结构编号及产物式对照，保留正文与英文摘要对两种烯烃的不同记载。少量反向异构体线索仍限于四氯化碳体系过渡馏分，未开展新增实验或材料性能验",
+      "new": "平台AI整理的性质。**平台整理人物—对象—原文—用途的对应，并保存指定原文字样和结构编号的文献对照。这是对既有历史成果的资料展开，不属于超过原作者工作的新科学发现，也不作为历史成果成立的前置认"
+    },
+    {
+      "old": "来源层级与待核证据](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#refs)\n\n**制取、材料与氟油技术记录：来源分级。**新取得并核读1963年他组原文与1986年有机所工厂供样的氟氯液体论文，分别提取低温分馏证据、折射率实测与作者修正值、耐压条件和合作分工；另定位FJ-23机构获奖登记。它们不自动等同陈团队制取记录、历史2号／3号或早期氟溴陀螺油。\n\n[技术记录、原报物性与待核关联](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#a02-technical-records)\n\n**陈先生团队：具体贡献与原件追查。**已重读传记p.35–39，细化裂解观察、低温分离、自制仪器与合作分工，列明2018本人访谈、同期试制／装置、历史2号／3号及早期油品原件的追查位置。尚未取得这些新的同期技术原件；后出回顾、馆藏目录与原件分开。\n\n[团队贡献、来源分列与原件待核清单](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#a02-team-records)\n\n**本人访谈与所引书页：引据追踪。**国图2009年《中国科学院》详细书目记3册(377;454;630页)，册数与页数已有书目依据；所引p.291的分册归属及第290–292页原文仍待核。朱晶2019年研究报告的资料索引、2018-01-03访谈原录，以及同期试制、低温分离和早期氟溴油技术原件仍未取得。\n\n[已核定位、资料身份与待取得原件](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#a02-source-trace",
+      "new": "合作分工与出处](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#a02-team-records) · [AI整理与历史成果的关系](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#a02-ai-materials"
+    },
+    {
+      "old": "原作者实验、机构回顾与平台AI释读分别呈现；氟橡胶1号前期团队成果不全部归陈先生，不同氟油和后续牌号分别登记。\n- 原刊支持主要加成方向；四氯化碳体系过渡馏分的弱峰是作者保留极少量反向异构体可能性的依据，不把该线索推广至两类体系。原作者的极性解释不作平台机制确认，乳化用途也不升级为定量性能或环境安全结论。\n- 1980原刊已取得并核读；指定胺名、中英文编号及产物式的文内对照已经完成。不同记载并列，尚未据此独立认证样品结构、真实产物或机理；M0继续暂停。\n- 同期他组研究、相关机构材料实测、机构成果登记与陈先生本人工作分开；原文n_D实测及1.06 μm作者色散修正值不混为平台新测量。\n- 本人访谈原录、当年试制和装置原件仍待取得；传记中二氟一氯甲烷及机构TFE／PTFE记载分别呈现，不由AI拼接为已经证实的工艺。\n- 馆藏目录、人物专题片及访问入口不等于访谈原录或书页已取得；2009年年鉴与所引《中国科学院》不同，目标册次保持待核",
+      "new": "叙述以传记与机构资料为主线，原作者成果归原作者；1号前期工作、陈先生加入后的单体任务及2号／3号材料工作分别介绍。\n- 早期调聚氟溴油、其他团队全氟烃油、后来的氟氯液体和1980年具体调聚产物分别评价；不自行补配历史牌号的现代商品对应、组成比例或性能指标。\n- 平台文献整理不作新增实验、结构或机理验证；原文观察和原作者解释分开，新增释读保持review_required、release_eligible=false，M0继续暂停"
+    },
+    {
+      "old": "优先调阅2018-01-03上海访谈原录与馆藏档号，以及2009版《中国科学院》各分册版权／目录和目标册p.290–292；年鉴不替代目标著作",
+      "new": "围绕已记载成果完善人物—化学对象—原文—用途的资料关联；新增引用对照对应出处，不以重复核验取代学术内容"
+    },
+    {
+      "old": "在原始工况、产物分布和表征证据充分后，能否分别比较加成方向、端基转化与物性，而不把不同调聚剂、产物和工程对象混为同一体系？",
+      "new": "若后续拟开展现代模型或实验，应先限定具体材料与可检验问题，并与原作者工作比较；当前没有启动新计算或实验。"
+    },
+    {
+      "old": "header h1{text-wrap:balance}#a02-paper-table{overflow-x:auto;max-width:100%}#a02-paper-table table{border-collapse:collapse;min-width:650px;width:100%;font-size:.9rem}#a02-paper-table th,#a02-paper-table td{border:1px solid var(--line);padding:12px;text-align:left;vertical-align:top}#a02-paper-table th{background:#edf3ee}.a02-meaning{border-left:3px solid #aa7545;padding:8px 16px;background:#f7f4eb}.a02-locator{font-size:.88rem;color:var(--muted)}#a02-primary-sources{overflow-wrap:anywhere}</style>\n<style>.a02-technical-table{overflow-x:auto;max-width:100%}.a02-technical-table table{border-collapse:collapse;min-width:650px;width:100%;font-size:.9rem}.a02-technical-table th,.a02-technical-table td{border:1px solid var(--line);padding:12px;text-align:left;vertical-align:top}.a02-technical-table th{background:#edf3ee}#a02-technical-records section+section{margin-top:36px;border-top:1px solid var(--line);padding-top:24px}</style>\n<style>#a02-team-records section+section{margin-top:36px;border-top:1px solid var(--line);padding-top:24px}#a02-context-background>summary{cursor:pointer;padding:20px;font-weight:700;color:var(--teal);border:1px solid var(--line)}#a02-context-background{margin:24px 0}</style>\n<article id=\"topic-fluoromonomers\" data-topic-slug=\"fluoromonomers\" data-topic-type=\"dossier\"><span class=\"status\">A02（含氟单体、氟橡胶与氟油） · 原始学术成果与合作</span><h2>从单体与分离，到材料需求和调聚化学</h2><p>这条成果线连接三类不同工作：六氟丙烯等单体的制取与分离、团队的氟橡胶研究，以及调聚氟油和短链含氟产物化学。以下按对象、原始出处和合作关系分别介绍陈庆云与合作者的具体贡献。</p>\n<nav aria-label=\"A02（含氟单体、氟橡胶与氟油）专题导航\"><a href=\"#a02-monomers\">单体与分离</a> · <a href=\"#a02-materials\">氟橡胶与团队</a> · <a href=\"#record-fluorinated-oils\">氟油</a> · <a href=\"#a02-team-records\">团队贡献与原件追查</a> · <a href=\"#a02-vdf-1980\">1980年原刊</a> · <a href=\"#a02-cooperation\">合作故事</a> · <a href=\"#a02-technical-records\">相关技术背景</a> · <a href=\"#refs\">来源与待核事项</a></nav>\n<section id=\"a02-monomers\"><h3>从单体制取与分离突破材料原料瓶颈</h3><p>陈庆云回国后加入蒋锡夔的氟橡胶课题组，重点探索六氟丙烯的新制取路线，并解决副产物分离问题。机构生平将这项工作概括为：以四氟乙烯裂解路线替代原有电解氟化途径，为六氟丙烯的工业化生产提供依据。</p><p class=\"a02-meaning\"><b>学术意义：</b>贡献具体落在单体来源及分离这一材料基础环节；从已有材料样品向可扩大制备的原料条件推进，不能只用笼统“研制氟橡胶”掩盖研究对象。</p><p class=\"a02-locator\">p35–37；p36注①陈庆云访谈2018-01-03；年表p114 · <a href=\"#a02-source-book\">HERITAGE-S01</a> · <a href=\"#ref-r28\">CQ-R28</a></p></section>\n<section id=\"a02-materials\"><h3>氟橡胶1号既有成果与后续材料工作分列</h3><p>氟橡胶1号是蒋锡夔、胡亚东等团队在陈先生加入前已有的阶段成果。陈先生加入后承担的六氟丙烯工作，与后续材料改进相联系；传记另记团队陆续开展氟橡胶2号、3号研究。</p><p class=\"a02-meaning\"><b>学术意义：</b>把已有材料、原料改进与后续牌号分开，既能说明研究接续，也保存共同攻关的真实分工。</p><p class=\"a02-locator\">p35–37 · <a href=\"#a02-source-book\">HERITAGE-S01</a></p></section>\n<p><a href=\"../../research/index.html#ai-a02\">AI辅助资料整理与研究 →</a> · <a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">完整学术贡献与证据说明 →</a></p></article>\n<article id=\"record-fluorinated-oils\"><span class=\"status\">A02（含氟单体、氟橡胶与氟油） · 氟油研究</span><h2>调聚氟溴油：从化学对象走向实验厂协作</h2><p>调入上海后，陈庆云与同事参加调聚氟溴陀螺油研究，并与实验厂的放大和应用相衔接。传记把这一工作与航天仪器所需支承液联系起来，年表将1964年的调聚研究目的记为制备氟油。</p><p class=\"a02-meaning\"><b>学术意义：</b>材料研究不仅是得到化合物，还涉及面向特定用途的液体对象、分离与工程接续；调聚反应为后续研究提供了具体科学问题。</p><p class=\"a02-locator\">p39、注②；年表p115（1964年条目） · <a href=\"#a02-source-book\">HERITAGE-S01</a> · <a href=\"#a02-source-cas\">HERITAGE-S04</a></p><ul><li>只陈述传记及其转引范围。全氟烃油、调聚氟溴陀螺油、后来的氟氯油分别登记；不把机构所有氟油成果并为陈先生一项个人成果，也不把历史“目前/依然”平移成2026年现状。</li></ul></article>\n<article id=\"a02-team-records\"><span class=\"status\">陈先生团队的研究贡献与合作</span><h2>单体制取、低温分离与材料接续</h2><p>依据传记与机构公开资料，呈现陈先生及合作者解决的具体问题。下列三项的同期技术原件仍未取得，已有叙述与待核原件分别标明；公开检索未取得原件，不表示档案不存在或历史成就不成立。</p>\n<section id=\"a02-team-hfp\"><h3>六氟丙烯：从副产物观察到制取与分离问题</h3><p class=\"a02-locator\">陈先生团队工作 · 据传记与机构回顾；同期试制／装置原件未取得</p><p>据传记p.35–37，陈庆云1960年秋加入蒋锡夔的氟橡胶组后，首项任务是改善六氟丙烯来源。已有样品并未解决原料供给；新的裂解路线还必须解决副产物多、低温分离困难的问题。机构供稿也将贡献具体落在六氟丙烯获取与团队条件探索上。</p>\n<p id=\"a02-team-hfp-table-1\"><b>传记所记研究问题与技术环节</b>（宽表可横向滑动）</p><div class=\"a02-technical-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a02-team-hfp-table-1\"><table><thead><tr><th scope=\"col\">环节</th><th scope=\"col\">传记中的具体叙述</th><th scope=\"col\">仍需原件确认</th></tr></thead><tbody>\n<tr><th scope=\"row\">实验观察</th><td>在二氟一氯甲烷高温裂解制四氟乙烯的研究中，延长裂解时间时发现少量六氟丙烯</td><td>实验日期、操作者、投料与原始组成记录</td></tr>\n<tr><th scope=\"row\">路线探索</th><td>陈与蒋等讨论条件优化，使研究目标转向获得更多六氟丙烯</td><td>具体工况、停留时间、转化率、选择性及收率</td></tr>\n<tr><th scope=\"row\">分离难题</th><td>低温冷凝、分馏后按沸点差异分收，副产物分离成为关键环节</td><td>装置图、分馏温度／压力、馏分和纯度记录</td></tr>\n<tr><th scope=\"row\">研究条件</th><td>高温炉、低温分馏仪和检测仪器需要自行制作</td><td>设计者、制作人员、图纸、仪器型号及检测校准档案</td></tr>\n</tbody></table></div><ul><li>这是历史研究过程的释读，不是可执行的现代实验协议。书中600–700°C属于四氟乙烯裂解的背景叙述，不能当作已核实的陈团队新路线工况。</li></ul>\n<p id=\"a02-team-hfp-table-2\"><b>原料称谓与过程层次分别登记</b>（宽表可横向滑动）</p><div class=\"a02-technical-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a02-team-hfp-table-2\"><table><thead><tr><th scope=\"col\">来源</th><th scope=\"col\">所载起点或过程</th><th scope=\"col\">目前处理</th></tr></thead><tbody>\n<tr><th scope=\"row\">传记p.37</th><td>从二氟一氯甲烷制四氟乙烯的观察谈起，随后讨论直接裂解获取六氟丙烯；同段也提四氟乙烯气体裂解</td><td>保留上下文，尚未取得完整流程原件</td></tr>\n<tr><th scope=\"row\">上海有机所生平</th><td>四氟乙烯高温裂解路线</td><td>保留机构原叙述，不自动等同传记全部流程</td></tr>\n<tr><th scope=\"row\">上海有机所纪念资料</th><td>聚四氟乙烯高温裂解路线</td><td>与其他记载分列，待原料链和批次证据核对</td></tr>\n</tbody></table></div><ul><li>这些称谓可能涉及起始原料、中间体或不同操作阶段；现阶段既不直接认定互相矛盾，也不拼接成已经证实的单一工艺。他组1963年论文不能解决陈团队的路线身份。</li></ul>\n<p><b>署名与合作：</b>据传记，蒋锡夔与陈庆云等共同讨论任务；陈与技术人员承担低温分馏实验，另有同事保障冷冻介质和物资。书中未列参与这些操作的完整姓名，也没有“陈指导技术人员”的上下级表述。留苏期间的操作经验与新任务的联系，仍按传记叙述身份保留。</p><p class=\"a02-meaning\"><b>学术意义与范围：</b>开拓性贡献应具体呈现为围绕单体供应，把裂解观察、条件探索与复杂混合物分离结合起来，为后续材料工作创造原料条件；不缩写成个人独立完成全部橡胶，也不在缺少原表时添加产率或优先权结论。</p><h4>待核事项</h4><ul><li>已定位《陈庆云访谈》2018-01-03、学术成长资料采集工程数据库（传记p.36注①）；原录音／逐字稿尚未取得。p.37工艺段未另给同期试制报告编号。</li><li>1960–1963年试制报告、实验本、装置图、自制仪器和低温分离原表尚未取得；具体档号、人员署名与合作分工待核。</li><li>单体交付批次、纯度及化学所—上海有机所之间的技术移交原件待核。化学所沿革确认1963年机构接续，不能替代交接文件。</li></ul>\n<p class=\"a02-locator\">已重读传记印刷p.35–37及p.114；机构回顾已读。未读取采集数据库原访谈或同期技术原件。 · <a href=\"#a02-source-book\">HERITAGE-S01</a> · <a href=\"#ref-r28\">CQ-R28</a> · <a href=\"#ref-s1\">S1</a> · <a href=\"#a02-source-mmcs2025\">A02-TEAM-MMCS2025</a> · <a href=\"#a02-source-ic-history\">A02-TEAM-IC-HISTORY</a></p><p><a href=\"https://www.mmcs.org.cn/xwz/kxjrl/art/2025/art_63580329680c4348b69105bfbcb7749c.html\">机构供稿：六氟丙烯任务与团队贡献</a> · <a href=\"https://ic.cas.cn/about/lsyg/\">化学所1963年研究接续记录</a></p></section>\n<section id=\"a02-team-rubber\"><h3>氟橡胶2号、3号：材料接续与授奖原件追查</h3><p class=\"a02-locator\">团队历史接续已有叙述 · 逐牌号技术与物性原件待核</p><p>传记p.37将2号、3号的后续研制与六氟丙烯等单体工作联系起来；没有逐牌号给出共聚组成、配比和物性。陈先生1960年加入前的1号成果、其后承担的单体任务及团队材料工作仍分别归属。</p>\n<p id=\"a02-team-rubber-table-1\"><b>可追查的证书线索及其资格</b>（宽表可横向滑动）</p><div class=\"a02-technical-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a02-team-rubber-table-1\"><table><thead><tr><th scope=\"col\">已有资料</th><th scope=\"col\">能确认的记录</th><th scope=\"col\">尚不能确认</th></tr></thead><tbody>\n<tr><th scope=\"row\">化学所获奖目录</th><td>1966年FJ-23合成方法及旧目录主要完成人登记</td><td>原证书编号、技术附件及与历史1号／2号／3号的对应</td></tr>\n<tr><th scope=\"row\">黎占亭纪念文第5节</th><td>回顾组长蒋锡夔、副组长胡亚东及课题组接续，并把1966年发明证书联系到1号</td><td>该文未列FJ-23编号或证书图，不能凭同年授奖建立身份等号</td></tr>\n<tr><th scope=\"row\">传记p.35–37</th><td>区分陈加入前的1号与其加入后的六氟丙烯及2号／3号工作</td><td>逐牌号试制日期、聚合记录、样品号、实测物性和逐人分工</td></tr>\n</tbody></table></div><ul><li>新增回顾只提供查档方向。FJ-23、历史1号／2号／3号及现代商品牌号之间的对应，须有原始书面依据。</li></ul>\n<p><b>署名与合作：</b>先期1号按蒋锡夔、胡亚东等团队成果介绍；陈先生的单体获取和分离贡献另列。旧目录保留胡亚东、蒋锡夔、蒋丽金、路之康、王秀岗名单，不因一份项目名单替其他工作补作者或否定参与。</p><p class=\"a02-meaning\"><b>学术意义与范围：</b>材料成果依赖单体、聚合、表征、放大等合作环节；只有补齐逐牌号原件，才能进一步说明具体材料改进及各环节贡献。</p><h4>待核事项</h4><ul><li>1966年发明证书原图、编号与技术附件未取得；需要同时核对FJ-23登记和1号授奖回顾。</li><li>2号、3号同期任务书、试制／鉴定报告、聚合配方、样品编号和原始物性表未取得；不填补配比、强度、耐温或寿命数值。</li><li>化学所、上海有机所与试制／生产单位间的样品、单体及技术交接文件未取得。</li></ul>\n<p class=\"a02-locator\">传记、机构成果登记与纪念文已核对；未取得历史2号／3号原始技术附件或物性原表。 · <a href=\"#a02-source-book\">HERITAGE-S01</a> · <a href=\"#a02-source-fj23\">A02-TECH-FJ23</a> · <a href=\"#a02-source-fj23-old\">A02-TECH-FJ23-OLD</a> · <a href=\"#a02-source-jiang-recollection\">A02-TEAM-JIANG-RECOLLECTION</a></p><p><a href=\"https://chenjiang.fudan.edu.cn/0b/95/c48389a789397/page.htm\">黎占亭回顾：研究组与1966年证书线索</a></p></section>\n<section id=\"a02-team-oil\"><h3>早期调聚氟溴油：原料、研究室与实验厂接续</h3><p class=\"a02-locator\">据传记转引的历史成果 · 所引原页、配方和物性原件未取得</p><p>传记p.39记陈庆云与研究室同事以三氟溴乙烯为原料开展调聚氟溴陀螺油研究，随后接续到上海有机所实验厂生产；年表p.115把1964年的卤代烷／含氟烯烃调聚与制备氟油联系起来。两处没有给出完整配方、馏分、定量物性或人员分工表。</p>\n<p id=\"a02-team-oil-table-1\"><b>传记引据与下一份应取得的原件</b>（宽表可横向滑动）</p><div class=\"a02-technical-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a02-team-oil-table-1\"><table><thead><tr><th scope=\"col\">现有依据</th><th scope=\"col\">已到达的位置</th><th scope=\"col\">待取得资料</th></tr></thead><tbody>\n<tr><th scope=\"row\">传记p.39注②</th><td>引《中国科学院》编辑委员会编，2009年，第291页；未标册次</td><td>2009版版权页、目录／册次页、p.291及相邻页</td></tr>\n<tr><th scope=\"row\">CiNii同名1994版书目</th><td>上、中、下三册；只是较早版馆藏记录</td><td>核对2009版实际册次与页码，不能以1994版目录替代原页</td></tr>\n<tr><th scope=\"row\">图书馆保存的Gale丛书介绍</th><td>提供电子书版本追查途径；介绍册不含目标页</td><td>通过合法馆藏取得目标书页，再追其原始引据或档号</td></tr>\n<tr><th scope=\"row\">年表1964年条目及研究室—实验厂叙述</th><td>有历史研究与生产接续的记述</td><td>同批油品配方、密度／黏度／凝点原表、放大与交付记录</td></tr>\n</tbody></table></div><ul><li>仅取得目录与丛书介绍，不等于取得《中国科学院》2009版正文。原页未明册次前，不预设在上、中或下册。</li></ul>\n<p><b>署名与合作：</b>陈与研究室同事的调聚研究、实验厂放大和使用单位检测应分别追踪；现有材料未列全部人员及逐人任务，暂不补姓名或个人份额。早期氟溴油与机构全氟烃油、后来的氟氯液体分别登记。</p><p class=\"a02-meaning\"><b>学术意义与范围：</b>可以说明陈先生的含氟反应研究与特定液体材料需求相衔接；对产品身份、性能和工厂协作的进一步评价，仍依赖原始技术与交付证据。</p><h4>待核事项</h4><ul><li>2009版《中国科学院》正确册次的p.291及相邻页仍未取得，传记转引尚未闭合。</li><li>1964年前后调聚氟溴油的实验记录、配方／工艺报告、馏分与批次标识、原始物性及测试条件仍未取得。</li><li>实验厂放大、供样、应用测试与交接原件及完整分工仍待核；没有已核实档号，不推定资料不存在或涉密。</li></ul>\n<p class=\"a02-locator\">已核传记p.39注②及年表p.115；馆藏书目与电子书介绍可读，目标2009版书页未取得。 · <a href=\"#a02-source-book\">HERITAGE-S01</a> · <a href=\"#a02-source-catalog\">A02-TEAM-CATALOG</a> · <a href=\"#a02-source-gale\">A02-TEAM-GALE</a></p><p><a href=\"https://ci.nii.ac.jp/ncid/BA71150630\">CiNii同名1994版馆藏目录（非2009原页）</a> · <a href=\"https://www.lib.ntu.edu.tw/doc/CL/ebook/2012/12_china.pdf\">图书馆电子书丛书介绍（非目标正文）",
+      "new": "#topic-fluoromonomers p{max-width:82ch}.a02-meaning{border-left:3px solid #aa7545;padding:8px 16px;background:#f7f4eb}.a02-locator{font-size:.88rem;color:var(--muted)}.a02-table{overflow-x:auto;max-width:100%;margin:20px 0;border:1px solid var(--line)}.a02-table table{border-collapse:collapse;min-width:650px;width:100%;font-size:.9rem}.a02-table caption{text-align:left;padding:14px;background:#edf3ee;color:var(--accent);font-weight:700}.a02-table th,.a02-table td{border-top:1px solid var(--line);padding:12px;text-align:left;vertical-align:top;overflow-wrap:anywhere}.a02-table thead{background:#f5f5ef}.a02-table:focus-visible{outline:3px solid #aa7545}#refs{overflow-wrap:anywhere}.a02-nav{display:flex;flex-wrap:wrap;gap:8px 18px}</style>\n<article id=\"topic-fluoromonomers\" data-topic-slug=\"fluoromonomers\" data-topic-type=\"dossier\"><span class=\"status\">A02（含氟单体、氟橡胶与氟油） · 学术成果与合作</span><h2>从单体制取与低温分离到氟橡胶和氟油</h2><p>以《氟缘笃志：陈庆云传》为主线，这条成果线呈现陈庆云与合作者怎样把单体来源、反应与分离、聚合材料和应用需求连接起来。六氟丙烯的制取与低温分离是材料研究的基础工作；氟橡胶2号、3号及调聚氟溴油则体现了团队研究与生产条件的接续。</p>\n<nav class=\"a02-nav\" aria-label=\"A02（含氟单体、氟橡胶与氟油）专题导航\"><a href=\"#a02-monomers\">单体与分离</a><a href=\"#a02-materials\">氟橡胶</a><a href=\"#record-fluorinated-oils\">氟油</a><a href=\"#a02-team-records\">合作分工</a><a href=\"#a02-vdf-1980\">后续调聚研究</a><a href=\"#refs\">参考资料</a></nav>\n<span id=\"a02-team-hfp\" aria-hidden=\"true\"></span><span id=\"a02-team-hfp-table-1\" aria-hidden=\"true\"></span><span id=\"a02-team-hfp-table-2\" aria-hidden=\"true\"></span>\n<section id=\"a02-monomers\"><h3>六氟丙烯：把制取与分离作为同一个研究问题</h3>\n<p>1960年秋，陈庆云回国后加入蒋锡夔的氟橡胶课题组。传记记述，当时氟橡胶已有样品，但六氟丙烯的获取仍是原料瓶颈；陈先生承担的新任务，是探索更适合获取这种单体的路线与条件。</p>\n<p>在二氟一氯甲烷裂解制四氟乙烯的工作中，延长裂解时间会出现少量六氟丙烯。陈庆云与蒋锡夔等围绕这一观察讨论、探索条件，把目标推进到增加六氟丙烯的获取。传记记载，经过两年多的努力，找到了制取条件，为大量制备提供依据。</p>\n<p>裂解产物复杂，使分离成为这项工作的关键组成部分。研究需要高温加热、冷冻和低温分馏，高温炉、低温分馏与检测仪器也要自行制作。陈庆云等承担低温分馏实验，研究室同事保障冷冻介质和物资；他在留苏期间积累的操作经验在这一任务中发挥了作用。</p>\n<p class=\"a02-meaning\"><b>学术意义：</b>具体贡献既在单体来源，也在把复杂产物分开这一实验基础环节。只有把反应条件和分离同时解决，新的含氟原料才能进一步服务聚合材料研究。</p><p class=\"a02-locator\">传记35–37页，尤其36页任务说明、37页裂解观察与低温分馏；上海有机所生平的六氟丙烯段 · <a href=\"#a02-source-book\">HERITAGE-S01</a> · <a href=\"#ref-r28\">CQ-R28</a></p></section>\n<span id=\"a02-team-rubber\" aria-hidden=\"true\"></span><span id=\"a02-team-rubber-table-1\" aria-hidden=\"true\"></span>\n<section id=\"a02-materials\"><h3>氟橡胶：单体研究支持2号、3号的团队接续</h3>\n<p>陈庆云加入以前，蒋锡夔、胡亚东等课题组成员已经开展氟橡胶研究并研制出后来命名的氟橡胶1号。传记把这一前期成果与陈先生加入后的单体任务分别叙述，保存了共同攻关的接续关系。</p>\n<p>传记37页明确记载，陈庆云等人陆续研制成功氟橡胶2号和3号，并把六氟丙烯、偏氟乙烯、四氟乙烯的共聚研究与这些材料工作联系起来。六氟丙烯来源的改善，使单体研究与聚合材料发展形成了相互支持的关系。</p>\n<p class=\"a02-meaning\"><b>学术意义：</b>陈先生的材料贡献应与单体制取、低温分离及团队聚合工作一起理解。这里保留历史1号、2号、3号的原称，不将每个牌号自行配上现代商品名称、组成比例或性能指标。</p><p class=\"a02-locator\">传记35–37页；36页课题组与1号前期工作，37页2号、3号研制成功的记述 · <a href=\"#a02-source-book\">HERITAGE-S01"
+    },
+    {
+      "old": "a02-vdf-1980\"><span class=\"status\">原始论文 · AI辅助核读</span><h2>偏氟乙烯与全卤代烷烃的调聚反应及其产物的研究</h2><p><b>原作者：</b>陈庆云、马振中、蒋锡夔、张元发、贾世茂；《化学学报》1980，38(2)：175–184。</p><p>同一偏氟乙烯单体与不同全卤代烷烃反应，会得到怎样的短链骨架和端基？怎样结合多种表征与化学转化判断主要加成方向，并将产物继续转化？</p><p><b>核读范围：</b>已取得原刊175–184页并核读全部10页；指定胺名、中英文结构编号及产物式的文内对照已完成。文献观察、原作者解释与平台核校分开，不授予真实样品结构或机理认证。</p>\n<p id=\"a02-table-caption\"><b>原文观察、鉴定依据及其范围</b>（宽表可横向滑动）</p><div id=\"a02-paper-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a02-table-caption\"><table><thead><tr><th scope=\"col\">研究对象／比较</th><th scope=\"col\">原文结果与证据</th><th scope=\"col\">原刊定位</th></tr></thead><tbody>\n<tr><th scope=\"row\">两种调聚剂，两类产物系列</th><td>四氯化碳体系分离鉴定CCl₃(CH₂CF₂)ₙCl（n=1–6）；全氟叔丁基碘体系为(CF₃)₃C(CH₂CF₂)ₙI（n=1、2）。这里的n范围限于论文所研究的产物。</td><td>p.175、179</td></tr>\n<tr><th scope=\"row\">主要加成方向与少量异构线索</th><td>四氯化碳体系中，分馏、¹⁹F NMR及脱氯化氢反应支持主要单加成结构CCl₃CH₂CF₂Cl；过渡馏分的弱峰被作者解释为可能含极少量反向异构体。全氟叔丁基碘体系的主要结构(CF₃)₃CCH₂CF₂I由元素分析、光谱分析及化学转化等证据归属。</td><td>p.176–177；p.179实验</td></tr>\n<tr><th scope=\"row\">碘端基位置的紫外证据</th><td>单加成物(CF₃)₃CCH₂CF₂I原报λmax为274–276 nm，二加成物为270 nm。作者以约275 nm的吸收支持–CF₂I端基归属，并结合其他鉴定证据。</td><td>p.176讨论；p.179实验</td></tr>\n<tr><th scope=\"row\">端基衍生：烯烃、酰胺与羧酸</th><td>部分调聚物经后续转化得到烯烃、含氟酰胺与羧酸。正文图式、实验及英文摘要对应二乙胺，中文摘要原印“乙二胺”；该具体文内差异已完成对照并保留原字样，平台AI核校说明另列于研究资料页。</td><td>p.177–182；英文摘要p.183</td></tr>\n<tr><th scope=\"row\">调聚酸系列的原始物性记录</th><td>表3酸式为Cl(CF₂CH₂)ₙCOOH。n=3原报收率86.0%、熔点70–72°C；n=4为93.0%、97–99°C。这些是原作者实验记录，本平台未重算收率。</td><td>p.178表3；p.182水解条目</td></tr>\n</tbody></table></div><p class=\"a02-meaning\"><b>科学意义：</b>这项工作把偏氟乙烯的调聚由“得到低聚物”推进到骨架、端基和主要加成方向的具体辨识，再通过衍生转化连接到新的含氟中间体与材料辅助组分。原作者对部分羧酸盐乳化用途的描述，提供了基础反应与材料需求相联系的研究线索。</p><ul><li>原文对极性因素的讨论保留原作者解释身份；主要方向不等于100%选择性，谱学与化学互证也不是平台新机理验证。</li><li>所列调聚物、调聚氟溴陀螺油、全氟烃油及氟橡胶牌号不是同一化学对象；产物系列与历史工业产品不能只凭名称相似等同。</li><li>表3的n按该酸式独立定义，不把不同表的编号或计数混用。收率、熔点和紫外数值为历史原报值，不是平台新实验或现代性能认证。</li><li>部分调聚羧酸碱金属盐的乳化用途属原文定性报告；未从该文取得可直接引用的定量乳化性能对照，不据此推断产业采用或环境安全。</li><li>指定胺名、编号和产物式对照已完成；中文正文与英文摘要对两种烯烃的不同记述仍并列保存，不据此选择一版作为实际实验产物或裁定异文成因。</li></ul>\n<p><a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1980/V38/I2/175\">官方论文入口 →</a> · <a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/article/downloadArticleFile.do?attachType=PDF&amp;id=342478\">期刊原文PDF →</a></p><p class=\"a02-locator\"><a href=\"#a02-source-paper\">A02-P1980</a></p></article>\n<article id=\"a02-cooperation\"><span class=\"status\">合作与研究接续</span><h2>共同攻关怎样支持学术成果</h2>\n<h3>制取单体，离不开分离、仪器与原料保障</h3><p>传记记述，六氟丙烯研究要同时面对反应与分离：仪器需要自行制作，技术人员承担低温分离，其他同事保障冷冻介质和物资。陈先生在留苏时期积累的实验经验，也参与到这项新任务中。材料进展由各环节共同支撑。</p><p class=\"a02-locator\">p35–37；p36注①陈庆云访谈2018-01-03 · <a href=\"#a02-source-book\">HERITAGE-S01</a></p>\n<h3>1963年南迁：让聚合经验与工业条件相接</h3><p>1963年7月，陈庆云随蒋锡夔课题组由北京迁往上海。传记所引回忆强调，北京的高分子实验经验与上海的原料、厂家和技术条件互补；机构报道还记述了人员与仪器一同迁移的情景。这是研究团队与工业环境的整合。</p><p class=\"a02-locator\">p38–39；p38注②陈庆云访谈2018-01-26，p39注①陈庆云访谈2018-01-03；年表p115首条 · <a href=\"#a02-source-book\">HERITAGE-S01</a> · <a href=\"#a02-source-cas\">HERITAGE-S04</a></p>\n</article>\n<article id=\"a02-source-trace\"><span class=\"status\">AI辅助资料整理 · 引据追踪</span><h2>本人访谈与所引书页：已核信息与原件缺口</h2><p>这一部分记录平台对传记引据的定位工作。原始访谈和目标书页尚未取得，以下目录信息不作为新增历史成果、工艺参数或材料性能证据。</p>\n<section id=\"a02-trace-interview\"><h3>2018年本人访谈：原录定位与采集项目</h3><p class=\"a02-locator\">已核引用元数据与项目目录 · 完整文字稿／音视频及当次档号待取得</p><p>传记p.36注①引用《陈庆云访谈》2018-01-03；同书p.6注①进一步记访谈地点上海、资料存于采集工程数据库。这些是后出传记对原访谈的引据，不等于平台已取得该次原录，也不能保证p.37每一技术句都是它的逐字转录。</p>\n<p id=\"a02-trace-interview-table-1\"><b>访谈来源各层次的实际状态</b>（宽表可横向滑动）</p><div class=\"a02-technical-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a02-trace-interview-table-1\"><table><thead><tr><th scope=\"col\">定位事项</th><th scope=\"col\">已核资料</th><th scope=\"col\">仍需确认</th></tr></thead><tbody>\n<tr><th scope=\"row\">当次访谈</th><td>题名、2018-01-03、上海、采集工程数据库存地（据传记脚注）</td><td>当次采访者、时长、馆藏档号、完整文字稿及录音／录像</td></tr>\n<tr><th scope=\"row\">具体报告线索（2019）</th><td>官方报道参考文献[1]列朱晶《氟缘笃志：陈庆云传》，老科学家学术成长资料采集工程研究报告，2019</td><td>报告正文、资料目录及附件未取得；不能与后来朱晶／刘超署名的公开图书或2018-01-03原录自动等同</td></tr>\n<tr><th scope=\"row\">采集项目</th><td>博物馆列负责人黄智静、承建单位上海有机所</td><td>项目负责人不自动等于1月3日采访者或A02（含氟单体、氟橡胶与氟油）问题的转录者</td></tr>\n<tr><th scope=\"row\">另一采访日期</th><td>书前彩页图注记2018-05-15黄智静、朱晶采访</td><td>与1月3日分列，不能合并成同一次访谈</td></tr>\n<tr><th scope=\"row\">学术资料检索</th><td>已定位口述、音视频、研究报告等类别；可读公开页显示系统升级提示</td><td>未取得该次条目或原录；页面提示不证明资料不存在</td></tr>\n<tr><th scope=\"row\">公众影音目录</th><td>已展开的公开目录列有人物专题片《砥志研思七十年，一片丹心兴邦梦》，专题目录标2021-09-06</td><td>专题片不代替2018-01-03完整原录，未见二者的原始身份对应</td></tr>\n</tbody></table></div><ul><li>此栏是平台AI辅助资料定位工作，不授予新的工艺、产率或机理结论；网页导航参数不作为档号。</li></ul>\n<p class=\"a02-meaning\"><b>证据范围：</b>未取得完整访谈或2019研究报告。研究报告是后出的学术成长研究文本，其官方引据只支持定向调阅；不作为1960年代试制报告。原书照片仅用于本机核对图注，不公开分发。</p><h4>待取得的原件</h4><ul><li>拟调阅：2018-01-03上海《陈庆云访谈》的原始目录记录、采访者、录制时长、馆藏档号、完整逐字稿及原录。</li><li>定向调阅朱晶2019年《氟缘笃志：陈庆云传》采集工程研究报告的题名页、目录、原始资料索引和访谈附录；先查是否列出2018-01-03条目及档号，再追所引A02（含氟单体、氟橡胶与氟油）试制报告、实验本和装置图。报告及附件均待取得。</li><li>取得原录后定位六氟丙烯首项任务、裂解／低温分离、自制装置及协作者的实际段落；再追所提试制报告、实验本、图纸和交接文件。当前未取得这些原件。</li></ul>\n<p class=\"a02-locator\"><a href=\"#a02-source-book\">HERITAGE-S01</a> · <a href=\"#a02-source-mmcs-project\">A02-TRACE-MMCS-PROJECT</a> · <a href=\"#a02-source-mmcs-search\">A02-TRACE-MMCS-SEARCH</a> · <a href=\"#a02-source-mmcs-video\">A02-TRACE-MMCS-VIDEO</a> · <a href=\"#a02-source-report2019\">A02-TRACE-REPORT2019</a></p><p><a href=\"https://www.mmcs.org.cn/kxjfc/kxjfc/cqy9449/index.html\">采集项目目录</a> · <a href=\"https://www.mmcs.org.cn/xsb/zljs/index.html\">学术资料检索入口</a> · <a href=\"https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/yyzx0231/index.html\">公开影音目录（专题片）</a> · <a href=\"https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/bd0292/art/2023/art_e2d76717639749c0a6713c2b08a9971a.html\">2019研究报告的官方引据（文末参考文献[1]）</a></p></section>\n<section id=\"a02-trace-book2009\"><h3>《中国科学院》2009版第291页：册次仍待核</h3><p class=\"a02-locator\">国图2009年书目记三册及各册页数 · 所引p.291的分册归属和原页待核</p><p>传记p.39注②所引为《中国科学院》编辑委员会编、当代中国出版社、2009年、第291页，未注明册次。国图同名2009年详细书目记载体为3册(377;454;630页)，出版者为当代中国出版社、香港祖国出版社。册数和页数已有书目依据，但尚未取得分册题名、目录及原页，不能据页数排列确定p.291属于哪册。</p>\n<p id=\"a02-trace-book2009-table-1\"><b>目标著作与候选入口分别辨识</b>（宽表可横向滑动）</p><div class=\"a02-technical-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a02-trace-book2009-table-1\"><table><thead><tr><th scope=\"col\">资料</th><th scope=\"col\">已核资料的身份</th><th scope=\"col\">不能据此认定</th></tr></thead><tbody>\n<tr><th scope=\"row\">传记所引《中国科学院》</th><td>当代中国出版社，2009，p.291；注释缺册次</td><td>尚不能确认上、中或下册，也未取得所引原文</td></tr>\n<tr><th scope=\"row\">2009年正式书目与载体形态</th><td>国图记录UCS01005727202，载体形态记3册(377;454;630页)，尺寸26cm</td><td>这是书目所记，未目视原书；分册名称与这三组页数的对应、所引p.291归属尚未确认</td></tr>\n<tr><th scope=\"row\">书目责任说明与定位号</th><td>责任说明记卷主编钱临照、谷羽；国图书目号006115647，书目库NLC01</td><td>不据此分配原实验或章节贡献；书目号及各馆记录号均不作索书号、访谈档号</td></tr>\n<tr><th scope=\"row\">书目所列馆藏线索</th><td>国图详情的馆藏分布列有国家图书馆、湖北省图书馆、湖南图书馆等机构</td><td>馆藏链接不等于目标分册已调到或原页已取得；具体分册和可调阅状态须由馆方记录确认</td></tr>\n<tr><th scope=\"row\">《中国科学院年鉴·2009》馆藏</th><td>文献情报中心馆藏：科学出版社，ISBN9787030252586</td><td>书名、出版社与目标不同；年鉴不是传记所引著作</td></tr>\n<tr><th scope=\"row\">较早版《中国科学院》馆藏</th><td>CiNii列1994版上、中、下三册的馆藏目录记录</td><td>不能把1994版册次、ISBN或分页直接转给2009版</td></tr>\n<tr><th scope=\"row\">2009相关数据库目录线索</th><td>2015年数据库介绍截图有上／下记录，但未给目标版权页、完整目录和正文；同屏不同书重复ISBN</td><td>演示截图不完整；册数已有国图详细书目依据，截图仍不能确定分册题名、章节或p.291归属</td></tr>\n<tr><th scope=\"row\">合法数据库途径</th><td>自然科学史研究所图书馆列共和国国史数据库，说明所内IP访问；原有Gale介绍亦只到丛书层级</td><td>目前尚未从中取得目标书页，不以入口可见充当原文已取得</td></tr>\n</tbody></table></div><ul><li>2009年书目的册数和页数已核读，分册题名、目录及所引p.291归属仍待核；三册均超过291页，不能仅凭页码排除任一册。馆藏和编目数据不替代实体书原页，未取得不等于原件不存在。</li></ul>\n<p class=\"a02-meaning\"><b>证据范围：</b>已核的是2009年国图书目所记三册及页数，尚未目视原书题名页、版权页、目录或第290–292页，不能确定传记所引p.291的分册归属。相关合作分工和书内引据待据原页核读，配方与物性原表仍待另取；后出史述不直接当作同期实验原表。</p><h4>待取得的原件</h4><ul><li>按国图书目号006115647（NLC01）及各馆具体书目记录，调阅2009年《中国科学院》三册的题名页、版权页、完整目录和分册名称—页数对应。不能只凭整套ISBN或377／454／630页的排列认定所引p.291属于哪册。</li><li>册次确认后取得p.290–292及必要相邻页，保留页眉、章节名和书内脚注；核对三氟溴乙烯调聚氟油、人员、研究室与实验厂的原文。</li><li>再据原页追早期氟溴油配方、分馏／批次、密度／黏度／凝点原表、装置与放大／交付报告；当前这些原件仍待取得。</li></ul>\n<p class=\"a02-locator\"><a href=\"#a02-source-book\">HERITAGE-S01</a> · <a href=\"#a02-source-catalog\">A02-TEAM-CATALOG</a> · <a href=\"#a02-source-gale\">A02-TEAM-GALE</a> · <a href=\"#a02-source-las-yearbook\">A02-TRACE-LAS-YEARBOOK</a> · <a href=\"#a02-source-ihns-database\">A02-TRACE-IHNS-DATABASE</a> · <a href=\"#a02-source-easl-catalog\">A02-TRACE-EASL-CATALOG</a> · <a href=\"#a02-source-nlc2009\">A02-TRACE-NLC2009</a> · <a href=\"#a02-source-nlc2009-extent\">A02-TRACE-NLC2009-EXTENT</a></p><p><a href=\"https://meta.nlc.cn/v2/detail/UCS01005727202?b_tit=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2\">国家图书馆2009年书目（三册及页数已有书目依据，目标分册待核）</a> · <a href=\"https://meta.nlc.cn/api/v1/item/UCS01005727202/1/999?b_tit=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2\">国图详细编目数据（含载体形态及责任说明）</a> · <a href=\"https://www.las.ac.cn/front/book/detail?id=58be6463c35e65fb5e16727919db598a\">年鉴馆藏（与目标书分开）</a> · <a href=\"https://ci.nii.ac.jp/ncid/BA71150630\">1994版馆藏目录（非2009原页）</a> · <a href=\"https://www.ihns.ac.cn/njgsz/zcbm/lytsg/zydh/sjkdh/zwbk/202310/t20231026_6909863.html\">合法机构数据库访问说明</a> · <a href=\"https://www.easl.org/images/Presentations/2015/2015-Vendors-2%20Seth%20Curley%20-%20Vista%20Goosuu.pdf\">2009相关目录截图（演示PDF第12页，非原书）</a></p></section>\n</article>\n<details id=\"a02-context-background\"><summary>同期他组与相关材料背景（与陈团队成果分别归属）</summary>\n<article id=\"a02-technical-records\"><span class=\"status\">技术与物性原始记录</span><h2>制取、材料与氟油：证据分别呈现</h2><p>以下资料按原作者与材料身份单列。他组同期方法、机构成果登记及相关材料实测各有用途；与陈先生团队历史工作的关联，须由原始档案逐项建立。</p>\n<section id=\"a02-technical-hfp\"><h3>六氟丙烯制取与低温分离：同期公开原文</h3><p class=\"a02-locator\">1963年他组原始论文 · 陈团队归属尚未连接</p><p>孙家珍、高国经的《四氟乙烯和全氟丙烯的辐射共聚合》记载了聚四氟乙烯热裂、低温分馏与单体色谱检查。原作者属中国科学院应用化学研究所；该文提供同期方法证据，不作为陈庆云课题组的试制或供料记录。</p>\n<p id=\"a02-technical-hfp-table-1\"><b>原刊p.123的原料与分离记录</b>（宽表可横向滑动）</p><div class=\"a02-technical-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a02-technical-hfp-table-1\"><table><thead><tr><th scope=\"col\">环节</th><th scope=\"col\">原文记录</th><th scope=\"col\">可以支持的范围</th></tr></thead><tbody>\n<tr><th scope=\"row\">单体来源</th><td>四氟乙烯和全氟丙烯均由热裂聚四氟乙烯得到</td><td>确认该论文使用PTFE原料，不能替陈团队确定投料</td></tr>\n<tr><th scope=\"row\">分离</th><td>经低温分馏</td><td>有同期分离方法记载；未提供可用于本项目的装置与分馏温度表</td></tr>\n<tr><th scope=\"row\">组成检查</th><td>Al₂O₃吸附柱气相色谱，原文报告只有一个组分</td><td>未给定量纯度、检出限或可复查色谱图，不能写成100%纯</td></tr>\n</tbody></table></div><ul><li>文中的−78°C是共聚反应条件，不是上述低温分馏的温度。共聚动力学与转化率也不转作陈团队2号／3号胶的技术数据。</li></ul>\n<p><b>署名与合作：</b>孙家珍、高国经／中国科学院应用化学研究所；文中未见明确的陈庆云、蒋锡夔、胡亚东或化学所供料署名。未署名不证明绝无联系，目前仅未建立关联。</p><p class=\"a02-meaning\"><b>学术意义与范围：</b>把“裂解—分离—组成检查”落实到可读的同期原文，同时明确哪些环节还不能连接到陈先生承担的路线与低温分离工作。</p><h4>待核事项</h4><ul><li>陈团队1960–1962年原始试制报告、装置图、投料、收率、纯度及移交批次仍待取得。</li><li>机构生平的“四氟乙烯”与纪念册的“聚四氟乙烯”仍分列，不能用另一团队论文替两者作校订。</li></ul>\n<p class=\"a02-locator\">原刊p.123–130，全部8页已目视核读 · <a href=\"#a02-source-hfp1963\">A02-TECH-HFP1963</a></p><p><a href=\"https://www.gfzxb.org/cn/article/7088538\">期刊原文目录</a> · <a href=\"https://www.gfzxb.org/rc-pub/front/front-article/download/7088538/lowqualitypdf/%E5%9B%9B%E6%B0%9F%E4%B9%99%E7%83%AF%E5%92%8C%E5%85%A8%E6%B0%9F%E4%B8%99%E7%83%AF%E7%9A%84%E8%BE%90%E5%B0%84%E5%85%B1%E8%81%9A%E5%90%88.pdf\">官方原刊PDF</a></p></section>\n<section id=\"a02-technical-rubber\"><h3>氟橡胶2号、3号：成果登记与原始技术缺口</h3><p class=\"a02-locator\">机构第一方成果登记及历史回顾 · 尚非逐牌号技术原件</p><p>化学所现行获奖总表列出1966年“氟橡胶FJ-23的合成方法”。这一登记提供了可追查的成果名称与团队线索，但FJ-23与传记中的2号、3号之间，尚未取得足以建立对应关系的原始文书。</p>\n<p id=\"a02-technical-rubber-table-1\"><b>机构登记与已有叙述各自能说明什么</b>（宽表可横向滑动）</p><div class=\"a02-technical-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a02-technical-rubber-table-1\"><table><thead><tr><th scope=\"col\">资料</th><th scope=\"col\">所载记录</th><th scope=\"col\">证据边界</th></tr></thead><tbody>\n<tr><th scope=\"row\">化学所现行获奖总表</th><td>1966年；氟橡胶FJ-23的合成方法；国家发明奖；无等级；单位排序1</td><td>是机构历史元数据，不是原发明证书、配方或物性表</td></tr>\n<tr><th scope=\"row\">化学所旧获奖目录</th><td>列主要完成人：胡亚东、蒋锡夔、蒋丽金、路之康、王秀岗</td><td>依旧目录检索记录保留名单；原授奖文书和分工仍待核</td></tr>\n<tr><th scope=\"row\">传记所记2号、3号接续</th><td>陈先生加入后的单体、分离和团队材料工作分别记载</td><td>不从序号推定精确单体比例，也不据不同项目名单否定或扩大个人贡献</td></tr>\n</tbody></table></div><ul><li>不把FJ-23、历史2号／3号和现代F26／F246自动画等号；现代厂商工艺及其他胶种物性不填入历史试制表。</li></ul>\n<p><b>署名与合作：</b>有明确完成人字段的登记保留原名单；陈先生承担的六氟丙烯与分离工作仍依其传记及原始资料另行归属，不按名单差异互相替代。</p><p class=\"a02-meaning\"><b>学术意义与范围：</b>把集体成果、单体基础工作和后续材料牌号分开，给后续追查合成、鉴定和技术交接档案确定具体项目名称。</p><h4>待核事项</h4><ul><li>历史2号、3号的同期合成报告、逐牌号单体组成、聚合及检测条件、实测物性表仍未取得。</li><li>FJ-23原授奖证书、技术说明及与2号／3号的身份桥待核；不能补造配比、强度、耐温或寿命数值。</li></ul>\n<p class=\"a02-locator\">现行机构获奖总表已读取；具名旧目录通过公开检索记录定位，未取得授奖原件 · <a href=\"#a02-source-fj23\">A02-TECH-FJ23</a> · <a href=\"#a02-source-fj23-old\">A02-TECH-FJ23-OLD</a> · <a href=\"#a02-source-book\">HERITAGE-S01</a></p><p><a href=\"https://ic.cas.cn/results/hj/hjgk/\">化学所现行获奖总表</a> · <a href=\"https://www.ic.cas.cn/kycg/hj/index_13.html\">旧获奖目录（具名登记）</a></p></section>\n<section id=\"a02-technical-oil\"><h3>氟氯系列液体：原始物性与跨所供样记录</h3><p class=\"a02-locator\">1986年相关机构材料实测 · 非陈个人成果或早期氟溴油性能表</p><p>杨义、范滇元（上海光机所）的《氟氯系列折射率匹配液的研究和应用》报告FL-G系列液体的光学、电学与应用测试。论文致谢明确上海有机所附属工厂提供试样，中国科大实习生刘文旭参加部分测试。</p>\n<p id=\"a02-technical-oil-table-1\"><b>原刊p.50表1：实测量与作者修正值分列</b>（宽表可横向滑动）</p><div class=\"a02-technical-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a02-technical-oil-table-1\"><table><thead><tr><th scope=\"col\">原刊型号</th><th scope=\"col\">n_D（钠线实测）</th><th scope=\"col\">n₁.₀₆μm（作者色散修正）</th></tr></thead><tbody>\n<tr><th scope=\"row\">FL-G-5</th><td>1.3870</td><td>1.371</td></tr>\n<tr><th scope=\"row\">FL-G-35</th><td>1.3914</td><td>1.375</td></tr>\n<tr><th scope=\"row\">FL-G-100</th><td>1.3937</td><td>1.377</td></tr>\n<tr><th scope=\"row\">FL-G-330</th><td>1.3975</td><td>1.381</td></tr>\n</tbody></table></div><ul><li>折射率无量纲；原文未报告测量温度。1.06 μm列由作者按色散关系修正，不写成该波长的直接实测，也不是平台新增计算。</li><li>型号后的5、35、100、330只按原刊牌号保留，不解释为已测黏度。原表1.3870等数值按原图记录，不自行改成1.4870。</li></ul>\n<p id=\"a02-technical-oil-table-2\"><b>原刊p.50表2：特定装置下的耐压记录</b>（宽表可横向滑动）</p><div class=\"a02-technical-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a02-technical-oil-table-2\"><table><thead><tr><th scope=\"col\">原刊型号</th><th scope=\"col\">耐压</th><th scope=\"col\">耐压时间</th></tr></thead><tbody>\n<tr><th scope=\"row\">FL-G-100</th><td>&gt;20 kV</td><td>&gt;1.5 min</td></tr>\n<tr><th scope=\"row\">FL-G-330</th><td>&gt;20 kV</td><td>&gt;1.5 min</td></tr>\n</tbody></table></div><ul><li>原文电极直径3 mm、间距1.0 mm。以上为该测试条件下的原报值，不外推为长期寿命或一般介电强度。</li></ul>\n<p><b>署名与合作：</b>作者及测量工作按上海光机所杨义、范滇元署名；供样按上海有机所附属工厂致谢登记，莫国贤姓名可辨，另一供样者姓名首字仍待核；刘文旭参与部分测试。未据此认定陈先生参与这篇论文。</p><p class=\"a02-meaning\"><b>学术意义与范围：</b>这份原刊把工厂试样与有条件的光学、电学测量及器件应用联系起来，能具体展示供样—测量—应用的合作。它提供相关氟氯材料物性，仍不能填补早期调聚氟溴陀螺油的数据空缺。</p><h4>待核事项</h4><ul><li>FL-G各型号的批次、完整配方、测量温度及与历史调聚产品的身份链待核。</li><li>陈团队早期氟溴陀螺油的原始密度、黏度、凝点、质量验收及交付档案仍待取得；不得用本表代替。</li></ul>\n<p class=\"a02-locator\">原刊p.49–51及续p.40，PDF全部4页已目视核读 · <a href=\"#a02-source-fl1986\">A02-TECH-FL1986</a></p><p><a href=\"https://www.researching.cn/ArticlePdf/m00001/1986/13/1/1986-01-0049.pdf\">1986年官方原文PDF</a></p></section>\n</article>\n</details><article id=\"refs\"><span class=\"status\">来源与证据范围</span><h2 id=\"a02-primary-sources\">原始来源及资料性质</h2><ul>\n<li id=\"a02-source-book\"><b>HERITAGE-S01</b> · 朱晶、刘超：《氟缘笃志：陈庆云传》；传记叙述、书中转引访谈及年表。本地研究底本印刷p.35–39、114–115；原PDF与书页不公开分发</li>\n<li id=\"ref-r28\"><b>CQ-R28</b> · <a href=\"https://sioc.cas.cn/dncqy/sp/\">上海有机所：陈庆云院士生平</a>；机构历史回顾。科研贡献中的六氟丙烯路线段</li>\n<li id=\"ref-s1\"><b>S1</b> · <a href=\"https://sioc.cas.cn/kxj/ml/cqy/jnc/\">上海有机所：陈庆云纪念资料</a>；机构纪念资料。六氟丙烯与研究范围相关段落</li>\n<li id=\"a02-source-cas\"><b>HERITAGE-S04</b> · <a href=\"https://www.cas.cn/zt/kjzt/kjzlzqzl/kjzlzq/202406/t20240621_5022275.shtml\">中国科学院：“上海氟”，何以为？</a>；机构历史报道。第1–2节：机构氟油、团队迁沪与实验厂背景，不能合并各团队归属</li>\n<li id=\"a02-source-paper\"><b>A02-P1980</b> · <a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1980/V38/I2/175\">陈庆云等：偏氟乙烯与全卤代烷烃的调聚反应及其产物的研究</a>；原始论文，官方PDF已取得并AI核读全部10页。1980，38(2)：175–184；既有书目登记CQ-H13所指论文</li>\n<li id=\"a02-source-hfp1963\"><b>A02-TECH-HFP1963</b> · <a href=\"https://www.gfzxb.org/cn/article/7088538\">孙家珍、高国经：四氟乙烯和全氟丙烯的辐射共聚合</a>；他组同期原始论文，原刊扫描已取得并核读8页。《高分子通讯》1963，p.123–130；原料与低温分馏见p.123。原刊／目录月份和“辐射／幅射”题名字形分别登记</li>\n<li id=\"a02-source-fj23\"><b>A02-TECH-FJ23</b> · <a href=\"https://ic.cas.cn/results/hj/hjgk/\">中国科学院化学研究所：获奖概况</a>；机构第一方历史成果登记，非原始技术说明。1966年“氟橡胶FJ-23的合成方法”条目</li>\n<li id=\"a02-source-fj23-old\"><b>A02-TECH-FJ23-OLD</b> · <a href=\"https://www.ic.cas.cn/kycg/hj/index_13.html\">中国科学院化学研究所：旧获奖目录</a>；机构旧目录检索记录，具名字段；原授奖文书未取得。1966年FJ-23条目及主要完成人</li>\n<li id=\"a02-source-fl1986\"><b>A02-TECH-FL1986</b> · <a href=\"https://www.researching.cn/ArticlePdf/m00001/1986/13/1/1986-01-0049.pdf\">杨义、范滇元：氟氯系列折射率匹配液的研究和应用</a>；不同作者的相关材料原始论文，全部4页已取得并核读。《中国激光》1986，13(1)：49–51，续40；p.50表1、表2及续p.40供样致谢</li>\n<li id=\"a02-source-mmcs2025\"><b>A02-TEAM-MMCS2025</b> · <a href=\"https://www.mmcs.org.cn/xwz/kxjrl/art/2025/art_63580329680c4348b69105bfbcb7749c.html\">中国科学家博物馆：陈庆云专题报道（上海有机所供稿）</a>；机构供稿的历史回顾，非同期试制报告。2025-01-26；六氟丙烯首项任务、团队条件探索与1963年迁沪段</li>\n<li id=\"a02-source-ic-history\"><b>A02-TEAM-IC-HISTORY</b> · <a href=\"https://ic.cas.cn/about/lsyg/\">中国科学院化学研究所：历史沿革</a>；机构第一方沿革，非人员交接原件。发展历程：有机氟工作于1963年并入上海有机所</li>\n<li id=\"a02-source-jiang-recollection\"><b>A02-TEAM-JIANG-RECOLLECTION</b> · <a href=\"https://chenjiang.fudan.edu.cn/0b/95/c48389a789397/page.htm\">黎占亭：蒋锡夔院士诞辰100周年纪念（复旦大学网页）</a>；学者纪念回顾，非1966年发明证书或技术附件。第5节“研制中国第一块氟橡胶”：组长／副组长、1号与1966年证书叙述；无FJ-23编号或证书图</li>\n<li id=\"a02-source-catalog\"><b>A02-TEAM-CATALOG</b> · <a href=\"https://ci.nii.ac.jp/ncid/BA71150630\">CiNii Books：《中国科学院》1994版馆藏目录</a>；书目与馆藏记录，不是2009版正文。NCID BA71150630；上、中、下三册；ISBN 7800920984。仅用于提示核对版次／册次</li>\n<li id=\"a02-source-gale\"><b>A02-TEAM-GALE</b> · <a href=\"https://www.lib.ntu.edu.tw/doc/CL/ebook/2012/12_china.pdf\">NTU图书馆保存的Gale《当代中国丛书》介绍</a>；电子书丛书介绍，不含目标《中国科学院》第291页。2页介绍册：2009纸本与2011电子书；提供图书馆版本追查入口，不能证明目标页内容</li>\n<li id=\"a02-source-mmcs-project\"><b>A02-TRACE-MMCS-PROJECT</b> · <a href=\"https://www.mmcs.org.cn/kxjfc/kxjfc/cqy9449/index.html\">中国科学家博物馆：陈庆云采集专题</a>；采集项目公开目录，非当次访谈原录。采集小组栏：负责人黄智静，承建上海有机所；不据此指定2018-01-03当次采访者</li>\n<li id=\"a02-source-mmcs-search\"><b>A02-TRACE-MMCS-SEARCH</b> · <a href=\"https://www.mmcs.org.cn/xsb/zljs/index.html\">中国科学家博物馆学术版：资料检索</a>；资料检索公开入口，目标原录未取得。口述文字、音视频、档案／图纸／研究报告类别；已核读的公开页显示系统升级提示，不能判断馆藏有无</li>\n<li id=\"a02-source-mmcs-video\"><b>A02-TRACE-MMCS-VIDEO</b> · <a href=\"https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/yyzx0231/index.html\">中国科学家博物馆：陈庆云影音再现</a>；已展开的公开影音目录，非2018访谈档号。已展开的公开目录第一页列有人物专题片；未见2018-01-03原录直链，不据此断言其他馆藏不存在</li>\n<li id=\"a02-source-las-yearbook\"><b>A02-TRACE-LAS-YEARBOOK</b> · <a href=\"https://www.las.ac.cn/front/book/detail?id=58be6463c35e65fb5e16727919db598a\">文献情报中心：《中国科学院年鉴·2009》馆藏</a>；已核读的纸本馆藏元数据；非目标历史著作。科学出版社，2009，ISBN9787030252586；与传记所引当代中国出版社《中国科学院》分开</li>\n<li id=\"a02-source-ihns-database\"><b>A02-TRACE-IHNS-DATABASE</b> · <a href=\"https://www.ihns.ac.cn/njgsz/zcbm/lytsg/zydh/sjkdh/zwbk/202310/t20231026_6909863.html\">自然科学史研究所图书馆：共和国国史数据库</a>；机构数据库访问说明，未取得库内目标书页。标明所内IP访问并提供检索入口；不代表已经读取《中国科学院》2009版正文</li>\n<li id=\"a02-source-easl-catalog\"><b>A02-TRACE-EASL-CATALOG</b> · <a href=\"https://www.easl.org/images/Presentations/2015/2015-Vendors-2%20Seth%20Curley%20-%20Vista%20Goosuu.pdf\">EASL 2015：共和国国史数据库介绍</a>；数据库演示文稿，非目标书原文。PDF第12页目录截图列2009年《中国科学院（上）／（下）》；同屏不同书重复ISBN，不以此判断实际分册、ISBN或p.291归属</li>\n<li id=\"a02-source-nlc2009\"><b>A02-TRACE-NLC2009</b> · <a href=\"https://meta.nlc.cn/v2/detail/UCS01005727202?b_tit=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2\">国家图书馆：《中国科学院》2009年书目</a>；已核读的正式书目及馆藏链接，非原书正文。书目记录UCS01005727202：题名《中国科学院》，当代中国出版社、香港祖国出版社，2009；未提供目标分册、完整目录或p.290–292原页，书目号码不是技术档案号</li>\n<li id=\"a02-source-report2019\"><b>A02-TRACE-REPORT2019</b> · <a href=\"https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/bd0292/art/2023/art_e2d76717639749c0a6713c2b08a9971a.html\">中国科学家博物馆：陈庆云：六十余年研究一种化学元素</a>；采集工程官方报道中的研究报告引据，报告原件未取得。网页标2021-10-29，文末署采集工程项目办公室／中国科协创新战略研究院；参考文献[1]列朱晶《氟缘笃志：陈庆云传》、采集工程研究报告、2019。仅据此登记调阅目标，不当作报告全文或当次访谈原录</li>\n<li id=\"a02-source-nlc2009-extent\"><b>A02-TRACE-NLC2009-EXTENT</b> · <a href=\"https://meta.nlc.cn/api/v1/item/UCS01005727202/1/999?b_tit=%E4%B8%AD%E5%9B%BD%E7%A7%91%E5%AD%A6%E9%99%A2\">国家图书馆：《中国科学院》2009年详细编目数据</a>；同一公开书目记录的载体形态及责任说明，非实体书或原页。载体形态记3册(377;454;630页)，责任说明记卷主编钱临照、谷羽；国图书目号006115647、书目库NLC01。未得分册题名映射、目录或第290–292页。书目号不作索书号，书目主编不作A02（含氟单体、氟橡胶与氟油）实验分工证据</li>\n</ul><h3>待核事项</h3><ul><li>六氟丙烯原始试制、低温分离装置及交付档案待补；氟橡胶1号前期成果、后续2号／3号的原始牌号、组成与技术交接记录分别核对。</li><li>调聚氟溴陀螺油所引2009年机构史p.291原页、配方和实测质量档案待补，不把传记中的历史应用时态平移为当代现状。</li><li>机构生平写“四氟乙烯”，纪念资料S1写“聚四氟乙烯”；两种投料称谓的关系待原始路线与装置记录核对，不预设为同一物料。</li><li>1963年他组原文确认PTFE热裂与低温分馏的同期技术，但与陈团队供料、合作和原始装置的关联仍未建立；不能借它消除两机构投料称谓差异。</li><li>FJ-23与历史2号／3号之间的对应文书，以及2号／3号原始配方和实测物性表仍缺；不以现代商业牌号填表。</li><li>1986年FL-G氟氯液体与早期调聚氟溴陀螺油分列；前者有物性原报值和供样致谢，不能直接归陈个人或代作后者性能证据。</li><li>传记p.37从二氟一氯甲烷制四氟乙烯的观察谈起；与机构TFE／PTFE记载的原料、过程层次及批次关系待原始工艺核对，不武断判定矛盾或拼成单一路线。</li><li>《陈庆云访谈》2018-01-03原录音／逐字稿、六氟丙烯同期试制和装置原件未取得；低温分馏分工仍据传记。</li><li>FJ-23登记与晚近1号授奖回顾分列；1966原证书、历史2号／3号技术物性附件待核。</li><li>氟溴油传记引《中国科学院》2009版p.291缺册次；已定位较早版馆藏与电子书检索途径，未取得目标原页。</li><li>2018本人访谈已定位采集项目与学术检索入口，完整原录、当次档号和采访者仍待核；5月15日照片不转作1月3日采访证据。</li><li>2009版《中国科学院》p.291册次仍未核定；新提供的《中国科学院年鉴·2009》（科学出版社）与目标书分开，需调阅正确分册版权页、目录及p.290–292。</li></ul>\n<h3>AI辅助工作的范围</h3><p>平台AI工作包括已有原刊核读、对象消歧和引据追踪。已区分2018访谈元数据、项目目录、公开专题片、馆藏及目标书页；访谈原录和2009版《中国科学院》p.291均未取得，册次仍待核。历史成果仍归陈先生及原合作者，其他团队资料仅作背景；未新增六氟丙烯试制、装置、2号／3号技术物性或早期氟溴油原件。尚未开展本线新的复算、量化计算、实验或材料性能验证。M0继续暂停；释读保持review_required、release_eligible=false。 指定胺名、结构编号和产物式的AI辅助文献核校已完成，对照与原页见下一层研究资料；历史成果正文与平台新增释读分开，文字校勘不作实验或机理验证。</p><p><a href=\"../../research/index.html#ai-a02\">已完成的资料整理与未来问题 →</a></p><p>",
+      "new": "record-fluorinated-oils\"><span id=\"a02-team-oil\" aria-hidden=\"true\"></span><span id=\"a02-team-oil-table-1\" aria-hidden=\"true\"></span><span class=\"status\">A02（含氟单体、氟橡胶与氟油） · 氟油研究</span><h2>调聚氟溴陀螺油：从材料需求到实验厂生产</h2>\n<p>传记以航天陀螺支承液的需求介绍这一工作：陀螺悬浮和稳定运转需要合适的液体材料。迁沪后，陈庆云与研究室同事开展调聚氟溴陀螺油研究，书中记载其方法以三氟溴乙烯为原料。</p>\n<p>传记39页明确记述，氟溴油研制成功后，在上海有机所实验厂生产，并应用于航天工业。这是一条由研究室的调聚化学研究，接续到实验厂生产和应用需求的合作链。</p>\n<p class=\"a02-meaning\"><b>学术意义：</b>这项成果把具体含氟反应与功能液体需求联系起来，显示研究不仅在于合成，也包括产物性质与用途的衔接。早期调聚氟溴油、其他团队的全氟烃油和后来的氟氯液体各按其研究对象与原作者介绍。</p><p class=\"a02-locator\">传记39页“氟油研制与调聚反应”节；相关组织与工厂背景参见机构报道 · <a href=\"#a02-source-book\">HERITAGE-S01</a> · <a href=\"#a02-source-cas\">HERITAGE-S04</a></p></article>\n<article id=\"a02-team-records\"><h2>共同攻关：研究、分离、保障与生产</h2><p>传记中的材料成果来自相互配合的工作环节。以下按书中明确叙述的人物和团队角色介绍，不按职务或后来声望补分个人份额。</p>\n<div class=\"a02-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a02-collaboration-caption\"><table><caption id=\"a02-collaboration-caption\">共同攻关：研究、分离、保障与生产</caption><thead><tr><th scope=\"col\">人物与团队</th><th scope=\"col\">具体工作</th><th scope=\"col\">出处</th></tr></thead><tbody><tr><th scope=\"row\">蒋锡夔、胡亚东等课题组成员</th><td>蒋锡夔任组长、胡亚东任副组长；在陈庆云加入前开展氟橡胶1号等前期工作。</td><td>传记35–36页</td></tr><tr><th scope=\"row\">陈庆云与蒋锡夔等</th><td>围绕六氟丙烯来源讨论研究任务，探索裂解制取条件，使单体工作服务后续材料研究。</td><td>传记36–37页</td></tr><tr><th scope=\"row\">陈庆云等实验人员</th><td>承担低温分馏实验，结合反应与分离解决原料获取问题；留苏操作经验与新任务相接。</td><td>传记37页</td></tr><tr><th scope=\"row\">研究室的保障人员</th><td>承担冷冻介质等物资保障，与实验人员共同支撑低温分离。</td><td>传记37页</td></tr><tr><th scope=\"row\">陈庆云与研究室同事、上海有机所实验厂</th><td>研究室开展调聚氟溴油研究，实验厂接续生产，面向航天应用需求。</td><td>传记39页</td></tr></tbody></table></div>\n<section id=\"a02-cooperation\"><h3>1963年迁沪：让研究经验与工业条件结合</h3><p>1963年7月，陈庆云随蒋锡夔课题组由北京迁往上海。传记38–39页把北京的高分子与实验经验、上海的原料和工业条件相联系。机构报道还记录了人员与仪器一同迁移的情景：色谱仪和高温炉随团队南迁，使已有研究能够更快接续。这一组织变化为后续氟化学和材料研究提供了条件。</p><p class=\"a02-locator\">传记38–39页；中国科学院《“上海氟”，何以为？》第2节 · <a href=\"#a02-source-book\">HERITAGE-S01</a> · <a href=\"#a02-source-cas\">HERITAGE-S04</a></p></section></article>\n<article id=\"a02-vdf-1980\"><span class=\"status\">原作者的后续研究</span><h2>后续基础研究：调聚产物的骨架与端基转化</h2><p>陈庆云、马振中、蒋锡夔、张元发、贾世茂在1980年《化学学报》论文中研究偏氟乙烯与全卤代烷烃的调聚及产物转化。原刊把具体骨架、端基、光谱与化学转化关联起来，体现了从含氟材料需求走向基础反应研究的接续。以下保留已整理的原刊观察及其出处，成果归原作者。</p><p><b>原论文：</b>偏氟乙烯与全卤代烷烃的调聚反应及其产物的研究；《化学学报》1980，38(2)：175–184</p>\n<details><summary>原刊观察与转化</summary><div id=\"a02-paper-table\"><div class=\"a02-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a02-table-caption\"><table><caption id=\"a02-table-caption\">原文观察与转化</caption><thead><tr><th scope=\"col\">研究对象</th><th scope=\"col\">原文结果与证据</th><th scope=\"col\">原刊定位</th></tr></thead><tbody><tr><th scope=\"row\">两种调聚剂，两类产物系列</th><td>四氯化碳体系分离鉴定CCl₃(CH₂CF₂)ₙCl（n=1–6）；全氟叔丁基碘体系为(CF₃)₃C(CH₂CF₂)ₙI（n=1、2）。这里的n范围限于论文所研究的产物。</td><td>p.175、179</td></tr><tr><th scope=\"row\">主要加成方向与少量异构线索</th><td>四氯化碳体系中，分馏、¹⁹F NMR及脱氯化氢反应支持主要单加成结构CCl₃CH₂CF₂Cl；过渡馏分的弱峰被作者解释为可能含极少量反向异构体。全氟叔丁基碘体系的主要结构(CF₃)₃CCH₂CF₂I由元素分析、光谱分析及化学转化等证据归属。</td><td>p.176–177；p.179实验</td></tr><tr><th scope=\"row\">碘端基位置的紫外证据</th><td>单加成物(CF₃)₃CCH₂CF₂I原报λmax为274–276 nm，二加成物为270 nm。作者以约275 nm的吸收支持–CF₂I端基归属，并结合其他鉴定证据。</td><td>p.176讨论；p.179实验</td></tr><tr><th scope=\"row\">端基衍生：烯烃、酰胺与羧酸</th><td>部分调聚物经后续转化得到烯烃、含氟酰胺与羧酸。正文图式、实验及英文摘要对应二乙胺，中文摘要原印“乙二胺”；该具体文内差异已完成对照并保留原字样，平台AI核校说明另列于研究资料页。</td><td>p.177–182；英文摘要p.183</td></tr><tr><th scope=\"row\">调聚酸系列的原始物性记录</th><td>表3酸式为Cl(CF₂CH₂)ₙCOOH。n=3原报收率86.0%、熔点70–72°C；n=4为93.0%、97–99°C。这些是原作者实验记录，本平台未重算收率。</td><td>p.178表3；p.182水解条目</td></tr></tbody></table></div></div></details>\n<p>这篇论文研究具体调聚产物及衍生转化；它与早期航天氟溴陀螺油是不同层次的记录。原作者的定性解释、所报数值和平台资料整理分别标明，文献整理不作新的实验或机理验证。</p><p><a href=\"#a02-source-paper\">A02-P1980</a></p></article>\n<article id=\"a02-ai-materials\"><span id=\"a02-source-trace\" aria-hidden=\"true\"></span><span id=\"a02-trace-interview\" aria-hidden=\"true\"></span><span id=\"a02-trace-interview-table-1\" aria-hidden=\"true\"></span><span id=\"a02-trace-book2009\" aria-hidden=\"true\"></span><span id=\"a02-trace-book2009-table-1\" aria-hidden=\"true\"></span><h2>AI辅助资料整理与历史成果分开呈现</h2><p>平台以传记和机构资料介绍既有历史成果；AI用于关联人物、化学对象、原文与用途，并核对平台新增引用的转录和解释。具体文献对照放在下一层AI资料页。资料整理不是超过原作者工作的科学新发现，也不作为历史成就成立的前置认证。平台新增释读保持review_required、release_eligible=false；M0继续暂停。</p><p><a href=\"../../research/index.html#ai-a02\">A02（含氟单体、氟橡胶与氟油）的AI资料整理 →</a></p></article>\n<article id=\"refs\"><h2 id=\"a02-primary-sources\">参考资料</h2><ul>\n<li id=\"a02-source-book\"><b>HERITAGE-S01</b> · 朱晶、刘超：《氟缘笃志：陈庆云传》；参考底本35–39页：氟橡胶1号与六氟丙烯、迁沪、氟油研制与调聚反应</li>\n<li id=\"ref-r28\"><b>CQ-R28</b> · <a href=\"https://sioc.cas.cn/dncqy/\">上海有机所：陈庆云院士生平</a>；生平中的六氟丙烯制取贡献段；作为机构历史评价</li>\n<li id=\"a02-source-cas\"><b>HERITAGE-S04</b> · <a href=\"https://www.cas.cn/zt/kjzt/kjzlzqzl/kjzlzq/202406/t20240621_5022275.shtml\">中国科学院：“上海氟”，何以为？</a>；2024-06-21，第2节研究力量迁沪与实验条件；机构整体氟油成果与个人工作分开</li>\n<li id=\"a02-source-paper\"><b>A02-P1980</b> · <a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1980/V38/I2/175\">《偏氟乙烯与全卤代烷烃的调聚反应及其产物的研究》</a>；《化学学报》1980，38(2)：175–184；陈庆云、马振中、蒋锡夔、张元发、贾世茂</li>\n</ul>\n<span id=\"a02-context-background\" aria-hidden=\"true\"></span><span id=\"a02-technical-records\" aria-hidden=\"true\"></span><span id=\"a02-technical-hfp\" aria-hidden=\"true\"></span><span id=\"a02-technical-hfp-table-1\" aria-hidden=\"true\"></span><span id=\"a02-technical-rubber\" aria-hidden=\"true\"></span><span id=\"a02-technical-rubber-table-1\" aria-hidden=\"true\"></span><span id=\"a02-technical-oil\" aria-hidden=\"true\"></span><span id=\"a02-technical-oil-table-1\" aria-hidden=\"true\"></span><span id=\"a02-technical-oil-table-2\" aria-hidden=\"true\"></span><span id=\"ref-s1\" aria-hidden=\"true\"></span><span id=\"a02-source-hfp1963\" aria-hidden=\"true\"></span><span id=\"a02-source-fj23\" aria-hidden=\"true\"></span><span id=\"a02-source-fj23-old\" aria-hidden=\"true\"></span><span id=\"a02-source-fl1986\" aria-hidden=\"true\"></span><span id=\"a02-source-mmcs2025\" aria-hidden=\"true\"></span><span id=\"a02-source-ic-history\" aria-hidden=\"true\"></span><span id=\"a02-source-jiang-recollection\" aria-hidden=\"true\"></span><span id=\"a02-source-catalog\" aria-hidden=\"true\"></span><span id=\"a02-source-gale\" aria-hidden=\"true\"></span><span id=\"a02-source-mmcs-project\" aria-hidden=\"true\"></span><span id=\"a02-source-mmcs-search\" aria-hidden=\"true\"></span><span id=\"a02-source-mmcs-video\" aria-hidden=\"true\"></span><span id=\"a02-source-las-yearbook\" aria-hidden=\"true\"></span><span id=\"a02-source-ihns-database\" aria-hidden=\"true\"></span><span id=\"a02-source-easl-catalog\" aria-hidden=\"true\"></span><span id=\"a02-source-nlc2009\" aria-hidden=\"true\"></span><span id=\"a02-source-report2019\" aria-hidden=\"true\"></span><span id=\"a02-source-nlc2009-extent\" aria-hidden=\"true\"></span>\n<p><a href=\"../../achievements/index.html#line-a02\">A02（含氟单体、氟橡胶与氟油）成果线</a> · "
+    },
+    {
+      "old": "\n/* Existing-page historical cards; no viewport-width layout. */\n.heritage-section{max-width:100%;min-width:0;margin:2rem auto;overflow-wrap:anywhere}\n.heritage-section>h2{font-size:clamp(28px,3.4vw,40px);margin:.3em 0 .6em}\n.heritage-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;max-width:100%;min-width:0}\n.heritage-card{min-width:0;max-width:100%;padding:1.1rem;border:1px solid #d9e2df;border-radius:14px;background:var(--card,#fff);overflow-wrap:anywhere}\n.heritage-card h3,.heritage-card h4{margin:.15rem 0 .65rem;line-height:1.45}\n.heritage-achievement-notes h5{font-size:1em;margin:.9rem 0 .3rem;line-height:1.5}\n.heritage-achievement-notes{border-top:1px solid #d9e2df;margin-top:1rem;padding-top:.6rem}\n.heritage-card p{margin:.5rem 0;line-height:1.8}\n.heritage-card ul{padding-left:1.3rem;margin:.55rem 0}\n.heritage-card li{margin:.4rem 0;line-height:1.7}\n.heritage-meta,.heritage-locator{font-size:.9em;color:#526560;line-height:1.75}\n.heritage-refs{font-size:.85em;white-space:normal;overflow-wrap:anywhere}\n.heritage-refs a{display:inline-block;margin-right:.25em}\n.heritage-tag{display:inline-block;border:1px solid #c4d6ce;border-radius:6px;padding:.08rem .4rem;margin:.1rem .25rem .1rem 0;font-size:.8em;color:#34574b}\n.heritage-section details{margin:.8rem 0;min-width:0;max-width:100%}\n.heritage-section summary{cursor:pointer;font-weight:600;line-height:1.7}\n.heritage-boundary{border-left:3px solid #6e8d7d;padding:.65rem .9rem;background:#f4f7f5;line-height:1.8}\n@media(max-width:720px){.heritage-grid{grid-template-columns:minmax(0,1fr)}.heritage-card{padding:.9rem}}\n\n</style>\n<section id=\"heritage-context\" class=\"heritage-section\"><h2>成果与合作</h2><p>以下按A02（含氟单体、氟橡胶与氟油）成果线呈现传记与公开资料中的历史记录，保留参与者、来源定位及待核事项；平台AI辅助研究另行登记。</p><div class=\"heritage-grid\"><article class=\"heritage-card\"><h3>材料任务中的单体与分离环节</h3><p>在蒋锡夔、胡亚东团队的既有基础上，陈庆云承担六氟丙烯制取与低温分离工作。氟橡胶1号前期成果与其加入后的单体改进、后续牌号各自登记，保存共同攻关的实际分工。</p><p class=\"heritage-locator\">出处定位：传记p35–37、p36本人访谈注；机构纪念册六氟丙烯段 <span class=\"heritage-refs\"><a href=\"../../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../../index.html#source-s1\" title=\"陈庆云纪念册（机构资料）\">[S1]</a></span></p><p class=\"heritage-meta\">待核事项：试制记录、装置图和后续牌号的人员分工档案待补。</p></article><article class=\"heritage-card\"><h3>氟油研究各有对象</h3><p>传记另记调聚氟油与实验厂的接续工作；机构回顾还保存不同团队的氟油研制史。全氟烃油、氟溴陀螺油和单体工作分别建档，避免把机构的多项成果合成一项个人贡献。</p><p class=\"heritage-locator\">出处定位：传记p39及其引文；CAS历史报道第1–2节 <span class=\"heritage-refs\"><a href=\"../../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../../index.html#heritage-source-s04\" title=\"中国科学院：“上海氟”，何以为？\">[HERITAGE-S04]</a></span></p><p class=\"heritage-meta\">待核事项：所引机构史原页、产品身份与交付质量档案待补。</p></article></div><div class=\"heritage-related-stories\"><h3>相关合作故事</h3><ul><li><a href=\"../../achievements/index.html#heritage-story-st09\">先补单体与分离环节，再推进材料</a></li></ul></div><p><a href=\"../../achievements/index.html#heritage-line-a02\">查看本成果线的资料</a> · <a href=\"../../achievements/index.html#heritage-stories-all\">查看全部合作与育人故事</a></p",
+      "new": "#heritage-context{margin:28px 0;padding:24px;border-top:1px solid var(--line)}#heritage-context nav{display:flex;flex-wrap:wrap;gap:10px 22px}</style><section id=\"heritage-context\"><h2>成果与学术传承</h2><nav aria-label=\"A02（含氟单体、氟橡胶与氟油）成果与传承\"><a href=\"#a02-team-records\">本专题的合作分工</a><a href=\"../../achievements/index.html#heritage-story-st09\">相关合作与育人故事</a><a href=\"../../achievements/index.html#heritage-line-a02\">A02（含氟单体、氟橡胶与氟油）成果资料</a></nav"
+    },
+    {
+      "old": "怎样得到适合聚合的单体，并区分单体、材料与调聚反应各自的贡献？</p><h3>AI怎样辅助</h3><p>对照传记、机构记载与原刊图式，区分单体、材料与调聚产物；关联结构、表征和衍生转化，保留原文异文与专业核校状态。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>单体、材料与氟油的历史贡献</h4><p>已核对传记印刷p.35–39、114–115并与机构资料对照，区分氟橡胶1号的前期团队成果、陈先生参与的六氟丙烯制取与分离，以及后续材料和氟油工作。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#topic-fluoromonomers\">具体贡献、合作与出处 →</a></p></div><div class=\"record\"><h4>1980年调聚原刊：从书目走向原文证据</h4><p>已取得并核读《化学学报》175–184页全部10页，关联两类调聚产物、主要加成方向、光谱及化学转化证据。原文观察和数值在专题直接展示，归原作者；不作为平台新实验。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#a02-vdf-1980\">原文证据及历史数值 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">完整核读与待核事项 →</a></p></div><div class=\"record\"><h4>对象消歧、异文与未完成研究</h4><p>已分开材料牌号、两类调聚产物和不同氟油；本轮完成1980原刊指定胺名、结构编号及产物式对照，保留正文与英文摘要对两种烯烃的不同记载。少量反向异构体线索仍限于四氯化碳体系过渡馏分，未开展新增实验或材料性能验证。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#refs\">来源层级与待核证据 →</a></p></div><div class=\"record\"><h4>制取、材料与氟油技术记录：来源分级</h4><p>新取得并核读1963年他组原文与1986年有机所工厂供样的氟氯液体论文，分别提取低温分馏证据、折射率实测与作者修正值、耐压条件和合作分工；另定位FJ-23机构获奖登记。它们不自动等同陈团队制取记录、历史2号／3号或早期氟溴陀螺油。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#a02-technical-records\">技术记录、原报物性与待核关联 →</a></p></div><div class=\"record\"><h4>陈先生团队：具体贡献与原件追查</h4><p>已重读传记p.35–39，细化裂解观察、低温分离、自制仪器与合作分工，列明2018本人访谈、同期试制／装置、历史2号／3号及早期油品原件的追查位置。尚未取得这些新的同期技术原件；后出回顾、馆藏目录与原件分开。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#a02-team-records\">团队贡献、来源分列与原件待核清单 →</a></p></div><div class=\"record\"><h4>本人访谈与所引书页：引据追踪</h4><p>国图2009年《中国科学院》详细书目记3册(377;454;630页)，册数与页数已有书目依据；所引p.291的分册归属及第290–292页原文仍待核。朱晶2019年研究报告的资料索引、2018-01-03访谈原录，以及同期试制、低温分离和早期氟溴油技术原件仍未取得。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#a02-source-trace\">已核定位、资料身份与待取得原件 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>历史原作者实验、机构回顾与平台AI释读分别呈现；氟橡胶1号前期团队成果不全部归陈先生，不同氟油和后续牌号分别登记。</li><li>原刊支持主要加成方向；四氯化碳体系过渡馏分的弱峰是作者保留极少量反向异构体可能性的依据，不把该线索推广至两类体系。原作者的极性解释不作平台机制确认，乳化用途也不升级为定量性能或环境安全结论。</li><li>1980原刊已取得并核读；指定胺名、中英文编号及产物式的文内对照已经完成。不同记载并列，尚未据此独立认证样品结构、真实产物或机理；M0继续暂停。</li><li>同期他组研究、相关机构材料实测、机构成果登记与陈先生本人工作分开；原文n_D实测及1.06 μm作者色散修正值不混为平台新测量。</li><li>本人访谈原录、当年试制和装置原件仍待取得；传记中二氟一氯甲烷及机构TFE／PTFE记载分别呈现，不由AI拼接为已经证实的工艺。</li><li>馆藏目录、人物专题片及访问入口不等于访谈原录或书页已取得；2009年年鉴与所引《中国科学院》不同，目标册次保持待核。</li></ul><p><b>下一步先补的证据：</b>优先调阅2018-01-03上海访谈原录与馆藏档号，以及2009版《中国科学院》各分册版权／目录和目标册p.290–292；年鉴不替代目标著作。</p><p><b>候选后续问题：</b>在原始工况、产物分布和表征证据充分后，能否分别比较加成方向、端基转化与物性，而不把不同调聚剂、产物和工程对象混为同一体系？",
+      "new": "六氟丙烯制取与低温分离怎样支持氟橡胶研究，调聚氟溴油又怎样连接航天需求？</p><h3>AI怎样辅助</h3><p>以传记主线关联人物、化学对象、原文与用途；整理已有原刊中的具体转化，核对平台新增引用的转录和解释。历史成果与平台AI整理分别呈现。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>传记主线：单体、氟橡胶与氟油</h4><p>依据传记35–39页，呈现六氟丙烯来源与低温分离、氟橡胶2号和3号研制成功，以及调聚氟溴陀螺油从研究室到实验厂生产的接续；按书中叙述保留陈庆云与合作者的分工。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#a02-monomers\">单体与低温分离 →</a><a href=\"../topics/fluoromonomers/index.html#a02-materials\">氟橡胶研究接续 →</a><a href=\"../topics/fluoromonomers/index.html#record-fluorinated-oils\">调聚氟溴油与合作 →</a></p></div><div class=\"record\"><h4>原作者的后续调聚研究</h4><p>依据已取得并整理的1980年《化学学报》175–184页原刊，把两类调聚产物、主要加成方向、光谱与化学转化关联。具体研究及原报数据归陈庆云、马振中、蒋锡夔、张元发、贾世茂；与早期航天氟溴油分别介绍。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#a02-vdf-1980\">原刊观察与转化 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">学术贡献与参考资料 →</a></p></div><div class=\"record\"><h4>平台AI整理的性质</h4><p>平台整理人物—对象—原文—用途的对应，并保存指定原文字样和结构编号的文献对照。这是对既有历史成果的资料展开，不属于超过原作者工作的新科学发现，也不作为历史成果成立的前置认证。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#a02-team-records\">合作分工与出处 →</a><a href=\"../topics/fluoromonomers/index.html#a02-ai-materials\">AI整理与历史成果的关系 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>历史叙述以传记与机构资料为主线，原作者成果归原作者；1号前期工作、陈先生加入后的单体任务及2号／3号材料工作分别介绍。</li><li>早期调聚氟溴油、其他团队全氟烃油、后来的氟氯液体和1980年具体调聚产物分别评价；不自行补配历史牌号的现代商品对应、组成比例或性能指标。</li><li>平台文献整理不作新增实验、结构或机理验证；原文观察和原作者解释分开，新增释读保持review_required、release_eligible=false，M0继续暂停。</li></ul><p><b>下一步先补的证据：</b>围绕已记载成果完善人物—化学对象—原文—用途的资料关联；新增引用对照对应出处，不以重复核验取代学术内容。</p><p><b>候选后续问题：</b>若后续拟开展现代模型或实验，应先限定具体材料与可检验问题，并与原作者工作比较；当前没有启动新计算或实验。"
+    },
+    {
+      "old": "",
+      "new": "\nfrom a02_biography_publication import (MANIFEST as A02_BIOGRAPHY_MANIFEST,\n    predecessor_bytes as a02_biography_predecessor_bytes, apply as apply_a02_biography_presentation)\n"
+    },
+    {
+      "old": "_file(root, name).read_bytes(",
+      "new": "a02_biography_predecessor_bytes(root, name"
+    },
+    {
+      "old": "",
+      "new": "        if (root/A02_BIOGRAPHY_MANIFEST).exists():\n            raise ValueError('A02 biography presentation requires its immutable v25 predecessor')\n"
+    },
+    {
+      "old": "_file(root, name).read_text",
+      "new": "a02_biography_predecessor_bytes(root, name).decode"
+    },
+    {
+      "old": "_file(root, 'site/'+route).read_bytes(",
+      "new": "a02_biography_predecessor_bytes(root, 'site/'+route"
+    },
+    {
+      "old": "_file(root, 'site/'+name).read_bytes(",
+      "new": "a02_biography_predecessor_bytes(root, 'site/'+name"
+    },
+    {
+      "old": "from render_ai_research import inspect_ai_research\n    from render_a01_history import inspect_a01_history\n    from render_a01_primary_reading import inspect_primary_reading\n    checks = [inspect_ai_research(root), inspect_a01_history(root), inspect_primary_reading(root)]\n    if any(c.get('status') != 'passed' for c in checks):\n",
+      "new": "# v25 checks reconstructed bytes; v26 checks the current A02/AI display.\n    if not (root/A02_BIOGRAPHY_MANIFEST).exists():\n        from render_ai_research import inspect_ai_research\n        from render_a01_history import inspect_a01_history\n        from render_a01_primary_reading import inspect_primary_reading\n        checks = [inspect_ai_research(root), inspect_a01_history(root), inspect_primary_reading(root)]\n        if any(c.get('status') != 'passed' for c in checks):\n    "
+    },
+    {
+      "old": "updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}",
+      "new": "apply_a02_biography_presentation(root, updated,\n        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})"
+    },
+    {
+      "old": "",
+      "new": "    if (root/'provenance/platform-presentation.v26.json').exists() and not (root/'provenance/platform-presentation.v25.json').exists():\n        raise ValueError('A02 biography presentation requires its immutable v25 predecessor')\n"
+    }
+  ],
+  "boundary": "Only the A02 academic-history and heritage-context markers on its topic page and the AI A02 section, separate biography-led editorial source, specified A02 AI fields, source-derived document/renderers and bounded publication implementation change. Original A02 JSON, original embedded website JSON, old navigation/source anchors, homepage, other routes/achievement lines, scientific research data and all v1-v25 manifest bytes remain unchanged. Current visible pages omit retrieval logs and unresolved inventories; only previously public predecessor strings remain in exact reversible history, with no private originals, local paths or internal statistics added. Historical accomplishments retain original attribution independently of platform review.",
+  "publish_allowlist": "Unchanged: sixteen static HTML pages, two original public JSON files and an empty .nojekyll marker, nineteen regular published files.",
+  "remote_action_performed": false
+}

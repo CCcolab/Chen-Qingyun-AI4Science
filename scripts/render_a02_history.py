@@ -105,7 +105,10 @@ def source_trace_html(data: dict) -> str:
     return '\n'.join(out+['</article>'])
 
 
-def render_block(data: dict) -> str:
+def render_block(data: dict, root: Path = ROOT) -> str:
+    if (root/'content/a02-biography-narrative.v1.json').exists():
+        from render_a02_biography import render_block as render_biography_block
+        return render_biography_block(root)
     cards = data['history_cards']
     out = [BEGIN, '<style id="a02-academic-css">header h1{text-wrap:balance}#a02-paper-table{overflow-x:auto;max-width:100%}#a02-paper-table table{border-collapse:collapse;min-width:650px;width:100%;font-size:.9rem}#a02-paper-table th,#a02-paper-table td{border:1px solid var(--line);padding:12px;text-align:left;vertical-align:top}#a02-paper-table th{background:#edf3ee}.a02-meaning{border-left:3px solid #aa7545;padding:8px 16px;background:#f7f4eb}.a02-locator{font-size:.88rem;color:var(--muted)}#a02-primary-sources{overflow-wrap:anywhere}</style>',
            '<article id="topic-fluoromonomers" data-topic-slug="fluoromonomers" data-topic-type="dossier"><span class="status">A02 · 原始学术成果与合作</span><h2>'+esc(data['title'])+'</h2><p>'+esc(data['intro'])+'</p>',
@@ -136,7 +139,10 @@ def render_block(data: dict) -> str:
     return project_html('\n'.join(out), ROUTE)
 
 
-def render_document(data: dict) -> str:
+def render_document(data: dict, root: Path = ROOT) -> str:
+    if (root/'content/a02-biography-narrative.v1.json').exists():
+        from render_a02_biography import load as load_biography, render_document as render_biography_document
+        return render_biography_document(load_biography(root))
     out = ['# A02（含氟单体、氟橡胶与氟油）', '', data['title'], '', data['intro'], '']
     for card in data['history_cards']:
         out += ['## '+card['title'],'',card['text'],'','**学术意义：**'+card['meaning'],'','出处：'+card['locator']+'；'+'、'.join(card['source_refs'])+'。','']
@@ -187,7 +193,7 @@ def render_document(data: dict) -> str:
 
 def target_page(root: Path, data: dict) -> str:
     s = (root/PAGE).read_text('utf-8')
-    block = render_block(data)
+    block = render_block(data, root)
     if BEGIN in s:
         pattern = re.escape(BEGIN)+r'.*?'+re.escape(END)
         s, count = re.subn(pattern,lambda _:block,s,flags=re.S)
@@ -196,6 +202,12 @@ def target_page(root: Path, data: dict) -> str:
     else:
         start=s.index('<article id="topic-fluoromonomers"');end=s.index('<!-- HERITAGE_CONTEXT_BEGIN -->',start)
         s=s[:start]+block+'\n'+s[end:]
+    if (root/'content/a02-biography-narrative.v1.json').exists():
+        from render_a02_biography import render_heritage_context
+        context = '<!-- HERITAGE_CONTEXT_BEGIN -->\n'+project_html(render_heritage_context(root),ROUTE)+'\n<!-- HERITAGE_CONTEXT_END -->'
+        s, count = re.subn(r'<!-- HERITAGE_CONTEXT_BEGIN -->.*?<!-- HERITAGE_CONTEXT_END -->',lambda _:context,s,flags=re.S)
+        if count != 1:
+            raise ValueError('Expected one A02 historical navigation marker')
     s = s.replace('<title>专题｜六氟丙烯等含氟单体</title>','<title>专题｜含氟单体、氟橡胶与氟油</title>')
     s = s.replace('<h1>六氟丙烯等含氟单体</h1>','<h1>含氟单体、氟橡胶与氟油</h1>')
     s = s.replace('有机氟化学研究与传承 / 审阅预览','有机氟化学研究与传承 / 学术成果')
@@ -203,10 +215,13 @@ def target_page(root: Path, data: dict) -> str:
 
 
 def inspect_a02_history(root: Path=ROOT) -> dict:
+    if (root/'content/a02-biography-narrative.v1.json').exists():
+        from render_a02_biography import inspect_biography
+        return inspect_biography(root)
     report={'status':'failed','errors':[],'scientific_review_status':'review_required','release_eligible':False,'M0_resumed':False,'network_calls':0,'new_quantum_calls':0}
     try:
         data=load(root);expected=target_page(root,data)
-        if (root/PAGE).read_bytes()!=expected.encode('utf-8') or (root/DOCUMENT).read_text('utf-8')!=render_document(data):
+        if (root/PAGE).read_bytes()!=expected.encode('utf-8') or (root/DOCUMENT).read_text('utf-8')!=render_document(data, root):
             raise ValueError('A02 page or document differs from its source-derived rendering')
         page=PageLinks(expected)
         if any(v!=1 for v in page.ids.values()) or page.json_payloads:

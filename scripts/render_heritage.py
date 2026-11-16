@@ -510,6 +510,12 @@ def render_blocks(data: dict, sources: dict, root: Path = ROOT) -> dict:
         },
     }
     for context in data['topic_contexts']:
+        if (context['path'] == 'topics/fluoromonomers/index.html'
+                and (root/'content/a02-biography-narrative.v1.json').exists()):
+            from render_a02_biography import render_heritage_context
+            blocks[context['path']] = {'HERITAGE_CONTEXT': marker_block(
+                'HERITAGE_CONTEXT', render_heritage_context(root))}
+            continue
         blocks[context['path']] = {'HERITAGE_CONTEXT': marker_block(
             'HERITAGE_CONTEXT', render_topic_context(context, data, sources))}
     return {name: {marker: project_html(body, name) for marker, body in markers.items()}
