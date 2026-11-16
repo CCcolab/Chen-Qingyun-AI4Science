@@ -189,6 +189,16 @@ REFERENCES_PREDECESSOR_FILES = {
 REFERENCES_DOCUMENTS = ('README.md', 'scripts/a01_publication_contract.py')
 AI_RESEARCH_ROUTE = 'research/index.html'
 
+PRESENTATION_V21_SHA256 = 'a353a25fc9586c3fe78de1ad42a20aee4a1c980de59eda4340df4466d9b45593'
+PRESENTATION_V22_PATH = 'provenance/platform-presentation.v22.json'
+PRESENTATION_V22_ID = 'PLATFORM-ORIGINAL-EVIDENCE-20261116-v22'
+PRESENTATION_V22_PREVIOUS_COMMIT = 'e6b42738e5523c31533e72f3af46289bdcc18028'
+ORIGINAL_EVIDENCE_ROUTES = {AI_RESEARCH_ROUTE}
+ORIGINAL_EVIDENCE_PREDECESSOR_FILES = {'content/ai-research-section.v1.json': ('d3af3ed21cf929b55099b799628e8f224b033be332dbcb4e0d999cf1308ea320', 66871), 'docs/AI_RESEARCH_zh-CN.md': ('99efc0bebe93fc34e4a5953a78db9105271b4e7b08ef8a7af5acf54c687ce674', 36001), 'site/research/index.html': ('55ae69b829c8463f81369be6476f4fb2eb80c9380521e23f2c796a87517b3bd5', 49829), 'scripts/a01_publication_contract.py': ('bd7344b83a58d64f00e7c49eadaa36829770ace5051c4a16ea977499c3ce9dee', 275315)}
+ORIGINAL_EVIDENCE_DOCUMENTS = ('content/ai-research-section.v1.json', 'scripts/render_ai_research.py', 'docs/AI_RESEARCH_zh-CN.md', 'scripts/a01_publication_contract.py')
+ORIGINAL_EVIDENCE_UPDATES = {'A03': {'summary': '已按1966年原表转录10个波长记录，其中9个配对记录形成6项位移；波长差、波数蓝移与有界扰动诊断属于同批原表数值重放。原刊印刷21页表1及24页实验部分已回查：紫外仪器为Unicam SP-500；20°C注明于核磁共振测量，不能移作紫外温度。紫外测量条件与真实不确定度仍未完整确认，专业转录签认待补。', 'appended_links': [{'title': '1966原刊：表1见印刷21页，仪器见24页', 'url': 'https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18', 'kind': 'external'}]}, 'A04': {'summary': '已取得并核读1979年《全氟和多氟烷基磺酸的研究 II. 一些多氟烷基醚磺酸的合成》原刊315–324页，324页为同篇英文摘要，署名“全氟磺酸组”。323页致谢记载所内质谱组及上海医药工业研究院核磁组的分析协作。1977年前报和1978年Scientia Sinica原文仍待取得；机构合作登记、论文集体署名与个人分工分别保存，未据此认定个人贡献或完成厂试验证。', 'next_step': '继续追查1977／1978原刊及厂试／扩试原表；将原刊分析协作、机构合作与个人分工按不同证据层级核对。'}, 'A05': {'summary': '已取得并核读1978年《五氟氯乙烷合成简法》77–79页，集体署名“致冷剂小组”，对象为F-115，不能混作1978年F-53论文。另已取得CN1075708A、CN1308043A两项团队工艺专利说明书，发明人分别为林永达／梁与达、吴永明／林永达，不能改列陈庆云个人专利。配套润滑油、原中试及整机试用原表仍待取得；本平台未新增实验或工艺验证。', 'next_step': '优先取得配套润滑油两篇全文与中试／整机原表，核对团队专利技术对象和历史底物指代；不以新取得文件代替工艺验证。'}, 'A06': {'summary': '已取得并核读1982年337–352页、670–673页及1983年1044–1057页三篇原刊。CQ-H16主标题原印为“全氟和多氟烷基磺酸的研究 X.”，与既有题录“磺酸酯”异文分列；670页通讯未印系列号。原刊作者名与传记异文保留，不据署名推定个人分工。结构、谱图及断键解释仍待专业核校。2003／2010方法核查记录保留；1989、2000原论文及1991书章全文仍待取得，2024既有陈试剂机理计算仍归原作者。', 'next_step': '先核三篇原刊的结构、实验条件及姓名异文，再追1989、2000全文与1991书章；原作者的可能机制保留为原作者解释。'}, 'A07': {'summary': '1999与2001年论文的31页、26页SI已取得，已核首页身份；正文仍待取得，全部谱图与机理证据未完成专业核校。申请200510031063.4的CN1752059A与CN1298686C两份说明书已取得，属同一申请的公开／授权版本，陈庆云、曹海萍为共同发明人；版本与技术内容仍待核，不据此判断当前法律状态。摘要中的SET解释不作为平台机制认证。', 'next_step': '优先取两篇正文并核全套SI的谱图与底物对应，区分同一专利的版本；原始应用档案仍待补。'}, 'A08': {'summary': '2003年SI两卷（40＋1页）、2007年13页SI及4份CIF、2022年55页SI，以及晚年三项研究的66／129／11页附件已取得，各篇正文仍待取得。2022年附件S15–S21与S38起已有原作者计算说明及结果，不能把未来AI补算称作首次理论研究，也不能据合著推定陈先生本人完成计算。这些附件目前仅完成文件身份及选定页／字段核对，全套结构、谱图和计算仍待专业核校；文件取得不等于结构、物性或机理认证。', 'next_step': '优先取得对应正文，核对各卷SI及CIF与论文对象的对应关系；先比较既有理论研究，专业核校后再评估未来问题。'}}
+
+
 PRESENTATION_V20_SHA256 = '34814fabc405812bccc433018f8a197d181a3da9ac617f84cceda51513774b72'
 PRESENTATION_V21_PATH = 'provenance/platform-presentation.v21.json'
 PRESENTATION_V21_ID = 'PLATFORM-A02-EVIDENCE-BOUNDARY-20261116-v21'
@@ -335,9 +345,61 @@ def project_file(root: Path, name: str) -> Path:
     return candidate
 
 
+def original_evidence_predecessor_bytes(root: Path, name: str) -> bytes:
+    """Undo only the four explicitly permitted v22 presentation files."""
+    current = project_file(root, name).read_bytes()
+    if not (root/PRESENTATION_V22_PATH).exists():
+        return current
+    data = read_json(project_file(root, PRESENTATION_V22_PATH))
+    if not isinstance(data, dict):
+        raise ValueError('Original evidence presentation must be a JSON object')
+    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')
+    if not isinstance(files, list) or not isinstance(pool, list):
+        raise ValueError('Original evidence require exact reversible text patch records')
+    matches = [row for row in files if isinstance(row, dict) and row.get('path') == name]
+    if not matches:
+        return current
+    if len(matches) != 1 or name not in ORIGINAL_EVIDENCE_PREDECESSOR_FILES:
+        raise ValueError('Unauthorized or duplicate Original evidence predecessor record: '+name)
+    record = matches[0]; old_sha, old_size = ORIGINAL_EVIDENCE_PREDECESSOR_FILES[name]
+    if (record.get('old_sha256') != old_sha or record.get('old_bytes') != old_size
+            or hashlib.sha256(current).hexdigest() != record.get('new_sha256')
+            or len(current) != record.get('new_bytes')):
+        raise ValueError('Original evidence file differs from its complete old/new identities: '+name)
+    edits = record.get('edits')
+    if not isinstance(edits, list) or not edits:
+        raise ValueError('Original evidence changes require nonempty text edits: '+name)
+    chunks, cursor, old_end, delta = [], 0, 0, 0
+    for edit in edits:
+        if not isinstance(edit, dict) or set(edit) != {'old_offset', 'replacement'}:
+            raise ValueError('Invalid reversible Original evidence text edit: '+name)
+        offset, replacement = edit['old_offset'], edit['replacement']
+        if (type(offset) is not int or offset < old_end or type(replacement) is not int
+                or not 0 <= replacement < len(pool)):
+            raise ValueError('Overlapping or invalid Original evidence text edit: '+name)
+        pair = pool[replacement]
+        if (not isinstance(pair, dict) or set(pair) != {'old', 'new'}
+                or not all(isinstance(pair.get(key), str) for key in ('old', 'new'))
+                or pair['old'] == pair['new']):
+            raise ValueError('Invalid Original evidence text replacement pool')
+        before, after = pair['old'].encode('utf-8'), pair['new'].encode('utf-8')
+        position = offset+delta
+        if position < cursor or current[position:position+len(after)] != after:
+            raise ValueError('Original evidence replacement differs at its exact offset: '+name)
+        chunks.extend((current[cursor:position], before))
+        cursor, old_end = position+len(after), offset+len(before)
+        delta += len(after)-len(before)
+    rebuilt = b''.join((*chunks, current[cursor:]))
+    if hashlib.sha256(rebuilt).hexdigest() != old_sha or len(rebuilt) != old_size:
+        raise ValueError('Original evidence predecessor cannot be reconstructed exactly: '+name)
+    return rebuilt
+
+
+
+
 def boundary_predecessor_bytes(root: Path, name: str) -> bytes:
     """Undo only the seven explicitly permitted v21 presentation files."""
-    current = project_file(root, name).read_bytes()
+    current = original_evidence_predecessor_bytes(root, name)
     if not (root/PRESENTATION_V21_PATH).exists():
         return current
     data = read_json(project_file(root, PRESENTATION_V21_PATH))
@@ -1267,6 +1329,8 @@ def apply_presentation_v1(root: Path, entries: dict, *, chain: list,
 
 def apply_presentation_overlay(root: Path, entries: dict, *, chain: list) -> tuple[dict, dict | None]:
     """Apply v1, then this bounded historical-content successor if present."""
+    if (root/PRESENTATION_V22_PATH).exists() and not (root/PRESENTATION_V21_PATH).exists():
+        raise ValueError('Original-evidence presentation requires its fixed v21 predecessor')
     if (root/PRESENTATION_V21_PATH).exists() and not (root/PRESENTATION_V20_PATH).exists():
         raise ValueError('A02 evidence correction requires its fixed v20 predecessor')
     if (root/PRESENTATION_V20_PATH).exists() and not (root/PRESENTATION_V19_PATH).exists():
@@ -3580,8 +3644,8 @@ def apply_a02_boundary_presentation(root: Path, entries: dict, previous_report: 
     if digest(project_file(root, PRESENTATION_V20_PATH)) != PRESENTATION_V20_SHA256:
         raise ValueError('The preceding A02 holdings presentation v20 is immutable')
     path = project_file(root, PRESENTATION_V21_PATH); data = read_json(path)
-    documents = [{'path': name, 'sha256': digest(project_file(root, name)),
-                  'bytes': project_file(root, name).stat().st_size} for name in A02_BOUNDARY_DOCUMENTS]
+    documents = [{'path': name, 'sha256': hashlib.sha256(original_evidence_predecessor_bytes(root, name)).hexdigest(),
+                  'bytes': len(original_evidence_predecessor_bytes(root, name))} for name in A02_BOUNDARY_DOCUMENTS]
     required = {'schema_version': '21.0', 'presentation_id': PRESENTATION_V21_ID,
         'publication_kind': 'platform_a02_evidence_boundary',
         'previous_presentation_commit': PRESENTATION_V21_PREVIOUS_COMMIT,
@@ -3615,7 +3679,7 @@ def apply_a02_boundary_presentation(root: Path, entries: dict, previous_report: 
         old = boundary_predecessor_bytes(root, name)
         if hashlib.sha256(old).hexdigest() != sha or len(old) != size:
             raise ValueError('A02 evidence predecessor differs from fixed 7a53bc6: '+name)
-        if old != project_file(root, name).read_bytes():
+        if old != original_evidence_predecessor_bytes(root, name):
             changed.add(name)
     if {row['path'] for row in files} != changed or changed != set(A02_BOUNDARY_PREDECESSOR_FILES):
         raise ValueError('A02 evidence correction must enumerate every and only its seven changed files')
@@ -3629,7 +3693,7 @@ def apply_a02_boundary_presentation(root: Path, entries: dict, previous_report: 
     expected_ai = json.loads(json.dumps(old_ai))
     expected_ai['lines'][1]['records'][2]['summary'] = A02_BOUNDARY_AI_SUMMARY
     expected_ai['lines'][1]['boundaries'][1] = A02_BOUNDARY_AI_LIMIT
-    if read_json(project_file(root, AI_RESEARCH_CONTENT)) != expected_ai:
+    if json.loads(original_evidence_predecessor_bytes(root, AI_RESEARCH_CONTENT)) != expected_ai:
         raise ValueError('Only the corresponding A02 AI summary and boundary sentence may change')
     changes = data.get('changes')
     if (not isinstance(changes, list) or any(not isinstance(row, dict) for row in changes)
@@ -3641,7 +3705,7 @@ def apply_a02_boundary_presentation(root: Path, entries: dict, previous_report: 
     for item in changes:
         name = item['path']; old = entries[name]
         before = boundary_predecessor_bytes(root, 'site/'+name)
-        after = project_file(root, 'site/'+name).read_bytes()
+        after = original_evidence_predecessor_bytes(root, 'site/'+name)
         source, current = before.decode('utf-8'), after.decode('utf-8')
         if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']
                 or hashlib.sha256(before).hexdigest() != old['sha256'] or len(before) != old['bytes']
@@ -3661,18 +3725,20 @@ def apply_a02_boundary_presentation(root: Path, entries: dict, previous_report: 
             raise ValueError('A02 evidence correction changed outside the specific source article: '+name)
         updated[name] = {**old, 'sha256': item['new_sha256'], 'bytes': item['new_bytes'], 'presentation_id': PRESENTATION_V21_ID}
     for name in (AI_RESEARCH_DOCUMENT, A02_HISTORY_DOCUMENT):
-        prose = project_file(root, name).read_text('utf-8')
+        prose = original_evidence_predecessor_bytes(root, name).decode('utf-8')
         if project_markdown(prose) != prose:
             raise ValueError('A02 evidence prose lost canonical named achievement references: '+name)
     for name, expected in updated.items():
-        member = project_file(root, 'site/'+name)
-        if digest(member) != expected['sha256'] or member.stat().st_size != expected['bytes']:
+        member = original_evidence_predecessor_bytes(root, 'site/'+name)
+        if hashlib.sha256(member).hexdigest() != expected['sha256'] or len(member) != expected['bytes']:
             raise ValueError('A02 evidence correction changed an unlisted website byte: '+name)
-    from render_a02_history import inspect_a02_history
-    from render_ai_research import inspect_ai_research
-    for label, check in (('A02 history', inspect_a02_history(root)), ('AI record', inspect_ai_research(root))):
-        if check.get('status') != 'passed':
-            raise ValueError(label+' differs from its source-derived rendering: '+str(check.get('errors', [])))
+    # v21 is checked against exactly reconstructed bytes; v22 checks final rendering.
+    if not (root/PRESENTATION_V22_PATH).exists():
+        from render_a02_history import inspect_a02_history
+        from render_ai_research import inspect_ai_research
+        for label, check in (('A02 history', inspect_a02_history(root)), ('AI record', inspect_ai_research(root))):
+            if check.get('status') != 'passed':
+                raise ValueError(label+' differs from its source-derived rendering: '+str(check.get('errors', [])))
     members = publication_members(root, updated)
     report = {'path': PRESENTATION_V21_PATH, 'sha256': digest(path), 'presentation_id': PRESENTATION_V21_ID,
         'publication_kind': required['publication_kind'], 'changed_paths': sorted(A02_BOUNDARY_ROUTES), 'added_paths': [],
@@ -3682,6 +3748,145 @@ def apply_a02_boundary_presentation(root: Path, entries: dict, previous_report: 
         'original_history_team_background_source_trace_and_inventory_preserved': True,
         'homepage_A01_and_original_source_data_unchanged': True,
         'original_embedded_json_bytes_preserved': True, 'published_member_count_with_marker': len(members)+1,
+        **{key: required[key] for key in ('scientific_review_status', 'scientific_data_unchanged',
+            'historical_achievement_independent_of_AI_review', 'release_eligible', 'M0_resumed')}}
+    return apply_original_evidence_presentation(root, updated,
+        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})
+
+
+def apply_original_evidence_presentation(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:
+    """Integrate six existing original-paper/attachment acquisition records."""
+    if not (root/PRESENTATION_V22_PATH).exists():
+        return entries, previous_report
+    if digest(project_file(root, PRESENTATION_V21_PATH)) != PRESENTATION_V21_SHA256:
+        raise ValueError('The preceding v21 presentation is immutable')
+    path = project_file(root, PRESENTATION_V22_PATH); data = read_json(path)
+    documents = [{'path': name, 'sha256': digest(project_file(root, name)),
+                  'bytes': project_file(root, name).stat().st_size} for name in ORIGINAL_EVIDENCE_DOCUMENTS]
+    required = {'schema_version': '22.0', 'presentation_id': PRESENTATION_V22_ID,
+        'publication_kind': 'platform_original_evidence_integration',
+        'previous_presentation_commit': PRESENTATION_V22_PREVIOUS_COMMIT,
+        'previous_presentation': {'path': PRESENTATION_V21_PATH, 'sha256': PRESENTATION_V21_SHA256},
+        'original_baseline_sha256': BASELINE_SHA256, 'original_archive_sha256': ARCHIVE_SHA256,
+        'allowed_html_paths': sorted(ORIGINAL_EVIDENCE_ROUTES), 'added_html_paths': [], 'additions': [],
+        'allowed_achievement_lines': ['A03', 'A04', 'A05', 'A06', 'A07', 'A08'], 'editorial_documents': documents,
+        'protected_website_members': {name: {'sha256': row['sha256'], 'bytes': row['bytes']}
+            for name, row in entries.items() if name not in ORIGINAL_EVIDENCE_ROUTES},
+        'reconstruction_kind': 'deduplicated_exact_utf8_text_edits',
+        'scientific_review_status': 'review_required', 'release_eligible': False,
+        'source_status_date': '2026-11-16',
+        'scientific_data_unchanged': True, 'M0_resumed': False,
+        'historical_achievement_independent_of_AI_review': True}
+    if (not isinstance(data, dict) or any(data.get(key) != value for key, value in required.items())
+            or any(data.get(key) is not required[key] for key in ('release_eligible',
+                'scientific_data_unchanged', 'M0_resumed', 'historical_achievement_independent_of_AI_review'))
+            or any(type(data.get(key)) is not int or data[key] != 0 for key in ('new_quantum_calls', 'new_model_API_calls'))
+            or not isinstance(data.get('authorization'), str) or not data['authorization'].strip()):
+        raise ValueError('Unsupported bounded original-evidence integration v22')
+    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')
+    if (not isinstance(files, list) or not files or not isinstance(pool, list) or not pool
+            or any(not isinstance(row, dict) or row.get('path') not in ORIGINAL_EVIDENCE_PREDECESSOR_FILES for row in files)
+            or len({row['path'] for row in files}) != len(files)
+            or any(not isinstance(row.get('edits'), list) or not row['edits'] or any(
+                not isinstance(edit, dict) or type(edit.get('replacement')) is not int for edit in row['edits']) for row in files)):
+        raise ValueError('Original-evidence integration may enumerate only its four fixed predecessor files')
+    if {edit['replacement'] for row in files for edit in row['edits']} != set(range(len(pool))):
+        raise ValueError('Original-evidence integration requires exactly its used replacement segments')
+    changed = set()
+    for name, (sha, size) in ORIGINAL_EVIDENCE_PREDECESSOR_FILES.items():
+        old = original_evidence_predecessor_bytes(root, name)
+        if hashlib.sha256(old).hexdigest() != sha or len(old) != size:
+            raise ValueError('Original-evidence predecessor differs from fixed e6b4273: '+name)
+        if old != project_file(root, name).read_bytes():
+            changed.add(name)
+    if {row['path'] for row in files} != changed or changed != set(ORIGINAL_EVIDENCE_PREDECESSOR_FILES):
+        raise ValueError('Original-evidence integration must enumerate all and only its four changed files')
+    old_ai = json.loads(original_evidence_predecessor_bytes(root, AI_RESEARCH_CONTENT))
+    expected_ai = json.loads(json.dumps(old_ai))
+    expected_ai['date'] = '2026-11-16'
+    for ident, update in ORIGINAL_EVIDENCE_UPDATES.items():
+        line = expected_ai['lines'][int(ident[1:])-1]
+        fields = {'summary', 'appended_links'} if ident == 'A03' else {'summary', 'next_step'}
+        if line['id'] != ident or set(update) != fields:
+            raise ValueError('Unexpected original-evidence update fields')
+        if not isinstance(update['summary'], str) or not update['summary'].strip():
+            raise ValueError('Original-evidence summary must be nonempty')
+        line['records'][0]['summary'] = update['summary']
+        additions = update.get('appended_links', [])
+        if (not isinstance(additions, list) or bool(additions) != (ident == 'A03')
+                or any(not isinstance(item, dict)
+                or item.get('kind') != 'external'
+                or not re.match(r'https://(?:www\.)?sioc-journal\.cn/', item.get('url', ''))
+                for item in additions)):
+            raise ValueError('Only appended official HTTPS original-paper links are permitted')
+        line['records'][0]['links'].extend(additions)
+        if ident != 'A03':
+            line['next_step'] = update['next_step']
+    if set(ORIGINAL_EVIDENCE_UPDATES) != {'A03', 'A04', 'A05', 'A06', 'A07', 'A08'}:
+        raise ValueError('Expected exactly six original-paper/attachment record updates')
+    if read_json(project_file(root, AI_RESEARCH_CONTENT)) != expected_ai:
+        raise ValueError('Only the fixed status date, six summaries, one append-only link list and five next steps may change')
+    changes = data.get('changes')
+    if (not isinstance(changes, list) or len(changes) != 1 or not isinstance(changes[0], dict)
+            or changes[0].get('path') != AI_RESEARCH_ROUTE):
+        raise ValueError('Original-evidence integration may change only the existing research page')
+    from public_line_labels import project_html, project_markdown
+    item = changes[0]; name = AI_RESEARCH_ROUTE; old = entries[name]
+    before = original_evidence_predecessor_bytes(root, 'site/'+name)
+    after = project_file(root, 'site/'+name).read_bytes()
+    source, current = before.decode('utf-8'), after.decode('utf-8')
+    if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']
+            or hashlib.sha256(before).hexdigest() != old['sha256'] or len(before) != old['bytes']
+            or item.get('new_sha256') != hashlib.sha256(after).hexdigest() or item.get('new_bytes') != len(after)
+            or before == after or not isinstance(item.get('reason'), str) or not item['reason'].strip()):
+        raise ValueError('Original-evidence HTML differs from complete old/new identities')
+    json_scripts = re.compile(r'<script\b[^>]*\btype\s*=\s*["\']application/(?:ld\+)?json["\'][^>]*>.*?</script\s*>', re.I | re.S)
+    if json_scripts.findall(source) != json_scripts.findall(current):
+        raise ValueError('Original-evidence integration must retain every embedded JSON byte')
+    if set(re.findall(r'\bid="([^\"]+)"', source)) != set(re.findall(r'\bid="([^\"]+)"', current)):
+        raise ValueError('Original-evidence integration must retain every navigation and source ID')
+    if project_html(current, name) != current:
+        raise ValueError('Original-evidence integration lost canonical achievement names')
+    masked_before, masked_after = source, current
+    for ident in ('a03', 'a04', 'a05', 'a06', 'a07', 'a08'):
+        pattern = r'<section\b[^>]*\bid="ai-'+ident+r'"[^>]*>.*?</section>'
+        if len(re.findall(pattern, source, re.S)) != 1 or len(re.findall(pattern, current, re.S)) != 1:
+            raise ValueError('Original-evidence integration requires exactly one section per selected line')
+        masked_before = re.sub(pattern, '<ORIGINAL-EVIDENCE-'+ident+'/>', masked_before, flags=re.S)
+        masked_after = re.sub(pattern, '<ORIGINAL-EVIDENCE-'+ident+'/>', masked_after, flags=re.S)
+    old_date = '资料状态截至'+old_ai['date']+'。'
+    new_date = '资料状态截至2026-11-16。'
+    if masked_before.count(old_date) != 1 or masked_after.count(new_date) != 1:
+        raise ValueError('Expected exactly one old and current research-page status date')
+    if masked_before.replace(old_date, new_date) != masked_after:
+        raise ValueError('Original-evidence integration changed outside its six research sections and fixed footer date')
+    prose = project_file(root, AI_RESEARCH_DOCUMENT).read_text('utf-8')
+    if project_markdown(prose) != prose:
+        raise ValueError('Original-evidence document lost canonical achievement names')
+    updated = {name: dict(row) for name, row in entries.items()}
+    updated[name] = {**old, 'sha256': item['new_sha256'], 'bytes': item['new_bytes'], 'presentation_id': PRESENTATION_V22_ID}
+    for member_name, expected in updated.items():
+        member = project_file(root, 'site/'+member_name)
+        if digest(member) != expected['sha256'] or member.stat().st_size != expected['bytes']:
+            raise ValueError('Original-evidence integration changed an unlisted website byte: '+member_name)
+    from render_ai_research import inspect_ai_research
+    check = inspect_ai_research(root)
+    if check.get('status') != 'passed':
+        raise ValueError('Original-evidence final page differs from source rendering: '+str(check.get('errors', [])))
+    members = publication_members(root, updated)
+    report = {'path': PRESENTATION_V22_PATH, 'sha256': digest(path), 'presentation_id': PRESENTATION_V22_ID,
+        'publication_kind': required['publication_kind'], 'changed_paths': [AI_RESEARCH_ROUTE], 'added_paths': [],
+        'changed_achievement_lines': ['A03', 'A04', 'A05', 'A06', 'A07', 'A08'],
+        'previous_presentation_commit': PRESENTATION_V22_PREVIOUS_COMMIT,
+        'exact_predecessor_reconstruction': True, 'source_derived_rendering': True,
+        'only_six_existing_first_records_and_five_next_steps_changed': True,
+        'source_and_derived_status_date_fixed_to_20261116': True,
+        'A04_through_A08_existing_links_preserved_without_unverified_new_links': True,
+        'all_original_authors_source_ids_and_links_preserved': True,
+        'homepage_and_historical_achievement_pages_unchanged': True,
+        'original_embedded_json_bytes_preserved': True,
+        'original_scans_and_private_evidence_registers_not_published': True,
+        'published_member_count_with_marker': len(members)+1,
         **{key: required[key] for key in ('scientific_review_status', 'scientific_data_unchanged',
             'historical_achievement_independent_of_AI_review', 'release_eligible', 'M0_resumed')}}
     return updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}

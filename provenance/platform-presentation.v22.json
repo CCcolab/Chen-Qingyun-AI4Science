@@ -1,0 +1,458 @@
+{
+  "schema_version": "22.0",
+  "presentation_id": "PLATFORM-ORIGINAL-EVIDENCE-20261116-v22",
+  "created_at_utc": "2026-11-16T07:30:54.625136+00:00",
+  "publication_kind": "platform_original_evidence_integration",
+  "authorization": "User request dated 2026-11-16 to read the full supplied report and five original papers, integrate evidence with attribution and conflict boundaries, and synchronize the completed eligible stage to GitHub and the website. This bounded declaration records the local editorial preparation; it does not itself represent a deployment.",
+  "previous_presentation_commit": "e6b42738e5523c31533e72f3af46289bdcc18028",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v21.json",
+    "sha256": "a353a25fc9586c3fe78de1ad42a20aee4a1c980de59eda4340df4466d9b45593"
+  },
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "allowed_html_paths": [
+    "research/index.html"
+  ],
+  "added_html_paths": [],
+  "allowed_achievement_lines": [
+    "A03",
+    "A04",
+    "A05",
+    "A06",
+    "A07",
+    "A08"
+  ],
+  "editorial_documents": [
+    {
+      "path": "content/ai-research-section.v1.json",
+      "sha256": "278647dbc24b3089da7878736d8a6160547b7080d8d99bd2cdbdebd9f0c38e3a",
+      "bytes": 68858
+    },
+    {
+      "path": "scripts/render_ai_research.py",
+      "sha256": "729298ecb6146cba6b9a78bdc2074dabb10b6a2f551f7efaf4d0a4078e29f521",
+      "bytes": 34792
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "sha256": "b6c2f2d7f84de97cfb22020be553d332b8ed6dd83566c2ec3fe492a495c44d4b",
+      "bytes": 37877
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "sha256": "dcf906fa4f6041f418978073e84f76a165ec2ad96c333116259a6b246badf2d8",
+      "bytes": 294741
+    }
+  ],
+  "protected_website_members": {
+    "index.html": {
+      "sha256": "8b3532ee45c0fb33912f20a3bd7943043a348f10a370b9c6716e9edf3c0abf41",
+      "bytes": 257766
+    },
+    "pftb/index.html": {
+      "sha256": "42ca404f2ed70b7a3b0b5d8b0eb742a2509e5a5a70fd0be36a65028e61cbd1f6",
+      "bytes": 97587
+    },
+    "topics/f53/index.html": {
+      "sha256": "8def3379a75dda6665d7cb3ee6c32193fc7a61ec6b31098abbefe9218fea39fe",
+      "bytes": 8161
+    },
+    "topics/refrigerants/index.html": {
+      "sha256": "5d9b5a355b949f67c5de252727f8d4e4e7533abab8a666c49a0f932170153c4e",
+      "bytes": 10636
+    },
+    "topics/perfluorosulfonates/index.html": {
+      "sha256": "85a6f4330edb7607f61ca217b71d2ef6c12cb1af0d48aaaebf737acf3a212ea5",
+      "bytes": 8888
+    },
+    "topics/chen-reagent/index.html": {
+      "sha256": "14f08afd4062c0ae171f24e5fb225e5968b003e885edc206baf08ca352b630df",
+      "bytes": 19991
+    },
+    "topics/single-electron-transfer/index.html": {
+      "sha256": "79c84f89e25e576a03f34153b9eb85a5ff73815c8265a0222930d889390ea947",
+      "bytes": 10355
+    },
+    "topics/fluoroporphyrins/index.html": {
+      "sha256": "24b6bb744b594573487847c89bbb35571ea56bc15d444ebeac3339379dbc1875",
+      "bytes": 6018
+    },
+    "topics/early-fluoroketones/index.html": {
+      "sha256": "a6da86d7f9ff0f35a5ea044252297a23e5ed71db829f2d184e3ab38a70dce9a2",
+      "bytes": 250938
+    },
+    "topics/fluorinated-small-rings/index.html": {
+      "sha256": "2413c83d4319746f41e940c04fe48bdeda28244235f5a9e8697285c187ba412d",
+      "bytes": 5924
+    },
+    "topics/deoxyfluorination/index.html": {
+      "sha256": "2aca9c13eb46f9fedfb02a2adfdc9423c207465f58608bcd671838d4d8045df5",
+      "bytes": 5550
+    },
+    "topics/sulfonyl-fluoride/index.html": {
+      "sha256": "fe944efbbfa5a7814015235f4ae3aae101db4046b0c9419986d6855d7ed15b49",
+      "bytes": 5043
+    },
+    "topics/index.html": {
+      "sha256": "44a5690d1e65195b9ff191d2a7ec37487070cdfafb191ae107962d5e0d7ab73c",
+      "bytes": 5055
+    },
+    "achievements/index.html": {
+      "sha256": "df20daf429c46e89e99085550067e8c1e9f7e283b10b7e8269f38da6a9d380ff",
+      "bytes": 95867
+    },
+    "data/public-sources.json": {
+      "sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+      "bytes": 33608
+    },
+    "data/achievement-lines.json": {
+      "sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+      "bytes": 39768
+    },
+    "README.txt": {
+      "sha256": "6e15068b7240ae47d633df3f777e81fbb9e46146ee5f4ab70011f09119b6bbc9",
+      "bytes": 336
+    },
+    "ROUTES.txt": {
+      "sha256": "a734c356877d4534285ab7d71b9fe0f7a17abbced4de3c52f8e60d335301e418",
+      "bytes": 949
+    },
+    "QA.txt": {
+      "sha256": "a60b5f382b31689fa17e2518b7079ef0660674fb62bddbbf564c7b74dfe51067",
+      "bytes": 290
+    },
+    "IONIC-ENTRY-RETEST.txt": {
+      "sha256": "3462b056891a27c335cc2620deb87b245b6c9aea3bdaec607c8a14beca69fe9d",
+      "bytes": 741
+    },
+    "topics/fluoromonomers/index.html": {
+      "sha256": "226275b67b0ff281f0cc373e6f0ebceb91eea8c22322278a897ed2bdfdd09e11",
+      "bytes": 60034
+    }
+  },
+  "reconstruction_kind": "deduplicated_exact_utf8_text_edits",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "source_status_date": "2026-11-16",
+  "scientific_data_unchanged": true,
+  "M0_resumed": false,
+  "historical_achievement_independent_of_AI_review": true,
+  "new_quantum_calls": 0,
+  "new_model_API_calls": 0,
+  "changes": [
+    {
+      "path": "research/index.html",
+      "old_sha256": "55ae69b829c8463f81369be6476f4fb2eb80c9380521e23f2c796a87517b3bd5",
+      "old_bytes": 49829,
+      "new_sha256": "4427a6cb2adedf7761bf22308cec33bf27d45209f1ecb2f12b4cfb9f0f91e3a7",
+      "new_bytes": 51716,
+      "reason": "Integrate original-paper and supporting-attachment acquisition into six existing research records; retain original authorship, pending professional review and all scientific interpretation limits."
+    }
+  ],
+  "additions": [],
+  "reversible_text_files": [
+    {
+      "path": "content/ai-research-section.v1.json",
+      "old_sha256": "d3af3ed21cf929b55099b799628e8f224b033be332dbcb4e0d999cf1308ea320",
+      "old_bytes": 66871,
+      "new_sha256": "278647dbc24b3089da7878736d8a6160547b7080d8d99bd2cdbdebd9f0c38e3a",
+      "new_bytes": 68858,
+      "edits": [
+        {
+          "old_offset": 96,
+          "replacement": 0
+        },
+        {
+          "old_offset": 35931,
+          "replacement": 1
+        },
+        {
+          "old_offset": 36814,
+          "replacement": 2
+        },
+        {
+          "old_offset": 55464,
+          "replacement": 3
+        },
+        {
+          "old_offset": 56165,
+          "replacement": 4
+        },
+        {
+          "old_offset": 57295,
+          "replacement": 5
+        },
+        {
+          "old_offset": 58018,
+          "replacement": 6
+        },
+        {
+          "old_offset": 59185,
+          "replacement": 7
+        },
+        {
+          "old_offset": 59932,
+          "replacement": 8
+        },
+        {
+          "old_offset": 63136,
+          "replacement": 9
+        },
+        {
+          "old_offset": 63819,
+          "replacement": 10
+        },
+        {
+          "old_offset": 64999,
+          "replacement": 11
+        },
+        {
+          "old_offset": 65723,
+          "replacement": 12
+        }
+      ]
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "old_sha256": "99efc0bebe93fc34e4a5953a78db9105271b4e7b08ef8a7af5acf54c687ce674",
+      "old_bytes": 36001,
+      "new_sha256": "b6c2f2d7f84de97cfb22020be553d332b8ed6dd83566c2ec3fe492a495c44d4b",
+      "new_bytes": 37877,
+      "edits": [
+        {
+          "old_offset": 63,
+          "replacement": 0
+        },
+        {
+          "old_offset": 25226,
+          "replacement": 1
+        },
+        {
+          "old_offset": 25776,
+          "replacement": 13
+        },
+        {
+          "old_offset": 27053,
+          "replacement": 3
+        },
+        {
+          "old_offset": 27585,
+          "replacement": 4
+        },
+        {
+          "old_offset": 28430,
+          "replacement": 5
+        },
+        {
+          "old_offset": 28984,
+          "replacement": 6
+        },
+        {
+          "old_offset": 29860,
+          "replacement": 7
+        },
+        {
+          "old_offset": 31548,
+          "replacement": 8
+        },
+        {
+          "old_offset": 32594,
+          "replacement": 9
+        },
+        {
+          "old_offset": 33108,
+          "replacement": 10
+        },
+        {
+          "old_offset": 33991,
+          "replacement": 11
+        },
+        {
+          "old_offset": 34546,
+          "replacement": 12
+        }
+      ]
+    },
+    {
+      "path": "site/research/index.html",
+      "old_sha256": "55ae69b829c8463f81369be6476f4fb2eb80c9380521e23f2c796a87517b3bd5",
+      "old_bytes": 49829,
+      "new_sha256": "4427a6cb2adedf7761bf22308cec33bf27d45209f1ecb2f12b4cfb9f0f91e3a7",
+      "new_bytes": 51716,
+      "edits": [
+        {
+          "old_offset": 36946,
+          "replacement": 14
+        }
+      ]
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "old_sha256": "bd7344b83a58d64f00e7c49eadaa36829770ace5051c4a16ea977499c3ce9dee",
+      "old_bytes": 275315,
+      "new_sha256": "dcf906fa4f6041f418978073e84f76a165ec2ad96c333116259a6b246badf2d8",
+      "new_bytes": 294741,
+      "edits": [
+        {
+          "old_offset": 15173,
+          "replacement": 15
+        },
+        {
+          "old_offset": 27307,
+          "replacement": 16
+        },
+        {
+          "old_offset": 27460,
+          "replacement": 17
+        },
+        {
+          "old_offset": 82944,
+          "replacement": 18
+        },
+        {
+          "old_offset": 259080,
+          "replacement": 19
+        },
+        {
+          "old_offset": 262071,
+          "replacement": 17
+        },
+        {
+          "old_offset": 263111,
+          "replacement": 20
+        },
+        {
+          "old_offset": 264002,
+          "replacement": 21
+        },
+        {
+          "old_offset": 265900,
+          "replacement": 22
+        },
+        {
+          "old_offset": 266151,
+          "replacement": 23
+        },
+        {
+          "old_offset": 266379,
+          "replacement": 24
+        },
+        {
+          "old_offset": 267573,
+          "replacement": 25
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "4",
+      "new": "6"
+    },
+    {
+      "old": "；其中9个配对记录形成6项位移，分别重算波长差与波数蓝移，并保存人为指定的有界扰动敏感性诊断。原表同一批数据的不同表达不是独立实验",
+      "new": "，其中9个配对记录形成6项位移；波长差、波数蓝移与有界扰动诊断属于同批原表数值重放。原刊印刷21页表1及24页实验部分已回查：紫外仪器为Unicam SP-500；20°C注明于核磁共振测量，不能移作紫外温度。紫外测量条件与真实不确定度仍未完整确认，专业转录签认待补"
+    },
+    {
+      "old": "",
+      "new": "            },\r\n            {\r\n              \"title\": \"1966原刊：表1见印刷21页，仪器见24页\",\r\n              \"url\": \"https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18\",\r\n              \"kind\": \"external\"\r\n"
+    },
+    {
+      "old": "传记具名回忆、机构题录和历史厂试图注已有定位；原刊全文、配方、批次、工况与效益原表待补。未登记平台复现计算或新实验结果",
+      "new": "已取得并核读1979年《全氟和多氟烷基磺酸的研究 II. 一些多氟烷基醚磺酸的合成》原刊315–324页，324页为同篇英文摘要，署名“全氟磺酸组”。323页致谢记载所内质谱组及上海医药工业研究院核磁组的分析协作。1977年前报和1978年Scientia Sinica原文仍待取得；机构合作登记、论文集体署名与个人分工分别保存，未据此认定个人贡献或完成厂试验证"
+    },
+    {
+      "old": "优先补原刊与厂试／扩试档案，保留集体署名；历史应用与晚年环境反思并置",
+      "new": "继续追查1977／1978原刊及厂试／扩试原表；将原刊分析协作、机构合作与个人分工按不同证据层级核对"
+    },
+    {
+      "old": "传记及机构回顾已核读，配套论文线索与1998综述目录摘要已登记；原中试、专利、润滑油和整机记录待补。未登记平台复现计算或新实验结果",
+      "new": "已取得并核读1978年《五氟氯乙烷合成简法》77–79页，集体署名“致冷剂小组”，对象为F-115，不能混作1978年F-53论文。另已取得CN1075708A、CN1308043A两项团队工艺专利说明书，发明人分别为林永达／梁与达、吴永明／林永达，不能改列陈庆云个人专利。配套润滑油、原中试及整机试用原表仍待取得；本平台未新增实验或工艺验证"
+    },
+    {
+      "old": "配套润滑油两篇原文及原专利／中试报告，核清化学对象后再谈机理",
+      "new": "得配套润滑油两篇全文与中试／整机原表，核对团队专利技术对象和历史底物指代；不以新取得文件代替工艺验证"
+    },
+    {
+      "old": "1982/1983及1989原论文题录摘要已有登记；2003与2010方法记录的具体核查名单可读；主要早期全文仍待补。2024既有陈试剂机理计算归黄广龙、薛小松，本平台无新增机制结论",
+      "new": "已取得并核读1982年337–352页、670–673页及1983年1044–1057页三篇原刊。CQ-H16主标题原印为“全氟和多氟烷基磺酸的研究 X.”，与既有题录“磺酸酯”异文分列；670页通讯未印系列号。原刊作者名与传记异文保留，不据署名推定个人分工。结构、谱图及断键解释仍待专业核校。2003／2010方法核查记录保留；1989、2000原论文及1991书章全文仍待取得，2024既有陈试剂机理计算仍归原作者"
+    },
+    {
+      "old": "优先补磺酸酯和1989原刊；对方法核查保存提交者、核查者及具体对象",
+      "new": "先核三篇原刊的结构、实验条件及姓名异文，再追1989、2000全文与1991书章；原作者的可能机制保留为原作者解释"
+    },
+    {
+      "old": "论文题录摘要及2005专利机构登记已有定位；原全文、SI及应用档案待补。未登记平台复现计算或新实验结果",
+      "new": "年论文的31页、26页SI已取得，已核首页身份；正文仍待取得，全部谱图与机理证据未完成专业核校。申请200510031063.4的CN1752059A与CN1298686C两份说明书已取得，属同一申请的公开／授权版本，陈庆云、曹海萍为共同发明人；版本与技术内容仍待核，不据此判断当前法律状态。摘要中的SET解释不作为平台机制认证"
+    },
+    {
+      "old": "1999原文和补充资料，并补2001镍体系，按实际作者和底物建立档案",
+      "new": "两篇正文并核全套SI的谱图与底物对应，区分同一专利的版本；原始应用档案仍待补"
+    },
+    {
+      "old": "传记交叉研究线索与若干论文书目摘要已有登记；小环、2003/2007大环等全文、SI和结构表征仍需逐篇补齐。未登记平台复现计算或新实验结果",
+      "new": "2003年SI两卷（40＋1页）、2007年13页SI及4份CIF、2022年55页SI，以及晚年三项研究的66／129／11页附件已取得，各篇正文仍待取得。2022年附件S15–S21与S38起已有原作者计算说明及结果，不能把未来AI补算称作首次理论研究，也不能据合著推定陈先生本人完成计算。这些附件目前仅完成文件身份及选定页／字段核对，全套结构、谱图和计算仍待专业核校；文件取得不等于结构、物性或机理认证"
+    },
+    {
+      "old": "补2003／2007原文和表征，再梳理晚年合作论文；后续应用均保留原作者",
+      "new": "取得对应正文，核对各卷SI及CIF与论文对象的对应关系；先比较既有理论研究，专业核校后再评估未来问题"
+    },
+    {
+      "old": "",
+      "new": " · [1966原刊：表1见印刷21页，仪器见24页](https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18)"
+    },
+    {
+      "old": "；其中9个配对记录形成6项位移，分别重算波长差与波数蓝移，并保存人为指定的有界扰动敏感性诊断。原表同一批数据的不同表达不是独立实验。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/REPLAY_REPORT_zh-CN.md\">PF1966-UV-T1数值重放报告 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/data/pftb1966_table1.csv\">原表转录数据 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/pftb1966-uv-replay.json\">既有重放结果 →</a></p></div></div></details><div class=\"pending-work\" id=\"ai-a03-pending\"><h3>待核事项</h3><ul><li>原表转录仍待独立化学专家签认；未重新测量光谱、重建完整谱线或进行峰拟合。</li><li>真实峰位不确定度未知；当前重放协议未登记温度、浓度、光程、仪器及谱带归属，尚不足以定义现代光谱验证模型。</li><li>从完整碘代物位移到基团效应解释仍需额外证据，不能凭本表补造CF₃I、C₂F₅I数据或认定反应机理。</li></ul></div><div class=\"future-work\" id=\"ai-a03-future\"><h3>未来设想（尚未开展）</h3><ul><li>先完成原表专业核校，并从原始文献与相关记录补齐测量条件和谱带归属。</li><li>资料充分后，再论证如何用独立光谱测量或明确的现代模型区分溶剂相互作用与基团效应；此为待查新、待设计的问题，尚未启动。</li></ul></div><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../pftb/index.html#contribution\">1966原始研究与贡献 →</a><a href=\"../pftb/index.html#arguments\">原始论证 →</a><a href=\"../pftb/index.html#questions\">专题待核问题 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section><section class=\"research-line\" id=\"ai-a04\" aria-labelledby=\"ai-a04-title\"><span class=\"status\">研究资料与问题</span><h2 id=\"ai-a04-title\">A04（F-53铬雾抑制剂）</h2><h3>科学问题</h3><p>如何从材料研制、厂试及工程协作的不同记录理解历史应用？</p><h3>AI怎样辅助</h3><p>关联论文、合作单位与厂试记录；消歧F-53、F-53B、盐型和商品混合物，核对年代、单位与效益口径。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>传记具名回忆、机构题录和历史厂试图注已有定位；原刊全文、配方、批次、工况与效益原表待补。未登记平台复现计算或新实验结果。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md\">现有材料、缺口与原始资料定位 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>传记与机构回顾不替代原始厂试；分子计算不能复现车间收益；历史应用不证明当前使用、低毒或环境安全。</li></ul><p><b>下一步先补的证据：</b>优先补原刊与厂试／扩试档案，保留集体署名；历史应用与晚年环境反思并置。</p><p><b>候选后续问题：</b>不同历史产品与批次对应哪些工况和实测数据，怎样与后续环境研究准确对接？</p><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/f53/index.html\">F-53研究专题 →</a><a href=\"../topics/f53/index.html#record-industrial-application\">历史工业应用档案 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section><section class=\"research-line\" id=\"ai-a05\" aria-labelledby=\"ai-a05-title\"><span class=\"status\">研究资料与问题</span><h2 id=\"ai-a05-title\">A05（制冷剂与配套技术）</h2><h3>科学问题</h3><p>组分制备、混合试配、中试、润滑油与整机试用分别需要哪些证据？</p><h3>AI怎样辅助</h3><p>消歧F-115、F-502与HFC-134a；对齐原论文、专利和工况字段，整理配套润滑油及整机协作的证据链。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>传记及机构回顾已核读，配套论文线索与1998综述目录摘要已登记；原中试、专利、润滑油和整机记录待补。未登记平台复现计算或新实验结果。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md\">现有材料、缺口与原始资料定位 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>组分与混合物分开；规模不改成年产，历史回顾不替代中试报告；相态、机理及性能须有对应对象和温压证据。</li></ul><p><b>下一步先补的证据：</b>优先取配套润滑油两篇原文及原专利／中试报告，核清化学对象后再谈机理。</p><p><b>候选后续问题：</b>各化学对象、介质组成与温压条件能否从原始工程资料中逐项确认？</p><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/refrigerants/index.html\">制冷剂研究专题 →</a><a href=\"../topics/refrigerants/index.html#record-refrigerant-pilot\">中试与整机档案 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section><section class=\"research-line\" id=\"ai-a06\" aria-labelledby=\"ai-a06-title\"><span class=\"status\">研究资料与问题</span><h2 id=\"ai-a06-title\">A06（磺酸酯、二氟卡宾与三氟甲基化）</h2><h3>科学问题</h3><p>结构与条件如何关联不同断键路径，以及试剂的不同反应角色？</p><h3>AI怎样辅助</h3><p>建立逐反应的结构—条件—断键观察对照；区分甲酯、酸型、盐型和TFDA硅酯；对照既有专业机理研究并提出待核问题。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>1982/1983及1989原论文题录摘要已有登记；2003与2010方法记录的具体核查名单可读；主要早期全文仍待补。2024既有陈试剂机理计算归黄广龙、薛小松，本平台无新增机制结论。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md\">现有材料与方法核查说明 →</a></p></div></div><div class=\"prior-work\"><h4>已有专业研究：保留原作者归属</h4><div><h4>CQ-R21 · 陈试剂形成三氟甲基源的既有机理研究</h4><p>黄广龙、薛小松</p><p class=\"citation\">《化学学报》82(2)，132–137（2024；2023年在线发表）；DOI 10.6023/A23090434。</p><p>核查限于出版社摘要与书目；机理计算属于原作者，不能作为平台原创或陈先生早期计算。后续问题须明确所复核的实体、方法与条件。</p><p class=\"links\"><a href=\"https://sioc-journal.cn/Jwk_hxxb/EN/10.6023/A23090434\">出版社论文入口 →</a><a href=\"../topics/chen-reagent/index.html#ref-cq-r21\">专题原证据索引 →</a></p></div><div><h4>CQ-R25 · 陈试剂及衍生体系的2026年回顾</h4><p>苏雪、丁婧、曾广原、庞婉、刘超</p><p class=\"citation\">2026年回顾；DOI 10.13822/j.cnki.hxsj.2026.0211。</p><p>核查限于期刊摘要及参考文献列表；回顾用于追踪已有研究，不能代替各项用途的原始论文、实体核对及实际引用链。</p><p class=\"links\"><a href=\"https://hxsje.cbpt.cnki.net/portal/journal/portal/client/paper/3dea1a2a47f994056edc5708988460b7\">期刊论文入口 →</a><a href=\"../index.html#source-cq-r25\">原来源登记CQ-R25 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>摘要不替代全文；方法核查只支持所核方法；后续机理计算与新用途归原作者，不当作平台原创或陈先生早期计算。</li></ul><p><b>下一步先补的证据：</b>优先补磺酸酯和1989原刊；对方法核查保存提交者、核查者及具体对象。</p><p><b>候选后续问题：</b>既有机理研究覆盖了哪些具体实体与条件，仍缺少哪些可区分反应角色的证据？</p><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/perfluorosulfonates/index.html#record-sulfonate-cleavage\">磺酸酯断键档案 →</a><a href=\"../topics/chen-reagent/index.html#chen-reagent-contribution\">陈试剂历史贡献 →</a><a href=\"../topics/chen-reagent/index.html#chen-reagent-evidence\">试剂身份与原始证据 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section><section class=\"research-line\" id=\"ai-a07\" aria-labelledby=\"ai-a07-title\"><span class=\"status\">研究资料与问题</span><h2 id=\"ai-a07-title\">A07（单电子转移与C–Cl活化）</h2><h3>科学问题</h3><p>不同溶剂与引发体系下，特定含氟氯代物发生什么转化？</p><h3>AI怎样辅助</h3><p>按底物、条件、观察和提出的机理组织证据；区分1999溶剂体系、2001镍体系和2005专利，并追踪不同研究组的贡献。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>1999与2001论文题录摘要及2005专利机构登记已有定位；原全文、SI及应用档案待补。未登记平台复现计算或新实验结果。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md\">现有材料、缺口与原始资料定位 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>摘要所提SET不是完整机理证明；C–Cl活化不等于普遍C–F断裂或PFAS降解；专利题录不证明产业采用或当前法律状态。</li></ul><p><b>下一步先补的证据：</b>优先取1999原文和补充资料，并补2001镍体系，按实际作者和底物建立档案。</p><p><b>候选后续问题：</b>哪些对照支持单电子转移解释，哪些观察还允许其他路径？</p><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/single-electron-transfer/index.html\">单电子转移研究专题 →</a><a href=\"../topics/single-electron-transfer/index.html#record-ccl-activation\">C–Cl活化档案 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section><section class=\"research-line\" id=\"ai-a08\" aria-labelledby=\"ai-a08-title\"><span class=\"status\">研究资料与问题</span><h2 id=\"ai-a08-title\">A08（交叉研究与晚年拓展）</h2><h3>科学问题</h3><p>含氟方法进入小环、大环、离子液体及新试剂体系后，哪些结构与性质得到实际测量？</p><h3>AI怎样辅助</h3><p>按具体骨架、合作者与表征建立跨专题索引；关联结构、实测性质与后续问题；区分表面性质和环境评价。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>传记交叉研究线索与若干论文书目摘要已有登记；小环、2003/2007大环等全文、SI和结构表征仍需逐篇补齐。未登记平台复现计算或新实验结果。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md\">现有材料、缺口与原始资料定位 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>电子数不能独自裁定芳香性；特定结构或表面性质不证明器件、治疗、低毒或生命周期安全；后续成果保留原作者。</li></ul><p><b>下一步先补的证据：</b>优先补2003／2007原文和表征，再梳理晚年合作论文；后续应用均保留原作者。</p><p><b>候选后续问题：</b>哪些性质有直接表征，哪些用途仍是后续问题，进一步比较需要什么新证据？</p><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/fluorinated-small-rings/index.html#record-small-rings\">含氟小环 →</a><a href=\"../topics/fluoroporphyrins/index.html#record-porphyrin-collaboration\">含氟卟啉 →</a><a href=\"../topics/deoxyfluorination/index.html#record-deoxyfluorination-systems\">脱氧氟化 →</a><a href=\"../topics/sulfonyl-fluoride/index.html#record-late-functional-groups\">晚年构件方法 →</a><a href=\"../index.html#record-fluorinated-ionic-liquids\">含氟离子液体档案 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section></main><footer><div class=\"wrap\"><p>历史工作归陈庆云院士及原作者、合作者；后续研究与平台整理分别说明来源。资料状态截至2026-11-14",
+      "new": "，其中9个配对记录形成6项位移；波长差、波数蓝移与有界扰动诊断属于同批原表数值重放。原刊印刷21页表1及24页实验部分已回查：紫外仪器为Unicam SP-500；20°C注明于核磁共振测量，不能移作紫外温度。紫外测量条件与真实不确定度仍未完整确认，专业转录签认待补。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/REPLAY_REPORT_zh-CN.md\">PF1966-UV-T1数值重放报告 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/data/pftb1966_table1.csv\">原表转录数据 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/pftb1966-uv-replay.json\">既有重放结果 →</a><a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18\">1966原刊：表1见印刷21页，仪器见24页 →</a></p></div></div></details><div class=\"pending-work\" id=\"ai-a03-pending\"><h3>待核事项</h3><ul><li>原表转录仍待独立化学专家签认；未重新测量光谱、重建完整谱线或进行峰拟合。</li><li>真实峰位不确定度未知；当前重放协议未登记温度、浓度、光程、仪器及谱带归属，尚不足以定义现代光谱验证模型。</li><li>从完整碘代物位移到基团效应解释仍需额外证据，不能凭本表补造CF₃I、C₂F₅I数据或认定反应机理。</li></ul></div><div class=\"future-work\" id=\"ai-a03-future\"><h3>未来设想（尚未开展）</h3><ul><li>先完成原表专业核校，并从原始文献与相关记录补齐测量条件和谱带归属。</li><li>资料充分后，再论证如何用独立光谱测量或明确的现代模型区分溶剂相互作用与基团效应；此为待查新、待设计的问题，尚未启动。</li></ul></div><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../pftb/index.html#contribution\">1966原始研究与贡献 →</a><a href=\"../pftb/index.html#arguments\">原始论证 →</a><a href=\"../pftb/index.html#questions\">专题待核问题 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section><section class=\"research-line\" id=\"ai-a04\" aria-labelledby=\"ai-a04-title\"><span class=\"status\">研究资料与问题</span><h2 id=\"ai-a04-title\">A04（F-53铬雾抑制剂）</h2><h3>科学问题</h3><p>如何从材料研制、厂试及工程协作的不同记录理解历史应用？</p><h3>AI怎样辅助</h3><p>关联论文、合作单位与厂试记录；消歧F-53、F-53B、盐型和商品混合物，核对年代、单位与效益口径。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>已取得并核读1979年《全氟和多氟烷基磺酸的研究 II. 一些多氟烷基醚磺酸的合成》原刊315–324页，324页为同篇英文摘要，署名“全氟磺酸组”。323页致谢记载所内质谱组及上海医药工业研究院核磁组的分析协作。1977年前报和1978年Scientia Sinica原文仍待取得；机构合作登记、论文集体署名与个人分工分别保存，未据此认定个人贡献或完成厂试验证。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md\">现有材料、缺口与原始资料定位 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>传记与机构回顾不替代原始厂试；分子计算不能复现车间收益；历史应用不证明当前使用、低毒或环境安全。</li></ul><p><b>下一步先补的证据：</b>继续追查1977／1978原刊及厂试／扩试原表；将原刊分析协作、机构合作与个人分工按不同证据层级核对。</p><p><b>候选后续问题：</b>不同历史产品与批次对应哪些工况和实测数据，怎样与后续环境研究准确对接？</p><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/f53/index.html\">F-53研究专题 →</a><a href=\"../topics/f53/index.html#record-industrial-application\">历史工业应用档案 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section><section class=\"research-line\" id=\"ai-a05\" aria-labelledby=\"ai-a05-title\"><span class=\"status\">研究资料与问题</span><h2 id=\"ai-a05-title\">A05（制冷剂与配套技术）</h2><h3>科学问题</h3><p>组分制备、混合试配、中试、润滑油与整机试用分别需要哪些证据？</p><h3>AI怎样辅助</h3><p>消歧F-115、F-502与HFC-134a；对齐原论文、专利和工况字段，整理配套润滑油及整机协作的证据链。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>已取得并核读1978年《五氟氯乙烷合成简法》77–79页，集体署名“致冷剂小组”，对象为F-115，不能混作1978年F-53论文。另已取得CN1075708A、CN1308043A两项团队工艺专利说明书，发明人分别为林永达／梁与达、吴永明／林永达，不能改列陈庆云个人专利。配套润滑油、原中试及整机试用原表仍待取得；本平台未新增实验或工艺验证。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md\">现有材料、缺口与原始资料定位 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>组分与混合物分开；规模不改成年产，历史回顾不替代中试报告；相态、机理及性能须有对应对象和温压证据。</li></ul><p><b>下一步先补的证据：</b>优先取得配套润滑油两篇全文与中试／整机原表，核对团队专利技术对象和历史底物指代；不以新取得文件代替工艺验证。</p><p><b>候选后续问题：</b>各化学对象、介质组成与温压条件能否从原始工程资料中逐项确认？</p><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/refrigerants/index.html\">制冷剂研究专题 →</a><a href=\"../topics/refrigerants/index.html#record-refrigerant-pilot\">中试与整机档案 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section><section class=\"research-line\" id=\"ai-a06\" aria-labelledby=\"ai-a06-title\"><span class=\"status\">研究资料与问题</span><h2 id=\"ai-a06-title\">A06（磺酸酯、二氟卡宾与三氟甲基化）</h2><h3>科学问题</h3><p>结构与条件如何关联不同断键路径，以及试剂的不同反应角色？</p><h3>AI怎样辅助</h3><p>建立逐反应的结构—条件—断键观察对照；区分甲酯、酸型、盐型和TFDA硅酯；对照既有专业机理研究并提出待核问题。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>已取得并核读1982年337–352页、670–673页及1983年1044–1057页三篇原刊。CQ-H16主标题原印为“全氟和多氟烷基磺酸的研究 X.”，与既有题录“磺酸酯”异文分列；670页通讯未印系列号。原刊作者名与传记异文保留，不据署名推定个人分工。结构、谱图及断键解释仍待专业核校。2003／2010方法核查记录保留；1989、2000原论文及1991书章全文仍待取得，2024既有陈试剂机理计算仍归原作者。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md\">现有材料与方法核查说明 →</a></p></div></div><div class=\"prior-work\"><h4>已有专业研究：保留原作者归属</h4><div><h4>CQ-R21 · 陈试剂形成三氟甲基源的既有机理研究</h4><p>黄广龙、薛小松</p><p class=\"citation\">《化学学报》82(2)，132–137（2024；2023年在线发表）；DOI 10.6023/A23090434。</p><p>核查限于出版社摘要与书目；机理计算属于原作者，不能作为平台原创或陈先生早期计算。后续问题须明确所复核的实体、方法与条件。</p><p class=\"links\"><a href=\"https://sioc-journal.cn/Jwk_hxxb/EN/10.6023/A23090434\">出版社论文入口 →</a><a href=\"../topics/chen-reagent/index.html#ref-cq-r21\">专题原证据索引 →</a></p></div><div><h4>CQ-R25 · 陈试剂及衍生体系的2026年回顾</h4><p>苏雪、丁婧、曾广原、庞婉、刘超</p><p class=\"citation\">2026年回顾；DOI 10.13822/j.cnki.hxsj.2026.0211。</p><p>核查限于期刊摘要及参考文献列表；回顾用于追踪已有研究，不能代替各项用途的原始论文、实体核对及实际引用链。</p><p class=\"links\"><a href=\"https://hxsje.cbpt.cnki.net/portal/journal/portal/client/paper/3dea1a2a47f994056edc5708988460b7\">期刊论文入口 →</a><a href=\"../index.html#source-cq-r25\">原来源登记CQ-R25 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>摘要不替代全文；方法核查只支持所核方法；后续机理计算与新用途归原作者，不当作平台原创或陈先生早期计算。</li></ul><p><b>下一步先补的证据：</b>先核三篇原刊的结构、实验条件及姓名异文，再追1989、2000全文与1991书章；原作者的可能机制保留为原作者解释。</p><p><b>候选后续问题：</b>既有机理研究覆盖了哪些具体实体与条件，仍缺少哪些可区分反应角色的证据？</p><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/perfluorosulfonates/index.html#record-sulfonate-cleavage\">磺酸酯断键档案 →</a><a href=\"../topics/chen-reagent/index.html#chen-reagent-contribution\">陈试剂历史贡献 →</a><a href=\"../topics/chen-reagent/index.html#chen-reagent-evidence\">试剂身份与原始证据 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section><section class=\"research-line\" id=\"ai-a07\" aria-labelledby=\"ai-a07-title\"><span class=\"status\">研究资料与问题</span><h2 id=\"ai-a07-title\">A07（单电子转移与C–Cl活化）</h2><h3>科学问题</h3><p>不同溶剂与引发体系下，特定含氟氯代物发生什么转化？</p><h3>AI怎样辅助</h3><p>按底物、条件、观察和提出的机理组织证据；区分1999溶剂体系、2001镍体系和2005专利，并追踪不同研究组的贡献。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>1999与2001年论文的31页、26页SI已取得，已核首页身份；正文仍待取得，全部谱图与机理证据未完成专业核校。申请200510031063.4的CN1752059A与CN1298686C两份说明书已取得，属同一申请的公开／授权版本，陈庆云、曹海萍为共同发明人；版本与技术内容仍待核，不据此判断当前法律状态。摘要中的SET解释不作为平台机制认证。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md\">现有材料、缺口与原始资料定位 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>摘要所提SET不是完整机理证明；C–Cl活化不等于普遍C–F断裂或PFAS降解；专利题录不证明产业采用或当前法律状态。</li></ul><p><b>下一步先补的证据：</b>优先取两篇正文并核全套SI的谱图与底物对应，区分同一专利的版本；原始应用档案仍待补。</p><p><b>候选后续问题：</b>哪些对照支持单电子转移解释，哪些观察还允许其他路径？</p><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/single-electron-transfer/index.html\">单电子转移研究专题 →</a><a href=\"../topics/single-electron-transfer/index.html#record-ccl-activation\">C–Cl活化档案 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section><section class=\"research-line\" id=\"ai-a08\" aria-labelledby=\"ai-a08-title\"><span class=\"status\">研究资料与问题</span><h2 id=\"ai-a08-title\">A08（交叉研究与晚年拓展）</h2><h3>科学问题</h3><p>含氟方法进入小环、大环、离子液体及新试剂体系后，哪些结构与性质得到实际测量？</p><h3>AI怎样辅助</h3><p>按具体骨架、合作者与表征建立跨专题索引；关联结构、实测性质与后续问题；区分表面性质和环境评价。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>2003年SI两卷（40＋1页）、2007年13页SI及4份CIF、2022年55页SI，以及晚年三项研究的66／129／11页附件已取得，各篇正文仍待取得。2022年附件S15–S21与S38起已有原作者计算说明及结果，不能把未来AI补算称作首次理论研究，也不能据合著推定陈先生本人完成计算。这些附件目前仅完成文件身份及选定页／字段核对，全套结构、谱图和计算仍待专业核校；文件取得不等于结构、物性或机理认证。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md\">现有材料、缺口与原始资料定位 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>电子数不能独自裁定芳香性；特定结构或表面性质不证明器件、治疗、低毒或生命周期安全；后续成果保留原作者。</li></ul><p><b>下一步先补的证据：</b>优先取得对应正文，核对各卷SI及CIF与论文对象的对应关系；先比较既有理论研究，专业核校后再评估未来问题。</p><p><b>候选后续问题：</b>哪些性质有直接表征，哪些用途仍是后续问题，进一步比较需要什么新证据？</p><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/fluorinated-small-rings/index.html#record-small-rings\">含氟小环 →</a><a href=\"../topics/fluoroporphyrins/index.html#record-porphyrin-collaboration\">含氟卟啉 →</a><a href=\"../topics/deoxyfluorination/index.html#record-deoxyfluorination-systems\">脱氧氟化 →</a><a href=\"../topics/sulfonyl-fluoride/index.html#record-late-functional-groups\">晚年构件方法 →</a><a href=\"../index.html#record-fluorinated-ionic-liquids\">含氟离子液体档案 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section></main><footer><div class=\"wrap\"><p>历史工作归陈庆云院士及原作者、合作者；后续研究与平台整理分别说明来源。资料状态截至2026-11-16"
+    },
+    {
+      "old": "",
+      "new": "PRESENTATION_V21_SHA256 = 'a353a25fc9586c3fe78de1ad42a20aee4a1c980de59eda4340df4466d9b45593'\nPRESENTATION_V22_PATH = 'provenance/platform-presentation.v22.json'\nPRESENTATION_V22_ID = 'PLATFORM-ORIGINAL-EVIDENCE-20261116-v22'\nPRESENTATION_V22_PREVIOUS_COMMIT = 'e6b42738e5523c31533e72f3af46289bdcc18028'\nORIGINAL_EVIDENCE_ROUTES = {AI_RESEARCH_ROUTE}\nORIGINAL_EVIDENCE_PREDECESSOR_FILES = {'content/ai-research-section.v1.json': ('d3af3ed21cf929b55099b799628e8f224b033be332dbcb4e0d999cf1308ea320', 66871), 'docs/AI_RESEARCH_zh-CN.md': ('99efc0bebe93fc34e4a5953a78db9105271b4e7b08ef8a7af5acf54c687ce674', 36001), 'site/research/index.html': ('55ae69b829c8463f81369be6476f4fb2eb80c9380521e23f2c796a87517b3bd5', 49829), 'scripts/a01_publication_contract.py': ('bd7344b83a58d64f00e7c49eadaa36829770ace5051c4a16ea977499c3ce9dee', 275315)}\nORIGINAL_EVIDENCE_DOCUMENTS = ('content/ai-research-section.v1.json', 'scripts/render_ai_research.py', 'docs/AI_RESEARCH_zh-CN.md', 'scripts/a01_publication_contract.py')\nORIGINAL_EVIDENCE_UPDATES = {'A03': {'summary': '已按1966年原表转录10个波长记录，其中9个配对记录形成6项位移；波长差、波数蓝移与有界扰动诊断属于同批原表数值重放。原刊印刷21页表1及24页实验部分已回查：紫外仪器为Unicam SP-500；20°C注明于核磁共振测量，不能移作紫外温度。紫外测量条件与真实不确定度仍未完整确认，专业转录签认待补。', 'appended_links': [{'title': '1966原刊：表1见印刷21页，仪器见24页', 'url': 'https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18', 'kind': 'external'}]}, 'A04': {'summary': '已取得并核读1979年《全氟和多氟烷基磺酸的研究 II. 一些多氟烷基醚磺酸的合成》原刊315–324页，324页为同篇英文摘要，署名“全氟磺酸组”。323页致谢记载所内质谱组及上海医药工业研究院核磁组的分析协作。1977年前报和1978年Scientia Sinica原文仍待取得；机构合作登记、论文集体署名与个人分工分别保存，未据此认定个人贡献或完成厂试验证。', 'next_step': '继续追查1977／1978原刊及厂试／扩试原表；将原刊分析协作、机构合作与个人分工按不同证据层级核对。'}, 'A05': {'summary': '已取得并核读1978年《五氟氯乙烷合成简法》77–79页，集体署名“致冷剂小组”，对象为F-115，不能混作1978年F-53论文。另已取得CN1075708A、CN1308043A两项团队工艺专利说明书，发明人分别为林永达／梁与达、吴永明／林永达，不能改列陈庆云个人专利。配套润滑油、原中试及整机试用原表仍待取得；本平台未新增实验或工艺验证。', 'next_step': '优先取得配套润滑油两篇全文与中试／整机原表，核对团队专利技术对象和历史底物指代；不以新取得文件代替工艺验证。'}, 'A06': {'summary': '已取得并核读1982年337–352页、670–673页及1983年1044–1057页三篇原刊。CQ-H16主标题原印为“全氟和多氟烷基磺酸的研究 X.”，与既有题录“磺酸酯”异文分列；670页通讯未印系列号。原刊作者名与传记异文保留，不据署名推定个人分工。结构、谱图及断键解释仍待专业核校。2003／2010方法核查记录保留；1989、2000原论文及1991书章全文仍待取得，2024既有陈试剂机理计算仍归原作者。', 'next_step': '先核三篇原刊的结构、实验条件及姓名异文，再追1989、2000全文与1991书章；原作者的可能机制保留为原作者解释。'}, 'A07': {'summary': '1999与2001年论文的31页、26页SI已取得，已核首页身份；正文仍待取得，全部谱图与机理证据未完成专业核校。申请200510031063.4的CN1752059A与CN1298686C两份说明书已取得，属同一申请的公开／授权版本，陈庆云、曹海萍为共同发明人；版本与技术内容仍待核，不据此判断当前法律状态。摘要中的SET解释不作为平台机制认证。', 'next_step': '优先取两篇正文并核全套SI的谱图与底物对应，区分同一专利的版本；原始应用档案仍待补。'}, 'A08': {'summary': '2003年SI两卷（40＋1页）、2007年13页SI及4份CIF、2022年55页SI，以及晚年三项研究的66／129／11页附件已取得，各篇正文仍待取得。2022年附件S15–S21与S38起已有原作者计算说明及结果，不能把未来AI补算称作首次理论研究，也不能据合著推定陈先生本人完成计算。这些附件目前仅完成文件身份及选定页／字段核对，全套结构、谱图和计算仍待专业核校；文件取得不等于结构、物性或机理认证。', 'next_step': '优先取得对应正文，核对各卷SI及CIF与论文对象的对应关系；先比较既有理论研究，专业核校后再评估未来问题。'}}\n\n\n"
+    },
+    {
+      "old": "",
+      "new": "def original_evidence_predecessor_bytes(root: Path, name: str) -> bytes:\n    \"\"\"Undo only the four explicitly permitted v22 presentation files.\"\"\"\n    current = project_file(root, name).read_bytes()\n    if not (root/PRESENTATION_V22_PATH).exists():\n        return current\n    data = read_json(project_file(root, PRESENTATION_V22_PATH))\n    if not isinstance(data, dict):\n        raise ValueError('Original evidence presentation must be a JSON object')\n    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')\n    if not isinstance(files, list) or not isinstance(pool, list):\n        raise ValueError('Original evidence require exact reversible text patch records')\n    matches = [row for row in files if isinstance(row, dict) and row.get('path') == name]\n    if not matches:\n        return current\n    if len(matches) != 1 or name not in ORIGINAL_EVIDENCE_PREDECESSOR_FILES:\n        raise ValueError('Unauthorized or duplicate Original evidence predecessor record: '+name)\n    record = matches[0]; old_sha, old_size = ORIGINAL_EVIDENCE_PREDECESSOR_FILES[name]\n    if (record.get('old_sha256') != old_sha or record.get('old_bytes') != old_size\n            or hashlib.sha256(current).hexdigest() != record.get('new_sha256')\n            or len(current) != record.get('new_bytes')):\n        raise ValueError('Original evidence file differs from its complete old/new identities: '+name)\n    edits = record.get('edits')\n    if not isinstance(edits, list) or not edits:\n        raise ValueError('Original evidence changes require nonempty text edits: '+name)\n    chunks, cursor, old_end, delta = [], 0, 0, 0\n    for edit in edits:\n        if not isinstance(edit, dict) or set(edit) != {'old_offset', 'replacement'}:\n            raise ValueError('Invalid reversible Original evidence text edit: '+name)\n        offset, replacement = edit['old_offset'], edit['replacement']\n        if (type(offset) is not int or offset < old_end or type(replacement) is not int\n                or not 0 <= replacement < len(pool)):\n            raise ValueError('Overlapping or invalid Original evidence text edit: '+name)\n        pair = pool[replacement]\n        if (not isinstance(pair, dict) or set(pair) != {'old', 'new'}\n                or not all(isinstance(pair.get(key), str) for key in ('old', 'new'))\n                or pair['old'] == pair['new']):\n            raise ValueError('Invalid Original evidence text replacement pool')\n        before, after = pair['old'].encode('utf-8'), pair['new'].encode('utf-8')\n        position = offset+delta\n        if position < cursor or current[position:position+len(after)] != after:\n            raise ValueError('Original evidence replacement differs at its exact offset: '+name)\n        chunks.extend((current[cursor:position], before))\n        cursor, old_end = position+len(after), offset+len(before)\n        delta += len(after)-len(before)\n    rebuilt = b''.join((*chunks, current[cursor:]))\n    if hashlib.sha256(rebuilt).hexdigest() != old_sha or len(rebuilt) != old_size:\n        raise ValueError('Original evidence predecessor cannot be reconstructed exactly: '+name)\n    return rebuilt\n\n\n\n\n"
+    },
+    {
+      "old": "project_file(root, name).read_bytes(",
+      "new": "original_evidence_predecessor_bytes(root, name"
+    },
+    {
+      "old": "",
+      "new": "    if (root/PRESENTATION_V22_PATH).exists() and not (root/PRESENTATION_V21_PATH).exists():\n        raise ValueError('Original-evidence presentation requires its fixed v21 predecessor')\n"
+    },
+    {
+      "old": "digest(project_file(root, name)),\n                  'bytes': project_file(root, name).stat().st_size",
+      "new": "hashlib.sha256(original_evidence_predecessor_bytes(root, name)).hexdigest(),\n                  'bytes': len(original_evidence_predecessor_bytes(root, name))"
+    },
+    {
+      "old": "read_json(project_file",
+      "new": "json.loads(original_evidence_predecessor_bytes"
+    },
+    {
+      "old": "project_file(root, 'site/'+name).read_bytes(",
+      "new": "original_evidence_predecessor_bytes(root, 'site/'+name"
+    },
+    {
+      "old": "project_file(root, name).read_text",
+      "new": "original_evidence_predecessor_bytes(root, name).decode"
+    },
+    {
+      "old": "project_file(root, 'site/'+name)\n        if digest(member) != expected['sha256'] or member.stat().st_size",
+      "new": "original_evidence_predecessor_bytes(root, 'site/'+name)\n        if hashlib.sha256(member).hexdigest() != expected['sha256'] or len(member)"
+    },
+    {
+      "old": "from render_a02_history import inspect_a02_history\n    from render_ai_research import inspect_ai_research\n    for label, check in (('A02 history', inspect_a02_history(root)), ('AI record', inspect_ai_research(root))):\n        if check.get('status') != 'passed':\n",
+      "new": "# v21 is checked against exactly reconstructed bytes; v22 checks final rendering.\n    if not (root/PRESENTATION_V22_PATH).exists():\n        from render_a02_history import inspect_a02_history\n        from render_ai_research import inspect_ai_research\n        for label, check in (('A02 history', inspect_a02_history(root)), ('AI record', inspect_ai_research(root))):\n            if check.get('status') != 'passed':\n    "
+    },
+    {
+      "old": "",
+      "new": "        **{key: required[key] for key in ('scientific_review_status', 'scientific_data_unchanged',\n            'historical_achievement_independent_of_AI_review', 'release_eligible', 'M0_resumed')}}\n    return apply_original_evidence_presentation(root, updated,\n        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})\n\n\ndef apply_original_evidence_presentation(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:\n    \"\"\"Integrate six existing original-paper/attachment acquisition records.\"\"\"\n    if not (root/PRESENTATION_V22_PATH).exists():\n        return entries, previous_report\n    if digest(project_file(root, PRESENTATION_V21_PATH)) != PRESENTATION_V21_SHA256:\n        raise ValueError('The preceding v21 presentation is immutable')\n    path = project_file(root, PRESENTATION_V22_PATH); data = read_json(path)\n    documents = [{'path': name, 'sha256': digest(project_file(root, name)),\n                  'bytes': project_file(root, name).stat().st_size} for name in ORIGINAL_EVIDENCE_DOCUMENTS]\n    required = {'schema_version': '22.0', 'presentation_id': PRESENTATION_V22_ID,\n        'publication_kind': 'platform_original_evidence_integration',\n        'previous_presentation_commit': PRESENTATION_V22_PREVIOUS_COMMIT,\n        'previous_presentation': {'path': PRESENTATION_V21_PATH, 'sha256': PRESENTATION_V21_SHA256},\n        'original_baseline_sha256': BASELINE_SHA256, 'original_archive_sha256': ARCHIVE_SHA256,\n        'allowed_html_paths': sorted(ORIGINAL_EVIDENCE_ROUTES), 'added_html_paths': [], 'additions': [],\n        'allowed_achievement_lines': ['A03', 'A04', 'A05', 'A06', 'A07', 'A08'], 'editorial_documents': documents,\n        'protected_website_members': {name: {'sha256': row['sha256'], 'bytes': row['bytes']}\n            for name, row in entries.items() if name not in ORIGINAL_EVIDENCE_ROUTES},\n        'reconstruction_kind': 'deduplicated_exact_utf8_text_edits',\n        'scientific_review_status': 'review_required', 'release_eligible': False,\n        'source_status_date': '2026-11-16',\n        'scientific_data_unchanged': True, 'M0_resumed': False,\n        'historical_achievement_independent_of_AI_review': True}\n    if (not isinstance(data, dict) or any(data.get(key) != value for key, value in required.items())\n            or any(data.get(key) is not required[key] for key in ('release_eligible',\n                'scientific_data_unchanged', 'M0_resumed', 'historical_achievement_independent_of_AI_review'))\n            or any(type(data.get(key)) is not int or data[key] != 0 for key in ('new_quantum_calls', 'new_model_API_calls'))\n            or not isinstance(data.get('authorization'), str) or not data['authorization'].strip()):\n        raise ValueError('Unsupported bounded original-evidence integration v22')\n    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')\n    if (not isinstance(files, list) or not files or not isinstance(pool, list) or not pool\n            or any(not isinstance(row, dict) or row.get('path') not in ORIGINAL_EVIDENCE_PREDECESSOR_FILES for row in files)\n            or len({row['path'] for row in files}) != len(files)\n            or any(not isinstance(row.get('edits'), list) or not row['edits'] or any(\n                not isinstance(edit, dict) or type(edit.get('replacement')) is not int for edit in row['edits']) for row in files)):\n        raise ValueError('Original-evidence integration may enumerate only its four fixed predecessor files')\n    if {edit['replacement'] for row in files for edit in row['edits']} != set(range(len(pool))):\n        raise ValueError('Original-evidence integration requires exactly its used replacement segments')\n    changed = set()\n    for name, (sha, size) in ORIGINAL_EVIDENCE_PREDECESSOR_FILES.items():\n        old = original_evidence_predecessor_bytes(root, name)\n        if hashlib.sha256(old).hexdigest() != sha or len(old) != size:\n            raise ValueError('Original-evidence predecessor differs from fixed e6b4273: '+name)\n        if old != project_file(root, name).read_bytes():\n            changed.add(name)\n    if {row['path'] for row in files} != changed or changed != set(ORIGINAL_EVIDENCE_PREDECESSOR_FILES):\n        raise ValueError('Original-evidence integration must enumerate all and only its four changed files')\n    old_ai = json.loads(original_evidence_predecessor_bytes(root, AI_RESEARCH_CONTENT))\n    expected_ai = json.loads(json.dumps(old_ai))\n    expected_ai['date'] = '2026-11-16'\n    for ident, update in ORIGINAL_EVIDENCE_UPDATES.items():\n        line = expected_ai['lines'][int(ident[1:])-1]\n        fields = {'summary', 'appended_links'} if ident == 'A03' else {'summary', 'next_step'}\n        if line['id'] != ident or set(update) != fields:\n            raise ValueError('Unexpected original-evidence update fields')\n        if not isinstance(update['summary'], str) or not update['summary'].strip():\n            raise ValueError('Original-evidence summary must be nonempty')\n        line['records'][0]['summary'] = update['summary']\n        additions = update.get('appended_links', [])\n        if (not isinstance(additions, list) or bool(additions) != (ident == 'A03')\n                or any(not isinstance(item, dict)\n                or item.get('kind') != 'external'\n                or not re.match(r'https://(?:www\\.)?sioc-journal\\.cn/', item.get('url', ''))\n                for item in additions)):\n            raise ValueError('Only appended official HTTPS original-paper links are permitted')\n        line['records'][0]['links'].extend(additions)\n        if ident != 'A03':\n            line['next_step'] = update['next_step']\n    if set(ORIGINAL_EVIDENCE_UPDATES) != {'A03', 'A04', 'A05', 'A06', 'A07', 'A08'}:\n        raise ValueError('Expected exactly six original-paper/attachment record updates')\n    if read_json(project_file(root, AI_RESEARCH_CONTENT)) != expected_ai:\n        raise ValueError('Only the fixed status date, six summaries, one append-only link list and five next steps may change')\n    changes = data.get('changes')\n    if (not isinstance(changes, list) or len(changes) != 1 or not isinstance(changes[0], dict)\n            or changes[0].get('path') != AI_RESEARCH_ROUTE):\n        raise ValueError('Original-evidence integration may change only the existing research page')\n    from public_line_labels import project_html, project_markdown\n    item = changes[0]; name = AI_RESEARCH_ROUTE; old = entries[name]\n    before = original_evidence_predecessor_bytes(root, 'site/'+name)\n    after = project_file(root, 'site/'+name).read_bytes()\n    source, current = before.decode('utf-8'), after.decode('utf-8')\n    if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']\n            or hashlib.sha256(before).hexdigest() != old['sha256'] or len(before) != old['bytes']\n            or item.get('new_sha256') != hashlib.sha256(after).hexdigest() or item.get('new_bytes') != len(after)\n            or before == after or not isinstance(item.get('reason'), str) or not item['reason'].strip()):\n        raise ValueError('Original-evidence HTML differs from complete old/new identities')\n    json_scripts = re.compile(r'<script\\b[^>]*\\btype\\s*=\\s*[\"\\']application/(?:ld\\+)?json[\"\\'][^>]*>.*?</script\\s*>', re.I | re.S)\n    if json_scripts.findall(source) != json_scripts.findall(current):\n        raise ValueError('Original-evidence integration must retain every embedded JSON byte')\n    if set(re.findall(r'\\bid=\"([^\\\"]+)\"', source)) != set(re.findall(r'\\bid=\"([^\\\"]+)\"', current)):\n        raise ValueError('Original-evidence integration must retain every navigation and source ID')\n    if project_html(current, name) != current:\n        raise ValueError('Original-evidence integration lost canonical achievement names')\n    masked_before, masked_after = source, current\n    for ident in ('a03', 'a04', 'a05', 'a06', 'a07', 'a08'):\n        pattern = r'<section\\b[^>]*\\bid=\"ai-'+ident+r'\"[^>]*>.*?</section>'\n        if len(re.findall(pattern, source, re.S)) != 1 or len(re.findall(pattern, current, re.S)) != 1:\n            raise ValueError('Original-evidence integration requires exactly one section per selected line')\n        masked_before = re.sub(pattern, '<ORIGINAL-EVIDENCE-'+ident+'/>', masked_before, flags=re.S)\n        masked_after = re.sub(pattern, '<ORIGINAL-EVIDENCE-'+ident+'/>', masked_after, flags=re.S)\n    old_date = '资料状态截至'+old_ai['date']+'。'\n    new_date = '资料状态截至2026-11-16。'\n    if masked_before.count(old_date) != 1 or masked_after.count(new_date) != 1:\n        raise ValueError('Expected exactly one old and current research-page status date')\n    if masked_before.replace(old_date, new_date) != masked_after:\n        raise ValueError('Original-evidence integration changed outside its six research sections and fixed footer date')\n    prose = project_file(root, AI_RESEARCH_DOCUMENT).read_text('utf-8')\n    if project_markdown(prose) != prose:\n        raise ValueError('Original-evidence document lost canonical achievement names')\n    updated = {name: dict(row) for name, row in entries.items()}\n    updated[name] = {**old, 'sha256': item['new_sha256'], 'bytes': item['new_bytes'], 'presentation_id': PRESENTATION_V22_ID}\n    for member_name, expected in updated.items():\n        member = project_file(root, 'site/'+member_name)\n        if digest(member) != expected['sha256'] or member.stat().st_size != expected['bytes']:\n            raise ValueError('Original-evidence integration changed an unlisted website byte: '+member_name)\n    from render_ai_research import inspect_ai_research\n    check = inspect_ai_research(root)\n    if check.get('status') != 'passed':\n        raise ValueError('Original-evidence final page differs from source rendering: '+str(check.get('errors', [])))\n    members = publication_members(root, updated)\n    report = {'path': PRESENTATION_V22_PATH, 'sha256': digest(path), 'presentation_id': PRESENTATION_V22_ID,\n        'publication_kind': required['publication_kind'], 'changed_paths': [AI_RESEARCH_ROUTE], 'added_paths': [],\n        'changed_achievement_lines': ['A03', 'A04', 'A05', 'A06', 'A07', 'A08'],\n        'previous_presentation_commit': PRESENTATION_V22_PREVIOUS_COMMIT,\n        'exact_predecessor_reconstruction': True, 'source_derived_rendering': True,\n        'only_six_existing_first_records_and_five_next_steps_changed': True,\n        'source_and_derived_status_date_fixed_to_20261116': True,\n        'A04_through_A08_existing_links_preserved_without_unverified_new_links': True,\n        'all_original_authors_source_ids_and_links_preserved': True,\n        'homepage_and_historical_achievement_pages_unchanged': True,\n        'original_embedded_json_bytes_preserved': True,\n        'original_scans_and_private_evidence_registers_not_published': True,\n        'published_member_count_with_marker': len(members)+1,\n"
+    }
+  ],
+  "boundary": "Only the fixed top-level status date 2026-11-16, A03–A08 records[0].summary, the A03 appended official original-paper link, A04–A08 next_step, their existing second-level rendered page/document and contract implementation change. A04–A08 links remain unchanged. The five newly acquired local papers remain recorded as acquired without publishing unverified outbound links. Homepage, historical narratives, all other line fields, original public/scientific data and all other website members remain byte-identical. Original PDFs and private evidence registers are not published. No new chemistry, model/API calls, experiment, route, or scientific release.",
+  "reconstruction": "Four fixed e6b4273 predecessor files are reconstructed in memory with exact UTF-8 edits. All v1-v21 manifests retain their exact original bytes.",
+  "publish_allowlist": "Unchanged: sixteen static HTML pages, two original public JSON files and an empty .nojekyll marker, nineteen regular published files.",
+  "remote_action_performed": false
+}
