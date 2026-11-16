@@ -189,6 +189,16 @@ REFERENCES_PREDECESSOR_FILES = {
 REFERENCES_DOCUMENTS = ('README.md', 'scripts/a01_publication_contract.py')
 AI_RESEARCH_ROUTE = 'research/index.html'
 
+PRESENTATION_V22_SHA256 = '3a9a746a565f7942899f5fdffc244121608e39210c7e6eb466203775dc38cae6'
+PRESENTATION_V23_PATH = 'provenance/platform-presentation.v23.json'
+PRESENTATION_V23_ID = 'PLATFORM-A06-AUTHORS-METHODS-20261116-v23'
+PRESENTATION_V23_PREVIOUS_COMMIT = 'b663c63b84d1474d91faf5437f1d61202b8fa8c6'
+A06_SUMMARY_ROUTES = {AI_RESEARCH_ROUTE}
+A06_SUMMARY_PREDECESSOR_FILES = {'content/ai-research-section.v1.json': ('278647dbc24b3089da7878736d8a6160547b7080d8d99bd2cdbdebd9f0c38e3a', 68858), 'docs/AI_RESEARCH_zh-CN.md': ('b6c2f2d7f84de97cfb22020be553d332b8ed6dd83566c2ec3fe492a495c44d4b', 37877), 'site/research/index.html': ('4427a6cb2adedf7761bf22308cec33bf27d45209f1ecb2f12b4cfb9f0f91e3a7', 51716), 'scripts/a01_publication_contract.py': ('dcf906fa4f6041f418978073e84f76a165ec2ad96c333116259a6b246badf2d8', 294741)}
+A06_SUMMARY_DOCUMENTS = ('content/ai-research-section.v1.json', 'scripts/render_ai_research.py', 'docs/AI_RESEARCH_zh-CN.md', 'scripts/a01_publication_contract.py')
+A06_SUMMARY_TEXT = '已取得并核读1982年337–352页、670–673页及1983年1044–1057页三篇原刊。首篇署陈庆云、朱蓉仙、李宗珍、王珊娣、黄维垣，后两篇分别署陈庆云、朱士正，作者表各自登记。CQ-H16主标题原印为“全氟和多氟烷基磺酸的研究 X.”，与既有题录“磺酸酯”异文分列；670页通讯未印系列号。原刊作者名与传记异文保留，不据署名推定个人分工。结构、谱图及断键解释仍待专业核校。按既有方法核读登记，2003年硅酯／二氟卡宾方法与2010年甲酯／甾体三氟甲基化分别呈现；原刊提交者与核查者名单不属于本项目新取得的专业签认。1989、2000原论文及1991书章全文仍待取得，2024既有陈试剂机理计算仍归原作者。'
+
+
 PRESENTATION_V21_SHA256 = 'a353a25fc9586c3fe78de1ad42a20aee4a1c980de59eda4340df4466d9b45593'
 PRESENTATION_V22_PATH = 'provenance/platform-presentation.v22.json'
 PRESENTATION_V22_ID = 'PLATFORM-ORIGINAL-EVIDENCE-20261116-v22'
@@ -345,9 +355,61 @@ def project_file(root: Path, name: str) -> Path:
     return candidate
 
 
+def a06_summary_predecessor_bytes(root: Path, name: str) -> bytes:
+    """Undo only the four explicitly permitted v23 presentation files."""
+    current = project_file(root, name).read_bytes()
+    if not (root/PRESENTATION_V23_PATH).exists():
+        return current
+    data = read_json(project_file(root, PRESENTATION_V23_PATH))
+    if not isinstance(data, dict):
+        raise ValueError('A06 summary presentation must be a JSON object')
+    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')
+    if not isinstance(files, list) or not isinstance(pool, list):
+        raise ValueError('A06 summary require exact reversible text patch records')
+    matches = [row for row in files if isinstance(row, dict) and row.get('path') == name]
+    if not matches:
+        return current
+    if len(matches) != 1 or name not in A06_SUMMARY_PREDECESSOR_FILES:
+        raise ValueError('Unauthorized or duplicate A06 summary predecessor record: '+name)
+    record = matches[0]; old_sha, old_size = A06_SUMMARY_PREDECESSOR_FILES[name]
+    if (record.get('old_sha256') != old_sha or record.get('old_bytes') != old_size
+            or hashlib.sha256(current).hexdigest() != record.get('new_sha256')
+            or len(current) != record.get('new_bytes')):
+        raise ValueError('A06 summary file differs from its complete old/new identities: '+name)
+    edits = record.get('edits')
+    if not isinstance(edits, list) or not edits:
+        raise ValueError('A06 summary changes require nonempty text edits: '+name)
+    chunks, cursor, old_end, delta = [], 0, 0, 0
+    for edit in edits:
+        if not isinstance(edit, dict) or set(edit) != {'old_offset', 'replacement'}:
+            raise ValueError('Invalid reversible A06 summary text edit: '+name)
+        offset, replacement = edit['old_offset'], edit['replacement']
+        if (type(offset) is not int or offset < old_end or type(replacement) is not int
+                or not 0 <= replacement < len(pool)):
+            raise ValueError('Overlapping or invalid A06 summary text edit: '+name)
+        pair = pool[replacement]
+        if (not isinstance(pair, dict) or set(pair) != {'old', 'new'}
+                or not all(isinstance(pair.get(key), str) for key in ('old', 'new'))
+                or pair['old'] == pair['new']):
+            raise ValueError('Invalid A06 summary text replacement pool')
+        before, after = pair['old'].encode('utf-8'), pair['new'].encode('utf-8')
+        position = offset+delta
+        if position < cursor or current[position:position+len(after)] != after:
+            raise ValueError('A06 summary replacement differs at its exact offset: '+name)
+        chunks.extend((current[cursor:position], before))
+        cursor, old_end = position+len(after), offset+len(before)
+        delta += len(after)-len(before)
+    rebuilt = b''.join((*chunks, current[cursor:]))
+    if hashlib.sha256(rebuilt).hexdigest() != old_sha or len(rebuilt) != old_size:
+        raise ValueError('A06 summary predecessor cannot be reconstructed exactly: '+name)
+    return rebuilt
+
+
+
+
 def original_evidence_predecessor_bytes(root: Path, name: str) -> bytes:
     """Undo only the four explicitly permitted v22 presentation files."""
-    current = project_file(root, name).read_bytes()
+    current = a06_summary_predecessor_bytes(root, name)
     if not (root/PRESENTATION_V22_PATH).exists():
         return current
     data = read_json(project_file(root, PRESENTATION_V22_PATH))
@@ -1329,6 +1391,8 @@ def apply_presentation_v1(root: Path, entries: dict, *, chain: list,
 
 def apply_presentation_overlay(root: Path, entries: dict, *, chain: list) -> tuple[dict, dict | None]:
     """Apply v1, then this bounded historical-content successor if present."""
+    if (root/PRESENTATION_V23_PATH).exists() and not (root/PRESENTATION_V22_PATH).exists():
+        raise ValueError('A06 summary presentation requires its fixed v22 predecessor')
     if (root/PRESENTATION_V22_PATH).exists() and not (root/PRESENTATION_V21_PATH).exists():
         raise ValueError('Original-evidence presentation requires its fixed v21 predecessor')
     if (root/PRESENTATION_V21_PATH).exists() and not (root/PRESENTATION_V20_PATH).exists():
@@ -3761,8 +3825,8 @@ def apply_original_evidence_presentation(root: Path, entries: dict, previous_rep
     if digest(project_file(root, PRESENTATION_V21_PATH)) != PRESENTATION_V21_SHA256:
         raise ValueError('The preceding v21 presentation is immutable')
     path = project_file(root, PRESENTATION_V22_PATH); data = read_json(path)
-    documents = [{'path': name, 'sha256': digest(project_file(root, name)),
-                  'bytes': project_file(root, name).stat().st_size} for name in ORIGINAL_EVIDENCE_DOCUMENTS]
+    documents = [{'path': name, 'sha256': hashlib.sha256(a06_summary_predecessor_bytes(root, name)).hexdigest(),
+                  'bytes': len(a06_summary_predecessor_bytes(root, name))} for name in ORIGINAL_EVIDENCE_DOCUMENTS]
     required = {'schema_version': '22.0', 'presentation_id': PRESENTATION_V22_ID,
         'publication_kind': 'platform_original_evidence_integration',
         'previous_presentation_commit': PRESENTATION_V22_PREVIOUS_COMMIT,
@@ -3797,7 +3861,7 @@ def apply_original_evidence_presentation(root: Path, entries: dict, previous_rep
         old = original_evidence_predecessor_bytes(root, name)
         if hashlib.sha256(old).hexdigest() != sha or len(old) != size:
             raise ValueError('Original-evidence predecessor differs from fixed e6b4273: '+name)
-        if old != project_file(root, name).read_bytes():
+        if old != a06_summary_predecessor_bytes(root, name):
             changed.add(name)
     if {row['path'] for row in files} != changed or changed != set(ORIGINAL_EVIDENCE_PREDECESSOR_FILES):
         raise ValueError('Original-evidence integration must enumerate all and only its four changed files')
@@ -3824,7 +3888,7 @@ def apply_original_evidence_presentation(root: Path, entries: dict, previous_rep
             line['next_step'] = update['next_step']
     if set(ORIGINAL_EVIDENCE_UPDATES) != {'A03', 'A04', 'A05', 'A06', 'A07', 'A08'}:
         raise ValueError('Expected exactly six original-paper/attachment record updates')
-    if read_json(project_file(root, AI_RESEARCH_CONTENT)) != expected_ai:
+    if json.loads(a06_summary_predecessor_bytes(root, AI_RESEARCH_CONTENT)) != expected_ai:
         raise ValueError('Only the fixed status date, six summaries, one append-only link list and five next steps may change')
     changes = data.get('changes')
     if (not isinstance(changes, list) or len(changes) != 1 or not isinstance(changes[0], dict)
@@ -3833,7 +3897,7 @@ def apply_original_evidence_presentation(root: Path, entries: dict, previous_rep
     from public_line_labels import project_html, project_markdown
     item = changes[0]; name = AI_RESEARCH_ROUTE; old = entries[name]
     before = original_evidence_predecessor_bytes(root, 'site/'+name)
-    after = project_file(root, 'site/'+name).read_bytes()
+    after = a06_summary_predecessor_bytes(root, 'site/'+name)
     source, current = before.decode('utf-8'), after.decode('utf-8')
     if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']
             or hashlib.sha256(before).hexdigest() != old['sha256'] or len(before) != old['bytes']
@@ -3860,19 +3924,21 @@ def apply_original_evidence_presentation(root: Path, entries: dict, previous_rep
         raise ValueError('Expected exactly one old and current research-page status date')
     if masked_before.replace(old_date, new_date) != masked_after:
         raise ValueError('Original-evidence integration changed outside its six research sections and fixed footer date')
-    prose = project_file(root, AI_RESEARCH_DOCUMENT).read_text('utf-8')
+    prose = a06_summary_predecessor_bytes(root, AI_RESEARCH_DOCUMENT).decode('utf-8')
     if project_markdown(prose) != prose:
         raise ValueError('Original-evidence document lost canonical achievement names')
     updated = {name: dict(row) for name, row in entries.items()}
     updated[name] = {**old, 'sha256': item['new_sha256'], 'bytes': item['new_bytes'], 'presentation_id': PRESENTATION_V22_ID}
     for member_name, expected in updated.items():
-        member = project_file(root, 'site/'+member_name)
-        if digest(member) != expected['sha256'] or member.stat().st_size != expected['bytes']:
+        member = a06_summary_predecessor_bytes(root, 'site/'+member_name)
+        if hashlib.sha256(member).hexdigest() != expected['sha256'] or len(member) != expected['bytes']:
             raise ValueError('Original-evidence integration changed an unlisted website byte: '+member_name)
-    from render_ai_research import inspect_ai_research
-    check = inspect_ai_research(root)
-    if check.get('status') != 'passed':
-        raise ValueError('Original-evidence final page differs from source rendering: '+str(check.get('errors', [])))
+    # Historical v22 uses its exact reconstructed bytes; v23 validates final rendering.
+    if not (root/PRESENTATION_V23_PATH).exists():
+        from render_ai_research import inspect_ai_research
+        check = inspect_ai_research(root)
+        if check.get('status') != 'passed':
+            raise ValueError('Original-evidence final page differs from source rendering: '+str(check.get('errors', [])))
     members = publication_members(root, updated)
     report = {'path': PRESENTATION_V22_PATH, 'sha256': digest(path), 'presentation_id': PRESENTATION_V22_ID,
         'publication_kind': required['publication_kind'], 'changed_paths': [AI_RESEARCH_ROUTE], 'added_paths': [],
@@ -3886,6 +3952,116 @@ def apply_original_evidence_presentation(root: Path, entries: dict, previous_rep
         'homepage_and_historical_achievement_pages_unchanged': True,
         'original_embedded_json_bytes_preserved': True,
         'original_scans_and_private_evidence_registers_not_published': True,
+        'published_member_count_with_marker': len(members)+1,
+        **{key: required[key] for key in ('scientific_review_status', 'scientific_data_unchanged',
+            'historical_achievement_independent_of_AI_review', 'release_eligible', 'M0_resumed')}}
+    return apply_a06_summary_presentation(root, updated,
+        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})
+
+
+def apply_a06_summary_presentation(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:
+    """Clarify only the existing A06 first-record summary and its derived prose."""
+    if not (root/PRESENTATION_V23_PATH).exists():
+        return entries, previous_report
+    if digest(project_file(root, PRESENTATION_V22_PATH)) != PRESENTATION_V22_SHA256:
+        raise ValueError('The preceding v22 presentation is immutable')
+    path = project_file(root, PRESENTATION_V23_PATH); data = read_json(path)
+    documents = [{'path': name, 'sha256': digest(project_file(root, name)),
+                  'bytes': project_file(root, name).stat().st_size} for name in A06_SUMMARY_DOCUMENTS]
+    required = {'schema_version': '23.0', 'presentation_id': PRESENTATION_V23_ID,
+        'publication_kind': 'platform_a06_authors_methods_clarification',
+        'previous_presentation_commit': PRESENTATION_V23_PREVIOUS_COMMIT,
+        'previous_presentation': {'path': PRESENTATION_V22_PATH, 'sha256': PRESENTATION_V22_SHA256},
+        'original_baseline_sha256': BASELINE_SHA256, 'original_archive_sha256': ARCHIVE_SHA256,
+        'allowed_html_paths': sorted(A06_SUMMARY_ROUTES), 'added_html_paths': [], 'additions': [],
+        'allowed_achievement_lines': ['A06'], 'allowed_ai_json_pointer': '/lines/5/records/0/summary',
+        'editorial_documents': documents,
+        'protected_website_members': {name: {'sha256': row['sha256'], 'bytes': row['bytes']}
+            for name, row in entries.items() if name not in A06_SUMMARY_ROUTES},
+        'reconstruction_kind': 'deduplicated_exact_utf8_text_edits',
+        'scientific_review_status': 'review_required', 'release_eligible': False,
+        'scientific_data_unchanged': True, 'M0_resumed': False,
+        'historical_achievement_independent_of_AI_review': True}
+    if (not isinstance(data, dict) or any(data.get(key) != value for key, value in required.items())
+            or any(data.get(key) is not required[key] for key in ('release_eligible',
+                'scientific_data_unchanged', 'M0_resumed', 'historical_achievement_independent_of_AI_review'))
+            or any(type(data.get(key)) is not int or data[key] != 0 for key in ('new_quantum_calls', 'new_model_API_calls'))
+            or not isinstance(data.get('authorization'), str) or not data['authorization'].strip()):
+        raise ValueError('Unsupported bounded A06 summary clarification v23')
+    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')
+    if (not isinstance(files, list) or not files or not isinstance(pool, list) or not pool
+            or any(not isinstance(row, dict) or row.get('path') not in A06_SUMMARY_PREDECESSOR_FILES for row in files)
+            or len({row['path'] for row in files}) != len(files)
+            or any(not isinstance(row.get('edits'), list) or not row['edits'] or any(
+                not isinstance(edit, dict) or type(edit.get('replacement')) is not int for edit in row['edits']) for row in files)):
+        raise ValueError('A06 summary may enumerate only its four fixed predecessor files')
+    if {edit['replacement'] for row in files for edit in row['edits']} != set(range(len(pool))):
+        raise ValueError('A06 summary requires exactly its used replacement segments')
+    changed = set()
+    for name, (sha, size) in A06_SUMMARY_PREDECESSOR_FILES.items():
+        old = a06_summary_predecessor_bytes(root, name)
+        if hashlib.sha256(old).hexdigest() != sha or len(old) != size:
+            raise ValueError('A06 summary predecessor differs from fixed b663c63: '+name)
+        if old != project_file(root, name).read_bytes():
+            changed.add(name)
+    if {row['path'] for row in files} != changed or changed != set(A06_SUMMARY_PREDECESSOR_FILES):
+        raise ValueError('A06 summary must enumerate every and only its four changed files')
+    old_ai = json.loads(a06_summary_predecessor_bytes(root, AI_RESEARCH_CONTENT))
+    expected_ai = json.loads(json.dumps(old_ai))
+    if (expected_ai['lines'][5]['id'] != 'A06' or not isinstance(A06_SUMMARY_TEXT, str)
+            or not A06_SUMMARY_TEXT.strip() or A06_SUMMARY_TEXT == expected_ai['lines'][5]['records'][0]['summary']):
+        raise ValueError('A06 summary requires a fixed nonempty changed first-record summary')
+    expected_ai['lines'][5]['records'][0]['summary'] = A06_SUMMARY_TEXT
+    if read_json(project_file(root, AI_RESEARCH_CONTENT)) != expected_ai:
+        raise ValueError('Only A06 records[0].summary may change; date, links, next steps and all other fields are protected')
+    changes = data.get('changes')
+    if (not isinstance(changes, list) or len(changes) != 1 or not isinstance(changes[0], dict)
+            or changes[0].get('path') != AI_RESEARCH_ROUTE):
+        raise ValueError('A06 summary may change only the existing research page')
+    from public_line_labels import project_html, project_markdown
+    item = changes[0]; route = AI_RESEARCH_ROUTE; old = entries[route]
+    before = a06_summary_predecessor_bytes(root, 'site/'+route)
+    after = project_file(root, 'site/'+route).read_bytes()
+    source, current = before.decode('utf-8'), after.decode('utf-8')
+    if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']
+            or hashlib.sha256(before).hexdigest() != old['sha256'] or len(before) != old['bytes']
+            or item.get('new_sha256') != hashlib.sha256(after).hexdigest() or item.get('new_bytes') != len(after)
+            or before == after or not isinstance(item.get('reason'), str) or not item['reason'].strip()):
+        raise ValueError('A06 summary HTML differs from complete old/new identities')
+    json_scripts = re.compile(r'<script\b[^>]*\btype\s*=\s*["\']application/(?:ld\+)?json["\'][^>]*>.*?</script\s*>', re.I | re.S)
+    if json_scripts.findall(source) != json_scripts.findall(current):
+        raise ValueError('A06 summary must retain every embedded JSON byte')
+    if set(re.findall(r'\bid="([^\"]+)"', source)) != set(re.findall(r'\bid="([^\"]+)"', current)):
+        raise ValueError('A06 summary must retain every navigation and source ID')
+    if project_html(current, route) != current:
+        raise ValueError('A06 summary lost canonical named achievement references')
+    pattern = r'<section\b[^>]*\bid="ai-a06"[^>]*>.*?</section>'
+    if (len(re.findall(pattern, source, re.S)) != 1 or len(re.findall(pattern, current, re.S)) != 1
+            or re.sub(pattern, '<A06-SUMMARY/>', source, flags=re.S) != re.sub(pattern, '<A06-SUMMARY/>', current, flags=re.S)):
+        raise ValueError('A06 summary changed outside its unique existing A06 section')
+    prose = project_file(root, AI_RESEARCH_DOCUMENT).read_text('utf-8')
+    if project_markdown(prose) != prose:
+        raise ValueError('A06 summary document lost canonical achievement names')
+    updated = {name: dict(row) for name, row in entries.items()}
+    updated[route] = {**old, 'sha256': item['new_sha256'], 'bytes': item['new_bytes'], 'presentation_id': PRESENTATION_V23_ID}
+    for name, expected in updated.items():
+        member = project_file(root, 'site/'+name)
+        if digest(member) != expected['sha256'] or member.stat().st_size != expected['bytes']:
+            raise ValueError('A06 summary changed an unlisted website byte: '+name)
+    from render_ai_research import inspect_ai_research
+    check = inspect_ai_research(root)
+    if check.get('status') != 'passed':
+        raise ValueError('A06 summary final page differs from source rendering: '+str(check.get('errors', [])))
+    members = publication_members(root, updated)
+    report = {'path': PRESENTATION_V23_PATH, 'sha256': digest(path), 'presentation_id': PRESENTATION_V23_ID,
+        'publication_kind': required['publication_kind'], 'changed_paths': [AI_RESEARCH_ROUTE], 'added_paths': [],
+        'changed_achievement_lines': ['A06'], 'previous_presentation_commit': PRESENTATION_V23_PREVIOUS_COMMIT,
+        'exact_predecessor_reconstruction': True, 'source_derived_rendering': True,
+        'only_A06_first_record_summary_changed': True,
+        'date_all_links_next_steps_and_other_AI_fields_preserved': True,
+        'homepage_historical_pages_and_original_scientific_data_preserved': True,
+        'previous_method_reading_register_inherited_without_new_expert_signoff': True,
+        'original_embedded_json_bytes_preserved': True,
         'published_member_count_with_marker': len(members)+1,
         **{key: required[key] for key in ('scientific_review_status', 'scientific_data_unchanged',
             'historical_achievement_independent_of_AI_review', 'release_eligible', 'M0_resumed')}}

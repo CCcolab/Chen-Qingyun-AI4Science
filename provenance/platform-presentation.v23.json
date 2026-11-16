@@ -1,0 +1,301 @@
+{
+  "schema_version": "23.0",
+  "presentation_id": "PLATFORM-A06-AUTHORS-METHODS-20261116-v23",
+  "created_at_utc": "2026-11-16T08:05:52.146798+00:00",
+  "publication_kind": "platform_a06_authors_methods_clarification",
+  "authorization": "User request dated 2026-11-16 to integrate evidence review while preserving source-level acquisition and scientific boundaries. Clarify only the existing A06 summary with the separate original-paper author lists and previously registered Org. Synth. methods; no new expert sign-off, experiment or calculation.",
+  "previous_presentation_commit": "b663c63b84d1474d91faf5437f1d61202b8fa8c6",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v22.json",
+    "sha256": "3a9a746a565f7942899f5fdffc244121608e39210c7e6eb466203775dc38cae6"
+  },
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "allowed_html_paths": [
+    "research/index.html"
+  ],
+  "added_html_paths": [],
+  "allowed_achievement_lines": [
+    "A06"
+  ],
+  "allowed_ai_json_pointer": "/lines/5/records/0/summary",
+  "editorial_documents": [
+    {
+      "path": "content/ai-research-section.v1.json",
+      "sha256": "b023fb4b35a1a661c310895d59770771618b49de6114e878308c569186165e56",
+      "bytes": 69152
+    },
+    {
+      "path": "scripts/render_ai_research.py",
+      "sha256": "729298ecb6146cba6b9a78bdc2074dabb10b6a2f551f7efaf4d0a4078e29f521",
+      "bytes": 34792
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "sha256": "e7486227539040ef696f32d646aaa362de55c99ffb32100b6d0f5e88015448fb",
+      "bytes": 38171
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "sha256": "a0a3bb8ad112aa270e08980850e793058dfe958fa8e8f564875609f482d789b5",
+      "bytes": 308849
+    }
+  ],
+  "protected_website_members": {
+    "index.html": {
+      "sha256": "8b3532ee45c0fb33912f20a3bd7943043a348f10a370b9c6716e9edf3c0abf41",
+      "bytes": 257766
+    },
+    "pftb/index.html": {
+      "sha256": "42ca404f2ed70b7a3b0b5d8b0eb742a2509e5a5a70fd0be36a65028e61cbd1f6",
+      "bytes": 97587
+    },
+    "topics/f53/index.html": {
+      "sha256": "8def3379a75dda6665d7cb3ee6c32193fc7a61ec6b31098abbefe9218fea39fe",
+      "bytes": 8161
+    },
+    "topics/refrigerants/index.html": {
+      "sha256": "5d9b5a355b949f67c5de252727f8d4e4e7533abab8a666c49a0f932170153c4e",
+      "bytes": 10636
+    },
+    "topics/perfluorosulfonates/index.html": {
+      "sha256": "85a6f4330edb7607f61ca217b71d2ef6c12cb1af0d48aaaebf737acf3a212ea5",
+      "bytes": 8888
+    },
+    "topics/chen-reagent/index.html": {
+      "sha256": "14f08afd4062c0ae171f24e5fb225e5968b003e885edc206baf08ca352b630df",
+      "bytes": 19991
+    },
+    "topics/single-electron-transfer/index.html": {
+      "sha256": "79c84f89e25e576a03f34153b9eb85a5ff73815c8265a0222930d889390ea947",
+      "bytes": 10355
+    },
+    "topics/fluoroporphyrins/index.html": {
+      "sha256": "24b6bb744b594573487847c89bbb35571ea56bc15d444ebeac3339379dbc1875",
+      "bytes": 6018
+    },
+    "topics/early-fluoroketones/index.html": {
+      "sha256": "a6da86d7f9ff0f35a5ea044252297a23e5ed71db829f2d184e3ab38a70dce9a2",
+      "bytes": 250938
+    },
+    "topics/fluorinated-small-rings/index.html": {
+      "sha256": "2413c83d4319746f41e940c04fe48bdeda28244235f5a9e8697285c187ba412d",
+      "bytes": 5924
+    },
+    "topics/deoxyfluorination/index.html": {
+      "sha256": "2aca9c13eb46f9fedfb02a2adfdc9423c207465f58608bcd671838d4d8045df5",
+      "bytes": 5550
+    },
+    "topics/sulfonyl-fluoride/index.html": {
+      "sha256": "fe944efbbfa5a7814015235f4ae3aae101db4046b0c9419986d6855d7ed15b49",
+      "bytes": 5043
+    },
+    "topics/index.html": {
+      "sha256": "44a5690d1e65195b9ff191d2a7ec37487070cdfafb191ae107962d5e0d7ab73c",
+      "bytes": 5055
+    },
+    "achievements/index.html": {
+      "sha256": "df20daf429c46e89e99085550067e8c1e9f7e283b10b7e8269f38da6a9d380ff",
+      "bytes": 95867
+    },
+    "data/public-sources.json": {
+      "sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+      "bytes": 33608
+    },
+    "data/achievement-lines.json": {
+      "sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+      "bytes": 39768
+    },
+    "README.txt": {
+      "sha256": "6e15068b7240ae47d633df3f777e81fbb9e46146ee5f4ab70011f09119b6bbc9",
+      "bytes": 336
+    },
+    "ROUTES.txt": {
+      "sha256": "a734c356877d4534285ab7d71b9fe0f7a17abbced4de3c52f8e60d335301e418",
+      "bytes": 949
+    },
+    "QA.txt": {
+      "sha256": "a60b5f382b31689fa17e2518b7079ef0660674fb62bddbbf564c7b74dfe51067",
+      "bytes": 290
+    },
+    "IONIC-ENTRY-RETEST.txt": {
+      "sha256": "3462b056891a27c335cc2620deb87b245b6c9aea3bdaec607c8a14beca69fe9d",
+      "bytes": 741
+    },
+    "topics/fluoromonomers/index.html": {
+      "sha256": "226275b67b0ff281f0cc373e6f0ebceb91eea8c22322278a897ed2bdfdd09e11",
+      "bytes": 60034
+    }
+  },
+  "reconstruction_kind": "deduplicated_exact_utf8_text_edits",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "M0_resumed": false,
+  "historical_achievement_independent_of_AI_review": true,
+  "new_quantum_calls": 0,
+  "new_model_API_calls": 0,
+  "changes": [
+    {
+      "path": "research/index.html",
+      "old_sha256": "4427a6cb2adedf7761bf22308cec33bf27d45209f1ecb2f12b4cfb9f0f91e3a7",
+      "old_bytes": 51716,
+      "new_sha256": "bd8902afeb1cede0bcaff717ac4e5fa26bafe027eb0af9786dc39c68e591d706",
+      "new_bytes": 52010,
+      "reason": "Clarify the separate three-paper author lists and distinguish two previously registered Org. Synth. methods in the existing A06 summary; preserve acquisition, attribution and review boundaries."
+    }
+  ],
+  "additions": [],
+  "reversible_text_files": [
+    {
+      "path": "content/ai-research-section.v1.json",
+      "old_sha256": "278647dbc24b3089da7878736d8a6160547b7080d8d99bd2cdbdebd9f0c38e3a",
+      "old_bytes": 68858,
+      "new_sha256": "b023fb4b35a1a661c310895d59770771618b49de6114e878308c569186165e56",
+      "new_bytes": 69152,
+      "edits": [
+        {
+          "old_offset": 60269,
+          "replacement": 0
+        }
+      ]
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "old_sha256": "b6c2f2d7f84de97cfb22020be553d332b8ed6dd83566c2ec3fe492a495c44d4b",
+      "old_bytes": 37877,
+      "new_sha256": "e7486227539040ef696f32d646aaa362de55c99ffb32100b6d0f5e88015448fb",
+      "new_bytes": 38171,
+      "edits": [
+        {
+          "old_offset": 30833,
+          "replacement": 0
+        }
+      ]
+    },
+    {
+      "path": "site/research/index.html",
+      "old_sha256": "4427a6cb2adedf7761bf22308cec33bf27d45209f1ecb2f12b4cfb9f0f91e3a7",
+      "old_bytes": 51716,
+      "new_sha256": "bd8902afeb1cede0bcaff717ac4e5fa26bafe027eb0af9786dc39c68e591d706",
+      "new_bytes": 52010,
+      "edits": [
+        {
+          "old_offset": 43921,
+          "replacement": 0
+        }
+      ]
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "old_sha256": "dcf906fa4f6041f418978073e84f76a165ec2ad96c333116259a6b246badf2d8",
+      "old_bytes": 294741,
+      "new_sha256": "a0a3bb8ad112aa270e08980850e793058dfe958fa8e8f564875609f482d789b5",
+      "new_bytes": 308849,
+      "edits": [
+        {
+          "old_offset": 15173,
+          "replacement": 1
+        },
+        {
+          "old_offset": 32180,
+          "replacement": 2
+        },
+        {
+          "old_offset": 32341,
+          "replacement": 3
+        },
+        {
+          "old_offset": 90981,
+          "replacement": 4
+        },
+        {
+          "old_offset": 277019,
+          "replacement": 5
+        },
+        {
+          "old_offset": 280157,
+          "replacement": 3
+        },
+        {
+          "old_offset": 281955,
+          "replacement": 6
+        },
+        {
+          "old_offset": 282657,
+          "replacement": 7
+        },
+        {
+          "old_offset": 284982,
+          "replacement": 8
+        },
+        {
+          "old_offset": 285429,
+          "replacement": 9
+        },
+        {
+          "old_offset": 285677,
+          "replacement": 10
+        },
+        {
+          "old_offset": 286937,
+          "replacement": 11
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "CQ-H16主标题原印为“全氟和多氟烷基磺酸的研究 X.”，与既有题录“磺酸酯”异文分列；670页通讯未印系列号。原刊作者名与传记异文保留，不据署名推定个人分工。结构、谱图及断键解释仍待专业核校。2003／2010方法核查记录保留；",
+      "new": "首篇署陈庆云、朱蓉仙、李宗珍、王珊娣、黄维垣，后两篇分别署陈庆云、朱士正，作者表各自登记。CQ-H16主标题原印为“全氟和多氟烷基磺酸的研究 X.”，与既有题录“磺酸酯”异文分列；670页通讯未印系列号。原刊作者名与传记异文保留，不据署名推定个人分工。结构、谱图及断键解释仍待专业核校。按既有方法核读登记，2003年硅酯／二氟卡宾方法与2010年甲酯／甾体三氟甲基化分别呈现；原刊提交者与核查者名单不属于本项目新取得的专业签认。"
+    },
+    {
+      "old": "",
+      "new": "PRESENTATION_V22_SHA256 = '3a9a746a565f7942899f5fdffc244121608e39210c7e6eb466203775dc38cae6'\nPRESENTATION_V23_PATH = 'provenance/platform-presentation.v23.json'\nPRESENTATION_V23_ID = 'PLATFORM-A06-AUTHORS-METHODS-20261116-v23'\nPRESENTATION_V23_PREVIOUS_COMMIT = 'b663c63b84d1474d91faf5437f1d61202b8fa8c6'\nA06_SUMMARY_ROUTES = {AI_RESEARCH_ROUTE}\nA06_SUMMARY_PREDECESSOR_FILES = {'content/ai-research-section.v1.json': ('278647dbc24b3089da7878736d8a6160547b7080d8d99bd2cdbdebd9f0c38e3a', 68858), 'docs/AI_RESEARCH_zh-CN.md': ('b6c2f2d7f84de97cfb22020be553d332b8ed6dd83566c2ec3fe492a495c44d4b', 37877), 'site/research/index.html': ('4427a6cb2adedf7761bf22308cec33bf27d45209f1ecb2f12b4cfb9f0f91e3a7', 51716), 'scripts/a01_publication_contract.py': ('dcf906fa4f6041f418978073e84f76a165ec2ad96c333116259a6b246badf2d8', 294741)}\nA06_SUMMARY_DOCUMENTS = ('content/ai-research-section.v1.json', 'scripts/render_ai_research.py', 'docs/AI_RESEARCH_zh-CN.md', 'scripts/a01_publication_contract.py')\nA06_SUMMARY_TEXT = '已取得并核读1982年337–352页、670–673页及1983年1044–1057页三篇原刊。首篇署陈庆云、朱蓉仙、李宗珍、王珊娣、黄维垣，后两篇分别署陈庆云、朱士正，作者表各自登记。CQ-H16主标题原印为“全氟和多氟烷基磺酸的研究 X.”，与既有题录“磺酸酯”异文分列；670页通讯未印系列号。原刊作者名与传记异文保留，不据署名推定个人分工。结构、谱图及断键解释仍待专业核校。按既有方法核读登记，2003年硅酯／二氟卡宾方法与2010年甲酯／甾体三氟甲基化分别呈现；原刊提交者与核查者名单不属于本项目新取得的专业签认。1989、2000原论文及1991书章全文仍待取得，2024既有陈试剂机理计算仍归原作者。'\n\n\n"
+    },
+    {
+      "old": "",
+      "new": "def a06_summary_predecessor_bytes(root: Path, name: str) -> bytes:\n    \"\"\"Undo only the four explicitly permitted v23 presentation files.\"\"\"\n    current = project_file(root, name).read_bytes()\n    if not (root/PRESENTATION_V23_PATH).exists():\n        return current\n    data = read_json(project_file(root, PRESENTATION_V23_PATH))\n    if not isinstance(data, dict):\n        raise ValueError('A06 summary presentation must be a JSON object')\n    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')\n    if not isinstance(files, list) or not isinstance(pool, list):\n        raise ValueError('A06 summary require exact reversible text patch records')\n    matches = [row for row in files if isinstance(row, dict) and row.get('path') == name]\n    if not matches:\n        return current\n    if len(matches) != 1 or name not in A06_SUMMARY_PREDECESSOR_FILES:\n        raise ValueError('Unauthorized or duplicate A06 summary predecessor record: '+name)\n    record = matches[0]; old_sha, old_size = A06_SUMMARY_PREDECESSOR_FILES[name]\n    if (record.get('old_sha256') != old_sha or record.get('old_bytes') != old_size\n            or hashlib.sha256(current).hexdigest() != record.get('new_sha256')\n            or len(current) != record.get('new_bytes')):\n        raise ValueError('A06 summary file differs from its complete old/new identities: '+name)\n    edits = record.get('edits')\n    if not isinstance(edits, list) or not edits:\n        raise ValueError('A06 summary changes require nonempty text edits: '+name)\n    chunks, cursor, old_end, delta = [], 0, 0, 0\n    for edit in edits:\n        if not isinstance(edit, dict) or set(edit) != {'old_offset', 'replacement'}:\n            raise ValueError('Invalid reversible A06 summary text edit: '+name)\n        offset, replacement = edit['old_offset'], edit['replacement']\n        if (type(offset) is not int or offset < old_end or type(replacement) is not int\n                or not 0 <= replacement < len(pool)):\n            raise ValueError('Overlapping or invalid A06 summary text edit: '+name)\n        pair = pool[replacement]\n        if (not isinstance(pair, dict) or set(pair) != {'old', 'new'}\n                or not all(isinstance(pair.get(key), str) for key in ('old', 'new'))\n                or pair['old'] == pair['new']):\n            raise ValueError('Invalid A06 summary text replacement pool')\n        before, after = pair['old'].encode('utf-8'), pair['new'].encode('utf-8')\n        position = offset+delta\n        if position < cursor or current[position:position+len(after)] != after:\n            raise ValueError('A06 summary replacement differs at its exact offset: '+name)\n        chunks.extend((current[cursor:position], before))\n        cursor, old_end = position+len(after), offset+len(before)\n        delta += len(after)-len(before)\n    rebuilt = b''.join((*chunks, current[cursor:]))\n    if hashlib.sha256(rebuilt).hexdigest() != old_sha or len(rebuilt) != old_size:\n        raise ValueError('A06 summary predecessor cannot be reconstructed exactly: '+name)\n    return rebuilt\n\n\n\n\n"
+    },
+    {
+      "old": "project_file(root, name).read_bytes(",
+      "new": "a06_summary_predecessor_bytes(root, name"
+    },
+    {
+      "old": "",
+      "new": "    if (root/PRESENTATION_V23_PATH).exists() and not (root/PRESENTATION_V22_PATH).exists():\n        raise ValueError('A06 summary presentation requires its fixed v22 predecessor')\n"
+    },
+    {
+      "old": "digest(project_file(root, name)),\n                  'bytes': project_file(root, name).stat().st_size",
+      "new": "hashlib.sha256(a06_summary_predecessor_bytes(root, name)).hexdigest(),\n                  'bytes': len(a06_summary_predecessor_bytes(root, name))"
+    },
+    {
+      "old": "read_json(project_file",
+      "new": "json.loads(a06_summary_predecessor_bytes"
+    },
+    {
+      "old": "project_file(root, 'site/'+name).read_bytes(",
+      "new": "a06_summary_predecessor_bytes(root, 'site/'+name"
+    },
+    {
+      "old": "project_file(root, AI_RESEARCH_DOCUMENT).read_text",
+      "new": "a06_summary_predecessor_bytes(root, AI_RESEARCH_DOCUMENT).decode"
+    },
+    {
+      "old": "project_file(root, 'site/'+member_name)\n        if digest(member) != expected['sha256'] or member.stat().st_size",
+      "new": "a06_summary_predecessor_bytes(root, 'site/'+member_name)\n        if hashlib.sha256(member).hexdigest() != expected['sha256'] or len(member)"
+    },
+    {
+      "old": "from render_ai_research import inspect_ai_research\n    check = inspect_ai_research(root)\n    if check.get('status') != 'passed':\n",
+      "new": "# Historical v22 uses its exact reconstructed bytes; v23 validates final rendering.\n    if not (root/PRESENTATION_V23_PATH).exists():\n        from render_ai_research import inspect_ai_research\n        check = inspect_ai_research(root)\n        if check.get('status') != 'passed':\n    "
+    },
+    {
+      "old": "",
+      "new": "        'published_member_count_with_marker': len(members)+1,\n        **{key: required[key] for key in ('scientific_review_status', 'scientific_data_unchanged',\n            'historical_achievement_independent_of_AI_review', 'release_eligible', 'M0_resumed')}}\n    return apply_a06_summary_presentation(root, updated,\n        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})\n\n\ndef apply_a06_summary_presentation(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:\n    \"\"\"Clarify only the existing A06 first-record summary and its derived prose.\"\"\"\n    if not (root/PRESENTATION_V23_PATH).exists():\n        return entries, previous_report\n    if digest(project_file(root, PRESENTATION_V22_PATH)) != PRESENTATION_V22_SHA256:\n        raise ValueError('The preceding v22 presentation is immutable')\n    path = project_file(root, PRESENTATION_V23_PATH); data = read_json(path)\n    documents = [{'path': name, 'sha256': digest(project_file(root, name)),\n                  'bytes': project_file(root, name).stat().st_size} for name in A06_SUMMARY_DOCUMENTS]\n    required = {'schema_version': '23.0', 'presentation_id': PRESENTATION_V23_ID,\n        'publication_kind': 'platform_a06_authors_methods_clarification',\n        'previous_presentation_commit': PRESENTATION_V23_PREVIOUS_COMMIT,\n        'previous_presentation': {'path': PRESENTATION_V22_PATH, 'sha256': PRESENTATION_V22_SHA256},\n        'original_baseline_sha256': BASELINE_SHA256, 'original_archive_sha256': ARCHIVE_SHA256,\n        'allowed_html_paths': sorted(A06_SUMMARY_ROUTES), 'added_html_paths': [], 'additions': [],\n        'allowed_achievement_lines': ['A06'], 'allowed_ai_json_pointer': '/lines/5/records/0/summary',\n        'editorial_documents': documents,\n        'protected_website_members': {name: {'sha256': row['sha256'], 'bytes': row['bytes']}\n            for name, row in entries.items() if name not in A06_SUMMARY_ROUTES},\n        'reconstruction_kind': 'deduplicated_exact_utf8_text_edits',\n        'scientific_review_status': 'review_required', 'release_eligible': False,\n        'scientific_data_unchanged': True, 'M0_resumed': False,\n        'historical_achievement_independent_of_AI_review': True}\n    if (not isinstance(data, dict) or any(data.get(key) != value for key, value in required.items())\n            or any(data.get(key) is not required[key] for key in ('release_eligible',\n                'scientific_data_unchanged', 'M0_resumed', 'historical_achievement_independent_of_AI_review'))\n            or any(type(data.get(key)) is not int or data[key] != 0 for key in ('new_quantum_calls', 'new_model_API_calls'))\n            or not isinstance(data.get('authorization'), str) or not data['authorization'].strip()):\n        raise ValueError('Unsupported bounded A06 summary clarification v23')\n    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')\n    if (not isinstance(files, list) or not files or not isinstance(pool, list) or not pool\n            or any(not isinstance(row, dict) or row.get('path') not in A06_SUMMARY_PREDECESSOR_FILES for row in files)\n            or len({row['path'] for row in files}) != len(files)\n            or any(not isinstance(row.get('edits'), list) or not row['edits'] or any(\n                not isinstance(edit, dict) or type(edit.get('replacement')) is not int for edit in row['edits']) for row in files)):\n        raise ValueError('A06 summary may enumerate only its four fixed predecessor files')\n    if {edit['replacement'] for row in files for edit in row['edits']} != set(range(len(pool))):\n        raise ValueError('A06 summary requires exactly its used replacement segments')\n    changed = set()\n    for name, (sha, size) in A06_SUMMARY_PREDECESSOR_FILES.items():\n        old = a06_summary_predecessor_bytes(root, name)\n        if hashlib.sha256(old).hexdigest() != sha or len(old) != size:\n            raise ValueError('A06 summary predecessor differs from fixed b663c63: '+name)\n        if old != project_file(root, name).read_bytes():\n            changed.add(name)\n    if {row['path'] for row in files} != changed or changed != set(A06_SUMMARY_PREDECESSOR_FILES):\n        raise ValueError('A06 summary must enumerate every and only its four changed files')\n    old_ai = json.loads(a06_summary_predecessor_bytes(root, AI_RESEARCH_CONTENT))\n    expected_ai = json.loads(json.dumps(old_ai))\n    if (expected_ai['lines'][5]['id'] != 'A06' or not isinstance(A06_SUMMARY_TEXT, str)\n            or not A06_SUMMARY_TEXT.strip() or A06_SUMMARY_TEXT == expected_ai['lines'][5]['records'][0]['summary']):\n        raise ValueError('A06 summary requires a fixed nonempty changed first-record summary')\n    expected_ai['lines'][5]['records'][0]['summary'] = A06_SUMMARY_TEXT\n    if read_json(project_file(root, AI_RESEARCH_CONTENT)) != expected_ai:\n        raise ValueError('Only A06 records[0].summary may change; date, links, next steps and all other fields are protected')\n    changes = data.get('changes')\n    if (not isinstance(changes, list) or len(changes) != 1 or not isinstance(changes[0], dict)\n            or changes[0].get('path') != AI_RESEARCH_ROUTE):\n        raise ValueError('A06 summary may change only the existing research page')\n    from public_line_labels import project_html, project_markdown\n    item = changes[0]; route = AI_RESEARCH_ROUTE; old = entries[route]\n    before = a06_summary_predecessor_bytes(root, 'site/'+route)\n    after = project_file(root, 'site/'+route).read_bytes()\n    source, current = before.decode('utf-8'), after.decode('utf-8')\n    if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']\n            or hashlib.sha256(before).hexdigest() != old['sha256'] or len(before) != old['bytes']\n            or item.get('new_sha256') != hashlib.sha256(after).hexdigest() or item.get('new_bytes') != len(after)\n            or before == after or not isinstance(item.get('reason'), str) or not item['reason'].strip()):\n        raise ValueError('A06 summary HTML differs from complete old/new identities')\n    json_scripts = re.compile(r'<script\\b[^>]*\\btype\\s*=\\s*[\"\\']application/(?:ld\\+)?json[\"\\'][^>]*>.*?</script\\s*>', re.I | re.S)\n    if json_scripts.findall(source) != json_scripts.findall(current):\n        raise ValueError('A06 summary must retain every embedded JSON byte')\n    if set(re.findall(r'\\bid=\"([^\\\"]+)\"', source)) != set(re.findall(r'\\bid=\"([^\\\"]+)\"', current)):\n        raise ValueError('A06 summary must retain every navigation and source ID')\n    if project_html(current, route) != current:\n        raise ValueError('A06 summary lost canonical named achievement references')\n    pattern = r'<section\\b[^>]*\\bid=\"ai-a06\"[^>]*>.*?</section>'\n    if (len(re.findall(pattern, source, re.S)) != 1 or len(re.findall(pattern, current, re.S)) != 1\n            or re.sub(pattern, '<A06-SUMMARY/>', source, flags=re.S) != re.sub(pattern, '<A06-SUMMARY/>', current, flags=re.S)):\n        raise ValueError('A06 summary changed outside its unique existing A06 section')\n    prose = project_file(root, AI_RESEARCH_DOCUMENT).read_text('utf-8')\n    if project_markdown(prose) != prose:\n        raise ValueError('A06 summary document lost canonical achievement names')\n    updated = {name: dict(row) for name, row in entries.items()}\n    updated[route] = {**old, 'sha256': item['new_sha256'], 'bytes': item['new_bytes'], 'presentation_id': PRESENTATION_V23_ID}\n    for name, expected in updated.items():\n        member = project_file(root, 'site/'+name)\n        if digest(member) != expected['sha256'] or member.stat().st_size != expected['bytes']:\n            raise ValueError('A06 summary changed an unlisted website byte: '+name)\n    from render_ai_research import inspect_ai_research\n    check = inspect_ai_research(root)\n    if check.get('status') != 'passed':\n        raise ValueError('A06 summary final page differs from source rendering: '+str(check.get('errors', [])))\n    members = publication_members(root, updated)\n    report = {'path': PRESENTATION_V23_PATH, 'sha256': digest(path), 'presentation_id': PRESENTATION_V23_ID,\n        'publication_kind': required['publication_kind'], 'changed_paths': [AI_RESEARCH_ROUTE], 'added_paths': [],\n        'changed_achievement_lines': ['A06'], 'previous_presentation_commit': PRESENTATION_V23_PREVIOUS_COMMIT,\n        'exact_predecessor_reconstruction': True, 'source_derived_rendering': True,\n        'only_A06_first_record_summary_changed': True,\n        'date_all_links_next_steps_and_other_AI_fields_preserved': True,\n        'homepage_historical_pages_and_original_scientific_data_preserved': True,\n        'previous_method_reading_register_inherited_without_new_expert_signoff': True,\n        'original_embedded_json_bytes_preserved': True,\n"
+    }
+  ],
+  "boundary": "Only A06 records[0].summary, its existing second-level rendered page/document and contract implementation change. Source date, every link, every next step, all other AI fields and lines, homepage, historical narratives, original public/scientific data and all other website members remain unchanged. Previously registered methods are not newly read or experimentally reproduced in this step. Original PDFs and private evidence registers are not published.",
+  "reconstruction": "Four fixed b663c63 predecessor files are reconstructed in memory with exact UTF-8 edits. All v1-v22 manifests retain their exact original bytes. Historical v22 checks use its reconstructed bytes and v23 checks the complete current rendering.",
+  "publish_allowlist": "Unchanged: sixteen static HTML pages, two original public JSON files and an empty .nojekyll marker, nineteen regular published files.",
+  "remote_action_performed": false
+}
