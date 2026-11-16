@@ -294,9 +294,9 @@ CQ-H12原文化合物III的三处记载
 
 ## A03（全氟叔丁基（PFtB）化学）
 
-**科学问题：**哪些结构、反应与光谱观察支持特定全氟烷基碘代物的效应比较？
+**科学问题：**原作者怎样把全氟叔丁基卤化物的制备、特殊反应和光谱比较联系起来？平台能从原表重现哪些数字？
 
-**AI怎样辅助：**辅助原表转录、溶剂与分子身份核对；用固定公式重放波长差和波数蓝移，检查假定扰动下的顺序敏感性。
+**AI怎样辅助：**以传记为主线关联人物、化合物、原论文和学术贡献；对平台新增引用核对出处与转录。已保存的数值工作限于原表波长差、波数蓝移与假定扰动诊断，历史成果归原作者。
 
 ### 已有资料与结果
 
@@ -353,31 +353,35 @@ H沿用原表C₆H₁₄记号，当前登记未进一步指定异构体；B是�
 
 [重放与敏感性报告](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/REPLAY_REPORT_zh-CN.md) · [固定协议与单位约定](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/protocols/pftb1966_uv.json) · [已保存比较结果](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/pftb1966-uv-replay.json)
 
-### 待核事项
+### 适用范围与科学边界
 
-- 原表转录仍待独立化学专家签认；未重新测量光谱、重建完整谱线或进行峰拟合。
-- 真实峰位不确定度及对应表1的UV温度、浓度和光程尚不能恢复；原刊紫外仪器Unicam SP-500已核明，20°C属于NMR。缺少的原始测量／校准依据不由平台补造。
-- 从完整碘代物位移到基团效应解释仍需额外证据，不能凭本表补造CF₃I、C₂F₅I数据或认定反应机理。
+- 平台保存的是原表转录及数值重放；未重新测量光谱、重建完整谱线或进行峰拟合。
+- 真实峰位不确定度及对应表1的UV温度、浓度和光程不能由现有整理恢复；Unicam SP-500为紫外仪器，20°C属于NMR。显示舍入诊断不是实验误差。
+- 完整碘代物的位移不能直接搬作普适基团常数；不补造CF₃I、C₂F₅I数据，不用六项换算认证反应机理。
 
 ### 未来设想（尚未开展）
 
-- 先完成原表专业核校，并从原始文献与相关记录补齐测量条件和谱带归属。
-- 资料充分后，再论证如何用独立光谱测量或明确的现代模型区分溶剂相互作用与基团效应；此为待查新、待设计的问题，尚未启动。
+- 若未来开展独立光谱或现代模型研究，应先限定化合物、溶剂和可区分的科学问题，比较已有工作并另定协议；目前仅为设想。
+- 当前聚焦既有学术成果的呈现与资料整理；M0继续暂停，未启动新的计算或实验。
 
 ### 专业记录与完整数据
 
-**现有资料与记录。**已按1966年原表转录10个波长记录，其中9个配对记录形成6项位移；波长差、波数蓝移与有界扰动诊断属于同批原表数值重放。原刊印刷21页表1及24页实验部分已回查：紫外仪器为Unicam SP-500；20°C注明于核磁共振测量，不能移作紫外温度。紫外测量条件与真实不确定度仍未完整确认，专业转录签认待补。
+**历史成果与合作脉络。**已将传记42–45页与1966年原论文联系，介绍全氟叔丁基卤化物的制备和结构研究、亲核试剂作用下的反应行为、光谱与诱导效应讨论，并分别说明陈庆云、蒋锡夔、陈秉启、梁梦兰的合作。采用Krespan方法与团队随后开展的研究分开归属；这些是原作者的成果，平台新增的是资料整理。
+
+[A03（全氟叔丁基（PFtB）化学）：成果、合作与参考资料](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html)
+
+**现有资料与记录。**已按1966年原表转录10个波长记录，其中9个配对记录形成6项位移；波长差、波数蓝移与有界扰动诊断属于同批原表数值重放。原刊印刷21页表1及24页实验部分的引用已核对：紫外仪器为Unicam SP-500；20°C注明于核磁共振测量，不能移作紫外温度。这些整理没有补出未知的实验条件或真实不确定度。
 
 [PF1966-UV-T1数值重放报告](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/REPLAY_REPORT_zh-CN.md) · [原表转录数据](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/data/pftb1966_table1.csv) · [既有重放结果](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/pftb1966-uv-replay.json) · [1966原刊：表1见印刷21页，仪器见24页](https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18)
 
 ### 待核事项与边界
 
 - 同一原表的单位变换不是独立实验；人为扰动不是测量误差。三种完整碘代物的名义比较不能升级为四基团普适规律、游离阴离子观测或机理验证。
-- 未进行新光谱实验、峰拟合或量子化学计算；真实测量误差仍未知，独立化学专家转录签认待补。
+- 原作者的历史成果不以平台的转录签认为成立前提。平台未开展新的光谱实验、峰拟合或量子化学计算，新增释读保持review_required、release_eligible=false。
 
-**下一步先补的证据：**优先完成原表与原扫描的专业核校，逐条补引文原文和实验语境。
+**下一步先补的证据：**围绕原作者已发表的具体结果继续组织学术叙事；只核对平台新增引用，不将反复取得或核验资料作为研究主线。
 
-**候选后续问题：**原表所比较的是完整碘代物的溶剂位移，还是可独立搬用的基团常数？
+**候选后续问题：**若今后提出独立研究，应先说明如何区分完整分子的溶剂相互作用与基团效应，并比较已有研究；目前没有启动新实验或模型计算。
 
 ### 平台AI辅助文献核校
 
@@ -410,7 +414,7 @@ H沿用原表C₆H₁₄记号，当前登记未进一步指定异构体；B是�
 
 ### 史料与成果入口
 
-[1966原始研究与贡献](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html#contribution) · [原始论证](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html#arguments) · [专题待核问题](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html#questions)
+[A03（全氟叔丁基（PFtB）化学）：历史成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html) · [A03（全氟叔丁基（PFtB）化学）：原论文论证细读](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html#arguments)
 
 ## A04（F-53铬雾抑制剂）
 

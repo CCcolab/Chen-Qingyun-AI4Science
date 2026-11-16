@@ -258,7 +258,7 @@ def render_future(data: dict) -> str:
 def render_results(line: dict) -> str:
     out = ['<nav class="result-nav" aria-label="'+esc(label(line))+'研究状态">'
            '<a href="#'+anchor(line)+'-completed">已完成工作</a> · '
-           '<a href="#'+anchor(line)+'-pending">待核事项</a> · '
+           '<a href="#'+anchor(line)+'-pending">'+esc(line.get('pending_title', '待核事项'))+'</a> · '
            '<a href="#'+anchor(line)+'-future">未来设想</a></nav>',
            '<h3 id="'+anchor(line)+'-completed">已完成工作：原文与数据复核</h3><ul>'
            +''.join('<li>'+esc(row)+'</li>' for row in line['completed_summary'])+'</ul>']
@@ -349,7 +349,7 @@ def render_page(data: dict) -> str:
             prior += '</div>'
         if line.get('result_sections'):
             body = render_results(line)+'<details class="record-archive"><summary>专业记录与完整数据</summary><div class="record-grid">'+records+'</div></details>'
-            body += '<div class="pending-work" id="'+anchor(line)+'-pending"><h3>待核事项</h3><ul>'+''.join('<li>'+esc(row)+'</li>' for row in line['pending_items'])+'</ul></div>'
+            body += '<div class="pending-work" id="'+anchor(line)+'-pending"><h3>'+esc(line.get('pending_title', '待核事项'))+'</h3><ul>'+''.join('<li>'+esc(row)+'</li>' for row in line['pending_items'])+'</ul></div>'
             body += '<div class="future-work" id="'+anchor(line)+'-future"><h3>未来设想（尚未开展）</h3><ul>'+''.join('<li>'+esc(row)+'</li>' for row in line['future_items'])+'</ul></div>'
         else:
             body = '<h3>已有资料与结果</h3><div class="record-grid">'+records+'</div>'+prior
@@ -416,7 +416,7 @@ def render_document(data: dict) -> str:
                     rows += ['']+table['notes']+['']
                 rows += ['**科学意义：**'+result['meaning'], '']
                 rows += ['- '+value for value in result['caveats']]+['', markdown_links(result['links']), '']
-            rows += ['### 待核事项', '']+['- '+value for value in line['pending_items']]+['']
+            rows += ['### '+line.get('pending_title', '待核事项'), '']+['- '+value for value in line['pending_items']]+['']
             rows += ['### 未来设想（尚未开展）', '']+['- '+value for value in line['future_items']]+['']
             rows += ['### 专业记录与完整数据', '']
         for record in line['records']:

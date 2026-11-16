@@ -6,6 +6,9 @@ import json
 from pathlib import Path, PurePosixPath
 import re
 
+from a03_biography_publication import (MANIFEST as A03_BIOGRAPHY_MANIFEST,
+    predecessor_bytes as a03_biography_predecessor_bytes, apply as apply_a03_biography_presentation)
+
 MANIFEST = 'provenance/platform-presentation.v26.json'
 PRESENTATION_ID = 'PLATFORM-A02-BIOGRAPHY-NARRATIVE-20261116-v26'
 PREVIOUS_COMMIT = '37ed9a5008d4623be30713d3c18c48b417d10cfd'
@@ -39,12 +42,12 @@ def _file(root: Path, name: str) -> Path:
 
 
 def _json(root: Path, name: str):
-    return json.loads(_file(root, name).read_bytes())
+    return json.loads(a03_biography_predecessor_bytes(root, name))
 
 
 def predecessor_bytes(root: Path, name: str) -> bytes:
     """Recover exact fixed 37ed9a5 bytes before replaying the immutable chain."""
-    current = _file(root, name).read_bytes()
+    current = a03_biography_predecessor_bytes(root, name)
     if not (root/MANIFEST).exists():
         return current
     data = _json(root, MANIFEST)
@@ -106,21 +109,23 @@ def _set_pointer(data, pointer: str, value):
 
 
 def _binding(root: Path, name: str) -> dict:
-    data = _file(root, name).read_bytes()
+    data = a03_biography_predecessor_bytes(root, name)
     return {'path': name, 'sha256': _sha(data), 'bytes': len(data)}
 
 
 def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:
     """Validate the current A02-only presentation after exact v25 replay."""
     if not (root/MANIFEST).exists():
+        if (root/A03_BIOGRAPHY_MANIFEST).exists():
+            raise ValueError('A03 biography presentation requires its immutable v26 predecessor')
         return entries, previous_report
     if not (root/PREVIOUS_MANIFEST).is_file():
         raise ValueError('A02 biography presentation requires its immutable v25 predecessor')
     for name, sha in OLD_MANIFESTS.items():
-        if _sha(_file(root, name).read_bytes()) != sha:
+        if _sha(a03_biography_predecessor_bytes(root, name)) != sha:
             raise ValueError('Historical presentation manifest changed: '+name)
     for name, (sha, size) in PROTECTED_FILES.items():
-        value = _file(root, name).read_bytes()
+        value = a03_biography_predecessor_bytes(root, name)
         if _sha(value) != sha or len(value) != size:
             raise ValueError('A01 original source or protected reference changed: '+name)
     data = _json(root, MANIFEST)
@@ -163,7 +168,7 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
         raise ValueError('A02 biography presentation requires exactly its used replacement pool')
     for name, (sha, size) in PREDECESSOR_FILES.items():
         old = predecessor_bytes(root, name)
-        if _sha(old) != sha or len(old) != size or old == _file(root, name).read_bytes():
+        if _sha(old) != sha or len(old) != size or old == a03_biography_predecessor_bytes(root, name):
             raise ValueError('A02 biography predecessor differs from fixed 37ed9a5: '+name)
     expected = json.loads(predecessor_bytes(root, AI))
     for update in EXPECTED_AI_UPDATES:
@@ -171,10 +176,10 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
     if _json(root, AI) != expected:
         raise ValueError('A02 biography JSON changed outside its fixed A02 fields')
     for name, sha in REVIEWED_PUBLIC_FILES.items():
-        if _sha(_file(root, name).read_bytes()) != sha:
+        if _sha(a03_biography_predecessor_bytes(root, name)) != sha:
             raise ValueError('A02 biography source, renderer or document differs from reviewed bytes: '+name)
     for name in PUBLIC_DISPLAYS:
-        value = _file(root, name).read_text('utf-8')
+        value = a03_biography_predecessor_bytes(root, name).decode('utf-8')
         if re.search(r'(?i)private-sources|current-item-register|现阶段待查事项统计|[CD]:[\\/]', value):
             raise ValueError('A02 biography display contains private evidence or a local path: '+name)
     changes = data.get('changes')
@@ -187,7 +192,7 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
     for item in changes:
         route = item['path']; old_entry = entries[route]
         before = predecessor_bytes(root, 'site/'+route)
-        after = _file(root, 'site/'+route).read_bytes()
+        after = a03_biography_predecessor_bytes(root, 'site/'+route)
         if (item.get('old_sha256') != old_entry['sha256'] or item.get('old_bytes') != old_entry['bytes']
                 or _sha(before) != old_entry['sha256'] or len(before) != old_entry['bytes']
                 or item.get('new_sha256') != _sha(after) or item.get('new_bytes') != len(after)
@@ -215,16 +220,18 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
             raise ValueError('A02 biography presentation changed outside its bounded blocks: '+route)
         updated[route] = {**old_entry, 'sha256': _sha(after), 'bytes': len(after), 'presentation_id': PRESENTATION_ID}
     for name, expected_entry in updated.items():
-        value = _file(root, 'site/'+name).read_bytes()
+        value = a03_biography_predecessor_bytes(root, 'site/'+name)
         if _sha(value) != expected_entry['sha256'] or len(value) != expected_entry['bytes']:
             raise ValueError('A02 biography changed an unlisted website byte: '+name)
-    from render_ai_research import inspect_ai_research
-    from render_a02_history import inspect_a02_history
-    from render_a02_biography import inspect_biography
-    from render_heritage import inspect_heritage
-    checks = [inspect_ai_research(root), inspect_a02_history(root), inspect_biography(root), inspect_heritage(root)]
-    if any(c.get('status') != 'passed' for c in checks):
-        raise ValueError('A02 biography display differs from source rendering: '+str(checks))
+    # v26 checks historical reconstructed bytes; v27 checks current A03 rendering.
+    if not (root/A03_BIOGRAPHY_MANIFEST).exists():
+        from render_ai_research import inspect_ai_research
+        from render_a02_history import inspect_a02_history
+        from render_a02_biography import inspect_biography
+        from render_heritage import inspect_heritage
+        checks = [inspect_ai_research(root), inspect_a02_history(root), inspect_biography(root), inspect_heritage(root)]
+        if any(c.get('status') != 'passed' for c in checks):
+            raise ValueError('A02 biography display differs from source rendering: '+str(checks))
     report = {'path': MANIFEST, 'sha256': _sha(_file(root, MANIFEST).read_bytes()),
         'presentation_id': PRESENTATION_ID, 'publication_kind': required['publication_kind'],
         'changed_paths': list(ROUTES), 'added_paths': [],
@@ -235,4 +242,5 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
         'homepage_achievement_summary_other_lines_and_scientific_data_preserved': True,
         **{k: required[k] for k in ('scientific_review_status', 'release_eligible',
             'scientific_data_unchanged', 'M0_resumed', 'historical_achievement_independent_of_AI_review')}}
-    return updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}
+    return apply_a03_biography_presentation(root, updated,
+        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})

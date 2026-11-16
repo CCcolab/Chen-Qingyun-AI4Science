@@ -1,0 +1,593 @@
+{
+  "schema_version": "27.0",
+  "presentation_id": "PLATFORM-A03-BIOGRAPHY-20261116-v27",
+  "created_at_utc": "2026-11-16T12:57:07.459883+00:00",
+  "publication_kind": "platform_a03_biography_narrative",
+  "authorization": "User-authorized A03 historical academic and collaborative presentation. Preserve original scientific evidence and attribution; keep local unresolved work local and M0 paused.",
+  "previous_presentation_commit": "3c85d86ab406a05f960f477fba40e37632912b38",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v26.json",
+    "sha256": "0215099d811ba22ee7224e17a2603d3fdccd7dd0b7473297d35ceb419966bd2d"
+  },
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "allowed_html_paths": [
+    "pftb/index.html",
+    "research/index.html"
+  ],
+  "added_html_paths": [],
+  "additions": [],
+  "allowed_PFtB_transformations": [
+    "hero_after_history_insertion",
+    "questions_scope_section",
+    "followup_acquisition_status_and_link",
+    "remove_questions_search_index"
+  ],
+  "allowed_ai_json_pointers": [
+    "/lines/2/question",
+    "/lines/2/ai_role",
+    "/lines/2/records",
+    "/lines/2/boundaries/1",
+    "/lines/2/next_step",
+    "/lines/2/future_question",
+    "/lines/2/source_links",
+    "/lines/2/pending_items/0",
+    "/lines/2/pending_items/1",
+    "/lines/2/pending_items/2",
+    "/lines/2/future_items/0",
+    "/lines/2/future_items/1",
+    "/lines/2/pending_title"
+  ],
+  "allowed_new_files": [
+    "content/a03-biography-narrative.v1.json",
+    "scripts/render_a03_biography.py",
+    "docs/A03_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+    "scripts/a03_biography_publication.py",
+    "provenance/platform-presentation.v27.json"
+  ],
+  "editorial_documents": [
+    {
+      "path": "content/ai-research-section.v1.json",
+      "sha256": "ab808ecd7c4d67cf7a3b704143fc1c9948de23996f22c6649ebdbe249e0a9721",
+      "bytes": 96721
+    },
+    {
+      "path": "scripts/render_ai_research.py",
+      "sha256": "a00ecc2e75f047e100a51ab296f4192c0e93d6de10a70f0754740794faa839f7",
+      "bytes": 40590
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "sha256": "2bc1b6e6d9302059bdc046218e7b2af9b28ec09796272fef7ffedff10efab24b",
+      "bytes": 57167
+    },
+    {
+      "path": "content/a03-biography-narrative.v1.json",
+      "sha256": "193b5dce331269d1cc41042ab3ec9d3053d1f8911aa54d768866b921e1f64e49",
+      "bytes": 5642
+    },
+    {
+      "path": "scripts/render_a03_biography.py",
+      "sha256": "872ecaedbf68f278495b6594fc9e65f1823e65077bd4b2ef301487f828857b9c",
+      "bytes": 6491
+    },
+    {
+      "path": "docs/A03_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "sha256": "c0ff6a8f7728083c8f660a221dddafc0ee35260d0cac723d392795b1c216cbd2",
+      "bytes": 4984
+    },
+    {
+      "path": "scripts/a02_biography_publication.py",
+      "sha256": "5e8e3dec005b381f1ac8991b5aa0e3e769c02afaa7530c6c8c3a381c5eee7a69",
+      "bytes": 23974
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "sha256": "ad87553d42b8ada01b30c69f398e618310ba5fbc683ffa8bbcc28b2aa7639274",
+      "bytes": 310191
+    },
+    {
+      "path": "scripts/a03_biography_publication.py",
+      "sha256": "c99b2abeb0ff2b4cec0dbb78d6e8261ff93919dcb82efd630a06f7399fef5741",
+      "bytes": 39784
+    }
+  ],
+  "protected_website_members": {
+    "index.html": {
+      "sha256": "8b3532ee45c0fb33912f20a3bd7943043a348f10a370b9c6716e9edf3c0abf41",
+      "bytes": 257766
+    },
+    "topics/f53/index.html": {
+      "sha256": "8def3379a75dda6665d7cb3ee6c32193fc7a61ec6b31098abbefe9218fea39fe",
+      "bytes": 8161
+    },
+    "topics/refrigerants/index.html": {
+      "sha256": "5d9b5a355b949f67c5de252727f8d4e4e7533abab8a666c49a0f932170153c4e",
+      "bytes": 10636
+    },
+    "topics/perfluorosulfonates/index.html": {
+      "sha256": "85a6f4330edb7607f61ca217b71d2ef6c12cb1af0d48aaaebf737acf3a212ea5",
+      "bytes": 8888
+    },
+    "topics/chen-reagent/index.html": {
+      "sha256": "14f08afd4062c0ae171f24e5fb225e5968b003e885edc206baf08ca352b630df",
+      "bytes": 19991
+    },
+    "topics/single-electron-transfer/index.html": {
+      "sha256": "79c84f89e25e576a03f34153b9eb85a5ff73815c8265a0222930d889390ea947",
+      "bytes": 10355
+    },
+    "topics/fluoroporphyrins/index.html": {
+      "sha256": "24b6bb744b594573487847c89bbb35571ea56bc15d444ebeac3339379dbc1875",
+      "bytes": 6018
+    },
+    "topics/fluorinated-small-rings/index.html": {
+      "sha256": "2413c83d4319746f41e940c04fe48bdeda28244235f5a9e8697285c187ba412d",
+      "bytes": 5924
+    },
+    "topics/deoxyfluorination/index.html": {
+      "sha256": "2aca9c13eb46f9fedfb02a2adfdc9423c207465f58608bcd671838d4d8045df5",
+      "bytes": 5550
+    },
+    "topics/sulfonyl-fluoride/index.html": {
+      "sha256": "fe944efbbfa5a7814015235f4ae3aae101db4046b0c9419986d6855d7ed15b49",
+      "bytes": 5043
+    },
+    "topics/index.html": {
+      "sha256": "44a5690d1e65195b9ff191d2a7ec37487070cdfafb191ae107962d5e0d7ab73c",
+      "bytes": 5055
+    },
+    "achievements/index.html": {
+      "sha256": "df20daf429c46e89e99085550067e8c1e9f7e283b10b7e8269f38da6a9d380ff",
+      "bytes": 95867
+    },
+    "data/public-sources.json": {
+      "sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+      "bytes": 33608
+    },
+    "data/achievement-lines.json": {
+      "sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+      "bytes": 39768
+    },
+    "README.txt": {
+      "sha256": "6e15068b7240ae47d633df3f777e81fbb9e46146ee5f4ab70011f09119b6bbc9",
+      "bytes": 336
+    },
+    "ROUTES.txt": {
+      "sha256": "a734c356877d4534285ab7d71b9fe0f7a17abbced4de3c52f8e60d335301e418",
+      "bytes": 949
+    },
+    "QA.txt": {
+      "sha256": "a60b5f382b31689fa17e2518b7079ef0660674fb62bddbbf564c7b74dfe51067",
+      "bytes": 290
+    },
+    "IONIC-ENTRY-RETEST.txt": {
+      "sha256": "3462b056891a27c335cc2620deb87b245b6c9aea3bdaec607c8a14beca69fe9d",
+      "bytes": 741
+    },
+    "topics/early-fluoroketones/index.html": {
+      "sha256": "eeffdcd82cca6ae6549db9d21b7059ac4c9db94cdc60337ffc3a6a75ae06af88",
+      "bytes": 257826
+    },
+    "topics/fluoromonomers/index.html": {
+      "sha256": "ff79d077f5b74b8580ef06ac5e7c4c622b98c4f562daf9f75ae530e6f9ba199b",
+      "bytes": 18224
+    }
+  },
+  "reconstruction_kind": "deduplicated_exact_utf8_text_edits",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "M0_resumed": false,
+  "historical_achievement_independent_of_AI_review": true,
+  "new_quantum_calls": 0,
+  "new_model_API_calls": 0,
+  "changes": [
+    {
+      "path": "pftb/index.html",
+      "old_sha256": "42ca404f2ed70b7a3b0b5d8b0eb742a2509e5a5a70fd0be36a65028e61cbd1f6",
+      "old_bytes": 97587,
+      "new_sha256": "b2dd711fcb504b676c3d04f2c42876c2a36ae8f616c0b48b8530aed53822c3b5",
+      "new_bytes": 101043,
+      "reason": "A03 original academic contributions and collaboration; narrowly scoped presentation and stale status correction, without changing scientific records."
+    },
+    {
+      "path": "research/index.html",
+      "old_sha256": "893f3f543cd573cf79275e3b46e9a20cad615ac4670f6a9bbcb5f4799817df02",
+      "old_bytes": 77246,
+      "new_sha256": "e46b7a38f753a8468170b077ce62c745cfaf7d00948e6b1f915fb2b63efef63f",
+      "new_bytes": 77980,
+      "reason": "A03 original academic contributions and collaboration; narrowly scoped presentation and stale status correction, without changing scientific records."
+    }
+  ],
+  "reversible_text_files": [
+    {
+      "path": "site/pftb/index.html",
+      "old_sha256": "42ca404f2ed70b7a3b0b5d8b0eb742a2509e5a5a70fd0be36a65028e61cbd1f6",
+      "old_bytes": 97587,
+      "new_sha256": "b2dd711fcb504b676c3d04f2c42876c2a36ae8f616c0b48b8530aed53822c3b5",
+      "new_bytes": 101043,
+      "edits": [
+        {
+          "old_offset": 26422,
+          "replacement": 0
+        },
+        {
+          "old_offset": 50968,
+          "replacement": 1
+        },
+        {
+          "old_offset": 51329,
+          "replacement": 2
+        },
+        {
+          "old_offset": 94724,
+          "replacement": 3
+        }
+      ]
+    },
+    {
+      "path": "content/ai-research-section.v1.json",
+      "old_sha256": "a113f3b6f1170f3a2209b007a88e45e126ef36aa153b73f401e22488a1edefee",
+      "old_bytes": 95684,
+      "new_sha256": "ab808ecd7c4d67cf7a3b704143fc1c9948de23996f22c6649ebdbe249e0a9721",
+      "new_bytes": 96721,
+      "edits": [
+        {
+          "old_offset": 41744,
+          "replacement": 4
+        },
+        {
+          "old_offset": 42029,
+          "replacement": 5
+        },
+        {
+          "old_offset": 42301,
+          "replacement": 6
+        },
+        {
+          "old_offset": 43689,
+          "replacement": 7
+        },
+        {
+          "old_offset": 43851,
+          "replacement": 8
+        },
+        {
+          "old_offset": 44121,
+          "replacement": 9
+        },
+        {
+          "old_offset": 44272,
+          "replacement": 10
+        },
+        {
+          "old_offset": 44338,
+          "replacement": 11
+        },
+        {
+          "old_offset": 51683,
+          "replacement": 12
+        },
+        {
+          "old_offset": 52200,
+          "replacement": 13
+        },
+        {
+          "old_offset": 64296,
+          "replacement": 14
+        }
+      ]
+    },
+    {
+      "path": "scripts/render_ai_research.py",
+      "old_sha256": "c4cfba4d66c616b4a04d258ec4b1f644dd8858cd2734693dd3c8efbd60ed135a",
+      "old_bytes": 40484,
+      "new_sha256": "a00ecc2e75f047e100a51ab296f4192c0e93d6de10a70f0754740794faa839f7",
+      "new_bytes": 40590,
+      "edits": [
+        {
+          "old_offset": 19320,
+          "replacement": 15
+        },
+        {
+          "old_offset": 25445,
+          "replacement": 15
+        },
+        {
+          "old_offset": 31195,
+          "replacement": 16
+        }
+      ]
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "old_sha256": "fa475e7192d225c2a86ecff9bf227dab4427c207dd0b45b24386d2cc3bbd22b1",
+      "old_bytes": 56290,
+      "new_sha256": "2bc1b6e6d9302059bdc046218e7b2af9b28ec09796272fef7ffedff10efab24b",
+      "new_bytes": 57167,
+      "edits": [
+        {
+          "old_offset": 23605,
+          "replacement": 17
+        },
+        {
+          "old_offset": 23715,
+          "replacement": 18
+        },
+        {
+          "old_offset": 28075,
+          "replacement": 19
+        },
+        {
+          "old_offset": 28091,
+          "replacement": 20
+        },
+        {
+          "old_offset": 28581,
+          "replacement": 21
+        },
+        {
+          "old_offset": 28894,
+          "replacement": 22
+        },
+        {
+          "old_offset": 30009,
+          "replacement": 7
+        },
+        {
+          "old_offset": 30171,
+          "replacement": 23
+        },
+        {
+          "old_offset": 30285,
+          "replacement": 24
+        },
+        {
+          "old_offset": 32202,
+          "replacement": 25
+        }
+      ]
+    },
+    {
+      "path": "site/research/index.html",
+      "old_sha256": "893f3f543cd573cf79275e3b46e9a20cad615ac4670f6a9bbcb5f4799817df02",
+      "old_bytes": 77246,
+      "new_sha256": "e46b7a38f753a8468170b077ce62c745cfaf7d00948e6b1f915fb2b63efef63f",
+      "new_bytes": 77980,
+      "edits": [
+        {
+          "old_offset": 36171,
+          "replacement": 26
+        }
+      ]
+    },
+    {
+      "path": "scripts/a02_biography_publication.py",
+      "old_sha256": "0d65572fc5f9b4b6693050dc5009abcc2e98522e188fcc5ace53041bc39e88a5",
+      "old_bytes": 23298,
+      "new_sha256": "5e8e3dec005b381f1ac8991b5aa0e3e769c02afaa7530c6c8c3a381c5eee7a69",
+      "new_bytes": 23974,
+      "edits": [
+        {
+          "old_offset": 209,
+          "replacement": 27
+        },
+        {
+          "old_offset": 10213,
+          "replacement": 28
+        },
+        {
+          "old_offset": 10398,
+          "replacement": 28
+        },
+        {
+          "old_offset": 13845,
+          "replacement": 28
+        },
+        {
+          "old_offset": 14142,
+          "replacement": 29
+        },
+        {
+          "old_offset": 14383,
+          "replacement": 28
+        },
+        {
+          "old_offset": 14573,
+          "replacement": 28
+        },
+        {
+          "old_offset": 17799,
+          "replacement": 28
+        },
+        {
+          "old_offset": 18272,
+          "replacement": 28
+        },
+        {
+          "old_offset": 18471,
+          "replacement": 30
+        },
+        {
+          "old_offset": 19407,
+          "replacement": 31
+        },
+        {
+          "old_offset": 21679,
+          "replacement": 32
+        },
+        {
+          "old_offset": 21901,
+          "replacement": 33
+        },
+        {
+          "old_offset": 23206,
+          "replacement": 34
+        }
+      ]
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "old_sha256": "1c6789296e3b22344ceeea647481af6d12169c1b34a8a13fbcf8fbe0a762c738",
+      "old_bytes": 309961,
+      "new_sha256": "ad87553d42b8ada01b30c69f398e618310ba5fbc683ffa8bbcc28b2aa7639274",
+      "new_bytes": 310191,
+      "edits": [
+        {
+          "old_offset": 96041,
+          "replacement": 35
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "",
+      "new": "<!-- A03_BIOGRAPHY_HISTORY:BEGIN -->\n<style id=\"a03-biography-style\">.a03-biography-card{margin:24px 0;padding:20px;border:1px solid var(--line);border-radius:8px}.a03-biography-meaning{border-left:3px solid #aa7545;padding-left:14px}.a03-biography-locator{font-size:.85rem;color:var(--muted)}.a03-biography-table{overflow-x:auto}.a03-biography-table table{border-collapse:collapse;min-width:620px;width:100%}.a03-biography-table th,.a03-biography-table td{padding:12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}#a03-biography-history a{overflow-wrap:anywhere}</style>\n<section id=\"a03-biography-history\"><div class=\"wrap\"><div class=\"sec-head\"><h2>A03 全氟叔丁基（PFtB）化学：新化合物、反应行为与电子效应</h2><p>历史成果与合作</p></div><p>《氟缘笃志：陈庆云传》将这项工作放在应用材料研究与基础氟化学相互推动的背景中：六氟丙烯制备过程中少量副产的全氟异丁烯，成为探索全氟叔丁基化学的起点。陈庆云与同事把制备、结构证据、化学反应和光谱比较联系起来，形成了具有开拓意义的基础研究。</p>\n<article class=\"a03-biography-card\" id=\"a03-biography-contribution-1\"><h3>从副产物出发，建立全氟叔丁基卤化物的研究对象</h3><p>传记记载，陈庆云、陈秉启运用Krespan的方法制备全氟叔丁基碘，并开展结构研究；进一步以溴得到相应溴化物。1966年论文将元素分析、红外、氟核磁及化学反应结合起来讨论结构。这里保留原方法的来源：采用和发展已有制备方法，与随后对这些化合物开展的研究分别介绍。</p><p class=\"a03-biography-meaning\"><b>学术意义：</b>其贡献在于把一个具体含氟基团转化为可制备、可表征、可比较反应性的化学对象，为研究全氟烷基的特殊行为提供了材料基础。</p><p class=\"a03-biography-locator\">传记42–44页；1966年原刊18–19页及实验部分 · <a href=\"#a03-biography-ref-HERITAGE-S01\">HERITAGE-S01</a> · <a href=\"#a03-biography-ref-PF01\">PF01</a></p></article>\n<article class=\"a03-biography-card\" id=\"a03-biography-contribution-2\"><h3>研究亲核试剂作用下的特殊反应行为</h3><p>蒋锡夔所关注的位阻和电子效应问题，与陈庆云等人的实验工作相结合。原论文研究全氟叔丁基碘与二乙胺、乙醇—氢氧化钾体系的反应，通过产物与转化关系讨论亲核试剂进攻卤素的解释，而不是简单套用通常的碳中心SN2取代。传记将这项工作联系到后来所称的亲卤反应，体现了从异常反应现象提出基础问题的研究特点。</p><p class=\"a03-biography-meaning\"><b>学术意义：</b>这项工作的开拓性在于探索含氟结构如何改变反应方式。原作者提出的路径、备选解释和后来回顾的评价各有证据层次；不把中间体画式当作直接观测，也不由平台裁定国际优先权。</p><p class=\"a03-biography-locator\">传记43–45页；1966年原刊19–20页、式(3)/(3′)及相关脚注 · <a href=\"#a03-biography-ref-HERITAGE-S01\">HERITAGE-S01</a> · <a href=\"#a03-biography-ref-PF01\">PF01</a></p></article>\n<article class=\"a03-biography-card\" id=\"a03-biography-contribution-3\"><h3>用光谱比较讨论全氟烷基的诱导效应</h3><p>1966年论文比较不同全氟烷基碘代物的紫外吸收及溶剂位移，并结合其他观察讨论诱导效应。传记强调了这一研究对通常经验顺序提出的问题：含氟基团的效应需要联系具体结构和证据判断，不能只按碳原子数或一般烷基经验推断。</p><p class=\"a03-biography-meaning\"><b>学术意义：</b>研究把化合物制备、反应和光谱组织成相互联系的论证。表1直接比较的是三种完整碘代物；原作者更广的基团效应解释，不等于平台已经证明了一个适用于所有体系的基团常数排序。</p><p class=\"a03-biography-locator\">传记45页；1966年原刊20–21页，表1位于印刷21页 · <a href=\"#a03-biography-ref-HERITAGE-S01\">HERITAGE-S01</a> · <a href=\"#a03-biography-ref-PF01\">PF01</a></p></article>\n<h3>共同研究：科学问题、实验与培养</h3><p>1966年原论文署名为陈庆云、蒋锡夔、陈秉启、梁梦兰。传记介绍具体实验参与者和科学讨论的不同角色；以下按这些记述说明合作，不从署名顺序推算个人贡献比例。</p><div class=\"a03-biography-table\" role=\"region\" tabindex=\"0\" aria-label=\"A03合作分工\"><table><caption>传记与原论文所记合作</caption><thead><tr><th scope=\"col\">人物</th><th scope=\"col\">具体工作</th><th scope=\"col\">出处</th></tr></thead><tbody>\n<tr><th scope=\"row\">陈庆云</th><td>参与全氟叔丁基卤化物的制备、结构和反应研究，将材料工作中获得的化学对象推进为基础研究课题。</td><td>传记42–45页；原论文署名</td></tr>\n<tr><th scope=\"row\">蒋锡夔</th><td>围绕含氟卤代物的位阻、电子效应和反应方式提出问题，参与科学讨论并共同署名。</td><td>传记43–45页；原论文署名</td></tr>\n<tr><th scope=\"row\">陈秉启</th><td>与陈庆云共同开展全氟叔丁基碘等化合物的制备及后续实验研究。</td><td>传记44页；原论文署名</td></tr>\n<tr><th scope=\"row\">梁梦兰</th><td>传记列为参与该小课题的实习生；1966年论文共同作者。</td><td>传记44页；原论文18页</td></tr>\n</tbody></table></div><h3>平台的AI辅助整理</h3><p>以上是原作者的历史成果。平台新增工作是资料关联、原文释读及已完成的原表数值重放：六项溶剂位移换算用于检查原表数字与单位，不是光谱实验复现，也不验证反应机理。详细数字、适用范围与未来设想放在下一层AI研究资料页；资料追索清单保存在本地。新增整理保持review_required、release_eligible=false，M0继续暂停。</p><p><a href=\"../research/index.html#ai-a03\">A03 全氟叔丁基化学：AI整理与原表数值重放 →</a></p><details><summary>本段参考资料</summary><ul>\n<li id=\"a03-biography-ref-HERITAGE-S01\"><b>HERITAGE-S01</b> · 朱晶、刘超：《氟缘笃志：陈庆云传》；参考底本42–45页：全氟叔丁基化学的研究缘起、实验、讨论与合作</li>\n<li id=\"a03-biography-ref-PF01\"><b>PF01</b> · <a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18\">陈庆云、蒋锡夔、陈秉启、梁梦兰：全氟和多氟型有机化合物的化学特性——全氟叔丁基碘以及全氟烷基的诱导效应顺序</a>；《化学学报》1966，32(1)：18–25；本文新增引用集中于18–21页，表1见21页</li>\n<li id=\"a03-biography-ref-HERITAGE-S04\"><b>HERITAGE-S04</b> · <a href=\"https://www.cas.cn/zt/kjzt/kjzlzqzl/kjzlzq/202406/t20240621_5022275.shtml\">中国科学院：“上海氟”，何以为？</a>；2024-06-21，陈庆云与陈秉启研究全氟叔丁基碘的回顾段；作为机构历史报道</li>\n</ul></details></div></section>\n<!-- A03_BIOGRAPHY_HISTORY:END -->\n\n"
+    },
+    {
+      "old": "\n  <div class=\"wrap\">\n    <div class=\"sec-head\">\n      <h2>研究问题与AI辅助整理</h2>\n      <p>本专题的 AI 价值是可追溯的资料工作：从原始论证识别命题，逐处对齐后续引文，形成范围明确、可继续查新的问题。页面不接入在线生成服务，没有计算按钮，也没有模拟进度条。</p>\n    </div",
+      "new": "<div class=\"wrap\"><div class=\"sec-head\"><h2>AI辅助资料整理与原表数值重放</h2><p>历史成果与平台新增工作分别呈现</p></div><p>本页介绍原作者的化合物、反应研究和原始论证。平台已完成的六项溶剂位移换算，以及假定扰动下的敏感性诊断，集中放在下一层AI研究资料页。它们属于原表数值重放，不能替代独立光谱实验，也不构成机理验证。</p><p>未来研究须从明确的科学问题出发，与已有研究比较后另定协议；目前未启动新计算或实验。新增整理保持<code>review_required</code>、<code>release_eligible=false</code>，M0继续暂停。</p><p><a href=\"../research/index.html#ai-a03\">A03 全氟叔丁基化学：已完成工作、适用范围与未来设想 →</a></p></div></section"
+    },
+    {
+      "old": "    <div class=\"ai-grid\">\n      <div class=\"ai-item\">\n        <h3>重建原始论证</h3>\n        <p>AI协助拆分观察、解释、假设与限制；人工逐项核对化学式、脚注及页码。产出带来源定位的论证卡。</p>\n        <span class=\"ai-status\">资料与方法工作</span>\n      </div>\n      <div class=\"ai-item\">\n        <h3>对齐被引命题</h3>\n        <p>AI协助识别后续引文的对象、语气和范围变化，保留原作者归属。产出原始命题与后续引文的对照。</p>\n        <span class=\"ai-status\">引证语义整理</span>\n      </div>\n      <div class=\"ai-item\">\n        <h3>形成精确查新问题</h3>\n        <p>先查同一对象、同一命题及接近条件的先行研究，确认缺口后再决定科学计算。</p>\n        <span class=\"ai-status\">待查新 · 不宣称空白</span>\n      </div>\n    </div>\n\n    <details class=\"q-item\" open=\"\">\n      <summary>问题一：原文备选机理是否已有同体系辨析<span class=\"q-badge b-new\">状态：待查新</span></summary>\n      <div class=\"q-body\">\n        <dl>\n          <dt>问题</dt><dd>是否已有针对同一底物、反应对象和接近条件的后续研究，能区分原文保留的路径？</dd>\n          <dt>原文出发点</dt><dd><a href=\"../index.html#source-pf01\">PF01</a>第19–20页式(3)、式(3′)及页脚一步过程讨论。</dd>\n          <dt>下一步证据</dt><dd>先核对最接近的原始文献及反应条件；没有完成前不设定新计算课题。</dd>\n          <dt>不可宣称</dt><dd class=\"not-claim\">不能表述为尚无人研究或本平台首次提出。</dd>\n        </dl>\n      </div>\n    </details>\n\n    <details class=\"q-item\">\n      <summary>问题二：现代回引采用了性质还是完整排序<span class=\"q-badge b-check\">状态：待核查</span></summary>\n      <div class=\"q-body\">\n        <dl>\n          <dt>问题</dt><dd>后续作者使用的是 PFtB 与 CF<sub>3</sub> 的定性比较，还是对原始完整排序进行了独立检验？</dd>\n          <dt>原文出发点</dt><dd><a href=\"../index.html#source-pf01\">PF01</a>第20–21页与PF07第27318页正文[5]。</dd>\n          <dt>下一步证据</dt><dd>逐篇对齐被引句、测量对象、条件和数据；区分回引与新验证。</dd>\n          <dt>当前材料不能证明</dt><dd class=\"not-claim\">当前材料不能证明完整排序已被现代研究全面验证。</dd>\n        </dl>\n      </div>\n    </details>\n\n    <details class=\"q-item\">\n      <summary>问题三：英文刊载与早期传播链怎样对应<span class=\"q-badge b-fetch\">状态：待取原文</span></summary>\n      <div class=\"q-body\">\n        <dl>\n          <dt>问题</dt><dd>取得 Scientia Sinica 原文后，怎样核对两刊的内容对应、页码和后续引用入口？</dd>\n          <dt>出发点</dt><dd><a href=\"../index.html#source-pf01\">PF01</a>、PF28及PF29。</dd>\n          <dt>下一步证据</dt><dd>核对英文全文与1967年题录；不重复计成果或引用。</dd>\n          <dt>性质说明</dt><dd class=\"not-claim\">这是文献核对问题，不是新的化学发现。</dd>\n        </dl>\n      </div>\n    </details>\n\n    <p class=\"tl-footnote\">迭代规则：新资料先核对化学对象与作者，再核对命题、条件和引用用途；对最接近先行工作登记检索库、检索式、日期、全文可得性与正反证据；只有专业复核确认具体缺口，才提出科学计算任务。尚无本平台新量子化学计算或获确认的新化学发现；公开检索未检出不能写成前所未有；没有同条件检验，不能把现代其他底物或反应体系的机制直接套回1966年。</p>\n  </div>\n</section>\n\n<section id=\"team-follow-up-1980\"><div class=\"wrap\"><div class=\"sec-head\"><h2>团队后续研究：1980 年偏氟乙烯调聚</h2><p>同一碘化物，不同的反应问题</p></div><p>1980 年，陈庆云、马振中、蒋锡夔、张元发、贾世茂将全氟叔丁基碘用于偏氟乙烯的自由基调聚，并考察四氯化碳体系，比较产物结构和加成位置。馆藏书目与摘要可查；公开馆藏转录中的结构式仍须回刊本核对。〔<a href=\"../index.html#source-cq-h13\">CQ-H13</a>〕</p><p>这是同一化合物上的团队后续原始研究。1966 年所讨论的亲卤解释与 1980 年自由基调聚各有对象和条件；该记录<strong>不增加独立引文计数</strong>，也不提供对 1966 年机理或其光谱数据的独立复核。〔<a href=\"../index.html#source-pf01\">PF01</a>、<a href=\"../index.html#source-cq-h13\">CQ-H13</a>〕</p><p><a href=\"../topics/fluoromonomers/index.html#record-fluorinated-oils\">返回氟材料与调聚档案",
+      "new": "<section id=\"team-follow-up-1980\"><div class=\"wrap\"><div class=\"sec-head\"><h2>团队后续研究：1980 年偏氟乙烯调聚</h2><p>同一碘化物，不同的反应问题</p></div><p>1980 年，陈庆云、马振中、蒋锡夔、张元发、贾世茂将全氟叔丁基碘用于偏氟乙烯的自由基调聚，并考察四氯化碳体系，比较产物结构和加成位置。论文全文已取得并整理；具体原刊观察见A02专题的后续调聚研究。〔<a href=\"../index.html#source-cq-h13\">CQ-H13</a>〕</p><p>这是同一化合物上的团队后续原始研究。1966 年所讨论的亲卤解释与 1980 年自由基调聚各有对象和条件；该记录<strong>不增加独立引文计数</strong>，也不提供对 1966 年机理或其光谱数据的独立复核。〔<a href=\"../index.html#source-pf01\">PF01</a>、<a href=\"../index.html#source-cq-h13\">CQ-H13</a>〕</p><p><a href=\"../topics/fluoromonomers/index.html#a02-vdf-1980\">A02 含氟单体、氟橡胶与氟油：后续调聚研究"
+    },
+    {
+      "old": "  DATA.questions.forEach(function(q){\n    index.push({kind:'研究问题', title:q.id+' '+q.title, text:[q.question,q.origin,q.status,q.next_evidence,q.not_claim].join(' '), act:function(){\n      var all = $all('.q-item'); var idx = DATA.questions.indexOf(q);\n      if(all[idx]){ all[idx].open=true; all[idx].scrollIntoView({behavior:'smooth',block:'center'}); }\n    }});\n  });\n",
+      "new": ""
+    },
+    {
+      "old": "哪些结构、反应与光谱观察支持特定全氟烷基碘代物的效应比较？\",\r\n      \"ai_role\": \"辅助原表转录、溶剂与分子身份核对；用固定公式重放波长差和波数蓝移，检查假定扰动下的顺序敏感性",
+      "new": "原作者怎样把全氟叔丁基卤化物的制备、特殊反应和光谱比较联系起来？平台能从原表重现哪些数字？\",\r\n      \"ai_role\": \"以传记为主线关联人物、化合物、原论文和学术贡献；对平台新增引用核对出处与转录。已保存的数值工作限于原表波长差、波数蓝移与假定扰动诊断，历史成果归原作者"
+    },
+    {
+      "old": "",
+      "new": "          \"title\": \"历史成果与合作脉络\",\r\n          \"summary\": \"已将传记42–45页与1966年原论文联系，介绍全氟叔丁基卤化物的制备和结构研究、亲核试剂作用下的反应行为、光谱与诱导效应讨论，并分别说明陈庆云、蒋锡夔、陈秉启、梁梦兰的合作。采用Krespan方法与团队随后开展的研究分开归属；这些是原作者的成果，平台新增的是资料整理。\",\r\n          \"links\": [\r\n            {\r\n              \"title\": \"A03（全氟叔丁基（PFtB）化学）：成果、合作与参考资料\",\r\n              \"url\": \"../pftb/index.html\",\r\n              \"kind\": \"site\"\r\n            }\r\n          ]\r\n        },\r\n        {\r\n"
+    },
+    {
+      "old": "已回查：紫外仪器为Unicam SP-500；20°C注明于核磁共振测量，不能移作紫外温度。紫外测量条件与真实不确定度仍未完整确认，专业转录签认待补",
+      "new": "的引用已核对：紫外仪器为Unicam SP-500；20°C注明于核磁共振测量，不能移作紫外温度。这些整理没有补出未知的实验条件或真实不确定度"
+    },
+    {
+      "old": "未进行新光谱实验、峰拟合或量子化学计算；真实测量误差仍未知，独立化学专家转录签认待补",
+      "new": "原作者的历史成果不以平台的转录签认为成立前提。平台未开展新的光谱实验、峰拟合或量子化学计算，新增释读保持review_required、release_eligible=false"
+    },
+    {
+      "old": "优先完成原表与原扫描的专业核校，逐条补引文原文和实验语境。\",\r\n      \"future_question\": \"原表所比较的是完整碘代物的溶剂位移，还是可独立搬用的基团常数？",
+      "new": "围绕原作者已发表的具体结果继续组织学术叙事；只核对平台新增引用，不将反复取得或核验资料作为研究主线。\",\r\n      \"future_question\": \"若今后提出独立研究，应先说明如何区分完整分子的溶剂相互作用与基团效应，并比较已有研究；目前没有启动新实验或模型计算。"
+    },
+    {
+      "old": "1966原始研究与贡献\",\r\n          \"url\": \"../pftb/index.html#contribution",
+      "new": "A03（全氟叔丁基（PFtB）化学）：历史成果与合作\",\r\n          \"url\": \"../pftb/index.html"
+    },
+    {
+      "old": "原始论证",
+      "new": "A03（全氟叔丁基（PFtB）化学）：原论文论证细读"
+    },
+    {
+      "old": "          \"kind\": \"site\"\r\n        },\r\n        {\r\n          \"title\": \"专题待核问题\",\r\n          \"url\": \"../pftb/index.html#questions\",\r\n",
+      "new": ""
+    },
+    {
+      "old": "原表转录仍待独立化学专家签认；未重新测量光谱、重建完整谱线或进行峰拟合。\",\r\n        \"真实峰位不确定度及对应表1的UV温度、浓度和光程尚不能恢复；原刊紫外仪器Unicam SP-500已核明，20°C属于NMR。缺少的原始测量／校准依据不由平台补造。\",\r\n        \"从完整碘代物位移到基团效应解释仍需额外证据，不能凭本表补造CF₃I、C₂F₅I数据或认定",
+      "new": "平台保存的是原表转录及数值重放；未重新测量光谱、重建完整谱线或进行峰拟合。\",\r\n        \"真实峰位不确定度及对应表1的UV温度、浓度和光程不能由现有整理恢复；Unicam SP-500为紫外仪器，20°C属于NMR。显示舍入诊断不是实验误差。\",\r\n        \"完整碘代物的位移不能直接搬作普适基团常数；不补造CF₃I、C₂F₅I数据，不用六项换算认证"
+    },
+    {
+      "old": "先完成原表专业核校，并从原始文献与相关记录补齐测量条件和谱带归属。\",\r\n        \"资料充分后，再论证如何用独立光谱测量或明确的现代模型区分溶剂相互作用与基团效应；此为待查新、待设计的问题，尚未启动",
+      "new": "若未来开展独立光谱或现代模型研究，应先限定化合物、溶剂和可区分的科学问题，比较已有工作并另定协议；目前仅为设想。\",\r\n        \"当前聚焦既有学术成果的呈现与资料整理；M0继续暂停，未启动新的计算或实验"
+    },
+    {
+      "old": "",
+      "new": ",\r\n      \"pending_title\": \"适用范围与科学边界\""
+    },
+    {
+      "old": "待核事项",
+      "new": "'+esc(line.get('pending_title', '待核事项'))+'"
+    },
+    {
+      "old": "待核事项'",
+      "new": "'+line.get('pending_title', '待核事项')"
+    },
+    {
+      "old": "哪些结构、反应与光谱观察支持特定全氟烷基碘代物的效应比较",
+      "new": "原作者怎样把全氟叔丁基卤化物的制备、特殊反应和光谱比较联系起来？平台能从原表重现哪些数字"
+    },
+    {
+      "old": "辅助原表转录、溶剂与分子身份核对；用固定公式重放波长差和波数蓝移，检查假定扰动下的顺序敏感性",
+      "new": "以传记为主线关联人物、化合物、原论文和学术贡献；对平台新增引用核对出处与转录。已保存的数值工作限于原表波长差、波数蓝移与假定扰动诊断，历史成果归原作者"
+    },
+    {
+      "old": "待核事项",
+      "new": "适用范围与科学边界"
+    },
+    {
+      "old": "原表转录仍待独立化学专家签认；未重新测量光谱、重建完整谱线或进行峰拟合。\n- 真实峰位不确定度及对应表1的UV温度、浓度和光程尚不能恢复；原刊紫外仪器Unicam SP-500已核明，20°C属于NMR。缺少的原始测量／校准依据不由平台补造。\n- 从完整碘代物位移到基团效应解释仍需额外证据，不能凭本表补造CF₃I、C₂F₅I数据或认定",
+      "new": "平台保存的是原表转录及数值重放；未重新测量光谱、重建完整谱线或进行峰拟合。\n- 真实峰位不确定度及对应表1的UV温度、浓度和光程不能由现有整理恢复；Unicam SP-500为紫外仪器，20°C属于NMR。显示舍入诊断不是实验误差。\n- 完整碘代物的位移不能直接搬作普适基团常数；不补造CF₃I、C₂F₅I数据，不用六项换算认证"
+    },
+    {
+      "old": "先完成原表专业核校，并从原始文献与相关记录补齐测量条件和谱带归属。\n- 资料充分后，再论证如何用独立光谱测量或明确的现代模型区分溶剂相互作用与基团效应；此为待查新、待设计的问题，尚未启动",
+      "new": "若未来开展独立光谱或现代模型研究，应先限定化合物、溶剂和可区分的科学问题，比较已有工作并另定协议；目前仅为设想。\n- 当前聚焦既有学术成果的呈现与资料整理；M0继续暂停，未启动新的计算或实验"
+    },
+    {
+      "old": "现有资料与记录。**已按1966年原表转录10个波长记录，其中9个配对记录形成6项位移；波长差、波数蓝移与有界扰动诊断属于同批原表数值重放。原刊印刷21页表1及24页实验部分已回查：紫外仪器为Unicam SP-500；20°C注明于核磁共振测量，不能移作紫外温度。紫外测量条件与真实不确定度仍未完整确认，专业转录签认待补",
+      "new": "历史成果与合作脉络。**已将传记42–45页与1966年原论文联系，介绍全氟叔丁基卤化物的制备和结构研究、亲核试剂作用下的反应行为、光谱与诱导效应讨论，并分别说明陈庆云、蒋锡夔、陈秉启、梁梦兰的合作。采用Krespan方法与团队随后开展的研究分开归属；这些是原作者的成果，平台新增的是资料整理。\n\n[A03（全氟叔丁基（PFtB）化学）：成果、合作与参考资料](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html)\n\n**现有资料与记录。**已按1966年原表转录10个波长记录，其中9个配对记录形成6项位移；波长差、波数蓝移与有界扰动诊断属于同批原表数值重放。原刊印刷21页表1及24页实验部分的引用已核对：紫外仪器为Unicam SP-500；20°C注明于核磁共振测量，不能移作紫外温度。这些整理没有补出未知的实验条件或真实不确定度"
+    },
+    {
+      "old": "优先完成原表与原扫描的专业核校，逐条补引文原文和实验语境",
+      "new": "围绕原作者已发表的具体结果继续组织学术叙事；只核对平台新增引用，不将反复取得或核验资料作为研究主线"
+    },
+    {
+      "old": "原表所比较的是完整碘代物的溶剂位移，还是可独立搬用的基团常数？",
+      "new": "若今后提出独立研究，应先说明如何区分完整分子的溶剂相互作用与基团效应，并比较已有研究；目前没有启动新实验或模型计算。"
+    },
+    {
+      "old": "1966原始研究与贡献](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html#contribution) · [原始论证](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html#arguments) · [专题待核问题](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html#question",
+      "new": "A03（全氟叔丁基（PFtB）化学）：历史成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html) · [A03（全氟叔丁基（PFtB）化学）：原论文论证细读](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html#argument"
+    },
+    {
+      "old": "哪些结构、反应与光谱观察支持特定全氟烷基碘代物的效应比较？</p><h3>AI怎样辅助</h3><p>辅助原表转录、溶剂与分子身份核对；用固定公式重放波长差和波数蓝移，检查假定扰动下的顺序敏感性。</p><nav class=\"result-nav\" aria-label=\"A03（全氟叔丁基（PFtB）化学）研究状态\"><a href=\"#ai-a03-completed\">已完成工作</a> · <a href=\"#ai-a03-pending\">待核事项</a> · <a href=\"#ai-a03-future\">未来设想</a></nav><h3 id=\"ai-a03-completed\">已完成工作：原文与数据复核</h3><ul><li>已转录1966年论文表1的10个波长记录；9个配对记录形成下列6项位移，另一条CCl₄记录不属于此配对任务。</li><li>已用固定公式保存波长差、波数蓝移及假定有界扰动诊断。单位换算与敏感性分析属于平台数值重放，不是独立光谱实验。</li></ul><article class=\"result-evidence\" id=\"a03-shift-results\"><p class=\"result-identity\">原表数据＋平台单位重放</p><h4>三种碘代物的六项紫外溶剂位移</h4><p>陈庆云、蒋锡夔、陈秉启、梁梦兰在1966年《化学学报》论文中研究全氟叔丁基碘及相应溴化物的制备、结构与反应，并用紫外溶剂位移讨论吸电性顺序。这里直接展示印刷p.21表1的对应波长和已保存换算值。</p><p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a03-shift-results-table-1\"><table><caption id=\"a03-shift-results-table-1\">λ为原表吸收峰λmax；波长单位nm，蓝移单位cm⁻¹</caption><thead><tr><th scope=\"col\">完整碘代物</th><th scope=\"col\">给体溶剂B</th><th scope=\"col\">λH／nm</th><th scope=\"col\">λB／nm</th><th scope=\"col\">原表δλ／nm</th><th scope=\"col\">换算Δν̃／cm⁻¹</th></tr></thead><tbody><tr><th scope=\"row\">全氟正丙基碘 n-C₃F₇I</th><td>乙醇</td><td>270.0</td><td>250.0</td><td>20.0</td><td>2962.963</td></tr><tr><th scope=\"row\">全氟异丙基碘 i-C₃F₇I</th><td>乙醇</td><td>274.0</td><td>250.0</td><td>24.0</td><td>3503.650</td></tr><tr><th scope=\"row\">全氟叔丁基碘 (CF₃)₃CI</th><td>乙醇</td><td>288.0</td><td>260.5</td><td>27.5</td><td>3665.494</td></tr><tr><th scope=\"row\">全氟正丙基碘 n-C₃F₇I</th><td>乙醚</td><td>270.0</td><td>256.0</td><td>14.0</td><td>2025.463</td></tr><tr><th scope=\"row\">全氟异丙基碘 i-C₃F₇I</th><td>乙醚</td><td>274.0</td><td>257.0</td><td>17.0</td><td>2414.155</td></tr><tr><th scope=\"row\">全氟叔丁基碘 (CF₃)₃CI</th><td>乙醚</td><td>288.0</td><td>264.0</td><td>24.0</td><td>3156.566</td></tr></tbody></table></div><p class=\"table-note\">H沿用原表C₆H₁₄记号，当前登记未进一步指定异构体；B是乙醇或乙醚的给体溶剂记号，不是苯。原单位毫微米的数值等于nm。</p><p class=\"table-note\">δλ=λH−λB；Δν̃=10⁷(1/λB−1/λH)，λ以nm计。正值表示蓝移。两个尺度来自同一批波长，不是两组独立实验。</p><p class=\"scientific-meaning\"><b>科学意义：</b>在乙醇和乙醚中，两种数值表达都保留名义顺序：全氟叔丁基碘＞全氟异丙基碘＞全氟正丙基碘。平台重放使原作者所用位移证据可逐项复核，并显示结论应保留完整分子与介质条件。</p><ul class=\"result-limits\"><li>本表没有CF₃I或C₂F₅I的直接数值；不能把n-C₃F₇I换成C₂F₅I，也不能把三种分子的位移直接升级为四种孤立基团的普适诱导顺序。</li><li>原作者的制备、结构鉴定和反应实验依原文归属；本任务只重放表格，不由这些换算裁决亲卤反应机制、游离阴离子或材料性能。</li></ul><div class=\"result-sources\"><b>原文与结果出处</b><p class=\"links\"><a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18\">1966原论文与PDF入口（p.21表1） →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/data/pftb1966_table1.csv\">原表波长转录 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/pftb1966-uv-replay.json\">六项结果与完整比较 →</a><a href=\"../pftb/index.html#contribution\">原作者的研究贡献与论证 →</a></p></div></article><article class=\"result-evidence\" id=\"a03-sensitivity-results\"><p class=\"result-identity\">平台已完成 · 假定扰动诊断</p><h4>同一名义顺序的数值裕量有多大？</h4><p>乙醇中，全氟叔丁基碘与全氟异丙基碘的波数蓝移最接近，名义差为161.844074 cm⁻¹。已保存结果采用每个相关峰位独立±u nm的有界扰动模型。</p><p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a03-sensitivity-results-table-1\"><table><caption id=\"a03-sensitivity-results-table-1\">同一对分子的两种比较尺度</caption><thead><tr><th scope=\"col\">比较量</th><th scope=\"col\">名义差</th><th scope=\"col\">区间首次接触的峰位半宽u</th></tr></thead><tbody><tr><th scope=\"row\">波长差δλ</th><td>3.5 nm</td><td>0.875 nm</td></tr><tr><th scope=\"row\">波数蓝移Δν̃</th><td>161.844074 cm⁻¹</td><td>0.288427 nm</td></tr></tbody></table></div><p class=\"table-note\">按每个峰独立±0.05 nm的显示舍入假设，保存结果中各相邻比较仍分离；真实测量不确定度未由原表提供，仍记为未知。</p><p class=\"scientific-meaning\"><b>科学意义：</b>单位变换保留了名义顺序，却改变了比较的数值裕量。这提示后续评价要区分显示精度、真实测量不确定度与物理解释，不能把某个阈值直接当作实验显著性。</p><ul class=\"result-limits\"><li>0.288427、0.875和±0.05 nm均属声明的数学扰动模型；不是仪器精度、实验误差、置信区间，也不构成对原论文的否定。</li></ul><div class=\"result-sources\"><b>原文与结果出处</b><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/REPLAY_REPORT_zh-CN.md\">重放与敏感性报告 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/protocols/pftb1966_uv.json\">固定协议与单位约定 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/pftb1966-uv-replay.json\">已保存比较结果 →</a></p></div></article><details class=\"record-archive\"><summary>专业记录与完整数据</summary><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>已按1966年原表转录10个波长记录，其中9个配对记录形成6项位移；波长差、波数蓝移与有界扰动诊断属于同批原表数值重放。原刊印刷21页表1及24页实验部分已回查：紫外仪器为Unicam SP-500；20°C注明于核磁共振测量，不能移作紫外温度。紫外测量条件与真实不确定度仍未完整确认，专业转录签认待补。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/REPLAY_REPORT_zh-CN.md\">PF1966-UV-T1数值重放报告 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/data/pftb1966_table1.csv\">原表转录数据 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/pftb1966-uv-replay.json\">既有重放结果 →</a><a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18\">1966原刊：表1见印刷21页，仪器见24页 →</a></p></div></div></details><div class=\"pending-work\" id=\"ai-a03-pending\"><h3>待核事项</h3><ul><li>原表转录仍待独立化学专家签认；未重新测量光谱、重建完整谱线或进行峰拟合。</li><li>真实峰位不确定度及对应表1的UV温度、浓度和光程尚不能恢复；原刊紫外仪器Unicam SP-500已核明，20°C属于NMR。缺少的原始测量／校准依据不由平台补造。</li><li>从完整碘代物位移到基团效应解释仍需额外证据，不能凭本表补造CF₃I、C₂F₅I数据或认定反应机理。</li></ul></div><div class=\"future-work\" id=\"ai-a03-future\"><h3>未来设想（尚未开展）</h3><ul><li>先完成原表专业核校，并从原始文献与相关记录补齐测量条件和谱带归属。</li><li>资料充分后，再论证如何用独立光谱测量或明确的现代模型区分溶剂相互作用与基团效应；此为待查新、待设计的问题，尚未启动。</li></ul></div><div class=\"prior-work\" aria-label=\"平台AI辅助文献核校\"><h3>平台AI辅助文献核校</h3><p>历史实验与理论研究归原作者。以下呈现平台完成的原文、表格和附件对照，保持 <code>review_required</code>、<code>release_eligible=false</code>；文献核校不授予实验、结构或机理验证资格。</p><article class=\"result-evidence\" id=\"a03-literature-uv-method\" data-review-status=\"review_required\" data-release-eligible=\"false\"><h4>原表重放的测量条件与不确定度边界</h4><p><b>历史原文：</b>1966论文表1报告三种完整碘代物在所列溶剂中的紫外吸收峰和溶剂位移，用于原作者的电子效应讨论。</p><p><b>平台AI核校：</b>原刊24页注明紫外仪器为Unicam SP-500；相邻20°C文字属于核磁共振测量。对18–25页全文的此次核读未找到能明确对应表1的紫外温度、浓度和光程，因此这些条件仍不由平台补填。 原刊峰位显示精度与真实测量不确定度需分开。平台所用±0.05nm只是显示舍入诊断，不能当作仪器精度、实验误差或置信区间；六项换算继续称原表数值重放。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a03-literature-uv-method-table-1\"><table><caption id=\"a03-literature-uv-method-table-1\">1966年原刊21页表1与24页方法段</caption><thead><tr><th scope=\"col\">信息</th><th scope=\"col\">原文核读结果</th><th scope=\"col\">使用范围</th></tr></thead><tbody><tr><th scope=\"row\">紫外仪器</th><td>24页Unicam SP-500</td><td>仪器字段已明</td></tr><tr><th scope=\"row\">20°C</th><td>24页文字属于核磁共振测量</td><td>不移作紫外温度</td></tr><tr><th scope=\"row\">UV温度、浓度、光程</th><td>在所核18–25页未找到明确对应表1的设置</td><td>不以仪器型号或epsilon反推</td></tr><tr><th scope=\"row\">峰位真实不确定度</th><td>未给足以恢复重复性／校准的不确定度依据</td><td>±0.05 nm只作显示舍入诊断</td></tr></tbody></table></div><p class=\"scientific-meaning\"><b>证据的意义：</b>把可回查的仪器信息与尚不能恢复的实验设置分开，限定原表数值重放所能回答的问题。</p><ul class=\"result-limits\"><li>六项换算仍是同一原表的数值重放，不称光谱实验复现。</li><li>不能从显示位数推定实验误差、置信区间或普适基团效应，也不据未报告的不确定度否定历史观察。</li></ul><p class=\"table-note\">来源ID：PF01</p><p class=\"links\"><a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18\">1966原刊：32卷18–25页 →</a></p></article></div><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../pftb/index.html#contribution\">1966原始研究与贡献 →</a><a href=\"../pftb/index.html#arguments\">原始论证 →</a><a href=\"../pftb/index.html#questions\">专题待核问题",
+      "new": "原作者怎样把全氟叔丁基卤化物的制备、特殊反应和光谱比较联系起来？平台能从原表重现哪些数字？</p><h3>AI怎样辅助</h3><p>以传记为主线关联人物、化合物、原论文和学术贡献；对平台新增引用核对出处与转录。已保存的数值工作限于原表波长差、波数蓝移与假定扰动诊断，历史成果归原作者。</p><nav class=\"result-nav\" aria-label=\"A03（全氟叔丁基（PFtB）化学）研究状态\"><a href=\"#ai-a03-completed\">已完成工作</a> · <a href=\"#ai-a03-pending\">适用范围与科学边界</a> · <a href=\"#ai-a03-future\">未来设想</a></nav><h3 id=\"ai-a03-completed\">已完成工作：原文与数据复核</h3><ul><li>已转录1966年论文表1的10个波长记录；9个配对记录形成下列6项位移，另一条CCl₄记录不属于此配对任务。</li><li>已用固定公式保存波长差、波数蓝移及假定有界扰动诊断。单位换算与敏感性分析属于平台数值重放，不是独立光谱实验。</li></ul><article class=\"result-evidence\" id=\"a03-shift-results\"><p class=\"result-identity\">原表数据＋平台单位重放</p><h4>三种碘代物的六项紫外溶剂位移</h4><p>陈庆云、蒋锡夔、陈秉启、梁梦兰在1966年《化学学报》论文中研究全氟叔丁基碘及相应溴化物的制备、结构与反应，并用紫外溶剂位移讨论吸电性顺序。这里直接展示印刷p.21表1的对应波长和已保存换算值。</p><p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a03-shift-results-table-1\"><table><caption id=\"a03-shift-results-table-1\">λ为原表吸收峰λmax；波长单位nm，蓝移单位cm⁻¹</caption><thead><tr><th scope=\"col\">完整碘代物</th><th scope=\"col\">给体溶剂B</th><th scope=\"col\">λH／nm</th><th scope=\"col\">λB／nm</th><th scope=\"col\">原表δλ／nm</th><th scope=\"col\">换算Δν̃／cm⁻¹</th></tr></thead><tbody><tr><th scope=\"row\">全氟正丙基碘 n-C₃F₇I</th><td>乙醇</td><td>270.0</td><td>250.0</td><td>20.0</td><td>2962.963</td></tr><tr><th scope=\"row\">全氟异丙基碘 i-C₃F₇I</th><td>乙醇</td><td>274.0</td><td>250.0</td><td>24.0</td><td>3503.650</td></tr><tr><th scope=\"row\">全氟叔丁基碘 (CF₃)₃CI</th><td>乙醇</td><td>288.0</td><td>260.5</td><td>27.5</td><td>3665.494</td></tr><tr><th scope=\"row\">全氟正丙基碘 n-C₃F₇I</th><td>乙醚</td><td>270.0</td><td>256.0</td><td>14.0</td><td>2025.463</td></tr><tr><th scope=\"row\">全氟异丙基碘 i-C₃F₇I</th><td>乙醚</td><td>274.0</td><td>257.0</td><td>17.0</td><td>2414.155</td></tr><tr><th scope=\"row\">全氟叔丁基碘 (CF₃)₃CI</th><td>乙醚</td><td>288.0</td><td>264.0</td><td>24.0</td><td>3156.566</td></tr></tbody></table></div><p class=\"table-note\">H沿用原表C₆H₁₄记号，当前登记未进一步指定异构体；B是乙醇或乙醚的给体溶剂记号，不是苯。原单位毫微米的数值等于nm。</p><p class=\"table-note\">δλ=λH−λB；Δν̃=10⁷(1/λB−1/λH)，λ以nm计。正值表示蓝移。两个尺度来自同一批波长，不是两组独立实验。</p><p class=\"scientific-meaning\"><b>科学意义：</b>在乙醇和乙醚中，两种数值表达都保留名义顺序：全氟叔丁基碘＞全氟异丙基碘＞全氟正丙基碘。平台重放使原作者所用位移证据可逐项复核，并显示结论应保留完整分子与介质条件。</p><ul class=\"result-limits\"><li>本表没有CF₃I或C₂F₅I的直接数值；不能把n-C₃F₇I换成C₂F₅I，也不能把三种分子的位移直接升级为四种孤立基团的普适诱导顺序。</li><li>原作者的制备、结构鉴定和反应实验依原文归属；本任务只重放表格，不由这些换算裁决亲卤反应机制、游离阴离子或材料性能。</li></ul><div class=\"result-sources\"><b>原文与结果出处</b><p class=\"links\"><a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18\">1966原论文与PDF入口（p.21表1） →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/data/pftb1966_table1.csv\">原表波长转录 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/pftb1966-uv-replay.json\">六项结果与完整比较 →</a><a href=\"../pftb/index.html#contribution\">原作者的研究贡献与论证 →</a></p></div></article><article class=\"result-evidence\" id=\"a03-sensitivity-results\"><p class=\"result-identity\">平台已完成 · 假定扰动诊断</p><h4>同一名义顺序的数值裕量有多大？</h4><p>乙醇中，全氟叔丁基碘与全氟异丙基碘的波数蓝移最接近，名义差为161.844074 cm⁻¹。已保存结果采用每个相关峰位独立±u nm的有界扰动模型。</p><p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a03-sensitivity-results-table-1\"><table><caption id=\"a03-sensitivity-results-table-1\">同一对分子的两种比较尺度</caption><thead><tr><th scope=\"col\">比较量</th><th scope=\"col\">名义差</th><th scope=\"col\">区间首次接触的峰位半宽u</th></tr></thead><tbody><tr><th scope=\"row\">波长差δλ</th><td>3.5 nm</td><td>0.875 nm</td></tr><tr><th scope=\"row\">波数蓝移Δν̃</th><td>161.844074 cm⁻¹</td><td>0.288427 nm</td></tr></tbody></table></div><p class=\"table-note\">按每个峰独立±0.05 nm的显示舍入假设，保存结果中各相邻比较仍分离；真实测量不确定度未由原表提供，仍记为未知。</p><p class=\"scientific-meaning\"><b>科学意义：</b>单位变换保留了名义顺序，却改变了比较的数值裕量。这提示后续评价要区分显示精度、真实测量不确定度与物理解释，不能把某个阈值直接当作实验显著性。</p><ul class=\"result-limits\"><li>0.288427、0.875和±0.05 nm均属声明的数学扰动模型；不是仪器精度、实验误差、置信区间，也不构成对原论文的否定。</li></ul><div class=\"result-sources\"><b>原文与结果出处</b><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/REPLAY_REPORT_zh-CN.md\">重放与敏感性报告 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/protocols/pftb1966_uv.json\">固定协议与单位约定 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/pftb1966-uv-replay.json\">已保存比较结果 →</a></p></div></article><details class=\"record-archive\"><summary>专业记录与完整数据</summary><div class=\"record-grid\"><div class=\"record\"><h4>历史成果与合作脉络</h4><p>已将传记42–45页与1966年原论文联系，介绍全氟叔丁基卤化物的制备和结构研究、亲核试剂作用下的反应行为、光谱与诱导效应讨论，并分别说明陈庆云、蒋锡夔、陈秉启、梁梦兰的合作。采用Krespan方法与团队随后开展的研究分开归属；这些是原作者的成果，平台新增的是资料整理。</p><p class=\"links\"><a href=\"../pftb/index.html\">A03（全氟叔丁基（PFtB）化学）：成果、合作与参考资料 →</a></p></div><div class=\"record\"><h4>现有资料与记录</h4><p>已按1966年原表转录10个波长记录，其中9个配对记录形成6项位移；波长差、波数蓝移与有界扰动诊断属于同批原表数值重放。原刊印刷21页表1及24页实验部分的引用已核对：紫外仪器为Unicam SP-500；20°C注明于核磁共振测量，不能移作紫外温度。这些整理没有补出未知的实验条件或真实不确定度。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/REPLAY_REPORT_zh-CN.md\">PF1966-UV-T1数值重放报告 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/data/pftb1966_table1.csv\">原表转录数据 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/pftb1966-uv-replay.json\">既有重放结果 →</a><a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18\">1966原刊：表1见印刷21页，仪器见24页 →</a></p></div></div></details><div class=\"pending-work\" id=\"ai-a03-pending\"><h3>适用范围与科学边界</h3><ul><li>平台保存的是原表转录及数值重放；未重新测量光谱、重建完整谱线或进行峰拟合。</li><li>真实峰位不确定度及对应表1的UV温度、浓度和光程不能由现有整理恢复；Unicam SP-500为紫外仪器，20°C属于NMR。显示舍入诊断不是实验误差。</li><li>完整碘代物的位移不能直接搬作普适基团常数；不补造CF₃I、C₂F₅I数据，不用六项换算认证反应机理。</li></ul></div><div class=\"future-work\" id=\"ai-a03-future\"><h3>未来设想（尚未开展）</h3><ul><li>若未来开展独立光谱或现代模型研究，应先限定化合物、溶剂和可区分的科学问题，比较已有工作并另定协议；目前仅为设想。</li><li>当前聚焦既有学术成果的呈现与资料整理；M0继续暂停，未启动新的计算或实验。</li></ul></div><div class=\"prior-work\" aria-label=\"平台AI辅助文献核校\"><h3>平台AI辅助文献核校</h3><p>历史实验与理论研究归原作者。以下呈现平台完成的原文、表格和附件对照，保持 <code>review_required</code>、<code>release_eligible=false</code>；文献核校不授予实验、结构或机理验证资格。</p><article class=\"result-evidence\" id=\"a03-literature-uv-method\" data-review-status=\"review_required\" data-release-eligible=\"false\"><h4>原表重放的测量条件与不确定度边界</h4><p><b>历史原文：</b>1966论文表1报告三种完整碘代物在所列溶剂中的紫外吸收峰和溶剂位移，用于原作者的电子效应讨论。</p><p><b>平台AI核校：</b>原刊24页注明紫外仪器为Unicam SP-500；相邻20°C文字属于核磁共振测量。对18–25页全文的此次核读未找到能明确对应表1的紫外温度、浓度和光程，因此这些条件仍不由平台补填。 原刊峰位显示精度与真实测量不确定度需分开。平台所用±0.05nm只是显示舍入诊断，不能当作仪器精度、实验误差或置信区间；六项换算继续称原表数值重放。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a03-literature-uv-method-table-1\"><table><caption id=\"a03-literature-uv-method-table-1\">1966年原刊21页表1与24页方法段</caption><thead><tr><th scope=\"col\">信息</th><th scope=\"col\">原文核读结果</th><th scope=\"col\">使用范围</th></tr></thead><tbody><tr><th scope=\"row\">紫外仪器</th><td>24页Unicam SP-500</td><td>仪器字段已明</td></tr><tr><th scope=\"row\">20°C</th><td>24页文字属于核磁共振测量</td><td>不移作紫外温度</td></tr><tr><th scope=\"row\">UV温度、浓度、光程</th><td>在所核18–25页未找到明确对应表1的设置</td><td>不以仪器型号或epsilon反推</td></tr><tr><th scope=\"row\">峰位真实不确定度</th><td>未给足以恢复重复性／校准的不确定度依据</td><td>±0.05 nm只作显示舍入诊断</td></tr></tbody></table></div><p class=\"scientific-meaning\"><b>证据的意义：</b>把可回查的仪器信息与尚不能恢复的实验设置分开，限定原表数值重放所能回答的问题。</p><ul class=\"result-limits\"><li>六项换算仍是同一原表的数值重放，不称光谱实验复现。</li><li>不能从显示位数推定实验误差、置信区间或普适基团效应，也不据未报告的不确定度否定历史观察。</li></ul><p class=\"table-note\">来源ID：PF01</p><p class=\"links\"><a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18\">1966原刊：32卷18–25页 →</a></p></article></div><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../pftb/index.html\">A03（全氟叔丁基（PFtB）化学）：历史成果与合作 →</a><a href=\"../pftb/index.html#arguments\">A03（全氟叔丁基（PFtB）化学）：原论文论证细读"
+    },
+    {
+      "old": "",
+      "new": "\nfrom a03_biography_publication import (MANIFEST as A03_BIOGRAPHY_MANIFEST,\n    predecessor_bytes as a03_biography_predecessor_bytes, apply as apply_a03_biography_presentation)\n"
+    },
+    {
+      "old": "_file(root, name).read_bytes(",
+      "new": "a03_biography_predecessor_bytes(root, name"
+    },
+    {
+      "old": "",
+      "new": "        if (root/A03_BIOGRAPHY_MANIFEST).exists():\n            raise ValueError('A03 biography presentation requires its immutable v26 predecessor')\n"
+    },
+    {
+      "old": "_file(root, name).read_text",
+      "new": "a03_biography_predecessor_bytes(root, name).decode"
+    },
+    {
+      "old": "_file(root, 'site/'+route).read_bytes(",
+      "new": "a03_biography_predecessor_bytes(root, 'site/'+route"
+    },
+    {
+      "old": "_file(root, 'site/'+name).read_bytes(",
+      "new": "a03_biography_predecessor_bytes(root, 'site/'+name"
+    },
+    {
+      "old": "from render_ai_research import inspect_ai_research\n    from render_a02_history import inspect_a02_history\n    from render_a02_biography import inspect_biography\n    from render_heritage import inspect_heritage\n    checks = [inspect_ai_research(root), inspect_a02_history(root), inspect_biography(root), inspect_heritage(root)]\n    if any(c.get('status') != 'passed' for c in checks):\n",
+      "new": "# v26 checks historical reconstructed bytes; v27 checks current A03 rendering.\n    if not (root/A03_BIOGRAPHY_MANIFEST).exists():\n        from render_ai_research import inspect_ai_research\n        from render_a02_history import inspect_a02_history\n        from render_a02_biography import inspect_biography\n        from render_heritage import inspect_heritage\n        checks = [inspect_ai_research(root), inspect_a02_history(root), inspect_biography(root), inspect_heritage(root)]\n        if any(c.get('status') != 'passed' for c in checks):\n    "
+    },
+    {
+      "old": "updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}",
+      "new": "apply_a03_biography_presentation(root, updated,\n        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})"
+    },
+    {
+      "old": "",
+      "new": "    if (root/'provenance/platform-presentation.v27.json').exists() and not (root/'provenance/platform-presentation.v26.json').exists():\n        raise ValueError('A03 biography presentation requires its immutable v26 predecessor')\n"
+    }
+  ],
+  "boundary": "PFtB permits only a new hero-after biography block, replacement of the old questions queue with a scope explanation, the specified1980 status/link update, and deletion of its378-byte questions search-index loop. All remaining original PFtB science/CSS/JS/site-data bytes, stable IDs, original data/results, other lines/pages, homepage and v1-v26 declarations remain unchanged. AI changes only approved A03 narrative fields; original replay result sections/checks are protected. No new calculation, experiment or scientific release.",
+  "publish_allowlist": "Unchanged: sixteen static HTML pages, two original public JSON files and an empty .nojekyll marker, nineteen regular published files.",
+  "remote_action_performed": false
+}
