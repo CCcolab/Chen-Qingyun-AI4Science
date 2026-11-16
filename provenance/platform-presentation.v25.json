@@ -1,0 +1,447 @@
+{
+  "schema_version": "25.0",
+  "presentation_id": "PLATFORM-A01-PRIMARY-READING-20261116-v25",
+  "created_at_utc": "2026-11-16T11:43:27.454657+00:00",
+  "publication_kind": "platform_a01_systematic_primary_reading",
+  "authorization": "User request dated 2026-11-16 to explain A01 original academic achievements and reported evidence, with original author attribution, after systematic source reading. Publish only suitable historical content; keep unresolved inventories and private originals local. No new discovery claim, M0, model API, calculation or experiment.",
+  "previous_presentation_commit": "d4fec688029e7bfa3f826ad4efdb78457e312fbd",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v24.json",
+    "sha256": "118a96428bf0a0fce5467fffd8861c419f97ac078aed708b6fd3b5e6318cc242"
+  },
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "allowed_html_paths": [
+    "research/index.html",
+    "topics/early-fluoroketones/index.html"
+  ],
+  "added_html_paths": [],
+  "additions": [],
+  "allowed_ai_json_pointers": [
+    "/lines/0/records/0/summary",
+    "/lines/0/records/0/links"
+  ],
+  "allowed_new_files": [
+    "content/a01-primary-reading.v1.json",
+    "scripts/render_a01_primary_reading.py",
+    "docs/A01_PRIMARY_READING_zh-CN.md",
+    "scripts/a01_primary_publication.py",
+    "provenance/platform-presentation.v25.json"
+  ],
+  "editorial_documents": [
+    {
+      "path": "content/ai-research-section.v1.json",
+      "sha256": "6cbea7f1efeec435ebbaca9d80b39431e7fc14f9b27ecae6bf3c4847eb8d9bf4",
+      "bytes": 97792
+    },
+    {
+      "path": "scripts/render_ai_research.py",
+      "sha256": "c4cfba4d66c616b4a04d258ec4b1f644dd8858cd2734693dd3c8efbd60ed135a",
+      "bytes": 40484
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "sha256": "b2a97edbfece2aad7691eb0e18e23cc142802145a427b9569c4a14ef8176ec46",
+      "bytes": 58068
+    },
+    {
+      "path": "scripts/render_a01_history.py",
+      "sha256": "500488c6906210e68a8d1478cadc8340d59b455c1b2103d6e34de4653b08bf4b",
+      "bytes": 16032
+    },
+    {
+      "path": "docs/A01_FIRST_REPORT_zh-CN.md",
+      "sha256": "6f8666b96ee0220c05266e63bf6239ec22205fd1977ce31bb8a6f488d2750071",
+      "bytes": 8566
+    },
+    {
+      "path": "content/a01-primary-reading.v1.json",
+      "sha256": "606f50cef7528a3ed176b9b0ce02c13ee14d6bea802bdd224f243e2dd8478f8d",
+      "bytes": 7828
+    },
+    {
+      "path": "scripts/render_a01_primary_reading.py",
+      "sha256": "425fe6fa324ab87a94408b2e813aebaa331a82e10d9ee66552967af60caad41f",
+      "bytes": 7323
+    },
+    {
+      "path": "docs/A01_PRIMARY_READING_zh-CN.md",
+      "sha256": "2c6c2f196ebe587f75bb29ba47264d804eddb77b349cb64eda00af71bb2fa550",
+      "bytes": 6764
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "sha256": "7689978367a4a9c7b846fc21a191cb284d7d11f7b0a6b1759d51da2aa41c2e59",
+      "bytes": 309731
+    },
+    {
+      "path": "scripts/public_literature_update.py",
+      "sha256": "2b6ba9390080b9893c3a57b3ebf457ae50784d57009f32372306825aea558138",
+      "bytes": 46980
+    },
+    {
+      "path": "scripts/a01_primary_publication.py",
+      "sha256": "7e10bf18334117a005fced60d7110d31c04184d768c32ad4cd3e2fe80bfa1c5b",
+      "bytes": 20493
+    }
+  ],
+  "protected_website_members": {
+    "index.html": {
+      "sha256": "8b3532ee45c0fb33912f20a3bd7943043a348f10a370b9c6716e9edf3c0abf41",
+      "bytes": 257766
+    },
+    "pftb/index.html": {
+      "sha256": "42ca404f2ed70b7a3b0b5d8b0eb742a2509e5a5a70fd0be36a65028e61cbd1f6",
+      "bytes": 97587
+    },
+    "topics/f53/index.html": {
+      "sha256": "8def3379a75dda6665d7cb3ee6c32193fc7a61ec6b31098abbefe9218fea39fe",
+      "bytes": 8161
+    },
+    "topics/refrigerants/index.html": {
+      "sha256": "5d9b5a355b949f67c5de252727f8d4e4e7533abab8a666c49a0f932170153c4e",
+      "bytes": 10636
+    },
+    "topics/perfluorosulfonates/index.html": {
+      "sha256": "85a6f4330edb7607f61ca217b71d2ef6c12cb1af0d48aaaebf737acf3a212ea5",
+      "bytes": 8888
+    },
+    "topics/chen-reagent/index.html": {
+      "sha256": "14f08afd4062c0ae171f24e5fb225e5968b003e885edc206baf08ca352b630df",
+      "bytes": 19991
+    },
+    "topics/single-electron-transfer/index.html": {
+      "sha256": "79c84f89e25e576a03f34153b9eb85a5ff73815c8265a0222930d889390ea947",
+      "bytes": 10355
+    },
+    "topics/fluoroporphyrins/index.html": {
+      "sha256": "24b6bb744b594573487847c89bbb35571ea56bc15d444ebeac3339379dbc1875",
+      "bytes": 6018
+    },
+    "topics/fluorinated-small-rings/index.html": {
+      "sha256": "2413c83d4319746f41e940c04fe48bdeda28244235f5a9e8697285c187ba412d",
+      "bytes": 5924
+    },
+    "topics/deoxyfluorination/index.html": {
+      "sha256": "2aca9c13eb46f9fedfb02a2adfdc9423c207465f58608bcd671838d4d8045df5",
+      "bytes": 5550
+    },
+    "topics/sulfonyl-fluoride/index.html": {
+      "sha256": "fe944efbbfa5a7814015235f4ae3aae101db4046b0c9419986d6855d7ed15b49",
+      "bytes": 5043
+    },
+    "topics/index.html": {
+      "sha256": "44a5690d1e65195b9ff191d2a7ec37487070cdfafb191ae107962d5e0d7ab73c",
+      "bytes": 5055
+    },
+    "achievements/index.html": {
+      "sha256": "df20daf429c46e89e99085550067e8c1e9f7e283b10b7e8269f38da6a9d380ff",
+      "bytes": 95867
+    },
+    "data/public-sources.json": {
+      "sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+      "bytes": 33608
+    },
+    "data/achievement-lines.json": {
+      "sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+      "bytes": 39768
+    },
+    "README.txt": {
+      "sha256": "6e15068b7240ae47d633df3f777e81fbb9e46146ee5f4ab70011f09119b6bbc9",
+      "bytes": 336
+    },
+    "ROUTES.txt": {
+      "sha256": "a734c356877d4534285ab7d71b9fe0f7a17abbced4de3c52f8e60d335301e418",
+      "bytes": 949
+    },
+    "QA.txt": {
+      "sha256": "a60b5f382b31689fa17e2518b7079ef0660674fb62bddbbf564c7b74dfe51067",
+      "bytes": 290
+    },
+    "IONIC-ENTRY-RETEST.txt": {
+      "sha256": "3462b056891a27c335cc2620deb87b245b6c9aea3bdaec607c8a14beca69fe9d",
+      "bytes": 741
+    },
+    "topics/fluoromonomers/index.html": {
+      "sha256": "6972664021418b4337e5bb7785cc6bd77d5d7a96968bdfd41a6a8d7812fa2fa1",
+      "bytes": 60217
+    }
+  },
+  "reconstruction_kind": "deduplicated_exact_utf8_text_edits",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "M0_resumed": false,
+  "historical_achievement_independent_of_AI_review": true,
+  "new_quantum_calls": 0,
+  "new_model_API_calls": 0,
+  "changes": [
+    {
+      "path": "research/index.html",
+      "old_sha256": "58215eebbc449f591b832219045e39543394ed0018e85c574ec962b4e15166f4",
+      "old_bytes": 78885,
+      "new_sha256": "1d5aaf560e21a37bcd865984207f4f931c9b8aee54533a3b3d8f0e87a732fc3c",
+      "new_bytes": 79210,
+      "reason": "Explain original A01 academic contributions and reported evidence using a separate sourced public reading, preserving original attribution and data."
+    },
+    {
+      "path": "topics/early-fluoroketones/index.html",
+      "old_sha256": "a6da86d7f9ff0f35a5ea044252297a23e5ed71db829f2d184e3ab38a70dce9a2",
+      "old_bytes": 250938,
+      "new_sha256": "eeffdcd82cca6ae6549db9d21b7059ac4c9db94cdc60337ffc3a6a75ae06af88",
+      "new_bytes": 257826,
+      "reason": "Explain original A01 academic contributions and reported evidence using a separate sourced public reading, preserving original attribution and data."
+    }
+  ],
+  "reversible_text_files": [
+    {
+      "path": "content/ai-research-section.v1.json",
+      "old_sha256": "8816f7aab7ed0793c621c904fc819ee4738cabd55a2202f8105f13c64c59cf95",
+      "old_bytes": 97371,
+      "new_sha256": "6cbea7f1efeec435ebbaca9d80b39431e7fc14f9b27ecae6bf3c4847eb8d9bf4",
+      "new_bytes": 97792,
+      "edits": [
+        {
+          "old_offset": 2083,
+          "replacement": 0
+        },
+        {
+          "old_offset": 2572,
+          "replacement": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "old_sha256": "329ce8ce5d2242cc7bd44e701dafa4db471d379e5a4048459bd20886ec9fdec6",
+      "old_bytes": 57707,
+      "new_sha256": "b2a97edbfece2aad7691eb0e18e23cc142802145a427b9569c4a14ef8176ec46",
+      "new_bytes": 58068,
+      "edits": [
+        {
+          "old_offset": 12045,
+          "replacement": 0
+        },
+        {
+          "old_offset": 12308,
+          "replacement": 2
+        }
+      ]
+    },
+    {
+      "path": "site/research/index.html",
+      "old_sha256": "58215eebbc449f591b832219045e39543394ed0018e85c574ec962b4e15166f4",
+      "old_bytes": 78885,
+      "new_sha256": "1d5aaf560e21a37bcd865984207f4f931c9b8aee54533a3b3d8f0e87a732fc3c",
+      "new_bytes": 79210,
+      "edits": [
+        {
+          "old_offset": 21092,
+          "replacement": 3
+        }
+      ]
+    },
+    {
+      "path": "scripts/render_a01_history.py",
+      "old_sha256": "7633087b1694b3c19d30243e95c3b621684fb8d58545206a8ac8df90825e729c",
+      "old_bytes": 15842,
+      "new_sha256": "500488c6906210e68a8d1478cadc8340d59b455c1b2103d6e34de4653b08bf4b",
+      "new_bytes": 16032,
+      "edits": [
+        {
+          "old_offset": 2798,
+          "replacement": 4
+        },
+        {
+          "old_offset": 5040,
+          "replacement": 5
+        },
+        {
+          "old_offset": 13376,
+          "replacement": 6
+        }
+      ]
+    },
+    {
+      "path": "docs/A01_FIRST_REPORT_zh-CN.md",
+      "old_sha256": "f0b084ea67ab26a09da6f32158bc6e8e1219af46b551b8c39ed5bfb57dec9a18",
+      "old_bytes": 7864,
+      "new_sha256": "6f8666b96ee0220c05266e63bf6239ec22205fd1977ce31bb8a6f488d2750071",
+      "new_bytes": 8566,
+      "edits": [
+        {
+          "old_offset": 7864,
+          "replacement": 7
+        }
+      ]
+    },
+    {
+      "path": "site/topics/early-fluoroketones/index.html",
+      "old_sha256": "a6da86d7f9ff0f35a5ea044252297a23e5ed71db829f2d184e3ab38a70dce9a2",
+      "old_bytes": 250938,
+      "new_sha256": "eeffdcd82cca6ae6549db9d21b7059ac4c9db94cdc60337ffc3a6a75ae06af88",
+      "new_bytes": 257826,
+      "edits": [
+        {
+          "old_offset": 20135,
+          "replacement": 8
+        }
+      ]
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "old_sha256": "3497c008ed83a7737e46a81c714475586040583646bb6cf950eef0efa8800eff",
+      "old_bytes": 309525,
+      "new_sha256": "7689978367a4a9c7b846fc21a191cb284d7d11f7b0a6b1759d51da2aa41c2e59",
+      "new_bytes": 309731,
+      "edits": [
+        {
+          "old_offset": 96041,
+          "replacement": 9
+        }
+      ]
+    },
+    {
+      "path": "scripts/public_literature_update.py",
+      "old_sha256": "263909ad01d2fa2c9cb721f8ecbc7bb6aae238f14fdb4d352b3ee41cf6a5a650",
+      "old_bytes": 46361,
+      "new_sha256": "2b6ba9390080b9893c3a57b3ebf457ae50784d57009f32372306825aea558138",
+      "new_bytes": 46980,
+      "edits": [
+        {
+          "old_offset": 351,
+          "replacement": 10
+        },
+        {
+          "old_offset": 34749,
+          "replacement": 11
+        },
+        {
+          "old_offset": 34934,
+          "replacement": 11
+        },
+        {
+          "old_offset": 38345,
+          "replacement": 11
+        },
+        {
+          "old_offset": 38646,
+          "replacement": 12
+        },
+        {
+          "old_offset": 38884,
+          "replacement": 11
+        },
+        {
+          "old_offset": 41924,
+          "replacement": 11
+        },
+        {
+          "old_offset": 42413,
+          "replacement": 13
+        },
+        {
+          "old_offset": 42783,
+          "replacement": 14
+        },
+        {
+          "old_offset": 43722,
+          "replacement": 15
+        },
+        {
+          "old_offset": 44977,
+          "replacement": 16
+        },
+        {
+          "old_offset": 45191,
+          "replacement": 17
+        },
+        {
+          "old_offset": 46269,
+          "replacement": 18
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "",
+      "new": " 第一报与说明书的原报数据、具体化学贡献和共同署名分别呈现；这是对既有历史成果的资料展开，不作为平台新的科学发现。"
+    },
+    {
+      "old": "",
+      "new": "            },\r\n            {\r\n              \"title\": \"A01（全氟酮化学：六氟丙酮与双酚AF）原报数据与共同贡献\",\r\n              \"url\": \"../topics/early-fluoroketones/index.html#a01-primary-records\",\r\n              \"kind\": \"site\"\r\n"
+    },
+    {
+      "old": "",
+      "new": " · [A01（全氟酮化学：六氟丙酮与双酚AF）原报数据与共同贡献](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-primary-records)"
+    },
+    {
+      "old": "</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/README.md\">早期原文与分支研究说明 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A01_FIRST_REPORT_zh-CN.md\">第一报全文核读范围与历史证据",
+      "new": " 第一报与说明书的原报数据、具体化学贡献和共同署名分别呈现；这是对既有历史成果的资料展开，不作为平台新的科学发现。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/README.md\">早期原文与分支研究说明 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A01_FIRST_REPORT_zh-CN.md\">第一报全文核读范围与历史证据 →</a><a href=\"../topics/early-fluoroketones/index.html#a01-primary-records\">A01（全氟酮化学：六氟丙酮与双酚AF）原报数据与共同贡献"
+    },
+    {
+      "old": "",
+      "new": ", root: Path = ROOT"
+    },
+    {
+      "old": "out += ['</article>', first_report(data), ",
+      "new": "from render_a01_primary_reading import render_primary_history\n    out += ['</article>', first_report(data)]\n    primary = render_primary_history(root)\n    if primary:\n        out.append(primary)\n    out += ["
+    },
+    {
+      "old": "",
+      "new": ", root"
+    },
+    {
+      "old": "",
+      "new": "\n## 学术贡献与原报字段的对应\n\n传记与机构生平提供经过采集、考证的历史主线；原论文和说明书在这里用于具体展开当时的化学研究。第一报的反应谱系、产物转化及鉴定证据，和六氟双酚A制备文书，均保留陈庆云与原合作者的共同归属；平台整理不作新的化学发现。\n\n第一报XI与第117491号说明书的投料、HF单位、加热表述及原报收率分别列于[原文证据与学术贡献说明](A01_PRIMARY_READING_zh-CN.md)。第一报的“沸水浴”不改作已测反应液温度100°C，HF的32 g与40 mL不作无依据换算；两份文献记录不自动等同同次实验或独立重复验证。\n"
+    },
+    {
+      "old": "",
+      "new": "<style id=\"a01-primary-reading-css\">#a01-primary-records .a01-primary-table{max-width:100%;overflow-x:auto;margin:20px 0;border:1px solid var(--line)}#a01-primary-records table{width:100%;min-width:620px;border-collapse:collapse;font-size:.9rem}#a01-primary-records caption{text-align:left;background:#edf2ec;padding:14px;color:var(--accent);font-weight:700}#a01-primary-records th,#a01-primary-records td{text-align:left;vertical-align:top;padding:12px;border-top:1px solid var(--line);overflow-wrap:anywhere}#a01-primary-records thead{background:#f5f5ef}#a01-primary-records .a01-primary-table:focus-visible{outline:3px solid #aa7545}#a01-primary-records .a01-platform-note{border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:.9rem}</style>\n<article id=\"a01-primary-records\"><span class=\"status\">A01（全氟酮化学：六氟丙酮与双酚AF） · 原作者的实验记录与共同贡献</span>\n<h2>双酚AF：两份文献的原报字段分别保留</h2>\n<p>沿《氟缘笃志：陈庆云传》和机构生平所记的研究主线，原始论文与发明说明书进一步呈现陈庆云与合作者当时完成的化学工作：建立六氟丙酮的多类反应和衍生转化，研究含双CF₃羟基产物的特有行为，并把研究推进到含氟二酚的制备与潜在单体用途。以下是历史成果的具体展开，原始实验与科学贡献归原作者。</p>\n<div class=\"a01-primary-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a01-primary-comparison\"><table><caption id=\"a01-primary-comparison\">双酚AF：两份文献的原报字段分别保留</caption><thead><tr><th scope=\"col\">原报字段</th><th scope=\"col\">1960年第一报XI（英译652页）</th><th scope=\"col\">第117491号说明书（实例段）</th></tr></thead><tbody><tr><th scope=\"row\">文献对象</th><td>4,4′-(hexafluoroisopropylidene)diphenol，XI</td><td>双（对羟基苯基）六氟丙烷的制备方法</td></tr><tr><th scope=\"row\">六氟丙酮</th><td>16 g</td><td>11.2 g</td></tr><tr><th scope=\"row\">苯酚</th><td>17.8 g</td><td>12.2 g</td></tr><tr><th scope=\"row\">无水HF</th><td>32 g</td><td>40 mL</td></tr><tr><th scope=\"row\">加热的原文表述</th><td>密封管，沸水浴10 h</td><td>金属管，100°C、10 h</td></tr><tr><th scope=\"row\">产物质量／原报收率</th><td>29 g／90.5%</td><td>21.7 g／98%（原文称理论收率）</td></tr><tr><th scope=\"row\">原报熔点／结晶来源</th><td>161–162°C／二氯乙烷</td><td>161–162°C／二氯乙烷</td></tr></tbody></table></div>\n<p>这些字段用于理解历史文献中的具体研究对象与记录，不组成现代实验操作方案。两份文献的投料不同；不能只凭相同熔点或不同百分数，认定为同一实验、独立重复批次、相互验证或工艺优劣。</p>\n<ul><li>HF的32 g与40 mL分别保留原单位，不作无依据的质量—体积换算；第一报‘沸水浴’不改写为已测反应液温度100°C。</li><li>XI原报元素分析Found：C 53.68%、H 2.98%、F 34.13%；Calculated：C 53.57%、H 2.97%、F 33.92%（英译652页）。这些是原作者的鉴定数据，不改写为平台测量、现代纯度结论或唯一结构证明。</li><li>XII另以邻甲酚7.1 g、无水HF 15 g和六氟丙酮5.5 g为投料，原报10.9 g／91%、熔点134–135°C（英译652页）；该91%不属于双酚AF。</li><li>原报90.5%与98%照录。平台已有计量重建的假设与残差另见AI研究资料，不据现代回算修正历史质量、真实收率或纯度。</li></ul>\n<h3>按具体文献保存共同贡献</h3>\n<div class=\"a01-primary-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a01-primary-authorship\"><table><caption id=\"a01-primary-authorship\">按具体文献保存共同贡献</caption><thead><tr><th scope=\"col\">材料</th><th scope=\"col\">署名与贡献归属</th><th scope=\"col\">出处</th></tr></thead><tbody><tr><th scope=\"row\">第一报</th><td>I. L. Knunyants、Ch&#x27;en Ch&#x27;ing-yun（陈庆云）、N. P. Gambaryan；同列苏联科学院元素有机化合物研究所。</td><td>英译647页作者及机构栏；出版社作者表</td></tr><tr><th scope=\"row\">第117491号说明书</th><td>И. Л. Кнунянц、Чэнь-Цинь-Юнь（陈庆云）、Н. П. Гамбарян。</td><td>说明书标题上方印刷署名栏</td></tr><tr><th scope=\"row\">研究训练与合作背景</th><td>传记叙述师承和合作，原论文与文书提供共同署名及实验内容；二者各按材料范围介绍。原件未逐项列出作者角色，不按署名次序推定个人贡献比例。</td><td>《氟缘笃志：陈庆云传》相关留苏章节；第一报与说明书署名</td></tr></tbody></table></div>\n<p>第一报的具体释读依据公开馆藏中英译647–653页的七张影印图，出版社题录用于篇目核对；俄文原刊与英译本不混称。第117491号现用材料是第三方镜像的历史说明书扫描，与传记所载同号证书书影分别标识。</p>\n<details><summary>原文及资料出处</summary><ul>\n<li><a href=\"https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-hist-source-a01-hist-bio\">A01-HIST-BIO · 《氟缘笃志：陈庆云传》</a>：参考底本印刷23–33页相关留苏章节</li>\n<li><a href=\"https://sioc.cas.cn/dncqy/\">A01-HIST-SIOC · 上海有机所陈庆云院士生平</a>：留苏研究六氟丙酮与六氟双酚A制备段</li>\n<li><a href=\"https://link.springer.com/article/10.1007/BF00910798\">A01-HIST-P1960 · Fluorinated ketones，Communication 1</a>：1960，9：647–653；DOI 10.1007/BF00910798；作者、机构、收到稿件1958-07-26及刊期1960年4月分别登记</li>\n<li><a href=\"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n105\">A01-HIST-P1960 · 第一报馆藏英译原页</a>：英译652页，Internet Archive leaf105；讨论至参考文献范围为647–653页、leaf100–106</li>\n<li><a href=\"https://poleznayamodel.ru/patent/11/117491.html\">CQ-H02 · 第117491号说明书与原图入口</a>：标题、署名、1958-07-19申请栏（604379/23）、实例及发明要点；申请日不写作授予日</li>\n</ul></details><aside class=\"a01-platform-note\"><h3>平台整理说明</h3><p>平台AI用于原文转录、译读和引据关联，对平台新增引用与解释的准确性负责；这些整理不属于超过原作者工作的科学新发现，也不重新认证陈先生的历史成果。平台释读保留review_required、release_eligible=false；文献核校不称实验复现或机理验证，M0继续暂停。</p><p><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A01_PRIMARY_READING_zh-CN.md\">原文证据与学术贡献说明</a> · <a href=\"../../research/index.html#ai-a01\">A01（全氟酮化学：六氟丙酮与双酚AF）的AI辅助资料</a></p></aside></article>\n"
+    },
+    {
+      "old": "",
+      "new": "    if (root/'provenance/platform-presentation.v25.json').exists() and not (root/PRESENTATION_V24_PATH).exists():\n        raise ValueError('A01 primary presentation requires its immutable v24 predecessor')\n"
+    },
+    {
+      "old": "",
+      "new": "\nfrom a01_primary_publication import (MANIFEST as A01_PRIMARY_MANIFEST,\n    predecessor_bytes as a01_primary_predecessor_bytes, apply as apply_a01_primary_presentation)\n"
+    },
+    {
+      "old": "_file(root, name).read_bytes(",
+      "new": "a01_primary_predecessor_bytes(root, name"
+    },
+    {
+      "old": "",
+      "new": "        if (root/A01_PRIMARY_MANIFEST).exists():\n            raise ValueError('A01 primary presentation requires its immutable v24 predecessor')\n"
+    },
+    {
+      "old": "_file(root, 'scripts/render_ai_research.py').read_bytes(",
+      "new": "a01_primary_predecessor_bytes(root, 'scripts/render_ai_research.py'"
+    },
+    {
+      "old": "_file(root, name).read_text",
+      "new": "a01_primary_predecessor_bytes(root, name).decode"
+    },
+    {
+      "old": "_file(root, 'site/'+route).read_bytes(",
+      "new": "a01_primary_predecessor_bytes(root, 'site/'+route"
+    },
+    {
+      "old": "_file(root, 'site/'+name).read_bytes(",
+      "new": "a01_primary_predecessor_bytes(root, 'site/'+name"
+    },
+    {
+      "old": "from render_ai_research import inspect_ai_research\n    from render_a02_history import inspect_a02_history\n    checks = [inspect_ai_research(root), inspect_a02_history(root)]\n    if any(c.get('status') != 'passed' for c in checks):\n",
+      "new": "# v24 replays its fixed bytes; v25 checks complete current A01/AI rendering.\n    if not (root/A01_PRIMARY_MANIFEST).exists():\n        from render_ai_research import inspect_ai_research\n        from render_a02_history import inspect_a02_history\n        checks = [inspect_ai_research(root), inspect_a02_history(root)]\n        if any(c.get('status') != 'passed' for c in checks):\n    "
+    },
+    {
+      "old": "updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}",
+      "new": "apply_a01_primary_presentation(root, updated,\n        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})"
+    }
+  ],
+  "boundary": "Only the bounded A01 topic/history marker and A01 research-page section, separate qualified public historical source, fixed A01 AI fields, related documents/renderers and publication implementation change. Homepage, achievement summary, original A01 v1/v2 JSON and embedded payload, all other lines, original scientific data and all v1-v24 manifests retain their exact bytes. No private originals, unresolved lists, local paths or internal statistics are published. Platform reading is not a new historical discovery or a scientific release.",
+  "publish_allowlist": "Unchanged: sixteen static HTML pages, two original public JSON files and an empty .nojekyll marker, nineteen regular published files.",
+  "remote_action_performed": false
+}

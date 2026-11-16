@@ -11,6 +11,9 @@ import json
 from pathlib import Path, PurePosixPath
 import re
 
+from a01_primary_publication import (MANIFEST as A01_PRIMARY_MANIFEST,
+    predecessor_bytes as a01_primary_predecessor_bytes, apply as apply_a01_primary_presentation)
+
 MANIFEST = 'provenance/platform-presentation.v24.json'
 PRESENTATION_ID = 'PLATFORM-LITERATURE-CHECKS-20261116-v24'
 PREVIOUS_COMMIT = 'c8340dd5050224ac8d462560138907a8863fd82e'
@@ -44,12 +47,12 @@ def _file(root: Path, name: str) -> Path:
 
 
 def _json(root: Path, name: str):
-    return json.loads(_file(root, name).read_bytes())
+    return json.loads(a01_primary_predecessor_bytes(root, name))
 
 
 def predecessor_bytes(root: Path, name: str) -> bytes:
     """Recover exact fixed c8340dd bytes before replaying the immutable chain."""
-    current = _file(root, name).read_bytes()
+    current = a01_primary_predecessor_bytes(root, name)
     if not (root/MANIFEST).exists():
         return current
     data = _json(root, MANIFEST)
@@ -111,18 +114,20 @@ def _set_pointer(data, pointer: str, value):
 
 
 def _binding(root: Path, name: str) -> dict:
-    data = _file(root, name).read_bytes()
+    data = a01_primary_predecessor_bytes(root, name)
     return {'path': name, 'sha256': _sha(data), 'bytes': len(data)}
 
 
 def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:
     """Validate only the fixed literature update after historical v23 replay."""
     if not (root/MANIFEST).exists():
+        if (root/A01_PRIMARY_MANIFEST).exists():
+            raise ValueError('A01 primary presentation requires its immutable v24 predecessor')
         return entries, previous_report
     if not (root/PREVIOUS_MANIFEST).is_file():
         raise ValueError('Literature presentation requires the immutable v23 predecessor')
     for name, sha in OLD_MANIFESTS.items():
-        if _sha(_file(root, name).read_bytes()) != sha:
+        if _sha(a01_primary_predecessor_bytes(root, name)) != sha:
             raise ValueError('Historical presentation manifest changed: '+name)
     data = _json(root, MANIFEST)
     required = {
@@ -162,7 +167,7 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
         raise ValueError('Literature presentation requires exactly its used replacement pool')
     for name, (sha, size) in PREDECESSOR_FILES.items():
         old = predecessor_bytes(root, name)
-        if _sha(old) != sha or len(old) != size or old == _file(root, name).read_bytes():
+        if _sha(old) != sha or len(old) != size or old == a01_primary_predecessor_bytes(root, name):
             raise ValueError('Literature predecessor differs from fixed c8340dd: '+name)
     for name, updates in EXPECTED_JSON_UPDATES.items():
         expected = json.loads(predecessor_bytes(root, name))
@@ -170,11 +175,11 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
             _set_pointer(expected, update['pointer'], update['value'])
         if _json(root, name) != expected:
             raise ValueError('Literature JSON differs outside its fixed field updates: '+name)
-    if _sha(_file(root, 'scripts/render_ai_research.py').read_bytes()) != RENDERER_SHA256:
+    if _sha(a01_primary_predecessor_bytes(root, 'scripts/render_ai_research.py')) != RENDERER_SHA256:
         raise ValueError('Literature renderer differs from reviewed fixed implementation')
     for name in (AI, A02, 'site/research/index.html', 'site/topics/fluoromonomers/index.html',
                  'docs/AI_RESEARCH_zh-CN.md', 'docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md'):
-        text = _file(root, name).read_text('utf-8')
+        text = a01_primary_predecessor_bytes(root, name).decode('utf-8')
         if re.search(r'(?i)private-sources|current-item-register|现阶段待查事项统计|[CD]:[\\/]', text):
             raise ValueError('Private evidence or a local path leaked into public literature display: '+name)
     changes = data.get('changes')
@@ -187,7 +192,7 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
     for item in changes:
         route = item['path']; old_entry = entries[route]
         before = predecessor_bytes(root, 'site/'+route)
-        after = _file(root, 'site/'+route).read_bytes()
+        after = a01_primary_predecessor_bytes(root, 'site/'+route)
         if (item.get('old_sha256') != old_entry['sha256'] or item.get('old_bytes') != old_entry['bytes']
                 or _sha(before) != old_entry['sha256'] or len(before) != old_entry['bytes']
                 or item.get('new_sha256') != _sha(after) or item.get('new_bytes') != len(after)
@@ -202,14 +207,16 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
             raise ValueError('Literature presentation lost or duplicated source/navigation IDs: '+route)
         updated[route] = {**old_entry, 'sha256': _sha(after), 'bytes': len(after), 'presentation_id': PRESENTATION_ID}
     for name, expected in updated.items():
-        value = _file(root, 'site/'+name).read_bytes()
+        value = a01_primary_predecessor_bytes(root, 'site/'+name)
         if _sha(value) != expected['sha256'] or len(value) != expected['bytes']:
             raise ValueError('Literature update changed an unlisted website byte: '+name)
-    from render_ai_research import inspect_ai_research
-    from render_a02_history import inspect_a02_history
-    checks = [inspect_ai_research(root), inspect_a02_history(root)]
-    if any(c.get('status') != 'passed' for c in checks):
-        raise ValueError('Literature display differs from its current source rendering: '+str(checks))
+    # v24 replays its fixed bytes; v25 checks complete current A01/AI rendering.
+    if not (root/A01_PRIMARY_MANIFEST).exists():
+        from render_ai_research import inspect_ai_research
+        from render_a02_history import inspect_a02_history
+        checks = [inspect_ai_research(root), inspect_a02_history(root)]
+        if any(c.get('status') != 'passed' for c in checks):
+            raise ValueError('Literature display differs from its current source rendering: '+str(checks))
     report = {'path': MANIFEST, 'sha256': _sha(_file(root, MANIFEST).read_bytes()),
         'presentation_id': PRESENTATION_ID, 'publication_kind': required['publication_kind'],
         'changed_paths': list(ROUTES), 'added_paths': [],
@@ -219,4 +226,5 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
         'homepage_original_JSON_and_scientific_data_preserved': True,
         **{k: required[k] for k in ('scientific_review_status', 'release_eligible',
             'scientific_data_unchanged', 'M0_resumed', 'historical_achievement_independent_of_AI_review')}}
-    return updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}
+    return apply_a01_primary_presentation(root, updated,
+        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})

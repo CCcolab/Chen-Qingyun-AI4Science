@@ -50,7 +50,7 @@ def history_summary(data: dict, name: str) -> str:
             '<a href="'+topic+'#a01-historical-sources">查看来源、作者与阅读范围</a>。历史成果按原作者与材料范围呈现。</p></details></div></article>')
 
 
-def topic_history(data: dict) -> str:
+def topic_history(data: dict, root: Path = ROOT) -> str:
     evaluation = data['historical_evaluation']
     source_id = evaluation['source_id']
     out = ['<style id="a01-history-css">#a01-historical-sources{overflow-wrap:anywhere}#a01-historical-sources li{margin-bottom:1.2em}#record-inventor-certificate dd{margin-inline-start:18px;overflow-wrap:anywhere}</style>',
@@ -71,7 +71,12 @@ def topic_history(data: dict) -> str:
         out += ['<p><b>学术意义：</b>'+text(card['significance'])+'</p>',
                 '<p class="evidence">'+refs(card['source_refs'])+'</p>',
                 '<details><summary>适用范围与待核事项</summary>'+bullet(card['limits'])+'</details></section>']
-    out += ['</article>', first_report(data), '<article id="record-inventor-certificate"><span class="status">A01 · 文书档案</span>',
+    from render_a01_primary_reading import render_primary_history
+    out += ['</article>', first_report(data)]
+    primary = render_primary_history(root)
+    if primary:
+        out.append(primary)
+    out += ['<article id="record-inventor-certificate"><span class="status">A01 · 文书档案</span>',
             '<h2>第117491号：说明书与证书书影</h2><p>'+text(data['certificate']['statement'])+'</p><dl>']
     for field in data['certificate']['fields']:
         out += ['<dt><b>'+text(field['label'])+'</b></dt><dd>'+text(field['value'] or '尚未取得')+'（'+text(field['status'])+'）</dd>']
@@ -157,7 +162,7 @@ def rendered_blocks(root: Path) -> tuple[dict, dict]:
             raise ValueError('Missing historical source binding')
     blocks = {}
     for name, marker in MARKERS.items():
-        body = topic_history(data) if name == TOPIC else history_summary(data, name)
+        body = topic_history(data, root) if name == TOPIC else history_summary(data, name)
         blocks[name] = '<!-- '+marker+':BEGIN -->\n'+project_html(body, name)+'\n<!-- '+marker+':END -->'
     return data, blocks
 
