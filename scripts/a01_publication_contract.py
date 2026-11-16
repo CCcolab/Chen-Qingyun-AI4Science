@@ -188,6 +188,19 @@ REFERENCES_PREDECESSOR_FILES = {
 }
 REFERENCES_DOCUMENTS = ('README.md', 'scripts/a01_publication_contract.py')
 AI_RESEARCH_ROUTE = 'research/index.html'
+
+PRESENTATION_V20_SHA256 = '34814fabc405812bccc433018f8a197d181a3da9ac617f84cceda51513774b72'
+PRESENTATION_V21_PATH = 'provenance/platform-presentation.v21.json'
+PRESENTATION_V21_ID = 'PLATFORM-A02-EVIDENCE-BOUNDARY-20261116-v21'
+PRESENTATION_V21_PREVIOUS_COMMIT = '7a53bc6d6afcb9b0ea3f3d01ca1bf862cfa84b57'
+A02_BOUNDARY_ROUTES = {A02_HISTORY_ROUTE, AI_RESEARCH_ROUTE}
+A02_BOUNDARY_PREDECESSOR_FILES = {'content/a02-academic-achievements.v1.json': ('520e16d611f15f08519fa94e1857b0ad4b044b63799648b41ff675551c1c0617', 54017), 'docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md': ('20ec5748a84267ebb773e62c3574f40393c0f9fc6d7b2ae31c826545bb8d6396', 41445), 'site/topics/fluoromonomers/index.html': ('8108f9a3674b61fecb4f2a1a6fb71b2b1a95745eff95bb243d9f5d27a9160f46', 59881), 'content/ai-research-section.v1.json': ('f27d998f4274f2202efcd4a036311c6c8cd1fff3b8a13b3e56512354a2d18aaf', 66739), 'docs/AI_RESEARCH_zh-CN.md': ('1ba9ed4363b1080b6dc51cd568a080fdf44b6f9ff5b3c25247dccacea7ef9704', 35869), 'site/research/index.html': ('c6817f7bea64843a36e21009aa3997feaf57e315fccd7b3e1a5e9e6abaf98223', 49697), 'scripts/a01_publication_contract.py': ('169e46ad2bb8cbaafeb93599b66e5268e5d351533cdfb12d1c5278de1d51bf99', 260043)}
+A02_BOUNDARY_DOCUMENTS = A02_DOCUMENTS
+A02_BOUNDARY_FINDING = '四氯化碳体系中，分馏、¹⁹F NMR及脱氯化氢反应支持主要单加成结构CCl₃CH₂CF₂Cl；过渡馏分的弱峰被作者解释为可能含极少量反向异构体。全氟叔丁基碘体系的主要结构(CF₃)₃CCH₂CF₂I由元素分析、光谱分析及化学转化等证据归属。'
+A02_BOUNDARY_LOCATOR = 'p.176–177；p.179实验'
+A02_BOUNDARY_AI_SUMMARY = '已分开材料牌号、两类调聚产物和不同氟油；保留原刊中文摘要与正文胺名等异文，并把少量反向异构体线索限定于四氯化碳体系的过渡馏分。尚未开展本线复算、量化计算、实验或材料性能验证。'
+A02_BOUNDARY_AI_LIMIT = '原刊支持主要加成方向；四氯化碳体系过渡馏分的弱峰是作者保留极少量反向异构体可能性的依据，不把该线索推广至两类体系。原作者的极性解释不作平台机制确认，乳化用途也不升级为定量性能或环境安全结论。'
+
 AI_RESEARCH_CONTENT = 'content/ai-research-section.v1.json'
 AI_RESEARCH_RENDERER = 'scripts/render_ai_research.py'
 AI_RESEARCH_DOCUMENT = 'docs/AI_RESEARCH_zh-CN.md'
@@ -322,9 +335,61 @@ def project_file(root: Path, name: str) -> Path:
     return candidate
 
 
+def boundary_predecessor_bytes(root: Path, name: str) -> bytes:
+    """Undo only the seven explicitly permitted v21 presentation files."""
+    current = project_file(root, name).read_bytes()
+    if not (root/PRESENTATION_V21_PATH).exists():
+        return current
+    data = read_json(project_file(root, PRESENTATION_V21_PATH))
+    if not isinstance(data, dict):
+        raise ValueError('A02 evidence-boundary presentation must be a JSON object')
+    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')
+    if not isinstance(files, list) or not isinstance(pool, list):
+        raise ValueError('A02 evidence-boundary require exact reversible text patch records')
+    matches = [row for row in files if isinstance(row, dict) and row.get('path') == name]
+    if not matches:
+        return current
+    if len(matches) != 1 or name not in A02_BOUNDARY_PREDECESSOR_FILES:
+        raise ValueError('Unauthorized or duplicate A02 evidence-boundary predecessor record: '+name)
+    record = matches[0]; old_sha, old_size = A02_BOUNDARY_PREDECESSOR_FILES[name]
+    if (record.get('old_sha256') != old_sha or record.get('old_bytes') != old_size
+            or hashlib.sha256(current).hexdigest() != record.get('new_sha256')
+            or len(current) != record.get('new_bytes')):
+        raise ValueError('A02 evidence-boundary file differs from its complete old/new identities: '+name)
+    edits = record.get('edits')
+    if not isinstance(edits, list) or not edits:
+        raise ValueError('A02 evidence-boundary changes require nonempty text edits: '+name)
+    chunks, cursor, old_end, delta = [], 0, 0, 0
+    for edit in edits:
+        if not isinstance(edit, dict) or set(edit) != {'old_offset', 'replacement'}:
+            raise ValueError('Invalid reversible A02 evidence-boundary text edit: '+name)
+        offset, replacement = edit['old_offset'], edit['replacement']
+        if (type(offset) is not int or offset < old_end or type(replacement) is not int
+                or not 0 <= replacement < len(pool)):
+            raise ValueError('Overlapping or invalid A02 evidence-boundary text edit: '+name)
+        pair = pool[replacement]
+        if (not isinstance(pair, dict) or set(pair) != {'old', 'new'}
+                or not all(isinstance(pair.get(key), str) for key in ('old', 'new'))
+                or pair['old'] == pair['new']):
+            raise ValueError('Invalid A02 evidence-boundary text replacement pool')
+        before, after = pair['old'].encode('utf-8'), pair['new'].encode('utf-8')
+        position = offset+delta
+        if position < cursor or current[position:position+len(after)] != after:
+            raise ValueError('A02 evidence-boundary replacement differs at its exact offset: '+name)
+        chunks.extend((current[cursor:position], before))
+        cursor, old_end = position+len(after), offset+len(before)
+        delta += len(after)-len(before)
+    rebuilt = b''.join((*chunks, current[cursor:]))
+    if hashlib.sha256(rebuilt).hexdigest() != old_sha or len(rebuilt) != old_size:
+        raise ValueError('A02 evidence-boundary predecessor cannot be reconstructed exactly: '+name)
+    return rebuilt
+
+
+
+
 def holdings_predecessor_bytes(root: Path, name: str) -> bytes:
     """Undo only the seven explicitly permitted v20 presentation files."""
-    current = project_file(root, name).read_bytes()
+    current = boundary_predecessor_bytes(root, name)
     if not (root/PRESENTATION_V20_PATH).exists():
         return current
     data = read_json(project_file(root, PRESENTATION_V20_PATH))
@@ -1202,6 +1267,8 @@ def apply_presentation_v1(root: Path, entries: dict, *, chain: list,
 
 def apply_presentation_overlay(root: Path, entries: dict, *, chain: list) -> tuple[dict, dict | None]:
     """Apply v1, then this bounded historical-content successor if present."""
+    if (root/PRESENTATION_V21_PATH).exists() and not (root/PRESENTATION_V20_PATH).exists():
+        raise ValueError('A02 evidence correction requires its fixed v20 predecessor')
     if (root/PRESENTATION_V20_PATH).exists() and not (root/PRESENTATION_V19_PATH).exists():
         raise ValueError('A02 holdings presentation requires its fixed v19 predecessor')
     if (root/PRESENTATION_V19_PATH).exists() and not (root/PRESENTATION_V18_PATH).exists():
@@ -3369,8 +3436,8 @@ def apply_a02_holdings_presentation(root: Path, entries: dict, previous_report: 
     if digest(project_file(root, PRESENTATION_V19_PATH)) != PRESENTATION_V19_SHA256:
         raise ValueError('The preceding A02 original-followup presentation v19 is immutable')
     path = project_file(root, PRESENTATION_V20_PATH); data = read_json(path)
-    documents = [{'path': name, 'sha256': digest(project_file(root, name)),
-                  'bytes': project_file(root, name).stat().st_size} for name in A02_HOLDINGS_DOCUMENTS]
+    documents = [{'path': name, 'sha256': hashlib.sha256(boundary_predecessor_bytes(root, name)).hexdigest(),
+                  'bytes': len(boundary_predecessor_bytes(root, name))} for name in A02_HOLDINGS_DOCUMENTS]
     required = {'schema_version': '20.0', 'presentation_id': PRESENTATION_V20_ID,
         'publication_kind': 'platform_a02_holdings',
         'previous_presentation_commit': PRESENTATION_V20_PREVIOUS_COMMIT,
@@ -3404,12 +3471,12 @@ def apply_a02_holdings_presentation(root: Path, entries: dict, previous_report: 
         old = holdings_predecessor_bytes(root, name)
         if hashlib.sha256(old).hexdigest() != sha or len(old) != size:
             raise ValueError('A02 holdings predecessor differs from fixed 11a927d: '+name)
-        if old != project_file(root, name).read_bytes():
+        if old != boundary_predecessor_bytes(root, name):
             changed.add(name)
     if {row['path'] for row in files} != changed:
         raise ValueError('Team patches must enumerate every and only changed predecessor file')
     old_ai = json.loads(holdings_predecessor_bytes(root, AI_RESEARCH_CONTENT))
-    current_ai = read_json(project_file(root, AI_RESEARCH_CONTENT))
+    current_ai = json.loads(boundary_predecessor_bytes(root, AI_RESEARCH_CONTENT))
     try:
         summary = current_ai['lines'][1]['records'][-1]['summary']
     except (KeyError, IndexError, TypeError) as error:
@@ -3422,7 +3489,7 @@ def apply_a02_holdings_presentation(root: Path, entries: dict, previous_report: 
     if current_ai != expected_ai:
         raise ValueError('Only the final A02 AI-record summary may change in the complete AI registry')
     old_history = json.loads(holdings_predecessor_bytes(root, A02_HISTORY_CONTENT))
-    history = read_json(project_file(root, A02_HISTORY_CONTENT))
+    history = json.loads(boundary_predecessor_bytes(root, A02_HISTORY_CONTENT))
     validate_a02_holdings_history(old_history, history)
     changes = data.get('changes')
     if (not isinstance(changes, list) or any(not isinstance(row, dict) for row in changes)
@@ -3433,7 +3500,7 @@ def apply_a02_holdings_presentation(root: Path, entries: dict, previous_report: 
     updated = {name:dict(row) for name,row in entries.items()}
     for item in changes:
         name=item['path']; old=entries[name]
-        before=holdings_predecessor_bytes(root,'site/'+name); after=project_file(root,'site/'+name).read_bytes()
+        before=holdings_predecessor_bytes(root,'site/'+name); after=boundary_predecessor_bytes(root,'site/'+name)
         source,current=before.decode('utf-8'),after.decode('utf-8')
         if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']
                 or hashlib.sha256(before).hexdigest() != old['sha256'] or len(before) != old['bytes']
@@ -3474,18 +3541,20 @@ def apply_a02_holdings_presentation(root: Path, entries: dict, previous_report: 
                 raise ValueError('Team records changed outside the A02 entry: '+name)
         updated[name]={**old,'sha256':item['new_sha256'],'bytes':item['new_bytes'],'presentation_id':PRESENTATION_V20_ID}
     for name in (AI_RESEARCH_DOCUMENT,A02_HISTORY_DOCUMENT):
-        prose=project_file(root,name).read_text('utf-8')
+        prose=boundary_predecessor_bytes(root,name).decode('utf-8')
         if project_markdown(prose)!=prose:
             raise ValueError('Team prose lost canonical named achievement references: '+name)
     for name,expected in updated.items():
-        member=project_file(root,'site/'+name)
-        if digest(member)!=expected['sha256'] or member.stat().st_size!=expected['bytes']:
+        member=boundary_predecessor_bytes(root,'site/'+name)
+        if hashlib.sha256(member).hexdigest()!=expected['sha256'] or len(member)!=expected['bytes']:
             raise ValueError('Team records changed an unlisted website byte: '+name)
-    from render_a02_history import inspect_a02_history
-    from render_ai_research import inspect_ai_research
-    for label,check in (('A02 history',inspect_a02_history(root)),('AI record',inspect_ai_research(root))):
-        if check.get('status')!='passed':
-            raise ValueError(label+' differs from its source-derived rendering: '+str(check.get('errors',[])))
+    # Historical v20 bytes are reconstructed before checking the final layer.
+    if not (root/PRESENTATION_V21_PATH).exists():
+        from render_a02_history import inspect_a02_history
+        from render_ai_research import inspect_ai_research
+        for label,check in (('A02 history',inspect_a02_history(root)),('AI record',inspect_ai_research(root))):
+            if check.get('status')!='passed':
+                raise ValueError(label+' differs from its source-derived rendering: '+str(check.get('errors',[])))
     members=publication_members(root,updated)
     report={'path':PRESENTATION_V20_PATH,'sha256':digest(path),'presentation_id':PRESENTATION_V20_ID,
         'publication_kind':required['publication_kind'],'changed_paths':sorted(A02_HOLDINGS_ROUTES),'added_paths':[],
@@ -3499,7 +3568,123 @@ def apply_a02_holdings_presentation(root: Path, entries: dict, previous_report: 
         'original_embedded_json_bytes_preserved':True,'published_member_count_with_marker':len(members)+1,
         **{key:required[key] for key in ('scientific_review_status','scientific_data_unchanged',
             'historical_achievement_independent_of_AI_review','release_eligible','M0_resumed')}}
-    return updated,{**report,'presentation_chain':[*previous_report['presentation_chain'],report]}
+    return apply_a02_boundary_presentation(root, updated,
+        {**report,'presentation_chain':[*previous_report['presentation_chain'],report]})
+
+
+
+def apply_a02_boundary_presentation(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:
+    """Correct only the acquired 1980 paper's evidence description and its A02 AI summary."""
+    if not (root/PRESENTATION_V21_PATH).exists():
+        return entries, previous_report
+    if digest(project_file(root, PRESENTATION_V20_PATH)) != PRESENTATION_V20_SHA256:
+        raise ValueError('The preceding A02 holdings presentation v20 is immutable')
+    path = project_file(root, PRESENTATION_V21_PATH); data = read_json(path)
+    documents = [{'path': name, 'sha256': digest(project_file(root, name)),
+                  'bytes': project_file(root, name).stat().st_size} for name in A02_BOUNDARY_DOCUMENTS]
+    required = {'schema_version': '21.0', 'presentation_id': PRESENTATION_V21_ID,
+        'publication_kind': 'platform_a02_evidence_boundary',
+        'previous_presentation_commit': PRESENTATION_V21_PREVIOUS_COMMIT,
+        'previous_presentation': {'path': PRESENTATION_V20_PATH, 'sha256': PRESENTATION_V20_SHA256},
+        'original_baseline_sha256': BASELINE_SHA256, 'original_archive_sha256': ARCHIVE_SHA256,
+        'allowed_html_paths': sorted(A02_BOUNDARY_ROUTES), 'added_html_paths': [], 'additions': [],
+        'allowed_achievement_lines': ['A02'], 'editorial_documents': documents,
+        'protected_website_members': {name: {'sha256': row['sha256'], 'bytes': row['bytes']}
+            for name, row in entries.items() if name not in A02_BOUNDARY_ROUTES},
+        'reconstruction_kind': 'deduplicated_exact_utf8_text_edits',
+        'scientific_review_status': 'review_required', 'release_eligible': False,
+        'scientific_data_unchanged': True, 'M0_resumed': False,
+        'historical_achievement_independent_of_AI_review': True}
+    if (not isinstance(data, dict) or any(data.get(key) != value for key, value in required.items())
+            or any(data.get(key) is not required[key] for key in ('release_eligible',
+                'scientific_data_unchanged', 'M0_resumed', 'historical_achievement_independent_of_AI_review'))
+            or any(type(data.get(key)) is not int or data[key] != 0 for key in ('new_quantum_calls', 'new_model_API_calls'))
+            or not isinstance(data.get('authorization'), str) or not data['authorization'].strip()):
+        raise ValueError('Unsupported bounded A02 evidence correction v21')
+    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')
+    if (not isinstance(files, list) or not files or not isinstance(pool, list) or not pool
+            or any(not isinstance(row, dict) or row.get('path') not in A02_BOUNDARY_PREDECESSOR_FILES for row in files)
+            or len({row['path'] for row in files}) != len(files)
+            or any(not isinstance(row.get('edits'), list) or not row['edits'] or any(
+                not isinstance(edit, dict) or type(edit.get('replacement')) is not int for edit in row['edits']) for row in files)):
+        raise ValueError('A02 evidence correction may enumerate only seven fixed predecessor files')
+    if {edit['replacement'] for row in files for edit in row['edits']} != set(range(len(pool))):
+        raise ValueError('A02 evidence correction requires exactly its used replacement segments')
+    changed = set()
+    for name, (sha, size) in A02_BOUNDARY_PREDECESSOR_FILES.items():
+        old = boundary_predecessor_bytes(root, name)
+        if hashlib.sha256(old).hexdigest() != sha or len(old) != size:
+            raise ValueError('A02 evidence predecessor differs from fixed 7a53bc6: '+name)
+        if old != project_file(root, name).read_bytes():
+            changed.add(name)
+    if {row['path'] for row in files} != changed or changed != set(A02_BOUNDARY_PREDECESSOR_FILES):
+        raise ValueError('A02 evidence correction must enumerate every and only its seven changed files')
+    old_history = json.loads(boundary_predecessor_bytes(root, A02_HISTORY_CONTENT))
+    expected_history = json.loads(json.dumps(old_history))
+    expected_history['paper']['observations'][1]['finding'] = A02_BOUNDARY_FINDING
+    expected_history['paper']['observations'][1]['locator'] = A02_BOUNDARY_LOCATOR
+    if read_json(project_file(root, A02_HISTORY_CONTENT)) != expected_history:
+        raise ValueError('Only the selected 1980 observation finding and locator may change')
+    old_ai = json.loads(boundary_predecessor_bytes(root, AI_RESEARCH_CONTENT))
+    expected_ai = json.loads(json.dumps(old_ai))
+    expected_ai['lines'][1]['records'][2]['summary'] = A02_BOUNDARY_AI_SUMMARY
+    expected_ai['lines'][1]['boundaries'][1] = A02_BOUNDARY_AI_LIMIT
+    if read_json(project_file(root, AI_RESEARCH_CONTENT)) != expected_ai:
+        raise ValueError('Only the corresponding A02 AI summary and boundary sentence may change')
+    changes = data.get('changes')
+    if (not isinstance(changes, list) or any(not isinstance(row, dict) for row in changes)
+            or [row.get('path') for row in changes] != sorted(A02_BOUNDARY_ROUTES)):
+        raise ValueError('A02 evidence correction may change only its topic and AI record routes')
+    from public_line_labels import project_html, project_markdown
+    json_scripts = re.compile(r'<script\b[^>]*\btype\s*=\s*["\']application/(?:ld\+)?json["\'][^>]*>.*?</script\s*>', re.I | re.S)
+    updated = {name: dict(row) for name, row in entries.items()}
+    for item in changes:
+        name = item['path']; old = entries[name]
+        before = boundary_predecessor_bytes(root, 'site/'+name)
+        after = project_file(root, 'site/'+name).read_bytes()
+        source, current = before.decode('utf-8'), after.decode('utf-8')
+        if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']
+                or hashlib.sha256(before).hexdigest() != old['sha256'] or len(before) != old['bytes']
+                or item.get('new_sha256') != hashlib.sha256(after).hexdigest() or item.get('new_bytes') != len(after)
+                or before == after or not isinstance(item.get('reason'), str) or not item['reason'].strip()):
+            raise ValueError('A02 evidence HTML differs from complete old/new identities: '+name)
+        if json_scripts.findall(source) != json_scripts.findall(current):
+            raise ValueError('A02 evidence correction must retain every embedded JSON byte')
+        if set(re.findall(r'\bid="([^\"]+)"', source)) != set(re.findall(r'\bid="([^\"]+)"', current)):
+            raise ValueError('A02 evidence correction must retain all navigation and source IDs')
+        if project_html(current, name) != current:
+            raise ValueError('A02 evidence correction lost canonical named achievement references')
+        pattern = (r'<article\b[^>]*\bid="a02-vdf-1980"[^>]*>.*?</article>' if name == A02_HISTORY_ROUTE
+                   else r'<section\b[^>]*\bid="ai-a02"[^>]*>.*?</section>')
+        if (len(re.findall(pattern, source, re.S)) != 1 or len(re.findall(pattern, current, re.S)) != 1
+                or re.sub(pattern, '<A02-CORRECTION/>', source, flags=re.S) != re.sub(pattern, '<A02-CORRECTION/>', current, flags=re.S)):
+            raise ValueError('A02 evidence correction changed outside the specific source article: '+name)
+        updated[name] = {**old, 'sha256': item['new_sha256'], 'bytes': item['new_bytes'], 'presentation_id': PRESENTATION_V21_ID}
+    for name in (AI_RESEARCH_DOCUMENT, A02_HISTORY_DOCUMENT):
+        prose = project_file(root, name).read_text('utf-8')
+        if project_markdown(prose) != prose:
+            raise ValueError('A02 evidence prose lost canonical named achievement references: '+name)
+    for name, expected in updated.items():
+        member = project_file(root, 'site/'+name)
+        if digest(member) != expected['sha256'] or member.stat().st_size != expected['bytes']:
+            raise ValueError('A02 evidence correction changed an unlisted website byte: '+name)
+    from render_a02_history import inspect_a02_history
+    from render_ai_research import inspect_ai_research
+    for label, check in (('A02 history', inspect_a02_history(root)), ('AI record', inspect_ai_research(root))):
+        if check.get('status') != 'passed':
+            raise ValueError(label+' differs from its source-derived rendering: '+str(check.get('errors', [])))
+    members = publication_members(root, updated)
+    report = {'path': PRESENTATION_V21_PATH, 'sha256': digest(path), 'presentation_id': PRESENTATION_V21_ID,
+        'publication_kind': required['publication_kind'], 'changed_paths': sorted(A02_BOUNDARY_ROUTES), 'added_paths': [],
+        'changed_achievement_lines': ['A02'], 'previous_presentation_commit': PRESENTATION_V21_PREVIOUS_COMMIT,
+        'exact_predecessor_reconstruction': True, 'source_derived_rendering': True,
+        'only_selected_1980_observation_and_A02_AI_description_corrected': True,
+        'original_history_team_background_source_trace_and_inventory_preserved': True,
+        'homepage_A01_and_original_source_data_unchanged': True,
+        'original_embedded_json_bytes_preserved': True, 'published_member_count_with_marker': len(members)+1,
+        **{key: required[key] for key in ('scientific_review_status', 'scientific_data_unchanged',
+            'historical_achievement_independent_of_AI_review', 'release_eligible', 'M0_resumed')}}
+    return updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}
 
 
 def effective_website_entries(root: Path, baseline: dict, *, verify_current=True,

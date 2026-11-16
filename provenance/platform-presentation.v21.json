@@ -1,0 +1,411 @@
+{
+  "schema_version": "21.0",
+  "presentation_id": "PLATFORM-A02-EVIDENCE-BOUNDARY-20261116-v21",
+  "created_at_utc": "2026-11-16T01:25:08.570158+00:00",
+  "publication_kind": "platform_a02_evidence_boundary",
+  "authorization": "User request dated 2026-11-16 to recheck existing A02 materials without expanding scientific scope. Correct the acquired 1980 paper evidence description and narrowly match its existing A02 AI summary; preserve M0 pause, original attribution and review_required. This declaration makes the local correction buildable and does not authorize or represent remote deployment.",
+  "previous_presentation_commit": "7a53bc6d6afcb9b0ea3f3d01ca1bf862cfa84b57",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v20.json",
+    "sha256": "34814fabc405812bccc433018f8a197d181a3da9ac617f84cceda51513774b72"
+  },
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "allowed_html_paths": [
+    "research/index.html",
+    "topics/fluoromonomers/index.html"
+  ],
+  "added_html_paths": [],
+  "allowed_achievement_lines": [
+    "A02"
+  ],
+  "editorial_documents": [
+    {
+      "path": "content/a02-academic-achievements.v1.json",
+      "sha256": "f7372dbd92a20989d814334e297931b38f07ad14c209e27e9f089cc4a720b4b9",
+      "bytes": 54170
+    },
+    {
+      "path": "scripts/render_a02_history.py",
+      "sha256": "0d598601ccbbd0064bc95b513055c32c7342459937a5504d5f7af74167be8e9c",
+      "bytes": 21602
+    },
+    {
+      "path": "docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "sha256": "1a6de57e4bce730bfd2f1ffe2a26398ab7494d92808f55515324fdbcf34473e8",
+      "bytes": 41598
+    },
+    {
+      "path": "content/ai-research-section.v1.json",
+      "sha256": "d3af3ed21cf929b55099b799628e8f224b033be332dbcb4e0d999cf1308ea320",
+      "bytes": 66871
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "sha256": "99efc0bebe93fc34e4a5953a78db9105271b4e7b08ef8a7af5acf54c687ce674",
+      "bytes": 36001
+    },
+    {
+      "path": "scripts/render_ai_research.py",
+      "sha256": "729298ecb6146cba6b9a78bdc2074dabb10b6a2f551f7efaf4d0a4078e29f521",
+      "bytes": 34792
+    },
+    {
+      "path": "scripts/public_line_labels.py",
+      "sha256": "27776862621369ea922d97cc5a1d0ff927f1ec2aa5cbe93a0cacf66fee27f695",
+      "bytes": 9737
+    },
+    {
+      "path": "scripts/check_site.py",
+      "sha256": "70b9d2e3c2a8cd13cec93530ec9092761fe8731eccae7aa055ba280c4dfe1fae",
+      "bytes": 23307
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "sha256": "bd7344b83a58d64f00e7c49eadaa36829770ace5051c4a16ea977499c3ce9dee",
+      "bytes": 275315
+    },
+    {
+      "path": "scripts/render_heritage.py",
+      "sha256": "07b1698b1c0485accd96cc0a6d6730bb164258e003737c9f370919920768f27d",
+      "bytes": 42653
+    },
+    {
+      "path": "docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "sha256": "e9c71d5f3a7ad148882aae13847f9bce64d48d8858666285f7c42fbada5181a9",
+      "bytes": 69708
+    }
+  ],
+  "protected_website_members": {
+    "index.html": {
+      "sha256": "8b3532ee45c0fb33912f20a3bd7943043a348f10a370b9c6716e9edf3c0abf41",
+      "bytes": 257766
+    },
+    "pftb/index.html": {
+      "sha256": "42ca404f2ed70b7a3b0b5d8b0eb742a2509e5a5a70fd0be36a65028e61cbd1f6",
+      "bytes": 97587
+    },
+    "topics/f53/index.html": {
+      "sha256": "8def3379a75dda6665d7cb3ee6c32193fc7a61ec6b31098abbefe9218fea39fe",
+      "bytes": 8161
+    },
+    "topics/refrigerants/index.html": {
+      "sha256": "5d9b5a355b949f67c5de252727f8d4e4e7533abab8a666c49a0f932170153c4e",
+      "bytes": 10636
+    },
+    "topics/perfluorosulfonates/index.html": {
+      "sha256": "85a6f4330edb7607f61ca217b71d2ef6c12cb1af0d48aaaebf737acf3a212ea5",
+      "bytes": 8888
+    },
+    "topics/chen-reagent/index.html": {
+      "sha256": "14f08afd4062c0ae171f24e5fb225e5968b003e885edc206baf08ca352b630df",
+      "bytes": 19991
+    },
+    "topics/single-electron-transfer/index.html": {
+      "sha256": "79c84f89e25e576a03f34153b9eb85a5ff73815c8265a0222930d889390ea947",
+      "bytes": 10355
+    },
+    "topics/fluoroporphyrins/index.html": {
+      "sha256": "24b6bb744b594573487847c89bbb35571ea56bc15d444ebeac3339379dbc1875",
+      "bytes": 6018
+    },
+    "topics/early-fluoroketones/index.html": {
+      "sha256": "a6da86d7f9ff0f35a5ea044252297a23e5ed71db829f2d184e3ab38a70dce9a2",
+      "bytes": 250938
+    },
+    "topics/fluorinated-small-rings/index.html": {
+      "sha256": "2413c83d4319746f41e940c04fe48bdeda28244235f5a9e8697285c187ba412d",
+      "bytes": 5924
+    },
+    "topics/deoxyfluorination/index.html": {
+      "sha256": "2aca9c13eb46f9fedfb02a2adfdc9423c207465f58608bcd671838d4d8045df5",
+      "bytes": 5550
+    },
+    "topics/sulfonyl-fluoride/index.html": {
+      "sha256": "fe944efbbfa5a7814015235f4ae3aae101db4046b0c9419986d6855d7ed15b49",
+      "bytes": 5043
+    },
+    "topics/index.html": {
+      "sha256": "44a5690d1e65195b9ff191d2a7ec37487070cdfafb191ae107962d5e0d7ab73c",
+      "bytes": 5055
+    },
+    "achievements/index.html": {
+      "sha256": "df20daf429c46e89e99085550067e8c1e9f7e283b10b7e8269f38da6a9d380ff",
+      "bytes": 95867
+    },
+    "data/public-sources.json": {
+      "sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+      "bytes": 33608
+    },
+    "data/achievement-lines.json": {
+      "sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+      "bytes": 39768
+    },
+    "README.txt": {
+      "sha256": "6e15068b7240ae47d633df3f777e81fbb9e46146ee5f4ab70011f09119b6bbc9",
+      "bytes": 336
+    },
+    "ROUTES.txt": {
+      "sha256": "a734c356877d4534285ab7d71b9fe0f7a17abbced4de3c52f8e60d335301e418",
+      "bytes": 949
+    },
+    "QA.txt": {
+      "sha256": "a60b5f382b31689fa17e2518b7079ef0660674fb62bddbbf564c7b74dfe51067",
+      "bytes": 290
+    },
+    "IONIC-ENTRY-RETEST.txt": {
+      "sha256": "3462b056891a27c335cc2620deb87b245b6c9aea3bdaec607c8a14beca69fe9d",
+      "bytes": 741
+    }
+  },
+  "reconstruction_kind": "deduplicated_exact_utf8_text_edits",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "M0_resumed": false,
+  "historical_achievement_independent_of_AI_review": true,
+  "new_quantum_calls": 0,
+  "new_model_API_calls": 0,
+  "changes": [
+    {
+      "path": "research/index.html",
+      "old_sha256": "c6817f7bea64843a36e21009aa3997feaf57e315fccd7b3e1a5e9e6abaf98223",
+      "old_bytes": 49697,
+      "new_sha256": "55ae69b829c8463f81369be6476f4fb2eb80c9380521e23f2c796a87517b3bd5",
+      "new_bytes": 49829,
+      "reason": "Remove unsupported GC evidence and restrict minor reverse-isomer evidence to the carbon-tetrachloride transition fraction; preserve original reported observations and pending professional review."
+    },
+    {
+      "path": "topics/fluoromonomers/index.html",
+      "old_sha256": "8108f9a3674b61fecb4f2a1a6fb71b2b1a95745eff95bb243d9f5d27a9160f46",
+      "old_bytes": 59881,
+      "new_sha256": "226275b67b0ff281f0cc373e6f0ebceb91eea8c22322278a897ed2bdfdd09e11",
+      "new_bytes": 60034,
+      "reason": "Remove unsupported GC evidence and restrict minor reverse-isomer evidence to the carbon-tetrachloride transition fraction; preserve original reported observations and pending professional review."
+    }
+  ],
+  "additions": [],
+  "reversible_text_files": [
+    {
+      "path": "content/a02-academic-achievements.v1.json",
+      "old_sha256": "520e16d611f15f08519fa94e1857b0ad4b044b63799648b41ff675551c1c0617",
+      "old_bytes": 54017,
+      "new_sha256": "f7372dbd92a20989d814334e297931b38f07ad14c209e27e9f089cc4a720b4b9",
+      "new_bytes": 54170,
+      "edits": [
+        {
+          "old_offset": 5907,
+          "replacement": 0
+        }
+      ]
+    },
+    {
+      "path": "docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "old_sha256": "20ec5748a84267ebb773e62c3574f40393c0f9fc6d7b2ae31c826545bb8d6396",
+      "old_bytes": 41445,
+      "new_sha256": "1a6de57e4bce730bfd2f1ffe2a26398ab7494d92808f55515324fdbcf34473e8",
+      "new_bytes": 41598,
+      "edits": [
+        {
+          "old_offset": 19792,
+          "replacement": 1
+        }
+      ]
+    },
+    {
+      "path": "site/topics/fluoromonomers/index.html",
+      "old_sha256": "8108f9a3674b61fecb4f2a1a6fb71b2b1a95745eff95bb243d9f5d27a9160f46",
+      "old_bytes": 59881,
+      "new_sha256": "226275b67b0ff281f0cc373e6f0ebceb91eea8c22322278a897ed2bdfdd09e11",
+      "new_bytes": 60034,
+      "edits": [
+        {
+          "old_offset": 20620,
+          "replacement": 2
+        }
+      ]
+    },
+    {
+      "path": "content/ai-research-section.v1.json",
+      "old_sha256": "f27d998f4274f2202efcd4a036311c6c8cd1fff3b8a13b3e56512354a2d18aaf",
+      "old_bytes": 66739,
+      "new_sha256": "d3af3ed21cf929b55099b799628e8f224b033be332dbcb4e0d999cf1308ea320",
+      "new_bytes": 66871,
+      "edits": [
+        {
+          "old_offset": 30918,
+          "replacement": 3
+        },
+        {
+          "old_offset": 33523,
+          "replacement": 4
+        }
+      ]
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "old_sha256": "1ba9ed4363b1080b6dc51cd568a080fdf44b6f9ff5b3c25247dccacea7ef9704",
+      "old_bytes": 35869,
+      "new_sha256": "99efc0bebe93fc34e4a5953a78db9105271b4e7b08ef8a7af5acf54c687ce674",
+      "new_bytes": 36001,
+      "edits": [
+        {
+          "old_offset": 16197,
+          "replacement": 3
+        },
+        {
+          "old_offset": 18190,
+          "replacement": 4
+        }
+      ]
+    },
+    {
+      "path": "site/research/index.html",
+      "old_sha256": "c6817f7bea64843a36e21009aa3997feaf57e315fccd7b3e1a5e9e6abaf98223",
+      "old_bytes": 49697,
+      "new_sha256": "55ae69b829c8463f81369be6476f4fb2eb80c9380521e23f2c796a87517b3bd5",
+      "new_bytes": 49829,
+      "edits": [
+        {
+          "old_offset": 26275,
+          "replacement": 5
+        }
+      ]
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "old_sha256": "169e46ad2bb8cbaafeb93599b66e5268e5d351533cdfb12d1c5278de1d51bf99",
+      "old_bytes": 260043,
+      "new_sha256": "bd7344b83a58d64f00e7c49eadaa36829770ace5051c4a16ea977499c3ce9dee",
+      "new_bytes": 275315,
+      "edits": [
+        {
+          "old_offset": 15172,
+          "replacement": 6
+        },
+        {
+          "old_offset": 25070,
+          "replacement": 7
+        },
+        {
+          "old_offset": 25223,
+          "replacement": 8
+        },
+        {
+          "old_offset": 77530,
+          "replacement": 9
+        },
+        {
+          "old_offset": 242046,
+          "replacement": 10
+        },
+        {
+          "old_offset": 245026,
+          "replacement": 8
+        },
+        {
+          "old_offset": 245337,
+          "replacement": 11
+        },
+        {
+          "old_offset": 246175,
+          "replacement": 11
+        },
+        {
+          "old_offset": 246990,
+          "replacement": 12
+        },
+        {
+          "old_offset": 250555,
+          "replacement": 13
+        },
+        {
+          "old_offset": 250792,
+          "replacement": 14
+        },
+        {
+          "old_offset": 251004,
+          "replacement": 15
+        },
+        {
+          "old_offset": 252514,
+          "replacement": 16
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "GC、¹⁹F NMR及化学转化共同支持主要单加成结构CCl₃CH₂CF₂Cl和(CF₃)₃CCH₂CF₂I；作者仍保留可能存在极少量反向异构体的线索。\",\n        \"locator\": \"p.175–176",
+      "new": "四氯化碳体系中，分馏、¹⁹F NMR及脱氯化氢反应支持主要单加成结构CCl₃CH₂CF₂Cl；过渡馏分的弱峰被作者解释为可能含极少量反向异构体。全氟叔丁基碘体系的主要结构(CF₃)₃CCH₂CF₂I由元素分析、光谱分析及化学转化等证据归属。\",\n        \"locator\": \"p.176–177；p.179实验"
+    },
+    {
+      "old": "GC、¹⁹F NMR及化学转化共同支持主要单加成结构CCl₃CH₂CF₂Cl和(CF₃)₃CCH₂CF₂I；作者仍保留可能存在极少量反向异构体的线索。 | p.175–176",
+      "new": "四氯化碳体系中，分馏、¹⁹F NMR及脱氯化氢反应支持主要单加成结构CCl₃CH₂CF₂Cl；过渡馏分的弱峰被作者解释为可能含极少量反向异构体。全氟叔丁基碘体系的主要结构(CF₃)₃CCH₂CF₂I由元素分析、光谱分析及化学转化等证据归属。 | p.176–177；p.179实验"
+    },
+    {
+      "old": "GC、¹⁹F NMR及化学转化共同支持主要单加成结构CCl₃CH₂CF₂Cl和(CF₃)₃CCH₂CF₂I；作者仍保留可能存在极少量反向异构体的线索。</td><td>p.175–176",
+      "new": "四氯化碳体系中，分馏、¹⁹F NMR及脱氯化氢反应支持主要单加成结构CCl₃CH₂CF₂Cl；过渡馏分的弱峰被作者解释为可能含极少量反向异构体。全氟叔丁基碘体系的主要结构(CF₃)₃CCH₂CF₂I由元素分析、光谱分析及化学转化等证据归属。</td><td>p.176–177；p.179实验"
+    },
+    {
+      "old": "及少量反向异构体线索",
+      "new": "，并把少量反向异构体线索限定于四氯化碳体系的过渡馏分"
+    },
+    {
+      "old": "，仍保留少量反向异构体可能性；原作者的极性解释不作平台机制确认。原文乳化用途没有因此",
+      "new": "；四氯化碳体系过渡馏分的弱峰是作者保留极少量反向异构体可能性的依据，不把该线索推广至两类体系。原作者的极性解释不作平台机制确认，乳化用途也不"
+    },
+    {
+      "old": "及少量反向异构体线索。尚未开展本线复算、量化计算、实验或材料性能验证。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#refs\">来源层级与待核证据 →</a></p></div><div class=\"record\"><h4>制取、材料与氟油技术记录：来源分级</h4><p>新取得并核读1963年他组原文与1986年有机所工厂供样的氟氯液体论文，分别提取低温分馏证据、折射率实测与作者修正值、耐压条件和合作分工；另定位FJ-23机构获奖登记。它们不自动等同陈团队制取记录、历史2号／3号或早期氟溴陀螺油。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#a02-technical-records\">技术记录、原报物性与待核关联 →</a></p></div><div class=\"record\"><h4>陈先生团队：具体贡献与原件追查</h4><p>已重读传记p.35–39，细化裂解观察、低温分离、自制仪器与合作分工，列明2018本人访谈、同期试制／装置、历史2号／3号及早期油品原件的追查位置。尚未取得这些新的同期技术原件；后出回顾、馆藏目录与原件分开。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#a02-team-records\">团队贡献、来源分列与原件待核清单 →</a></p></div><div class=\"record\"><h4>本人访谈与所引书页：引据追踪</h4><p>国图2009年《中国科学院》详细书目记3册(377;454;630页)，册数与页数已有书目依据；所引p.291的分册归属及第290–292页原文仍待核。朱晶2019年研究报告的资料索引、2018-01-03访谈原录，以及同期试制、低温分离和早期氟溴油技术原件仍未取得。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#a02-source-trace\">已核定位、资料身份与待取得原件 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>历史原作者实验、机构回顾与平台AI释读分别呈现；氟橡胶1号前期团队成果不全部归陈先生，不同氟油和后续牌号分别登记。</li><li>原刊支持主要加成方向，仍保留少量反向异构体可能性；原作者的极性解释不作平台机制确认。原文乳化用途没有因此",
+      "new": "，并把少量反向异构体线索限定于四氯化碳体系的过渡馏分。尚未开展本线复算、量化计算、实验或材料性能验证。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#refs\">来源层级与待核证据 →</a></p></div><div class=\"record\"><h4>制取、材料与氟油技术记录：来源分级</h4><p>新取得并核读1963年他组原文与1986年有机所工厂供样的氟氯液体论文，分别提取低温分馏证据、折射率实测与作者修正值、耐压条件和合作分工；另定位FJ-23机构获奖登记。它们不自动等同陈团队制取记录、历史2号／3号或早期氟溴陀螺油。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#a02-technical-records\">技术记录、原报物性与待核关联 →</a></p></div><div class=\"record\"><h4>陈先生团队：具体贡献与原件追查</h4><p>已重读传记p.35–39，细化裂解观察、低温分离、自制仪器与合作分工，列明2018本人访谈、同期试制／装置、历史2号／3号及早期油品原件的追查位置。尚未取得这些新的同期技术原件；后出回顾、馆藏目录与原件分开。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#a02-team-records\">团队贡献、来源分列与原件待核清单 →</a></p></div><div class=\"record\"><h4>本人访谈与所引书页：引据追踪</h4><p>国图2009年《中国科学院》详细书目记3册(377;454;630页)，册数与页数已有书目依据；所引p.291的分册归属及第290–292页原文仍待核。朱晶2019年研究报告的资料索引、2018-01-03访谈原录，以及同期试制、低温分离和早期氟溴油技术原件仍未取得。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#a02-source-trace\">已核定位、资料身份与待取得原件 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>历史原作者实验、机构回顾与平台AI释读分别呈现；氟橡胶1号前期团队成果不全部归陈先生，不同氟油和后续牌号分别登记。</li><li>原刊支持主要加成方向；四氯化碳体系过渡馏分的弱峰是作者保留极少量反向异构体可能性的依据，不把该线索推广至两类体系。原作者的极性解释不作平台机制确认，乳化用途也不"
+    },
+    {
+      "old": "",
+      "new": "\nPRESENTATION_V20_SHA256 = '34814fabc405812bccc433018f8a197d181a3da9ac617f84cceda51513774b72'\nPRESENTATION_V21_PATH = 'provenance/platform-presentation.v21.json'\nPRESENTATION_V21_ID = 'PLATFORM-A02-EVIDENCE-BOUNDARY-20261116-v21'\nPRESENTATION_V21_PREVIOUS_COMMIT = '7a53bc6d6afcb9b0ea3f3d01ca1bf862cfa84b57'\nA02_BOUNDARY_ROUTES = {A02_HISTORY_ROUTE, AI_RESEARCH_ROUTE}\nA02_BOUNDARY_PREDECESSOR_FILES = {'content/a02-academic-achievements.v1.json': ('520e16d611f15f08519fa94e1857b0ad4b044b63799648b41ff675551c1c0617', 54017), 'docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md': ('20ec5748a84267ebb773e62c3574f40393c0f9fc6d7b2ae31c826545bb8d6396', 41445), 'site/topics/fluoromonomers/index.html': ('8108f9a3674b61fecb4f2a1a6fb71b2b1a95745eff95bb243d9f5d27a9160f46', 59881), 'content/ai-research-section.v1.json': ('f27d998f4274f2202efcd4a036311c6c8cd1fff3b8a13b3e56512354a2d18aaf', 66739), 'docs/AI_RESEARCH_zh-CN.md': ('1ba9ed4363b1080b6dc51cd568a080fdf44b6f9ff5b3c25247dccacea7ef9704', 35869), 'site/research/index.html': ('c6817f7bea64843a36e21009aa3997feaf57e315fccd7b3e1a5e9e6abaf98223', 49697), 'scripts/a01_publication_contract.py': ('169e46ad2bb8cbaafeb93599b66e5268e5d351533cdfb12d1c5278de1d51bf99', 260043)}\nA02_BOUNDARY_DOCUMENTS = A02_DOCUMENTS\nA02_BOUNDARY_FINDING = '四氯化碳体系中，分馏、¹⁹F NMR及脱氯化氢反应支持主要单加成结构CCl₃CH₂CF₂Cl；过渡馏分的弱峰被作者解释为可能含极少量反向异构体。全氟叔丁基碘体系的主要结构(CF₃)₃CCH₂CF₂I由元素分析、光谱分析及化学转化等证据归属。'\nA02_BOUNDARY_LOCATOR = 'p.176–177；p.179实验'\nA02_BOUNDARY_AI_SUMMARY = '已分开材料牌号、两类调聚产物和不同氟油；保留原刊中文摘要与正文胺名等异文，并把少量反向异构体线索限定于四氯化碳体系的过渡馏分。尚未开展本线复算、量化计算、实验或材料性能验证。'\nA02_BOUNDARY_AI_LIMIT = '原刊支持主要加成方向；四氯化碳体系过渡馏分的弱峰是作者保留极少量反向异构体可能性的依据，不把该线索推广至两类体系。原作者的极性解释不作平台机制确认，乳化用途也不升级为定量性能或环境安全结论。'\n\n"
+    },
+    {
+      "old": "",
+      "new": "def boundary_predecessor_bytes(root: Path, name: str) -> bytes:\n    \"\"\"Undo only the seven explicitly permitted v21 presentation files.\"\"\"\n    current = project_file(root, name).read_bytes()\n    if not (root/PRESENTATION_V21_PATH).exists():\n        return current\n    data = read_json(project_file(root, PRESENTATION_V21_PATH))\n    if not isinstance(data, dict):\n        raise ValueError('A02 evidence-boundary presentation must be a JSON object')\n    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')\n    if not isinstance(files, list) or not isinstance(pool, list):\n        raise ValueError('A02 evidence-boundary require exact reversible text patch records')\n    matches = [row for row in files if isinstance(row, dict) and row.get('path') == name]\n    if not matches:\n        return current\n    if len(matches) != 1 or name not in A02_BOUNDARY_PREDECESSOR_FILES:\n        raise ValueError('Unauthorized or duplicate A02 evidence-boundary predecessor record: '+name)\n    record = matches[0]; old_sha, old_size = A02_BOUNDARY_PREDECESSOR_FILES[name]\n    if (record.get('old_sha256') != old_sha or record.get('old_bytes') != old_size\n            or hashlib.sha256(current).hexdigest() != record.get('new_sha256')\n            or len(current) != record.get('new_bytes')):\n        raise ValueError('A02 evidence-boundary file differs from its complete old/new identities: '+name)\n    edits = record.get('edits')\n    if not isinstance(edits, list) or not edits:\n        raise ValueError('A02 evidence-boundary changes require nonempty text edits: '+name)\n    chunks, cursor, old_end, delta = [], 0, 0, 0\n    for edit in edits:\n        if not isinstance(edit, dict) or set(edit) != {'old_offset', 'replacement'}:\n            raise ValueError('Invalid reversible A02 evidence-boundary text edit: '+name)\n        offset, replacement = edit['old_offset'], edit['replacement']\n        if (type(offset) is not int or offset < old_end or type(replacement) is not int\n                or not 0 <= replacement < len(pool)):\n            raise ValueError('Overlapping or invalid A02 evidence-boundary text edit: '+name)\n        pair = pool[replacement]\n        if (not isinstance(pair, dict) or set(pair) != {'old', 'new'}\n                or not all(isinstance(pair.get(key), str) for key in ('old', 'new'))\n                or pair['old'] == pair['new']):\n            raise ValueError('Invalid A02 evidence-boundary text replacement pool')\n        before, after = pair['old'].encode('utf-8'), pair['new'].encode('utf-8')\n        position = offset+delta\n        if position < cursor or current[position:position+len(after)] != after:\n            raise ValueError('A02 evidence-boundary replacement differs at its exact offset: '+name)\n        chunks.extend((current[cursor:position], before))\n        cursor, old_end = position+len(after), offset+len(before)\n        delta += len(after)-len(before)\n    rebuilt = b''.join((*chunks, current[cursor:]))\n    if hashlib.sha256(rebuilt).hexdigest() != old_sha or len(rebuilt) != old_size:\n        raise ValueError('A02 evidence-boundary predecessor cannot be reconstructed exactly: '+name)\n    return rebuilt\n\n\n\n\n"
+    },
+    {
+      "old": "project_file(root, name).read_bytes(",
+      "new": "boundary_predecessor_bytes(root, name"
+    },
+    {
+      "old": "",
+      "new": "    if (root/PRESENTATION_V21_PATH).exists() and not (root/PRESENTATION_V20_PATH).exists():\n        raise ValueError('A02 evidence correction requires its fixed v20 predecessor')\n"
+    },
+    {
+      "old": "digest(project_file(root, name)),\n                  'bytes': project_file(root, name).stat().st_size",
+      "new": "hashlib.sha256(boundary_predecessor_bytes(root, name)).hexdigest(),\n                  'bytes': len(boundary_predecessor_bytes(root, name))"
+    },
+    {
+      "old": "read_json(project_file",
+      "new": "json.loads(boundary_predecessor_bytes"
+    },
+    {
+      "old": "project_file(root,'site/'+name).read_bytes(",
+      "new": "boundary_predecessor_bytes(root,'site/'+name"
+    },
+    {
+      "old": "project_file(root,name).read_text",
+      "new": "boundary_predecessor_bytes(root,name).decode"
+    },
+    {
+      "old": "project_file(root,'site/'+name)\n        if digest(member)!=expected['sha256'] or member.stat().st_size",
+      "new": "boundary_predecessor_bytes(root,'site/'+name)\n        if hashlib.sha256(member).hexdigest()!=expected['sha256'] or len(member)"
+    },
+    {
+      "old": "from render_a02_history import inspect_a02_history\n    from render_ai_research import inspect_ai_research\n    for label,check in (('A02 history',inspect_a02_history(root)),('AI record',inspect_ai_research(root))):\n        if check.get('status')!='passed':\n",
+      "new": "# Historical v20 bytes are reconstructed before checking the final layer.\n    if not (root/PRESENTATION_V21_PATH).exists():\n        from render_a02_history import inspect_a02_history\n        from render_ai_research import inspect_ai_research\n        for label,check in (('A02 history',inspect_a02_history(root)),('AI record',inspect_ai_research(root))):\n            if check.get('status')!='passed':\n    "
+    },
+    {
+      "old": "updated,{**report,'presentation_chain':[*previous_report['presentation_chain'],",
+      "new": "apply_a02_boundary_presentation(root, updated,\n        {**report,'presentation_chain':[*previous_report['presentation_chain'],report]})\n\n\n\ndef apply_a02_boundary_presentation(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:\n    \"\"\"Correct only the acquired 1980 paper's evidence description and its A02 AI summary.\"\"\"\n    if not (root/PRESENTATION_V21_PATH).exists():\n        return entries, previous_report\n    if digest(project_file(root, PRESENTATION_V20_PATH)) != PRESENTATION_V20_SHA256:\n        raise ValueError('The preceding A02 holdings presentation v20 is immutable')\n    path = project_file(root, PRESENTATION_V21_PATH); data = read_json(path)\n    documents = [{'path': name, 'sha256': digest(project_file(root, name)),\n                  'bytes': project_file(root, name).stat().st_size} for name in A02_BOUNDARY_DOCUMENTS]\n    required = {'schema_version': '21.0', 'presentation_id': PRESENTATION_V21_ID,\n        'publication_kind': 'platform_a02_evidence_boundary',\n        'previous_presentation_commit': PRESENTATION_V21_PREVIOUS_COMMIT,\n        'previous_presentation': {'path': PRESENTATION_V20_PATH, 'sha256': PRESENTATION_V20_SHA256},\n        'original_baseline_sha256': BASELINE_SHA256, 'original_archive_sha256': ARCHIVE_SHA256,\n        'allowed_html_paths': sorted(A02_BOUNDARY_ROUTES), 'added_html_paths': [], 'additions': [],\n        'allowed_achievement_lines': ['A02'], 'editorial_documents': documents,\n        'protected_website_members': {name: {'sha256': row['sha256'], 'bytes': row['bytes']}\n            for name, row in entries.items() if name not in A02_BOUNDARY_ROUTES},\n        'reconstruction_kind': 'deduplicated_exact_utf8_text_edits',\n        'scientific_review_status': 'review_required', 'release_eligible': False,\n        'scientific_data_unchanged': True, 'M0_resumed': False,\n        'historical_achievement_independent_of_AI_review': True}\n    if (not isinstance(data, dict) or any(data.get(key) != value for key, value in required.items())\n            or any(data.get(key) is not required[key] for key in ('release_eligible',\n                'scientific_data_unchanged', 'M0_resumed', 'historical_achievement_independent_of_AI_review'))\n            or any(type(data.get(key)) is not int or data[key] != 0 for key in ('new_quantum_calls', 'new_model_API_calls'))\n            or not isinstance(data.get('authorization'), str) or not data['authorization'].strip()):\n        raise ValueError('Unsupported bounded A02 evidence correction v21')\n    files, pool = data.get('reversible_text_files'), data.get('reverse_text_patch_pool')\n    if (not isinstance(files, list) or not files or not isinstance(pool, list) or not pool\n            or any(not isinstance(row, dict) or row.get('path') not in A02_BOUNDARY_PREDECESSOR_FILES for row in files)\n            or len({row['path'] for row in files}) != len(files)\n            or any(not isinstance(row.get('edits'), list) or not row['edits'] or any(\n                not isinstance(edit, dict) or type(edit.get('replacement')) is not int for edit in row['edits']) for row in files)):\n        raise ValueError('A02 evidence correction may enumerate only seven fixed predecessor files')\n    if {edit['replacement'] for row in files for edit in row['edits']} != set(range(len(pool))):\n        raise ValueError('A02 evidence correction requires exactly its used replacement segments')\n    changed = set()\n    for name, (sha, size) in A02_BOUNDARY_PREDECESSOR_FILES.items():\n        old = boundary_predecessor_bytes(root, name)\n        if hashlib.sha256(old).hexdigest() != sha or len(old) != size:\n            raise ValueError('A02 evidence predecessor differs from fixed 7a53bc6: '+name)\n        if old != project_file(root, name).read_bytes():\n            changed.add(name)\n    if {row['path'] for row in files} != changed or changed != set(A02_BOUNDARY_PREDECESSOR_FILES):\n        raise ValueError('A02 evidence correction must enumerate every and only its seven changed files')\n    old_history = json.loads(boundary_predecessor_bytes(root, A02_HISTORY_CONTENT))\n    expected_history = json.loads(json.dumps(old_history))\n    expected_history['paper']['observations'][1]['finding'] = A02_BOUNDARY_FINDING\n    expected_history['paper']['observations'][1]['locator'] = A02_BOUNDARY_LOCATOR\n    if read_json(project_file(root, A02_HISTORY_CONTENT)) != expected_history:\n        raise ValueError('Only the selected 1980 observation finding and locator may change')\n    old_ai = json.loads(boundary_predecessor_bytes(root, AI_RESEARCH_CONTENT))\n    expected_ai = json.loads(json.dumps(old_ai))\n    expected_ai['lines'][1]['records'][2]['summary'] = A02_BOUNDARY_AI_SUMMARY\n    expected_ai['lines'][1]['boundaries'][1] = A02_BOUNDARY_AI_LIMIT\n    if read_json(project_file(root, AI_RESEARCH_CONTENT)) != expected_ai:\n        raise ValueError('Only the corresponding A02 AI summary and boundary sentence may change')\n    changes = data.get('changes')\n    if (not isinstance(changes, list) or any(not isinstance(row, dict) for row in changes)\n            or [row.get('path') for row in changes] != sorted(A02_BOUNDARY_ROUTES)):\n        raise ValueError('A02 evidence correction may change only its topic and AI record routes')\n    from public_line_labels import project_html, project_markdown\n    json_scripts = re.compile(r'<script\\b[^>]*\\btype\\s*=\\s*[\"\\']application/(?:ld\\+)?json[\"\\'][^>]*>.*?</script\\s*>', re.I | re.S)\n    updated = {name: dict(row) for name, row in entries.items()}\n    for item in changes:\n        name = item['path']; old = entries[name]\n        before = boundary_predecessor_bytes(root, 'site/'+name)\n        after = project_file(root, 'site/'+name).read_bytes()\n        source, current = before.decode('utf-8'), after.decode('utf-8')\n        if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']\n                or hashlib.sha256(before).hexdigest() != old['sha256'] or len(before) != old['bytes']\n                or item.get('new_sha256') != hashlib.sha256(after).hexdigest() or item.get('new_bytes') != len(after)\n                or before == after or not isinstance(item.get('reason'), str) or not item['reason'].strip()):\n            raise ValueError('A02 evidence HTML differs from complete old/new identities: '+name)\n        if json_scripts.findall(source) != json_scripts.findall(current):\n            raise ValueError('A02 evidence correction must retain every embedded JSON byte')\n        if set(re.findall(r'\\bid=\"([^\\\"]+)\"', source)) != set(re.findall(r'\\bid=\"([^\\\"]+)\"', current)):\n            raise ValueError('A02 evidence correction must retain all navigation and source IDs')\n        if project_html(current, name) != current:\n            raise ValueError('A02 evidence correction lost canonical named achievement references')\n        pattern = (r'<article\\b[^>]*\\bid=\"a02-vdf-1980\"[^>]*>.*?</article>' if name == A02_HISTORY_ROUTE\n                   else r'<section\\b[^>]*\\bid=\"ai-a02\"[^>]*>.*?</section>')\n        if (len(re.findall(pattern, source, re.S)) != 1 or len(re.findall(pattern, current, re.S)) != 1\n                or re.sub(pattern, '<A02-CORRECTION/>', source, flags=re.S) != re.sub(pattern, '<A02-CORRECTION/>', current, flags=re.S)):\n            raise ValueError('A02 evidence correction changed outside the specific source article: '+name)\n        updated[name] = {**old, 'sha256': item['new_sha256'], 'bytes': item['new_bytes'], 'presentation_id': PRESENTATION_V21_ID}\n    for name in (AI_RESEARCH_DOCUMENT, A02_HISTORY_DOCUMENT):\n        prose = project_file(root, name).read_text('utf-8')\n        if project_markdown(prose) != prose:\n            raise ValueError('A02 evidence prose lost canonical named achievement references: '+name)\n    for name, expected in updated.items():\n        member = project_file(root, 'site/'+name)\n        if digest(member) != expected['sha256'] or member.stat().st_size != expected['bytes']:\n            raise ValueError('A02 evidence correction changed an unlisted website byte: '+name)\n    from render_a02_history import inspect_a02_history\n    from render_ai_research import inspect_ai_research\n    for label, check in (('A02 history', inspect_a02_history(root)), ('AI record', inspect_ai_research(root))):\n        if check.get('status') != 'passed':\n            raise ValueError(label+' differs from its source-derived rendering: '+str(check.get('errors', [])))\n    members = publication_members(root, updated)\n    report = {'path': PRESENTATION_V21_PATH, 'sha256': digest(path), 'presentation_id': PRESENTATION_V21_ID,\n        'publication_kind': required['publication_kind'], 'changed_paths': sorted(A02_BOUNDARY_ROUTES), 'added_paths': [],\n        'changed_achievement_lines': ['A02'], 'previous_presentation_commit': PRESENTATION_V21_PREVIOUS_COMMIT,\n        'exact_predecessor_reconstruction': True, 'source_derived_rendering': True,\n        'only_selected_1980_observation_and_A02_AI_description_corrected': True,\n        'original_history_team_background_source_trace_and_inventory_preserved': True,\n        'homepage_A01_and_original_source_data_unchanged': True,\n        'original_embedded_json_bytes_preserved': True, 'published_member_count_with_marker': len(members)+1,\n        **{key: required[key] for key in ('scientific_review_status', 'scientific_data_unchanged',\n            'historical_achievement_independent_of_AI_review', 'release_eligible', 'M0_resumed')}}\n    return updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], "
+    }
+  ],
+  "boundary": "Only paper.observations[1].finding and locator, the matching A02 AI records[2].summary and boundaries[1], their four rendered outputs and the contract implementation change. All other A02 fields, all other AI lines, original scans, measured values, author attributions, team/background/source-trace records, all original public JSON, A01/PFtB/CH3/M0 data and all other website routes remain unchanged. No new chemistry, calculation, experiment, route or scientific release.",
+  "reconstruction": "Seven fixed 7a53bc6 predecessor files are reconstructed in memory by ordered exact UTF-8 edits. The complete earlier v1-v20 manifest bytes remain unchanged. No complete predecessor document is redistributed.",
+  "publish_allowlist": "Unchanged: sixteen static HTML pages, two original public JSON files and an empty .nojekyll marker, nineteen regular published files.",
+  "remote_action_performed": false
+}
