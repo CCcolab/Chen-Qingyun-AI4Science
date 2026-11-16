@@ -10,6 +10,9 @@ import json
 from pathlib import Path, PurePosixPath
 import re
 
+from public_literature_update import (MANIFEST as PRESENTATION_V24_PATH,
+    predecessor_bytes as literature_predecessor_bytes, apply as apply_literature_presentation)
+
 BASELINE_SHA256 = '5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329'
 ARCHIVE_SHA256 = 'fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e'
 REVISION_PATH = 'provenance/a01-site-revision.v1.json'
@@ -357,7 +360,7 @@ def project_file(root: Path, name: str) -> Path:
 
 def a06_summary_predecessor_bytes(root: Path, name: str) -> bytes:
     """Undo only the four explicitly permitted v23 presentation files."""
-    current = project_file(root, name).read_bytes()
+    current = literature_predecessor_bytes(root, name)
     if not (root/PRESENTATION_V23_PATH).exists():
         return current
     data = read_json(project_file(root, PRESENTATION_V23_PATH))
@@ -1391,6 +1394,8 @@ def apply_presentation_v1(root: Path, entries: dict, *, chain: list,
 
 def apply_presentation_overlay(root: Path, entries: dict, *, chain: list) -> tuple[dict, dict | None]:
     """Apply v1, then this bounded historical-content successor if present."""
+    if (root/PRESENTATION_V24_PATH).exists() and not (root/PRESENTATION_V23_PATH).exists():
+        raise ValueError('Literature presentation requires its immutable v23 predecessor')
     if (root/PRESENTATION_V23_PATH).exists() and not (root/PRESENTATION_V22_PATH).exists():
         raise ValueError('A06 summary presentation requires its fixed v22 predecessor')
     if (root/PRESENTATION_V22_PATH).exists() and not (root/PRESENTATION_V21_PATH).exists():
@@ -3751,7 +3756,7 @@ def apply_a02_boundary_presentation(root: Path, entries: dict, previous_report: 
     expected_history = json.loads(json.dumps(old_history))
     expected_history['paper']['observations'][1]['finding'] = A02_BOUNDARY_FINDING
     expected_history['paper']['observations'][1]['locator'] = A02_BOUNDARY_LOCATOR
-    if read_json(project_file(root, A02_HISTORY_CONTENT)) != expected_history:
+    if json.loads(original_evidence_predecessor_bytes(root, A02_HISTORY_CONTENT)) != expected_history:
         raise ValueError('Only the selected 1980 observation finding and locator may change')
     old_ai = json.loads(boundary_predecessor_bytes(root, AI_RESEARCH_CONTENT))
     expected_ai = json.loads(json.dumps(old_ai))
@@ -3966,8 +3971,8 @@ def apply_a06_summary_presentation(root: Path, entries: dict, previous_report: d
     if digest(project_file(root, PRESENTATION_V22_PATH)) != PRESENTATION_V22_SHA256:
         raise ValueError('The preceding v22 presentation is immutable')
     path = project_file(root, PRESENTATION_V23_PATH); data = read_json(path)
-    documents = [{'path': name, 'sha256': digest(project_file(root, name)),
-                  'bytes': project_file(root, name).stat().st_size} for name in A06_SUMMARY_DOCUMENTS]
+    documents = [{'path': name, 'sha256': hashlib.sha256(literature_predecessor_bytes(root, name)).hexdigest(),
+                  'bytes': len(literature_predecessor_bytes(root, name))} for name in A06_SUMMARY_DOCUMENTS]
     required = {'schema_version': '23.0', 'presentation_id': PRESENTATION_V23_ID,
         'publication_kind': 'platform_a06_authors_methods_clarification',
         'previous_presentation_commit': PRESENTATION_V23_PREVIOUS_COMMIT,
@@ -4002,7 +4007,7 @@ def apply_a06_summary_presentation(root: Path, entries: dict, previous_report: d
         old = a06_summary_predecessor_bytes(root, name)
         if hashlib.sha256(old).hexdigest() != sha or len(old) != size:
             raise ValueError('A06 summary predecessor differs from fixed b663c63: '+name)
-        if old != project_file(root, name).read_bytes():
+        if old != literature_predecessor_bytes(root, name):
             changed.add(name)
     if {row['path'] for row in files} != changed or changed != set(A06_SUMMARY_PREDECESSOR_FILES):
         raise ValueError('A06 summary must enumerate every and only its four changed files')
@@ -4012,7 +4017,7 @@ def apply_a06_summary_presentation(root: Path, entries: dict, previous_report: d
             or not A06_SUMMARY_TEXT.strip() or A06_SUMMARY_TEXT == expected_ai['lines'][5]['records'][0]['summary']):
         raise ValueError('A06 summary requires a fixed nonempty changed first-record summary')
     expected_ai['lines'][5]['records'][0]['summary'] = A06_SUMMARY_TEXT
-    if read_json(project_file(root, AI_RESEARCH_CONTENT)) != expected_ai:
+    if json.loads(literature_predecessor_bytes(root, AI_RESEARCH_CONTENT)) != expected_ai:
         raise ValueError('Only A06 records[0].summary may change; date, links, next steps and all other fields are protected')
     changes = data.get('changes')
     if (not isinstance(changes, list) or len(changes) != 1 or not isinstance(changes[0], dict)
@@ -4021,7 +4026,7 @@ def apply_a06_summary_presentation(root: Path, entries: dict, previous_report: d
     from public_line_labels import project_html, project_markdown
     item = changes[0]; route = AI_RESEARCH_ROUTE; old = entries[route]
     before = a06_summary_predecessor_bytes(root, 'site/'+route)
-    after = project_file(root, 'site/'+route).read_bytes()
+    after = literature_predecessor_bytes(root, 'site/'+route)
     source, current = before.decode('utf-8'), after.decode('utf-8')
     if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']
             or hashlib.sha256(before).hexdigest() != old['sha256'] or len(before) != old['bytes']
@@ -4039,19 +4044,21 @@ def apply_a06_summary_presentation(root: Path, entries: dict, previous_report: d
     if (len(re.findall(pattern, source, re.S)) != 1 or len(re.findall(pattern, current, re.S)) != 1
             or re.sub(pattern, '<A06-SUMMARY/>', source, flags=re.S) != re.sub(pattern, '<A06-SUMMARY/>', current, flags=re.S)):
         raise ValueError('A06 summary changed outside its unique existing A06 section')
-    prose = project_file(root, AI_RESEARCH_DOCUMENT).read_text('utf-8')
+    prose = literature_predecessor_bytes(root, AI_RESEARCH_DOCUMENT).decode('utf-8')
     if project_markdown(prose) != prose:
         raise ValueError('A06 summary document lost canonical achievement names')
     updated = {name: dict(row) for name, row in entries.items()}
     updated[route] = {**old, 'sha256': item['new_sha256'], 'bytes': item['new_bytes'], 'presentation_id': PRESENTATION_V23_ID}
     for name, expected in updated.items():
-        member = project_file(root, 'site/'+name)
-        if digest(member) != expected['sha256'] or member.stat().st_size != expected['bytes']:
+        member = literature_predecessor_bytes(root, 'site/'+name)
+        if hashlib.sha256(member).hexdigest() != expected['sha256'] or len(member) != expected['bytes']:
             raise ValueError('A06 summary changed an unlisted website byte: '+name)
-    from render_ai_research import inspect_ai_research
-    check = inspect_ai_research(root)
-    if check.get('status') != 'passed':
-        raise ValueError('A06 summary final page differs from source rendering: '+str(check.get('errors', [])))
+    # Replay v23 using its exact reconstructed bytes; v24 checks final rendering.
+    if not (root/PRESENTATION_V24_PATH).exists():
+        from render_ai_research import inspect_ai_research
+        check = inspect_ai_research(root)
+        if check.get('status') != 'passed':
+            raise ValueError('A06 summary final page differs from source rendering: '+str(check.get('errors', [])))
     members = publication_members(root, updated)
     report = {'path': PRESENTATION_V23_PATH, 'sha256': digest(path), 'presentation_id': PRESENTATION_V23_ID,
         'publication_kind': required['publication_kind'], 'changed_paths': [AI_RESEARCH_ROUTE], 'added_paths': [],
@@ -4065,7 +4072,8 @@ def apply_a06_summary_presentation(root: Path, entries: dict, previous_report: d
         'published_member_count_with_marker': len(members)+1,
         **{key: required[key] for key in ('scientific_review_status', 'scientific_data_unchanged',
             'historical_achievement_independent_of_AI_review', 'release_eligible', 'M0_resumed')}}
-    return updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}
+    return apply_literature_presentation(root, updated,
+        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})
 
 
 def effective_website_entries(root: Path, baseline: dict, *, verify_current=True,

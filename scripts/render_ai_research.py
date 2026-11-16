@@ -57,6 +57,8 @@ def all_link_records(data: dict):
         yield from line['source_links']
         for result in line.get('result_sections', []):
             yield from result['links']
+        for check in line.get('literature_checks', []):
+            yield from check['links']
         for record in line['records']:
             yield from record['links']
         for work in line.get('prior_work', []):
@@ -131,7 +133,40 @@ def load_content(root: Path = ROOT) -> dict:
         else:
             raise ValueError('Unknown link kind: '+item['kind'])
     validate_results(root, data)
+    validate_literature_checks(data)
     return data
+
+
+def validate_literature_checks(data: dict) -> None:
+    """Validate bounded editorial findings without granting scientific release."""
+    source_ids = {'CQ-H12', 'A02-P1980', 'CQ-H13', 'PF01', 'HERITAGE-S01',
+                  'S1', 'CQ-H07', 'CQ-H08', 'CQ-H16', 'HERITAGE-S06',
+                  'CQ-R10', 'CQ-H20'}
+    seen = set()
+    for line in data['lines']:
+        for check in line.get('literature_checks', []):
+            ident = check.get('id', '')
+            if (line['id'] == 'A04' or not re.fullmatch(line['id'].lower()+r'-literature-[a-z-]+', ident)
+                    or ident in seen):
+                raise ValueError('Unexpected or duplicate literature-check anchor: '+ident)
+            seen.add(ident)
+            if check.get('scientific_review_status') != 'review_required' or check.get('release_eligible') is not False:
+                raise ValueError('Literature collation must remain pending scientific review')
+            for field in ('title', 'historical_record', 'summary', 'meaning'):
+                nonempty(check.get(field), ident+'.'+field)
+            if (not check.get('source_ids') or not set(check['source_ids']) <= source_ids
+                    or not check.get('links') or not check.get('caveats')):
+                raise ValueError('Literature collation needs known sources and scope limits')
+            for table in check.get('tables', []):
+                nonempty(table.get('caption'), ident+'.table.caption')
+                if not table.get('columns') or not table.get('rows'):
+                    raise ValueError('Incomplete literature evidence table')
+                for row in table['rows']:
+                    if len(row) != len(table['columns']) or any(not isinstance(cell, str) for cell in row):
+                        raise ValueError('Literature table cells must match the columns')
+            public_text = json.dumps(check, ensure_ascii=False)
+            if re.search(r'private-sources|local-resolution|current-item-register|原始证据待核清单|现阶段待查事项统计|(?<![A-Za-z])[A-Za-z]:[\\/]|file://', public_text):
+                raise ValueError('Private evidence material cannot appear in public collation')
 
 
 def validate_results(root: Path, data: dict) -> None:
@@ -248,6 +283,57 @@ def render_results(line: dict) -> str:
     return ''.join(out)
 
 
+def render_literature_checks(line: dict) -> str:
+    checks = line.get('literature_checks', [])
+    if not checks:
+        return ''
+    out = ['<div class="prior-work" aria-label="平台AI辅助文献核校">'
+           '<h3>平台AI辅助文献核校</h3>'
+           '<p>历史实验与理论研究归原作者。以下呈现平台完成的原文、表格和附件对照，'
+           '保持 <code>review_required</code>、<code>release_eligible=false</code>；'
+           '文献核校不授予实验、结构或机理验证资格。</p>']
+    for check in checks:
+        out += ['<article class="result-evidence" id="'+esc(check['id'])+'" '
+                'data-review-status="review_required" data-release-eligible="false">'
+                '<h4>'+esc(check['title'])+'</h4>'
+                '<p><b>历史原文：</b>'+esc(check['historical_record'])+'</p>'
+                '<p><b>平台AI核校：</b>'+esc(check['summary'])+'</p>']
+        for index, table in enumerate(check.get('tables', [])):
+            ident = check['id']+'-table-'+str(index+1)
+            out += ['<div class="result-table" role="region" tabindex="0" aria-labelledby="'+ident+'">'
+                    '<table><caption id="'+ident+'">'+esc(table['caption'])+'</caption><thead><tr>'
+                    +''.join('<th scope="col">'+esc(cell)+'</th>' for cell in table['columns'])
+                    +'</tr></thead><tbody>']
+            for row in table['rows']:
+                out += ['<tr><th scope="row">'+esc(row[0])+'</th>'
+                        +''.join('<td>'+esc(cell)+'</td>' for cell in row[1:])+'</tr>']
+            out += ['</tbody></table></div>']
+            out += ['<p class="table-note">'+esc(note)+'</p>' for note in table.get('notes', [])]
+        out += ['<p class="scientific-meaning"><b>证据的意义：</b>'+esc(check['meaning'])+'</p>'
+                '<ul class="result-limits">'+''.join('<li>'+esc(value)+'</li>' for value in check['caveats'])+'</ul>'
+                '<p class="table-note">来源ID：'+esc('、'.join(check['source_ids']))+'</p>'
+                +links_html(check['links'])+'</article>']
+    return ''.join(out)+'</div>'
+
+
+def literature_markdown(line: dict) -> list[str]:
+    if not line.get('literature_checks'):
+        return []
+    out = ['### 平台AI辅助文献核校', '',
+           '历史实验与理论研究归原作者；以下是平台的文献与附件对照，保持 `review_required`、`release_eligible=false`。', '']
+    for check in line['literature_checks']:
+        out += ['#### '+check['title'], '', '**历史原文：**'+check['historical_record'], '',
+                '**平台AI核校：**'+check['summary'], '']
+        for table in check.get('tables', []):
+            out += [table['caption'], '', '| '+' | '.join(table['columns'])+' |',
+                    '| '+' | '.join('---' for _ in table['columns'])+' |']
+            out += ['| '+' | '.join(cell.replace('|', '\\|') for cell in row)+' |' for row in table['rows']]
+            out += ['']+table.get('notes', [])+['']
+        out += ['**证据的意义：**'+check['meaning'], '']+['- '+value for value in check['caveats']]
+        out += ['', '来源ID：'+'、'.join(check['source_ids']), '', markdown_links(check['links']), '']
+    return out
+
+
 def render_page(data: dict) -> str:
     sections = []
     for line in data['lines']:
@@ -273,7 +359,7 @@ def render_page(data: dict) -> str:
             +anchor(line)+'-title">'+esc(label(line))+'</h2>'
             '<h3>科学问题</h3><p>'+esc(line['question'])+'</p>'
             '<h3>AI怎样辅助</h3><p>'+esc(line['ai_role'])+'</p>'
-            +body
+            +body+render_literature_checks(line)
             +'<div class="evidence"><h3>史料与成果入口</h3>'+links_html(line['source_links'])
             +'<p class="top"><a href="#research-index">返回八条成果线目录 ↑</a></p></div></section>')
     heritage = data['heritage']
@@ -338,7 +424,9 @@ def render_document(data: dict) -> str:
         for work in line.get('prior_work', []):
             rows += ['**'+work['source_id']+' · '+work['title']+'。**'+work['authors']+'，'+work['citation'], '', work['scope'], '', markdown_links(work['links']), '']
         rows += ['### 待核事项与边界', '']+['- '+row for row in line['boundaries']]
-        rows += ['', '**下一步先补的证据：**'+line['next_step'], '', '**候选后续问题：**'+line['future_question'], '', '### 史料与成果入口', '', markdown_links(line['source_links']), '']
+        rows += ['', '**下一步先补的证据：**'+line['next_step'], '', '**候选后续问题：**'+line['future_question'], '']
+        rows += literature_markdown(line)
+        rows += ['### 史料与成果入口', '', markdown_links(line['source_links']), '']
     rows += ['## 维护与静态一致性检查', '',
         '内容源为仓库中的`content/ai-research-section.v1.json`，网页不嵌入源JSON。`scripts/render_ai_research.py`生成二级研究资料页、本说明及首页两个指定区块，保留各线原始史料入口。', '',
         '运行`python -B scripts/render_ai_research.py`检查八条成果线、规范名称、静态生成一致性、审阅状态和可解析链接；`--write`仅更新约定的展示文件与首页标记区块。检查不联网、不运行化学计算，也不代替科学审阅。', '']

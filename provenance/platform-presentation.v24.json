@@ -1,0 +1,761 @@
+{
+  "schema_version": "24.0",
+  "presentation_id": "PLATFORM-LITERATURE-CHECKS-20261116-v24",
+  "created_at_utc": "2026-11-16T11:19:34.898442+00:00",
+  "publication_kind": "platform_sourced_literature_checks",
+  "authorization": "User request dated 2026-11-16 to publish verified, suitable historical literature checks on GitHub and Pages. Keep private originals, unresolved checklists and internal status statistics local. Do not resume M0 or new scientific computation.",
+  "previous_presentation_commit": "c8340dd5050224ac8d462560138907a8863fd82e",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v23.json",
+    "sha256": "392490c9d1ddc18942ef5b139eb094155a883f1a340e56adfc9512bfa5430a3d"
+  },
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "allowed_html_paths": [
+    "research/index.html",
+    "topics/fluoromonomers/index.html"
+  ],
+  "added_html_paths": [],
+  "additions": [],
+  "allowed_json_updates": {
+    "content/ai-research-section.v1.json": [
+      "/lines/0/completed_summary",
+      "/lines/0/literature_checks",
+      "/lines/1/records/2/summary",
+      "/lines/1/boundaries/2",
+      "/lines/1/literature_checks",
+      "/lines/2/pending_items/1",
+      "/lines/2/literature_checks",
+      "/lines/4/records/0/summary",
+      "/lines/4/literature_checks",
+      "/lines/5/records/0/summary",
+      "/lines/5/next_step",
+      "/lines/5/literature_checks",
+      "/lines/6/records/0/summary",
+      "/lines/6/next_step",
+      "/lines/6/literature_checks",
+      "/lines/7/records/0/summary",
+      "/lines/7/next_step",
+      "/lines/7/literature_checks"
+    ],
+    "content/a02-academic-achievements.v1.json": [
+      "/paper/reading_scope",
+      "/paper/observations/3/finding",
+      "/paper/limits",
+      "/pending",
+      "/ai_scope"
+    ]
+  },
+  "editorial_documents": [
+    {
+      "path": "content/ai-research-section.v1.json",
+      "sha256": "8816f7aab7ed0793c621c904fc819ee4738cabd55a2202f8105f13c64c59cf95",
+      "bytes": 97371
+    },
+    {
+      "path": "scripts/render_ai_research.py",
+      "sha256": "c4cfba4d66c616b4a04d258ec4b1f644dd8858cd2734693dd3c8efbd60ed135a",
+      "bytes": 40484
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "sha256": "329ce8ce5d2242cc7bd44e701dafa4db471d379e5a4048459bd20886ec9fdec6",
+      "bytes": 57707
+    },
+    {
+      "path": "content/a02-academic-achievements.v1.json",
+      "sha256": "173ebb010d8e8797b1d40d626c0117f1b80aea77f04c3299a63d4d0cec2fc244",
+      "bytes": 54356
+    },
+    {
+      "path": "docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "sha256": "8e714347897b88902c12b714769dee46c59f0788e8b87e82f07a3414c2a1fc85",
+      "bytes": 41787
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "sha256": "3497c008ed83a7737e46a81c714475586040583646bb6cf950eef0efa8800eff",
+      "bytes": 309525
+    },
+    {
+      "path": "scripts/public_literature_update.py",
+      "sha256": "263909ad01d2fa2c9cb721f8ecbc7bb6aae238f14fdb4d352b3ee41cf6a5a650",
+      "bytes": 46361
+    }
+  ],
+  "protected_website_members": {
+    "index.html": {
+      "sha256": "8b3532ee45c0fb33912f20a3bd7943043a348f10a370b9c6716e9edf3c0abf41",
+      "bytes": 257766
+    },
+    "pftb/index.html": {
+      "sha256": "42ca404f2ed70b7a3b0b5d8b0eb742a2509e5a5a70fd0be36a65028e61cbd1f6",
+      "bytes": 97587
+    },
+    "topics/f53/index.html": {
+      "sha256": "8def3379a75dda6665d7cb3ee6c32193fc7a61ec6b31098abbefe9218fea39fe",
+      "bytes": 8161
+    },
+    "topics/refrigerants/index.html": {
+      "sha256": "5d9b5a355b949f67c5de252727f8d4e4e7533abab8a666c49a0f932170153c4e",
+      "bytes": 10636
+    },
+    "topics/perfluorosulfonates/index.html": {
+      "sha256": "85a6f4330edb7607f61ca217b71d2ef6c12cb1af0d48aaaebf737acf3a212ea5",
+      "bytes": 8888
+    },
+    "topics/chen-reagent/index.html": {
+      "sha256": "14f08afd4062c0ae171f24e5fb225e5968b003e885edc206baf08ca352b630df",
+      "bytes": 19991
+    },
+    "topics/single-electron-transfer/index.html": {
+      "sha256": "79c84f89e25e576a03f34153b9eb85a5ff73815c8265a0222930d889390ea947",
+      "bytes": 10355
+    },
+    "topics/fluoroporphyrins/index.html": {
+      "sha256": "24b6bb744b594573487847c89bbb35571ea56bc15d444ebeac3339379dbc1875",
+      "bytes": 6018
+    },
+    "topics/early-fluoroketones/index.html": {
+      "sha256": "a6da86d7f9ff0f35a5ea044252297a23e5ed71db829f2d184e3ab38a70dce9a2",
+      "bytes": 250938
+    },
+    "topics/fluorinated-small-rings/index.html": {
+      "sha256": "2413c83d4319746f41e940c04fe48bdeda28244235f5a9e8697285c187ba412d",
+      "bytes": 5924
+    },
+    "topics/deoxyfluorination/index.html": {
+      "sha256": "2aca9c13eb46f9fedfb02a2adfdc9423c207465f58608bcd671838d4d8045df5",
+      "bytes": 5550
+    },
+    "topics/sulfonyl-fluoride/index.html": {
+      "sha256": "fe944efbbfa5a7814015235f4ae3aae101db4046b0c9419986d6855d7ed15b49",
+      "bytes": 5043
+    },
+    "topics/index.html": {
+      "sha256": "44a5690d1e65195b9ff191d2a7ec37487070cdfafb191ae107962d5e0d7ab73c",
+      "bytes": 5055
+    },
+    "achievements/index.html": {
+      "sha256": "df20daf429c46e89e99085550067e8c1e9f7e283b10b7e8269f38da6a9d380ff",
+      "bytes": 95867
+    },
+    "data/public-sources.json": {
+      "sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+      "bytes": 33608
+    },
+    "data/achievement-lines.json": {
+      "sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+      "bytes": 39768
+    },
+    "README.txt": {
+      "sha256": "6e15068b7240ae47d633df3f777e81fbb9e46146ee5f4ab70011f09119b6bbc9",
+      "bytes": 336
+    },
+    "ROUTES.txt": {
+      "sha256": "a734c356877d4534285ab7d71b9fe0f7a17abbced4de3c52f8e60d335301e418",
+      "bytes": 949
+    },
+    "QA.txt": {
+      "sha256": "a60b5f382b31689fa17e2518b7079ef0660674fb62bddbbf564c7b74dfe51067",
+      "bytes": 290
+    },
+    "IONIC-ENTRY-RETEST.txt": {
+      "sha256": "3462b056891a27c335cc2620deb87b245b6c9aea3bdaec607c8a14beca69fe9d",
+      "bytes": 741
+    }
+  },
+  "reconstruction_kind": "deduplicated_exact_utf8_text_edits",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "M0_resumed": false,
+  "historical_achievement_independent_of_AI_review": true,
+  "new_quantum_calls": 0,
+  "new_model_API_calls": 0,
+  "changes": [
+    {
+      "path": "research/index.html",
+      "old_sha256": "bd8902afeb1cede0bcaff717ac4e5fa26bafe027eb0af9786dc39c68e591d706",
+      "old_bytes": 52010,
+      "new_sha256": "58215eebbc449f591b832219045e39543394ed0018e85c574ec962b4e15166f4",
+      "new_bytes": 78885,
+      "reason": "Present checked original-literature statements separately from platform interpretation; preserve original author attribution and scientific limits."
+    },
+    {
+      "path": "topics/fluoromonomers/index.html",
+      "old_sha256": "226275b67b0ff281f0cc373e6f0ebceb91eea8c22322278a897ed2bdfdd09e11",
+      "old_bytes": 60034,
+      "new_sha256": "6972664021418b4337e5bb7785cc6bd77d5d7a96968bdfd41a6a8d7812fa2fa1",
+      "new_bytes": 60217,
+      "reason": "Present checked original-literature statements separately from platform interpretation; preserve original author attribution and scientific limits."
+    }
+  ],
+  "reversible_text_files": [
+    {
+      "path": "site/research/index.html",
+      "old_sha256": "bd8902afeb1cede0bcaff717ac4e5fa26bafe027eb0af9786dc39c68e591d706",
+      "old_bytes": 52010,
+      "new_sha256": "58215eebbc449f591b832219045e39543394ed0018e85c574ec962b4e15166f4",
+      "new_bytes": 78885,
+      "edits": [
+        {
+          "old_offset": 8215,
+          "replacement": 0
+        }
+      ]
+    },
+    {
+      "path": "site/topics/fluoromonomers/index.html",
+      "old_sha256": "226275b67b0ff281f0cc373e6f0ebceb91eea8c22322278a897ed2bdfdd09e11",
+      "old_bytes": 60034,
+      "new_sha256": "6972664021418b4337e5bb7785cc6bd77d5d7a96968bdfd41a6a8d7812fa2fa1",
+      "new_bytes": 60217,
+      "edits": [
+        {
+          "old_offset": 19746,
+          "replacement": 1
+        },
+        {
+          "old_offset": 21427,
+          "replacement": 2
+        },
+        {
+          "old_offset": 22920,
+          "replacement": 3
+        },
+        {
+          "old_offset": 53020,
+          "replacement": 4
+        }
+      ]
+    },
+    {
+      "path": "content/ai-research-section.v1.json",
+      "old_sha256": "b023fb4b35a1a661c310895d59770771618b49de6114e878308c569186165e56",
+      "old_bytes": 69152,
+      "new_sha256": "8816f7aab7ed0793c621c904fc819ee4738cabd55a2202f8105f13c64c59cf95",
+      "new_bytes": 97371,
+      "edits": [
+        {
+          "old_offset": 6512,
+          "replacement": 5
+        },
+        {
+          "old_offset": 28835,
+          "replacement": 6
+        },
+        {
+          "old_offset": 30870,
+          "replacement": 7
+        },
+        {
+          "old_offset": 33867,
+          "replacement": 8
+        },
+        {
+          "old_offset": 35296,
+          "replacement": 9
+        },
+        {
+          "old_offset": 45621,
+          "replacement": 10
+        },
+        {
+          "old_offset": 55297,
+          "replacement": 11
+        },
+        {
+          "old_offset": 58418,
+          "replacement": 12
+        },
+        {
+          "old_offset": 59575,
+          "replacement": 13
+        },
+        {
+          "old_offset": 60623,
+          "replacement": 14
+        },
+        {
+          "old_offset": 61495,
+          "replacement": 15
+        },
+        {
+          "old_offset": 64166,
+          "replacement": 16
+        },
+        {
+          "old_offset": 65044,
+          "replacement": 17
+        },
+        {
+          "old_offset": 65700,
+          "replacement": 18
+        },
+        {
+          "old_offset": 66299,
+          "replacement": 19
+        },
+        {
+          "old_offset": 66922,
+          "replacement": 20
+        },
+        {
+          "old_offset": 67950,
+          "replacement": 21
+        },
+        {
+          "old_offset": 69128,
+          "replacement": 22
+        }
+      ]
+    },
+    {
+      "path": "scripts/render_ai_research.py",
+      "old_sha256": "729298ecb6146cba6b9a78bdc2074dabb10b6a2f551f7efaf4d0a4078e29f521",
+      "old_bytes": 34792,
+      "new_sha256": "c4cfba4d66c616b4a04d258ec4b1f644dd8858cd2734693dd3c8efbd60ed135a",
+      "new_bytes": 40484,
+      "edits": [
+        {
+          "old_offset": 6714,
+          "replacement": 23
+        },
+        {
+          "old_offset": 11236,
+          "replacement": 24
+        },
+        {
+          "old_offset": 11252,
+          "replacement": 25
+        },
+        {
+          "old_offset": 18777,
+          "replacement": 26
+        },
+        {
+          "old_offset": 20928,
+          "replacement": 27
+        },
+        {
+          "old_offset": 26401,
+          "replacement": 28
+        }
+      ]
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "old_sha256": "e7486227539040ef696f32d646aaa362de55c99ffb32100b6d0f5e88015448fb",
+      "old_bytes": 38171,
+      "new_sha256": "329ce8ce5d2242cc7bd44e701dafa4db471d379e5a4048459bd20886ec9fdec6",
+      "new_bytes": 57707,
+      "edits": [
+        {
+          "old_offset": 1956,
+          "replacement": 29
+        },
+        {
+          "old_offset": 14427,
+          "replacement": 30
+        },
+        {
+          "old_offset": 16149,
+          "replacement": 7
+        },
+        {
+          "old_offset": 18524,
+          "replacement": 8
+        },
+        {
+          "old_offset": 19578,
+          "replacement": 31
+        },
+        {
+          "old_offset": 24535,
+          "replacement": 10
+        },
+        {
+          "old_offset": 26643,
+          "replacement": 32
+        },
+        {
+          "old_offset": 29442,
+          "replacement": 12
+        },
+        {
+          "old_offset": 30077,
+          "replacement": 33
+        },
+        {
+          "old_offset": 31187,
+          "replacement": 14
+        },
+        {
+          "old_offset": 33000,
+          "replacement": 15
+        },
+        {
+          "old_offset": 33283,
+          "replacement": 34
+        },
+        {
+          "old_offset": 34391,
+          "replacement": 17
+        },
+        {
+          "old_offset": 34878,
+          "replacement": 18
+        },
+        {
+          "old_offset": 35100,
+          "replacement": 35
+        },
+        {
+          "old_offset": 35803,
+          "replacement": 20
+        },
+        {
+          "old_offset": 36662,
+          "replacement": 21
+        },
+        {
+          "old_offset": 36941,
+          "replacement": 36
+        }
+      ]
+    },
+    {
+      "path": "content/a02-academic-achievements.v1.json",
+      "old_sha256": "f7372dbd92a20989d814334e297931b38f07ad14c209e27e9f089cc4a720b4b9",
+      "old_bytes": 54170,
+      "new_sha256": "173ebb010d8e8797b1d40d626c0117f1b80aea77f04c3299a63d4d0cec2fc244",
+      "new_bytes": 54356,
+      "edits": [
+        {
+          "old_offset": 5259,
+          "replacement": 1
+        },
+        {
+          "old_offset": 6784,
+          "replacement": 2
+        },
+        {
+          "old_offset": 8293,
+          "replacement": 37
+        },
+        {
+          "old_offset": 8663,
+          "replacement": 38
+        },
+        {
+          "old_offset": 11263,
+          "replacement": 39
+        }
+      ]
+    },
+    {
+      "path": "docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "old_sha256": "1a6de57e4bce730bfd2f1ffe2a26398ab7494d92808f55515324fdbcf34473e8",
+      "old_bytes": 41598,
+      "new_sha256": "8e714347897b88902c12b714769dee46c59f0788e8b87e82f07a3414c2a1fc85",
+      "new_bytes": 41787,
+      "edits": [
+        {
+          "old_offset": 19252,
+          "replacement": 1
+        },
+        {
+          "old_offset": 20523,
+          "replacement": 2
+        },
+        {
+          "old_offset": 21886,
+          "replacement": 40
+        },
+        {
+          "old_offset": 31716,
+          "replacement": 41
+        },
+        {
+          "old_offset": 34266,
+          "replacement": 39
+        }
+      ]
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "old_sha256": "a0a3bb8ad112aa270e08980850e793058dfe958fa8e8f564875609f482d789b5",
+      "old_bytes": 308849,
+      "new_sha256": "3497c008ed83a7737e46a81c714475586040583646bb6cf950eef0efa8800eff",
+      "new_bytes": 309525,
+      "edits": [
+        {
+          "old_offset": 301,
+          "replacement": 42
+        },
+        {
+          "old_offset": 34143,
+          "replacement": 43
+        },
+        {
+          "old_offset": 95869,
+          "replacement": 44
+        },
+        {
+          "old_offset": 276019,
+          "replacement": 45
+        },
+        {
+          "old_offset": 293238,
+          "replacement": 46
+        },
+        {
+          "old_offset": 296284,
+          "replacement": 43
+        },
+        {
+          "old_offset": 297056,
+          "replacement": 47
+        },
+        {
+          "old_offset": 297736,
+          "replacement": 48
+        },
+        {
+          "old_offset": 299331,
+          "replacement": 49
+        },
+        {
+          "old_offset": 299766,
+          "replacement": 50
+        },
+        {
+          "old_offset": 299982,
+          "replacement": 51
+        },
+        {
+          "old_offset": 301316,
+          "replacement": 52
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "/ul><article class=\"result-evidence\" id=\"a01-first-report-results\"><p class=\"result-identity\">历史论文记录 · 平台原文核读</p><h4>第一报揭示了哪些六氟丙酮反应？</h4><p>Knunyants、Ch’en Ch’ing-yun（陈庆云）、Gambaryan在1960年第一报中，把六氟丙酮反应组织为可继续转化和鉴定的产物体系。三位作者同属苏联科学院元素有机化合物研究所；原文未列个人分工，不按署名顺序推定贡献比例。</p><p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a01-first-report-results-table-1\"><table><caption id=\"a01-first-report-results-table-1\">反应、鉴定证据与原文位置</caption><thead><tr><th scope=\"col\">研究内容</th><th scope=\"col\">原文观察与证据</th><th scope=\"col\">英译本位置</th></tr></thead><tbody><tr><th scope=\"row\">醇加成产物与缩酮的不同稳定性</th><td>六氟丙酮与醇形成半缩酮，受热可分解回原反应物；转为对称或不对称缩酮后，原文记录其在所述酸、碱与苯胺处理中的不同稳定性。</td><td>p647讨论与结构式；p650实验段</td></tr><tr><th scope=\"row\">炔基有机镁加成与二醇构建</th><td>炔基有机镁试剂加成得到炔醇；使用双镁衍生物及后续偶联、与丙酮反应，分别构建对称或不对称含氟二醇。</td><td>p647–648结构式I–IV；p651相关实验</td></tr><tr><th scope=\"row\">羟基酮VII的C–C裂解与产物鉴定</th><td>羟基酮VII热分解得到六氟丙酮与苯乙酮；实验段分别以六氟丙酮氨基脲腙及苯乙酮二硝基苯腙与已知样品混熔无降点支持鉴定。</td><td>p648讨论、VII结构及裂解图；p651末段的两项混熔记录</td></tr><tr><th scope=\"row\">β-羟基酸、酯及衍生转化</th><td>Reformatskii型反应得到β-羟基酯VIII，再经水解等转化与已知酸IX、酰胺相关联；文中另列丙二酸及丙二酸酯相关产物。</td><td>p649讨论及VIII–X结构式；p652 VIII、IX、X实验段</td></tr></tbody></table></div><p class=\"scientific-meaning\"><b>科学意义：</b>原作者以产物转化、衍生物鉴定和未成功反应共同刻画含氟羰基化学；平台的贡献是把讨论、结构与实验出处对应起来，让后人能逐项追读这些开拓性工作。</p><ul class=\"result-limits\"><li>上述是历史实验记录的释读，不是平台新实验。混熔鉴定支持产物身份，不能单独证明唯一微观路径；原文稳定性和未反应结论各限于所试对象与条件。</li></ul><div class=\"result-sources\"><b>原文与结果出处</b><p class=\"links\"><a href=\"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n100\">第一报英译本 p.647（全文起页） →</a><a href=\"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n103\">p.650：醇衍生物及单体用途提议 →</a><a href=\"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n104\">p.651：二醇及裂解鉴定 →</a><a href=\"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n105\">p.652：酸酯、双酚与分析数据 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A01_FIRST_REPORT_zh-CN.md\">原文定位与中文释读 →</a></p></div></article><article class=\"result-evidence\" id=\"a01-bpaf-original\"><p class=\"result-identity\">两份独立历史记录</p><h4>双酚AF：论文与发明说明书分别记载了什么？</h4><p>第一报把六氟丙酮反应延伸至二酚的制备与鉴定。第117491号文书为发明人证书说明书；其网页镜像、传记中的授予证书书影和独立证书原件是不同材料。</p><p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a01-bpaf-original-table-1\"><table><caption id=\"a01-bpaf-original-table-1\">原值照录，保持各自实验身份</caption><thead><tr><th scope=\"col\">材料与对象</th><th scope=\"col\">产物质量</th><th scope=\"col\">原文收率</th><th scope=\"col\">原文熔点</th><th scope=\"col\">出处</th></tr></thead><tbody><tr><th scope=\"row\">第一报：双酚AF（XI）</th><td>29 g</td><td>90.5%</td><td>161–162°C</td><td>p.652；结构见p.649</td></tr><tr><th scope=\"row\">第117491号说明书：双酚AF</th><td>21.7 g</td><td>98%</td><td>161–162°C</td><td>单例说明书原图</td></tr><tr><th scope=\"row\">第一报：邻甲酚对应二酚（XII）</th><td>10.9 g</td><td>91%</td><td>134–135°C</td><td>p.652；结构见p.650</td></tr></tbody></table></div><p class=\"table-note\">XI原文元素分析Found：C 53.68%、H 2.98%、F 34.13%；Calculated：C 53.57%、H 2.97%、F 33.92%（p.652）。这两行原值不由平台现代原子量回算值替换。</p><p class=\"scientific-meaning\"><b>科学意义：</b>这些记录直接显示原团队从全氟酮反应走向含氟二酚制备，并用熔点与元素分析等支持产物鉴定；它们比单一历史评价更具体地呈现学术贡献。</p><ul class=\"result-limits\"><li>29 g／90.5%与21.7 g／98%不能合并成同一次实验，也不能仅据收率数字比较工艺优劣。XII是另一种甲基取代产物。</li><li>原作者提出XI、XII可作聚酯、聚氨酯等的潜在单体（p.650）；该提议不能写成该文已经测得聚合材料性能或实现产业采用。</li></ul><div class=\"result-sources\"><b>原文与结果出处</b><p class=\"links\"><a href=\"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n105\">p.652：酸酯、双酚与分析数据 →</a><a href=\"https://poleznayamodel.ru/patent/11/117491.html\">第117491号说明书镜像 →</a><a href=\"https://img.poleznayamodel.ru/img_pat/357/3573210.jpg\">说明书原图镜像 →</a><a href=\"../topics/early-fluoroketones/index.html#record-inventor-certificate\">证书书影与文书身份说明 →</a></p></div></article><article class=\"result-evidence\" id=\"a01-yield-results\"><p class=\"result-identity\">平台已完成 · 条件性数值重建</p><h4>质量账本能重建说明书所报的98%吗？</h4><p>说明书印出苯酚12.2 g、六氟丙酮11.2 g、产物21.7 g与98%。按目标名称作现代身份解析，以C₃F₆O＋2 C₆H₆O → C₁₅H₁₀F₆O₂＋H₂O作净计量，假设印出质量直接使用、纯度为1，名义限制试剂为苯酚。</p><p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a01-yield-results-table-1\"><table><caption id=\"a01-yield-results-table-1\">原报告与已保存的条件性重建</caption><thead><tr><th scope=\"col\">量</th><th scope=\"col\">数值</th><th scope=\"col\">身份</th></tr></thead><tbody><tr><th scope=\"row\">原报告收率</th><td>98%</td><td>说明书原值</td></tr><tr><th scope=\"row\">名义理论产物量</th><td>21.793205 g</td><td>固定假设下重建</td></tr><tr><th scope=\"row\">质量账本表观收率</th><td>99.572323%</td><td>21.7 g／名义理论量</td></tr><tr><th scope=\"row\">表观收率减原报告</th><td>+1.572323 个百分点</td><td>仍未解释的残差</td></tr></tbody></table></div><p class=\"table-note\">现代近似原子量约定：H=1.008、C=12.011、O=15.999、F=18.998403163。净计量式不是说明书原画结构式，也不是反应机理。</p><p class=\"table-note\">把三个质量各作独立±0.05 g显示舍入扰动，表观收率范围为98.937413%–100.212459%；原98%按±0.5个百分点的显示区间为97.5%–98.5%，两者不相交。两区间均不是实验不确定度或置信区间。</p><p class=\"scientific-meaning\"><b>科学意义：</b>结果把“98%如何得到”明确为理论量、原料身份与质量基准的追查问题；在所列假设下，单靠所设显示舍入不能使账本闭合。</p><ul class=\"result-limits\"><li>不据此修正原文产物质量或真实收率，不认定样品纯度、结构或材料性能，也不判定原作者实验或计算错误。原始收率基准仍待证据解释。</li></ul><div class=\"result-sources\"><b>原文与结果出处</b><p class=\"links\"><a href=\"https://img.poleznayamodel.ru/img_pat/357/3573210.jpg\">说明书原图 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/bisphenol-af-yield/README.md\">完整假设、结果与残差 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/bisphenol-af-yield/result.json\">已保存结果JSON →</a></p></div></article><article class=\"result-evidence\" id=\"a01-mr-results\"><p class=\"result-identity\">平台已完成 · 另一篇论文的物性复核</p><h4>衍生物I、V的摩尔折射重建：质量约定会改变判断吗？</h4><p>对象来自陈庆云、Gambaryan、Knuniants署名的1960年Doklady 133(5):1113–1116论文，与双酚AF制备记录分开。I、V主比较均采用20°C的折射率与相对密度。</p><p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a01-mr-results-table-1\"><table><caption id=\"a01-mr-results-table-1\">原文输入及原刊MR，两行对象各自独立</caption><thead><tr><th scope=\"col\">化合物／原页</th><th scope=\"col\">分子式</th><th scope=\"col\">n_D（20°C）</th><th scope=\"col\">d⁽²⁰⁾₄</th><th scope=\"col\">原刊found MR</th><th scope=\"col\">原刊“计算MR”</th></tr></thead><tbody><tr><th scope=\"row\">I／p.1115</th><td>C10H10F6O4</td><td>1.3720</td><td>1.3025</td><td>53.74</td><td>52.09</td></tr><tr><th scope=\"row\">V／p.1116</th><td>C10H13F6NO4</td><td>1.3840</td><td>1.4534</td><td>54.90</td><td>52.20</td></tr></tbody></table></div><p class=\"table-note\">MR按通常意义解释为cm³·mol⁻¹，原刊该段未另印单位。原刊“计算MR”的方法和加和常数未说明，不与本页Lorentz–Lorenz重建混同。</p><p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a01-mr-results-table-2\"><table><caption id=\"a01-mr-results-table-2\">Lorentz–Lorenz重建及相对原刊found MR的残差（cm³·mol⁻¹）</caption><thead><tr><th scope=\"col\">对象</th><th scope=\"col\">质量约定</th><th scope=\"col\">重建MR</th><th scope=\"col\">重建−原刊found MR</th><th scope=\"col\">所设舍入区间相交？</th></tr></thead><tbody><tr><th scope=\"row\">I</th><td>整数质量</td><td>53.744264</td><td>+0.004264</td><td>是</td></tr><tr><th scope=\"row\">I</th><td>现代近似原子量</td><td>53.775048</td><td>+0.035048</td><td>否</td></tr><tr><th scope=\"row\">V</th><td>整数质量</td><td>52.282137</td><td>-2.617863</td><td>否</td></tr><tr><th scope=\"row\">V</th><td>现代近似原子量</td><td>52.315504</td><td>-2.584496</td><td>否</td></tr></tbody></table></div><p class=\"table-note\">Rₘ=[(n_D²−1)/(n_D²+2)]·M/ρ；ρ≈d⁽²⁰⁾₄×1 g·cm⁻³。整数质量采用C=12、H=1、F=19、N=14、O=16，只是显式敏感性约定，未认定原作者当时使用这些常数。</p><p class=\"table-note\">折射率、密度各±0.00005及原刊MR±0.005只作独立显示舍入诊断；不是测量误差。I仅在整数质量约定下相容；V两种约定均保留残差。</p><p class=\"scientific-meaning\"><b>科学意义：</b>这项复核把历史数据的相容性落实到公式和质量约定：I的“相容”需要附条件，V则留下明确待查的缺口，便于后人继续寻找原始物性和表征证据。</p><ul class=\"result-limits\"><li>不是新的MR直接测量，也不能据此验证共轭解释、双酚AF结构或反应机理。V残差的原因尚未确定。III的分子式异文及IV混合温度输入仍保留在专业记录中。</li></ul><div class=\"result-sources\"><b>原文与结果出处</b><p class=\"links\"><a href=\"https://www.mathnet.ru/rus/dan23922\">原文目录与全文入口 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/molar-refraction/README.md\">物性复核说明 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/molar-refraction/result.json\">完整结果与舍入诊断 →</a></p></div></article><details class=\"record-archive\"><summary>专业记录与完整数据</summary><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>第一报英译本647–653页全部七页影印图已取得并核读；俄文原刊与专业核译仍待核。另两篇Doklady原页共八页已有AI核读，关键结构转录签认待补。传记p29的证书书影已核见，独立高清原始扫描及细字日期仍待核。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/README.md\">早期原文与分支研究说明 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A01_FIRST_REPORT_zh-CN.md\">第一报全文核读范围与历史证据 →</a></p></div><div class=\"record\"><h4>计量重建：双酚AF制备记录</h4><p>已在明确原料身份、原子量和净计量假设下重建第117491号说明书质量—收率账本；原98%收率基准仍待核。论文实例与说明书分别登记，不修正原文质量或认定样品纯度。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/bisphenol-af-yield/README.md\">计量假设、结果与未解残差 →</a></p></div><div class=\"record\"><h4>物性复核：指定衍生物折射性质</h4><p>已根据1960年133卷原文的折射率、相对密度及质量约定重建指定衍生物的摩尔折射，保留残差、温度条件与原文异文；这项工作不验证双酚AF结构、收率或性能。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/molar-refraction/README.md\">物性重建与适用范围 →</a></p></div><div class=\"record\"><h4>现代噁唑酮模型：M0保持暂停</h4><p>已有受限模型与CF₃底物五点精度诊断阶段档案；完整曲率资格尚未闭合，尚不能解释原文CF₃／CH₃与苯胺的定性反应性差异，没有合格势垒排序或机制结论。M0保持暂停。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/oxazolone-model/README.md\">模型范围与阶段状态 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/results-v1/RESULTS_zh-CN.md\">既有五点诊断阶段报告 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/public-progress.current.json\">阶段进展登记入口 →</a></p></div></div></details><div class=\"pending-work\" id=\"ai-a01-pending\"><h3>待核事项</h3><ul><li>第一报俄文原刊、俄英逐句校勘、专业核译与关键结构签认仍待完成；吡啶／哌啶、氯／溴代乙酸酯和X投料列项三处异文保留。</li><li>第117491号授予证书独立高清原件和档案来源待补；说明书的收率基准、原料与样品纯度未明。传记证书书影已核见，不与独立原件混称。</li><li>I、V原刊“计算MR”的常数、真实测量不确定度及V残差原因待核；不静默更改原值。</li><li>M0噁唑酮模型仍为暂停的阶段档案，完整曲率资格未闭合，不能承担合格势垒、机理或原文定性反应性解释。</li></ul></div><div class=\"future-work\" id=\"ai-a01-future\"><h3>未来设想（尚未开展）</h3><ul><li>先追查同一成果的其他原始记录，厘清收率和物性基准，并完成专业译校与结构签认。</li><li>未来若考虑现代模型或实验，须另行明确具体对象、可检验量和先行研究；这里不把候选解释写成已完成发现，也不恢复M0计算。</li></ul></div><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/early-fluoroketones/index.html#a01-original-achievements\">原始学术成果与证据 →</a><a href=\"../topics/early-fluoroketones/index.html#a01-first-report\">第一报原文与证据 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section><section class=\"research-line\" id=\"ai-a02\" aria-labelledby=\"ai-a02-title\"><span class=\"status\">研究资料与问题</span><h2 id=\"ai-a02-title\">A02（含氟单体、氟橡胶与氟油）</h2><h3>科学问题</h3><p>怎样得到适合聚合的单体，并区分单体、材料与调聚反应各自的贡献？</p><h3>AI怎样辅助</h3><p>对照传记、机构记载与原刊图式，区分单体、材料与调聚产物；关联结构、表征和衍生转化，保留原文异文与专业核校状态。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>单体、材料与氟油的历史贡献</h4><p>已核对传记印刷p.35–39、114–115并与机构资料对照，区分氟橡胶1号的前期团队成果、陈先生参与的六氟丙烯制取与分离，以及后续材料和氟油工作。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#topic-fluoromonomers\">具体贡献、合作与出处 →</a></p></div><div class=\"record\"><h4>1980年调聚原刊：从书目走向原文证据</h4><p>已取得并核读《化学学报》175–184页全部10页，关联两类调聚产物、主要加成方向、光谱及化学转化证据。原文观察和数值在专题直接展示，归原作者；不作为平台新实验。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#a02-vdf-1980\">原文证据及历史数值 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">完整核读与待核事项 →</a></p></div><div class=\"record\"><h4>对象消歧、异文与未完成研究</h4><p>已分开材料牌号、两类调聚产物和不同氟油；保留原刊中文摘要与正文胺名等异文，并把少量反向异构体线索限定于四氯化碳体系的过渡馏分。尚未开展本线复算、量化计算、实验或材料性能验证。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#refs\">来源层级与待核证据 →</a></p></div><div class=\"record\"><h4>制取、材料与氟油技术记录：来源分级</h4><p>新取得并核读1963年他组原文与1986年有机所工厂供样的氟氯液体论文，分别提取低温分馏证据、折射率实测与作者修正值、耐压条件和合作分工；另定位FJ-23机构获奖登记。它们不自动等同陈团队制取记录、历史2号／3号或早期氟溴陀螺油。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#a02-technical-records\">技术记录、原报物性与待核关联 →</a></p></div><div class=\"record\"><h4>陈先生团队：具体贡献与原件追查</h4><p>已重读传记p.35–39，细化裂解观察、低温分离、自制仪器与合作分工，列明2018本人访谈、同期试制／装置、历史2号／3号及早期油品原件的追查位置。尚未取得这些新的同期技术原件；后出回顾、馆藏目录与原件分开。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#a02-team-records\">团队贡献、来源分列与原件待核清单 →</a></p></div><div class=\"record\"><h4>本人访谈与所引书页：引据追踪</h4><p>国图2009年《中国科学院》详细书目记3册(377;454;630页)，册数与页数已有书目依据；所引p.291的分册归属及第290–292页原文仍待核。朱晶2019年研究报告的资料索引、2018-01-03访谈原录，以及同期试制、低温分离和早期氟溴油技术原件仍未取得。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#a02-source-trace\">已核定位、资料身份与待取得原件 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>历史原作者实验、机构回顾与平台AI释读分别呈现；氟橡胶1号前期团队成果不全部归陈先生，不同氟油和后续牌号分别登记。</li><li>原刊支持主要加成方向；四氯化碳体系过渡馏分的弱峰是作者保留极少量反向异构体可能性的依据，不把该线索推广至两类体系。原作者的极性解释不作平台机制确认，乳化用途也不升级为定量性能或环境安全结论。</li><li>1980原刊已取得并核读，专业结构签认与摘要／正文异文校勘仍待核；未进行新增科学计算或实验，M0继续暂停。</li><li>同期他组研究、相关机构材料实测、机构成果登记与陈先生本人工作分开；原文n_D实测及1.06 μm作者色散修正值不混为平台新测量。</li><li>本人访谈原录、当年试制和装置原件仍待取得；传记中二氟一氯甲烷及机构TFE／PTFE记载分别呈现，不由AI拼接为已经证实的工艺。</li><li>馆藏目录、人物专题片及访问入口不等于访谈原录或书页已取得；2009年年鉴与所引《中国科学院》不同，目标册次保持待核。</li></ul><p><b>下一步先补的证据：</b>优先调阅2018-01-03上海访谈原录与馆藏档号，以及2009版《中国科学院》各分册版权／目录和目标册p.290–292；年鉴不替代目标著作。</p><p><b>候选后续问题：</b>在原始工况、产物分布和表征证据充分后，能否分别比较加成方向、端基转化与物性，而不把不同调聚剂、产物和工程对象混为同一体系？</p><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html\">单体、材料与调聚专题 →</a><a href=\"../topics/fluoromonomers/index.html#record-fluorinated-oils\">氟油档案 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section><section class=\"research-line\" id=\"ai-a03\" aria-labelledby=\"ai-a03-title\"><span class=\"status\">研究资料与问题</span><h2 id=\"ai-a03-title\">A03（全氟叔丁基（PFtB）化学）</h2><h3>科学问题</h3><p>哪些结构、反应与光谱观察支持特定全氟烷基碘代物的效应比较？</p><h3>AI怎样辅助</h3><p>辅助原表转录、溶剂与分子身份核对；用固定公式重放波长差和波数蓝移，检查假定扰动下的顺序敏感性。</p><nav class=\"result-nav\" aria-label=\"A03（全氟叔丁基（PFtB）化学）研究状态\"><a href=\"#ai-a03-completed\">已完成工作</a> · <a href=\"#ai-a03-pending\">待核事项</a> · <a href=\"#ai-a03-future\">未来设想</a></nav><h3 id=\"ai-a03-completed\">已完成工作：原文与数据复核</h3><ul><li>已转录1966年论文表1的10个波长记录；9个配对记录形成下列6项位移，另一条CCl₄记录不属于此配对任务。</li><li>已用固定公式保存波长差、波数蓝移及假定有界扰动诊断。单位换算与敏感性分析属于平台数值重放，不是独立光谱实验。</li></ul><article class=\"result-evidence\" id=\"a03-shift-results\"><p class=\"result-identity\">原表数据＋平台单位重放</p><h4>三种碘代物的六项紫外溶剂位移</h4><p>陈庆云、蒋锡夔、陈秉启、梁梦兰在1966年《化学学报》论文中研究全氟叔丁基碘及相应溴化物的制备、结构与反应，并用紫外溶剂位移讨论吸电性顺序。这里直接展示印刷p.21表1的对应波长和已保存换算值。</p><p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a03-shift-results-table-1\"><table><caption id=\"a03-shift-results-table-1\">λ为原表吸收峰λmax；波长单位nm，蓝移单位cm⁻¹</caption><thead><tr><th scope=\"col\">完整碘代物</th><th scope=\"col\">给体溶剂B</th><th scope=\"col\">λH／nm</th><th scope=\"col\">λB／nm</th><th scope=\"col\">原表δλ／nm</th><th scope=\"col\">换算Δν̃／cm⁻¹</th></tr></thead><tbody><tr><th scope=\"row\">全氟正丙基碘 n-C₃F₇I</th><td>乙醇</td><td>270.0</td><td>250.0</td><td>20.0</td><td>2962.963</td></tr><tr><th scope=\"row\">全氟异丙基碘 i-C₃F₇I</th><td>乙醇</td><td>274.0</td><td>250.0</td><td>24.0</td><td>3503.650</td></tr><tr><th scope=\"row\">全氟叔丁基碘 (CF₃)₃CI</th><td>乙醇</td><td>288.0</td><td>260.5</td><td>27.5</td><td>3665.494</td></tr><tr><th scope=\"row\">全氟正丙基碘 n-C₃F₇I</th><td>乙醚</td><td>270.0</td><td>256.0</td><td>14.0</td><td>2025.463</td></tr><tr><th scope=\"row\">全氟异丙基碘 i-C₃F₇I</th><td>乙醚</td><td>274.0</td><td>257.0</td><td>17.0</td><td>2414.155</td></tr><tr><th scope=\"row\">全氟叔丁基碘 (CF₃)₃CI</th><td>乙醚</td><td>288.0</td><td>264.0</td><td>24.0</td><td>3156.566</td></tr></tbody></table></div><p class=\"table-note\">H沿用原表C₆H₁₄记号，当前登记未进一步指定异构体；B是乙醇或乙醚的给体溶剂记号，不是苯。原单位毫微米的数值等于nm。</p><p class=\"table-note\">δλ=λH−λB；Δν̃=10⁷(1/λB−1/λH)，λ以nm计。正值表示蓝移。两个尺度来自同一批波长，不是两组独立实验。</p><p class=\"scientific-meaning\"><b>科学意义：</b>在乙醇和乙醚中，两种数值表达都保留名义顺序：全氟叔丁基碘＞全氟异丙基碘＞全氟正丙基碘。平台重放使原作者所用位移证据可逐项复核，并显示结论应保留完整分子与介质条件。</p><ul class=\"result-limits\"><li>本表没有CF₃I或C₂F₅I的直接数值；不能把n-C₃F₇I换成C₂F₅I，也不能把三种分子的位移直接升级为四种孤立基团的普适诱导顺序。</li><li>原作者的制备、结构鉴定和反应实验依原文归属；本任务只重放表格，不由这些换算裁决亲卤反应机制、游离阴离子或材料性能。</li></ul><div class=\"result-sources\"><b>原文与结果出处</b><p class=\"links\"><a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18\">1966原论文与PDF入口（p.21表1） →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/data/pftb1966_table1.csv\">原表波长转录 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/pftb1966-uv-replay.json\">六项结果与完整比较 →</a><a href=\"../pftb/index.html#contribution\">原作者的研究贡献与论证 →</a></p></div></article><article class=\"result-evidence\" id=\"a03-sensitivity-results\"><p class=\"result-identity\">平台已完成 · 假定扰动诊断</p><h4>同一名义顺序的数值裕量有多大？</h4><p>乙醇中，全氟叔丁基碘与全氟异丙基碘的波数蓝移最接近，名义差为161.844074 cm⁻¹。已保存结果采用每个相关峰位独立±u nm的有界扰动模型。</p><p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a03-sensitivity-results-table-1\"><table><caption id=\"a03-sensitivity-results-table-1\">同一对分子的两种比较尺度</caption><thead><tr><th scope=\"col\">比较量</th><th scope=\"col\">名义差</th><th scope=\"col\">区间首次接触的峰位半宽u</th></tr></thead><tbody><tr><th scope=\"row\">波长差δλ</th><td>3.5 nm</td><td>0.875 nm</td></tr><tr><th scope=\"row\">波数蓝移Δν̃</th><td>161.844074 cm⁻¹</td><td>0.288427 nm</td></tr></tbody></table></div><p class=\"table-note\">按每个峰独立±0.05 nm的显示舍入假设，保存结果中各相邻比较仍分离；真实测量不确定度未由原表提供，仍记为未知。</p><p class=\"scientific-meaning\"><b>科学意义：</b>单位变换保留了名义顺序，却改变了比较的数值裕量。这提示后续评价要区分显示精度、真实测量不确定度与物理解释，不能把某个阈值直接当作实验显著性。</p><ul class=\"result-limits\"><li>0.288427、0.875和±0.05 nm均属声明的数学扰动模型；不是仪器精度、实验误差、置信区间，也不构成对原论文的否定。</li></ul><div class=\"result-sources\"><b>原文与结果出处</b><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/REPLAY_REPORT_zh-CN.md\">重放与敏感性报告 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/protocols/pftb1966_uv.json\">固定协议与单位约定 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/pftb1966-uv-replay.json\">已保存比较结果 →</a></p></div></article><details class=\"record-archive\"><summary>专业记录与完整数据</summary><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>已按1966年原表转录10个波长记录，其中9个配对记录形成6项位移；波长差、波数蓝移与有界扰动诊断属于同批原表数值重放。原刊印刷21页表1及24页实验部分已回查：紫外仪器为Unicam SP-500；20°C注明于核磁共振测量，不能移作紫外温度。紫外测量条件与真实不确定度仍未完整确认，专业转录签认待补。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/REPLAY_REPORT_zh-CN.md\">PF1966-UV-T1数值重放报告 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/data/pftb1966_table1.csv\">原表转录数据 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/pftb1966-uv-replay.json\">既有重放结果 →</a><a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18\">1966原刊：表1见印刷21页，仪器见24页 →</a></p></div></div></details><div class=\"pending-work\" id=\"ai-a03-pending\"><h3>待核事项</h3><ul><li>原表转录仍待独立化学专家签认；未重新测量光谱、重建完整谱线或进行峰拟合。</li><li>真实峰位不确定度未知；当前重放协议未登记温度、浓度、光程、仪器及谱带归属，尚不足以定义现代光谱验证模型。</li><li>从完整碘代物位移到基团效应解释仍需额外证据，不能凭本表补造CF₃I、C₂F₅I数据或认定反应机理。</li></ul></div><div class=\"future-work\" id=\"ai-a03-future\"><h3>未来设想（尚未开展）</h3><ul><li>先完成原表专业核校，并从原始文献与相关记录补齐测量条件和谱带归属。</li><li>资料充分后，再论证如何用独立光谱测量或明确的现代模型区分溶剂相互作用与基团效应；此为待查新、待设计的问题，尚未启动。</li></ul></div><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../pftb/index.html#contribution\">1966原始研究与贡献 →</a><a href=\"../pftb/index.html#arguments\">原始论证 →</a><a href=\"../pftb/index.html#questions\">专题待核问题 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section><section class=\"research-line\" id=\"ai-a04\" aria-labelledby=\"ai-a04-title\"><span class=\"status\">研究资料与问题</span><h2 id=\"ai-a04-title\">A04（F-53铬雾抑制剂）</h2><h3>科学问题</h3><p>如何从材料研制、厂试及工程协作的不同记录理解历史应用？</p><h3>AI怎样辅助</h3><p>关联论文、合作单位与厂试记录；消歧F-53、F-53B、盐型和商品混合物，核对年代、单位与效益口径。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>已取得并核读1979年《全氟和多氟烷基磺酸的研究 II. 一些多氟烷基醚磺酸的合成》原刊315–324页，324页为同篇英文摘要，署名“全氟磺酸组”。323页致谢记载所内质谱组及上海医药工业研究院核磁组的分析协作。1977年前报和1978年Scientia Sinica原文仍待取得；机构合作登记、论文集体署名与个人分工分别保存，未据此认定个人贡献或完成厂试验证。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md\">现有材料、缺口与原始资料定位 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>传记与机构回顾不替代原始厂试；分子计算不能复现车间收益；历史应用不证明当前使用、低毒或环境安全。</li></ul><p><b>下一步先补的证据：</b>继续追查1977／1978原刊及厂试／扩试原表；将原刊分析协作、机构合作与个人分工按不同证据层级核对。</p><p><b>候选后续问题：</b>不同历史产品与批次对应哪些工况和实测数据，怎样与后续环境研究准确对接？</p><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/f53/index.html\">F-53研究专题 →</a><a href=\"../topics/f53/index.html#record-industrial-application\">历史工业应用档案 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section><section class=\"research-line\" id=\"ai-a05\" aria-labelledby=\"ai-a05-title\"><span class=\"status\">研究资料与问题</span><h2 id=\"ai-a05-title\">A05（制冷剂与配套技术）</h2><h3>科学问题</h3><p>组分制备、混合试配、中试、润滑油与整机试用分别需要哪些证据？</p><h3>AI怎样辅助</h3><p>消歧F-115、F-502与HFC-134a；对齐原论文、专利和工况字段，整理配套润滑油及整机协作的证据链。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>已取得并核读1978年《五氟氯乙烷合成简法》77–79页，集体署名“致冷剂小组”，对象为F-115，不能混作1978年F-53论文。另已取得CN1075708A、CN1308043A两项团队工艺专利说明书，发明人分别为林永达／梁与达、吴永明／林永达，不能改列陈庆云个人专利。配套润滑油、原中试及整机试用原表仍待取得；本平台未新增实验或工艺验证。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md\">现有材料、缺口与原始资料定位 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>组分与混合物分开；规模不改成年产，历史回顾不替代中试报告；相态、机理及性能须有对应对象和温压证据。</li></ul><p><b>下一步先补的证据：</b>优先取得配套润滑油两篇全文与中试／整机原表，核对团队专利技术对象和历史底物指代；不以新取得文件代替工艺验证。</p><p><b>候选后续问题：</b>各化学对象、介质组成与温压条件能否从原始工程资料中逐项确认？</p><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/refrigerants/index.html\">制冷剂研究专题 →</a><a href=\"../topics/refrigerants/index.html#record-refrigerant-pilot\">中试与整机档案 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section><section class=\"research-line\" id=\"ai-a06\" aria-labelledby=\"ai-a06-title\"><span class=\"status\">研究资料与问题</span><h2 id=\"ai-a06-title\">A06（磺酸酯、二氟卡宾与三氟甲基化）</h2><h3>科学问题</h3><p>结构与条件如何关联不同断键路径，以及试剂的不同反应角色？</p><h3>AI怎样辅助</h3><p>建立逐反应的结构—条件—断键观察对照；区分甲酯、酸型、盐型和TFDA硅酯；对照既有专业机理研究并提出待核问题。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>已取得并核读1982年337–352页、670–673页及1983年1044–1057页三篇原刊。首篇署陈庆云、朱蓉仙、李宗珍、王珊娣、黄维垣，后两篇分别署陈庆云、朱士正，作者表各自登记。CQ-H16主标题原印为“全氟和多氟烷基磺酸的研究 X.”，与既有题录“磺酸酯”异文分列；670页通讯未印系列号。原刊作者名与传记异文保留，不据署名推定个人分工。结构、谱图及断键解释仍待专业核校。按既有方法核读登记，2003年硅酯／二氟卡宾方法与2010年甲酯／甾体三氟甲基化分别呈现；原刊提交者与核查者名单不属于本项目新取得的专业签认。1989、2000原论文及1991书章全文仍待取得，2024既有陈试剂机理计算仍归原作者。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md\">现有材料与方法核查说明 →</a></p></div></div><div class=\"prior-work\"><h4>已有专业研究：保留原作者归属</h4><div><h4>CQ-R21 · 陈试剂形成三氟甲基源的既有机理研究</h4><p>黄广龙、薛小松</p><p class=\"citation\">《化学学报》82(2)，132–137（2024；2023年在线发表）；DOI 10.6023/A23090434。</p><p>核查限于出版社摘要与书目；机理计算属于原作者，不能作为平台原创或陈先生早期计算。后续问题须明确所复核的实体、方法与条件。</p><p class=\"links\"><a href=\"https://sioc-journal.cn/Jwk_hxxb/EN/10.6023/A23090434\">出版社论文入口 →</a><a href=\"../topics/chen-reagent/index.html#ref-cq-r21\">专题原证据索引 →</a></p></div><div><h4>CQ-R25 · 陈试剂及衍生体系的2026年回顾</h4><p>苏雪、丁婧、曾广原、庞婉、刘超</p><p class=\"citation\">2026年回顾；DOI 10.13822/j.cnki.hxsj.2026.0211。</p><p>核查限于期刊摘要及参考文献列表；回顾用于追踪已有研究，不能代替各项用途的原始论文、实体核对及实际引用链。</p><p class=\"links\"><a href=\"https://hxsje.cbpt.cnki.net/portal/journal/portal/client/paper/3dea1a2a47f994056edc5708988460b7\">期刊论文入口 →</a><a href=\"../index.html#source-cq-r25\">原来源登记CQ-R25 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>摘要不替代全文；方法核查只支持所核方法；后续机理计算与新用途归原作者，不当作平台原创或陈先生早期计算。</li></ul><p><b>下一步先补的证据：</b>先核三篇原刊的结构、实验条件及姓名异文，再追1989、2000全文与1991书章；原作者的可能机制保留为原作者解释。</p><p><b>候选后续问题：</b>既有机理研究覆盖了哪些具体实体与条件，仍缺少哪些可区分反应角色的证据？</p><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/perfluorosulfonates/index.html#record-sulfonate-cleavage\">磺酸酯断键档案 →</a><a href=\"../topics/chen-reagent/index.html#chen-reagent-contribution\">陈试剂历史贡献 →</a><a href=\"../topics/chen-reagent/index.html#chen-reagent-evidence\">试剂身份与原始证据 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section><section class=\"research-line\" id=\"ai-a07\" aria-labelledby=\"ai-a07-title\"><span class=\"status\">研究资料与问题</span><h2 id=\"ai-a07-title\">A07（单电子转移与C–Cl活化）</h2><h3>科学问题</h3><p>不同溶剂与引发体系下，特定含氟氯代物发生什么转化？</p><h3>AI怎样辅助</h3><p>按底物、条件、观察和提出的机理组织证据；区分1999溶剂体系、2001镍体系和2005专利，并追踪不同研究组的贡献。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>1999与2001年论文的31页、26页SI已取得，已核首页身份；正文仍待取得，全部谱图与机理证据未完成专业核校。申请200510031063.4的CN1752059A与CN1298686C两份说明书已取得，属同一申请的公开／授权版本，陈庆云、曹海萍为共同发明人；版本与技术内容仍待核，不据此判断当前法律状态。摘要中的SET解释不作为平台机制认证。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md\">现有材料、缺口与原始资料定位 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>摘要所提SET不是完整机理证明；C–Cl活化不等于普遍C–F断裂或PFAS降解；专利题录不证明产业采用或当前法律状态。</li></ul><p><b>下一步先补的证据：</b>优先取两篇正文并核全套SI的谱图与底物对应，区分同一专利的版本；原始应用档案仍待补。</p><p><b>候选后续问题：</b>哪些对照支持单电子转移解释，哪些观察还允许其他路径？</p><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/single-electron-transfer/index.html\">单电子转移研究专题 →</a><a href=\"../topics/single-electron-transfer/index.html#record-ccl-activation\">C–Cl活化档案 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section><section class=\"research-line\" id=\"ai-a08\" aria-labelledby=\"ai-a08-title\"><span class=\"status\">研究资料与问题</span><h2 id=\"ai-a08-title\">A08（交叉研究与晚年拓展）</h2><h3>科学问题</h3><p>含氟方法进入小环、大环、离子液体及新试剂体系后，哪些结构与性质得到实际测量？</p><h3>AI怎样辅助</h3><p>按具体骨架、合作者与表征建立跨专题索引；关联结构、实测性质与后续问题；区分表面性质和环境评价。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>2003年SI两卷（40＋1页）、2007年13页SI及4份CIF、2022年55页SI，以及晚年三项研究的66／129／11页附件已取得，各篇正文仍待取得。2022年附件S15–S21与S38起已有原作者计算说明及结果，不能把未来AI补算称作首次理论研究，也不能据合著推定陈先生本人完成计算。这些附件目前仅完成文件身份及选定页／字段核对，全套结构、谱图和计算仍待专业核校；文件取得不等于结构、物性或机理认证。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md\">现有材料、缺口与原始资料定位 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>电子数不能独自裁定芳香性；特定结构或表面性质不证明器件、治疗、低毒或生命周期安全；后续成果保留原作者。</li></ul><p><b>下一步先补的证据：</b>优先取得对应正文，核对各卷SI及CIF与论文对象的对应关系；先比较既有理论研究，专业核校后再评估未来问题。</p><p><b>候选后续问题：</b>哪些性质有直接表征，哪些用途仍是后续问题，进一步比较需要什么新证据？</p",
+      "new": "li>已核明化合物III的MR行未列N，而结构图与元素分析式含N；原文字样并列保存，重建输入约定明确。</li></ul><article class=\"result-evidence\" id=\"a01-first-report-results\"><p class=\"result-identity\">历史论文记录 · 平台原文核读</p><h4>第一报揭示了哪些六氟丙酮反应？</h4><p>Knunyants、Ch’en Ch’ing-yun（陈庆云）、Gambaryan在1960年第一报中，把六氟丙酮反应组织为可继续转化和鉴定的产物体系。三位作者同属苏联科学院元素有机化合物研究所；原文未列个人分工，不按署名顺序推定贡献比例。</p><p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a01-first-report-results-table-1\"><table><caption id=\"a01-first-report-results-table-1\">反应、鉴定证据与原文位置</caption><thead><tr><th scope=\"col\">研究内容</th><th scope=\"col\">原文观察与证据</th><th scope=\"col\">英译本位置</th></tr></thead><tbody><tr><th scope=\"row\">醇加成产物与缩酮的不同稳定性</th><td>六氟丙酮与醇形成半缩酮，受热可分解回原反应物；转为对称或不对称缩酮后，原文记录其在所述酸、碱与苯胺处理中的不同稳定性。</td><td>p647讨论与结构式；p650实验段</td></tr><tr><th scope=\"row\">炔基有机镁加成与二醇构建</th><td>炔基有机镁试剂加成得到炔醇；使用双镁衍生物及后续偶联、与丙酮反应，分别构建对称或不对称含氟二醇。</td><td>p647–648结构式I–IV；p651相关实验</td></tr><tr><th scope=\"row\">羟基酮VII的C–C裂解与产物鉴定</th><td>羟基酮VII热分解得到六氟丙酮与苯乙酮；实验段分别以六氟丙酮氨基脲腙及苯乙酮二硝基苯腙与已知样品混熔无降点支持鉴定。</td><td>p648讨论、VII结构及裂解图；p651末段的两项混熔记录</td></tr><tr><th scope=\"row\">β-羟基酸、酯及衍生转化</th><td>Reformatskii型反应得到β-羟基酯VIII，再经水解等转化与已知酸IX、酰胺相关联；文中另列丙二酸及丙二酸酯相关产物。</td><td>p649讨论及VIII–X结构式；p652 VIII、IX、X实验段</td></tr></tbody></table></div><p class=\"scientific-meaning\"><b>科学意义：</b>原作者以产物转化、衍生物鉴定和未成功反应共同刻画含氟羰基化学；平台的贡献是把讨论、结构与实验出处对应起来，让后人能逐项追读这些开拓性工作。</p><ul class=\"result-limits\"><li>上述是历史实验记录的释读，不是平台新实验。混熔鉴定支持产物身份，不能单独证明唯一微观路径；原文稳定性和未反应结论各限于所试对象与条件。</li></ul><div class=\"result-sources\"><b>原文与结果出处</b><p class=\"links\"><a href=\"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n100\">第一报英译本 p.647（全文起页） →</a><a href=\"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n103\">p.650：醇衍生物及单体用途提议 →</a><a href=\"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n104\">p.651：二醇及裂解鉴定 →</a><a href=\"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n105\">p.652：酸酯、双酚与分析数据 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A01_FIRST_REPORT_zh-CN.md\">原文定位与中文释读 →</a></p></div></article><article class=\"result-evidence\" id=\"a01-bpaf-original\"><p class=\"result-identity\">两份独立历史记录</p><h4>双酚AF：论文与发明说明书分别记载了什么？</h4><p>第一报把六氟丙酮反应延伸至二酚的制备与鉴定。第117491号文书为发明人证书说明书；其网页镜像、传记中的授予证书书影和独立证书原件是不同材料。</p><p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a01-bpaf-original-table-1\"><table><caption id=\"a01-bpaf-original-table-1\">原值照录，保持各自实验身份</caption><thead><tr><th scope=\"col\">材料与对象</th><th scope=\"col\">产物质量</th><th scope=\"col\">原文收率</th><th scope=\"col\">原文熔点</th><th scope=\"col\">出处</th></tr></thead><tbody><tr><th scope=\"row\">第一报：双酚AF（XI）</th><td>29 g</td><td>90.5%</td><td>161–162°C</td><td>p.652；结构见p.649</td></tr><tr><th scope=\"row\">第117491号说明书：双酚AF</th><td>21.7 g</td><td>98%</td><td>161–162°C</td><td>单例说明书原图</td></tr><tr><th scope=\"row\">第一报：邻甲酚对应二酚（XII）</th><td>10.9 g</td><td>91%</td><td>134–135°C</td><td>p.652；结构见p.650</td></tr></tbody></table></div><p class=\"table-note\">XI原文元素分析Found：C 53.68%、H 2.98%、F 34.13%；Calculated：C 53.57%、H 2.97%、F 33.92%（p.652）。这两行原值不由平台现代原子量回算值替换。</p><p class=\"scientific-meaning\"><b>科学意义：</b>这些记录直接显示原团队从全氟酮反应走向含氟二酚制备，并用熔点与元素分析等支持产物鉴定；它们比单一历史评价更具体地呈现学术贡献。</p><ul class=\"result-limits\"><li>29 g／90.5%与21.7 g／98%不能合并成同一次实验，也不能仅据收率数字比较工艺优劣。XII是另一种甲基取代产物。</li><li>原作者提出XI、XII可作聚酯、聚氨酯等的潜在单体（p.650）；该提议不能写成该文已经测得聚合材料性能或实现产业采用。</li></ul><div class=\"result-sources\"><b>原文与结果出处</b><p class=\"links\"><a href=\"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n105\">p.652：酸酯、双酚与分析数据 →</a><a href=\"https://poleznayamodel.ru/patent/11/117491.html\">第117491号说明书镜像 →</a><a href=\"https://img.poleznayamodel.ru/img_pat/357/3573210.jpg\">说明书原图镜像 →</a><a href=\"../topics/early-fluoroketones/index.html#record-inventor-certificate\">证书书影与文书身份说明 →</a></p></div></article><article class=\"result-evidence\" id=\"a01-yield-results\"><p class=\"result-identity\">平台已完成 · 条件性数值重建</p><h4>质量账本能重建说明书所报的98%吗？</h4><p>说明书印出苯酚12.2 g、六氟丙酮11.2 g、产物21.7 g与98%。按目标名称作现代身份解析，以C₃F₆O＋2 C₆H₆O → C₁₅H₁₀F₆O₂＋H₂O作净计量，假设印出质量直接使用、纯度为1，名义限制试剂为苯酚。</p><p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a01-yield-results-table-1\"><table><caption id=\"a01-yield-results-table-1\">原报告与已保存的条件性重建</caption><thead><tr><th scope=\"col\">量</th><th scope=\"col\">数值</th><th scope=\"col\">身份</th></tr></thead><tbody><tr><th scope=\"row\">原报告收率</th><td>98%</td><td>说明书原值</td></tr><tr><th scope=\"row\">名义理论产物量</th><td>21.793205 g</td><td>固定假设下重建</td></tr><tr><th scope=\"row\">质量账本表观收率</th><td>99.572323%</td><td>21.7 g／名义理论量</td></tr><tr><th scope=\"row\">表观收率减原报告</th><td>+1.572323 个百分点</td><td>仍未解释的残差</td></tr></tbody></table></div><p class=\"table-note\">现代近似原子量约定：H=1.008、C=12.011、O=15.999、F=18.998403163。净计量式不是说明书原画结构式，也不是反应机理。</p><p class=\"table-note\">把三个质量各作独立±0.05 g显示舍入扰动，表观收率范围为98.937413%–100.212459%；原98%按±0.5个百分点的显示区间为97.5%–98.5%，两者不相交。两区间均不是实验不确定度或置信区间。</p><p class=\"scientific-meaning\"><b>科学意义：</b>结果把“98%如何得到”明确为理论量、原料身份与质量基准的追查问题；在所列假设下，单靠所设显示舍入不能使账本闭合。</p><ul class=\"result-limits\"><li>不据此修正原文产物质量或真实收率，不认定样品纯度、结构或材料性能，也不判定原作者实验或计算错误。原始收率基准仍待证据解释。</li></ul><div class=\"result-sources\"><b>原文与结果出处</b><p class=\"links\"><a href=\"https://img.poleznayamodel.ru/img_pat/357/3573210.jpg\">说明书原图 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/bisphenol-af-yield/README.md\">完整假设、结果与残差 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/bisphenol-af-yield/result.json\">已保存结果JSON →</a></p></div></article><article class=\"result-evidence\" id=\"a01-mr-results\"><p class=\"result-identity\">平台已完成 · 另一篇论文的物性复核</p><h4>衍生物I、V的摩尔折射重建：质量约定会改变判断吗？</h4><p>对象来自陈庆云、Gambaryan、Knuniants署名的1960年Doklady 133(5):1113–1116论文，与双酚AF制备记录分开。I、V主比较均采用20°C的折射率与相对密度。</p><p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a01-mr-results-table-1\"><table><caption id=\"a01-mr-results-table-1\">原文输入及原刊MR，两行对象各自独立</caption><thead><tr><th scope=\"col\">化合物／原页</th><th scope=\"col\">分子式</th><th scope=\"col\">n_D（20°C）</th><th scope=\"col\">d⁽²⁰⁾₄</th><th scope=\"col\">原刊found MR</th><th scope=\"col\">原刊“计算MR”</th></tr></thead><tbody><tr><th scope=\"row\">I／p.1115</th><td>C10H10F6O4</td><td>1.3720</td><td>1.3025</td><td>53.74</td><td>52.09</td></tr><tr><th scope=\"row\">V／p.1116</th><td>C10H13F6NO4</td><td>1.3840</td><td>1.4534</td><td>54.90</td><td>52.20</td></tr></tbody></table></div><p class=\"table-note\">MR按通常意义解释为cm³·mol⁻¹，原刊该段未另印单位。原刊“计算MR”的方法和加和常数未说明，不与本页Lorentz–Lorenz重建混同。</p><p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a01-mr-results-table-2\"><table><caption id=\"a01-mr-results-table-2\">Lorentz–Lorenz重建及相对原刊found MR的残差（cm³·mol⁻¹）</caption><thead><tr><th scope=\"col\">对象</th><th scope=\"col\">质量约定</th><th scope=\"col\">重建MR</th><th scope=\"col\">重建−原刊found MR</th><th scope=\"col\">所设舍入区间相交？</th></tr></thead><tbody><tr><th scope=\"row\">I</th><td>整数质量</td><td>53.744264</td><td>+0.004264</td><td>是</td></tr><tr><th scope=\"row\">I</th><td>现代近似原子量</td><td>53.775048</td><td>+0.035048</td><td>否</td></tr><tr><th scope=\"row\">V</th><td>整数质量</td><td>52.282137</td><td>-2.617863</td><td>否</td></tr><tr><th scope=\"row\">V</th><td>现代近似原子量</td><td>52.315504</td><td>-2.584496</td><td>否</td></tr></tbody></table></div><p class=\"table-note\">Rₘ=[(n_D²−1)/(n_D²+2)]·M/ρ；ρ≈d⁽²⁰⁾₄×1 g·cm⁻³。整数质量采用C=12、H=1、F=19、N=14、O=16，只是显式敏感性约定，未认定原作者当时使用这些常数。</p><p class=\"table-note\">折射率、密度各±0.00005及原刊MR±0.005只作独立显示舍入诊断；不是测量误差。I仅在整数质量约定下相容；V两种约定均保留残差。</p><p class=\"scientific-meaning\"><b>科学意义：</b>这项复核把历史数据的相容性落实到公式和质量约定：I的“相容”需要附条件，V则留下明确待查的缺口，便于后人继续寻找原始物性和表征证据。</p><ul class=\"result-limits\"><li>不是新的MR直接测量，也不能据此验证共轭解释、双酚AF结构或反应机理。V残差的原因尚未确定。III的分子式异文及IV混合温度输入仍保留在专业记录中。</li></ul><div class=\"result-sources\"><b>原文与结果出处</b><p class=\"links\"><a href=\"https://www.mathnet.ru/rus/dan23922\">原文目录与全文入口 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/molar-refraction/README.md\">物性复核说明 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/molar-refraction/result.json\">完整结果与舍入诊断 →</a></p></div></article><details class=\"record-archive\"><summary>专业记录与完整数据</summary><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>第一报英译本647–653页全部七页影印图已取得并核读；俄文原刊与专业核译仍待核。另两篇Doklady原页共八页已有AI核读，关键结构转录签认待补。传记p29的证书书影已核见，独立高清原始扫描及细字日期仍待核。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/README.md\">早期原文与分支研究说明 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A01_FIRST_REPORT_zh-CN.md\">第一报全文核读范围与历史证据 →</a></p></div><div class=\"record\"><h4>计量重建：双酚AF制备记录</h4><p>已在明确原料身份、原子量和净计量假设下重建第117491号说明书质量—收率账本；原98%收率基准仍待核。论文实例与说明书分别登记，不修正原文质量或认定样品纯度。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/bisphenol-af-yield/README.md\">计量假设、结果与未解残差 →</a></p></div><div class=\"record\"><h4>物性复核：指定衍生物折射性质</h4><p>已根据1960年133卷原文的折射率、相对密度及质量约定重建指定衍生物的摩尔折射，保留残差、温度条件与原文异文；这项工作不验证双酚AF结构、收率或性能。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/molar-refraction/README.md\">物性重建与适用范围 →</a></p></div><div class=\"record\"><h4>现代噁唑酮模型：M0保持暂停</h4><p>已有受限模型与CF₃底物五点精度诊断阶段档案；完整曲率资格尚未闭合，尚不能解释原文CF₃／CH₃与苯胺的定性反应性差异，没有合格势垒排序或机制结论。M0保持暂停。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/oxazolone-model/README.md\">模型范围与阶段状态 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/oxazolone-model/cf3-tight-gradient-diagnosis-20261113-v1/results-v1/RESULTS_zh-CN.md\">既有五点诊断阶段报告 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/public-progress.current.json\">阶段进展登记入口 →</a></p></div></div></details><div class=\"pending-work\" id=\"ai-a01-pending\"><h3>待核事项</h3><ul><li>第一报俄文原刊、俄英逐句校勘、专业核译与关键结构签认仍待完成；吡啶／哌啶、氯／溴代乙酸酯和X投料列项三处异文保留。</li><li>第117491号授予证书独立高清原件和档案来源待补；说明书的收率基准、原料与样品纯度未明。传记证书书影已核见，不与独立原件混称。</li><li>I、V原刊“计算MR”的常数、真实测量不确定度及V残差原因待核；不静默更改原值。</li><li>M0噁唑酮模型仍为暂停的阶段档案，完整曲率资格未闭合，不能承担合格势垒、机理或原文定性反应性解释。</li></ul></div><div class=\"future-work\" id=\"ai-a01-future\"><h3>未来设想（尚未开展）</h3><ul><li>先追查同一成果的其他原始记录，厘清收率和物性基准，并完成专业译校与结构签认。</li><li>未来若考虑现代模型或实验，须另行明确具体对象、可检验量和先行研究；这里不把候选解释写成已完成发现，也不恢复M0计算。</li></ul></div><div class=\"prior-work\" aria-label=\"平台AI辅助文献核校\"><h3>平台AI辅助文献核校</h3><p>历史实验与理论研究归原作者。以下呈现平台完成的原文、表格和附件对照，保持 <code>review_required</code>、<code>release_eligible=false</code>；文献核校不授予实验、结构或机理验证资格。</p><article class=\"result-evidence\" id=\"a01-literature-nitrogen\" data-review-status=\"review_required\" data-release-eligible=\"false\"><h4>化合物III：结构、MR式与元素分析的原文关系</h4><p><b>历史原文：</b>陈庆云、N. P. Gambaryan与I. L. Knuniants的1960年论文给出硝基醇乙酸酯（本篇III）的结构、物性及元素分析，属于六氟丙酮衍生物研究。</p><p><b>平台AI核校：</b>原文化合物III的MR计算行印C6F6H5O4，未列N，而同页元素分析式为C6F6H5O4N，前页结构图含–CH2NO2。平台将三处并列说明并保留异文；摩尔折射重建采用与结构图、元素式一致的含N式作为显式输入。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a01-literature-nitrogen-table-1\"><table><caption id=\"a01-literature-nitrogen-table-1\">CQ-H12原文化合物III的三处记载</caption><thead><tr><th scope=\"col\">原文位置</th><th scope=\"col\">原报字式／结构</th><th scope=\"col\">平台核校范围</th></tr></thead><tbody><tr><th scope=\"row\">1114页结构图</th><td>含–CH2NO2的结构</td><td>与下一页物性及分析式并列</td></tr><tr><th scope=\"row\">1115页MR计算行</th><td>C6F6H5O4，未列N</td><td>保存该行原字样，不静默补字</td></tr><tr><th scope=\"row\">1115页元素分析式</th><td>C6F6H5O4N</td><td>含N式作为与结构／元素式一致的显式重建输入</td></tr></tbody></table></div><p class=\"scientific-meaning\"><b>证据的意义：</b>把物性重建的分子式输入与原刊不同栏位对齐，读者可以回查计算采用了哪一个明确约定。</p><ul class=\"result-limits\"><li>字样对照不证明原作者计算时删N，不裁定异文成因或真实样品结构。</li><li>此项不是双酚AF结构、收率或机理验证。</li></ul><p class=\"table-note\">来源ID：CQ-H12</p><p class=\"links\"><a href=\"https://www.mathnet.ru/rus/dan23922\">1960原刊：133卷1113–1116页 →</a></p></article></div><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/early-fluoroketones/index.html#a01-original-achievements\">原始学术成果与证据 →</a><a href=\"../topics/early-fluoroketones/index.html#a01-first-report\">第一报原文与证据 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section><section class=\"research-line\" id=\"ai-a02\" aria-labelledby=\"ai-a02-title\"><span class=\"status\">研究资料与问题</span><h2 id=\"ai-a02-title\">A02（含氟单体、氟橡胶与氟油）</h2><h3>科学问题</h3><p>怎样得到适合聚合的单体，并区分单体、材料与调聚反应各自的贡献？</p><h3>AI怎样辅助</h3><p>对照传记、机构记载与原刊图式，区分单体、材料与调聚产物；关联结构、表征和衍生转化，保留原文异文与专业核校状态。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>单体、材料与氟油的历史贡献</h4><p>已核对传记印刷p.35–39、114–115并与机构资料对照，区分氟橡胶1号的前期团队成果、陈先生参与的六氟丙烯制取与分离，以及后续材料和氟油工作。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#topic-fluoromonomers\">具体贡献、合作与出处 →</a></p></div><div class=\"record\"><h4>1980年调聚原刊：从书目走向原文证据</h4><p>已取得并核读《化学学报》175–184页全部10页，关联两类调聚产物、主要加成方向、光谱及化学转化证据。原文观察和数值在专题直接展示，归原作者；不作为平台新实验。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#a02-vdf-1980\">原文证据及历史数值 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">完整核读与待核事项 →</a></p></div><div class=\"record\"><h4>对象消歧、异文与未完成研究</h4><p>已分开材料牌号、两类调聚产物和不同氟油；本轮完成1980原刊指定胺名、结构编号及产物式对照，保留正文与英文摘要对两种烯烃的不同记载。少量反向异构体线索仍限于四氯化碳体系过渡馏分，未开展新增实验或材料性能验证。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#refs\">来源层级与待核证据 →</a></p></div><div class=\"record\"><h4>制取、材料与氟油技术记录：来源分级</h4><p>新取得并核读1963年他组原文与1986年有机所工厂供样的氟氯液体论文，分别提取低温分馏证据、折射率实测与作者修正值、耐压条件和合作分工；另定位FJ-23机构获奖登记。它们不自动等同陈团队制取记录、历史2号／3号或早期氟溴陀螺油。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#a02-technical-records\">技术记录、原报物性与待核关联 →</a></p></div><div class=\"record\"><h4>陈先生团队：具体贡献与原件追查</h4><p>已重读传记p.35–39，细化裂解观察、低温分离、自制仪器与合作分工，列明2018本人访谈、同期试制／装置、历史2号／3号及早期油品原件的追查位置。尚未取得这些新的同期技术原件；后出回顾、馆藏目录与原件分开。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#a02-team-records\">团队贡献、来源分列与原件待核清单 →</a></p></div><div class=\"record\"><h4>本人访谈与所引书页：引据追踪</h4><p>国图2009年《中国科学院》详细书目记3册(377;454;630页)，册数与页数已有书目依据；所引p.291的分册归属及第290–292页原文仍待核。朱晶2019年研究报告的资料索引、2018-01-03访谈原录，以及同期试制、低温分离和早期氟溴油技术原件仍未取得。</p><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html#a02-source-trace\">已核定位、资料身份与待取得原件 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>历史原作者实验、机构回顾与平台AI释读分别呈现；氟橡胶1号前期团队成果不全部归陈先生，不同氟油和后续牌号分别登记。</li><li>原刊支持主要加成方向；四氯化碳体系过渡馏分的弱峰是作者保留极少量反向异构体可能性的依据，不把该线索推广至两类体系。原作者的极性解释不作平台机制确认，乳化用途也不升级为定量性能或环境安全结论。</li><li>1980原刊已取得并核读；指定胺名、中英文编号及产物式的文内对照已经完成。不同记载并列，尚未据此独立认证样品结构、真实产物或机理；M0继续暂停。</li><li>同期他组研究、相关机构材料实测、机构成果登记与陈先生本人工作分开；原文n_D实测及1.06 μm作者色散修正值不混为平台新测量。</li><li>本人访谈原录、当年试制和装置原件仍待取得；传记中二氟一氯甲烷及机构TFE／PTFE记载分别呈现，不由AI拼接为已经证实的工艺。</li><li>馆藏目录、人物专题片及访问入口不等于访谈原录或书页已取得；2009年年鉴与所引《中国科学院》不同，目标册次保持待核。</li></ul><p><b>下一步先补的证据：</b>优先调阅2018-01-03上海访谈原录与馆藏档号，以及2009版《中国科学院》各分册版权／目录和目标册p.290–292；年鉴不替代目标著作。</p><p><b>候选后续问题：</b>在原始工况、产物分布和表征证据充分后，能否分别比较加成方向、端基转化与物性，而不把不同调聚剂、产物和工程对象混为同一体系？</p><div class=\"prior-work\" aria-label=\"平台AI辅助文献核校\"><h3>平台AI辅助文献核校</h3><p>历史实验与理论研究归原作者。以下呈现平台完成的原文、表格和附件对照，保持 <code>review_required</code>、<code>release_eligible=false</code>；文献核校不授予实验、结构或机理验证资格。</p><article class=\"result-evidence\" id=\"a02-literature-transcription\" data-review-status=\"review_required\" data-release-eligible=\"false\"><h4>胺名与结构编号：按原文语境对应</h4><p><b>历史原文：</b>陈庆云、马振中、蒋锡夔、张元发、贾世茂研究偏氟乙烯与全卤代烷烃的调聚和端基衍生转化。</p><p><b>平台AI核校：</b>1980年调聚论文中文摘要写“乙二胺”，正文、(C2H5)2NH反应式、实验段及英文摘要则对应二乙胺。平台据正文介绍该项酰胺化转化，同时保留中文摘要原字样。 同篇部分中英文编号不同，例如全氟叔丁基取代烯烃在中文正文编号7、英文摘要编号9，酰胺则为8与10。引用同时给结构、语种和原页，避免仅因编号相同把不同产物混用。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a02-literature-transcription-table-1\"><table><caption id=\"a02-literature-transcription-table-1\">同一结构在中英文部分的编号</caption><thead><tr><th scope=\"col\">结构</th><th scope=\"col\">中文正文编号／原页</th><th scope=\"col\">英文摘要编号／原页</th></tr></thead><tbody><tr><th scope=\"row\">CCl2=CHCF2CH2CF2Cl</th><td>6／176、179–180</td><td>7／183</td></tr><tr><th scope=\"row\">(CF3)3CCH=CF2</th><td>7／176–177、180</td><td>9／183</td></tr><tr><th scope=\"row\">(CF3)3CCH2CON(C2H5)2</th><td>8／177、180</td><td>10／183</td></tr><tr><th scope=\"row\">CCl2=CHCF3</th><td>16／178、182</td><td>14／184</td></tr></tbody></table></div><p class=\"table-note\">胺名对照：175页中文摘要为乙二胺；176–177、180–181页正文／图式／实验及183页英文摘要对应二乙胺。</p><p class=\"scientific-meaning\"><b>证据的意义：</b>把端基转化关联到具体结构，而不让篇内编号或胺名异文造成化学对象误配。</p><ul class=\"result-limits\"><li>编号差异和胺名字样的对照已经明确；异文成因和真实样品不由文字核校认定。</li><li>历史实验归原作者；这里是平台AI辅助文献校勘，不是新增实验或机理验证。</li><li>日期出处分别保留：原刊175页页头为1980年4月，期刊网页卷期既有登记为1980-03-15；印刷卷期与网页书目字段分列，不据此推定实际出版日。</li></ul><p class=\"table-note\">来源ID：A02-P1980、CQ-H13</p><p class=\"links\"><a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1980/V38/I2/175\">1980原刊：38卷175–184页 →</a></p></article><article class=\"result-evidence\" id=\"a02-literature-products\" data-review-status=\"review_required\" data-release-eligible=\"false\"><h4>产物式与两种烯烃记述：并列保存分歧</h4><p><b>历史原文：</b>原论文研究调聚产物脱卤与氟化的后续转化。</p><p><b>平台AI核校：</b>中文正文称未发现CCl3CH2CF2CH=CF2，英文摘要却将其列为两种烯烃混合物之一；中文摘要的氟化产物式印为CCl2=CH2CF3，而正文及英文摘要为CCl2=CHCF3。平台保留这些具体差异，暂不选择一版作为实际产物的唯一记录。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a02-literature-products-table-1\"><table><caption id=\"a02-literature-products-table-1\">指定产物的文内差异</caption><thead><tr><th scope=\"col\">对象</th><th scope=\"col\">中文原文</th><th scope=\"col\">英文摘要与核校边界</th></tr></thead><tbody><tr><th scope=\"row\">CCl3CH2CF2CH=CF2</th><td>176页称未发现；179–180页实验只报告分出的另一式</td><td>183页列为两种烯烃混合物之一；不选择一段作实际产物的唯一记录</td></tr><tr><th scope=\"row\">氟化产物</th><td>175页摘要印CCl2=CH2CF3；178／182页正文为CCl2=CHCF3</td><td>184页为CCl2=CHCF3；保留原字式及不同编号</td></tr></tbody></table></div><p class=\"scientific-meaning\"><b>证据的意义：</b>明确哪些是原作者各段落的不同记载，防止从摘要单独提取结构后把同篇文字差别隐藏。</p><ul class=\"result-limits\"><li>“两种烯烃的混合物”不写成可能被理解为diene的“二烯烃”。</li><li>是否实际形成第二种烯烃及异文产生原因，仍需原始分析记录或可归属更正；本条不裁定。</li><li>不把短链调聚物转化移作六氟丙烯试制、历史橡胶或早期氟溴油的技术证据。</li></ul><p class=\"table-note\">来源ID：A02-P1980、CQ-H13</p><p class=\"links\"><a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1980/V38/I2/175\">1980原刊：38卷175–184页 →</a></p></article></div><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/fluoromonomers/index.html\">单体、材料与调聚专题 →</a><a href=\"../topics/fluoromonomers/index.html#record-fluorinated-oils\">氟油档案 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section><section class=\"research-line\" id=\"ai-a03\" aria-labelledby=\"ai-a03-title\"><span class=\"status\">研究资料与问题</span><h2 id=\"ai-a03-title\">A03（全氟叔丁基（PFtB）化学）</h2><h3>科学问题</h3><p>哪些结构、反应与光谱观察支持特定全氟烷基碘代物的效应比较？</p><h3>AI怎样辅助</h3><p>辅助原表转录、溶剂与分子身份核对；用固定公式重放波长差和波数蓝移，检查假定扰动下的顺序敏感性。</p><nav class=\"result-nav\" aria-label=\"A03（全氟叔丁基（PFtB）化学）研究状态\"><a href=\"#ai-a03-completed\">已完成工作</a> · <a href=\"#ai-a03-pending\">待核事项</a> · <a href=\"#ai-a03-future\">未来设想</a></nav><h3 id=\"ai-a03-completed\">已完成工作：原文与数据复核</h3><ul><li>已转录1966年论文表1的10个波长记录；9个配对记录形成下列6项位移，另一条CCl₄记录不属于此配对任务。</li><li>已用固定公式保存波长差、波数蓝移及假定有界扰动诊断。单位换算与敏感性分析属于平台数值重放，不是独立光谱实验。</li></ul><article class=\"result-evidence\" id=\"a03-shift-results\"><p class=\"result-identity\">原表数据＋平台单位重放</p><h4>三种碘代物的六项紫外溶剂位移</h4><p>陈庆云、蒋锡夔、陈秉启、梁梦兰在1966年《化学学报》论文中研究全氟叔丁基碘及相应溴化物的制备、结构与反应，并用紫外溶剂位移讨论吸电性顺序。这里直接展示印刷p.21表1的对应波长和已保存换算值。</p><p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a03-shift-results-table-1\"><table><caption id=\"a03-shift-results-table-1\">λ为原表吸收峰λmax；波长单位nm，蓝移单位cm⁻¹</caption><thead><tr><th scope=\"col\">完整碘代物</th><th scope=\"col\">给体溶剂B</th><th scope=\"col\">λH／nm</th><th scope=\"col\">λB／nm</th><th scope=\"col\">原表δλ／nm</th><th scope=\"col\">换算Δν̃／cm⁻¹</th></tr></thead><tbody><tr><th scope=\"row\">全氟正丙基碘 n-C₃F₇I</th><td>乙醇</td><td>270.0</td><td>250.0</td><td>20.0</td><td>2962.963</td></tr><tr><th scope=\"row\">全氟异丙基碘 i-C₃F₇I</th><td>乙醇</td><td>274.0</td><td>250.0</td><td>24.0</td><td>3503.650</td></tr><tr><th scope=\"row\">全氟叔丁基碘 (CF₃)₃CI</th><td>乙醇</td><td>288.0</td><td>260.5</td><td>27.5</td><td>3665.494</td></tr><tr><th scope=\"row\">全氟正丙基碘 n-C₃F₇I</th><td>乙醚</td><td>270.0</td><td>256.0</td><td>14.0</td><td>2025.463</td></tr><tr><th scope=\"row\">全氟异丙基碘 i-C₃F₇I</th><td>乙醚</td><td>274.0</td><td>257.0</td><td>17.0</td><td>2414.155</td></tr><tr><th scope=\"row\">全氟叔丁基碘 (CF₃)₃CI</th><td>乙醚</td><td>288.0</td><td>264.0</td><td>24.0</td><td>3156.566</td></tr></tbody></table></div><p class=\"table-note\">H沿用原表C₆H₁₄记号，当前登记未进一步指定异构体；B是乙醇或乙醚的给体溶剂记号，不是苯。原单位毫微米的数值等于nm。</p><p class=\"table-note\">δλ=λH−λB；Δν̃=10⁷(1/λB−1/λH)，λ以nm计。正值表示蓝移。两个尺度来自同一批波长，不是两组独立实验。</p><p class=\"scientific-meaning\"><b>科学意义：</b>在乙醇和乙醚中，两种数值表达都保留名义顺序：全氟叔丁基碘＞全氟异丙基碘＞全氟正丙基碘。平台重放使原作者所用位移证据可逐项复核，并显示结论应保留完整分子与介质条件。</p><ul class=\"result-limits\"><li>本表没有CF₃I或C₂F₅I的直接数值；不能把n-C₃F₇I换成C₂F₅I，也不能把三种分子的位移直接升级为四种孤立基团的普适诱导顺序。</li><li>原作者的制备、结构鉴定和反应实验依原文归属；本任务只重放表格，不由这些换算裁决亲卤反应机制、游离阴离子或材料性能。</li></ul><div class=\"result-sources\"><b>原文与结果出处</b><p class=\"links\"><a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18\">1966原论文与PDF入口（p.21表1） →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/data/pftb1966_table1.csv\">原表波长转录 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/pftb1966-uv-replay.json\">六项结果与完整比较 →</a><a href=\"../pftb/index.html#contribution\">原作者的研究贡献与论证 →</a></p></div></article><article class=\"result-evidence\" id=\"a03-sensitivity-results\"><p class=\"result-identity\">平台已完成 · 假定扰动诊断</p><h4>同一名义顺序的数值裕量有多大？</h4><p>乙醇中，全氟叔丁基碘与全氟异丙基碘的波数蓝移最接近，名义差为161.844074 cm⁻¹。已保存结果采用每个相关峰位独立±u nm的有界扰动模型。</p><p class=\"table-note\">宽表可横向滑动，查看完整列。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a03-sensitivity-results-table-1\"><table><caption id=\"a03-sensitivity-results-table-1\">同一对分子的两种比较尺度</caption><thead><tr><th scope=\"col\">比较量</th><th scope=\"col\">名义差</th><th scope=\"col\">区间首次接触的峰位半宽u</th></tr></thead><tbody><tr><th scope=\"row\">波长差δλ</th><td>3.5 nm</td><td>0.875 nm</td></tr><tr><th scope=\"row\">波数蓝移Δν̃</th><td>161.844074 cm⁻¹</td><td>0.288427 nm</td></tr></tbody></table></div><p class=\"table-note\">按每个峰独立±0.05 nm的显示舍入假设，保存结果中各相邻比较仍分离；真实测量不确定度未由原表提供，仍记为未知。</p><p class=\"scientific-meaning\"><b>科学意义：</b>单位变换保留了名义顺序，却改变了比较的数值裕量。这提示后续评价要区分显示精度、真实测量不确定度与物理解释，不能把某个阈值直接当作实验显著性。</p><ul class=\"result-limits\"><li>0.288427、0.875和±0.05 nm均属声明的数学扰动模型；不是仪器精度、实验误差、置信区间，也不构成对原论文的否定。</li></ul><div class=\"result-sources\"><b>原文与结果出处</b><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/REPLAY_REPORT_zh-CN.md\">重放与敏感性报告 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/protocols/pftb1966_uv.json\">固定协议与单位约定 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/pftb1966-uv-replay.json\">已保存比较结果 →</a></p></div></article><details class=\"record-archive\"><summary>专业记录与完整数据</summary><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>已按1966年原表转录10个波长记录，其中9个配对记录形成6项位移；波长差、波数蓝移与有界扰动诊断属于同批原表数值重放。原刊印刷21页表1及24页实验部分已回查：紫外仪器为Unicam SP-500；20°C注明于核磁共振测量，不能移作紫外温度。紫外测量条件与真实不确定度仍未完整确认，专业转录签认待补。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/REPLAY_REPORT_zh-CN.md\">PF1966-UV-T1数值重放报告 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/data/pftb1966_table1.csv\">原表转录数据 →</a><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/results/pftb1966-uv-replay.json\">既有重放结果 →</a><a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18\">1966原刊：表1见印刷21页，仪器见24页 →</a></p></div></div></details><div class=\"pending-work\" id=\"ai-a03-pending\"><h3>待核事项</h3><ul><li>原表转录仍待独立化学专家签认；未重新测量光谱、重建完整谱线或进行峰拟合。</li><li>真实峰位不确定度及对应表1的UV温度、浓度和光程尚不能恢复；原刊紫外仪器Unicam SP-500已核明，20°C属于NMR。缺少的原始测量／校准依据不由平台补造。</li><li>从完整碘代物位移到基团效应解释仍需额外证据，不能凭本表补造CF₃I、C₂F₅I数据或认定反应机理。</li></ul></div><div class=\"future-work\" id=\"ai-a03-future\"><h3>未来设想（尚未开展）</h3><ul><li>先完成原表专业核校，并从原始文献与相关记录补齐测量条件和谱带归属。</li><li>资料充分后，再论证如何用独立光谱测量或明确的现代模型区分溶剂相互作用与基团效应；此为待查新、待设计的问题，尚未启动。</li></ul></div><div class=\"prior-work\" aria-label=\"平台AI辅助文献核校\"><h3>平台AI辅助文献核校</h3><p>历史实验与理论研究归原作者。以下呈现平台完成的原文、表格和附件对照，保持 <code>review_required</code>、<code>release_eligible=false</code>；文献核校不授予实验、结构或机理验证资格。</p><article class=\"result-evidence\" id=\"a03-literature-uv-method\" data-review-status=\"review_required\" data-release-eligible=\"false\"><h4>原表重放的测量条件与不确定度边界</h4><p><b>历史原文：</b>1966论文表1报告三种完整碘代物在所列溶剂中的紫外吸收峰和溶剂位移，用于原作者的电子效应讨论。</p><p><b>平台AI核校：</b>原刊24页注明紫外仪器为Unicam SP-500；相邻20°C文字属于核磁共振测量。对18–25页全文的此次核读未找到能明确对应表1的紫外温度、浓度和光程，因此这些条件仍不由平台补填。 原刊峰位显示精度与真实测量不确定度需分开。平台所用±0.05nm只是显示舍入诊断，不能当作仪器精度、实验误差或置信区间；六项换算继续称原表数值重放。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a03-literature-uv-method-table-1\"><table><caption id=\"a03-literature-uv-method-table-1\">1966年原刊21页表1与24页方法段</caption><thead><tr><th scope=\"col\">信息</th><th scope=\"col\">原文核读结果</th><th scope=\"col\">使用范围</th></tr></thead><tbody><tr><th scope=\"row\">紫外仪器</th><td>24页Unicam SP-500</td><td>仪器字段已明</td></tr><tr><th scope=\"row\">20°C</th><td>24页文字属于核磁共振测量</td><td>不移作紫外温度</td></tr><tr><th scope=\"row\">UV温度、浓度、光程</th><td>在所核18–25页未找到明确对应表1的设置</td><td>不以仪器型号或epsilon反推</td></tr><tr><th scope=\"row\">峰位真实不确定度</th><td>未给足以恢复重复性／校准的不确定度依据</td><td>±0.05 nm只作显示舍入诊断</td></tr></tbody></table></div><p class=\"scientific-meaning\"><b>证据的意义：</b>把可回查的仪器信息与尚不能恢复的实验设置分开，限定原表数值重放所能回答的问题。</p><ul class=\"result-limits\"><li>六项换算仍是同一原表的数值重放，不称光谱实验复现。</li><li>不能从显示位数推定实验误差、置信区间或普适基团效应，也不据未报告的不确定度否定历史观察。</li></ul><p class=\"table-note\">来源ID：PF01</p><p class=\"links\"><a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18\">1966原刊：32卷18–25页 →</a></p></article></div><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../pftb/index.html#contribution\">1966原始研究与贡献 →</a><a href=\"../pftb/index.html#arguments\">原始论证 →</a><a href=\"../pftb/index.html#questions\">专题待核问题 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section><section class=\"research-line\" id=\"ai-a04\" aria-labelledby=\"ai-a04-title\"><span class=\"status\">研究资料与问题</span><h2 id=\"ai-a04-title\">A04（F-53铬雾抑制剂）</h2><h3>科学问题</h3><p>如何从材料研制、厂试及工程协作的不同记录理解历史应用？</p><h3>AI怎样辅助</h3><p>关联论文、合作单位与厂试记录；消歧F-53、F-53B、盐型和商品混合物，核对年代、单位与效益口径。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>已取得并核读1979年《全氟和多氟烷基磺酸的研究 II. 一些多氟烷基醚磺酸的合成》原刊315–324页，324页为同篇英文摘要，署名“全氟磺酸组”。323页致谢记载所内质谱组及上海医药工业研究院核磁组的分析协作。1977年前报和1978年Scientia Sinica原文仍待取得；机构合作登记、论文集体署名与个人分工分别保存，未据此认定个人贡献或完成厂试验证。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md\">现有材料、缺口与原始资料定位 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>传记与机构回顾不替代原始厂试；分子计算不能复现车间收益；历史应用不证明当前使用、低毒或环境安全。</li></ul><p><b>下一步先补的证据：</b>继续追查1977／1978原刊及厂试／扩试原表；将原刊分析协作、机构合作与个人分工按不同证据层级核对。</p><p><b>候选后续问题：</b>不同历史产品与批次对应哪些工况和实测数据，怎样与后续环境研究准确对接？</p><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/f53/index.html\">F-53研究专题 →</a><a href=\"../topics/f53/index.html#record-industrial-application\">历史工业应用档案 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section><section class=\"research-line\" id=\"ai-a05\" aria-labelledby=\"ai-a05-title\"><span class=\"status\">研究资料与问题</span><h2 id=\"ai-a05-title\">A05（制冷剂与配套技术）</h2><h3>科学问题</h3><p>组分制备、混合试配、中试、润滑油与整机试用分别需要哪些证据？</p><h3>AI怎样辅助</h3><p>消歧F-115、F-502与HFC-134a；对齐原论文、专利和工况字段，整理配套润滑油及整机协作的证据链。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>已取得并核读1978年《五氟氯乙烷合成简法》77–79页，集体署名“致冷剂小组”，对象为F-115，不能混作1978年F-53论文。另已取得CN1075708A、CN1308043A两项团队工艺专利说明书，发明人分别为林永达／梁与达、吴永明／林永达，不能改列陈庆云个人专利。配套润滑油、原中试及整机试用原表仍待取得；本平台未新增实验或工艺验证。 两份公开说明书的指定余页与原报实例已完成核读；字式、时间范围的内部差异另列，含量与产率不混为同一指标。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md\">现有材料、缺口与原始资料定位 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>组分与混合物分开；规模不改成年产，历史回顾不替代中试报告；相态、机理及性能须有对应对象和温压证据。</li></ul><p><b>下一步先补的证据：</b>优先取得配套润滑油两篇全文与中试／整机原表，核对团队专利技术对象和历史底物指代；不以新取得文件代替工艺验证。</p><p><b>候选后续问题：</b>各化学对象、介质组成与温压条件能否从原始工程资料中逐项确认？</p><div class=\"prior-work\" aria-label=\"平台AI辅助文献核校\"><h3>平台AI辅助文献核校</h3><p>历史实验与理论研究归原作者。以下呈现平台完成的原文、表格和附件对照，保持 <code>review_required</code>、<code>release_eligible=false</code>；文献核校不授予实验、结构或机理验证资格。</p><article class=\"result-evidence\" id=\"a05-literature-technical-text\" data-review-status=\"review_required\" data-release-eligible=\"false\"><h4>团队工艺说明书中的原报数据</h4><p><b>历史原文：</b>制冷剂原刊、传记和团队工艺专利分别记录研究与工程探索。CN1075708A与CN1308043A发明人分别为林永达／梁与达、吴永明／林永达，不改列为陈庆云个人专利。</p><p><b>平台AI核校：</b>已核对两份公开说明书的末页实例，组成含量与产率／收率分字段保存。CN1308043A的原栏存在差别：PDF4图式左端印CH3CH2Cl，而同页正文及权利要求1写1,1,1-三氟-2-氯乙烷；PDF5表头印CF3CHCl，典型段印CF3CH2Cl；一般时间写1–7 h，表中第5行为8 h。本平台并列保存这些原字式和时窗，不静默修正，也不据此裁定排印原因。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a05-literature-technical-text-table-1\"><table><caption id=\"a05-literature-technical-text-table-1\">团队工艺说明书中的原报数据：原文对照</caption><thead><tr><th scope=\"col\">文书</th><th scope=\"col\">本次核清的原报范围</th><th scope=\"col\">原页定位</th></tr></thead><tbody><tr><th scope=\"row\">CN1075708A</th><td>5例GC含量／产率（%）依次为82／88、83／85.9、45.6／79.1、80／86.4、73／71；例1–4与例5的起始物不同。</td><td>PDF4／说明书末页</td></tr><tr><th scope=\"row\">CN1308043A</th><td>6行原表收率37–68%、含量80–93%；这里只概括该表，不据此评价工业表现。</td><td>PDF5／说明书3页</td></tr></tbody></table></div><p class=\"scientific-meaning\"><b>证据的意义：</b>把公开说明书中的化学对象、组成字段与收率字段逐一分开，明确技术文字能够支持什么；与传记所记中试规模、配套润滑油及整机表现分别评价。</p><ul class=\"result-limits\"><li>说明书核读不等于平台实验复现、30吨规模或超临界相态验证，也不证明工业采用、保护范围或当前法律状态。传记的F-133a起点／F-134a含氯句仍按原文保留，不能仅凭HFC-134a身份判定传记必为错字。</li></ul><p class=\"table-note\">来源ID：HERITAGE-S01、S1</p><p class=\"links\"><a href=\"https://patents.google.com/patent/CN1075708A/zh\">CN1075708A公开文书入口 →</a><a href=\"https://patents.google.com/patent/CN1308043A/zh\">CN1308043A公开文书入口 →</a></p></article></div><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/refrigerants/index.html\">制冷剂研究专题 →</a><a href=\"../topics/refrigerants/index.html#record-refrigerant-pilot\">中试与整机档案 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section><section class=\"research-line\" id=\"ai-a06\" aria-labelledby=\"ai-a06-title\"><span class=\"status\">研究资料与问题</span><h2 id=\"ai-a06-title\">A06（磺酸酯、二氟卡宾与三氟甲基化）</h2><h3>科学问题</h3><p>结构与条件如何关联不同断键路径，以及试剂的不同反应角色？</p><h3>AI怎样辅助</h3><p>建立逐反应的结构—条件—断键观察对照；区分甲酯、酸型、盐型和TFDA硅酯；对照既有专业机理研究并提出待核问题。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>已取得并核读1982年337–352页、670–673页及1983年1044–1057页三篇原刊。首篇署陈庆云、朱蓉仙、李宗珍、王珊娣、黄维垣，后两篇分别署陈庆云、朱士正，作者表各自登记。CQ-H16主标题原印为“全氟和多氟烷基磺酸的研究 X.”，与既有题录“磺酸酯”异文分列；670页通讯未印系列号。原刊作者名与传记异文保留，不据署名推定个人分工。三个代表断键实例已建立结构—条件—产物对应，原报收率归原作者；不把指定实例的核读扩大为全部谱图、真实结构或通用机理认证。按既有方法核读登记，2003年硅酯／二氟卡宾方法与2010年甲酯／甾体三氟甲基化分别呈现；原刊提交者与核查者名单不属于本项目新取得的专业签认。1989、2000原论文及1991书章全文仍待取得，2024既有陈试剂机理计算仍归原作者。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md\">现有材料与方法核查说明 →</a></p></div></div><div class=\"prior-work\"><h4>已有专业研究：保留原作者归属</h4><div><h4>CQ-R21 · 陈试剂形成三氟甲基源的既有机理研究</h4><p>黄广龙、薛小松</p><p class=\"citation\">《化学学报》82(2)，132–137（2024；2023年在线发表）；DOI 10.6023/A23090434。</p><p>核查限于出版社摘要与书目；机理计算属于原作者，不能作为平台原创或陈先生早期计算。后续问题须明确所复核的实体、方法与条件。</p><p class=\"links\"><a href=\"https://sioc-journal.cn/Jwk_hxxb/EN/10.6023/A23090434\">出版社论文入口 →</a><a href=\"../topics/chen-reagent/index.html#ref-cq-r21\">专题原证据索引 →</a></p></div><div><h4>CQ-R25 · 陈试剂及衍生体系的2026年回顾</h4><p>苏雪、丁婧、曾广原、庞婉、刘超</p><p class=\"citation\">2026年回顾；DOI 10.13822/j.cnki.hxsj.2026.0211。</p><p>核查限于期刊摘要及参考文献列表；回顾用于追踪已有研究，不能代替各项用途的原始论文、实体核对及实际引用链。</p><p class=\"links\"><a href=\"https://hxsje.cbpt.cnki.net/portal/journal/portal/client/paper/3dea1a2a47f994056edc5708988460b7\">期刊论文入口 →</a><a href=\"../index.html#source-cq-r25\">原来源登记CQ-R25 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>摘要不替代全文；方法核查只支持所核方法；后续机理计算与新用途归原作者，不当作平台原创或陈先生早期计算。</li></ul><p><b>下一步先补的证据：</b>继续补1989、2000原论文及1991书章；对拟采用的新科学解释明确具体结构、条件和证据，不重复挂起已完成的三个原文实例对照。</p><p><b>候选后续问题：</b>既有机理研究覆盖了哪些具体实体与条件，仍缺少哪些可区分反应角色的证据？</p><div class=\"prior-work\" aria-label=\"平台AI辅助文献核校\"><h3>平台AI辅助文献核校</h3><p>历史实验与理论研究归原作者。以下呈现平台完成的原文、表格和附件对照，保持 <code>review_required</code>、<code>release_eligible=false</code>；文献核校不授予实验、结构或机理验证资格。</p><article class=\"result-evidence\" id=\"a06-literature-bond-cleavage\" data-review-status=\"review_required\" data-release-eligible=\"false\"><h4>原刊中三项具体断键记录</h4><p><b>历史原文：</b>1982系列IV署陈庆云、朱蓉仙、李宗珍、王珊娣、黄维垣；1982通讯与1983系列X各署陈庆云、朱士正。原作者比较不同磺酸酯与亲核试剂反应中的C–O／S–O断裂。</p><p><b>平台AI核校：</b>已为三个代表实例建立本篇结构定义、介质、原报条件与产物的对应。二乙二醇与DG（二乙二醇二甲醚）分别记录，各篇编号不混用。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a06-literature-bond-cleavage-table-1\"><table><caption id=\"a06-literature-bond-cleavage-table-1\">原刊中三项具体断键记录：原文对照</caption><thead><tr><th scope=\"col\">原刊与本篇实例</th><th scope=\"col\">与比较有关的原报对象/条件</th><th scope=\"col\">原报结果与解释层级</th><th scope=\"col\">原页定位</th></tr></thead><tbody><tr><th scope=\"row\">CQ-H07，1982系列IV，1a</th><td>KI／二乙二醇；70°C、12.5 h</td><td>2a=HCF2CF2CH2I，原报97%；原作者归为C–O断裂。</td><td>337–338定义；348实验（PDF1–2、12）</td></tr><tr><th scope=\"row\">CQ-H08，1982通讯，2a</th><td>催化量卤离子；文中KF／DG=二乙二醇二甲醚，−50°C实例</td><td>原报磺酰氟与酰氟，正文称可定量分解；归为S–O断裂，不补造所选行未列的独立收率。</td><td>670式(2)、671反应表及解释（PDF1–2）</td></tr><tr><th scope=\"row\">CQ-H16，1983系列X，1b</th><td>少量KF／DG；先−70°C、2 h未反应，随后−60±5°C、3.5 h作用完全（均原报GC观察）</td><td>3b酰氟90%、2b磺酰氟93%，归为S–O断裂；本篇产品2/3不等同通讯3/4编号。</td><td>1044定义、1054实验（PDF1、11）</td></tr></tbody></table></div><p class=\"scientific-meaning\"><b>证据的意义：</b>原文的可对照贡献是：具体酯基结构和反应条件与不同断键产物关联。原作者提出的α-F／β-醚键“屏蔽”及进攻硫解释可按原作者观点介绍，但不能替代独立机理证据。</p><ul class=\"result-limits\"><li>这是有原页定位的历史实验报告核读；所列收率属于原作者，本平台未重复制备、重新鉴定全套谱图或开展DFT。三例不构成全部多氟/全氟酯的普适断键规律；1054页温度计未校正，不新增温度不确定度资格。2003硅酯／二氟卡宾与2010甲酯／甾体三氟甲基化仍分开，旧方法核读登记不写成本轮新增签认。</li></ul><p class=\"table-note\">来源ID：CQ-H07、CQ-H08、CQ-H16</p><p class=\"links\"><a href=\"../topics/perfluorosulfonates/index.html\">磺酸酯历史专题与原刊题录 →</a></p></article></div><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/perfluorosulfonates/index.html#record-sulfonate-cleavage\">磺酸酯断键档案 →</a><a href=\"../topics/chen-reagent/index.html#chen-reagent-contribution\">陈试剂历史贡献 →</a><a href=\"../topics/chen-reagent/index.html#chen-reagent-evidence\">试剂身份与原始证据 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section><section class=\"research-line\" id=\"ai-a07\" aria-labelledby=\"ai-a07-title\"><span class=\"status\">研究资料与问题</span><h2 id=\"ai-a07-title\">A07（单电子转移与C–Cl活化）</h2><h3>科学问题</h3><p>不同溶剂与引发体系下，特定含氟氯代物发生什么转化？</p><h3>AI怎样辅助</h3><p>按底物、条件、观察和提出的机理组织证据；区分1999溶剂体系、2001镍体系和2005专利，并追踪不同研究组的贡献。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>1999与2001年论文的31页、26页SI已取得，已核首页身份；正文仍待取得，全部谱图与机理证据未完成专业核校。申请200510031063.4的CN1752059A与CN1298686C两份说明书已取得，属同一申请的公开／授权版本，陈庆云、曹海萍为共同发明人；两版全文、权利要求合并／重编号与实施例已完成文本对照，不据此判断当前法律状态或工业采用。摘要中的SET解释不作为平台机制认证。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md\">现有材料、缺口与原始资料定位 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>摘要所提SET不是完整机理证明；C–Cl活化不等于普遍C–F断裂或PFAS降解；专利题录不证明产业采用或当前法律状态。</li></ul><p><b>下一步先补的证据：</b>优先补1999、2001两篇正文，并将具体底物／谱图与已持SI对应；同申请专利文本版本对照已完成，SET机理判断仍须相应证据。</p><p><b>候选后续问题：</b>哪些对照支持单电子转移解释，哪些观察还允许其他路径？</p><div class=\"prior-work\" aria-label=\"平台AI辅助文献核校\"><h3>平台AI辅助文献核校</h3><p>历史实验与理论研究归原作者。以下呈现平台完成的原文、表格和附件对照，保持 <code>review_required</code>、<code>release_eligible=false</code>；文献核校不授予实验、结构或机理验证资格。</p><article class=\"result-evidence\" id=\"a07-literature-patent-versions\" data-review-status=\"review_required\" data-release-eligible=\"false\"><h4>同一申请的公开版与授权公告版</h4><p><b>历史原文：</b>陈庆云与曹海萍为申请200510031063.4的共同发明人；CN1752059A与CN1298686C分别为该申请的公开版和历史授权公告版。</p><p><b>平台AI核校：</b>已完成两版全文及权利要求的逐项文本对应：13→10包含合并、重编号和具体列举调整。两版各5实施例的原报产物／产率对应一致：I(CF2)6I 72%、F(CF2)6I 59%、I(CF2)8I 80%、F(CF2)8I 66%、I(CF2)4I 67%。两版说明书优选氧化剂文字有调整，不能称全文逐字相同。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a07-literature-patent-versions-table-1\"><table><caption id=\"a07-literature-patent-versions-table-1\">同一申请的公开版与授权公告版：原文对照</caption><thead><tr><th scope=\"col\">公开版→授权公告版</th><th scope=\"col\">实际文本对照</th><th scope=\"col\">原页定位</th></tr></thead><tbody><tr><th scope=\"row\">A1＋A3＋A5→C1</th><td>一般方法、氧化剂类别与盐/产物通式在C1合并表达；不等于原A3类别从文书完全消失。</td><td>两版PDF2</td></tr><tr><th scope=\"row\">A4→C3</th><td>C3进一步列举三种过硫酸盐和KMnO4；醋酸锰/硫酸高铈类别仍见C1。</td><td>两版PDF2</td></tr><tr><th scope=\"row\">A7＋A8→C5</th><td>前驱体路径与通式变量合并表达。</td><td>两版PDF2</td></tr><tr><th scope=\"row\">A13→C10</th><td>溶剂列举重编号；保持原字式，不擅自修正名称。</td><td>两版PDF3</td></tr></tbody></table></div><p class=\"scientific-meaning\"><b>证据的意义：</b>该文书以含氟烷基亚磺酸盐转化为相应碘化物的技术文字为证，保留共同发明人署名，并使公开/授权版本的具体差别可回查。它与1999、2001两篇论文及其SI属于不同文献层次。</p><ul class=\"result-limits\"><li>这里完成的是历史文书及指定文本版本对照，不判断保护范围等同、侵权、有效性、现行法律状态、工业采用或反应机理。原报产率不等于平台实验。1999/2001 SI已取得不等于正文或全谱核校完成；SET解释仍非平台机制认证。</li></ul><p class=\"table-note\">来源ID：HERITAGE-S06</p><p class=\"links\"><a href=\"https://patents.google.com/patent/CN1752059A/zh\">CN1752059A公开文书入口 →</a><a href=\"https://patents.google.com/patent/CN1298686C/zh\">CN1298686C授权公告文书入口 →</a></p></article></div><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/single-electron-transfer/index.html\">单电子转移研究专题 →</a><a href=\"../topics/single-electron-transfer/index.html#record-ccl-activation\">C–Cl活化档案 →</a></p><p class=\"top\"><a href=\"#research-index\">返回八条成果线目录 ↑</a></p></div></section><section class=\"research-line\" id=\"ai-a08\" aria-labelledby=\"ai-a08-title\"><span class=\"status\">研究资料与问题</span><h2 id=\"ai-a08-title\">A08（交叉研究与晚年拓展）</h2><h3>科学问题</h3><p>含氟方法进入小环、大环、离子液体及新试剂体系后，哪些结构与性质得到实际测量？</p><h3>AI怎样辅助</h3><p>按具体骨架、合作者与表征建立跨专题索引；关联结构、实测性质与后续问题；区分表面性质和环境评价。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>2003年SI两卷、2007年SI与CIF、2022年SI及晚年三篇附件已取得，各篇正文的取得状态分别登记。本轮已完成2007晶体模型与SI字段对应，以及2022方法、对象和图表覆盖核读；原件差异并列保存。其他附件仍按其实际阅读范围使用，不能将文件取得或此次文献对应扩大为结构、物性和机理认证。2022既有作者计算与平台未来工作分开，M0继续暂停。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md\">现有材料、缺口与原始资料定位 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>电子数不能独自裁定芳香性；特定结构或表面性质不证明器件、治疗、低毒或生命周期安全；后续成果保留原作者。</li></ul><p><b>下一步先补的证据：</b>继续补对应正文，以具体科学主张核对所需证据；已有晶体模型对应和既有计算覆盖不再笼统挂作未读，未来问题先与原作者方法及简化范围比较。</p><p><b>候选后续问题：</b>哪些性质有直接表征，哪些用途仍是后续问题，进一步比较需要什么新证据？</p><div class=\"prior-work\" aria-label=\"平台AI辅助文献核校\"><h3>平台AI辅助文献核校</h3><p>历史实验与理论研究归原作者。以下呈现平台完成的原文、表格和附件对照，保持 <code>review_required</code>、<code>release_eligible=false</code>；文献核校不授予实验、结构或机理验证资格。</p><article class=\"result-evidence\" id=\"a08-literature-crystal-models\" data-review-status=\"review_required\" data-release-eligible=\"false\"><h4>20π大环：结构证据与晶体模型范围</h4><p><b>历史原文：</b>Chao Liu、Dong-Mei Shen与Qing-Yun Chen的2007年研究围绕CF₃取代卟啉，报告还原得到的isophlorin 2、其N-甲基化衍生物3和4，以及Ni配合物5。附件把制备与表征、晶体构型以及核磁/吸收观察并列，为讨论化学修饰、骨架形变与电子结构的关系留下具体资料。非芳香性的表述须对应原文对象，不能只凭20π电子数改称反芳香。</p><p><b>平台AI核校：</b>2007年论文附件分别给出isophlorin 2、N-二甲基化3、N-四甲基化4和Ni配合物5的资料。SI S9表1与四份CIF可以一一对应；2—4的晶体总式含溶剂，部分模型存在无序或分占位；5的晶体式与产物母体式一致。须区分各晶体模型、游离产物式和分析样品约定。CIF实际采用约束或混合氢处理，部分非氢原子为各向同性处理；采集角度/权重的SI概述与CIF字段差别照录。平台完成的是材料对应与限定释读，不是重新精修或独立晶体认证。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a08-literature-crystal-models-table-1\"><table><caption id=\"a08-literature-crystal-models-table-1\">2007年原作者化合物与附件证据</caption><thead><tr><th scope=\"col\">原作者对象</th><th scope=\"col\">证据定位</th><th scope=\"col\">平台对照与限度</th></tr></thead><tbody><tr><th scope=\"row\">isophlorin 2、N-二甲基化3、N-四甲基化4、Ni配合物5</th><td>SI S2–S4，S9表1，S10–S12；对应CIF</td><td>将具体分子与各晶体模型对应；不能仅凭20π电子数裁定反芳香性</td></tr><tr><th scope=\"row\">游离产物式与晶体总式</th><td>SI表征式及CIF组成／占位字段</td><td>2—4的晶体总式含溶剂，部分模型存在无序或分占位；5的晶体式与产物母体式一致，不把含溶剂总式当游离产物式</td></tr><tr><th scope=\"row\">精修与采集字段</th><td>S9概述与CIF的氢／ADP／角度／权重字段</td><td>CIF含约束或混合氢处理、部分非氢Uiso；保留SI概述与字段差别</td></tr></tbody></table></div><p class=\"scientific-meaning\"><b>证据的意义：</b>使化学修饰、分子构型与电子性质讨论有具体对象和证据位置，避免把晶体模型或电子计数代作完整结构认证。</p><ul class=\"result-limits\"><li>对应与字段核校不等于重新精修、原始衍射数据验证或独立晶体认证。</li><li>保留原作者Chao Liu、Dong-Mei Shen、Qing-Yun Chen的归属；本轮不是新增制备或DFT。</li><li>SI与CIF已取得；JACS正文仍未取得，不以附件冒充正文核读。</li></ul><p class=\"table-note\">来源ID：CQ-R10</p><p class=\"links\"><a href=\"https://pubs.acs.org/doi/10.1021/ja070855c\">2007年论文与出版社附件 →</a><a href=\"https://ndownloader.figshare.com/files/4710160\">2007年出版社SI原件 →</a></p></article><article class=\"result-evidence\" id=\"a08-literature-existing-theory\" data-review-status=\"review_required\" data-release-eligible=\"false\"><h4>Porphyriynes：原作者已有理论研究的对象与模型</h4><p><b>历史原文：</b>2022年团队论文报告含三键的18π共轭大环Porphyriynes，并在附件中提供制备、结构和光谱资料，以及原作者已有的DFT/TD-DFT、芳香性描述和候选反应路径计算。实验结构、性质模型与简化路径各有证据范围，后续AI研究应先与这些作者工作比较，保留全部合作者归属。</p><p><b>平台AI核校：</b>2022年SI S15—S20以PBE0/6-31G*比较Pyne1与NCTPP的几何、轨道、TD-DFT吸收及芳香性指标；S16另列M062X//6-311+G*/LANL2DZ与SMD/THF用于相关路径模型。性质图中的四苯基大环与S38—S54路径坐标的去苯基简化核须分开：后者名为Pyne1的坐标为C₂₂H₁₈N₄O，实验对象为C₄₆H₃₄N₄O。Scheme S2原标ΔE(kJ/mol)，不能改称活化自由能；所列虚频也不能代替负模和双向IRC连接证据。这些是原作者既有研究，平台本轮没有新计算。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a08-literature-existing-theory-table-1\"><table><caption id=\"a08-literature-existing-theory-table-1\">2022年原作者实验／性质计算／路径模型分别呈现</caption><thead><tr><th scope=\"col\">问题</th><th scope=\"col\">原文证据与模型</th><th scope=\"col\">定位及边界</th></tr></thead><tbody><tr><th scope=\"row\">三键局部几何的实验/计算对照</th><td>Table S5中C13–C14：Pyne1晶体1.221 Å、DFT1.24 Å，NCTPP DFT1.40 Å。 PBE0/6-31G*几何；Figure S4为带四苯基大环的展示</td><td>S12—S16；Table S5；限定原作者数据对照，不称平台新结构测定或独立优化验证。</td></tr><tr><th scope=\"row\">吸收与芳香性证据</th><td>TDDFT表与实验UV-Vis分列；NICS/HOMA/FLU等指标及ACID图分别报告。 Pyne1/NCTPP，PBE0/6-31G*；ACID等值面0.030</td><td>S6、S15—S20；Figure S3/S6/S7、Table S6—S8；不同指标排序不能合成无条件“芳香性增强”；实验多溶剂谱/CH2Cl2数据与各计算溶剂不擅自等同；轨道差不直接等于实验光学带隙。</td></tr><tr><th scope=\"row\">候选路径</th><td>Scheme S2及详细坐标/能量表显示含LiOH/CH3I的候选分支。 原印M062X//6-311+G*/LANL2DZ，SMD/THF；去四苯基的简化核路径</td><td>S16、S21、S38—S54；图中标示的ΔE不是已核定ΔG‡；打印负频不代完整频率、反应模式和双向IRC；简化路径不冒充实验分子完整机理。</td></tr></tbody></table></div><p class=\"table-note\">方法段S16写Gaussian 09 D01，S55引文写Revision A.02；按两个来源字段保留，不据此擅自改写实际运行版本。</p><p class=\"scientific-meaning\"><b>证据的意义：</b>明确原作者已研究的问题、方法与简化范围；后续AI工作须先与这些专业研究比较，不能包装成首次理论研究。</p><ul class=\"result-limits\"><li>本轮只核文献覆盖，不重新计算能量、结构、光谱或芳香性指标，不据合著认定陈先生本人执行计算。</li><li>Scheme S2原标ΔE(kJ/mol)，不能直接称ΔG‡；不同组分能量需守恒参照，所列单个虚频不代替全频率、目标负模与双向IRC连接证据。</li><li>全分子性质模型与去四苯基简化核路径分别评价；不同芳香性指标排序不合成无条件“芳香性全面增强”。</li><li>SI已取得，2022正文仍未取得；M0继续暂停，原作者工作不作平台实验或机理验证。</li></ul><p class=\"table-note\">来源ID：CQ-H20</p><p class=\"links\"><a href=\"https://doi.org/10.1021/acs.orglett.2c00356\">2022年论文 →</a><a href=\"https://ndownloader.figshare.com/files/34165511\">2022年出版社SI原件 →</a></p></article></div"
+    },
+    {
+      "old": "期刊官网公开PDF，并逐页核读印刷p.175–184全部10页，关联结构图式、三张表及中英文摘要。结构转录与科学解释仍待专业签认",
+      "new": "原刊175–184页并核读全部10页；指定胺名、中英文结构编号及产物式的文内对照已完成。文献观察、原作者解释与平台核校分开，不授予真实样品结构或机理认证"
+    },
+    {
+      "old": "中胺处理使用二乙胺；中文摘要的胺名异文另列待核",
+      "new": "对应二乙胺，中文摘要原印“乙二胺”；该具体文内差异已完成对照并保留原字样，平台AI核校说明另列于研究资料页"
+    },
+    {
+      "old": "",
+      "new": "li>指定胺名、编号和产物式对照已完成；中文正文与英文摘要对两种烯烃的不同记述仍并列保存，不据此选择一版作为实际实验产物或裁定异文成因。</li><"
+    },
+    {
+      "old": "1980年原刊中文摘要p.175印“乙二胺”，正文图式、实验及英文摘要为二乙胺；部分摘要化合物编号及氟化产物式也与正文有异文，暂不自行修正。</li><li>原刊页头为1980年4月，期刊网页卷期记1980-03-15，月份两来源分列；结构转录、表征归属和这些异文仍待专业核校。</li><li>机构生平写“四氟乙烯”，纪念资料S1写“聚四氟乙烯”；两种投料称谓的关系待原始路线与装置记录核对，不预设为同一物料。</li><li>1963年他组原文确认PTFE热裂与低温分馏的同期技术，但与陈团队供料、合作和原始装置的关联仍未建立；不能借它消除两机构投料称谓差异。</li><li>FJ-23与历史2号／3号之间的对应文书，以及2号／3号原始配方和实测物性表仍缺；不以现代商业牌号填表。</li><li>1986年FL-G氟氯液体与早期调聚氟溴陀螺油分列；前者有物性原报值和供样致谢，不能直接归陈个人或代作后者性能证据。</li><li>传记p.37从二氟一氯甲烷制四氟乙烯的观察谈起；与机构TFE／PTFE记载的原料、过程层次及批次关系待原始工艺核对，不武断判定矛盾或拼成单一路线。</li><li>《陈庆云访谈》2018-01-03原录音／逐字稿、六氟丙烯同期试制和装置原件未取得；低温分馏分工仍据传记。</li><li>FJ-23登记与晚近1号授奖回顾分列；1966原证书、历史2号／3号技术物性附件待核。</li><li>氟溴油传记引《中国科学院》2009版p.291缺册次；已定位较早版馆藏与电子书检索途径，未取得目标原页。</li><li>2018本人访谈已定位采集项目与学术检索入口，完整原录、当次档号和采访者仍待核；5月15日照片不转作1月3日采访证据。</li><li>2009版《中国科学院》p.291册次仍未核定；新提供的《中国科学院年鉴·2009》（科学出版社）与目标书分开，需调阅正确分册版权页、目录及p.290–292。</li></ul>\n<h3>AI辅助工作的范围</h3><p>平台AI工作包括已有原刊核读、对象消歧和引据追踪。已区分2018访谈元数据、项目目录、公开专题片、馆藏及目标书页；访谈原录和2009版《中国科学院》p.291均未取得，册次仍待核。历史成果仍归陈先生及原合作者，其他团队资料仅作背景；未新增六氟丙烯试制、装置、2号／3号技术物性或早期氟溴油原件。尚未开展本线新的复算、量化计算、实验或材料性能验证。M0继续暂停；释读保持review_required、release_eligible=false",
+      "new": "机构生平写“四氟乙烯”，纪念资料S1写“聚四氟乙烯”；两种投料称谓的关系待原始路线与装置记录核对，不预设为同一物料。</li><li>1963年他组原文确认PTFE热裂与低温分馏的同期技术，但与陈团队供料、合作和原始装置的关联仍未建立；不能借它消除两机构投料称谓差异。</li><li>FJ-23与历史2号／3号之间的对应文书，以及2号／3号原始配方和实测物性表仍缺；不以现代商业牌号填表。</li><li>1986年FL-G氟氯液体与早期调聚氟溴陀螺油分列；前者有物性原报值和供样致谢，不能直接归陈个人或代作后者性能证据。</li><li>传记p.37从二氟一氯甲烷制四氟乙烯的观察谈起；与机构TFE／PTFE记载的原料、过程层次及批次关系待原始工艺核对，不武断判定矛盾或拼成单一路线。</li><li>《陈庆云访谈》2018-01-03原录音／逐字稿、六氟丙烯同期试制和装置原件未取得；低温分馏分工仍据传记。</li><li>FJ-23登记与晚近1号授奖回顾分列；1966原证书、历史2号／3号技术物性附件待核。</li><li>氟溴油传记引《中国科学院》2009版p.291缺册次；已定位较早版馆藏与电子书检索途径，未取得目标原页。</li><li>2018本人访谈已定位采集项目与学术检索入口，完整原录、当次档号和采访者仍待核；5月15日照片不转作1月3日采访证据。</li><li>2009版《中国科学院》p.291册次仍未核定；新提供的《中国科学院年鉴·2009》（科学出版社）与目标书分开，需调阅正确分册版权页、目录及p.290–292。</li></ul>\n<h3>AI辅助工作的范围</h3><p>平台AI工作包括已有原刊核读、对象消歧和引据追踪。已区分2018访谈元数据、项目目录、公开专题片、馆藏及目标书页；访谈原录和2009版《中国科学院》p.291均未取得，册次仍待核。历史成果仍归陈先生及原合作者，其他团队资料仅作背景；未新增六氟丙烯试制、装置、2号／3号技术物性或早期氟溴油原件。尚未开展本线新的复算、量化计算、实验或材料性能验证。M0继续暂停；释读保持review_required、release_eligible=false。 指定胺名、结构编号和产物式的AI辅助文献核校已完成，对照与原页见下一层研究资料；历史成果正文与平台新增释读分开，文字校勘不作实验或机理验证"
+    },
+    {
+      "old": "",
+      "new": ",\r\n        \"已核明化合物III的MR行未列N，而结构图与元素分析式含N；原文字样并列保存，重建输入约定明确。\""
+    },
+    {
+      "old": "",
+      "new": "      ],\r\n      \"literature_checks\": [\r\n        {\r\n          \"id\": \"a01-literature-nitrogen\",\r\n          \"title\": \"化合物III：结构、MR式与元素分析的原文关系\",\r\n          \"historical_record\": \"陈庆云、N. P. Gambaryan与I. L. Knuniants的1960年论文给出硝基醇乙酸酯（本篇III）的结构、物性及元素分析，属于六氟丙酮衍生物研究。\",\r\n          \"summary\": \"原文化合物III的MR计算行印C6F6H5O4，未列N，而同页元素分析式为C6F6H5O4N，前页结构图含–CH2NO2。平台将三处并列说明并保留异文；摩尔折射重建采用与结构图、元素式一致的含N式作为显式输入。\",\r\n          \"source_ids\": [\r\n            \"CQ-H12\"\r\n          ],\r\n          \"tables\": [\r\n            {\r\n              \"caption\": \"CQ-H12原文化合物III的三处记载\",\r\n              \"columns\": [\r\n                \"原文位置\",\r\n                \"原报字式／结构\",\r\n                \"平台核校范围\"\r\n              ],\r\n              \"rows\": [\r\n                [\r\n                  \"1114页结构图\",\r\n                  \"含–CH2NO2的结构\",\r\n                  \"与下一页物性及分析式并列\"\r\n                ],\r\n                [\r\n                  \"1115页MR计算行\",\r\n                  \"C6F6H5O4，未列N\",\r\n                  \"保存该行原字样，不静默补字\"\r\n                ],\r\n                [\r\n                  \"1115页元素分析式\",\r\n                  \"C6F6H5O4N\",\r\n                  \"含N式作为与结构／元素式一致的显式重建输入\"\r\n                ]\r\n              ],\r\n              \"notes\": []\r\n            }\r\n          ],\r\n          \"meaning\": \"把物性重建的分子式输入与原刊不同栏位对齐，读者可以回查计算采用了哪一个明确约定。\",\r\n          \"caveats\": [\r\n            \"字样对照不证明原作者计算时删N，不裁定异文成因或真实样品结构。\",\r\n            \"此项不是双酚AF结构、收率或机理验证。\"\r\n          ],\r\n          \"links\": [\r\n            {\r\n              \"title\": \"1960原刊：133卷1113–1116页\",\r\n              \"url\": \"https://www.mathnet.ru/rus/dan23922\",\r\n              \"kind\": \"external\"\r\n            }\r\n          ],\r\n          \"scientific_review_status\": \"review_required\",\r\n          \"release_eligible\": false\r\n        }\r\n"
+    },
+    {
+      "old": "保留原刊中文摘要与正文胺名等异文，并把少量反向异构体线索限定于四氯化碳体系的过渡馏分。尚未开展本线复算、量化计算、",
+      "new": "本轮完成1980原刊指定胺名、结构编号及产物式对照，保留正文与英文摘要对两种烯烃的不同记载。少量反向异构体线索仍限于四氯化碳体系过渡馏分，未开展新增"
+    },
+    {
+      "old": "，专业结构签认与摘要／正文异文校勘仍待核；未进行新增科学计算或实验，",
+      "new": "；指定胺名、中英文编号及产物式的文内对照已经完成。不同记载并列，尚未据此独立认证样品结构、真实产物或机理；"
+    },
+    {
+      "old": "",
+      "new": "        }\r\n      ],\r\n      \"literature_checks\": [\r\n        {\r\n          \"id\": \"a02-literature-transcription\",\r\n          \"title\": \"胺名与结构编号：按原文语境对应\",\r\n          \"historical_record\": \"陈庆云、马振中、蒋锡夔、张元发、贾世茂研究偏氟乙烯与全卤代烷烃的调聚和端基衍生转化。\",\r\n          \"summary\": \"1980年调聚论文中文摘要写“乙二胺”，正文、(C2H5)2NH反应式、实验段及英文摘要则对应二乙胺。平台据正文介绍该项酰胺化转化，同时保留中文摘要原字样。 同篇部分中英文编号不同，例如全氟叔丁基取代烯烃在中文正文编号7、英文摘要编号9，酰胺则为8与10。引用同时给结构、语种和原页，避免仅因编号相同把不同产物混用。\",\r\n          \"source_ids\": [\r\n            \"A02-P1980\",\r\n            \"CQ-H13\"\r\n          ],\r\n          \"tables\": [\r\n            {\r\n              \"caption\": \"同一结构在中英文部分的编号\",\r\n              \"columns\": [\r\n                \"结构\",\r\n                \"中文正文编号／原页\",\r\n                \"英文摘要编号／原页\"\r\n              ],\r\n              \"rows\": [\r\n                [\r\n                  \"CCl2=CHCF2CH2CF2Cl\",\r\n                  \"6／176、179–180\",\r\n                  \"7／183\"\r\n                ],\r\n                [\r\n                  \"(CF3)3CCH=CF2\",\r\n                  \"7／176–177、180\",\r\n                  \"9／183\"\r\n                ],\r\n                [\r\n                  \"(CF3)3CCH2CON(C2H5)2\",\r\n                  \"8／177、180\",\r\n                  \"10／183\"\r\n                ],\r\n                [\r\n                  \"CCl2=CHCF3\",\r\n                  \"16／178、182\",\r\n                  \"14／184\"\r\n                ]\r\n              ],\r\n              \"notes\": [\r\n                \"胺名对照：175页中文摘要为乙二胺；176–177、180–181页正文／图式／实验及183页英文摘要对应二乙胺。\"\r\n              ]\r\n            }\r\n          ],\r\n          \"meaning\": \"把端基转化关联到具体结构，而不让篇内编号或胺名异文造成化学对象误配。\",\r\n          \"caveats\": [\r\n            \"编号差异和胺名字样的对照已经明确；异文成因和真实样品不由文字核校认定。\",\r\n            \"历史实验归原作者；这里是平台AI辅助文献校勘，不是新增实验或机理验证。\",\r\n            \"日期出处分别保留：原刊175页页头为1980年4月，期刊网页卷期既有登记为1980-03-15；印刷卷期与网页书目字段分列，不据此推定实际出版日。\"\r\n          ],\r\n          \"links\": [\r\n            {\r\n              \"title\": \"1980原刊：38卷175–184页\",\r\n              \"url\": \"https://sioc-journal.cn/Jwk_hxxb/CN/Y1980/V38/I2/175\",\r\n              \"kind\": \"external\"\r\n            }\r\n          ],\r\n          \"scientific_review_status\": \"review_required\",\r\n          \"release_eligible\": false\r\n        },\r\n        {\r\n          \"id\": \"a02-literature-products\",\r\n          \"title\": \"产物式与两种烯烃记述：并列保存分歧\",\r\n          \"historical_record\": \"原论文研究调聚产物脱卤与氟化的后续转化。\",\r\n          \"summary\": \"中文正文称未发现CCl3CH2CF2CH=CF2，英文摘要却将其列为两种烯烃混合物之一；中文摘要的氟化产物式印为CCl2=CH2CF3，而正文及英文摘要为CCl2=CHCF3。平台保留这些具体差异，暂不选择一版作为实际产物的唯一记录。\",\r\n          \"source_ids\": [\r\n            \"A02-P1980\",\r\n            \"CQ-H13\"\r\n          ],\r\n          \"tables\": [\r\n            {\r\n              \"caption\": \"指定产物的文内差异\",\r\n              \"columns\": [\r\n                \"对象\",\r\n                \"中文原文\",\r\n                \"英文摘要与核校边界\"\r\n              ],\r\n              \"rows\": [\r\n                [\r\n                  \"CCl3CH2CF2CH=CF2\",\r\n                  \"176页称未发现；179–180页实验只报告分出的另一式\",\r\n                  \"183页列为两种烯烃混合物之一；不选择一段作实际产物的唯一记录\"\r\n                ],\r\n                [\r\n                  \"氟化产物\",\r\n                  \"175页摘要印CCl2=CH2CF3；178／182页正文为CCl2=CHCF3\",\r\n                  \"184页为CCl2=CHCF3；保留原字式及不同编号\"\r\n                ]\r\n              ],\r\n              \"notes\": []\r\n            }\r\n          ],\r\n          \"meaning\": \"明确哪些是原作者各段落的不同记载，防止从摘要单独提取结构后把同篇文字差别隐藏。\",\r\n          \"caveats\": [\r\n            \"“两种烯烃的混合物”不写成可能被理解为diene的“二烯烃”。\",\r\n            \"是否实际形成第二种烯烃及异文产生原因，仍需原始分析记录或可归属更正；本条不裁定。\",\r\n            \"不把短链调聚物转化移作六氟丙烯试制、历史橡胶或早期氟溴油的技术证据。\"\r\n          ],\r\n          \"links\": [\r\n            {\r\n              \"title\": \"1980原刊：38卷175–184页\",\r\n              \"url\": \"https://sioc-journal.cn/Jwk_hxxb/CN/Y1980/V38/I2/175\",\r\n              \"kind\": \"external\"\r\n            }\r\n          ],\r\n          \"scientific_review_status\": \"review_required\",\r\n          \"release_eligible\": false\r\n"
+    },
+    {
+      "old": "未知；当前重放协议未登记温度、浓度、光程、仪器及谱带归属，尚不足以定义现代光谱验证模型",
+      "new": "及对应表1的UV温度、浓度和光程尚不能恢复；原刊紫外仪器Unicam SP-500已核明，20°C属于NMR。缺少的原始测量／校准依据不由平台补造"
+    },
+    {
+      "old": "",
+      "new": "      ],\r\n      \"literature_checks\": [\r\n        {\r\n          \"id\": \"a03-literature-uv-method\",\r\n          \"title\": \"原表重放的测量条件与不确定度边界\",\r\n          \"historical_record\": \"1966论文表1报告三种完整碘代物在所列溶剂中的紫外吸收峰和溶剂位移，用于原作者的电子效应讨论。\",\r\n          \"summary\": \"原刊24页注明紫外仪器为Unicam SP-500；相邻20°C文字属于核磁共振测量。对18–25页全文的此次核读未找到能明确对应表1的紫外温度、浓度和光程，因此这些条件仍不由平台补填。 原刊峰位显示精度与真实测量不确定度需分开。平台所用±0.05nm只是显示舍入诊断，不能当作仪器精度、实验误差或置信区间；六项换算继续称原表数值重放。\",\r\n          \"source_ids\": [\r\n            \"PF01\"\r\n          ],\r\n          \"tables\": [\r\n            {\r\n              \"caption\": \"1966年原刊21页表1与24页方法段\",\r\n              \"columns\": [\r\n                \"信息\",\r\n                \"原文核读结果\",\r\n                \"使用范围\"\r\n              ],\r\n              \"rows\": [\r\n                [\r\n                  \"紫外仪器\",\r\n                  \"24页Unicam SP-500\",\r\n                  \"仪器字段已明\"\r\n                ],\r\n                [\r\n                  \"20°C\",\r\n                  \"24页文字属于核磁共振测量\",\r\n                  \"不移作紫外温度\"\r\n                ],\r\n                [\r\n                  \"UV温度、浓度、光程\",\r\n                  \"在所核18–25页未找到明确对应表1的设置\",\r\n                  \"不以仪器型号或epsilon反推\"\r\n                ],\r\n                [\r\n                  \"峰位真实不确定度\",\r\n                  \"未给足以恢复重复性／校准的不确定度依据\",\r\n                  \"±0.05 nm只作显示舍入诊断\"\r\n                ]\r\n              ],\r\n              \"notes\": []\r\n            }\r\n          ],\r\n          \"meaning\": \"把可回查的仪器信息与尚不能恢复的实验设置分开，限定原表数值重放所能回答的问题。\",\r\n          \"caveats\": [\r\n            \"六项换算仍是同一原表的数值重放，不称光谱实验复现。\",\r\n            \"不能从显示位数推定实验误差、置信区间或普适基团效应，也不据未报告的不确定度否定历史观察。\"\r\n          ],\r\n          \"links\": [\r\n            {\r\n              \"title\": \"1966原刊：32卷18–25页\",\r\n              \"url\": \"https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18\",\r\n              \"kind\": \"external\"\r\n            }\r\n          ],\r\n          \"scientific_review_status\": \"review_required\",\r\n          \"release_eligible\": false\r\n        }\r\n"
+    },
+    {
+      "old": "",
+      "new": " 两份公开说明书的指定余页与原报实例已完成核读；字式、时间范围的内部差异另列，含量与产率不混为同一指标。"
+    },
+    {
+      "old": "",
+      "new": "      ],\r\n      \"literature_checks\": [\r\n        {\r\n          \"id\": \"a05-literature-technical-text\",\r\n          \"title\": \"团队工艺说明书中的原报数据\",\r\n          \"historical_record\": \"制冷剂原刊、传记和团队工艺专利分别记录研究与工程探索。CN1075708A与CN1308043A发明人分别为林永达／梁与达、吴永明／林永达，不改列为陈庆云个人专利。\",\r\n          \"summary\": \"已核对两份公开说明书的末页实例，组成含量与产率／收率分字段保存。CN1308043A的原栏存在差别：PDF4图式左端印CH3CH2Cl，而同页正文及权利要求1写1,1,1-三氟-2-氯乙烷；PDF5表头印CF3CHCl，典型段印CF3CH2Cl；一般时间写1–7 h，表中第5行为8 h。本平台并列保存这些原字式和时窗，不静默修正，也不据此裁定排印原因。\",\r\n          \"source_ids\": [\r\n            \"HERITAGE-S01\",\r\n            \"S1\"\r\n          ],\r\n          \"tables\": [\r\n            {\r\n              \"caption\": \"团队工艺说明书中的原报数据：原文对照\",\r\n              \"columns\": [\r\n                \"文书\",\r\n                \"本次核清的原报范围\",\r\n                \"原页定位\"\r\n              ],\r\n              \"rows\": [\r\n                [\r\n                  \"CN1075708A\",\r\n                  \"5例GC含量／产率（%）依次为82／88、83／85.9、45.6／79.1、80／86.4、73／71；例1–4与例5的起始物不同。\",\r\n                  \"PDF4／说明书末页\"\r\n                ],\r\n                [\r\n                  \"CN1308043A\",\r\n                  \"6行原表收率37–68%、含量80–93%；这里只概括该表，不据此评价工业表现。\",\r\n                  \"PDF5／说明书3页\"\r\n                ]\r\n              ],\r\n              \"notes\": []\r\n            }\r\n          ],\r\n          \"meaning\": \"把公开说明书中的化学对象、组成字段与收率字段逐一分开，明确技术文字能够支持什么；与传记所记中试规模、配套润滑油及整机表现分别评价。\",\r\n          \"caveats\": [\r\n            \"说明书核读不等于平台实验复现、30吨规模或超临界相态验证，也不证明工业采用、保护范围或当前法律状态。传记的F-133a起点／F-134a含氯句仍按原文保留，不能仅凭HFC-134a身份判定传记必为错字。\"\r\n          ],\r\n          \"links\": [\r\n            {\r\n              \"title\": \"CN1075708A公开文书入口\",\r\n              \"url\": \"https://patents.google.com/patent/CN1075708A/zh\",\r\n              \"kind\": \"external\"\r\n            },\r\n            {\r\n              \"title\": \"CN1308043A公开文书入口\",\r\n              \"url\": \"https://patents.google.com/patent/CN1308043A/zh\",\r\n              \"kind\": \"external\"\r\n            }\r\n          ],\r\n          \"scientific_review_status\": \"review_required\",\r\n          \"release_eligible\": false\r\n        }\r\n"
+    },
+    {
+      "old": "结构、谱图及断键解释仍待专业核校",
+      "new": "三个代表断键实例已建立结构—条件—产物对应，原报收率归原作者；不把指定实例的核读扩大为全部谱图、真实结构或通用机理认证"
+    },
+    {
+      "old": "先核三篇原刊的结构、实验条件及姓名异文，再追1989、2000全文与1991书章；原作者的可能机制保留为原作者解释",
+      "new": "继续补1989、2000原论文及1991书章；对拟采用的新科学解释明确具体结构、条件和证据，不重复挂起已完成的三个原文实例对照"
+    },
+    {
+      "old": "",
+      "new": "      ],\r\n      \"literature_checks\": [\r\n        {\r\n          \"id\": \"a06-literature-bond-cleavage\",\r\n          \"title\": \"原刊中三项具体断键记录\",\r\n          \"historical_record\": \"1982系列IV署陈庆云、朱蓉仙、李宗珍、王珊娣、黄维垣；1982通讯与1983系列X各署陈庆云、朱士正。原作者比较不同磺酸酯与亲核试剂反应中的C–O／S–O断裂。\",\r\n          \"summary\": \"已为三个代表实例建立本篇结构定义、介质、原报条件与产物的对应。二乙二醇与DG（二乙二醇二甲醚）分别记录，各篇编号不混用。\",\r\n          \"source_ids\": [\r\n            \"CQ-H07\",\r\n            \"CQ-H08\",\r\n            \"CQ-H16\"\r\n          ],\r\n          \"tables\": [\r\n            {\r\n              \"caption\": \"原刊中三项具体断键记录：原文对照\",\r\n              \"columns\": [\r\n                \"原刊与本篇实例\",\r\n                \"与比较有关的原报对象/条件\",\r\n                \"原报结果与解释层级\",\r\n                \"原页定位\"\r\n              ],\r\n              \"rows\": [\r\n                [\r\n                  \"CQ-H07，1982系列IV，1a\",\r\n                  \"KI／二乙二醇；70°C、12.5 h\",\r\n                  \"2a=HCF2CF2CH2I，原报97%；原作者归为C–O断裂。\",\r\n                  \"337–338定义；348实验（PDF1–2、12）\"\r\n                ],\r\n                [\r\n                  \"CQ-H08，1982通讯，2a\",\r\n                  \"催化量卤离子；文中KF／DG=二乙二醇二甲醚，−50°C实例\",\r\n                  \"原报磺酰氟与酰氟，正文称可定量分解；归为S–O断裂，不补造所选行未列的独立收率。\",\r\n                  \"670式(2)、671反应表及解释（PDF1–2）\"\r\n                ],\r\n                [\r\n                  \"CQ-H16，1983系列X，1b\",\r\n                  \"少量KF／DG；先−70°C、2 h未反应，随后−60±5°C、3.5 h作用完全（均原报GC观察）\",\r\n                  \"3b酰氟90%、2b磺酰氟93%，归为S–O断裂；本篇产品2/3不等同通讯3/4编号。\",\r\n                  \"1044定义、1054实验（PDF1、11）\"\r\n                ]\r\n              ],\r\n              \"notes\": []\r\n            }\r\n          ],\r\n          \"meaning\": \"原文的可对照贡献是：具体酯基结构和反应条件与不同断键产物关联。原作者提出的α-F／β-醚键“屏蔽”及进攻硫解释可按原作者观点介绍，但不能替代独立机理证据。\",\r\n          \"caveats\": [\r\n            \"这是有原页定位的历史实验报告核读；所列收率属于原作者，本平台未重复制备、重新鉴定全套谱图或开展DFT。三例不构成全部多氟/全氟酯的普适断键规律；1054页温度计未校正，不新增温度不确定度资格。2003硅酯／二氟卡宾与2010甲酯／甾体三氟甲基化仍分开，旧方法核读登记不写成本轮新增签认。\"\r\n          ],\r\n          \"links\": [\r\n            {\r\n              \"title\": \"磺酸酯历史专题与原刊题录\",\r\n              \"url\": \"../topics/perfluorosulfonates/index.html\",\r\n              \"kind\": \"site\"\r\n            }\r\n          ],\r\n          \"scientific_review_status\": \"review_required\",\r\n          \"release_eligible\": false\r\n        }\r\n"
+    },
+    {
+      "old": "版本与技术内容仍待核，不据此判断当前法律状态",
+      "new": "两版全文、权利要求合并／重编号与实施例已完成文本对照，不据此判断当前法律状态或工业采用"
+    },
+    {
+      "old": "取两篇正文并核全套SI的谱图与底物对应，区分同一专利的版本；原始应用档案仍待补",
+      "new": "补1999、2001两篇正文，并将具体底物／谱图与已持SI对应；同申请专利文本版本对照已完成，SET机理判断仍须相应证据"
+    },
+    {
+      "old": "",
+      "new": "      ],\r\n      \"literature_checks\": [\r\n        {\r\n          \"id\": \"a07-literature-patent-versions\",\r\n          \"title\": \"同一申请的公开版与授权公告版\",\r\n          \"historical_record\": \"陈庆云与曹海萍为申请200510031063.4的共同发明人；CN1752059A与CN1298686C分别为该申请的公开版和历史授权公告版。\",\r\n          \"summary\": \"已完成两版全文及权利要求的逐项文本对应：13→10包含合并、重编号和具体列举调整。两版各5实施例的原报产物／产率对应一致：I(CF2)6I 72%、F(CF2)6I 59%、I(CF2)8I 80%、F(CF2)8I 66%、I(CF2)4I 67%。两版说明书优选氧化剂文字有调整，不能称全文逐字相同。\",\r\n          \"source_ids\": [\r\n            \"HERITAGE-S06\"\r\n          ],\r\n          \"tables\": [\r\n            {\r\n              \"caption\": \"同一申请的公开版与授权公告版：原文对照\",\r\n              \"columns\": [\r\n                \"公开版→授权公告版\",\r\n                \"实际文本对照\",\r\n                \"原页定位\"\r\n              ],\r\n              \"rows\": [\r\n                [\r\n                  \"A1＋A3＋A5→C1\",\r\n                  \"一般方法、氧化剂类别与盐/产物通式在C1合并表达；不等于原A3类别从文书完全消失。\",\r\n                  \"两版PDF2\"\r\n                ],\r\n                [\r\n                  \"A4→C3\",\r\n                  \"C3进一步列举三种过硫酸盐和KMnO4；醋酸锰/硫酸高铈类别仍见C1。\",\r\n                  \"两版PDF2\"\r\n                ],\r\n                [\r\n                  \"A7＋A8→C5\",\r\n                  \"前驱体路径与通式变量合并表达。\",\r\n                  \"两版PDF2\"\r\n                ],\r\n                [\r\n                  \"A13→C10\",\r\n                  \"溶剂列举重编号；保持原字式，不擅自修正名称。\",\r\n                  \"两版PDF3\"\r\n                ]\r\n              ],\r\n              \"notes\": []\r\n            }\r\n          ],\r\n          \"meaning\": \"该文书以含氟烷基亚磺酸盐转化为相应碘化物的技术文字为证，保留共同发明人署名，并使公开/授权版本的具体差别可回查。它与1999、2001两篇论文及其SI属于不同文献层次。\",\r\n          \"caveats\": [\r\n            \"这里完成的是历史文书及指定文本版本对照，不判断保护范围等同、侵权、有效性、现行法律状态、工业采用或反应机理。原报产率不等于平台实验。1999/2001 SI已取得不等于正文或全谱核校完成；SET解释仍非平台机制认证。\"\r\n          ],\r\n          \"links\": [\r\n            {\r\n              \"title\": \"CN1752059A公开文书入口\",\r\n              \"url\": \"https://patents.google.com/patent/CN1752059A/zh\",\r\n              \"kind\": \"external\"\r\n            },\r\n            {\r\n              \"title\": \"CN1298686C授权公告文书入口\",\r\n              \"url\": \"https://patents.google.com/patent/CN1298686C/zh\",\r\n              \"kind\": \"external\"\r\n            }\r\n          ],\r\n          \"scientific_review_status\": \"review_required\",\r\n          \"release_eligible\": false\r\n        }\r\n"
+    },
+    {
+      "old": "（40＋1页）、2007年13页SI及4份CIF、2022年55页SI，以及晚年三项研究的66／129／11页附件已取得，各篇正文仍待取得。2022年附件S15–S21与S38起已有原作者计算说明及结果，不能把未来AI补算称作首次理论研究，也不能据合著推定陈先生本人完成计算。这些附件目前仅完成文件身份及选定页／字段核对，全套结构、谱图和计算仍待专业核校；文件取得不等于结构、物性或机理认证",
+      "new": "、2007年SI与CIF、2022年SI及晚年三篇附件已取得，各篇正文的取得状态分别登记。本轮已完成2007晶体模型与SI字段对应，以及2022方法、对象和图表覆盖核读；原件差异并列保存。其他附件仍按其实际阅读范围使用，不能将文件取得或此次文献对应扩大为结构、物性和机理认证。2022既有作者计算与平台未来工作分开，M0继续暂停"
+    },
+    {
+      "old": "优先取得对应正文，核对各卷SI及CIF与论文对象的对应关系；先比较既有理论研究，专业核校后再评估未来问题",
+      "new": "继续补对应正文，以具体科学主张核对所需证据；已有晶体模型对应和既有计算覆盖不再笼统挂作未读，未来问题先与原作者方法及简化范围比较"
+    },
+    {
+      "old": "",
+      "new": "      ],\r\n      \"literature_checks\": [\r\n        {\r\n          \"id\": \"a08-literature-crystal-models\",\r\n          \"title\": \"20π大环：结构证据与晶体模型范围\",\r\n          \"historical_record\": \"Chao Liu、Dong-Mei Shen与Qing-Yun Chen的2007年研究围绕CF₃取代卟啉，报告还原得到的isophlorin 2、其N-甲基化衍生物3和4，以及Ni配合物5。附件把制备与表征、晶体构型以及核磁/吸收观察并列，为讨论化学修饰、骨架形变与电子结构的关系留下具体资料。非芳香性的表述须对应原文对象，不能只凭20π电子数改称反芳香。\",\r\n          \"summary\": \"2007年论文附件分别给出isophlorin 2、N-二甲基化3、N-四甲基化4和Ni配合物5的资料。SI S9表1与四份CIF可以一一对应；2—4的晶体总式含溶剂，部分模型存在无序或分占位；5的晶体式与产物母体式一致。须区分各晶体模型、游离产物式和分析样品约定。CIF实际采用约束或混合氢处理，部分非氢原子为各向同性处理；采集角度/权重的SI概述与CIF字段差别照录。平台完成的是材料对应与限定释读，不是重新精修或独立晶体认证。\",\r\n          \"source_ids\": [\r\n            \"CQ-R10\"\r\n          ],\r\n          \"tables\": [\r\n            {\r\n              \"caption\": \"2007年原作者化合物与附件证据\",\r\n              \"columns\": [\r\n                \"原作者对象\",\r\n                \"证据定位\",\r\n                \"平台对照与限度\"\r\n              ],\r\n              \"rows\": [\r\n                [\r\n                  \"isophlorin 2、N-二甲基化3、N-四甲基化4、Ni配合物5\",\r\n                  \"SI S2–S4，S9表1，S10–S12；对应CIF\",\r\n                  \"将具体分子与各晶体模型对应；不能仅凭20π电子数裁定反芳香性\"\r\n                ],\r\n                [\r\n                  \"游离产物式与晶体总式\",\r\n                  \"SI表征式及CIF组成／占位字段\",\r\n                  \"2—4的晶体总式含溶剂，部分模型存在无序或分占位；5的晶体式与产物母体式一致，不把含溶剂总式当游离产物式\"\r\n                ],\r\n                [\r\n                  \"精修与采集字段\",\r\n                  \"S9概述与CIF的氢／ADP／角度／权重字段\",\r\n                  \"CIF含约束或混合氢处理、部分非氢Uiso；保留SI概述与字段差别\"\r\n                ]\r\n              ],\r\n              \"notes\": []\r\n            }\r\n          ],\r\n          \"meaning\": \"使化学修饰、分子构型与电子性质讨论有具体对象和证据位置，避免把晶体模型或电子计数代作完整结构认证。\",\r\n          \"caveats\": [\r\n            \"对应与字段核校不等于重新精修、原始衍射数据验证或独立晶体认证。\",\r\n            \"保留原作者Chao Liu、Dong-Mei Shen、Qing-Yun Chen的归属；本轮不是新增制备或DFT。\",\r\n            \"SI与CIF已取得；JACS正文仍未取得，不以附件冒充正文核读。\"\r\n          ],\r\n          \"links\": [\r\n            {\r\n              \"title\": \"2007年论文与出版社附件\",\r\n              \"url\": \"https://pubs.acs.org/doi/10.1021/ja070855c\",\r\n              \"kind\": \"external\"\r\n            },\r\n            {\r\n              \"title\": \"2007年出版社SI原件\",\r\n              \"url\": \"https://ndownloader.figshare.com/files/4710160\",\r\n              \"kind\": \"external\"\r\n            }\r\n          ],\r\n          \"scientific_review_status\": \"review_required\",\r\n          \"release_eligible\": false\r\n        },\r\n        {\r\n          \"id\": \"a08-literature-existing-theory\",\r\n          \"title\": \"Porphyriynes：原作者已有理论研究的对象与模型\",\r\n          \"historical_record\": \"2022年团队论文报告含三键的18π共轭大环Porphyriynes，并在附件中提供制备、结构和光谱资料，以及原作者已有的DFT/TD-DFT、芳香性描述和候选反应路径计算。实验结构、性质模型与简化路径各有证据范围，后续AI研究应先与这些作者工作比较，保留全部合作者归属。\",\r\n          \"summary\": \"2022年SI S15—S20以PBE0/6-31G*比较Pyne1与NCTPP的几何、轨道、TD-DFT吸收及芳香性指标；S16另列M062X//6-311+G*/LANL2DZ与SMD/THF用于相关路径模型。性质图中的四苯基大环与S38—S54路径坐标的去苯基简化核须分开：后者名为Pyne1的坐标为C₂₂H₁₈N₄O，实验对象为C₄₆H₃₄N₄O。Scheme S2原标ΔE(kJ/mol)，不能改称活化自由能；所列虚频也不能代替负模和双向IRC连接证据。这些是原作者既有研究，平台本轮没有新计算。\",\r\n          \"source_ids\": [\r\n            \"CQ-H20\"\r\n          ],\r\n          \"tables\": [\r\n            {\r\n              \"caption\": \"2022年原作者实验／性质计算／路径模型分别呈现\",\r\n              \"columns\": [\r\n                \"问题\",\r\n                \"原文证据与模型\",\r\n                \"定位及边界\"\r\n              ],\r\n              \"rows\": [\r\n                [\r\n                  \"三键局部几何的实验/计算对照\",\r\n                  \"Table S5中C13–C14：Pyne1晶体1.221 Å、DFT1.24 Å，NCTPP DFT1.40 Å。 PBE0/6-31G*几何；Figure S4为带四苯基大环的展示\",\r\n                  \"S12—S16；Table S5；限定原作者数据对照，不称平台新结构测定或独立优化验证。\"\r\n                ],\r\n                [\r\n                  \"吸收与芳香性证据\",\r\n                  \"TDDFT表与实验UV-Vis分列；NICS/HOMA/FLU等指标及ACID图分别报告。 Pyne1/NCTPP，PBE0/6-31G*；ACID等值面0.030\",\r\n                  \"S6、S15—S20；Figure S3/S6/S7、Table S6—S8；不同指标排序不能合成无条件“芳香性增强”；实验多溶剂谱/CH2Cl2数据与各计算溶剂不擅自等同；轨道差不直接等于实验光学带隙。\"\r\n                ],\r\n                [\r\n                  \"候选路径\",\r\n                  \"Scheme S2及详细坐标/能量表显示含LiOH/CH3I的候选分支。 原印M062X//6-311+G*/LANL2DZ，SMD/THF；去四苯基的简化核路径\",\r\n                  \"S16、S21、S38—S54；图中标示的ΔE不是已核定ΔG‡；打印负频不代完整频率、反应模式和双向IRC；简化路径不冒充实验分子完整机理。\"\r\n                ]\r\n              ],\r\n              \"notes\": [\r\n                \"方法段S16写Gaussian 09 D01，S55引文写Revision A.02；按两个来源字段保留，不据此擅自改写实际运行版本。\"\r\n              ]\r\n            }\r\n          ],\r\n          \"meaning\": \"明确原作者已研究的问题、方法与简化范围；后续AI工作须先与这些专业研究比较，不能包装成首次理论研究。\",\r\n          \"caveats\": [\r\n            \"本轮只核文献覆盖，不重新计算能量、结构、光谱或芳香性指标，不据合著认定陈先生本人执行计算。\",\r\n            \"Scheme S2原标ΔE(kJ/mol)，不能直接称ΔG‡；不同组分能量需守恒参照，所列单个虚频不代替全频率、目标负模与双向IRC连接证据。\",\r\n            \"全分子性质模型与去四苯基简化核路径分别评价；不同芳香性指标排序不合成无条件“芳香性全面增强”。\",\r\n            \"SI已取得，2022正文仍未取得；M0继续暂停，原作者工作不作平台实验或机理验证。\"\r\n          ],\r\n          \"links\": [\r\n            {\r\n              \"title\": \"2022年论文\",\r\n              \"url\": \"https://doi.org/10.1021/acs.orglett.2c00356\",\r\n              \"kind\": \"external\"\r\n            },\r\n            {\r\n              \"title\": \"2022年出版社SI原件\",\r\n              \"url\": \"https://ndownloader.figshare.com/files/34165511\",\r\n              \"kind\": \"external\"\r\n            }\r\n          ],\r\n          \"scientific_review_status\": \"review_required\",\r\n          \"release_eligible\": false\r\n        }\r\n"
+    },
+    {
+      "old": "",
+      "new": "        for check in line.get('literature_checks', []):\n            yield from check['links']\n"
+    },
+    {
+      "old": "",
+      "new": "    validate_literature_checks(data)\n"
+    },
+    {
+      "old": "",
+      "new": "\n\ndef validate_literature_checks(data: dict) -> None:\n    \"\"\"Validate bounded editorial findings without granting scientific release.\"\"\"\n    source_ids = {'CQ-H12', 'A02-P1980', 'CQ-H13', 'PF01', 'HERITAGE-S01',\n                  'S1', 'CQ-H07', 'CQ-H08', 'CQ-H16', 'HERITAGE-S06',\n                  'CQ-R10', 'CQ-H20'}\n    seen = set()\n    for line in data['lines']:\n        for check in line.get('literature_checks', []):\n            ident = check.get('id', '')\n            if (line['id'] == 'A04' or not re.fullmatch(line['id'].lower()+r'-literature-[a-z-]+', ident)\n                    or ident in seen):\n                raise ValueError('Unexpected or duplicate literature-check anchor: '+ident)\n            seen.add(ident)\n            if check.get('scientific_review_status') != 'review_required' or check.get('release_eligible') is not False:\n                raise ValueError('Literature collation must remain pending scientific review')\n            for field in ('title', 'historical_record', 'summary', 'meaning'):\n                nonempty(check.get(field), ident+'.'+field)\n            if (not check.get('source_ids') or not set(check['source_ids']) <= source_ids\n                    or not check.get('links') or not check.get('caveats')):\n                raise ValueError('Literature collation needs known sources and scope limits')\n            for table in check.get('tables', []):\n                nonempty(table.get('caption'), ident+'.table.caption')\n                if not table.get('columns') or not table.get('rows'):\n                    raise ValueError('Incomplete literature evidence table')\n                for row in table['rows']:\n                    if len(row) != len(table['columns']) or any(not isinstance(cell, str) for cell in row):\n                        raise ValueError('Literature table cells must match the columns')\n            public_text = json.dumps(check, ensure_ascii=False)\n            if re.search(r'private-sources|local-resolution|current-item-register|原始证据待核清单|现阶段待查事项统计|(?<![A-Za-z])[A-Za-z]:[\\\\/]|file://', public_text):\n                raise ValueError('Private evidence material cannot appear in public collation')\n"
+    },
+    {
+      "old": "",
+      "new": "def render_literature_checks(line: dict) -> str:\n    checks = line.get('literature_checks', [])\n    if not checks:\n        return ''\n    out = ['<div class=\"prior-work\" aria-label=\"平台AI辅助文献核校\">'\n           '<h3>平台AI辅助文献核校</h3>'\n           '<p>历史实验与理论研究归原作者。以下呈现平台完成的原文、表格和附件对照，'\n           '保持 <code>review_required</code>、<code>release_eligible=false</code>；'\n           '文献核校不授予实验、结构或机理验证资格。</p>']\n    for check in checks:\n        out += ['<article class=\"result-evidence\" id=\"'+esc(check['id'])+'\" '\n                'data-review-status=\"review_required\" data-release-eligible=\"false\">'\n                '<h4>'+esc(check['title'])+'</h4>'\n                '<p><b>历史原文：</b>'+esc(check['historical_record'])+'</p>'\n                '<p><b>平台AI核校：</b>'+esc(check['summary'])+'</p>']\n        for index, table in enumerate(check.get('tables', [])):\n            ident = check['id']+'-table-'+str(index+1)\n            out += ['<div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"'+ident+'\">'\n                    '<table><caption id=\"'+ident+'\">'+esc(table['caption'])+'</caption><thead><tr>'\n                    +''.join('<th scope=\"col\">'+esc(cell)+'</th>' for cell in table['columns'])\n                    +'</tr></thead><tbody>']\n            for row in table['rows']:\n                out += ['<tr><th scope=\"row\">'+esc(row[0])+'</th>'\n                        +''.join('<td>'+esc(cell)+'</td>' for cell in row[1:])+'</tr>']\n            out += ['</tbody></table></div>']\n            out += ['<p class=\"table-note\">'+esc(note)+'</p>' for note in table.get('notes', [])]\n        out += ['<p class=\"scientific-meaning\"><b>证据的意义：</b>'+esc(check['meaning'])+'</p>'\n                '<ul class=\"result-limits\">'+''.join('<li>'+esc(value)+'</li>' for value in check['caveats'])+'</ul>'\n                '<p class=\"table-note\">来源ID：'+esc('、'.join(check['source_ids']))+'</p>'\n                +links_html(check['links'])+'</article>']\n    return ''.join(out)+'</div>'\n\n\ndef literature_markdown(line: dict) -> list[str]:\n    if not line.get('literature_checks'):\n        return []\n    out = ['### 平台AI辅助文献核校', '',\n           '历史实验与理论研究归原作者；以下是平台的文献与附件对照，保持 `review_required`、`release_eligible=false`。', '']\n    for check in line['literature_checks']:\n        out += ['#### '+check['title'], '', '**历史原文：**'+check['historical_record'], '',\n                '**平台AI核校：**'+check['summary'], '']\n        for table in check.get('tables', []):\n            out += [table['caption'], '', '| '+' | '.join(table['columns'])+' |',\n                    '| '+' | '.join('---' for _ in table['columns'])+' |']\n            out += ['| '+' | '.join(cell.replace('|', '\\\\|') for cell in row)+' |' for row in table['rows']]\n            out += ['']+table.get('notes', [])+['']\n        out += ['**证据的意义：**'+check['meaning'], '']+['- '+value for value in check['caveats']]\n        out += ['', '来源ID：'+'、'.join(check['source_ids']), '', markdown_links(check['links']), '']\n    return out\n\n\n"
+    },
+    {
+      "old": "",
+      "new": "+render_literature_checks(line)"
+    },
+    {
+      "old": ", ",
+      "new": "]\n        rows += literature_markdown(line)\n        rows += ["
+    },
+    {
+      "old": "",
+      "new": "- 已核明化合物III的MR行未列N，而结构图与元素分析式含N；原文字样并列保存，重建输入约定明确。\n"
+    },
+    {
+      "old": "",
+      "new": "### 平台AI辅助文献核校\n\n历史实验与理论研究归原作者；以下是平台的文献与附件对照，保持 `review_required`、`release_eligible=false`。\n\n#### 化合物III：结构、MR式与元素分析的原文关系\n\n**历史原文：**陈庆云、N. P. Gambaryan与I. L. Knuniants的1960年论文给出硝基醇乙酸酯（本篇III）的结构、物性及元素分析，属于六氟丙酮衍生物研究。\n\n**平台AI核校：**原文化合物III的MR计算行印C6F6H5O4，未列N，而同页元素分析式为C6F6H5O4N，前页结构图含–CH2NO2。平台将三处并列说明并保留异文；摩尔折射重建采用与结构图、元素式一致的含N式作为显式输入。\n\nCQ-H12原文化合物III的三处记载\n\n| 原文位置 | 原报字式／结构 | 平台核校范围 |\n| --- | --- | --- |\n| 1114页结构图 | 含–CH2NO2的结构 | 与下一页物性及分析式并列 |\n| 1115页MR计算行 | C6F6H5O4，未列N | 保存该行原字样，不静默补字 |\n| 1115页元素分析式 | C6F6H5O4N | 含N式作为与结构／元素式一致的显式重建输入 |\n\n\n**证据的意义：**把物性重建的分子式输入与原刊不同栏位对齐，读者可以回查计算采用了哪一个明确约定。\n\n- 字样对照不证明原作者计算时删N，不裁定异文成因或真实样品结构。\n- 此项不是双酚AF结构、收率或机理验证。\n\n来源ID：CQ-H12\n\n[1960原刊：133卷1113–1116页](https://www.mathnet.ru/rus/dan23922)\n\n"
+    },
+    {
+      "old": "",
+      "new": "\n### 平台AI辅助文献核校\n\n历史实验与理论研究归原作者；以下是平台的文献与附件对照，保持 `review_required`、`release_eligible=false`。\n\n#### 胺名与结构编号：按原文语境对应\n\n**历史原文：**陈庆云、马振中、蒋锡夔、张元发、贾世茂研究偏氟乙烯与全卤代烷烃的调聚和端基衍生转化。\n\n**平台AI核校：**1980年调聚论文中文摘要写“乙二胺”，正文、(C2H5)2NH反应式、实验段及英文摘要则对应二乙胺。平台据正文介绍该项酰胺化转化，同时保留中文摘要原字样。 同篇部分中英文编号不同，例如全氟叔丁基取代烯烃在中文正文编号7、英文摘要编号9，酰胺则为8与10。引用同时给结构、语种和原页，避免仅因编号相同把不同产物混用。\n\n同一结构在中英文部分的编号\n\n| 结构 | 中文正文编号／原页 | 英文摘要编号／原页 |\n| --- | --- | --- |\n| CCl2=CHCF2CH2CF2Cl | 6／176、179–180 | 7／183 |\n| (CF3)3CCH=CF2 | 7／176–177、180 | 9／183 |\n| (CF3)3CCH2CON(C2H5)2 | 8／177、180 | 10／183 |\n| CCl2=CHCF3 | 16／178、182 | 14／184 |\n\n胺名对照：175页中文摘要为乙二胺；176–177、180–181页正文／图式／实验及183页英文摘要对应二乙胺。\n\n**证据的意义：**把端基转化关联到具体结构，而不让篇内编号或胺名异文造成化学对象误配。\n\n- 编号差异和胺名字样的对照已经明确；异文成因和真实样品不由文字核校认定。\n- 历史实验归原作者；这里是平台AI辅助文献校勘，不是新增实验或机理验证。\n- 日期出处分别保留：原刊175页页头为1980年4月，期刊网页卷期既有登记为1980-03-15；印刷卷期与网页书目字段分列，不据此推定实际出版日。\n\n来源ID：A02-P1980、CQ-H13\n\n[1980原刊：38卷175–184页](https://sioc-journal.cn/Jwk_hxxb/CN/Y1980/V38/I2/175)\n\n#### 产物式与两种烯烃记述：并列保存分歧\n\n**历史原文：**原论文研究调聚产物脱卤与氟化的后续转化。\n\n**平台AI核校：**中文正文称未发现CCl3CH2CF2CH=CF2，英文摘要却将其列为两种烯烃混合物之一；中文摘要的氟化产物式印为CCl2=CH2CF3，而正文及英文摘要为CCl2=CHCF3。平台保留这些具体差异，暂不选择一版作为实际产物的唯一记录。\n\n指定产物的文内差异\n\n| 对象 | 中文原文 | 英文摘要与核校边界 |\n| --- | --- | --- |\n| CCl3CH2CF2CH=CF2 | 176页称未发现；179–180页实验只报告分出的另一式 | 183页列为两种烯烃混合物之一；不选择一段作实际产物的唯一记录 |\n| 氟化产物 | 175页摘要印CCl2=CH2CF3；178／182页正文为CCl2=CHCF3 | 184页为CCl2=CHCF3；保留原字式及不同编号 |\n\n\n**证据的意义：**明确哪些是原作者各段落的不同记载，防止从摘要单独提取结构后把同篇文字差别隐藏。\n\n- “两种烯烃的混合物”不写成可能被理解为diene的“二烯烃”。\n- 是否实际形成第二种烯烃及异文产生原因，仍需原始分析记录或可归属更正；本条不裁定。\n- 不把短链调聚物转化移作六氟丙烯试制、历史橡胶或早期氟溴油的技术证据。\n\n来源ID：A02-P1980、CQ-H13\n\n[1980原刊：38卷175–184页](https://sioc-journal.cn/Jwk_hxxb/CN/Y1980/V38/I2/175)\n"
+    },
+    {
+      "old": "",
+      "new": "\n### 平台AI辅助文献核校\n\n历史实验与理论研究归原作者；以下是平台的文献与附件对照，保持 `review_required`、`release_eligible=false`。\n\n#### 原表重放的测量条件与不确定度边界\n\n**历史原文：**1966论文表1报告三种完整碘代物在所列溶剂中的紫外吸收峰和溶剂位移，用于原作者的电子效应讨论。\n\n**平台AI核校：**原刊24页注明紫外仪器为Unicam SP-500；相邻20°C文字属于核磁共振测量。对18–25页全文的此次核读未找到能明确对应表1的紫外温度、浓度和光程，因此这些条件仍不由平台补填。 原刊峰位显示精度与真实测量不确定度需分开。平台所用±0.05nm只是显示舍入诊断，不能当作仪器精度、实验误差或置信区间；六项换算继续称原表数值重放。\n\n1966年原刊21页表1与24页方法段\n\n| 信息 | 原文核读结果 | 使用范围 |\n| --- | --- | --- |\n| 紫外仪器 | 24页Unicam SP-500 | 仪器字段已明 |\n| 20°C | 24页文字属于核磁共振测量 | 不移作紫外温度 |\n| UV温度、浓度、光程 | 在所核18–25页未找到明确对应表1的设置 | 不以仪器型号或epsilon反推 |\n| 峰位真实不确定度 | 未给足以恢复重复性／校准的不确定度依据 | ±0.05 nm只作显示舍入诊断 |\n\n\n**证据的意义：**把可回查的仪器信息与尚不能恢复的实验设置分开，限定原表数值重放所能回答的问题。\n\n- 六项换算仍是同一原表的数值重放，不称光谱实验复现。\n- 不能从显示位数推定实验误差、置信区间或普适基团效应，也不据未报告的不确定度否定历史观察。\n\n来源ID：PF01\n\n[1966原刊：32卷18–25页](https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18)\n"
+    },
+    {
+      "old": "",
+      "new": "\n### 平台AI辅助文献核校\n\n历史实验与理论研究归原作者；以下是平台的文献与附件对照，保持 `review_required`、`release_eligible=false`。\n\n#### 团队工艺说明书中的原报数据\n\n**历史原文：**制冷剂原刊、传记和团队工艺专利分别记录研究与工程探索。CN1075708A与CN1308043A发明人分别为林永达／梁与达、吴永明／林永达，不改列为陈庆云个人专利。\n\n**平台AI核校：**已核对两份公开说明书的末页实例，组成含量与产率／收率分字段保存。CN1308043A的原栏存在差别：PDF4图式左端印CH3CH2Cl，而同页正文及权利要求1写1,1,1-三氟-2-氯乙烷；PDF5表头印CF3CHCl，典型段印CF3CH2Cl；一般时间写1–7 h，表中第5行为8 h。本平台并列保存这些原字式和时窗，不静默修正，也不据此裁定排印原因。\n\n团队工艺说明书中的原报数据：原文对照\n\n| 文书 | 本次核清的原报范围 | 原页定位 |\n| --- | --- | --- |\n| CN1075708A | 5例GC含量／产率（%）依次为82／88、83／85.9、45.6／79.1、80／86.4、73／71；例1–4与例5的起始物不同。 | PDF4／说明书末页 |\n| CN1308043A | 6行原表收率37–68%、含量80–93%；这里只概括该表，不据此评价工业表现。 | PDF5／说明书3页 |\n\n\n**证据的意义：**把公开说明书中的化学对象、组成字段与收率字段逐一分开，明确技术文字能够支持什么；与传记所记中试规模、配套润滑油及整机表现分别评价。\n\n- 说明书核读不等于平台实验复现、30吨规模或超临界相态验证，也不证明工业采用、保护范围或当前法律状态。传记的F-133a起点／F-134a含氯句仍按原文保留，不能仅凭HFC-134a身份判定传记必为错字。\n\n来源ID：HERITAGE-S01、S1\n\n[CN1075708A公开文书入口](https://patents.google.com/patent/CN1075708A/zh) · [CN1308043A公开文书入口](https://patents.google.com/patent/CN1308043A/zh)\n"
+    },
+    {
+      "old": "",
+      "new": "\n### 平台AI辅助文献核校\n\n历史实验与理论研究归原作者；以下是平台的文献与附件对照，保持 `review_required`、`release_eligible=false`。\n\n#### 原刊中三项具体断键记录\n\n**历史原文：**1982系列IV署陈庆云、朱蓉仙、李宗珍、王珊娣、黄维垣；1982通讯与1983系列X各署陈庆云、朱士正。原作者比较不同磺酸酯与亲核试剂反应中的C–O／S–O断裂。\n\n**平台AI核校：**已为三个代表实例建立本篇结构定义、介质、原报条件与产物的对应。二乙二醇与DG（二乙二醇二甲醚）分别记录，各篇编号不混用。\n\n原刊中三项具体断键记录：原文对照\n\n| 原刊与本篇实例 | 与比较有关的原报对象/条件 | 原报结果与解释层级 | 原页定位 |\n| --- | --- | --- | --- |\n| CQ-H07，1982系列IV，1a | KI／二乙二醇；70°C、12.5 h | 2a=HCF2CF2CH2I，原报97%；原作者归为C–O断裂。 | 337–338定义；348实验（PDF1–2、12） |\n| CQ-H08，1982通讯，2a | 催化量卤离子；文中KF／DG=二乙二醇二甲醚，−50°C实例 | 原报磺酰氟与酰氟，正文称可定量分解；归为S–O断裂，不补造所选行未列的独立收率。 | 670式(2)、671反应表及解释（PDF1–2） |\n| CQ-H16，1983系列X，1b | 少量KF／DG；先−70°C、2 h未反应，随后−60±5°C、3.5 h作用完全（均原报GC观察） | 3b酰氟90%、2b磺酰氟93%，归为S–O断裂；本篇产品2/3不等同通讯3/4编号。 | 1044定义、1054实验（PDF1、11） |\n\n\n**证据的意义：**原文的可对照贡献是：具体酯基结构和反应条件与不同断键产物关联。原作者提出的α-F／β-醚键“屏蔽”及进攻硫解释可按原作者观点介绍，但不能替代独立机理证据。\n\n- 这是有原页定位的历史实验报告核读；所列收率属于原作者，本平台未重复制备、重新鉴定全套谱图或开展DFT。三例不构成全部多氟/全氟酯的普适断键规律；1054页温度计未校正，不新增温度不确定度资格。2003硅酯／二氟卡宾与2010甲酯／甾体三氟甲基化仍分开，旧方法核读登记不写成本轮新增签认。\n\n来源ID：CQ-H07、CQ-H08、CQ-H16\n\n[磺酸酯历史专题与原刊题录](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html)\n"
+    },
+    {
+      "old": "",
+      "new": "\n### 平台AI辅助文献核校\n\n历史实验与理论研究归原作者；以下是平台的文献与附件对照，保持 `review_required`、`release_eligible=false`。\n\n#### 同一申请的公开版与授权公告版\n\n**历史原文：**陈庆云与曹海萍为申请200510031063.4的共同发明人；CN1752059A与CN1298686C分别为该申请的公开版和历史授权公告版。\n\n**平台AI核校：**已完成两版全文及权利要求的逐项文本对应：13→10包含合并、重编号和具体列举调整。两版各5实施例的原报产物／产率对应一致：I(CF2)6I 72%、F(CF2)6I 59%、I(CF2)8I 80%、F(CF2)8I 66%、I(CF2)4I 67%。两版说明书优选氧化剂文字有调整，不能称全文逐字相同。\n\n同一申请的公开版与授权公告版：原文对照\n\n| 公开版→授权公告版 | 实际文本对照 | 原页定位 |\n| --- | --- | --- |\n| A1＋A3＋A5→C1 | 一般方法、氧化剂类别与盐/产物通式在C1合并表达；不等于原A3类别从文书完全消失。 | 两版PDF2 |\n| A4→C3 | C3进一步列举三种过硫酸盐和KMnO4；醋酸锰/硫酸高铈类别仍见C1。 | 两版PDF2 |\n| A7＋A8→C5 | 前驱体路径与通式变量合并表达。 | 两版PDF2 |\n| A13→C10 | 溶剂列举重编号；保持原字式，不擅自修正名称。 | 两版PDF3 |\n\n\n**证据的意义：**该文书以含氟烷基亚磺酸盐转化为相应碘化物的技术文字为证，保留共同发明人署名，并使公开/授权版本的具体差别可回查。它与1999、2001两篇论文及其SI属于不同文献层次。\n\n- 这里完成的是历史文书及指定文本版本对照，不判断保护范围等同、侵权、有效性、现行法律状态、工业采用或反应机理。原报产率不等于平台实验。1999/2001 SI已取得不等于正文或全谱核校完成；SET解释仍非平台机制认证。\n\n来源ID：HERITAGE-S06\n\n[CN1752059A公开文书入口](https://patents.google.com/patent/CN1752059A/zh) · [CN1298686C授权公告文书入口](https://patents.google.com/patent/CN1298686C/zh)\n"
+    },
+    {
+      "old": "",
+      "new": "\n### 平台AI辅助文献核校\n\n历史实验与理论研究归原作者；以下是平台的文献与附件对照，保持 `review_required`、`release_eligible=false`。\n\n#### 20π大环：结构证据与晶体模型范围\n\n**历史原文：**Chao Liu、Dong-Mei Shen与Qing-Yun Chen的2007年研究围绕CF₃取代卟啉，报告还原得到的isophlorin 2、其N-甲基化衍生物3和4，以及Ni配合物5。附件把制备与表征、晶体构型以及核磁/吸收观察并列，为讨论化学修饰、骨架形变与电子结构的关系留下具体资料。非芳香性的表述须对应原文对象，不能只凭20π电子数改称反芳香。\n\n**平台AI核校：**2007年论文附件分别给出isophlorin 2、N-二甲基化3、N-四甲基化4和Ni配合物5的资料。SI S9表1与四份CIF可以一一对应；2—4的晶体总式含溶剂，部分模型存在无序或分占位；5的晶体式与产物母体式一致。须区分各晶体模型、游离产物式和分析样品约定。CIF实际采用约束或混合氢处理，部分非氢原子为各向同性处理；采集角度/权重的SI概述与CIF字段差别照录。平台完成的是材料对应与限定释读，不是重新精修或独立晶体认证。\n\n2007年原作者化合物与附件证据\n\n| 原作者对象 | 证据定位 | 平台对照与限度 |\n| --- | --- | --- |\n| isophlorin 2、N-二甲基化3、N-四甲基化4、Ni配合物5 | SI S2–S4，S9表1，S10–S12；对应CIF | 将具体分子与各晶体模型对应；不能仅凭20π电子数裁定反芳香性 |\n| 游离产物式与晶体总式 | SI表征式及CIF组成／占位字段 | 2—4的晶体总式含溶剂，部分模型存在无序或分占位；5的晶体式与产物母体式一致，不把含溶剂总式当游离产物式 |\n| 精修与采集字段 | S9概述与CIF的氢／ADP／角度／权重字段 | CIF含约束或混合氢处理、部分非氢Uiso；保留SI概述与字段差别 |\n\n\n**证据的意义：**使化学修饰、分子构型与电子性质讨论有具体对象和证据位置，避免把晶体模型或电子计数代作完整结构认证。\n\n- 对应与字段核校不等于重新精修、原始衍射数据验证或独立晶体认证。\n- 保留原作者Chao Liu、Dong-Mei Shen、Qing-Yun Chen的归属；本轮不是新增制备或DFT。\n- SI与CIF已取得；JACS正文仍未取得，不以附件冒充正文核读。\n\n来源ID：CQ-R10\n\n[2007年论文与出版社附件](https://pubs.acs.org/doi/10.1021/ja070855c) · [2007年出版社SI原件](https://ndownloader.figshare.com/files/4710160)\n\n#### Porphyriynes：原作者已有理论研究的对象与模型\n\n**历史原文：**2022年团队论文报告含三键的18π共轭大环Porphyriynes，并在附件中提供制备、结构和光谱资料，以及原作者已有的DFT/TD-DFT、芳香性描述和候选反应路径计算。实验结构、性质模型与简化路径各有证据范围，后续AI研究应先与这些作者工作比较，保留全部合作者归属。\n\n**平台AI核校：**2022年SI S15—S20以PBE0/6-31G*比较Pyne1与NCTPP的几何、轨道、TD-DFT吸收及芳香性指标；S16另列M062X//6-311+G*/LANL2DZ与SMD/THF用于相关路径模型。性质图中的四苯基大环与S38—S54路径坐标的去苯基简化核须分开：后者名为Pyne1的坐标为C₂₂H₁₈N₄O，实验对象为C₄₆H₃₄N₄O。Scheme S2原标ΔE(kJ/mol)，不能改称活化自由能；所列虚频也不能代替负模和双向IRC连接证据。这些是原作者既有研究，平台本轮没有新计算。\n\n2022年原作者实验／性质计算／路径模型分别呈现\n\n| 问题 | 原文证据与模型 | 定位及边界 |\n| --- | --- | --- |\n| 三键局部几何的实验/计算对照 | Table S5中C13–C14：Pyne1晶体1.221 Å、DFT1.24 Å，NCTPP DFT1.40 Å。 PBE0/6-31G*几何；Figure S4为带四苯基大环的展示 | S12—S16；Table S5；限定原作者数据对照，不称平台新结构测定或独立优化验证。 |\n| 吸收与芳香性证据 | TDDFT表与实验UV-Vis分列；NICS/HOMA/FLU等指标及ACID图分别报告。 Pyne1/NCTPP，PBE0/6-31G*；ACID等值面0.030 | S6、S15—S20；Figure S3/S6/S7、Table S6—S8；不同指标排序不能合成无条件“芳香性增强”；实验多溶剂谱/CH2Cl2数据与各计算溶剂不擅自等同；轨道差不直接等于实验光学带隙。 |\n| 候选路径 | Scheme S2及详细坐标/能量表显示含LiOH/CH3I的候选分支。 原印M062X//6-311+G*/LANL2DZ，SMD/THF；去四苯基的简化核路径 | S16、S21、S38—S54；图中标示的ΔE不是已核定ΔG‡；打印负频不代完整频率、反应模式和双向IRC；简化路径不冒充实验分子完整机理。 |\n\n方法段S16写Gaussian 09 D01，S55引文写Revision A.02；按两个来源字段保留，不据此擅自改写实际运行版本。\n\n**证据的意义：**明确原作者已研究的问题、方法与简化范围；后续AI工作须先与这些专业研究比较，不能包装成首次理论研究。\n\n- 本轮只核文献覆盖，不重新计算能量、结构、光谱或芳香性指标，不据合著认定陈先生本人执行计算。\n- Scheme S2原标ΔE(kJ/mol)，不能直接称ΔG‡；不同组分能量需守恒参照，所列单个虚频不代替全频率、目标负模与双向IRC连接证据。\n- 全分子性质模型与去四苯基简化核路径分别评价；不同芳香性指标排序不合成无条件“芳香性全面增强”。\n- SI已取得，2022正文仍未取得；M0继续暂停，原作者工作不作平台实验或机理验证。\n\n来源ID：CQ-H20\n\n[2022年论文](https://doi.org/10.1021/acs.orglett.2c00356) · [2022年出版社SI原件](https://ndownloader.figshare.com/files/34165511)\n"
+    },
+    {
+      "old": "",
+      "new": ",\n      \"指定胺名、编号和产物式对照已完成；中文正文与英文摘要对两种烯烃的不同记述仍并列保存，不据此选择一版作为实际实验产物或裁定异文成因。\""
+    },
+    {
+      "old": "    \"1980年原刊中文摘要p.175印“乙二胺”，正文图式、实验及英文摘要为二乙胺；部分摘要化合物编号及氟化产物式也与正文有异文，暂不自行修正。\",\n    \"原刊页头为1980年4月，期刊网页卷期记1980-03-15，月份两来源分列；结构转录、表征归属和这些异文仍待专业核校。\",\n",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": " 指定胺名、结构编号和产物式的AI辅助文献核校已完成，对照与原页见下一层研究资料；历史成果正文与平台新增释读分开，文字校勘不作实验或机理验证。"
+    },
+    {
+      "old": "",
+      "new": "- 指定胺名、编号和产物式对照已完成；中文正文与英文摘要对两种烯烃的不同记述仍并列保存，不据此选择一版作为实际实验产物或裁定异文成因。\n"
+    },
+    {
+      "old": "- 1980年原刊中文摘要p.175印“乙二胺”，正文图式、实验及英文摘要为二乙胺；部分摘要化合物编号及氟化产物式也与正文有异文，暂不自行修正。\n- 原刊页头为1980年4月，期刊网页卷期记1980-03-15，月份两来源分列；结构转录、表征归属和这些异文仍待专业核校。\n",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "\nfrom public_literature_update import (MANIFEST as PRESENTATION_V24_PATH,\n    predecessor_bytes as literature_predecessor_bytes, apply as apply_literature_presentation)\n"
+    },
+    {
+      "old": "project_file(root, name).read_bytes(",
+      "new": "literature_predecessor_bytes(root, name"
+    },
+    {
+      "old": "",
+      "new": "    if (root/PRESENTATION_V24_PATH).exists() and not (root/PRESENTATION_V23_PATH).exists():\n        raise ValueError('Literature presentation requires its immutable v23 predecessor')\n"
+    },
+    {
+      "old": "read_json(project_file",
+      "new": "json.loads(original_evidence_predecessor_bytes"
+    },
+    {
+      "old": "digest(project_file(root, name)),\n                  'bytes': project_file(root, name).stat().st_size",
+      "new": "hashlib.sha256(literature_predecessor_bytes(root, name)).hexdigest(),\n                  'bytes': len(literature_predecessor_bytes(root, name))"
+    },
+    {
+      "old": "read_json(project_file",
+      "new": "json.loads(literature_predecessor_bytes"
+    },
+    {
+      "old": "project_file(root, 'site/'+route).read_bytes(",
+      "new": "literature_predecessor_bytes(root, 'site/'+route"
+    },
+    {
+      "old": "project_file(root, AI_RESEARCH_DOCUMENT).read_text",
+      "new": "literature_predecessor_bytes(root, AI_RESEARCH_DOCUMENT).decode"
+    },
+    {
+      "old": "project_file(root, 'site/'+name)\n        if digest(member) != expected['sha256'] or member.stat().st_size",
+      "new": "literature_predecessor_bytes(root, 'site/'+name)\n        if hashlib.sha256(member).hexdigest() != expected['sha256'] or len(member)"
+    },
+    {
+      "old": "from render_ai_research import inspect_ai_research\n    check = inspect_ai_research(root)\n    if check.get('status') != 'passed':\n",
+      "new": "# Replay v23 using its exact reconstructed bytes; v24 checks final rendering.\n    if not (root/PRESENTATION_V24_PATH).exists():\n        from render_ai_research import inspect_ai_research\n        check = inspect_ai_research(root)\n        if check.get('status') != 'passed':\n    "
+    },
+    {
+      "old": "updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}",
+      "new": "apply_literature_presentation(root, updated,\n        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})"
+    }
+  ],
+  "boundary": "Only optional literature-check records on seven existing AI achievement lines and specifically enumerated superseded status statements, narrow A02 text/status fields and one appended source-scope limit, their derived second-level pages/documents and bounded implementation change. Only the two superseded A02 pending entries are removed; all other pending entries retain their field bytes. The homepage, historical attribution, original website members/two JSON routes, scientific data and v1-v23 manifest bytes remain unchanged. Review-required is not a condition for the validity of historical achievements. No original PDFs, private checklists, local paths or internal statistics are published.",
+  "publish_allowlist": "Unchanged: sixteen static HTML pages, two original public JSON files and an empty .nojekyll marker, nineteen regular published files.",
+  "remote_action_performed": false
+}
