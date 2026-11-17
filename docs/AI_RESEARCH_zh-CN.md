@@ -644,23 +644,36 @@ H沿用原表C₆H₁₄记号，当前登记未进一步指定异构体；B是�
 
 ## A08（交叉研究与晚年拓展）
 
-**科学问题：**含氟方法进入小环、大环、离子液体及新试剂体系后，哪些结构与性质得到实际测量？
+**科学问题：**从含氟小环到卟啉、大环和晚年试剂，具体合成问题怎样形成新的交叉研究？
 
-**AI怎样辅助：**按具体骨架、合作者与表征建立跨专题索引；关联结构、实测性质与后续问题；区分表面性质和环境评价。
+**AI怎样辅助：**以传记关联分子骨架、具体成果和合作角色；核对新增引用，分别整理历史实验、原作者理论研究及平台资料对应。
 
 ### 已有资料与结果
 
-**现有资料与记录。**2003年SI两卷、2007年SI与CIF、2022年SI及晚年三篇附件已取得，各篇正文的取得状态分别登记。本轮已完成2007晶体模型与SI字段对应，以及2022方法、对象和图表覆盖核读；原件差异并列保存。其他附件仍按其实际阅读范围使用，不能将文件取得或此次文献对应扩大为结构、物性和机理认证。2022既有作者计算与平台未来工作分开，M0继续暂停。
+**历史主线与合作故事。**已按传记77–86页整理小环后续转化、湖南大学卟啉合作与共同学习、20π大环的发现故事及晚年研究动机；晚期论文按具体原作补入对象和共同作者。
 
-[现有材料、缺口与原始资料定位](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+[A08（交叉研究与晚年拓展）的具体学术贡献与合作](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A08_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
 
-### 待核事项与边界
+**小环与不同大环分别关联。**2002含碘环丙烯、2006两类含氟产物、2003卟啉修饰、2007 20π isophlorin与2022含三键18π大环分别介绍。2007 SI／四份CIF对应和2022方法／模型覆盖保留在下方专业记录，不把不同分子或电子数合成统一性质结论。
 
-- 电子数不能独自裁定芳香性；特定结构或表面性质不证明器件、治疗、低毒或生命周期安全；后续成果保留原作者。
+[含氟小环的合成与转化](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluorinated-small-rings/index.html) · [卟啉与大环历史专题](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html)
 
-**下一步先补的证据：**继续补对应正文，以具体科学主张核对所需证据；已有晶体模型对应和既有计算覆盖不再笼统挂作未读，未来问题先与原作者方法及简化范围比较。
+**已有理论与附件核读的范围。**2003两卷SI、2007 SI与CIF、2022 SI及晚年三篇附件的已有取得与核读状态保留。2022原作者已有DFT／TD-DFT及路径模型归其实际作者，平台只整理对象、方法和覆盖范围，不据合著认定陈先生本人执行计算，也不作首次理论研究宣称。
 
-**候选后续问题：**哪些性质有直接表征，哪些用途仍是后续问题，进一步比较需要什么新证据？
+[2022原论文及作者研究入口](https://doi.org/10.1021/acs.orglett.2c00356)
+
+**晚年方法与表面性质分层。**2020／2021脱氧氟化体系、2017烯烃双官能化、2020芳基磺酰氟方法和2023两种短链含醚磺酸盐分别按实际对象与作者介绍；表面性质与环境评价分开，未新增实验或计算。
+
+[脱氧氟化历史专题](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/deoxyfluorination/index.html) · [晚年方法与表面活性分子](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/sulfonyl-fluoride/index.html)
+
+### 资料整理的适用范围
+
+- 历史实验与已有理论计算归原作者；本轮为传记关联和新增引用核对，SI/CIF资料对应不授予平台结构、实验或机理验证资格。
+- 20π与18π对应不同具体大环；全分子性质计算与简化路径模型各有范围。表面活性或短链结构不证明低毒、可降解、工业替代或商业应用。
+
+**资料整理的下一步：**继续解释合成方法、分子结构和合作研究之间的学术联系；新增引用按原文范围整理，已有晶体模型和原作者计算覆盖记录分别保留。
+
+**候选后续问题：**未来AI研究应先限定具体分子和可比较量，并与原作者已有实验、DFT／TD-DFT方法及简化模型比较；目前仅为设想，M0保持暂停。
 
 ### 平台AI辅助文献核校
 
@@ -720,7 +733,7 @@ H沿用原表C₆H₁₄记号，当前登记未进一步指定异构体；B是�
 
 ### 史料与成果入口
 
-[含氟小环](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluorinated-small-rings/index.html#record-small-rings) · [含氟卟啉](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#record-porphyrin-collaboration) · [脱氧氟化](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/deoxyfluorination/index.html#record-deoxyfluorination-systems) · [晚年构件方法](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/sulfonyl-fluoride/index.html#record-late-functional-groups) · [含氟离子液体档案](https://cccolab.github.io/Chen-Qingyun-AI4Science/index.html#record-fluorinated-ionic-liquids)
+[含氟小环的合成与反应](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluorinated-small-rings/index.html#record-small-rings) · [卟啉与大环的历史成果](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#record-porphyrin-collaboration) · [两种脱氧氟化体系](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/deoxyfluorination/index.html#record-deoxyfluorination-systems) · [晚年构件与表面活性分子](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/sulfonyl-fluoride/index.html#record-late-functional-groups) · [含氟离子液体相关记录](https://cccolab.github.io/Chen-Qingyun-AI4Science/index.html#record-fluorinated-ionic-liquids)
 
 ## 维护与静态一致性检查
 

@@ -1394,6 +1394,8 @@ def apply_presentation_v1(root: Path, entries: dict, *, chain: list,
 
 def apply_presentation_overlay(root: Path, entries: dict, *, chain: list) -> tuple[dict, dict | None]:
     """Apply v1, then this bounded historical-content successor if present."""
+    if (root/'provenance/platform-presentation.v32.json').exists() and not (root/'provenance/platform-presentation.v31.json').exists():
+        raise ValueError('A08 biography presentation requires its immutable v31 predecessor')
     if (root/'provenance/platform-presentation.v31.json').exists() and not (root/'provenance/platform-presentation.v30.json').exists():
         raise ValueError('A07 biography presentation requires its immutable v30 predecessor')
     if (root/'provenance/platform-presentation.v30.json').exists() and not (root/'provenance/platform-presentation.v29.json').exists():
