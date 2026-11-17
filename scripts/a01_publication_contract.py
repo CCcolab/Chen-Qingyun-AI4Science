@@ -1394,6 +1394,8 @@ def apply_presentation_v1(root: Path, entries: dict, *, chain: list,
 
 def apply_presentation_overlay(root: Path, entries: dict, *, chain: list) -> tuple[dict, dict | None]:
     """Apply v1, then this bounded historical-content successor if present."""
+    if (root/'provenance/platform-presentation.v33.json').exists() and not (root/'provenance/platform-presentation.v32.json').exists():
+        raise ValueError('A09 heritage presentation requires its immutable v32 predecessor')
     if (root/'provenance/platform-presentation.v32.json').exists() and not (root/'provenance/platform-presentation.v31.json').exists():
         raise ValueError('A08 biography presentation requires its immutable v31 predecessor')
     if (root/'provenance/platform-presentation.v31.json').exists() and not (root/'provenance/platform-presentation.v30.json').exists():
@@ -2406,7 +2408,7 @@ def apply_public_line_labels(root: Path, entries: dict, previous_report: dict) -
 
 
 def publication_members(root: Path, entries: dict) -> list[dict]:
-    """Return the exact Pages allowlist, including only the authorized new route.
+    """Return the exact Pages allowlist, including only authorized new routes.
 
     The original 21-member/15-HTML baseline remains immutable. Repository
     research data never become publishable merely because they exist.
@@ -2417,8 +2419,12 @@ def publication_members(root: Path, entries: dict) -> list[dict]:
     original = {row['path'] for row in read_json(baseline_path)['files']}
     original_html = {name for name in original if name.endswith('.html')}
     added = {AI_RESEARCH_ROUTE} if (root/PRESENTATION_V12_PATH).is_file() else set()
+    if 'people/index.html' in entries:
+        if not (root/'provenance/platform-presentation.v33.json').is_file():
+            raise ValueError('The people heritage route requires its explicit v33 presentation')
+        added.add('people/index.html')
     if len(original) != 21 or len(original_html) != 15 or set(entries) != original | added:
-        raise ValueError('The effective member set may add only the explicit AI research HTML route')
+        raise ValueError('The effective member set may add only the explicit AI research and A09 heritage HTML routes')
     html = {name for name in entries if name.endswith('.html')}
     public_json = {name for name in entries if name.endswith('.json')}
     if (html != original_html | added or public_json != {

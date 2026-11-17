@@ -392,6 +392,10 @@ def render_inventory(data: dict, sources: dict, root: Path = ROOT) -> str:
     data = current_inventory(data, root)
     cards = []
     for row in sorted(data['lines'], key=lambda value: value['line_id']):
+        if row['line_id'] == 'A09' and (root/'content/a09-biography-narrative.v1.json').is_file():
+            from render_a09_biography import render_inventory_summary
+            cards.append(render_inventory_summary(root))
+            continue
         notes = '<div class="heritage-achievement-notes"><h4>成果与合作</h4>'+''.join(
             render_achievement_note(item, sources, prefix='../index.html', heading='h5')
             for item in row['achievement_notes'])+'</div>'
@@ -461,6 +465,10 @@ def render_inventory_markdown(data: dict, sources: dict, root: Path = ROOT) -> s
             '出处：'+_md_refs(row['source_refs'], sources)+'；定位：'+_md(row['locator'])+'。', '']
     rows += ['## 九条成果与传承线', '']
     for row in sorted(data['lines'], key=lambda value: value['line_id']):
+        if row['line_id'] == 'A09' and (root/'content/a09-biography-narrative.v1.json').is_file():
+            from render_a09_biography import render_inventory_markdown_summary
+            rows += render_inventory_markdown_summary(root)
+            continue
         rows += ['### '+row['line_id']+' · '+_md(row['title']), '', _md(row['contribution']), '', '成果与合作：', '']
         for item in row['achievement_notes']:
             rows += ['#### '+_md(item['title']), '', _md(item['text']), '',

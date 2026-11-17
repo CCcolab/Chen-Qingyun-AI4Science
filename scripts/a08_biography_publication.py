@@ -6,6 +6,9 @@ import json
 from pathlib import Path, PurePosixPath
 import re
 
+from a09_biography_publication import (MANIFEST as A09_BIOGRAPHY_MANIFEST,
+    predecessor_bytes as a09_biography_predecessor_bytes, apply as apply_a09_biography_presentation)
+
 MANIFEST = 'provenance/platform-presentation.v32.json'
 PRESENTATION_ID = 'PLATFORM-A08-BIOGRAPHY-20261117-v32'
 PREVIOUS_COMMIT = 'd409f17c3ecf0c20648d2105000891d20e67431b'
@@ -40,12 +43,12 @@ def _file(root: Path, name: str) -> Path:
 
 
 def _json(root: Path, name: str):
-    return json.loads(_file(root, name).read_bytes())
+    return json.loads(a09_biography_predecessor_bytes(root, name))
 
 
 def predecessor_bytes(root: Path, name: str) -> bytes:
     """Recover exact fixed d409f17 bytes before replaying the immutable chain."""
-    current = _file(root, name).read_bytes()
+    current = a09_biography_predecessor_bytes(root, name)
     if not (root/MANIFEST).exists():
         return current
     data = _json(root, MANIFEST)
@@ -107,21 +110,23 @@ def _set_pointer(data, pointer: str, value):
 
 
 def _binding(root: Path, name: str) -> dict:
-    data = _file(root, name).read_bytes()
+    data = a09_biography_predecessor_bytes(root, name)
     return {'path': name, 'sha256': _sha(data), 'bytes': len(data)}
 
 
 def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:
     """Validate the current A08-only presentation after exact v31 replay."""
     if not (root/MANIFEST).exists():
+        if (root/A09_BIOGRAPHY_MANIFEST).exists():
+            raise ValueError('A09 heritage presentation requires its immutable v32 predecessor')
         return entries, previous_report
     if not (root/PREVIOUS_MANIFEST).is_file():
         raise ValueError('A08 biography presentation requires its immutable v31 predecessor')
     for name, sha in OLD_MANIFESTS.items():
-        if _sha(_file(root, name).read_bytes()) != sha:
+        if _sha(a09_biography_predecessor_bytes(root, name)) != sha:
             raise ValueError('Historical presentation manifest changed: '+name)
     for name, (sha, size) in PROTECTED_FILES.items():
-        value = _file(root, name).read_bytes()
+        value = a09_biography_predecessor_bytes(root, name)
         if _sha(value) != sha or len(value) != size:
             raise ValueError('A01 original source or protected reference changed: '+name)
     data = _json(root, MANIFEST)
@@ -164,12 +169,12 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
         raise ValueError('A08 biography presentation requires exactly its used replacement pool')
     for name, (sha, size) in PREDECESSOR_FILES.items():
         old = predecessor_bytes(root, name)
-        if _sha(old) != sha or len(old) != size or old == _file(root, name).read_bytes():
+        if _sha(old) != sha or len(old) != size or old == a09_biography_predecessor_bytes(root, name):
             raise ValueError('A08 biography predecessor differs from fixed d409f17: '+name)
     for name in WORKFLOW_TIMEOUT_FILES:
         old = predecessor_bytes(root, name)
         if (old.count(b'    timeout-minutes: 10') != (2 if name.endswith('pages.yml') else 1)
-                or old.replace(b'    timeout-minutes: 10', b'    timeout-minutes: 40', 1) != _file(root, name).read_bytes()):
+                or old.replace(b'    timeout-minutes: 10', b'    timeout-minutes: 40', 1) != a09_biography_predecessor_bytes(root, name)):
             raise ValueError('A08 may only extend the first workflow job timeout: '+name)
     expected = json.loads(predecessor_bytes(root, AI))
     for update in EXPECTED_AI_UPDATES:
@@ -177,10 +182,10 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
     if _json(root, AI) != expected:
         raise ValueError('A08 biography JSON changed outside its fixed A08 fields')
     for name, sha in REVIEWED_PUBLIC_FILES.items():
-        if _sha(_file(root, name).read_bytes()) != sha:
+        if _sha(a09_biography_predecessor_bytes(root, name)) != sha:
             raise ValueError('A08 biography source, renderer or document differs from reviewed bytes: '+name)
     for name in PUBLIC_DISPLAYS:
-        value = _file(root, name).read_text('utf-8')
+        value = a09_biography_predecessor_bytes(root, name).decode('utf-8')
         if re.search(r'(?i)private-sources|current-item-register|现阶段待查事项统计|[CD]:[\\/]', value):
             raise ValueError('A08 biography display contains private evidence or a local path: '+name)
     changes = data.get('changes')
@@ -193,7 +198,7 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
     for item in changes:
         route = item['path']; old_entry = entries[route]
         before = predecessor_bytes(root, 'site/'+route)
-        after = _file(root, 'site/'+route).read_bytes()
+        after = a09_biography_predecessor_bytes(root, 'site/'+route)
         if (item.get('old_sha256') != old_entry['sha256'] or item.get('old_bytes') != old_entry['bytes']
                 or _sha(before) != old_entry['sha256'] or len(before) != old_entry['bytes']
                 or item.get('new_sha256') != _sha(after) or item.get('new_bytes') != len(after)
@@ -223,7 +228,7 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
                 raise ValueError('A08 changed original head/header/footer or main wrapper bytes')
         updated[route] = {**old_entry, 'sha256': _sha(after), 'bytes': len(after), 'presentation_id': PRESENTATION_ID}
     for name, expected_entry in updated.items():
-        value = _file(root, 'site/'+name).read_bytes()
+        value = a09_biography_predecessor_bytes(root, 'site/'+name)
         if _sha(value) != expected_entry['sha256'] or len(value) != expected_entry['bytes']:
             raise ValueError('A08 biography changed an unlisted website byte: '+name)
     from render_ai_research import inspect_ai_research
@@ -241,4 +246,5 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
         'homepage_achievement_summary_other_lines_and_scientific_data_preserved': True,
         **{k: required[k] for k in ('scientific_review_status', 'release_eligible',
             'scientific_data_unchanged', 'M0_resumed', 'historical_achievement_independent_of_AI_review')}}
-    return updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}
+    return apply_a09_biography_presentation(root, updated,
+        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})
