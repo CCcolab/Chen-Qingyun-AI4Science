@@ -4100,7 +4100,7 @@ def apply_a06_summary_presentation(root: Path, entries: dict, previous_report: d
         {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})
 
 
-def effective_website_entries(root: Path, baseline: dict, *, verify_current=True,
+def _effective_website_entries_v35(root: Path, baseline: dict, *, verify_current=True,
                               revision_chain=None, include_presentation=True) -> tuple[dict, dict]:
     """Apply immutable historical declarations, then check only the final bytes.
 
@@ -4204,3 +4204,14 @@ def effective_website_entries(root: Path, baseline: dict, *, verify_current=True
         'evidence_commit_s1': stages[0]['evidence_archive_commit'],
         'publication_kind': 'a01_research_progress', 'scientific_review_status': 'review_required',
         'release_eligible': False, 'presentation': presentation}
+
+
+def effective_website_entries(root: Path, baseline: dict, *, verify_current=True,
+                              revision_chain=None, include_presentation=True) -> tuple[dict, dict]:
+    """Replay v1-v35 on exact data, then apply only the bounded reader layer."""
+    arguments = {'verify_current': verify_current, 'revision_chain': revision_chain,
+                 'include_presentation': include_presentation}
+    if (root/'provenance/platform-presentation.v36.json').is_file():
+        from reader_navigation_publication import apply
+        return apply(root, baseline, _effective_website_entries_v35, **arguments)
+    return _effective_website_entries_v35(root, baseline, **arguments)

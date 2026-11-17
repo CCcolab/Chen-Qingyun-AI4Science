@@ -115,21 +115,25 @@ def inspect_site(*, require_node: bool = False) -> dict:
         report["navigation_consistency"] = navigation
         if navigation["status"] != "passed":
             errors.extend("Navigation: " + message for message in navigation["errors"])
+        # Only source-rendered historical displays use exact, hash-checked v35
+        # data. Navigation, labels, current HTML/JSON/JS and links remain current.
+        from reader_navigation_publication import historical_root
+        history_root = historical_root(ROOT)
         if (ROOT / "content/heritage-20261114.v1.json").is_file():
             from render_heritage import inspect_heritage
-            heritage = inspect_heritage(ROOT)
+            heritage = inspect_heritage(history_root)
             report["heritage_consistency"] = heritage
             if heritage["status"] != "passed":
                 errors.extend("Heritage content: " + message for message in heritage["errors"])
         if (ROOT / "content/a01-historical-achievements.v1.json").is_file():
             from render_a01_history import inspect_a01_history
-            a01_history = inspect_a01_history(ROOT)
+            a01_history = inspect_a01_history(history_root)
             report["a01_historical_content_consistency"] = a01_history
             if a01_history.get("status") != "passed":
                 errors.append("A01 historical content did not pass its source-derived rendering check")
         if (ROOT / "content/a02-academic-achievements.v1.json").is_file():
             from render_a02_history import inspect_a02_history
-            a02_history = inspect_a02_history(ROOT)
+            a02_history = inspect_a02_history(history_root)
             report["a02_historical_content_consistency"] = a02_history
             if a02_history.get("status") != "passed":
                 errors.extend("A02 history: " + message for message in a02_history.get("errors", []))
@@ -142,7 +146,7 @@ def inspect_site(*, require_node: bool = False) -> dict:
             errors.extend(labels["errors"])
         if (ROOT / AI_RESEARCH_CONTENT).is_file():
             from render_ai_research import inspect_ai_research
-            ai_research = inspect_ai_research(ROOT)
+            ai_research = inspect_ai_research(history_root)
             report["ai_research_consistency"] = ai_research
             if ai_research.get("status") != "passed":
                 errors.extend("AI research: " + message for message in ai_research.get("errors", []))
