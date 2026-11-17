@@ -1310,6 +1310,8 @@ def presentation_protected_bindings(root: Path, entries: dict) -> dict:
         raise ValueError('Presentation must preserve the nine achievement identities')
     routes = sorted(name for name in entries if name.endswith('.html'))
     successor_routes = {AI_RESEARCH_ROUTE} if (root/PRESENTATION_V12_PATH).is_file() else set()
+    if (root/'provenance/platform-presentation.v33.json').is_file():
+        successor_routes.add('people/index.html')
     actual_routes = sorted(path.relative_to(root/'site').as_posix()
                            for path in (root/'site').rglob('*.html')
                            if path.relative_to(root/'site').as_posix() not in successor_routes)

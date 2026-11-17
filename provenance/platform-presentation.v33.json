@@ -79,12 +79,12 @@
     },
     {
       "path": "scripts/a01_publication_contract.py",
-      "sha256": "98036b74df68d74681c92cdbd72b92d4928a1104ccd4e8c4b70a0844a00d480a",
-      "bytes": 311837
+      "sha256": "0329dcfe1d393e505d49ba40d05a10be0bca7419f9533bc6426ea32be89858ec",
+      "bytes": 311956
     },
     {
       "path": "scripts/a09_biography_publication.py",
-      "sha256": "3f2e3f3a79adece6f8bcb87e88e830d9a42084a7808a90f49a4dae84d91b4064",
+      "sha256": "eb12f6a07f4c0980231dfefc0a9075ec1bb1512da0c1a6c6ef0d0c803ac0ffb4",
       "bytes": 39704
     }
   ],
@@ -362,24 +362,28 @@
       "path": "scripts/a01_publication_contract.py",
       "old_sha256": "faec6a96a2e0e06a50b76bd892641bb467ed7928f364a23d8293de626ca74a41",
       "old_bytes": 311341,
-      "new_sha256": "98036b74df68d74681c92cdbd72b92d4928a1104ccd4e8c4b70a0844a00d480a",
-      "new_bytes": 311837,
+      "new_sha256": "0329dcfe1d393e505d49ba40d05a10be0bca7419f9533bc6426ea32be89858ec",
+      "new_bytes": 311956,
       "edits": [
         {
-          "old_offset": 96041,
+          "old_offset": 90722,
           "replacement": 25
         },
         {
-          "old_offset": 168402,
+          "old_offset": 96041,
           "replacement": 26
         },
         {
-          "old_offset": 169082,
+          "old_offset": 168402,
           "replacement": 27
         },
         {
-          "old_offset": 169174,
+          "old_offset": 169082,
           "replacement": 28
+        },
+        {
+          "old_offset": 169174,
+          "replacement": 29
         }
       ]
     }
@@ -484,6 +488,10 @@
     {
       "old": "    return updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}\n",
       "new": "    return apply_a09_biography_presentation(root, updated,\n        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})\n"
+    },
+    {
+      "old": "",
+      "new": "    if (root/'provenance/platform-presentation.v33.json').is_file():\n        successor_routes.add('people/index.html')\n"
     },
     {
       "old": "",
