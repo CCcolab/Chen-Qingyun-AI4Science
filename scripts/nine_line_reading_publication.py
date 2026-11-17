@@ -5,6 +5,11 @@ import hashlib
 import json
 from pathlib import Path, PurePosixPath
 import re
+from representative_studies_publication import (
+    MANIFEST as REPRESENTATIVE_STUDIES_MANIFEST,
+    predecessor_bytes as representative_studies_predecessor_bytes,
+    apply as apply_representative_studies,
+)
 
 MANIFEST = 'provenance/platform-presentation.v34.json'
 PRESENTATION_ID = 'PLATFORM-NINE-LINE-ACADEMIC-READING-20261117-v34'
@@ -46,8 +51,13 @@ def _file(root: Path, name: str) -> Path:
     return path
 
 
+def _bytes(root: Path, name: str) -> bytes:
+    _file(root, name)
+    return representative_studies_predecessor_bytes(root, name)
+
+
 def _json(root: Path, name: str):
-    return json.loads(_file(root, name).read_bytes())
+    return json.loads(_bytes(root, name))
 
 
 def _record_set(data: dict) -> tuple[list, list]:
@@ -86,7 +96,7 @@ def _record_set(data: dict) -> tuple[list, list]:
 
 def predecessor_bytes(root: Path, name: str) -> bytes:
     """Recover exact d5d8807 bytes without mutating files or weakening v33."""
-    current = _file(root, name).read_bytes()
+    current = _bytes(root, name)
     if name not in CHANGED_FILES or not (root / MANIFEST).exists():
         return current
     if not FROZEN:
@@ -119,7 +129,7 @@ def predecessor_bytes(root: Path, name: str) -> bytes:
 
 
 def _binding(root: Path, name: str) -> dict:
-    value = _file(root, name).read_bytes()
+    value = _bytes(root, name)
     return {'path': name, 'sha256': _sha(value), 'bytes': len(value)}
 
 
@@ -177,6 +187,8 @@ def _check_html_regions(route: str, before: bytes, after: bytes) -> None:
 
 def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:
     """Validate the reviewed v34 delta after the exact v1-v33 replay."""
+    if (root / REPRESENTATIVE_STUDIES_MANIFEST).exists() and not (root / MANIFEST).exists():
+        raise ValueError('Representative studies require their immutable v34 predecessor')
     if not (root / MANIFEST).exists():
         return entries, previous_report
     if not FROZEN:
@@ -184,10 +196,10 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
     if not (root / PREVIOUS_MANIFEST).is_file():
         raise ValueError('Nine-line reading requires its immutable v33 predecessor')
     for name, sha in OLD_MANIFESTS.items():
-        if _sha(_file(root, name).read_bytes()) != sha:
+        if _sha(_bytes(root, name)) != sha:
             raise ValueError('Historical presentation manifest changed: ' + name)
     for name, (sha, size) in PROTECTED_FILES.items():
-        value = _file(root, name).read_bytes()
+        value = _bytes(root, name)
         if _sha(value) != sha or len(value) != size:
             raise ValueError('Nine-line reading changed protected source bytes: ' + name)
     site_paths = tuple(sorted(p.relative_to(root / 'site').as_posix()
@@ -226,10 +238,10 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
     _record_set(data)
     for name, identity in PREDECESSOR_FILES.items():
         old = predecessor_bytes(root, name)
-        if (_sha(old), len(old)) != identity or old == _file(root, name).read_bytes():
+        if (_sha(old), len(old)) != identity or old == _bytes(root, name):
             raise ValueError('Nine-line predecessor differs from fixed d5d8807: ' + name)
     for name, sha in REVIEWED_PUBLIC_FILES.items():
-        if _sha(_file(root, name).read_bytes()) != sha:
+        if _sha(_bytes(root, name)) != sha:
             raise ValueError('Nine-line source, renderer or document differs from reviewed bytes: ' + name)
     for name in (*('site/' + route for route in ROUTES), CONTENT, DOCUMENT):
         value = _file(root, name).read_text('utf-8')
@@ -243,7 +255,7 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
     updated = {name: dict(row) for name, row in entries.items()}
     for item in changes:
         route = item['path']
-        before, after = predecessor_bytes(root, 'site/' + route), _file(root, 'site/' + route).read_bytes()
+        before, after = predecessor_bytes(root, 'site/' + route), _bytes(root, 'site/' + route)
         old = entries[route]
         if (item.get('old_sha256') != old['sha256'] or item.get('old_bytes') != old['bytes']
                 or _sha(before) != old['sha256'] or len(before) != old['bytes']
@@ -253,14 +265,14 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
         _check_html_regions(route, before, after)
         updated[route] = {**old, 'sha256': _sha(after), 'bytes': len(after), 'presentation_id': PRESENTATION_ID}
     for name, item in updated.items():
-        value = _file(root, 'site/' + name).read_bytes()
+        value = _bytes(root, 'site/' + name)
         if _sha(value) != item['sha256'] or len(value) != item['bytes']:
             raise ValueError('Nine-line reading changed an unlisted website byte: ' + name)
     from render_nine_line_reading import inspect_reading, render_document
     check = inspect_reading(root)
     if check.get('status') != 'passed' or _file(root, DOCUMENT).read_bytes() != render_document(root).encode('utf-8'):
         raise ValueError('Nine-line reading differs from its source rendering: ' + str(check))
-    report = {'path': MANIFEST, 'sha256': _sha(_file(root, MANIFEST).read_bytes()),
+    report = {'path': MANIFEST, 'sha256': _sha(_bytes(root, MANIFEST)),
         'presentation_id': PRESENTATION_ID, 'publication_kind': required['publication_kind'],
         'changed_paths': list(ROUTES), 'added_paths': [],
         'previous_presentation_commit': PREVIOUS_COMMIT,
@@ -270,4 +282,4 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
         'eight_AI_research_lines_and_scientific_data_preserved': True,
         **{k: required[k] for k in ('scientific_review_status', 'release_eligible',
             'scientific_data_unchanged', 'M0_resumed', 'historical_achievement_independent_of_AI_review')}}
-    return updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}
+    return apply_representative_studies(root, updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})

@@ -14,7 +14,7 @@
 
 出处：传记23–33页；1960年第一报英译647–653页；第117491号说明书的署名、实例和用途。
 
-[学术成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-primary-records) · [原文定位与署名](A01_FIRST_REPORT_zh-CN.md)
+[代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-representative-study) · [学术成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-primary-records) · [原文定位与署名](A01_FIRST_REPORT_zh-CN.md)
 
 ### A02（含氟单体、氟橡胶与氟油）
 
@@ -26,7 +26,7 @@
 
 出处：传记35–39页；上海有机所生平与“上海氟”报道；后续调聚研究另见1980年原刊175–184页。
 
-[学术成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html) · [原文定位与署名](A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+[代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#a02-representative-study) · [学术成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html) · [原文定位与署名](A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
 
 ### A03（全氟叔丁基（PFtB）化学）
 
@@ -38,7 +38,7 @@
 
 出处：传记42–45页；1966年《化学学报》18页共同署名，18–20页反应讨论，20–21页紫外讨论与表1。
 
-[学术成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html#a03-biography-history) · [原文定位与署名](A03_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+[代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html#a03-representative-study) · [学术成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html#a03-biography-history) · [原文定位与署名](A03_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
 
 ### A04（F-53铬雾抑制剂）
 
@@ -50,7 +50,7 @@
 
 出处：传记48–53页；1979年原刊315–324页的集体署名与致谢；1982年4月8日《人民日报》第3版铬雾段。
 
-[A04（F-53铬雾抑制剂）：研制、应用与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/f53/index.html#topic-f53) · [原文定位与署名](A04_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+[代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/f53/index.html#a04-representative-study) · [A04（F-53铬雾抑制剂）：研制、应用与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/f53/index.html#topic-f53) · [原文定位与署名](A04_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
 
 ### A05（制冷剂与配套技术）
 
@@ -62,7 +62,7 @@
 
 出处：传记55–59页；1978年《化学学报》77–79页；CN1075708A、CN1308043A的发明人及工艺各自登记。
 
-[A05（制冷剂与配套技术）：组分、工艺与设备](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html#topic-refrigerants) · [原文定位与署名](A05_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+[代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html#a05-representative-study) · [A05（制冷剂与配套技术）：组分、工艺与设备](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html#topic-refrigerants) · [原文定位与署名](A05_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
 
 ### A06（磺酸酯、二氟卡宾与三氟甲基化）
 
@@ -74,7 +74,7 @@
 
 出处：传记60–69、75–77页；磺酸酯系列原刊；1989年三氟甲基化论文；Org. Synth. 2003，80：172–176与2010，87：126–136。
 
-[A06（磺酸酯、二氟卡宾与三氟甲基化）：陈试剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#topic-chen-reagent) · [A06（磺酸酯、二氟卡宾与三氟甲基化）：磺酸酯与卡宾](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html#record-sulfonate-cleavage) · [原文定位与署名](A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+[代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#a06-representative-study) · [A06（磺酸酯、二氟卡宾与三氟甲基化）：陈试剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#topic-chen-reagent) · [A06（磺酸酯、二氟卡宾与三氟甲基化）：磺酸酯与卡宾](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html#record-sulfonate-cleavage) · [原文定位与署名](A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
 
 ### A07（单电子转移与C–Cl活化）
 
@@ -86,7 +86,7 @@
 
 出处：传记69–74、83–84页；1984年《化学学报》906–912页；1999及2001年JOC两类C–Cl方法的出版社摘要。
 
-[A07（单电子转移与C–Cl活化）](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#topic-single-electron-transfer) · [A07（单电子转移与C–Cl活化） 从碘代物到含氟氯代物](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#record-ccl-activation) · [原文定位与署名](A07_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+[代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#a07-representative-study) · [A07（单电子转移与C–Cl活化）](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#topic-single-electron-transfer) · [A07（单电子转移与C–Cl活化） 从碘代物到含氟氯代物](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#record-ccl-activation) · [原文定位与署名](A07_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
 
 ### A08（交叉研究与晚年拓展）
 
@@ -98,7 +98,7 @@
 
 出处：传记75–86页及晚期论著目录156–159页；小环、2003/2007卟啉与大环、2022大环及晚年方法分别对应原作者文献。
 
-[A08（交叉研究与晚年拓展） 含氟小环](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluorinated-small-rings/index.html#topic-fluorinated-small-rings) · [A08（交叉研究与晚年拓展） 卟啉与大环](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#topic-fluoroporphyrins) · [A08（交叉研究与晚年拓展） 脱氧氟化](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/deoxyfluorination/index.html#topic-deoxyfluorination) · [A08（交叉研究与晚年拓展） 晚年试剂与表面活性分子](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/sulfonyl-fluoride/index.html#topic-sulfonyl-fluoride) · [原文定位与署名](A08_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+[代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#a08-representative-study) · [A08（交叉研究与晚年拓展） 含氟小环](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluorinated-small-rings/index.html#topic-fluorinated-small-rings) · [A08（交叉研究与晚年拓展） 卟啉与大环](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#topic-fluoroporphyrins) · [A08（交叉研究与晚年拓展） 脱氧氟化](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/deoxyfluorination/index.html#topic-deoxyfluorination) · [A08（交叉研究与晚年拓展） 晚年试剂与表面活性分子](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/sulfonyl-fluoride/index.html#topic-sulfonyl-fluoride) · [原文定位与署名](A08_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
 
 ### A09（学科建设与人才培养）
 
@@ -109,6 +109,8 @@
 依据：《氟缘笃志：陈庆云传》78–79、87–105、111、117–122页；机构2009、2019年报道与生平图集。
 
 [A09（学科建设与人才培养）人物与传承专题](https://cccolab.github.io/Chen-Qingyun-AI4Science/people/index.html) · [AI辅助资料整理](https://cccolab.github.io/Chen-Qingyun-AI4Science/people/index.html#a09-ai-collation)
+
+[代表成果详读：自主选题、写作与共同带教](https://cccolab.github.io/Chen-Qingyun-AI4Science/people/index.html#a09-representative-study)
 
 ## 人物与合作故事
 

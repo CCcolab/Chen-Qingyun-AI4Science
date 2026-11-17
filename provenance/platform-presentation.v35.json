@@ -1,0 +1,786 @@
+{
+  "schema_version": "35.0",
+  "presentation_id": "PLATFORM-REPRESENTATIVE-STUDIES-20261117-v35",
+  "publication_kind": "platform_representative_studies",
+  "previous_presentation_commit": "5e00520b970a654a3874833e2c67c05ea4a2a634",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v34.json",
+    "sha256": "a337647a017f0eaf50f96d8328fc3c865e3e52d65e32ec65d86ce3f7066ce6eb"
+  },
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "authorization": "依用户要求深化九条成果线下一层专题：以传记和已有原文呈现科学问题、研究过程、关键结果、合作及育人故事；只核新增引用，历史成果与AI整理分开，不恢复M0或Nemotron训练。",
+  "allowed_html_paths": [
+    "topics/early-fluoroketones/index.html",
+    "topics/fluoromonomers/index.html",
+    "pftb/index.html",
+    "topics/f53/index.html",
+    "topics/refrigerants/index.html",
+    "topics/chen-reagent/index.html",
+    "topics/single-electron-transfer/index.html",
+    "topics/fluoroporphyrins/index.html",
+    "people/index.html",
+    "achievements/index.html"
+  ],
+  "added_html_paths": [],
+  "additions": [],
+  "allowed_topic_markers": {
+    "topics/early-fluoroketones/index.html": "REPRESENTATIVE_STUDY_A01",
+    "topics/fluoromonomers/index.html": "REPRESENTATIVE_STUDY_A02",
+    "pftb/index.html": "REPRESENTATIVE_STUDY_A03",
+    "topics/f53/index.html": "REPRESENTATIVE_STUDY_A04",
+    "topics/refrigerants/index.html": "REPRESENTATIVE_STUDY_A05",
+    "topics/chen-reagent/index.html": "REPRESENTATIVE_STUDY_A06",
+    "topics/single-electron-transfer/index.html": "REPRESENTATIVE_STUDY_A07",
+    "topics/fluoroporphyrins/index.html": "REPRESENTATIVE_STUDY_A08",
+    "people/index.html": "REPRESENTATIVE_STUDY_A09"
+  },
+  "allowed_inventory_region": "HERITAGE_INVENTORY",
+  "allowed_guide_change": "prepend_exactly_one_representative_link_per_line",
+  "editorial_documents": [
+    {
+      "path": "site/topics/early-fluoroketones/index.html",
+      "sha256": "80a494a2a7c31f8c162a043ba741a2153dc08493abc225180a0ee4e879d4b0a7",
+      "bytes": 267846
+    },
+    {
+      "path": "site/topics/fluoromonomers/index.html",
+      "sha256": "c3d0a5d855f8f9819ba15b82758cc6661d75e96c5958a77f3ea2d1d2b9ba399f",
+      "bytes": 28229
+    },
+    {
+      "path": "site/pftb/index.html",
+      "sha256": "cdbacef4bd1f7499a839cdc6873866caa579b09158fb695b0bb969235f0332e8",
+      "bytes": 110587
+    },
+    {
+      "path": "site/topics/f53/index.html",
+      "sha256": "d2140346a80be5cb9f9d204f2dc33f97435c9e7ee10b61cb7ea6a9e3c4780efe",
+      "bytes": 25851
+    },
+    {
+      "path": "site/topics/refrigerants/index.html",
+      "sha256": "fb970a017cc69566554cfbd3a4c40649e411d2f1c35fd057f5b1b685cc1a6953",
+      "bytes": 26980
+    },
+    {
+      "path": "site/topics/chen-reagent/index.html",
+      "sha256": "ed671bcf8bc932d39b1e4ac8b64c36b32d35df3171da7048017c668bb438efed",
+      "bytes": 33187
+    },
+    {
+      "path": "site/topics/single-electron-transfer/index.html",
+      "sha256": "fd5ea83ad0c1f97040bfb10e7914212c5d8ed89cec2a15c9f1e7717d957e9f52",
+      "bytes": 28029
+    },
+    {
+      "path": "site/topics/fluoroporphyrins/index.html",
+      "sha256": "b70cdd1a358922b20d083655969b9040a21e2ce71c6d51dca1c8d697934ce928",
+      "bytes": 23431
+    },
+    {
+      "path": "site/people/index.html",
+      "sha256": "bd470709e680342fc5316db06e0d525a2f524046a833ab3787775833b299459c",
+      "bytes": 29602
+    },
+    {
+      "path": "site/achievements/index.html",
+      "sha256": "b889f0dc518c65458da0df7eb9502ee50ea63fb8ff95a06d9224b0e288fa4079",
+      "bytes": 62299
+    },
+    {
+      "path": "content/nine-line-reading.v1.json",
+      "sha256": "90c97ba6c17ba426ef8ef12ababdb7b5f2639a8df443400354f3299200ec1163",
+      "bytes": 16823
+    },
+    {
+      "path": "docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "sha256": "cbeb047b09402e0c70bf10c5566522a56e18cc6763642662969a237194a582df",
+      "bytes": 25979
+    },
+    {
+      "path": "scripts/render_a09_biography.py",
+      "sha256": "2f53b1cae5de7e6b638ae7e557809057ed1f1524333589d3ca669152e6c916b3",
+      "bytes": 18803
+    },
+    {
+      "path": "scripts/nine_line_reading_publication.py",
+      "sha256": "9f1c1ad8bc2af571ffb3b4598e759f73073d01d33fc92c38b5609c8122ec776e",
+      "bytes": 58651
+    },
+    {
+      "path": "content/representative-studies.v1.json",
+      "sha256": "5f213f9a2322b6673e72477d47387de4378d3600eb87c92f6d9a7fe3d40af1a5",
+      "bytes": 66015
+    },
+    {
+      "path": "scripts/render_representative_studies.py",
+      "sha256": "827e4790e2f4c6a6d8a6fc9400600a609ef72f4f8b49091feac74ce1576a45c8",
+      "bytes": 14673
+    },
+    {
+      "path": "scripts/representative_studies_publication.py",
+      "sha256": "648ac108aa16ade0d4ee66947a3dcb3e40275f834a247afd683569373ea8879f",
+      "bytes": 109774
+    },
+    {
+      "path": "docs/REPRESENTATIVE_STUDIES_zh-CN.md",
+      "sha256": "c595d86c98f27763ffe64f1edc57766a2d042d3b1600a26278a9361438bc759f",
+      "bytes": 48021
+    }
+  ],
+  "protected_website_members": {
+    "index.html": {
+      "sha256": "032c76ebf2fcd2dce04d1b1ae66d24ff3b782cac08fff757cb9aa9d738c87c0a",
+      "bytes": 246490
+    },
+    "topics/perfluorosulfonates/index.html": {
+      "sha256": "ffc195bfdd3c262e19327b298cfd079ac721b4b81f357ea5e4313b156f579210",
+      "bytes": 12206
+    },
+    "topics/fluorinated-small-rings/index.html": {
+      "sha256": "cdc2962520cc8d62142c23862fe6251503c725a56636aa8674f59c8fdf8ca9fd",
+      "bytes": 10871
+    },
+    "topics/deoxyfluorination/index.html": {
+      "sha256": "0fd55ff1295f895ce4f82143724eaba2c15005992ccb0f130f693f8d2645d22d",
+      "bytes": 10215
+    },
+    "topics/sulfonyl-fluoride/index.html": {
+      "sha256": "adb2871728449b7281cde158970ca221e4ae26cf72c5138f5f958fc21a1e7050",
+      "bytes": 12193
+    },
+    "topics/index.html": {
+      "sha256": "9873ad87c1c46126755d9ee346b044e36eaa001394f1d5d1ed8043e1f4c584db",
+      "bytes": 5185
+    },
+    "data/public-sources.json": {
+      "sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+      "bytes": 33608
+    },
+    "data/achievement-lines.json": {
+      "sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+      "bytes": 39768
+    },
+    "README.txt": {
+      "sha256": "6e15068b7240ae47d633df3f777e81fbb9e46146ee5f4ab70011f09119b6bbc9",
+      "bytes": 336
+    },
+    "ROUTES.txt": {
+      "sha256": "a734c356877d4534285ab7d71b9fe0f7a17abbced4de3c52f8e60d335301e418",
+      "bytes": 949
+    },
+    "QA.txt": {
+      "sha256": "a60b5f382b31689fa17e2518b7079ef0660674fb62bddbbf564c7b74dfe51067",
+      "bytes": 290
+    },
+    "IONIC-ENTRY-RETEST.txt": {
+      "sha256": "3462b056891a27c335cc2620deb87b245b6c9aea3bdaec607c8a14beca69fe9d",
+      "bytes": 741
+    },
+    "research/index.html": {
+      "sha256": "cbc946120f8fa53054d32aa7cfa013f52b0c15147954bfb4705023d910232d28",
+      "bytes": 84577
+    }
+  },
+  "reconstruction_kind": "deduplicated_exact_utf8_text_edits",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "M0_resumed": false,
+  "historical_achievement_independent_of_AI_review": true,
+  "new_quantum_calls": 0,
+  "new_model_API_calls": 0,
+  "new_model_training_runs": 0,
+  "allowed_new_files": [
+    "content/representative-studies.v1.json",
+    "scripts/render_representative_studies.py",
+    "scripts/representative_studies_publication.py",
+    "docs/REPRESENTATIVE_STUDIES_zh-CN.md",
+    "provenance/platform-presentation.v35.json"
+  ],
+  "reversible_text_files": [
+    {
+      "path": "site/topics/early-fluoroketones/index.html",
+      "old_sha256": "eeffdcd82cca6ae6549db9d21b7059ac4c9db94cdc60337ffc3a6a75ae06af88",
+      "old_bytes": 257826,
+      "new_sha256": "80a494a2a7c31f8c162a043ba741a2153dc08493abc225180a0ee4e879d4b0a7",
+      "new_bytes": 267846,
+      "edits": [
+        {
+          "old_offset": 16,
+          "replacement": 0
+        }
+      ]
+    },
+    {
+      "path": "site/topics/fluoromonomers/index.html",
+      "old_sha256": "ff79d077f5b74b8580ef06ac5e7c4c622b98c4f562daf9f75ae530e6f9ba199b",
+      "old_bytes": 18224,
+      "new_sha256": "c3d0a5d855f8f9819ba15b82758cc6661d75e96c5958a77f3ea2d1d2b9ba399f",
+      "new_bytes": 28229,
+      "edits": [
+        {
+          "old_offset": 16,
+          "replacement": 1
+        }
+      ]
+    },
+    {
+      "path": "site/pftb/index.html",
+      "old_sha256": "b2dd711fcb504b676c3d04f2c42876c2a36ae8f616c0b48b8530aed53822c3b5",
+      "old_bytes": 101043,
+      "new_sha256": "cdbacef4bd1f7499a839cdc6873866caa579b09158fb695b0bb969235f0332e8",
+      "new_bytes": 110587,
+      "edits": [
+        {
+          "old_offset": 26411,
+          "replacement": 2
+        }
+      ]
+    },
+    {
+      "path": "site/topics/f53/index.html",
+      "old_sha256": "d6b1dc495768583ef4657f8b1e542649c681ee1dd641e739f74003498a92a85b",
+      "old_bytes": 16656,
+      "new_sha256": "d2140346a80be5cb9f9d204f2dc33f97435c9e7ee10b61cb7ea6a9e3c4780efe",
+      "new_bytes": 25851,
+      "edits": [
+        {
+          "old_offset": 16,
+          "replacement": 3
+        }
+      ]
+    },
+    {
+      "path": "site/topics/refrigerants/index.html",
+      "old_sha256": "ee04418185a648f2272fb46ac38c9f9ddeee1abcb72cbb35b514cce5f765da34",
+      "old_bytes": 18076,
+      "new_sha256": "fb970a017cc69566554cfbd3a4c40649e411d2f1c35fd057f5b1b685cc1a6953",
+      "new_bytes": 26980,
+      "edits": [
+        {
+          "old_offset": 16,
+          "replacement": 4
+        }
+      ]
+    },
+    {
+      "path": "site/topics/chen-reagent/index.html",
+      "old_sha256": "a9cf50685f6732a8baa260899cee7e62986eb5440da1f8b98a7adb79295b03ef",
+      "old_bytes": 23434,
+      "new_sha256": "ed671bcf8bc932d39b1e4ac8b64c36b32d35df3171da7048017c668bb438efed",
+      "new_bytes": 33187,
+      "edits": [
+        {
+          "old_offset": 3734,
+          "replacement": 5
+        }
+      ]
+    },
+    {
+      "path": "site/topics/single-electron-transfer/index.html",
+      "old_sha256": "a0e843ba29279387985b9e7122382b6cc5f8b78021414b0383586979bb653127",
+      "old_bytes": 18697,
+      "new_sha256": "fd5ea83ad0c1f97040bfb10e7914212c5d8ed89cec2a15c9f1e7717d957e9f52",
+      "new_bytes": 28029,
+      "edits": [
+        {
+          "old_offset": 16,
+          "replacement": 6
+        }
+      ]
+    },
+    {
+      "path": "site/topics/fluoroporphyrins/index.html",
+      "old_sha256": "09eb45dd775f2a3055744bf1a4396126574860b2534b0057b7fcc4e4f334d017",
+      "old_bytes": 14580,
+      "new_sha256": "b70cdd1a358922b20d083655969b9040a21e2ce71c6d51dca1c8d697934ce928",
+      "new_bytes": 23431,
+      "edits": [
+        {
+          "old_offset": 16,
+          "replacement": 7
+        }
+      ]
+    },
+    {
+      "path": "site/people/index.html",
+      "old_sha256": "c70e0b1c08c02566f61adb3e7602a6fe15ef2f9af498d160cd171c2719f7e381",
+      "old_bytes": 21105,
+      "new_sha256": "bd470709e680342fc5316db06e0d525a2f524046a833ab3787775833b299459c",
+      "new_bytes": 29602,
+      "edits": [
+        {
+          "old_offset": 3273,
+          "replacement": 8
+        }
+      ]
+    },
+    {
+      "path": "site/achievements/index.html",
+      "old_sha256": "c692715a7ff75cab3d7e5b57e5969b245b8bf9b058636f24fe7e7ef031f1991c",
+      "old_bytes": 61378,
+      "new_sha256": "b889f0dc518c65458da0df7eb9502ee50ea63fb8ff95a06d9224b0e288fa4079",
+      "new_bytes": 62299,
+      "edits": [
+        {
+          "old_offset": 12078,
+          "replacement": 9
+        }
+      ]
+    },
+    {
+      "path": "content/nine-line-reading.v1.json",
+      "old_sha256": "8bde260f48ca1aec3250202a22ec3f7579439026c002093e5af33bac8d524507",
+      "old_bytes": 15557,
+      "new_sha256": "90c97ba6c17ba426ef8ef12ababdb7b5f2639a8df443400354f3299200ec1163",
+      "new_bytes": 16823,
+      "edits": [
+        {
+          "old_offset": 1902,
+          "replacement": 10
+        },
+        {
+          "old_offset": 3177,
+          "replacement": 11
+        },
+        {
+          "old_offset": 4371,
+          "replacement": 12
+        },
+        {
+          "old_offset": 5536,
+          "replacement": 13
+        },
+        {
+          "old_offset": 6689,
+          "replacement": 14
+        },
+        {
+          "old_offset": 7999,
+          "replacement": 15
+        },
+        {
+          "old_offset": 9422,
+          "replacement": 16
+        },
+        {
+          "old_offset": 10945,
+          "replacement": 17
+        },
+        {
+          "old_offset": 12593,
+          "replacement": 18
+        }
+      ]
+    },
+    {
+      "path": "docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "old_sha256": "60c94c77fa48ae39568b6a7e220db7e59a5f422d29caac8c45d7e925ba635520",
+      "old_bytes": 24775,
+      "new_sha256": "cbeb047b09402e0c70bf10c5566522a56e18cc6763642662969a237194a582df",
+      "new_bytes": 25979,
+      "edits": [
+        {
+          "old_offset": 1056,
+          "replacement": 19
+        },
+        {
+          "old_offset": 1970,
+          "replacement": 20
+        },
+        {
+          "old_offset": 2890,
+          "replacement": 21
+        },
+        {
+          "old_offset": 3744,
+          "replacement": 22
+        },
+        {
+          "old_offset": 4592,
+          "replacement": 23
+        },
+        {
+          "old_offset": 5515,
+          "replacement": 24
+        },
+        {
+          "old_offset": 6622,
+          "replacement": 25
+        },
+        {
+          "old_offset": 7761,
+          "replacement": 26
+        },
+        {
+          "old_offset": 9243,
+          "replacement": 27
+        }
+      ]
+    },
+    {
+      "path": "scripts/render_a09_biography.py",
+      "old_sha256": "eab7906278f6258688537ee57ddc941802b54f58a109610f4fee6cc4b02120d0",
+      "old_bytes": 18221,
+      "new_sha256": "2f53b1cae5de7e6b638ae7e557809057ed1f1524333589d3ca669152e6c916b3",
+      "new_bytes": 18803,
+      "edits": [
+        {
+          "old_offset": 9819,
+          "replacement": 28
+        },
+        {
+          "old_offset": 11121,
+          "replacement": 29
+        },
+        {
+          "old_offset": 11764,
+          "replacement": 30
+        },
+        {
+          "old_offset": 12062,
+          "replacement": 31
+        },
+        {
+          "old_offset": 12753,
+          "replacement": 32
+        }
+      ]
+    },
+    {
+      "path": "scripts/nine_line_reading_publication.py",
+      "old_sha256": "d42072afb58df50640d61f5ae5a0b071fbf8827377cb000a184a9d66982ca1ec",
+      "old_bytes": 58209,
+      "new_sha256": "9f1c1ad8bc2af571ffb3b4598e759f73073d01d33fc92c38b5609c8122ec776e",
+      "new_bytes": 58651,
+      "edits": [
+        {
+          "old_offset": 193,
+          "replacement": 33
+        },
+        {
+          "old_offset": 44163,
+          "replacement": 34
+        },
+        {
+          "old_offset": 44197,
+          "replacement": 35
+        },
+        {
+          "old_offset": 46514,
+          "replacement": 36
+        },
+        {
+          "old_offset": 48282,
+          "replacement": 37
+        },
+        {
+          "old_offset": 51548,
+          "replacement": 38
+        },
+        {
+          "old_offset": 51913,
+          "replacement": 39
+        },
+        {
+          "old_offset": 52105,
+          "replacement": 40
+        },
+        {
+          "old_offset": 54773,
+          "replacement": 41
+        },
+        {
+          "old_offset": 55002,
+          "replacement": 39
+        },
+        {
+          "old_offset": 55956,
+          "replacement": 42
+        },
+        {
+          "old_offset": 56769,
+          "replacement": 43
+        },
+        {
+          "old_offset": 57313,
+          "replacement": 44
+        },
+        {
+          "old_offset": 58106,
+          "replacement": 45
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "<html lang=\"zh-CN\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>专题｜全氟酮化学早期研究：六氟丙酮反应与六氟双酚A（双酚AF）制备</title><style id=\"topic-shared-css\">:root{color-scheme:light;--ink:#172b29;--muted:#506660;--accent:#176e62;--paper:#f6f5ef;--line:#d6e0d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,\"Microsoft YaHei\",sans-serif;line-height:1.8}a{color:#155d55;text-underline-offset:.18em}a:focus-visible{outline:3px solid #c97932;outline-offset:3px}.wrap{max-width:1120px;margin:auto;padding:0 28px}header{background:#173b37;color:#f2f4eb;padding:42px 0}header a{color:#c9e7d8}header h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.22;margin:.3em 0}header p{max-width:760px;margin:.5em 0}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.76rem;color:#bcd7c9}.index{padding:28px 0 22px}.index ol{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px 28px;padding-left:24px}.index a{font-weight:600}article{background:#fff;border:1px solid var(--line);border-radius:12px;margin:22px 0;padding:clamp(22px,4vw,48px);scroll-margin-top:20px}article h2{font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.35;margin:.15em 0 .6em}article h3{font-size:1rem;color:var(--accent);margin:1.5em 0 .3em}article p{max-width:78ch;margin:.55em 0}article ul{padding-left:1.2em}.status{display:inline-block;background:#e4f0e9;color:#155448;font-size:.82rem;padding:.22em .8em;border-radius:30px;font-weight:700}.evidence{border-top:1px solid var(--line);margin-top:22px;padding-top:4px;font-size:.92rem;color:var(--muted)}.top{font-size:.9rem}footer{padding:30px 0 45px;color:var(--muted);font-size:.9rem}@media(max-width:600px){.wrap{padding:0 18px}header{padding:30px 0}.index ol{grid-template-columns:1fr}article{border-radius:8px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style></head><body><header><div class=\"wrap\"><div class=\"eyebrow\">有机氟化学研究与传承 / 早期成果档案</div><h1>全氟酮化学早期研究：六氟丙酮反应与六氟双酚A（双酚AF）制备</h1><p><a href=\"../../index.html#line-a01\">所属成果线 A01（全氟酮化学：六氟丙酮与双酚AF）</a> · <a href=\"../index.html\">专题索引</a> · <a href=\"../../index.html#source-index\">公开资料索引</a> · <a href=\"#a01-research-overview\">原文整理与AI探索</a></p></div></header><main class=\"wrap\"><!-- A01_HISTORY_TOPIC:BEGIN -->\n",
+      "new": "<html lang=\"zh-CN\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>专题｜全氟酮化学早期研究：六氟丙酮反应与六氟双酚A（双酚AF）制备</title><style id=\"topic-shared-css\">:root{color-scheme:light;--ink:#172b29;--muted:#506660;--accent:#176e62;--paper:#f6f5ef;--line:#d6e0d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,\"Microsoft YaHei\",sans-serif;line-height:1.8}a{color:#155d55;text-underline-offset:.18em}a:focus-visible{outline:3px solid #c97932;outline-offset:3px}.wrap{max-width:1120px;margin:auto;padding:0 28px}header{background:#173b37;color:#f2f4eb;padding:42px 0}header a{color:#c9e7d8}header h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.22;margin:.3em 0}header p{max-width:760px;margin:.5em 0}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.76rem;color:#bcd7c9}.index{padding:28px 0 22px}.index ol{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px 28px;padding-left:24px}.index a{font-weight:600}article{background:#fff;border:1px solid var(--line);border-radius:12px;margin:22px 0;padding:clamp(22px,4vw,48px);scroll-margin-top:20px}article h2{font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.35;margin:.15em 0 .6em}article h3{font-size:1rem;color:var(--accent);margin:1.5em 0 .3em}article p{max-width:78ch;margin:.55em 0}article ul{padding-left:1.2em}.status{display:inline-block;background:#e4f0e9;color:#155448;font-size:.82rem;padding:.22em .8em;border-radius:30px;font-weight:700}.evidence{border-top:1px solid var(--line);margin-top:22px;padding-top:4px;font-size:.92rem;color:var(--muted)}.top{font-size:.9rem}footer{padding:30px 0 45px;color:var(--muted);font-size:.9rem}@media(max-width:600px){.wrap{padding:0 18px}header{padding:30px 0}.index ol{grid-template-columns:1fr}article{border-radius:8px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style></head><body><header><div class=\"wrap\"><div class=\"eyebrow\">有机氟化学研究与传承 / 早期成果档案</div><h1>全氟酮化学早期研究：六氟丙酮反应与六氟双酚A（双酚AF）制备</h1><p><a href=\"../../index.html#line-a01\">所属成果线 A01（全氟酮化学：六氟丙酮与双酚AF）</a> · <a href=\"../index.html\">专题索引</a> · <a href=\"../../index.html#source-index\">公开资料索引</a> · <a href=\"#a01-research-overview\">原文整理与AI探索</a></p></div></header><main class=\"wrap\"><!-- REPRESENTATIVE_STUDY_A01:BEGIN -->\n<style id=\"a01-representative-study-style\">.cq-study{box-sizing:border-box;max-width:1120px;margin:28px auto;padding:clamp(22px,4vw,42px);border:1px solid #c8d8cd;border-top:4px solid #176e62;border-radius:10px;background:#fffefa;color:#182f2b;line-height:1.85;scroll-margin-top:24px}.cq-study *{box-sizing:border-box}.cq-study h2{font-size:clamp(25px,3.5vw,36px);line-height:1.45;margin:.3em 0 .7em}.cq-study h3{font-size:1.25rem;line-height:1.5;margin:1.6em 0 .7em;color:#155d55}.cq-study h4{font-size:1rem;line-height:1.6;margin:.8em 0 .3em}.cq-study p{max-width:84ch;margin:.65em 0}.cq-study a{color:#155d55;text-underline-offset:.2em}.cq-study a:focus-visible,.cq-study [tabindex]:focus-visible{outline:3px solid #aa7545;outline-offset:3px}.cq-study-label{font-size:.85rem;color:#155d55;font-weight:700}.cq-study-locator{font-size:.83rem;color:#51685e;overflow-wrap:anywhere}.cq-study-process{padding-left:1.5em}.cq-study-process>li{padding-left:.3em;margin:1.1em 0}.cq-study-table{overflow-x:auto;width:100%;margin:18px 0;border:1px solid #d6e0d9}.cq-study-table table{border-collapse:collapse;min-width:580px;width:100%;font-size:.91rem}.cq-study-table caption{text-align:left;font-weight:700;padding:12px;background:#edf3ee}.cq-study-table th,.cq-study-table td{padding:12px;border-top:1px solid #d6e0d9;text-align:left;vertical-align:top;overflow-wrap:anywhere}.cq-study-story{margin:24px 0;padding:18px 22px;background:#edf3ee;border-left:3px solid #aa7545}.cq-study-story h3{margin-top:0}.cq-study-meaning{padding:12px 18px;border-left:3px solid #176e62;background:#f5f3e9}.cq-study-references{padding-left:1.4em;font-size:.86rem;overflow-wrap:anywhere}.cq-study-references>li{margin:.9em 0;scroll-margin-top:24px}.cq-study-scope{font-size:.87rem;color:#51685e}.cq-study-nav{display:flex;flex-wrap:wrap;gap:10px 20px;border-top:1px solid #d6e0d9;padding-top:16px;margin-top:24px}@media(max-width:620px){.cq-study{margin:20px 0;padding:20px 16px;border-radius:6px}.cq-study-story{padding:14px 16px}.cq-study h2{font-size:25px}}</style>\n<section class=\"cq-study\" id=\"a01-representative-study\" aria-labelledby=\"a01-representative-study-title\">\n<p class=\"cq-study-label\">A01（全氟酮化学：六氟丙酮与双酚AF） · 代表性成果详读</p><h2 id=\"a01-representative-study-title\">从六氟丙酮的基本反应走向含氟二酚</h2>\n<h3>科学问题</h3><p>一种性质尚待展开的全氟酮，能够形成哪些稳定、可鉴定的产物？由此能否得到可用于材料研究的含氟二酚？</p>\n<h3>研究过程</h3><ol class=\"cq-study-process\">\n<li><h4>把研究对象做成一组可以追问的反应</h4><p>传记将留苏工作置于克鲁扬茨重视基本反应的学术环境中。陈庆云从六氟丙酮出发研究有机合成；1960年第一报把醇加成、炔基有机镁加成、活泼氢化合物反应及后续衍生转化联系起来，不只记录单个产物，还继续检查其结构和反应行为。</p><p class=\"cq-study-locator\">出处：传记25–28页；第一报英译647–650页讨论及650–652页实验 <a href=\"#a01-study-source-a01-hist-bio\">[1]</a> <a href=\"#a01-study-source-a01-hist-p1960\">[2]</a></p></li>\n<li><h4>把含氟骨架带入二酚问题</h4><p>传记28页叙述了陈庆云希望用两个三氟甲基替换双酚A中两个甲基的设想。第一报实际记载六氟丙酮与苯酚形成二酚XI，与邻甲酚形成另一种二酚XII；作者以结构式、熔点和元素分析记录产物，并在650页提出潜在缩聚单体用途。</p><p class=\"cq-study-locator\">出处：传记28页；英译649页XI结构及脚注、650页XII及用途、652页实验与分析 <a href=\"#a01-study-source-a01-hist-bio\">[1]</a> <a href=\"#a01-study-source-a01-hist-p1960\">[2]</a></p></li>\n<li><h4>论文记录与发明方法分别表达成果</h4><p>第117491号说明书以双（对羟基苯基）六氟丙烷的制备方法为对象，列出另一项投料和产物记录。它与论文共同展示从基本反应到含氟二酚制备的研究推进；两份文献各自保留原报数据，不把它们合并为同一实验。</p><p class=\"cq-study-locator\">出处：英译652页XI段；第117491号说明书题名、实例及发明要点 <a href=\"#a01-study-source-a01-hist-p1960\">[2]</a> <a href=\"#a01-study-source-cq-h02\">[3]</a></p></li>\n</ol><h3>关键结果</h3>\n<h4>二酚身份与用途相衔接</h4><p>第一报将苯酚对应的XI与邻甲酚对应的XII分开制备、分析；650页进一步提出潜在缩聚单体用途，使六氟丙酮反应与材料问题发生具体联系。</p><p class=\"cq-study-locator\">出处：英译649–650、652页 <a href=\"#a01-study-source-a01-hist-p1960\">[2]</a></p>\n<h4>两份制备结果各按原文保留</h4><p>论文XI的29 g／90.5%与说明书的21.7 g／98%分别归于原文；它们说明两份历史记录各自报告了什么，不直接比较真实收率或工艺优劣。</p><p class=\"cq-study-locator\">出处：英译652页XI；说明书实例段 <a href=\"#a01-study-source-a01-hist-p1960\">[2]</a> <a href=\"#a01-study-source-cq-h02\">[3]</a></p>\n<div class=\"cq-study-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a01-representative-study-results-caption\"><table><caption id=\"a01-representative-study-results-caption\">历史文献各自报告的代表结果</caption><thead><tr><th scope=\"col\">对象与出处</th><th scope=\"col\">产物质量／原报收率</th><th scope=\"col\">原报熔点及意义</th></tr></thead><tbody><tr><th scope=\"row\">第一报XI：今天所称双酚AF</th><td>29 g／90.5%</td><td>161–162℃；另列元素分析作为历史鉴定证据</td></tr><tr><th scope=\"row\">第一报XII：邻甲酚对应二酚</th><td>10.9 g／91%</td><td>134–135℃；是另一种产物，91%不属于双酚AF</td></tr><tr><th scope=\"row\">第117491号说明书：含氟二酚制备方法</th><td>21.7 g／98%（原称理论收率）</td><td>161–162℃；另一份制备记录</td></tr></tbody></table></div>\n<p class=\"cq-study-locator\">出处：英译652页XI、XII段；说明书实例段 <a href=\"#a01-study-source-a01-hist-p1960\">[2]</a> <a href=\"#a01-study-source-cq-h02\">[3]</a></p>\n<p class=\"cq-study-locator\">论文650页提出聚酯、聚氨酯等潜在单体用途，未在该文报告相应聚合物的制备和性能。</p>\n<h3>合作分工</h3>\n<h4>陈庆云、克鲁扬茨、甘巴里扬</h4><p>第一报与第117491号说明书均保存三人的共同署名；原文未逐项分派实验，不按作者次序推算贡献比例。</p><p class=\"cq-study-locator\">出处：英译647页作者栏；说明书署名栏 <a href=\"#a01-study-source-a01-hist-p1960\">[2]</a> <a href=\"#a01-study-source-cq-h02\">[3]</a></p>\n<h4>导师与日常指导者</h4><p>传记记述克鲁扬茨指导研究问题，甘巴里扬作为“小导师”帮助陈庆云熟悉实验工作；这是研究训练的具体背景。</p><p class=\"cq-study-locator\">出处：传记23、25–27页 <a href=\"#a01-study-source-a01-hist-bio\">[1]</a></p>\n<aside class=\"cq-study-story\" aria-labelledby=\"a01-representative-study-story\"><h3 id=\"a01-representative-study-story\">育人与学风故事：把异常沸点留在讨论中</h3><p>据传记27–28页所引陈庆云回忆，在另一项六氟丙酮格氏试剂实验中，产物的物性一度不像预期。克鲁扬茨得知后与他反复讨论可能解释，后来将现象联系到产物与乙醚形成恒沸物；第一报650页也保存相应醇的乙醚恒沸记录。</p><p>这段经历呈现了从异常观察、反复讨论到检查产物身份的研究训练。它是同一成果线中的另一项实验，不充作双酚AF制备的直接过程。</p><p class=\"cq-study-locator\">出处：传记27–28页，陈庆云2017-11-20访谈转引；英译650页醇实验 <a href=\"#a01-study-source-a01-hist-bio\">[1]</a> <a href=\"#a01-study-source-a01-hist-p1960\">[2]</a></p><p class=\"cq-study-locator\">资料性质：传记转引陈庆云回忆；恒沸记录另见第一报实验段</p></aside>\n<div class=\"cq-study-meaning\"><h3>学术意义</h3><p>这项贡献把一种全氟羰基的基本反应发展成可继续转化、比较和鉴定的产物体系，并具体走向含氟二酚和材料单体问题。应从研究对象、实验观察与方法的连贯推进理解其开拓性。</p></div>\n<h3>阅读范围</h3><div class=\"cq-study-scope\"><p>原报90.5%与98%分别照录；现代条件性计量重建另属AI研究记录，不修正历史产物质量、真收率或纯度。相同熔点不证明同批实验或独立重复验证。</p><p>本例呈现历史实验与作者用途设想；不据原文建立现代催化循环、决速步或平台新机理。</p></div>\n<h3>参考资料与原文出处</h3><ol class=\"cq-study-references\">\n<li id=\"a01-study-source-a01-hist-bio\"><b>朱晶、刘超：《氟缘笃志：陈庆云传》</b>；传记叙述、具名回忆转引与页注。25–30页：六氟丙酮反应、双酚AF、导师与讨论风气</li>\n<li id=\"a01-study-source-a01-hist-p1960\"><b><a href=\"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n105\">Fluorinated ketones，Communication 1（1960）</a></b>；历史论文英译原页。英译647–653页；本例反应和产物集中于649–652页，650页记录恒沸及单体用途</li>\n<li id=\"a01-study-source-cq-h02\"><b><a href=\"https://poleznayamodel.ru/patent/11/117491.html\">第117491号发明说明书</a></b>；历史发明说明书。题名、三人署名、实例及发明要点；与授予证书书影分开</li>\n</ol><p class=\"cq-study-scope\">历史成果与合作归原作者和实际参与者。本节依据所列史料展开学术叙述；平台AI辅助整理另列。</p>\n<nav class=\"cq-study-nav\" aria-label=\"代表成果阅读导航\"><a href=\"../../achievements/index.html#heritage-inventory\">九条成果线导读</a><a href=\"../../research/index.html#ai-a01\">AI辅助资料整理</a><a href=\"#refs\">本专题原有参考资料</a></nav></section>\n<!-- REPRESENTATIVE_STUDY_A01:END --><!-- A01_HISTORY_TOPIC:BEGIN -->\n"
+    },
+    {
+      "old": "<html lang=\"zh-CN\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>专题｜含氟单体、氟橡胶与氟油</title><style id=\"topic-shared-css\">:root{color-scheme:light;--ink:#172b29;--muted:#506660;--accent:#176e62;--paper:#f6f5ef;--line:#d6e0d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,\"Microsoft YaHei\",sans-serif;line-height:1.8}a{color:#155d55;text-underline-offset:.18em}a:focus-visible{outline:3px solid #c97932;outline-offset:3px}.wrap{max-width:1120px;margin:auto;padding:0 28px}header{background:#173b37;color:#f2f4eb;padding:42px 0}header a{color:#c9e7d8}header h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.22;margin:.3em 0}header p{max-width:760px;margin:.5em 0}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.76rem;color:#bcd7c9}.index{padding:28px 0 22px}.index ol{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px 28px;padding-left:24px}.index a{font-weight:600}article{background:#fff;border:1px solid var(--line);border-radius:12px;margin:22px 0;padding:clamp(22px,4vw,48px);scroll-margin-top:20px}article h2{font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.35;margin:.15em 0 .6em}article h3{font-size:1rem;color:var(--accent);margin:1.5em 0 .3em}article p{max-width:78ch;margin:.55em 0}article ul{padding-left:1.2em}.status{display:inline-block;background:#e4f0e9;color:#155448;font-size:.82rem;padding:.22em .8em;border-radius:30px;font-weight:700}.evidence{border-top:1px solid var(--line);margin-top:22px;padding-top:4px;font-size:.92rem;color:var(--muted)}.top{font-size:.9rem}footer{padding:30px 0 45px;color:var(--muted);font-size:.9rem}@media(max-width:600px){.wrap{padding:0 18px}header{padding:30px 0}.index ol{grid-template-columns:1fr}article{border-radius:8px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style></head><body><header><div class=\"wrap\"><div class=\"eyebrow\">有机氟化学研究与传承 / 学术成果</div><h1>含氟单体、氟橡胶与氟油</h1><p><a href=\"../../index.html#line-a02\">所属成果线 A02（含氟单体、氟橡胶与氟油）</a> · <a href=\"../index.html\">专题索引</a> · <a href=\"../../index.html#source-index\">公开资料索引</a></p></div></header><main class=\"wrap\"><!-- A02_ACADEMIC_HISTORY:BEGIN -->\n",
+      "new": "<html lang=\"zh-CN\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>专题｜含氟单体、氟橡胶与氟油</title><style id=\"topic-shared-css\">:root{color-scheme:light;--ink:#172b29;--muted:#506660;--accent:#176e62;--paper:#f6f5ef;--line:#d6e0d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,\"Microsoft YaHei\",sans-serif;line-height:1.8}a{color:#155d55;text-underline-offset:.18em}a:focus-visible{outline:3px solid #c97932;outline-offset:3px}.wrap{max-width:1120px;margin:auto;padding:0 28px}header{background:#173b37;color:#f2f4eb;padding:42px 0}header a{color:#c9e7d8}header h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.22;margin:.3em 0}header p{max-width:760px;margin:.5em 0}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.76rem;color:#bcd7c9}.index{padding:28px 0 22px}.index ol{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px 28px;padding-left:24px}.index a{font-weight:600}article{background:#fff;border:1px solid var(--line);border-radius:12px;margin:22px 0;padding:clamp(22px,4vw,48px);scroll-margin-top:20px}article h2{font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.35;margin:.15em 0 .6em}article h3{font-size:1rem;color:var(--accent);margin:1.5em 0 .3em}article p{max-width:78ch;margin:.55em 0}article ul{padding-left:1.2em}.status{display:inline-block;background:#e4f0e9;color:#155448;font-size:.82rem;padding:.22em .8em;border-radius:30px;font-weight:700}.evidence{border-top:1px solid var(--line);margin-top:22px;padding-top:4px;font-size:.92rem;color:var(--muted)}.top{font-size:.9rem}footer{padding:30px 0 45px;color:var(--muted);font-size:.9rem}@media(max-width:600px){.wrap{padding:0 18px}header{padding:30px 0}.index ol{grid-template-columns:1fr}article{border-radius:8px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style></head><body><header><div class=\"wrap\"><div class=\"eyebrow\">有机氟化学研究与传承 / 学术成果</div><h1>含氟单体、氟橡胶与氟油</h1><p><a href=\"../../index.html#line-a02\">所属成果线 A02（含氟单体、氟橡胶与氟油）</a> · <a href=\"../index.html\">专题索引</a> · <a href=\"../../index.html#source-index\">公开资料索引</a></p></div></header><main class=\"wrap\"><!-- REPRESENTATIVE_STUDY_A02:BEGIN -->\n<style id=\"a02-representative-study-style\">.cq-study{box-sizing:border-box;max-width:1120px;margin:28px auto;padding:clamp(22px,4vw,42px);border:1px solid #c8d8cd;border-top:4px solid #176e62;border-radius:10px;background:#fffefa;color:#182f2b;line-height:1.85;scroll-margin-top:24px}.cq-study *{box-sizing:border-box}.cq-study h2{font-size:clamp(25px,3.5vw,36px);line-height:1.45;margin:.3em 0 .7em}.cq-study h3{font-size:1.25rem;line-height:1.5;margin:1.6em 0 .7em;color:#155d55}.cq-study h4{font-size:1rem;line-height:1.6;margin:.8em 0 .3em}.cq-study p{max-width:84ch;margin:.65em 0}.cq-study a{color:#155d55;text-underline-offset:.2em}.cq-study a:focus-visible,.cq-study [tabindex]:focus-visible{outline:3px solid #aa7545;outline-offset:3px}.cq-study-label{font-size:.85rem;color:#155d55;font-weight:700}.cq-study-locator{font-size:.83rem;color:#51685e;overflow-wrap:anywhere}.cq-study-process{padding-left:1.5em}.cq-study-process>li{padding-left:.3em;margin:1.1em 0}.cq-study-table{overflow-x:auto;width:100%;margin:18px 0;border:1px solid #d6e0d9}.cq-study-table table{border-collapse:collapse;min-width:580px;width:100%;font-size:.91rem}.cq-study-table caption{text-align:left;font-weight:700;padding:12px;background:#edf3ee}.cq-study-table th,.cq-study-table td{padding:12px;border-top:1px solid #d6e0d9;text-align:left;vertical-align:top;overflow-wrap:anywhere}.cq-study-story{margin:24px 0;padding:18px 22px;background:#edf3ee;border-left:3px solid #aa7545}.cq-study-story h3{margin-top:0}.cq-study-meaning{padding:12px 18px;border-left:3px solid #176e62;background:#f5f3e9}.cq-study-references{padding-left:1.4em;font-size:.86rem;overflow-wrap:anywhere}.cq-study-references>li{margin:.9em 0;scroll-margin-top:24px}.cq-study-scope{font-size:.87rem;color:#51685e}.cq-study-nav{display:flex;flex-wrap:wrap;gap:10px 20px;border-top:1px solid #d6e0d9;padding-top:16px;margin-top:24px}@media(max-width:620px){.cq-study{margin:20px 0;padding:20px 16px;border-radius:6px}.cq-study-story{padding:14px 16px}.cq-study h2{font-size:25px}}</style>\n<section class=\"cq-study\" id=\"a02-representative-study\" aria-labelledby=\"a02-representative-study-title\">\n<p class=\"cq-study-label\">A02（含氟单体、氟橡胶与氟油） · 代表性成果详读</p><h2 id=\"a02-representative-study-title\">先解决单体：六氟丙烯的制取与低温分离</h2>\n<h3>科学问题</h3><p>氟橡胶已有样品之后，怎样使六氟丙烯从难以获取的少量原料，变成能够支撑后续材料工作的研究基础？</p>\n<h3>研究过程</h3><ol class=\"cq-study-process\">\n<li><h4>从已有材料接续到原料瓶颈</h4><p>陈庆云1960年加入蒋锡夔课题组以前，蒋锡夔、胡亚东等已开展氟橡胶研究，并取得后来命名为1号的材料。传记36页记载，当时六氟丙烯原有获取路线复杂，样品成功并不等于单体供应问题已经解决；探索新的六氟丙烯路线成为陈庆云回国后的第一个任务。</p><p class=\"cq-study-locator\">出处：传记35–36页，36页脚注转引陈庆云2018-01-03访谈 <a href=\"#a02-study-source-heritage-s01\">[1]</a></p></li>\n<li><h4>由少量副产物提出新的目标</h4><p>在二氟氯甲烷裂解制四氟乙烯的工作中，团队发现延长裂解时间会出现少量六氟丙烯。陈庆云与蒋锡夔等据此讨论，探索增加目标产物的条件。难点并不只在反应：裂解物包含多种组分，要取得可用单体，还必须解决冷冻与低温分馏。</p><p class=\"cq-study-locator\">出处：传记37页首段与低温分馏叙述 <a href=\"#a02-study-source-heritage-s01\">[1]</a></p></li>\n<li><h4>把反应、分离和实验条件一起建立</h4><p>高温炉、低温分馏和检测仪器需要自行制作。陈庆云等承担分馏实验，研究室同事保障冷冻介质与物资。传记将两年多探索后取得制取条件、氟橡胶2号和3号的研制相联系；1963年迁沪后，北京的聚合与实验经验又与上海的原料和工业条件接续。</p><p class=\"cq-study-locator\">出处：传记37–39页 <a href=\"#a02-study-source-heritage-s01\">[1]</a></p></li>\n</ol><h3>关键结果</h3>\n<h4>制取与分离共同形成材料研究的前提</h4><p>传记记载经过两年多的探索获得六氟丙烯制取条件，并将之与2号、3号橡胶研制成功的团队工作相联系。关键并非只发现反应，而是使复杂混合物中的目标单体能够被取得。</p><p class=\"cq-study-locator\">出处：传记37页 <a href=\"#a02-study-source-heritage-s01\">[1]</a></p>\n<h4>材料研究接续到实验厂</h4><p>迁沪后的氟溴油研究经上海有机所实验厂生产，并面向航天应用；这一结果按传记及其原注的历史叙述呈现，不附会未见的现代油品物性。</p><p class=\"cq-study-locator\">出处：传记39页 <a href=\"#a02-study-source-heritage-s01\">[1]</a></p>\n<div class=\"cq-study-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a02-representative-study-results-caption\"><table><caption id=\"a02-representative-study-results-caption\">从原料、材料到应用的具体成果</caption><thead><tr><th scope=\"col\">研究环节</th><th scope=\"col\">传记所记结果</th><th scope=\"col\">对应贡献</th></tr></thead><tbody><tr><th scope=\"row\">六氟丙烯制取与分离</th><td>找到制取条件，为较大量制备提供依据</td><td>把目标反应与复杂产物分离共同解决</td></tr><tr><th scope=\"row\">氟橡胶2号、3号</th><td>陈庆云等陆续研制成功</td><td>单体研究与团队共聚材料工作接续</td></tr><tr><th scope=\"row\">迁沪后的调聚氟溴油</th><td>以三氟溴乙烯为原料的研究经实验厂生产，应用于航天需求</td><td>研究室、实验厂与功能液体用途相衔接</td></tr></tbody></table></div>\n<p class=\"cq-study-locator\">出处：传记37、39页；39页氟溴油段的原注指向2009版《中国科学院》第291页 <a href=\"#a02-study-source-heritage-s01\">[1]</a></p>\n<p class=\"cq-study-locator\">这里沿传记叙述历史工作，不从历史1号、2号、3号名称自行生成现代商品配方、组成比例或性能数值。</p>\n<h3>合作分工</h3>\n<h4>蒋锡夔、胡亚东等</h4><p>组长、副组长及同事的1号橡胶前期工作先于陈庆云加入；这一集体成果保留原团队归属。</p><p class=\"cq-study-locator\">出处：传记35–36页 <a href=\"#a02-study-source-heritage-s01\">[1]</a></p>\n<h4>陈庆云与研究室同事</h4><p>探索六氟丙烯路线与低温分馏；操作、仪器和冷冻介质保障分工配合，不由后来的论文署名倒推个人份额。</p><p class=\"cq-study-locator\">出处：传记36–37页 <a href=\"#a02-study-source-heritage-s01\">[1]</a></p>\n<h4>研究室与上海有机所实验厂</h4><p>研究室的氟溴油工作接续到实验厂生产；迁沪使原有高分子经验与当地工业条件结合。</p><p class=\"cq-study-locator\">出处：传记38–39页；机构报道第2节 <a href=\"#a02-study-source-heritage-s01\">[1]</a> <a href=\"#a02-study-source-heritage-s04\">[3]</a></p>\n<aside class=\"cq-study-story\" aria-labelledby=\"a02-representative-study-story\"><h3 id=\"a02-representative-study-story\">合作与研究接续的故事：把留苏经验带进新的团队任务</h3><p>传记37页具体记述，陈庆云研究六氟丙酮时积累的操作经验，在回国探索六氟丙烯低温分离时发挥作用；与此同时，其他同事承担冷冻介质和物资保障。研究经验通过新的共同任务继续发挥作用，也依赖不同岗位的配合。</p><p class=\"cq-study-locator\">出处：传记37页；36页本人访谈转引提供任务背景 <a href=\"#a02-study-source-heritage-s01\">[1]</a></p><p class=\"cq-study-locator\">资料性质：传记作者的研究经历与协作叙述</p></aside>\n<div class=\"cq-study-meaning\"><h3>学术意义</h3><p>这项工作的学术贡献在于解决材料研究前端的原料与分离问题：把一个反应中的少量成分转化为明确的制取目标，再把制取、分离、聚合和用途联系起来。装置与协作并非成果之外的背景，而是研究得以推进的组成部分。</p></div>\n<h3>阅读范围</h3><div class=\"cq-study-scope\"><p>早期六氟丙烯与油品的过程据传记和机构历史叙述呈现；1980年偏氟乙烯调聚论文是另一项后续研究，不能替代早期试制或氟溴油的工艺、物性原表。</p></div>\n<h3>参考资料与原文出处</h3><ol class=\"cq-study-references\">\n<li id=\"a02-study-source-heritage-s01\"><b>朱晶、刘超：《氟缘笃志：陈庆云传》</b>；传记叙述、具名回忆转引与页注。35–39页：原料瓶颈、制取和分离、橡胶与油、迁沪合作；39页保留原注身份</li>\n<li id=\"a02-study-source-cq-r28\"><b><a href=\"https://sioc.cas.cn/dncqy/sp/\">上海有机所：陈庆云院士生平</a></b>；机构历史报道。六氟丙烯制取及含氟材料的历史贡献段</li>\n<li id=\"a02-study-source-heritage-s04\"><b><a href=\"https://www.cas.cn/zt/kjzt/kjzlzqzl/kjzlzq/202406/t20240621_5022275.shtml\">中国科学院：“上海氟”，何以为？</a></b>；机构历史报道。第2节人员、仪器与研究条件接续；作为机构历史报道</li>\n<li id=\"a02-study-source-a02-p1980\"><b><a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1980/V38/I2/175\">偏氟乙烯与全卤代烷烃的调聚反应及其产物的研究</a></b>；原论文。《化学学报》1980，38(2)：175–184；仅作后续基础调聚研究的原文入口</li>\n</ol><p class=\"cq-study-scope\">历史成果与合作归原作者和实际参与者。本节依据所列史料展开学术叙述；平台AI辅助整理另列。</p>\n<nav class=\"cq-study-nav\" aria-label=\"代表成果阅读导航\"><a href=\"../../achievements/index.html#heritage-inventory\">九条成果线导读</a><a href=\"../../research/index.html#ai-a02\">AI辅助资料整理</a><a href=\"#refs\">本专题原有参考资料</a></nav></section>\n<!-- REPRESENTATIVE_STUDY_A02:END --><!-- A02_ACADEMIC_HISTORY:BEGIN -->\n"
+    },
+    {
+      "old": "</header>\n",
+      "new": "</header><!-- REPRESENTATIVE_STUDY_A03:BEGIN -->\n<style id=\"a03-representative-study-style\">.cq-study{box-sizing:border-box;max-width:1120px;margin:28px auto;padding:clamp(22px,4vw,42px);border:1px solid #c8d8cd;border-top:4px solid #176e62;border-radius:10px;background:#fffefa;color:#182f2b;line-height:1.85;scroll-margin-top:24px}.cq-study *{box-sizing:border-box}.cq-study h2{font-size:clamp(25px,3.5vw,36px);line-height:1.45;margin:.3em 0 .7em}.cq-study h3{font-size:1.25rem;line-height:1.5;margin:1.6em 0 .7em;color:#155d55}.cq-study h4{font-size:1rem;line-height:1.6;margin:.8em 0 .3em}.cq-study p{max-width:84ch;margin:.65em 0}.cq-study a{color:#155d55;text-underline-offset:.2em}.cq-study a:focus-visible,.cq-study [tabindex]:focus-visible{outline:3px solid #aa7545;outline-offset:3px}.cq-study-label{font-size:.85rem;color:#155d55;font-weight:700}.cq-study-locator{font-size:.83rem;color:#51685e;overflow-wrap:anywhere}.cq-study-process{padding-left:1.5em}.cq-study-process>li{padding-left:.3em;margin:1.1em 0}.cq-study-table{overflow-x:auto;width:100%;margin:18px 0;border:1px solid #d6e0d9}.cq-study-table table{border-collapse:collapse;min-width:580px;width:100%;font-size:.91rem}.cq-study-table caption{text-align:left;font-weight:700;padding:12px;background:#edf3ee}.cq-study-table th,.cq-study-table td{padding:12px;border-top:1px solid #d6e0d9;text-align:left;vertical-align:top;overflow-wrap:anywhere}.cq-study-story{margin:24px 0;padding:18px 22px;background:#edf3ee;border-left:3px solid #aa7545}.cq-study-story h3{margin-top:0}.cq-study-meaning{padding:12px 18px;border-left:3px solid #176e62;background:#f5f3e9}.cq-study-references{padding-left:1.4em;font-size:.86rem;overflow-wrap:anywhere}.cq-study-references>li{margin:.9em 0;scroll-margin-top:24px}.cq-study-scope{font-size:.87rem;color:#51685e}.cq-study-nav{display:flex;flex-wrap:wrap;gap:10px 20px;border-top:1px solid #d6e0d9;padding-top:16px;margin-top:24px}@media(max-width:620px){.cq-study{margin:20px 0;padding:20px 16px;border-radius:6px}.cq-study-story{padding:14px 16px}.cq-study h2{font-size:25px}}</style>\n<section class=\"cq-study\" id=\"a03-representative-study\" aria-labelledby=\"a03-representative-study-title\">\n<p class=\"cq-study-label\">A03（全氟叔丁基（PFtB）化学） · 代表性成果详读</p><h2 id=\"a03-representative-study-title\">从副产物到基础问题：全氟叔丁基的结构、反应与电子效应</h2>\n<h3>科学问题</h3><p>带有三个CF₃的叔卤化物会怎样反应？通常的碳中心取代经验和烷基效应顺序，还能直接用于这一含氟结构吗？</p>\n<h3>研究过程</h3><ol class=\"cq-study-process\">\n<li><h4>把副产物变成可研究的化合物</h4><p>六氟丙烯制备中的少量全氟异丁烯，成为基础研究的起点。陈庆云、陈秉启等采用Krespan法获得全氟叔丁基碘，并进一步研究相应溴化物。1966年论文把元素分析、红外、氟核磁、物性与化学转化组合起来支持结构，不能把方法来源抹去而只写首次制备。</p><p class=\"cq-study-locator\">出处：传记42–44页；原刊18–19页 <a href=\"#a03-study-source-heritage-s01\">[1]</a> <a href=\"#a03-study-source-pf01\">[2]</a></p></li>\n<li><h4>让反应产物参与检验解释</h4><p>蒋锡夔关注位阻和电子效应使碳中心取代难以发生的问题。团队研究碘化物、溴化物与二乙胺等亲核试剂的反应，将所得产物与全氟异丁烯直接反应的产物比较；烯胺VII及其水解所得酰胺VIII等关系，成为讨论反应方向的具体依据。</p><p class=\"cq-study-locator\">出处：传记43–45页；原刊19–20页，式(3)/(3′)、(5)、(6) <a href=\"#a03-study-source-heritage-s01\">[1]</a> <a href=\"#a03-study-source-pf01\">[2]</a></p></li>\n<li><h4>用可比较的光谱量追问电子效应</h4><p>作者测量三种全氟烷基碘代物在C₆H₁₄、乙醇和乙醚中的紫外峰位，用给体溶剂引起的蓝移比较其差别，并在Haszeldine经验关系继续成立的假设下讨论基团效应。这使化合物制备、反应比较与光谱证据形成同一项研究的论证链。</p><p class=\"cq-study-locator\">出处：原刊20–21页；表1在印刷21页、PDF第4页 <a href=\"#a03-study-source-pf01\">[2]</a></p></li>\n</ol><h3>关键结果</h3>\n<h4>以结构和产物关系支撑研究对象</h4><p>论文将元素分析、红外与氟核磁等证据用于结构判断；反应产物及水解转化又与全氟异丁烯路径的已知产物比较，给出作者讨论反应方式的实验依据。</p><p class=\"cq-study-locator\">出处：原刊18–20页 <a href=\"#a03-study-source-pf01\">[2]</a></p>\n<h4>把电子效应讨论落到实测峰位</h4><p>表1中两种给体溶剂的蓝移均依n-C₃F₇I、i-C₃F₇I、t-C₄F₉I增大。作者据经验关系的适用假设讨论更广的诱导效应顺序，原文21页也保留对共轭体系的限制。</p><p class=\"cq-study-locator\">出处：原刊20–21页，表1与后文限制 <a href=\"#a03-study-source-pf01\">[2]</a></p>\n<div class=\"cq-study-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a03-representative-study-results-caption\"><table><caption id=\"a03-representative-study-results-caption\">1966年表1选列：三种完整碘代物的紫外峰位与原表位移（nm）</caption><thead><tr><th scope=\"col\">完整分子</th><th scope=\"col\">C₆H₁₄中λmax</th><th scope=\"col\">乙醇中λmax</th><th scope=\"col\">乙醚中λmax</th><th scope=\"col\">原表位移：乙醇／乙醚</th></tr></thead><tbody><tr><th scope=\"row\">n-C₃F₇I</th><td>270.0</td><td>250.0</td><td>256.0</td><td>20.0／14.0</td></tr><tr><th scope=\"row\">i-C₃F₇I</th><td>274.0</td><td>250.0</td><td>257.0</td><td>24.0／17.0</td></tr><tr><th scope=\"row\">t-C₄F₉I</th><td>288.0</td><td>260.5</td><td>264.0</td><td>27.5／24.0</td></tr></tbody></table></div>\n<p class=\"cq-study-locator\">出处：《化学学报》1966，32(1)：21，表1；位移定义δ(H−B)=λmax(H)−λmax(B) <a href=\"#a03-study-source-pf01\">[2]</a></p>\n<p class=\"cq-study-locator\">蓝移量按原表表示；H为原记C₆H₁₄，B分别为乙醇或乙醚。它们是原作者实测记录，不是本平台新光谱。</p>\n<h3>合作分工</h3>\n<h4>陈庆云、蒋锡夔、陈秉启、梁梦兰</h4><p>四人共同署名1966年原论文；原刊与传记对照保存，不由作者排列推算贡献比例。</p><p class=\"cq-study-locator\">出处：原刊18页；传记43–45页 <a href=\"#a03-study-source-pf01\">[2]</a> <a href=\"#a03-study-source-heritage-s01\">[1]</a></p>\n<h4>讨论与实验的配合</h4><p>传记明确蒋锡夔围绕反应方式提出问题，陈庆云、陈秉启开展相关实验，实习生梁梦兰参与小课题；不再把具体光谱测量分派给某个人。</p><p class=\"cq-study-locator\">出处：传记43–44页 <a href=\"#a03-study-source-heritage-s01\">[1]</a></p>\n<aside class=\"cq-study-story\" aria-labelledby=\"a03-representative-study-story\"><h3 id=\"a03-representative-study-story\">育人与学风故事：一个基础小课题中的实习生</h3><p>传记44页在讲述全氟叔丁基碘研究时，具体列出陈庆云、陈秉启及实习生梁梦兰；原刊18页也列有梁梦兰的共同署名。这让青年参与真实基础问题的经历有了可定位的姓名和论文，而不是泛称团队培养。</p><p class=\"cq-study-locator\">出处：传记44页；1966年原刊18页署名及梁梦兰脚注 <a href=\"#a03-study-source-heritage-s01\">[1]</a> <a href=\"#a03-study-source-pf01\">[2]</a></p><p class=\"cq-study-locator\">资料性质：传记关于参与者的记述，与原论文共同署名对照</p></aside>\n<div class=\"cq-study-meaning\"><h3>学术意义</h3><p>开拓性不仅在于发现特殊反应，还在于把一个材料任务中的副产物转化为明确的基础问题，并用结构、产物关系和光谱数据逐层组织证据。原作者提出的更广效应解释，要连同其经验关系假设和原文限制一起阅读。</p></div>\n<h3>阅读范围</h3><div class=\"cq-study-scope\"><p>亲核试剂进攻卤素是原作根据产物关系讨论的解释，原文也列一阶段等备选路径；本平台不把中间体图式当成直接观测或机理认证，也不裁定国际优先权。</p><p>表1比较三种完整分子及特定溶剂，不能直接给出孤立基团在任意反应中的普适效应常数；平台数值重放与原作者光谱实验分开。</p></div>\n<h3>参考资料与原文出处</h3><ol class=\"cq-study-references\">\n<li id=\"a03-study-source-heritage-s01\"><b>朱晶、刘超：《氟缘笃志：陈庆云传》</b>；传记叙述、具名回忆转引与页注。42–45页：研究缘起、Krespan方法、反应讨论与参与者</li>\n<li id=\"a03-study-source-pf01\"><b><a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18\">全氟和多氟型有机化合物的化学特性——全氟叔丁基碘以及全氟烷基的诱导效应顺序</a></b>；原论文。陈庆云、蒋锡夔、陈秉启、梁梦兰；《化学学报》1966，32(1)：18–25；本例集中18–21页，表1在21页</li>\n</ol><p class=\"cq-study-scope\">历史成果与合作归原作者和实际参与者。本节依据所列史料展开学术叙述；平台AI辅助整理另列。</p>\n<nav class=\"cq-study-nav\" aria-label=\"代表成果阅读导航\"><a href=\"../achievements/index.html#heritage-inventory\">九条成果线导读</a><a href=\"../research/index.html#ai-a03\">AI辅助资料整理</a><a href=\"#sources\">本专题原有参考资料</a></nav></section>\n<!-- REPRESENTATIVE_STUDY_A03:END -->\n"
+    },
+    {
+      "old": "<html lang=\"zh-CN\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>专题｜F53 铬雾抑制研究</title><style id=\"topic-shared-css\">:root{color-scheme:light;--ink:#172b29;--muted:#506660;--accent:#176e62;--paper:#f6f5ef;--line:#d6e0d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,\"Microsoft YaHei\",sans-serif;line-height:1.8}a{color:#155d55;text-underline-offset:.18em}a:focus-visible{outline:3px solid #c97932;outline-offset:3px}.wrap{max-width:1120px;margin:auto;padding:0 28px}header{background:#173b37;color:#f2f4eb;padding:42px 0}header a{color:#c9e7d8}header h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.22;margin:.3em 0}header p{max-width:760px;margin:.5em 0}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.76rem;color:#bcd7c9}.index{padding:28px 0 22px}.index ol{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px 28px;padding-left:24px}.index a{font-weight:600}article{background:#fff;border:1px solid var(--line);border-radius:12px;margin:22px 0;padding:clamp(22px,4vw,48px);scroll-margin-top:20px}article h2{font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.35;margin:.15em 0 .6em}article h3{font-size:1rem;color:var(--accent);margin:1.5em 0 .3em}article p{max-width:78ch;margin:.55em 0}article ul{padding-left:1.2em}.status{display:inline-block;background:#e4f0e9;color:#155448;font-size:.82rem;padding:.22em .8em;border-radius:30px;font-weight:700}.evidence{border-top:1px solid var(--line);margin-top:22px;padding-top:4px;font-size:.92rem;color:var(--muted)}.top{font-size:.9rem}footer{padding:30px 0 45px;color:var(--muted);font-size:.9rem}@media(max-width:600px){.wrap{padding:0 18px}header{padding:30px 0}.index ol{grid-template-columns:1fr}article{border-radius:8px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style></head><body><header><div class=\"wrap\"><div class=\"eyebrow\">有机氟化学研究与传承 / 审阅预览</div><h1>F53 铬雾抑制研究</h1><p><a href=\"../../index.html#line-a04\">所属成果线 A04（F-53铬雾抑制剂）</a> · <a href=\"../index.html\">专题索引</a> · <a href=\"../../index.html#source-index\">公开资料索引</a></p></div></header><main class=\"wrap\"><!-- A04_BIOGRAPHY_HISTORY:BEGIN -->\n",
+      "new": "<html lang=\"zh-CN\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>专题｜F53 铬雾抑制研究</title><style id=\"topic-shared-css\">:root{color-scheme:light;--ink:#172b29;--muted:#506660;--accent:#176e62;--paper:#f6f5ef;--line:#d6e0d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,\"Microsoft YaHei\",sans-serif;line-height:1.8}a{color:#155d55;text-underline-offset:.18em}a:focus-visible{outline:3px solid #c97932;outline-offset:3px}.wrap{max-width:1120px;margin:auto;padding:0 28px}header{background:#173b37;color:#f2f4eb;padding:42px 0}header a{color:#c9e7d8}header h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.22;margin:.3em 0}header p{max-width:760px;margin:.5em 0}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.76rem;color:#bcd7c9}.index{padding:28px 0 22px}.index ol{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px 28px;padding-left:24px}.index a{font-weight:600}article{background:#fff;border:1px solid var(--line);border-radius:12px;margin:22px 0;padding:clamp(22px,4vw,48px);scroll-margin-top:20px}article h2{font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.35;margin:.15em 0 .6em}article h3{font-size:1rem;color:var(--accent);margin:1.5em 0 .3em}article p{max-width:78ch;margin:.55em 0}article ul{padding-left:1.2em}.status{display:inline-block;background:#e4f0e9;color:#155448;font-size:.82rem;padding:.22em .8em;border-radius:30px;font-weight:700}.evidence{border-top:1px solid var(--line);margin-top:22px;padding-top:4px;font-size:.92rem;color:var(--muted)}.top{font-size:.9rem}footer{padding:30px 0 45px;color:var(--muted);font-size:.9rem}@media(max-width:600px){.wrap{padding:0 18px}header{padding:30px 0}.index ol{grid-template-columns:1fr}article{border-radius:8px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style></head><body><header><div class=\"wrap\"><div class=\"eyebrow\">有机氟化学研究与传承 / 审阅预览</div><h1>F53 铬雾抑制研究</h1><p><a href=\"../../index.html#line-a04\">所属成果线 A04（F-53铬雾抑制剂）</a> · <a href=\"../index.html\">专题索引</a> · <a href=\"../../index.html#source-index\">公开资料索引</a></p></div></header><main class=\"wrap\"><!-- REPRESENTATIVE_STUDY_A04:BEGIN -->\n<style id=\"a04-representative-study-style\">.cq-study{box-sizing:border-box;max-width:1120px;margin:28px auto;padding:clamp(22px,4vw,42px);border:1px solid #c8d8cd;border-top:4px solid #176e62;border-radius:10px;background:#fffefa;color:#182f2b;line-height:1.85;scroll-margin-top:24px}.cq-study *{box-sizing:border-box}.cq-study h2{font-size:clamp(25px,3.5vw,36px);line-height:1.45;margin:.3em 0 .7em}.cq-study h3{font-size:1.25rem;line-height:1.5;margin:1.6em 0 .7em;color:#155d55}.cq-study h4{font-size:1rem;line-height:1.6;margin:.8em 0 .3em}.cq-study p{max-width:84ch;margin:.65em 0}.cq-study a{color:#155d55;text-underline-offset:.2em}.cq-study a:focus-visible,.cq-study [tabindex]:focus-visible{outline:3px solid #aa7545;outline-offset:3px}.cq-study-label{font-size:.85rem;color:#155d55;font-weight:700}.cq-study-locator{font-size:.83rem;color:#51685e;overflow-wrap:anywhere}.cq-study-process{padding-left:1.5em}.cq-study-process>li{padding-left:.3em;margin:1.1em 0}.cq-study-table{overflow-x:auto;width:100%;margin:18px 0;border:1px solid #d6e0d9}.cq-study-table table{border-collapse:collapse;min-width:580px;width:100%;font-size:.91rem}.cq-study-table caption{text-align:left;font-weight:700;padding:12px;background:#edf3ee}.cq-study-table th,.cq-study-table td{padding:12px;border-top:1px solid #d6e0d9;text-align:left;vertical-align:top;overflow-wrap:anywhere}.cq-study-story{margin:24px 0;padding:18px 22px;background:#edf3ee;border-left:3px solid #aa7545}.cq-study-story h3{margin-top:0}.cq-study-meaning{padding:12px 18px;border-left:3px solid #176e62;background:#f5f3e9}.cq-study-references{padding-left:1.4em;font-size:.86rem;overflow-wrap:anywhere}.cq-study-references>li{margin:.9em 0;scroll-margin-top:24px}.cq-study-scope{font-size:.87rem;color:#51685e}.cq-study-nav{display:flex;flex-wrap:wrap;gap:10px 20px;border-top:1px solid #d6e0d9;padding-top:16px;margin-top:24px}@media(max-width:620px){.cq-study{margin:20px 0;padding:20px 16px;border-radius:6px}.cq-study-story{padding:14px 16px}.cq-study h2{font-size:25px}}</style>\n<section class=\"cq-study\" id=\"a04-representative-study\" aria-labelledby=\"a04-representative-study-title\">\n<p class=\"cq-study-label\">A04（F-53铬雾抑制剂） · 代表性成果详读</p><h2 id=\"a04-representative-study-title\">F-53：让分子设计、合成路线与镀铬现场相接</h2>\n<h3>科学问题</h3><p>怎样通过含氟化合物的结构与制备路线研究，在电镀过程中抑制铬雾，并使实验室样品能够进入工厂使用？</p>\n<h3>研究过程</h3><ol class=\"cq-study-process\">\n<li><h4>把生产需求转成化学问题</h4><p>传记记述，电镀厂向上海有机所提出铬雾问题。陈庆云带领十几人的研究组，从1975年开始比较五条技术路线。研究目标不仅是合成一种含氟物质，还要兼顾原料来源、制备成本和现场使用要求。</p><p class=\"cq-study-locator\">出处：传记48–50页 <a href=\"#a04-study-source-heritage-s01\">[1]</a></p></li>\n<li><h4>形成有自身特点的结构与路线</h4><p>团队借助已有含氟原料积累，发展含醚键的全氟烷基磺酸盐。传记把它与当时进口产品的结构和电解氟化路线作比较，强调团队走出了不同的制备路径。1979年相关论文进一步保存了系列醚磺酸衍生物的合成和分析研究。</p><p class=\"cq-study-locator\">出处：传记49–51页；1979原刊315、324页 <a href=\"#a04-study-source-heritage-s01\">[1]</a> <a href=\"#a04-study-source-cq-h15\">[3]</a></p></li>\n<li><h4>到工厂中检验路线能否接续</h4><p>样品先在上海光明电镀厂、上海电镀厂试用，再交上海有机所实验厂试制。传记记载，1979年扩大试验确认整条路线具有工业可行性。由样品到扩大试验，意味着需要工程人员和使用单位共同解决实验室之外的问题。</p><p class=\"cq-study-locator\">出处：传记51–53页 <a href=\"#a04-study-source-heritage-s01\">[1]</a></p></li>\n</ol><h3>关键结果</h3>\n<h4>化学成果</h4><p>形成含醚结构的铬雾抑制剂及相应制备路线；1979论文以“全氟磺酸组”署名，报告相关化合物的合成，并用GC–MS、红外和19F NMR等分析反应产物。</p><p class=\"cq-study-locator\">出处：传记49–51页；原刊315、324页 <a href=\"#a04-study-source-heritage-s01\">[1]</a> <a href=\"#a04-study-source-cq-h15\">[3]</a></p>\n<h4>应用记录</h4><p>1982年同期剪报报道铬雾逸出量“降低一千倍”、节约铬酸20%以上；这是当时的报道指标，工厂、工况和原始底表并未在剪报中给出。</p><p class=\"cq-study-locator\">出处：《人民日报》1982-04-08第3版最后铬雾段 <a href=\"#a04-study-source-cq-h03\">[2]</a></p>\n<h4>研究接续</h4><p>F-53工作中形成的原料与中间体又进入磺酸酯、二氟卡宾等基础研究。陈庆云2001年的回顾把这一产品研制与有机氟化学研究的发展相联系。</p><p class=\"cq-study-locator\">出处：2001作者回顾摘要；传记60页 <a href=\"#a04-study-source-cq-r04\">[4]</a> <a href=\"#a04-study-source-heritage-s01\">[1]</a></p>\n<h3>合作分工</h3>\n<h4>陈庆云与研究组</h4><p>组织并推进路线探索，跟随成果从实验室进入实验厂。</p><p class=\"cq-study-locator\">出处：传记49、51–52页 <a href=\"#a04-study-source-heritage-s01\">[1]</a></p>\n<h4>顾子恺、实验厂及电镀厂</h4><p>顾子恺等工程人员承担转化环节的重要工作；实验厂接续试制和扩试，电镀厂参与样品试用。</p><p class=\"cq-study-locator\">出处：传记51–53页 <a href=\"#a04-study-source-heritage-s01\">[1]</a></p>\n<h4>相关论文及分析协作者</h4><p>1979论文保留集体署名；致谢所内质谱组与上海医药工业研究院核磁组，不按署名或职务另行分配个人实验份额。</p><p class=\"cq-study-locator\">出处：原刊315、323–324页 <a href=\"#a04-study-source-cq-h15\">[3]</a></p>\n<aside class=\"cq-study-story\" aria-labelledby=\"a04-representative-study-story\"><h3 id=\"a04-representative-study-story\">合作与研究接续的故事：把工程师的贡献说清楚</h3><p>传记转引陈庆云2018年2月2日的回忆：他明确区分实验室研究与实验厂工作，特别肯定总工程师顾子恺的作用，并把走向生产视为科研服务实际需要的重要环节。这则合作故事让“成果转化”有了具体人物，也呈现尊重不同专业能力的学风。</p><p class=\"cq-study-locator\">出处：传记52页正文及脚注① <a href=\"#a04-study-source-heritage-s01\">[1]</a></p><p class=\"cq-study-locator\">资料性质：传记转引陈庆云2018年2月2日访谈</p></aside>\n<div class=\"cq-study-meaning\"><h3>学术意义</h3><p>代表性贡献在于把结构设计、合成方法、放大与使用连成研究链条。应用任务也留下可继续研究的化学对象；这既体现陈先生的问题意识，也让工程协作在成果叙述中有明确位置。</p></div>\n<h3>阅读范围</h3><div class=\"cq-study-scope\"><p>历史F-53、含氯F-53B及商品配方分别介绍，不把传记I→Cl路线段直接充作所有F-53的统一结构。</p><p>剪报指标保留历史报道身份，不等于本平台厂试重做，不推定当前环境安全或所有工况下的效果。</p></div>\n<h3>参考资料与原文出处</h3><ol class=\"cq-study-references\">\n<li id=\"a04-study-source-heritage-s01\"><b>朱晶、刘超：《氟缘笃志：陈庆云传》</b>；传记作者叙述、具名访谈转引、图注或页注，逐段区分。参考底本48–54、60、116页；研制、转化、合作、图注与年表</li>\n<li id=\"a04-study-source-cq-h03\"><b><a href=\"https://cn.govopendata.com/renminribao/1982/04/08/3/\">肖关根：《上海科技新花》</a></b>；1982年同期新闻剪报。《人民日报》1982-04-08第3版，组稿最后一条铬雾段；已有剪报原图与既有文字档案登记，数字按剪报核读</li>\n<li id=\"a04-study-source-cq-h15\"><b><a href=\"https://www.sioc.ac.cn/kxj/ml/hwy/xscj/202308/t20230823_6866955.html\">全氟磺酸组：全氟和多氟烷基磺酸的研究 II. 一些多氟烷基醚磺酸的合成</a></b>；已持有原刊的合成、分析与共同署名记录。《化学学报》1979，37：315–324，324为同篇英文摘要；323页致谢分析协作。链接为机构书目，正文据已取得原刊</li>\n<li id=\"a04-study-source-cq-r04\"><b><a href=\"https://sioc-journal.cn/Jwk_yjhx/CN/abstract/abstract325798.shtml\">陈庆云：抑铬雾剂F-53的研制带动了有机氟化学的发展</a></b>；原作者2001年回顾的出版社摘要。《有机化学》2001，21(11)：805–809；本段引用原作者回顾的中英文摘要</li>\n</ol><p class=\"cq-study-scope\">历史成果与合作归原作者和实际参与者。本节依据所列史料展开学术叙述；平台AI辅助整理另列。</p>\n<nav class=\"cq-study-nav\" aria-label=\"代表成果阅读导航\"><a href=\"../../achievements/index.html#heritage-inventory\">九条成果线导读</a><a href=\"../../research/index.html#ai-a04\">AI辅助资料整理</a><a href=\"#refs\">本专题原有参考资料</a></nav></section>\n<!-- REPRESENTATIVE_STUDY_A04:END --><!-- A04_BIOGRAPHY_HISTORY:BEGIN -->\n"
+    },
+    {
+      "old": "<html lang=\"zh-CN\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>专题｜制冷剂研究</title><style id=\"topic-shared-css\">:root{color-scheme:light;--ink:#172b29;--muted:#506660;--accent:#176e62;--paper:#f6f5ef;--line:#d6e0d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,\"Microsoft YaHei\",sans-serif;line-height:1.8}a{color:#155d55;text-underline-offset:.18em}a:focus-visible{outline:3px solid #c97932;outline-offset:3px}.wrap{max-width:1120px;margin:auto;padding:0 28px}header{background:#173b37;color:#f2f4eb;padding:42px 0}header a{color:#c9e7d8}header h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.22;margin:.3em 0}header p{max-width:760px;margin:.5em 0}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.76rem;color:#bcd7c9}.index{padding:28px 0 22px}.index ol{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px 28px;padding-left:24px}.index a{font-weight:600}article{background:#fff;border:1px solid var(--line);border-radius:12px;margin:22px 0;padding:clamp(22px,4vw,48px);scroll-margin-top:20px}article h2{font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.35;margin:.15em 0 .6em}article h3{font-size:1rem;color:var(--accent);margin:1.5em 0 .3em}article p{max-width:78ch;margin:.55em 0}article ul{padding-left:1.2em}.status{display:inline-block;background:#e4f0e9;color:#155448;font-size:.82rem;padding:.22em .8em;border-radius:30px;font-weight:700}.evidence{border-top:1px solid var(--line);margin-top:22px;padding-top:4px;font-size:.92rem;color:var(--muted)}.top{font-size:.9rem}footer{padding:30px 0 45px;color:var(--muted);font-size:.9rem}@media(max-width:600px){.wrap{padding:0 18px}header{padding:30px 0}.index ol{grid-template-columns:1fr}article{border-radius:8px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style></head><body><header><div class=\"wrap\"><div class=\"eyebrow\">有机氟化学研究与传承 / 审阅预览</div><h1>制冷剂研究</h1><p><a href=\"../../index.html#line-a05\">所属成果线 A05（制冷剂与配套技术）</a> · <a href=\"../index.html\">专题索引</a> · <a href=\"../../index.html#source-index\">公开资料索引</a></p></div></header><main class=\"wrap\"><!-- HERITAGE_CONTEXT_BEGIN -->\n",
+      "new": "<html lang=\"zh-CN\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>专题｜制冷剂研究</title><style id=\"topic-shared-css\">:root{color-scheme:light;--ink:#172b29;--muted:#506660;--accent:#176e62;--paper:#f6f5ef;--line:#d6e0d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,\"Microsoft YaHei\",sans-serif;line-height:1.8}a{color:#155d55;text-underline-offset:.18em}a:focus-visible{outline:3px solid #c97932;outline-offset:3px}.wrap{max-width:1120px;margin:auto;padding:0 28px}header{background:#173b37;color:#f2f4eb;padding:42px 0}header a{color:#c9e7d8}header h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.22;margin:.3em 0}header p{max-width:760px;margin:.5em 0}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.76rem;color:#bcd7c9}.index{padding:28px 0 22px}.index ol{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px 28px;padding-left:24px}.index a{font-weight:600}article{background:#fff;border:1px solid var(--line);border-radius:12px;margin:22px 0;padding:clamp(22px,4vw,48px);scroll-margin-top:20px}article h2{font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.35;margin:.15em 0 .6em}article h3{font-size:1rem;color:var(--accent);margin:1.5em 0 .3em}article p{max-width:78ch;margin:.55em 0}article ul{padding-left:1.2em}.status{display:inline-block;background:#e4f0e9;color:#155448;font-size:.82rem;padding:.22em .8em;border-radius:30px;font-weight:700}.evidence{border-top:1px solid var(--line);margin-top:22px;padding-top:4px;font-size:.92rem;color:var(--muted)}.top{font-size:.9rem}footer{padding:30px 0 45px;color:var(--muted);font-size:.9rem}@media(max-width:600px){.wrap{padding:0 18px}header{padding:30px 0}.index ol{grid-template-columns:1fr}article{border-radius:8px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style></head><body><header><div class=\"wrap\"><div class=\"eyebrow\">有机氟化学研究与传承 / 审阅预览</div><h1>制冷剂研究</h1><p><a href=\"../../index.html#line-a05\">所属成果线 A05（制冷剂与配套技术）</a> · <a href=\"../index.html\">专题索引</a> · <a href=\"../../index.html#source-index\">公开资料索引</a></p></div></header><main class=\"wrap\"><!-- REPRESENTATIVE_STUDY_A05:BEGIN -->\n<style id=\"a05-representative-study-style\">.cq-study{box-sizing:border-box;max-width:1120px;margin:28px auto;padding:clamp(22px,4vw,42px);border:1px solid #c8d8cd;border-top:4px solid #176e62;border-radius:10px;background:#fffefa;color:#182f2b;line-height:1.85;scroll-margin-top:24px}.cq-study *{box-sizing:border-box}.cq-study h2{font-size:clamp(25px,3.5vw,36px);line-height:1.45;margin:.3em 0 .7em}.cq-study h3{font-size:1.25rem;line-height:1.5;margin:1.6em 0 .7em;color:#155d55}.cq-study h4{font-size:1rem;line-height:1.6;margin:.8em 0 .3em}.cq-study p{max-width:84ch;margin:.65em 0}.cq-study a{color:#155d55;text-underline-offset:.2em}.cq-study a:focus-visible,.cq-study [tabindex]:focus-visible{outline:3px solid #aa7545;outline-offset:3px}.cq-study-label{font-size:.85rem;color:#155d55;font-weight:700}.cq-study-locator{font-size:.83rem;color:#51685e;overflow-wrap:anywhere}.cq-study-process{padding-left:1.5em}.cq-study-process>li{padding-left:.3em;margin:1.1em 0}.cq-study-table{overflow-x:auto;width:100%;margin:18px 0;border:1px solid #d6e0d9}.cq-study-table table{border-collapse:collapse;min-width:580px;width:100%;font-size:.91rem}.cq-study-table caption{text-align:left;font-weight:700;padding:12px;background:#edf3ee}.cq-study-table th,.cq-study-table td{padding:12px;border-top:1px solid #d6e0d9;text-align:left;vertical-align:top;overflow-wrap:anywhere}.cq-study-story{margin:24px 0;padding:18px 22px;background:#edf3ee;border-left:3px solid #aa7545}.cq-study-story h3{margin-top:0}.cq-study-meaning{padding:12px 18px;border-left:3px solid #176e62;background:#f5f3e9}.cq-study-references{padding-left:1.4em;font-size:.86rem;overflow-wrap:anywhere}.cq-study-references>li{margin:.9em 0;scroll-margin-top:24px}.cq-study-scope{font-size:.87rem;color:#51685e}.cq-study-nav{display:flex;flex-wrap:wrap;gap:10px 20px;border-top:1px solid #d6e0d9;padding-top:16px;margin-top:24px}@media(max-width:620px){.cq-study{margin:20px 0;padding:20px 16px;border-radius:6px}.cq-study-story{padding:14px 16px}.cq-study h2{font-size:25px}}</style>\n<section class=\"cq-study\" id=\"a05-representative-study\" aria-labelledby=\"a05-representative-study-title\">\n<p class=\"cq-study-label\">A05（制冷剂与配套技术） · 代表性成果详读</p><h2 id=\"a05-representative-study-title\">HFC-134a：合成成功之后，怎样走向连续工艺与设备应用</h2>\n<h3>科学问题</h3><p>替代制冷剂既要能够制得，也要能够连续生产并适应设备。怎样把分子合成、工艺和配套润滑油作为相互衔接的问题来研究？</p>\n<h3>研究过程</h3><ol class=\"cq-study-process\">\n<li><h4>比较路线与现有条件</h4><p>陈庆云承担氟利昂代用品项目后，研究组比较气相与液相路线，结合专利资料、已有生产条件和F-53工作积累，该阶段选择从F-133a出发研究F-134a的液相制备。1990—1991年，团队合成目标物，并与上海第二轻工业局利用现有冰箱开展例行试验。</p><p class=\"cq-study-locator\">出处：传记57页 <a href=\"#a05-study-source-heritage-s01\">[1]</a></p></li>\n<li><h4>继续追问连续化与反应条件</h4><p>实验室合成并不是终点。林永达、杨映松继续参加实验厂扩大生产和中试，把实验室液相连续工艺推进到30吨级规模。传记还记述，原先加入的催化剂取消后反应仍能进行，这使研究者继续追问水介质和温度的作用；这一历史观察与完整机理判断分别理解。</p><p class=\"cq-study-locator\">出处：传记57–58页 <a href=\"#a05-study-source-heritage-s01\">[1]</a></p></li>\n<li><h4>补上润滑油与整机环节</h4><p>F-134a替代F-12时，与传统矿物油不相混溶，因而需要配套冷冻机油。陈庆云与林永达开展相关研制，先做单机试验，再与嘉兴冰箱厂协作灌装冰箱；与广州化学所的合作则把配套材料扩大到多类聚醚和酯类润滑油。</p><p class=\"cq-study-locator\">出处：传记58–59页 <a href=\"#a05-study-source-heritage-s01\">[1]</a></p></li>\n</ol><h3>关键结果</h3>\n<h4>连续工艺</h4><p>传记记载实现30吨级液相连续化生产工艺，中试产品质量通过技术鉴定。“30吨级”按中试规模保留，不改写成年产量。</p><p class=\"cq-study-locator\">出处：传记58页及脚注②，转引1996《上海化工》11–14页 <a href=\"#a05-study-source-heritage-s01\">[1]</a></p>\n<h4>应用接续</h4><p>1992年12月，与嘉兴冰箱厂协作灌装50台益友牌冰箱；传记记述投放市场后运转正常。</p><p class=\"cq-study-locator\">出处：传记58页 <a href=\"#a05-study-source-heritage-s01\">[1]</a></p>\n<h4>配套材料</h4><p>传记记载与广州化学所合作合成四种类型、30多个聚醚和酯类润滑油，用于冰箱和汽车等设备；这些是书中所述的历史应用记录。</p><p class=\"cq-study-locator\">出处：传记58–59页；脚注转引杨映松1994《制冷》1–6页 <a href=\"#a05-study-source-heritage-s01\">[1]</a></p>\n<h3>合作分工</h3>\n<h4>陈庆云、林永达与杨映松</h4><p>陈庆云推进路线和应用研究；林永达、杨映松继续参加扩大生产与中试，陈庆云与林永达研制配套油。</p><p class=\"cq-study-locator\">出处：传记57–59页 <a href=\"#a05-study-source-heritage-s01\">[1]</a></p>\n<h4>实验厂及设备、材料协作单位</h4><p>实验厂承接扩大试验；上海第二轻工业局、嘉兴冰箱厂和广州化学所在所载环节分别合作，不由单位名单补写个人工序。</p><p class=\"cq-study-locator\">出处：传记57–59页 <a href=\"#a05-study-source-heritage-s01\">[1]</a></p>\n<h4>公开专利的发明人</h4><p>CN1075708A列林永达、梁与达，CN1308043A列吴永明、林永达；专利署名与项目组织贡献分别保存。</p><p class=\"cq-study-locator\">出处：两份公开说明书首页 <a href=\"#a05-study-source-cn1075708a\">[2]</a> <a href=\"#a05-study-source-cn1308043a\">[3]</a></p>\n<aside class=\"cq-study-story\" aria-labelledby=\"a05-representative-study-story\"><h3 id=\"a05-representative-study-story\">合作与研究接续的故事：每一步都问能不能生产</h3><p>骆昌平在2019年9月24日的访谈中回忆，陈先生会在每一步考虑能否生产，也不轻易放弃不同制备路线。这则由传记保存的回忆，说明他关注的并非一次小样的成功，而是研究能否继续走到实际应用。</p><p class=\"cq-study-locator\">出处：传记59页正文及脚注② <a href=\"#a05-study-source-heritage-s01\">[1]</a></p><p class=\"cq-study-locator\">资料性质：传记转引骆昌平2019年9月24日访谈</p></aside>\n<div class=\"cq-study-meaning\"><h3>学术意义</h3><p>这项工作体现了从化合物合成走向配套技术的研究尺度：路线、连续化、润滑材料和设备试用缺一不可。具体贡献应同时看见陈先生的项目推进、研究人员的工艺工作及应用单位的接续。</p></div>\n<h3>阅读范围</h3><div class=\"cq-study-scope\"><p>传记“F-134a中的氯”不照录为化学身份；高温水观察不在缺少温压证据时直接称超临界水机理。</p><p>1996年《上海化工》与1994年《制冷》的技术记录在此按传记转引引用。</p><p>中试、设备试用和配套材料各有范围，不据此推定所有设备、现时应用或统一工业性能。</p></div>\n<h3>参考资料与原文出处</h3><ol class=\"cq-study-references\">\n<li id=\"a05-study-source-heritage-s01\"><b>朱晶、刘超：《氟缘笃志：陈庆云传》</b>；传记作者叙述、具名访谈转引、图注或页注，逐段区分。参考底本55–59、116、118、120、124、140页；研制、连续中试、配套应用、合作、奖证及论著目录</li>\n<li id=\"a05-study-source-cn1075708a\"><b><a href=\"https://patents.google.com/patent/CN1075708A/zh\">1,1,1,2-四氟乙烷的制备工艺</a></b>；公开专利说明书首页。公开说明书首页：发明人林永达、梁与达；申请人中国科学院上海有机化学研究所；与项目经历及中试规模分别介绍</li>\n<li id=\"a05-study-source-cn1308043a\"><b><a href=\"https://patents.google.com/patent/CN1308043A/zh\">1,1,1,2-四氟乙烷的水相氟化制备法</a></b>；公开专利说明书首页。公开说明书首页：发明人吴永明、林永达；申请人中国科学院上海有机化学研究所；不据此推定每位合作者的工序分工</li>\n</ol><p class=\"cq-study-scope\">历史成果与合作归原作者和实际参与者。本节依据所列史料展开学术叙述；平台AI辅助整理另列。</p>\n<nav class=\"cq-study-nav\" aria-label=\"代表成果阅读导航\"><a href=\"../../achievements/index.html#heritage-inventory\">九条成果线导读</a><a href=\"../../research/index.html#ai-a05\">AI辅助资料整理</a><a href=\"#refs\">本专题原有参考资料</a></nav></section>\n<!-- REPRESENTATIVE_STUDY_A05:END --><!-- HERITAGE_CONTEXT_BEGIN -->\n"
+    },
+    {
+      "old": "</style></head><body><header><div class=\"wrap\"><div class=\"eyebrow\">有机氟化学研究与传承 / 审阅预览</div><h1>陈试剂：三氟甲基化的代表性成果</h1><p><a href=\"../../index.html#line-a06\">所属成果线 A06（磺酸酯、二氟卡宾与三氟甲基化）</a> · <a href=\"../index.html\">专题索引</a> · <a href=\"../../index.html#source-index\">公开资料索引</a></p></div></header><main class=\"wrap\"><section class=\"chen-feature-topic\" id=\"chen-reagent-contribution\" aria-labelledby=\"chen-reagent-contribution-title\"><p class=\"chen-feature-label\">代表性学术成果 · A06（磺酸酯、二氟卡宾与三氟甲基化）子专题</p><h2 id=\"chen-reagent-contribution-title\">陈试剂：把已知甲酯发展为三氟甲基化工具</h2><p>“陈试剂”对应氟磺酰基二氟乙酸甲酯（methyl fluorosulfonyldifluoroacetate，MFSDA）。<a href=\"https://www.cas.cn/zt/rwzt/2024qm/202403/t20240328_5010119.shtml\">中国科学院人物专题</a>明确使用这一名称；其重要贡献在于试剂功能与合成方法的开发。</p><div class=\"chen-feature-identity\"><h3>氟磺酰基二氟乙酸甲酯</h3><p><b>MFSDA · 陈试剂</b><br>FSO<sub>2</sub>CF<sub>2</sub>CO<sub>2</sub>Me</p><p class=\"chen-feature-formula\" aria-label=\"结构连接式：F–S(=O)2–CF2–C(=O)–O–CH3\"><span>F–S(=O)<sub>2</sub></span>–<wbr><span>CF<sub>2</sub></span>–<wbr><span>C(=O)–O–CH<sub>3</sub></span></p><p class=\"chen-feature-meta\">Me＝CH<sub>3</sub>；这里展示甲酯，与酸型及TFDA硅酯分列。</p></div><h3>1989年：陈庆云与吴生文的原始工作</h3><p>陈庆云（Qing-Yun Chen）与吴生文（Sheng-Wen Wu）在1989年共同发表原论文。出版社摘要记载：该甲酯在碘化亚铜（CuI）存在下提供三氟甲基，使芳基、烯基和烷基卤化物发生三氟甲基化。这里以原摘要支持的反应对象和作用表述贡献，不补写未核条件。</p><p>这项研究把含氟试剂的反应性转化为构建含三氟甲基有机分子的合成方法，是陈先生代表性的学术成果之一。<a href=\"../../index.html#source-cq-r05\">原始论文登记 CQ-R05</a></p><h3>2018年：后续论文题名中的“Chen’s reagent”</h3><p>Zhao等在<i>Organic Chemistry Frontiers</i>发表以“Chen’s reagent”为题名一部分的原始研究，直接体现了这一名称在后续学术工作中的使用。该文研究铜(II)体系的改进，属于Zhao等实际作者，不能并归为陈先生1989年的工作，也不据此认定所有后续反应具有同一机理。</p><section class=\"chen-feature-evidence\" id=\"chen-reagent-evidence\"><h3>原始论文与命名证据</h3><p id=\"cr-source-s03\"><b>CR-S03 · 中国科学院人物专题</b><br><a href=\"https://www.cas.cn/zt/rwzt/2024qm/202403/t20240328_5010119.shtml\">陈庆云｜功名流千古 风德昭后人</a>（2024-03-28）。该机构人物专题明确氟磺酰基二氟乙酸甲酯被称为“陈试剂”，并概述其在国内外的应用。此处用于名称与历史学术评价，不据此补写1989年原论文的反应条件，也不外推为当前市场规模或全部机理已经证实。</p><p><b>CQ-R05 · 1989年原始论文（复用原登记）</b><br>Qing-Yun Chen、Sheng-Wen Wu，<i>Methyl fluorosulphonyldifluoroacetate; a new trifluoromethylating agent</i>，<i>J. Chem. Soc., Chem. Commun.</i>，1989，705–706。DOI：<a href=\"https://doi.org/10.1039/C39890000705\">10.1039/C39890000705</a>。此处按原出版社题录与作者摘要介绍试剂功能与反应对象。</p><p id=\"cr-source-s01\"><b>CR-S01 · 2018年后续原始论文</b><br>Shiyu Zhao等，<i>Copper(II)-catalyzed trifluoromethylation of iodoarenes using Chen’s reagent</i>，<i>Organic Chemistry Frontiers</i>，2018，5，1143–1147。DOI：<a href=\"https://doi.org/10.1039/C8QO00025E\">10.1039/C8QO00025E</a>。<a href=\"https://pubs.rsc.org/en/content/articlepdf/2018/qo/c8qo00025e\">阅读原出版社PDF</a>。已核读第1143页题名、作者、摘要与引言；后续改进按其原作者归属。</p><p id=\"cr-source-s02\"><b>CR-S02 · 机构对名称与历史的介绍</b><br><a href=\"https://sercgft.sit.edu.cn/info/1111/1311.htm\">上海应用技术大学：名誉主任陈庆云院士</a>（2024-01-09），二氟卡宾与三氟甲基化部分明确甲酯MFSDA被称为“陈试剂”，同时说明该甲酯在1950年代末已为人所知。本页不把1989年的方法贡献写成该分子的首次合成。</p></section><details><summary>试剂谱系、资料层级与AI研究的边界</summary><p>本页重点介绍甲酯MFSDA。酸型、TFDA硅酯以及盐型及其不同年代的方法另行著录。命名证据、具体反应方法与机理研究各按来源介绍，不从命名推定统一机理。历史成果与平台AI辅助研究分开，M0继续暂停；既有研究保留review_required与release_eligible=false。</p></details></section>\n",
+      "new": "</style></head><body><header><div class=\"wrap\"><div class=\"eyebrow\">有机氟化学研究与传承 / 审阅预览</div><h1>陈试剂：三氟甲基化的代表性成果</h1><p><a href=\"../../index.html#line-a06\">所属成果线 A06（磺酸酯、二氟卡宾与三氟甲基化）</a> · <a href=\"../index.html\">专题索引</a> · <a href=\"../../index.html#source-index\">公开资料索引</a></p></div></header><main class=\"wrap\"><!-- REPRESENTATIVE_STUDY_A06:BEGIN -->\n<style id=\"a06-representative-study-style\">.cq-study{box-sizing:border-box;max-width:1120px;margin:28px auto;padding:clamp(22px,4vw,42px);border:1px solid #c8d8cd;border-top:4px solid #176e62;border-radius:10px;background:#fffefa;color:#182f2b;line-height:1.85;scroll-margin-top:24px}.cq-study *{box-sizing:border-box}.cq-study h2{font-size:clamp(25px,3.5vw,36px);line-height:1.45;margin:.3em 0 .7em}.cq-study h3{font-size:1.25rem;line-height:1.5;margin:1.6em 0 .7em;color:#155d55}.cq-study h4{font-size:1rem;line-height:1.6;margin:.8em 0 .3em}.cq-study p{max-width:84ch;margin:.65em 0}.cq-study a{color:#155d55;text-underline-offset:.2em}.cq-study a:focus-visible,.cq-study [tabindex]:focus-visible{outline:3px solid #aa7545;outline-offset:3px}.cq-study-label{font-size:.85rem;color:#155d55;font-weight:700}.cq-study-locator{font-size:.83rem;color:#51685e;overflow-wrap:anywhere}.cq-study-process{padding-left:1.5em}.cq-study-process>li{padding-left:.3em;margin:1.1em 0}.cq-study-table{overflow-x:auto;width:100%;margin:18px 0;border:1px solid #d6e0d9}.cq-study-table table{border-collapse:collapse;min-width:580px;width:100%;font-size:.91rem}.cq-study-table caption{text-align:left;font-weight:700;padding:12px;background:#edf3ee}.cq-study-table th,.cq-study-table td{padding:12px;border-top:1px solid #d6e0d9;text-align:left;vertical-align:top;overflow-wrap:anywhere}.cq-study-story{margin:24px 0;padding:18px 22px;background:#edf3ee;border-left:3px solid #aa7545}.cq-study-story h3{margin-top:0}.cq-study-meaning{padding:12px 18px;border-left:3px solid #176e62;background:#f5f3e9}.cq-study-references{padding-left:1.4em;font-size:.86rem;overflow-wrap:anywhere}.cq-study-references>li{margin:.9em 0;scroll-margin-top:24px}.cq-study-scope{font-size:.87rem;color:#51685e}.cq-study-nav{display:flex;flex-wrap:wrap;gap:10px 20px;border-top:1px solid #d6e0d9;padding-top:16px;margin-top:24px}@media(max-width:620px){.cq-study{margin:20px 0;padding:20px 16px;border-radius:6px}.cq-study-story{padding:14px 16px}.cq-study h2{font-size:25px}}</style>\n<section class=\"cq-study\" id=\"a06-representative-study\" aria-labelledby=\"a06-representative-study-title\">\n<p class=\"cq-study-label\">A06（磺酸酯、二氟卡宾与三氟甲基化） · 代表性成果详读</p><h2 id=\"a06-representative-study-title\">陈试剂：把副产物线索发展成三氟甲基化方法</h2>\n<h3>科学问题</h3><p>研究二氟卡宾时出现的CF₃H，能否提示一种新的三氟甲基来源？怎样把这一线索变成可用的成键方法，并继续解决条件与重复性问题？</p>\n<h3>研究过程</h3><ol class=\"cq-study-process\">\n<li><h4>从副产物提出新问题</h4><p>据传记，陈庆云与吴生文研究氟磺酰基二氟乙酸甲酯作为二氟卡宾源时，注意到氟仿CF₃H的生成。研究者由此追问，是否能把相关三氟甲基物种引向与亲电底物的反应。这里的转折是改变对试剂用途的认识，而不是把已经知道的分子重新命名为首次合成。</p><p class=\"cq-study-locator\">出处：传记67页；该页脚注转引吴生文1989学位论文 <a href=\"#a06-study-source-heritage-s01\">[1]</a></p></li>\n<li><h4>从设想进入具体反应</h4><p>陈庆云、吴生文1989年共同报道MFSDA甲酯的三氟甲基化用途。出版社摘要介绍，在CuI存在下，该试剂用于芳基、烯基和烷基卤化物的三氟甲基化。代表性贡献是提供一个把三氟甲基引入有机分子的合成工具，后来被称为“陈试剂”。</p><p class=\"cq-study-locator\">出处：1989原论文705–706页，出版社摘要；传记68–69页 <a href=\"#a06-study-source-cq-r05\">[2]</a> <a href=\"#a06-study-source-heritage-s01\">[1]</a></p></li>\n<li><h4>让方法继续经受条件研究</h4><p>发现用途之后，杨国英接续提高产率并研究反应途径。重复实验中产率时高时低，研究者追查到溶剂和干燥程度的影响，并继续研究铜粉体系。方法的完善因此包含重做实验、辨认条件和解释差异，而不是以初次成功结束。</p><p class=\"cq-study-locator\">出处：传记68页杨国英具名回忆及69页接续工作 <a href=\"#a06-study-source-heritage-s01\">[1]</a></p></li>\n</ol><h3>关键结果</h3>\n<h4>试剂功能</h4><p>MFSDA（FSO₂CF₂CO₂Me）成为三氟甲基化工具；1989论文按陈庆云、吴生文共同署名呈现。</p><p class=\"cq-study-locator\">出处：出版社题名、作者及摘要；705–706页 <a href=\"#a06-study-source-cq-r05\">[2]</a></p>\n<h4>条件与适用范围</h4><p>原作报道的CuI体系与传记所述后续铜粉体系分别介绍；原作者对不同途径的讨论不概括为所有“陈试剂”反应都经过同一机理。</p><p class=\"cq-study-locator\">出处：原摘要；传记68–69页 <a href=\"#a06-study-source-cq-r05\">[2]</a> <a href=\"#a06-study-source-heritage-s01\">[1]</a></p>\n<h4>方法的研究接续</h4><p>2010年Organic Syntheses收录甲酯用于甾体三氟甲基化的方法，并分别列提交者和核查者。2003年该刊的TFDA硅酯／二氟卡宾方法是另一化合物和任务。</p><p class=\"cq-study-locator\">出处：Org. Synth. 87：126–136；80：172–176 <a href=\"#a06-study-source-cq-h18\">[3]</a> <a href=\"#a06-study-source-cq-r08\">[4]</a></p>\n<h3>合作分工</h3>\n<h4>陈庆云与吴生文</h4><p>共同开展从二氟卡宾源到三氟甲基化用途的研究，署名1989年原论文。</p><p class=\"cq-study-locator\">出处：传记67–69页；原论文705–706页 <a href=\"#a06-study-source-heritage-s01\">[1]</a> <a href=\"#a06-study-source-cq-r05\">[2]</a></p>\n<h4>杨国英</h4><p>接续研究产率波动、溶剂干燥及铜粉体系；其回忆保存了方法发展中不顺利的一面。</p><p class=\"cq-study-locator\">出处：传记68页脚注①；69页及论著目录133页 <a href=\"#a06-study-source-heritage-s01\">[1]</a></p>\n<h4>后续方法提交与核查团队</h4><p>2010年甾体方法与2003年TFDA方法各有自己的作者及核查名单；原刊历史核查不写成本平台新做实验。</p><p class=\"cq-study-locator\">出处：各方法Submitted by、Checked by栏 <a href=\"#a06-study-source-cq-h18\">[3]</a> <a href=\"#a06-study-source-cq-r08\">[4]</a></p>\n<aside class=\"cq-study-story\" aria-labelledby=\"a06-representative-study-story\"><h3 id=\"a06-representative-study-story\">合作与研究接续的故事：把重复不出的结果继续做下去</h3><p>传记转引杨国英2018年10月23日的回忆：她是在吴生文工作之后继续做，重复时曾遇到很大挫折，随后才抓住溶剂干燥程度这一条件。这则具名故事使成果背后的研究训练可被看见：既承认前人的开拓，也由接续者提出并处理新的问题。</p><p class=\"cq-study-locator\">出处：传记68页正文及脚注① <a href=\"#a06-study-source-heritage-s01\">[1]</a></p><p class=\"cq-study-locator\">资料性质：传记转引杨国英2018年10月23日访谈</p></aside>\n<div class=\"cq-study-meaning\"><h3>学术意义</h3><p>这段历史展示了由异常产物提出问题、开发试剂功能，再由后续研究完善条件的创造过程。“陈试剂”的代表性既在具体合成用途，也在陈先生与合作者把基础反应研究转化为方法的能力。</p></div>\n<h3>阅读范围</h3><div class=\"cq-study-scope\"><p>甲酯MFSDA、硅酯TFDA、酸型与金属盐分别介绍；功能开发不等于首次合成该分子。</p><p>1989论文此处按已用的出版社摘要范围引用，不添加未核全文中的收率和底物表。</p><p>原作者机理解释、后续理论与平台整理分别归属，不把CF₃H线索或冠名本身作为完整机理证明。</p></div>\n<h3>参考资料与原文出处</h3><ol class=\"cq-study-references\">\n<li id=\"a06-study-source-heritage-s01\"><b>朱晶、刘超：《氟缘笃志：陈庆云传》</b>；传记作者叙述、具名访谈转引、图注或页注，逐段区分。参考底本60–69、75–77页；相关年表与论著目录按正文所引页码定位</li>\n<li id=\"a06-study-source-cq-r05\"><b><a href=\"https://pubs.rsc.org/en/content/articlelanding/1989/c3/c39890000705\">Methyl fluorosulphonyldifluoroacetate; a new trifluoromethylating agent</a></b>；1989年原论文出版社题录与作者摘要，未扩大为全文核读。Chen、Wu，1989，J. Chem. Soc., Chem. Commun.：705–706；此处引用出版社题录与原作者摘要</li>\n<li id=\"a06-study-source-cq-h18\"><b><a href=\"https://orgsyn.org/demo.aspx?prep=v87p0126\">New, Convenient Route for Trifluoromethylation of Steroidal Molecules</a></b>；2010年Organic Syntheses原方法及提交/核查角色的已有登记。Organic Syntheses 2010，87：126–136；甲酯／甾体三氟甲基化及Submitted by、Checked by；沿用既有方法核读登记</li>\n<li id=\"a06-study-source-cq-r08\"><b><a href=\"https://orgsyn.org/demo.aspx?prep=v80p0172\">Preparation and Use of a New Difluorocarbene Reagent. Trimethylsilyl 2-Fluorosulfonyl-2,2-difluoroacetate: n-Butyl 2,2-Difluorocyclopropanecarboxylate</a></b>；2003年Organic Syntheses原方法及提交/核查角色的已有登记。Organic Syntheses 2003，80：172–176；硅酯／二氟卡宾方法及Submitted by、Checked by；沿用既有方法核读登记</li>\n</ol><p class=\"cq-study-scope\">历史成果与合作归原作者和实际参与者。本节依据所列史料展开学术叙述；平台AI辅助整理另列。</p>\n<nav class=\"cq-study-nav\" aria-label=\"代表成果阅读导航\"><a href=\"../../achievements/index.html#heritage-inventory\">九条成果线导读</a><a href=\"../../research/index.html#ai-a06\">AI辅助资料整理</a><a href=\"#refs\">本专题原有参考资料</a></nav></section>\n<!-- REPRESENTATIVE_STUDY_A06:END --><section class=\"chen-feature-topic\" id=\"chen-reagent-contribution\" aria-labelledby=\"chen-reagent-contribution-title\"><p class=\"chen-feature-label\">代表性学术成果 · A06（磺酸酯、二氟卡宾与三氟甲基化）子专题</p><h2 id=\"chen-reagent-contribution-title\">陈试剂：把已知甲酯发展为三氟甲基化工具</h2><p>“陈试剂”对应氟磺酰基二氟乙酸甲酯（methyl fluorosulfonyldifluoroacetate，MFSDA）。<a href=\"https://www.cas.cn/zt/rwzt/2024qm/202403/t20240328_5010119.shtml\">中国科学院人物专题</a>明确使用这一名称；其重要贡献在于试剂功能与合成方法的开发。</p><div class=\"chen-feature-identity\"><h3>氟磺酰基二氟乙酸甲酯</h3><p><b>MFSDA · 陈试剂</b><br>FSO<sub>2</sub>CF<sub>2</sub>CO<sub>2</sub>Me</p><p class=\"chen-feature-formula\" aria-label=\"结构连接式：F–S(=O)2–CF2–C(=O)–O–CH3\"><span>F–S(=O)<sub>2</sub></span>–<wbr><span>CF<sub>2</sub></span>–<wbr><span>C(=O)–O–CH<sub>3</sub></span></p><p class=\"chen-feature-meta\">Me＝CH<sub>3</sub>；这里展示甲酯，与酸型及TFDA硅酯分列。</p></div><h3>1989年：陈庆云与吴生文的原始工作</h3><p>陈庆云（Qing-Yun Chen）与吴生文（Sheng-Wen Wu）在1989年共同发表原论文。出版社摘要记载：该甲酯在碘化亚铜（CuI）存在下提供三氟甲基，使芳基、烯基和烷基卤化物发生三氟甲基化。这里以原摘要支持的反应对象和作用表述贡献，不补写未核条件。</p><p>这项研究把含氟试剂的反应性转化为构建含三氟甲基有机分子的合成方法，是陈先生代表性的学术成果之一。<a href=\"../../index.html#source-cq-r05\">原始论文登记 CQ-R05</a></p><h3>2018年：后续论文题名中的“Chen’s reagent”</h3><p>Zhao等在<i>Organic Chemistry Frontiers</i>发表以“Chen’s reagent”为题名一部分的原始研究，直接体现了这一名称在后续学术工作中的使用。该文研究铜(II)体系的改进，属于Zhao等实际作者，不能并归为陈先生1989年的工作，也不据此认定所有后续反应具有同一机理。</p><section class=\"chen-feature-evidence\" id=\"chen-reagent-evidence\"><h3>原始论文与命名证据</h3><p id=\"cr-source-s03\"><b>CR-S03 · 中国科学院人物专题</b><br><a href=\"https://www.cas.cn/zt/rwzt/2024qm/202403/t20240328_5010119.shtml\">陈庆云｜功名流千古 风德昭后人</a>（2024-03-28）。该机构人物专题明确氟磺酰基二氟乙酸甲酯被称为“陈试剂”，并概述其在国内外的应用。此处用于名称与历史学术评价，不据此补写1989年原论文的反应条件，也不外推为当前市场规模或全部机理已经证实。</p><p><b>CQ-R05 · 1989年原始论文（复用原登记）</b><br>Qing-Yun Chen、Sheng-Wen Wu，<i>Methyl fluorosulphonyldifluoroacetate; a new trifluoromethylating agent</i>，<i>J. Chem. Soc., Chem. Commun.</i>，1989，705–706。DOI：<a href=\"https://doi.org/10.1039/C39890000705\">10.1039/C39890000705</a>。此处按原出版社题录与作者摘要介绍试剂功能与反应对象。</p><p id=\"cr-source-s01\"><b>CR-S01 · 2018年后续原始论文</b><br>Shiyu Zhao等，<i>Copper(II)-catalyzed trifluoromethylation of iodoarenes using Chen’s reagent</i>，<i>Organic Chemistry Frontiers</i>，2018，5，1143–1147。DOI：<a href=\"https://doi.org/10.1039/C8QO00025E\">10.1039/C8QO00025E</a>。<a href=\"https://pubs.rsc.org/en/content/articlepdf/2018/qo/c8qo00025e\">阅读原出版社PDF</a>。已核读第1143页题名、作者、摘要与引言；后续改进按其原作者归属。</p><p id=\"cr-source-s02\"><b>CR-S02 · 机构对名称与历史的介绍</b><br><a href=\"https://sercgft.sit.edu.cn/info/1111/1311.htm\">上海应用技术大学：名誉主任陈庆云院士</a>（2024-01-09），二氟卡宾与三氟甲基化部分明确甲酯MFSDA被称为“陈试剂”，同时说明该甲酯在1950年代末已为人所知。本页不把1989年的方法贡献写成该分子的首次合成。</p></section><details><summary>试剂谱系、资料层级与AI研究的边界</summary><p>本页重点介绍甲酯MFSDA。酸型、TFDA硅酯以及盐型及其不同年代的方法另行著录。命名证据、具体反应方法与机理研究各按来源介绍，不从命名推定统一机理。历史成果与平台AI辅助研究分开，M0继续暂停；既有研究保留review_required与release_eligible=false。</p></details></section>\n"
+    },
+    {
+      "old": "<html lang=\"zh-CN\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>专题｜单电子转移研究</title><style id=\"topic-shared-css\">:root{color-scheme:light;--ink:#172b29;--muted:#506660;--accent:#176e62;--paper:#f6f5ef;--line:#d6e0d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,\"Microsoft YaHei\",sans-serif;line-height:1.8}a{color:#155d55;text-underline-offset:.18em}a:focus-visible{outline:3px solid #c97932;outline-offset:3px}.wrap{max-width:1120px;margin:auto;padding:0 28px}header{background:#173b37;color:#f2f4eb;padding:42px 0}header a{color:#c9e7d8}header h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.22;margin:.3em 0}header p{max-width:760px;margin:.5em 0}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.76rem;color:#bcd7c9}.index{padding:28px 0 22px}.index ol{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px 28px;padding-left:24px}.index a{font-weight:600}article{background:#fff;border:1px solid var(--line);border-radius:12px;margin:22px 0;padding:clamp(22px,4vw,48px);scroll-margin-top:20px}article h2{font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.35;margin:.15em 0 .6em}article h3{font-size:1rem;color:var(--accent);margin:1.5em 0 .3em}article p{max-width:78ch;margin:.55em 0}article ul{padding-left:1.2em}.status{display:inline-block;background:#e4f0e9;color:#155448;font-size:.82rem;padding:.22em .8em;border-radius:30px;font-weight:700}.evidence{border-top:1px solid var(--line);margin-top:22px;padding-top:4px;font-size:.92rem;color:var(--muted)}.top{font-size:.9rem}footer{padding:30px 0 45px;color:var(--muted);font-size:.9rem}@media(max-width:600px){.wrap{padding:0 18px}header{padding:30px 0}.index ol{grid-template-columns:1fr}article{border-radius:8px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style></head><body><header><div class=\"wrap\"><div class=\"eyebrow\">有机氟化学研究与传承 / 审阅预览</div><h1>单电子转移研究</h1><p><a href=\"../../index.html#line-a07\">所属成果线 A07（单电子转移与C–Cl活化）</a> · <a href=\"../index.html\">专题索引</a> · <a href=\"../../index.html#source-index\">公开资料索引</a></p></div></header><main class=\"wrap\"><!-- HERITAGE_CONTEXT_BEGIN -->\n",
+      "new": "<html lang=\"zh-CN\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>专题｜单电子转移研究</title><style id=\"topic-shared-css\">:root{color-scheme:light;--ink:#172b29;--muted:#506660;--accent:#176e62;--paper:#f6f5ef;--line:#d6e0d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,\"Microsoft YaHei\",sans-serif;line-height:1.8}a{color:#155d55;text-underline-offset:.18em}a:focus-visible{outline:3px solid #c97932;outline-offset:3px}.wrap{max-width:1120px;margin:auto;padding:0 28px}header{background:#173b37;color:#f2f4eb;padding:42px 0}header a{color:#c9e7d8}header h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.22;margin:.3em 0}header p{max-width:760px;margin:.5em 0}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.76rem;color:#bcd7c9}.index{padding:28px 0 22px}.index ol{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px 28px;padding-left:24px}.index a{font-weight:600}article{background:#fff;border:1px solid var(--line);border-radius:12px;margin:22px 0;padding:clamp(22px,4vw,48px);scroll-margin-top:20px}article h2{font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.35;margin:.15em 0 .6em}article h3{font-size:1rem;color:var(--accent);margin:1.5em 0 .3em}article p{max-width:78ch;margin:.55em 0}article ul{padding-left:1.2em}.status{display:inline-block;background:#e4f0e9;color:#155448;font-size:.82rem;padding:.22em .8em;border-radius:30px;font-weight:700}.evidence{border-top:1px solid var(--line);margin-top:22px;padding-top:4px;font-size:.92rem;color:var(--muted)}.top{font-size:.9rem}footer{padding:30px 0 45px;color:var(--muted);font-size:.9rem}@media(max-width:600px){.wrap{padding:0 18px}header{padding:30px 0}.index ol{grid-template-columns:1fr}article{border-radius:8px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style></head><body><header><div class=\"wrap\"><div class=\"eyebrow\">有机氟化学研究与传承 / 审阅预览</div><h1>单电子转移研究</h1><p><a href=\"../../index.html#line-a07\">所属成果线 A07（单电子转移与C–Cl活化）</a> · <a href=\"../index.html\">专题索引</a> · <a href=\"../../index.html#source-index\">公开资料索引</a></p></div></header><main class=\"wrap\"><!-- REPRESENTATIVE_STUDY_A07:BEGIN -->\n<style id=\"a07-representative-study-style\">.cq-study{box-sizing:border-box;max-width:1120px;margin:28px auto;padding:clamp(22px,4vw,42px);border:1px solid #c8d8cd;border-top:4px solid #176e62;border-radius:10px;background:#fffefa;color:#182f2b;line-height:1.85;scroll-margin-top:24px}.cq-study *{box-sizing:border-box}.cq-study h2{font-size:clamp(25px,3.5vw,36px);line-height:1.45;margin:.3em 0 .7em}.cq-study h3{font-size:1.25rem;line-height:1.5;margin:1.6em 0 .7em;color:#155d55}.cq-study h4{font-size:1rem;line-height:1.6;margin:.8em 0 .3em}.cq-study p{max-width:84ch;margin:.65em 0}.cq-study a{color:#155d55;text-underline-offset:.2em}.cq-study a:focus-visible,.cq-study [tabindex]:focus-visible{outline:3px solid #aa7545;outline-offset:3px}.cq-study-label{font-size:.85rem;color:#155d55;font-weight:700}.cq-study-locator{font-size:.83rem;color:#51685e;overflow-wrap:anywhere}.cq-study-process{padding-left:1.5em}.cq-study-process>li{padding-left:.3em;margin:1.1em 0}.cq-study-table{overflow-x:auto;width:100%;margin:18px 0;border:1px solid #d6e0d9}.cq-study-table table{border-collapse:collapse;min-width:580px;width:100%;font-size:.91rem}.cq-study-table caption{text-align:left;font-weight:700;padding:12px;background:#edf3ee}.cq-study-table th,.cq-study-table td{padding:12px;border-top:1px solid #d6e0d9;text-align:left;vertical-align:top;overflow-wrap:anywhere}.cq-study-story{margin:24px 0;padding:18px 22px;background:#edf3ee;border-left:3px solid #aa7545}.cq-study-story h3{margin-top:0}.cq-study-meaning{padding:12px 18px;border-left:3px solid #176e62;background:#f5f3e9}.cq-study-references{padding-left:1.4em;font-size:.86rem;overflow-wrap:anywhere}.cq-study-references>li{margin:.9em 0;scroll-margin-top:24px}.cq-study-scope{font-size:.87rem;color:#51685e}.cq-study-nav{display:flex;flex-wrap:wrap;gap:10px 20px;border-top:1px solid #d6e0d9;padding-top:16px;margin-top:24px}@media(max-width:620px){.cq-study{margin:20px 0;padding:20px 16px;border-radius:6px}.cq-study-story{padding:14px 16px}.cq-study h2{font-size:25px}}</style>\n<section class=\"cq-study\" id=\"a07-representative-study\" aria-labelledby=\"a07-representative-study-title\">\n<p class=\"cq-study-label\">A07（单电子转移与C–Cl活化） · 代表性成果详读</p><h2 id=\"a07-representative-study-title\">换了溶剂以后：从异常结果到含氟氯代物的新转化</h2>\n<h3>科学问题</h3><p>溶剂是否只是反应背景？当氟烷基卤代物在改变介质后给出不同结果，怎样把异常现象发展成可用的合成方法？</p>\n<h3>研究过程</h3><ol class=\"cq-study-process\">\n<li><h4>先让异常结果经得起重复</h4><p>陈亚雄研究全氟烷基碘代物在铜粉存在下与碘苯的反应时，换用溶剂后得到与文献不同的结果。传记转引陈庆云的回忆：他要求多次重复，先确认变化与溶剂有关，再讨论原因；一种解释不合适，就继续寻找其他原因和实验办法。这个过程把偶遇的现象转为可持续追问的研究问题。</p><p class=\"cq-study-locator\">出处：传记72页；陈庆云2018年2月9日访谈转引 <a href=\"#a07-study-source-heritage-s01\">[1]</a></p></li>\n<li><h4>把溶剂效应变成明确研究对象</h4><p>1984年，陈庆云、陈亚雄、黄维垣共同发表溶剂对碘苯氟烷基化影响的论文。这项研究把溶剂作为需要研究和比较的变量，连接合成结果与反应途径问题。论文的共同署名与传记所记发现过程分别保留。</p><p class=\"cq-study-locator\">出处：传记72、117页；《化学学报》1984，42：906–912官方题录 <a href=\"#a07-study-source-heritage-s01\">[1]</a> <a href=\"#a07-study-source-a07-acta1984-906\">[2]</a></p></li>\n<li><h4>从较活泼碘代物走向氯代原料</h4><p>后来的改进脱卤亚磺化研究有另一条明确起点：传记将原反应归于黄维垣小组。陈庆云与龙正宇先研究三氟乙基卤代物，比较溶剂对产物的影响，再挑战较难反应的全氟烷基氯代物。1999年论文以DMSO／连二亚硫酸钠体系中的氢全氟烷基化为具体方法；2001年黄小庭与陈庆云的零价镍体系则是另一种拓展。</p><p class=\"cq-study-locator\">出处：传记70–71、84页；JOC1999，64：4775–4782及2001，66：4651–4656原作者摘要 <a href=\"#a07-study-source-heritage-s01\">[1]</a> <a href=\"#a07-study-source-cq-r06\">[3]</a> <a href=\"#a07-study-source-heritage-s07\">[4]</a></p></li>\n</ol><h3>关键结果</h3>\n<h4>溶剂与产物</h4><p>三氟乙基卤代物与烯烃的研究中，传记记述DMSO中未观察到通常的碘代产物，乙腈／水中则得到碘代与攫氢产物混合物；这些观察不移作1984年碘苯实验的条件。</p><p class=\"cq-study-locator\">出处：传记71页 <a href=\"#a07-study-source-heritage-s01\">[1]</a></p>\n<h4>1999年方法</h4><p>DMSO／连二亚硫酸钠体系使特定全氟或多氟烷基氯代物用于烯烃、炔烃的氢全氟烷基化。</p><p class=\"cq-study-locator\">出处：原作者摘要，JOC64：4775–4782 <a href=\"#a07-study-source-cq-r06\">[3]</a></p>\n<h4>2001年接续</h4><p>另一零价镍体系研究全氟烷基氯代物对烯烃、炔烃和芳烃的氟烷基化；SET保留为原作者提出的解释。</p><p class=\"cq-study-locator\">出处：原作者摘要，JOC66：4651–4656 <a href=\"#a07-study-source-heritage-s07\">[4]</a></p>\n<h3>合作分工</h3>\n<h4>陈庆云、陈亚雄、黄维垣</h4><p>共同署名1984年溶剂研究；传记另明确记述陈亚雄的实验观察与陈庆云的重复、讨论要求。</p><p class=\"cq-study-locator\">出处：传记72页；1984原作题录 <a href=\"#a07-study-source-heritage-s01\">[1]</a> <a href=\"#a07-study-source-a07-acta1984-906\">[2]</a></p>\n<h4>黄维垣小组、龙正宇、黄小庭</h4><p>原脱卤亚磺化发现与后续改进分别归属；龙正宇合作开展DMSO体系，黄小庭合作开展镍体系。</p><p class=\"cq-study-locator\">出处：传记70–71、84页；两篇原作署名 <a href=\"#a07-study-source-heritage-s01\">[1]</a> <a href=\"#a07-study-source-cq-r06\">[3]</a> <a href=\"#a07-study-source-heritage-s07\">[4]</a></p>\n<aside class=\"cq-study-story\" aria-labelledby=\"a07-representative-study-story\"><h3 id=\"a07-representative-study-story\">育人与学风故事：指导从追问意外结果开始</h3><p>陈庆云在回忆中把指导过程说得具体：先请学生重复实验，再共同讨论变化从何而来，允许否定一个解释后继续寻找别的办法。这段故事展示的是如何训练研究判断，而不是把“做出不同结果”本身当成机制证明。</p><p class=\"cq-study-locator\">出处：传记72页，2018年2月9日访谈页注 <a href=\"#a07-study-source-heritage-s01\">[1]</a></p><p class=\"cq-study-locator\">资料性质：传记转引陈庆云2018年2月9日访谈</p></aside>\n<div class=\"cq-study-meaning\"><h3>学术意义</h3><p>这条研究路线的科学价值，是把溶剂、引发方式与底物结构放在具体反应中比较，为含氟原料进入有机合成开辟途径。一次异常现象、后来的不同方法与作者的机理解释相互关联，但仍各有证据和适用范围。</p></div>\n<h3>阅读范围</h3><div class=\"cq-study-scope\"><p>1984年的溶剂发现故事、三氟乙基卤代物比较和1999／2001方法分别对应不同实验；不拼成同一套条件或唯一机制。</p><p>原作者SET解释不改为平台机制认证；特定C–Cl转化不外推为普适C–F断裂或PFAS降解。</p></div>\n<h3>参考资料与原文出处</h3><ol class=\"cq-study-references\">\n<li id=\"a07-study-source-heritage-s01\"><b>朱晶、刘超：《氟缘笃志：陈庆云传》</b>；传记正文、具名访谈转引及作者总结，逐段区分。印刷69–74、84、117页；72页本人访谈、70–71页改进脱卤亚磺化</li>\n<li id=\"a07-study-source-a07-acta1984-906\"><b><a href=\"https://sioc-journal.cn/EN/abstract/abstract333975.shtml\">氟烷基化和氟烷氧基化的研究I.溶剂对碘苯氟烷基化的影响</a></b>；期刊官方题录。陈庆云、陈亚雄、黄维垣；《化学学报》1984，42(9)：906–912；本例沿用已核官方题录</li>\n<li id=\"a07-study-source-cq-r06\"><b><a href=\"https://pubs.acs.org/doi/abs/10.1021/jo9900937\">The Activation of Carbon−Chlorine Bonds in Per- and Polyfluoroalkyl Chlorides</a></b>；期刊出版社的原作者摘要。Zheng-Yu Long、Qing-Yun Chen；JOC1999，64(13)：4775–4782；方法介绍按摘要范围</li>\n<li id=\"a07-study-source-heritage-s07\"><b><a href=\"https://pubs.acs.org/doi/abs/10.1021/jo010178j\">Nickel(0)-Catalyzed Fluoroalkylation of Alkenes, Alkynes, and Aromatics with Perfluoroalkyl Chlorides</a></b>；期刊出版社的原作者摘要。Xiao-Ting Huang、Qing-Yun Chen；JOC2001，66(13)：4651–4656；解释按原作者摘要</li>\n</ol><p class=\"cq-study-scope\">历史成果与合作归原作者和实际参与者。本节依据所列史料展开学术叙述；平台AI辅助整理另列。</p>\n<nav class=\"cq-study-nav\" aria-label=\"代表成果阅读导航\"><a href=\"../../achievements/index.html#heritage-inventory\">九条成果线导读</a><a href=\"../../research/index.html#ai-a07\">AI辅助资料整理</a><a href=\"#refs\">本专题原有参考资料</a></nav></section>\n<!-- REPRESENTATIVE_STUDY_A07:END --><!-- HERITAGE_CONTEXT_BEGIN -->\n"
+    },
+    {
+      "old": "<html lang=\"zh-CN\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>专题｜含氟卟啉</title><style id=\"topic-shared-css\">:root{color-scheme:light;--ink:#172b29;--muted:#506660;--accent:#176e62;--paper:#f6f5ef;--line:#d6e0d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,\"Microsoft YaHei\",sans-serif;line-height:1.8}a{color:#155d55;text-underline-offset:.18em}a:focus-visible{outline:3px solid #c97932;outline-offset:3px}.wrap{max-width:1120px;margin:auto;padding:0 28px}header{background:#173b37;color:#f2f4eb;padding:42px 0}header a{color:#c9e7d8}header h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.22;margin:.3em 0}header p{max-width:760px;margin:.5em 0}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.76rem;color:#bcd7c9}.index{padding:28px 0 22px}.index ol{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px 28px;padding-left:24px}.index a{font-weight:600}article{background:#fff;border:1px solid var(--line);border-radius:12px;margin:22px 0;padding:clamp(22px,4vw,48px);scroll-margin-top:20px}article h2{font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.35;margin:.15em 0 .6em}article h3{font-size:1rem;color:var(--accent);margin:1.5em 0 .3em}article p{max-width:78ch;margin:.55em 0}article ul{padding-left:1.2em}.status{display:inline-block;background:#e4f0e9;color:#155448;font-size:.82rem;padding:.22em .8em;border-radius:30px;font-weight:700}.evidence{border-top:1px solid var(--line);margin-top:22px;padding-top:4px;font-size:.92rem;color:var(--muted)}.top{font-size:.9rem}footer{padding:30px 0 45px;color:var(--muted);font-size:.9rem}@media(max-width:600px){.wrap{padding:0 18px}header{padding:30px 0}.index ol{grid-template-columns:1fr}article{border-radius:8px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style></head><body><header><div class=\"wrap\"><div class=\"eyebrow\">有机氟化学研究与传承 / 审阅预览</div><h1>含氟卟啉</h1><p><a href=\"../../index.html#line-a08\">所属成果线 A08（交叉研究与晚年拓展）</a> · <a href=\"../index.html\">专题索引</a> · <a href=\"../../index.html#source-index\">公开资料索引</a></p></div></header><main class=\"wrap\"><!-- A08_BIOGRAPHY_HISTORY:BEGIN -->\n",
+      "new": "<html lang=\"zh-CN\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>专题｜含氟卟啉</title><style id=\"topic-shared-css\">:root{color-scheme:light;--ink:#172b29;--muted:#506660;--accent:#176e62;--paper:#f6f5ef;--line:#d6e0d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,\"Microsoft YaHei\",sans-serif;line-height:1.8}a{color:#155d55;text-underline-offset:.18em}a:focus-visible{outline:3px solid #c97932;outline-offset:3px}.wrap{max-width:1120px;margin:auto;padding:0 28px}header{background:#173b37;color:#f2f4eb;padding:42px 0}header a{color:#c9e7d8}header h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.22;margin:.3em 0}header p{max-width:760px;margin:.5em 0}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.76rem;color:#bcd7c9}.index{padding:28px 0 22px}.index ol{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px 28px;padding-left:24px}.index a{font-weight:600}article{background:#fff;border:1px solid var(--line);border-radius:12px;margin:22px 0;padding:clamp(22px,4vw,48px);scroll-margin-top:20px}article h2{font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.35;margin:.15em 0 .6em}article h3{font-size:1rem;color:var(--accent);margin:1.5em 0 .3em}article p{max-width:78ch;margin:.55em 0}article ul{padding-left:1.2em}.status{display:inline-block;background:#e4f0e9;color:#155448;font-size:.82rem;padding:.22em .8em;border-radius:30px;font-weight:700}.evidence{border-top:1px solid var(--line);margin-top:22px;padding-top:4px;font-size:.92rem;color:var(--muted)}.top{font-size:.9rem}footer{padding:30px 0 45px;color:var(--muted);font-size:.9rem}@media(max-width:600px){.wrap{padding:0 18px}header{padding:30px 0}.index ol{grid-template-columns:1fr}article{border-radius:8px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style></head><body><header><div class=\"wrap\"><div class=\"eyebrow\">有机氟化学研究与传承 / 审阅预览</div><h1>含氟卟啉</h1><p><a href=\"../../index.html#line-a08\">所属成果线 A08（交叉研究与晚年拓展）</a> · <a href=\"../index.html\">专题索引</a> · <a href=\"../../index.html#source-index\">公开资料索引</a></p></div></header><main class=\"wrap\"><!-- REPRESENTATIVE_STUDY_A08:BEGIN -->\n<style id=\"a08-representative-study-style\">.cq-study{box-sizing:border-box;max-width:1120px;margin:28px auto;padding:clamp(22px,4vw,42px);border:1px solid #c8d8cd;border-top:4px solid #176e62;border-radius:10px;background:#fffefa;color:#182f2b;line-height:1.85;scroll-margin-top:24px}.cq-study *{box-sizing:border-box}.cq-study h2{font-size:clamp(25px,3.5vw,36px);line-height:1.45;margin:.3em 0 .7em}.cq-study h3{font-size:1.25rem;line-height:1.5;margin:1.6em 0 .7em;color:#155d55}.cq-study h4{font-size:1rem;line-height:1.6;margin:.8em 0 .3em}.cq-study p{max-width:84ch;margin:.65em 0}.cq-study a{color:#155d55;text-underline-offset:.2em}.cq-study a:focus-visible,.cq-study [tabindex]:focus-visible{outline:3px solid #aa7545;outline-offset:3px}.cq-study-label{font-size:.85rem;color:#155d55;font-weight:700}.cq-study-locator{font-size:.83rem;color:#51685e;overflow-wrap:anywhere}.cq-study-process{padding-left:1.5em}.cq-study-process>li{padding-left:.3em;margin:1.1em 0}.cq-study-table{overflow-x:auto;width:100%;margin:18px 0;border:1px solid #d6e0d9}.cq-study-table table{border-collapse:collapse;min-width:580px;width:100%;font-size:.91rem}.cq-study-table caption{text-align:left;font-weight:700;padding:12px;background:#edf3ee}.cq-study-table th,.cq-study-table td{padding:12px;border-top:1px solid #d6e0d9;text-align:left;vertical-align:top;overflow-wrap:anywhere}.cq-study-story{margin:24px 0;padding:18px 22px;background:#edf3ee;border-left:3px solid #aa7545}.cq-study-story h3{margin-top:0}.cq-study-meaning{padding:12px 18px;border-left:3px solid #176e62;background:#f5f3e9}.cq-study-references{padding-left:1.4em;font-size:.86rem;overflow-wrap:anywhere}.cq-study-references>li{margin:.9em 0;scroll-margin-top:24px}.cq-study-scope{font-size:.87rem;color:#51685e}.cq-study-nav{display:flex;flex-wrap:wrap;gap:10px 20px;border-top:1px solid #d6e0d9;padding-top:16px;margin-top:24px}@media(max-width:620px){.cq-study{margin:20px 0;padding:20px 16px;border-radius:6px}.cq-study-story{padding:14px 16px}.cq-study h2{font-size:25px}}</style>\n<section class=\"cq-study\" id=\"a08-representative-study\" aria-labelledby=\"a08-representative-study-title\">\n<p class=\"cq-study-label\">A08（交叉研究与晚年拓展） · 代表性成果详读</p><h2 id=\"a08-representative-study-title\">由绿色转为棕色：20π isophlorin怎样成为可分离的研究对象</h2>\n<h3>科学问题</h3><p>把三氟甲基引入卟啉以后，能否得到不同于通常18π芳香卟啉的电子结构？一次颜色变化怎样转为可讨论结构和性质的分子证据？</p>\n<h3>研究过程</h3><ol class=\"cq-study-process\">\n<li><h4>先建立能够继续研究的含氟大环</h4><p>陈庆云与刘超从容易取得的溴代卟啉出发，运用钯催化交叉偶联与甲酯“陈试剂”，发展不同位置、数量的三氟甲基取代卟啉。这样的合成积累不止增加分子种类，也使研究者能够继续比较取代结构对大环反应性和性质的影响。</p><p class=\"cq-study-locator\">出处：传记80–81页；相关2005原作在现有专题分别著录 <a href=\"#a08-study-source-heritage-s01\">[1]</a></p></li>\n<li><h4>把颜色变化追到可分离产物</h4><p>传记记载，2006年刘超与陈庆云研究三氟甲基取代铜卟啉的还原时，溶液从绿色变为棕色。研究者没有停留在颜色观察，而是分离纯化并作谱图表征，得到20π电子非芳香性的N,N′-二氢卟啉。2007年论文与支持信息由Chao Liu、Dong-Mei Shen、Qing-Yun Chen共同署名。</p><p class=\"cq-study-locator\">出处：传记81–82页；2007原作5814–5815页，SI S1–S2 <a href=\"#a08-study-source-heritage-s01\">[1]</a> <a href=\"#a08-study-source-cq-r10\">[2]</a></p></li>\n<li><h4>把结构与存在条件放到同一证据链中</h4><p>原作者支持信息以化合物2编号记录产物，给出分离结果、核磁与质谱数据，并另列晶体资料和紫外—可见吸收变化。研究因此不仅回答“得到了什么”，也继续考察这一分子在给定溶剂和环境中的变化；可分离并不意味着在任意条件下长期不变。</p><p class=\"cq-study-locator\">出处：SI S2、S9–S13；本例数字直接取自SI原页 <a href=\"#a08-study-source-cq-r10\">[2]</a></p></li>\n</ol><h3>关键结果</h3>\n<h4>分离得到化合物2</h4><p>Cu1还原实例中，原作者报告得到化合物2为50 mg，原报产率82%。这里保存原例数据，不另行推算真收率或纯度。</p><p class=\"cq-study-locator\">出处：SI S2，Reduction reaction of Cu1 with Zn. <a href=\"#a08-study-source-cq-r10\">[2]</a></p>\n<h4>结构与表征</h4><p>SI S2列化合物2的¹H／¹⁹F NMR、质谱及元素分析；S9表1列2、3、4、5的晶体数据。不同表征共同构成原作者的研究证据。</p><p class=\"cq-study-locator\">出处：SI S2、S9表1 <a href=\"#a08-study-source-cq-r10\">[2]</a></p>\n<h4>溶液中的变化</h4><p>SI图4记录化合物2在二氯甲烷、环境条件下的吸收谱随时间变化；图注明其氧化半衰期约为一天。该描述限于图示体系，不推广为所有条件下的稳定性。</p><p class=\"cq-study-locator\">出处：SI S13，Figure 4及图注 <a href=\"#a08-study-source-cq-r10\">[2]</a></p>\n<h3>合作分工</h3>\n<h4>陈庆云、郭灿城及湖南大学同行</h4><p>将氟化学方法与已有卟啉研究基础相结合，构成交叉研究的起点。</p><p class=\"cq-study-locator\">出处：传记78–79页 <a href=\"#a08-study-source-heritage-s01\">[1]</a></p>\n<h4>刘超、沈冬梅、陈庆云</h4><p>2007年论文及SI的共同作者；传记记述刘超与陈庆云研究还原反应。原文未逐人划分全部实验、表征任务，不据署名补写。</p><p class=\"cq-study-locator\">出处：传记81页；SI S1作者栏 <a href=\"#a08-study-source-heritage-s01\">[1]</a> <a href=\"#a08-study-source-cq-r10\">[2]</a></p>\n<aside class=\"cq-study-story\" aria-labelledby=\"a08-representative-study-story\"><h3 id=\"a08-representative-study-story\">育人与学风故事：进入新领域，师生一起读文献</h3><p>刘超回忆，刚进入卟啉方向时，陈庆云主动向湖南大学同行请教，阅读资料、作标记，再与学生讨论实验建议；学生反馈结果后，他还会继续研究问题。这一故事让交叉成果背后的学习过程变得具体：导师并不以熟悉旧领域代替新知识，而是和学生共同建立判断。</p><p class=\"cq-study-locator\">出处：传记79页，刘超2018年5月15日访谈页注 <a href=\"#a08-study-source-heritage-s01\">[1]</a></p><p class=\"cq-study-locator\">资料性质：传记转引刘超2018年5月15日访谈</p></aside>\n<div class=\"cq-study-meaning\"><h3>学术意义</h3><p>该工作的代表性在于把含氟试剂和大环化学结合，使通常难以获得的20π非扩展卟啉成为能够分离、表征并继续转化的对象，从而为研究电子结构与性质提供分子实例。颜色是发现线索，芳香性判断则需要结合原作者的结构与性质研究。</p></div>\n<h3>阅读范围</h3><div class=\"cq-study-scope\"><p>颜色变化或20π计数不能单独认证芳香性；本页呈现原作者的历史研究，不作平台独立结构、谱图或机理认证。</p><p>2007年20π isophlorin与2022年18π Porphyriynes是不同对象；2022已有理论计算归原作者，不称平台首次理论研究。</p></div>\n<h3>参考资料与原文出处</h3><ol class=\"cq-study-references\">\n<li id=\"a08-study-source-heritage-s01\"><b>朱晶、刘超：《氟缘笃志：陈庆云传》</b>；传记正文、具名访谈转引及作者总结，逐段区分。印刷78–82页；79页刘超访谈，81页发现过程，82页科学背景</li>\n<li id=\"a08-study-source-cq-r10\"><b><a href=\"https://pubs.acs.org/doi/10.1021/ja070855c\">Synthesis and Reactions of 20 π-Electron β-Tetrakis(trifluoromethyl)-meso-tetraphenylporphyrins</a></b>；原作者支持信息；具体产率和氧化时间来自SI。Chao Liu、Dong-Mei Shen、Qing-Yun Chen；JACS2007，129：5814–5815；本例82%及约一天的数据来自对应SI而非从正文摘要推断 <a href=\"https://acs.figshare.com/articles/journal_contribution/Synthesis_and_Reactions_of_20_Electron_Tetrakis_trifluoromethyl_i_meso_i_tetraphenylporphyrins/3008851\">原作者支持信息（SI）</a>；SI S1–S2、S9–S13；Figures 1–4</li>\n</ol><p class=\"cq-study-scope\">历史成果与合作归原作者和实际参与者。本节依据所列史料展开学术叙述；平台AI辅助整理另列。</p>\n<nav class=\"cq-study-nav\" aria-label=\"代表成果阅读导航\"><a href=\"../../achievements/index.html#heritage-inventory\">九条成果线导读</a><a href=\"../../research/index.html#ai-a08\">AI辅助资料整理</a><a href=\"#refs\">本专题原有参考资料</a></nav></section>\n<!-- REPRESENTATIVE_STUDY_A08:END --><!-- A08_BIOGRAPHY_HISTORY:BEGIN -->\n"
+    },
+    {
+      "old": "<main class=\"wrap\" id=\"main\">\n",
+      "new": "<main class=\"wrap\" id=\"main\"><!-- REPRESENTATIVE_STUDY_A09:BEGIN -->\n<style id=\"a09-representative-study-style\">.cq-study{box-sizing:border-box;max-width:1120px;margin:28px auto;padding:clamp(22px,4vw,42px);border:1px solid #c8d8cd;border-top:4px solid #176e62;border-radius:10px;background:#fffefa;color:#182f2b;line-height:1.85;scroll-margin-top:24px}.cq-study *{box-sizing:border-box}.cq-study h2{font-size:clamp(25px,3.5vw,36px);line-height:1.45;margin:.3em 0 .7em}.cq-study h3{font-size:1.25rem;line-height:1.5;margin:1.6em 0 .7em;color:#155d55}.cq-study h4{font-size:1rem;line-height:1.6;margin:.8em 0 .3em}.cq-study p{max-width:84ch;margin:.65em 0}.cq-study a{color:#155d55;text-underline-offset:.2em}.cq-study a:focus-visible,.cq-study [tabindex]:focus-visible{outline:3px solid #aa7545;outline-offset:3px}.cq-study-label{font-size:.85rem;color:#155d55;font-weight:700}.cq-study-locator{font-size:.83rem;color:#51685e;overflow-wrap:anywhere}.cq-study-process{padding-left:1.5em}.cq-study-process>li{padding-left:.3em;margin:1.1em 0}.cq-study-table{overflow-x:auto;width:100%;margin:18px 0;border:1px solid #d6e0d9}.cq-study-table table{border-collapse:collapse;min-width:580px;width:100%;font-size:.91rem}.cq-study-table caption{text-align:left;font-weight:700;padding:12px;background:#edf3ee}.cq-study-table th,.cq-study-table td{padding:12px;border-top:1px solid #d6e0d9;text-align:left;vertical-align:top;overflow-wrap:anywhere}.cq-study-story{margin:24px 0;padding:18px 22px;background:#edf3ee;border-left:3px solid #aa7545}.cq-study-story h3{margin-top:0}.cq-study-meaning{padding:12px 18px;border-left:3px solid #176e62;background:#f5f3e9}.cq-study-references{padding-left:1.4em;font-size:.86rem;overflow-wrap:anywhere}.cq-study-references>li{margin:.9em 0;scroll-margin-top:24px}.cq-study-scope{font-size:.87rem;color:#51685e}.cq-study-nav{display:flex;flex-wrap:wrap;gap:10px 20px;border-top:1px solid #d6e0d9;padding-top:16px;margin-top:24px}@media(max-width:620px){.cq-study{margin:20px 0;padding:20px 16px;border-radius:6px}.cq-study-story{padding:14px 16px}.cq-study h2{font-size:25px}}</style>\n<section class=\"cq-study\" id=\"a09-representative-study\" aria-labelledby=\"a09-representative-study-title\">\n<p class=\"cq-study-label\">A09（学科建设与人才培养） · 代表性成果详读</p><h2 id=\"a09-representative-study-title\">从会做实验到提出问题：自主选题、写作与共同带教</h2>\n<h3>育人问题</h3><p>怎样把研究经验传给学生，又让学生逐渐形成自己的问题、判断与研究方向？</p>\n<h3>指导过程</h3><ol class=\"cq-study-process\">\n<li><h4>先建立基础，再逐步放手</h4><p>陈庆云在传记所引本人访谈中回顾分阶段指导：起步时看实验和分析数据，帮助学生形成规范；随后通过讨论和抽查记录了解进展，再逐步让学生自己提出想法、寻找办法。放手以后，学生遇到困难仍可请求帮助、共同讨论，研究主动权因而逐步交给学生。</p><p class=\"cq-study-locator\">出处：传记90–91页；陈庆云2018年3月9日访谈转引 <a href=\"#a09-study-source-heritage-s01\">[1]</a></p></li>\n<li><h4>让选题成为学生参与的第一步</h4><p>刘超回忆进组时，陈先生先介绍研究情况、交给资料，请他学习后再来讨论，也听取他感兴趣的方向。刘超随后自行查阅含氟卟啉资料，在有所了解后选择这一方向。给资料、留阅读时间、讨论建议与保留学生选择，构成一个具体的入门过程。</p><p class=\"cq-study-locator\">出处：传记92页；刘超2018年5月15日访谈转引 <a href=\"#a09-study-source-heritage-s01\">[1]</a></p></li>\n<li><h4>让论文写作重新检查实验</h4><p>陈庆云要求学生自己写文章，因为把研究写清楚时，不只会暴露表达问题，也可能发现实验本身的问题。传记结语还由作者总结了带完整谱图、解释结构并当面讨论的要求：学生需要用数据组织自己的论证。前者是具名本人访谈，后者是传记作者的总结，二者分别说明来源。</p><p class=\"cq-study-locator\">出处：传记93页陈庆云访谈；111页作者总结 <a href=\"#a09-study-source-heritage-s01\">[1]</a></p></li>\n<li><h4>把个人带教扩展为共同责任</h4><p>刘超回忆，新生会由有经验的高年级同学带着做实验，组内经验因而能够传给下一届。郭彩云的回忆也记述，陈先生会请她留意和帮助某些同学的具体困难。导师指导、同伴帮助与学生逐步独立在这里相互衔接，而不是把育人归结为一句口号。</p><p class=\"cq-study-locator\">出处：传记93页郭彩云2019年9月24日访谈；102页刘超2018年5月15日访谈 <a href=\"#a09-study-source-heritage-s01\">[1]</a></p></li>\n</ol><h3>传承中的具体做法</h3>\n<h4>选题中的自主性</h4><p>刘超在读资料、与导师沟通后选择含氟卟啉方向，传记留下了能够追到具体人的培养经历。</p><p class=\"cq-study-locator\">出处：传记92页 <a href=\"#a09-study-source-heritage-s01\">[1]</a></p>\n<h4>论证能力的训练</h4><p>学生自己写稿，导师反复修改；完整谱图与结构解释进入讨论。这里说明训练过程，不生成教育效果的数量排名。</p><p class=\"cq-study-locator\">出处：传记93、111页 <a href=\"#a09-study-source-heritage-s01\">[1]</a></p>\n<h4>经验的组内接续</h4><p>高年级帮助新生、同组成员协助解决困难，使研究经验成为团队共同资源。</p><p class=\"cq-study-locator\">出处：传记93、102页 <a href=\"#a09-study-source-heritage-s01\">[1]</a></p>\n<h3>合作分工</h3>\n<h4>陈庆云</h4><p>提供阶段指导、课题建议与论文修改，并要求学生用数据组织自己的判断。</p><p class=\"cq-study-locator\">出处：传记90–93、111页 <a href=\"#a09-study-source-heritage-s01\">[1]</a></p>\n<h4>刘超、郭勇、郭彩云与高年级研究生</h4><p>分别保存自主选题、论文改稿及协助带教的具名回忆；高年级同学也是组内经验传递的实际参与者。</p><p class=\"cq-study-locator\">出处：传记92–94、102页 <a href=\"#a09-study-source-heritage-s01\">[1]</a></p>\n<aside class=\"cq-study-story\" aria-labelledby=\"a09-representative-study-story\"><h3 id=\"a09-representative-study-story\">育人与学风故事：春节的一周改稿</h3><p>郭勇回忆，自己学生时期的第二篇文章写得不够好，适逢春节，陈先生花了一周改稿。这个事例既留下导师对论文质量的要求，也留下学生遇到困难时导师愿意承担指导责任的细节。把学生自己写稿与导师认真修改放在一起阅读，才能看见这项训练中双方的投入。</p><p class=\"cq-study-locator\">出处：传记93页；郭勇2018年5月15日访谈页注 <a href=\"#a09-study-source-heritage-s01\">[1]</a></p><p class=\"cq-study-locator\">资料性质：传记转引郭勇2018年5月15日访谈</p></aside>\n<div class=\"cq-study-meaning\"><h3>学术传承的作用</h3><p>学术传承不仅发生在论文发表之后，也发生在选题、记录、写作、结构讨论和共同带教的日常过程。保留这些具名、可定位的细节，能够把陈先生的研究风格与后继者怎样学习科学联系起来，而不以培养人数或共同署名替代具体故事。</p></div>\n<h3>阅读范围</h3><div class=\"cq-study-scope\"><p>访谈故事按传记转引呈现，不称平台自行访谈；郭彩云回忆中的组会频率不推广到全部任职生涯。</p><p>本例说明培养与学术传承的具体过程，不用合著、合影推定师承，不生成培养人数、个人贡献排名或实验资格结论。</p></div>\n<h3>参考资料与原文出处</h3><ol class=\"cq-study-references\">\n<li id=\"a09-study-source-heritage-s01\"><b>朱晶、刘超：《氟缘笃志：陈庆云传》</b>；传记正文、具名访谈转引及作者总结，逐段区分。印刷90–94、102、111页；访谈转引的说话人及日期分别见页注；111页完整谱图段为作者总结</li>\n</ol><p class=\"cq-study-scope\">历史成果与合作归原作者和实际参与者。本节依据所列史料展开学术叙述；平台AI辅助整理另列。</p>\n<nav class=\"cq-study-nav\" aria-label=\"代表成果阅读导航\"><a href=\"../achievements/index.html#heritage-inventory\">九条成果线导读</a><a href=\"../people/index.html#a09-ai-collation\">AI辅助资料整理</a><a href=\"#refs\">本专题原有参考资料</a></nav></section>\n<!-- REPRESENTATIVE_STUDY_A09:END -->\n"
+    },
+    {
+      "old": "<section id=\"heritage-inventory\" class=\"wrap heritage-section\"><h2>九条成果线：问题、贡献与传承</h2><p>沿八条科研成果线与一条学术传承线，先读当时面对的问题、陈先生与合作者的具体贡献，再进入专题原文与合作故事。编号用于导航，不表示贡献排名，也不将不同专题串成未经证明的机理或因果链。</p><div class=\"heritage-grid\"><article class=\"heritage-card\" id=\"heritage-line-a01\"><h3>A01（全氟酮化学：六氟丙酮与双酚AF）</h3><p><b>科学问题：</b>同一全氟酮怎样通向不同产物，并进一步成为含氟二酚的制备原料？</p><p><b>具体贡献：</b>陈庆云与克鲁扬茨、甘巴里扬围绕六氟丙酮建立醇、炔基试剂和活泼氢化合物的反应与衍生转化，并推进到六氟双酚A制备及单体用途设想，连接基础反应与材料问题。</p><p><b>合作与研究接续：</b>结合第一报、第117491号说明书与传记，分别阅读共同署名、日常指导和研究训练；双酚用途设想与后来材料应用分开。</p><p class=\"heritage-locator\">出处：传记23–33页；1960年第一报英译647–653页；第117491号说明书的署名、实例和用途。</p><p><a href=\"../topics/early-fluoroketones/index.html#a01-primary-records\">学术成果与合作 →</a></p><p class=\"heritage-locator\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A01_FIRST_REPORT_zh-CN.md\">原文定位、署名与科学意义</a></p></article><article class=\"heritage-card\" id=\"heritage-line-a02\"><h3>A02（含氟单体、氟橡胶与氟油）</h3><p><b>科学问题：</b>怎样把难得的含氟单体变成可支撑橡胶与功能液体研究的材料基础？</p><p><b>具体贡献：</b>陈庆云与团队将六氟丙烯的裂解制取和低温分馏一并研究，使原料来源与聚合材料接续；氟橡胶2号、3号及调聚氟溴油又把单体、调聚反应和生产应用连接起来。</p><p><b>合作与研究接续：</b>以蒋锡夔、胡亚东等人的前期研究为起点，读实验人员、自制仪器和物资保障的协作，以及研究室向上海有机所实验厂的生产接续。</p><p class=\"heritage-locator\">出处：传记35–39页；上海有机所生平与“上海氟”报道；后续调聚研究另见1980年原刊175–184页。</p><p><a href=\"../topics/fluoromonomers/index.html\">学术成果与合作 →</a></p><p class=\"heritage-locator\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">原文定位、署名与科学意义</a></p></article><article class=\"heritage-card\" id=\"heritage-line-a03\"><h3>A03（全氟叔丁基（PFtB）化学）</h3><p><b>科学问题：</b>含氟结构怎样使熟悉的取代反应和基团效应经验面临新的问题？</p><p><b>具体贡献：</b>从六氟丙烯制备的副产物出发，陈庆云与同事研究全氟叔丁基卤化物的制备、结构和特殊反应，并用紫外吸收与溶剂位移比较电子效应，把材料任务中的观察推进为基础化学问题。</p><p><b>合作与研究接续：</b>原论文由陈庆云、蒋锡夔、陈秉启、梁梦兰共同署名；结合传记阅读实验、问题讨论和实习参与，区分历史论证与平台六项数值重放。</p><p class=\"heritage-locator\">出处：传记42–45页；1966年《化学学报》18页共同署名，18–20页反应讨论，20–21页紫外讨论与表1。</p><p><a href=\"../pftb/index.html#a03-biography-history\">学术成果与合作 →</a></p><p class=\"heritage-locator\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A03_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">原文定位、署名与科学意义</a></p></article><article class=\"heritage-card\" id=\"heritage-line-a04\"><h3>A04（F-53铬雾抑制剂）</h3><p><b>科学问题：</b>怎样把含氟合成研究带到电镀现场，解决铬雾抑制问题？</p><p><b>具体贡献：</b>面向镀铬现场的铬雾问题，陈庆云带领研究组发展含醚键的全氟磺酸盐F-53及自主制备路线，并经工厂试用和实验厂扩大试验，连接含氟合成研究与工业应用。</p><p><b>合作与研究接续：</b>研究组与顾子恺等工程人员、实验厂和电镀厂接续合作。1982年剪报介绍应用价值；原论文的集体署名另按原文保存。</p><p class=\"heritage-locator\">出处：传记48–53页；1979年原刊315–324页的集体署名与致谢；1982年4月8日《人民日报》第3版铬雾段。</p><p><a href=\"../topics/f53/index.html#topic-f53\">A04（F-53铬雾抑制剂）：研制、应用与合作 →</a></p><p class=\"heritage-locator\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A04_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">原文定位、署名与科学意义</a></p></article><article class=\"heritage-card\" id=\"heritage-line-a05\"><h3>A05（制冷剂与配套技术）</h3><p><b>科学问题：</b>制冷剂分子怎样经过工艺、润滑油与设备协作走向应用？</p><p><b>具体贡献：</b>从F-115的新制备路线和既有F-502配方试配，走向HFC-134a液相连续工艺、冷冻机油与整机试用，把制冷剂分子合成与配套应用衔接起来。</p><p><b>合作与研究接续：</b>林永达、杨映松参与连续中试，嘉兴冰箱厂等承担应用协作。项目组织贡献、集体论文署名和各专利发明人分别呈现。</p><p class=\"heritage-locator\">出处：传记55–59页；1978年《化学学报》77–79页；CN1075708A、CN1308043A的发明人及工艺各自登记。</p><p><a href=\"../topics/refrigerants/index.html#topic-refrigerants\">A05（制冷剂与配套技术）：组分、工艺与设备 →</a></p><p class=\"heritage-locator\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A05_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">原文定位、署名与科学意义</a></p></article><article class=\"heritage-card\" id=\"heritage-line-a06\"><h3>A06（磺酸酯、二氟卡宾与三氟甲基化）</h3><p><b>科学问题：</b>含氟磺酸酯的反应研究怎样发展出新的合成试剂和方法？</p><p><b>具体贡献：</b>从含氟磺酸酯的断键研究，发展二氟卡宾前体与三氟甲基化方法；陈庆云、吴生文将甲酯MFSDA发展为三氟甲基化试剂，后称“陈试剂”。</p><p><b>合作与研究接续：</b>杨国英接续研究反应条件；Dolbier团队参与TFDA开发。2003年硅酯／卡宾方法和2010年甲酯／甾体方法各有提交与核查名单。</p><p class=\"heritage-locator\">出处：传记60–69、75–77页；磺酸酯系列原刊；1989年三氟甲基化论文；Org. Synth. 2003，80：172–176与2010，87：126–136。</p><p><a href=\"../topics/chen-reagent/index.html#topic-chen-reagent\">A06（磺酸酯、二氟卡宾与三氟甲基化）：陈试剂 →</a> · <a href=\"../topics/perfluorosulfonates/index.html#record-sulfonate-cleavage\">A06（磺酸酯、二氟卡宾与三氟甲基化）：磺酸酯与卡宾 →</a></p><p class=\"heritage-locator\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">原文定位、署名与科学意义</a></p></article><article class=\"heritage-card\" id=\"heritage-line-a07\"><h3>A07（单电子转移与C–Cl活化）</h3><p><b>科学问题：</b>怎样利用溶剂、还原体系与催化作用，扩大含氟卤代物的转化范围？</p><p><b>具体贡献：</b>陈庆云与合作者从氟烷基碘的溶剂效应研究出发，发展多种氟烷基化方法，并分别以DMSO／连二亚硫酸钠和零价镍体系拓展特定含氟氯代物的转化。</p><p><b>合作与研究接续：</b>陈亚雄参与溶剂效应研究，龙正宇、黄小庭分别合作开展两类C–Cl方法；单电子转移保留为各原作讨论的解释。</p><p class=\"heritage-locator\">出处：传记69–74、83–84页；1984年《化学学报》906–912页；1999及2001年JOC两类C–Cl方法的出版社摘要。</p><p><a href=\"../topics/single-electron-transfer/index.html#topic-single-electron-transfer\">A07（单电子转移与C–Cl活化） →</a> · <a href=\"../topics/single-electron-transfer/index.html#record-ccl-activation\">A07（单电子转移与C–Cl活化） 从碘代物到含氟氯代物 →</a></p><p class=\"heritage-locator\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A07_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">原文定位、署名与科学意义</a></p></article><article class=\"heritage-card\" id=\"heritage-line-a08\"><h3>A08（交叉研究与晚年拓展）</h3><p><b>科学问题：</b>有机氟反应方法怎样进入小环、大环及新的性质研究？</p><p><b>具体贡献：</b>陈庆云与合作者把含氟试剂和反应方法拓展到小环、卟啉与新大环骨架，并在晚年继续研究脱氧氟化、氟磺酰化及表面活性分子，连接分子构建、反应性与性质问题。</p><p><b>合作与研究接续：</b>郭灿城带来卟啉研究基础，刘超等共同推进大环方向；2022年合著工作的既有理论计算归原作者，不据署名分派执行者。</p><p class=\"heritage-locator\">出处：传记75–86页及晚期论著目录156–159页；小环、2003/2007卟啉与大环、2022大环及晚年方法分别对应原作者文献。</p><p><a href=\"../topics/fluorinated-small-rings/index.html#topic-fluorinated-small-rings\">A08（交叉研究与晚年拓展） 含氟小环 →</a> · <a href=\"../topics/fluoroporphyrins/index.html#topic-fluoroporphyrins\">A08（交叉研究与晚年拓展） 卟啉与大环 →</a> · <a href=\"../topics/deoxyfluorination/index.html#topic-deoxyfluorination\">A08（交叉研究与晚年拓展） 脱氧氟化 →</a> · <a href=\"../topics/sulfonyl-fluoride/index.html#topic-sulfonyl-fluoride\">A08（交叉研究与晚年拓展） 晚年试剂与表面活性分子 →</a></p><p class=\"heritage-locator\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A08_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">原文定位、署名与科学意义</a></p></article><article class=\"heritage-card\" id=\"heritage-line-a09\"><h3>A09（学科建设与人才培养）</h3><p>以独立研究能力、团队人才接续与学术共同体服务为主线，介绍陈庆云的具体育人方法及长期合作。</p><ul><li>自主选题、论文修改与完整谱图讨论。</li><li>高年级带新生、人才梯队衔接及长期同行合作。</li><li>研究生教育、期刊编辑、国际命名与会议服务。</li></ul><p class=\"heritage-locator\">传记78–79、87–105、111、117–122页；机构2009、2019年报道及生平图集，各段出处见专题。</p><p><a href=\"../people/index.html\">A09（学科建设与人才培养）人物与传承专题 →</a> · <a href=\"../people/index.html#refs\">参考资料</a></p></article></div><p>本页是依据已有传记、原文及机构资料整理的学术导读；历史成果与合作贡献归原作者和实际参与者。</p><p>AI辅助核译、资料关联与数值核校另在研究资料页呈现，不能替代历史实验或专业科学判断。 <a href=\"../research/index.html\">进入AI辅助资料整理与研究 →</a></p></section>\n",
+      "new": "<section id=\"heritage-inventory\" class=\"wrap heritage-section\"><h2>九条成果线：问题、贡献与传承</h2><p>沿八条科研成果线与一条学术传承线，先读当时面对的问题、陈先生与合作者的具体贡献，再进入专题原文与合作故事。编号用于导航，不表示贡献排名，也不将不同专题串成未经证明的机理或因果链。</p><div class=\"heritage-grid\"><article class=\"heritage-card\" id=\"heritage-line-a01\"><h3>A01（全氟酮化学：六氟丙酮与双酚AF）</h3><p><b>科学问题：</b>同一全氟酮怎样通向不同产物，并进一步成为含氟二酚的制备原料？</p><p><b>具体贡献：</b>陈庆云与克鲁扬茨、甘巴里扬围绕六氟丙酮建立醇、炔基试剂和活泼氢化合物的反应与衍生转化，并推进到六氟双酚A制备及单体用途设想，连接基础反应与材料问题。</p><p><b>合作与研究接续：</b>结合第一报、第117491号说明书与传记，分别阅读共同署名、日常指导和研究训练；双酚用途设想与后来材料应用分开。</p><p class=\"heritage-locator\">出处：传记23–33页；1960年第一报英译647–653页；第117491号说明书的署名、实例和用途。</p><p><a href=\"../topics/early-fluoroketones/index.html#a01-representative-study\">代表成果详读 →</a> · <a href=\"../topics/early-fluoroketones/index.html#a01-primary-records\">学术成果与合作 →</a></p><p class=\"heritage-locator\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A01_FIRST_REPORT_zh-CN.md\">原文定位、署名与科学意义</a></p></article><article class=\"heritage-card\" id=\"heritage-line-a02\"><h3>A02（含氟单体、氟橡胶与氟油）</h3><p><b>科学问题：</b>怎样把难得的含氟单体变成可支撑橡胶与功能液体研究的材料基础？</p><p><b>具体贡献：</b>陈庆云与团队将六氟丙烯的裂解制取和低温分馏一并研究，使原料来源与聚合材料接续；氟橡胶2号、3号及调聚氟溴油又把单体、调聚反应和生产应用连接起来。</p><p><b>合作与研究接续：</b>以蒋锡夔、胡亚东等人的前期研究为起点，读实验人员、自制仪器和物资保障的协作，以及研究室向上海有机所实验厂的生产接续。</p><p class=\"heritage-locator\">出处：传记35–39页；上海有机所生平与“上海氟”报道；后续调聚研究另见1980年原刊175–184页。</p><p><a href=\"../topics/fluoromonomers/index.html#a02-representative-study\">代表成果详读 →</a> · <a href=\"../topics/fluoromonomers/index.html\">学术成果与合作 →</a></p><p class=\"heritage-locator\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">原文定位、署名与科学意义</a></p></article><article class=\"heritage-card\" id=\"heritage-line-a03\"><h3>A03（全氟叔丁基（PFtB）化学）</h3><p><b>科学问题：</b>含氟结构怎样使熟悉的取代反应和基团效应经验面临新的问题？</p><p><b>具体贡献：</b>从六氟丙烯制备的副产物出发，陈庆云与同事研究全氟叔丁基卤化物的制备、结构和特殊反应，并用紫外吸收与溶剂位移比较电子效应，把材料任务中的观察推进为基础化学问题。</p><p><b>合作与研究接续：</b>原论文由陈庆云、蒋锡夔、陈秉启、梁梦兰共同署名；结合传记阅读实验、问题讨论和实习参与，区分历史论证与平台六项数值重放。</p><p class=\"heritage-locator\">出处：传记42–45页；1966年《化学学报》18页共同署名，18–20页反应讨论，20–21页紫外讨论与表1。</p><p><a href=\"../pftb/index.html#a03-representative-study\">代表成果详读 →</a> · <a href=\"../pftb/index.html#a03-biography-history\">学术成果与合作 →</a></p><p class=\"heritage-locator\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A03_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">原文定位、署名与科学意义</a></p></article><article class=\"heritage-card\" id=\"heritage-line-a04\"><h3>A04（F-53铬雾抑制剂）</h3><p><b>科学问题：</b>怎样把含氟合成研究带到电镀现场，解决铬雾抑制问题？</p><p><b>具体贡献：</b>面向镀铬现场的铬雾问题，陈庆云带领研究组发展含醚键的全氟磺酸盐F-53及自主制备路线，并经工厂试用和实验厂扩大试验，连接含氟合成研究与工业应用。</p><p><b>合作与研究接续：</b>研究组与顾子恺等工程人员、实验厂和电镀厂接续合作。1982年剪报介绍应用价值；原论文的集体署名另按原文保存。</p><p class=\"heritage-locator\">出处：传记48–53页；1979年原刊315–324页的集体署名与致谢；1982年4月8日《人民日报》第3版铬雾段。</p><p><a href=\"../topics/f53/index.html#a04-representative-study\">代表成果详读 →</a> · <a href=\"../topics/f53/index.html#topic-f53\">A04（F-53铬雾抑制剂）：研制、应用与合作 →</a></p><p class=\"heritage-locator\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A04_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">原文定位、署名与科学意义</a></p></article><article class=\"heritage-card\" id=\"heritage-line-a05\"><h3>A05（制冷剂与配套技术）</h3><p><b>科学问题：</b>制冷剂分子怎样经过工艺、润滑油与设备协作走向应用？</p><p><b>具体贡献：</b>从F-115的新制备路线和既有F-502配方试配，走向HFC-134a液相连续工艺、冷冻机油与整机试用，把制冷剂分子合成与配套应用衔接起来。</p><p><b>合作与研究接续：</b>林永达、杨映松参与连续中试，嘉兴冰箱厂等承担应用协作。项目组织贡献、集体论文署名和各专利发明人分别呈现。</p><p class=\"heritage-locator\">出处：传记55–59页；1978年《化学学报》77–79页；CN1075708A、CN1308043A的发明人及工艺各自登记。</p><p><a href=\"../topics/refrigerants/index.html#a05-representative-study\">代表成果详读 →</a> · <a href=\"../topics/refrigerants/index.html#topic-refrigerants\">A05（制冷剂与配套技术）：组分、工艺与设备 →</a></p><p class=\"heritage-locator\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A05_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">原文定位、署名与科学意义</a></p></article><article class=\"heritage-card\" id=\"heritage-line-a06\"><h3>A06（磺酸酯、二氟卡宾与三氟甲基化）</h3><p><b>科学问题：</b>含氟磺酸酯的反应研究怎样发展出新的合成试剂和方法？</p><p><b>具体贡献：</b>从含氟磺酸酯的断键研究，发展二氟卡宾前体与三氟甲基化方法；陈庆云、吴生文将甲酯MFSDA发展为三氟甲基化试剂，后称“陈试剂”。</p><p><b>合作与研究接续：</b>杨国英接续研究反应条件；Dolbier团队参与TFDA开发。2003年硅酯／卡宾方法和2010年甲酯／甾体方法各有提交与核查名单。</p><p class=\"heritage-locator\">出处：传记60–69、75–77页；磺酸酯系列原刊；1989年三氟甲基化论文；Org. Synth. 2003，80：172–176与2010，87：126–136。</p><p><a href=\"../topics/chen-reagent/index.html#a06-representative-study\">代表成果详读 →</a> · <a href=\"../topics/chen-reagent/index.html#topic-chen-reagent\">A06（磺酸酯、二氟卡宾与三氟甲基化）：陈试剂 →</a> · <a href=\"../topics/perfluorosulfonates/index.html#record-sulfonate-cleavage\">A06（磺酸酯、二氟卡宾与三氟甲基化）：磺酸酯与卡宾 →</a></p><p class=\"heritage-locator\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">原文定位、署名与科学意义</a></p></article><article class=\"heritage-card\" id=\"heritage-line-a07\"><h3>A07（单电子转移与C–Cl活化）</h3><p><b>科学问题：</b>怎样利用溶剂、还原体系与催化作用，扩大含氟卤代物的转化范围？</p><p><b>具体贡献：</b>陈庆云与合作者从氟烷基碘的溶剂效应研究出发，发展多种氟烷基化方法，并分别以DMSO／连二亚硫酸钠和零价镍体系拓展特定含氟氯代物的转化。</p><p><b>合作与研究接续：</b>陈亚雄参与溶剂效应研究，龙正宇、黄小庭分别合作开展两类C–Cl方法；单电子转移保留为各原作讨论的解释。</p><p class=\"heritage-locator\">出处：传记69–74、83–84页；1984年《化学学报》906–912页；1999及2001年JOC两类C–Cl方法的出版社摘要。</p><p><a href=\"../topics/single-electron-transfer/index.html#a07-representative-study\">代表成果详读 →</a> · <a href=\"../topics/single-electron-transfer/index.html#topic-single-electron-transfer\">A07（单电子转移与C–Cl活化） →</a> · <a href=\"../topics/single-electron-transfer/index.html#record-ccl-activation\">A07（单电子转移与C–Cl活化） 从碘代物到含氟氯代物 →</a></p><p class=\"heritage-locator\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A07_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">原文定位、署名与科学意义</a></p></article><article class=\"heritage-card\" id=\"heritage-line-a08\"><h3>A08（交叉研究与晚年拓展）</h3><p><b>科学问题：</b>有机氟反应方法怎样进入小环、大环及新的性质研究？</p><p><b>具体贡献：</b>陈庆云与合作者把含氟试剂和反应方法拓展到小环、卟啉与新大环骨架，并在晚年继续研究脱氧氟化、氟磺酰化及表面活性分子，连接分子构建、反应性与性质问题。</p><p><b>合作与研究接续：</b>郭灿城带来卟啉研究基础，刘超等共同推进大环方向；2022年合著工作的既有理论计算归原作者，不据署名分派执行者。</p><p class=\"heritage-locator\">出处：传记75–86页及晚期论著目录156–159页；小环、2003/2007卟啉与大环、2022大环及晚年方法分别对应原作者文献。</p><p><a href=\"../topics/fluoroporphyrins/index.html#a08-representative-study\">代表成果详读 →</a> · <a href=\"../topics/fluorinated-small-rings/index.html#topic-fluorinated-small-rings\">A08（交叉研究与晚年拓展） 含氟小环 →</a> · <a href=\"../topics/fluoroporphyrins/index.html#topic-fluoroporphyrins\">A08（交叉研究与晚年拓展） 卟啉与大环 →</a> · <a href=\"../topics/deoxyfluorination/index.html#topic-deoxyfluorination\">A08（交叉研究与晚年拓展） 脱氧氟化 →</a> · <a href=\"../topics/sulfonyl-fluoride/index.html#topic-sulfonyl-fluoride\">A08（交叉研究与晚年拓展） 晚年试剂与表面活性分子 →</a></p><p class=\"heritage-locator\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A08_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">原文定位、署名与科学意义</a></p></article><article class=\"heritage-card\" id=\"heritage-line-a09\"><h3>A09（学科建设与人才培养）</h3><p>以独立研究能力、团队人才接续与学术共同体服务为主线，介绍陈庆云的具体育人方法及长期合作。</p><ul><li>自主选题、论文修改与完整谱图讨论。</li><li>高年级带新生、人才梯队衔接及长期同行合作。</li><li>研究生教育、期刊编辑、国际命名与会议服务。</li></ul><p class=\"heritage-locator\">传记78–79、87–105、111、117–122页；机构2009、2019年报道及生平图集，各段出处见专题。</p><p><a href=\"../people/index.html\">A09（学科建设与人才培养）人物与传承专题 →</a> · <a href=\"../people/index.html#refs\">参考资料</a></p><p><a href=\"../people/index.html#a09-representative-study\">代表成果详读：自主选题、写作与共同带教 →</a></p></article></div><p>本页是依据已有传记、原文及机构资料整理的学术导读；历史成果与合作贡献归原作者和实际参与者。</p><p>AI辅助核译、资料关联与数值核校另在研究资料页呈现，不能替代历史实验或专业科学判断。 <a href=\"../research/index.html\">进入AI辅助资料整理与研究 →</a></p></section>\n"
+    },
+    {
+      "old": "",
+      "new": "          \"label\": \"代表成果详读\",\r\n          \"path\": \"topics/early-fluoroketones/index.html#a01-representative-study\"\r\n        },\r\n        {\r\n"
+    },
+    {
+      "old": "",
+      "new": "          \"label\": \"代表成果详读\",\r\n          \"path\": \"topics/fluoromonomers/index.html#a02-representative-study\"\r\n        },\r\n        {\r\n"
+    },
+    {
+      "old": "",
+      "new": "        {\r\n          \"label\": \"代表成果详读\",\r\n          \"path\": \"pftb/index.html#a03-representative-study\"\r\n        },\r\n"
+    },
+    {
+      "old": "",
+      "new": "          \"label\": \"代表成果详读\",\r\n          \"path\": \"topics/f53/index.html#a04-representative-study\"\r\n        },\r\n        {\r\n"
+    },
+    {
+      "old": "",
+      "new": "        {\r\n          \"label\": \"代表成果详读\",\r\n          \"path\": \"topics/refrigerants/index.html#a05-representative-study\"\r\n        },\r\n"
+    },
+    {
+      "old": "",
+      "new": "          \"label\": \"代表成果详读\",\r\n          \"path\": \"topics/chen-reagent/index.html#a06-representative-study\"\r\n        },\r\n        {\r\n"
+    },
+    {
+      "old": "",
+      "new": "        {\r\n          \"label\": \"代表成果详读\",\r\n          \"path\": \"topics/single-electron-transfer/index.html#a07-representative-study\"\r\n        },\r\n"
+    },
+    {
+      "old": "",
+      "new": "        {\r\n          \"label\": \"代表成果详读\",\r\n          \"path\": \"topics/fluoroporphyrins/index.html#a08-representative-study\"\r\n        },\r\n"
+    },
+    {
+      "old": "",
+      "new": "        {\r\n          \"label\": \"代表成果详读\",\r\n          \"path\": \"people/index.html#a09-representative-study\"\r\n        },\r\n"
+    },
+    {
+      "old": "[学术成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-primary-records) · [原文定位与署名](A01_FIRST_REPORT_zh-CN.md)\n",
+      "new": "[代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-representative-study) · [学术成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-primary-records) · [原文定位与署名](A01_FIRST_REPORT_zh-CN.md)\n"
+    },
+    {
+      "old": "[学术成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html) · [原文定位与署名](A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md)\n",
+      "new": "[代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#a02-representative-study) · [学术成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html) · [原文定位与署名](A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md)\n"
+    },
+    {
+      "old": "[学术成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html#a03-biography-history) · [原文定位与署名](A03_ACADEMIC_ACHIEVEMENTS_zh-CN.md)\n",
+      "new": "[代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html#a03-representative-study) · [学术成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html#a03-biography-history) · [原文定位与署名](A03_ACADEMIC_ACHIEVEMENTS_zh-CN.md)\n"
+    },
+    {
+      "old": "[A04（F-53铬雾抑制剂）：研制、应用与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/f53/index.html#topic-f53) · [原文定位与署名](A04_ACADEMIC_ACHIEVEMENTS_zh-CN.md)\n",
+      "new": "[代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/f53/index.html#a04-representative-study) · [A04（F-53铬雾抑制剂）：研制、应用与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/f53/index.html#topic-f53) · [原文定位与署名](A04_ACADEMIC_ACHIEVEMENTS_zh-CN.md)\n"
+    },
+    {
+      "old": "[A05（制冷剂与配套技术）：组分、工艺与设备](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html#topic-refrigerants) · [原文定位与署名](A05_ACADEMIC_ACHIEVEMENTS_zh-CN.md)\n",
+      "new": "[代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html#a05-representative-study) · [A05（制冷剂与配套技术）：组分、工艺与设备](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html#topic-refrigerants) · [原文定位与署名](A05_ACADEMIC_ACHIEVEMENTS_zh-CN.md)\n"
+    },
+    {
+      "old": "[A06（磺酸酯、二氟卡宾与三氟甲基化）：陈试剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#topic-chen-reagent) · [A06（磺酸酯、二氟卡宾与三氟甲基化）：磺酸酯与卡宾](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html#record-sulfonate-cleavage) · [原文定位与署名](A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md)\n",
+      "new": "[代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#a06-representative-study) · [A06（磺酸酯、二氟卡宾与三氟甲基化）：陈试剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#topic-chen-reagent) · [A06（磺酸酯、二氟卡宾与三氟甲基化）：磺酸酯与卡宾](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html#record-sulfonate-cleavage) · [原文定位与署名](A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md)\n"
+    },
+    {
+      "old": "[A07（单电子转移与C–Cl活化）](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#topic-single-electron-transfer) · [A07（单电子转移与C–Cl活化） 从碘代物到含氟氯代物](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#record-ccl-activation) · [原文定位与署名](A07_ACADEMIC_ACHIEVEMENTS_zh-CN.md)\n",
+      "new": "[代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#a07-representative-study) · [A07（单电子转移与C–Cl活化）](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#topic-single-electron-transfer) · [A07（单电子转移与C–Cl活化） 从碘代物到含氟氯代物](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#record-ccl-activation) · [原文定位与署名](A07_ACADEMIC_ACHIEVEMENTS_zh-CN.md)\n"
+    },
+    {
+      "old": "[A08（交叉研究与晚年拓展） 含氟小环](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluorinated-small-rings/index.html#topic-fluorinated-small-rings) · [A08（交叉研究与晚年拓展） 卟啉与大环](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#topic-fluoroporphyrins) · [A08（交叉研究与晚年拓展） 脱氧氟化](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/deoxyfluorination/index.html#topic-deoxyfluorination) · [A08（交叉研究与晚年拓展） 晚年试剂与表面活性分子](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/sulfonyl-fluoride/index.html#topic-sulfonyl-fluoride) · [原文定位与署名](A08_ACADEMIC_ACHIEVEMENTS_zh-CN.md)\n",
+      "new": "[代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#a08-representative-study) · [A08（交叉研究与晚年拓展） 含氟小环](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluorinated-small-rings/index.html#topic-fluorinated-small-rings) · [A08（交叉研究与晚年拓展） 卟啉与大环](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#topic-fluoroporphyrins) · [A08（交叉研究与晚年拓展） 脱氧氟化](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/deoxyfluorination/index.html#topic-deoxyfluorination) · [A08（交叉研究与晚年拓展） 晚年试剂与表面活性分子](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/sulfonyl-fluoride/index.html#topic-sulfonyl-fluoride) · [原文定位与署名](A08_ACADEMIC_ACHIEVEMENTS_zh-CN.md)\n"
+    },
+    {
+      "old": "",
+      "new": "\n[代表成果详读：自主选题、写作与共同带教](https://cccolab.github.io/Chen-Qingyun-AI4Science/people/index.html#a09-representative-study)\n"
+    },
+    {
+      "old": "    return project_html('\\n'.join(out), ROUTE)\n",
+      "new": "    from render_representative_studies import inject_study\n    return inject_study(root, ROUTE, project_html('\\n'.join(out), ROUTE))\n"
+    },
+    {
+      "old": "",
+      "new": "    study = ('<p><a href=\"../people/index.html#a09-representative-study\">代表成果详读：自主选题、写作与共同带教 →</a></p>'\n             if (root/'content/representative-studies.v1.json').is_file() else '')\n"
+    },
+    {
+      "old": "        + '<p><a href=\"../people/index.html\">A09（学科建设与人才培养）人物与传承专题 →</a> · <a href=\"../people/index.html#refs\">参考资料</a></p></article>', 'achievements/index.html')\n",
+      "new": "        + '<p><a href=\"../people/index.html\">A09（学科建设与人才培养）人物与传承专题 →</a> · <a href=\"../people/index.html#refs\">参考资料</a></p>'+study+'</article>', 'achievements/index.html')\n"
+    },
+    {
+      "old": "    return ['### A09（学科建设与人才培养）', '', data['inventory_intro'], '',\n",
+      "new": "    rows = ['### A09（学科建设与人才培养）', '', data['inventory_intro'], '',\n"
+    },
+    {
+      "old": "",
+      "new": "    if (root/'content/representative-studies.v1.json').is_file():\n        rows += ['[代表成果详读：自主选题、写作与共同带教](https://cccolab.github.io/Chen-Qingyun-AI4Science/people/index.html#a09-representative-study)', '']\n    return rows\n"
+    },
+    {
+      "old": "",
+      "new": "from representative_studies_publication import (\n    MANIFEST as REPRESENTATIVE_STUDIES_MANIFEST,\n    predecessor_bytes as representative_studies_predecessor_bytes,\n    apply as apply_representative_studies,\n)\n"
+    },
+    {
+      "old": "",
+      "new": "def _bytes(root: Path, name: str) -> bytes:\n    _file(root, name)\n    return representative_studies_predecessor_bytes(root, name)\n\n\n"
+    },
+    {
+      "old": "    return json.loads(_file(root, name).read_bytes())\n",
+      "new": "    return json.loads(_bytes(root, name))\n"
+    },
+    {
+      "old": "    current = _file(root, name).read_bytes()\n",
+      "new": "    current = _bytes(root, name)\n"
+    },
+    {
+      "old": "    value = _file(root, name).read_bytes()\n",
+      "new": "    value = _bytes(root, name)\n"
+    },
+    {
+      "old": "",
+      "new": "    if (root / REPRESENTATIVE_STUDIES_MANIFEST).exists() and not (root / MANIFEST).exists():\n        raise ValueError('Representative studies require their immutable v34 predecessor')\n"
+    },
+    {
+      "old": "        if _sha(_file(root, name).read_bytes()) != sha:\n",
+      "new": "        if _sha(_bytes(root, name)) != sha:\n"
+    },
+    {
+      "old": "        value = _file(root, name).read_bytes()\n",
+      "new": "        value = _bytes(root, name)\n"
+    },
+    {
+      "old": "        if (_sha(old), len(old)) != identity or old == _file(root, name).read_bytes():\n",
+      "new": "        if (_sha(old), len(old)) != identity or old == _bytes(root, name):\n"
+    },
+    {
+      "old": "        before, after = predecessor_bytes(root, 'site/' + route), _file(root, 'site/' + route).read_bytes()\n",
+      "new": "        before, after = predecessor_bytes(root, 'site/' + route), _bytes(root, 'site/' + route)\n"
+    },
+    {
+      "old": "        value = _file(root, 'site/' + name).read_bytes()\n",
+      "new": "        value = _bytes(root, 'site/' + name)\n"
+    },
+    {
+      "old": "    report = {'path': MANIFEST, 'sha256': _sha(_file(root, MANIFEST).read_bytes()),\n",
+      "new": "    report = {'path': MANIFEST, 'sha256': _sha(_bytes(root, MANIFEST)),\n"
+    },
+    {
+      "old": "    return updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}\n",
+      "new": "    return apply_representative_studies(root, updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})\n"
+    }
+  ],
+  "changes": [
+    {
+      "path": "topics/early-fluoroketones/index.html",
+      "old_sha256": "eeffdcd82cca6ae6549db9d21b7059ac4c9db94cdc60337ffc3a6a75ae06af88",
+      "old_bytes": 257826,
+      "new_sha256": "80a494a2a7c31f8c162a043ba741a2153dc08493abc225180a0ee4e879d4b0a7",
+      "new_bytes": 267846,
+      "reason": "代表成果详读及其阅读入口；原始来源、已有科学数据、块外正文与其它页面保留。"
+    },
+    {
+      "path": "topics/fluoromonomers/index.html",
+      "old_sha256": "ff79d077f5b74b8580ef06ac5e7c4c622b98c4f562daf9f75ae530e6f9ba199b",
+      "old_bytes": 18224,
+      "new_sha256": "c3d0a5d855f8f9819ba15b82758cc6661d75e96c5958a77f3ea2d1d2b9ba399f",
+      "new_bytes": 28229,
+      "reason": "代表成果详读及其阅读入口；原始来源、已有科学数据、块外正文与其它页面保留。"
+    },
+    {
+      "path": "pftb/index.html",
+      "old_sha256": "b2dd711fcb504b676c3d04f2c42876c2a36ae8f616c0b48b8530aed53822c3b5",
+      "old_bytes": 101043,
+      "new_sha256": "cdbacef4bd1f7499a839cdc6873866caa579b09158fb695b0bb969235f0332e8",
+      "new_bytes": 110587,
+      "reason": "代表成果详读及其阅读入口；原始来源、已有科学数据、块外正文与其它页面保留。"
+    },
+    {
+      "path": "topics/f53/index.html",
+      "old_sha256": "d6b1dc495768583ef4657f8b1e542649c681ee1dd641e739f74003498a92a85b",
+      "old_bytes": 16656,
+      "new_sha256": "d2140346a80be5cb9f9d204f2dc33f97435c9e7ee10b61cb7ea6a9e3c4780efe",
+      "new_bytes": 25851,
+      "reason": "代表成果详读及其阅读入口；原始来源、已有科学数据、块外正文与其它页面保留。"
+    },
+    {
+      "path": "topics/refrigerants/index.html",
+      "old_sha256": "ee04418185a648f2272fb46ac38c9f9ddeee1abcb72cbb35b514cce5f765da34",
+      "old_bytes": 18076,
+      "new_sha256": "fb970a017cc69566554cfbd3a4c40649e411d2f1c35fd057f5b1b685cc1a6953",
+      "new_bytes": 26980,
+      "reason": "代表成果详读及其阅读入口；原始来源、已有科学数据、块外正文与其它页面保留。"
+    },
+    {
+      "path": "topics/chen-reagent/index.html",
+      "old_sha256": "a9cf50685f6732a8baa260899cee7e62986eb5440da1f8b98a7adb79295b03ef",
+      "old_bytes": 23434,
+      "new_sha256": "ed671bcf8bc932d39b1e4ac8b64c36b32d35df3171da7048017c668bb438efed",
+      "new_bytes": 33187,
+      "reason": "代表成果详读及其阅读入口；原始来源、已有科学数据、块外正文与其它页面保留。"
+    },
+    {
+      "path": "topics/single-electron-transfer/index.html",
+      "old_sha256": "a0e843ba29279387985b9e7122382b6cc5f8b78021414b0383586979bb653127",
+      "old_bytes": 18697,
+      "new_sha256": "fd5ea83ad0c1f97040bfb10e7914212c5d8ed89cec2a15c9f1e7717d957e9f52",
+      "new_bytes": 28029,
+      "reason": "代表成果详读及其阅读入口；原始来源、已有科学数据、块外正文与其它页面保留。"
+    },
+    {
+      "path": "topics/fluoroporphyrins/index.html",
+      "old_sha256": "09eb45dd775f2a3055744bf1a4396126574860b2534b0057b7fcc4e4f334d017",
+      "old_bytes": 14580,
+      "new_sha256": "b70cdd1a358922b20d083655969b9040a21e2ce71c6d51dca1c8d697934ce928",
+      "new_bytes": 23431,
+      "reason": "代表成果详读及其阅读入口；原始来源、已有科学数据、块外正文与其它页面保留。"
+    },
+    {
+      "path": "people/index.html",
+      "old_sha256": "c70e0b1c08c02566f61adb3e7602a6fe15ef2f9af498d160cd171c2719f7e381",
+      "old_bytes": 21105,
+      "new_sha256": "bd470709e680342fc5316db06e0d525a2f524046a833ab3787775833b299459c",
+      "new_bytes": 29602,
+      "reason": "代表成果详读及其阅读入口；原始来源、已有科学数据、块外正文与其它页面保留。"
+    },
+    {
+      "path": "achievements/index.html",
+      "old_sha256": "c692715a7ff75cab3d7e5b57e5969b245b8bf9b058636f24fe7e7ef031f1991c",
+      "old_bytes": 61378,
+      "new_sha256": "b889f0dc518c65458da0df7eb9502ee50ea63fb8ff95a06d9224b0e288fa4079",
+      "new_bytes": 62299,
+      "reason": "代表成果详读及其阅读入口；原始来源、已有科学数据、块外正文与其它页面保留。"
+    }
+  ]
+}

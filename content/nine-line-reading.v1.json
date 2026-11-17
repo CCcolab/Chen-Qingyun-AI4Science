@@ -28,6 +28,10 @@
       ],
       "links": [
         {
+          "label": "代表成果详读",
+          "path": "topics/early-fluoroketones/index.html#a01-representative-study"
+        },
+        {
           "label": "学术成果与合作",
           "path": "topics/early-fluoroketones/index.html#a01-primary-records"
         }
@@ -53,6 +57,10 @@
       ],
       "links": [
         {
+          "label": "代表成果详读",
+          "path": "topics/fluoromonomers/index.html#a02-representative-study"
+        },
+        {
           "label": "学术成果与合作",
           "path": "topics/fluoromonomers/index.html"
         }
@@ -75,6 +83,10 @@
         "content/a03-biography-narrative.v1.json"
       ],
       "links": [
+        {
+          "label": "代表成果详读",
+          "path": "pftb/index.html#a03-representative-study"
+        },
         {
           "label": "学术成果与合作",
           "path": "pftb/index.html#a03-biography-history"
@@ -100,6 +112,10 @@
       ],
       "links": [
         {
+          "label": "代表成果详读",
+          "path": "topics/f53/index.html#a04-representative-study"
+        },
+        {
           "label": "A04（F-53铬雾抑制剂）：研制、应用与合作",
           "path": "topics/f53/index.html#topic-f53"
         }
@@ -123,6 +139,10 @@
         "content/a05-biography-narrative.v1.json"
       ],
       "links": [
+        {
+          "label": "代表成果详读",
+          "path": "topics/refrigerants/index.html#a05-representative-study"
+        },
         {
           "label": "A05（制冷剂与配套技术）：组分、工艺与设备",
           "path": "topics/refrigerants/index.html#topic-refrigerants"
@@ -152,6 +172,10 @@
       ],
       "links": [
         {
+          "label": "代表成果详读",
+          "path": "topics/chen-reagent/index.html#a06-representative-study"
+        },
+        {
           "label": "A06（磺酸酯、二氟卡宾与三氟甲基化）：陈试剂",
           "path": "topics/chen-reagent/index.html#topic-chen-reagent"
         },
@@ -179,6 +203,10 @@
         "content/a07-biography-narrative.v1.json"
       ],
       "links": [
+        {
+          "label": "代表成果详读",
+          "path": "topics/single-electron-transfer/index.html#a07-representative-study"
+        },
         {
           "label": "A07 单电子转移与C–Cl活化",
           "path": "topics/single-electron-transfer/index.html#topic-single-electron-transfer"
@@ -213,6 +241,10 @@
         "content/a08-biography-narrative.v1.json"
       ],
       "links": [
+        {
+          "label": "代表成果详读",
+          "path": "topics/fluoroporphyrins/index.html#a08-representative-study"
+        },
         {
           "label": "A08 含氟小环",
           "path": "topics/fluorinated-small-rings/index.html#topic-fluorinated-small-rings"
@@ -249,6 +281,10 @@
         "content/a09-biography-narrative.v1.json"
       ],
       "links": [
+        {
+          "label": "代表成果详读",
+          "path": "people/index.html#a09-representative-study"
+        },
         {
           "label": "A09 学科建设与人才培养",
           "path": "people/index.html#a09-discipline"

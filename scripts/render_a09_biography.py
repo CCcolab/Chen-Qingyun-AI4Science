@@ -105,7 +105,8 @@ def render_page(root: Path) -> str:
         out += ['<li id="' + source['anchor'] + '"><b>' + escape(source['id']) + '</b> · ' + title + '；' + escape(source['locator']) + '</li>']
     out += ['</ul><p><a href="../index.html#line-a09">返回A09（学科建设与人才培养）首页入口 ↑</a></p></article>', END, '</main>',
             '<footer class="wrap">历史成就与共同成果归陈庆云及实际参与者。平台保存出处、资料性质与学术传承脉络。</footer></body></html>']
-    return project_html('\n'.join(out), ROUTE)
+    from render_representative_studies import inject_study
+    return inject_study(root, ROUTE, project_html('\n'.join(out), ROUTE))
 
 
 def render_overview(root: Path, route: str) -> str:
@@ -124,19 +125,24 @@ def render_overview(root: Path, route: str) -> str:
 
 def render_inventory_summary(root: Path) -> str:
     data = load(root)
+    study = ('<p><a href="../people/index.html#a09-representative-study">代表成果详读：自主选题、写作与共同带教 →</a></p>'
+             if (root/'content/representative-studies.v1.json').is_file() else '')
     return project_html('<article class="heritage-card" id="heritage-line-a09"><p class="heritage-meta">A09（学科建设与人才培养）</p>'
         + '<h3>独立研究、团队接续与学术服务</h3><p>' + escape(data['inventory_intro']) + '</p><ul><li>自主选题、论文修改与完整谱图讨论。</li>'
         + '<li>高年级带新生、人才梯队衔接及长期同行合作。</li><li>研究生教育、期刊编辑、国际命名与会议服务。</li></ul>'
         + '<p class="heritage-locator">传记78–79、87–105、111、117–122页；机构2009、2019年报道及生平图集，各段出处见专题。</p>'
-        + '<p><a href="../people/index.html">A09（学科建设与人才培养）人物与传承专题 →</a> · <a href="../people/index.html#refs">参考资料</a></p></article>', 'achievements/index.html')
+        + '<p><a href="../people/index.html">A09（学科建设与人才培养）人物与传承专题 →</a> · <a href="../people/index.html#refs">参考资料</a></p>'+study+'</article>', 'achievements/index.html')
 
 
 def render_inventory_markdown_summary(root: Path) -> list[str]:
     data = load(root)
-    return ['### A09（学科建设与人才培养）', '', data['inventory_intro'], '',
+    rows = ['### A09（学科建设与人才培养）', '', data['inventory_intro'], '',
             '自主选题、论文修改和谱图讨论，高年级带新生与人才接续，以及期刊、会议和国际交流，分别在独立专题保留人物、事件与出处。', '',
             '依据：《氟缘笃志：陈庆云传》78–79、87–105、111、117–122页；机构2009、2019年报道与生平图集。', '',
             '[A09（学科建设与人才培养）人物与传承专题](https://cccolab.github.io/Chen-Qingyun-AI4Science/people/index.html) · [AI辅助资料整理](https://cccolab.github.io/Chen-Qingyun-AI4Science/people/index.html#a09-ai-collation)', '']
+    if (root/'content/representative-studies.v1.json').is_file():
+        rows += ['[代表成果详读：自主选题、写作与共同带教](https://cccolab.github.io/Chen-Qingyun-AI4Science/people/index.html#a09-representative-study)', '']
+    return rows
 
 
 def render_document(root: Path) -> str:
