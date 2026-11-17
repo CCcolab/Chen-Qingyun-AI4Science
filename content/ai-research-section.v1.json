@@ -1643,39 +1643,72 @@
       "id": "A06",
       "name": "磺酸酯、二氟卡宾与三氟甲基化",
       "home_summary": "对照结构、条件与断键观察，区分试剂身份并追踪已有机理研究。",
-      "question": "结构与条件如何关联不同断键路径，以及试剂的不同反应角色？",
-      "ai_role": "建立逐反应的结构—条件—断键观察对照；区分甲酯、酸型、盐型和TFDA硅酯；对照既有专业机理研究并提出待核问题。",
+      "question": "磺酸酯断键研究怎样走向二氟卡宾前体与“陈试剂”，原研究者解决了哪些合成问题？",
+      "ai_role": "以传记为主线关联具体反应、试剂结构与合作角色；核对新增引用，保留原刊数据、原作者解释及已有方法核查的范围。",
       "records": [
         {
-          "title": "现有资料与记录",
-          "summary": "已取得并核读1982年337–352页、670–673页及1983年1044–1057页三篇原刊。首篇署陈庆云、朱蓉仙、李宗珍、王珊娣、黄维垣，后两篇分别署陈庆云、朱士正，作者表各自登记。CQ-H16主标题原印为“全氟和多氟烷基磺酸的研究 X.”，与既有题录“磺酸酯”异文分列；670页通讯未印系列号。原刊作者名与传记异文保留，不据署名推定个人分工。三个代表断键实例已建立结构—条件—产物对应，原报收率归原作者；不把指定实例的核读扩大为全部谱图、真实结构或通用机理认证。按既有方法核读登记，2003年硅酯／二氟卡宾方法与2010年甲酯／甾体三氟甲基化分别呈现；原刊提交者与核查者名单不属于本项目新取得的专业签认。1989、2000原论文及1991书章全文仍待取得，2024既有陈试剂机理计算仍归原作者。",
+          "title": "历史成果脉络：从断键问题到试剂功能",
+          "summary": "已按传记60–69、75–77页整理磺酸酯结构与断键、14种二氟卡宾前体、甲酯陈试剂的发现及接续研究、TFDA合作开发。陈庆云与不同合作者的工作分段介绍，不把历史观察写作平台新发现。",
           "links": [
             {
-              "title": "现有材料与方法核查说明",
-              "url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+              "title": "A06（磺酸酯、二氟卡宾与三氟甲基化）具体学术贡献与合作分工",
+              "url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
               "kind": "repo"
+            }
+          ]
+        },
+        {
+          "title": "已有原刊记录与新增引用",
+          "summary": "已取得并核读的1982／1983三篇原刊及三个代表断键实例保留在下方专业记录中。本轮按实际作者表、结构和条件范围展开历史贡献；1989甲酯与2000硅酯的新增介绍限原出版社摘要支持的用途和作者信息。",
+          "links": [
+            {
+              "title": "磺酸酯反应与合作专题",
+              "url": "../topics/perfluorosulfonates/index.html",
+              "kind": "site"
+            },
+            {
+              "title": "陈试剂的发现与方法发展",
+              "url": "../topics/chen-reagent/index.html#topic-chen-reagent",
+              "kind": "site"
+            }
+          ]
+        },
+        {
+          "title": "甲酯、硅酯与历史方法核查分别整理",
+          "summary": "MFSDA甲酯与TFDA硅酯分别列示；2003硅酯／二氟卡宾与2010甲酯／甾体三氟甲基化各保留提交者、核查者及卷页。这是既有方法核读登记的关联整理，原刊核查不写成本平台新实验或新增专业签认。",
+          "links": [
+            {
+              "title": "2003硅酯方法",
+              "url": "https://orgsyn.org/demo.aspx?prep=v80p0172",
+              "kind": "external"
+            },
+            {
+              "title": "2010甲酯方法",
+              "url": "https://orgsyn.org/demo.aspx?prep=v87p0126",
+              "kind": "external"
             }
           ]
         }
       ],
       "boundaries": [
-        "摘要不替代全文；方法核查只支持所核方法；后续机理计算与新用途归原作者，不当作平台原创或陈先生早期计算。"
+        "历史实验、原报收率和试剂开发归原研究者；本轮为资料关联与新增引用核对，不授予实验复现或机理验证资格。",
+        "甲酯、硅酯、酸型和金属盐分别介绍；所选断键实例和历史方法核查各有限定范围，后续机理计算归其实际作者。"
       ],
-      "next_step": "继续补1989、2000原论文及1991书章；对拟采用的新科学解释明确具体结构、条件和证据，不重复挂起已完成的三个原文实例对照。",
-      "future_question": "既有机理研究覆盖了哪些具体实体与条件，仍缺少哪些可区分反应角色的证据？",
+      "next_step": "继续解释具体结构、反应问题和合作研究之间的学术联系；新增引用按原文能够支持的范围呈现，原报实例与已有先行研究分别保留。",
+      "future_question": "未来如提出AI辅助研究，应先限定具体实体、反应条件与可检验问题，并与已有理论工作比较；当前仅为设想，M0保持暂停。",
       "source_links": [
         {
-          "title": "磺酸酯断键档案",
+          "title": "磺酸酯断键的历史成果",
           "url": "../topics/perfluorosulfonates/index.html#record-sulfonate-cleavage",
           "kind": "site"
         },
         {
-          "title": "陈试剂历史贡献",
+          "title": "陈试剂的代表性贡献",
           "url": "../topics/chen-reagent/index.html#chen-reagent-contribution",
           "kind": "site"
         },
         {
-          "title": "试剂身份与原始证据",
+          "title": "原始论文与命名证据",
           "url": "../topics/chen-reagent/index.html#chen-reagent-evidence",
           "kind": "site"
         }
@@ -1777,7 +1810,9 @@
           "scientific_review_status": "review_required",
           "release_eligible": false
         }
-      ]
+      ],
+      "boundary_title": "资料整理的适用范围",
+      "next_step_title": "资料整理的下一步"
     },
     {
       "id": "A07",

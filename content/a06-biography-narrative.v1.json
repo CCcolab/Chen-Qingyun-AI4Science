@@ -1,0 +1,329 @@
+{
+  "schema_version": "1.0",
+  "achievement_line": "A06",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "m0_status": "paused",
+  "title": "A06（磺酸酯、二氟卡宾与三氟甲基化）：陈试剂与方法开拓",
+  "platform_text": "历史成果归原研究者及合作团队。平台本轮完成传记与文献关联、试剂身份和合作角色整理，以及新增引用的出处核对；具体对照放在下一层AI资料页。资料整理不是实验复现、谱图重新鉴定或机理验证，保持review_required、release_eligible=false；M0继续暂停。",
+  "pages": [
+    {
+      "route": "topics/perfluorosulfonates/index.html",
+      "title": "A06（磺酸酯、二氟卡宾与三氟甲基化）：从断键问题到新试剂",
+      "intro": "F-53研制形成的原料与中间体，成为陈庆云小组持续开展基础研究的起点。《氟缘笃志：陈庆云传》记述，研究从含氟磺酸衍生物的结构和断键方式，逐步走向二氟卡宾前体，再与三氟甲基化试剂的开发相联系。这里首先介绍磺酸酯与二氟卡宾两段历史；甲酯“陈试剂”的发现另设专题。",
+      "cards": [
+        {
+          "id": "topic-perfluorosulfonates",
+          "title": "A06（磺酸酯、二氟卡宾与三氟甲基化）：从工业原料进入基础研究",
+          "paragraphs": [
+            "陈庆云团队从F-53相关的含氟原料出发，发展多氟烷基醚磺酰氟及相应磺酸衍生物的合成路线。不同碳链与酯基结构的化合物，使研究者能够系统比较它们与亲核试剂的反应。工业研制由此提供了持续探索新化学对象的条件。",
+            "这条研究线的开拓性，体现在把制备方法与结构—反应性问题联系起来：亲核试剂进攻不同亲电中心时，能形成什么产物，断裂的是硫—氧键还是碳—氧键？这一具体问题推动了后续的试剂与反应方法开发。"
+          ],
+          "meaning": "把应用任务积累的原料转化为基础化学研究对象，并用结构变化提出可以比较的反应问题。",
+          "locator": "传记60–64页",
+          "source_ids": [
+            "HERITAGE-S01"
+          ]
+        },
+        {
+          "id": "record-sulfonate-cleavage",
+          "title": "磺酸酯：研究结构与硫—氧／碳—氧断裂的关系",
+          "paragraphs": [
+            "1982年337–352页论文由陈庆云、朱蓉仙、李宗珍、王珊娣、黄维垣共同署名，研究3-氧杂多氟烷烃磺酸酯的合成及其硫—氧、碳—氧键断裂。另两篇1982年通讯与1983年系列论文，分别研究选定全氟磺酸酯体系的硫—氧断裂；原刊署陈庆云、朱士正。",
+            "这些研究把酯基结构、亲核试剂、介质和产物放在同一问题下比较。不同论文中的结构、编号和条件各有定义：某组底物以碳—氧断裂为主，另一组得到硫—氧断裂产物，构成可具体讨论的选择性反应研究。原作者关于进攻位置的解释，按所研究对象和条件介绍。"
+          ],
+          "meaning": "贡献是建立不同结构和反应条件与断键产物之间的具体联系，为研究含氟磺酸酯的特殊反应性提供原始实验依据。",
+          "locator": "原刊337–352、670–673、1044–1057页；传记63–64页",
+          "source_ids": [
+            "CQ-H07",
+            "CQ-H08",
+            "CQ-H16",
+            "HERITAGE-S01"
+          ]
+        },
+        {
+          "id": "a06-difluorocarbene",
+          "title": "二氟卡宾：从断裂行为发展多种前体",
+          "paragraphs": [
+            "传记记述，陈庆云与朱仕正从二氟甲基磺酸衍生物的断裂行为出发，发展二氟卡宾的产生与应用方法。书中归纳，两人前后开发14种新型二氟卡宾前体，分别适用于酸性、碱性或中性条件，多数能在较温和条件下产生活性二氟卡宾。",
+            "这项工作提供了多种可选择的二氟卡宾发生体系，使活泼中间体能够参与有用的合成反应，也为后来从二氟卡宾化学走向三氟甲基化创造了条件。14种是传记对这一历史阶段工作的归纳。"
+          ],
+          "meaning": "把对特殊反应性的认识转化为可选择的前体和合成方法，是这条研究线的重要方法学贡献。",
+          "locator": "传记64–66页；117页年表",
+          "source_ids": [
+            "HERITAGE-S01"
+          ]
+        }
+      ],
+      "roles": [
+        [
+          "陈庆云与研究组",
+          "把F-53相关原料引入基础研究，推进磺酸衍生物合成、断键反应和新试剂开发。",
+          "传记60–66页"
+        ],
+        [
+          "朱蓉仙、李宗珍、王珊娣、黄维垣",
+          "1982年337–352页论文与陈庆云共同署名；具体实验不按署名顺序另行分配。",
+          "CQ-H07原刊337页"
+        ],
+        [
+          "朱仕正（传记用字）",
+          "传记记述其与陈庆云研究磺酸酯反应和二氟卡宾前体；相关两篇原刊作者字样保存为“朱士正”。",
+          "传记63–66页；CQ-H08、CQ-H16"
+        ],
+        [
+          "黄维垣与陈庆云",
+          "共同撰写全氟磺酸及其衍生物书章，传记记为1991年出版。",
+          "传记64页"
+        ]
+      ],
+      "sources": [
+        {
+          "id": "HERITAGE-S01",
+          "anchor": "a06-source-book",
+          "title": "朱晶、刘超：《氟缘笃志：陈庆云传》",
+          "url": null,
+          "locator": "参考底本60–69、75–77页；相关年表与论著目录按正文所引页码定位"
+        },
+        {
+          "id": "CQ-H07",
+          "anchor": "ref-cq-h07",
+          "title": "全氟和多氟烷基磺酸的研究 IV. 3-氧杂多氟烷烃磺酸酯的合成及其硫-氧和碳-氧键的断裂",
+          "url": "https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/zylzml0174/art/2023/art_af6c81873fd1471a9f3c1957e73d4de9.html",
+          "locator": "《化学学报》1982，40(4)：337–352；337页五位作者；链接为机构书目，正文据已取得原刊"
+        },
+        {
+          "id": "CQ-H08",
+          "anchor": "ref-cq-h08",
+          "title": "全氟和多氟烷基磺酸的研究. 全氟3-氧杂烷烃磺酸酯与亲核试剂反应中的单一的硫-氧键断裂",
+          "url": "https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/zylzml0174/art/2023/art_c7b5650a0a91477594053980bbbb6dd5.html",
+          "locator": "《化学学报》1982，40(7)：670–673；670页作者陈庆云、朱士正及反应式；正文据已取得原刊"
+        },
+        {
+          "id": "CQ-H16",
+          "anchor": "ref-cq-h16",
+          "title": "全氟和多氟烷基磺酸的研究 X. 在亲核取代反应中全氟烷基3-氧杂全氟烷烃磺酸酯的唯一的硫-氧键断裂",
+          "url": "https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/zylzml0174/art/2023/art_bf002a4c386d49cba0c7fa5c65ad231b.html",
+          "locator": "《化学学报》1983，41(11)：1044–1057；1044页题名、作者及底物定义；正文据已取得原刊"
+        },
+        {
+          "id": "CQ-R04",
+          "anchor": "ref-cq-r04",
+          "title": "抑铬雾剂F-53的研制带动了有机氟化学的发展",
+          "url": "https://sioc-journal.cn/Jwk_yjhx/CN/abstract/abstract325798.shtml",
+          "locator": "陈庆云，2001，《有机化学》21(11)：805–809；原作者回顾摘要，联系F-53与后续基础研究"
+        }
+      ],
+      "scope_rows": [
+        [
+          "断键观察",
+          "原文具体底物、条件与产物之间的联系。",
+          "不推广为所有全氟／多氟磺酸酯的统一断键规律。"
+        ],
+        [
+          "14种前体",
+          "传记对历史阶段工作的归纳，前体分别适用于不同条件。",
+          "不改写为每一种前体都在所有酸碱条件下适用。"
+        ],
+        [
+          "贡献归属",
+          "各篇作者表与传记合作角色分别保存。",
+          "不从合著顺序推算个人实验份额。"
+        ]
+      ]
+    },
+    {
+      "route": "topics/chen-reagent/index.html",
+      "title": "A06（磺酸酯、二氟卡宾与三氟甲基化）：陈试剂的发现与方法发展",
+      "intro": "“陈试剂”的代表性贡献，在于把氟磺酰基二氟乙酸甲酯发展为三氟甲基化工具。传记不仅介绍这一成果，也保存了从副产物观察形成新问题、在重复实验中改进条件，以及跨团队发展新前体的过程。",
+      "cards": [
+        {
+          "id": "topic-chen-reagent",
+          "title": "从CF₃H副产物的线索到甲酯的新功能",
+          "paragraphs": [
+            "传记记述，陈庆云与吴生文研究该甲酯作为二氟卡宾源时，注意到副产物氟仿（CF₃H）。这一观察使他们思考，能否利用相关三氟甲基物种与亲电试剂反应，把三氟甲基引入有机分子。这里保存的是原研究者由观察提出问题的发现过程。",
+            "1989年两人共同发表甲酯作为新三氟甲基化试剂的论文。原出版社摘要记载，在CuI存在下，该试剂可使芳基、烯基和烷基卤化物发生三氟甲基化。这项贡献在于开发试剂功能及合成方法，后来形成了广为使用的“陈试剂”名称。"
+          ],
+          "meaning": "把二氟卡宾研究中的副产物线索转化为新的成键方法，连接活性中间体研究与实用含氟试剂开发。",
+          "locator": "传记67–69页；1989原论文705–706页的出版社摘要",
+          "source_ids": [
+            "HERITAGE-S01",
+            "CQ-R05"
+          ]
+        },
+        {
+          "id": "a06-continued-method-development",
+          "title": "杨国英的接续研究：从产率波动到条件与机理问题",
+          "paragraphs": [
+            "在陈庆云与吴生文的工作之后，杨国英继续提高反应产率并研究机理。传记转引她的回忆：重复实验中的产率波动，使团队注意到溶剂及其干燥程度的重要影响；随后又研究了使用铜粉实现三氟甲基化的体系。",
+            "传记及论著目录记载，陈庆云、杨国英、吴生文在1991年合作发表铜电子转移引发甲酯三氟甲基化的工作。CuI体系和铜粉体系按各自条件与原作者解释呈现，不由后来的研究倒推1989年初报已经证明全部反应途径。"
+          ],
+          "meaning": "持续改进方法并把异常结果转化为研究线索，体现试剂发现、可重复性研究和机理探索之间的接续。",
+          "locator": "传记68–69页；133页论著目录",
+          "source_ids": [
+            "HERITAGE-S01"
+          ]
+        },
+        {
+          "id": "a06-tfda-cooperation",
+          "title": "TFDA：与Dolbier合作发展另一种二氟卡宾前体",
+          "paragraphs": [
+            "2000年，陈庆云小组与William R. Dolbier Jr及合作团队发展TFDA三甲基硅酯。该硅酯与甲酯MFSDA是不同化合物。原论文报告在催化量氟离子作用下，TFDA作为二氟卡宾来源用于烯烃的偕二氟环丙烷合成，包括所研究的相对缺电子烯烃。",
+            "传记还记述陈庆云与徐伟、周鼎英、程战领等继续研究二氟卡宾及含氟小环的反应。试剂开发由此成为进一步探索反应性与选择性的基础。跨国团队的共同开发、具体论文署名和后来方法的独立核查，各有对应记录。"
+          ],
+          "meaning": "从前体设计走向活性中间体的应用，扩展可合成的含氟小环对象，并形成跨团队合作的方法研究。",
+          "locator": "传记75–77页；2000 Organic Letters 2：563–564原摘要；2003 Org. Synth.方法",
+          "source_ids": [
+            "HERITAGE-S01",
+            "CQ-R07",
+            "CQ-R08"
+          ]
+        }
+      ],
+      "roles": [
+        [
+          "陈庆云与吴生文",
+          "从甲酯二氟卡宾反应的CF₃H线索发展三氟甲基化；两人为1989年论文共同作者。",
+          "传记67–69页；CQ-R05"
+        ],
+        [
+          "杨国英",
+          "接续研究溶剂、干燥程度和产率波动，并参与铜粉体系及电子转移途径研究。",
+          "传记68–69、133页"
+        ],
+        [
+          "William R. Dolbier Jr与跨国合作团队",
+          "与陈庆云小组共同发展TFDA；2000论文完整七位作者按原文列示，不据此逐人分配实验任务。",
+          "CQ-R07；传记75–76页"
+        ],
+        [
+          "徐伟、周鼎英、程战领等",
+          "传记明确关联二氟卡宾和含氟小环研究；各项具体反应仍按对应论文归属。",
+          "传记77页"
+        ],
+        [
+          "两篇Organic Syntheses方法的提交者与核查者",
+          "分别开发／提交和核查所载具体方法；这些为原刊历史角色。",
+          "CQ-R08、CQ-H18"
+        ]
+      ],
+      "method_rows": [
+        [
+          "2003：TFDA硅酯／二氟卡宾",
+          "TFDA制备及正丁基偕二氟环丙烷羧酸酯实例",
+          "W. R. Dolbier Jr、F. Tian、J.-X. Duan、Q.-Y. Chen",
+          "Victoria D. Bock、David P. Richardson、Steven Wolff",
+          "Org. Synth. 80：172–176（CQ-R08）"
+        ],
+        [
+          "2010：MFSDA甲酯／三氟甲基化",
+          "甾体分子的三氟甲基化方法",
+          "Xiang-Shu Fei、Wei-Sheng Tian、Kai Ding、Yun Wang、Qing-Yun Chen",
+          "Takayuki Yamakawa、Tohru Fukuyama",
+          "Org. Synth. 87：126–136（CQ-H18）"
+        ]
+      ],
+      "sources": [
+        {
+          "id": "HERITAGE-S01",
+          "anchor": "a06-source-book",
+          "title": "朱晶、刘超：《氟缘笃志：陈庆云传》",
+          "url": null,
+          "locator": "参考底本60–69、75–77页；相关年表与论著目录按正文所引页码定位"
+        },
+        {
+          "id": "CQ-R05",
+          "anchor": "ref-cq-r05",
+          "title": "Methyl fluorosulphonyldifluoroacetate; a new trifluoromethylating agent",
+          "url": "https://pubs.rsc.org/en/content/articlelanding/1989/c3/c39890000705",
+          "locator": "Chen、Wu，1989，J. Chem. Soc., Chem. Commun.：705–706；此处引用出版社题录与原作者摘要"
+        },
+        {
+          "id": "CQ-R07",
+          "anchor": "ref-cq-r07",
+          "title": "A Novel and Highly Efficient Synthesis of gem-Difluorocyclopropanes",
+          "url": "https://pubs.acs.org/doi/10.1021/ol0055622",
+          "locator": "Tian、Kruger、Bautista、Duan、Li、Dolbier、Chen，2000，Organic Letters 2：563–564；TFDA原摘要及作者信息"
+        },
+        {
+          "id": "CQ-R08",
+          "anchor": "ref-cq-r08",
+          "title": "Preparation and Use of a New Difluorocarbene Reagent. Trimethylsilyl 2-Fluorosulfonyl-2,2-difluoroacetate: n-Butyl 2,2-Difluorocyclopropanecarboxylate",
+          "url": "https://orgsyn.org/demo.aspx?prep=v80p0172",
+          "locator": "Organic Syntheses 2003，80：172–176；硅酯／二氟卡宾方法及Submitted by、Checked by；沿用既有方法核读登记"
+        },
+        {
+          "id": "CQ-H18",
+          "anchor": "ref-cq-h18",
+          "title": "New, Convenient Route for Trifluoromethylation of Steroidal Molecules",
+          "url": "https://orgsyn.org/demo.aspx?prep=v87p0126",
+          "locator": "Organic Syntheses 2010，87：126–136；甲酯／甾体三氟甲基化及Submitted by、Checked by；沿用既有方法核读登记"
+        },
+        {
+          "id": "CQ-R13",
+          "anchor": "ref-cq-r13",
+          "title": "陈试剂的可见光自由基二氟烷基化新用途",
+          "url": "https://pubs.acs.org/doi/10.1021/acs.orglett.6b02580",
+          "locator": "保留原专题后续研究索引；具体用途、评价或理论研究归该文原作者，不作为本轮平台新成果"
+        },
+        {
+          "id": "CQ-R14",
+          "anchor": "ref-cq-r14",
+          "title": "爱尔兰研究者对MFSDA用途的专题评述",
+          "url": "https://research.ucc.ie/en/publications/methyl-fluorosulfonyldifluoroacetate-mfsda-an-underutilised-reage/",
+          "locator": "保留原专题后续研究索引；具体用途、评价或理论研究归该文原作者，不作为本轮平台新成果"
+        },
+        {
+          "id": "CQ-R21",
+          "anchor": "ref-cq-r21",
+          "title": "陈试剂形成三氟甲基源的机理计算",
+          "url": "https://sioc-journal.cn/Jwk_hxxb/EN/10.6023/A23090434",
+          "locator": "保留原专题后续研究索引；具体用途、评价或理论研究归该文原作者，不作为本轮平台新成果"
+        },
+        {
+          "id": "CQ-R22",
+          "anchor": "ref-cq-r22",
+          "title": "辉瑞研究者对含氟脯氨酸片段的工艺开发",
+          "url": "https://pubs.acs.org/doi/10.1021/acs.oprd.3c00493",
+          "locator": "保留原专题后续研究索引；具体用途、评价或理论研究归该文原作者，不作为本轮平台新成果"
+        },
+        {
+          "id": "CQ-R23",
+          "anchor": "ref-cq-r23",
+          "title": "韩国团队在核苷糖环合成中使用陈试剂",
+          "url": "https://snu.elsevierpure.com/en/publications/trifluoromethylation-on-a-nucleoside-sugar-scaffold-design-and-sy-2/",
+          "locator": "保留原专题后续研究索引；具体用途、评价或理论研究归该文原作者，不作为本轮平台新成果"
+        },
+        {
+          "id": "CQ-R24",
+          "anchor": "ref-cq-r24",
+          "title": "同名化学实体用于锂金属电池电解液添加剂",
+          "url": "https://publikationen.bibliothek.kit.edu/1000197061",
+          "locator": "保留原专题后续研究索引；具体用途、评价或理论研究归该文原作者，不作为本轮平台新成果"
+        }
+      ],
+      "scope_rows": [
+        [
+          "MFSDA甲酯",
+          "FSO₂CF₂CO₂Me；“陈试剂”所指甲酯。",
+          "试剂功能开发不同于宣称首次合成该分子。"
+        ],
+        [
+          "TFDA硅酯",
+          "FSO₂CF₂CO₂SiMe₃；二氟卡宾前体。",
+          "与甲酯、酸型及金属盐分别介绍。"
+        ],
+        [
+          "原刊方法核查",
+          "2003与2010分别记载所核方法的提交者、核查者。",
+          "不写成本平台新获专业签认或新做实验。"
+        ],
+        [
+          "反应机理研究",
+          "CuI与铜粉体系、后续理论工作按对象和作者分别归属。",
+          "不从冠名或若干方法推定统一机理已证实。"
+        ]
+      ]
+    }
+  ]
+}

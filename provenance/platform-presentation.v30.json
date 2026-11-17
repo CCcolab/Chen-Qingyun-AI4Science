@@ -1,0 +1,591 @@
+{
+  "schema_version": "30.0",
+  "presentation_id": "PLATFORM-A06-BIOGRAPHY-20261117-v30",
+  "created_at_utc": "2026-11-17T00:39:42.291841+00:00",
+  "publication_kind": "platform_a06_biography_narrative",
+  "authorization": "User-authorized A06 biography-led historical contributions, Chen reagent, sulfonates, difluorocarbene, trifluoromethylation and collaboration presentation. Verify only new citations; retain original evidence and data, local unresolved tracking, separate prior research attribution and M0 pause.",
+  "previous_presentation_commit": "304ffb1126bee12f041199e3600f2b228c11761e",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v29.json",
+    "sha256": "2206e301c22181e3e1a0d5bcce619dd590b4eca3d2968faee6cfbf9a08ed29b7"
+  },
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "allowed_html_paths": [
+    "research/index.html",
+    "topics/perfluorosulfonates/index.html",
+    "topics/chen-reagent/index.html"
+  ],
+  "added_html_paths": [],
+  "additions": [],
+  "allowed_display_regions": {
+    "research/index.html": [
+      "ai-a06"
+    ],
+    "topics/perfluorosulfonates/index.html": [
+      "main.contents"
+    ],
+    "topics/chen-reagent/index.html": [
+      "main.contents"
+    ]
+  },
+  "allowed_ai_json_pointers": [
+    "/lines/5/question",
+    "/lines/5/ai_role",
+    "/lines/5/records",
+    "/lines/5/boundaries",
+    "/lines/5/next_step",
+    "/lines/5/future_question",
+    "/lines/5/source_links/0/title",
+    "/lines/5/source_links/1/title",
+    "/lines/5/source_links/2/title",
+    "/lines/5/boundary_title",
+    "/lines/5/next_step_title"
+  ],
+  "allowed_new_files": [
+    "content/a06-biography-narrative.v1.json",
+    "scripts/render_a06_biography.py",
+    "docs/A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+    "scripts/a06_biography_publication.py",
+    "provenance/platform-presentation.v30.json"
+  ],
+  "editorial_documents": [
+    {
+      "path": "content/ai-research-section.v1.json",
+      "sha256": "ea127aac6fc88c83b270f7654fab8764b2b9487bff5d58767ff52be7bc6fec04",
+      "bytes": 101990
+    },
+    {
+      "path": "scripts/render_ai_research.py",
+      "sha256": "4293b6cd39150c9e77a6b3c02591c34e83b5d86ecdec675ca9253578af0e2552",
+      "bytes": 40735
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "sha256": "c4ed1a19320c975054a2098d993270dcdd40283ad5ca3642dbb348e675af4162",
+      "bytes": 60625
+    },
+    {
+      "path": "content/a06-biography-narrative.v1.json",
+      "sha256": "002acd76b0953e00fa034b7f0d840dca957c8b692f113999454f56b4ef6bc96a",
+      "bytes": 18948
+    },
+    {
+      "path": "scripts/render_a06_biography.py",
+      "sha256": "b62797c827f8f9d175a5dab67850aa41105e0af7258913878b2bc041a3b3e92b",
+      "bytes": 11428
+    },
+    {
+      "path": "docs/A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "sha256": "1eebc0dbec9fcbe553edbea5ac70c52a685d27661b7e423c16e21e81aa45f288",
+      "bytes": 14564
+    },
+    {
+      "path": "scripts/a05_biography_publication.py",
+      "sha256": "05bb55febc2cb62c07d5dbccba7ac61fc98bd459dc01e5846cf2869ee332506e",
+      "bytes": 24725
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "sha256": "2391673784464cc1b7a7871fd63040953a4ec4ee4f5b3b95b928877dc312176a",
+      "bytes": 310881
+    },
+    {
+      "path": "scripts/render_heritage.py",
+      "sha256": "a24ec93747eae81cd6b6c5c63563a920b2a02952eccb1a48451ebf86633047bc",
+      "bytes": 43899
+    },
+    {
+      "path": "scripts/a06_biography_publication.py",
+      "sha256": "20449e28fc911c83275ce438113acdb58222397dce575afe39245e5627c4f285",
+      "bytes": 26473
+    }
+  ],
+  "protected_website_members": {
+    "index.html": {
+      "sha256": "8b3532ee45c0fb33912f20a3bd7943043a348f10a370b9c6716e9edf3c0abf41",
+      "bytes": 257766
+    },
+    "topics/single-electron-transfer/index.html": {
+      "sha256": "79c84f89e25e576a03f34153b9eb85a5ff73815c8265a0222930d889390ea947",
+      "bytes": 10355
+    },
+    "topics/fluoroporphyrins/index.html": {
+      "sha256": "24b6bb744b594573487847c89bbb35571ea56bc15d444ebeac3339379dbc1875",
+      "bytes": 6018
+    },
+    "topics/fluorinated-small-rings/index.html": {
+      "sha256": "2413c83d4319746f41e940c04fe48bdeda28244235f5a9e8697285c187ba412d",
+      "bytes": 5924
+    },
+    "topics/deoxyfluorination/index.html": {
+      "sha256": "2aca9c13eb46f9fedfb02a2adfdc9423c207465f58608bcd671838d4d8045df5",
+      "bytes": 5550
+    },
+    "topics/sulfonyl-fluoride/index.html": {
+      "sha256": "fe944efbbfa5a7814015235f4ae3aae101db4046b0c9419986d6855d7ed15b49",
+      "bytes": 5043
+    },
+    "topics/index.html": {
+      "sha256": "44a5690d1e65195b9ff191d2a7ec37487070cdfafb191ae107962d5e0d7ab73c",
+      "bytes": 5055
+    },
+    "achievements/index.html": {
+      "sha256": "df20daf429c46e89e99085550067e8c1e9f7e283b10b7e8269f38da6a9d380ff",
+      "bytes": 95867
+    },
+    "data/public-sources.json": {
+      "sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+      "bytes": 33608
+    },
+    "data/achievement-lines.json": {
+      "sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+      "bytes": 39768
+    },
+    "README.txt": {
+      "sha256": "6e15068b7240ae47d633df3f777e81fbb9e46146ee5f4ab70011f09119b6bbc9",
+      "bytes": 336
+    },
+    "ROUTES.txt": {
+      "sha256": "a734c356877d4534285ab7d71b9fe0f7a17abbced4de3c52f8e60d335301e418",
+      "bytes": 949
+    },
+    "QA.txt": {
+      "sha256": "a60b5f382b31689fa17e2518b7079ef0660674fb62bddbbf564c7b74dfe51067",
+      "bytes": 290
+    },
+    "IONIC-ENTRY-RETEST.txt": {
+      "sha256": "3462b056891a27c335cc2620deb87b245b6c9aea3bdaec607c8a14beca69fe9d",
+      "bytes": 741
+    },
+    "topics/early-fluoroketones/index.html": {
+      "sha256": "eeffdcd82cca6ae6549db9d21b7059ac4c9db94cdc60337ffc3a6a75ae06af88",
+      "bytes": 257826
+    },
+    "topics/fluoromonomers/index.html": {
+      "sha256": "ff79d077f5b74b8580ef06ac5e7c4c622b98c4f562daf9f75ae530e6f9ba199b",
+      "bytes": 18224
+    },
+    "pftb/index.html": {
+      "sha256": "b2dd711fcb504b676c3d04f2c42876c2a36ae8f616c0b48b8530aed53822c3b5",
+      "bytes": 101043
+    },
+    "topics/f53/index.html": {
+      "sha256": "d6b1dc495768583ef4657f8b1e542649c681ee1dd641e739f74003498a92a85b",
+      "bytes": 16656
+    },
+    "topics/refrigerants/index.html": {
+      "sha256": "ee04418185a648f2272fb46ac38c9f9ddeee1abcb72cbb35b514cce5f765da34",
+      "bytes": 18076
+    }
+  },
+  "reconstruction_kind": "deduplicated_exact_utf8_text_edits",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "M0_resumed": false,
+  "historical_achievement_independent_of_AI_review": true,
+  "new_quantum_calls": 0,
+  "new_model_API_calls": 0,
+  "changes": [
+    {
+      "path": "research/index.html",
+      "old_sha256": "58b2ef46e8535e5a767abe6c2904b102de4c77d11f1b693b6eb220c85d61b001",
+      "old_bytes": 80919,
+      "new_sha256": "318c4168c0e8dbc525105b24230a827ac8ef7b6c4cfa2ae7e77182efd0a43c89",
+      "new_bytes": 81673,
+      "reason": "Biography-led historical A06 contributions and attributed collaboration, with original route shell, stable identities, Chen reagent naming and identity evidence, prior research and scientific data retained."
+    },
+    {
+      "path": "topics/perfluorosulfonates/index.html",
+      "old_sha256": "85a6f4330edb7607f61ca217b71d2ef6c12cb1af0d48aaaebf737acf3a212ea5",
+      "old_bytes": 8888,
+      "new_sha256": "ffc195bfdd3c262e19327b298cfd079ac721b4b81f357ea5e4313b156f579210",
+      "new_bytes": 12206,
+      "reason": "Biography-led historical A06 contributions and attributed collaboration, with original route shell, stable identities, Chen reagent naming and identity evidence, prior research and scientific data retained."
+    },
+    {
+      "path": "topics/chen-reagent/index.html",
+      "old_sha256": "14f08afd4062c0ae171f24e5fb225e5968b003e885edc206baf08ca352b630df",
+      "old_bytes": 19991,
+      "new_sha256": "a9cf50685f6732a8baa260899cee7e62986eb5440da1f8b98a7adb79295b03ef",
+      "new_bytes": 23434,
+      "reason": "Biography-led historical A06 contributions and attributed collaboration, with original route shell, stable identities, Chen reagent naming and identity evidence, prior research and scientific data retained."
+    }
+  ],
+  "reversible_text_files": [
+    {
+      "path": "site/topics/perfluorosulfonates/index.html",
+      "old_sha256": "85a6f4330edb7607f61ca217b71d2ef6c12cb1af0d48aaaebf737acf3a212ea5",
+      "old_bytes": 8888,
+      "new_sha256": "ffc195bfdd3c262e19327b298cfd079ac721b4b81f357ea5e4313b156f579210",
+      "new_bytes": 12206,
+      "edits": [
+        {
+          "old_offset": 2379,
+          "replacement": 0
+        }
+      ]
+    },
+    {
+      "path": "site/topics/chen-reagent/index.html",
+      "old_sha256": "14f08afd4062c0ae171f24e5fb225e5968b003e885edc206baf08ca352b630df",
+      "old_bytes": 19991,
+      "new_sha256": "a9cf50685f6732a8baa260899cee7e62986eb5440da1f8b98a7adb79295b03ef",
+      "new_bytes": 23434,
+      "edits": [
+        {
+          "old_offset": 7218,
+          "replacement": 1
+        },
+        {
+          "old_offset": 16478,
+          "replacement": 2
+        },
+        {
+          "old_offset": 19869,
+          "replacement": 3
+        }
+      ]
+    },
+    {
+      "path": "content/ai-research-section.v1.json",
+      "old_sha256": "51277efbd1a3e04452839a726192215250d9f383bf0ab37f0717039602d5c250",
+      "old_bytes": 100648,
+      "new_sha256": "ea127aac6fc88c83b270f7654fab8764b2b9487bff5d58767ff52be7bc6fec04",
+      "new_bytes": 101990,
+      "edits": [
+        {
+          "old_offset": 76797,
+          "replacement": 4
+        },
+        {
+          "old_offset": 77115,
+          "replacement": 5
+        },
+        {
+          "old_offset": 78152,
+          "replacement": 6
+        },
+        {
+          "old_offset": 78341,
+          "replacement": 7
+        },
+        {
+          "old_offset": 78422,
+          "replacement": 8
+        },
+        {
+          "old_offset": 78614,
+          "replacement": 9
+        },
+        {
+          "old_offset": 78986,
+          "replacement": 10
+        },
+        {
+          "old_offset": 79162,
+          "replacement": 11
+        },
+        {
+          "old_offset": 79328,
+          "replacement": 12
+        },
+        {
+          "old_offset": 84563,
+          "replacement": 13
+        }
+      ]
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "old_sha256": "98577da04c5f02afb729cfed4768310075267750b5ab0e45fb5aeb4871095453",
+      "old_bytes": 59939,
+      "new_sha256": "c4ed1a19320c975054a2098d993270dcdd40283ad5ca3642dbb348e675af4162",
+      "new_bytes": 60625,
+      "edits": [
+        {
+          "old_offset": 41758,
+          "replacement": 14
+        },
+        {
+          "old_offset": 41865,
+          "replacement": 15
+        },
+        {
+          "old_offset": 42053,
+          "replacement": 16
+        },
+        {
+          "old_offset": 43007,
+          "replacement": 17
+        },
+        {
+          "old_offset": 44255,
+          "replacement": 18
+        },
+        {
+          "old_offset": 44280,
+          "replacement": 19
+        },
+        {
+          "old_offset": 44437,
+          "replacement": 20
+        },
+        {
+          "old_offset": 44661,
+          "replacement": 21
+        },
+        {
+          "old_offset": 47181,
+          "replacement": 22
+        }
+      ]
+    },
+    {
+      "path": "site/research/index.html",
+      "old_sha256": "58b2ef46e8535e5a767abe6c2904b102de4c77d11f1b693b6eb220c85d61b001",
+      "old_bytes": 80919,
+      "new_sha256": "318c4168c0e8dbc525105b24230a827ac8ef7b6c4cfa2ae7e77182efd0a43c89",
+      "new_bytes": 81673,
+      "edits": [
+        {
+          "old_offset": 58632,
+          "replacement": 23
+        }
+      ]
+    },
+    {
+      "path": "scripts/a05_biography_publication.py",
+      "old_sha256": "58ee54c2e1e6a7ddc50eabb4e99b1a8068626b98a24c66b60c88e24fd8319756",
+      "old_bytes": 24062,
+      "new_sha256": "05bb55febc2cb62c07d5dbccba7ac61fc98bd459dc01e5846cf2869ee332506e",
+      "new_bytes": 24725,
+      "edits": [
+        {
+          "old_offset": 210,
+          "replacement": 24
+        },
+        {
+          "old_offset": 11065,
+          "replacement": 25
+        },
+        {
+          "old_offset": 11250,
+          "replacement": 25
+        },
+        {
+          "old_offset": 14697,
+          "replacement": 25
+        },
+        {
+          "old_offset": 14994,
+          "replacement": 26
+        },
+        {
+          "old_offset": 15235,
+          "replacement": 25
+        },
+        {
+          "old_offset": 15425,
+          "replacement": 25
+        },
+        {
+          "old_offset": 18612,
+          "replacement": 25
+        },
+        {
+          "old_offset": 19085,
+          "replacement": 25
+        },
+        {
+          "old_offset": 19284,
+          "replacement": 27
+        },
+        {
+          "old_offset": 20220,
+          "replacement": 28
+        },
+        {
+          "old_offset": 22604,
+          "replacement": 29
+        },
+        {
+          "old_offset": 22826,
+          "replacement": 30
+        },
+        {
+          "old_offset": 23970,
+          "replacement": 31
+        }
+      ]
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "old_sha256": "f24be4bd8c13df513b762f3d0cdd657343d6161af09ee8650ac986c5156e5ef4",
+      "old_bytes": 310651,
+      "new_sha256": "2391673784464cc1b7a7871fd63040953a4ec4ee4f5b3b95b928877dc312176a",
+      "new_bytes": 310881,
+      "edits": [
+        {
+          "old_offset": 96041,
+          "replacement": 32
+        }
+      ]
+    },
+    {
+      "path": "scripts/render_heritage.py",
+      "old_sha256": "ad5acef15a792d58fbaf9ad995564b455257c84b2e53e31ce2eb7e0520a7134d",
+      "old_bytes": 43429,
+      "new_sha256": "a24ec93747eae81cd6b6c5c63563a920b2a02952eccb1a48451ebf86633047bc",
+      "new_bytes": 43899,
+      "edits": [
+        {
+          "old_offset": 32459,
+          "replacement": 33
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "article id=\"topic-perfluorosulfonates\" data-topic-slug=\"perfluorosulfonates\" data-topic-type=\"topic\"><span class=\"status\">审阅稿 · 原作者回顾摘要</span><h2>研究问题：反应发生在什么键上？</h2><p><strong>全氟或多氟磺酸酯的 S–O、C–O 断裂。</strong>依据作者回顾摘要，具体底物、产物和范围仍需回到原始论文。</p><p>讨论全氟磺酸及其酯的反应，必须先说明具体底物、试剂和条件。陈庆云 2001 年的回顾以 F-53 研制为背景，概述了全氟或多氟磺酸酯在亲核试剂作用下的键断裂研究，并涉及 S–O 与 C–O 两类断裂问题。</p><h2>可确认的贡献：作者对问题的回顾</h2><p>这一摘要把工业研究背景与基础反应问题并置，表明原作者将有关磺酸酯反应纳入其研究脉络。这里的依据是作者回顾的摘要，而不是本站对每一原始实验条件、产物及机制的完整复核。观察到的产物、作者对断键路径的解释和后续验证应分别记录。</p><p>依据：<a href=\"../../index.html#source-cq-r04\">CQ-R04</a>（作者回顾摘要）。</p><h2>证据边界与下一步</h2><p>不同结构、亲核试剂和条件下不能预设相同断裂方式；摘要中的概括也不能推广到所有全氟磺酸及其酯。应从回顾的引文追溯原始论文，核对底物、产物、条件及用于区分 S–O 或 C–O 断裂的证据。</p><div class=\"evidence\" id=\"refs\"><h2>来源与定位</h2><ul><li id=\"ref-cq-r04\"><a href=\"https://sioc-journal.cn/Jwk_yjhx/CN/abstract/abstract325798.shtml\" target=\"_blank\" rel=\"noopener noreferrer\">CQ-R04｜陈庆云，2001，《有机化学》21(11), 805–809</a>：中英文摘要与引用此文；原作者回顾摘要，相关原始论文仍须逐项核校。</li></ul></div><a class=\"top\" href=\"../index.html\">返回专题索引 ↑</a></article><article id=\"record-sulfonate-cleavage\"><span class=\"status\">A06（磺酸酯、二氟卡宾与三氟甲基化） · 反应对照</span><h2>两种断裂位置如何区分</h2><p><strong>1982 年观察：</strong>40(4):337–352 的馆藏摘要显示，多种所测 3-氧杂多氟磺酸酯以 C–O 断裂为主；40(7):670–673 另记录特定全氟 3-氧杂烷烃磺酸酯与亲核试剂反应中的 S–O 断裂。〔<a href=\"../../index.html#source-cq-h07\">CQ-H07</a>、<a href=\"../../index.html#source-cq-h08\">CQ-H08</a>〕</p><p><strong>1983 年观察与解释：</strong>陈庆云、朱士正 41(11):1044–1057 报告另一组底物，所试亲核反应得到 S–O 断裂产物；关于进攻位置的解释限于作者提出的条件与结构。〔<a href=\"../../index.html#source-cq-h16\">CQ-H16</a>〕</p><p>这些是不同对象的比较，馆藏摘要不代替逐项阅读全文；不推及所有同类底物和条件。</p></article>\n<!-- HERITAGE_CONTEXT_BEGIN -->\n<style id=\"heritage-context-style\">\n/* Existing-page historical cards; no viewport-width layout. */\n.heritage-section{max-width:100%;min-width:0;margin:2rem auto;overflow-wrap:anywhere}\n.heritage-section>h2{font-size:clamp(28px,3.4vw,40px);margin:.3em 0 .6em}\n.heritage-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;max-width:100%;min-width:0}\n.heritage-card{min-width:0;max-width:100%;padding:1.1rem;border:1px solid #d9e2df;border-radius:14px;background:var(--card,#fff);overflow-wrap:anywhere}\n.heritage-card h3,.heritage-card h4{margin:.15rem 0 .65rem;line-height:1.45}\n.heritage-achievement-notes h5{font-size:1em;margin:.9rem 0 .3rem;line-height:1.5}\n.heritage-achievement-notes{border-top:1px solid #d9e2df;margin-top:1rem;padding-top:.6rem}\n.heritage-card p{margin:.5rem 0;line-height:1.8}\n.heritage-card ul{padding-left:1.3rem;margin:.55rem 0}\n.heritage-card li{margin:.4rem 0;line-height:1.7}\n.heritage-meta,.heritage-locator{font-size:.9em;color:#526560;line-height:1.75}\n.heritage-refs{font-size:.85em;white-space:normal;overflow-wrap:anywhere}\n.heritage-refs a{display:inline-block;margin-right:.25em}\n.heritage-tag{display:inline-block;border:1px solid #c4d6ce;border-radius:6px;padding:.08rem .4rem;margin:.1rem .25rem .1rem 0;font-size:.8em;color:#34574b}\n.heritage-section details{margin:.8rem 0;min-width:0;max-width:100%}\n.heritage-section summary{cursor:pointer;font-weight:600;line-height:1.7}\n.heritage-boundary{border-left:3px solid #6e8d7d;padding:.65rem .9rem;background:#f4f7f5;line-height:1.8}\n@media(max-width:720px){.heritage-grid{grid-template-columns:minmax(0,1fr)}.heritage-card{padding:.9rem}}\n\n</style>\n<section id=\"heritage-context\" class=\"heritage-section\"><h2>成果与合作</h2><p>以下按A06（磺酸酯、二氟卡宾与三氟甲基化）成果线呈现传记与公开资料中的历史记录，保留参与者、来源定位及待核事项；平台AI辅助研究另行登记。</p><div class=\"heritage-grid\"><article class=\"heritage-card\"><h3>以具体断键问题推动研究</h3><p>传记将朱蓉仙、李宗珍、朱仕正等合作者与磺酸酯研究分别联系起来：结构、亲核试剂和条件不同，硫—氧与碳—氧断裂的判断也须各有证据。这些问题又接续到二氟卡宾前体与三氟甲基化研究。</p><p class=\"heritage-locator\">出处定位：传记p63–66及论文、学位论文脚注；1982/1983馆方题录 <span class=\"heritage-refs\"><a href=\"../../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../../index.html#source-cq-h07\" title=\"全氟和多氟烷基磺酸的研究 IV. 3-氧杂多氟烷烃磺酸酯的合成及其硫-氧和碳-氧键的断裂\">[CQ-H07]</a> <a href=\"../../index.html#source-cq-h08\" title=\"全氟和多氟烷基磺酸的研究. 全氟3-氧杂烷烃磺酸酯与亲核试剂反应中的单一的硫-氧键断裂\">[CQ-H08]</a> <a href=\"../../index.html#source-cq-h16\" title=\"全氟和多氟烷基磺酸酯的研究 X. 在亲核取代反应中全氟烷基3-氧杂全氟烷烃磺酸酯的唯一的硫-氧键断裂\">[CQ-H16]</a></span></p><p class=\"heritage-meta\">待核事项：原刊结构与逐例判据、朱仕正／朱士正字形待核。</p></article></div><p><a href=\"../../achievements/index.html#heritage-line-a06\">查看本成果线的资料</a> · <a href=\"../../achievements/index.html#heritage-stories-all\">查看全部合作与育人故事</a></p></section>\n<!-- HERITAGE_CONTEXT_END -->\n",
+      "new": "!-- HERITAGE_CONTEXT_BEGIN -->\n<!-- A06_BIOGRAPHY_HISTORY:BEGIN -->\n<style id=\"heritage-context-style\">.a06-meaning{border-left:3px solid #aa7545;padding:10px 16px;background:#f7f4eb}.a06-locator{font-size:.86rem;color:var(--muted)}.a06-nav{display:flex;flex-wrap:wrap;gap:8px 18px}.a06-table{overflow-x:auto;max-width:100%;margin:20px 0;border:1px solid var(--line)}.a06-table table{border-collapse:collapse;min-width:640px;width:100%;font-size:.92rem}.a06-table caption{text-align:left;padding:14px;background:#edf3ee;color:var(--accent);font-weight:700}.a06-table th,.a06-table td{border-top:1px solid var(--line);padding:12px;text-align:left;vertical-align:top}.a06-table:focus-visible{outline:3px solid #aa7545}#refs{overflow-wrap:anywhere}.a06-legacy{margin:22px 0}.a06-legacy summary{cursor:pointer;font-weight:600;padding:16px;border:1px solid var(--line)}</style>\n<article id=\"topic-perfluorosulfonates\" data-topic-slug=\"perfluorosulfonates\" data-topic-type=\"topic\"><span class=\"status\">历史成果与合作</span><h2>A06（磺酸酯、二氟卡宾与三氟甲基化）：从工业原料进入基础研究</h2>\n<p>F-53研制形成的原料与中间体，成为陈庆云小组持续开展基础研究的起点。《氟缘笃志：陈庆云传》记述，研究从含氟磺酸衍生物的结构和断键方式，逐步走向二氟卡宾前体，再与三氟甲基化试剂的开发相联系。这里首先介绍磺酸酯与二氟卡宾两段历史；甲酯“陈试剂”的发现另设专题。</p><nav class=\"a06-nav\" aria-label=\"A06（磺酸酯、二氟卡宾与三氟甲基化）成果专题\"><a href=\"../perfluorosulfonates/index.html\">磺酸酯与二氟卡宾</a><a href=\"../chen-reagent/index.html\">陈试剂与三氟甲基化</a><a href=\"#heritage-context\">合作分工</a><a href=\"../../research/index.html#ai-a06\">AI资料整理</a><a href=\"#refs\">参考资料</a></nav>\n<p>陈庆云团队从F-53相关的含氟原料出发，发展多氟烷基醚磺酰氟及相应磺酸衍生物的合成路线。不同碳链与酯基结构的化合物，使研究者能够系统比较它们与亲核试剂的反应。工业研制由此提供了持续探索新化学对象的条件。</p>\n<p>这条研究线的开拓性，体现在把制备方法与结构—反应性问题联系起来：亲核试剂进攻不同亲电中心时，能形成什么产物，断裂的是硫—氧键还是碳—氧键？这一具体问题推动了后续的试剂与反应方法开发。</p>\n<p class=\"a06-meaning\"><b>学术意义：</b>把应用任务积累的原料转化为基础化学研究对象，并用结构变化提出可以比较的反应问题。</p><p class=\"a06-locator\">传记60–64页 · <a href=\"#a06-source-book\">HERITAGE-S01</a></p></article>\n<article id=\"record-sulfonate-cleavage\"><span class=\"status\">历史成果与合作</span><h2>磺酸酯：研究结构与硫—氧／碳—氧断裂的关系</h2>\n<p>1982年337–352页论文由陈庆云、朱蓉仙、李宗珍、王珊娣、黄维垣共同署名，研究3-氧杂多氟烷烃磺酸酯的合成及其硫—氧、碳—氧键断裂。另两篇1982年通讯与1983年系列论文，分别研究选定全氟磺酸酯体系的硫—氧断裂；原刊署陈庆云、朱士正。</p>\n<p>这些研究把酯基结构、亲核试剂、介质和产物放在同一问题下比较。不同论文中的结构、编号和条件各有定义：某组底物以碳—氧断裂为主，另一组得到硫—氧断裂产物，构成可具体讨论的选择性反应研究。原作者关于进攻位置的解释，按所研究对象和条件介绍。</p>\n<p class=\"a06-meaning\"><b>学术意义：</b>贡献是建立不同结构和反应条件与断键产物之间的具体联系，为研究含氟磺酸酯的特殊反应性提供原始实验依据。</p><p class=\"a06-locator\">原刊337–352、670–673、1044–1057页；传记63–64页 · <a href=\"#ref-cq-h07\">CQ-H07</a> · <a href=\"#ref-cq-h08\">CQ-H08</a> · <a href=\"#ref-cq-h16\">CQ-H16</a> · <a href=\"#a06-source-book\">HERITAGE-S01</a></p></article>\n<article id=\"a06-difluorocarbene\"><span class=\"status\">历史成果与合作</span><h2>二氟卡宾：从断裂行为发展多种前体</h2>\n<p>传记记述，陈庆云与朱仕正从二氟甲基磺酸衍生物的断裂行为出发，发展二氟卡宾的产生与应用方法。书中归纳，两人前后开发14种新型二氟卡宾前体，分别适用于酸性、碱性或中性条件，多数能在较温和条件下产生活性二氟卡宾。</p>\n<p>这项工作提供了多种可选择的二氟卡宾发生体系，使活泼中间体能够参与有用的合成反应，也为后来从二氟卡宾化学走向三氟甲基化创造了条件。14种是传记对这一历史阶段工作的归纳。</p>\n<p class=\"a06-meaning\"><b>学术意义：</b>把对特殊反应性的认识转化为可选择的前体和合成方法，是这条研究线的重要方法学贡献。</p><p class=\"a06-locator\">传记64–66页；117页年表 · <a href=\"#a06-source-book\">HERITAGE-S01</a></p></article>\n<article id=\"heritage-context\"><h2>合作与学术接续</h2>\n<div class=\"a06-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a06-cooperation-caption\"><table><caption id=\"a06-cooperation-caption\">按传记及原文分别介绍合作角色</caption><thead><tr><th scope=\"col\">人物或团队</th><th scope=\"col\">具体工作与角色</th><th scope=\"col\">出处</th></tr></thead><tbody><tr><th scope=\"row\">陈庆云与研究组</th><td>把F-53相关原料引入基础研究，推进磺酸衍生物合成、断键反应和新试剂开发。</td><td>传记60–66页</td></tr><tr><th scope=\"row\">朱蓉仙、李宗珍、王珊娣、黄维垣</th><td>1982年337–352页论文与陈庆云共同署名；具体实验不按署名顺序另行分配。</td><td>CQ-H07原刊337页</td></tr><tr><th scope=\"row\">朱仕正（传记用字）</th><td>传记记述其与陈庆云研究磺酸酯反应和二氟卡宾前体；相关两篇原刊作者字样保存为“朱士正”。</td><td>传记63–66页；CQ-H08、CQ-H16</td></tr><tr><th scope=\"row\">黄维垣与陈庆云</th><td>共同撰写全氟磺酸及其衍生物书章，传记记为1991年出版。</td><td>传记64页</td></tr></tbody></table></div>\n</article>\n<article id=\"a06-ai-collation\"><h2>平台的AI辅助资料整理</h2><p>历史成果归原研究者及合作团队。平台本轮完成传记与文献关联、试剂身份和合作角色整理，以及新增引用的出处核对；具体对照放在下一层AI资料页。资料整理不是实验复现、谱图重新鉴定或机理验证，保持review_required、release_eligible=false；M0继续暂停。</p><p><a href=\"../../research/index.html#ai-a06\">A06（磺酸酯、二氟卡宾与三氟甲基化）的AI研究资料 →</a></p></article>\n<article id=\"refs\"><h2>参考资料</h2><ul>\n<li id=\"a06-source-book\"><b>HERITAGE-S01</b> · 朱晶、刘超：《氟缘笃志：陈庆云传》；参考底本60–69、75–77页；相关年表与论著目录按正文所引页码定位</li>\n<li id=\"ref-cq-h07\"><b>CQ-H07</b> · <a href=\"https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/zylzml0174/art/2023/art_af6c81873fd1471a9f3c1957e73d4de9.html\">全氟和多氟烷基磺酸的研究 IV. 3-氧杂多氟烷烃磺酸酯的合成及其硫-氧和碳-氧键的断裂</a>；《化学学报》1982，40(4)：337–352；337页五位作者；链接为机构书目，正文据已取得原刊</li>\n<li id=\"ref-cq-h08\"><b>CQ-H08</b> · <a href=\"https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/zylzml0174/art/2023/art_c7b5650a0a91477594053980bbbb6dd5.html\">全氟和多氟烷基磺酸的研究. 全氟3-氧杂烷烃磺酸酯与亲核试剂反应中的单一的硫-氧键断裂</a>；《化学学报》1982，40(7)：670–673；670页作者陈庆云、朱士正及反应式；正文据已取得原刊</li>\n<li id=\"ref-cq-h16\"><b>CQ-H16</b> · <a href=\"https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/zylzml0174/art/2023/art_bf002a4c386d49cba0c7fa5c65ad231b.html\">全氟和多氟烷基磺酸的研究 X. 在亲核取代反应中全氟烷基3-氧杂全氟烷烃磺酸酯的唯一的硫-氧键断裂</a>；《化学学报》1983，41(11)：1044–1057；1044页题名、作者及底物定义；正文据已取得原刊</li>\n<li id=\"ref-cq-r04\"><b>CQ-R04</b> · <a href=\"https://sioc-journal.cn/Jwk_yjhx/CN/abstract/abstract325798.shtml\">抑铬雾剂F-53的研制带动了有机氟化学的发展</a>；陈庆云，2001，《有机化学》21(11)：805–809；原作者回顾摘要，联系F-53与后续基础研究</li>\n</ul>\n<details><summary>研究对象与解释范围</summary>\n<div class=\"a06-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a06-scope-caption\"><table><caption id=\"a06-scope-caption\">保留各项研究的对象和范围</caption><thead><tr><th scope=\"col\">对象</th><th scope=\"col\">历史记录</th><th scope=\"col\">解释范围</th></tr></thead><tbody><tr><th scope=\"row\">断键观察</th><td>原文具体底物、条件与产物之间的联系。</td><td>不推广为所有全氟／多氟磺酸酯的统一断键规律。</td></tr><tr><th scope=\"row\">14种前体</th><td>传记对历史阶段工作的归纳，前体分别适用于不同条件。</td><td>不改写为每一种前体都在所有酸碱条件下适用。</td></tr><tr><th scope=\"row\">贡献归属</th><td>各篇作者表与传记合作角色分别保存。</td><td>不从合著顺序推算个人实验份额。</td></tr></tbody></table></div>\n</details><p><a href=\"../../achievements/index.html#line-a06\">A06（磺酸酯、二氟卡宾与三氟甲基化）成果线</a> · <a href=\"../index.html\">返回专题索引 ↑</a></p></article>\n<!-- A06_BIOGRAPHY_HISTORY:END -->\n<!-- HERITAGE_CONTEXT_END -->"
+    },
+    {
+      "old": "已核见原出版社题录与作者摘要；原全文及条件转录仍待补。</p><p id=\"cr-source-s01\"><b>CR-S01 · 2018年后续原始论文</b><br>Shiyu Zhao等，<i>Copper(II)-catalyzed trifluoromethylation of iodoarenes using Chen’s reagent</i>，<i>Organic Chemistry Frontiers</i>，2018，5，1143–1147。DOI：<a href=\"https://doi.org/10.1039/C8QO00025E\">10.1039/C8QO00025E</a>。<a href=\"https://pubs.rsc.org/en/content/articlepdf/2018/qo/c8qo00025e\">阅读原出版社PDF</a>。已核读第1143页题名、作者、摘要与引言；后续改进按其原作者归属。</p><p id=\"cr-source-s02\"><b>CR-S02 · 机构对名称与历史的介绍</b><br><a href=\"https://sercgft.sit.edu.cn/info/1111/1311.htm\">上海应用技术大学：名誉主任陈庆云院士</a>（2024-01-09），二氟卡宾与三氟甲基化部分明确甲酯MFSDA被称为“陈试剂”，同时说明该甲酯在1950年代末已为人所知。本页不把1989年的方法贡献写成该分子的首次合成。</p></section><details><summary>试剂谱系、资料层级与AI研究的边界</summary><p>本页重点介绍甲酯MFSDA。酸型、TFDA硅酯以及盐型及其不同年代的方法另行著录。原论文全文、原始实验记录和具体条件仍待逐项核校；命名使用不等于全部机理已经证明。历史成果与平台AI辅助研究分开，M0继续暂停；既有研究保留review_required与release_eligible=false。</p></details></section><article id=\"topic-chen-reagent\" data-topic-slug=\"chen-reagent\" data-topic-type=\"topic\"><span class=\"status\">审阅稿 · 原始论文摘要 / 方法正文 / 后续作者研究</span><h2>研究问题：相近名称下的不同实体</h2><div style=\"overflow-x:auto\"><table style=\"width:100%;border-collapse:collapse;text-align:left\"><caption>实体对照</caption><thead><tr><th scope=\"col\">实体</th><th scope=\"col\">研究及用途</th><th scope=\"col\">来源</th></tr></thead><tbody><tr><th scope=\"row\">MFSDA 甲酯</th><td>1989 年三氟甲基化用途</td><td><a href=\"../../index.html#source-cq-r05\">CQ-R05</a></td></tr><tr><th scope=\"row\">TFDA 硅酯</th><td>2000 年二氟卡宾来源，2003 年具体方法具名复核</td><td><a href=\"../../index.html#source-cq-r07\">CQ-R07</a>、<a href=\"../../index.html#source-cq-r08\">CQ-R08</a></td></tr><tr><th scope=\"row\">相关酸型试剂</th><td>后续工艺研究，不能与甲酯合并</td><td><a href=\"../../index.html#source-cq-r22\">CQ-R22</a></td></tr></tbody></table></div><p>在含氟试剂研究中，名称相近不代表分子或用途相同。氟磺酰基二氟乙酸甲酯（MFSDA，通常称陈试剂）、相关的硅酯 TFDA 和酸型试剂应分别建档，再讨论各自用途。</p><h2>可确认的贡献与后续工作</h2><p>1989 年陈庆云与 S.-W. Wu 报道了甲酯在铜体系中的三氟甲基化用途（<a href=\"../../index.html#source-cq-r05\">CQ-R05</a>）；这一记录支持具体功能与方法，不支持“首次合成该分子”。2000 年 F. Tian 等与陈庆云合作报道硅酯 TFDA 作为二氟卡宾来源用于偕二氟环丙烷合成（<a href=\"../../index.html#source-cq-r07\">CQ-R07</a>）；2003 年该共同工作进入 <i>Organic Syntheses</i>，页面另列具名复核者（<a href=\"../../index.html#source-cq-r08\">CQ-R08</a>）。它们与甲酯不是同一试剂，复核也限于所载方法。</p><p>后来 Wei Yu、Xiu-Hua Xu 与 Feng-Ling Qing 等于 2016 年研究甲酯的可见光自由基二氟烷基化（<a href=\"../../index.html#source-cq-r13\">CQ-R13</a>）；2025 年 Jiyoon Song 等将陈试剂用于核苷糖环的三氟甲基化步骤（<a href=\"../../index.html#source-cq-r23\">CQ-R23</a>）。这些方法归后续作者。Clarke 和 McGlacken 对 MFSDA 的评述（<a href=\"../../index.html#source-cq-r14\">CQ-R14</a>）是外部评价，而非新的实验采用；黄广龙、薛小松对陈试剂三氟甲基源形成的计算研究（<a href=\"../../index.html#source-cq-r21\">CQ-R21</a>）归其原作者，不是本平台原创。</p><p>2024 年 Cabrera、Allais 等工艺研究使用相关酸型试剂（<a href=\"../../index.html#source-cq-r22\">CQ-R22</a>），不能与甲酯合并；2026 年 Li、Rao 等论文所载电池电解液添加剂（<a href=\"../../index.html#source-cq-r24\">CQ-R24</a>）仅作为名称或结构对应线索，直接承接关系待查。酸型研究对早期论文的引用链，以及电池研究的补充资料结构与引用链，仍待核查。</p><p>依据：<a href=\"../../index.html#source-cq-r05\">CQ-R05</a>、<a href=\"../../index.html#source-cq-r07\">CQ-R07</a>、<a href=\"../../index.html#source-cq-r08\">CQ-R08</a>、<a href=\"../../index.html#source-cq-r13\">CQ-R13</a>、<a href=\"../../index.html#source-cq-r14\">CQ-R14</a>、<a href=\"../../index.html#source-cq-r21\">CQ-R21</a>、<a href=\"../../index.html#source-cq-r22\">CQ-R22</a>、<a href=\"../../index.html#source-cq-r23\">CQ-R23</a>、<a href=\"../../index.html#source-cq-r24\">CQ-R24</a>（分别见本页来源）。</p><h2>证据边界与下一步</h2><p>每一研究均须按实际实体、作者、底物和条件说明。上述论文的使用、评价与机理研究不是一条未经核实的技术继承链；合成研究也不证明临床效果、量产或全生命周期安全。</p><div class=\"evidence\" id=\"refs\"><h2>来源与定位</h2><ul><li id=\"ref-cq-r05\"><a href=\"https://pubs.rsc.org/en/content/articlelanding/1989/c3/c39890000705\" target=\"_blank\" rel=\"noopener noreferrer\">CQ-R05｜Chen、Wu，1989，J. Chem. Soc., Chem. Commun., 705–706</a>：出版社摘要及 Article information；甲酯用途。</li><li id=\"ref-cq-r07\"><a href=\"https://pubmed.ncbi.nlm.nih.gov/10814377/\" target=\"_blank\" rel=\"noopener noreferrer\">CQ-R07｜Tian 等，2000，Organic Letters 2, 563–564</a>：Authors、Affiliations、Abstract；TFDA。</li><li id=\"ref-cq-r08\"><a href=\"https://orgsyn.org/demo.aspx?prep=v80p0172\" target=\"_blank\" rel=\"noopener noreferrer\">CQ-R08｜Dolbier 等，2003，Organic Syntheses 80, 172–176</a>：Submitted by、Checked by、Discussion；方法正文及复核记录。</li><li id=\"ref-cq-r13\"><a href=\"https://pubs.acs.org/doi/10.1021/acs.orglett.6b02580\" target=\"_blank\" rel=\"noopener noreferrer\">CQ-R13｜Yu、Xu、Qing，2016</a>：Abstract、Author information；后续用途。</li><li id=\"ref-cq-r14\"><a href=\"https://research.ucc.ie/en/publications/methyl-fluorosulfonyldifluoroacetate-mfsda-an-underutilised-reage/\" target=\"_blank\" rel=\"noopener noreferrer\">CQ-R14｜Clarke、McGlacken，2017</a>：机构页 Abstract 与 DOI；专题评价。</li><li id=\"ref-cq-r21\"><a href=\"https://sioc-journal.cn/Jwk_hxxb/EN/10.6023/A23090434\" target=\"_blank\" rel=\"noopener noreferrer\">CQ-R21｜黄广龙、薛小松，2024</a>：Abstract、Cite this article；后续计算研究。</li><li id=\"ref-cq-r22\"><a href=\"https://pubs.acs.org/doi/10.1021/acs.oprd.3c00493\" target=\"_blank\" rel=\"noopener noreferrer\">CQ-R22｜Cabrera、Allais 等，2024</a>：Abstract、Author affiliations；酸型。</li><li id=\"ref-cq-r23\"><a href=\"https://snu.elsevierpure.com/en/publications/trifluoromethylation-on-a-nucleoside-sugar-scaffold-design-and-sy-2/\" target=\"_blank\" rel=\"noopener noreferrer\">CQ-R23｜Song 等，2025</a>：机构页 Abstract、Authors；后续采用。</li><li id=\"ref-cq-r24\"><a href=\"https://publikationen.bibliothek.kit.edu/1000197061\" target=\"_blank\" rel=\"noopener noreferrer\">CQ-R24｜Li、Rao 等，2026</a>：KIT 机构页 Abstract；同名甲酯的新用途，结构支持信息（SI）待核。</li></ul></div><a class=\"top\" href=\"../index.html\">返回专题索引 ↑</a></article><article id=\"record-reagent-identity\"><span class=\"status\">A06（磺酸酯、二氟卡宾与三氟甲基化） · 试剂身份与方法档案</span><h2>一种试剂一份档案</h2><p><strong>1989 甲酯：</strong>陈庆云、吴生文报道 MFSDA 在 CuI 存在下用于所载卤代物的三氟甲基化。〔<a href=\"../../index.html#source-cq-r05\">CQ-R05</a>〕</p><p><strong>1998 合成应用：</strong>Xiang-Shu Fei、Wei-Sheng Tian、Qing-Yun Chen 报告具体甾体衍生物的三氟甲基化，不能由此证明临床效果。〔<a href=\"../../index.html#source-cq-h17\">CQ-H17</a>〕</p><p><strong>2010 甲酯方法核查：</strong>Organic Syntheses 87:126 列提交者 Xiang-Shu Fei、Wei-Sheng Tian、Kai Ding、Yun Wang、Qing-Yun Chen，核查者 Takayuki Yamakawa、Tohru Fukuyama。此记录与 1998 年论文分列。〔<a href=\"../../index.html#source-cq-h18\">CQ-H18</a>〕</p><p><strong>2003 硅酯方法核查：</strong>Organic Syntheses 80:172 的 TFDA 硅酯用于具体偕二氟环丙烷方法，具名核查限于该方法。〔<a href=\"../../index.html#source-cq-r08\">CQ-R08</a>〕</p><p><strong>衍生盐型：</strong>2016 年铜盐用于具体卤代芳烃三氟甲基化；2017 年银盐体系在特定烯烃上引入 CF₃ 与氟磺酰基。铜盐成果不用于鉴定 1989 年体系中间体。〔<a href=\"../../index.html#source-cq-h23\">CQ-H23</a>、<a href=\"../../index.html#source-cq-h10\">CQ-H10</a>〕</p><p>黄广龙、薛小松的 2024 年理论研究属于后续作者对特定体系的已有研究。〔<a href=\"../../index.html#source-cq-r21\">CQ-R21</a>〕</p></article",
+      "new": "此处按原出版社题录与作者摘要介绍试剂功能与反应对象。</p><p id=\"cr-source-s01\"><b>CR-S01 · 2018年后续原始论文</b><br>Shiyu Zhao等，<i>Copper(II)-catalyzed trifluoromethylation of iodoarenes using Chen’s reagent</i>，<i>Organic Chemistry Frontiers</i>，2018，5，1143–1147。DOI：<a href=\"https://doi.org/10.1039/C8QO00025E\">10.1039/C8QO00025E</a>。<a href=\"https://pubs.rsc.org/en/content/articlepdf/2018/qo/c8qo00025e\">阅读原出版社PDF</a>。已核读第1143页题名、作者、摘要与引言；后续改进按其原作者归属。</p><p id=\"cr-source-s02\"><b>CR-S02 · 机构对名称与历史的介绍</b><br><a href=\"https://sercgft.sit.edu.cn/info/1111/1311.htm\">上海应用技术大学：名誉主任陈庆云院士</a>（2024-01-09），二氟卡宾与三氟甲基化部分明确甲酯MFSDA被称为“陈试剂”，同时说明该甲酯在1950年代末已为人所知。本页不把1989年的方法贡献写成该分子的首次合成。</p></section><details><summary>试剂谱系、资料层级与AI研究的边界</summary><p>本页重点介绍甲酯MFSDA。酸型、TFDA硅酯以及盐型及其不同年代的方法另行著录。命名证据、具体反应方法与机理研究各按来源介绍，不从命名推定统一机理。历史成果与平台AI辅助研究分开，M0继续暂停；既有研究保留review_required与release_eligible=false。</p></details></section"
+    },
+    {
+      "old": "style id=\"heritage-context-style\">\n/* Existing-page historical cards; no viewport-width layout. */\n.heritage-section{max-width:100%;min-width:0;margin:2rem auto;overflow-wrap:anywhere}\n.heritage-section>h2{font-size:clamp(28px,3.4vw,40px);margin:.3em 0 .6em}\n.heritage-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;max-width:100%;min-width:0}\n.heritage-card{min-width:0;max-width:100%;padding:1.1rem;border:1px solid #d9e2df;border-radius:14px;background:var(--card,#fff);overflow-wrap:anywhere}\n.heritage-card h3,.heritage-card h4{margin:.15rem 0 .65rem;line-height:1.45}\n.heritage-achievement-notes h5{font-size:1em;margin:.9rem 0 .3rem;line-height:1.5}\n.heritage-achievement-notes{border-top:1px solid #d9e2df;margin-top:1rem;padding-top:.6rem}\n.heritage-card p{margin:.5rem 0;line-height:1.8}\n.heritage-card ul{padding-left:1.3rem;margin:.55rem 0}\n.heritage-card li{margin:.4rem 0;line-height:1.7}\n.heritage-meta,.heritage-locator{font-size:.9em;color:#526560;line-height:1.75}\n.heritage-refs{font-size:.85em;white-space:normal;overflow-wrap:anywhere}\n.heritage-refs a{display:inline-block;margin-right:.25em}\n.heritage-tag{display:inline-block;border:1px solid #c4d6ce;border-radius:6px;padding:.08rem .4rem;margin:.1rem .25rem .1rem 0;font-size:.8em;color:#34574b}\n.heritage-section details{margin:.8rem 0;min-width:0;max-width:100%}\n.heritage-section summary{cursor:pointer;font-weight:600;line-height:1.7}\n.heritage-boundary{border-left:3px solid #6e8d7d;padding:.65rem .9rem;background:#f4f7f5;line-height:1.8}\n@media(max-width:720px){.heritage-grid{grid-template-columns:minmax(0,1fr)}.heritage-card{padding:.9rem}}\n\n</style>\n<section id=\"heritage-context\" class=\"heritage-section\"><h2>成果与合作</h2><p>以下按A06（磺酸酯、二氟卡宾与三氟甲基化）成果线呈现传记与公开资料中的历史记录，保留参与者、来源定位及待核事项；平台AI辅助研究另行登记。</p><div class=\"heritage-grid\"><article class=\"heritage-card\"><h3>TFDA的共同开发与具名核查</h3><p>陈庆云小组与Dolbier等的合作，在2003年Organic Syntheses方法中留下明确名单：开发／提交者与Bock、Richardson、Wolff三位核查者分别署名。该记录支持所载具体方法的核查，保存了合作与独立检验的不同角色。</p><p class=\"heritage-locator\">出处定位：传记p75–77；Org.Synth.80:172–176的Submitted by及Checked by <span class=\"heritage-refs\"><a href=\"../../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../../index.html#source-cq-r07\" title=\"TFDA用于偕二氟环丙烷合成\">[CQ-R07]</a> <a href=\"../../index.html#source-cq-r08\" title=\"TFDA制备与应用进入Organic Syntheses\">[CQ-R08]</a></span></p><p class=\"heritage-meta\">待核事项：2000原论文全文与细分贡献待补，不推广为全部底物或平台实验。</p></article></div><div class=\"heritage-related-stories\"><h3>相关合作故事</h3><ul><li><a href=\"../../achievements/index.html#heritage-story-st13\">TFDA：把国际合作与方法核查看清楚</a></li></ul></div><p><a href=\"../../achievements/index.html#heritage-line-a06\">查看本成果线的资料</a> · <a href=\"../../achievements/index.html#heritage-stories-all\">查看全部合作与育人故事</a></p></section",
+      "new": "!-- A06_BIOGRAPHY_HISTORY:BEGIN -->\n<style id=\"heritage-context-style\">.a06-meaning{border-left:3px solid #aa7545;padding:10px 16px;background:#f7f4eb}.a06-locator{font-size:.86rem;color:var(--muted)}.a06-nav{display:flex;flex-wrap:wrap;gap:8px 18px}.a06-table{overflow-x:auto;max-width:100%;margin:20px 0;border:1px solid var(--line)}.a06-table table{border-collapse:collapse;min-width:640px;width:100%;font-size:.92rem}.a06-table caption{text-align:left;padding:14px;background:#edf3ee;color:var(--accent);font-weight:700}.a06-table th,.a06-table td{border-top:1px solid var(--line);padding:12px;text-align:left;vertical-align:top}.a06-table:focus-visible{outline:3px solid #aa7545}#refs{overflow-wrap:anywhere}.a06-legacy{margin:22px 0}.a06-legacy summary{cursor:pointer;font-weight:600;padding:16px;border:1px solid var(--line)}</style>\n<article id=\"topic-chen-reagent\" data-topic-slug=\"chen-reagent\" data-topic-type=\"topic\"><span class=\"status\">历史成果与合作</span><h2>从CF₃H副产物的线索到甲酯的新功能</h2>\n<p>“陈试剂”的代表性贡献，在于把氟磺酰基二氟乙酸甲酯发展为三氟甲基化工具。传记不仅介绍这一成果，也保存了从副产物观察形成新问题、在重复实验中改进条件，以及跨团队发展新前体的过程。</p><nav class=\"a06-nav\" aria-label=\"A06（磺酸酯、二氟卡宾与三氟甲基化）成果专题\"><a href=\"../perfluorosulfonates/index.html\">磺酸酯与二氟卡宾</a><a href=\"../chen-reagent/index.html\">陈试剂与三氟甲基化</a><a href=\"#heritage-context\">合作分工</a><a href=\"../../research/index.html#ai-a06\">AI资料整理</a><a href=\"#refs\">参考资料</a></nav>\n<p>传记记述，陈庆云与吴生文研究该甲酯作为二氟卡宾源时，注意到副产物氟仿（CF₃H）。这一观察使他们思考，能否利用相关三氟甲基物种与亲电试剂反应，把三氟甲基引入有机分子。这里保存的是原研究者由观察提出问题的发现过程。</p>\n<p>1989年两人共同发表甲酯作为新三氟甲基化试剂的论文。原出版社摘要记载，在CuI存在下，该试剂可使芳基、烯基和烷基卤化物发生三氟甲基化。这项贡献在于开发试剂功能及合成方法，后来形成了广为使用的“陈试剂”名称。</p>\n<p class=\"a06-meaning\"><b>学术意义：</b>把二氟卡宾研究中的副产物线索转化为新的成键方法，连接活性中间体研究与实用含氟试剂开发。</p><p class=\"a06-locator\">传记67–69页；1989原论文705–706页的出版社摘要 · <a href=\"#a06-source-book\">HERITAGE-S01</a> · <a href=\"#ref-cq-r05\">CQ-R05</a></p></article>\n<article id=\"a06-continued-method-development\"><span class=\"status\">历史成果与合作</span><h2>杨国英的接续研究：从产率波动到条件与机理问题</h2>\n<p>在陈庆云与吴生文的工作之后，杨国英继续提高反应产率并研究机理。传记转引她的回忆：重复实验中的产率波动，使团队注意到溶剂及其干燥程度的重要影响；随后又研究了使用铜粉实现三氟甲基化的体系。</p>\n<p>传记及论著目录记载，陈庆云、杨国英、吴生文在1991年合作发表铜电子转移引发甲酯三氟甲基化的工作。CuI体系和铜粉体系按各自条件与原作者解释呈现，不由后来的研究倒推1989年初报已经证明全部反应途径。</p>\n<p class=\"a06-meaning\"><b>学术意义：</b>持续改进方法并把异常结果转化为研究线索，体现试剂发现、可重复性研究和机理探索之间的接续。</p><p class=\"a06-locator\">传记68–69页；133页论著目录 · <a href=\"#a06-source-book\">HERITAGE-S01</a></p></article>\n<article id=\"a06-tfda-cooperation\"><span class=\"status\">历史成果与合作</span><h2>TFDA：与Dolbier合作发展另一种二氟卡宾前体</h2>\n<p>2000年，陈庆云小组与William R. Dolbier Jr及合作团队发展TFDA三甲基硅酯。该硅酯与甲酯MFSDA是不同化合物。原论文报告在催化量氟离子作用下，TFDA作为二氟卡宾来源用于烯烃的偕二氟环丙烷合成，包括所研究的相对缺电子烯烃。</p>\n<p>传记还记述陈庆云与徐伟、周鼎英、程战领等继续研究二氟卡宾及含氟小环的反应。试剂开发由此成为进一步探索反应性与选择性的基础。跨国团队的共同开发、具体论文署名和后来方法的独立核查，各有对应记录。</p>\n<p class=\"a06-meaning\"><b>学术意义：</b>从前体设计走向活性中间体的应用，扩展可合成的含氟小环对象，并形成跨团队合作的方法研究。</p><p class=\"a06-locator\">传记75–77页；2000 Organic Letters 2：563–564原摘要；2003 Org. Synth.方法 · <a href=\"#a06-source-book\">HERITAGE-S01</a> · <a href=\"#ref-cq-r07\">CQ-R07</a> · <a href=\"#ref-cq-r08\">CQ-R08</a></p></article>\n<article id=\"heritage-context\"><h2>合作与学术接续</h2>\n<div class=\"a06-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a06-cooperation-caption\"><table><caption id=\"a06-cooperation-caption\">按传记及原文分别介绍合作角色</caption><thead><tr><th scope=\"col\">人物或团队</th><th scope=\"col\">具体工作与角色</th><th scope=\"col\">出处</th></tr></thead><tbody><tr><th scope=\"row\">陈庆云与吴生文</th><td>从甲酯二氟卡宾反应的CF₃H线索发展三氟甲基化；两人为1989年论文共同作者。</td><td>传记67–69页；CQ-R05</td></tr><tr><th scope=\"row\">杨国英</th><td>接续研究溶剂、干燥程度和产率波动，并参与铜粉体系及电子转移途径研究。</td><td>传记68–69、133页</td></tr><tr><th scope=\"row\">William R. Dolbier Jr与跨国合作团队</th><td>与陈庆云小组共同发展TFDA；2000论文完整七位作者按原文列示，不据此逐人分配实验任务。</td><td>CQ-R07；传记75–76页</td></tr><tr><th scope=\"row\">徐伟、周鼎英、程战领等</th><td>传记明确关联二氟卡宾和含氟小环研究；各项具体反应仍按对应论文归属。</td><td>传记77页</td></tr><tr><th scope=\"row\">两篇Organic Syntheses方法的提交者与核查者</th><td>分别开发／提交和核查所载具体方法；这些为原刊历史角色。</td><td>CQ-R08、CQ-H18</td></tr></tbody></table></div>\n<section id=\"a06-historical-methods\"><h3>两项方法、两组提交与核查记录</h3>\n<div class=\"a06-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a06-methods-caption\"><table><caption id=\"a06-methods-caption\">2003与2010方法分别保存</caption><thead><tr><th scope=\"col\">方法</th><th scope=\"col\">具体用途</th><th scope=\"col\">Submitted by</th><th scope=\"col\">Checked by</th><th scope=\"col\">卷页</th></tr></thead><tbody><tr><th scope=\"row\">2003：TFDA硅酯／二氟卡宾</th><td>TFDA制备及正丁基偕二氟环丙烷羧酸酯实例</td><td>W. R. Dolbier Jr、F. Tian、J.-X. Duan、Q.-Y. Chen</td><td>Victoria D. Bock、David P. Richardson、Steven Wolff</td><td>Org. Synth. 80：172–176（CQ-R08）</td></tr><tr><th scope=\"row\">2010：MFSDA甲酯／三氟甲基化</th><td>甾体分子的三氟甲基化方法</td><td>Xiang-Shu Fei、Wei-Sheng Tian、Kai Ding、Yun Wang、Qing-Yun Chen</td><td>Takayuki Yamakawa、Tohru Fukuyama</td><td>Org. Synth. 87：126–136（CQ-H18）</td></tr></tbody></table></div>\n<p>这里的核查者为原刊历史方法的具名核查者。甲酯与硅酯、提交与核查角色各自分列。</p></section>\n</article>\n<article id=\"a06-ai-collation\"><h2>平台的AI辅助资料整理</h2><p>历史成果归原研究者及合作团队。平台本轮完成传记与文献关联、试剂身份和合作角色整理，以及新增引用的出处核对；具体对照放在下一层AI资料页。资料整理不是实验复现、谱图重新鉴定或机理验证，保持review_required、release_eligible=false；M0继续暂停。</p><p><a href=\"../../research/index.html#ai-a06\">A06（磺酸酯、二氟卡宾与三氟甲基化）的AI研究资料 →</a></p></article>\n<article id=\"refs\"><h2>参考资料</h2><ul>\n<li id=\"a06-source-book\"><b>HERITAGE-S01</b> · 朱晶、刘超：《氟缘笃志：陈庆云传》；参考底本60–69、75–77页；相关年表与论著目录按正文所引页码定位</li>\n<li id=\"ref-cq-r05\"><b>CQ-R05</b> · <a href=\"https://pubs.rsc.org/en/content/articlelanding/1989/c3/c39890000705\">Methyl fluorosulphonyldifluoroacetate; a new trifluoromethylating agent</a>；Chen、Wu，1989，J. Chem. Soc., Chem. Commun.：705–706；此处引用出版社题录与原作者摘要</li>\n<li id=\"ref-cq-r07\"><b>CQ-R07</b> · <a href=\"https://pubs.acs.org/doi/10.1021/ol0055622\">A Novel and Highly Efficient Synthesis of gem-Difluorocyclopropanes</a>；Tian、Kruger、Bautista、Duan、Li、Dolbier、Chen，2000，Organic Letters 2：563–564；TFDA原摘要及作者信息</li>\n<li id=\"ref-cq-r08\"><b>CQ-R08</b> · <a href=\"https://orgsyn.org/demo.aspx?prep=v80p0172\">Preparation and Use of a New Difluorocarbene Reagent. Trimethylsilyl 2-Fluorosulfonyl-2,2-difluoroacetate: n-Butyl 2,2-Difluorocyclopropanecarboxylate</a>；Organic Syntheses 2003，80：172–176；硅酯／二氟卡宾方法及Submitted by、Checked by；沿用既有方法核读登记</li>\n<li id=\"ref-cq-h18\"><b>CQ-H18</b> · <a href=\"https://orgsyn.org/demo.aspx?prep=v87p0126\">New, Convenient Route for Trifluoromethylation of Steroidal Molecules</a>；Organic Syntheses 2010，87：126–136；甲酯／甾体三氟甲基化及Submitted by、Checked by；沿用既有方法核读登记</li>\n</ul>\n<details><summary>保留的后续研究索引</summary><p>后续方法、评论及理论计算按其原作者归属；索引不构成本平台新增研究成果。</p><ul>\n<li id=\"ref-cq-r13\"><b>CQ-R13</b> · <a href=\"https://pubs.acs.org/doi/10.1021/acs.orglett.6b02580\">陈试剂的可见光自由基二氟烷基化新用途</a>；保留原专题后续研究索引；具体用途、评价或理论研究归该文原作者，不作为本轮平台新成果</li>\n<li id=\"ref-cq-r14\"><b>CQ-R14</b> · <a href=\"https://research.ucc.ie/en/publications/methyl-fluorosulfonyldifluoroacetate-mfsda-an-underutilised-reage/\">爱尔兰研究者对MFSDA用途的专题评述</a>；保留原专题后续研究索引；具体用途、评价或理论研究归该文原作者，不作为本轮平台新成果</li>\n<li id=\"ref-cq-r21\"><b>CQ-R21</b> · <a href=\"https://sioc-journal.cn/Jwk_hxxb/EN/10.6023/A23090434\">陈试剂形成三氟甲基源的机理计算</a>；保留原专题后续研究索引；具体用途、评价或理论研究归该文原作者，不作为本轮平台新成果</li>\n<li id=\"ref-cq-r22\"><b>CQ-R22</b> · <a href=\"https://pubs.acs.org/doi/10.1021/acs.oprd.3c00493\">辉瑞研究者对含氟脯氨酸片段的工艺开发</a>；保留原专题后续研究索引；具体用途、评价或理论研究归该文原作者，不作为本轮平台新成果</li>\n<li id=\"ref-cq-r23\"><b>CQ-R23</b> · <a href=\"https://snu.elsevierpure.com/en/publications/trifluoromethylation-on-a-nucleoside-sugar-scaffold-design-and-sy-2/\">韩国团队在核苷糖环合成中使用陈试剂</a>；保留原专题后续研究索引；具体用途、评价或理论研究归该文原作者，不作为本轮平台新成果</li>\n<li id=\"ref-cq-r24\"><b>CQ-R24</b> · <a href=\"https://publikationen.bibliothek.kit.edu/1000197061\">同名化学实体用于锂金属电池电解液添加剂</a>；保留原专题后续研究索引；具体用途、评价或理论研究归该文原作者，不作为本轮平台新成果</li>\n</ul></details>\n<details><summary>研究对象与解释范围</summary>\n<div class=\"a06-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a06-scope-caption\"><table><caption id=\"a06-scope-caption\">保留各项研究的对象和范围</caption><thead><tr><th scope=\"col\">对象</th><th scope=\"col\">历史记录</th><th scope=\"col\">解释范围</th></tr></thead><tbody><tr><th scope=\"row\">MFSDA甲酯</th><td>FSO₂CF₂CO₂Me；“陈试剂”所指甲酯。</td><td>试剂功能开发不同于宣称首次合成该分子。</td></tr><tr><th scope=\"row\">TFDA硅酯</th><td>FSO₂CF₂CO₂SiMe₃；二氟卡宾前体。</td><td>与甲酯、酸型及金属盐分别介绍。</td></tr><tr><th scope=\"row\">原刊方法核查</th><td>2003与2010分别记载所核方法的提交者、核查者。</td><td>不写成本平台新获专业签认或新做实验。</td></tr><tr><th scope=\"row\">反应机理研究</th><td>CuI与铜粉体系、后续理论工作按对象和作者分别归属。</td><td>不从冠名或若干方法推定统一机理已证实。</td></tr></tbody></table></div>\n</details><p><a href=\"../../achievements/index.html#line-a06\">A06（磺酸酯、二氟卡宾与三氟甲基化）成果线</a> · <a href=\"../index.html\">返回专题索引 ↑</a></p></article>\n<!-- A06_BIOGRAPHY_HISTORY:END --"
+    },
+    {
+      "old": "",
+      "new": "details class=\"a06-legacy\"><summary>既有试剂身份与方法记录</summary><article id=\"record-reagent-identity\"><span class=\"status\">A06（磺酸酯、二氟卡宾与三氟甲基化） · 试剂身份与方法档案</span><h2>一种试剂一份档案</h2><p><strong>1989 甲酯：</strong>陈庆云、吴生文报道 MFSDA 在 CuI 存在下用于所载卤代物的三氟甲基化。〔<a href=\"../../index.html#source-cq-r05\">CQ-R05</a>〕</p><p><strong>1998 合成应用：</strong>Xiang-Shu Fei、Wei-Sheng Tian、Qing-Yun Chen 报告具体甾体衍生物的三氟甲基化，不能由此证明临床效果。〔<a href=\"../../index.html#source-cq-h17\">CQ-H17</a>〕</p><p><strong>2010 甲酯方法核查：</strong>Organic Syntheses 87:126 列提交者 Xiang-Shu Fei、Wei-Sheng Tian、Kai Ding、Yun Wang、Qing-Yun Chen，核查者 Takayuki Yamakawa、Tohru Fukuyama。此记录与 1998 年论文分列。〔<a href=\"../../index.html#source-cq-h18\">CQ-H18</a>〕</p><p><strong>2003 硅酯方法核查：</strong>Organic Syntheses 80:172 的 TFDA 硅酯用于具体偕二氟环丙烷方法，具名核查限于该方法。〔<a href=\"../../index.html#source-cq-r08\">CQ-R08</a>〕</p><p><strong>衍生盐型：</strong>2016 年铜盐用于具体卤代芳烃三氟甲基化；2017 年银盐体系在特定烯烃上引入 CF₃ 与氟磺酰基。铜盐成果不用于鉴定 1989 年体系中间体。〔<a href=\"../../index.html#source-cq-h23\">CQ-H23</a>、<a href=\"../../index.html#source-cq-h10\">CQ-H10</a>〕</p><p>黄广龙、薛小松的 2024 年理论研究属于后续作者对特定体系的已有研究。〔<a href=\"../../index.html#source-cq-r21\">CQ-R21</a>〕</p></article></details><"
+    },
+    {
+      "old": "结构与条件如何关联不同断键路径，以及试剂的不同反应角色？\",\r\n      \"ai_role\": \"建立逐反应的结构—条件—断键观察对照；区分甲酯、酸型、盐型和TFDA硅酯；对照既有专业机理研究并提出待核问题",
+      "new": "磺酸酯断键研究怎样走向二氟卡宾前体与“陈试剂”，原研究者解决了哪些合成问题？\",\r\n      \"ai_role\": \"以传记为主线关联具体反应、试剂结构与合作角色；核对新增引用，保留原刊数据、原作者解释及已有方法核查的范围"
+    },
+    {
+      "old": "现有资料与记录\",\r\n          \"summary\": \"已取得并核读1982年337–352页、670–673页及1983年1044–1057页三篇原刊。首篇署陈庆云、朱蓉仙、李宗珍、王珊娣、黄维垣，后两篇分别署陈庆云、朱士正，作者表各自登记。CQ-H16主标题原印为“全氟和多氟烷基磺酸的研究 X.”，与既有题录“磺酸酯”异文分列；670页通讯未印系列号。原刊作者名与传记异文保留，不据署名推定个人分工。三个代表断键实例已建立结构—条件—产物对应，原报收率归原作者；不把指定实例的核读扩大为全部谱图、真实结构或通用机理认证。按既有方法核读登记，2003年硅酯／二氟卡宾方法与2010年甲酯／甾体三氟甲基化分别呈现；原刊提交者与核查者名单不属于本项目新取得的专业签认。1989、2000原论文及1991书章全文仍待取得，2024既有陈试剂机理计算仍归原作者",
+      "new": "历史成果脉络：从断键问题到试剂功能\",\r\n          \"summary\": \"已按传记60–69、75–77页整理磺酸酯结构与断键、14种二氟卡宾前体、甲酯陈试剂的发现及接续研究、TFDA合作开发。陈庆云与不同合作者的工作分段介绍，不把历史观察写作平台新发现"
+    },
+    {
+      "old": "现有材料与方法核查说明\",\r\n              \"url\": \"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/",
+      "new": "A06（磺酸酯、二氟卡宾与三氟甲基化）具体学术贡献与合作分工\",\r\n              \"url\": \"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A06_"
+    },
+    {
+      "old": "",
+      "new": "            }\r\n          ]\r\n        },\r\n        {\r\n          \"title\": \"已有原刊记录与新增引用\",\r\n          \"summary\": \"已取得并核读的1982／1983三篇原刊及三个代表断键实例保留在下方专业记录中。本轮按实际作者表、结构和条件范围展开历史贡献；1989甲酯与2000硅酯的新增介绍限原出版社摘要支持的用途和作者信息。\",\r\n          \"links\": [\r\n            {\r\n              \"title\": \"磺酸酯反应与合作专题\",\r\n              \"url\": \"../topics/perfluorosulfonates/index.html\",\r\n              \"kind\": \"site\"\r\n            },\r\n            {\r\n              \"title\": \"陈试剂的发现与方法发展\",\r\n              \"url\": \"../topics/chen-reagent/index.html#topic-chen-reagent\",\r\n              \"kind\": \"site\"\r\n            }\r\n          ]\r\n        },\r\n        {\r\n          \"title\": \"甲酯、硅酯与历史方法核查分别整理\",\r\n          \"summary\": \"MFSDA甲酯与TFDA硅酯分别列示；2003硅酯／二氟卡宾与2010甲酯／甾体三氟甲基化各保留提交者、核查者及卷页。这是既有方法核读登记的关联整理，原刊核查不写成本平台新实验或新增专业签认。\",\r\n          \"links\": [\r\n            {\r\n              \"title\": \"2003硅酯方法\",\r\n              \"url\": \"https://orgsyn.org/demo.aspx?prep=v80p0172\",\r\n              \"kind\": \"external\"\r\n            },\r\n            {\r\n              \"title\": \"2010甲酯方法\",\r\n              \"url\": \"https://orgsyn.org/demo.aspx?prep=v87p0126\",\r\n              \"kind\": \"external\"\r\n"
+    },
+    {
+      "old": "摘要不替代全文；方法核查只支持所核方法；后续机理计算与新用途归原作者，不当作平台原创或陈先生早期计算",
+      "new": "历史实验、原报收率和试剂开发归原研究者；本轮为资料关联与新增引用核对，不授予实验复现或机理验证资格。\",\r\n        \"甲酯、硅酯、酸型和金属盐分别介绍；所选断键实例和历史方法核查各有限定范围，后续机理计算归其实际作者"
+    },
+    {
+      "old": "补1989、2000原论文及1991书章；对拟采用的新科学解释明确具体结构、条件和证据，不重复挂起已完成的三个原文实例对照。\",\r\n      \"future_question\": \"既有机理研究覆盖了哪些具体实体与条件，仍缺少哪些可区分反应角色的证据？",
+      "new": "解释具体结构、反应问题和合作研究之间的学术联系；新增引用按原文能够支持的范围呈现，原报实例与已有先行研究分别保留。\",\r\n      \"future_question\": \"未来如提出AI辅助研究，应先限定具体实体、反应条件与可检验问题，并与已有理论工作比较；当前仅为设想，M0保持暂停。"
+    },
+    {
+      "old": "档案",
+      "new": "的历史成果"
+    },
+    {
+      "old": "历史",
+      "new": "的代表性"
+    },
+    {
+      "old": "试剂身份与原始",
+      "new": "原始论文与命名"
+    },
+    {
+      "old": "",
+      "new": ",\r\n      \"boundary_title\": \"资料整理的适用范围\",\r\n      \"next_step_title\": \"资料整理的下一步\""
+    },
+    {
+      "old": "结构与条件如何关联不同断键路径，以及试剂的不同反应角色",
+      "new": "磺酸酯断键研究怎样走向二氟卡宾前体与“陈试剂”，原研究者解决了哪些合成问题"
+    },
+    {
+      "old": "建立逐反应的结构—条件—断键观察对照；区分甲酯、酸型、盐型和TFDA硅酯；对照既有专业机理研究并提出待核问题",
+      "new": "以传记为主线关联具体反应、试剂结构与合作角色；核对新增引用，保留原刊数据、原作者解释及已有方法核查的范围"
+    },
+    {
+      "old": "现有资料与记录。**已取得并核读1982年337–352页、670–673页及1983年1044–1057页三篇原刊。首篇署陈庆云、朱蓉仙、李宗珍、王珊娣、黄维垣，后两篇分别署陈庆云、朱士正，作者表各自登记。CQ-H16主标题原印为“全氟和多氟烷基磺酸的研究 X.”，与既有题录“磺酸酯”异文分列；670页通讯未印系列号。原刊作者名与传记异文保留，不据署名推定个人分工。三个代表断键实例已建立结构—条件—产物对应，原报收率归原作者；不把指定实例的核读扩大为全部谱图、真实结构或通用机理认证。按既有方法核读登记，2003年硅酯／二氟卡宾方法与2010年甲酯／甾体三氟甲基化分别呈现；原刊提交者与核查者名单不属于本项目新取得的专业签认。1989、2000原论文及1991书章全文仍待取得，2024既有陈试剂机理计算仍归原作者",
+      "new": "历史成果脉络：从断键问题到试剂功能。**已按传记60–69、75–77页整理磺酸酯结构与断键、14种二氟卡宾前体、甲酯陈试剂的发现及接续研究、TFDA合作开发。陈庆云与不同合作者的工作分段介绍，不把历史观察写作平台新发现"
+    },
+    {
+      "old": "现有材料与方法核查说明](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "new": "A06（磺酸酯、二氟卡宾与三氟甲基化）具体学术贡献与合作分工](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md)\n\n**已有原刊记录与新增引用。**已取得并核读的1982／1983三篇原刊及三个代表断键实例保留在下方专业记录中。本轮按实际作者表、结构和条件范围展开历史贡献；1989甲酯与2000硅酯的新增介绍限原出版社摘要支持的用途和作者信息。\n\n[磺酸酯反应与合作专题](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html) · [陈试剂的发现与方法发展](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#topic-chen-reagent)\n\n**甲酯、硅酯与历史方法核查分别整理。**MFSDA甲酯与TFDA硅酯分别列示；2003硅酯／二氟卡宾与2010甲酯／甾体三氟甲基化各保留提交者、核查者及卷页。这是既有方法核读登记的关联整理，原刊核查不写成本平台新实验或新增专业签认。\n\n[2003硅酯方法](https://orgsyn.org/demo.aspx?prep=v80p0172) · [2010甲酯方法](https://orgsyn.org/demo.aspx?prep=v87p0126"
+    },
+    {
+      "old": "待核事项与边界",
+      "new": "资料整理的适用范围"
+    },
+    {
+      "old": "摘要不替代全文；方法核查只支持所核方法；后续机理计算与新用途归原作者，不当作平台原创或陈先生早期计算",
+      "new": "历史实验、原报收率和试剂开发归原研究者；本轮为资料关联与新增引用核对，不授予实验复现或机理验证资格。\n- 甲酯、硅酯、酸型和金属盐分别介绍；所选断键实例和历史方法核查各有限定范围，后续机理计算归其实际作者"
+    },
+    {
+      "old": "下一步先补的证据：**继续补1989、2000原论文及1991书章；对拟采用的新科学解释明确具体结构、条件和证据，不重复挂起已完成的三个原文实例对照",
+      "new": "资料整理的下一步：**继续解释具体结构、反应问题和合作研究之间的学术联系；新增引用按原文能够支持的范围呈现，原报实例与已有先行研究分别保留"
+    },
+    {
+      "old": "既有机理研究覆盖了哪些具体实体与条件，仍缺少哪些可区分反应角色的证据？",
+      "new": "未来如提出AI辅助研究，应先限定具体实体、反应条件与可检验问题，并与已有理论工作比较；当前仅为设想，M0保持暂停。"
+    },
+    {
+      "old": "档案](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html#record-sulfonate-cleavage) · [陈试剂历史贡献](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#chen-reagent-contribution) · [试剂身份与原始",
+      "new": "的历史成果](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html#record-sulfonate-cleavage) · [陈试剂的代表性贡献](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#chen-reagent-contribution) · [原始论文与命名"
+    },
+    {
+      "old": "结构与条件如何关联不同断键路径，以及试剂的不同反应角色？</p><h3>AI怎样辅助</h3><p>建立逐反应的结构—条件—断键观察对照；区分甲酯、酸型、盐型和TFDA硅酯；对照既有专业机理研究并提出待核问题。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>已取得并核读1982年337–352页、670–673页及1983年1044–1057页三篇原刊。首篇署陈庆云、朱蓉仙、李宗珍、王珊娣、黄维垣，后两篇分别署陈庆云、朱士正，作者表各自登记。CQ-H16主标题原印为“全氟和多氟烷基磺酸的研究 X.”，与既有题录“磺酸酯”异文分列；670页通讯未印系列号。原刊作者名与传记异文保留，不据署名推定个人分工。三个代表断键实例已建立结构—条件—产物对应，原报收率归原作者；不把指定实例的核读扩大为全部谱图、真实结构或通用机理认证。按既有方法核读登记，2003年硅酯／二氟卡宾方法与2010年甲酯／甾体三氟甲基化分别呈现；原刊提交者与核查者名单不属于本项目新取得的专业签认。1989、2000原论文及1991书章全文仍待取得，2024既有陈试剂机理计算仍归原作者。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md\">现有材料与方法核查说明 →</a></p></div></div><div class=\"prior-work\"><h4>已有专业研究：保留原作者归属</h4><div><h4>CQ-R21 · 陈试剂形成三氟甲基源的既有机理研究</h4><p>黄广龙、薛小松</p><p class=\"citation\">《化学学报》82(2)，132–137（2024；2023年在线发表）；DOI 10.6023/A23090434。</p><p>核查限于出版社摘要与书目；机理计算属于原作者，不能作为平台原创或陈先生早期计算。后续问题须明确所复核的实体、方法与条件。</p><p class=\"links\"><a href=\"https://sioc-journal.cn/Jwk_hxxb/EN/10.6023/A23090434\">出版社论文入口 →</a><a href=\"../topics/chen-reagent/index.html#ref-cq-r21\">专题原证据索引 →</a></p></div><div><h4>CQ-R25 · 陈试剂及衍生体系的2026年回顾</h4><p>苏雪、丁婧、曾广原、庞婉、刘超</p><p class=\"citation\">2026年回顾；DOI 10.13822/j.cnki.hxsj.2026.0211。</p><p>核查限于期刊摘要及参考文献列表；回顾用于追踪已有研究，不能代替各项用途的原始论文、实体核对及实际引用链。</p><p class=\"links\"><a href=\"https://hxsje.cbpt.cnki.net/portal/journal/portal/client/paper/3dea1a2a47f994056edc5708988460b7\">期刊论文入口 →</a><a href=\"../index.html#source-cq-r25\">原来源登记CQ-R25 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>摘要不替代全文；方法核查只支持所核方法；后续机理计算与新用途归原作者，不当作平台原创或陈先生早期计算。</li></ul><p><b>下一步先补的证据：</b>继续补1989、2000原论文及1991书章；对拟采用的新科学解释明确具体结构、条件和证据，不重复挂起已完成的三个原文实例对照。</p><p><b>候选后续问题：</b>既有机理研究覆盖了哪些具体实体与条件，仍缺少哪些可区分反应角色的证据？</p><div class=\"prior-work\" aria-label=\"平台AI辅助文献核校\"><h3>平台AI辅助文献核校</h3><p>历史实验与理论研究归原作者。以下呈现平台完成的原文、表格和附件对照，保持 <code>review_required</code>、<code>release_eligible=false</code>；文献核校不授予实验、结构或机理验证资格。</p><article class=\"result-evidence\" id=\"a06-literature-bond-cleavage\" data-review-status=\"review_required\" data-release-eligible=\"false\"><h4>原刊中三项具体断键记录</h4><p><b>历史原文：</b>1982系列IV署陈庆云、朱蓉仙、李宗珍、王珊娣、黄维垣；1982通讯与1983系列X各署陈庆云、朱士正。原作者比较不同磺酸酯与亲核试剂反应中的C–O／S–O断裂。</p><p><b>平台AI核校：</b>已为三个代表实例建立本篇结构定义、介质、原报条件与产物的对应。二乙二醇与DG（二乙二醇二甲醚）分别记录，各篇编号不混用。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a06-literature-bond-cleavage-table-1\"><table><caption id=\"a06-literature-bond-cleavage-table-1\">原刊中三项具体断键记录：原文对照</caption><thead><tr><th scope=\"col\">原刊与本篇实例</th><th scope=\"col\">与比较有关的原报对象/条件</th><th scope=\"col\">原报结果与解释层级</th><th scope=\"col\">原页定位</th></tr></thead><tbody><tr><th scope=\"row\">CQ-H07，1982系列IV，1a</th><td>KI／二乙二醇；70°C、12.5 h</td><td>2a=HCF2CF2CH2I，原报97%；原作者归为C–O断裂。</td><td>337–338定义；348实验（PDF1–2、12）</td></tr><tr><th scope=\"row\">CQ-H08，1982通讯，2a</th><td>催化量卤离子；文中KF／DG=二乙二醇二甲醚，−50°C实例</td><td>原报磺酰氟与酰氟，正文称可定量分解；归为S–O断裂，不补造所选行未列的独立收率。</td><td>670式(2)、671反应表及解释（PDF1–2）</td></tr><tr><th scope=\"row\">CQ-H16，1983系列X，1b</th><td>少量KF／DG；先−70°C、2 h未反应，随后−60±5°C、3.5 h作用完全（均原报GC观察）</td><td>3b酰氟90%、2b磺酰氟93%，归为S–O断裂；本篇产品2/3不等同通讯3/4编号。</td><td>1044定义、1054实验（PDF1、11）</td></tr></tbody></table></div><p class=\"scientific-meaning\"><b>证据的意义：</b>原文的可对照贡献是：具体酯基结构和反应条件与不同断键产物关联。原作者提出的α-F／β-醚键“屏蔽”及进攻硫解释可按原作者观点介绍，但不能替代独立机理证据。</p><ul class=\"result-limits\"><li>这是有原页定位的历史实验报告核读；所列收率属于原作者，本平台未重复制备、重新鉴定全套谱图或开展DFT。三例不构成全部多氟/全氟酯的普适断键规律；1054页温度计未校正，不新增温度不确定度资格。2003硅酯／二氟卡宾与2010甲酯／甾体三氟甲基化仍分开，旧方法核读登记不写成本轮新增签认。</li></ul><p class=\"table-note\">来源ID：CQ-H07、CQ-H08、CQ-H16</p><p class=\"links\"><a href=\"../topics/perfluorosulfonates/index.html\">磺酸酯历史专题与原刊题录 →</a></p></article></div><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/perfluorosulfonates/index.html#record-sulfonate-cleavage\">磺酸酯断键档案 →</a><a href=\"../topics/chen-reagent/index.html#chen-reagent-contribution\">陈试剂历史贡献 →</a><a href=\"../topics/chen-reagent/index.html#chen-reagent-evidence\">试剂身份与原始",
+      "new": "磺酸酯断键研究怎样走向二氟卡宾前体与“陈试剂”，原研究者解决了哪些合成问题？</p><h3>AI怎样辅助</h3><p>以传记为主线关联具体反应、试剂结构与合作角色；核对新增引用，保留原刊数据、原作者解释及已有方法核查的范围。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>历史成果脉络：从断键问题到试剂功能</h4><p>已按传记60–69、75–77页整理磺酸酯结构与断键、14种二氟卡宾前体、甲酯陈试剂的发现及接续研究、TFDA合作开发。陈庆云与不同合作者的工作分段介绍，不把历史观察写作平台新发现。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">A06（磺酸酯、二氟卡宾与三氟甲基化）具体学术贡献与合作分工 →</a></p></div><div class=\"record\"><h4>已有原刊记录与新增引用</h4><p>已取得并核读的1982／1983三篇原刊及三个代表断键实例保留在下方专业记录中。本轮按实际作者表、结构和条件范围展开历史贡献；1989甲酯与2000硅酯的新增介绍限原出版社摘要支持的用途和作者信息。</p><p class=\"links\"><a href=\"../topics/perfluorosulfonates/index.html\">磺酸酯反应与合作专题 →</a><a href=\"../topics/chen-reagent/index.html#topic-chen-reagent\">陈试剂的发现与方法发展 →</a></p></div><div class=\"record\"><h4>甲酯、硅酯与历史方法核查分别整理</h4><p>MFSDA甲酯与TFDA硅酯分别列示；2003硅酯／二氟卡宾与2010甲酯／甾体三氟甲基化各保留提交者、核查者及卷页。这是既有方法核读登记的关联整理，原刊核查不写成本平台新实验或新增专业签认。</p><p class=\"links\"><a href=\"https://orgsyn.org/demo.aspx?prep=v80p0172\">2003硅酯方法 →</a><a href=\"https://orgsyn.org/demo.aspx?prep=v87p0126\">2010甲酯方法 →</a></p></div></div><div class=\"prior-work\"><h4>已有专业研究：保留原作者归属</h4><div><h4>CQ-R21 · 陈试剂形成三氟甲基源的既有机理研究</h4><p>黄广龙、薛小松</p><p class=\"citation\">《化学学报》82(2)，132–137（2024；2023年在线发表）；DOI 10.6023/A23090434。</p><p>核查限于出版社摘要与书目；机理计算属于原作者，不能作为平台原创或陈先生早期计算。后续问题须明确所复核的实体、方法与条件。</p><p class=\"links\"><a href=\"https://sioc-journal.cn/Jwk_hxxb/EN/10.6023/A23090434\">出版社论文入口 →</a><a href=\"../topics/chen-reagent/index.html#ref-cq-r21\">专题原证据索引 →</a></p></div><div><h4>CQ-R25 · 陈试剂及衍生体系的2026年回顾</h4><p>苏雪、丁婧、曾广原、庞婉、刘超</p><p class=\"citation\">2026年回顾；DOI 10.13822/j.cnki.hxsj.2026.0211。</p><p>核查限于期刊摘要及参考文献列表；回顾用于追踪已有研究，不能代替各项用途的原始论文、实体核对及实际引用链。</p><p class=\"links\"><a href=\"https://hxsje.cbpt.cnki.net/portal/journal/portal/client/paper/3dea1a2a47f994056edc5708988460b7\">期刊论文入口 →</a><a href=\"../index.html#source-cq-r25\">原来源登记CQ-R25 →</a></p></div></div><h3>资料整理的适用范围</h3><ul><li>历史实验、原报收率和试剂开发归原研究者；本轮为资料关联与新增引用核对，不授予实验复现或机理验证资格。</li><li>甲酯、硅酯、酸型和金属盐分别介绍；所选断键实例和历史方法核查各有限定范围，后续机理计算归其实际作者。</li></ul><p><b>资料整理的下一步：</b>继续解释具体结构、反应问题和合作研究之间的学术联系；新增引用按原文能够支持的范围呈现，原报实例与已有先行研究分别保留。</p><p><b>候选后续问题：</b>未来如提出AI辅助研究，应先限定具体实体、反应条件与可检验问题，并与已有理论工作比较；当前仅为设想，M0保持暂停。</p><div class=\"prior-work\" aria-label=\"平台AI辅助文献核校\"><h3>平台AI辅助文献核校</h3><p>历史实验与理论研究归原作者。以下呈现平台完成的原文、表格和附件对照，保持 <code>review_required</code>、<code>release_eligible=false</code>；文献核校不授予实验、结构或机理验证资格。</p><article class=\"result-evidence\" id=\"a06-literature-bond-cleavage\" data-review-status=\"review_required\" data-release-eligible=\"false\"><h4>原刊中三项具体断键记录</h4><p><b>历史原文：</b>1982系列IV署陈庆云、朱蓉仙、李宗珍、王珊娣、黄维垣；1982通讯与1983系列X各署陈庆云、朱士正。原作者比较不同磺酸酯与亲核试剂反应中的C–O／S–O断裂。</p><p><b>平台AI核校：</b>已为三个代表实例建立本篇结构定义、介质、原报条件与产物的对应。二乙二醇与DG（二乙二醇二甲醚）分别记录，各篇编号不混用。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a06-literature-bond-cleavage-table-1\"><table><caption id=\"a06-literature-bond-cleavage-table-1\">原刊中三项具体断键记录：原文对照</caption><thead><tr><th scope=\"col\">原刊与本篇实例</th><th scope=\"col\">与比较有关的原报对象/条件</th><th scope=\"col\">原报结果与解释层级</th><th scope=\"col\">原页定位</th></tr></thead><tbody><tr><th scope=\"row\">CQ-H07，1982系列IV，1a</th><td>KI／二乙二醇；70°C、12.5 h</td><td>2a=HCF2CF2CH2I，原报97%；原作者归为C–O断裂。</td><td>337–338定义；348实验（PDF1–2、12）</td></tr><tr><th scope=\"row\">CQ-H08，1982通讯，2a</th><td>催化量卤离子；文中KF／DG=二乙二醇二甲醚，−50°C实例</td><td>原报磺酰氟与酰氟，正文称可定量分解；归为S–O断裂，不补造所选行未列的独立收率。</td><td>670式(2)、671反应表及解释（PDF1–2）</td></tr><tr><th scope=\"row\">CQ-H16，1983系列X，1b</th><td>少量KF／DG；先−70°C、2 h未反应，随后−60±5°C、3.5 h作用完全（均原报GC观察）</td><td>3b酰氟90%、2b磺酰氟93%，归为S–O断裂；本篇产品2/3不等同通讯3/4编号。</td><td>1044定义、1054实验（PDF1、11）</td></tr></tbody></table></div><p class=\"scientific-meaning\"><b>证据的意义：</b>原文的可对照贡献是：具体酯基结构和反应条件与不同断键产物关联。原作者提出的α-F／β-醚键“屏蔽”及进攻硫解释可按原作者观点介绍，但不能替代独立机理证据。</p><ul class=\"result-limits\"><li>这是有原页定位的历史实验报告核读；所列收率属于原作者，本平台未重复制备、重新鉴定全套谱图或开展DFT。三例不构成全部多氟/全氟酯的普适断键规律；1054页温度计未校正，不新增温度不确定度资格。2003硅酯／二氟卡宾与2010甲酯／甾体三氟甲基化仍分开，旧方法核读登记不写成本轮新增签认。</li></ul><p class=\"table-note\">来源ID：CQ-H07、CQ-H08、CQ-H16</p><p class=\"links\"><a href=\"../topics/perfluorosulfonates/index.html\">磺酸酯历史专题与原刊题录 →</a></p></article></div><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/perfluorosulfonates/index.html#record-sulfonate-cleavage\">磺酸酯断键的历史成果 →</a><a href=\"../topics/chen-reagent/index.html#chen-reagent-contribution\">陈试剂的代表性贡献 →</a><a href=\"../topics/chen-reagent/index.html#chen-reagent-evidence\">原始论文与命名"
+    },
+    {
+      "old": "",
+      "new": "\nfrom a06_biography_publication import (MANIFEST as A06_BIOGRAPHY_MANIFEST,\n    predecessor_bytes as a06_biography_predecessor_bytes, apply as apply_a06_biography_presentation)\n"
+    },
+    {
+      "old": "_file(root, name).read_bytes(",
+      "new": "a06_biography_predecessor_bytes(root, name"
+    },
+    {
+      "old": "",
+      "new": "        if (root/A06_BIOGRAPHY_MANIFEST).exists():\n            raise ValueError('A06 biography presentation requires its immutable v29 predecessor')\n"
+    },
+    {
+      "old": "_file(root, name).read_text",
+      "new": "a06_biography_predecessor_bytes(root, name).decode"
+    },
+    {
+      "old": "_file(root, 'site/'+route).read_bytes(",
+      "new": "a06_biography_predecessor_bytes(root, 'site/'+route"
+    },
+    {
+      "old": "_file(root, 'site/'+name).read_bytes(",
+      "new": "a06_biography_predecessor_bytes(root, 'site/'+name"
+    },
+    {
+      "old": "from render_ai_research import inspect_ai_research\n    from render_a05_biography import inspect_biography\n    checks = [inspect_ai_research(root), inspect_biography(root)]\n    if any(c.get('status') != 'passed' for c in checks):\n",
+      "new": "# v29 validates reconstructed bytes; v30 validates the current rendering.\n    if not (root/A06_BIOGRAPHY_MANIFEST).exists():\n        from render_ai_research import inspect_ai_research\n        from render_a05_biography import inspect_biography\n        checks = [inspect_ai_research(root), inspect_biography(root)]\n        if any(c.get('status') != 'passed' for c in checks):\n    "
+    },
+    {
+      "old": "updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}",
+      "new": "apply_a06_biography_presentation(root, updated,\n        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})"
+    },
+    {
+      "old": "",
+      "new": "    if (root/'provenance/platform-presentation.v30.json').exists() and not (root/'provenance/platform-presentation.v29.json').exists():\n        raise ValueError('A06 biography presentation requires its immutable v29 predecessor')\n"
+    },
+    {
+      "old": "",
+      "new": "        if (context['path'] in ('topics/perfluorosulfonates/index.html', 'topics/chen-reagent/index.html')\n                and (root/'content/a06-biography-narrative.v1.json').exists()):\n            from render_a06_biography import render_heritage_context as render_a06_heritage_context\n            blocks[context['path']] = {'HERITAGE_CONTEXT': marker_block(\n                'HERITAGE_CONTEXT', render_a06_heritage_context(root, context['path']))}\n            continue\n"
+    }
+  ],
+  "boundary": "Only the two existing A06 topic main contents and AI A06 section, separate attributed historical source/document/renderer, heritage route selection and bounded publication implementation change. Original head/header/footer/main wrappers, IDs, Chen reagent identity block/data and all naming evidence remain unchanged; the representative feature permits exactly two fixed display-scope text substitutions without changing source identities or scientific claims. A06 literature_checks, source/data JSON, homepage, full PFtB page and research data, A01-A05 and A07-A09, other pages and all v1-v29 manifest bytes remain unchanged. No new calculation, experiment, private original, tracking inventory or scientific release.",
+  "publish_allowlist": "Unchanged: sixteen static HTML pages, two original public JSON files and an empty .nojekyll marker, nineteen regular published files.",
+  "remote_action_performed": false
+}
