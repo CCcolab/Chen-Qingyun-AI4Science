@@ -1,0 +1,541 @@
+{
+  "schema_version": "29.0",
+  "presentation_id": "PLATFORM-A05-BIOGRAPHY-20261117-v29",
+  "created_at_utc": "2026-11-16T23:57:26.873969+00:00",
+  "publication_kind": "platform_a05_biography_narrative",
+  "authorization": "User-authorized A05 historical academic and collaborative presentation, led by the established biography and attributed original records. Keep unresolved tracking local, preserve original data and M0 pause.",
+  "previous_presentation_commit": "28b606c4c10535409f8866cda34a4da72e1375e9",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v28.json",
+    "sha256": "54449b28f3dfb1c2946872f959df5e8bb1fc4a9b8e04f20b9b0f9daacd8704f3"
+  },
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "allowed_html_paths": [
+    "research/index.html",
+    "topics/refrigerants/index.html"
+  ],
+  "added_html_paths": [],
+  "additions": [],
+  "allowed_display_regions": {
+    "research/index.html": [
+      "ai-a05"
+    ],
+    "topics/refrigerants/index.html": [
+      "main.contents"
+    ]
+  },
+  "allowed_ai_json_pointers": [
+    "/lines/4/question",
+    "/lines/4/ai_role",
+    "/lines/4/records",
+    "/lines/4/boundaries",
+    "/lines/4/next_step",
+    "/lines/4/future_question",
+    "/lines/4/source_links/0/title",
+    "/lines/4/source_links/1/title",
+    "/lines/4/boundary_title",
+    "/lines/4/next_step_title"
+  ],
+  "allowed_new_files": [
+    "content/a05-biography-narrative.v1.json",
+    "scripts/render_a05_biography.py",
+    "docs/A05_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+    "scripts/a05_biography_publication.py",
+    "provenance/platform-presentation.v29.json"
+  ],
+  "editorial_documents": [
+    {
+      "path": "content/ai-research-section.v1.json",
+      "sha256": "51277efbd1a3e04452839a726192215250d9f383bf0ab37f0717039602d5c250",
+      "bytes": 100648
+    },
+    {
+      "path": "scripts/render_ai_research.py",
+      "sha256": "4293b6cd39150c9e77a6b3c02591c34e83b5d86ecdec675ca9253578af0e2552",
+      "bytes": 40735
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "sha256": "98577da04c5f02afb729cfed4768310075267750b5ab0e45fb5aeb4871095453",
+      "bytes": 59939
+    },
+    {
+      "path": "content/a05-biography-narrative.v1.json",
+      "sha256": "d5cb9d73f3804dd4bc6112477eebb9b259c5b1c80cdb0e4b618b3d2c594dc832",
+      "bytes": 11849
+    },
+    {
+      "path": "scripts/render_a05_biography.py",
+      "sha256": "9c0c06cc028d78fb41c9e0dae96754eefe59062d2f8f7c5ad00d35817f7fd2d4",
+      "bytes": 9651
+    },
+    {
+      "path": "docs/A05_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "sha256": "1d95bf451dddcdbb5027541bf9052204281feab0b5cd8f41024cd24501f8eb47",
+      "bytes": 10857
+    },
+    {
+      "path": "scripts/a04_biography_publication.py",
+      "sha256": "5d5c6b3385328ed13da046d30e808bf285d5d5142819db31607dd128ddccfcaa",
+      "bytes": 24521
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "sha256": "f24be4bd8c13df513b762f3d0cdd657343d6161af09ee8650ac986c5156e5ef4",
+      "bytes": 310651
+    },
+    {
+      "path": "scripts/render_heritage.py",
+      "sha256": "ad5acef15a792d58fbaf9ad995564b455257c84b2e53e31ce2eb7e0520a7134d",
+      "bytes": 43429
+    },
+    {
+      "path": "scripts/a05_biography_publication.py",
+      "sha256": "58ee54c2e1e6a7ddc50eabb4e99b1a8068626b98a24c66b60c88e24fd8319756",
+      "bytes": 24062
+    }
+  ],
+  "protected_website_members": {
+    "index.html": {
+      "sha256": "8b3532ee45c0fb33912f20a3bd7943043a348f10a370b9c6716e9edf3c0abf41",
+      "bytes": 257766
+    },
+    "topics/perfluorosulfonates/index.html": {
+      "sha256": "85a6f4330edb7607f61ca217b71d2ef6c12cb1af0d48aaaebf737acf3a212ea5",
+      "bytes": 8888
+    },
+    "topics/chen-reagent/index.html": {
+      "sha256": "14f08afd4062c0ae171f24e5fb225e5968b003e885edc206baf08ca352b630df",
+      "bytes": 19991
+    },
+    "topics/single-electron-transfer/index.html": {
+      "sha256": "79c84f89e25e576a03f34153b9eb85a5ff73815c8265a0222930d889390ea947",
+      "bytes": 10355
+    },
+    "topics/fluoroporphyrins/index.html": {
+      "sha256": "24b6bb744b594573487847c89bbb35571ea56bc15d444ebeac3339379dbc1875",
+      "bytes": 6018
+    },
+    "topics/fluorinated-small-rings/index.html": {
+      "sha256": "2413c83d4319746f41e940c04fe48bdeda28244235f5a9e8697285c187ba412d",
+      "bytes": 5924
+    },
+    "topics/deoxyfluorination/index.html": {
+      "sha256": "2aca9c13eb46f9fedfb02a2adfdc9423c207465f58608bcd671838d4d8045df5",
+      "bytes": 5550
+    },
+    "topics/sulfonyl-fluoride/index.html": {
+      "sha256": "fe944efbbfa5a7814015235f4ae3aae101db4046b0c9419986d6855d7ed15b49",
+      "bytes": 5043
+    },
+    "topics/index.html": {
+      "sha256": "44a5690d1e65195b9ff191d2a7ec37487070cdfafb191ae107962d5e0d7ab73c",
+      "bytes": 5055
+    },
+    "achievements/index.html": {
+      "sha256": "df20daf429c46e89e99085550067e8c1e9f7e283b10b7e8269f38da6a9d380ff",
+      "bytes": 95867
+    },
+    "data/public-sources.json": {
+      "sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+      "bytes": 33608
+    },
+    "data/achievement-lines.json": {
+      "sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+      "bytes": 39768
+    },
+    "README.txt": {
+      "sha256": "6e15068b7240ae47d633df3f777e81fbb9e46146ee5f4ab70011f09119b6bbc9",
+      "bytes": 336
+    },
+    "ROUTES.txt": {
+      "sha256": "a734c356877d4534285ab7d71b9fe0f7a17abbced4de3c52f8e60d335301e418",
+      "bytes": 949
+    },
+    "QA.txt": {
+      "sha256": "a60b5f382b31689fa17e2518b7079ef0660674fb62bddbbf564c7b74dfe51067",
+      "bytes": 290
+    },
+    "IONIC-ENTRY-RETEST.txt": {
+      "sha256": "3462b056891a27c335cc2620deb87b245b6c9aea3bdaec607c8a14beca69fe9d",
+      "bytes": 741
+    },
+    "topics/early-fluoroketones/index.html": {
+      "sha256": "eeffdcd82cca6ae6549db9d21b7059ac4c9db94cdc60337ffc3a6a75ae06af88",
+      "bytes": 257826
+    },
+    "topics/fluoromonomers/index.html": {
+      "sha256": "ff79d077f5b74b8580ef06ac5e7c4c622b98c4f562daf9f75ae530e6f9ba199b",
+      "bytes": 18224
+    },
+    "pftb/index.html": {
+      "sha256": "b2dd711fcb504b676c3d04f2c42876c2a36ae8f616c0b48b8530aed53822c3b5",
+      "bytes": 101043
+    },
+    "topics/f53/index.html": {
+      "sha256": "d6b1dc495768583ef4657f8b1e542649c681ee1dd641e739f74003498a92a85b",
+      "bytes": 16656
+    }
+  },
+  "reconstruction_kind": "deduplicated_exact_utf8_text_edits",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "M0_resumed": false,
+  "historical_achievement_independent_of_AI_review": true,
+  "new_quantum_calls": 0,
+  "new_model_API_calls": 0,
+  "changes": [
+    {
+      "path": "research/index.html",
+      "old_sha256": "ff6aecc96040dfbee8a28df72ae416c3cef401a6cc32cac5f62dc9414d28afa2",
+      "old_bytes": 79537,
+      "new_sha256": "58b2ef46e8535e5a767abe6c2904b102de4c77d11f1b693b6eb220c85d61b001",
+      "new_bytes": 80919,
+      "reason": "A05 original historical academic contributions and collaboration; source-derived main narrative with original shell, source identities and data retained."
+    },
+    {
+      "path": "topics/refrigerants/index.html",
+      "old_sha256": "5d9b5a355b949f67c5de252727f8d4e4e7533abab8a666c49a0f932170153c4e",
+      "old_bytes": 10636,
+      "new_sha256": "ee04418185a648f2272fb46ac38c9f9ddeee1abcb72cbb35b514cce5f765da34",
+      "new_bytes": 18076,
+      "reason": "A05 original historical academic contributions and collaboration; source-derived main narrative with original shell, source identities and data retained."
+    }
+  ],
+  "reversible_text_files": [
+    {
+      "path": "site/topics/refrigerants/index.html",
+      "old_sha256": "5d9b5a355b949f67c5de252727f8d4e4e7533abab8a666c49a0f932170153c4e",
+      "old_bytes": 10636,
+      "new_sha256": "ee04418185a648f2272fb46ac38c9f9ddeee1abcb72cbb35b514cce5f765da34",
+      "new_bytes": 18076,
+      "edits": [
+        {
+          "old_offset": 2349,
+          "replacement": 0
+        }
+      ]
+    },
+    {
+      "path": "content/ai-research-section.v1.json",
+      "old_sha256": "096c409f8f8b25565aa6079014d4ffc846f32d3145653b5adca465d7403b450c",
+      "old_bytes": 98670,
+      "new_sha256": "51277efbd1a3e04452839a726192215250d9f383bf0ab37f0717039602d5c250",
+      "new_bytes": 100648,
+      "edits": [
+        {
+          "old_offset": 69622,
+          "replacement": 1
+        },
+        {
+          "old_offset": 69915,
+          "replacement": 2
+        },
+        {
+          "old_offset": 70615,
+          "replacement": 3
+        },
+        {
+          "old_offset": 70813,
+          "replacement": 4
+        },
+        {
+          "old_offset": 70894,
+          "replacement": 5
+        },
+        {
+          "old_offset": 71074,
+          "replacement": 6
+        },
+        {
+          "old_offset": 71425,
+          "replacement": 7
+        },
+        {
+          "old_offset": 71565,
+          "replacement": 8
+        },
+        {
+          "old_offset": 74588,
+          "replacement": 9
+        }
+      ]
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "old_sha256": "1acf5a10706382835dab7b98637af169ea9b61b5b3295d943b53dbc8bff46344",
+      "old_bytes": 58719,
+      "new_sha256": "98577da04c5f02afb729cfed4768310075267750b5ab0e45fb5aeb4871095453",
+      "new_bytes": 59939,
+      "edits": [
+        {
+          "old_offset": 36671,
+          "replacement": 10
+        },
+        {
+          "old_offset": 36784,
+          "replacement": 11
+        },
+        {
+          "old_offset": 36941,
+          "replacement": 12
+        },
+        {
+          "old_offset": 37558,
+          "replacement": 13
+        },
+        {
+          "old_offset": 37701,
+          "replacement": 14
+        },
+        {
+          "old_offset": 37728,
+          "replacement": 15
+        },
+        {
+          "old_offset": 37881,
+          "replacement": 16
+        },
+        {
+          "old_offset": 38074,
+          "replacement": 17
+        },
+        {
+          "old_offset": 40232,
+          "replacement": 18
+        }
+      ]
+    },
+    {
+      "path": "site/research/index.html",
+      "old_sha256": "ff6aecc96040dfbee8a28df72ae416c3cef401a6cc32cac5f62dc9414d28afa2",
+      "old_bytes": 79537,
+      "new_sha256": "58b2ef46e8535e5a767abe6c2904b102de4c77d11f1b693b6eb220c85d61b001",
+      "new_bytes": 80919,
+      "edits": [
+        {
+          "old_offset": 52204,
+          "replacement": 19
+        }
+      ]
+    },
+    {
+      "path": "scripts/a04_biography_publication.py",
+      "old_sha256": "c5be09d48b941ecd51f9fb311329662d9f868dd491c2e1babcfa1edf5c1ab18e",
+      "old_bytes": 23854,
+      "new_sha256": "5d5c6b3385328ed13da046d30e808bf285d5d5142819db31607dd128ddccfcaa",
+      "new_bytes": 24521,
+      "edits": [
+        {
+          "old_offset": 210,
+          "replacement": 20
+        },
+        {
+          "old_offset": 10866,
+          "replacement": 21
+        },
+        {
+          "old_offset": 11051,
+          "replacement": 21
+        },
+        {
+          "old_offset": 14498,
+          "replacement": 21
+        },
+        {
+          "old_offset": 14795,
+          "replacement": 22
+        },
+        {
+          "old_offset": 15036,
+          "replacement": 21
+        },
+        {
+          "old_offset": 15226,
+          "replacement": 21
+        },
+        {
+          "old_offset": 18404,
+          "replacement": 21
+        },
+        {
+          "old_offset": 18877,
+          "replacement": 21
+        },
+        {
+          "old_offset": 19076,
+          "replacement": 23
+        },
+        {
+          "old_offset": 20012,
+          "replacement": 24
+        },
+        {
+          "old_offset": 22396,
+          "replacement": 25
+        },
+        {
+          "old_offset": 22618,
+          "replacement": 26
+        },
+        {
+          "old_offset": 23762,
+          "replacement": 27
+        }
+      ]
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "old_sha256": "d21da949447555de43eda8a46d92f3f4f7015b8a15aeb0d2020b191bd622ef51",
+      "old_bytes": 310421,
+      "new_sha256": "f24be4bd8c13df513b762f3d0cdd657343d6161af09ee8650ac986c5156e5ef4",
+      "new_bytes": 310651,
+      "edits": [
+        {
+          "old_offset": 96041,
+          "replacement": 28
+        }
+      ]
+    },
+    {
+      "path": "scripts/render_heritage.py",
+      "old_sha256": "5eaa5bb95ce5d49efa11481ecae9273671aef5584087e52260d4829fce3dd897",
+      "old_bytes": 43030,
+      "new_sha256": "ad5acef15a792d58fbaf9ad995564b455257c84b2e53e31ce2eb7e0520a7134d",
+      "new_bytes": 43429,
+      "edits": [
+        {
+          "old_offset": 32060,
+          "replacement": 29
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "article id=\"topic-refrigerants\" data-topic-slug=\"refrigerants\" data-topic-type=\"topic\"><span class=\"status\">审阅稿 · 机构回顾</span><h2>研究问题：把制备、配制与后续工艺分开</h2><p>制冷剂研究涉及不同化学物质和技术环节。上海有机所机构回顾所记载的 F-115 制备、F-502 配制与后来的 F-134a 液相工艺研究，应分别理解，而不是合并成一项对整类制冷剂的发明。</p><h2>可确认的贡献</h2><p>机构纪念资料的“1970年代末”段记载，团队制备 F-115；当时 F-502 已有国际配方，团队以所制 F-115 与 F-22 配制 F-502。这是有关制备与配制的机构回顾，不能据此补写比例、实验条件或工业规模。</p><p>分项定位：F-115 制备与 F-502 配方背景均见机构纪念资料“1970年代末”段；F-134a 液相法技术见同段及机构生平科研贡献段。两者均为机构回顾，而非原始工艺文件。</p><p>同一机构回顾还记载，团队后来参与 F-134a 液相工艺研究；<a href=\"../../index.html#source-cq-r28\">CQ-R28</a> 人物生平的科研贡献段可交叉支持液相工艺开发的概览。回顾有助于确定值得追踪的研究方向，但不能独自确认具体反应路线、机理和合作分工。</p><p>依据：<a href=\"../../index.html#source-s1\">S1</a>、<a href=\"../../index.html#source-cq-r28\">CQ-R28</a>（分别见本页来源）。</p><h2>证据边界与下一步</h2><p>要进一步说明贡献，应分别取得 F-115 的原始论文或技术报告、F-502 的配制记录与鉴定材料，以及 F-134a 的原始机理论文、工艺或项目文件；采用单位、时间和规模也需独立证据。现有回顾不支持优先权、产量或普遍采用的结论。</p><div class=\"evidence\" id=\"refs\"><h2>来源与定位</h2><ul><li id=\"ref-s1\"><a href=\"https://sioc.cas.cn/kxj/ml/cqy/jnc/\" target=\"_blank\" rel=\"noopener noreferrer\">S1｜上海有机所纪念资料</a>：“1970年代末”段；机构回顾。</li><li id=\"ref-cq-r28\"><a href=\"https://sioc.cas.cn/dncqy/sp/\" target=\"_blank\" rel=\"noopener noreferrer\">CQ-R28｜上海有机所生平资料</a>：科研贡献段；机构回顾。</li></ul></div><a class=\"top\" href=\"../index.html\">返回专题索引 ↑</a></article><article id=\"record-refrigerant-pilot\"><span class=\"status\">A05（制冷剂与配套技术） · 中试与整机档案</span><h2>组分、工程中试与整机验证</h2><h3>F-115 与 F-502</h3><p>传记 p.55 记陈庆云组织 605 小组探索两条 F-115 制备路线，其中一条利用 F-53 工艺副产物；后以 F-115 与 F-22 试配已有的 F-502。1980 年市级奖证指向 F-502 组分 F-115 的合成，研究单位为上海有机所，协作栏列西安交通大学、南京冷气机厂；证书未细分各方工序。〔<a href=\"../../index.html#source-cq-h01\">CQ-H01</a>〕 <a href=\"../f53/index.html#record-industrial-application\">查看 F-53 研制与厂试档案 →</a></p><h3>HFC-134a 验证阶段</h3><p>传记 p.57–59、118 分列早期样品和配套试验、连续液相中试、1992 年 12 月与嘉兴冰箱厂合作的 50 台整机试用；书中记林永达、杨映松参与连续化中试。30 吨级是传记所载中试规模，未载年产口径。润滑油与汽车空调为另行验证场景。〔<a href=\"../../index.html#source-cq-h01\">CQ-H01</a>〕</p><h3>物质与机理边界</h3><p>原料 HCFC-133a 含氯，产物 HFC-134a 不含氯。传记有关催化剂和介质的叙述须与原始温度、压力和介质组成核对。吴恺、陈庆云 2002 年论文研究三氟乙基醚，不能用以判定此中试反应机理。〔<a href=\"../../index.html#source-cq-h01\">CQ-H01</a>、<a href=\"../../index.html#source-cq-h24\">CQ-H24</a>〕</p></article>\n<!-- HERITAGE_CONTEXT_BEGIN -->\n<style id=\"heritage-context-style\">\n/* Existing-page historical cards; no viewport-width layout. */\n.heritage-section{max-width:100%;min-width:0;margin:2rem auto;overflow-wrap:anywhere}\n.heritage-section>h2{font-size:clamp(28px,3.4vw,40px);margin:.3em 0 .6em}\n.heritage-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;max-width:100%;min-width:0}\n.heritage-card{min-width:0;max-width:100%;padding:1.1rem;border:1px solid #d9e2df;border-radius:14px;background:var(--card,#fff);overflow-wrap:anywhere}\n.heritage-card h3,.heritage-card h4{margin:.15rem 0 .65rem;line-height:1.45}\n.heritage-achievement-notes h5{font-size:1em;margin:.9rem 0 .3rem;line-height:1.5}\n.heritage-achievement-notes{border-top:1px solid #d9e2df;margin-top:1rem;padding-top:.6rem}\n.heritage-card p{margin:.5rem 0;line-height:1.8}\n.heritage-card ul{padding-left:1.3rem;margin:.55rem 0}\n.heritage-card li{margin:.4rem 0;line-height:1.7}\n.heritage-meta,.heritage-locator{font-size:.9em;color:#526560;line-height:1.75}\n.heritage-refs{font-size:.85em;white-space:normal;overflow-wrap:anywhere}\n.heritage-refs a{display:inline-block;margin-right:.25em}\n.heritage-tag{display:inline-block;border:1px solid #c4d6ce;border-radius:6px;padding:.08rem .4rem;margin:.1rem .25rem .1rem 0;font-size:.8em;color:#34574b}\n.heritage-section details{margin:.8rem 0;min-width:0;max-width:100%}\n.heritage-section summary{cursor:pointer;font-weight:600;line-height:1.7}\n.heritage-boundary{border-left:3px solid #6e8d7d;padding:.65rem .9rem;background:#f4f7f5;line-height:1.8}\n@media(max-width:720px){.heritage-grid{grid-template-columns:minmax(0,1fr)}.heritage-card{padding:.9rem}}\n\n</style>\n<section id=\"heritage-context\" class=\"heritage-section\"><h2>成果与合作</h2><p>以下按A05（制冷剂与配套技术）成果线呈现传记与公开资料中的历史记录，保留参与者、来源定位及待核事项；平台AI辅助研究另行登记。</p><div class=\"heritage-grid\"><article class=\"heritage-card\"><h3>F-115组分与F-502试配分开看</h3><p>605研究小组由F-53相关原料线索开展F-115制备，再研究含该组分的F-502混合制冷剂。传记所引会议摘要和奖证书影保存了这条历史应用支线，组分制备与混合物性能分别登记。</p><p class=\"heritage-locator\">出处定位：传记p55及注①、图5-5；机构纪念册F-115/F-502段 <span class=\"heritage-refs\"><a href=\"../../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../../index.html#source-s1\" title=\"陈庆云纪念册（机构资料）\">[S1]</a></span></p><p class=\"heritage-meta\">待核事项：1978年会摘要原页、原试配数据和独立奖证扫描待补。</p></article><article class=\"heritage-card\"><h3>从合成走向工艺、润滑油和整机</h3><p>围绕F-134a，林永达、杨映松参与实验厂的扩大生产与中试；陈庆云、林永达继续研究冷冻机油，并与嘉兴冰箱厂、广州化学所等协作。1998年林永达、陈庆云合著综述又记录了CFCs替代物这一研究关切。</p><p class=\"heritage-locator\">出处定位：传记p58–59及1996、1994转引；化学进展1998,10(2):228起 <span class=\"heritage-refs\"><a href=\"../../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../../index.html#source-s1\" title=\"陈庆云纪念册（机构资料）\">[S1]</a> <a href=\"../../index.html#heritage-source-s05\" title=\"林永达、陈庆云：大气臭氧层破坏和CFCs替代物（1998）\">[HERITAGE-S05]</a></span></p><p class=\"heritage-meta\">待核事项：原工程报告及综述全文待补；不据机构回顾直接认定温压相态或完整反应机理。</p></article></div><div class=\"heritage-related-stories\"><h3>相关合作故事</h3><ul><li><a href=\"../../achievements/index.html#heritage-story-st10\">制冷剂合成之后，还要让工艺和整机接得上</a></li><li><a href=\"../../achievements/index.html#heritage-story-st11\">从F-53研究线索走向F-115与F-502</a></li></ul></div><p><a href=\"../../achievements/index.html#heritage-line-a05\">查看本成果线的资料</a> · <a href=\"../../achievements/index.html#heritage-stories-all\">查看全部合作与育人故事</a></p></section>\n<!-- HERITAGE_CONTEXT_END -->\n",
+      "new": "!-- HERITAGE_CONTEXT_BEGIN -->\n<!-- A05_BIOGRAPHY_HISTORY:BEGIN -->\n<style id=\"heritage-context-style\">.a05-meaning{border-left:3px solid #aa7545;padding:10px 16px;background:#f7f4eb}.a05-locator{font-size:.86rem;color:var(--muted)}.a05-nav{display:flex;flex-wrap:wrap;gap:8px 18px}.a05-table{overflow-x:auto;max-width:100%;margin:20px 0;border:1px solid var(--line)}.a05-table table{border-collapse:collapse;min-width:640px;width:100%;font-size:.92rem}.a05-table caption{text-align:left;padding:14px;background:#edf3ee;color:var(--accent);font-weight:700}.a05-table th,.a05-table td{border-top:1px solid var(--line);padding:12px;text-align:left;vertical-align:top}.a05-table:focus-visible{outline:3px solid #aa7545}#refs{overflow-wrap:anywhere}</style>\n<article id=\"topic-refrigerants\" data-topic-slug=\"refrigerants\" data-topic-type=\"topic\"><span class=\"status\">历史成果与合作</span><h2>A05（制冷剂与配套技术）：F-115新路线与F-502试配</h2>\n<p>陈庆云的制冷剂研究，把含氟原料的利用、合成路线的选择、连续工艺和设备应用联系起来。《氟缘笃志：陈庆云传》记述了从F-115与F-502，到HFC-134a液相制备、配套冷冻机油和整机试用的研究历程。研究组、实验厂、材料与设备应用单位在不同环节接续工作，是这条成果线的重要内容。</p><nav class=\"a05-nav\" aria-label=\"A05（制冷剂与配套技术）专题导航\"><a href=\"#record-refrigerant-pilot\">连续中试</a><a href=\"#a05-lubricants-and-equipment\">配套应用</a><a href=\"#heritage-context\">合作分工</a><a href=\"#a05-ai-collation\">AI资料整理</a><a href=\"#refs\">参考资料</a></nav>\n<p>20世纪70年代末，陈庆云组织605研究小组，利用F-53制备过程中的副产物ClCF₂CF₂I，经氟化制得F-115。传记还记述了另一条路线：以AlCl₃促使F-113重排为CF₃CCl₃，再经氟化得到F-115。这些工作把已有含氟原料与副产物转化为新的制冷剂组分，发展了不同的制备途径。</p>\n<p>所得F-115与F-22用于试配F-502。F-502当时已有国际配方，因此这段贡献具体落在组分的新制备路线及其配制应用。1978年《五氟氯乙烷合成简法》以上海有机所“致冷剂小组”集体署名发表，保存了含碘中间体氟化制备FC-115的原始研究记录；传记中的陈先生组织贡献与原刊的集体署名各按出处呈现。</p>\n<p class=\"a05-meaning\"><b>学术与应用意义：</b>从既有含氟工业原料发展制冷剂组分的合成方法，并将化合物制备同混合工质的应用要求连接起来。</p><p class=\"a05-locator\">传记55页、116页年表、图5-5；1978年原刊77–79页 · <a href=\"#a05-source-book\">HERITAGE-S01</a> · <a href=\"#a05-source-1978\">ACTA1978-36-77</a></p></article>\n<article id=\"record-refrigerant-pilot\"><span class=\"status\">历史成果与合作</span><h2>HFC-134a：液相制备与连续中试</h2>\n<p>1989年11月，陈庆云负责国家重点项目“氟利昂代用品的研制”。他结合已有生产条件、专利文献和F-53研究经验，选择以F-133a为起点的液相路线。传记记载，1990—1991年团队完成F-134a合成，并与上海第二轻工业局合作，利用现有冰箱开展例行试验。</p>\n<p>液相反应能否连续生产，是从实验室走向应用的重要问题。林永达、杨映松在实验室工作后，继续参加上海有机所实验厂的扩大生产和中试；传记记述，他们在实验室连续工艺基础上实现30吨级液相连续化生产工艺，中试产品质量通过技术鉴定。这里保留书中的中试规模表述，不将其改成年产能力。</p>\n<p class=\"a05-meaning\"><b>学术与应用意义：</b>贡献既包括选择和发展液相制备方法，也包括把实验室反应推进到连续工艺，使制冷剂研究能够与后续使用环节衔接。</p><p class=\"a05-locator\">传记57–58页；118页年表（1989年11月项目）；中试段未列具体日期 · <a href=\"#a05-source-book\">HERITAGE-S01</a></p></article>\n<article id=\"a05-lubricants-and-equipment\"><span class=\"status\">历史成果与合作</span><h2>配套冷冻机油：让替代工质进入设备</h2>\n<p>替换制冷剂还需要解决润滑油相容性。传记记述，F-134a与传统矿物油不相混溶，陈庆云与林永达因此研制配套的新型冷冻机油。1992年12月，在单机试验基础上，他们与嘉兴冰箱厂协作灌装50台益友牌冰箱；书中记载投放市场后运转正常。</p>\n<p>团队还将F-134a和配套冷冻机油用于汽车空调，并与广州化学所合作，合成四种类型、30多个聚醚和酯类润滑油，用于冰箱和汽车等设备。这里的研究对象由制冷剂分子延伸到配套材料及实际设备，体现了合成、材料和应用环节的共同工作。</p>\n<p class=\"a05-meaning\"><b>学术与应用意义：</b>制冷剂替换是一项配套技术任务：工质、润滑油和设备之间需要相互适应，研究成果由多种材料与应用单位的合作共同实现。</p><p class=\"a05-locator\">传记58–59页；1996《上海化工》和1994《制冷》论文为书中转引 · <a href=\"#a05-source-book\">HERITAGE-S01</a></p></article>\n<article id=\"a05-research-continuity\"><span class=\"status\">历史成果与合作</span><h2>应用问题带来的反应研究与环境关切</h2>\n<p>在液相制备研究中，陈庆云与同事进一步考察不外加原先F-53类催化剂时反应仍能进行的现象，并与吴恺研究高温水介质及相关反应。传记的论著目录还列有双方关于F-133a、F-134a与亲核试剂反应的论文，以及高温水介质中合成三氟乙基醚的研究。这些具体反应课题与制冷剂的连续中试分别介绍。</p>\n<p>1998年，林永达、陈庆云合著《大气臭氧层破坏和CFCs替代物》，将替代物的研究发展放在保护大气臭氧层的背景中讨论。制冷剂研究由此连接了有机氟合成、应用工艺和环境问题。</p>\n<p class=\"a05-meaning\"><b>学术与应用意义：</b>生产和应用中提出的问题，继续推动反应介质、化学转化与替代材料的研究；后来的平台整理保留这些问题与原研究者的贡献联系。</p><p class=\"a05-locator\">传记57–59、120、140页；1998年期刊官方目录与摘要 · <a href=\"#a05-source-book\">HERITAGE-S01</a> · <a href=\"#a05-source-1998\">HERITAGE-S05</a></p></article>\n<article id=\"a05-chronology\"><h2>从组分制备到配套应用</h2>\n<div class=\"a05-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a05-chronology-caption\"><table><caption id=\"a05-chronology-caption\">传记与原刊中的研究历程</caption><thead><tr><th scope=\"col\">时间</th><th scope=\"col\">工作与记录</th><th scope=\"col\">出处</th></tr></thead><tbody><tr><th scope=\"row\">1978年</th><td>“致冷剂小组”发表F-115制备研究简报。</td><td>原刊77–79页</td></tr><tr><th scope=\"row\">1980年2月</th><td>F-115合成相关成果获上海市重大科研成果奖三等奖。</td><td>传记55页图5-5、116页年表</td></tr><tr><th scope=\"row\">1989年11月</th><td>陈庆云负责“氟利昂代用品的研制”国家重点项目。</td><td>传记118页</td></tr><tr><th scope=\"row\">1990—1991年</th><td>F-134a合成及与上海第二轻工业局合作的冰箱例行试验。</td><td>传记57页</td></tr><tr><th scope=\"row\">1992年12月</th><td>与嘉兴冰箱厂协作灌装50台益友牌冰箱。</td><td>传记58页</td></tr><tr><th scope=\"row\">1998年</th><td>林永达、陈庆云发表臭氧层破坏与CFCs替代物综述。</td><td>HERITAGE-S05官方目录</td></tr></tbody></table></div>\n<p>1980年2月奖证所列研究单位为中国科学院上海有机化学研究所，协作单位为西安交通大学、南京冷气机厂。按这一成果及合作范围介绍奖励，不把制冷剂组分制备奖扩大为对整类制冷剂的发明。</p></article>\n<article id=\"heritage-context\"><h2>合作分工：研究、工程与设备应用</h2><p>以下按传记明确记载的研究、工程与应用角色介绍合作；奖证所列单位、原论文署名和专利发明人另按各自文书呈现。</p>\n<div class=\"a05-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a05-cooperation-caption\"><table><caption id=\"a05-cooperation-caption\">按传记明确记载介绍合作角色</caption><thead><tr><th scope=\"col\">人物或单位</th><th scope=\"col\">具体贡献与角色</th><th scope=\"col\">出处</th></tr></thead><tbody><tr><th scope=\"row\">陈庆云与605研究小组</th><td>组织并开展F-115制备路线研究及F-502配制；陈庆云后来承担氟利昂代用品项目，推进液相路线和配套应用。</td><td>传记55、57–59、118页</td></tr><tr><th scope=\"row\">林永达</th><td>参加液相制备研究、实验厂扩大生产和连续中试；与陈庆云研制配套冷冻机油。</td><td>传记58页</td></tr><tr><th scope=\"row\">杨映松</th><td>继续参加实验厂扩大生产和30吨级连续中试；传记还引用其1994年配套润滑油论文。</td><td>传记58–59页及脚注</td></tr><tr><th scope=\"row\">上海有机所实验厂</th><td>承接扩大生产和中试，衔接实验室工艺与连续化应用。</td><td>传记58页</td></tr><tr><th scope=\"row\">上海第二轻工业局</th><td>合作利用现有冰箱开展F-134a例行试验。</td><td>传记57页</td></tr><tr><th scope=\"row\">嘉兴冰箱厂</th><td>1992年12月协作灌装50台益友牌冰箱。</td><td>传记58页</td></tr><tr><th scope=\"row\">广州化学所</th><td>合作合成四种类型、30多个聚醚和酯类润滑油；传记此段未细分个人任务。</td><td>传记58–59页</td></tr><tr><th scope=\"row\">吴恺</th><td>与陈庆云开展高温水介质及F-133a／F-134a相关反应研究。</td><td>传记58、120、140页</td></tr><tr><th scope=\"row\">西安交通大学、南京冷气机厂</th><td>1980年F-115成果奖证所列协作单位；证书没有细分具体技术工序。</td><td>传记55页图5-5</td></tr></tbody></table></div>\n<section id=\"a05-authorship\"><h3>原论文与工艺文书中的署名</h3>\n<div class=\"a05-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a05-authorship-caption\"><table><caption id=\"a05-authorship-caption\">保留各份原文的贡献归属</caption><thead><tr><th scope=\"col\">文书</th><th scope=\"col\">原文署名</th><th scope=\"col\">介绍范围</th></tr></thead><tbody><tr><th scope=\"row\">1978年《五氟氯乙烷合成简法》</th><td>致冷剂小组（中国科学院上海有机化学研究所）</td><td>研究简报的集体署名；不据此分配每位成员的具体实验。</td></tr><tr><th scope=\"row\">CN1075708A：四氟乙烷制备工艺</th><td>发明人林永达、梁与达；申请人上海有机所</td><td>按公开说明书首页署名保存，独立于传记的项目贡献叙述。</td></tr><tr><th scope=\"row\">CN1308043A：四氟乙烷水相氟化制备法</th><td>发明人吴永明、林永达；申请人上海有机所</td><td>为另一份工艺文书；不自动等同书中所称两项专利。</td></tr></tbody></table></div>\n<p>原论文的集体署名、专利文书的发明人和传记所述项目组织贡献，各有对应范围。两份工艺说明书中的实例与文字对照列在AI资料页，保留原报字段及科学审阅状态。</p><p class=\"a05-locator\"><a href=\"#a05-source-1978\">ACTA1978-36-77</a> · <a href=\"#a05-source-patent-1993\">CN1075708A</a> · <a href=\"#a05-source-patent-2001\">CN1308043A</a></p></section></article>\n<article id=\"a05-ai-collation\"><h2>平台的AI辅助资料整理</h2><p>本页介绍原研究者与合作单位的历史成果。平台新增工作是关联传记、原刊和工艺文书，整理化学对象、研究环节、署名及数量口径；具体对照放在下一层AI资料页。本轮整理不是实验复现、中试重做或机理验证，保持review_required、release_eligible=false；M0继续暂停。</p><p><a href=\"../../research/index.html#ai-a05\">A05（制冷剂与配套技术）的AI研究资料 →</a></p></article>\n<article id=\"refs\"><h2>参考资料</h2><ul>\n<li id=\"a05-source-book\"><b>HERITAGE-S01</b> · 朱晶、刘超：《氟缘笃志：陈庆云传》；参考底本55–59、116、118、120、124、140页；研制、连续中试、配套应用、合作、奖证及论著目录</li>\n<li id=\"a05-source-1978\"><b>ACTA1978-36-77</b> · <a href=\"https://sioc-journal.cn/Jwk_hxxb/EN/abstract/abstract342568.shtml\">致冷剂小组：五氟氯乙烷合成简法</a>；《化学学报》1978，36(1)：77–79；77页集体署名及路线，78页实验与参考文献，79页同篇英文摘要；链接为官方题录，正文据已取得原刊</li>\n<li id=\"a05-source-patent-1993\"><b>CN1075708A</b> · <a href=\"https://patents.google.com/patent/CN1075708A/zh\">1,1,1,2-四氟乙烷的制备工艺</a>；公开说明书首页：发明人林永达、梁与达；申请人中国科学院上海有机化学研究所；与项目经历及中试规模分别介绍</li>\n<li id=\"a05-source-patent-2001\"><b>CN1308043A</b> · <a href=\"https://patents.google.com/patent/CN1308043A/zh\">1,1,1,2-四氟乙烷的水相氟化制备法</a>；公开说明书首页：发明人吴永明、林永达；申请人中国科学院上海有机化学研究所；不据此推定每位合作者的工序分工</li>\n<li id=\"a05-source-1998\"><b>HERITAGE-S05</b> · <a href=\"https://manu56.magtech.com.cn/progchem/CN/volumn/volumn_1306.shtml\">林永达、陈庆云：大气臭氧层破坏和CFCs替代物</a>；《化学进展》1998，10(2)：228起；此处引用官方目录及摘要对替代物研究的概述</li>\n<li id=\"ref-s1\"><b>S1</b> · <a href=\"https://sioc.cas.cn/kxj/ml/cqy/jnc/\">上海有机所陈庆云纪念资料</a>；原专题保留的机构回顾入口；F-115、F-502及F-134a研究背景</li>\n<li id=\"ref-cq-r28\"><b>CQ-R28</b> · <a href=\"https://sioc.cas.cn/dncqy/sp/\">上海有机所陈庆云生平资料</a>；原专题保留的机构生平入口；科研贡献概览，具体合作角色据传记逐项介绍</li>\n</ul><details><summary>化学对象与数量表述的范围</summary>\n<div class=\"a05-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a05-scope-caption\"><table><caption id=\"a05-scope-caption\">按各环节原有口径介绍</caption><thead><tr><th scope=\"col\">对象或数量</th><th scope=\"col\">所指内容</th><th scope=\"col\">适用范围</th></tr></thead><tbody><tr><th scope=\"row\">F-115与F-502</th><td>F-115是组分；F-502为含F-115和F-22的混合工质。</td><td>组分合成、混配及设备表现分环节介绍。</td></tr><tr><th scope=\"row\">F-133a与HFC-134a</th><td>F-133a为CF₃CH₂Cl；HFC-134a为CF₃CH₂F。</td><td>明确底物与产物；HFC-134a本身不含氯。</td></tr><tr><th scope=\"row\">30吨级连续中试</th><td>按传记记载的中试规模。</td><td>不改写成年产量或商业装置能力。</td></tr><tr><th scope=\"row\">50台冰箱与润滑油种类</th><td>分别是书中装机数量与合成材料数量。</td><td>不外推长期性能、市场覆盖或当前适用评价。</td></tr><tr><th scope=\"row\">高温水介质与反应研究</th><td>保留书中研究线索与论文对象。</td><td>不据这些叙述单独认证介质相态或制冷剂生产的完整机理。</td></tr></tbody></table></div>\n</details><p><a href=\"../../achievements/index.html#line-a05\">A05（制冷剂与配套技术）成果线</a> · <a href=\"../index.html\">返回专题索引 ↑</a></p></article>\n<!-- A05_BIOGRAPHY_HISTORY:END -->\n<!-- HERITAGE_CONTEXT_END -->"
+    },
+    {
+      "old": "组分制备、混合试配、中试、润滑油与整机试用分别需要哪些证据？\",\r\n      \"ai_role\": \"消歧F-115、F-502与HFC-134a；对齐原论文、专利和工况字段，整理配套润滑油及整机协作的证据链",
+      "new": "从组分合成到连续工艺和设备应用，陈先生及合作者解决了哪些具体问题？\",\r\n      \"ai_role\": \"关联传记、原刊和工艺文书，整理化学对象、合成与应用环节、合作署名及原报数量口径"
+    },
+    {
+      "old": "现有资料与记录\",\r\n          \"summary\": \"已取得并核读1978年《五氟氯乙烷合成简法》77–79页，集体署名“致冷剂小组”，对象为F-115，不能混作1978年F-53论文。另已取得CN1075708A、CN1308043A两项团队工艺专利说明书，发明人分别为林永达／梁与达、吴永明／林永达，不能改列陈庆云个人专利。配套润滑油、原中试及整机试用原表仍待取得；本平台未新增实验或工艺验证。 两份公开说明书的指定余页与原报实例已完成核读；字式、时间范围的内部差异另列，含量与产率不混为同一指标",
+      "new": "传记主线：合成、连续中试与配套应用\",\r\n          \"summary\": \"已按传记55–59页及相关年表，整理F-115两条制备路线与F-502试配、HFC-134a液相连续中试、配套冷冻机油和整机协作。30吨级沿用中试表述；1992年12月50台冰箱、四种类型30多个润滑油分别保留原记录的对象和数量。研究与工程合作按书中明确角色介绍"
+    },
+    {
+      "old": "现有材料、缺口与原始资料定位\",\r\n              \"url\": \"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/",
+      "new": "具体学术贡献与合作分工\",\r\n              \"url\": \"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A05_"
+    },
+    {
+      "old": "",
+      "new": "            }\r\n          ]\r\n        },\r\n        {\r\n          \"title\": \"原刊与专利：各按文书保存贡献归属\",\r\n          \"summary\": \"1978年《五氟氯乙烷合成简法》77–79页已取得并核读，原刊集体署“致冷剂小组”；它提供F-115制备研究记录。两份已取得的工艺说明书分别列林永达／梁与达、吴永明／林永达为发明人；传记中的陈先生项目贡献与这些文书署名分别呈现。实例和文字对照保留在下方专业记录中。\",\r\n          \"links\": [\r\n            {\r\n              \"title\": \"1978年原刊官方题录\",\r\n              \"url\": \"https://sioc-journal.cn/Jwk_hxxb/EN/abstract/abstract342568.shtml\",\r\n              \"kind\": \"external\"\r\n            },\r\n            {\r\n              \"title\": \"CN1075708A公开说明书\",\r\n              \"url\": \"https://patents.google.com/patent/CN1075708A/zh\",\r\n              \"kind\": \"external\"\r\n            },\r\n            {\r\n              \"title\": \"CN1308043A公开说明书\",\r\n              \"url\": \"https://patents.google.com/patent/CN1308043A/zh\",\r\n              \"kind\": \"external\"\r\n            }\r\n          ]\r\n        },\r\n        {\r\n          \"title\": \"环境关切与资料整理的范围\",\r\n          \"summary\": \"新增介绍沿用1998年林永达、陈庆云合著综述的官方目录与摘要，说明替代物研究与臭氧层保护的联系。本轮完成的是传记关联整理及新增引用的出处、署名和解释核对；历史技术成效归原团队，未新增实验、中试、量化计算或机理验证。\",\r\n          \"links\": [\r\n            {\r\n              \"title\": \"1998年综述官方目录与摘要\",\r\n              \"url\": \"https://manu56.magtech.com.cn/progchem/CN/volumn/volumn_1306.shtml\",\r\n              \"kind\": \"external\"\r\n"
+    },
+    {
+      "old": "组分与混合物分开；规模不改成年产，历史回顾不替代中试报告；相态、机理及性能须有对应对象和温压证据",
+      "new": "F-115组分、F-502混合工质、HFC-134a及配套润滑油分别介绍；原团队的制备、中试与装机记录，和平台本轮资料整理分别呈现。\",\r\n        \"30吨级不改写为年产能力，50台冰箱及润滑油种类不外推长期性能或市场规模；工艺文书核读不授予介质相态或完整机理资格"
+    },
+    {
+      "old": "优先取得配套润滑油两篇全文与中试／整机原表，核对团队专利技术对象和历史底物指代；不以新取得文件代替工艺验证。\",\r\n      \"future_question\": \"各化学对象、介质组成与温压条件能否从原始工程资料中逐项确认？",
+      "new": "沿已出版传记继续解释合成路线、连续工艺、配套材料和应用合作之间的学术联系；新增引用按其实际支持范围整理，专业记录保留原报数据。\",\r\n      \"future_question\": \"未来如开展AI辅助工艺或配套性能研究，应另行限定材料、工况和可比较指标，并制定独立研究协议；目前仅作设想。"
+    },
+    {
+      "old": "研究专题",
+      "new": "与配套技术的历史成果"
+    },
+    {
+      "old": "中试与整机档案",
+      "new": "HFC-134a液相连续中试"
+    },
+    {
+      "old": "",
+      "new": ",\r\n      \"boundary_title\": \"资料整理的适用范围\",\r\n      \"next_step_title\": \"资料整理的下一步\""
+    },
+    {
+      "old": "组分制备、混合试配、中试、润滑油与整机试用分别需要哪些证据",
+      "new": "从组分合成到连续工艺和设备应用，陈先生及合作者解决了哪些具体问题"
+    },
+    {
+      "old": "消歧F-115、F-502与HFC-134a；对齐原论文、专利和工况字段，整理配套润滑油及整机协作的证据链",
+      "new": "关联传记、原刊和工艺文书，整理化学对象、合成与应用环节、合作署名及原报数量口径"
+    },
+    {
+      "old": "现有资料与记录。**已取得并核读1978年《五氟氯乙烷合成简法》77–79页，集体署名“致冷剂小组”，对象为F-115，不能混作1978年F-53论文。另已取得CN1075708A、CN1308043A两项团队工艺专利说明书，发明人分别为林永达／梁与达、吴永明／林永达，不能改列陈庆云个人专利。配套润滑油、原中试及整机试用原表仍待取得；本平台未新增实验或工艺验证。 两份公开说明书的指定余页与原报实例已完成核读；字式、时间范围的内部差异另列，含量与产率不混为同一指标",
+      "new": "传记主线：合成、连续中试与配套应用。**已按传记55–59页及相关年表，整理F-115两条制备路线与F-502试配、HFC-134a液相连续中试、配套冷冻机油和整机协作。30吨级沿用中试表述；1992年12月50台冰箱、四种类型30多个润滑油分别保留原记录的对象和数量。研究与工程合作按书中明确角色介绍"
+    },
+    {
+      "old": "现有材料、缺口与原始资料定位](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/",
+      "new": "具体学术贡献与合作分工](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A05_"
+    },
+    {
+      "old": "### 待核事项与边界",
+      "new": "**原刊与专利：各按文书保存贡献归属。**1978年《五氟氯乙烷合成简法》77–79页已取得并核读，原刊集体署“致冷剂小组”；它提供F-115制备研究记录。两份已取得的工艺说明书分别列林永达／梁与达、吴永明／林永达为发明人；传记中的陈先生项目贡献与这些文书署名分别呈现。实例和文字对照保留在下方专业记录中。"
+    },
+    {
+      "old": "- 组分与混合物分开；规模不改成年产，历史回顾不替代中试报告；相态、机理及性能须有对应对象和温压证据。",
+      "new": "[1978年原刊官方题录](https://sioc-journal.cn/Jwk_hxxb/EN/abstract/abstract342568.shtml) · [CN1075708A公开说明书](https://patents.google.com/patent/CN1075708A/zh) · [CN1308043A公开说明书](https://patents.google.com/patent/CN1308043A/zh)"
+    },
+    {
+      "old": "下一步先补的证据：**优先取得配套润滑油两篇全文与中试／整机原表，核对团队专利技术对象和历史底物指代；不以新取得文件代替工艺",
+      "new": "环境关切与资料整理的范围。**新增介绍沿用1998年林永达、陈庆云合著综述的官方目录与摘要，说明替代物研究与臭氧层保护的联系。本轮完成的是传记关联整理及新增引用的出处、署名和解释核对；历史技术成效归原团队，未新增实验、中试、量化计算或机理"
+    },
+    {
+      "old": "**候选后续问题：**各化学对象、介质组成与温压条件能否从原始工程资料中逐项确认？",
+      "new": "[1998年综述官方目录与摘要](https://manu56.magtech.com.cn/progchem/CN/volumn/volumn_1306.shtml)\n\n### 资料整理的适用范围\n\n- F-115组分、F-502混合工质、HFC-134a及配套润滑油分别介绍；原团队的制备、中试与装机记录，和平台本轮资料整理分别呈现。\n- 30吨级不改写为年产能力，50台冰箱及润滑油种类不外推长期性能或市场规模；工艺文书核读不授予介质相态或完整机理资格。\n\n**资料整理的下一步：**沿已出版传记继续解释合成路线、连续工艺、配套材料和应用合作之间的学术联系；新增引用按其实际支持范围整理，专业记录保留原报数据。\n\n**候选后续问题：**未来如开展AI辅助工艺或配套性能研究，应另行限定材料、工况和可比较指标，并制定独立研究协议；目前仅作设想。"
+    },
+    {
+      "old": "研究专题](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html) · [中试与整机档案",
+      "new": "与配套技术的历史成果](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html) · [HFC-134a液相连续中试"
+    },
+    {
+      "old": "组分制备、混合试配、中试、润滑油与整机试用分别需要哪些证据？</p><h3>AI怎样辅助</h3><p>消歧F-115、F-502与HFC-134a；对齐原论文、专利和工况字段，整理配套润滑油及整机协作的证据链。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>已取得并核读1978年《五氟氯乙烷合成简法》77–79页，集体署名“致冷剂小组”，对象为F-115，不能混作1978年F-53论文。另已取得CN1075708A、CN1308043A两项团队工艺专利说明书，发明人分别为林永达／梁与达、吴永明／林永达，不能改列陈庆云个人专利。配套润滑油、原中试及整机试用原表仍待取得；本平台未新增实验或工艺验证。 两份公开说明书的指定余页与原报实例已完成核读；字式、时间范围的内部差异另列，含量与产率不混为同一指标。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md\">现有材料、缺口与原始资料定位 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>组分与混合物分开；规模不改成年产，历史回顾不替代中试报告；相态、机理及性能须有对应对象和温压证据。</li></ul><p><b>下一步先补的证据：</b>优先取得配套润滑油两篇全文与中试／整机原表，核对团队专利技术对象和历史底物指代；不以新取得文件代替工艺验证。</p><p><b>候选后续问题：</b>各化学对象、介质组成与温压条件能否从原始工程资料中逐项确认？</p><div class=\"prior-work\" aria-label=\"平台AI辅助文献核校\"><h3>平台AI辅助文献核校</h3><p>历史实验与理论研究归原作者。以下呈现平台完成的原文、表格和附件对照，保持 <code>review_required</code>、<code>release_eligible=false</code>；文献核校不授予实验、结构或机理验证资格。</p><article class=\"result-evidence\" id=\"a05-literature-technical-text\" data-review-status=\"review_required\" data-release-eligible=\"false\"><h4>团队工艺说明书中的原报数据</h4><p><b>历史原文：</b>制冷剂原刊、传记和团队工艺专利分别记录研究与工程探索。CN1075708A与CN1308043A发明人分别为林永达／梁与达、吴永明／林永达，不改列为陈庆云个人专利。</p><p><b>平台AI核校：</b>已核对两份公开说明书的末页实例，组成含量与产率／收率分字段保存。CN1308043A的原栏存在差别：PDF4图式左端印CH3CH2Cl，而同页正文及权利要求1写1,1,1-三氟-2-氯乙烷；PDF5表头印CF3CHCl，典型段印CF3CH2Cl；一般时间写1–7 h，表中第5行为8 h。本平台并列保存这些原字式和时窗，不静默修正，也不据此裁定排印原因。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a05-literature-technical-text-table-1\"><table><caption id=\"a05-literature-technical-text-table-1\">团队工艺说明书中的原报数据：原文对照</caption><thead><tr><th scope=\"col\">文书</th><th scope=\"col\">本次核清的原报范围</th><th scope=\"col\">原页定位</th></tr></thead><tbody><tr><th scope=\"row\">CN1075708A</th><td>5例GC含量／产率（%）依次为82／88、83／85.9、45.6／79.1、80／86.4、73／71；例1–4与例5的起始物不同。</td><td>PDF4／说明书末页</td></tr><tr><th scope=\"row\">CN1308043A</th><td>6行原表收率37–68%、含量80–93%；这里只概括该表，不据此评价工业表现。</td><td>PDF5／说明书3页</td></tr></tbody></table></div><p class=\"scientific-meaning\"><b>证据的意义：</b>把公开说明书中的化学对象、组成字段与收率字段逐一分开，明确技术文字能够支持什么；与传记所记中试规模、配套润滑油及整机表现分别评价。</p><ul class=\"result-limits\"><li>说明书核读不等于平台实验复现、30吨规模或超临界相态验证，也不证明工业采用、保护范围或当前法律状态。传记的F-133a起点／F-134a含氯句仍按原文保留，不能仅凭HFC-134a身份判定传记必为错字。</li></ul><p class=\"table-note\">来源ID：HERITAGE-S01、S1</p><p class=\"links\"><a href=\"https://patents.google.com/patent/CN1075708A/zh\">CN1075708A公开文书入口 →</a><a href=\"https://patents.google.com/patent/CN1308043A/zh\">CN1308043A公开文书入口 →</a></p></article></div><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/refrigerants/index.html\">制冷剂研究专题 →</a><a href=\"../topics/refrigerants/index.html#record-refrigerant-pilot\">中试与整机档案",
+      "new": "从组分合成到连续工艺和设备应用，陈先生及合作者解决了哪些具体问题？</p><h3>AI怎样辅助</h3><p>关联传记、原刊和工艺文书，整理化学对象、合成与应用环节、合作署名及原报数量口径。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>传记主线：合成、连续中试与配套应用</h4><p>已按传记55–59页及相关年表，整理F-115两条制备路线与F-502试配、HFC-134a液相连续中试、配套冷冻机油和整机协作。30吨级沿用中试表述；1992年12月50台冰箱、四种类型30多个润滑油分别保留原记录的对象和数量。研究与工程合作按书中明确角色介绍。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A05_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">具体学术贡献与合作分工 →</a></p></div><div class=\"record\"><h4>原刊与专利：各按文书保存贡献归属</h4><p>1978年《五氟氯乙烷合成简法》77–79页已取得并核读，原刊集体署“致冷剂小组”；它提供F-115制备研究记录。两份已取得的工艺说明书分别列林永达／梁与达、吴永明／林永达为发明人；传记中的陈先生项目贡献与这些文书署名分别呈现。实例和文字对照保留在下方专业记录中。</p><p class=\"links\"><a href=\"https://sioc-journal.cn/Jwk_hxxb/EN/abstract/abstract342568.shtml\">1978年原刊官方题录 →</a><a href=\"https://patents.google.com/patent/CN1075708A/zh\">CN1075708A公开说明书 →</a><a href=\"https://patents.google.com/patent/CN1308043A/zh\">CN1308043A公开说明书 →</a></p></div><div class=\"record\"><h4>环境关切与资料整理的范围</h4><p>新增介绍沿用1998年林永达、陈庆云合著综述的官方目录与摘要，说明替代物研究与臭氧层保护的联系。本轮完成的是传记关联整理及新增引用的出处、署名和解释核对；历史技术成效归原团队，未新增实验、中试、量化计算或机理验证。</p><p class=\"links\"><a href=\"https://manu56.magtech.com.cn/progchem/CN/volumn/volumn_1306.shtml\">1998年综述官方目录与摘要 →</a></p></div></div><h3>资料整理的适用范围</h3><ul><li>F-115组分、F-502混合工质、HFC-134a及配套润滑油分别介绍；原团队的制备、中试与装机记录，和平台本轮资料整理分别呈现。</li><li>30吨级不改写为年产能力，50台冰箱及润滑油种类不外推长期性能或市场规模；工艺文书核读不授予介质相态或完整机理资格。</li></ul><p><b>资料整理的下一步：</b>沿已出版传记继续解释合成路线、连续工艺、配套材料和应用合作之间的学术联系；新增引用按其实际支持范围整理，专业记录保留原报数据。</p><p><b>候选后续问题：</b>未来如开展AI辅助工艺或配套性能研究，应另行限定材料、工况和可比较指标，并制定独立研究协议；目前仅作设想。</p><div class=\"prior-work\" aria-label=\"平台AI辅助文献核校\"><h3>平台AI辅助文献核校</h3><p>历史实验与理论研究归原作者。以下呈现平台完成的原文、表格和附件对照，保持 <code>review_required</code>、<code>release_eligible=false</code>；文献核校不授予实验、结构或机理验证资格。</p><article class=\"result-evidence\" id=\"a05-literature-technical-text\" data-review-status=\"review_required\" data-release-eligible=\"false\"><h4>团队工艺说明书中的原报数据</h4><p><b>历史原文：</b>制冷剂原刊、传记和团队工艺专利分别记录研究与工程探索。CN1075708A与CN1308043A发明人分别为林永达／梁与达、吴永明／林永达，不改列为陈庆云个人专利。</p><p><b>平台AI核校：</b>已核对两份公开说明书的末页实例，组成含量与产率／收率分字段保存。CN1308043A的原栏存在差别：PDF4图式左端印CH3CH2Cl，而同页正文及权利要求1写1,1,1-三氟-2-氯乙烷；PDF5表头印CF3CHCl，典型段印CF3CH2Cl；一般时间写1–7 h，表中第5行为8 h。本平台并列保存这些原字式和时窗，不静默修正，也不据此裁定排印原因。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a05-literature-technical-text-table-1\"><table><caption id=\"a05-literature-technical-text-table-1\">团队工艺说明书中的原报数据：原文对照</caption><thead><tr><th scope=\"col\">文书</th><th scope=\"col\">本次核清的原报范围</th><th scope=\"col\">原页定位</th></tr></thead><tbody><tr><th scope=\"row\">CN1075708A</th><td>5例GC含量／产率（%）依次为82／88、83／85.9、45.6／79.1、80／86.4、73／71；例1–4与例5的起始物不同。</td><td>PDF4／说明书末页</td></tr><tr><th scope=\"row\">CN1308043A</th><td>6行原表收率37–68%、含量80–93%；这里只概括该表，不据此评价工业表现。</td><td>PDF5／说明书3页</td></tr></tbody></table></div><p class=\"scientific-meaning\"><b>证据的意义：</b>把公开说明书中的化学对象、组成字段与收率字段逐一分开，明确技术文字能够支持什么；与传记所记中试规模、配套润滑油及整机表现分别评价。</p><ul class=\"result-limits\"><li>说明书核读不等于平台实验复现、30吨规模或超临界相态验证，也不证明工业采用、保护范围或当前法律状态。传记的F-133a起点／F-134a含氯句仍按原文保留，不能仅凭HFC-134a身份判定传记必为错字。</li></ul><p class=\"table-note\">来源ID：HERITAGE-S01、S1</p><p class=\"links\"><a href=\"https://patents.google.com/patent/CN1075708A/zh\">CN1075708A公开文书入口 →</a><a href=\"https://patents.google.com/patent/CN1308043A/zh\">CN1308043A公开文书入口 →</a></p></article></div><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/refrigerants/index.html\">制冷剂与配套技术的历史成果 →</a><a href=\"../topics/refrigerants/index.html#record-refrigerant-pilot\">HFC-134a液相连续中试"
+    },
+    {
+      "old": "",
+      "new": "\nfrom a05_biography_publication import (MANIFEST as A05_BIOGRAPHY_MANIFEST,\n    predecessor_bytes as a05_biography_predecessor_bytes, apply as apply_a05_biography_presentation)\n"
+    },
+    {
+      "old": "_file(root, name).read_bytes(",
+      "new": "a05_biography_predecessor_bytes(root, name"
+    },
+    {
+      "old": "",
+      "new": "        if (root/A05_BIOGRAPHY_MANIFEST).exists():\n            raise ValueError('A05 biography presentation requires its immutable v28 predecessor')\n"
+    },
+    {
+      "old": "_file(root, name).read_text",
+      "new": "a05_biography_predecessor_bytes(root, name).decode"
+    },
+    {
+      "old": "_file(root, 'site/'+route).read_bytes(",
+      "new": "a05_biography_predecessor_bytes(root, 'site/'+route"
+    },
+    {
+      "old": "_file(root, 'site/'+name).read_bytes(",
+      "new": "a05_biography_predecessor_bytes(root, 'site/'+name"
+    },
+    {
+      "old": "from render_ai_research import inspect_ai_research\n    from render_a04_biography import inspect_biography\n    checks = [inspect_ai_research(root), inspect_biography(root)]\n    if any(c.get('status') != 'passed' for c in checks):\n",
+      "new": "# v28 validates its reconstructed bytes; v29 validates the current rendering.\n    if not (root/A05_BIOGRAPHY_MANIFEST).exists():\n        from render_ai_research import inspect_ai_research\n        from render_a04_biography import inspect_biography\n        checks = [inspect_ai_research(root), inspect_biography(root)]\n        if any(c.get('status') != 'passed' for c in checks):\n    "
+    },
+    {
+      "old": "updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}",
+      "new": "apply_a05_biography_presentation(root, updated,\n        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})"
+    },
+    {
+      "old": "",
+      "new": "    if (root/'provenance/platform-presentation.v29.json').exists() and not (root/'provenance/platform-presentation.v28.json').exists():\n        raise ValueError('A05 biography presentation requires its immutable v28 predecessor')\n"
+    },
+    {
+      "old": "",
+      "new": "        if (context['path'] == 'topics/refrigerants/index.html'\n                and (root/'content/a05-biography-narrative.v1.json').exists()):\n            from render_a05_biography import render_block as render_a05_heritage_context\n            blocks[context['path']] = {'HERITAGE_CONTEXT': marker_block(\n                'HERITAGE_CONTEXT', render_a05_heritage_context(root))}\n            continue\n"
+    }
+  ],
+  "boundary": "Only the existing refrigerants page main contents and AI A05 section, separate attributed historical source/document/renderer and bounded publication implementation change. Original head/header/footer/main wrapper, stable IDs, original source/data JSON, full PFtB page and research data, homepage, other lines/pages and all v1-v28 manifest bytes remain unchanged. No new calculation, experiment, private original, tracking inventory or scientific release.",
+  "publish_allowlist": "Unchanged: sixteen static HTML pages, two original public JSON files and an empty .nojekyll marker, nineteen regular published files.",
+  "remote_action_performed": false
+}
