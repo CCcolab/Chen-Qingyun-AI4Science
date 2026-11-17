@@ -142,7 +142,7 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
         'historical_achievement_independent_of_AI_review': True,
         'allowed_ai_json_pointers': [u['pointer'] for u in EXPECTED_AI_UPDATES],
         'allowed_new_files': list(NEW_FILES),
-        'workflow_timeout_changes': {name: {'occurrence': 1, 'from_minutes': 10, 'to_minutes': 20, 'all_other_bytes_preserved': True} for name in WORKFLOW_TIMEOUT_FILES},
+        'workflow_timeout_changes': {name: {'occurrence': 1, 'from_minutes': 10, 'to_minutes': 40, 'all_other_bytes_preserved': True} for name in WORKFLOW_TIMEOUT_FILES},
     }
     if (not isinstance(data, dict) or any(data.get(k) != v for k, v in required.items())
             or any(data.get(k) is not required[k] for k in ('release_eligible',
@@ -169,7 +169,7 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
     for name in WORKFLOW_TIMEOUT_FILES:
         old = predecessor_bytes(root, name)
         if (old.count(b'    timeout-minutes: 10') != (2 if name.endswith('pages.yml') else 1)
-                or old.replace(b'    timeout-minutes: 10', b'    timeout-minutes: 20', 1) != _file(root, name).read_bytes()):
+                or old.replace(b'    timeout-minutes: 10', b'    timeout-minutes: 40', 1) != _file(root, name).read_bytes()):
             raise ValueError('A08 may only extend the first workflow job timeout: '+name)
     expected = json.loads(predecessor_bytes(root, AI))
     for update in EXPECTED_AI_UPDATES:

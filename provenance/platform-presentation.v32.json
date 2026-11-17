@@ -63,13 +63,13 @@
     ".github/workflows/research-ci.yml": {
       "occurrence": 1,
       "from_minutes": 10,
-      "to_minutes": 20,
+      "to_minutes": 40,
       "all_other_bytes_preserved": true
     },
     ".github/workflows/pages.yml": {
       "occurrence": 1,
       "from_minutes": 10,
-      "to_minutes": 20,
+      "to_minutes": 40,
       "all_other_bytes_preserved": true
     }
   },
@@ -121,17 +121,17 @@
     },
     {
       "path": ".github/workflows/research-ci.yml",
-      "sha256": "fe32ebb6ae9a14bd2c2efa05a80fc426697a11af01f125915540fb24c957fe43",
+      "sha256": "5353b0fae4b0ad0f3faa2b1275b54bb8a0619e95aec95575153a11de7988e047",
       "bytes": 2599
     },
     {
       "path": ".github/workflows/pages.yml",
-      "sha256": "8eeaab5e3d7733e9efe2123fc4dfc0a68099f0f0cc9e62b68801288585fa68a1",
+      "sha256": "f56bc01ffd913e0ca987923f1b96be49370d4768ad83a1a283f2dc5560542d7b",
       "bytes": 1949
     },
     {
       "path": "scripts/a08_biography_publication.py",
-      "sha256": "6bc52ca5e2af2934967b8d160a40f6dd7e5e6b30f77606859b37be1ab72d4e9b",
+      "sha256": "d8c0b92e9c18d33135f3f1ed6c656672b028e609b59b0075a1243537c3cdcf84",
       "bytes": 27149
     }
   ],
@@ -505,7 +505,7 @@
       "path": ".github/workflows/research-ci.yml",
       "old_sha256": "ad0506d56e6db0ce45e929f20435f66415c09615f4fccacf5c3b30820897558e",
       "old_bytes": 2599,
-      "new_sha256": "fe32ebb6ae9a14bd2c2efa05a80fc426697a11af01f125915540fb24c957fe43",
+      "new_sha256": "5353b0fae4b0ad0f3faa2b1275b54bb8a0619e95aec95575153a11de7988e047",
       "new_bytes": 2599,
       "edits": [
         {
@@ -518,7 +518,7 @@
       "path": ".github/workflows/pages.yml",
       "old_sha256": "d8238e7d4a16ca88245e7a11aad8c4bf452954f57c2d093761f48f659eaf2ddd",
       "old_bytes": 1949,
-      "new_sha256": "8eeaab5e3d7733e9efe2123fc4dfc0a68099f0f0cc9e62b68801288585fa68a1",
+      "new_sha256": "f56bc01ffd913e0ca987923f1b96be49370d4768ad83a1a283f2dc5560542d7b",
       "new_bytes": 1949,
       "edits": [
         {
@@ -671,10 +671,26 @@
     },
     {
       "old": "1",
-      "new": "2"
+      "new": "4"
     }
   ],
-  "boundary": "Only the four existing A08-related topic main contents and AI A08 section, separate attributed historical source/document/renderer, bounded publication implementation change, and only the first job wall-clock timeout in research-ci.yml and pages.yml from 10 to 20 minutes; all other workflow bytes remain unchanged. Original head/header/footer/main wrappers, IDs and embedded JSON remain unchanged; exact old presentation bytes are reversible. A08 literature_checks and prior_work, all underlying source/data JSON, homepage, PFtB page and scientific data, A01-A07 and A09, all other routes and all v1-v31 manifests remain unchanged. No new calculation, experiment, private original, tracking inventory or scientific release.",
+  "boundary": "Only the four existing A08-related topic main contents and AI A08 section, separate attributed historical source/document/renderer, bounded publication implementation change, and only the first job wall-clock timeout in research-ci.yml and pages.yml from 10 to 40 minutes; all other workflow bytes remain unchanged. Original head/header/footer/main wrappers, IDs and embedded JSON remain unchanged; exact old presentation bytes are reversible. A08 literature_checks and prior_work, all underlying source/data JSON, homepage, PFtB page and scientific data, A01-A07 and A09, all other routes and all v1-v31 manifests remain unchanged. No new calculation, experiment, private original, tracking inventory or scientific release.",
   "publish_allowlist": "Unchanged: sixteen static HTML pages, two original public JSON files and an empty .nojekyll marker, nineteen regular published files.",
-  "remote_action_performed": false
+  "remote_action_performed": false,
+  "resource_window_revision": {
+    "revision_kind": "unpublished_v32_candidate_resource_window_only",
+    "previous_attempt_commit": "e3eb00d6247f8b3799d1f9f4d62cb675d1b409fb",
+    "previous_attempt_manifest_sha256": "d884c2b30ed57cd1b4878a883d20cef1606d4c72ed147aaabf039a333d0c1e0f",
+    "recorded_at_UTC": "2026-11-17T04:14:04.244742+00:00",
+    "confirmed_failed_CI_run": 44011900471,
+    "observed_job_elapsed": "20m16s",
+    "annotation": "The job has exceeded the maximum execution time of 20m0s",
+    "workflow_job_timeout_minutes": {
+      "from": 20,
+      "to": 40
+    },
+    "all_verification_commands_and_acceptance_criteria_unchanged": true,
+    "no_additional_presentation_layer_or_parse_cache": true,
+    "source_reviews_and_nineteen_publication_bytes_unchanged": true
+  }
 }

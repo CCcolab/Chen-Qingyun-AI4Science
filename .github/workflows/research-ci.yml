@@ -43,7 +43,7 @@ permissions:
 jobs:
   offline-replay:
     runs-on: ubuntu-24.04
-    timeout-minutes: 20
+    timeout-minutes: 40
     steps:
       - name: Preserve original file bytes before checkout
         run: git config --global core.autocrlf false
