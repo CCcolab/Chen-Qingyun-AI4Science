@@ -528,6 +528,12 @@ def render_blocks(data: dict, sources: dict, root: Path = ROOT) -> dict:
             blocks[context['path']] = {'HERITAGE_CONTEXT': marker_block(
                 'HERITAGE_CONTEXT', render_a06_heritage_context(root, context['path']))}
             continue
+        if (context['path'] == 'topics/single-electron-transfer/index.html'
+                and (root/'content/a07-biography-narrative.v1.json').exists()):
+            from render_a07_biography import render_block as render_a07_heritage_context
+            blocks[context['path']] = {'HERITAGE_CONTEXT': marker_block(
+                'HERITAGE_CONTEXT', render_a07_heritage_context(root))}
+            continue
         blocks[context['path']] = {'HERITAGE_CONTEXT': marker_block(
             'HERITAGE_CONTEXT', render_topic_context(context, data, sources))}
     return {name: {marker: project_html(body, name) for marker, body in markers.items()}

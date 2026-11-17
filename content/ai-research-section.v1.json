@@ -1818,34 +1818,62 @@
       "id": "A07",
       "name": "单电子转移与C–Cl活化",
       "home_summary": "按底物、溶剂和引发条件组织证据，梳理不同活化体系的研究问题。",
-      "question": "不同溶剂与引发体系下，特定含氟氯代物发生什么转化？",
-      "ai_role": "按底物、条件、观察和提出的机理组织证据；区分1999溶剂体系、2001镍体系和2005专利，并追踪不同研究组的贡献。",
+      "question": "从溶剂效应到含氟C–Cl活化，陈先生与合作者怎样发展具体氟烷基化方法？",
+      "ai_role": "以传记关联研究问题、发现过程和合作分工；按具体论文区分底物、引发条件、观察与作者解释，核对新增引用。",
       "records": [
         {
-          "title": "现有资料与记录",
-          "summary": "1999与2001年论文的31页、26页SI已取得，已核首页身份；正文仍待取得，全部谱图与机理证据未完成专业核校。申请200510031063.4的CN1752059A与CN1298686C两份说明书已取得，属同一申请的公开／授权版本，陈庆云、曹海萍为共同发明人；两版全文、权利要求合并／重编号与实施例已完成文本对照，不据此判断当前法律状态或工业采用。摘要中的SET解释不作为平台机制认证。",
+          "title": "研究脉络与合作故事",
+          "summary": "已按传记69–74、83–84页，整理全氟烷基碘的溶剂效应、多种引发方向和含氟氯代物活化；陈亚雄的发现过程、龙正宇与黄小庭等的接续研究分别具名呈现。原脱卤亚磺化发现归黄维垣小组，陈先生团队的方法拓展另行说明。",
           "links": [
             {
-              "title": "现有材料、缺口与原始资料定位",
-              "url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+              "title": "A07（单电子转移与C–Cl活化）的具体学术贡献与合作",
+              "url": "https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A07_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
               "kind": "repo"
+            }
+          ]
+        },
+        {
+          "title": "新增原作引用：从溶剂到具体反应",
+          "summary": "新增关联1984年碘苯氟烷基化溶剂研究题录、1986年铜体系摘要，以及1999／2001两种C–Cl方法的原摘要。合成结果、抑制实验及未捕获到氟烷基铜的结果、原作者提出的可能SET解释分别呈现；1999摘要的方法贡献不被改写为完整机理证明。",
+          "links": [
+            {
+              "title": "单电子转移与C–Cl活化历史专题",
+              "url": "../topics/single-electron-transfer/index.html",
+              "kind": "site"
+            }
+          ]
+        },
+        {
+          "title": "已有附件与技术文书记录",
+          "summary": "1999／2001两份31页、26页SI已取得；正文与SI分层使用。同一申请的CN1752059A和CN1298686C两份完整说明书及权利要求对应核读登记保留；陈庆云、曹海萍为共同发明人。指定版本对照见下方专业记录，本轮没有新增实验或计算。",
+          "links": [
+            {
+              "title": "CN1752059A公开文书",
+              "url": "https://patents.google.com/patent/CN1752059A/zh",
+              "kind": "external"
+            },
+            {
+              "title": "CN1298686C历史授权公告文书",
+              "url": "https://patents.google.com/patent/CN1298686C/zh",
+              "kind": "external"
             }
           ]
         }
       ],
       "boundaries": [
-        "摘要所提SET不是完整机理证明；C–Cl活化不等于普遍C–F断裂或PFAS降解；专利题录不证明产业采用或当前法律状态。"
+        "历史方法、原报观察与合作贡献归原作者；平台本轮完成资料关联与新增引用核对，保持review_required。",
+        "SET解释按具体对象和原作者证据范围介绍；C–Cl活化不等于普遍C–F断裂或PFAS降解，专利文字不证明工业采用或当前法律状态。"
       ],
-      "next_step": "优先补1999、2001两篇正文，并将具体底物／谱图与已持SI对应；同申请专利文本版本对照已完成，SET机理判断仍须相应证据。",
-      "future_question": "哪些对照支持单电子转移解释，哪些观察还允许其他路径？",
+      "next_step": "继续解释溶剂、引发方式与底物范围之间的学术联系；将新增引用与传记发现过程对应，保留原作者提出解释的层级及已完成的技术文书对照。",
+      "future_question": "未来如开展AI辅助研究，应先限定具体反应、条件和可检验量，再比较竞争解释与既有研究；目前仅为设想，M0继续暂停。",
       "source_links": [
         {
-          "title": "单电子转移研究专题",
+          "title": "单电子转移与C–Cl活化的历史成果",
           "url": "../topics/single-electron-transfer/index.html",
           "kind": "site"
         },
         {
-          "title": "C–Cl活化档案",
+          "title": "含氟氯代物的具体方法与合作",
           "url": "../topics/single-electron-transfer/index.html#record-ccl-activation",
           "kind": "site"
         }
@@ -1911,7 +1939,9 @@
           "scientific_review_status": "review_required",
           "release_eligible": false
         }
-      ]
+      ],
+      "boundary_title": "资料整理的适用范围",
+      "next_step_title": "资料整理的下一步"
     },
     {
       "id": "A08",

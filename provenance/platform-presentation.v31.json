@@ -1,0 +1,541 @@
+{
+  "schema_version": "31.0",
+  "presentation_id": "PLATFORM-A07-BIOGRAPHY-20261117-v31",
+  "created_at_utc": "2026-11-17T01:20:18.495891+00:00",
+  "publication_kind": "platform_a07_biography_narrative",
+  "authorization": "User-authorized A07 biography-led historical SET and C-Cl activation contributions and attributed collaboration. Verify only new citations; retain original evidence and scientific data, keep unresolved tracking local, separate historical achievement from platform AI research and retain M0 pause.",
+  "previous_presentation_commit": "31063d9b0e361ff07c0037e96492bb5f5d57a345",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v30.json",
+    "sha256": "952cea23bb612648addc4ac5a5e5cc88acae24a67b8dc98661ae49f79710645b"
+  },
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "allowed_html_paths": [
+    "research/index.html",
+    "topics/single-electron-transfer/index.html"
+  ],
+  "added_html_paths": [],
+  "additions": [],
+  "allowed_display_regions": {
+    "research/index.html": [
+      "ai-a07"
+    ],
+    "topics/single-electron-transfer/index.html": [
+      "main.contents"
+    ]
+  },
+  "allowed_ai_json_pointers": [
+    "/lines/6/question",
+    "/lines/6/ai_role",
+    "/lines/6/records",
+    "/lines/6/boundaries",
+    "/lines/6/next_step",
+    "/lines/6/future_question",
+    "/lines/6/source_links/0/title",
+    "/lines/6/source_links/1/title",
+    "/lines/6/boundary_title",
+    "/lines/6/next_step_title"
+  ],
+  "allowed_new_files": [
+    "content/a07-biography-narrative.v1.json",
+    "scripts/render_a07_biography.py",
+    "docs/A07_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+    "scripts/a07_biography_publication.py",
+    "provenance/platform-presentation.v31.json"
+  ],
+  "editorial_documents": [
+    {
+      "path": "content/ai-research-section.v1.json",
+      "sha256": "6f6f5c6f7f8f5fda5466202cad0471250649b767ce00d564be73d35943becfaf",
+      "bytes": 103765
+    },
+    {
+      "path": "scripts/render_ai_research.py",
+      "sha256": "4293b6cd39150c9e77a6b3c02591c34e83b5d86ecdec675ca9253578af0e2552",
+      "bytes": 40735
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "sha256": "7e6560d75c08374319b0bee2ac7d7e3e489779c45b7b09b15cf003a24fec999d",
+      "bytes": 61804
+    },
+    {
+      "path": "content/a07-biography-narrative.v1.json",
+      "sha256": "22e6121f4f3d61e3676a8ec95b76dc22512df0ab550cfb7c403f809f245016db",
+      "bytes": 13279
+    },
+    {
+      "path": "scripts/render_a07_biography.py",
+      "sha256": "01f5e86435bc9f4eac7f04104892a2d875647f1dd6d3e270e38f3ed28d9dde8e",
+      "bytes": 9726
+    },
+    {
+      "path": "docs/A07_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "sha256": "9d73bbb199e8c6d825550429ae35cb3ea8dffbcd4b17e3b73145603080cc487b",
+      "bytes": 11338
+    },
+    {
+      "path": "scripts/a06_biography_publication.py",
+      "sha256": "2098ac8c8a7f49285870b401963d5efe51a79b4fad31a0e4d1b9ea7544c0daa7",
+      "bytes": 27136
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "sha256": "228d1ea7746554fa9798509ddcbca989aa675a2eea455df54e3f2076acf6b373",
+      "bytes": 311111
+    },
+    {
+      "path": "scripts/render_heritage.py",
+      "sha256": "d4ec4bc12c8fa082f36f436a6d9c06cc65592d1d03ef75504cfc619bab309740",
+      "bytes": 44310
+    },
+    {
+      "path": "scripts/a07_biography_publication.py",
+      "sha256": "cb0f5e2c64836187c74776fbf29a38013b800170f02096761c22fd30d16a50bb",
+      "bytes": 24821
+    }
+  ],
+  "protected_website_members": {
+    "index.html": {
+      "sha256": "8b3532ee45c0fb33912f20a3bd7943043a348f10a370b9c6716e9edf3c0abf41",
+      "bytes": 257766
+    },
+    "topics/fluoroporphyrins/index.html": {
+      "sha256": "24b6bb744b594573487847c89bbb35571ea56bc15d444ebeac3339379dbc1875",
+      "bytes": 6018
+    },
+    "topics/fluorinated-small-rings/index.html": {
+      "sha256": "2413c83d4319746f41e940c04fe48bdeda28244235f5a9e8697285c187ba412d",
+      "bytes": 5924
+    },
+    "topics/deoxyfluorination/index.html": {
+      "sha256": "2aca9c13eb46f9fedfb02a2adfdc9423c207465f58608bcd671838d4d8045df5",
+      "bytes": 5550
+    },
+    "topics/sulfonyl-fluoride/index.html": {
+      "sha256": "fe944efbbfa5a7814015235f4ae3aae101db4046b0c9419986d6855d7ed15b49",
+      "bytes": 5043
+    },
+    "topics/index.html": {
+      "sha256": "44a5690d1e65195b9ff191d2a7ec37487070cdfafb191ae107962d5e0d7ab73c",
+      "bytes": 5055
+    },
+    "achievements/index.html": {
+      "sha256": "df20daf429c46e89e99085550067e8c1e9f7e283b10b7e8269f38da6a9d380ff",
+      "bytes": 95867
+    },
+    "data/public-sources.json": {
+      "sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+      "bytes": 33608
+    },
+    "data/achievement-lines.json": {
+      "sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+      "bytes": 39768
+    },
+    "README.txt": {
+      "sha256": "6e15068b7240ae47d633df3f777e81fbb9e46146ee5f4ab70011f09119b6bbc9",
+      "bytes": 336
+    },
+    "ROUTES.txt": {
+      "sha256": "a734c356877d4534285ab7d71b9fe0f7a17abbced4de3c52f8e60d335301e418",
+      "bytes": 949
+    },
+    "QA.txt": {
+      "sha256": "a60b5f382b31689fa17e2518b7079ef0660674fb62bddbbf564c7b74dfe51067",
+      "bytes": 290
+    },
+    "IONIC-ENTRY-RETEST.txt": {
+      "sha256": "3462b056891a27c335cc2620deb87b245b6c9aea3bdaec607c8a14beca69fe9d",
+      "bytes": 741
+    },
+    "topics/early-fluoroketones/index.html": {
+      "sha256": "eeffdcd82cca6ae6549db9d21b7059ac4c9db94cdc60337ffc3a6a75ae06af88",
+      "bytes": 257826
+    },
+    "topics/fluoromonomers/index.html": {
+      "sha256": "ff79d077f5b74b8580ef06ac5e7c4c622b98c4f562daf9f75ae530e6f9ba199b",
+      "bytes": 18224
+    },
+    "pftb/index.html": {
+      "sha256": "b2dd711fcb504b676c3d04f2c42876c2a36ae8f616c0b48b8530aed53822c3b5",
+      "bytes": 101043
+    },
+    "topics/f53/index.html": {
+      "sha256": "d6b1dc495768583ef4657f8b1e542649c681ee1dd641e739f74003498a92a85b",
+      "bytes": 16656
+    },
+    "topics/refrigerants/index.html": {
+      "sha256": "ee04418185a648f2272fb46ac38c9f9ddeee1abcb72cbb35b514cce5f765da34",
+      "bytes": 18076
+    },
+    "topics/perfluorosulfonates/index.html": {
+      "sha256": "ffc195bfdd3c262e19327b298cfd079ac721b4b81f357ea5e4313b156f579210",
+      "bytes": 12206
+    },
+    "topics/chen-reagent/index.html": {
+      "sha256": "a9cf50685f6732a8baa260899cee7e62986eb5440da1f8b98a7adb79295b03ef",
+      "bytes": 23434
+    }
+  },
+  "reconstruction_kind": "deduplicated_exact_utf8_text_edits",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "M0_resumed": false,
+  "historical_achievement_independent_of_AI_review": true,
+  "new_quantum_calls": 0,
+  "new_model_API_calls": 0,
+  "changes": [
+    {
+      "path": "research/index.html",
+      "old_sha256": "318c4168c0e8dbc525105b24230a827ac8ef7b6c4cfa2ae7e77182efd0a43c89",
+      "old_bytes": 81673,
+      "new_sha256": "0c33d2316060b8aaf35acfc2cd3a5c4472fa2042fc2dadba0d82d89d3f048c29",
+      "new_bytes": 82956,
+      "reason": "Biography-led historical A07 contributions and attributed collaboration, retaining original route shell, all stable IDs, underlying scientific source/data and separate platform AI scope."
+    },
+    {
+      "path": "topics/single-electron-transfer/index.html",
+      "old_sha256": "79c84f89e25e576a03f34153b9eb85a5ff73815c8265a0222930d889390ea947",
+      "old_bytes": 10355,
+      "new_sha256": "a0e843ba29279387985b9e7122382b6cc5f8b78021414b0383586979bb653127",
+      "new_bytes": 18697,
+      "reason": "Biography-led historical A07 contributions and attributed collaboration, retaining original route shell, all stable IDs, underlying scientific source/data and separate platform AI scope."
+    }
+  ],
+  "reversible_text_files": [
+    {
+      "path": "site/topics/single-electron-transfer/index.html",
+      "old_sha256": "79c84f89e25e576a03f34153b9eb85a5ff73815c8265a0222930d889390ea947",
+      "old_bytes": 10355,
+      "new_sha256": "a0e843ba29279387985b9e7122382b6cc5f8b78021414b0383586979bb653127",
+      "new_bytes": 18697,
+      "edits": [
+        {
+          "old_offset": 2367,
+          "replacement": 0
+        }
+      ]
+    },
+    {
+      "path": "content/ai-research-section.v1.json",
+      "old_sha256": "ea127aac6fc88c83b270f7654fab8764b2b9487bff5d58767ff52be7bc6fec04",
+      "old_bytes": 101990,
+      "new_sha256": "6f6f5c6f7f8f5fda5466202cad0471250649b767ce00d564be73d35943becfaf",
+      "new_bytes": 103765,
+      "edits": [
+        {
+          "old_offset": 86127,
+          "replacement": 1
+        },
+        {
+          "old_offset": 86429,
+          "replacement": 2
+        },
+        {
+          "old_offset": 87024,
+          "replacement": 3
+        },
+        {
+          "old_offset": 87222,
+          "replacement": 4
+        },
+        {
+          "old_offset": 87303,
+          "replacement": 5
+        },
+        {
+          "old_offset": 87489,
+          "replacement": 6
+        },
+        {
+          "old_offset": 87835,
+          "replacement": 7
+        },
+        {
+          "old_offset": 87987,
+          "replacement": 8
+        },
+        {
+          "old_offset": 91261,
+          "replacement": 9
+        }
+      ]
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "old_sha256": "c4ed1a19320c975054a2098d993270dcdd40283ad5ca3642dbb348e675af4162",
+      "old_bytes": 60625,
+      "new_sha256": "7e6560d75c08374319b0bee2ac7d7e3e489779c45b7b09b15cf003a24fec999d",
+      "new_bytes": 61804,
+      "edits": [
+        {
+          "old_offset": 48326,
+          "replacement": 10
+        },
+        {
+          "old_offset": 48424,
+          "replacement": 11
+        },
+        {
+          "old_offset": 48605,
+          "replacement": 12
+        },
+        {
+          "old_offset": 49117,
+          "replacement": 13
+        },
+        {
+          "old_offset": 49260,
+          "replacement": 14
+        },
+        {
+          "old_offset": 49287,
+          "replacement": 15
+        },
+        {
+          "old_offset": 49446,
+          "replacement": 16
+        },
+        {
+          "old_offset": 49640,
+          "replacement": 17
+        },
+        {
+          "old_offset": 51858,
+          "replacement": 18
+        }
+      ]
+    },
+    {
+      "path": "site/research/index.html",
+      "old_sha256": "318c4168c0e8dbc525105b24230a827ac8ef7b6c4cfa2ae7e77182efd0a43c89",
+      "old_bytes": 81673,
+      "new_sha256": "0c33d2316060b8aaf35acfc2cd3a5c4472fa2042fc2dadba0d82d89d3f048c29",
+      "new_bytes": 82956,
+      "edits": [
+        {
+          "old_offset": 66582,
+          "replacement": 19
+        }
+      ]
+    },
+    {
+      "path": "scripts/a06_biography_publication.py",
+      "old_sha256": "20449e28fc911c83275ce438113acdb58222397dce575afe39245e5627c4f285",
+      "old_bytes": 26473,
+      "new_sha256": "2098ac8c8a7f49285870b401963d5efe51a79b4fad31a0e4d1b9ea7544c0daa7",
+      "new_bytes": 27136,
+      "edits": [
+        {
+          "old_offset": 213,
+          "replacement": 20
+        },
+        {
+          "old_offset": 11996,
+          "replacement": 21
+        },
+        {
+          "old_offset": 12181,
+          "replacement": 21
+        },
+        {
+          "old_offset": 15628,
+          "replacement": 21
+        },
+        {
+          "old_offset": 16516,
+          "replacement": 22
+        },
+        {
+          "old_offset": 16757,
+          "replacement": 21
+        },
+        {
+          "old_offset": 16947,
+          "replacement": 21
+        },
+        {
+          "old_offset": 20194,
+          "replacement": 21
+        },
+        {
+          "old_offset": 20667,
+          "replacement": 21
+        },
+        {
+          "old_offset": 20866,
+          "replacement": 23
+        },
+        {
+          "old_offset": 21804,
+          "replacement": 24
+        },
+        {
+          "old_offset": 25015,
+          "replacement": 25
+        },
+        {
+          "old_offset": 25237,
+          "replacement": 26
+        },
+        {
+          "old_offset": 26381,
+          "replacement": 27
+        }
+      ]
+    },
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "old_sha256": "2391673784464cc1b7a7871fd63040953a4ec4ee4f5b3b95b928877dc312176a",
+      "old_bytes": 310881,
+      "new_sha256": "228d1ea7746554fa9798509ddcbca989aa675a2eea455df54e3f2076acf6b373",
+      "new_bytes": 311111,
+      "edits": [
+        {
+          "old_offset": 96041,
+          "replacement": 28
+        }
+      ]
+    },
+    {
+      "path": "scripts/render_heritage.py",
+      "old_sha256": "a24ec93747eae81cd6b6c5c63563a920b2a02952eccb1a48451ebf86633047bc",
+      "old_bytes": 43899,
+      "new_sha256": "d4ec4bc12c8fa082f36f436a6d9c06cc65592d1d03ef75504cfc619bab309740",
+      "new_bytes": 44310,
+      "edits": [
+        {
+          "old_offset": 32929,
+          "replacement": 29
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "article id=\"topic-single-electron-transfer\" data-topic-slug=\"single-electron-transfer\" data-topic-type=\"topic\"><span class=\"status\">审阅稿 · 作者回顾与原始论文摘要</span><h2>研究问题：如何使含氟氯代物参与反应？</h2><p>某些含氟氯代物的反应活化，需要明确究竟是哪一类键在什么条件下参与转化。陈庆云的 2001 年回顾将全氟碘代烷的单电子转移研究列入其研究脉络；不同底物的机理不能仅凭这一概述互相套用。</p><h2>可确认的贡献</h2><p><strong>两条线索：</strong>全氟碘代烷见作者回顾摘要；1999 年 C–Cl 活化见 Long、Chen 对特定全氟或多氟烷基氯化物与烯烃、炔烃在 DMSO／连二亚硫酸钠体系中的论文摘要。摘要报道的反应结果与作者的单电子转移机理解释应分开；具体实验观察和对照尚须核对全文。</p><p>1999 年 Zheng-Yu Long 与 Qing-Yun Chen 的论文摘要展示了在特定溶剂及引发体系中，使含氟氯代物与不饱和底物反应的策略。该具体研究讨论 C–Cl 键活化；论文中的机理解释应结合原文所列观察与条件阅读，不能仅因采用单电子转移解释，就宣称所有机制细节均已被直接证实。</p><p>依据：<a href=\"../../index.html#source-cq-r04\">CQ-R04</a>（回顾）、<a href=\"../../index.html#source-cq-r06\">CQ-R06</a>（论文摘要）。</p><h2>证据边界与下一步</h2><p>需进一步核对原始全文的底物范围、对照实验、作者提出的路径与竞争解释。C–Cl 活化并不等于 C–F 断裂，更不能推广为所有 PFAS 的降解或现代光催化的发明。</p><div class=\"evidence\" id=\"refs\"><h2>来源与定位</h2><ul><li id=\"ref-cq-r04\"><a href=\"https://sioc-journal.cn/Jwk_yjhx/CN/abstract/abstract325798.shtml\" target=\"_blank\" rel=\"noopener noreferrer\">CQ-R04｜陈庆云，2001</a>：中文摘要；原作者回顾。</li><li id=\"ref-cq-r06\"><a href=\"https://pubs.acs.org/doi/abs/10.1021/jo9900937\" target=\"_blank\" rel=\"noopener noreferrer\">CQ-R06｜Long、Chen，1999，Journal of Organic Chemistry 64, 4775–4782</a>：ACS Abstract、Article history；摘要及书目层级。</li></ul></div><a class=\"top\" href=\"../index.html\">返回专题索引 ↑</a></article><article id=\"record-ccl-activation\"><span class=\"status\">A07（单电子转移与C–Cl活化） · 引发方法与底物边界</span><h2>不同研究组与不同底物</h2><p>传记分述黄维垣组的脱卤亚磺化、胡昌明组的氧化还原研究、陈庆云组的金属引发。1999 年龙正宇、陈庆云论文聚焦特定体系中使全氟或多氟烷基氯代物参与烯烃、炔烃反应。〔<a href=\"../../index.html#source-cq-h01\">CQ-H01</a>、<a href=\"../../index.html#source-cq-r06\">CQ-R06</a>〕</p><p>2003 年合作研究将相关引发方法用于卟啉，使用全氟烷基碘代物；碘代物结果不验证特定 C–Cl 活化。〔<a href=\"../../index.html#source-cq-h01\">CQ-H01</a>、<a href=\"../../index.html#source-cq-h09\">CQ-H09</a>〕 <a href=\"../fluoroporphyrins/index.html#record-porphyrin-collaboration\">查看卟啉合作研究档案 →</a></p><p>传记 p.103–104 的企业案例记载实验开发及技术移交线索，企业反馈与可放大判断不等于商业产量或持续运行证据。〔<a href=\"../../index.html#source-cq-h01\">CQ-H01</a>〕</p></article>\n<!-- HERITAGE_CONTEXT_BEGIN -->\n<style id=\"heritage-context-style\">\n/* Existing-page historical cards; no viewport-width layout. */\n.heritage-section{max-width:100%;min-width:0;margin:2rem auto;overflow-wrap:anywhere}\n.heritage-section>h2{font-size:clamp(28px,3.4vw,40px);margin:.3em 0 .6em}\n.heritage-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;max-width:100%;min-width:0}\n.heritage-card{min-width:0;max-width:100%;padding:1.1rem;border:1px solid #d9e2df;border-radius:14px;background:var(--card,#fff);overflow-wrap:anywhere}\n.heritage-card h3,.heritage-card h4{margin:.15rem 0 .65rem;line-height:1.45}\n.heritage-achievement-notes h5{font-size:1em;margin:.9rem 0 .3rem;line-height:1.5}\n.heritage-achievement-notes{border-top:1px solid #d9e2df;margin-top:1rem;padding-top:.6rem}\n.heritage-card p{margin:.5rem 0;line-height:1.8}\n.heritage-card ul{padding-left:1.3rem;margin:.55rem 0}\n.heritage-card li{margin:.4rem 0;line-height:1.7}\n.heritage-meta,.heritage-locator{font-size:.9em;color:#526560;line-height:1.75}\n.heritage-refs{font-size:.85em;white-space:normal;overflow-wrap:anywhere}\n.heritage-refs a{display:inline-block;margin-right:.25em}\n.heritage-tag{display:inline-block;border:1px solid #c4d6ce;border-radius:6px;padding:.08rem .4rem;margin:.1rem .25rem .1rem 0;font-size:.8em;color:#34574b}\n.heritage-section details{margin:.8rem 0;min-width:0;max-width:100%}\n.heritage-section summary{cursor:pointer;font-weight:600;line-height:1.7}\n.heritage-boundary{border-left:3px solid #6e8d7d;padding:.65rem .9rem;background:#f4f7f5;line-height:1.8}\n@media(max-width:720px){.heritage-grid{grid-template-columns:minmax(0,1fr)}.heritage-card{padding:.9rem}}\n\n</style>\n<section id=\"heritage-context\" class=\"heritage-section\"><h2>成果与合作</h2><p>以下按A07（单电子转移与C–Cl活化）成果线呈现传记与公开资料中的历史记录，保留参与者、来源定位及待核事项；平台AI辅助研究另行登记。</p><div class=\"heritage-grid\"><article class=\"heritage-card\"><h3>同一学科背景下的不同研究组</h3><p>机构回顾分别列出黄维垣组的脱卤亚磺化、胡昌明组的氧化还原、陈庆云组的金属引发方向。共同的材料任务为基础研究提供问题，但不同研究组与后续合作者的贡献不合并归于一人。</p><p class=\"heritage-locator\">出处定位：传记p60–62、69–74；CAS历史报道第3节 <span class=\"heritage-refs\"><a href=\"../../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../../index.html#heritage-source-s04\" title=\"中国科学院：“上海氟”，何以为？\">[HERITAGE-S04]</a></span></p><p class=\"heritage-meta\">待核事项：各方向的代表原论文、实验对照与形成时间继续逐项补齐。</p></article><article class=\"heritage-card\"><h3>具体论文与合作专利补上新入口</h3><p>龙正宇／陈庆云1999年DMSO体系之外，已核读黄小庭／陈庆云2001年镍体系的作者摘要，以及陈庆云／曹海萍共同发明的氯代物制碘代物专利题录。它们是不同对象、不同证据类型，摘要提出的SET解释仍待全文评估。</p><p class=\"heritage-locator\">出处定位：JOC1999,64:4775–4782；JOC2001,66:4651–4656；申请200510031063.4 <span class=\"heritage-refs\"><a href=\"../../index.html#source-cq-r06\" title=\"The Activation of Carbon−Chlorine Bonds in Per- and Polyfluoroalkyl Chlorides: DMSO-Induced Hydroperfluoroalkylation of Alkenes and Alkynes with Sodium Dithionite\">[CQ-R06]</a> <a href=\"../../index.html#heritage-source-s07\" title=\"2001年黄小庭／陈庆云镍体系：原论文书目与摘要\">[HERITAGE-S07]</a> <a href=\"../../index.html#heritage-source-s06\" title=\"上海有机所专利登记：从全氟烷基氯制备全氟烷基碘\">[HERITAGE-S06]</a></span></p><p class=\"heritage-meta\">待核事项：2001全文／SI和原专利权利要求待补，不据题录认定当前法律状态或工业应用。</p></article></div><div class=\"heritage-related-stories\"><h3>相关合作故事</h3><ul><li><a href=\"../../achievements/index.html#heritage-story-st12\">换了溶剂，先让异常结果经得起重复</a></li></ul></div><p><a href=\"../../achievements/index.html#heritage-line-a07\">查看本成果线的资料</a> · <a href=\"../../achievements/index.html#heritage-stories-all\">查看全部合作与育人故事</a></p></section>\n<!-- HERITAGE_CONTEXT_END -->\n",
+      "new": "!-- HERITAGE_CONTEXT_BEGIN -->\n<!-- A07_BIOGRAPHY_HISTORY:BEGIN -->\n<style id=\"heritage-context-style\">.a07-meaning{border-left:3px solid #aa7545;padding:10px 16px;background:#f7f4eb}.a07-locator{font-size:.86rem;color:var(--muted)}.a07-nav{display:flex;flex-wrap:wrap;gap:8px 18px}.a07-table{overflow-x:auto;max-width:100%;margin:20px 0;border:1px solid var(--line)}.a07-table table{border-collapse:collapse;min-width:640px;width:100%;font-size:.92rem}.a07-table caption{text-align:left;padding:14px;background:#edf3ee;color:var(--accent);font-weight:700}.a07-table th,.a07-table td{border-top:1px solid var(--line);padding:12px;text-align:left;vertical-align:top}.a07-table:focus-visible{outline:3px solid #aa7545}#refs{overflow-wrap:anywhere}</style>\n<article id=\"topic-single-electron-transfer\" data-topic-slug=\"single-electron-transfer\" data-topic-type=\"topic\"><span class=\"status\">历史成果与合作</span><h2>A07（单电子转移与C–Cl活化）：系统发展氟烷基化方法</h2>\n<p>陈庆云与合作者把含氟卤代物的反应性、溶剂和引发条件组织成持续发展的研究问题。《氟缘笃志：陈庆云传》记述了从全氟烷基碘代物的意外溶剂效应，到多种氟烷基化方法，再到特定含氟氯代物活化的历程。这条成果线既有新的合成入口，也有围绕异常现象深入研究的合作故事。</p><nav class=\"a07-nav\" aria-label=\"A07（单电子转移与C–Cl活化）专题导航\"><a href=\"#record-ccl-activation\">C–Cl活化</a><a href=\"#a07-solvent-discovery\">换溶剂的发现</a><a href=\"#heritage-context\">合作分工</a><a href=\"#a07-ai-collation\">AI资料整理</a><a href=\"#refs\">参考资料</a></nav>\n<p>F-53相关研究提供的含氟原料，为后续基础研究创造了条件。陈庆云小组系统研究全氟烷基碘代物在金属、亲核试剂、氧化剂或光照作用下的反应，发展把氟烷基引入有机分子的多种方法，并比较溶剂和条件对反应的影响。</p>\n<p>这项工作的开拓性体现在把单电子转移的研究思路用于一系列具体的有机氟合成问题：选择怎样的引发体系，哪些含氟卤代物能够参与反应，能形成什么产物？传记把它放在国际已有单电子转移研究的发展背景中介绍，同时分别记述黄维垣、胡昌明和陈庆云等研究组的方向。</p>\n<p class=\"a07-meaning\"><b>学术与应用意义：</b>将反应性认识转化为多种合成入口，并围绕溶剂、引发方式和底物结构持续拓展方法。</p><p class=\"a07-locator\">传记60–62、69–73页 · <a href=\"#a07-source-book\">HERITAGE-S01</a></p></article>\n<article id=\"a07-solvent-discovery\"><span class=\"status\">历史成果与合作</span><h2>换了溶剂：从意外结果追问反应原因</h2>\n<p>传记转引陈庆云的回忆：陈亚雄研究全氟烷基碘代物在铜粉存在下与碘苯的反应时，换用溶剂得到了不同于文献的结果。陈庆云要求反复实验，先确认变化确实与溶剂有关，再逐步研究为什么会发生这样的变化。</p>\n<p>1984年，陈庆云、陈亚雄、黄维垣共同发表《溶剂对碘苯氟烷基化的影响》。这篇原作的研究对象与传记保存的发现故事相互呼应：一个实验中的变化，成为持续研究溶剂效应和反应途径的起点。回忆与论文分别标明来源。</p>\n<p class=\"a07-meaning\"><b>学术与应用意义：</b>把异常现象变为可研究的问题，先确认观察，再追查原因，是这一系列方法研究中具体可见的科学实践。</p><p class=\"a07-locator\">传记72页、117页年表；1984《化学学报》42：906–912官方题录 · <a href=\"#a07-source-book\">HERITAGE-S01</a> · <a href=\"#ref-a07-acta1984-906\">A07-ACTA1984-906</a></p></article>\n<article id=\"a07-set-synthesis\"><span class=\"status\">历史成果与合作</span><h2>具体反应：铜参与的加成与烯烃合成</h2>\n<p>陈庆云与杨震宇1986年的研究，以铜存在下氟烷基碘与乙烯基三甲基硅烷的反应为具体对象，并研究相应含氟烯烃的立体专一性合成。它体现了从引发方式研究走向具体碳骨架和产物合成的方法贡献。</p>\n<p>期刊摘要还记载抑制实验，以及用碘苯未捕获到氟烷基铜中间体的结果，并据此提出可能由单电子转移引发的自由基链式解释。这里将原报反应、观察和作者提出的解释分别介绍。传记另记述亲核试剂、氧化剂和光照等方向，由不同合作者共同展开。</p>\n<p class=\"a07-meaning\"><b>学术与应用意义：</b>把合成结果与用于讨论反应途径的观察联系起来，推动单电子转移在有机氟反应中的具体研究。</p><p class=\"a07-locator\">1986《化学学报》44：265–269官方摘要；传记69–70页 · <a href=\"#ref-a07-acta1986-265\">A07-ACTA1986-265</a> · <a href=\"#a07-source-book\">HERITAGE-S01</a></p></article>\n<article id=\"record-ccl-activation\"><span class=\"status\">历史成果与合作</span><h2>从碘代物走向较难反应的含氟氯代物</h2>\n<p>传记明确把原脱卤亚磺化反应的发现归于黄维垣小组。陈庆云与龙正宇在这一研究基础上，比较溶剂和温度等条件，将方法拓展到特定全氟或多氟烷基氯代物。1999年两人的论文以DMSO／连二亚硫酸钠体系中氯代物对烯烃、炔烃的氢全氟烷基化为具体研究对象。</p>\n<p>2001年，黄小庭与陈庆云报道另一种零价镍体系，使全氟烷基氯代物参与烯烃、炔烃和芳烃的氟烷基化；摘要提出单电子转移机理解释。两篇论文的引发方式、底物范围和证据各有对应，不能互相替代。传记还记述唐小军与陈庆云对HCFC-133a、HCFC-123等工业含氟氯代原料的研究。</p>\n<p>相关技术文书保存了陈庆云与曹海萍共同发明的制碘代物方法：由含氟卤代前驱体形成亚磺酸盐，再转化为相应碘化物。同一申请的公开与授权公告版本分别保存，具体文本对照放在AI资料页。</p>\n<p class=\"a07-meaning\"><b>学术与应用意义：</b>通过改变溶剂、引发或金属体系，拓展含氟氯代原料参与有机合成的途径；原发现、后续改进和不同团队合作分别归属。</p><p class=\"a07-locator\">传记70–71、83–84页；JOC1999／2001摘要；申请200510031063.4 · <a href=\"#a07-source-book\">HERITAGE-S01</a> · <a href=\"#ref-cq-r06\">CQ-R06</a> · <a href=\"#ref-heritage-s07\">HERITAGE-S07</a> · <a href=\"#a07-source-patent\">HERITAGE-S06</a></p></article>\n<article id=\"a07-chronology\"><h2>从溶剂效应到方法拓展</h2>\n<div class=\"a07-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a07-chronology-caption\"><table><caption id=\"a07-chronology-caption\">传记与原刊中的研究历程</caption><thead><tr><th scope=\"col\">时间</th><th scope=\"col\">工作与记录</th><th scope=\"col\">出处</th></tr></thead><tbody><tr><th scope=\"row\">1984年</th><td>陈庆云、陈亚雄、黄维垣发表溶剂对碘苯氟烷基化的研究。</td><td>A07-ACTA1984-906；传记117页</td></tr><tr><th scope=\"row\">1986年</th><td>陈庆云、杨震宇研究铜体系中氟烷基碘与乙烯基三甲基硅烷的反应。</td><td>A07-ACTA1986-265</td></tr><tr><th scope=\"row\">1999年</th><td>龙正宇、陈庆云报道DMSO体系中的特定C–Cl转化与氢全氟烷基化。</td><td>CQ-R06</td></tr><tr><th scope=\"row\">2001年</th><td>黄小庭、陈庆云报道零价镍催化的全氟烷基氯化物氟烷基化。</td><td>HERITAGE-S07</td></tr><tr><th scope=\"row\">2005年申请</th><td>陈庆云、曹海萍共同申请从全氟烷基氯制备全氟烷基碘的方法。</td><td>HERITAGE-S06；两版本为同一申请</td></tr></tbody></table></div>\n<p>年代按各篇论文或申请分别列示。回忆中的发现过程、具体反应报告与文书署名各有来源，不由时间接续推定所有体系具有同一反应机理。</p></article>\n<article id=\"heritage-context\"><h2>合作分工：研究思路与方法发展</h2><p>以下按传记明确介绍的研究方向与原文署名分别列示。共同署名说明合作关系；各人的具体角色以对应记载为限。</p>\n<div class=\"a07-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a07-cooperation-caption\"><table><caption id=\"a07-cooperation-caption\">按传记明确记载介绍合作角色</caption><thead><tr><th scope=\"col\">人物或单位</th><th scope=\"col\">具体贡献与角色</th><th scope=\"col\">出处</th></tr></thead><tbody><tr><th scope=\"row\">陈庆云与研究组</th><td>围绕溶剂、引发方式和含氟卤代物结构，持续发展氟烷基化与活化方法。</td><td>传记69–74、83–84页</td></tr><tr><th scope=\"row\">黄维垣小组</th><td>传记所述原脱卤亚磺化反应的发现；黄维垣另与陈庆云、陈亚雄共同署名1984年溶剂研究。</td><td>传记70页；1984原作题录</td></tr><tr><th scope=\"row\">陈亚雄</th><td>观察铜粉／全氟烷基碘／碘苯体系换溶剂后的不同结果，并参与后续研究。</td><td>传记72页；1984原作题录</td></tr><tr><th scope=\"row\">杨震宇、裘再明、何亚波</th><td>参与过渡金属引发方向；杨震宇为1986年所列铜体系论文共同作者。</td><td>传记69–70页；1986原作</td></tr><tr><th scope=\"row\">苏德宝、裘再明、陈明芳</th><td>参与亲核试剂引发的全氟烷基碘反应研究。</td><td>传记70页</td></tr><tr><th scope=\"row\">陈建国、陈明芳</th><td>参与氧化剂引发方向。</td><td>传记70页</td></tr><tr><th scope=\"row\">黎占亭</th><td>参与光照引发方向。</td><td>传记70页</td></tr><tr><th scope=\"row\">龙正宇</th><td>与陈庆云研究溶剂和温度条件、改进脱卤亚磺化，并拓展特定C–Cl反应。</td><td>传记71页；CQ-R06</td></tr><tr><th scope=\"row\">黄小庭</th><td>与陈庆云研究全氟烷基氯化物的零价镍体系。</td><td>传记84页；HERITAGE-S07</td></tr><tr><th scope=\"row\">唐小军</th><td>与陈庆云研究HCFC-133a、HCFC-123等原料的C–Cl活化与转化。</td><td>传记84页及所引博士论文</td></tr><tr><th scope=\"row\">曹海萍与陈庆云</th><td>制碘代物方法的共同发明人；不由署名推算各人的实验工序。</td><td>HERITAGE-S06说明书首页</td></tr></tbody></table></div>\n<section id=\"a07-authorship\"><h3>原论文与技术文书中的署名</h3>\n<div class=\"a07-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a07-authorship-caption\"><table><caption id=\"a07-authorship-caption\">保留各份原文的贡献归属</caption><thead><tr><th scope=\"col\">文书</th><th scope=\"col\">原文署名</th><th scope=\"col\">介绍范围</th></tr></thead><tbody><tr><th scope=\"row\">1999 DMSO／连二亚硫酸钠体系</th><td>Zheng-Yu Long、Qing-Yun Chen</td><td>论文4775–4782页；本次新增介绍限摘要支持的反应对象与方法。</td></tr><tr><th scope=\"row\">2001零价镍体系</th><td>Xiao-Ting Huang、Qing-Yun Chen</td><td>论文4651–4656页；SET为作者提出的解释。</td></tr><tr><th scope=\"row\">申请200510031063.4</th><td>陈庆云、曹海萍；申请人上海有机所</td><td>CN1752059A和CN1298686C为同一申请的公开／授权公告版本。</td></tr></tbody></table></div>\n<p>两篇论文的SI分别为31页和26页，已有取得登记；SI、正文和具体谱图核校属于不同范围。专利两版的既有文本对照保留在下一层AI资料页；这些资料各按实际取得与核读范围使用。</p><p class=\"a07-locator\"><a href=\"#ref-cq-r06\">CQ-R06</a> · <a href=\"#ref-heritage-s07\">HERITAGE-S07</a> · <a href=\"#a07-source-patent\">HERITAGE-S06</a></p></section></article>\n<article id=\"a07-ai-collation\"><h2>平台的AI辅助资料整理</h2><p>本页介绍原研究者及合作团队的历史贡献。平台新增工作是关联传记与论文、整理具体研究问题和合作角色，并核对新增引用的出处与解释。具体对照放在下一层AI资料页；资料整理不是实验复现、独立谱图认证或机理验证，保持review_required、release_eligible=false；M0继续暂停。</p><p><a href=\"../../research/index.html#ai-a07\">A07（单电子转移与C–Cl活化）的AI研究资料 →</a></p></article>\n<article id=\"refs\"><h2>参考资料</h2><ul>\n<li id=\"a07-source-book\"><b>HERITAGE-S01</b> · 朱晶、刘超：《氟缘笃志：陈庆云传》；参考底本60–62、69–74、83–84页；相关年表117–118页及论著目录</li>\n<li id=\"ref-a07-acta1984-906\"><b>A07-ACTA1984-906</b> · <a href=\"https://sioc-journal.cn/EN/abstract/abstract333975.shtml\">氟烷基化和氟烷氧基化的研究I.溶剂对碘苯氟烷基化的影响</a>；陈庆云、陈亚雄、黄维垣；《化学学报》1984，42(9)：906–912；官方题录，研究对象为溶剂对碘苯氟烷基化的影响</li>\n<li id=\"ref-a07-acta1986-265\"><b>A07-ACTA1986-265</b> · <a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/abstract/abstract334540.shtml\">Studies on fluoroalkylation and fluoroalkoxylation 4. Reaction of fluoroalkyl iodides with vinyltrimethylsilane in the presence of copper and stereospecific synthesis of the corresponding olefins</a>；陈庆云、杨震宇；《化学学报》1986，44(3)：265–269；此处按官方英文题名及摘要介绍具体合成与可能的SET解释</li>\n<li id=\"ref-cq-r04\"><b>CQ-R04</b> · <a href=\"https://sioc-journal.cn/Jwk_yjhx/CN/abstract/abstract325798.shtml\">抑铬雾剂F-53的研制带动了有机氟化学的发展</a>；陈庆云，2001，《有机化学》21(11)：805–809；原作者回顾摘要，保留原专题来源入口</li>\n<li id=\"ref-cq-r06\"><b>CQ-R06</b> · <a href=\"https://pubs.acs.org/doi/abs/10.1021/jo9900937\">The Activation of Carbon−Chlorine Bonds in Per- and Polyfluoroalkyl Chlorides: DMSO-Induced Hydroperfluoroalkylation of Alkenes and Alkynes with Sodium Dithionite</a>；Long、Chen；J. Org. Chem. 1999，64(13)：4775–4782；DOI 10.1021/jo9900937；新增方法介绍限出版社摘要</li>\n<li id=\"ref-heritage-s07\"><b>HERITAGE-S07</b> · <a href=\"https://pubs.acs.org/doi/abs/10.1021/jo010178j\">Nickel(0)-Catalyzed Fluoroalkylation of Alkenes, Alkynes, and Aromatics with Perfluoroalkyl Chlorides</a>；Huang、Chen；J. Org. Chem. 2001，66(13)：4651–4656；DOI 10.1021/jo010178j；出版社摘要提出SET解释</li>\n<li id=\"a07-source-patent\"><b>HERITAGE-S06</b> · <a href=\"https://patents.google.com/patent/CN1752059A/zh\">陈庆云、曹海萍：从全氟烷基氯制备全氟烷基碘</a>；申请200510031063.4，2005-10-21；CN1752059A与CN1298686C为同一申请的历史版本；署名及技术文字据既有两份完整说明书核读</li>\n</ul><details><summary>研究对象与解释范围</summary>\n<div class=\"a07-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a07-scope-caption\"><table><caption id=\"a07-scope-caption\">按各环节原有口径介绍</caption><thead><tr><th scope=\"col\">对象或数量</th><th scope=\"col\">所指内容</th><th scope=\"col\">适用范围</th></tr></thead><tbody><tr><th scope=\"row\">全氟烷基碘与含氟氯代物</th><td>分别对应不同底物和引发体系。</td><td>不凭共同采用SET研究思路就认定统一机理。</td></tr><tr><th scope=\"row\">1986铜体系</th><td>原摘要的合成结果、抑制实验、未捕获结果与“可能”解释分别呈现。</td><td>不把作者的可能解释改为平台完成的机制认证。</td></tr><tr><th scope=\"row\">1999与2001方法</th><td>两种不同的C–Cl转化方法及各自底物范围。</td><td>不将有限底物范围写成所有含氟氯代物普遍适用。</td></tr><tr><th scope=\"row\">C–Cl活化</th><td>研究所载氯代物的转化。</td><td>不等同C–F断裂或普遍PFAS降解。</td></tr><tr><th scope=\"row\">技术文书</th><td>共同发明方法及其历史版本。</td><td>不据文书认定当前法律状态、商业产量或工业采用。</td></tr></tbody></table></div>\n</details><p><a href=\"../../achievements/index.html#line-a07\">A07（单电子转移与C–Cl活化）成果线</a> · <a href=\"../index.html\">返回专题索引 ↑</a></p></article>\n<!-- A07_BIOGRAPHY_HISTORY:END -->\n<!-- HERITAGE_CONTEXT_END -->"
+    },
+    {
+      "old": "不同溶剂与引发体系下，特定含氟氯代物发生什么转化？\",\r\n      \"ai_role\": \"按底物、条件、观察和提出的机理组织证据；区分1999溶剂体系、2001镍体系和2005专利，并追踪不同研究组的贡献",
+      "new": "从溶剂效应到含氟C–Cl活化，陈先生与合作者怎样发展具体氟烷基化方法？\",\r\n      \"ai_role\": \"以传记关联研究问题、发现过程和合作分工；按具体论文区分底物、引发条件、观察与作者解释，核对新增引用"
+    },
+    {
+      "old": "现有资料与记录\",\r\n          \"summary\": \"1999与2001年论文的31页、26页SI已取得，已核首页身份；正文仍待取得，全部谱图与机理证据未完成专业核校。申请200510031063.4的CN1752059A与CN1298686C两份说明书已取得，属同一申请的公开／授权版本，陈庆云、曹海萍为共同发明人；两版全文、权利要求合并／重编号与实施例已完成文本对照，不据此判断当前法律状态或工业采用。摘要中的SET解释不作为平台机制认证",
+      "new": "研究脉络与合作故事\",\r\n          \"summary\": \"已按传记69–74、83–84页，整理全氟烷基碘的溶剂效应、多种引发方向和含氟氯代物活化；陈亚雄的发现过程、龙正宇与黄小庭等的接续研究分别具名呈现。原脱卤亚磺化发现归黄维垣小组，陈先生团队的方法拓展另行说明"
+    },
+    {
+      "old": "现有材料、缺口与原始资料定位\",\r\n              \"url\": \"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/",
+      "new": "A07（单电子转移与C–Cl活化）的具体学术贡献与合作\",\r\n              \"url\": \"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A07_"
+    },
+    {
+      "old": "",
+      "new": "            }\r\n          ]\r\n        },\r\n        {\r\n          \"title\": \"新增原作引用：从溶剂到具体反应\",\r\n          \"summary\": \"新增关联1984年碘苯氟烷基化溶剂研究题录、1986年铜体系摘要，以及1999／2001两种C–Cl方法的原摘要。合成结果、抑制实验及未捕获到氟烷基铜的结果、原作者提出的可能SET解释分别呈现；1999摘要的方法贡献不被改写为完整机理证明。\",\r\n          \"links\": [\r\n            {\r\n              \"title\": \"单电子转移与C–Cl活化历史专题\",\r\n              \"url\": \"../topics/single-electron-transfer/index.html\",\r\n              \"kind\": \"site\"\r\n            }\r\n          ]\r\n        },\r\n        {\r\n          \"title\": \"已有附件与技术文书记录\",\r\n          \"summary\": \"1999／2001两份31页、26页SI已取得；正文与SI分层使用。同一申请的CN1752059A和CN1298686C两份完整说明书及权利要求对应核读登记保留；陈庆云、曹海萍为共同发明人。指定版本对照见下方专业记录，本轮没有新增实验或计算。\",\r\n          \"links\": [\r\n            {\r\n              \"title\": \"CN1752059A公开文书\",\r\n              \"url\": \"https://patents.google.com/patent/CN1752059A/zh\",\r\n              \"kind\": \"external\"\r\n            },\r\n            {\r\n              \"title\": \"CN1298686C历史授权公告文书\",\r\n              \"url\": \"https://patents.google.com/patent/CN1298686C/zh\",\r\n              \"kind\": \"external\"\r\n"
+    },
+    {
+      "old": "摘要所提SET不是完整机理证明；C–Cl活化不等于普遍C–F断裂或PFAS降解；专利题录不证明产",
+      "new": "历史方法、原报观察与合作贡献归原作者；平台本轮完成资料关联与新增引用核对，保持review_required。\",\r\n        \"SET解释按具体对象和原作者证据范围介绍；C–Cl活化不等于普遍C–F断裂或PFAS降解，专利文字不证明工"
+    },
+    {
+      "old": "优先补1999、2001两篇正文，并将具体底物／谱图与已持SI对应；同申请专利文本版本对照已完成，SET机理判断仍须相应证据。\",\r\n      \"future_question\": \"哪些对照支持单电子转移解释，哪些观察还允许其他路径？",
+      "new": "继续解释溶剂、引发方式与底物范围之间的学术联系；将新增引用与传记发现过程对应，保留原作者提出解释的层级及已完成的技术文书对照。\",\r\n      \"future_question\": \"未来如开展AI辅助研究，应先限定具体反应、条件和可检验量，再比较竞争解释与既有研究；目前仅为设想，M0继续暂停。"
+    },
+    {
+      "old": "研究专题",
+      "new": "与C–Cl活化的历史成果"
+    },
+    {
+      "old": "C–Cl活化档案",
+      "new": "含氟氯代物的具体方法与合作"
+    },
+    {
+      "old": "",
+      "new": ",\r\n      \"boundary_title\": \"资料整理的适用范围\",\r\n      \"next_step_title\": \"资料整理的下一步\""
+    },
+    {
+      "old": "不同溶剂与引发体系下，特定含氟氯代物发生什么转化",
+      "new": "从溶剂效应到含氟C–Cl活化，陈先生与合作者怎样发展具体氟烷基化方法"
+    },
+    {
+      "old": "按底物、条件、观察和提出的机理组织证据；区分1999溶剂体系、2001镍体系和2005专利，并追踪不同研究组的贡献",
+      "new": "以传记关联研究问题、发现过程和合作分工；按具体论文区分底物、引发条件、观察与作者解释，核对新增引用"
+    },
+    {
+      "old": "现有资料与记录。**1999与2001年论文的31页、26页SI已取得，已核首页身份；正文仍待取得，全部谱图与机理证据未完成专业核校。申请200510031063.4的CN1752059A与CN1298686C两份说明书已取得，属同一申请的公开／授权版本，陈庆云、曹海萍为共同发明人；两版全文、权利要求合并／重编号与实施例已完成文本对照，不据此判断当前法律状态或工业采用。摘要中的SET解释不作为平台机制认证",
+      "new": "研究脉络与合作故事。**已按传记69–74、83–84页，整理全氟烷基碘的溶剂效应、多种引发方向和含氟氯代物活化；陈亚雄的发现过程、龙正宇与黄小庭等的接续研究分别具名呈现。原脱卤亚磺化发现归黄维垣小组，陈先生团队的方法拓展另行说明"
+    },
+    {
+      "old": "现有材料、缺口与原始资料定位](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/",
+      "new": "A07（单电子转移与C–Cl活化）的具体学术贡献与合作](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A07_"
+    },
+    {
+      "old": "### 待核事项与边界",
+      "new": "**新增原作引用：从溶剂到具体反应。**新增关联1984年碘苯氟烷基化溶剂研究题录、1986年铜体系摘要，以及1999／2001两种C–Cl方法的原摘要。合成结果、抑制实验及未捕获到氟烷基铜的结果、原作者提出的可能SET解释分别呈现；1999摘要的方法贡献不被改写为完整机理证明。"
+    },
+    {
+      "old": "- 摘要所提SET不是完整机理证明；C–Cl活化不等于普遍C–F断裂或PFAS降解；专利题录不证明产业采用或当前法律状态。",
+      "new": "[单电子转移与C–Cl活化历史专题](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html)"
+    },
+    {
+      "old": "下一步先补的证据：**优先补1999、2001两篇正文，并将具体底物／谱图与已持SI对应；同申请专利文本版本对照已完成，SET机理判断仍须相应证据",
+      "new": "已有附件与技术文书记录。**1999／2001两份31页、26页SI已取得；正文与SI分层使用。同一申请的CN1752059A和CN1298686C两份完整说明书及权利要求对应核读登记保留；陈庆云、曹海萍为共同发明人。指定版本对照见下方专业记录，本轮没有新增实验或计算"
+    },
+    {
+      "old": "**候选后续问题：**哪些对照支持单电子转移解释，哪些观察还允许其他路径？",
+      "new": "[CN1752059A公开文书](https://patents.google.com/patent/CN1752059A/zh) · [CN1298686C历史授权公告文书](https://patents.google.com/patent/CN1298686C/zh)\n\n### 资料整理的适用范围\n\n- 历史方法、原报观察与合作贡献归原作者；平台本轮完成资料关联与新增引用核对，保持review_required。\n- SET解释按具体对象和原作者证据范围介绍；C–Cl活化不等于普遍C–F断裂或PFAS降解，专利文字不证明工业采用或当前法律状态。\n\n**资料整理的下一步：**继续解释溶剂、引发方式与底物范围之间的学术联系；将新增引用与传记发现过程对应，保留原作者提出解释的层级及已完成的技术文书对照。\n\n**候选后续问题：**未来如开展AI辅助研究，应先限定具体反应、条件和可检验量，再比较竞争解释与既有研究；目前仅为设想，M0继续暂停。"
+    },
+    {
+      "old": "研究专题](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html) · [C–Cl活化档案",
+      "new": "与C–Cl活化的历史成果](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html) · [含氟氯代物的具体方法与合作"
+    },
+    {
+      "old": "不同溶剂与引发体系下，特定含氟氯代物发生什么转化？</p><h3>AI怎样辅助</h3><p>按底物、条件、观察和提出的机理组织证据；区分1999溶剂体系、2001镍体系和2005专利，并追踪不同研究组的贡献。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>现有资料与记录</h4><p>1999与2001年论文的31页、26页SI已取得，已核首页身份；正文仍待取得，全部谱图与机理证据未完成专业核校。申请200510031063.4的CN1752059A与CN1298686C两份说明书已取得，属同一申请的公开／授权版本，陈庆云、曹海萍为共同发明人；两版全文、权利要求合并／重编号与实施例已完成文本对照，不据此判断当前法律状态或工业采用。摘要中的SET解释不作为平台机制认证。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md\">现有材料、缺口与原始资料定位 →</a></p></div></div><h3>待核事项与边界</h3><ul><li>摘要所提SET不是完整机理证明；C–Cl活化不等于普遍C–F断裂或PFAS降解；专利题录不证明产业采用或当前法律状态。</li></ul><p><b>下一步先补的证据：</b>优先补1999、2001两篇正文，并将具体底物／谱图与已持SI对应；同申请专利文本版本对照已完成，SET机理判断仍须相应证据。</p><p><b>候选后续问题：</b>哪些对照支持单电子转移解释，哪些观察还允许其他路径？</p><div class=\"prior-work\" aria-label=\"平台AI辅助文献核校\"><h3>平台AI辅助文献核校</h3><p>历史实验与理论研究归原作者。以下呈现平台完成的原文、表格和附件对照，保持 <code>review_required</code>、<code>release_eligible=false</code>；文献核校不授予实验、结构或机理验证资格。</p><article class=\"result-evidence\" id=\"a07-literature-patent-versions\" data-review-status=\"review_required\" data-release-eligible=\"false\"><h4>同一申请的公开版与授权公告版</h4><p><b>历史原文：</b>陈庆云与曹海萍为申请200510031063.4的共同发明人；CN1752059A与CN1298686C分别为该申请的公开版和历史授权公告版。</p><p><b>平台AI核校：</b>已完成两版全文及权利要求的逐项文本对应：13→10包含合并、重编号和具体列举调整。两版各5实施例的原报产物／产率对应一致：I(CF2)6I 72%、F(CF2)6I 59%、I(CF2)8I 80%、F(CF2)8I 66%、I(CF2)4I 67%。两版说明书优选氧化剂文字有调整，不能称全文逐字相同。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a07-literature-patent-versions-table-1\"><table><caption id=\"a07-literature-patent-versions-table-1\">同一申请的公开版与授权公告版：原文对照</caption><thead><tr><th scope=\"col\">公开版→授权公告版</th><th scope=\"col\">实际文本对照</th><th scope=\"col\">原页定位</th></tr></thead><tbody><tr><th scope=\"row\">A1＋A3＋A5→C1</th><td>一般方法、氧化剂类别与盐/产物通式在C1合并表达；不等于原A3类别从文书完全消失。</td><td>两版PDF2</td></tr><tr><th scope=\"row\">A4→C3</th><td>C3进一步列举三种过硫酸盐和KMnO4；醋酸锰/硫酸高铈类别仍见C1。</td><td>两版PDF2</td></tr><tr><th scope=\"row\">A7＋A8→C5</th><td>前驱体路径与通式变量合并表达。</td><td>两版PDF2</td></tr><tr><th scope=\"row\">A13→C10</th><td>溶剂列举重编号；保持原字式，不擅自修正名称。</td><td>两版PDF3</td></tr></tbody></table></div><p class=\"scientific-meaning\"><b>证据的意义：</b>该文书以含氟烷基亚磺酸盐转化为相应碘化物的技术文字为证，保留共同发明人署名，并使公开/授权版本的具体差别可回查。它与1999、2001两篇论文及其SI属于不同文献层次。</p><ul class=\"result-limits\"><li>这里完成的是历史文书及指定文本版本对照，不判断保护范围等同、侵权、有效性、现行法律状态、工业采用或反应机理。原报产率不等于平台实验。1999/2001 SI已取得不等于正文或全谱核校完成；SET解释仍非平台机制认证。</li></ul><p class=\"table-note\">来源ID：HERITAGE-S06</p><p class=\"links\"><a href=\"https://patents.google.com/patent/CN1752059A/zh\">CN1752059A公开文书入口 →</a><a href=\"https://patents.google.com/patent/CN1298686C/zh\">CN1298686C授权公告文书入口 →</a></p></article></div><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/single-electron-transfer/index.html\">单电子转移研究专题 →</a><a href=\"../topics/single-electron-transfer/index.html#record-ccl-activation\">C–Cl活化档案",
+      "new": "从溶剂效应到含氟C–Cl活化，陈先生与合作者怎样发展具体氟烷基化方法？</p><h3>AI怎样辅助</h3><p>以传记关联研究问题、发现过程和合作分工；按具体论文区分底物、引发条件、观察与作者解释，核对新增引用。</p><h3>已有资料与结果</h3><div class=\"record-grid\"><div class=\"record\"><h4>研究脉络与合作故事</h4><p>已按传记69–74、83–84页，整理全氟烷基碘的溶剂效应、多种引发方向和含氟氯代物活化；陈亚雄的发现过程、龙正宇与黄小庭等的接续研究分别具名呈现。原脱卤亚磺化发现归黄维垣小组，陈先生团队的方法拓展另行说明。</p><p class=\"links\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A07_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">A07（单电子转移与C–Cl活化）的具体学术贡献与合作 →</a></p></div><div class=\"record\"><h4>新增原作引用：从溶剂到具体反应</h4><p>新增关联1984年碘苯氟烷基化溶剂研究题录、1986年铜体系摘要，以及1999／2001两种C–Cl方法的原摘要。合成结果、抑制实验及未捕获到氟烷基铜的结果、原作者提出的可能SET解释分别呈现；1999摘要的方法贡献不被改写为完整机理证明。</p><p class=\"links\"><a href=\"../topics/single-electron-transfer/index.html\">单电子转移与C–Cl活化历史专题 →</a></p></div><div class=\"record\"><h4>已有附件与技术文书记录</h4><p>1999／2001两份31页、26页SI已取得；正文与SI分层使用。同一申请的CN1752059A和CN1298686C两份完整说明书及权利要求对应核读登记保留；陈庆云、曹海萍为共同发明人。指定版本对照见下方专业记录，本轮没有新增实验或计算。</p><p class=\"links\"><a href=\"https://patents.google.com/patent/CN1752059A/zh\">CN1752059A公开文书 →</a><a href=\"https://patents.google.com/patent/CN1298686C/zh\">CN1298686C历史授权公告文书 →</a></p></div></div><h3>资料整理的适用范围</h3><ul><li>历史方法、原报观察与合作贡献归原作者；平台本轮完成资料关联与新增引用核对，保持review_required。</li><li>SET解释按具体对象和原作者证据范围介绍；C–Cl活化不等于普遍C–F断裂或PFAS降解，专利文字不证明工业采用或当前法律状态。</li></ul><p><b>资料整理的下一步：</b>继续解释溶剂、引发方式与底物范围之间的学术联系；将新增引用与传记发现过程对应，保留原作者提出解释的层级及已完成的技术文书对照。</p><p><b>候选后续问题：</b>未来如开展AI辅助研究，应先限定具体反应、条件和可检验量，再比较竞争解释与既有研究；目前仅为设想，M0继续暂停。</p><div class=\"prior-work\" aria-label=\"平台AI辅助文献核校\"><h3>平台AI辅助文献核校</h3><p>历史实验与理论研究归原作者。以下呈现平台完成的原文、表格和附件对照，保持 <code>review_required</code>、<code>release_eligible=false</code>；文献核校不授予实验、结构或机理验证资格。</p><article class=\"result-evidence\" id=\"a07-literature-patent-versions\" data-review-status=\"review_required\" data-release-eligible=\"false\"><h4>同一申请的公开版与授权公告版</h4><p><b>历史原文：</b>陈庆云与曹海萍为申请200510031063.4的共同发明人；CN1752059A与CN1298686C分别为该申请的公开版和历史授权公告版。</p><p><b>平台AI核校：</b>已完成两版全文及权利要求的逐项文本对应：13→10包含合并、重编号和具体列举调整。两版各5实施例的原报产物／产率对应一致：I(CF2)6I 72%、F(CF2)6I 59%、I(CF2)8I 80%、F(CF2)8I 66%、I(CF2)4I 67%。两版说明书优选氧化剂文字有调整，不能称全文逐字相同。</p><div class=\"result-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a07-literature-patent-versions-table-1\"><table><caption id=\"a07-literature-patent-versions-table-1\">同一申请的公开版与授权公告版：原文对照</caption><thead><tr><th scope=\"col\">公开版→授权公告版</th><th scope=\"col\">实际文本对照</th><th scope=\"col\">原页定位</th></tr></thead><tbody><tr><th scope=\"row\">A1＋A3＋A5→C1</th><td>一般方法、氧化剂类别与盐/产物通式在C1合并表达；不等于原A3类别从文书完全消失。</td><td>两版PDF2</td></tr><tr><th scope=\"row\">A4→C3</th><td>C3进一步列举三种过硫酸盐和KMnO4；醋酸锰/硫酸高铈类别仍见C1。</td><td>两版PDF2</td></tr><tr><th scope=\"row\">A7＋A8→C5</th><td>前驱体路径与通式变量合并表达。</td><td>两版PDF2</td></tr><tr><th scope=\"row\">A13→C10</th><td>溶剂列举重编号；保持原字式，不擅自修正名称。</td><td>两版PDF3</td></tr></tbody></table></div><p class=\"scientific-meaning\"><b>证据的意义：</b>该文书以含氟烷基亚磺酸盐转化为相应碘化物的技术文字为证，保留共同发明人署名，并使公开/授权版本的具体差别可回查。它与1999、2001两篇论文及其SI属于不同文献层次。</p><ul class=\"result-limits\"><li>这里完成的是历史文书及指定文本版本对照，不判断保护范围等同、侵权、有效性、现行法律状态、工业采用或反应机理。原报产率不等于平台实验。1999/2001 SI已取得不等于正文或全谱核校完成；SET解释仍非平台机制认证。</li></ul><p class=\"table-note\">来源ID：HERITAGE-S06</p><p class=\"links\"><a href=\"https://patents.google.com/patent/CN1752059A/zh\">CN1752059A公开文书入口 →</a><a href=\"https://patents.google.com/patent/CN1298686C/zh\">CN1298686C授权公告文书入口 →</a></p></article></div><div class=\"evidence\"><h3>史料与成果入口</h3><p class=\"links\"><a href=\"../topics/single-electron-transfer/index.html\">单电子转移与C–Cl活化的历史成果 →</a><a href=\"../topics/single-electron-transfer/index.html#record-ccl-activation\">含氟氯代物的具体方法与合作"
+    },
+    {
+      "old": "",
+      "new": "\nfrom a07_biography_publication import (MANIFEST as A07_BIOGRAPHY_MANIFEST,\n    predecessor_bytes as a07_biography_predecessor_bytes, apply as apply_a07_biography_presentation)\n"
+    },
+    {
+      "old": "_file(root, name).read_bytes(",
+      "new": "a07_biography_predecessor_bytes(root, name"
+    },
+    {
+      "old": "",
+      "new": "        if (root/A07_BIOGRAPHY_MANIFEST).exists():\n            raise ValueError('A07 biography presentation requires its immutable v30 predecessor')\n"
+    },
+    {
+      "old": "_file(root, name).read_text",
+      "new": "a07_biography_predecessor_bytes(root, name).decode"
+    },
+    {
+      "old": "_file(root, 'site/'+route).read_bytes(",
+      "new": "a07_biography_predecessor_bytes(root, 'site/'+route"
+    },
+    {
+      "old": "_file(root, 'site/'+name).read_bytes(",
+      "new": "a07_biography_predecessor_bytes(root, 'site/'+name"
+    },
+    {
+      "old": "from render_ai_research import inspect_ai_research\n    from render_a06_biography import inspect_biography\n    checks = [inspect_ai_research(root), inspect_biography(root)]\n    if any(c.get('status') != 'passed' for c in checks):\n",
+      "new": "# v30 validates reconstructed bytes; v31 validates the current rendering.\n    if not (root/A07_BIOGRAPHY_MANIFEST).exists():\n        from render_ai_research import inspect_ai_research\n        from render_a06_biography import inspect_biography\n        checks = [inspect_ai_research(root), inspect_biography(root)]\n        if any(c.get('status') != 'passed' for c in checks):\n    "
+    },
+    {
+      "old": "updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}",
+      "new": "apply_a07_biography_presentation(root, updated,\n        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})"
+    },
+    {
+      "old": "",
+      "new": "    if (root/'provenance/platform-presentation.v31.json').exists() and not (root/'provenance/platform-presentation.v30.json').exists():\n        raise ValueError('A07 biography presentation requires its immutable v30 predecessor')\n"
+    },
+    {
+      "old": "",
+      "new": "        if (context['path'] == 'topics/single-electron-transfer/index.html'\n                and (root/'content/a07-biography-narrative.v1.json').exists()):\n            from render_a07_biography import render_block as render_a07_heritage_context\n            blocks[context['path']] = {'HERITAGE_CONTEXT': marker_block(\n                'HERITAGE_CONTEXT', render_a07_heritage_context(root))}\n            continue\n"
+    }
+  ],
+  "boundary": "Only the existing A07 topic main contents and AI A07 section, separate attributed historical source/document/renderer, heritage route selection and bounded publication implementation change. Original head/header/footer/main wrappers, IDs and embedded JSON remain unchanged; exact old presentation bytes are reversible. A07 literature_checks and prior_work, all underlying source/data JSON, homepage, PFtB page and scientific data, A01-A06 and A08-A09, all other routes and all v1-v30 manifests remain unchanged. No new calculation, experiment, private original, tracking inventory or scientific release.",
+  "publish_allowlist": "Unchanged: sixteen static HTML pages, two original public JSON files and an empty .nojekyll marker, nineteen regular published files.",
+  "remote_action_performed": false
+}
