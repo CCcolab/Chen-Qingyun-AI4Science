@@ -5,6 +5,11 @@ import hashlib
 import json
 from pathlib import Path, PurePosixPath
 import re
+from nine_line_reading_publication import (
+    MANIFEST as NINE_LINE_READING_MANIFEST,
+    predecessor_bytes as nine_line_reading_predecessor_bytes,
+    apply as apply_nine_line_reading_presentation,
+)
 
 MANIFEST = 'provenance/platform-presentation.v33.json'
 PRESENTATION_ID = 'PLATFORM-A09-ACADEMIC-HERITAGE-20261117-v33'
@@ -51,7 +56,7 @@ def _file(root: Path, name: str) -> Path:
 
 
 def _json(root: Path, name: str):
-    return json.loads(_file(root, name).read_bytes())
+    return json.loads(nine_line_reading_predecessor_bytes(root, name))
 
 
 def _record_set(data: dict) -> tuple[list, list]:
@@ -95,7 +100,7 @@ def predecessor_bytes(root: Path, name: str) -> bytes:
     once, including rejecting unauthorized records that the fast path ignores.
     Every invocation reads actual bytes; no path/mtime/global cache is used.
     """
-    current = _file(root, name).read_bytes()
+    current = nine_line_reading_predecessor_bytes(root, name)
     if name not in PREDECESSOR_FILES and name != MANIFEST:
         return current
     if not (root/MANIFEST).exists():
@@ -132,7 +137,7 @@ def predecessor_bytes(root: Path, name: str) -> bytes:
 
 
 def _binding(root: Path, name: str) -> dict:
-    value = _file(root, name).read_bytes()
+    value = nine_line_reading_predecessor_bytes(root, name)
     return {'path': name, 'sha256': _sha(value), 'bytes': len(value)}
 
 
@@ -161,16 +166,18 @@ def _check_html_regions(route: str, before: bytes, after: bytes) -> None:
 def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]:
     """Validate v33's exact bounded historical presentation after v32 replay."""
     if not (root/MANIFEST).exists():
+        if (root/NINE_LINE_READING_MANIFEST).exists():
+            raise ValueError('Nine-line reading requires its immutable v33 predecessor')
         return entries, previous_report
     if not FROZEN:
         raise ValueError('A09 heritage publication has not been frozen after source review')
     if not (root/PREVIOUS_MANIFEST).is_file():
         raise ValueError('A09 heritage requires its immutable v32 predecessor')
     for name, sha in OLD_MANIFESTS.items():
-        if _sha(_file(root, name).read_bytes()) != sha:
+        if _sha(nine_line_reading_predecessor_bytes(root, name)) != sha:
             raise ValueError('Historical presentation manifest changed: '+name)
     for name, (sha, size) in PROTECTED_FILES.items():
-        value = _file(root, name).read_bytes()
+        value = nine_line_reading_predecessor_bytes(root, name)
         if _sha(value) != sha or len(value) != size:
             raise ValueError('A09 changed a protected historical, scientific or AI source: '+name)
     data = _json(root, MANIFEST)
@@ -209,24 +216,24 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
     _record_set(data)
     for name, (sha, size) in PREDECESSOR_FILES.items():
         old = predecessor_bytes(root, name)
-        if _sha(old) != sha or len(old) != size or old == _file(root, name).read_bytes():
+        if _sha(old) != sha or len(old) != size or old == nine_line_reading_predecessor_bytes(root, name):
             raise ValueError('A09 heritage predecessor differs from fixed 6156f23: '+name)
     expected_ai = json.loads(predecessor_bytes(root, AI))
     expected_ai['heritage']['url'] = '../people/index.html'
     if _json(root, AI) != expected_ai:
         raise ValueError('A09 may change only the heritage URL, retaining all eight AI research lines')
     old_document = predecessor_bytes(root, HERITAGE_DOCUMENT).decode('utf-8')
-    current_document = _file(root, HERITAGE_DOCUMENT).read_bytes().decode('utf-8')
+    current_document = nine_line_reading_predecessor_bytes(root, HERITAGE_DOCUMENT).decode('utf-8')
     a09_document = re.compile(r'^### A09[^\n]*\n.*?(?=^## 人物与合作故事\s*$)', re.M | re.S)
     if (len(a09_document.findall(old_document)) != 1 or len(a09_document.findall(current_document)) != 1
             or a09_document.sub('<A09-INVENTORY/>\n', old_document)
                 != a09_document.sub('<A09-INVENTORY/>\n', current_document)):
         raise ValueError('A09 changed another line or story in the heritage inventory document')
     for name, sha in REVIEWED_PUBLIC_FILES.items():
-        if _sha(_file(root, name).read_bytes()) != sha:
+        if _sha(nine_line_reading_predecessor_bytes(root, name)) != sha:
             raise ValueError('A09 source, renderer or document differs from reviewed bytes: '+name)
     for name in PUBLIC_DISPLAYS:
-        value = _file(root, name).read_bytes().decode('utf-8')
+        value = nine_line_reading_predecessor_bytes(root, name).decode('utf-8')
         if re.search(r'(?i)private-sources|current-item-register|现阶段待查事项统计|[CD]:[\\/]', value):
             raise ValueError('A09 public display contains private evidence or a local path: '+name)
     changes = data.get('changes')
@@ -240,7 +247,7 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
     for item in changes:
         route = item['path']; old_entry = entries[route]
         before = predecessor_bytes(root, 'site/'+route)
-        after = _file(root, 'site/'+route).read_bytes()
+        after = nine_line_reading_predecessor_bytes(root, 'site/'+route)
         if (item.get('old_sha256') != old_entry['sha256'] or item.get('old_bytes') != old_entry['bytes']
                 or _sha(before) != old_entry['sha256'] or len(before) != old_entry['bytes']
                 or item.get('new_sha256') != _sha(after) or item.get('new_bytes') != len(after)
@@ -251,14 +258,14 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
     updated[ADDED_ROUTE] = {'path': ADDED_ROUTE, 'sha256': added_binding['sha256'],
         'bytes': added_binding['bytes'], 'presentation_id': PRESENTATION_ID}
     for name, entry in updated.items():
-        value = _file(root, 'site/'+name).read_bytes()
+        value = nine_line_reading_predecessor_bytes(root, 'site/'+name)
         if _sha(value) != entry['sha256'] or len(value) != entry['bytes']:
             raise ValueError('A09 heritage changed an unlisted website byte: '+name)
     from render_a09_biography import inspect_biography
     check = inspect_biography(root)
     if check.get('status') != 'passed':
         raise ValueError('A09 historical display differs from its source rendering: '+str(check))
-    report = {'path': MANIFEST, 'sha256': _sha(_file(root, MANIFEST).read_bytes()),
+    report = {'path': MANIFEST, 'sha256': _sha(nine_line_reading_predecessor_bytes(root, MANIFEST)),
         'presentation_id': PRESENTATION_ID, 'publication_kind': required['publication_kind'],
         'changed_paths': list(ROUTES), 'added_paths': [ADDED_ROUTE],
         'previous_presentation_commit': PREVIOUS_COMMIT,
@@ -268,4 +275,5 @@ def apply(root: Path, entries: dict, previous_report: dict) -> tuple[dict, dict]
         'eight_AI_research_lines_and_scientific_data_preserved': True,
         **{k: required[k] for k in ('scientific_review_status', 'release_eligible',
             'scientific_data_unchanged', 'M0_resumed', 'historical_achievement_independent_of_AI_review')}}
-    return updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}
+    return apply_nine_line_reading_presentation(root, updated,
+        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})

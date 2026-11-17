@@ -1,0 +1,1293 @@
+{
+  "schema_version": "34.0",
+  "presentation_id": "PLATFORM-NINE-LINE-ACADEMIC-READING-20261117-v34",
+  "publication_kind": "platform_nine_line_academic_reading",
+  "previous_presentation_commit": "d5d880796a83b039393bf298018b5072d76f089f",
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v33.json",
+    "sha256": "410c93a4fa52415c1345a05266eb79afc80484491aee0b51c3781df3b0c143a3"
+  },
+  "original_baseline_sha256": "5e3e70988d76ac1d777ff85ee7c1945341e2141767fc77560c6cea39eabab329",
+  "original_archive_sha256": "fa9740d7a244ab4d52885600a312487869d780a82517aa0d0a401215696c4d3e",
+  "authorization": "依用户要求继续推进九条成果线：以传记和已有可靠资料呈现学术贡献与合作传承，整理九线导读，修正A07引用；不恢复M0或模型训练，不公开私有待查与原件。",
+  "allowed_html_paths": [
+    "index.html",
+    "achievements/index.html"
+  ],
+  "added_html_paths": [],
+  "additions": [],
+  "allowed_display_regions": {
+    "index.html": [
+      "HERITAGE_SOURCES visible reference text",
+      "article#line-a07 source details"
+    ],
+    "achievements/index.html": [
+      "HERITAGE_INVENTORY academic reading guide",
+      "exact top inventory anchor label",
+      "article#line-a07 source details"
+    ]
+  },
+  "editorial_documents": [
+    {
+      "path": "site/index.html",
+      "sha256": "032c76ebf2fcd2dce04d1b1ae66d24ff3b782cac08fff757cb9aa9d738c87c0a",
+      "bytes": 246490
+    },
+    {
+      "path": "site/achievements/index.html",
+      "sha256": "c692715a7ff75cab3d7e5b57e5969b245b8bf9b058636f24fe7e7ef031f1991c",
+      "bytes": 61378
+    },
+    {
+      "path": "scripts/render_heritage.py",
+      "sha256": "bc281999e0bd250eb23e3aa7d76fc08f86bcbcd1ce930c1e974380c5c5071bce",
+      "bytes": 45359
+    },
+    {
+      "path": "docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "sha256": "60c94c77fa48ae39568b6a7e220db7e59a5f422d29caac8c45d7e925ba635520",
+      "bytes": 24775
+    },
+    {
+      "path": "scripts/a09_biography_publication.py",
+      "sha256": "b8ac9560a18d4a87b1703d7925a4e0fd7ae2f47f751ba82a672b71d0851af6e5",
+      "bytes": 40307
+    },
+    {
+      "path": "content/nine-line-reading.v1.json",
+      "sha256": "8bde260f48ca1aec3250202a22ec3f7579439026c002093e5af33bac8d524507",
+      "bytes": 15557
+    },
+    {
+      "path": "scripts/render_nine_line_reading.py",
+      "sha256": "9c247b53b8cc17be837524a07a49462ea35a3a5699287b10a65d0d380c85e0d0",
+      "bytes": 9650
+    },
+    {
+      "path": "scripts/nine_line_reading_publication.py",
+      "sha256": "d42072afb58df50640d61f5ae5a0b071fbf8827377cb000a184a9d66982ca1ec",
+      "bytes": 58209
+    }
+  ],
+  "protected_website_members": {
+    "pftb/index.html": {
+      "sha256": "b2dd711fcb504b676c3d04f2c42876c2a36ae8f616c0b48b8530aed53822c3b5",
+      "bytes": 101043
+    },
+    "topics/f53/index.html": {
+      "sha256": "d6b1dc495768583ef4657f8b1e542649c681ee1dd641e739f74003498a92a85b",
+      "bytes": 16656
+    },
+    "topics/refrigerants/index.html": {
+      "sha256": "ee04418185a648f2272fb46ac38c9f9ddeee1abcb72cbb35b514cce5f765da34",
+      "bytes": 18076
+    },
+    "topics/fluoromonomers/index.html": {
+      "sha256": "ff79d077f5b74b8580ef06ac5e7c4c622b98c4f562daf9f75ae530e6f9ba199b",
+      "bytes": 18224
+    },
+    "topics/perfluorosulfonates/index.html": {
+      "sha256": "ffc195bfdd3c262e19327b298cfd079ac721b4b81f357ea5e4313b156f579210",
+      "bytes": 12206
+    },
+    "topics/chen-reagent/index.html": {
+      "sha256": "a9cf50685f6732a8baa260899cee7e62986eb5440da1f8b98a7adb79295b03ef",
+      "bytes": 23434
+    },
+    "topics/single-electron-transfer/index.html": {
+      "sha256": "a0e843ba29279387985b9e7122382b6cc5f8b78021414b0383586979bb653127",
+      "bytes": 18697
+    },
+    "topics/fluoroporphyrins/index.html": {
+      "sha256": "09eb45dd775f2a3055744bf1a4396126574860b2534b0057b7fcc4e4f334d017",
+      "bytes": 14580
+    },
+    "topics/early-fluoroketones/index.html": {
+      "sha256": "eeffdcd82cca6ae6549db9d21b7059ac4c9db94cdc60337ffc3a6a75ae06af88",
+      "bytes": 257826
+    },
+    "topics/fluorinated-small-rings/index.html": {
+      "sha256": "cdc2962520cc8d62142c23862fe6251503c725a56636aa8674f59c8fdf8ca9fd",
+      "bytes": 10871
+    },
+    "topics/deoxyfluorination/index.html": {
+      "sha256": "0fd55ff1295f895ce4f82143724eaba2c15005992ccb0f130f693f8d2645d22d",
+      "bytes": 10215
+    },
+    "topics/sulfonyl-fluoride/index.html": {
+      "sha256": "adb2871728449b7281cde158970ca221e4ae26cf72c5138f5f958fc21a1e7050",
+      "bytes": 12193
+    },
+    "topics/index.html": {
+      "sha256": "9873ad87c1c46126755d9ee346b044e36eaa001394f1d5d1ed8043e1f4c584db",
+      "bytes": 5185
+    },
+    "data/public-sources.json": {
+      "sha256": "94f8b9f6d0849deb9f26f75947205cfc8c4eb0973045fe958f2121237d987062",
+      "bytes": 33608
+    },
+    "data/achievement-lines.json": {
+      "sha256": "1c9ec28bf41a7d79214e84a1c07f3bea1e0d91630dd3a88c93c39ff68a9bccec",
+      "bytes": 39768
+    },
+    "README.txt": {
+      "sha256": "6e15068b7240ae47d633df3f777e81fbb9e46146ee5f4ab70011f09119b6bbc9",
+      "bytes": 336
+    },
+    "ROUTES.txt": {
+      "sha256": "a734c356877d4534285ab7d71b9fe0f7a17abbced4de3c52f8e60d335301e418",
+      "bytes": 949
+    },
+    "QA.txt": {
+      "sha256": "a60b5f382b31689fa17e2518b7079ef0660674fb62bddbbf564c7b74dfe51067",
+      "bytes": 290
+    },
+    "IONIC-ENTRY-RETEST.txt": {
+      "sha256": "3462b056891a27c335cc2620deb87b245b6c9aea3bdaec607c8a14beca69fe9d",
+      "bytes": 741
+    },
+    "research/index.html": {
+      "sha256": "cbc946120f8fa53054d32aa7cfa013f52b0c15147954bfb4705023d910232d28",
+      "bytes": 84577
+    },
+    "people/index.html": {
+      "sha256": "c70e0b1c08c02566f61adb3e7602a6fe15ef2f9af498d160cd171c2719f7e381",
+      "bytes": 21105
+    }
+  },
+  "reconstruction_kind": "deduplicated_exact_utf8_text_edits",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "M0_resumed": false,
+  "historical_achievement_independent_of_AI_review": true,
+  "new_quantum_calls": 0,
+  "new_model_API_calls": 0,
+  "new_model_training_runs": 0,
+  "allowed_ai_json_pointers": [],
+  "allowed_new_files": [
+    "content/nine-line-reading.v1.json",
+    "scripts/render_nine_line_reading.py",
+    "scripts/nine_line_reading_publication.py",
+    "provenance/platform-presentation.v34.json"
+  ],
+  "reversible_text_files": [
+    {
+      "path": "site/index.html",
+      "old_sha256": "ed784916e48d27fce62870476a7083c1de68934c1e96343f4c60e9336fcd6220",
+      "old_bytes": 257401,
+      "new_sha256": "032c76ebf2fcd2dce04d1b1ae66d24ff3b782cac08fff757cb9aa9d738c87c0a",
+      "new_bytes": 246490,
+      "edits": [
+        {
+          "old_offset": 49328,
+          "replacement": 0
+        },
+        {
+          "old_offset": 69526,
+          "replacement": 1
+        }
+      ]
+    },
+    {
+      "path": "site/achievements/index.html",
+      "old_sha256": "4180b6ef8dd6a12127addc2b3694258f97b0310bbd5cff0b021097550fb4f8f2",
+      "old_bytes": 88530,
+      "new_sha256": "c692715a7ff75cab3d7e5b57e5969b245b8bf9b058636f24fe7e7ef031f1991c",
+      "new_bytes": 61378,
+      "edits": [
+        {
+          "old_offset": 6326,
+          "replacement": 2
+        },
+        {
+          "old_offset": 12078,
+          "replacement": 3
+        },
+        {
+          "old_offset": 58320,
+          "replacement": 4
+        }
+      ]
+    },
+    {
+      "path": "scripts/render_heritage.py",
+      "old_sha256": "9e0a977a69f8bee2601843d92840ee709f4d15b4e7640d3c20474cf0f61b516e",
+      "old_bytes": 44816,
+      "new_sha256": "bc281999e0bd250eb23e3aa7d76fc08f86bcbcd1ce930c1e974380c5c5071bce",
+      "new_bytes": 45359,
+      "edits": [
+        {
+          "old_offset": 19282,
+          "replacement": 5
+        },
+        {
+          "old_offset": 22689,
+          "replacement": 6
+        },
+        {
+          "old_offset": 27372,
+          "replacement": 7
+        }
+      ]
+    },
+    {
+      "path": "docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "old_sha256": "ffdf2222f1d2c12c978f2948174fc1ce36ec88bca43f1f53571d6be389ff5ee7",
+      "old_bytes": 64909,
+      "new_sha256": "60c94c77fa48ae39568b6a7e220db7e59a5f422d29caac8c45d7e925ba635520",
+      "new_bytes": 24775,
+      "edits": [
+        {
+          "old_offset": 46,
+          "replacement": 8
+        },
+        {
+          "old_offset": 7048,
+          "replacement": 9
+        },
+        {
+          "old_offset": 7180,
+          "replacement": 10
+        },
+        {
+          "old_offset": 7200,
+          "replacement": 11
+        },
+        {
+          "old_offset": 7240,
+          "replacement": 12
+        },
+        {
+          "old_offset": 7471,
+          "replacement": 13
+        },
+        {
+          "old_offset": 9178,
+          "replacement": 14
+        },
+        {
+          "old_offset": 9424,
+          "replacement": 15
+        },
+        {
+          "old_offset": 9444,
+          "replacement": 16
+        },
+        {
+          "old_offset": 9490,
+          "replacement": 17
+        },
+        {
+          "old_offset": 9721,
+          "replacement": 18
+        },
+        {
+          "old_offset": 13107,
+          "replacement": 19
+        },
+        {
+          "old_offset": 13265,
+          "replacement": 20
+        },
+        {
+          "old_offset": 13285,
+          "replacement": 21
+        },
+        {
+          "old_offset": 13334,
+          "replacement": 22
+        },
+        {
+          "old_offset": 13596,
+          "replacement": 23
+        },
+        {
+          "old_offset": 15126,
+          "replacement": 24
+        },
+        {
+          "old_offset": 15249,
+          "replacement": 25
+        },
+        {
+          "old_offset": 15269,
+          "replacement": 26
+        },
+        {
+          "old_offset": 15309,
+          "replacement": 27
+        },
+        {
+          "old_offset": 15570,
+          "replacement": 28
+        },
+        {
+          "old_offset": 17390,
+          "replacement": 29
+        },
+        {
+          "old_offset": 17527,
+          "replacement": 30
+        },
+        {
+          "old_offset": 17547,
+          "replacement": 31
+        },
+        {
+          "old_offset": 17588,
+          "replacement": 32
+        },
+        {
+          "old_offset": 17817,
+          "replacement": 33
+        },
+        {
+          "old_offset": 21260,
+          "replacement": 34
+        },
+        {
+          "old_offset": 21391,
+          "replacement": 35
+        },
+        {
+          "old_offset": 21411,
+          "replacement": 36
+        },
+        {
+          "old_offset": 21451,
+          "replacement": 37
+        },
+        {
+          "old_offset": 21711,
+          "replacement": 38
+        },
+        {
+          "old_offset": 26667,
+          "replacement": 39
+        },
+        {
+          "old_offset": 26804,
+          "replacement": 40
+        },
+        {
+          "old_offset": 26824,
+          "replacement": 41
+        },
+        {
+          "old_offset": 26870,
+          "replacement": 42
+        },
+        {
+          "old_offset": 27115,
+          "replacement": 43
+        },
+        {
+          "old_offset": 30662,
+          "replacement": 44
+        },
+        {
+          "old_offset": 30802,
+          "replacement": 45
+        },
+        {
+          "old_offset": 30822,
+          "replacement": 46
+        },
+        {
+          "old_offset": 30868,
+          "replacement": 47
+        },
+        {
+          "old_offset": 31128,
+          "replacement": 48
+        },
+        {
+          "old_offset": 34346,
+          "replacement": 49
+        },
+        {
+          "old_offset": 34782,
+          "replacement": 50
+        },
+        {
+          "old_offset": 35106,
+          "replacement": 51
+        },
+        {
+          "old_offset": 35595,
+          "replacement": 52
+        },
+        {
+          "old_offset": 35910,
+          "replacement": 53
+        },
+        {
+          "old_offset": 36434,
+          "replacement": 54
+        },
+        {
+          "old_offset": 36939,
+          "replacement": 55
+        },
+        {
+          "old_offset": 37469,
+          "replacement": 56
+        },
+        {
+          "old_offset": 37951,
+          "replacement": 57
+        },
+        {
+          "old_offset": 38468,
+          "replacement": 58
+        },
+        {
+          "old_offset": 38892,
+          "replacement": 59
+        },
+        {
+          "old_offset": 39322,
+          "replacement": 60
+        },
+        {
+          "old_offset": 39624,
+          "replacement": 61
+        },
+        {
+          "old_offset": 40132,
+          "replacement": 62
+        },
+        {
+          "old_offset": 40744,
+          "replacement": 63
+        },
+        {
+          "old_offset": 41245,
+          "replacement": 64
+        },
+        {
+          "old_offset": 41609,
+          "replacement": 65
+        },
+        {
+          "old_offset": 42265,
+          "replacement": 66
+        },
+        {
+          "old_offset": 42758,
+          "replacement": 67
+        },
+        {
+          "old_offset": 43503,
+          "replacement": 68
+        },
+        {
+          "old_offset": 44080,
+          "replacement": 69
+        },
+        {
+          "old_offset": 44648,
+          "replacement": 70
+        },
+        {
+          "old_offset": 45276,
+          "replacement": 71
+        },
+        {
+          "old_offset": 45889,
+          "replacement": 72
+        },
+        {
+          "old_offset": 46432,
+          "replacement": 73
+        },
+        {
+          "old_offset": 47150,
+          "replacement": 74
+        },
+        {
+          "old_offset": 47724,
+          "replacement": 75
+        },
+        {
+          "old_offset": 48310,
+          "replacement": 76
+        },
+        {
+          "old_offset": 48747,
+          "replacement": 77
+        },
+        {
+          "old_offset": 49365,
+          "replacement": 78
+        },
+        {
+          "old_offset": 49920,
+          "replacement": 79
+        },
+        {
+          "old_offset": 50461,
+          "replacement": 80
+        },
+        {
+          "old_offset": 50763,
+          "replacement": 81
+        },
+        {
+          "old_offset": 51014,
+          "replacement": 82
+        },
+        {
+          "old_offset": 51225,
+          "replacement": 83
+        },
+        {
+          "old_offset": 51507,
+          "replacement": 84
+        },
+        {
+          "old_offset": 51568,
+          "replacement": 85
+        },
+        {
+          "old_offset": 51702,
+          "replacement": 86
+        },
+        {
+          "old_offset": 51794,
+          "replacement": 87
+        },
+        {
+          "old_offset": 51889,
+          "replacement": 88
+        },
+        {
+          "old_offset": 51959,
+          "replacement": 89
+        },
+        {
+          "old_offset": 52202,
+          "replacement": 90
+        },
+        {
+          "old_offset": 52332,
+          "replacement": 91
+        },
+        {
+          "old_offset": 52500,
+          "replacement": 92
+        },
+        {
+          "old_offset": 52570,
+          "replacement": 93
+        },
+        {
+          "old_offset": 52773,
+          "replacement": 94
+        },
+        {
+          "old_offset": 52856,
+          "replacement": 95
+        },
+        {
+          "old_offset": 53000,
+          "replacement": 96
+        },
+        {
+          "old_offset": 53093,
+          "replacement": 97
+        },
+        {
+          "old_offset": 53347,
+          "replacement": 98
+        },
+        {
+          "old_offset": 53557,
+          "replacement": 99
+        },
+        {
+          "old_offset": 53717,
+          "replacement": 100
+        },
+        {
+          "old_offset": 53808,
+          "replacement": 101
+        },
+        {
+          "old_offset": 54008,
+          "replacement": 102
+        },
+        {
+          "old_offset": 54279,
+          "replacement": 103
+        },
+        {
+          "old_offset": 54435,
+          "replacement": 104
+        },
+        {
+          "old_offset": 54521,
+          "replacement": 105
+        },
+        {
+          "old_offset": 54792,
+          "replacement": 106
+        },
+        {
+          "old_offset": 55008,
+          "replacement": 107
+        },
+        {
+          "old_offset": 55136,
+          "replacement": 108
+        },
+        {
+          "old_offset": 55209,
+          "replacement": 109
+        },
+        {
+          "old_offset": 55432,
+          "replacement": 110
+        },
+        {
+          "old_offset": 55616,
+          "replacement": 111
+        },
+        {
+          "old_offset": 55721,
+          "replacement": 112
+        },
+        {
+          "old_offset": 55785,
+          "replacement": 113
+        },
+        {
+          "old_offset": 64467,
+          "replacement": 114
+        },
+        {
+          "old_offset": 64595,
+          "replacement": 115
+        },
+        {
+          "old_offset": 64731,
+          "replacement": 116
+        }
+      ]
+    },
+    {
+      "path": "scripts/a09_biography_publication.py",
+      "old_sha256": "eb12f6a07f4c0980231dfefc0a9075ec1bb1512da0c1a6c6ef0d0c803ac0ffb4",
+      "old_bytes": 39704,
+      "new_sha256": "b8ac9560a18d4a87b1703d7925a4e0fd7ae2f47f751ba82a672b71d0851af6e5",
+      "new_bytes": 40307,
+      "edits": [
+        {
+          "old_offset": 196,
+          "replacement": 117
+        },
+        {
+          "old_offset": 26017,
+          "replacement": 118
+        },
+        {
+          "old_offset": 28546,
+          "replacement": 119
+        },
+        {
+          "old_offset": 30409,
+          "replacement": 120
+        },
+        {
+          "old_offset": 32106,
+          "replacement": 121
+        },
+        {
+          "old_offset": 32429,
+          "replacement": 122
+        },
+        {
+          "old_offset": 32619,
+          "replacement": 123
+        },
+        {
+          "old_offset": 35230,
+          "replacement": 124
+        },
+        {
+          "old_offset": 35750,
+          "replacement": 125
+        },
+        {
+          "old_offset": 36333,
+          "replacement": 122
+        },
+        {
+          "old_offset": 36522,
+          "replacement": 126
+        },
+        {
+          "old_offset": 37433,
+          "replacement": 127
+        },
+        {
+          "old_offset": 38353,
+          "replacement": 128
+        },
+        {
+          "old_offset": 38797,
+          "replacement": 129
+        },
+        {
+          "old_offset": 39601,
+          "replacement": 130
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "<article class=\"case\" id=\"line-a07\"><div class=\"case-side\">1980—2000年代</div><div class=\"case-main\"><h3>A07（单电子转移与C–Cl活化）</h3><p><b>研究问题：</b>改变溶剂、温度或引发体系，能否让特定含氟氯代物反应？</p><p>陈庆云与多位合作者研究氟烷基化不同引发条件，并在黄维垣组先行脱卤亚磺化研究基础上拓展到特定含氟氯代体系。</p><p><a href=\"topics/single-electron-transfer/index.html#record-ccl-activation\">引发方法与底物边界 →</a></p><details><summary>依据、边界与下一步</summary><p><a href=\"#source-cq-h01\">CQ-H01</a>、<a href=\"#source-cq-r06\">CQ-R06</a>、<a href=\"#source-cq-h09\">CQ-H09</a>。具体体系的 C–Cl 转化不是普适 C–F 断裂或 PFAS 降解；企业访谈不能单独证明商业化量产。需回查 1999 年原始论文及企业记录。</p></details><details class=\"supporting-record\" id=\"case-activation\"><summary>专题选读：含氟氯代物的活化</summary><span class=\"flag\">资料选读 · 待专业核校</span><h4>研究问题</h4><p>特定溶剂与引发体系如何帮助含氟氯代物参与反应？反应涉及的是哪一类化学键和底物？</p><h4>共同研究的贡献</h4><p>Zheng-Yu Long 与 Qing-Yun Chen 的 1999 年论文展示了在特定体系中使含氟氯代物与不饱和底物反应的策略。</p><h4>边界与待研究问题</h4><p>这里讨论的是具体 C–Cl 键活化，不等于普遍 C–F 断裂或全部含氟物质的降解；竞争机理及适用条件需回到全文逐项核对。</p><details><summary>展开来源与核查层级</summary><p><b>CQ-R06：</b>展示释义：通过溶剂与引发体系活化含氟氯代物。正式题名：The Activation of Carbon−Chlorine Bonds in Per- and Polyfluoroalkyl Chlorides: DMSO-Induced Hydroperfluoroalkylation of Alkenes and Alkynes with Sodium Dithionite. Zheng-Yu Long、Qing-Yun Chen，J. Org. Chem. 64(13)，4775–4782（1999），DOI 10.1021/jo9900937。核查层级：出版社索引摘要、书目及日期；定位：Abstract、Article history。<br><a href=\"https://pubs.acs.org/doi/abs/10.1021/jo9900937\" target=\"_blank\" rel=\"noopener noreferrer\">查看出版社入口 ↗</a></p></details><a href=\"#overview\">← 返回专题与档案目录</a></details></div></article>\n",
+      "new": "<article class=\"case\" id=\"line-a07\"><div class=\"case-side\">1980—2000年代</div><div class=\"case-main\"><h3>A07（单电子转移与C–Cl活化）</h3><p><b>研究问题：</b>改变溶剂、温度或引发体系，能否让特定含氟氯代物反应？</p><p>陈庆云与多位合作者研究氟烷基化不同引发条件，并在黄维垣组先行脱卤亚磺化研究基础上拓展到特定含氟氯代体系。</p><p><a href=\"topics/single-electron-transfer/index.html#record-ccl-activation\">引发方法与底物边界 →</a></p><details><summary>原文与研究范围</summary><p><a href=\"#source-cq-h01\">CQ-H01</a>、<a href=\"#source-cq-r06\">CQ-R06</a>、<a href=\"#heritage-source-s07\">HERITAGE-S07</a>。1999年DMSO／连二亚硫酸钠体系与2001年镍体系分别按原作介绍，单电子转移保留为原作者讨论的解释；特定体系的C–Cl转化不外推为普适C–F断裂或PFAS降解。</p></details><details class=\"supporting-record\" id=\"case-activation\"><summary>专题选读：含氟氯代物的活化</summary><span class=\"flag\">资料选读 · 待专业核校</span><h4>研究问题</h4><p>特定溶剂与引发体系如何帮助含氟氯代物参与反应？反应涉及的是哪一类化学键和底物？</p><h4>共同研究的贡献</h4><p>Zheng-Yu Long 与 Qing-Yun Chen 的 1999 年论文展示了在特定体系中使含氟氯代物与不饱和底物反应的策略。</p><h4>边界与待研究问题</h4><p>这里讨论的是具体 C–Cl 键活化，不等于普遍 C–F 断裂或全部含氟物质的降解；竞争机理及适用条件需回到全文逐项核对。</p><details><summary>展开来源与核查层级</summary><p><b>CQ-R06：</b>展示释义：通过溶剂与引发体系活化含氟氯代物。正式题名：The Activation of Carbon−Chlorine Bonds in Per- and Polyfluoroalkyl Chlorides: DMSO-Induced Hydroperfluoroalkylation of Alkenes and Alkynes with Sodium Dithionite. Zheng-Yu Long、Qing-Yun Chen，J. Org. Chem. 64(13)，4775–4782（1999），DOI 10.1021/jo9900937。核查层级：出版社索引摘要、书目及日期；定位：Abstract、Article history。<br><a href=\"https://pubs.acs.org/doi/abs/10.1021/jo9900937\" target=\"_blank\" rel=\"noopener noreferrer\">查看出版社入口 ↗</a></p></details><a href=\"#overview\">← 返回专题与档案目录</a></details></div></article>\n"
+    },
+    {
+      "old": "<section id=\"heritage-sources\" class=\"wrap heritage-section\"><h2>资料来源与待核事项</h2><p>各项资料注明来源、文献定位与待核事项。</p><details><summary>文献范围与书本信息</summary><p>朱晶、刘超：《氟缘笃志：陈庆云传》。据用户指定的本地研究底本；出版信息中可见排版占位符，不预设与市售印本逐页相同；序文和正文页码分列。</p><p class=\"heritage-meta\">资料文件信息：陈庆云传.pdf；SHA256 731a5ae47f75f136eaec9e8e09021ddaaad30c0aaefd545f8c3c85857ca26d61；PDF共195页。正文页码映射的偏移量为26页。</p><ul><li>正文八章及结语p1–111已逐章核读，所用故事的关键页、脚注和图注已作整页视觉核对。</li><li>年表p112–122、后记p164–165已核读；主要论著目录p123–159按九条成果线关联条目对照，未逐篇取得其中全部原刊。</li><li>原始访谈、部分原刊／档案、书影的独立高清扫描仍待补；原PDF、完整抽取文本和页图仅留本机，不上传GitHub或网站。</li><li>已核读p34–111相关材料、反应和育人章节，并复核27张关键整页中的图注和脚注；原始访谈、原实验记录与未取得的原刊不冒充已完成核读。</li></ul></details><div class=\"heritage-grid\"><article class=\"heritage-card\" id=\"heritage-source-s01\"><h3>HERITAGE-S01 · 氟缘笃志：陈庆云传（当前本地研究底本）</h3><p class=\"heritage-meta\">传记作者叙述、转引访谈、图注与附录，逐项区分</p><p>定位：朱晶、刘超著；PDF195物理页；正文印刷页1–165，正文物理页=印刷页+26；前置序文另计</p><p>当前文件名为陈庆云传.pdf，SHA-256 731a5ae47f75f136eaec9e8e09021ddaaad30c0aaefd545f8c3c85857ca26d61。出版信息列2024年6月第1版，部分排版字段仍有占位符；页码只据此底本，不预设与市售印本逐页相同。原PDF和页图不公开上传。</p></article><article class=\"heritage-card\" id=\"heritage-source-s02\"><h3>HERITAGE-S02 · <a href=\"https://www.sioc.cas.cn/dncqy/sp/\" rel=\"noopener noreferrer\">上海有机所：陈庆云院士生平</a></h3><p class=\"heritage-meta\">任职机构生平与历史学术评价</p><p>定位：教育任职经历、科研贡献、育人与学术交流各段</p><p>机构评价保留其出处；具体论文、工艺与合作分工分别回原始材料。</p></article><article class=\"heritage-card\" id=\"heritage-source-s03\"><h3>HERITAGE-S03 · <a href=\"https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/bd0292/art/2023/art_e2d76717639749c0a6713c2b08a9971a.html\" rel=\"noopener noreferrer\">陈庆云：六十余年研究一种化学元素</a></h3><p class=\"heritage-meta\">采集工程机构报道，含具名回忆与历史叙述</p><p>定位：网页标注2021-10-29；文署采集工程项目办公室／中国科协创新战略研究院；“凝聚智慧，扬名上海氟化学”及参考文献</p><p>网页引用2019年研究报告，不当作2024底本的逐字副本；郭勇的育人回忆与书中刘超回忆分别归属。</p></article><article class=\"heritage-card\" id=\"heritage-source-s04\"><h3>HERITAGE-S04 · <a href=\"https://www.cas.cn/zt/kjzt/kjzlzqzl/kjzlzq/202406/t20240621_5022275.shtml\" rel=\"noopener noreferrer\">中国科学院：“上海氟”，何以为？</a></h3><p class=\"heritage-meta\">机构刊载历史报道与具名照片图注</p><p>定位：2024-06-21；第2节1963年南迁和仪器段、F-53段、1981年上海光明电镀厂测试图注；第3节分组研究脉络</p><p>可支持所载历史事件，未代替原工厂批次、效益和验收档案。</p></article><article class=\"heritage-card\" id=\"heritage-source-s05\"><h3>HERITAGE-S05 · <a href=\"https://manu56.magtech.com.cn/progchem/CN/volumn/volumn_1306.shtml\" rel=\"noopener noreferrer\">林永达、陈庆云：大气臭氧层破坏和CFCs替代物（1998）</a></h3><p class=\"heritage-meta\">本人合著综述的期刊原站题录；期目录提供真实摘要</p><p>定位：《化学进展》1998,10(02):228起；作者次序林永达、陈庆云；期目录页https://manu56.magtech.com.cn/progchem/CN/volumn/volumn_1306.shtml</p><p>已确认作者/题名/卷期/起始页和综述对象。详细页部分正文为模板占位符，期目录摘要可读；PDF入口标44KB但未取得全文，末页未确认；不作为工艺实验报告。</p></article><article class=\"heritage-card\" id=\"heritage-source-s06\"><h3>HERITAGE-S06 · <a href=\"https://sioc.cas.cn/sourcedb/cn/zl/202306/t20230627_6789949.html\" rel=\"noopener noreferrer\">上海有机所专利登记：从全氟烷基氯制备全氟烷基碘</a></h3><p class=\"heritage-meta\">研究机构公开专利题录，尚未取得完整专利说明书</p><p>定位：专利类别、申请号、专利号、申请日期、第一／其他发明人、授权日期各字段</p><p>原页载申请号200510031063.4、专利号ZL200510031063.4；申请2005-10-21，授权2007-02-07；第一发明人陈庆云，其他发明人曹海萍。只登记机构所载历史字段，未查询当前法律状态，未取得原专利全文或技术转让合同。</p></article><article class=\"heritage-card\" id=\"heritage-source-s07\"><h3>HERITAGE-S07 · <a href=\"https://pubmed.ncbi.nlm.nih.gov/11421787/\" rel=\"noopener noreferrer\">2001年黄小庭／陈庆云镍体系：原论文书目与摘要</a></h3><p class=\"heritage-meta\">NLM收录的原论文书目和作者摘要，不是全文核读</p><p>定位：Nickel(0)-catalyzed fluoroalkylation of alkenes, alkynes, and aromatics with perfluoroalkyl chlorides；J.Org.Chem.2001,66(13):4651–4656；PMID11421787；DOI10.1021/jo010178j</p><p>作者X.T.Huang、Q.Y.Chen。摘要支持特定全氟烷基氯与烯烃、炔烃和芳烃的镍体系转化，并将单电子转移写为所提出的机理；未取得全文／SI，不提升为完整机理证明。</p></article><article class=\"heritage-card\" id=\"heritage-source-s08\"><h3>HERITAGE-S08 · <a href=\"https://sioc.cas.cn/dncqy/sptj/\" rel=\"noopener noreferrer\">上海有机所陈庆云纪念专题：生平图集</a></h3><p class=\"heritage-meta\">任职机构公开历史图集与具名图注</p><p>定位：1979年冬季氟化学会议与Tamborski、Burton及冯允恭／黄维垣交流图注；1985年与研究生研究反应过程／讨论工作图注</p><p>已核读图集正文图注；未取得原照片底片、原始拍摄说明和授权，不公开转载图片。图注中的lown/Ithica等原站拼写不据此作学校名称校定。</p></article><article class=\"heritage-card\" id=\"heritage-source-s09\"><h3>HERITAGE-S09 · <a href=\"https://sioc.cas.cn/cxwh/whhd/200902/t20090220_1747976.html\" rel=\"noopener noreferrer\">有机所庆贺陈庆云院士八十华诞</a></h3><p class=\"heritage-meta\">机构2009年活动报道及历史学术服务记录</p><p>定位：2009-02-20，党政办公室；正文后半段学术任职与育人段</p><p>所载1993年起《有机化学》主编、1991–1998年IUPAC有机化学命名委员会中国国家代表为历史报道口径；所载论文／培养人数不得当作2026年或全生涯统计。</p></article><article class=\"heritage-card\" id=\"heritage-source-s10\"><h3>HERITAGE-S10 · <a href=\"https://www.sioc.ac.cn/news/zhxw/201901/t20190128_6769732.html\" rel=\"noopener noreferrer\">上海有机所举办陈庆云院士九十华诞学术报告会</a></h3><p class=\"heritage-meta\">任职机构具名活动报道</p><p>定位：2019-01-28，党政办；2019-01-25活动；杨国英学生代表发言、Dolbier／肖吉昌／吴生文学术报告段</p><p>已核读活动报道正文及具名报告段。叙述支持所载参会、学生代表发言与学术报告事件，不据此认定会中回忆或研究结论已获独立核实。</p></article><article class=\"heritage-card\" id=\"heritage-source-s11\"><h3>HERITAGE-S11 · <a href=\"https://sioc.cas.cn/fncm/overview/committee/\" rel=\"noopener noreferrer\">上海有机所：有机氟化学重点实验室历届学术委员会名单</a></h3><p class=\"heritage-meta\">研究机构公开的历史学术委员会名单</p><p>定位：页面“中国科学院有机氟化学重点实验室”部分第一至第四届名单；与页面上方新实验室名单分列</p><p>前三届主任栏列陈庆云，第四届主任栏并列钱旭红、陈庆云。只记录该历史名单字段，页面未列任期起止，不推定现任职务或完整任期；个别个人资料页的出生年异文不采用。</p></article></div><details><summary>待核事项与当前处理</summary><div class=\"heritage-grid\"><article class=\"heritage-card\"><h4>授予书影、说明书与独立原始扫描分开</h4><p>传记p29图3-4已核见117491号发明人证书授予正页书影；独立取得的俄文说明书是另一种文书。</p><p>当前处理：当前写“书影已核见；独立高清原始扫描及细字日期、专业核译仍待补”；不继续笼统称完全没有正页图像。</p><p class=\"heritage-locator\">出处定位：传记p29图3-4，已整页视觉核读 <span class=\"heritage-refs\"><a href=\"#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"#source-cq-h02\" title=\"六氟双酚 A 的制备方法（俄文档案中文释义）\">[CQ-H02]</a></span></p></article><article class=\"heritage-card\"><h4>底本年代字段有待逐项校勘</h4><p>底本p34“同年调沪”与p38及年表的1963年7月不一致；p10与年表p113的高中毕业年份不同。p19和年表p113均记1952年8月入职，而机构生平记9月，月份差异发生在底本与机构资料之间。</p><p>当前处理：公开简介采用机构资料与详叙可互证的年份；具体月份／高中毕业年份待档案核对，不静默混合。</p><p class=\"heritage-locator\">出处定位：传记p10、19、34、38、113–115；机构生平与CAS第2节 <span class=\"heritage-refs\"><a href=\"#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"#heritage-source-s02\" title=\"上海有机所：陈庆云院士生平\">[HERITAGE-S02]</a> <a href=\"#heritage-source-s04\" title=\"中国科学院：“上海氟”，何以为？\">[HERITAGE-S04]</a></span></p></article><article class=\"heritage-card\"><h4>年表姓名与原刊署名分开校</h4><p>p115年表的部分合作姓名，与1966原刊完整署名存在异文；另有朱仕正／朱士正等异写待原刊核定。</p><p>当前处理：论文作者优先依已核原刊；保留底本实印异文及定位，不直接归咎OCR或作者，也不补造作者。</p><p class=\"heritage-locator\">出处定位：传记p63、115及相关附录；1966原刊作者栏 <span class=\"heritage-refs\"><a href=\"#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"#source-pf01\" title=\"全氟和多氟型有机化合物的化学特性——全氟叔丁基碘以及全氟烷基的诱导效应顺序\">[PF01]</a> <a href=\"#source-cq-h07\" title=\"全氟和多氟烷基磺酸的研究 IV. 3-氧杂多氟烷烃磺酸酯的合成及其硫-氧和碳-氧键的断裂\">[CQ-H07]</a> <a href=\"#source-cq-h16\" title=\"全氟和多氟烷基磺酸酯的研究 X. 在亲核取代反应中全氟烷基3-氧杂全氟烷烃磺酸酯的唯一的硫-氧键断裂\">[CQ-H16]</a></span></p></article><article class=\"heritage-card\"><h4>制冷剂对象与相态解释须回原始资料</h4><p>底本p57的F-134a氯字句、p58所引题名HCFC／HFC异写及“超临界水”解释，需与原刊、专利的对象和温压证据对照。</p><p>当前处理：先呈现研制与应用协作，不据传记生成现代机理图，不把30吨级规模转成年产，不拿三氟乙基醚论文代替中试报告。</p><p class=\"heritage-locator\">出处定位：传记p54–59、120；相关原刊书目线索 <span class=\"heritage-refs\"><a href=\"#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"#source-cq-h24\" title=\"三氟乙基醚研究\">[CQ-H24]</a></span></p></article><article class=\"heritage-card\"><h4>访谈故事有说话人，也有未取的原始记录</h4><p>自主选题、带教、重复条件等细节在书中有具名访谈页注；尚未取得相应原始录音／逐字稿。</p><p>当前处理：明确写“据传记所引某人回忆”，不伪装成本平台访谈，不虚构对话、心理或效果统计。</p><p class=\"heritage-locator\">出处定位：传记p68、79、92、102及各脚注 <span class=\"heritage-refs\"><a href=\"#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"#heritage-source-s03\" title=\"陈庆云：六十余年研究一种化学元素\">[HERITAGE-S03]</a></span></p></article><article class=\"heritage-card\"><h4>回顾中的数量和“至今”不当作2026现状</h4><p>工厂使用、产能、培养人数、前体种数及目录条目有不同统计口径与年代；目录327条含不同类型记录。</p><p>当前处理：数字锚定来源年份；先讲具体事例和原始工作，不把底本目录数当独著数或论文总量，不代替当前应用与环境评价。</p><p class=\"heritage-locator\">出处定位：传记p52、65–69、123–159；序二与机构育人段 <span class=\"heritage-refs\"><a href=\"#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"#heritage-source-s02\" title=\"上海有机所：陈庆云院士生平\">[HERITAGE-S02]</a> <a href=\"#source-cq-h06\" title=\"国内科技论文谁家最多\">[CQ-H06]</a></span></p></article><article class=\"heritage-card\"><h4>命名、奖证与通信仍有原件线索可补</h4><p>F-53“第53页”命名故事为转引；若扩写获奖或国际评价，还需原实验本、完整证书、原信件与引用语境。</p><p>当前处理：先公开已定位的合作与育人事实；未见原件的故事保持其转引身份，不借此裁定国际优先权。</p><p class=\"heritage-locator\">出处定位：传记p46、51–55、81–82、95–105 <span class=\"heritage-refs\"><a href=\"#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"#source-cq-h04\" title=\"“上海氟”，何以为？\">[CQ-H04]</a></span></p></article><article class=\"heritage-card\"><h4>TFDA酯化试剂的化学名称异文</h4><p>传记p75整页可见“甲基三氯硅烷”，而Org.Synth.80:172原方法为chlorotrimethylsilane，即三甲基氯硅烷。</p><p>当前处理：公开故事不提供制备操作；登记底本化学名称待校，不把书中此词照录为流程，不无痕改写原书。</p><p class=\"heritage-locator\">出处定位：传记p75；Organic Syntheses Procedure A及Notes 3–4 <span class=\"heritage-refs\"><a href=\"#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"#source-cq-r08\" title=\"TFDA制备与应用进入Organic Syntheses\">[CQ-R08]</a></span></p></article><article class=\"heritage-card\"><h4>朱仕正／朱士正作者字形按原来源保留</h4><p>传记p63–66作朱仕正，原馆方CQ-H08条目作朱士正。</p><p>当前处理：新叙述以传记所载字形并标出处，旧论文题录保留原登记；原刊作者页和研究者姓名档案仍待核。</p><p class=\"heritage-locator\">出处定位：传记p63–66与CQ-H08馆方作者题录 <span class=\"heritage-refs\"><a href=\"#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"#source-cq-h08\" title=\"全氟和多氟烷基磺酸的研究. 全氟3-氧杂烷烃磺酸酯与亲核试剂反应中的单一的硫-氧键断裂\">[CQ-H08]</a></span></p></article><article class=\"heritage-card\"><h4>不同C–Cl文献与应用资格分别登记</h4><p>1999溶剂体系、2001镍体系和2005专利是不同文献类型和对象。</p><p>当前处理：论文摘要、专利题录、原始反应与技术转化记录分别建档；未取得全文／SI／原始合同，不更新工业应用或机制结论。</p><p class=\"heritage-locator\">出处定位：各原登记 <span class=\"heritage-refs\"><a href=\"#source-cq-r06\" title=\"The Activation of Carbon−Chlorine Bonds in Per- and Polyfluoroalkyl Chlorides: DMSO-Induced Hydroperfluoroalkylation of Alkenes and Alkynes with Sodium Dithionite\">[CQ-R06]</a> <a href=\"#heritage-source-s07\" title=\"2001年黄小庭／陈庆云镍体系：原论文书目与摘要\">[HERITAGE-S07]</a> <a href=\"#heritage-source-s06\" title=\"上海有机所专利登记：从全氟烷基氯制备全氟烷基碘\">[HERITAGE-S06]</a></span></p></article><article class=\"heritage-card\"><h4>历史任职、照片图注与统计口径</h4><p>机构名单未列全套任期起止；2009报道中的论文和培养人数属于当时口径。1979与1985图注只证明所载拍摄场景，不能独自证明师承或合作论文。</p><p>当前处理：只发布可核的历史字段和具名事件，原任命函、会议文稿、照片说明、培养档案与访谈原件继续待补。</p><p class=\"heritage-locator\">出处定位：机构历届学委会名单；2009报道；SIOC生平图集1979/1985图注 <span class=\"heritage-refs\"><a href=\"#heritage-source-s11\" title=\"上海有机所：有机氟化学重点实验室历届学术委员会名单\">[HERITAGE-S11]</a> <a href=\"#heritage-source-s09\" title=\"有机所庆贺陈庆云院士八十华诞\">[HERITAGE-S09]</a> <a href=\"#heritage-source-s08\" title=\"上海有机所陈庆云纪念专题：生平图集\">[HERITAGE-S08]</a></span></p></article></div></details><details><summary>历史资料与平台AI辅助研究</summary><div class=\"heritage-boundary\"><p>历史成果与故事按原作者、传记页注和机构资料呈现；材料缺口记录本平台的收藏与核读进度。</p><p>平台AI辅助研究的核读、数值重放和现代模型另存研究记录；其待审状态不作为历史贡献成立的前提。</p></div><p>历史资料整理与AI研究分开，M0保持暂停。</p></details><script id=\"heritage-content\" type=\"application/json\">\n",
+      "new": "<section id=\"heritage-sources\" class=\"wrap heritage-section\"><h2>参考资料与出处</h2><p>传记作为研究道路、合作与育人故事的主线；原论文、机构报道和数据库各按资料性质使用。具体学术成果与原文定位见各专题。</p><div class=\"heritage-grid\"><article class=\"heritage-card\" id=\"heritage-source-s01\"><h3>HERITAGE-S01 · 氟缘笃志：陈庆云传（当前本地研究底本）</h3><p class=\"heritage-meta\">传记作者叙述、转引访谈、图注与附录，逐项区分</p><p>定位：朱晶、刘超著；PDF195物理页；正文印刷页1–165，正文物理页=印刷页+26；前置序文另计</p><p>作为生平、研究历程、合作与育人故事的主要叙述依据。具体页注中的访谈转引、作者总结及图注分别注明；公开页面不转载整部传记。</p></article><article class=\"heritage-card\" id=\"heritage-source-s02\"><h3>HERITAGE-S02 · <a href=\"https://www.sioc.cas.cn/dncqy/sp/\" rel=\"noopener noreferrer\">上海有机所：陈庆云院士生平</a></h3><p class=\"heritage-meta\">任职机构生平与历史学术评价</p><p>定位：教育任职经历、科研贡献、育人与学术交流各段</p><p>用于研究经历、生平与机构历史评价；具体实验、工艺和作者分工沿各专题阅读原始资料。</p></article><article class=\"heritage-card\" id=\"heritage-source-s03\"><h3>HERITAGE-S03 · <a href=\"https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/bd0292/art/2023/art_e2d76717639749c0a6713c2b08a9971a.html\" rel=\"noopener noreferrer\">陈庆云：六十余年研究一种化学元素</a></h3><p class=\"heritage-meta\">采集工程机构报道，含具名回忆与历史叙述</p><p>定位：网页标注2021-10-29；文署采集工程项目办公室／中国科协创新战略研究院；“凝聚智慧，扬名上海氟化学”及参考文献</p><p>用于具名回忆和采集工程历史叙述；其中郭勇等人的回忆保留报道及说话人归属，不作为平台自行开展的访谈。</p></article><article class=\"heritage-card\" id=\"heritage-source-s04\"><h3>HERITAGE-S04 · <a href=\"https://www.cas.cn/zt/kjzt/kjzlzqzl/kjzlzq/202406/t20240621_5022275.shtml\" rel=\"noopener noreferrer\">中国科学院：“上海氟”，何以为？</a></h3><p class=\"heritage-meta\">机构刊载历史报道与具名照片图注</p><p>定位：2024-06-21；第2节1963年南迁和仪器段、F-53段、1981年上海光明电镀厂测试图注；第3节分组研究脉络</p><p>用于研究组织、仪器建设、合作与工厂测试图注；具体研究成果分别链接原论文及专题。</p></article><article class=\"heritage-card\" id=\"heritage-source-s05\"><h3>HERITAGE-S05 · <a href=\"https://manu56.magtech.com.cn/progchem/CN/volumn/volumn_1306.shtml\" rel=\"noopener noreferrer\">林永达、陈庆云：大气臭氧层破坏和CFCs替代物（1998）</a></h3><p class=\"heritage-meta\">原作者合著综述的期刊书目与摘要入口</p><p>定位：《化学进展》1998,10(02):228起；作者次序林永达、陈庆云；期目录页https://manu56.magtech.com.cn/progchem/CN/volumn/volumn_1306.shtml</p><p>林永达、陈庆云合著综述用于了解臭氧层破坏与CFCs替代物研究背景；综述、工艺论文和专利是不同类型的证据。详见A05（制冷剂与配套技术）专题。</p></article><article class=\"heritage-card\" id=\"heritage-source-s06\"><h3>HERITAGE-S06 · <a href=\"https://sioc.cas.cn/sourcedb/cn/zl/202306/t20230627_6789949.html\" rel=\"noopener noreferrer\">上海有机所专利登记：从全氟烷基氯制备全氟烷基碘</a></h3><p class=\"heritage-meta\">研究机构公开专利题录</p><p>定位：专利类别、申请号、专利号、申请日期、第一／其他发明人、授权日期各字段</p><p>机构题录保存申请号、署名及历史授权字段。对应说明书的技术内容与A/C版本关系见A07（单电子转移与C–Cl活化）专题；题录与说明书分别引用，不用于推定当前法律状态。</p></article><article class=\"heritage-card\" id=\"heritage-source-s07\"><h3>HERITAGE-S07 · <a href=\"https://pubmed.ncbi.nlm.nih.gov/11421787/\" rel=\"noopener noreferrer\">2001年黄小庭／陈庆云镍体系：原论文书目与摘要</a></h3><p class=\"heritage-meta\">NLM收录的原论文书目和作者摘要，不是全文核读</p><p>定位：Nickel(0)-catalyzed fluoroalkylation of alkenes, alkynes, and aromatics with perfluoroalkyl chlorides；J.Org.Chem.2001,66(13):4651–4656；PMID11421787；DOI10.1021/jo010178j</p><p>数据库书目与作者摘要用于定位2001年黄小庭、陈庆云的镍体系方法。摘要所述单电子转移为原作者提出的解释；正文、支持信息与机理资格分别说明。</p></article><article class=\"heritage-card\" id=\"heritage-source-s08\"><h3>HERITAGE-S08 · <a href=\"https://sioc.cas.cn/dncqy/sptj/\" rel=\"noopener noreferrer\">上海有机所陈庆云纪念专题：生平图集</a></h3><p class=\"heritage-meta\">任职机构公开历史图集与具名图注</p><p>定位：1979年冬季氟化学会议与Tamborski、Burton及冯允恭／黄维垣交流图注；1985年与研究生研究反应过程／讨论工作图注</p><p>用于1979年交流与1985年研究生讨论等具名历史场景。合影不自动证明师承或个人实验分工；本页引用图注，不转载原照片。</p></article><article class=\"heritage-card\" id=\"heritage-source-s09\"><h3>HERITAGE-S09 · <a href=\"https://sioc.cas.cn/cxwh/whhd/200902/t20090220_1747976.html\" rel=\"noopener noreferrer\">有机所庆贺陈庆云院士八十华诞</a></h3><p class=\"heritage-meta\">机构2009年活动报道及历史学术服务记录</p><p>定位：2009-02-20，党政办公室；正文后半段学术任职与育人段</p><p>用于学术服务、育人与交流的历史记述，所载任职和数量按2009年报道的时点理解。</p></article><article class=\"heritage-card\" id=\"heritage-source-s10\"><h3>HERITAGE-S10 · <a href=\"https://www.sioc.ac.cn/news/zhxw/201901/t20190128_6769732.html\" rel=\"noopener noreferrer\">上海有机所举办陈庆云院士九十华诞学术报告会</a></h3><p class=\"heritage-meta\">任职机构具名活动报道</p><p>定位：2019-01-28，党政办；2019-01-25活动；杨国英学生代表发言、Dolbier／肖吉昌／吴生文学术报告段</p><p>用于2019年1月25日活动、学生代表及学术报告人的具名事件；各项研究和报告归实际参与者。</p></article><article class=\"heritage-card\" id=\"heritage-source-s11\"><h3>HERITAGE-S11 · <a href=\"https://sioc.cas.cn/fncm/overview/committee/\" rel=\"noopener noreferrer\">上海有机所：有机氟化学重点实验室历届学术委员会名单</a></h3><p class=\"heritage-meta\">研究机构公开的历史学术委员会名单</p><p>定位：页面“中国科学院有机氟化学重点实验室”部分第一至第四届名单；与页面上方新实验室名单分列</p><p>用于实验室历届学术委员会的历史服务记录，名单与任期起止分别理解，不作为现任职务介绍。</p></article></div><p>历史成就归陈先生及实际参与者；平台AI辅助阅读、核校与研究在独立资料页说明。</p><script id=\"heritage-content\" type=\"application/json\">\n"
+    },
+    {
+      "old": "<main id=\"main\" tabindex=\"-1\"><section class=\"shell-section\"><div class=\"wrap\"><h1>开拓成就与学术传承</h1><p><a href=\"#heritage-inventory\">九线资料与缺口盘点</a> · <a href=\"#heritage-stories-all\">合作与育人故事</a></p><p>沿陈先生与合作者的研究道路，阅读八条科研成果线和一条学术传承线。这里是现有史料与专题的导航；各线的资料完整度、专业核校和AI研究进度分别记录，编号不代表贡献排名。</p><p><a href=\"../index.html\">返回平台首页</a> · <a href=\"../topics/index.html\">专题目录</a> · <a href=\"../index.html#source-index\">公开资料索引</a></p></div></section><section class=\"chen-feature\" id=\"chen-reagent-achievement\" aria-labelledby=\"chen-reagent-achievement-title\"><div class=\"wrap\"><div class=\"chen-feature-card\"><div><p class=\"chen-feature-label\">代表性学术成果 · 所属A06（磺酸酯、二氟卡宾与三氟甲基化）子专题</p><h2 id=\"chen-reagent-achievement-title\">被称为“陈试剂”的代表成果</h2><p>氟磺酰基二氟乙酸甲酯（MFSDA）被称为“陈试剂”。1989年，陈庆云与吴生文报道其在碘化亚铜体系中的三氟甲基化用途，使该试剂成为向有机分子引入–CF₃的合成工具。</p><p class=\"chen-feature-meta\">原始工作：陈庆云（Qing-Yun Chen）、吴生文（Sheng-Wen Wu）｜1989年</p><div class=\"chen-feature-actions\"><a href=\"../topics/chen-reagent/index.html#chen-reagent-contribution\">认识陈试剂 →</a><a href=\"#line-a06\">查看所属成果线 A06（磺酸酯、二氟卡宾与三氟甲基化）</a></div><p class=\"chen-feature-meta\">依据：<a href=\"https://www.cas.cn/zt/rwzt/2024qm/202403/t20240328_5010119.shtml\">中国科学院人物专题</a> · <a href=\"../index.html#source-cq-r05\">1989原论文 CQ-R05</a> · <a href=\"../topics/chen-reagent/index.html#chen-reagent-evidence\">机构命名与2018冠名论文</a></p></div><div class=\"chen-feature-identity\"><h3>氟磺酰基二氟乙酸甲酯</h3><p><b>MFSDA · 陈试剂</b><br>FSO<sub>2</sub>CF<sub>2</sub>CO<sub>2</sub>Me</p><p class=\"chen-feature-formula\" aria-label=\"结构连接式：F–S(=O)2–CF2–C(=O)–O–CH3\"><span>F–S(=O)<sub>2</sub></span>–<wbr><span>CF<sub>2</sub></span>–<wbr><span>C(=O)–O–CH<sub>3</sub></span></p><p class=\"chen-feature-meta\">Me＝CH<sub>3</sub>；这里展示甲酯，与酸型及TFDA硅酯分列。</p></div></div></div></section>\n",
+      "new": "<main id=\"main\" tabindex=\"-1\"><section class=\"shell-section\"><div class=\"wrap\"><h1>开拓成就与学术传承</h1><p><a href=\"#heritage-inventory\">九条成果线学术导读</a> · <a href=\"#heritage-stories-all\">合作与育人故事</a></p><p>沿陈先生与合作者的研究道路，阅读八条科研成果线和一条学术传承线。这里是现有史料与专题的导航；各线的资料完整度、专业核校和AI研究进度分别记录，编号不代表贡献排名。</p><p><a href=\"../index.html\">返回平台首页</a> · <a href=\"../topics/index.html\">专题目录</a> · <a href=\"../index.html#source-index\">公开资料索引</a></p></div></section><section class=\"chen-feature\" id=\"chen-reagent-achievement\" aria-labelledby=\"chen-reagent-achievement-title\"><div class=\"wrap\"><div class=\"chen-feature-card\"><div><p class=\"chen-feature-label\">代表性学术成果 · 所属A06（磺酸酯、二氟卡宾与三氟甲基化）子专题</p><h2 id=\"chen-reagent-achievement-title\">被称为“陈试剂”的代表成果</h2><p>氟磺酰基二氟乙酸甲酯（MFSDA）被称为“陈试剂”。1989年，陈庆云与吴生文报道其在碘化亚铜体系中的三氟甲基化用途，使该试剂成为向有机分子引入–CF₃的合成工具。</p><p class=\"chen-feature-meta\">原始工作：陈庆云（Qing-Yun Chen）、吴生文（Sheng-Wen Wu）｜1989年</p><div class=\"chen-feature-actions\"><a href=\"../topics/chen-reagent/index.html#chen-reagent-contribution\">认识陈试剂 →</a><a href=\"#line-a06\">查看所属成果线 A06（磺酸酯、二氟卡宾与三氟甲基化）</a></div><p class=\"chen-feature-meta\">依据：<a href=\"https://www.cas.cn/zt/rwzt/2024qm/202403/t20240328_5010119.shtml\">中国科学院人物专题</a> · <a href=\"../index.html#source-cq-r05\">1989原论文 CQ-R05</a> · <a href=\"../topics/chen-reagent/index.html#chen-reagent-evidence\">机构命名与2018冠名论文</a></p></div><div class=\"chen-feature-identity\"><h3>氟磺酰基二氟乙酸甲酯</h3><p><b>MFSDA · 陈试剂</b><br>FSO<sub>2</sub>CF<sub>2</sub>CO<sub>2</sub>Me</p><p class=\"chen-feature-formula\" aria-label=\"结构连接式：F–S(=O)2–CF2–C(=O)–O–CH3\"><span>F–S(=O)<sub>2</sub></span>–<wbr><span>CF<sub>2</sub></span>–<wbr><span>C(=O)–O–CH<sub>3</sub></span></p><p class=\"chen-feature-meta\">Me＝CH<sub>3</sub>；这里展示甲酯，与酸型及TFDA硅酯分列。</p></div></div></div></section>\n"
+    },
+    {
+      "old": "<section id=\"heritage-inventory\" class=\"wrap heritage-section\"><h2>九条成果与传承线：资料</h2><div class=\"heritage-boundary\"><p>历史成果与故事按原作者、传记页注和机构资料呈现；材料缺口记录本平台的收藏与核读进度。</p><p>平台AI辅助研究的核读、数值重放和现代模型另存研究记录；其待审状态不作为历史贡献成立的前提。</p></div><div class=\"heritage-grid\"><article class=\"heritage-card\" id=\"heritage-line-a01\"><h3>A01（全氟酮化学：六氟丙酮与双酚AF）</h3><p>留苏期间研究六氟丙酮反应，与合作者开展六氟双酚A制备等工作，构成全氟酮化学早期研究主线。</p><div class=\"heritage-achievement-notes\"><h4>成果与合作</h4><h5>留苏研究与三人共同发明</h5><p>围绕六氟丙酮反应开展早期实验，并与克鲁扬茨、甘巴里扬共同署名六氟双酚A制备文书。把导师、合作者和具体产物同时列出，比只用一项宽泛荣誉更能保存这段开拓历程。</p><p class=\"heritage-locator\">出处定位：传记p25–31、p29图3-4；第117491号说明书 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../index.html#source-cq-h02\" title=\"六氟双酚 A 的制备方法（俄文档案中文释义）\">[CQ-H02]</a></span></p><p class=\"heritage-meta\">待核事项：授予证书独立高清原件、细字日期及原文专业核译待补。</p></div><details><summary>现有材料及来源定位</summary><ul><li><span class=\"heritage-tag\">已取得并作AI核读，专业核译与结构转录签认待补</span>两篇1960年论文原页<p class=\"heritage-locator\">出处定位：133(5):1113–1116；134(6):1367–1370 <span class=\"heritage-refs\"><a href=\"../index.html#source-cq-h12\" title=\"双三氟甲基硝基乙烯及六氟异丙叉丙二酸酯中的键共轭\">[CQ-H12]</a> <a href=\"../index.html#source-cq-r01\" title=\"早期俄文论文中的六氟异丙叉噁唑酮研究\">[CQ-R01]</a></span></p></li><li><span class=\"heritage-tag\">说明书已取得；传记正页书影整页已核见；两种文书分列</span>第117491号说明书与授予证书书影<p class=\"heritage-locator\">出处定位：传记p29图3-4；独立俄文说明书 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../index.html#source-cq-h02\" title=\"六氟双酚 A 的制备方法（俄文档案中文释义）\">[CQ-H02]</a></span></p></li><li><span class=\"heritage-tag\">传记和机构生平已核读</span>研究历程与合作回忆<p class=\"heritage-locator\">出处定位：传记p25–33 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../index.html#heritage-source-s02\" title=\"上海有机所：陈庆云院士生平\">[HERITAGE-S02]</a></span></p></li></ul></details><h4>待核事项</h4><ul><li>独立高清授予证书扫描、细字日期与权利文本专业核译</li><li>两篇原文逐句译校和结构、数据签认；学位论文全文</li></ul><p><strong>待补文献：</strong>优先补授予证书独立高清扫描与来源档案，再补学位论文及原文专业译校。</p><p class=\"heritage-meta\">平台AI辅助研究：已有文献、计量与现代模型试点；M0仅阶段归档，尚未解释原文反应性，M0保持暂停。</p></article><article class=\"heritage-card\" id=\"heritage-line-a02\"><h3>A02（含氟单体、氟橡胶与氟油）</h3><p>在蒋锡夔、胡亚东团队已有氟橡胶研究基础上，陈庆云参与六氟丙烯单体制取与低温分离，后与同事开展调聚氟油及材料研究；已有1号成果、后续单体改进、氟油和调聚论文分别归档。</p><div class=\"heritage-achievement-notes\"><h4>成果与合作</h4><h5>材料任务中的单体与分离环节</h5><p>在蒋锡夔、胡亚东团队的既有基础上，陈庆云承担六氟丙烯制取与低温分离工作。氟橡胶1号前期成果与其加入后的单体改进、后续牌号各自登记，保存共同攻关的实际分工。</p><p class=\"heritage-locator\">出处定位：传记p35–37、p36本人访谈注；机构纪念册六氟丙烯段 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../index.html#source-s1\" title=\"陈庆云纪念册（机构资料）\">[S1]</a></span></p><p class=\"heritage-meta\">待核事项：试制记录、装置图和后续牌号的人员分工档案待补。</p><h5>氟油研究各有对象</h5><p>传记另记调聚氟油与实验厂的接续工作；机构回顾还保存不同团队的氟油研制史。全氟烃油、氟溴陀螺油和单体工作分别建档，避免把机构的多项成果合成一项个人贡献。</p><p class=\"heritage-locator\">出处定位：传记p39及其引文；CAS历史报道第1–2节 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../index.html#heritage-source-s04\" title=\"中国科学院：“上海氟”，何以为？\">[HERITAGE-S04]</a></span></p><p class=\"heritage-meta\">待核事项：所引机构史原页、产品身份与交付质量档案待补。</p></div><details><summary>现有材料及来源定位</summary><ul><li><span class=\"heritage-tag\">传记和机构回顾已核读</span>材料攻关、南迁与分工叙述<p class=\"heritage-locator\">出处定位：传记p34–43；CAS报道第2节 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../index.html#heritage-source-s04\" title=\"中国科学院：“上海氟”，何以为？\">[HERITAGE-S04]</a> <a href=\"../index.html#source-s1\" title=\"陈庆云纪念册（机构资料）\">[S1]</a></span></p></li><li><span class=\"heritage-tag\">已取得官方原刊并AI核读全部10页；结构转录待专业签认</span>1980年偏氟乙烯调聚论文<p class=\"heritage-locator\">出处定位：化学学报38(2):175–184；官方原刊及专题逐项定位 <span class=\"heritage-refs\"><a href=\"../index.html#source-cq-h13\" title=\"偏氟乙烯与全卤代烷烃的调聚反应及其产物的研究\">[CQ-H13]</a></span></p></li><li><span class=\"heritage-tag\">正文、本人访谈脚注与机构纪念册已交叉核读；原试制记录未取得</span>六氟丙烯任务、团队分工与低温分离<p class=\"heritage-locator\">出处定位：传记p35–37，p36注①访谈2018-01-03；机构纪念册六氟丙烯段 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../index.html#source-s1\" title=\"陈庆云纪念册（机构资料）\">[S1]</a></span></p></li><li><span class=\"heritage-tag\">传记叙述与所引机构史书目已定位，不把机构氟油总成果移归个人</span>调聚陀螺油及实验厂协作<p class=\"heritage-locator\">出处定位：传记p39，注②《中国科学院》（2009）p291；CAS2024报道第1–2节仅提供机构氟油与实验厂背景 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../index.html#heritage-source-s04\" title=\"中国科学院：“上海氟”，何以为？\">[HERITAGE-S04]</a></span></p></li></ul></details><h4>待核事项</h4><ul><li>六氟丙烯试制、低温分离与验收的原始记录</li><li>2018本人访谈原录／档号；2009版《中国科学院》p.291册次与原文；团队单体试制／装置、2号／3号及早期油品技术原件；1980结构签认</li><li>氟橡胶1号的既有团队成果与后续2号／3号分工、牌号及技术交接档案仍需逐项对照</li><li>传记p39所引《中国科学院》2009年p291原页与氟溴陀螺油交付／质量档案待补；不把机构全氟烃油、氟溴陀螺油和所有氟油视作同一成果</li></ul><p><strong>待补文献：</strong>优先调阅2018-01-03上海访谈原录与馆藏档号，以及2009版《中国科学院》各分册版权／目录和目标册p.290–292；年鉴不替代目标著作。</p><p class=\"heritage-meta\">平台AI辅助研究：已核访谈项目、动态影音目录与馆藏身份，列出精确调阅清单；完整访谈和2009目标书页未取得、册次待核，未新增科学计算或实验。</p><p><a href=\"../topics/fluoromonomers/index.html#a02-vdf-1980\">1980年原刊与学术证据 →</a></p></article><article class=\"heritage-card\" id=\"heritage-line-a03\"><h3>A03（全氟叔丁基（PFtB）化学）</h3><p>陈庆云、蒋锡夔、陈秉启、梁梦兰以结构、反应和光谱等证据研究特定全氟叔丁基卤化物，讨论电子效应与反应解释。</p><div class=\"heritage-achievement-notes\"><h4>成果与合作</h4><h5>四位作者围绕同一问题组织证据</h5><p>1966年陈庆云、蒋锡夔、陈秉启、梁梦兰的研究把结构、反应观察与电子效应论证连在一起。原文交代碘化物的既有Krespan方法及向溴化物的扩展；制备贡献、亲卤解释与含外推的效应顺序分别呈现。</p><p class=\"heritage-locator\">出处定位：1966原刊p18–25；传记p42–46 <span class=\"heritage-refs\"><a href=\"../index.html#source-pf01\" title=\"全氟和多氟型有机化合物的化学特性——全氟叔丁基碘以及全氟烷基的诱导效应顺序\">[PF01]</a> <a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a></span></p><p class=\"heritage-meta\">待核事项：原扫描专业转录签认仍待补，后续引用按实际采用语境评价。</p></div><details><summary>现有材料及来源定位</summary><ul><li><span class=\"heritage-tag\">原刊相关页段与表1转录已核，作者顺序保留</span>1966原始论文及论证定位<p class=\"heritage-locator\">出处定位：化学学报32(1):18–25；表1及第18–21、24–25页 <span class=\"heritage-refs\"><a href=\"../index.html#source-pf01\" title=\"全氟和多氟型有机化合物的化学特性——全氟叔丁基碘以及全氟烷基的诱导效应顺序\">[PF01]</a></span></p></li><li><span class=\"heritage-tag\">传记叙述、口述和图注已区分</span>历史参与者与任务背景<p class=\"heritage-locator\">出处定位：传记p42–46 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a></span></p></li><li><span class=\"heritage-tag\">馆方书目摘要已登记，作为另一反应问题</span>1980团队后续<p class=\"heritage-locator\">出处定位：化学学报38(2):175–184 <span class=\"heritage-refs\"><a href=\"../index.html#source-cq-h13\" title=\"偏氟乙烯与全卤代烷烃的调聚反应及其产物的研究\">[CQ-H13]</a></span></p></li></ul></details><h4>待核事项</h4><ul><li>原始扫描的专业转录签认及相关实验条件</li><li>各后续引文的实际采用语境与独立实验关系，不能仅按引用计验证</li></ul><p><strong>待补文献：</strong>优先完成原表与原扫描的专业核校，逐条补引文原文和实验语境。</p><p class=\"heritage-meta\">平台AI辅助研究：已有原表数字重放与敏感性记录；不构成光谱实验复现、游离阴离子观测或机理验证。</p></article><article class=\"heritage-card\" id=\"heritage-line-a04\"><h3>A04（F-53铬雾抑制剂）</h3><p>面对电镀厂铬雾问题组织F-53研究，研究组、工厂和实验厂共同参与研制、转化与历史应用。</p><div class=\"heritage-achievement-notes\"><h4>成果与合作</h4><h5>从车间需求回到基础化学</h5><p>F-53研究保存了研究组、实验厂、电镀厂和顾子恺等工程人员的协作。材料任务带来的原料、中间体和副产物问题，随后又成为不同课题组研究反应的新起点；历史应用和后来的环境反思各有出处。</p><p class=\"heritage-locator\">出处定位：传记p48–54、p60–62；1977三单位署名；CAS历史报道第2–3节 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../index.html#heritage-source-s04\" title=\"中国科学院：“上海氟”，何以为？\">[HERITAGE-S04]</a> <a href=\"../index.html#source-cq-h05\" title=\"F-53 相关合作论文（三单位署名）\">[CQ-H05]</a></span></p><p class=\"heritage-meta\">待核事项：原厂试、扩试与性能原表待补，历史应用规模不外推为当前使用情况。</p></div><details><summary>现有材料及来源定位</summary><ul><li><span class=\"heritage-tag\">传记具名访谈转引已定位</span>工厂需求、顾子恺工程师与研制回忆<p class=\"heritage-locator\">出处定位：传记p48–53；p52注①陈庆云2018-02-02访谈 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a></span></p></li><li><span class=\"heritage-tag\">官方档案题录及PDF查看器入口可见；尚未取得扫描文件，未核读原刊全文</span>1977—1979合作与集体署名<p class=\"heritage-locator\">出处定位：化学学报35:209–220；Scientia Sinica21:773–782；化学学报37:315–323 <span class=\"heritage-refs\"><a href=\"../index.html#source-cq-h05\" title=\"F-53 相关合作论文（三单位署名）\">[CQ-H05]</a> <a href=\"../index.html#source-cq-h14\" title=\"Synthesis and Application of Oxa-Perfluoroalkane Sulfonic Acids\">[CQ-H14]</a> <a href=\"../index.html#source-cq-h15\" title=\"全氟和多氟烷基磺酸的研究（系列 II）\">[CQ-H15]</a></span></p></li><li><span class=\"heritage-tag\">图注和出版社回顾摘要可核</span>1981厂试照片与2001本人回顾<p class=\"heritage-locator\">出处定位：1981上海光明电镀厂测试图注；有机化学21(11):805–809 <span class=\"heritage-refs\"><a href=\"../index.html#source-cq-h04\" title=\"“上海氟”，何以为？\">[CQ-H04]</a> <a href=\"../index.html#source-cq-r04\" title=\"抑铬雾剂F-53的研制带动了有机氟化学的发展\">[CQ-R04]</a></span></p></li></ul></details><h4>待核事项</h4><ul><li>1979扩试、1982展览材料、工厂批次和效益原表</li><li>历史商品名、配方与后续F-53B／替代物的实体对应</li></ul><p><strong>待补文献：</strong>优先补原刊与厂试／扩试档案，保留集体署名；历史应用与晚年环境反思并置。</p><p class=\"heritage-meta\">平台AI辅助研究：尚无本成果线已完成的平台复现计算或实验验证结果。</p></article><article class=\"heritage-card\" id=\"heritage-line-a05\"><h3>A05（制冷剂与配套技术）</h3><p>从F-115组分、F-502试配到HFC-134a及配套润滑油，科研人员与实验厂、应用单位共同推进工艺和使用研究。</p><div class=\"heritage-achievement-notes\"><h4>成果与合作</h4><h5>F-115组分与F-502试配分开看</h5><p>605研究小组由F-53相关原料线索开展F-115制备，再研究含该组分的F-502混合制冷剂。传记所引会议摘要和奖证书影保存了这条历史应用支线，组分制备与混合物性能分别登记。</p><p class=\"heritage-locator\">出处定位：传记p55及注①、图5-5；机构纪念册F-115/F-502段 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../index.html#source-s1\" title=\"陈庆云纪念册（机构资料）\">[S1]</a></span></p><p class=\"heritage-meta\">待核事项：1978年会摘要原页、原试配数据和独立奖证扫描待补。</p><h5>从合成走向工艺、润滑油和整机</h5><p>围绕F-134a，林永达、杨映松参与实验厂的扩大生产与中试；陈庆云、林永达继续研究冷冻机油，并与嘉兴冰箱厂、广州化学所等协作。1998年林永达、陈庆云合著综述又记录了CFCs替代物这一研究关切。</p><p class=\"heritage-locator\">出处定位：传记p58–59及1996、1994转引；化学进展1998,10(2):228起 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../index.html#source-s1\" title=\"陈庆云纪念册（机构资料）\">[S1]</a> <a href=\"../index.html#heritage-source-s05\" title=\"林永达、陈庆云：大气臭氧层破坏和CFCs替代物（1998）\">[HERITAGE-S05]</a></span></p><p class=\"heritage-meta\">待核事项：原工程报告及综述全文待补；不据机构回顾直接认定温压相态或完整反应机理。</p></div><details><summary>现有材料及来源定位</summary><ul><li><span class=\"heritage-tag\">传记和机构回顾已核读，未替代工程原始报告</span>605小组、中试与应用协作<p class=\"heritage-locator\">出处定位：传记p54–59、年表p118–120 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../index.html#heritage-source-s02\" title=\"上海有机所：陈庆云院士生平\">[HERITAGE-S02]</a> <a href=\"../index.html#source-s1\" title=\"陈庆云纪念册（机构资料）\">[S1]</a></span></p></li><li><span class=\"heritage-tag\">原文书目可定位，全文和跟踪记录待补</span>配套润滑油和整机线索<p class=\"heritage-locator\">出处定位：书p58–59所引1996《上海化工》及1994《制冷》 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a></span></p></li><li><span class=\"heritage-tag\">对象已辨认，不当作HFC-134a中试报告</span>2002三氟乙基醚论文<p class=\"heritage-locator\">出处定位：Journal of Fluorine Chemistry113:79–83 <span class=\"heritage-refs\"><a href=\"../index.html#source-cq-h24\" title=\"三氟乙基醚研究\">[CQ-H24]</a></span></p></li><li><span class=\"heritage-tag\">传记p58–59整页及脚注已视觉核对；原工程记录与1996/1994原刊仍待补</span>林永达、杨映松与实验厂的连续化接力，以及润滑油和整机协作<p class=\"heritage-locator\">出处定位：传记p58–59；1996《上海化工》21(1):11–14、1994《制冷》(3):1–6均为书中转引 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../index.html#source-s1\" title=\"陈庆云纪念册（机构资料）\">[S1]</a></span></p></li><li><span class=\"heritage-tag\">期刊官方目录中的作者、题名、摘要及起始页228已核读；页面有PDF入口但尚未取得全文</span>林永达、陈庆云1998年合著综述《大气臭氧层破坏和CFCs替代物》<p class=\"heritage-locator\">出处定位：化学进展1998,10(2):228起；https://manu56.magtech.com.cn/progchem/CN/Y1998/V10/I02/228 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s05\" title=\"林永达、陈庆云：大气臭氧层破坏和CFCs替代物（1998）\">[HERITAGE-S05]</a></span></p></li></ul></details><h4>待核事项</h4><ul><li>1996《上海化工》11–14和1994《制冷》1–6原文、完整作者及题名异写</li><li>连续化规模口径、温压／相态、润滑油和冰箱试用原始记录</li><li>1998合著综述的末页、原PDF和参考文献待补；不能用综述摘要替代HFC-134a中试或制冷性能原始报告</li><li>书p57“取代F-134a中的氯”、p58“超临界水”及1996题名HCFC/HFC异写分别待原文和温压／相态记录核对；不直接据回忆认定机理已解决</li></ul><p><strong>待补文献：</strong>优先取配套润滑油两篇原文及原专利／中试报告，核清化学对象后再谈机理。</p><p class=\"heritage-meta\">平台AI辅助研究：尚无本成果线已完成的平台复现计算或实验验证结果。</p></article><article class=\"heritage-card\" id=\"heritage-line-a06\"><h3>A06（磺酸酯、二氟卡宾与三氟甲基化）</h3><p>从全氟和多氟烷基磺酸衍生物的特殊转化，发展二氟卡宾前体、三氟甲基化试剂与具体合成用途。</p><div class=\"heritage-achievement-notes\"><h4>成果与合作</h4><h5>以具体断键问题推动研究</h5><p>传记将朱蓉仙、李宗珍、朱仕正等合作者与磺酸酯研究分别联系起来：结构、亲核试剂和条件不同，硫—氧与碳—氧断裂的判断也须各有证据。这些问题又接续到二氟卡宾前体与三氟甲基化研究。</p><p class=\"heritage-locator\">出处定位：传记p63–66及论文、学位论文脚注；1982/1983馆方题录 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../index.html#source-cq-h07\" title=\"全氟和多氟烷基磺酸的研究 IV. 3-氧杂多氟烷烃磺酸酯的合成及其硫-氧和碳-氧键的断裂\">[CQ-H07]</a> <a href=\"../index.html#source-cq-h08\" title=\"全氟和多氟烷基磺酸的研究. 全氟3-氧杂烷烃磺酸酯与亲核试剂反应中的单一的硫-氧键断裂\">[CQ-H08]</a> <a href=\"../index.html#source-cq-h16\" title=\"全氟和多氟烷基磺酸酯的研究 X. 在亲核取代反应中全氟烷基3-氧杂全氟烷烃磺酸酯的唯一的硫-氧键断裂\">[CQ-H16]</a></span></p><p class=\"heritage-meta\">待核事项：原刊结构与逐例判据、朱仕正／朱士正字形待核。</p><h5>TFDA的共同开发与具名核查</h5><p>陈庆云小组与Dolbier等的合作，在2003年Organic Syntheses方法中留下明确名单：开发／提交者与Bock、Richardson、Wolff三位核查者分别署名。该记录支持所载具体方法的核查，保存了合作与独立检验的不同角色。</p><p class=\"heritage-locator\">出处定位：传记p75–77；Org.Synth.80:172–176的Submitted by及Checked by <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../index.html#source-cq-r07\" title=\"TFDA用于偕二氟环丙烷合成\">[CQ-R07]</a> <a href=\"../index.html#source-cq-r08\" title=\"TFDA制备与应用进入Organic Syntheses\">[CQ-R08]</a></span></p><p class=\"heritage-meta\">待核事项：2000原论文全文与细分贡献待补，不推广为全部底物或平台实验。</p></div><details><summary>现有材料及来源定位</summary><ul><li><span class=\"heritage-tag\">馆方书目摘要可读，具体底物与断键结论需回原刊</span>1982／1983磺酸酯论文<p class=\"heritage-locator\">出处定位：化学学报40:337–352、670–673；41:1044–1057 <span class=\"heritage-refs\"><a href=\"../index.html#source-cq-h07\" title=\"全氟和多氟烷基磺酸的研究 IV. 3-氧杂多氟烷烃磺酸酯的合成及其硫-氧和碳-氧键的断裂\">[CQ-H07]</a> <a href=\"../index.html#source-cq-h08\" title=\"全氟和多氟烷基磺酸的研究. 全氟3-氧杂烷烃磺酸酯与亲核试剂反应中的单一的硫-氧键断裂\">[CQ-H08]</a> <a href=\"../index.html#source-cq-h16\" title=\"全氟和多氟烷基磺酸酯的研究 X. 在亲核取代反应中全氟烷基3-氧杂全氟烷烃磺酸酯的唯一的硫-氧键断裂\">[CQ-H16]</a></span></p></li><li><span class=\"heritage-tag\">出版社题录与摘要已登记，全文未据摘要冒称已核</span>1989陈庆云／吴生文甲酯用途<p class=\"heritage-locator\">出处定位：Chem. Commun.1989:705–706 <span class=\"heritage-refs\"><a href=\"../index.html#source-cq-r05\" title=\"Methyl fluorosulphonyldifluoroacetate; a new trifluoromethylating agent\">[CQ-R05]</a></span></p></li><li><span class=\"heritage-tag\">方法正文与Submitted／Checked by可读；核查限于具体方法，甲酯与硅酯分列</span>2003及2010方法记录<p class=\"heritage-locator\">出处定位：Org. Synth.80:172–176，核查者Bock／Richardson／Wolff；87:126起，核查者Takayuki Yamakawa／Tohru Fukuyama <span class=\"heritage-refs\"><a href=\"../index.html#source-cq-r08\" title=\"TFDA制备与应用进入Organic Syntheses\">[CQ-R08]</a> <a href=\"../index.html#source-cq-h18\" title=\"New, convenient route for trifluoromethylation of steroidal molecules\">[CQ-H18]</a></span></p></li><li><span class=\"heritage-tag\">陈庆云、吴生文、杨国英各自角色按出处区分</span>研究接续的口述材料<p class=\"heritage-locator\">出处定位：传记p60–69；杨国英2018-10-23访谈转引 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a></span></p></li><li><span class=\"heritage-tag\">传记与既有馆方论文题录互相定位，结构及逐例断键判据仍待原刊签认</span>从断键位置追问磺酸酯反应性<p class=\"heritage-locator\">出处定位：传记p63–66，p63注②1982多作者论文、注③朱仕正1984博士论文，p64注①1982硕士论文；馆方题录1982／1983 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../index.html#source-cq-h07\" title=\"全氟和多氟烷基磺酸的研究 IV. 3-氧杂多氟烷烃磺酸酯的合成及其硫-氧和碳-氧键的断裂\">[CQ-H07]</a> <a href=\"../index.html#source-cq-h08\" title=\"全氟和多氟烷基磺酸的研究. 全氟3-氧杂烷烃磺酸酯与亲核试剂反应中的单一的硫-氧键断裂\">[CQ-H08]</a> <a href=\"../index.html#source-cq-h16\" title=\"全氟和多氟烷基磺酸酯的研究 X. 在亲核取代反应中全氟烷基3-氧杂全氟烷烃磺酸酯的唯一的硫-氧键断裂\">[CQ-H16]</a></span></p></li><li><span class=\"heritage-tag\">传记叙述和陈庆云具名访谈转引已核，原书章全文及完整版本页仍待补</span>与黄维垣共同撰写专业书章<p class=\"heritage-locator\">出处定位：传记p64正文及注②陈庆云访谈2018-05-15；传记列1991年The Chemistry of Functional Groups书章Perfluoroalkanesulfonic Acids and Their Derivatives <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a></span></p></li><li><span class=\"heritage-tag\">2003方法正文和提交／核查名单已核；早期全文与贡献细分待补</span>TFDA国际合作、后续小环研究与独立核查<p class=\"heritage-locator\">出处定位：传记p75–77；p76图7-1标注2005年第十七届世界氟化学会；Org.Synth.80:172–176 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../index.html#source-cq-r07\" title=\"TFDA用于偕二氟环丙烷合成\">[CQ-R07]</a> <a href=\"../index.html#source-cq-r08\" title=\"TFDA制备与应用进入Organic Syntheses\">[CQ-R08]</a></span></p></li></ul></details><h4>待核事项</h4><ul><li>1982／1983原刊完整结构、条件及原作者推断范围</li><li>吴生文学位论文、1989原刊全文与后续试剂实体对照</li></ul><p><strong>待补文献：</strong>优先补磺酸酯和1989原刊；对方法核查保存提交者、核查者及具体对象。</p><p class=\"heritage-meta\">平台AI辅助研究：已有后续专业机理研究归原作者；仅作历史资料整理，没有平台AI辅助研究的机制结论。</p></article><article class=\"heritage-card\" id=\"heritage-line-a07\"><h3>A07（单电子转移与C–Cl活化）</h3><p>与合作者系统研究不同引发条件下的含氟卤代物转化，并把特定含氟氯代物的C–Cl活化纳入方法研究。</p><div class=\"heritage-achievement-notes\"><h4>成果与合作</h4><h5>同一学科背景下的不同研究组</h5><p>机构回顾分别列出黄维垣组的脱卤亚磺化、胡昌明组的氧化还原、陈庆云组的金属引发方向。共同的材料任务为基础研究提供问题，但不同研究组与后续合作者的贡献不合并归于一人。</p><p class=\"heritage-locator\">出处定位：传记p60–62、69–74；CAS历史报道第3节 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../index.html#heritage-source-s04\" title=\"中国科学院：“上海氟”，何以为？\">[HERITAGE-S04]</a></span></p><p class=\"heritage-meta\">待核事项：各方向的代表原论文、实验对照与形成时间继续逐项补齐。</p><h5>具体论文与合作专利补上新入口</h5><p>龙正宇／陈庆云1999年DMSO体系之外，已核读黄小庭／陈庆云2001年镍体系的作者摘要，以及陈庆云／曹海萍共同发明的氯代物制碘代物专利题录。它们是不同对象、不同证据类型，摘要提出的SET解释仍待全文评估。</p><p class=\"heritage-locator\">出处定位：JOC1999,64:4775–4782；JOC2001,66:4651–4656；申请200510031063.4 <span class=\"heritage-refs\"><a href=\"../index.html#source-cq-r06\" title=\"The Activation of Carbon−Chlorine Bonds in Per- and Polyfluoroalkyl Chlorides: DMSO-Induced Hydroperfluoroalkylation of Alkenes and Alkynes with Sodium Dithionite\">[CQ-R06]</a> <a href=\"../index.html#heritage-source-s07\" title=\"2001年黄小庭／陈庆云镍体系：原论文书目与摘要\">[HERITAGE-S07]</a> <a href=\"../index.html#heritage-source-s06\" title=\"上海有机所专利登记：从全氟烷基氯制备全氟烷基碘\">[HERITAGE-S06]</a></span></p><p class=\"heritage-meta\">待核事项：2001全文／SI和原专利权利要求待补，不据题录认定当前法律状态或工业应用。</p></div><details><summary>现有材料及来源定位</summary><ul><li><span class=\"heritage-tag\">传记已分方向列人，未把人物表冒充一篇作者顺序</span>多种引发体系的研究脉络<p class=\"heritage-locator\">出处定位：传记p69–74、83–84 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a></span></p></li><li><span class=\"heritage-tag\">出版社题录摘要已登记，全文／支持信息（SI）待补</span>1999年C–Cl活化论文<p class=\"heritage-locator\">出处定位：J. Org. Chem.64:4775–4782 <span class=\"heritage-refs\"><a href=\"../index.html#source-cq-r06\" title=\"The Activation of Carbon−Chlorine Bonds in Per- and Polyfluoroalkyl Chlorides: DMSO-Induced Hydroperfluoroalkylation of Alkenes and Alkynes with Sodium Dithionite\">[CQ-R06]</a></span></p></li><li><span class=\"heritage-tag\">传记研究脉络和CAS机构报道互证，不当作一篇论文的共同署名</span>三个研究组与多条引发方向分别归属<p class=\"heritage-locator\">出处定位：传记p60–62、69–74；CAS2024报道第3节 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../index.html#heritage-source-s04\" title=\"中国科学院：“上海氟”，何以为？\">[HERITAGE-S04]</a></span></p></li><li><span class=\"heritage-tag\">1999既有出版社题录摘要保留；2001原论文题录与作者摘要已核见，全文／SI仍待补</span>1999溶剂体系与2001镍体系分开建档<p class=\"heritage-locator\">出处定位：传记p71、83–84；JOC1999,64:4775–4782；JOC2001,66:4651–4656，DOI10.1021/jo010178j <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../index.html#source-cq-r06\" title=\"The Activation of Carbon−Chlorine Bonds in Per- and Polyfluoroalkyl Chlorides: DMSO-Induced Hydroperfluoroalkylation of Alkenes and Alkynes with Sodium Dithionite\">[CQ-R06]</a> <a href=\"../index.html#heritage-source-s07\" title=\"2001年黄小庭／陈庆云镍体系：原论文书目与摘要\">[HERITAGE-S07]</a></span></p></li><li><span class=\"heritage-tag\">上海有机所机构登记字段已核；原专利全文、权利要求和技术转化档案待补</span>从全氟烷基氯制备碘代物的合作专利题录<p class=\"heritage-locator\">出处定位：申请200510031063.4；陈庆云、曹海萍；机构载申请2005-10-21、授权2007-02-07 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s06\" title=\"上海有机所专利登记：从全氟烷基氯制备全氟烷基碘\">[HERITAGE-S06]</a></span></p></li></ul></details><h4>待核事项</h4><ul><li>1999与2001相关原刊、实际底物及机理证据</li><li>黄维垣先行体系与陈庆云后续拓展的逐论文贡献对应</li></ul><p><strong>待补文献：</strong>优先取1999原文和支持信息（SI），并补2001镍体系，按实际作者和底物建立档案。</p><p class=\"heritage-meta\">平台AI辅助研究：尚无本成果线已完成的平台复现计算或实验验证结果。</p></article><article class=\"heritage-card\" id=\"heritage-line-a08\"><h3>A08（交叉研究与晚年拓展）</h3><p>与不同合作者把氟化学延伸至小环、卟啉、离子液体和晚年试剂研究，具体分子、表征与性能各自记录。</p><div class=\"heritage-achievement-notes\"><h4>成果与合作</h4><h5>进入新分子时保留具体合作者</h5><p>传记把含氟小环工作分别联系到徐伟、周鼎英、程战领等研究者，又记述陈先生与郭灿城、刘超共同学习卟啉。每种分子、方法和性质回到对应论文及实际署名，保存进入交叉领域时的合作脉络。</p><p class=\"heritage-locator\">出处定位：传记p75–83；2003卟啉研究、2007大环论文登记 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a> <a href=\"../index.html#source-cq-h09\" title=\"Fluoroalkylation of Porphyrins: Synthesis and Reactions of β-Fluoroalkyltetraarylporphyrins\">[CQ-H09]</a> <a href=\"../index.html#source-cq-r10\" title=\"Synthesis and Reactions of 20 π-Electron β-Tetrakis(trifluoromethyl)-meso-tetraphenylporphyrins\">[CQ-R10]</a></span></p><p class=\"heritage-meta\">待核事项：小环与大环原文、SI及结构表征继续补齐，不从合著推定所有人的师承关系。</p></div><details><summary>现有材料及来源定位</summary><ul><li><span class=\"heritage-tag\">具名访谈转引、学位论文线索和合作叙述已定位</span>交叉研究与共同学习的经历<p class=\"heritage-locator\">出处定位：传记p75–86 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a></span></p></li><li><span class=\"heritage-tag\">书目／摘要已登记，作者与不同结构分别保留</span>2003卟啉、2007非芳香结构及后续论文<p class=\"heritage-locator\">出处定位：JOC2003；JACS2007,129:5814–5815；Org.Lett.2022,24:1716–1721 <span class=\"heritage-refs\"><a href=\"../index.html#source-cq-h09\" title=\"Fluoroalkylation of Porphyrins: Synthesis and Reactions of β-Fluoroalkyltetraarylporphyrins\">[CQ-H09]</a> <a href=\"../index.html#source-cq-r10\" title=\"Synthesis and Reactions of 20 π-Electron β-Tetrakis(trifluoromethyl)-meso-tetraphenylporphyrins\">[CQ-R10]</a> <a href=\"../index.html#source-cq-h20\" title=\"Porphyriynes: 18-π-Conjugated Macrocycles Incorporating a Triple Bond\">[CQ-H20]</a></span></p></li><li><span class=\"heritage-tag\">论文对象／所测物性已登记，未提升为环境安全结论</span>晚年表面活性剂与方法<p class=\"heritage-locator\">出处定位：各原论文题名、作者、摘要；传记p85–86 <span class=\"heritage-refs\"><a href=\"../index.html#source-cq-h11\" title=\"Synthesis, Surface Activity, and Foamability of Two Short-Chain Fluorinated Sulfonate Surfactants with Ether Bonds\">[CQ-H11]</a> <a href=\"../index.html#source-cq-r15\" title=\"带OCF2单元的脱氧氟化试剂\">[CQ-R15]</a> <a href=\"../index.html#source-cq-r16\" title=\"芳基重氮盐的铜催化氟磺酰化\">[CQ-R16]</a> <a href=\"../index.html#source-cq-h22\" title=\"Synthesis and Physicochemical Properties of Bis(fluoroalkanesulfon)amide-Based Ionic Liquids\">[CQ-H22]</a></span></p></li><li><span class=\"heritage-tag\">传记正文已核，相关原论文与结构表征待逐篇补</span>含氟小环研究中的具体合作者<p class=\"heritage-locator\">出处定位：传记p75–77；徐伟、周鼎英、程战领分别参与相关工作 <span class=\"heritage-refs\"><a href=\"../index.html#heritage-source-s01\" title=\"氟缘笃志：陈庆云传（当前本地研究底本）\">[HERITAGE-S01]</a></span></p></li></ul></details><h4>待核事项</h4><ul><li>卟啉与小环原文／表征和SI、完整作者及各自贡献</li><li>替代材料的结构、物性与环境评价分开取原始证据</li></ul><p><strong>待补文献：</strong>优先补2003／2007原文和表征，再梳理晚年合作论文；后续应用均保留原作者。</p><p class=\"heritage-meta\">平台AI辅助研究：尚无本成果线已完成的平台复现计算或实验验证结果。</p></article><article class=\"heritage-card\" id=\"heritage-line-a09\"><h3>A09（学科建设与人才培养）</h3><p>以独立研究能力、团队人才接续与学术共同体服务为主线，介绍陈庆云的具体育人方法及长期合作。</p><ul><li>自主选题、论文修改与完整谱图讨论。</li><li>高年级带新生、人才梯队衔接及长期同行合作。</li><li>研究生教育、期刊编辑、国际命名与会议服务。</li></ul><p class=\"heritage-locator\">传记78–79、87–105、111、117–122页；机构2009、2019年报道及生平图集，各段出处见专题。</p><p><a href=\"../people/index.html\">A09（学科建设与人才培养）人物与传承专题 →</a> · <a href=\"../people/index.html#refs\">参考资料</a></p></article></div></section>\n",
+      "new": "<section id=\"heritage-inventory\" class=\"wrap heritage-section\"><h2>九条成果线：问题、贡献与传承</h2><p>沿八条科研成果线与一条学术传承线，先读当时面对的问题、陈先生与合作者的具体贡献，再进入专题原文与合作故事。编号用于导航，不表示贡献排名，也不将不同专题串成未经证明的机理或因果链。</p><div class=\"heritage-grid\"><article class=\"heritage-card\" id=\"heritage-line-a01\"><h3>A01（全氟酮化学：六氟丙酮与双酚AF）</h3><p><b>科学问题：</b>同一全氟酮怎样通向不同产物，并进一步成为含氟二酚的制备原料？</p><p><b>具体贡献：</b>陈庆云与克鲁扬茨、甘巴里扬围绕六氟丙酮建立醇、炔基试剂和活泼氢化合物的反应与衍生转化，并推进到六氟双酚A制备及单体用途设想，连接基础反应与材料问题。</p><p><b>合作与研究接续：</b>结合第一报、第117491号说明书与传记，分别阅读共同署名、日常指导和研究训练；双酚用途设想与后来材料应用分开。</p><p class=\"heritage-locator\">出处：传记23–33页；1960年第一报英译647–653页；第117491号说明书的署名、实例和用途。</p><p><a href=\"../topics/early-fluoroketones/index.html#a01-primary-records\">学术成果与合作 →</a></p><p class=\"heritage-locator\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A01_FIRST_REPORT_zh-CN.md\">原文定位、署名与科学意义</a></p></article><article class=\"heritage-card\" id=\"heritage-line-a02\"><h3>A02（含氟单体、氟橡胶与氟油）</h3><p><b>科学问题：</b>怎样把难得的含氟单体变成可支撑橡胶与功能液体研究的材料基础？</p><p><b>具体贡献：</b>陈庆云与团队将六氟丙烯的裂解制取和低温分馏一并研究，使原料来源与聚合材料接续；氟橡胶2号、3号及调聚氟溴油又把单体、调聚反应和生产应用连接起来。</p><p><b>合作与研究接续：</b>以蒋锡夔、胡亚东等人的前期研究为起点，读实验人员、自制仪器和物资保障的协作，以及研究室向上海有机所实验厂的生产接续。</p><p class=\"heritage-locator\">出处：传记35–39页；上海有机所生平与“上海氟”报道；后续调聚研究另见1980年原刊175–184页。</p><p><a href=\"../topics/fluoromonomers/index.html\">学术成果与合作 →</a></p><p class=\"heritage-locator\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">原文定位、署名与科学意义</a></p></article><article class=\"heritage-card\" id=\"heritage-line-a03\"><h3>A03（全氟叔丁基（PFtB）化学）</h3><p><b>科学问题：</b>含氟结构怎样使熟悉的取代反应和基团效应经验面临新的问题？</p><p><b>具体贡献：</b>从六氟丙烯制备的副产物出发，陈庆云与同事研究全氟叔丁基卤化物的制备、结构和特殊反应，并用紫外吸收与溶剂位移比较电子效应，把材料任务中的观察推进为基础化学问题。</p><p><b>合作与研究接续：</b>原论文由陈庆云、蒋锡夔、陈秉启、梁梦兰共同署名；结合传记阅读实验、问题讨论和实习参与，区分历史论证与平台六项数值重放。</p><p class=\"heritage-locator\">出处：传记42–45页；1966年《化学学报》18页共同署名，18–20页反应讨论，20–21页紫外讨论与表1。</p><p><a href=\"../pftb/index.html#a03-biography-history\">学术成果与合作 →</a></p><p class=\"heritage-locator\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A03_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">原文定位、署名与科学意义</a></p></article><article class=\"heritage-card\" id=\"heritage-line-a04\"><h3>A04（F-53铬雾抑制剂）</h3><p><b>科学问题：</b>怎样把含氟合成研究带到电镀现场，解决铬雾抑制问题？</p><p><b>具体贡献：</b>面向镀铬现场的铬雾问题，陈庆云带领研究组发展含醚键的全氟磺酸盐F-53及自主制备路线，并经工厂试用和实验厂扩大试验，连接含氟合成研究与工业应用。</p><p><b>合作与研究接续：</b>研究组与顾子恺等工程人员、实验厂和电镀厂接续合作。1982年剪报介绍应用价值；原论文的集体署名另按原文保存。</p><p class=\"heritage-locator\">出处：传记48–53页；1979年原刊315–324页的集体署名与致谢；1982年4月8日《人民日报》第3版铬雾段。</p><p><a href=\"../topics/f53/index.html#topic-f53\">A04（F-53铬雾抑制剂）：研制、应用与合作 →</a></p><p class=\"heritage-locator\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A04_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">原文定位、署名与科学意义</a></p></article><article class=\"heritage-card\" id=\"heritage-line-a05\"><h3>A05（制冷剂与配套技术）</h3><p><b>科学问题：</b>制冷剂分子怎样经过工艺、润滑油与设备协作走向应用？</p><p><b>具体贡献：</b>从F-115的新制备路线和既有F-502配方试配，走向HFC-134a液相连续工艺、冷冻机油与整机试用，把制冷剂分子合成与配套应用衔接起来。</p><p><b>合作与研究接续：</b>林永达、杨映松参与连续中试，嘉兴冰箱厂等承担应用协作。项目组织贡献、集体论文署名和各专利发明人分别呈现。</p><p class=\"heritage-locator\">出处：传记55–59页；1978年《化学学报》77–79页；CN1075708A、CN1308043A的发明人及工艺各自登记。</p><p><a href=\"../topics/refrigerants/index.html#topic-refrigerants\">A05（制冷剂与配套技术）：组分、工艺与设备 →</a></p><p class=\"heritage-locator\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A05_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">原文定位、署名与科学意义</a></p></article><article class=\"heritage-card\" id=\"heritage-line-a06\"><h3>A06（磺酸酯、二氟卡宾与三氟甲基化）</h3><p><b>科学问题：</b>含氟磺酸酯的反应研究怎样发展出新的合成试剂和方法？</p><p><b>具体贡献：</b>从含氟磺酸酯的断键研究，发展二氟卡宾前体与三氟甲基化方法；陈庆云、吴生文将甲酯MFSDA发展为三氟甲基化试剂，后称“陈试剂”。</p><p><b>合作与研究接续：</b>杨国英接续研究反应条件；Dolbier团队参与TFDA开发。2003年硅酯／卡宾方法和2010年甲酯／甾体方法各有提交与核查名单。</p><p class=\"heritage-locator\">出处：传记60–69、75–77页；磺酸酯系列原刊；1989年三氟甲基化论文；Org. Synth. 2003，80：172–176与2010，87：126–136。</p><p><a href=\"../topics/chen-reagent/index.html#topic-chen-reagent\">A06（磺酸酯、二氟卡宾与三氟甲基化）：陈试剂 →</a> · <a href=\"../topics/perfluorosulfonates/index.html#record-sulfonate-cleavage\">A06（磺酸酯、二氟卡宾与三氟甲基化）：磺酸酯与卡宾 →</a></p><p class=\"heritage-locator\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">原文定位、署名与科学意义</a></p></article><article class=\"heritage-card\" id=\"heritage-line-a07\"><h3>A07（单电子转移与C–Cl活化）</h3><p><b>科学问题：</b>怎样利用溶剂、还原体系与催化作用，扩大含氟卤代物的转化范围？</p><p><b>具体贡献：</b>陈庆云与合作者从氟烷基碘的溶剂效应研究出发，发展多种氟烷基化方法，并分别以DMSO／连二亚硫酸钠和零价镍体系拓展特定含氟氯代物的转化。</p><p><b>合作与研究接续：</b>陈亚雄参与溶剂效应研究，龙正宇、黄小庭分别合作开展两类C–Cl方法；单电子转移保留为各原作讨论的解释。</p><p class=\"heritage-locator\">出处：传记69–74、83–84页；1984年《化学学报》906–912页；1999及2001年JOC两类C–Cl方法的出版社摘要。</p><p><a href=\"../topics/single-electron-transfer/index.html#topic-single-electron-transfer\">A07（单电子转移与C–Cl活化） →</a> · <a href=\"../topics/single-electron-transfer/index.html#record-ccl-activation\">A07（单电子转移与C–Cl活化） 从碘代物到含氟氯代物 →</a></p><p class=\"heritage-locator\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A07_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">原文定位、署名与科学意义</a></p></article><article class=\"heritage-card\" id=\"heritage-line-a08\"><h3>A08（交叉研究与晚年拓展）</h3><p><b>科学问题：</b>有机氟反应方法怎样进入小环、大环及新的性质研究？</p><p><b>具体贡献：</b>陈庆云与合作者把含氟试剂和反应方法拓展到小环、卟啉与新大环骨架，并在晚年继续研究脱氧氟化、氟磺酰化及表面活性分子，连接分子构建、反应性与性质问题。</p><p><b>合作与研究接续：</b>郭灿城带来卟啉研究基础，刘超等共同推进大环方向；2022年合著工作的既有理论计算归原作者，不据署名分派执行者。</p><p class=\"heritage-locator\">出处：传记75–86页及晚期论著目录156–159页；小环、2003/2007卟啉与大环、2022大环及晚年方法分别对应原作者文献。</p><p><a href=\"../topics/fluorinated-small-rings/index.html#topic-fluorinated-small-rings\">A08（交叉研究与晚年拓展） 含氟小环 →</a> · <a href=\"../topics/fluoroporphyrins/index.html#topic-fluoroporphyrins\">A08（交叉研究与晚年拓展） 卟啉与大环 →</a> · <a href=\"../topics/deoxyfluorination/index.html#topic-deoxyfluorination\">A08（交叉研究与晚年拓展） 脱氧氟化 →</a> · <a href=\"../topics/sulfonyl-fluoride/index.html#topic-sulfonyl-fluoride\">A08（交叉研究与晚年拓展） 晚年试剂与表面活性分子 →</a></p><p class=\"heritage-locator\"><a href=\"https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A08_ACADEMIC_ACHIEVEMENTS_zh-CN.md\">原文定位、署名与科学意义</a></p></article><article class=\"heritage-card\" id=\"heritage-line-a09\"><h3>A09（学科建设与人才培养）</h3><p>以独立研究能力、团队人才接续与学术共同体服务为主线，介绍陈庆云的具体育人方法及长期合作。</p><ul><li>自主选题、论文修改与完整谱图讨论。</li><li>高年级带新生、人才梯队衔接及长期同行合作。</li><li>研究生教育、期刊编辑、国际命名与会议服务。</li></ul><p class=\"heritage-locator\">传记78–79、87–105、111、117–122页；机构2009、2019年报道及生平图集，各段出处见专题。</p><p><a href=\"../people/index.html\">A09（学科建设与人才培养）人物与传承专题 →</a> · <a href=\"../people/index.html#refs\">参考资料</a></p></article></div><p>本页是依据已有传记、原文及机构资料整理的学术导读；历史成果与合作贡献归原作者和实际参与者。</p><p>AI辅助核译、资料关联与数值核校另在研究资料页呈现，不能替代历史实验或专业科学判断。 <a href=\"../research/index.html\">进入AI辅助资料整理与研究 →</a></p></section>\n"
+    },
+    {
+      "old": "<article class=\"case\" id=\"line-a07\"><div class=\"case-side\">1980—2000年代</div><div class=\"case-main\"><h3>A07（单电子转移与C–Cl活化）</h3><p><b>研究问题：</b>改变溶剂、温度或引发体系，能否让特定含氟氯代物反应？</p><p>陈庆云与多位合作者研究氟烷基化不同引发条件，并在黄维垣组先行脱卤亚磺化研究基础上拓展到特定含氟氯代体系。</p><p><a href=\"../topics/single-electron-transfer/index.html#record-ccl-activation\">引发方法与底物边界 →</a></p><details><summary>依据、边界与下一步</summary><p><a href=\"../index.html#source-cq-h01\">CQ-H01</a>、<a href=\"../index.html#source-cq-r06\">CQ-R06</a>、<a href=\"../index.html#source-cq-h09\">CQ-H09</a>。具体体系的 C–Cl 转化不是普适 C–F 断裂或 PFAS 降解；企业访谈不能单独证明商业化量产。需回查 1999 年原始论文及企业记录。</p></details></div></article>\n",
+      "new": "<article class=\"case\" id=\"line-a07\"><div class=\"case-side\">1980—2000年代</div><div class=\"case-main\"><h3>A07（单电子转移与C–Cl活化）</h3><p><b>研究问题：</b>改变溶剂、温度或引发体系，能否让特定含氟氯代物反应？</p><p>陈庆云与多位合作者研究氟烷基化不同引发条件，并在黄维垣组先行脱卤亚磺化研究基础上拓展到特定含氟氯代体系。</p><p><a href=\"../topics/single-electron-transfer/index.html#record-ccl-activation\">引发方法与底物边界 →</a></p><details><summary>原文与研究范围</summary><p><a href=\"../index.html#source-cq-h01\">CQ-H01</a>、<a href=\"../index.html#source-cq-r06\">CQ-R06</a>、<a href=\"../index.html#heritage-source-s07\">HERITAGE-S07</a>。1999年DMSO／连二亚硫酸钠体系与2001年镍体系分别按原作介绍，单电子转移保留为原作者讨论的解释；特定体系的C–Cl转化不外推为普适C–F断裂或PFAS降解。</p></details></div></article>\n"
+    },
+    {
+      "old": "",
+      "new": "    if (ROOT/'content/nine-line-reading.v1.json').is_file():\n        from render_nine_line_reading import render_source_overview\n        return render_source_overview(data, sources, ROOT)\n"
+    },
+    {
+      "old": "",
+      "new": "    if (root/'content/nine-line-reading.v1.json').is_file():\n        from render_nine_line_reading import render_guide\n        return _style('heritage-achievements-style')+'\\n'+render_guide(root)\n"
+    },
+    {
+      "old": "",
+      "new": "    if (root/'content/nine-line-reading.v1.json').is_file():\n        from render_nine_line_reading import render_document\n        return render_document(root)\n"
+    },
+    {
+      "old": "资料截至：2026-11-14。\n\n## 文献范围与书本信息\n\n朱晶、刘超：《氟缘笃志：陈庆云传》。据用户指定的本地研究底本；出版信息中可见排版占位符，不预设与市售印本逐页相同；序文和正文页码分列。\n\n资料文件：陈庆云传.pdf；SHA256 `731a5ae47f75f136eaec9e8e09021ddaaad30c0aaefd545f8c3c85857ca26d61`；PDF 195页，正文页码映射偏移量 26。\n\n- 正文八章及结语p1–111已逐章核读，所用故事的关键页、脚注和图注已作整页视觉核对。\n- 年表p112–122、后记p164–165已核读；主要论著目录p123–159按九条成果线关联条目对照，未逐篇取得其中全部原刊。\n- 原始访谈、部分原刊／档案、书影的独立高清扫描仍待补；原PDF、完整抽取文本和页图仅留本机，不上传GitHub或网站。\n- 已核读p34–111相关材料、反应和育人章节，并复核27张关键整页中的图注和脚注；原始访谈、原实验记录与未取得的原刊不冒充已完成核读。\n\n## 生平与学术历程\n\n### 1929 · 湖南沅江的成长起点\n\n1929年1月25日出生于湖南沅江。传记保存了家庭、求学及早年老师的回忆。\n\n出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；HERITAGE-S02（上海有机所：陈庆云院士生平）；定位：传记p5–10、年表p112；机构生平经历段。\n\n### 1948—1952 · 从西方语文学转入化学\n\n1948年进入北京大学，1949年转入化学系，1952年毕业；在邢其毅等老师的课程与讨论中走近有机化学。\n\n出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；定位：传记p11–18；年表p113；p18所引2011年纪念邢其毅文章为转引。\n\n### 1952年起 · 在长春参与仪器馆的工作\n\n毕业后进入中国科学院仪器馆，参与光学玻璃成分分析和标准电池试制。现有材料的入职月份有异文，简介采用可互证的年份。\n\n出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；HERITAGE-S02（上海有机所：陈庆云院士生平）；定位：传记p19–22、年表p113；机构生平经历段。\n\n### 1956—1960 · 赴苏联学习有机氟化学\n\n在苏联科学院元素有机化合物研究所学习，受克鲁扬茨和甘巴里扬指导，研究六氟丙酮反应，1960年获副博士学位后回国。\n\n出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；HERITAGE-S02（上海有机所：陈庆云院士生平）；定位：传记p23–33、年表p114；机构生平经历段。\n\n### 留苏时期 · 六氟双酚A与发明人证书\n\n与合作者开展六氟双酚A制备研究。第117491号说明书与传记中的授予证书书影分别登记；申请、登记和授予字段继续分开核对。\n\n出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；CQ-H02（六氟双酚 A 的制备方法（俄文档案中文释义））；定位：传记p28–31、p29图3-4；已登记俄文说明书。\n\n### 1960年起 · 加入化学所氟橡胶研究团队\n\n回国后加入蒋锡夔领导的团队，承担六氟丙烯等材料任务中的研究；已有的氟橡胶1号前期成果与其后加入的工作分别说明。\n\n出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；HERITAGE-S02（上海有机所：陈庆云院士生平）；定位：传记p34–37、年表p114；机构生平科研段。\n\n### 1963年7月 · 随课题组同事调入上海\n\n人员与仪器一起南迁，在上海有机所继续研究。正文详叙、年表和机构资料支持1963年口径，底本p34的“同年”异文列入待校。\n\n出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；HERITAGE-S04（中国科学院：“上海氟”，何以为？）；S1（陈庆云纪念册（机构资料））；定位：传记p38–39、年表p115；CAS报道第2节；机构纪念册。\n\n### 1970年代起 · 从电镀需求开展F-53协作研制\n\n围绕工厂铬雾问题，研究组、实验厂与电镀厂参与研制和应用工作；1977年三单位署名与1981年厂试图注各自保留。\n\n出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；HERITAGE-S04（中国科学院：“上海氟”，何以为？）；CQ-H05（F-53 相关合作论文（三单位署名））；定位：传记p47–54；CAS报道1981厂试图注；1977论文机构登记。\n\n### 1980年代起 · 由应用问题走向基础反应研究\n\n在含氟磺酸及其衍生物、二氟卡宾、三氟甲基化与单电子转移等方面开展系列研究，各体系与合作者分别著录。\n\n出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；HERITAGE-S02（上海有机所：陈庆云院士生平）；CQ-R05（Methyl fluorosulphonyldifluoroacetate; a new trifluoromethylating agent）；CQ-R06（The Activation of Carbon−Chlorine Bonds in Per- and Polyfluoroalkyl Chlorides: DMSO-Induced Hydroperfluoroalkylation of Alkenes and Alkynes with Sodium Dithionite）；定位：传记p60–74；1989与1999原论文题录及摘要。\n\n### 1993 · 学术任职与学科服务\n\n当选中国科学院院士，参与学术期刊、会议与人才培养；这些学术服务与具体科研论文分别整理。\n\n出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；HERITAGE-S02（上海有机所：陈庆云院士生平）；定位：传记年表p119；机构生平与育人段。\n\n### 2000年起 · 向卟啉与其他交叉问题拓展\n\n与郭灿城、刘超及其他合作者开展含氟卟啉等研究，原论文保留完整署名；不同分子和性质逐项区分。\n\n出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；CQ-H09（Fluoroalkylation of Porphyrins: Synthesis and Reactions of β-Fluoroalkyltetraarylporphyrins）；CQ-R10（Synthesis and Reactions of 20 π-Electron β-Tetrakis(trifluoromethyl)-meso-tetraphenylporphyrins）；定位：传记p78–82、年表p120–121；2003与2007原论文书目／摘要。\n\n### 晚年 · 继续追问试剂用途与应用影响\n\n在延伸特色试剂研究的同时，关注长链含氟表面活性剂的持久性与替代问题，留下需要后人继续整理的研究线索。\n\n出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；定位：传记p85–86，p86注①陈庆云访谈2018-02-09；后记p164–165。\n\n### 2023 · 缅怀与继续保存资料\n\n2023年3月2日在上海逝世。机构纪念资料、传记与原始研究记录共同构成后续整理的基础。\n\n出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；HERITAGE-S02（上海有机所：陈庆云院士生平）；定位：机构生平首段；传记年表p122。\n",
+      "new": "沿八条科研成果线与一条学术传承线，先读当时面对的问题、陈先生与合作者的具体贡献，再进入专题原文与合作故事。编号用于导航，不表示贡献排名，也不将不同专题串成未经证明的机理或因果链。\n"
+    },
+    {
+      "old": "留苏期间研究六氟丙酮反应，与合作者开展六氟双酚A制备等工作，构成全氟酮化学早期研究主线。\n",
+      "new": "**科学问题：**同一全氟酮怎样通向不同产物，并进一步成为含氟二酚的制备原料？\n"
+    },
+    {
+      "old": "成果与合作：\n",
+      "new": "**具体贡献：**陈庆云与克鲁扬茨、甘巴里扬围绕六氟丙酮建立醇、炔基试剂和活泼氢化合物的反应与衍生转化，并推进到六氟双酚A制备及单体用途设想，连接基础反应与材料问题。\n"
+    },
+    {
+      "old": "#### 留苏研究与三人共同发明\n",
+      "new": "**合作与研究接续：**结合第一报、第117491号说明书与传记，分别阅读共同署名、日常指导和研究训练；双酚用途设想与后来材料应用分开。\n"
+    },
+    {
+      "old": "围绕六氟丙酮反应开展早期实验，并与克鲁扬茨、甘巴里扬共同署名六氟双酚A制备文书。把导师、合作者和具体产物同时列出，比只用一项宽泛荣誉更能保存这段开拓历程。\n",
+      "new": "出处：传记23–33页；1960年第一报英译647–653页；第117491号说明书的署名、实例和用途。\n"
+    },
+    {
+      "old": "出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；CQ-H02（六氟双酚 A 的制备方法（俄文档案中文释义））；定位：传记p25–31、p29图3-4；第117491号说明书。\n\n待核事项：授予证书独立高清原件、细字日期及原文专业核译待补。\n\n现有材料：\n\n- **已取得并作AI核读，专业核译与结构转录签认待补**：两篇1960年论文原页；出处：CQ-H12（双三氟甲基硝基乙烯及六氟异丙叉丙二酸酯中的键共轭）；CQ-R01（早期俄文论文中的六氟异丙叉噁唑酮研究）；定位：133(5):1113–1116；134(6):1367–1370。\n- **说明书已取得；传记正页书影整页已核见；两种文书分列**：第117491号说明书与授予证书书影；出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；CQ-H02（六氟双酚 A 的制备方法（俄文档案中文释义））；定位：传记p29图3-4；独立俄文说明书。\n- **传记和机构生平已核读**：研究历程与合作回忆；出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；HERITAGE-S02（上海有机所：陈庆云院士生平）；定位：传记p25–33。\n\n待核事项：\n\n- 独立高清授予证书扫描、细字日期与权利文本专业核译\n- 两篇原文逐句译校和结构、数据签认；学位论文全文\n\n待补文献：优先补授予证书独立高清扫描与来源档案，再补学位论文及原文专业译校。\n\n平台AI辅助研究：已有文献、计量与现代模型试点；M0仅阶段归档，尚未解释原文反应性，M0保持暂停。\n",
+      "new": "[学术成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-primary-records) · [原文定位与署名](A01_FIRST_REPORT_zh-CN.md)\n"
+    },
+    {
+      "old": "在蒋锡夔、胡亚东团队已有氟橡胶研究基础上，陈庆云参与六氟丙烯单体制取与低温分离，后与同事开展调聚氟油及材料研究；已有1号成果、后续单体改进、氟油和调聚论文分别归档。\n",
+      "new": "**科学问题：**怎样把难得的含氟单体变成可支撑橡胶与功能液体研究的材料基础？\n"
+    },
+    {
+      "old": "成果与合作：\n",
+      "new": "**具体贡献：**陈庆云与团队将六氟丙烯的裂解制取和低温分馏一并研究，使原料来源与聚合材料接续；氟橡胶2号、3号及调聚氟溴油又把单体、调聚反应和生产应用连接起来。\n"
+    },
+    {
+      "old": "#### 材料任务中的单体与分离环节\n",
+      "new": "**合作与研究接续：**以蒋锡夔、胡亚东等人的前期研究为起点，读实验人员、自制仪器和物资保障的协作，以及研究室向上海有机所实验厂的生产接续。\n"
+    },
+    {
+      "old": "在蒋锡夔、胡亚东团队的既有基础上，陈庆云承担六氟丙烯制取与低温分离工作。氟橡胶1号前期成果与其加入后的单体改进、后续牌号各自登记，保存共同攻关的实际分工。\n",
+      "new": "出处：传记35–39页；上海有机所生平与“上海氟”报道；后续调聚研究另见1980年原刊175–184页。\n"
+    },
+    {
+      "old": "出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；S1（陈庆云纪念册（机构资料））；定位：传记p35–37、p36本人访谈注；机构纪念册六氟丙烯段。\n\n待核事项：试制记录、装置图和后续牌号的人员分工档案待补。\n\n#### 氟油研究各有对象\n\n传记另记调聚氟油与实验厂的接续工作；机构回顾还保存不同团队的氟油研制史。全氟烃油、氟溴陀螺油和单体工作分别建档，避免把机构的多项成果合成一项个人贡献。\n\n出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；HERITAGE-S04（中国科学院：“上海氟”，何以为？）；定位：传记p39及其引文；CAS历史报道第1–2节。\n\n待核事项：所引机构史原页、产品身份与交付质量档案待补。\n\n现有材料：\n\n- **传记和机构回顾已核读**：材料攻关、南迁与分工叙述；出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；HERITAGE-S04（中国科学院：“上海氟”，何以为？）；S1（陈庆云纪念册（机构资料））；定位：传记p34–43；CAS报道第2节。\n- **已取得官方原刊并AI核读全部10页；结构转录待专业签认**：1980年偏氟乙烯调聚论文；出处：CQ-H13（偏氟乙烯与全卤代烷烃的调聚反应及其产物的研究）；定位：化学学报38(2):175–184；官方原刊及专题逐项定位。\n- **正文、本人访谈脚注与机构纪念册已交叉核读；原试制记录未取得**：六氟丙烯任务、团队分工与低温分离；出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；S1（陈庆云纪念册（机构资料））；定位：传记p35–37，p36注①访谈2018-01-03；机构纪念册六氟丙烯段。\n- **传记叙述与所引机构史书目已定位，不把机构氟油总成果移归个人**：调聚陀螺油及实验厂协作；出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；HERITAGE-S04（中国科学院：“上海氟”，何以为？）；定位：传记p39，注②《中国科学院》（2009）p291；CAS2024报道第1–2节仅提供机构氟油与实验厂背景。\n\n待核事项：\n\n- 六氟丙烯试制、低温分离与验收的原始记录\n- 2018本人访谈原录／档号；2009版《中国科学院》p.291册次与原文；团队单体试制／装置、2号／3号及早期油品技术原件；1980结构签认\n- 氟橡胶1号的既有团队成果与后续2号／3号分工、牌号及技术交接档案仍需逐项对照\n- 传记p39所引《中国科学院》2009年p291原页与氟溴陀螺油交付／质量档案待补；不把机构全氟烃油、氟溴陀螺油和所有氟油视作同一成果\n\n待补文献：优先调阅2018-01-03上海访谈原录与馆藏档号，以及2009版《中国科学院》各分册版权／目录和目标册p.290–292；年鉴不替代目标著作。\n\n平台AI辅助研究：已核访谈项目、动态影音目录与馆藏身份，列出精确调阅清单；完整访谈和2009目标书页未取得、册次待核，未新增科学计算或实验。\n\n[1980年原刊与学术证据](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#a02-vdf-1980)\n",
+      "new": "[学术成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html) · [原文定位与署名](A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md)\n"
+    },
+    {
+      "old": "陈庆云、蒋锡夔、陈秉启、梁梦兰以结构、反应和光谱等证据研究特定全氟叔丁基卤化物，讨论电子效应与反应解释。\n",
+      "new": "**科学问题：**含氟结构怎样使熟悉的取代反应和基团效应经验面临新的问题？\n"
+    },
+    {
+      "old": "成果与合作：\n",
+      "new": "**具体贡献：**从六氟丙烯制备的副产物出发，陈庆云与同事研究全氟叔丁基卤化物的制备、结构和特殊反应，并用紫外吸收与溶剂位移比较电子效应，把材料任务中的观察推进为基础化学问题。\n"
+    },
+    {
+      "old": "#### 四位作者围绕同一问题组织证据\n",
+      "new": "**合作与研究接续：**原论文由陈庆云、蒋锡夔、陈秉启、梁梦兰共同署名；结合传记阅读实验、问题讨论和实习参与，区分历史论证与平台六项数值重放。\n"
+    },
+    {
+      "old": "1966年陈庆云、蒋锡夔、陈秉启、梁梦兰的研究把结构、反应观察与电子效应论证连在一起。原文交代碘化物的既有Krespan方法及向溴化物的扩展；制备贡献、亲卤解释与含外推的效应顺序分别呈现。\n",
+      "new": "出处：传记42–45页；1966年《化学学报》18页共同署名，18–20页反应讨论，20–21页紫外讨论与表1。\n"
+    },
+    {
+      "old": "出处：PF01（全氟和多氟型有机化合物的化学特性——全氟叔丁基碘以及全氟烷基的诱导效应顺序）；HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；定位：1966原刊p18–25；传记p42–46。\n\n待核事项：原扫描专业转录签认仍待补，后续引用按实际采用语境评价。\n\n现有材料：\n\n- **原刊相关页段与表1转录已核，作者顺序保留**：1966原始论文及论证定位；出处：PF01（全氟和多氟型有机化合物的化学特性——全氟叔丁基碘以及全氟烷基的诱导效应顺序）；定位：化学学报32(1):18–25；表1及第18–21、24–25页。\n- **传记叙述、口述和图注已区分**：历史参与者与任务背景；出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；定位：传记p42–46。\n- **馆方书目摘要已登记，作为另一反应问题**：1980团队后续；出处：CQ-H13（偏氟乙烯与全卤代烷烃的调聚反应及其产物的研究）；定位：化学学报38(2):175–184。\n\n待核事项：\n\n- 原始扫描的专业转录签认及相关实验条件\n- 各后续引文的实际采用语境与独立实验关系，不能仅按引用计验证\n\n待补文献：优先完成原表与原扫描的专业核校，逐条补引文原文和实验语境。\n\n平台AI辅助研究：已有原表数字重放与敏感性记录；不构成光谱实验复现、游离阴离子观测或机理验证。\n",
+      "new": "[学术成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html#a03-biography-history) · [原文定位与署名](A03_ACADEMIC_ACHIEVEMENTS_zh-CN.md)\n"
+    },
+    {
+      "old": "面对电镀厂铬雾问题组织F-53研究，研究组、工厂和实验厂共同参与研制、转化与历史应用。\n",
+      "new": "**科学问题：**怎样把含氟合成研究带到电镀现场，解决铬雾抑制问题？\n"
+    },
+    {
+      "old": "成果与合作：\n",
+      "new": "**具体贡献：**面向镀铬现场的铬雾问题，陈庆云带领研究组发展含醚键的全氟磺酸盐F-53及自主制备路线，并经工厂试用和实验厂扩大试验，连接含氟合成研究与工业应用。\n"
+    },
+    {
+      "old": "#### 从车间需求回到基础化学\n",
+      "new": "**合作与研究接续：**研究组与顾子恺等工程人员、实验厂和电镀厂接续合作。1982年剪报介绍应用价值；原论文的集体署名另按原文保存。\n"
+    },
+    {
+      "old": "F-53研究保存了研究组、实验厂、电镀厂和顾子恺等工程人员的协作。材料任务带来的原料、中间体和副产物问题，随后又成为不同课题组研究反应的新起点；历史应用和后来的环境反思各有出处。\n",
+      "new": "出处：传记48–53页；1979年原刊315–324页的集体署名与致谢；1982年4月8日《人民日报》第3版铬雾段。\n"
+    },
+    {
+      "old": "出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；HERITAGE-S04（中国科学院：“上海氟”，何以为？）；CQ-H05（F-53 相关合作论文（三单位署名））；定位：传记p48–54、p60–62；1977三单位署名；CAS历史报道第2–3节。\n\n待核事项：原厂试、扩试与性能原表待补，历史应用规模不外推为当前使用情况。\n\n现有材料：\n\n- **传记具名访谈转引已定位**：工厂需求、顾子恺工程师与研制回忆；出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；定位：传记p48–53；p52注①陈庆云2018-02-02访谈。\n- **官方档案题录及PDF查看器入口可见；尚未取得扫描文件，未核读原刊全文**：1977—1979合作与集体署名；出处：CQ-H05（F-53 相关合作论文（三单位署名））；CQ-H14（Synthesis and Application of Oxa-Perfluoroalkane Sulfonic Acids）；CQ-H15（全氟和多氟烷基磺酸的研究（系列 II））；定位：化学学报35:209–220；Scientia Sinica21:773–782；化学学报37:315–323。\n- **图注和出版社回顾摘要可核**：1981厂试照片与2001本人回顾；出处：CQ-H04（“上海氟”，何以为？）；CQ-R04（抑铬雾剂F-53的研制带动了有机氟化学的发展）；定位：1981上海光明电镀厂测试图注；有机化学21(11):805–809。\n\n待核事项：\n\n- 1979扩试、1982展览材料、工厂批次和效益原表\n- 历史商品名、配方与后续F-53B／替代物的实体对应\n\n待补文献：优先补原刊与厂试／扩试档案，保留集体署名；历史应用与晚年环境反思并置。\n\n平台AI辅助研究：尚无本成果线已完成的平台复现计算或实验验证结果。\n",
+      "new": "[A04（F-53铬雾抑制剂）：研制、应用与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/f53/index.html#topic-f53) · [原文定位与署名](A04_ACADEMIC_ACHIEVEMENTS_zh-CN.md)\n"
+    },
+    {
+      "old": "从F-115组分、F-502试配到HFC-134a及配套润滑油，科研人员与实验厂、应用单位共同推进工艺和使用研究。\n",
+      "new": "**科学问题：**制冷剂分子怎样经过工艺、润滑油与设备协作走向应用？\n"
+    },
+    {
+      "old": "成果与合作：\n",
+      "new": "**具体贡献：**从F-115的新制备路线和既有F-502配方试配，走向HFC-134a液相连续工艺、冷冻机油与整机试用，把制冷剂分子合成与配套应用衔接起来。\n"
+    },
+    {
+      "old": "#### F-115组分与F-502试配分开看\n",
+      "new": "**合作与研究接续：**林永达、杨映松参与连续中试，嘉兴冰箱厂等承担应用协作。项目组织贡献、集体论文署名和各专利发明人分别呈现。\n"
+    },
+    {
+      "old": "605研究小组由F-53相关原料线索开展F-115制备，再研究含该组分的F-502混合制冷剂。传记所引会议摘要和奖证书影保存了这条历史应用支线，组分制备与混合物性能分别登记。\n",
+      "new": "出处：传记55–59页；1978年《化学学报》77–79页；CN1075708A、CN1308043A的发明人及工艺各自登记。\n"
+    },
+    {
+      "old": "出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；S1（陈庆云纪念册（机构资料））；定位：传记p55及注①、图5-5；机构纪念册F-115/F-502段。\n\n待核事项：1978年会摘要原页、原试配数据和独立奖证扫描待补。\n\n#### 从合成走向工艺、润滑油和整机\n\n围绕F-134a，林永达、杨映松参与实验厂的扩大生产与中试；陈庆云、林永达继续研究冷冻机油，并与嘉兴冰箱厂、广州化学所等协作。1998年林永达、陈庆云合著综述又记录了CFCs替代物这一研究关切。\n\n出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；S1（陈庆云纪念册（机构资料））；HERITAGE-S05（林永达、陈庆云：大气臭氧层破坏和CFCs替代物（1998））；定位：传记p58–59及1996、1994转引；化学进展1998,10(2):228起。\n\n待核事项：原工程报告及综述全文待补；不据机构回顾直接认定温压相态或完整反应机理。\n\n现有材料：\n\n- **传记和机构回顾已核读，未替代工程原始报告**：605小组、中试与应用协作；出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；HERITAGE-S02（上海有机所：陈庆云院士生平）；S1（陈庆云纪念册（机构资料））；定位：传记p54–59、年表p118–120。\n- **原文书目可定位，全文和跟踪记录待补**：配套润滑油和整机线索；出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；定位：书p58–59所引1996《上海化工》及1994《制冷》。\n- **对象已辨认，不当作HFC-134a中试报告**：2002三氟乙基醚论文；出处：CQ-H24（三氟乙基醚研究）；定位：Journal of Fluorine Chemistry113:79–83。\n- **传记p58–59整页及脚注已视觉核对；原工程记录与1996/1994原刊仍待补**：林永达、杨映松与实验厂的连续化接力，以及润滑油和整机协作；出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；S1（陈庆云纪念册（机构资料））；定位：传记p58–59；1996《上海化工》21(1):11–14、1994《制冷》(3):1–6均为书中转引。\n- **期刊官方目录中的作者、题名、摘要及起始页228已核读；页面有PDF入口但尚未取得全文**：林永达、陈庆云1998年合著综述《大气臭氧层破坏和CFCs替代物》；出处：HERITAGE-S05（林永达、陈庆云：大气臭氧层破坏和CFCs替代物（1998））；定位：化学进展1998,10(2):228起；https://manu56.magtech.com.cn/progchem/CN/Y1998/V10/I02/228。\n\n待核事项：\n\n- 1996《上海化工》11–14和1994《制冷》1–6原文、完整作者及题名异写\n- 连续化规模口径、温压／相态、润滑油和冰箱试用原始记录\n- 1998合著综述的末页、原PDF和参考文献待补；不能用综述摘要替代HFC-134a中试或制冷性能原始报告\n- 书p57“取代F-134a中的氯”、p58“超临界水”及1996题名HCFC/HFC异写分别待原文和温压／相态记录核对；不直接据回忆认定机理已解决\n\n待补文献：优先取配套润滑油两篇原文及原专利／中试报告，核清化学对象后再谈机理。\n\n平台AI辅助研究：尚无本成果线已完成的平台复现计算或实验验证结果。\n",
+      "new": "[A05（制冷剂与配套技术）：组分、工艺与设备](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html#topic-refrigerants) · [原文定位与署名](A05_ACADEMIC_ACHIEVEMENTS_zh-CN.md)\n"
+    },
+    {
+      "old": "从全氟和多氟烷基磺酸衍生物的特殊转化，发展二氟卡宾前体、三氟甲基化试剂与具体合成用途。\n",
+      "new": "**科学问题：**含氟磺酸酯的反应研究怎样发展出新的合成试剂和方法？\n"
+    },
+    {
+      "old": "成果与合作：\n",
+      "new": "**具体贡献：**从含氟磺酸酯的断键研究，发展二氟卡宾前体与三氟甲基化方法；陈庆云、吴生文将甲酯MFSDA发展为三氟甲基化试剂，后称“陈试剂”。\n"
+    },
+    {
+      "old": "#### 以具体断键问题推动研究\n",
+      "new": "**合作与研究接续：**杨国英接续研究反应条件；Dolbier团队参与TFDA开发。2003年硅酯／卡宾方法和2010年甲酯／甾体方法各有提交与核查名单。\n"
+    },
+    {
+      "old": "传记将朱蓉仙、李宗珍、朱仕正等合作者与磺酸酯研究分别联系起来：结构、亲核试剂和条件不同，硫—氧与碳—氧断裂的判断也须各有证据。这些问题又接续到二氟卡宾前体与三氟甲基化研究。\n",
+      "new": "出处：传记60–69、75–77页；磺酸酯系列原刊；1989年三氟甲基化论文；Org. Synth. 2003，80：172–176与2010，87：126–136。\n"
+    },
+    {
+      "old": "出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；CQ-H07（全氟和多氟烷基磺酸的研究 IV. 3-氧杂多氟烷烃磺酸酯的合成及其硫-氧和碳-氧键的断裂）；CQ-H08（全氟和多氟烷基磺酸的研究. 全氟3-氧杂烷烃磺酸酯与亲核试剂反应中的单一的硫-氧键断裂）；CQ-H16（全氟和多氟烷基磺酸酯的研究 X. 在亲核取代反应中全氟烷基3-氧杂全氟烷烃磺酸酯的唯一的硫-氧键断裂）；定位：传记p63–66及论文、学位论文脚注；1982/1983馆方题录。\n\n待核事项：原刊结构与逐例判据、朱仕正／朱士正字形待核。\n\n#### TFDA的共同开发与具名核查\n\n陈庆云小组与Dolbier等的合作，在2003年Organic Syntheses方法中留下明确名单：开发／提交者与Bock、Richardson、Wolff三位核查者分别署名。该记录支持所载具体方法的核查，保存了合作与独立检验的不同角色。\n\n出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；CQ-R07（TFDA用于偕二氟环丙烷合成）；CQ-R08（TFDA制备与应用进入Organic Syntheses）；定位：传记p75–77；Org.Synth.80:172–176的Submitted by及Checked by。\n\n待核事项：2000原论文全文与细分贡献待补，不推广为全部底物或平台实验。\n\n现有材料：\n\n- **馆方书目摘要可读，具体底物与断键结论需回原刊**：1982／1983磺酸酯论文；出处：CQ-H07（全氟和多氟烷基磺酸的研究 IV. 3-氧杂多氟烷烃磺酸酯的合成及其硫-氧和碳-氧键的断裂）；CQ-H08（全氟和多氟烷基磺酸的研究. 全氟3-氧杂烷烃磺酸酯与亲核试剂反应中的单一的硫-氧键断裂）；CQ-H16（全氟和多氟烷基磺酸酯的研究 X. 在亲核取代反应中全氟烷基3-氧杂全氟烷烃磺酸酯的唯一的硫-氧键断裂）；定位：化学学报40:337–352、670–673；41:1044–1057。\n- **出版社题录与摘要已登记，全文未据摘要冒称已核**：1989陈庆云／吴生文甲酯用途；出处：CQ-R05（Methyl fluorosulphonyldifluoroacetate; a new trifluoromethylating agent）；定位：Chem. Commun.1989:705–706。\n- **方法正文与Submitted／Checked by可读；核查限于具体方法，甲酯与硅酯分列**：2003及2010方法记录；出处：CQ-R08（TFDA制备与应用进入Organic Syntheses）；CQ-H18（New, convenient route for trifluoromethylation of steroidal molecules）；定位：Org. Synth.80:172–176，核查者Bock／Richardson／Wolff；87:126起，核查者Takayuki Yamakawa／Tohru Fukuyama。\n- **陈庆云、吴生文、杨国英各自角色按出处区分**：研究接续的口述材料；出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；定位：传记p60–69；杨国英2018-10-23访谈转引。\n- **传记与既有馆方论文题录互相定位，结构及逐例断键判据仍待原刊签认**：从断键位置追问磺酸酯反应性；出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；CQ-H07（全氟和多氟烷基磺酸的研究 IV. 3-氧杂多氟烷烃磺酸酯的合成及其硫-氧和碳-氧键的断裂）；CQ-H08（全氟和多氟烷基磺酸的研究. 全氟3-氧杂烷烃磺酸酯与亲核试剂反应中的单一的硫-氧键断裂）；CQ-H16（全氟和多氟烷基磺酸酯的研究 X. 在亲核取代反应中全氟烷基3-氧杂全氟烷烃磺酸酯的唯一的硫-氧键断裂）；定位：传记p63–66，p63注②1982多作者论文、注③朱仕正1984博士论文，p64注①1982硕士论文；馆方题录1982／1983。\n- **传记叙述和陈庆云具名访谈转引已核，原书章全文及完整版本页仍待补**：与黄维垣共同撰写专业书章；出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；定位：传记p64正文及注②陈庆云访谈2018-05-15；传记列1991年The Chemistry of Functional Groups书章Perfluoroalkanesulfonic Acids and Their Derivatives。\n- **2003方法正文和提交／核查名单已核；早期全文与贡献细分待补**：TFDA国际合作、后续小环研究与独立核查；出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；CQ-R07（TFDA用于偕二氟环丙烷合成）；CQ-R08（TFDA制备与应用进入Organic Syntheses）；定位：传记p75–77；p76图7-1标注2005年第十七届世界氟化学会；Org.Synth.80:172–176。\n\n待核事项：\n\n- 1982／1983原刊完整结构、条件及原作者推断范围\n- 吴生文学位论文、1989原刊全文与后续试剂实体对照\n\n待补文献：优先补磺酸酯和1989原刊；对方法核查保存提交者、核查者及具体对象。\n\n平台AI辅助研究：已有后续专业机理研究归原作者；仅作历史资料整理，没有平台AI辅助研究的机制结论。\n",
+      "new": "[A06（磺酸酯、二氟卡宾与三氟甲基化）：陈试剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#topic-chen-reagent) · [A06（磺酸酯、二氟卡宾与三氟甲基化）：磺酸酯与卡宾](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html#record-sulfonate-cleavage) · [原文定位与署名](A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md)\n"
+    },
+    {
+      "old": "与合作者系统研究不同引发条件下的含氟卤代物转化，并把特定含氟氯代物的C–Cl活化纳入方法研究。\n",
+      "new": "**科学问题：**怎样利用溶剂、还原体系与催化作用，扩大含氟卤代物的转化范围？\n"
+    },
+    {
+      "old": "成果与合作：\n",
+      "new": "**具体贡献：**陈庆云与合作者从氟烷基碘的溶剂效应研究出发，发展多种氟烷基化方法，并分别以DMSO／连二亚硫酸钠和零价镍体系拓展特定含氟氯代物的转化。\n"
+    },
+    {
+      "old": "#### 同一学科背景下的不同研究组\n",
+      "new": "**合作与研究接续：**陈亚雄参与溶剂效应研究，龙正宇、黄小庭分别合作开展两类C–Cl方法；单电子转移保留为各原作讨论的解释。\n"
+    },
+    {
+      "old": "机构回顾分别列出黄维垣组的脱卤亚磺化、胡昌明组的氧化还原、陈庆云组的金属引发方向。共同的材料任务为基础研究提供问题，但不同研究组与后续合作者的贡献不合并归于一人。\n",
+      "new": "出处：传记69–74、83–84页；1984年《化学学报》906–912页；1999及2001年JOC两类C–Cl方法的出版社摘要。\n"
+    },
+    {
+      "old": "出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；HERITAGE-S04（中国科学院：“上海氟”，何以为？）；定位：传记p60–62、69–74；CAS历史报道第3节。\n\n待核事项：各方向的代表原论文、实验对照与形成时间继续逐项补齐。\n\n#### 具体论文与合作专利补上新入口\n\n龙正宇／陈庆云1999年DMSO体系之外，已核读黄小庭／陈庆云2001年镍体系的作者摘要，以及陈庆云／曹海萍共同发明的氯代物制碘代物专利题录。它们是不同对象、不同证据类型，摘要提出的SET解释仍待全文评估。\n\n出处：CQ-R06（The Activation of Carbon−Chlorine Bonds in Per- and Polyfluoroalkyl Chlorides: DMSO-Induced Hydroperfluoroalkylation of Alkenes and Alkynes with Sodium Dithionite）；HERITAGE-S07（2001年黄小庭／陈庆云镍体系：原论文书目与摘要）；HERITAGE-S06（上海有机所专利登记：从全氟烷基氯制备全氟烷基碘）；定位：JOC1999,64:4775–4782；JOC2001,66:4651–4656；申请200510031063.4。\n\n待核事项：2001全文／SI和原专利权利要求待补，不据题录认定当前法律状态或工业应用。\n\n现有材料：\n\n- **传记已分方向列人，未把人物表冒充一篇作者顺序**：多种引发体系的研究脉络；出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；定位：传记p69–74、83–84。\n- **出版社题录摘要已登记，全文／支持信息（SI）待补**：1999年C–Cl活化论文；出处：CQ-R06（The Activation of Carbon−Chlorine Bonds in Per- and Polyfluoroalkyl Chlorides: DMSO-Induced Hydroperfluoroalkylation of Alkenes and Alkynes with Sodium Dithionite）；定位：J. Org. Chem.64:4775–4782。\n- **传记研究脉络和CAS机构报道互证，不当作一篇论文的共同署名**：三个研究组与多条引发方向分别归属；出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；HERITAGE-S04（中国科学院：“上海氟”，何以为？）；定位：传记p60–62、69–74；CAS2024报道第3节。\n- **1999既有出版社题录摘要保留；2001原论文题录与作者摘要已核见，全文／SI仍待补**：1999溶剂体系与2001镍体系分开建档；出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；CQ-R06（The Activation of Carbon−Chlorine Bonds in Per- and Polyfluoroalkyl Chlorides: DMSO-Induced Hydroperfluoroalkylation of Alkenes and Alkynes with Sodium Dithionite）；HERITAGE-S07（2001年黄小庭／陈庆云镍体系：原论文书目与摘要）；定位：传记p71、83–84；JOC1999,64:4775–4782；JOC2001,66:4651–4656，DOI10.1021/jo010178j。\n- **上海有机所机构登记字段已核；原专利全文、权利要求和技术转化档案待补**：从全氟烷基氯制备碘代物的合作专利题录；出处：HERITAGE-S06（上海有机所专利登记：从全氟烷基氯制备全氟烷基碘）；定位：申请200510031063.4；陈庆云、曹海萍；机构载申请2005-10-21、授权2007-02-07。\n\n待核事项：\n\n- 1999与2001相关原刊、实际底物及机理证据\n- 黄维垣先行体系与陈庆云后续拓展的逐论文贡献对应\n\n待补文献：优先取1999原文和支持信息（SI），并补2001镍体系，按实际作者和底物建立档案。\n\n平台AI辅助研究：尚无本成果线已完成的平台复现计算或实验验证结果。\n",
+      "new": "[A07（单电子转移与C–Cl活化）](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#topic-single-electron-transfer) · [A07（单电子转移与C–Cl活化） 从碘代物到含氟氯代物](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#record-ccl-activation) · [原文定位与署名](A07_ACADEMIC_ACHIEVEMENTS_zh-CN.md)\n"
+    },
+    {
+      "old": "与不同合作者把氟化学延伸至小环、卟啉、离子液体和晚年试剂研究，具体分子、表征与性能各自记录。\n",
+      "new": "**科学问题：**有机氟反应方法怎样进入小环、大环及新的性质研究？\n"
+    },
+    {
+      "old": "成果与合作：\n",
+      "new": "**具体贡献：**陈庆云与合作者把含氟试剂和反应方法拓展到小环、卟啉与新大环骨架，并在晚年继续研究脱氧氟化、氟磺酰化及表面活性分子，连接分子构建、反应性与性质问题。\n"
+    },
+    {
+      "old": "#### 进入新分子时保留具体合作者\n",
+      "new": "**合作与研究接续：**郭灿城带来卟啉研究基础，刘超等共同推进大环方向；2022年合著工作的既有理论计算归原作者，不据署名分派执行者。\n"
+    },
+    {
+      "old": "传记把含氟小环工作分别联系到徐伟、周鼎英、程战领等研究者，又记述陈先生与郭灿城、刘超共同学习卟啉。每种分子、方法和性质回到对应论文及实际署名，保存进入交叉领域时的合作脉络。\n",
+      "new": "出处：传记75–86页及晚期论著目录156–159页；小环、2003/2007卟啉与大环、2022大环及晚年方法分别对应原作者文献。\n"
+    },
+    {
+      "old": "出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；CQ-H09（Fluoroalkylation of Porphyrins: Synthesis and Reactions of β-Fluoroalkyltetraarylporphyrins）；CQ-R10（Synthesis and Reactions of 20 π-Electron β-Tetrakis(trifluoromethyl)-meso-tetraphenylporphyrins）；定位：传记p75–83；2003卟啉研究、2007大环论文登记。\n\n待核事项：小环与大环原文、SI及结构表征继续补齐，不从合著推定所有人的师承关系。\n\n现有材料：\n\n- **具名访谈转引、学位论文线索和合作叙述已定位**：交叉研究与共同学习的经历；出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；定位：传记p75–86。\n- **书目／摘要已登记，作者与不同结构分别保留**：2003卟啉、2007非芳香结构及后续论文；出处：CQ-H09（Fluoroalkylation of Porphyrins: Synthesis and Reactions of β-Fluoroalkyltetraarylporphyrins）；CQ-R10（Synthesis and Reactions of 20 π-Electron β-Tetrakis(trifluoromethyl)-meso-tetraphenylporphyrins）；CQ-H20（Porphyriynes: 18-π-Conjugated Macrocycles Incorporating a Triple Bond）；定位：JOC2003；JACS2007,129:5814–5815；Org.Lett.2022,24:1716–1721。\n- **论文对象／所测物性已登记，未提升为环境安全结论**：晚年表面活性剂与方法；出处：CQ-H11（Synthesis, Surface Activity, and Foamability of Two Short-Chain Fluorinated Sulfonate Surfactants with Ether Bonds）；CQ-R15（带OCF2单元的脱氧氟化试剂）；CQ-R16（芳基重氮盐的铜催化氟磺酰化）；CQ-H22（Synthesis and Physicochemical Properties of Bis(fluoroalkanesulfon)amide-Based Ionic Liquids）；定位：各原论文题名、作者、摘要；传记p85–86。\n- **传记正文已核，相关原论文与结构表征待逐篇补**：含氟小环研究中的具体合作者；出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；定位：传记p75–77；徐伟、周鼎英、程战领分别参与相关工作。\n\n待核事项：\n\n- 卟啉与小环原文／表征和SI、完整作者及各自贡献\n- 替代材料的结构、物性与环境评价分开取原始证据\n\n待补文献：优先补2003／2007原文和表征，再梳理晚年合作论文；后续应用均保留原作者。\n\n平台AI辅助研究：尚无本成果线已完成的平台复现计算或实验验证结果。\n",
+      "new": "[A08（交叉研究与晚年拓展） 含氟小环](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluorinated-small-rings/index.html#topic-fluorinated-small-rings) · [A08（交叉研究与晚年拓展） 卟啉与大环](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#topic-fluoroporphyrins) · [A08（交叉研究与晚年拓展） 脱氧氟化](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/deoxyfluorination/index.html#topic-deoxyfluorination) · [A08（交叉研究与晚年拓展） 晚年试剂与表面活性分子](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/sulfonyl-fluoride/index.html#topic-sulfonyl-fluoride) · [原文定位与署名](A08_ACADEMIC_ACHIEVEMENTS_zh-CN.md)\n"
+    },
+    {
+      "old": "主题：求学与成长；关联：A09（学科建设与人才培养）；人物：陈庆云、邢其毅。\n\n",
+      "new": ""
+    },
+    {
+      "old": "出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；定位：传记p11–18；p18脚注转引《师恩难忘——纪念邢其毅先生百年诞辰》，2011，p42–44。\n\n仍待补齐：2011年纪念文原页与相关教学档案尚可继续补取。\n",
+      "new": "出处：传记p11–18；p18脚注转引《师恩难忘——纪念邢其毅先生百年诞辰》，2011，p42–44；HERITAGE-S01。\n"
+    },
+    {
+      "old": "\n主题：早期研究与训练；关联：A01（全氟酮化学：六氟丙酮与双酚AF）；人物：陈庆云、克鲁扬茨。\n",
+      "new": ""
+    },
+    {
+      "old": "出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；定位：传记p26–28；正文叙述与p28所引陈庆云2017-11-20访谈分开使用。\n\n仍待补齐：原实验记录、对应原刊及后来的独立研究原文仍待逐项取齐。\n",
+      "new": "出处：传记p26–28；正文叙述与p28所引陈庆云2017-11-20访谈分开使用；HERITAGE-S01。\n"
+    },
+    {
+      "old": "\n主题：科研与工程协作；关联：A04（F-53铬雾抑制剂）；人物：陈庆云、顾子恺、研究组与工厂同事。\n",
+      "new": ""
+    },
+    {
+      "old": "出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；HERITAGE-S04（中国科学院：“上海氟”，何以为？）；CQ-H05（F-53 相关合作论文（三单位署名））；定位：传记p48–53，p52注①陈庆云访谈2018-02-02；1977论文机构登记；CAS报道1981厂试图注。\n\n仍待补齐：放大记录、工厂批次、个人分工及效益原表仍待补，不将回忆当工程验收。\n",
+      "new": "出处：传记p48–53，p52注①陈庆云访谈2018-02-02；1977论文机构登记；CAS报道1981厂试图注；HERITAGE-S01、HERITAGE-S04、CQ-H05。\n"
+    },
+    {
+      "old": "\n主题：方法开拓与后续研究；关联：A06（磺酸酯、二氟卡宾与三氟甲基化）；人物：陈庆云、吴生文、杨国英。\n",
+      "new": ""
+    },
+    {
+      "old": "出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；CQ-R05（Methyl fluorosulphonyldifluoroacetate; a new trifluoromethylating agent）；定位：传记p67–69，p67注①吴生文1989博士论文，p68注①杨国英访谈2018-10-23；1989原论文题录／摘要。\n\n仍待补齐：吴生文学位论文、1989原刊全文及原始重复记录仍待补，不据副产物故事判定完整机理。\n",
+      "new": "出处：传记p67–69，p67注①吴生文1989博士论文，p68注①杨国英访谈2018-10-23；1989原论文题录／摘要；HERITAGE-S01、CQ-R05。\n"
+    },
+    {
+      "old": "\n主题：启发式育人；关联：A09（学科建设与人才培养）、A08（交叉研究与晚年拓展）；人物：陈庆云、刘超。\n",
+      "new": ""
+    },
+    {
+      "old": "出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；HERITAGE-S03（陈庆云：六十余年研究一种化学元素）；定位：传记p92注①，刘超访谈2018-05-15；博物馆网页另记郭勇的培养方式回忆。\n\n仍待补齐：原始访谈录音／逐字稿尚未取得；不把一次经历推广为所有学生的固定流程。\n",
+      "new": "出处：传记p92注①，刘超访谈2018-05-15；博物馆网页另记郭勇的培养方式回忆；HERITAGE-S01、HERITAGE-S03。\n"
+    },
+    {
+      "old": "\n主题：团队协作与育人；关联：A09（学科建设与人才培养）；人物：陈庆云、刘超、课题组高年级与新进学生。\n",
+      "new": ""
+    },
+    {
+      "old": "出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；定位：传记p102注①，刘超访谈2018-05-15。\n\n仍待补齐：完整原访谈与各阶段培养档案尚待补，不补造人数、考核制度或效果统计。\n",
+      "new": "出处：传记p102注①，刘超访谈2018-05-15；HERITAGE-S01。\n"
+    },
+    {
+      "old": "\n主题：交叉研究与终身学习；关联：A08（交叉研究与晚年拓展）、A09（学科建设与人才培养）；人物：陈庆云、郭灿城、刘超。\n",
+      "new": ""
+    },
+    {
+      "old": "出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；CQ-H09（Fluoroalkylation of Porphyrins: Synthesis and Reactions of β-Fluoroalkyltetraarylporphyrins）；CQ-R10（Synthesis and Reactions of 20 π-Electron β-Tetrakis(trifluoromethyl)-meso-tetraphenylporphyrins）；定位：传记p78–79；p78相关陈庆云／刘超／肖吉昌访谈，p79注①刘超访谈2018-05-15；原论文作者与摘要。\n\n仍待补齐：文献笔记原件与合作档案可继续补取；不以回忆中的数量或通信代替独立成果评价。\n",
+      "new": "出处：传记p78–79；p78相关陈庆云／刘超／肖吉昌访谈，p79注①刘超访谈2018-05-15；原论文作者与摘要；HERITAGE-S01、CQ-H09、CQ-R10。\n"
+    },
+    {
+      "old": "\n主题：应用责任与后续方向；关联：A04（F-53铬雾抑制剂）、A08（交叉研究与晚年拓展）；人物：陈庆云、郭勇。\n",
+      "new": ""
+    },
+    {
+      "old": "出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；定位：传记p86注①，陈庆云访谈2018-02-09；同页替代研究叙述。\n\n仍待补齐：具体材料、替代物结构、性能与环境数据仍需原论文核对；不宣称某替代品已安全或完成替代。\n",
+      "new": "出处：传记p86注①，陈庆云访谈2018-02-09；同页替代研究叙述；HERITAGE-S01。\n"
+    },
+    {
+      "old": "\n主题：材料开拓与分工协作；关联：A02（含氟单体、氟橡胶与氟油）；人物：陈庆云、蒋锡夔、胡亚东、氟橡胶课题组同事。\n",
+      "new": ""
+    },
+    {
+      "old": "出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；S1（陈庆云纪念册（机构资料））；定位：传记p35–37，p36注①陈庆云访谈2018-01-03；年表p114；上海有机所纪念册六氟丙烯段。\n\n仍待补齐：单体试制记录、低温分离装置图、氟橡胶后续牌号与工业交接档案待补；不将陈加入前的氟橡胶1号成果归为其个人研制。\n",
+      "new": "出处：传记p35–37，p36注①陈庆云访谈2018-01-03；年表p114；上海有机所纪念册六氟丙烯段；HERITAGE-S01、S1。\n"
+    },
+    {
+      "old": "\n主题：中试接力与跨单位合作；关联：A05（制冷剂与配套技术）；人物：陈庆云、林永达、杨映松、上海有机所实验厂、嘉兴冰箱厂、广州化学所。\n",
+      "new": ""
+    },
+    {
+      "old": "出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；S1（陈庆云纪念册（机构资料））；定位：传记p58–59；p58注②转引陈庆云、林永达1996《上海化工》21(1):11–14；p59注①转引杨映松1994《制冷》(3):1–6；机构纪念册F-134a段只支持宽范围历史背景。\n\n仍待补齐：两篇原文、原专利、中试规模口径、完整批次与整机跟踪记录待补；书中1996题名印作HCFC-134a，规范物质名及原刊题名须分列核对。\n",
+      "new": "出处：传记p58–59；p58注②转引陈庆云、林永达1996《上海化工》21(1):11–14；p59注①转引杨映松1994《制冷》(3):1–6；机构纪念册F-134a段只支持宽范围历史背景；HERITAGE-S01、S1。\n"
+    },
+    {
+      "old": "\n主题：应用研究之间的接续；关联：A04（F-53铬雾抑制剂）、A05（制冷剂与配套技术）；人物：陈庆云、605研究小组。\n",
+      "new": ""
+    },
+    {
+      "old": "出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；S1（陈庆云纪念册（机构资料））；定位：传记p55，注①转引《上海市化学化工学会1978年年会论文摘要选编》（1980出版）p53；图5-5为1980年F-115奖证书影；机构纪念册F-115/F-502段。\n\n仍待补齐：1978年会摘要原页、原始制备／试配和性能记录、奖证独立高清扫描待补；不将“国外未有报道”的传记表述升级为查新结论，也不宣称这些历史制冷剂符合今天的环境适用要求。\n",
+      "new": "出处：传记p55，注①转引《上海市化学化工学会1978年年会论文摘要选编》（1980出版）p53；图5-5为1980年F-115奖证书影；机构纪念册F-115/F-502段；HERITAGE-S01、S1。\n"
+    },
+    {
+      "old": "\n主题：问题意识与科研训练；关联：A07（单电子转移与C–Cl活化）、A09（学科建设与人才培养）；人物：陈庆云、陈亚雄。\n",
+      "new": ""
+    },
+    {
+      "old": "出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；定位：传记p72第二段具名回忆，注②陈庆云访谈2018-02-09，上海；p70图6-4为1994年小组讨论单电子转移反应照片。\n\n仍待补齐：陈亚雄对应原论文、完整重复实验记录及访谈原件仍待补；不据这段回忆认定全部单电子转移理论的发现优先权。所述为碘代物／铜粉／碘苯研究，不作为后续C–Cl活化机理的验证。\n",
+      "new": "出处：传记p72第二段具名回忆，注②陈庆云访谈2018-02-09，上海；p70图6-4为1994年小组讨论单电子转移反应照片；HERITAGE-S01。\n"
+    },
+    {
+      "old": "\n主题：共同开发与具名方法核查；关联：A06（磺酸酯、二氟卡宾与三氟甲基化）、A08（交叉研究与晚年拓展）；人物：陈庆云、W. R. Dolbier, Jr.、F. Tian、J.-X. Duan。\n",
+      "new": ""
+    },
+    {
+      "old": "出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；CQ-R07（TFDA用于偕二氟环丙烷合成）；CQ-R08（TFDA制备与应用进入Organic Syntheses）；定位：传记p75、p76图7-1、p77；Org. Synth.2003,80:172–176的Submitted by、Checked by及参考文献2；2000 Org.Lett.2:563–564。\n\n仍待补齐：2000原论文全文及完整贡献分工仍需补齐；核查限于所载TFDA制备和特定环丙烷化方法，不推广为全部底物、工业生产或平台实验验证。\n",
+      "new": "出处：传记p75、p76图7-1、p77；Org. Synth.2003,80:172–176的Submitted by、Checked by及参考文献2；2000 Org.Lett.2:563–564；HERITAGE-S01、CQ-R07、CQ-R08。\n"
+    },
+    {
+      "old": "\n主题：科研写作与独立判断；关联：A09（学科建设与人才培养）；人物：陈庆云、郭勇。\n",
+      "new": ""
+    },
+    {
+      "old": "出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；定位：传记p93，注①陈庆云访谈2018-03-09，注②郭勇访谈2018-05-15，均记上海、资料存于采集工程数据库。\n\n仍待补齐：原始访谈录音／逐字稿及所述具体论文的题名、初稿和修订记录待补；不以回忆代替对某篇论文质量的独立评价。\n",
+      "new": "出处：传记p93，注①陈庆云访谈2018-03-09，注②郭勇访谈2018-05-15，均记上海、资料存于采集工程数据库；HERITAGE-S01。\n"
+    },
+    {
+      "old": "\n主题：国际交流与学术共同体；关联：A09（学科建设与人才培养）；人物：陈庆云、黄维垣、冯允恭、Donald Burton。\n",
+      "new": ""
+    },
+    {
+      "old": "出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；HERITAGE-S08（上海有机所陈庆云纪念专题：生平图集）；定位：传记p95–100；p97图8-6、图8-7；p100注②陈庆云访谈2018-03-09；年表p116；SIOC生平图集1979年交流相关图注。\n\n仍待补齐：1979会议正式日程、报告摘要、邀请／访问函与照片原始说明待补；学生交流机会的具体人名、时间及工作成果须逐项建档，不据一句回忆量化。\n",
+      "new": "出处：传记p95–100；p97图8-6、图8-7；p100注②陈庆云访谈2018-03-09；年表p116；SIOC生平图集1979年交流相关图注；HERITAGE-S01、HERITAGE-S08。\n"
+    },
+    {
+      "old": "\n主题：实验可信度与育人；关联：A09（学科建设与人才培养）；人物：陈庆云。\n",
+      "new": ""
+    },
+    {
+      "old": "出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；定位：传记p111，结语“尊重学生兴趣”中结构确证段；同页注①刘超2018-05-15、注②郭彩云2019-09-24分别对应前文引述，不将此叙述段强归为其中一人的逐字口述。\n",
+      "new": "出处：传记p111，结语“尊重学生兴趣”中结构确证段；同页注①刘超2018-05-15、注②郭彩云2019-09-24分别对应前文引述，不将此叙述段强归为其中一人的逐字口述；HERITAGE-S01。\n"
+    },
+    {
+      "old": "仍待补齐：具体反应对应的原谱图、实验记录及教学讨论笔记尚未取得；本故事不构成本平台对任何结构的新鉴定。\n\n## 资料来源\n",
+      "new": "## 参考资料\n"
+    },
+    {
+      "old": "资料类型：传记作者叙述、转引访谈、图注与附录，逐项区分；定位：朱晶、刘超著；PDF195物理页；正文印刷页1–165，正文物理页=印刷页+26；前置序文另计。\n",
+      "new": "传记作者叙述、转引访谈、图注与附录，逐项区分；定位：朱晶、刘超著；PDF195物理页；正文印刷页1–165，正文物理页=印刷页+26；前置序文另计。\n"
+    },
+    {
+      "old": "当前文件名为陈庆云传.pdf，SHA-256 731a5ae47f75f136eaec9e8e09021ddaaad30c0aaefd545f8c3c85857ca26d61。出版信息列2024年6月第1版，部分排版字段仍有占位符；页码只据此底本，不预设与市售印本逐页相同。原PDF和页图不公开上传。\n",
+      "new": "作为生平、研究历程、合作与育人故事的主要叙述依据。具体页注中的访谈转引、作者总结及图注分别注明；公开页面不转载整部传记。\n"
+    },
+    {
+      "old": "### HERITAGE-S02 · 上海有机所：陈庆云院士生平\n",
+      "new": "### HERITAGE-S02 · [上海有机所：陈庆云院士生平](https://www.sioc.cas.cn/dncqy/sp/)\n"
+    },
+    {
+      "old": "资料类型：任职机构生平与历史学术评价；定位：教育任职经历、科研贡献、育人与学术交流各段。\n",
+      "new": "任职机构生平与历史学术评价；定位：教育任职经历、科研贡献、育人与学术交流各段。\n"
+    },
+    {
+      "old": "机构评价保留其出处；具体论文、工艺与合作分工分别回原始材料。\n",
+      "new": "用于研究经历、生平与机构历史评价；具体实验、工艺和作者分工沿各专题阅读原始资料。\n"
+    },
+    {
+      "old": "来源链接：[上海有机所：陈庆云院士生平](<https://www.sioc.cas.cn/dncqy/sp/>)\n",
+      "new": "### HERITAGE-S03 · [陈庆云：六十余年研究一种化学元素](https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/bd0292/art/2023/art_e2d76717639749c0a6713c2b08a9971a.html)\n"
+    },
+    {
+      "old": "### HERITAGE-S03 · 陈庆云：六十余年研究一种化学元素\n",
+      "new": "采集工程机构报道，含具名回忆与历史叙述；定位：网页标注2021-10-29；文署采集工程项目办公室／中国科协创新战略研究院；“凝聚智慧，扬名上海氟化学”及参考文献。\n"
+    },
+    {
+      "old": "资料类型：采集工程机构报道，含具名回忆与历史叙述；定位：网页标注2021-10-29；文署采集工程项目办公室／中国科协创新战略研究院；“凝聚智慧，扬名上海氟化学”及参考文献。\n",
+      "new": "用于具名回忆和采集工程历史叙述；其中郭勇等人的回忆保留报道及说话人归属，不作为平台自行开展的访谈。\n"
+    },
+    {
+      "old": "网页引用2019年研究报告，不当作2024底本的逐字副本；郭勇的育人回忆与书中刘超回忆分别归属。\n",
+      "new": "### HERITAGE-S04 · [中国科学院：“上海氟”，何以为？](https://www.cas.cn/zt/kjzt/kjzlzqzl/kjzlzq/202406/t20240621_5022275.shtml)\n"
+    },
+    {
+      "old": "来源链接：[陈庆云：六十余年研究一种化学元素](<https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/bd0292/art/2023/art_e2d76717639749c0a6713c2b08a9971a.html>)\n",
+      "new": "机构刊载历史报道与具名照片图注；定位：2024-06-21；第2节1963年南迁和仪器段、F-53段、1981年上海光明电镀厂测试图注；第3节分组研究脉络。\n"
+    },
+    {
+      "old": "### HERITAGE-S04 · 中国科学院：“上海氟”，何以为？\n",
+      "new": "用于研究组织、仪器建设、合作与工厂测试图注；具体研究成果分别链接原论文及专题。\n"
+    },
+    {
+      "old": "资料类型：机构刊载历史报道与具名照片图注；定位：2024-06-21；第2节1963年南迁和仪器段、F-53段、1981年上海光明电镀厂测试图注；第3节分组研究脉络。\n",
+      "new": "### HERITAGE-S05 · [林永达、陈庆云：大气臭氧层破坏和CFCs替代物（1998）](https://manu56.magtech.com.cn/progchem/CN/volumn/volumn_1306.shtml)\n"
+    },
+    {
+      "old": "可支持所载历史事件，未代替原工厂批次、效益和验收档案。\n",
+      "new": "原作者合著综述的期刊书目与摘要入口；定位：《化学进展》1998,10(02):228起；作者次序林永达、陈庆云；期目录页https://manu56.magtech.com.cn/progchem/CN/volumn/volumn_1306.shtml。\n"
+    },
+    {
+      "old": "来源链接：[中国科学院：“上海氟”，何以为？](<https://www.cas.cn/zt/kjzt/kjzlzqzl/kjzlzq/202406/t20240621_5022275.shtml>)\n",
+      "new": "林永达、陈庆云合著综述用于了解臭氧层破坏与CFCs替代物研究背景；综述、工艺论文和专利是不同类型的证据。详见A05（制冷剂与配套技术）专题。\n"
+    },
+    {
+      "old": "### HERITAGE-S05 · 林永达、陈庆云：大气臭氧层破坏和CFCs替代物（1998）\n",
+      "new": "### HERITAGE-S06 · [上海有机所专利登记：从全氟烷基氯制备全氟烷基碘](https://sioc.cas.cn/sourcedb/cn/zl/202306/t20230627_6789949.html)\n"
+    },
+    {
+      "old": "资料类型：本人合著综述的期刊原站题录；期目录提供真实摘要；定位：《化学进展》1998,10(02):228起；作者次序林永达、陈庆云；期目录页https://manu56.magtech.com.cn/progchem/CN/volumn/volumn_1306.shtml。\n",
+      "new": "研究机构公开专利题录；定位：专利类别、申请号、专利号、申请日期、第一／其他发明人、授权日期各字段。\n"
+    },
+    {
+      "old": "已确认作者/题名/卷期/起始页和综述对象。详细页部分正文为模板占位符，期目录摘要可读；PDF入口标44KB但未取得全文，末页未确认；不作为工艺实验报告。\n",
+      "new": "机构题录保存申请号、署名及历史授权字段。对应说明书的技术内容与A/C版本关系见A07（单电子转移与C–Cl活化）专题；题录与说明书分别引用，不用于推定当前法律状态。\n"
+    },
+    {
+      "old": "来源链接：[林永达、陈庆云：大气臭氧层破坏和CFCs替代物（1998）](<https://manu56.magtech.com.cn/progchem/CN/volumn/volumn_1306.shtml>)\n",
+      "new": "### HERITAGE-S07 · [2001年黄小庭／陈庆云镍体系：原论文书目与摘要](https://pubmed.ncbi.nlm.nih.gov/11421787/)\n"
+    },
+    {
+      "old": "### HERITAGE-S06 · 上海有机所专利登记：从全氟烷基氯制备全氟烷基碘\n",
+      "new": "NLM收录的原论文书目和作者摘要，不是全文核读；定位：Nickel(0)-catalyzed fluoroalkylation of alkenes, alkynes, and aromatics with perfluoroalkyl chlorides；J.Org.Chem.2001,66(13):4651–4656；PMID11421787；DOI10.1021/jo010178j。\n"
+    },
+    {
+      "old": "资料类型：研究机构公开专利题录，尚未取得完整专利说明书；定位：专利类别、申请号、专利号、申请日期、第一／其他发明人、授权日期各字段。\n",
+      "new": "数据库书目与作者摘要用于定位2001年黄小庭、陈庆云的镍体系方法。摘要所述单电子转移为原作者提出的解释；正文、支持信息与机理资格分别说明。\n"
+    },
+    {
+      "old": "原页载申请号200510031063.4、专利号ZL200510031063.4；申请2005-10-21，授权2007-02-07；第一发明人陈庆云，其他发明人曹海萍。只登记机构所载历史字段，未查询当前法律状态，未取得原专利全文或技术转让合同。\n",
+      "new": "### HERITAGE-S08 · [上海有机所陈庆云纪念专题：生平图集](https://sioc.cas.cn/dncqy/sptj/)\n"
+    },
+    {
+      "old": "来源链接：[上海有机所专利登记：从全氟烷基氯制备全氟烷基碘](<https://sioc.cas.cn/sourcedb/cn/zl/202306/t20230627_6789949.html>)\n",
+      "new": "任职机构公开历史图集与具名图注；定位：1979年冬季氟化学会议与Tamborski、Burton及冯允恭／黄维垣交流图注；1985年与研究生研究反应过程／讨论工作图注。\n"
+    },
+    {
+      "old": "### HERITAGE-S07 · 2001年黄小庭／陈庆云镍体系：原论文书目与摘要\n",
+      "new": "用于1979年交流与1985年研究生讨论等具名历史场景。合影不自动证明师承或个人实验分工；本页引用图注，不转载原照片。\n"
+    },
+    {
+      "old": "资料类型：NLM收录的原论文书目和作者摘要，不是全文核读；定位：Nickel(0)-catalyzed fluoroalkylation of alkenes, alkynes, and aromatics with perfluoroalkyl chlorides；J.Org.Chem.2001,66(13):4651–4656；PMID11421787；DOI10.1021/jo010178j。\n",
+      "new": "### HERITAGE-S09 · [有机所庆贺陈庆云院士八十华诞](https://sioc.cas.cn/cxwh/whhd/200902/t20090220_1747976.html)\n"
+    },
+    {
+      "old": "作者X.T.Huang、Q.Y.Chen。摘要支持特定全氟烷基氯与烯烃、炔烃和芳烃的镍体系转化，并将单电子转移写为所提出的机理；未取得全文／SI，不提升为完整机理证明。\n",
+      "new": "机构2009年活动报道及历史学术服务记录；定位：2009-02-20，党政办公室；正文后半段学术任职与育人段。\n"
+    },
+    {
+      "old": "来源链接：[2001年黄小庭／陈庆云镍体系：原论文书目与摘要](<https://pubmed.ncbi.nlm.nih.gov/11421787/>)\n",
+      "new": "用于学术服务、育人与交流的历史记述，所载任职和数量按2009年报道的时点理解。\n"
+    },
+    {
+      "old": "### HERITAGE-S08 · 上海有机所陈庆云纪念专题：生平图集\n",
+      "new": "### HERITAGE-S10 · [上海有机所举办陈庆云院士九十华诞学术报告会](https://www.sioc.ac.cn/news/zhxw/201901/t20190128_6769732.html)\n"
+    },
+    {
+      "old": "资料类型：任职机构公开历史图集与具名图注；定位：1979年冬季氟化学会议与Tamborski、Burton及冯允恭／黄维垣交流图注；1985年与研究生研究反应过程／讨论工作图注。\n",
+      "new": "任职机构具名活动报道；定位：2019-01-28，党政办；2019-01-25活动；杨国英学生代表发言、Dolbier／肖吉昌／吴生文学术报告段。\n"
+    },
+    {
+      "old": "已核读图集正文图注；未取得原照片底片、原始拍摄说明和授权，不公开转载图片。图注中的lown/Ithica等原站拼写不据此作学校名称校定。\n",
+      "new": "用于2019年1月25日活动、学生代表及学术报告人的具名事件；各项研究和报告归实际参与者。\n"
+    },
+    {
+      "old": "来源链接：[上海有机所陈庆云纪念专题：生平图集](<https://sioc.cas.cn/dncqy/sptj/>)\n",
+      "new": "### HERITAGE-S11 · [上海有机所：有机氟化学重点实验室历届学术委员会名单](https://sioc.cas.cn/fncm/overview/committee/)\n"
+    },
+    {
+      "old": "### HERITAGE-S09 · 有机所庆贺陈庆云院士八十华诞\n",
+      "new": "研究机构公开的历史学术委员会名单；定位：页面“中国科学院有机氟化学重点实验室”部分第一至第四届名单；与页面上方新实验室名单分列。\n"
+    },
+    {
+      "old": "资料类型：机构2009年活动报道及历史学术服务记录；定位：2009-02-20，党政办公室；正文后半段学术任职与育人段。\n\n所载1993年起《有机化学》主编、1991–1998年IUPAC有机化学命名委员会中国国家代表为历史报道口径；所载论文／培养人数不得当作2026年或全生涯统计。\n\n来源链接：[有机所庆贺陈庆云院士八十华诞](<https://sioc.cas.cn/cxwh/whhd/200902/t20090220_1747976.html>)\n\n### HERITAGE-S10 · 上海有机所举办陈庆云院士九十华诞学术报告会\n\n资料类型：任职机构具名活动报道；定位：2019-01-28，党政办；2019-01-25活动；杨国英学生代表发言、Dolbier／肖吉昌／吴生文学术报告段。\n\n已核读活动报道正文及具名报告段。叙述支持所载参会、学生代表发言与学术报告事件，不据此认定会中回忆或研究结论已获独立核实。\n\n来源链接：[上海有机所举办陈庆云院士九十华诞学术报告会](<https://www.sioc.ac.cn/news/zhxw/201901/t20190128_6769732.html>)\n\n### HERITAGE-S11 · 上海有机所：有机氟化学重点实验室历届学术委员会名单\n\n资料类型：研究机构公开的历史学术委员会名单；定位：页面“中国科学院有机氟化学重点实验室”部分第一至第四届名单；与页面上方新实验室名单分列。\n\n前三届主任栏列陈庆云，第四届主任栏并列钱旭红、陈庆云。只记录该历史名单字段，页面未列任期起止，不推定现任职务或完整任期；个别个人资料页的出生年异文不采用。\n\n来源链接：[上海有机所：有机氟化学重点实验室历届学术委员会名单](<https://sioc.cas.cn/fncm/overview/committee/>)\n\n## 待核事项与当前处理\n\n### 授予书影、说明书与独立原始扫描分开\n\n传记p29图3-4已核见117491号发明人证书授予正页书影；独立取得的俄文说明书是另一种文书。\n\n当前处理：当前写“书影已核见；独立高清原始扫描及细字日期、专业核译仍待补”；不继续笼统称完全没有正页图像。\n\n出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；CQ-H02（六氟双酚 A 的制备方法（俄文档案中文释义））；定位：传记p29图3-4，已整页视觉核读。\n\n### 底本年代字段有待逐项校勘\n\n底本p34“同年调沪”与p38及年表的1963年7月不一致；p10与年表p113的高中毕业年份不同。p19和年表p113均记1952年8月入职，而机构生平记9月，月份差异发生在底本与机构资料之间。\n\n当前处理：公开简介采用机构资料与详叙可互证的年份；具体月份／高中毕业年份待档案核对，不静默混合。\n\n出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；HERITAGE-S02（上海有机所：陈庆云院士生平）；HERITAGE-S04（中国科学院：“上海氟”，何以为？）；定位：传记p10、19、34、38、113–115；机构生平与CAS第2节。\n\n### 年表姓名与原刊署名分开校\n\np115年表的部分合作姓名，与1966原刊完整署名存在异文；另有朱仕正／朱士正等异写待原刊核定。\n\n当前处理：论文作者优先依已核原刊；保留底本实印异文及定位，不直接归咎OCR或作者，也不补造作者。\n\n出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；PF01（全氟和多氟型有机化合物的化学特性——全氟叔丁基碘以及全氟烷基的诱导效应顺序）；CQ-H07（全氟和多氟烷基磺酸的研究 IV. 3-氧杂多氟烷烃磺酸酯的合成及其硫-氧和碳-氧键的断裂）；CQ-H16（全氟和多氟烷基磺酸酯的研究 X. 在亲核取代反应中全氟烷基3-氧杂全氟烷烃磺酸酯的唯一的硫-氧键断裂）；定位：传记p63、115及相关附录；1966原刊作者栏。\n\n### 制冷剂对象与相态解释须回原始资料\n\n底本p57的F-134a氯字句、p58所引题名HCFC／HFC异写及“超临界水”解释，需与原刊、专利的对象和温压证据对照。\n\n当前处理：先呈现研制与应用协作，不据传记生成现代机理图，不把30吨级规模转成年产，不拿三氟乙基醚论文代替中试报告。\n\n出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；CQ-H24（三氟乙基醚研究）；定位：传记p54–59、120；相关原刊书目线索。\n\n### 访谈故事有说话人，也有未取的原始记录\n\n自主选题、带教、重复条件等细节在书中有具名访谈页注；尚未取得相应原始录音／逐字稿。\n\n当前处理：明确写“据传记所引某人回忆”，不伪装成本平台访谈，不虚构对话、心理或效果统计。\n\n出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；HERITAGE-S03（陈庆云：六十余年研究一种化学元素）；定位：传记p68、79、92、102及各脚注。\n\n### 回顾中的数量和“至今”不当作2026现状\n\n工厂使用、产能、培养人数、前体种数及目录条目有不同统计口径与年代；目录327条含不同类型记录。\n\n当前处理：数字锚定来源年份；先讲具体事例和原始工作，不把底本目录数当独著数或论文总量，不代替当前应用与环境评价。\n\n出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；HERITAGE-S02（上海有机所：陈庆云院士生平）；CQ-H06（国内科技论文谁家最多）；定位：传记p52、65–69、123–159；序二与机构育人段。\n\n### 命名、奖证与通信仍有原件线索可补\n\nF-53“第53页”命名故事为转引；若扩写获奖或国际评价，还需原实验本、完整证书、原信件与引用语境。\n\n当前处理：先公开已定位的合作与育人事实；未见原件的故事保持其转引身份，不借此裁定国际优先权。\n\n出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；CQ-H04（“上海氟”，何以为？）；定位：传记p46、51–55、81–82、95–105。\n\n### TFDA酯化试剂的化学名称异文\n\n传记p75整页可见“甲基三氯硅烷”，而Org.Synth.80:172原方法为chlorotrimethylsilane，即三甲基氯硅烷。\n\n当前处理：公开故事不提供制备操作；登记底本化学名称待校，不把书中此词照录为流程，不无痕改写原书。\n\n出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；CQ-R08（TFDA制备与应用进入Organic Syntheses）；定位：传记p75；Organic Syntheses Procedure A及Notes 3–4。\n\n### 朱仕正／朱士正作者字形按原来源保留\n\n传记p63–66作朱仕正，原馆方CQ-H08条目作朱士正。\n\n当前处理：新叙述以传记所载字形并标出处，旧论文题录保留原登记；原刊作者页和研究者姓名档案仍待核。\n\n出处：HERITAGE-S01（氟缘笃志：陈庆云传（当前本地研究底本））；CQ-H08（全氟和多氟烷基磺酸的研究. 全氟3-氧杂烷烃磺酸酯与亲核试剂反应中的单一的硫-氧键断裂）；定位：传记p63–66与CQ-H08馆方作者题录。\n\n### 不同C–Cl文献与应用资格分别登记\n\n1999溶剂体系、2001镍体系和2005专利是不同文献类型和对象。\n\n当前处理：论文摘要、专利题录、原始反应与技术转化记录分别建档；未取得全文／SI／原始合同，不更新工业应用或机制结论。\n\n出处：CQ-R06（The Activation of Carbon−Chlorine Bonds in Per- and Polyfluoroalkyl Chlorides: DMSO-Induced Hydroperfluoroalkylation of Alkenes and Alkynes with Sodium Dithionite）；HERITAGE-S07（2001年黄小庭／陈庆云镍体系：原论文书目与摘要）；HERITAGE-S06（上海有机所专利登记：从全氟烷基氯制备全氟烷基碘）；定位：各原登记。\n\n### 历史任职、照片图注与统计口径\n\n机构名单未列全套任期起止；2009报道中的论文和培养人数属于当时口径。1979与1985图注只证明所载拍摄场景，不能独自证明师承或合作论文。\n\n当前处理：只发布可核的历史字段和具名事件，原任命函、会议文稿、照片说明、培养档案与访谈原件继续待补。\n\n出处：HERITAGE-S11（上海有机所：有机氟化学重点实验室历届学术委员会名单）；HERITAGE-S09（有机所庆贺陈庆云院士八十华诞）；HERITAGE-S08（上海有机所陈庆云纪念专题：生平图集）；定位：机构历届学委会名单；2009报道；SIOC生平图集1979/1985图注。\n",
+      "new": "用于实验室历届学术委员会的历史服务记录，名单与任期起止分别理解，不作为现任职务介绍。\n"
+    },
+    {
+      "old": "历史成果与故事按原作者、传记页注和机构资料呈现；材料缺口记录本平台的收藏与核读进度。\n",
+      "new": "本页是依据已有传记、原文及机构资料整理的学术导读；历史成果与合作贡献归原作者和实际参与者。\n"
+    },
+    {
+      "old": "平台AI辅助研究的核读、数值重放和现代模型另存研究记录；其待审状态不作为历史贡献成立的前提。\n",
+      "new": "AI辅助核译、资料关联与数值核校另在研究资料页呈现，不能替代历史实验或专业科学判断。\n"
+    },
+    {
+      "old": "历史资料整理与AI研究分开，M0保持暂停。\n\n历史成果归原作者及合作团队；历史资料的整理不构成平台新开展的实验验证或量化结果。\n",
+      "new": "平台新增AI分析保持review_required、release_eligible=false。M0继续暂停，未启动模型后训练。\n"
+    },
+    {
+      "old": "",
+      "new": "from nine_line_reading_publication import (\n    MANIFEST as NINE_LINE_READING_MANIFEST,\n    predecessor_bytes as nine_line_reading_predecessor_bytes,\n    apply as apply_nine_line_reading_presentation,\n)\n"
+    },
+    {
+      "old": "    return json.loads(_file(root, name).read_bytes())\n",
+      "new": "    return json.loads(nine_line_reading_predecessor_bytes(root, name))\n"
+    },
+    {
+      "old": "    current = _file(root, name).read_bytes()\n",
+      "new": "    current = nine_line_reading_predecessor_bytes(root, name)\n"
+    },
+    {
+      "old": "    value = _file(root, name).read_bytes()\n",
+      "new": "    value = nine_line_reading_predecessor_bytes(root, name)\n"
+    },
+    {
+      "old": "",
+      "new": "        if (root/NINE_LINE_READING_MANIFEST).exists():\n            raise ValueError('Nine-line reading requires its immutable v33 predecessor')\n"
+    },
+    {
+      "old": "        if _sha(_file(root, name).read_bytes()) != sha:\n",
+      "new": "        if _sha(nine_line_reading_predecessor_bytes(root, name)) != sha:\n"
+    },
+    {
+      "old": "        value = _file(root, name).read_bytes()\n",
+      "new": "        value = nine_line_reading_predecessor_bytes(root, name)\n"
+    },
+    {
+      "old": "        if _sha(old) != sha or len(old) != size or old == _file(root, name).read_bytes():\n",
+      "new": "        if _sha(old) != sha or len(old) != size or old == nine_line_reading_predecessor_bytes(root, name):\n"
+    },
+    {
+      "old": "    current_document = _file(root, HERITAGE_DOCUMENT).read_bytes().decode('utf-8')\n",
+      "new": "    current_document = nine_line_reading_predecessor_bytes(root, HERITAGE_DOCUMENT).decode('utf-8')\n"
+    },
+    {
+      "old": "        value = _file(root, name).read_bytes().decode('utf-8')\n",
+      "new": "        value = nine_line_reading_predecessor_bytes(root, name).decode('utf-8')\n"
+    },
+    {
+      "old": "        after = _file(root, 'site/'+route).read_bytes()\n",
+      "new": "        after = nine_line_reading_predecessor_bytes(root, 'site/'+route)\n"
+    },
+    {
+      "old": "        value = _file(root, 'site/'+name).read_bytes()\n",
+      "new": "        value = nine_line_reading_predecessor_bytes(root, 'site/'+name)\n"
+    },
+    {
+      "old": "    report = {'path': MANIFEST, 'sha256': _sha(_file(root, MANIFEST).read_bytes()),\n",
+      "new": "    report = {'path': MANIFEST, 'sha256': _sha(nine_line_reading_predecessor_bytes(root, MANIFEST)),\n"
+    },
+    {
+      "old": "    return updated, {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]}\n",
+      "new": "    return apply_nine_line_reading_presentation(root, updated,\n        {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})\n"
+    }
+  ],
+  "changes": [
+    {
+      "path": "index.html",
+      "old_sha256": "ed784916e48d27fce62870476a7083c1de68934c1e96343f4c60e9336fcd6220",
+      "old_bytes": 257401,
+      "new_sha256": "032c76ebf2fcd2dce04d1b1ae66d24ff3b782cac08fff757cb9aa9d738c87c0a",
+      "new_bytes": 246490,
+      "reason": "九线学术导读与有出处的合作阅读入口；原始来源、科学数据及其余页面保留。"
+    },
+    {
+      "path": "achievements/index.html",
+      "old_sha256": "4180b6ef8dd6a12127addc2b3694258f97b0310bbd5cff0b021097550fb4f8f2",
+      "old_bytes": 88530,
+      "new_sha256": "c692715a7ff75cab3d7e5b57e5969b245b8bf9b058636f24fe7e7ef031f1991c",
+      "new_bytes": 61378,
+      "reason": "九线学术导读与有出处的合作阅读入口；原始来源、科学数据及其余页面保留。"
+    }
+  ]
+}

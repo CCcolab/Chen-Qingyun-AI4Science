@@ -349,6 +349,9 @@ def render_featured_stories(data: dict, sources: dict) -> str:
 
 
 def render_sources(data: dict, sources: dict) -> str:
+    if (ROOT/'content/nine-line-reading.v1.json').is_file():
+        from render_nine_line_reading import render_source_overview
+        return render_source_overview(data, sources, ROOT)
     original_data = data
     data = public_projection(data)
     rows = []
@@ -389,6 +392,9 @@ def current_inventory(data: dict, root: Path = ROOT) -> dict:
 
 
 def render_inventory(data: dict, sources: dict, root: Path = ROOT) -> str:
+    if (root/'content/nine-line-reading.v1.json').is_file():
+        from render_nine_line_reading import render_guide
+        return _style('heritage-achievements-style')+'\n'+render_guide(root)
     data = current_inventory(data, root)
     cards = []
     for row in sorted(data['lines'], key=lambda value: value['line_id']):
@@ -452,6 +458,9 @@ def _md_refs(refs: list, sources: dict) -> str:
 
 
 def render_inventory_markdown(data: dict, sources: dict, root: Path = ROOT) -> str:
+    if (root/'content/nine-line-reading.v1.json').is_file():
+        from render_nine_line_reading import render_document
+        return render_document(root)
     data = current_inventory(data, root)
     book = data['book']
     authors = '、'.join(book['authors']) if isinstance(book['authors'], list) else book['authors']

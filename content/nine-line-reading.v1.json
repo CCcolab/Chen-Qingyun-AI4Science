@@ -1,0 +1,309 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-11-17",
+  "title": "九条成果线：问题、贡献与传承",
+  "intro": "沿八条科研成果线与一条学术传承线，先读当时面对的问题、陈先生与合作者的具体贡献，再进入专题原文与合作故事。编号用于导航，不表示贡献排名，也不将不同专题串成未经证明的机理或因果链。",
+  "history_identity": "本页是依据已有传记、原文及机构资料整理的学术导读；历史成果与合作贡献归原作者和实际参与者。",
+  "ai_identity": "AI辅助核译、资料关联与数值核校另在研究资料页呈现，不能替代历史实验或专业科学判断。",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "m0_status": "paused",
+  "model_training_status": "not_started",
+  "lines": [
+    {
+      "id": "A01",
+      "name": "全氟酮化学：六氟丙酮与双酚AF",
+      "question": "同一全氟酮怎样通向不同产物，并进一步成为含氟二酚的制备原料？",
+      "contribution": "陈庆云与克鲁扬茨、甘巴里扬围绕六氟丙酮建立醇、炔基试剂和活泼氢化合物的反应与衍生转化，并推进到六氟双酚A制备及单体用途设想，连接基础反应与材料问题。",
+      "cooperation": "结合第一报、第117491号说明书与传记，分别阅读共同署名、日常指导和研究训练；双酚用途设想与后来材料应用分开。",
+      "source_note": "传记23–33页；1960年第一报英译647–653页；第117491号说明书的署名、实例和用途。",
+      "source_ids": [
+        "A01-HIST-P1960",
+        "CQ-H02",
+        "A01-HIST-BIO"
+      ],
+      "source_documents": [
+        "content/a01-primary-reading.v1.json",
+        "content/a01-historical-achievements.v2.json"
+      ],
+      "links": [
+        {
+          "label": "学术成果与合作",
+          "path": "topics/early-fluoroketones/index.html#a01-primary-records"
+        }
+      ],
+      "document": "docs/A01_FIRST_REPORT_zh-CN.md"
+    },
+    {
+      "id": "A02",
+      "name": "含氟单体、氟橡胶与氟油",
+      "question": "怎样把难得的含氟单体变成可支撑橡胶与功能液体研究的材料基础？",
+      "contribution": "陈庆云与团队将六氟丙烯的裂解制取和低温分馏一并研究，使原料来源与聚合材料接续；氟橡胶2号、3号及调聚氟溴油又把单体、调聚反应和生产应用连接起来。",
+      "cooperation": "以蒋锡夔、胡亚东等人的前期研究为起点，读实验人员、自制仪器和物资保障的协作，以及研究室向上海有机所实验厂的生产接续。",
+      "source_note": "传记35–39页；上海有机所生平与“上海氟”报道；后续调聚研究另见1980年原刊175–184页。",
+      "source_ids": [
+        "HERITAGE-S01",
+        "CQ-R28",
+        "HERITAGE-S04",
+        "A02-P1980"
+      ],
+      "source_documents": [
+        "content/a02-biography-narrative.v1.json",
+        "docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md"
+      ],
+      "links": [
+        {
+          "label": "学术成果与合作",
+          "path": "topics/fluoromonomers/index.html"
+        }
+      ],
+      "document": "docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md"
+    },
+    {
+      "id": "A03",
+      "name": "全氟叔丁基（PFtB）化学",
+      "question": "含氟结构怎样使熟悉的取代反应和基团效应经验面临新的问题？",
+      "contribution": "从六氟丙烯制备的副产物出发，陈庆云与同事研究全氟叔丁基卤化物的制备、结构和特殊反应，并用紫外吸收与溶剂位移比较电子效应，把材料任务中的观察推进为基础化学问题。",
+      "cooperation": "原论文由陈庆云、蒋锡夔、陈秉启、梁梦兰共同署名；结合传记阅读实验、问题讨论和实习参与，区分历史论证与平台六项数值重放。",
+      "source_note": "传记42–45页；1966年《化学学报》18页共同署名，18–20页反应讨论，20–21页紫外讨论与表1。",
+      "source_ids": [
+        "HERITAGE-S01",
+        "PF01",
+        "HERITAGE-S04"
+      ],
+      "source_documents": [
+        "content/a03-biography-narrative.v1.json"
+      ],
+      "links": [
+        {
+          "label": "学术成果与合作",
+          "path": "pftb/index.html#a03-biography-history"
+        }
+      ],
+      "document": "docs/A03_ACADEMIC_ACHIEVEMENTS_zh-CN.md"
+    },
+    {
+      "id": "A04",
+      "name": "F-53铬雾抑制剂",
+      "question": "怎样把含氟合成研究带到电镀现场，解决铬雾抑制问题？",
+      "contribution": "面向镀铬现场的铬雾问题，陈庆云带领研究组发展含醚键的全氟磺酸盐F-53及自主制备路线，并经工厂试用和实验厂扩大试验，连接含氟合成研究与工业应用。",
+      "cooperation": "研究组与顾子恺等工程人员、实验厂和电镀厂接续合作。1982年剪报介绍应用价值；原论文的集体署名另按原文保存。",
+      "source_note": "传记48–53页；1979年原刊315–324页的集体署名与致谢；1982年4月8日《人民日报》第3版铬雾段。",
+      "source_ids": [
+        "HERITAGE-S01",
+        "CQ-H05",
+        "CQ-H15",
+        "CQ-H03"
+      ],
+      "source_documents": [
+        "content/a04-biography-narrative.v1.json"
+      ],
+      "links": [
+        {
+          "label": "A04（F-53铬雾抑制剂）：研制、应用与合作",
+          "path": "topics/f53/index.html#topic-f53"
+        }
+      ],
+      "document": "docs/A04_ACADEMIC_ACHIEVEMENTS_zh-CN.md"
+    },
+    {
+      "id": "A05",
+      "name": "制冷剂与配套技术",
+      "question": "制冷剂分子怎样经过工艺、润滑油与设备协作走向应用？",
+      "contribution": "从F-115的新制备路线和既有F-502配方试配，走向HFC-134a液相连续工艺、冷冻机油与整机试用，把制冷剂分子合成与配套应用衔接起来。",
+      "cooperation": "林永达、杨映松参与连续中试，嘉兴冰箱厂等承担应用协作。项目组织贡献、集体论文署名和各专利发明人分别呈现。",
+      "source_note": "传记55–59页；1978年《化学学报》77–79页；CN1075708A、CN1308043A的发明人及工艺各自登记。",
+      "source_ids": [
+        "HERITAGE-S01",
+        "ACTA1978-36-77",
+        "CN1075708A",
+        "CN1308043A"
+      ],
+      "source_documents": [
+        "content/a05-biography-narrative.v1.json"
+      ],
+      "links": [
+        {
+          "label": "A05（制冷剂与配套技术）：组分、工艺与设备",
+          "path": "topics/refrigerants/index.html#topic-refrigerants"
+        }
+      ],
+      "document": "docs/A05_ACADEMIC_ACHIEVEMENTS_zh-CN.md"
+    },
+    {
+      "id": "A06",
+      "name": "磺酸酯、二氟卡宾与三氟甲基化",
+      "question": "含氟磺酸酯的反应研究怎样发展出新的合成试剂和方法？",
+      "contribution": "从含氟磺酸酯的断键研究，发展二氟卡宾前体与三氟甲基化方法；陈庆云、吴生文将甲酯MFSDA发展为三氟甲基化试剂，后称“陈试剂”。",
+      "cooperation": "杨国英接续研究反应条件；Dolbier团队参与TFDA开发。2003年硅酯／卡宾方法和2010年甲酯／甾体方法各有提交与核查名单。",
+      "source_note": "传记60–69、75–77页；磺酸酯系列原刊；1989年三氟甲基化论文；Org. Synth. 2003，80：172–176与2010，87：126–136。",
+      "source_ids": [
+        "HERITAGE-S01",
+        "CQ-H07",
+        "CQ-H08",
+        "CQ-H16",
+        "CQ-R05",
+        "CQ-R07",
+        "CQ-R08",
+        "CQ-H18"
+      ],
+      "source_documents": [
+        "content/a06-biography-narrative.v1.json"
+      ],
+      "links": [
+        {
+          "label": "A06（磺酸酯、二氟卡宾与三氟甲基化）：陈试剂",
+          "path": "topics/chen-reagent/index.html#topic-chen-reagent"
+        },
+        {
+          "label": "A06（磺酸酯、二氟卡宾与三氟甲基化）：磺酸酯与卡宾",
+          "path": "topics/perfluorosulfonates/index.html#record-sulfonate-cleavage"
+        }
+      ],
+      "document": "docs/A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md"
+    },
+    {
+      "id": "A07",
+      "name": "单电子转移与C–Cl活化",
+      "question": "怎样利用溶剂、还原体系与催化作用，扩大含氟卤代物的转化范围？",
+      "contribution": "陈庆云与合作者从氟烷基碘的溶剂效应研究出发，发展多种氟烷基化方法，并分别以DMSO／连二亚硫酸钠和零价镍体系拓展特定含氟氯代物的转化。",
+      "cooperation": "陈亚雄参与溶剂效应研究，龙正宇、黄小庭分别合作开展两类C–Cl方法；单电子转移保留为各原作讨论的解释。",
+      "source_note": "传记69–74、83–84页；1984年《化学学报》906–912页；1999及2001年JOC两类C–Cl方法的出版社摘要。",
+      "source_ids": [
+        "HERITAGE-S01",
+        "A07-ACTA1984-906",
+        "CQ-R06",
+        "HERITAGE-S07"
+      ],
+      "source_documents": [
+        "content/a07-biography-narrative.v1.json"
+      ],
+      "links": [
+        {
+          "label": "A07 单电子转移与C–Cl活化",
+          "path": "topics/single-electron-transfer/index.html#topic-single-electron-transfer"
+        },
+        {
+          "label": "A07 从碘代物到含氟氯代物",
+          "path": "topics/single-electron-transfer/index.html#record-ccl-activation"
+        }
+      ],
+      "document": "docs/A07_ACADEMIC_ACHIEVEMENTS_zh-CN.md"
+    },
+    {
+      "id": "A08",
+      "name": "交叉研究与晚年拓展",
+      "question": "有机氟反应方法怎样进入小环、大环及新的性质研究？",
+      "contribution": "陈庆云与合作者把含氟试剂和反应方法拓展到小环、卟啉与新大环骨架，并在晚年继续研究脱氧氟化、氟磺酰化及表面活性分子，连接分子构建、反应性与性质问题。",
+      "cooperation": "郭灿城带来卟啉研究基础，刘超等共同推进大环方向；2022年合著工作的既有理论计算归原作者，不据署名分派执行者。",
+      "source_note": "传记75–86页及晚期论著目录156–159页；小环、2003/2007卟啉与大环、2022大环及晚年方法分别对应原作者文献。",
+      "source_ids": [
+        "HERITAGE-S01",
+        "CQ-H21",
+        "CQ-R09",
+        "CQ-H09",
+        "CQ-R10",
+        "CQ-H20",
+        "CQ-R15",
+        "CQ-R17",
+        "CQ-R16",
+        "CQ-H11"
+      ],
+      "source_documents": [
+        "content/a08-biography-narrative.v1.json"
+      ],
+      "links": [
+        {
+          "label": "A08 含氟小环",
+          "path": "topics/fluorinated-small-rings/index.html#topic-fluorinated-small-rings"
+        },
+        {
+          "label": "A08 卟啉与大环",
+          "path": "topics/fluoroporphyrins/index.html#topic-fluoroporphyrins"
+        },
+        {
+          "label": "A08 脱氧氟化",
+          "path": "topics/deoxyfluorination/index.html#topic-deoxyfluorination"
+        },
+        {
+          "label": "A08 晚年试剂与表面活性分子",
+          "path": "topics/sulfonyl-fluoride/index.html#topic-sulfonyl-fluoride"
+        }
+      ],
+      "document": "docs/A08_ACADEMIC_ACHIEVEMENTS_zh-CN.md"
+    },
+    {
+      "id": "A09",
+      "name": "学科建设与人才培养",
+      "question": "研究经验怎样通过具体指导、合作与学术服务传给后人？",
+      "contribution": "陈庆云把方向开拓与人才梯队建设相结合，通过分阶段指导、自主选题、论文写作和谱图讨论培养独立研究能力，并借助团队带教、期刊和国际交流延续学术经验。",
+      "cooperation": "刘超回忆自主选题与高年级带新生，郭勇回忆春节改稿，郭彩云回忆组会指导；这些具名故事分别沿传记页注阅读。",
+      "source_note": "传记78–79、87–105、111页及年表116–122页；机构2009、2019年报道与生平图集。",
+      "source_ids": [
+        "HERITAGE-S01",
+        "HERITAGE-S08",
+        "HERITAGE-S09",
+        "HERITAGE-S10"
+      ],
+      "source_documents": [
+        "content/a09-biography-narrative.v1.json"
+      ],
+      "links": [
+        {
+          "label": "A09 学科建设与人才培养",
+          "path": "people/index.html#a09-discipline"
+        },
+        {
+          "label": "A09 独立选题与指导",
+          "path": "people/index.html#a09-independent"
+        },
+        {
+          "label": "A09 论文写作与谱图讨论",
+          "path": "people/index.html#a09-writing"
+        },
+        {
+          "label": "A09 团队带教",
+          "path": "people/index.html#a09-team"
+        }
+      ],
+      "document": "docs/A09_ACADEMIC_HERITAGE_zh-CN.md"
+    }
+  ],
+  "source_display_notes": {
+    "HERITAGE-S01": {
+      "note": "作为生平、研究历程、合作与育人故事的主要叙述依据。具体页注中的访谈转引、作者总结及图注分别注明；公开页面不转载整部传记。"
+    },
+    "HERITAGE-S02": {
+      "note": "用于研究经历、生平与机构历史评价；具体实验、工艺和作者分工沿各专题阅读原始资料。"
+    },
+    "HERITAGE-S03": {
+      "note": "用于具名回忆和采集工程历史叙述；其中郭勇等人的回忆保留报道及说话人归属，不作为平台自行开展的访谈。"
+    },
+    "HERITAGE-S04": {
+      "note": "用于研究组织、仪器建设、合作与工厂测试图注；具体研究成果分别链接原论文及专题。"
+    },
+    "HERITAGE-S05": {
+      "kind": "原作者合著综述的期刊书目与摘要入口",
+      "note": "林永达、陈庆云合著综述用于了解臭氧层破坏与CFCs替代物研究背景；综述、工艺论文和专利是不同类型的证据。详见A05制冷剂与配套技术专题。"
+    },
+    "HERITAGE-S06": {
+      "kind": "研究机构公开专利题录",
+      "note": "机构题录保存申请号、署名及历史授权字段。对应说明书的技术内容与A/C版本关系见A07单电子转移与C–Cl活化专题；题录与说明书分别引用，不用于推定当前法律状态。"
+    },
+    "HERITAGE-S07": {
+      "note": "数据库书目与作者摘要用于定位2001年黄小庭、陈庆云的镍体系方法。摘要所述单电子转移为原作者提出的解释；正文、支持信息与机理资格分别说明。"
+    },
+    "HERITAGE-S08": {
+      "note": "用于1979年交流与1985年研究生讨论等具名历史场景。合影不自动证明师承或个人实验分工；本页引用图注，不转载原照片。"
+    },
+    "HERITAGE-S09": {
+      "note": "用于学术服务、育人与交流的历史记述，所载任职和数量按2009年报道的时点理解。"
+    },
+    "HERITAGE-S10": {
+      "note": "用于2019年1月25日活动、学生代表及学术报告人的具名事件；各项研究和报告归实际参与者。"
+    },
+    "HERITAGE-S11": {
+      "note": "用于实验室历届学术委员会的历史服务记录，名单与任期起止分别理解，不作为现任职务介绍。"
+    }
+  }
+}
