@@ -4291,7 +4291,7 @@ def _publication_members_v42(root: Path, entries: dict) -> list[dict]:
     return _publication_members_v41(root, entries)
 
 
-def effective_website_entries(root: Path, baseline: dict, *, verify_current=True,
+def _effective_website_entries_v43(root: Path, baseline: dict, *, verify_current=True,
                               revision_chain=None, include_presentation=True) -> tuple[dict, dict]:
     """Replay the complete v42 chain before the bounded Homepage portrait fix."""
     arguments = {'verify_current': verify_current, 'revision_chain': revision_chain,
@@ -4302,9 +4302,28 @@ def effective_website_entries(root: Path, baseline: dict, *, verify_current=True
     return _effective_website_entries_v42(root, baseline, **arguments)
 
 
-def publication_members(root: Path, entries: dict) -> list[dict]:
+def _publication_members_v43(root: Path, entries: dict) -> list[dict]:
     """Keep the prior allowlist and permit the single frozen replacement portrait."""
     if (root/'provenance/platform-presentation.v43.json').is_file():
         from home_portrait_replacement_publication import publication_members as portrait_publication_members
         return portrait_publication_members(root, entries, _publication_members_v42)
     return _publication_members_v42(root, entries)
+
+
+def effective_website_entries(root: Path, baseline: dict, *, verify_current=True,
+                              revision_chain=None, include_presentation=True) -> tuple[dict, dict]:
+    """Replay the complete v43 chain before the bounded Lifespan format fix."""
+    arguments = {'verify_current': verify_current, 'revision_chain': revision_chain,
+                 'include_presentation': include_presentation}
+    if (root/'provenance/platform-presentation.v44.json').is_file():
+        from home_lifespan_format_publication import apply
+        return apply(root, baseline, _effective_website_entries_v43, **arguments)
+    return _effective_website_entries_v43(root, baseline, **arguments)
+
+
+def publication_members(root: Path, entries: dict) -> list[dict]:
+    """Use the exact v43 view while retaining the complete existing allowlist."""
+    if (root/'provenance/platform-presentation.v44.json').is_file():
+        from home_lifespan_format_publication import publication_members as lifespan_publication_members
+        return lifespan_publication_members(root, entries, _publication_members_v43)
+    return _publication_members_v43(root, entries)
