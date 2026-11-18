@@ -4239,7 +4239,7 @@ def _effective_website_entries_v38(root: Path, baseline: dict, *, verify_current
     return _effective_website_entries_v37(root, baseline, **arguments)
 
 
-def effective_website_entries(root: Path, baseline: dict, *, verify_current=True,
+def _effective_website_entries_v39(root: Path, baseline: dict, *, verify_current=True,
                               revision_chain=None, include_presentation=True) -> tuple[dict, dict]:
     """Replay the exact prior chain before the bounded achievement display."""
     arguments = {'verify_current': verify_current, 'revision_chain': revision_chain,
@@ -4248,3 +4248,14 @@ def effective_website_entries(root: Path, baseline: dict, *, verify_current=True
         from achievement_display_publication import apply
         return apply(root, baseline, _effective_website_entries_v38, **arguments)
     return _effective_website_entries_v38(root, baseline, **arguments)
+
+
+def effective_website_entries(root: Path, baseline: dict, *, verify_current=True,
+                              revision_chain=None, include_presentation=True) -> tuple[dict, dict]:
+    """Replay the complete v39 chain before the bounded A03 navigation fix."""
+    arguments = {'verify_current': verify_current, 'revision_chain': revision_chain,
+                 'include_presentation': include_presentation}
+    if (root/'provenance/platform-presentation.v40.json').is_file():
+        from a03_navigation_publication import apply
+        return apply(root, baseline, _effective_website_entries_v39, **arguments)
+    return _effective_website_entries_v39(root, baseline, **arguments)

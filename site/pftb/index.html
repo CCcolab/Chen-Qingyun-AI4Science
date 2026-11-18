@@ -1579,7 +1579,9 @@ L 235.0 231.5
 </section></details></section>
 </main>
 
-<footer><div class="wrap"><p>历史研究与后续方法分别归原论文作者。图示为连接关系示意，原表数值按历史记录理解。</p></div></footer>
+<footer><div class="wrap"><p>历史研究与后续方法分别归原论文作者。图示为连接关系示意，原表数值按历史记录理解。</p>
+<nav id="a03-footer-navigation" aria-label="A03（全氟叔丁基（PFtB）化学）页末返回" style="display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:16px"><a href="../index.html">返回平台首页</a><a href="../achievements/index.html#line-a03">返回成果汇总</a><a href="../topics/index.html">返回专题索引</a><a href="#top">返回本页页首</a></nav>
+</div></footer>
 
 <!-- 来源/语境详情弹窗（无脚本时不显示；同等信息已在正文完整给出） -->
 <div class="modal-backdrop cq-display-source-modal" id="modal-backdrop" hidden="">
@@ -1641,6 +1643,16 @@ L 235.0 231.5
     var el = document.getElementById(id);
     if(el){ el.scrollIntoView({behavior:'smooth',block:'start'}); }
   }
+  function revealChapter(){
+    var panel = $('.chapter-panel[data-chapter-panel="'+state.ch+'"]');
+    if(!panel) return;
+    var node = panel.parentElement;
+    while(node){
+      if(node.tagName==='DETAILS') node.open = true;
+      node = node.parentElement;
+    }
+    scrollToId('arguments');
+  }
 
   function renderChapter(){
     $all('.tab-btn').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.chapter===state.ch ? 'true':'false'); });
@@ -1677,8 +1689,12 @@ L 235.0 231.5
       e.preventDefault();
       state.ch = a.dataset.gotoChapter; state.view='all';
       renderChapter(); writeHash(true);
-      scrollToId('arguments');
+      revealChapter();
     });
+  });
+  $all('a[href="#arguments"]').forEach(function(a){
+    if(a.hasAttribute('data-goto-chapter')) return;
+    a.addEventListener('click', function(){ revealChapter(); });
   });
   // Ordinary fragment destinations remain native, including source citations and
   // newly added representative studies. Chapter-state links keep their own form.
@@ -1689,15 +1705,17 @@ L 235.0 231.5
     return document.getElementById(id) ? id : null;
   }
   function restoreLocation(){
-    if(parseHash()){ renderAll(); return; }
+    if(parseHash()){ renderAll(); revealChapter(); return; }
     var id = ordinaryAnchor();
+    if(id==='arguments'){ revealChapter(); return; }
     if(id) requestAnimationFrame(function(){ scrollToId(id); });
   }
   window.addEventListener('popstate', restoreLocation);
   window.addEventListener('hashchange', restoreLocation);
   var initialAnchor = ordinaryAnchor();
-  parseHash(); renderAll();
-  if(initialAnchor){ requestAnimationFrame(function(){ scrollToId(initialAnchor); }); }
+  var initialChapterState = parseHash(); renderAll();
+  if(initialChapterState || initialAnchor==='arguments'){ revealChapter(); }
+  else if(initialAnchor){ requestAnimationFrame(function(){ scrollToId(initialAnchor); }); }
   else { writeHash(false); }
 
   /* ---------- 模态弹窗：来源 / 语境（焦点限制、Esc、焦点返回） ---------- */
@@ -1843,7 +1861,7 @@ L 235.0 231.5
   DATA.chapters.forEach(function(c){
     index.push({kind:'论证章节', title:c.id+' '+c.title, text:[c.question,c.observation,c.interpretation,c.conditions,c.boundary,c.locator].join(' '), act:function(){
       state.ch=c.id; state.view='all'; renderChapter(); writeHash(true);
-      scrollToId('arguments'); // 仅滚动，保留 #s/... 状态，刷新不丢章节
+      revealChapter(); // 展开所选章节，保留 #s/... 状态，刷新不丢章节
     }});
   });
   DATA.reception_contexts.forEach(function(c){
