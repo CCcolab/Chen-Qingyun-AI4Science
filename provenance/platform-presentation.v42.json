@@ -2564,8 +2564,8 @@
   },
   "publication_module": {
     "path": "scripts/home_portrait_publication.py",
-    "sha256": "ab95cdbfaa13f6553a35723a2edce736f27b411fbff6005474687afa9b843547",
-    "bytes": 159793
+    "sha256": "0fc97550c5a755dff789c86d9013f0b0e48c69a0e7dd0c77264315b91d0de288",
+    "bytes": 160185
   },
   "approved_HTML_edits": [
     {
@@ -2644,8 +2644,8 @@
       "path": "scripts/check_site.py",
       "old_sha256": "f9bc2ee9a2dfc753eeba1fb45ab86a916a9d6c7514f3c6a61fe6388decf76765",
       "old_bytes": 23611,
-      "new_sha256": "3c42784144a99eed10272da266e1b4c994a58bc49616087d4a9f5c390fa35286",
-      "new_bytes": 23718,
+      "new_sha256": "4d8483c18752571d0c7654b768175e3fe370a05d92679077a3c7bf137b2c4b97",
+      "new_bytes": 23727,
       "edits": [
         {
           "old_offset": 4964,
@@ -2654,6 +2654,10 @@
         {
           "old_offset": 8638,
           "replacement": 6
+        },
+        {
+          "old_offset": 17044,
+          "replacement": 7
         }
       ]
     }
@@ -2686,6 +2690,10 @@
     {
       "old": "            \"json_count\": len(publish_members)-expected_html_count,\n",
       "new": "            \"json_count\": sum(row[\"path\"].endswith(\".json\") for row in publish_members),\n            \"asset_count\": sum(row[\"path\"].endswith(\".png\") for row in publish_members),\n"
+    },
+    {
+      "old": "            if target not in actual or Path(target).suffix not in {\".html\", \".json\"}:\n",
+      "new": "            if target not in actual or target not in {row['path'] for row in publish_members}:\n"
     }
   ]
 }

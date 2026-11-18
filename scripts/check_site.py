@@ -304,7 +304,7 @@ def inspect_site(*, require_node: bool = False) -> dict:
             if path.endswith("/") or (SITE / target).is_dir():
                 target = posixpath.join(target, "index.html")
             item["target"] = target
-            if target not in actual or Path(target).suffix not in {".html", ".json"}:
+            if target not in actual or target not in {row['path'] for row in publish_members}:
                 item.update(status="failed", reason="missing_or_unpublished_target")
                 errors.append(f"Missing published target in {source}: {value} -> {target}")
                 return

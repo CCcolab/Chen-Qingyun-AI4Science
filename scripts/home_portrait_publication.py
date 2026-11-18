@@ -1282,8 +1282,8 @@ PREDECESSOR_FILES = {'.gitattributes': ('411e439fc63c1b5276df34656b5c83c4ce69871
 REVIEWED_FILES = {'site/index.html': ('98f2c03031fcad9166958e1ae192f7d53a0b6ad9d476d80e5cf15094d6b47ca6', 212589),
  'scripts/a01_publication_contract.py': ('9d1eaa0bf98b72da2a04f86a7c100c540a897a5708d47d2281745c8353102379',
                                          317270),
- 'scripts/check_site.py': ('3c42784144a99eed10272da266e1b4c994a58bc49616087d4a9f5c390fa35286',
-                           23718)}
+ 'scripts/check_site.py': ('4d8483c18752571d0c7654b768175e3fe370a05d92679077a3c7bf137b2c4b97',
+                           23727)}
 HTML_EDITS = [{'label': 'official portrait replaces abstract hero visual',
   'old': '<div class="hero-visual" aria-label="以生平、学术成就和传承为线索的抽象视觉图形"><span class="orbit-label '
          'ol1">ACHIEVEMENTS / 成就</span><div class="orb" aria-hidden="true"></div><span '
@@ -1323,6 +1323,8 @@ PORTRAIT_TAG = '<img src="assets/chen-qingyun-cas.png" width="503" height="357" 
 CHECKER_COUNTS_OLD = '"json_count": len(publish_members)-expected_html_count,'
 CHECKER_COUNTS_NEW = ('"json_count": sum(row["path"].endswith(".json") for row in publish_members),\n'
                       '            "asset_count": sum(row["path"].endswith(".png") for row in publish_members),')
+CHECKER_LINKS_OLD = 'if target not in actual or Path(target).suffix not in {".html", ".json"}:'
+CHECKER_LINKS_NEW = "if target not in actual or target not in {row['path'] for row in publish_members}:"
 
 _CACHE: dict[str, Path] = {}
 _LEGACY_CACHE: dict[tuple, tuple] = {}
@@ -1445,8 +1447,10 @@ def _check_integrations(root: Path, indexed: dict, pool: list) -> None:
     counts_old, counts_new = CHECKER_COUNTS_OLD.encode(), CHECKER_COUNTS_NEW.encode()
     if original.count(old) != 1 or expected.count(counts_old) != 1:
         raise ValueError('Missing unique portrait site-checker integration anchors')
-    if expected.replace(counts_old, counts_new, 1) != current:
-        raise ValueError('Portrait site checker exceeds the fixed import and member-count corrections')
+    expected = expected.replace(counts_old, counts_new, 1)
+    links_old, links_new = CHECKER_LINKS_OLD.encode(), CHECKER_LINKS_NEW.encode()
+    if expected.count(links_old) != 1 or expected.replace(links_old, links_new, 1) != current:
+        raise ValueError('Portrait site checker exceeds the fixed import, member-count and published-target corrections')
 
 
 def _validate_portrait_policy() -> None:
