@@ -4250,7 +4250,7 @@ def _effective_website_entries_v39(root: Path, baseline: dict, *, verify_current
     return _effective_website_entries_v38(root, baseline, **arguments)
 
 
-def effective_website_entries(root: Path, baseline: dict, *, verify_current=True,
+def _effective_website_entries_v40(root: Path, baseline: dict, *, verify_current=True,
                               revision_chain=None, include_presentation=True) -> tuple[dict, dict]:
     """Replay the complete v39 chain before the bounded A03 navigation fix."""
     arguments = {'verify_current': verify_current, 'revision_chain': revision_chain,
@@ -4259,3 +4259,14 @@ def effective_website_entries(root: Path, baseline: dict, *, verify_current=True
         from a03_navigation_publication import apply
         return apply(root, baseline, _effective_website_entries_v39, **arguments)
     return _effective_website_entries_v39(root, baseline, **arguments)
+
+
+def effective_website_entries(root: Path, baseline: dict, *, verify_current=True,
+                              revision_chain=None, include_presentation=True) -> tuple[dict, dict]:
+    """Replay the complete v40 chain before the bounded Home entry order fix."""
+    arguments = {'verify_current': verify_current, 'revision_chain': revision_chain,
+                 'include_presentation': include_presentation}
+    if (root/'provenance/platform-presentation.v41.json').is_file():
+        from home_entry_order_publication import apply
+        return apply(root, baseline, _effective_website_entries_v40, **arguments)
+    return _effective_website_entries_v40(root, baseline, **arguments)
