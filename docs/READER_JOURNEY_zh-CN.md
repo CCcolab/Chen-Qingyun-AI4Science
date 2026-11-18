@@ -14,7 +14,7 @@
 | A08（交叉研究与晚年拓展） | [由绿色转为棕色：20π isophlorin怎样成为可分离的研究对象](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#a08-representative-study) | [原文图解（脱氧氟化分支）](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/deoxyfluorination/index.html#a08-deep-reading) |
 | A09（学科建设与人才培养） | [从会做实验到提出问题：自主选题、写作与共同带教](https://cccolab.github.io/Chen-Qingyun-AI4Science/people/index.html#a09-representative-study) | [原文图解](https://cccolab.github.io/Chen-Qingyun-AI4Science/people/index.html#a09-deep-reading) |
 
-A02的1980年调聚论文与早期六氟丙烯工作分别呈现；A05回看1978年F-115的合成与鉴定。A06的磺酸酯和A08的脱氧氟化是各自成果线的分支，入口明确对象与返回路径。
+单体、氟橡胶与氟油成果线中，1980年调聚论文与早期六氟丙烯工作分别呈现；制冷剂成果线回看1978年F-115的合成与鉴定。磺酸酯与脱氧氟化的分支入口明确对象与返回路径。
 
 图解用于读懂原作者的结构、实验记录与论证。完整出处、原文数据及解释范围随专题保存；重复背景放入可展开的补充阅读。合作与育人故事保留具名人物、传记页码和原文出处。
 

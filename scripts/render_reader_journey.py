@@ -137,7 +137,7 @@ def render_document(root: Path) -> str:
         out.append('| ' + row['id'] + '（' + row['name'] + '） | [' + row['representative_title']
                    + '](' + base + row['main_route'] + '#' + row['representative_anchor'] + ') | ['
                    + row['deep_label'] + '](' + base + row['deep_route'] + '#' + row['deep_anchor'] + ') |')
-    out += ['', 'A02的1980年调聚论文与早期六氟丙烯工作分别呈现；A05回看1978年F-115的合成与鉴定。A06的磺酸酯和A08的脱氧氟化是各自成果线的分支，入口明确对象与返回路径。', '',
+    out += ['', '单体、氟橡胶与氟油成果线中，1980年调聚论文与早期六氟丙烯工作分别呈现；制冷剂成果线回看1978年F-115的合成与鉴定。磺酸酯与脱氧氟化的分支入口明确对象与返回路径。', '',
             '图解用于读懂原作者的结构、实验记录与论证。完整出处、原文数据及解释范围随专题保存；重复背景放入可展开的补充阅读。合作与育人故事保留具名人物、传记页码和原文出处。', '',
             '历史成果归原作者和实际参与者。平台新增图解与释读属于AI辅助整理，保持review_required、release_eligible=false；文献整理不称为实验复现或机理验证。M0与Nemotron训练继续暂停。', '']
     return '\n'.join(out)
@@ -174,6 +174,10 @@ def inspect_reader_journey(root: Path) -> dict:
                                        (row['main_route'], row['story_anchor'])]:
                     if link(route, target, anchor) not in parsed[route].links:
                         errors.append('Topic navigation lost an intended reading: ' + route + '/' + anchor)
+        from check_navigation import inspect_navigation
+        from public_line_labels import inspect_line_labels
+        errors.extend('Navigation: ' + e for e in inspect_navigation(root)['errors'])
+        errors.extend(inspect_line_labels(root)['errors'])
         if (root / DOCUMENT).read_bytes() != render_document(root).encode('utf-8'):
             errors.append('Reader document differs from its reviewed source')
     except (OSError, ValueError, KeyError, TypeError) as exc:
