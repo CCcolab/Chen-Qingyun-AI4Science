@@ -2409,7 +2409,7 @@ def apply_public_line_labels(root: Path, entries: dict, previous_report: dict) -
         {**report, 'presentation_chain': [*previous_report['presentation_chain'], report]})
 
 
-def publication_members(root: Path, entries: dict) -> list[dict]:
+def _publication_members_v41(root: Path, entries: dict) -> list[dict]:
     """Return the exact Pages allowlist, including only authorized new routes.
 
     The original 21-member/15-HTML baseline remains immutable. Repository
@@ -4261,7 +4261,7 @@ def _effective_website_entries_v40(root: Path, baseline: dict, *, verify_current
     return _effective_website_entries_v39(root, baseline, **arguments)
 
 
-def effective_website_entries(root: Path, baseline: dict, *, verify_current=True,
+def _effective_website_entries_v41(root: Path, baseline: dict, *, verify_current=True,
                               revision_chain=None, include_presentation=True) -> tuple[dict, dict]:
     """Replay the complete v40 chain before the bounded Home entry order fix."""
     arguments = {'verify_current': verify_current, 'revision_chain': revision_chain,
@@ -4270,3 +4270,22 @@ def effective_website_entries(root: Path, baseline: dict, *, verify_current=True
         from home_entry_order_publication import apply
         return apply(root, baseline, _effective_website_entries_v40, **arguments)
     return _effective_website_entries_v40(root, baseline, **arguments)
+
+
+def effective_website_entries(root: Path, baseline: dict, *, verify_current=True,
+                              revision_chain=None, include_presentation=True) -> tuple[dict, dict]:
+    """Replay the complete v41 chain before the bounded Homepage portrait fix."""
+    arguments = {'verify_current': verify_current, 'revision_chain': revision_chain,
+                 'include_presentation': include_presentation}
+    if (root/'provenance/platform-presentation.v42.json').is_file():
+        from home_portrait_publication import apply
+        return apply(root, baseline, _effective_website_entries_v41, **arguments)
+    return _effective_website_entries_v41(root, baseline, **arguments)
+
+
+def publication_members(root: Path, entries: dict) -> list[dict]:
+    """Keep the prior allowlist and permit the single frozen homepage portrait."""
+    if (root/'provenance/platform-presentation.v42.json').is_file():
+        from home_portrait_publication import publication_members as portrait_publication_members
+        return portrait_publication_members(root, entries, _publication_members_v41)
+    return _publication_members_v41(root, entries)

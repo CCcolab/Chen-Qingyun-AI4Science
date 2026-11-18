@@ -117,7 +117,7 @@ def inspect_site(*, require_node: bool = False) -> dict:
             errors.extend("Navigation: " + message for message in navigation["errors"])
         # Only source-rendered historical displays use exact, hash-checked v35
         # data. Navigation, labels, current HTML/JSON/JS and links remain current.
-        from home_entry_order_publication import historical_root
+        from home_portrait_publication import historical_root
         history_root = historical_root(ROOT)
         if (ROOT / "content/heritage-20261114.v1.json").is_file():
             from render_heritage import inspect_heritage
@@ -173,7 +173,8 @@ def inspect_site(*, require_node: bool = False) -> dict:
         publish_members = publication_members(ROOT, expected)
         expected_html_count = sum(row["path"].endswith(".html") for row in publish_members)
         report["publication_allowlist"] = {"html_count": expected_html_count,
-            "json_count": len(publish_members)-expected_html_count,
+            "json_count": sum(row["path"].endswith(".json") for row in publish_members),
+            "asset_count": sum(row["path"].endswith(".png") for row in publish_members),
             "member_count_with_marker": len(publish_members)+1,
             "paths": [row["path"] for row in publish_members]}
         report["website_revision"] = revision
