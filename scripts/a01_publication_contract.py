@@ -4206,7 +4206,7 @@ def _effective_website_entries_v35(root: Path, baseline: dict, *, verify_current
         'release_eligible': False, 'presentation': presentation}
 
 
-def effective_website_entries(root: Path, baseline: dict, *, verify_current=True,
+def _effective_website_entries_v36(root: Path, baseline: dict, *, verify_current=True,
                               revision_chain=None, include_presentation=True) -> tuple[dict, dict]:
     """Replay v1-v35 on exact data, then apply only the bounded reader layer."""
     arguments = {'verify_current': verify_current, 'revision_chain': revision_chain,
@@ -4215,3 +4215,14 @@ def effective_website_entries(root: Path, baseline: dict, *, verify_current=True
         from reader_navigation_publication import apply
         return apply(root, baseline, _effective_website_entries_v35, **arguments)
     return _effective_website_entries_v35(root, baseline, **arguments)
+
+
+def effective_website_entries(root: Path, baseline: dict, *, verify_current=True,
+                              revision_chain=None, include_presentation=True) -> tuple[dict, dict]:
+    """Replay the exact prior chain before the bounded academic reading layer."""
+    arguments = {'verify_current': verify_current, 'revision_chain': revision_chain,
+                 'include_presentation': include_presentation}
+    if (root/'provenance/platform-presentation.v37.json').is_file():
+        from academic_deepening_publication import apply
+        return apply(root, baseline, _effective_website_entries_v36, **arguments)
+    return _effective_website_entries_v36(root, baseline, **arguments)

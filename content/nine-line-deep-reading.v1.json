@@ -1,0 +1,1437 @@
+{
+  "schema_version": "1.0",
+  "title": "九条成果线：深入原文与图解",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "M0_status": "paused",
+  "Nemotron_training_status": "paused",
+  "items": [
+    {
+      "id": "A01",
+      "line_name": "全氟酮化学：六氟丙酮与双酚AF",
+      "route": "topics/early-fluoroketones/index.html",
+      "anchor": "a01-deep-reading",
+      "title": "分篇读反应：新产物怎样连到可比较的已知物",
+      "question": "在分析手段有限的年代，怎样从一项转化逐步判断新产物的身份？",
+      "sections": [
+        {
+          "heading": "把物性困惑变成化学问题",
+          "text": "传记27页记述，陈庆云早期研究中曾因异常物性反复讨论产物身份。原论文提供了另一种进入其研究方法的途径：不只看最终结构式，而看怎样把新物质继续转化，得到能够与已知样品比较的产物。下面三张卡片按篇分别读，编号不跨篇通用。",
+          "identity": "platform_reading",
+          "source_refs": [
+            {
+              "id": "A01-HIST-BIO",
+              "locator": "传记27页"
+            },
+            {
+              "id": "A01-HIST-P1960",
+              "locator": "英译648、651页"
+            }
+          ]
+        },
+        {
+          "heading": "第一报：裂解之后分别鉴定两端",
+          "text": "第一报的炔醇V经水合得到羟基酮VII。加热VII后，作者把释放的六氟丙酮转成氨基脲腙，又从残液得到苯乙酮的2,4-二硝基苯腙；两者分别与已知样品混熔无降点。讨论中的C—C裂解因而有两条产物鉴定记录相支撑，而非仅凭一个推测结构。",
+          "identity": "original_observation",
+          "source_refs": [
+            {
+              "id": "A01-HIST-P1960",
+              "locator": "英译648页反应式、651页VII及裂解实验"
+            }
+          ]
+        },
+        {
+          "heading": "133卷：让加成产物走向已知氨基酸",
+          "text": "133卷论文的I是六氟异丙叉丙二酸二乙酯，与氨反应得到V。作者再以水解、脱羧把V连到已知六氟缬氨酸VI，并记录与已知样品混熔无降点。这条I→V→VI的关系用于支持加成产物的结构及加成方向，不是第一报中同字母化合物的延续。",
+          "identity": "original_observation",
+          "source_refs": [
+            {
+              "id": "CQ-H12",
+              "locator": "1113页I定义；1114页I→V→VI；1116页VI鉴定"
+            }
+          ]
+        },
+        {
+          "heading": "134卷：从制备进入开环产物网络",
+          "text": "另一篇134卷论文中，I是不饱和酸，IV才是含氟噁唑酮。I可闭环为IV；表1又记录IV与水、醇、氨、苯胺等形成的具体产物。先认清本篇编号，再沿制备和转化关系阅读，才能把观察、产物归属与作者对反应性的解释分开。",
+          "identity": "platform_reading",
+          "source_refs": [
+            {
+              "id": "CQ-R01",
+              "locator": "1367页I/IV制备关系；1368页表1"
+            }
+          ]
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "caption": "三篇论文的独立读图卡：每卡内部是一条转化或鉴定链",
+        "steps": [
+          {
+            "label": "第一报｜V、VII",
+            "text": "炔醇V → 羟基酮VII → 六氟丙酮与苯乙酮；分别制成衍生物作混熔比较。",
+            "source_refs": [
+              {
+                "id": "A01-HIST-P1960",
+                "locator": "648、651页"
+              }
+            ]
+          },
+          {
+            "label": "Doklady 133卷｜I、V、VI",
+            "text": "不饱和酯I → 氨加成产物V → 已知六氟缬氨酸VI，作为结构归属的化学佐证。",
+            "source_refs": [
+              {
+                "id": "CQ-H12",
+                "locator": "1114、1116页"
+              }
+            ]
+          },
+          {
+            "label": "Doklady 134卷｜I、IV",
+            "text": "不饱和酸I → 噁唑酮IV；再读表1中IV各自的开环产物，不能串接到前两篇同号化合物。",
+            "source_refs": [
+              {
+                "id": "CQ-R01",
+                "locator": "1367–1368页"
+              }
+            ]
+          }
+        ],
+        "notes": [
+          "三卡并列，不画跨卡反应箭头；所示为文献转化/鉴定关系，不是基元机理或能量路径。",
+          "第一报、133卷及134卷各有自己的编号；图中I、IV、V、VII不作跨篇同一物处理。"
+        ]
+      },
+      "cooperation": {
+        "text": "第一报与133卷论文均为陈庆云、克鲁扬茨、甘巴里扬的共同研究，但作者排列不同；134卷另有E. M. Rokhlin共同署名。图解保留各篇作者，不把其中某一步分派给某个人。",
+        "source_refs": [
+          {
+            "id": "A01-HIST-P1960",
+            "locator": "647页作者栏"
+          },
+          {
+            "id": "CQ-H12",
+            "locator": "1113页作者栏"
+          },
+          {
+            "id": "CQ-R01",
+            "locator": "1367页作者栏"
+          }
+        ]
+      },
+      "meaning": "开拓性研究不只留下新化合物名称，也留下如何借转化、衍生物和样品比较组织证据的思路。这种分篇阅读能把原作者的具体化学工作带到今天的读者面前。",
+      "boundaries": [
+        "混熔与化学转化按历史实验的证据范围理解，不称平台重新鉴定结构或完成实验复现。",
+        "图解不涉及新收率计算；第一报29g/90.5%与117491号说明书21.7g/98%仍各按原文保留。",
+        "噁唑酮历史转化与现代M0诊断分开；不由图解认定开环势垒或机制。"
+      ],
+      "sources": [
+        {
+          "id": "A01-HIST-BIO",
+          "title": "朱晶、刘超：《氟缘笃志：陈庆云传》",
+          "kind": "传记及具名回忆转引",
+          "locator": "27页：当时分析条件与产物身份的讨论",
+          "url": null
+        },
+        {
+          "id": "A01-HIST-P1960",
+          "title": "Fluorinated ketones，Communication 1（1960）",
+          "kind": "历史论文英译原页",
+          "locator": "647页作者；648、651页反应和鉴定链",
+          "url": "https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n100"
+        },
+        {
+          "id": "CQ-H12",
+          "title": "双三氟甲基硝基乙烯及六氟异丙叉丙二酸酯中的键共轭",
+          "kind": "1960年俄文原刊",
+          "locator": "Doklady133(5)：1113–1116；I→V→VI见1114、1116页",
+          "url": "https://www.mathnet.ru/links/45339c5078a0fc0eab6eab0df3527ff9/dan23922.pdf"
+        },
+        {
+          "id": "CQ-R01",
+          "title": "2-苯基-4-六氟异丙叉噁唑酮-5",
+          "kind": "1960年俄文原刊",
+          "locator": "Doklady134(6)：1367–1370；本例1367–1368页",
+          "url": "https://www.mathnet.ru/links/5f0f232ab0ba1fe58f1d88f43738bbce/dan24193.pdf"
+        }
+      ],
+      "scientific_review_status": "review_required",
+      "release_eligible": false,
+      "body_character_count": 619,
+      "main_route": "topics/early-fluoroketones/index.html"
+    },
+    {
+      "id": "A02",
+      "line_name": "含氟单体、氟橡胶与氟油",
+      "route": "topics/fluoromonomers/index.html",
+      "anchor": "a02-deep-reading",
+      "title": "从调聚得到骨架，再利用端基继续转化",
+      "question": "同一种含氟烯烃，怎样因调聚剂不同形成两类可继续利用的分子？",
+      "sections": [
+        {
+          "heading": "让低分子量产物成为可研究的对象",
+          "text": "在传记所述单体与材料工作之后，1980年论文把问题落在偏氟乙烯的调聚与产物本身。四氯化碳体系分离出CCl₃(CH₂CF₂)ₙCl系列（n=1–6）；全氟叔丁基碘体系则得到(CF₃)₃C(CH₂CF₂)ₙI（n=1、2）。分馏、表征和后续转化一起组成研究，不只是得到一份混合物。",
+          "identity": "original_observation",
+          "source_refs": [
+            {
+              "id": "HERITAGE-S01",
+              "locator": "传记37页，作单体/材料研究背景"
+            },
+            {
+              "id": "A02-P1980",
+              "locator": "175页摘要、研究起点与结构；179页分离实验"
+            }
+          ]
+        },
+        {
+          "heading": "用不同证据判断加成方向",
+          "text": "作者比较单加成可能形成的结构。四氯化碳体系分离、氟核磁及脱氯化氢反应支持正文化合物1；过渡馏分的弱峰只被解释为可能有极少量反向异构体。全氟叔丁基碘的单加成物3则结合元素分析、光谱与转化归属，作者以约275毫微米的吸收支持—CF₂I端基，而非—CH₂I端基。",
+          "identity": "original_observation",
+          "source_refs": [
+            {
+              "id": "A02-P1980",
+              "locator": "175页1–4结构；176页定位讨论；179页表征"
+            }
+          ]
+        },
+        {
+          "heading": "同一个端基，进入不同的化学用途",
+          "text": "以正文单加成物3为例：三乙胺处理得到含氟烯烃7；二乙胺作用并经水处理，则得到酰胺8。这里是从同一底物出发的不同转化，不能把7和8画成已分离后连续操作的单一路线。正文把中间过程写成推测图式，实际分离产物与作者解释应分层阅读。",
+          "identity": "platform_reading",
+          "source_refs": [
+            {
+              "id": "A02-P1980",
+              "locator": "176页末至177页上部，3、7、8及方括号图式"
+            }
+          ]
+        },
+        {
+          "heading": "从新骨架到可继续使用的中间体",
+          "text": "单加成与二加成物各有自己的分离质量和物性，不能只凭克数判断哪一种反应更快或选择性更高。原作的重要推进，是把调聚产物变成能比较结构、讨论加成方向并继续制取其他分子的对象；这属于原作者的合成和反应研究。",
+          "identity": "platform_reading",
+          "source_refs": [
+            {
+              "id": "A02-P1980",
+              "locator": "177页转化；179页原报分离及物性"
+            }
+          ]
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "caption": "1980年原作的研究链：两种调聚剂—分离与鉴定—端基转化",
+        "steps": [
+          {
+            "label": "两类调聚体系",
+            "text": "偏氟乙烯分别与CCl₄或全氟叔丁基碘反应，得到不同端基的低分子量系列。",
+            "source_refs": [
+              {
+                "id": "A02-P1980",
+                "locator": "175页"
+              }
+            ]
+          },
+          {
+            "label": "分开产物并判断连接方式",
+            "text": "结合分馏、核磁、元素分析和化学转化；碘体系单加成物以正文3标识。",
+            "source_refs": [
+              {
+                "id": "A02-P1980",
+                "locator": "176、179页"
+              }
+            ]
+          },
+          {
+            "label": "仅以单加成物3为例的不同转化",
+            "text": "3用三乙胺得烯烃7；3与二乙胺作用并经水处理得酰胺8，两支分别理解。",
+            "source_refs": [
+              {
+                "id": "A02-P1980",
+                "locator": "176–177页"
+              }
+            ]
+          }
+        ],
+        "notes": [
+          "编号采用中文正文；英文摘要另有编号，不能把摘要编号直接搬入本图。",
+          "末卡含两条从3出发的支路，不是已证实的7→8连续实验；方括号物种不是本平台观测。"
+        ]
+      },
+      "table": {
+        "caption": "同一原报碘体系分离出的两种产物：只列原文质量与物性",
+        "columns": [
+          "产物",
+          "原报分离质量",
+          "原报沸点/压力"
+        ],
+        "rows": [
+          [
+            "(CF₃)₃CCH₂CF₂I（单加成物3）",
+            "8.3 g",
+            "47.5–48.0°C／50毫米"
+          ],
+          [
+            "(CF₃)₃C(CH₂CF₂)₂I（二加成物）",
+            "6.5 g",
+            "88–89°C／50毫米"
+          ]
+        ],
+        "source_refs": [
+          {
+            "id": "A02-P1980",
+            "locator": "179页“二、偏氟乙烯与全氟叔丁基碘的调聚”"
+          }
+        ]
+      },
+      "cooperation": {
+        "text": "这篇研究由陈庆云、马振中、蒋锡夔、张元发、贾世茂共同署名。文中同时使用多种表征及化学转化组织证据，但未逐项分派个人任务，不从作者顺序补写实验分工。",
+        "source_refs": [
+          {
+            "id": "A02-P1980",
+            "locator": "175页作者栏；183页英文作者栏"
+          }
+        ]
+      },
+      "meaning": "这项工作展示了材料相关反应如何继续发展为基础合成研究：形成分子系列、判断连接方式，再利用端基构建新的化学对象。",
+      "boundaries": [
+        "1980年偏氟乙烯调聚不是早期六氟丙烯试制或航天氟溴油配方/物性记录。",
+        "所列质量与沸点保持原报身份，不补算产率、速率、误差或选择性。",
+        "二乙胺按正文和英文摘要使用；中文摘要原印“乙二胺”的文内差异不据此改写为平台实验验证。",
+        "作者对极性因素及中间过程的解释不升级为本平台机理认证。"
+      ],
+      "sources": [
+        {
+          "id": "HERITAGE-S01",
+          "title": "朱晶、刘超：《氟缘笃志：陈庆云传》",
+          "kind": "传记历史叙述",
+          "locator": "37页：单体制取/分离与材料工作的背景",
+          "url": null
+        },
+        {
+          "id": "A02-P1980",
+          "title": "偏氟乙烯与全卤代烷烃的调聚反应及其产物的研究",
+          "kind": "原论文",
+          "locator": "陈庆云、马振中、蒋锡夔、张元发、贾世茂；《化学学报》1980，38(2)：175–184；本例175–177、179、183页",
+          "url": "https://sioc-journal.cn/Jwk_hxxb/CN/Y1980/V38/I2/175"
+        }
+      ],
+      "scientific_review_status": "review_required",
+      "release_eligible": false,
+      "body_character_count": 633,
+      "main_route": "topics/fluoromonomers/index.html"
+    },
+    {
+      "id": "A03",
+      "line_name": "全氟叔丁基（PFtB）化学",
+      "route": "pftb/index.html",
+      "anchor": "a03-deep-reading",
+      "title": "先看完整分子，再读1966年表1",
+      "question": "三种碘代物的结构怎样不同，原表的峰位又该怎样读？",
+      "sections": [
+        {
+          "heading": "三幅结构不是三个孤立基团",
+          "text": "原表对象为CF₃—CF₂—CF₂I、(CF₃)₂CFI及(CF₃)₃C—I。前两者分子式同为C₃F₇I而连接方式不同；第三者是C₄F₉I，碘连在带三个CF₃的碳上。下图按这些完整分子重绘连接关系，帮助辨认直链、支链和全氟叔丁基碘；它不是计算优化结构，也不表示实际键长或键角。",
+          "identity": "platform_reading",
+          "source_refs": [
+            {
+              "id": "PF01",
+              "locator": "21页表1三组化合物表头"
+            }
+          ]
+        },
+        {
+          "heading": "先分清λ高峰与ε两列",
+          "text": "原表每个化合物下面并列λ高峰和ε，不能把ε当成第二个峰位。读溶剂位移时，先在同一分子的λ列比较C₆H₁₄与乙醇或乙醚，再看表末直接列出的δ值。这里沿用原表数字作读图，不重算已完成的六项位移，也不把原记C₆H₁₄自行指定为某一异构体。",
+          "identity": "platform_reading",
+          "source_refs": [
+            {
+              "id": "PF01",
+              "locator": "21页表1列名、溶剂行及脚注d"
+            }
+          ]
+        },
+        {
+          "heading": "趋势与解释之间还有一个假设",
+          "text": "原作者借用Haszeldine关系，把给体溶剂中的蓝移与分子相互作用联系起来，再在该关系继续适用的假设下讨论诱导效应。原文同时估计立体与溶剂因素的影响。因此，看见三种分子的蓝移顺序，与得到任意反应都通用的孤立基团常数，并不是同一层结论。",
+          "identity": "author_interpretation",
+          "source_refs": [
+            {
+              "id": "PF01",
+              "locator": "20页Haszeldine关系、式(9)及页脚"
+            }
+          ]
+        },
+        {
+          "heading": "空白不能用零补上",
+          "text": "表中CCl₄行的横线处没有列数值，不能用零补上；论文还明确说明，未能取得CF₃CF₂I和CF₃I的有关数据。不能把未测分子添进图中，假装完成所有成员的直接比较。原始观察、经验关系与更广的外推应分别辨认，才看得清这项早期工作的实际论据。",
+          "identity": "platform_reading",
+          "source_refs": [
+            {
+              "id": "PF01",
+              "locator": "21页表1及其后首段"
+            }
+          ]
+        }
+      ],
+      "diagram": {
+        "kind": "molecules",
+        "caption": "表1三种完整中性碘代物的二维结构重绘；按原刊表头命名，非实验或计算几何",
+        "description": "从左至右：n-C3F7I，CF3–CF2–CF2I；i-C3F7I，(CF3)2CFI；t-C4F9I，(CF3)3C–I。",
+        "source_refs": [
+          {
+            "id": "PF01",
+            "locator": "21页表1表头；20页三分子比较"
+          }
+        ],
+        "notes": [
+          "仅作二维连接示意，不是电子结构或几何优化结果；取代基、阴离子与完整中性碘代物分别理解。",
+          "三种分子结构及碳数不同；图不构成严格单变量的任意反应效应比较。"
+        ],
+        "molecules": [
+          {
+            "label": "n-C3F7I",
+            "formula": "C3F7I",
+            "smiles": "FC(F)(F)C(F)(F)C(F)(F)I",
+            "inline_svg": "<svg role=\"img\" aria-labelledby=\"a03-n-iodide-title a03-n-iodide-desc\" version='1.1' baseProfile='full'\n              xmlns='http://www.w3.org/2000/svg'\n                      xmlns:rdkit='http://www.rdkit.org/xml'\n                      xmlns:xlink='http://www.w3.org/1999/xlink'\n                  xml:space='preserve'\nwidth='420px' height='270px' viewBox='0 0 420 270'><title id=\"a03-n-iodide-title\">n-C3F7I</title><desc id=\"a03-n-iodide-desc\">CF3–CF2–CF2I; 2D connectivity, not experimental or optimized geometry.</desc>\n<!-- END OF HEADER -->\n<rect style='opacity:1.0;fill:#FFFFFF;stroke:none' width='420.0' height='270.0' x='0.0' y='0.0'> </rect>\n<path class='bond-0 atom-0 atom-1' d='M 58.2,124.5 L 93.8,124.5' style='fill:none;fill-rule:evenodd;stroke:#33CCCC;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-0 atom-0 atom-1' d='M 93.8,124.5 L 129.4,124.5' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-1 atom-1 atom-2' d='M 129.4,124.5 L 129.4,91.2' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-1 atom-1 atom-2' d='M 129.4,91.2 L 129.4,57.9' style='fill:none;fill-rule:evenodd;stroke:#33CCCC;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-2 atom-1 atom-3' d='M 129.4,124.5 L 129.4,157.7' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-2 atom-1 atom-3' d='M 129.4,157.7 L 129.4,191.0' style='fill:none;fill-rule:evenodd;stroke:#33CCCC;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-3 atom-1 atom-4' d='M 129.4,124.5 L 210.0,124.5' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-4 atom-4 atom-5' d='M 210.0,124.5 L 210.0,157.7' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-4 atom-4 atom-5' d='M 210.0,157.7 L 210.0,191.0' style='fill:none;fill-rule:evenodd;stroke:#33CCCC;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-5 atom-4 atom-6' d='M 210.0,124.5 L 210.0,91.2' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-5 atom-4 atom-6' d='M 210.0,91.2 L 210.0,57.9' style='fill:none;fill-rule:evenodd;stroke:#33CCCC;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-6 atom-4 atom-7' d='M 210.0,124.5 L 290.6,124.5' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-7 atom-7 atom-8' d='M 290.6,124.5 L 326.2,124.5' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-7 atom-7 atom-8' d='M 326.2,124.5 L 361.8,124.5' style='fill:none;fill-rule:evenodd;stroke:#33CCCC;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-8 atom-7 atom-9' d='M 290.6,124.5 L 290.6,91.2' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-8 atom-7 atom-9' d='M 290.6,91.2 L 290.6,57.9' style='fill:none;fill-rule:evenodd;stroke:#33CCCC;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-9 atom-7 atom-10' d='M 290.6,124.5 L 290.6,157.7' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-9 atom-7 atom-10' d='M 290.6,157.7 L 290.6,191.0' style='fill:none;fill-rule:evenodd;stroke:#A01EEF;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='atom-0' d='M 42.0 113.1\nL 55.6 113.1\nL 55.6 115.7\nL 45.1 115.7\nL 45.1 122.6\nL 54.4 122.6\nL 54.4 125.2\nL 45.1 125.2\nL 45.1 135.9\nL 42.0 135.9\nL 42.0 113.1\n' fill='#33CCCC'/>\n<path class='atom-2' d='M 122.6 32.5\nL 136.2 32.5\nL 136.2 35.1\nL 125.7 35.1\nL 125.7 42.0\nL 135.0 42.0\nL 135.0 44.6\nL 125.7 44.6\nL 125.7 55.3\nL 122.6 55.3\nL 122.6 32.5\n' fill='#33CCCC'/>\n<path class='atom-3' d='M 122.6 193.7\nL 136.2 193.7\nL 136.2 196.3\nL 125.7 196.3\nL 125.7 203.2\nL 135.0 203.2\nL 135.0 205.9\nL 125.7 205.9\nL 125.7 216.5\nL 122.6 216.5\nL 122.6 193.7\n' fill='#33CCCC'/>\n<path class='atom-5' d='M 203.2 193.7\nL 216.8 193.7\nL 216.8 196.3\nL 206.3 196.3\nL 206.3 203.2\nL 215.6 203.2\nL 215.6 205.9\nL 206.3 205.9\nL 206.3 216.5\nL 203.2 216.5\nL 203.2 193.7\n' fill='#33CCCC'/>\n<path class='atom-6' d='M 203.2 32.5\nL 216.8 32.5\nL 216.8 35.1\nL 206.3 35.1\nL 206.3 42.0\nL 215.6 42.0\nL 215.6 44.6\nL 206.3 44.6\nL 206.3 55.3\nL 203.2 55.3\nL 203.2 32.5\n' fill='#33CCCC'/>\n<path class='atom-8' d='M 364.4 113.1\nL 378.0 113.1\nL 378.0 115.7\nL 367.5 115.7\nL 367.5 122.6\nL 376.8 122.6\nL 376.8 125.2\nL 367.5 125.2\nL 367.5 135.9\nL 364.4 135.9\nL 364.4 113.1\n' fill='#33CCCC'/>\n<path class='atom-9' d='M 283.8 32.5\nL 297.4 32.5\nL 297.4 35.1\nL 286.9 35.1\nL 286.9 42.0\nL 296.2 42.0\nL 296.2 44.6\nL 286.9 44.6\nL 286.9 55.3\nL 283.8 55.3\nL 283.8 32.5\n' fill='#33CCCC'/>\n<path class='atom-10' d='M 289.1 193.6\nL 292.1 193.6\nL 292.1 216.5\nL 289.1 216.5\nL 289.1 193.6\n' fill='#A01EEF'/>\n<path class='legend' d='M 187.6 234.5\nQ 189.0 234.5, 189.6 235.2\nQ 190.4 236.0, 190.4 237.4\nL 190.4 242.8\nL 188.8 242.8\nL 188.8 237.5\nQ 188.8 236.5, 188.5 236.1\nQ 188.1 235.7, 187.3 235.7\nQ 186.5 235.7, 185.9 236.0\nQ 185.3 236.3, 184.9 237.0\nL 184.9 242.8\nL 183.4 242.8\nL 183.4 234.6\nL 184.6 234.6\nL 184.8 235.8\nQ 185.9 234.5, 187.6 234.5\n' fill='#000000'/>\n<path class='legend' d='M 192.2 237.1\nL 198.1 237.1\nL 198.1 238.4\nL 192.2 238.4\nL 192.2 237.1\n' fill='#000000'/>\n<path class='legend' d='M 199.5 237.2\nQ 199.5 234.3, 200.9 232.9\nQ 202.2 231.4, 204.7 231.4\nQ 207.0 231.4, 208.3 233.0\nL 207.2 233.9\nQ 206.3 232.7, 204.7 232.7\nQ 203.0 232.7, 202.1 233.8\nQ 201.2 235.0, 201.2 237.2\nQ 201.2 239.4, 202.1 240.6\nQ 203.0 241.7, 204.9 241.7\nQ 206.1 241.7, 207.6 241.0\nL 208.0 242.2\nQ 207.4 242.5, 206.5 242.8\nQ 205.6 243.0, 204.6 243.0\nQ 202.2 243.0, 200.9 241.5\nQ 199.5 240.0, 199.5 237.2\n' fill='#000000'/>\n<path class='legend' d='M 215.0 236.9\nQ 216.1 237.2, 216.6 237.9\nQ 217.2 238.6, 217.2 239.7\nQ 217.2 240.7, 216.7 241.4\nQ 216.2 242.2, 215.3 242.6\nQ 214.5 243.0, 213.3 243.0\nQ 212.1 243.0, 211.2 242.6\nQ 210.3 242.2, 209.6 241.3\nL 210.5 240.4\nQ 211.2 241.1, 211.8 241.4\nQ 212.4 241.7, 213.3 241.7\nQ 214.3 241.7, 215.0 241.2\nQ 215.6 240.6, 215.6 239.7\nQ 215.6 238.6, 214.9 238.1\nQ 214.3 237.5, 212.9 237.5\nL 212.1 237.5\nL 212.1 236.4\nL 212.8 236.4\nQ 214.0 236.4, 214.7 235.8\nQ 215.3 235.3, 215.3 234.3\nQ 215.3 233.5, 214.8 233.1\nQ 214.2 232.7, 213.3 232.7\nQ 212.4 232.7, 211.8 233.0\nQ 211.2 233.3, 210.8 234.2\nL 209.7 233.6\nQ 210.1 232.6, 211.0 232.0\nQ 212.0 231.4, 213.3 231.4\nQ 215.0 231.4, 216.0 232.2\nQ 216.9 233.0, 216.9 234.3\nQ 216.9 235.2, 216.4 235.8\nQ 215.9 236.5, 215.0 236.9\n' fill='#000000'/>\n<path class='legend' d='M 218.8 231.5\nL 225.5 231.5\nL 225.5 232.8\nL 220.3 232.8\nL 220.3 236.2\nL 224.9 236.2\nL 224.9 237.6\nL 220.3 237.6\nL 220.3 242.8\nL 218.8 242.8\nL 218.8 231.5\n' fill='#000000'/>\n<path class='legend' d='M 232.4 232.8\nL 226.5 232.8\nL 226.5 231.5\nL 234.0 231.5\nL 234.0 232.6\nL 229.4 242.8\nL 227.9 242.8\nL 232.4 232.8\n' fill='#000000'/>\n<path class='legend' d='M 235.1 231.5\nL 236.6 231.5\nL 236.6 242.8\nL 235.1 242.8\nL 235.1 231.5\n' fill='#000000'/>\n</svg>\n",
+            "description": "CF3–CF2–CF2I",
+            "source_refs": [
+              {
+                "id": "PF01",
+                "locator": "21页表1表头"
+              }
+            ]
+          },
+          {
+            "label": "i-C3F7I",
+            "formula": "C3F7I",
+            "smiles": "FC(F)(F)C(I)(F)C(F)(F)F",
+            "inline_svg": "<svg role=\"img\" aria-labelledby=\"a03-i-iodide-title a03-i-iodide-desc\" version='1.1' baseProfile='full'\n              xmlns='http://www.w3.org/2000/svg'\n                      xmlns:rdkit='http://www.rdkit.org/xml'\n                      xmlns:xlink='http://www.w3.org/1999/xlink'\n                  xml:space='preserve'\nwidth='420px' height='270px' viewBox='0 0 420 270'><title id=\"a03-i-iodide-title\">i-C3F7I</title><desc id=\"a03-i-iodide-desc\">(CF3)2CFI; 2D connectivity, not experimental or optimized geometry.</desc>\n<!-- END OF HEADER -->\n<rect style='opacity:1.0;fill:#FFFFFF;stroke:none' width='420.0' height='270.0' x='0.0' y='0.0'> </rect>\n<path class='bond-0 atom-0 atom-1' d='M 58.2,124.5 L 93.8,124.5' style='fill:none;fill-rule:evenodd;stroke:#33CCCC;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-0 atom-0 atom-1' d='M 93.8,124.5 L 129.4,124.5' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-1 atom-1 atom-2' d='M 129.4,124.5 L 129.4,91.3' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-1 atom-1 atom-2' d='M 129.4,91.3 L 129.4,58.0' style='fill:none;fill-rule:evenodd;stroke:#33CCCC;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-2 atom-1 atom-3' d='M 129.4,124.5 L 129.4,157.8' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-2 atom-1 atom-3' d='M 129.4,157.8 L 129.4,191.1' style='fill:none;fill-rule:evenodd;stroke:#33CCCC;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-3 atom-1 atom-4' d='M 129.4,124.5 L 210.0,124.5' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-4 atom-4 atom-5' d='M 210.0,124.5 L 210.0,91.3' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-4 atom-4 atom-5' d='M 210.0,91.3 L 210.0,58.0' style='fill:none;fill-rule:evenodd;stroke:#A01EEF;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-5 atom-4 atom-6' d='M 210.0,124.5 L 210.0,157.8' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-5 atom-4 atom-6' d='M 210.0,157.8 L 210.0,191.1' style='fill:none;fill-rule:evenodd;stroke:#33CCCC;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-6 atom-4 atom-7' d='M 210.0,124.5 L 290.6,124.5' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-7 atom-7 atom-8' d='M 290.6,124.5 L 326.2,124.5' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-7 atom-7 atom-8' d='M 326.2,124.5 L 361.8,124.5' style='fill:none;fill-rule:evenodd;stroke:#33CCCC;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-8 atom-7 atom-9' d='M 290.6,124.5 L 290.6,91.3' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-8 atom-7 atom-9' d='M 290.6,91.3 L 290.6,58.0' style='fill:none;fill-rule:evenodd;stroke:#33CCCC;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-9 atom-7 atom-10' d='M 290.6,124.5 L 290.6,157.8' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-9 atom-7 atom-10' d='M 290.6,157.8 L 290.6,191.1' style='fill:none;fill-rule:evenodd;stroke:#33CCCC;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='atom-0' d='M 42.0 113.1\nL 55.6 113.1\nL 55.6 115.7\nL 45.1 115.7\nL 45.1 122.7\nL 54.4 122.7\nL 54.4 125.3\nL 45.1 125.3\nL 45.1 135.9\nL 42.0 135.9\nL 42.0 113.1\n' fill='#33CCCC'/>\n<path class='atom-2' d='M 122.6 32.5\nL 136.2 32.5\nL 136.2 35.1\nL 125.7 35.1\nL 125.7 42.0\nL 135.0 42.0\nL 135.0 44.7\nL 125.7 44.7\nL 125.7 55.3\nL 122.6 55.3\nL 122.6 32.5\n' fill='#33CCCC'/>\n<path class='atom-3' d='M 122.6 193.7\nL 136.2 193.7\nL 136.2 196.3\nL 125.7 196.3\nL 125.7 203.3\nL 135.0 203.3\nL 135.0 205.9\nL 125.7 205.9\nL 125.7 216.5\nL 122.6 216.5\nL 122.6 193.7\n' fill='#33CCCC'/>\n<path class='atom-5' d='M 208.5 32.5\nL 211.5 32.5\nL 211.5 55.4\nL 208.5 55.4\nL 208.5 32.5\n' fill='#A01EEF'/>\n<path class='atom-6' d='M 203.2 193.7\nL 216.8 193.7\nL 216.8 196.3\nL 206.3 196.3\nL 206.3 203.3\nL 215.6 203.3\nL 215.6 205.9\nL 206.3 205.9\nL 206.3 216.5\nL 203.2 216.5\nL 203.2 193.7\n' fill='#33CCCC'/>\n<path class='atom-8' d='M 364.4 113.1\nL 378.0 113.1\nL 378.0 115.7\nL 367.5 115.7\nL 367.5 122.7\nL 376.8 122.7\nL 376.8 125.3\nL 367.5 125.3\nL 367.5 135.9\nL 364.4 135.9\nL 364.4 113.1\n' fill='#33CCCC'/>\n<path class='atom-9' d='M 283.8 32.5\nL 297.4 32.5\nL 297.4 35.1\nL 286.9 35.1\nL 286.9 42.0\nL 296.2 42.0\nL 296.2 44.7\nL 286.9 44.7\nL 286.9 55.3\nL 283.8 55.3\nL 283.8 32.5\n' fill='#33CCCC'/>\n<path class='atom-10' d='M 283.8 193.7\nL 297.4 193.7\nL 297.4 196.3\nL 286.9 196.3\nL 286.9 203.3\nL 296.2 203.3\nL 296.2 205.9\nL 286.9 205.9\nL 286.9 216.5\nL 283.8 216.5\nL 283.8 193.7\n' fill='#33CCCC'/>\n<path class='legend' d='M 186.3 231.5\nL 187.8 231.5\nL 187.8 232.9\nL 186.3 232.9\nL 186.3 231.5\nM 186.3 234.6\nL 187.8 234.6\nL 187.8 242.8\nL 186.3 242.8\nL 186.3 234.6\n' fill='#000000'/>\n<path class='legend' d='M 189.7 237.1\nL 195.6 237.1\nL 195.6 238.4\nL 189.7 238.4\nL 189.7 237.1\n' fill='#000000'/>\n<path class='legend' d='M 196.9 237.2\nQ 196.9 234.3, 198.2 232.9\nQ 199.6 231.4, 202.1 231.4\nQ 204.4 231.4, 205.7 233.0\nL 204.6 233.9\nQ 203.7 232.7, 202.1 232.7\nQ 200.4 232.7, 199.5 233.8\nQ 198.6 235.0, 198.6 237.2\nQ 198.6 239.4, 199.5 240.6\nQ 200.4 241.7, 202.3 241.7\nQ 203.5 241.7, 205.0 241.0\nL 205.4 242.2\nQ 204.8 242.5, 203.9 242.8\nQ 203.0 243.0, 202.0 243.0\nQ 199.6 243.0, 198.2 241.5\nQ 196.9 240.0, 196.9 237.2\n' fill='#000000'/>\n<path class='legend' d='M 212.3 236.9\nQ 213.4 237.2, 213.9 237.9\nQ 214.5 238.6, 214.5 239.7\nQ 214.5 240.7, 214.0 241.4\nQ 213.5 242.2, 212.6 242.6\nQ 211.8 243.0, 210.6 243.0\nQ 209.4 243.0, 208.5 242.6\nQ 207.6 242.2, 206.9 241.3\nL 207.8 240.4\nQ 208.5 241.1, 209.1 241.4\nQ 209.7 241.7, 210.6 241.7\nQ 211.6 241.7, 212.3 241.2\nQ 212.9 240.6, 212.9 239.7\nQ 212.9 238.6, 212.2 238.1\nQ 211.6 237.5, 210.2 237.5\nL 209.4 237.5\nL 209.4 236.4\nL 210.1 236.4\nQ 211.3 236.4, 212.0 235.8\nQ 212.6 235.3, 212.6 234.3\nQ 212.6 233.5, 212.1 233.1\nQ 211.6 232.7, 210.6 232.7\nQ 209.7 232.7, 209.1 233.0\nQ 208.5 233.3, 208.1 234.2\nL 207.0 233.6\nQ 207.4 232.6, 208.3 232.0\nQ 209.3 231.4, 210.6 231.4\nQ 212.3 231.4, 213.3 232.2\nQ 214.2 233.0, 214.2 234.3\nQ 214.2 235.2, 213.8 235.8\nQ 213.3 236.5, 212.3 236.9\n' fill='#000000'/>\n<path class='legend' d='M 216.0 231.5\nL 222.7 231.5\nL 222.7 232.8\nL 217.5 232.8\nL 217.5 236.2\nL 222.2 236.2\nL 222.2 237.6\nL 217.5 237.6\nL 217.5 242.8\nL 216.0 242.8\nL 216.0 231.5\n' fill='#000000'/>\n<path class='legend' d='M 229.6 232.8\nL 223.6 232.8\nL 223.6 231.5\nL 231.2 231.5\nL 231.2 232.6\nL 226.6 242.8\nL 225.1 242.8\nL 229.6 232.8\n' fill='#000000'/>\n<path class='legend' d='M 232.2 231.5\nL 233.7 231.5\nL 233.7 242.8\nL 232.2 242.8\nL 232.2 231.5\n' fill='#000000'/>\n</svg>\n",
+            "description": "(CF3)2CFI",
+            "source_refs": [
+              {
+                "id": "PF01",
+                "locator": "21页表1表头"
+              }
+            ]
+          },
+          {
+            "label": "t-C4F9I",
+            "formula": "C4F9I",
+            "smiles": "IC(C(F)(F)F)(C(F)(F)F)C(F)(F)F",
+            "inline_svg": "<svg role=\"img\" aria-labelledby=\"a03-t-iodide-title a03-t-iodide-desc\" version='1.1' baseProfile='full'\n              xmlns='http://www.w3.org/2000/svg'\n                      xmlns:rdkit='http://www.rdkit.org/xml'\n                      xmlns:xlink='http://www.w3.org/1999/xlink'\n                  xml:space='preserve'\nwidth='420px' height='270px' viewBox='0 0 420 270'><title id=\"a03-t-iodide-title\">t-C4F9I</title><desc id=\"a03-t-iodide-desc\">(CF3)3C–I; 2D connectivity, not experimental or optimized geometry.</desc>\n<!-- END OF HEADER -->\n<rect style='opacity:1.0;fill:#FFFFFF;stroke:none' width='420.0' height='270.0' x='0.0' y='0.0'> </rect>\n<path class='bond-0 atom-0 atom-1' d='M 210.0,203.4 L 210.0,178.8' style='fill:none;fill-rule:evenodd;stroke:#A01EEF;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-0 atom-0 atom-1' d='M 210.0,178.8 L 210.0,154.2' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-1 atom-1 atom-2' d='M 210.0,154.2 L 269.4,154.2' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-2 atom-2 atom-3' d='M 269.4,154.2 L 295.7,154.2' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-2 atom-2 atom-3' d='M 295.7,154.2 L 322.1,154.2' style='fill:none;fill-rule:evenodd;stroke:#33CCCC;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-3 atom-2 atom-4' d='M 269.4,154.2 L 269.4,178.8' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-3 atom-2 atom-4' d='M 269.4,178.8 L 269.4,203.4' style='fill:none;fill-rule:evenodd;stroke:#33CCCC;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-4 atom-2 atom-5' d='M 269.4,154.2 L 270.9,141.8' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-4 atom-2 atom-5' d='M 270.9,141.8 L 272.4,129.5' style='fill:none;fill-rule:evenodd;stroke:#33CCCC;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-5 atom-1 atom-6' d='M 210.0,154.2 L 150.6,154.2' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-6 atom-6 atom-7' d='M 150.6,154.2 L 124.3,154.2' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-6 atom-6 atom-7' d='M 124.3,154.2 L 97.9,154.2' style='fill:none;fill-rule:evenodd;stroke:#33CCCC;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-7 atom-6 atom-8' d='M 150.6,154.2 L 150.6,178.8' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-7 atom-6 atom-8' d='M 150.6,178.8 L 150.6,203.4' style='fill:none;fill-rule:evenodd;stroke:#33CCCC;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-8 atom-6 atom-9' d='M 150.6,154.2 L 149.1,141.8' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-8 atom-6 atom-9' d='M 149.1,141.8 L 147.6,129.5' style='fill:none;fill-rule:evenodd;stroke:#33CCCC;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-9 atom-1 atom-10' d='M 210.0,154.2 L 210.0,94.8' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-10 atom-10 atom-11' d='M 210.0,94.8 L 210.0,70.2' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-10 atom-10 atom-11' d='M 210.0,70.2 L 210.0,45.5' style='fill:none;fill-rule:evenodd;stroke:#33CCCC;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-11 atom-10 atom-12' d='M 210.0,94.8 L 224.0,93.1' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-11 atom-10 atom-12' d='M 224.0,93.1 L 238.1,91.3' style='fill:none;fill-rule:evenodd;stroke:#33CCCC;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-12 atom-10 atom-13' d='M 210.0,94.8 L 196.0,93.1' style='fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='bond-12 atom-10 atom-13' d='M 196.0,93.1 L 181.9,91.3' style='fill:none;fill-rule:evenodd;stroke:#33CCCC;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />\n<path class='atom-0' d='M 208.9 205.1\nL 211.1 205.1\nL 211.1 222.0\nL 208.9 222.0\nL 208.9 205.1\n' fill='#A01EEF'/>\n<path class='atom-3' d='M 323.8 145.8\nL 333.8 145.8\nL 333.8 147.7\nL 326.0 147.7\nL 326.0 152.8\nL 332.9 152.8\nL 332.9 154.7\nL 326.0 154.7\nL 326.0 162.6\nL 323.8 162.6\nL 323.8 145.8\n' fill='#33CCCC'/>\n<path class='atom-4' d='M 264.4 205.1\nL 274.4 205.1\nL 274.4 207.1\nL 266.6 207.1\nL 266.6 212.2\nL 273.5 212.2\nL 273.5 214.1\nL 266.6 214.1\nL 266.6 222.0\nL 264.4 222.0\nL 264.4 205.1\n' fill='#33CCCC'/>\n<path class='atom-5' d='M 268.7 111.0\nL 278.7 111.0\nL 278.7 112.9\nL 270.9 112.9\nL 270.9 118.0\nL 277.8 118.0\nL 277.8 119.9\nL 270.9 119.9\nL 270.9 127.8\nL 268.7 127.8\nL 268.7 111.0\n' fill='#33CCCC'/>\n<path class='atom-7' d='M 86.2 145.8\nL 96.2 145.8\nL 96.2 147.7\nL 88.5 147.7\nL 88.5 152.8\nL 95.4 152.8\nL 95.4 154.7\nL 88.5 154.7\nL 88.5 162.6\nL 86.2 162.6\nL 86.2 145.8\n' fill='#33CCCC'/>\n<path class='atom-8' d='M 145.6 205.1\nL 155.6 205.1\nL 155.6 207.1\nL 147.9 207.1\nL 147.9 212.2\nL 154.8 212.2\nL 154.8 214.1\nL 147.9 214.1\nL 147.9 222.0\nL 145.6 222.0\nL 145.6 205.1\n' fill='#33CCCC'/>\n<path class='atom-9' d='M 141.3 111.0\nL 151.3 111.0\nL 151.3 112.9\nL 143.6 112.9\nL 143.6 118.0\nL 150.5 118.0\nL 150.5 119.9\nL 143.6 119.9\nL 143.6 127.8\nL 141.3 127.8\nL 141.3 111.0\n' fill='#33CCCC'/>\n<path class='atom-11' d='M 205.0 27.0\nL 215.0 27.0\nL 215.0 28.9\nL 207.3 28.9\nL 207.3 34.0\nL 214.1 34.0\nL 214.1 36.0\nL 207.3 36.0\nL 207.3 43.8\nL 205.0 43.8\nL 205.0 27.0\n' fill='#33CCCC'/>\n<path class='atom-12' d='M 239.8 82.1\nL 249.8 82.1\nL 249.8 84.0\nL 242.1 84.0\nL 242.1 89.1\nL 248.9 89.1\nL 248.9 91.1\nL 242.1 91.1\nL 242.1 98.9\nL 239.8 98.9\nL 239.8 82.1\n' fill='#33CCCC'/>\n<path class='atom-13' d='M 170.2 82.1\nL 180.2 82.1\nL 180.2 84.0\nL 172.5 84.0\nL 172.5 89.1\nL 179.3 89.1\nL 179.3 91.1\nL 172.5 91.1\nL 172.5 98.9\nL 170.2 98.9\nL 170.2 82.1\n' fill='#33CCCC'/>\n<path class='legend' d='M 183.5 235.8\nL 183.5 234.6\nL 185.1 234.6\nL 185.4 232.2\nL 186.5 232.2\nL 186.5 234.6\nL 189.0 234.6\nL 189.0 235.8\nL 186.5 235.8\nL 186.5 240.3\nQ 186.5 241.8, 187.7 241.8\nQ 188.2 241.8, 188.9 241.5\nL 189.1 242.6\nQ 188.2 243.0, 187.4 243.0\nQ 186.3 243.0, 185.6 242.3\nQ 185.0 241.7, 185.0 240.4\nL 185.0 235.8\nL 183.5 235.8\n' fill='#000000'/>\n<path class='legend' d='M 190.2 237.1\nL 196.0 237.1\nL 196.0 238.4\nL 190.2 238.4\nL 190.2 237.1\n' fill='#000000'/>\n<path class='legend' d='M 197.5 237.2\nQ 197.5 234.4, 198.8 232.9\nQ 200.1 231.4, 202.6 231.4\nQ 205.0 231.4, 206.2 233.0\nL 205.1 233.9\nQ 204.2 232.7, 202.6 232.7\nQ 200.9 232.7, 200.0 233.9\nQ 199.1 235.0, 199.1 237.2\nQ 199.1 239.4, 200.0 240.6\nQ 201.0 241.7, 202.8 241.7\nQ 204.0 241.7, 205.5 241.0\nL 205.9 242.2\nQ 205.4 242.6, 204.5 242.8\nQ 203.6 243.0, 202.6 243.0\nQ 200.1 243.0, 198.8 241.5\nQ 197.5 240.0, 197.5 237.2\n' fill='#000000'/>\n<path class='legend' d='M 214.8 239.0\nL 216.2 239.0\nL 216.2 240.2\nL 214.8 240.2\nL 214.8 242.9\nL 213.3 242.9\nL 213.3 240.2\nL 207.5 240.2\nL 207.5 239.2\nL 212.4 231.5\nL 214.8 231.5\nL 214.8 239.0\nM 209.3 239.0\nL 213.3 239.0\nL 213.3 232.6\nL 209.3 239.0\n' fill='#000000'/>\n<path class='legend' d='M 217.6 231.5\nL 224.4 231.5\nL 224.4 232.8\nL 219.2 232.8\nL 219.2 236.3\nL 223.8 236.3\nL 223.8 237.6\nL 219.2 237.6\nL 219.2 242.9\nL 217.6 242.9\nL 217.6 231.5\n' fill='#000000'/>\n<path class='legend' d='M 229.2 231.4\nQ 231.2 231.4, 232.2 232.8\nQ 233.2 234.1, 233.2 236.9\nQ 233.2 239.9, 232.0 241.4\nQ 230.7 243.0, 228.3 243.0\nQ 227.6 243.0, 227.0 242.8\nQ 226.4 242.7, 225.8 242.3\nL 226.4 241.3\nQ 227.3 241.7, 228.3 241.7\nQ 229.9 241.7, 230.7 240.7\nQ 231.5 239.6, 231.6 237.5\nQ 231.0 238.0, 230.3 238.3\nQ 229.6 238.6, 228.8 238.6\nQ 227.8 238.6, 227.0 238.2\nQ 226.2 237.7, 225.8 237.0\nQ 225.4 236.2, 225.4 235.2\nQ 225.4 234.1, 225.8 233.2\nQ 226.3 232.4, 227.2 231.9\nQ 228.1 231.4, 229.2 231.4\nM 227.0 235.2\nQ 227.0 236.2, 227.5 236.7\nQ 228.1 237.3, 229.1 237.3\nQ 229.8 237.3, 230.4 237.0\nQ 231.1 236.8, 231.6 236.3\nQ 231.5 234.4, 231.0 233.6\nQ 230.4 232.7, 229.2 232.7\nQ 228.6 232.7, 228.0 233.0\nQ 227.5 233.4, 227.3 233.9\nQ 227.0 234.5, 227.0 235.2\n' fill='#000000'/>\n<path class='legend' d='M 235.0 231.5\nL 236.5 231.5\nL 236.5 242.9\nL 235.0 242.9\nL 235.0 231.5\n' fill='#000000'/>\n</svg>\n",
+            "description": "(CF3)3C–I",
+            "source_refs": [
+              {
+                "id": "PF01",
+                "locator": "21页表1表头"
+              }
+            ]
+          }
+        ]
+      },
+      "cooperation": {
+        "text": "1966年原作由陈庆云、蒋锡夔、陈秉启、梁梦兰共同署名。传记44页记述陈庆云、陈秉启及实习生梁梦兰参与这一小课题；原表数据仍归原作者，不按共同署名指定谁测量哪一组光谱。",
+        "source_refs": [
+          {
+            "id": "PF01",
+            "locator": "18页作者及梁梦兰脚注"
+          },
+          {
+            "id": "HERITAGE-S01",
+            "locator": "传记44页"
+          }
+        ]
+      },
+      "meaning": "把结构身份、表格列名与解释的前提放在一起阅读，可更准确理解原作者如何用当时可获得的数据组织电子效应论证；图解的价值是让原成果更易读。",
+      "boundaries": [
+        "只重绘原文三种完整分子并复用原表，不新增未测对象、光谱数据或算术结果。",
+        "原作者的经验解释及其限制分别保留；不由三行数据授予普适基团常数、反应势垒或机理资格。",
+        "Krespan为原作使用的既有制备方法来源；本图不是首次制备或独立实验复现的声明。"
+      ],
+      "sources": [
+        {
+          "id": "PF01",
+          "title": "全氟和多氟型有机化合物的化学特性——全氟叔丁基碘以及全氟烷基的诱导效应顺序",
+          "kind": "原论文",
+          "locator": "陈庆云、蒋锡夔、陈秉启、梁梦兰；《化学学报》1966，32(1)：18–25；本例18、20–21页，表1为印刷21页/PDF4",
+          "url": "https://sioc-journal.cn/Jwk_hxxb/CN/Y1966/V32/I1/18"
+        },
+        {
+          "id": "HERITAGE-S01",
+          "title": "朱晶、刘超：《氟缘笃志：陈庆云传》",
+          "kind": "传记历史叙述",
+          "locator": "44页：研究参与者及方法来源",
+          "url": null
+        }
+      ],
+      "scientific_review_status": "review_required",
+      "release_eligible": false,
+      "body_character_count": 662,
+      "main_route": "pftb/index.html"
+    },
+    {
+      "id": "A04",
+      "line_name": "F-53铬雾抑制剂",
+      "route": "topics/f53/index.html",
+      "anchor": "a04-deep-reading",
+      "title": "沿一条分子链读原刊：把碘端基换成氯端基",
+      "question": "含氟醚磺酸系列的合成，能否在保留另一端磺酰氟的同时改变链末端？原作者怎样记录所得产物？",
+      "sections": [
+        {
+          "heading": "先看清研究对象",
+          "text": "1979年系列II论文研究一组多氟烷基醚磺酸及其前体。这里选的是ω-碘-3-氧杂全氟烷基醚磺酰氟的n=3实例：原文通式为I(CF₂CF₂)ₙ₊₁OCF₂CF₂SO₂F。读者可以沿链辨认碘端、醚键与磺酰氟端，所考察的是链末端变化，不是把整条分子换成另一种磺酸。",
+          "identity": "original_observation",
+          "source_refs": [
+            {
+              "id": "CQ-H15",
+              "locator": "315页摘要中的系列通式；323页“在常压下的氯化”实例"
+            }
+          ]
+        },
+        {
+          "heading": "一次转化留下哪些结果",
+          "text": "323页记载，作者由29 g该n=3底物得到23 g相应氯化物，原报产率81.4%、色谱纯度100%。315页摘要把产物写为Cl(CF₂CF₂)ₙ₊₁OCF₂CF₂SO₂F。它让末端I到Cl的转化有了明确对象与分离结果；这些百分数是当年报告，并非平台重新制备或测得。",
+          "identity": "original_observation",
+          "source_refs": [
+            {
+              "id": "CQ-H15",
+              "locator": "315页第三段；323页常压氯化第一实例"
+            }
+          ]
+        },
+        {
+          "heading": "鉴定不只是一项产率",
+          "text": "论文还按具体化合物列核磁记录。321页表6把CF₂O、CF₂SO₂F、SO₂F等不同结构环境分列；对应氯端基同系物有自己的条目。将实验段与这些结构位置相互对读，比只摘一个产率更能理解作者如何组织产物证据，但并不构成平台对全套原谱的重新鉴定。",
+          "identity": "platform_reading",
+          "source_refs": [
+            {
+              "id": "CQ-H15",
+              "locator": "321页表6；323页常压氯化实例"
+            }
+          ]
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "caption": "一个n=3实例的读图顺序：对象、端基转化、产物记录",
+        "steps": [
+          {
+            "label": "认清起点",
+            "text": "I(CF₂CF₂)ₙ₊₁OCF₂CF₂SO₂F；本例n=3。",
+            "source_refs": [
+              {
+                "id": "CQ-H15",
+                "locator": "315、323页"
+              }
+            ]
+          },
+          {
+            "label": "只追踪末端",
+            "text": "原文氯化后，链末端I改为Cl；图示不声称给出微观机理。",
+            "source_refs": [
+              {
+                "id": "CQ-H15",
+                "locator": "315页摘要；323页"
+              }
+            ]
+          },
+          {
+            "label": "联系分离和鉴定",
+            "text": "Cl(CF₂CF₂)ₙ₊₁OCF₂CF₂SO₂F；原报23 g、81.4%；核磁条目见表6。",
+            "source_refs": [
+              {
+                "id": "CQ-H15",
+                "locator": "321页表6；323页"
+              }
+            ]
+          }
+        ],
+        "notes": [
+          "平台阅读示意按原文对象和端基转化绘制；图示未指认微观反应机理。",
+          "n指原论文的同系系列参数。所选磺酰氟中间体不直接等同于F-53历史产品或F-53B商品。"
+        ]
+      },
+      "table": {
+        "caption": "同一n=3实例的原报字段",
+        "columns": [
+          "字段",
+          "原文记录",
+          "定位"
+        ],
+        "rows": [
+          [
+            "底物",
+            "29 g（原文另记0.04克分子）",
+            "323页常压氯化"
+          ],
+          [
+            "分离产物",
+            "23 g相应氯化物",
+            "同段"
+          ],
+          [
+            "产率／色谱纯度",
+            "81.4%／100%（均为原报）",
+            "同段"
+          ],
+          [
+            "结构环境记录",
+            "表6按CF₂O、CF₂SO₂F、SO₂F等分列",
+            "321页表6"
+          ]
+        ],
+        "source_refs": [
+          {
+            "id": "CQ-H15",
+            "locator": "321页表6；323页常压氯化第一实例"
+          }
+        ]
+      },
+      "cooperation": {
+        "text": "原刊署“全氟磺酸组”，不是一位作者的个人论文。323页另致谢本所质谱组参与色谱—质谱分析、上海医药工业研究院核磁组提供核磁共振谱；这些记录让合成与分析协作各有出处。",
+        "source_refs": [
+          {
+            "id": "CQ-H15",
+            "locator": "315页集体署名；323页致谢"
+          }
+        ]
+      },
+      "meaning": "这项具体工作体现了团队如何延伸含氟醚骨架、改变末端基团，并把分离结果与结构环境记录联系起来。它是F-53相关基础合成研究的一部分，不能用一个中间体的产率代表工厂抑雾效果。",
+      "boundaries": [
+        "此处讨论指定n=3氯端基磺酰氟，不据此重定义F-53、F-53B或所有盐型的身份。",
+        "色谱纯度100%仅为原作者该例色谱记录，不是平台测纯，也不认定现代全杂质纯度、工业性能、安全性或环境效益。"
+      ],
+      "sources": [
+        {
+          "id": "CQ-H15",
+          "title": "全氟磺酸组：全氟和多氟烷基磺酸的研究 II. 一些多氟烷基醚磺酸的合成",
+          "url": "https://www.sioc.ac.cn/kxj/ml/hwy/xscj/202308/t20230823_6866955.html",
+          "locator": "《化学学报》1979，37：315–324，324为同篇英文摘要；323页致谢分析协作。链接为机构书目，正文据已取得原刊",
+          "kind": "原论文"
+        }
+      ],
+      "main_route": "topics/f53/index.html"
+    },
+    {
+      "id": "A05",
+      "line_name": "制冷剂与配套技术",
+      "route": "topics/refrigerants/index.html",
+      "anchor": "a05-deep-reading",
+      "title": "先制得一个组分：1978年F-115论文怎样衔接合成与鉴定",
+      "question": "要使已有的F-502配方获得可用组分，团队怎样制备五氟氯乙烷，又怎样辨认收集到的气体？",
+      "sections": [
+        {
+          "heading": "把组分问题从配方中分出来",
+          "text": "1978年研究简报先说明，五氟氯乙烷FC-115与二氟氯甲烷FC-22按51.2∶48.8质量比组成F-502；接着把问题收窄到FC-115的制备。所提出的路线由四氟乙烯与一氯化碘取得1-氯-2-碘四氟乙烷，再以Swarts法完成氟化。研究贡献应落在具体组分与路线，不能把配方背景一并写成新发明。",
+          "identity": "original_observation",
+          "source_refs": [
+            {
+              "id": "ACTA1978-36-77",
+              "locator": "77页引言及反应式；79页英文摘要"
+            }
+          ]
+        },
+        {
+          "heading": "分清前体与目标产物的收率",
+          "text": "78页的钢管法先报告6.0 kg前体、79%产率；后面的氟化实例另报告低温分馏所得五氟氯乙烷1.22 kg、80.3%产率。前者是含碘中间体，后者才是FC-115；两个数字分属相邻步骤，不能互换，更不能作为F-502配方的制冷性能。",
+          "identity": "original_observation",
+          "source_refs": [
+            {
+              "id": "ACTA1978-36-77",
+              "locator": "78页“钢管法”及“1-氯-2-碘四氟乙烷的氟化”"
+            }
+          ]
+        },
+        {
+          "heading": "用多类记录辨认产物",
+          "text": "原文给出目标物沸点−39°C，在所列色谱条件下呈单峰，红外与已知谱Sadtler No.2440一致。¹⁹F核磁在−70°C、CFCl₃外标条件下记δ86.4（CF₃）、75.0（CF₂）ppm，比例3F∶2F；质谱则明确未见分子离子。这些不同记录相互支撑身份判断，也提醒读者不能把一张色谱的单峰当成全部结构和纯度问题已解决。",
+          "identity": "original_observation",
+          "source_refs": [
+            {
+              "id": "ACTA1978-36-77",
+              "locator": "78页产物物性、气相色谱、IR、MS及¹⁹F NMR段"
+            }
+          ]
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "caption": "从具体组分到多类鉴定证据，不把制备路线与制冷配方合并",
+        "steps": [
+          {
+            "label": "先取得前体",
+            "text": "四氟乙烯与一氯化碘→1-氯-2-碘四氟乙烷（ICF₂CF₂Cl）。",
+            "source_refs": [
+              {
+                "id": "ACTA1978-36-77",
+                "locator": "77页；78页钢管法"
+              }
+            ]
+          },
+          {
+            "label": "再得到组分",
+            "text": "含碘前体→CF₃CF₂Cl（FC-115）；氟化实例原报80.3%。",
+            "source_refs": [
+              {
+                "id": "ACTA1978-36-77",
+                "locator": "77页路线；78页实验"
+              }
+            ]
+          },
+          {
+            "label": "分别看证据",
+            "text": "分馏产物的物性、气相色谱、IR、MS、¹⁹F NMR分别记录。",
+            "source_refs": [
+              {
+                "id": "ACTA1978-36-77",
+                "locator": "78页"
+              }
+            ]
+          }
+        ],
+        "notes": [
+          "平台分步示意呈现这项历史制备与鉴定的阅读次序。",
+          "FC-115合成与FC-115／FC-22组成的既有F-502配方是两个层次；不由此认定F-502原创或当前环境适用性。"
+        ]
+      },
+      "table": {
+        "caption": "原文相邻步骤与鉴定字段的身份",
+        "columns": [
+          "对象／证据",
+          "原文记录",
+          "阅读要点"
+        ],
+        "rows": [
+          [
+            "含碘前体（钢管法）",
+            "6.0 kg；79%",
+            "不是FC-115终产物收率"
+          ],
+          [
+            "FC-115（氟化实例）",
+            "1.22 kg；80.3%；沸点−39°C",
+            "不当作F-502制冷性能"
+          ],
+          [
+            "¹⁹F NMR",
+            "δ86.4（CF₃）、75.0（CF₂）ppm；3F∶2F",
+            "−70°C，CFCl₃外标，保留原报约定"
+          ],
+          [
+            "MS",
+            "原文明言未出现分子离子",
+            "不把不存在的分子离子补成观测"
+          ]
+        ],
+        "source_refs": [
+          {
+            "id": "ACTA1978-36-77",
+            "locator": "78页实验与鉴定段"
+          }
+        ]
+      },
+      "cooperation": {
+        "text": "论文以“致冷剂小组”集体署名，机构为中国科学院上海有机化学研究所。原刊没有逐步分配个人执行角色；本例保留团队贡献，不据平台人物主题推定每一项实验都由陈先生个人实施。",
+        "source_refs": [
+          {
+            "id": "ACTA1978-36-77",
+            "locator": "77页作者与机构；79页Refrigerant Group"
+          }
+        ]
+      },
+      "meaning": "通过一个组分的前体来源、目标转化和多类鉴定，读者能看见从材料需求回到具体合成问题的工作方法；公斤级实验记录仍是论文所报批次，不等于工厂年产量或整机制冷认证。",
+      "boundaries": [
+        "所有产率、质量和谱学字段为原作者报告，平台未重做合成、谱图鉴定或收率计算；¹⁹F的δ记号、数值和参考约定按原文，不自动改写成现代正负号。",
+        "本文的氯氟烃组分与后来HFC-134a连续工艺分开；不将历史应用推为当前环境或安全适用结论。"
+      ],
+      "sources": [
+        {
+          "id": "ACTA1978-36-77",
+          "title": "致冷剂小组：五氟氯乙烷合成简法",
+          "url": "https://sioc-journal.cn/Jwk_hxxb/EN/abstract/abstract342568.shtml",
+          "locator": "《化学学报》1978，36(1)：77–79；77页集体署名及路线，78页实验与参考文献，79页同篇英文摘要；链接为官方题录，正文据已取得原刊",
+          "kind": "原论文"
+        }
+      ],
+      "main_route": "topics/refrigerants/index.html"
+    },
+    {
+      "id": "A06",
+      "line_name": "磺酸酯、二氟卡宾与三氟甲基化",
+      "route": "topics/perfluorosulfonates/index.html",
+      "main_route": "topics/chen-reagent/index.html",
+      "anchor": "a06-deep-reading",
+      "title": "先认结构，再看断键：三张磺酸酯原刊阅读卡",
+      "question": "“硫—氧断裂”与“碳—氧断裂”怎样从具体产物读出来，而不是把题名直接当成适用于所有含氟酯的规律？",
+      "sections": [
+        {
+          "heading": "第一张卡：从产物回看C–O断裂",
+          "text": "1982年系列IV的1a在KI／二乙二醇条件下给出2a＝HCF₂CF₂CH₂I，原报97%。原文先定义本篇底物和产物，再把这组结果归为C–O断裂。读图时，先追踪碘进入含氢醇基一侧所成的具体产物，不能只看到“含氟磺酸酯”几个字就给整类分子贴同一断键标签。",
+          "identity": "platform_reading",
+          "source_refs": [
+            {
+              "id": "CQ-H07",
+              "locator": "337–338页结构定义及反应式；348页1a与KI实验"
+            }
+          ]
+        },
+        {
+          "heading": "第二张卡：全氟酯中的另一种产物组合",
+          "text": "1982年通讯的2a在所报卤离子体系中产生磺酰氟和酰氟，作者据此讨论S–O断裂。文中KF／DG的低温例给出−50°C；这里DG是二乙二醇二甲醚，与上一例二乙二醇不同。把介质与底物同时写出来，才能理解比较究竟受哪些条件约束。",
+          "identity": "platform_reading",
+          "source_refs": [
+            {
+              "id": "CQ-H08",
+              "locator": "670页式(2)与KF／DG叙述；671页反应表"
+            }
+          ]
+        },
+        {
+          "heading": "第三张卡：保留没反应的时间段",
+          "text": "1983年系列X的1b与少量KF／DG反应，原报GC观察在−70°C、2 h未反应，随后−60±5°C、3.5 h作用完全，分得酰氟3b与磺酰氟2b。作者仍归为S–O断裂；保留前一段未反应观察，比只摘最终产率更能看清实验记录的层次。",
+          "identity": "platform_reading",
+          "source_refs": [
+            {
+              "id": "CQ-H16",
+              "locator": "1044页1b及产物编号；1054页1b与KF实验"
+            }
+          ]
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "caption": "三项既有记录的共同阅读方法；这是读图步骤，不是三个反应串联",
+        "steps": [
+          {
+            "label": "认本篇编号",
+            "text": "系列IV用1a／2a；通讯用2a／3、4；系列X用1b／2b、3b，编号不跨篇合并。",
+            "source_refs": [
+              {
+                "id": "CQ-H07",
+                "locator": "337–338页"
+              },
+              {
+                "id": "CQ-H08",
+                "locator": "670页式(2)"
+              },
+              {
+                "id": "CQ-H16",
+                "locator": "1044页"
+              }
+            ]
+          },
+          {
+            "label": "写明比较条件",
+            "text": "二乙二醇与DG分开；未反应温段、随后温段和各自时间保留。",
+            "source_refs": [
+              {
+                "id": "CQ-H07",
+                "locator": "348页"
+              },
+              {
+                "id": "CQ-H08",
+                "locator": "670–671页"
+              },
+              {
+                "id": "CQ-H16",
+                "locator": "1054页"
+              }
+            ]
+          },
+          {
+            "label": "再读产物与解释",
+            "text": "含碘醇基产物或磺酰氟／酰氟是原报观察；C–O／S–O归属与“屏蔽”解释按作者论证层次理解。",
+            "source_refs": [
+              {
+                "id": "CQ-H07",
+                "locator": "338、348页"
+              },
+              {
+                "id": "CQ-H08",
+                "locator": "671页"
+              },
+              {
+                "id": "CQ-H16",
+                "locator": "1044、1054页"
+              }
+            ]
+          }
+        ],
+        "notes": [
+          "图解复用平台已完成的三项原刊对照，没有新增第四例，也不重新宣布建立该对照。",
+          "这不是统一机理、计算势垒或平台实验；各篇结构与编号仅在各自论文内有效。"
+        ]
+      },
+      "table": {
+        "caption": "原刊中三项具体断键记录：原文对照",
+        "columns": [
+          "原刊与本篇实例",
+          "与比较有关的原报对象/条件",
+          "原报结果与解释层级",
+          "原页定位"
+        ],
+        "rows": [
+          [
+            "CQ-H07，1982系列IV，1a",
+            "KI／二乙二醇；70°C、12.5 h",
+            "2a=HCF2CF2CH2I，原报97%；原作者归为C–O断裂。",
+            "337–338定义；348实验（PDF1–2、12）"
+          ],
+          [
+            "CQ-H08，1982通讯，2a",
+            "催化量卤离子；文中KF／DG=二乙二醇二甲醚，−50°C实例",
+            "原报磺酰氟与酰氟，正文称可定量分解；归为S–O断裂，不补造所选行未列的独立收率。",
+            "670式(2)、671反应表及解释（PDF1–2）"
+          ],
+          [
+            "CQ-H16，1983系列X，1b",
+            "少量KF／DG；先−70°C、2 h未反应，随后−60±5°C、3.5 h作用完全（均原报GC观察）",
+            "3b酰氟90%、2b磺酰氟93%，归为S–O断裂；本篇产品2/3不等同通讯3/4编号。",
+            "1044定义、1054实验（PDF1、11）"
+          ]
+        ],
+        "source_refs": [
+          {
+            "id": "CQ-H07",
+            "locator": "337–338、348页"
+          },
+          {
+            "id": "CQ-H08",
+            "locator": "670–671页"
+          },
+          {
+            "id": "CQ-H16",
+            "locator": "1044、1054页"
+          }
+        ]
+      },
+      "cooperation": {
+        "text": "系列IV由陈庆云、朱蓉仙、李宗珍、王珊娣、黄维垣共同署名；通讯与系列X由陈庆云、朱士正署名。1044页脚注把系列X与朱士正硕士论文及1982年通讯相连，不能当成两组独立重复实验。",
+        "source_refs": [
+          {
+            "id": "CQ-H07",
+            "locator": "337页署名"
+          },
+          {
+            "id": "CQ-H08",
+            "locator": "670页署名"
+          },
+          {
+            "id": "CQ-H16",
+            "locator": "1044页署名与脚注"
+          }
+        ]
+      },
+      "meaning": "三张卡把结构、介质、产物与作者解释放在同一阅读框架内，呈现团队如何用具体转化研究断键选择，而不是以一个题名替代整类反应的证据。",
+      "boundaries": [
+        "三例沿用既有核读记录，原报产率不是平台重算或实验复现；“屏蔽”等机理表述归原作者。",
+        "这是磺酸酯断键研究，不混作MFSDA甲酯、TFDA硅酯、2003硅酯／二氟卡宾或2010甲酯／甾体方法，也不重分配Org. Synth.提交与核查角色。"
+      ],
+      "sources": [
+        {
+          "id": "CQ-H07",
+          "title": "全氟和多氟烷基磺酸的研究 IV. 3-氧杂多氟烷烃磺酸酯的合成及其硫-氧和碳-氧键的断裂",
+          "url": "https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/zylzml0174/art/2023/art_af6c81873fd1471a9f3c1957e73d4de9.html",
+          "locator": "《化学学报》1982，40(4)：337–352；337页五位作者；链接为机构书目，正文据已取得原刊",
+          "kind": "原论文"
+        },
+        {
+          "id": "CQ-H08",
+          "title": "全氟和多氟烷基磺酸的研究. 全氟3-氧杂烷烃磺酸酯与亲核试剂反应中的单一的硫-氧键断裂",
+          "url": "https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/zylzml0174/art/2023/art_c7b5650a0a91477594053980bbbb6dd5.html",
+          "locator": "《化学学报》1982，40(7)：670–673；670页作者陈庆云、朱士正及反应式；正文据已取得原刊",
+          "kind": "原论文"
+        },
+        {
+          "id": "CQ-H16",
+          "title": "全氟和多氟烷基磺酸的研究 X. 在亲核取代反应中全氟烷基3-氧杂全氟烷烃磺酸酯的唯一的硫-氧键断裂",
+          "url": "https://www.mmcs.org.cn/kxjfc/kxjfc/cqy/zylzml0174/art/2023/art_bf002a4c386d49cba0c7fa5c65ad231b.html",
+          "locator": "《化学学报》1983，41(11)：1044–1057；1044页题名、作者及底物定义；正文据已取得原刊",
+          "kind": "原论文"
+        }
+      ]
+    },
+    {
+      "id": "A07",
+      "line_name": "单电子转移与C–Cl活化",
+      "route": "topics/single-electron-transfer/index.html",
+      "anchor": "a07-deep-reading",
+      "title": "两种C–Cl方法，怎样读回原作者的产物证据？",
+      "question": "从DMSO参与的含氟烷基加成到零价镍体系，方法研究怎样落实到可追读的产物记录？",
+      "sections": [
+        {
+          "heading": "先分清两项研究的问题",
+          "text": "1999年龙正宇与陈庆云研究DMSO／连二亚硫酸钠体系，使特定全氟或多氟烷基氯代物参与烯烃、炔烃的转化，在不饱和键上引入含氟烷基和氢（原题hydroperfluoroalkylation）。2001年黄小庭与陈庆云另以零价镍体系研究全氟烷基氯代物的转化。这是两种方法入口，不能把它们的底物、条件或产物编号拼成一套实验。",
+          "identity": "platform_reading",
+          "source_refs": [
+            {
+              "id": "CQ-R06",
+              "locator": "1999年作者摘要的方法范围；本轮SI PDF第1—2页（页眉Supporting Info Page1—2），样品3bc"
+            },
+            {
+              "id": "HERITAGE-S07",
+              "locator": "2001年作者摘要的方法范围；本轮SI PDF第1—2页（手写S1—S2），样品3aa"
+            }
+          ]
+        },
+        {
+          "heading": "1999年：有名字的长链产物3bc",
+          "text": "1999年附件第1—2页把同一样品标作3bc，并直接写出1,1,2,2,3,3,4,4-八氟十二烷的名称，分别保留其¹H与¹⁹F NMR谱图。这个实例让方法概括落到一个具体的多氟烷烃：原作者既说明自己报告的是哪一个产物，也留下两类核的表征记录。这里沿用印刷名称，不另拟其反应式或峰归属。",
+          "identity": "original_observation",
+          "source_refs": [
+            {
+              "id": "CQ-R06",
+              "locator": "1999年作者摘要的方法范围；本轮SI PDF第1—2页（页眉Supporting Info Page1—2），样品3bc"
+            }
+          ]
+        },
+        {
+          "heading": "2001年：沿本篇编号阅读3aa",
+          "text": "2001年附件开头两张谱页都标3aa。阅读时应把这个编号留在本篇论文内，再与该文的反应讨论相联系；不能因编号相似，就把它认作1999年的3bc。两组附件展示了合成论文的一项具体工作：方法范围之外，还有逐个产物留下的谱学记录。产物表征和原作者提出的SET解释是两类证据，后者不由这些谱页单独确证。",
+          "identity": "platform_reading",
+          "source_refs": [
+            {
+              "id": "HERITAGE-S07",
+              "locator": "2001年作者摘要的方法范围；本轮SI PDF第1—2页（手写S1—S2），样品3aa"
+            }
+          ]
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "caption": "从方法问题读向各篇自己的产物记录",
+        "steps": [
+          {
+            "label": "研究问题",
+            "text": "含氟氯代物怎样进入有机合成？",
+            "source_refs": [
+              {
+                "id": "CQ-R06",
+                "locator": "1999年作者摘要的方法范围；本轮SI PDF第1—2页（页眉Supporting Info Page1—2），样品3bc"
+              },
+              {
+                "id": "HERITAGE-S07",
+                "locator": "2001年作者摘要的方法范围；本轮SI PDF第1—2页（手写S1—S2），样品3aa"
+              }
+            ]
+          },
+          {
+            "label": "两项方法入口",
+            "text": "1999：DMSO／连二亚硫酸钠；2001：零价镍体系。",
+            "source_refs": [
+              {
+                "id": "CQ-R06",
+                "locator": "1999年作者摘要的方法范围；本轮SI PDF第1—2页（页眉Supporting Info Page1—2），样品3bc"
+              },
+              {
+                "id": "HERITAGE-S07",
+                "locator": "2001年作者摘要的方法范围；本轮SI PDF第1—2页（手写S1—S2），样品3aa"
+              }
+            ]
+          },
+          {
+            "label": "各自的样品编号",
+            "text": "1999的3bc与2001的3aa分别沿本篇编号追读。",
+            "source_refs": [
+              {
+                "id": "CQ-R06",
+                "locator": "1999年作者摘要的方法范围；本轮SI PDF第1—2页（页眉Supporting Info Page1—2），样品3bc"
+              },
+              {
+                "id": "HERITAGE-S07",
+                "locator": "2001年作者摘要的方法范围；本轮SI PDF第1—2页（手写S1—S2），样品3aa"
+              }
+            ]
+          },
+          {
+            "label": "原作者的表征页",
+            "text": "1999 SI第1—2页；2001 SI第1—2页。",
+            "source_refs": [
+              {
+                "id": "CQ-R06",
+                "locator": "1999年作者摘要的方法范围；本轮SI PDF第1—2页（页眉Supporting Info Page1—2），样品3bc"
+              },
+              {
+                "id": "HERITAGE-S07",
+                "locator": "2001年作者摘要的方法范围；本轮SI PDF第1—2页（手写S1—S2），样品3aa"
+              }
+            ]
+          }
+        ],
+        "notes": [
+          "这是两篇文献的阅读路径，不是一个反应的连续步骤。",
+          "1999的3bc有印刷化学名；2001的3aa本次只保留所读谱页中的原编号，不从峰形猜结构。"
+        ]
+      },
+      "table": {
+        "caption": "两份实际产物记录各能读到什么",
+        "columns": [
+          "论文与方法范围",
+          "本次选取的原作者记录",
+          "原页定位"
+        ],
+        "rows": [
+          [
+            "1999，DMSO／连二亚硫酸钠体系",
+            "3bc：1,1,2,2,3,3,4,4-八氟十二烷；¹H、¹⁹F NMR",
+            "SI PDF1—2，页眉Page1—2"
+          ],
+          [
+            "2001，零价镍体系",
+            "3aa：两张带同一产物编号的核磁谱页；不另补结构名",
+            "SI PDF1—2，手写S1—S2"
+          ]
+        ],
+        "source_refs": [
+          {
+            "id": "CQ-R06",
+            "locator": "1999年作者摘要的方法范围；本轮SI PDF第1—2页（页眉Supporting Info Page1—2），样品3bc"
+          },
+          {
+            "id": "HERITAGE-S07",
+            "locator": "2001年作者摘要的方法范围；本轮SI PDF第1—2页（手写S1—S2），样品3aa"
+          }
+        ]
+      },
+      "cooperation": {
+        "text": "1999年论文署Zheng-Yu Long、Qing-Yun Chen；2001年论文署Xiao-Ting Huang、Qing-Yun Chen。它们分别对应龙正宇、黄小庭与陈庆云的合作，不从作者顺序或谱页推定个人实验工序。",
+        "source_refs": [
+          {
+            "id": "CQ-R06",
+            "locator": "1999年作者摘要的方法范围；本轮SI PDF第1—2页（页眉Supporting Info Page1—2），样品3bc"
+          },
+          {
+            "id": "HERITAGE-S07",
+            "locator": "2001年作者摘要的方法范围；本轮SI PDF第1—2页（手写S1—S2），样品3aa"
+          }
+        ]
+      },
+      "meaning": "把“活化含氟氯代物”的方法贡献读回具体产物及其原始表征，能看见合成研究怎样积累可继续追读的分子证据，而不把方法标题直接当作唯一机理。",
+      "boundaries": [
+        "本次核读的是两份实际SI谱页，正文未在本机取得；不据谱图补写底物、温度、试剂用量或收率，也不作谱图专业认证。",
+        "1999与2001条件和对象不同，不比较成反应速率或势垒高低；SET保留为原作者解释，C–Cl转化不外推为普适C–F断裂。"
+      ],
+      "sources": [
+        {
+          "id": "CQ-R06",
+          "title": "Long、Chen：The Activation of Carbon–Chlorine Bonds in Per- and Polyfluoroalkyl Chlorides（1999）及原作者SI",
+          "kind": "原作者摘要与支持信息谱图（SI）",
+          "locator": "J. Org. Chem.64：4775—4782；SI PDF1—2，样品3bc；DOI10.1021/jo9900937.s001",
+          "url": "https://acs.figshare.com/articles/journal_contribution/The_Activation_of_Carbon_Chlorine_Bonds_in_Per-_and_Polyfluoroalkyl_Chlorides_DMSO-Induced_Hydroperfluoroalkylation_of_Alkenes_and_Alkynes_with_Sodium_Dithionite/3717594"
+        },
+        {
+          "id": "HERITAGE-S07",
+          "title": "Huang、Chen：Nickel(0)-Catalyzed Fluoroalkylation of Alkenes, Alkynes, and Aromatics with Perfluoroalkyl Chlorides（2001）及原作者SI",
+          "kind": "原作者摘要与支持信息谱图（SI）",
+          "locator": "J. Org. Chem.66：4651—4656；SI PDF1—2，样品3aa；DOI10.1021/jo010178j.s001",
+          "url": "https://acs.figshare.com/articles/journal_contribution/Nickel_0_-Catalyzed_Fluoroalkylation_of_Alkenes_Alkynes_and_Aromatics_with_Perfluoroalkyl_Chlorides/3689097"
+        }
+      ],
+      "main_route": "topics/single-electron-transfer/index.html"
+    },
+    {
+      "id": "A08",
+      "line_name": "交叉研究与晚年拓展",
+      "route": "topics/deoxyfluorination/index.html",
+      "anchor": "a08-deep-reading",
+      "title": "保留芳基碘，把苄醇的羟基换成氟：2020年脱氧氟化一例",
+      "question": "含OCF₂单元的试剂，怎样在一个确切醇底物上体现脱氧氟化用途？",
+      "sections": [
+        {
+          "heading": "先看底物与试剂各是什么",
+          "text": "这例底物为（4-碘苯基）甲醇1c，即芳环带碘的苄醇。原作者使用的2a不是泛称的“氟化剂”，而是明确的钾盐CF₃(OCF₂)₂CO₂K。2020年附件把一系列盐分别编号，钾、铵、钠、铯盐和不同链长不能混为同一实体；本例只读2a及其所对应的一次醇转化。",
+          "identity": "original_observation",
+          "source_refs": [
+            {
+              "id": "CQ-R15",
+              "locator": "SI p3试剂2a；p9通用小规模程序；p11产物3c；p20的1c→3c结构对应"
+            }
+          ]
+        },
+        {
+          "heading": "从通用程序读到产物3c",
+          "text": "小规模通用程序用2a与TMAF，在DMPU中于150°C反应5小时。附件的3c条目报告1-(氟甲基)-4-碘苯，为白色固体，柱色谱分离产率97%，质量69.2mg。底物和产物结构式表明，苄位羟基转为氟，而这个实例中的芳基碘保留下来；它展示的是一个具体底物上的官能团兼容性。",
+          "identity": "original_observation",
+          "source_refs": [
+            {
+              "id": "CQ-R15",
+              "locator": "SI p3试剂2a；p9通用小规模程序；p11产物3c；p20的1c→3c结构对应"
+            }
+          ]
+        },
+        {
+          "heading": "结构式与表征怎样一起阅读",
+          "text": "产物条目列出¹H NMR中5.30ppm的双峰（2H，J=47.5Hz），以及¹⁹F NMR中−208.7ppm的三重峰（J=47.6Hz）。应把这些原报读数与同页的CH₂F结构一同阅读，而不是只看一个产率。反应图的变化发生在苄位，芳环上的碘不是这里被氟取代的位置。这样读到的是作者报告的产物与表征依据，不是平台另做的合成、测量或结构认证。",
+          "identity": "platform_reading",
+          "source_refs": [
+            {
+              "id": "CQ-R15",
+              "locator": "SI p3试剂2a；p9通用小规模程序；p11产物3c；p20的1c→3c结构对应"
+            }
+          ]
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "caption": "同一实例中的底物、条件与产物",
+        "steps": [
+          {
+            "label": "醇底物1c",
+            "text": "（4-碘苯基）甲醇：p-I–C₆H₄–CH₂OH。",
+            "source_refs": [
+              {
+                "id": "CQ-R15",
+                "locator": "SI p20结构图1c与底物名称"
+              }
+            ]
+          },
+          {
+            "label": "原作者采用的体系",
+            "text": "2a=CF₃(OCF₂)₂CO₂K；TMAF／DMPU，150°C、5h。",
+            "source_refs": [
+              {
+                "id": "CQ-R15",
+                "locator": "SI p3、p9通用小规模程序"
+              }
+            ]
+          },
+          {
+            "label": "小规模产物3c",
+            "text": "p-I–C₆H₄–CH₂F；原报97%、69.2mg。",
+            "source_refs": [
+              {
+                "id": "CQ-R15",
+                "locator": "SI p11产物3c条目"
+              }
+            ]
+          },
+          {
+            "label": "表征读数",
+            "text": "原作者将结构式、¹H及¹⁹F NMR数据列于同一条目。",
+            "source_refs": [
+              {
+                "id": "CQ-R15",
+                "locator": "SI p11"
+              }
+            ]
+          }
+        ],
+        "notes": [
+          "图示重述原作者一个实例，不是实验操作指导，也不代表所有含碘醇的普适结果。",
+          "97%与69.2mg取小规模产物条目；不与另页放大试验的81%或投料字段混并。"
+        ]
+      },
+      "table": {
+        "caption": "3c实例的原报字段",
+        "columns": [
+          "字段",
+          "原报内容",
+          "定位"
+        ],
+        "rows": [
+          [
+            "底物",
+            "（4-碘苯基）甲醇1c",
+            "SI p20结构与名称"
+          ],
+          [
+            "试剂",
+            "2a：CF₃(OCF₂)₂CO₂K",
+            "SI p3"
+          ],
+          [
+            "通用小规模条件",
+            "2a／TMAF，DMPU，150°C、5h",
+            "SI p9"
+          ],
+          [
+            "产物与分离结果",
+            "1-(氟甲基)-4-碘苯3c；97%，69.2mg",
+            "SI p11"
+          ],
+          [
+            "相邻表征读数",
+            "¹H：5.30ppm，d，2H，J=47.5Hz；¹⁹F：−208.7ppm，t，J=47.6Hz",
+            "SI p11"
+          ]
+        ],
+        "source_refs": [
+          {
+            "id": "CQ-R15",
+            "locator": "SI p3试剂2a；p9通用小规模程序；p11产物3c；p20的1c→3c结构对应"
+          }
+        ]
+      },
+      "cooperation": {
+        "text": "论文支持信息署Shiyu Zhao、Yong Guo、Zhaoben Su、Wei Cao、Chengying Wu、Qing-Yun Chen，标明上海有机所与Sanming Hexafluo Chemicals两方机构；Yong Guo与Qing-Yun Chen标注通讯联系。具体实验工序不由署名推定。",
+        "source_refs": [
+          {
+            "id": "CQ-R15",
+            "locator": "SI p1作者、机构与星号/邮箱"
+          }
+        ]
+      },
+      "meaning": "这项晚年合作把含OCF₂羧酸盐的试剂功能落实到确切醇底物、产物和表征记录；可据此理解方法贡献，不必把一般性“含氟”标签当作化学解释。",
+      "boundaries": [
+        "本例用2020年SI的实际钾盐2a，不能用“2020不是钾盐、2021才是钾盐”的粗略二分替代具体实体。2020与2021仍是分别评价的研究。",
+        "小规模97%来自SI p11；SI p20放大段底物原印“6 mol”与同段其他单位存在异文，本页不据此重建投料、不擅自修正。",
+        "SI记录不等于正文已取得或谱图通过专业认证；单个底物的结果不证明完整机理、环境优势或安全性。已有2022大环理论计算仍归原作者，M0不参与本例。"
+      ],
+      "sources": [
+        {
+          "id": "CQ-R15",
+          "title": "Zhao、Guo等：A Series of Deoxyfluorination Reagents Featuring OCF₂ Functional Groups（2020）及原作者SI",
+          "kind": "原作者支持信息（SI）",
+          "locator": "Organic Letters22：8634—8637；DOI10.1021/acs.orglett.0c03238；SI p1、3、9、11、20，DOI10.1021/acs.orglett.0c03238.s001",
+          "url": "https://acs.figshare.com/articles/journal_contribution/A_Series_of_Deoxyfluorination_Reagents_Featuring_OCF_sub_2_sub_Functional_Groups/13087491"
+        }
+      ],
+      "main_route": "topics/fluoroporphyrins/index.html"
+    },
+    {
+      "id": "A09",
+      "line_name": "学科建设与人才培养",
+      "route": "people/index.html",
+      "anchor": "a09-deep-reading",
+      "title": "从自主选题读到合作论文：刘超的卟啉研究阅读线",
+      "question": "怎样把一段育人回忆接回具体科学问题和共同成果，而不替研究者编写成长因果？",
+      "sections": [
+        {
+          "heading": "第一站：选择一个自己的问题",
+          "text": "刘超在2018年访谈中回忆，入组时陈庆云先介绍研究方向并给资料，让他学习后再来讨论，听取他的兴趣与想法。刘超查阅含氟卟啉资料、形成了解后，才选择这一方向。传记p92保存的是学生对选择过程的具名回忆；读者能看见导师给出研究空间、学生参与判断，而不是只得到一句笼统的“重视培养”。",
+          "identity": "original_observation",
+          "source_refs": [
+            {
+              "id": "HERITAGE-S01",
+              "locator": "传记印刷p92/PDF118，刘超2018年5月15日访谈转引"
+            }
+          ]
+        },
+        {
+          "heading": "第二站：共同进入一个新领域",
+          "text": "沿这段回忆转到传记p79，刘超讲到陈庆云介绍湖南大学有经验的老师供他请教。陈先生同时取得卟啉资料，自己阅读、作笔记，再与学生讨论建议并继续研究反馈的问题。同一人物的两段回忆让选择和学习相互照应。它们可以帮助理解这项交叉研究的日常工作，不能拿来测算哪种指导方式必然提高成果数量或产率。",
+          "identity": "original_observation",
+          "source_refs": [
+            {
+              "id": "HERITAGE-S01",
+              "locator": "传记印刷p79/PDF105，刘超2018年5月15日访谈转引"
+            }
+          ]
+        },
+        {
+          "heading": "第三站：把阅读接回原作者论文",
+          "text": "传记p81把读者带到三氟甲基卟啉的结构修饰以及2006年的还原观察；2007年发表的20π大环论文署Chao Liu、Dong-Mei Shen、Qing-Yun Chen。其SI S2还明确引用Liu与Chen在2005年的起始卟啉合成工作。由访谈到研究对象，再到论文中的作者和技术接续，是一条有出处的阅读路径，不是由后来的成果倒推教学效果的证明。",
+          "identity": "platform_reading",
+          "source_refs": [
+            {
+              "id": "HERITAGE-S01",
+              "locator": "传记印刷p81/PDF107，作者叙述的2004/2006研究过程"
+            },
+            {
+              "id": "CQ-R10",
+              "locator": "2007年SI S1作者；S2对2005年Liu/Chen论文的引文及Cu1还原实验"
+            }
+          ]
+        }
+      ],
+      "diagram": {
+        "kind": "steps",
+        "caption": "从具名回忆走向已有A08科学个案",
+        "steps": [
+          {
+            "label": "自主选题",
+            "text": "刘超查阅资料后选择含氟卟啉方向。",
+            "source_refs": [
+              {
+                "id": "HERITAGE-S01",
+                "locator": "传记印刷p92/PDF118，刘超2018年5月15日访谈转引"
+              }
+            ]
+          },
+          {
+            "label": "共同学习",
+            "text": "请教同行、读资料、作笔记并讨论实验问题。",
+            "source_refs": [
+              {
+                "id": "HERITAGE-S01",
+                "locator": "传记印刷p79/PDF105，刘超2018年5月15日访谈转引"
+              }
+            ]
+          },
+          {
+            "label": "具体科学对象",
+            "text": "CF₃取代卟啉；2006年观察与2007年发表分开。",
+            "source_refs": [
+              {
+                "id": "HERITAGE-S01",
+                "locator": "传记p81"
+              }
+            ]
+          },
+          {
+            "label": "共同成果与原文",
+            "text": "进入A08大环详读，再读2007 SI S1—S2及所引2005论文。",
+            "source_refs": [
+              {
+                "id": "CQ-R10",
+                "locator": "2007 SI S1—S2"
+              }
+            ]
+          }
+        ],
+        "notes": [
+          "箭头表示本平台建议的阅读顺序，不是教育效果、个人贡献比例或科学发现的因果证明。",
+          "可关联A08（交叉研究与晚年拓展）的20π大环详读；相关实验和已有理论成果均归实际原作者。"
+        ]
+      },
+      "cooperation": {
+        "text": "刘超的回忆具体记述他与陈庆云的选题和讨论；湖南大学同行的经验为共同学习提供背景。2007论文的共同作者沈冬梅按原作署名保留，不能把传记聚焦的师生二人当作全部成果作者。",
+        "source_refs": [
+          {
+            "id": "HERITAGE-S01",
+            "locator": "传记印刷p92/PDF118，刘超2018年5月15日访谈转引"
+          },
+          {
+            "id": "HERITAGE-S01",
+            "locator": "传记印刷p79/PDF105，刘超2018年5月15日访谈转引"
+          },
+          {
+            "id": "CQ-R10",
+            "locator": "SI S1共同署名"
+          }
+        ]
+      },
+      "meaning": "育人故事与科学论文可以相互引导：前者留下研究如何开始、如何讨论的个人经验，后者保存对象、方法和共同作者。两者分清身份，传承便能落到后人可继续阅读的真实问题。",
+      "boundaries": [
+        "2018年访谈为传记转引，本轮没有取得访谈原录；传记p81的作者叙述与刘超具名回忆分开。",
+        "不以一位学生的回忆证明一般教育效果，不从合著顺序分派实验，也不把2006观察改为2007发生。",
+        "2005论文在此依据2007 SI S2的实际引文和既有题录连接，不声称本轮已取得或核读2005正文；2007具体科学结果见已有A08详读，不在人物页重复展开。"
+      ],
+      "sources": [
+        {
+          "id": "HERITAGE-S01",
+          "title": "朱晶、刘超：《氟缘笃志：陈庆云传》",
+          "kind": "传记、具名访谈转引与作者叙述",
+          "locator": "印刷p79、81、92；对应PDF第105、107、118页。p79、92访谈页注均为刘超2018年5月15日访谈。",
+          "url": null
+        },
+        {
+          "id": "CQ-R10",
+          "title": "Liu、Shen、Chen：Synthesis and Reactions of 20π-Electron β-Tetrakis(trifluoromethyl)-meso-tetraphenylporphyrins（2007）及SI",
+          "kind": "原作者支持信息与引文",
+          "locator": "JACS129：5814—5815；SI S1署名、S2起始卟啉文献与Cu1还原记录；S2引用Liu/Chen，Eur.J.Org.Chem.2005：3680。",
+          "url": "https://acs.figshare.com/articles/journal_contribution/Synthesis_and_Reactions_of_20_Electron_Tetrakis_trifluoromethyl_i_meso_i_tetraphenylporphyrins/3008851"
+        }
+      ],
+      "main_route": "people/index.html",
+      "related_readings": [
+        {
+          "path": "topics/fluoroporphyrins/index.html",
+          "anchor": "a08-representative-study",
+          "label": "A08（交叉研究与晚年拓展）：20π大环的原作与合作"
+        }
+      ]
+    }
+  ]
+}
