@@ -1,7 +1,7 @@
 """Reviewed scope and identities for the home and achievement overview revision."""
 
 MANIFEST = 'provenance/platform-presentation.v51.json'
-MANIFEST_SHA256 = 'ca1656008d8a6d57c141c7b1bc40eb9febec40f1294f07798cfb298be4e9767b'
+MANIFEST_SHA256 = '4f4392c55736ba2dae84bf2e9bc23f1bd28e5b4df83b798f7a634c1d8c7d8054'
 PREDECESSOR = 'd7ea8adb1e826381e21a317e54ecd855b0fcbc0d'
 PRESENTATION_ID = 'PLATFORM-HOME-ACHIEVEMENT-LINKS-20261119-v51'
 HTML_PATHS = ('achievements/index.html', 'index.html')
