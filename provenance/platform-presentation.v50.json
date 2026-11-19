@@ -1,0 +1,120 @@
+{
+  "schema_version": "50.0",
+  "presentation_id": "PLATFORM-STORY-SOURCES-20261119-v50",
+  "publication_kind": "story_sources",
+  "previous_presentation_commit": "8a99ea44f5deb956041e9ff5720d29bfd10c4d94",
+  "changed_html_paths": [
+    "people/stories/index.html"
+  ],
+  "previous_presentation": "provenance/platform-presentation.v49.json",
+  "change_reason": "Revise historical stories with publicly accessible accounts and source references.",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "M0_resumed": false,
+  "Nemotron_training_resumed": false,
+  "reversible_text_files": [
+    {
+      "path": "scripts/a01_publication_contract.py",
+      "old_sha256": "4d93bc13b801baf0f0dd702145f5adc84784497454805972998558be7d07fa52",
+      "old_bytes": 325272,
+      "new_sha256": "3eaae925e5d79c98a4702280ddc5e275e5a064f6ce064b39da14d02962e1a2f2",
+      "new_bytes": 326261,
+      "edits": [
+        {
+          "old_offset": 324283,
+          "replacement": 0
+        },
+        {
+          "old_offset": 324892,
+          "replacement": 1
+        },
+        {
+          "old_offset": 325272,
+          "replacement": 2
+        }
+      ]
+    },
+    {
+      "path": "scripts/check_site.py",
+      "old_sha256": "2e03a821130f7c12e4e807332f74aba9db6a640ff610d9eb99300192059773db",
+      "old_bytes": 23749,
+      "new_sha256": "73371477e6fe640bbe9089b08fd9c54b475c7be3006f6a18cb822331c629a761",
+      "new_bytes": 23746,
+      "edits": [
+        {
+          "old_offset": 4983,
+          "replacement": 3
+        }
+      ]
+    },
+    {
+      "path": "site/people/stories/index.html",
+      "old_sha256": "944a25145cca4b5ec7ec4f5fc7dc8abbc30dfcd36c1b7a502261349702e98837",
+      "old_bytes": 27756,
+      "new_sha256": "418adab6994e9623b66389019686f3297d84282d480c9624b406bc543e2567b9",
+      "new_bytes": 29155,
+      "edits": [
+        {
+          "old_offset": 4872,
+          "replacement": 4
+        },
+        {
+          "old_offset": 15241,
+          "replacement": 5
+        },
+        {
+          "old_offset": 19772,
+          "replacement": 6
+        },
+        {
+          "old_offset": 25421,
+          "replacement": 7
+        },
+        {
+          "old_offset": 27099,
+          "replacement": 8
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "effective_website_entries",
+      "new": "_effective_website_entries_v49"
+    },
+    {
+      "old": "publication_members",
+      "new": "_publication_members_v49"
+    },
+    {
+      "old": "",
+      "new": "\n\ndef effective_website_entries(root: Path, baseline: dict, *, verify_current=True,\n                              revision_chain=None, include_presentation=True) -> tuple[dict, dict]:\n    arguments = {'verify_current': verify_current, 'revision_chain': revision_chain,\n                 'include_presentation': include_presentation}\n    if (root/'provenance/platform-presentation.v50.json').is_file():\n        from story_sources_publication import apply\n        return apply(root, baseline, _effective_website_entries_v49, **arguments)\n    return _effective_website_entries_v49(root, baseline, **arguments)\n\n\ndef publication_members(root: Path, entries: dict) -> list[dict]:\n    if (root/'provenance/platform-presentation.v50.json').is_file():\n        from story_sources_publication import publication_members as story_members\n        return story_members(root, entries, _effective_website_entries_v49, _publication_members_v49)\n    return _publication_members_v49(root, entries)\n"
+    },
+    {
+      "old": "navigation",
+      "new": "sources"
+    },
+    {
+      "old": "。克鲁扬茨负责实验室和研究方向，日常指导他的“小导师”则是甘巴里扬博士，大家叫她“丹娘”。陈庆云在北大做过的有机合成实验不多，熟悉环境后，便跟着丹娘做实验。在书中所述的实验条件下，难处不仅是让反应发生，更要弄清得到什么：产物分析很依赖元素分析，样品纯度格外重要。他随后围绕六氟丙酮展开基本反应研究，研究对象的新颖与实际分析的困难，成为训练的一部分。</p><p>一次实验后，他把装有六氟丙酮水合物的玻璃瓶放在实验台中间，受到克鲁扬茨严厉批评。陈庆云后来回想，产物来之不易，样品若因疏忽毁损，此前投入的时间和劳动就会落空。这种要求把实验操作与对研究工作的责任连在了一起。</p><p>严格之外，实验室也鼓励独立思考。克鲁扬茨支持同事相互帮助、提出自己的设想；吃饭或喝咖啡时，大家也会讨论学术问题。学生、老师、院士都可以表示不同意见。丹娘的日常指导、导师的严格要求与平等讨论，共同构成了陈庆云早期的研究训练：既认真对待样品和观察，也让年轻人的想法有机会接受讨论。</p><nav class=\"story-actions\" aria-label=\"在“小导师”丹娘与克鲁扬茨身边学习研究后续阅读\"><a href=\"../../topics/early-fluoroketones/index.html#a01-representative-study\">阅读A01（全氟酮化学：六氟丙酮与双酚AF）成果</a> · <a href=\"../../people/index.html#a09-representative-study\">阅读A09（学科建设与人才培养）成果</a> · <a href=\"../../achievements/index.html#heritage-story-st17\">返回本则摘要</a> · <a href=\"#story-index\">返回故事目录 ↑</a></nav></article>\r\n<article class=\"story\" id=\"stories-st18\"><p class=\"story-line\">A01（全氟酮化学：六氟丙酮与双酚AF） · A09（学科建设与人才培养）</p><h2>一次校样中的署名选择</h2><p>留苏期间，陈庆云围绕六氟丙酮衍生物继续研究，并据此撰写论文。克鲁扬茨亲自修改并推荐发表。按传记所述，原来的署名安排是导师、丹娘、陈庆云；克鲁扬茨却把陈庆云放在第一位，自己排在最后。</p><p>丹娘作出了另一个选择：她认为自己没有参加这项具体工作，坚持删去自己的名字。陈庆云收到校样后，看到缺少丹娘，想到日常指导对自己进步的帮助，便到编辑部把她补为第二作者。最终，这篇共轭衍生物论文以陈庆云、甘巴里扬、克鲁扬茨的顺序署名。</p><p>这个故事同时留下三种考虑：导师支持青年研究者，日常指导者区分自己是否参加具体工作，学生珍惜长期获得的帮助。它让合作关系变得可见，也提醒人们把具体研究参与和长期培养作用分别讲清。</p><nav class=\"story-actions\" aria-label=\"一次校样中的署名选择后续阅读\"><a href=\"../../topics/early-fluoroketones/index.html#A01-HIST-COOP-02\">阅读A01（全氟酮化学：六氟丙酮与双酚AF）成果</a> · <a href=\"../../achievements/index.html#heritage-story-st18\">返回本则摘要</a> · <a href=\"#story-index\">返回故事目录 ↑</a></nav></article>\r\n<article class=\"story\" id=\"stories-st19\"><p class=\"story-line\">A01（全氟酮化学：六氟丙酮与双酚AF） · A09（学科建设与人才培养）</p><h2>稿费相助与多年后的回馈</h2><p>在苏联研究六氟丙酮的日子里，丹娘给予陈庆云的帮助不止于实验。陈庆云后来回忆，自己遇到健康困难时，丹娘等人拿出写文章所得的稿费，为他购药。稿费并不多，这份来自老师和同事的关怀，却被他长久记住。</p><p>女儿陈肖在《我心目中的父亲》中也写到这段往事。她记得，父亲一直感念丹娘：后来有机会赴苏联作学术交流，得知丹娘生活拮据，便用自己并不宽裕的收入帮助她。这段师生情谊延续到了留学之后。</p><p>日常指导使青年研究者能够进入一个陌生领域，困难中的支持则让这段师生关系超出了课题期限。多年后的回馈，是这条联系的另一端；全氟酮化学的早期研究史，也因此保留下合作群体中彼此照应的一面",
+      "new": "，跟随克鲁扬茨研究六氟丙酮。日常带他做研究的是甘巴里扬博士，组里称她为“丹娘”。同实验室的尤里·切布尔科夫（Yuri Cheburkov）后来写纪念文章，也记得这位同事指导过陈庆云的学位研究。</p><p>陈庆云在《难忘的莫斯科岁月》中写到，克鲁扬茨每周二、周四上午来实验室，逐个询问大家做出了什么。导师要求他完成指定的实验，也鼓励他试自己的想法。传记还记下了一次批评：陈庆云把盛有六氟丙酮水合物的玻璃瓶放在实验台中间。这样一瓶样品来之不易，实验做完，保管样品同样要紧。</p><p>还有一次，克鲁扬茨和丹娘已经商量好了下一步实验。一名年轻同事听完，提出另一条更简洁的合成路线。克鲁扬茨采纳了建议，半年后得到了预期的结果。陈庆云在回忆中把这件事与自己的成长联系起来：在这里，年轻人既要经得起追问，也可以对导师刚定下的方案提出异议。</p><nav class=\"story-actions\" aria-label=\"在“小导师”丹娘与克鲁扬茨身边学习研究后续阅读\"><a href=\"../../topics/early-fluoroketones/index.html#a01-representative-study\">阅读A01（全氟酮化学：六氟丙酮与双酚AF）成果</a> · <a href=\"../../people/index.html#a09-representative-study\">阅读A09（学科建设与人才培养）成果</a> · <a href=\"../../achievements/index.html#heritage-story-st17\">返回本则摘要</a> · <a href=\"#story-index\">返回故事目录 ↑</a></nav></article>\r\n<article class=\"story\" id=\"stories-st18\"><p class=\"story-line\">A01（全氟酮化学：六氟丙酮与双酚AF） · A09（学科建设与人才培养）</p><h2>一次校样中的署名选择</h2><p>一篇六氟丙酮衍生物论文写成后，陈庆云原先将克鲁扬茨列在首位、丹娘列在第二位，自己排在最后。他在《难忘的莫斯科岁月》中回忆，克鲁扬茨略改了稿子，就把顺序倒了过来，让陈庆云领衔。丹娘则说，做这项工作时她在休假，自己没有参与，坚持删去名字。</p><p>收到校样时，陈庆云发现上面果然没有丹娘。他想到自己从她的指导中受益，随即去了编辑部，把她补列为第二作者。1960年这篇论文正式刊出时，首页依次列出陈庆云、甘巴里扬和克鲁扬茨。三人的选择经过由陈庆云本人讲述，最终的署名可以在原刊第1113页读到。</p><nav class=\"story-actions\" aria-label=\"一次校样中的署名选择后续阅读\"><a href=\"../../topics/early-fluoroketones/index.html#A01-HIST-COOP-02\">阅读A01（全氟酮化学：六氟丙酮与双酚AF）成果</a> · <a href=\"../../achievements/index.html#heritage-story-st18\">返回本则摘要</a> · <a href=\"#story-index\">返回故事目录 ↑</a></nav></article>\r\n<article class=\"story\" id=\"stories-st19\"><p class=\"story-line\">A01（全氟酮化学：六氟丙酮与双酚AF） · A09（学科建设与人才培养）</p><h2>稿费相助与多年后的回馈</h2><p>丹娘曾用自己的稿费给陈庆云买药。陈庆云在《难忘的莫斯科岁月》中记得很具体：一次体检发现他的白血球偏低，丹娘买来当时价格昂贵的维生素B₁₂，供他注射。</p><p>同一篇回忆还写到1960年6月的答辩。答辩通过，陈庆云把收到的鲜花转献给导师，席间又端出自己做的红烧鸡，答谢研究室的同人。</p><p>后来的回馈见于女儿陈肖为《氟缘笃志：陈庆云传》所写的序二《我心目中的父亲》。据她回忆，父亲后来得知丹娘生活拮据，曾拿出自己的收入帮助老师"
+    },
+    {
+      "old": "陈庆云与黄维垣、冯允恭赴美参加氟化学会议。会后，他在杜邦、3M等企业作报告，介绍团队与F-53有关的多氟烷基醚磺酸制备工作。传记也记载了到哈佛大学作学术报告的行程。</p><p>在国内应用任务中形成的化学工作，成为企业交流的具体内容，连接着制备方法、材料与使用问题。陈先生把自己的研究经验带到不同机构，让这些问题与成果进入同行之间的介绍和讨论。实际任务支撑了化学研究，形成的工作又为对外交流提供了内容。</p><p>这是陈庆云第一次出访美国，行程从会议延伸到企业与大学。与黄维垣、冯允恭同行，使各自的研究与国际氟化学界有了面对面交流的机会；从具体工作讲起，也为后续的学术联系积累了共同的话题和经验。</p><nav class=\"story-actions\" aria-label=\"把F-53研究带到杜邦与3M的报告中后续阅读\"><a href=\"../../topics/f53/index.html#a04-representative-study\">阅读A04（F-53铬雾抑制剂）成果</a> · <a href=\"../../people/index.html#a09-representative-study\">阅读A09（学科建设与人才培养）成果</a> · <a href=\"../../achievements/index.html#heritage-story-st20\">返回本则摘要</a> · <a href=\"#story-index\">返回故事目录 ↑</a></nav></article>\r\n<article class=\"story\" id=\"stories-st21\"><p class=\"story-line\">A05（制冷剂与配套技术） · A09（学科建设与人才培养）</p><h2>向杜邦工艺发明者请教之后</h2><p>1991年访问杜邦公司时，陈庆云带去的还有一个没有想通的问题：HFC-134a制冷剂的液相工艺已经能够得到产品，反应为什么能够发生，却仍需解释。他向有关液相法专利的发明者贡普雷希特（W. H. Gumprecht）请教机理。根据传记的记述，这次交流没有给出明确答案，陈先生因而把它看作值得继续研究的基础问题，建议小组细致探讨。</p><p>工艺已经能够使用，仍然可以追问其中的原理；向已有方法的提出者请教，也可以使尚未解决的问题更清楚。陈先生把问题带回自己的研究对象，要求团队从实际反应现象继续探讨，而没有以得到产品作为研究的终点。</p><p>这段往来呈现了企业工艺与基础研究之间的联系：科学交流围绕具体问题展开，研究者再以自己的观察接续探索。这里保留的是一次请教及其后的问题意识，相关反应的机理解释仍须依具体原文和研究条件理解",
+      "new": "黄维垣、冯允恭和陈庆云赴美国佛罗里达参加第四次冬季氟化学会议。陈庆云在《自然杂志》的会议介绍中写道，应大会主席D. D. DesMarteau邀请，黄维垣带队参会。他们把在国内研制F-53时开展的相关研究带到了美国，先后在五个单位介绍这项工作。他在文中把论文题目记作《多氟烷基醚磺酸的制备》。</p><p>多年后，陈庆云在为黄维垣写的回忆中记下了这一个多月的行程。一行人访问了杜邦、3M等企业和包括哈佛在内的四所大学。陈庆云在这篇回忆里把自己沿途作的报告写作《全氟醚基磺酸的合成和应用》。</p><p>陈庆云还记得回程中的一件事。抵达北京，才得知要向院里交书面报告，他和冯允恭估计还得多留一周。黄维垣却在飞机上就写好了初稿。三人稍作修改便交了上去，第二天就回到了上海。</p><nav class=\"story-actions\" aria-label=\"把F-53研究带到杜邦与3M的报告中后续阅读\"><a href=\"../../topics/f53/index.html#a04-representative-study\">阅读A04（F-53铬雾抑制剂）成果</a> · <a href=\"../../people/index.html#a09-representative-study\">阅读A09（学科建设与人才培养）成果</a> · <a href=\"../../achievements/index.html#heritage-story-st20\">返回本则摘要</a> · <a href=\"#story-index\">返回故事目录 ↑</a></nav></article>\r\n<article class=\"story\" id=\"stories-st21\"><p class=\"story-line\">A05（制冷剂与配套技术） · A09（学科建设与人才培养）</p><h2>向杜邦工艺发明者请教之后</h2><p>《氟缘笃志：陈庆云传》第57页记载，1991年陈庆云访问杜邦，向贡普雷希特（W. H. Gumprecht）问起制冷剂HFC-134a的制备。团队关心的是一个具体的化学问题：在水溶液中，氟离子为什么能够取代原料分子上的氯？据传记记述，两人当时都没有给出明确的解释。陈庆云把问题带回课题组，建议继续研究。</p><p>贡普雷希特的工作可以从一份较早的专利读起。1982年公布的美国专利US4311863A列他为发明人、杜邦为受让人；其中记载，以含氯原料CF₃CH₂Cl和氟化钾水溶液制取CF₃CH₂F。原料和产物的区别，正好说明陈庆云追问的是哪一步化学变化"
+    },
+    {
+      "old": "肖吉昌回忆，一次赴日本京都大学参加学术会议时，他顺访了卟啉化学家大須賀篤弘（Atsuhiro Osuka）的课题组。谈起陈庆云，大須賀称他是含氟卟啉领域的开拓者，还拿出一本册子：陈先生相关的含氟卟啉论文被收集并装订在一起。同行对研究的关注，落实为一篇篇收集、装订留存的论文。</p><p>另一个交流片段来自刘超的回忆。2007年，陈庆云与刘超等关于独特电子结构含氟烷基卟啉的论文发表于《美国化学会会志》后，大須賀特意发来祝贺邮件，希望有更多交流。师生围绕大环结构和电子性质展开的探索，得到了这位日本卟啉研究者的具体回应。</p><p>一本论文册与一封邮件，呈现了国际学术交往中阅读、理解与相互回应的日常一面。这些往来围绕实际发表的化学研究展开；论文的研究成果归其共同作者，同行的关注与评价则成为学术对话的另一部分。</p><nav class=\"story-actions\" aria-label=\"论文册与祝贺邮件：大須賀篤弘的回应后续阅读\"><a href=\"../../topics/fluoroporphyrins/index.html#a08-isophlorin\">阅读A08（交叉研究与晚年拓展）成果</a> · <a href=\"../../achievements/index.html#heritage-story-st23\">返回本则摘要</a> · <a href=\"#story-index\">返回故事目录 ↑</a></nav></article>\r\n<article class=\"story\" id=\"stories-st24\"><p class=\"story-line\">A06（磺酸酯、二氟卡宾与三氟甲基化） · A08（交叉研究与晚年拓展） · A09（学科建设与人才培养）</p><h2>宇根山健治贺信里的研究线索</h2><p>2009年陈庆云八十寿辰之际，日本冈山大学的宇根山健治（Kenji Uneyama）在贺信中谈起他的研究。传记收录的来信内容具体提到，甲酯试剂的三氟甲基化用途，以及硅酯试剂的二氟环丙烷化用途；他还提到单电子转移反应与含氟烷基卟啉化学，认为这些工作对现代有机氟化学产生了影响。</p><p>这份同行回应把几条研究线联系起来：从特色含氟试剂提供的合成工具，到反应方法和用途的拓展，再到氟化学与卟啉研究的结合。评价没有停留在一般赞誉，而是指出自己关注的具体试剂与化学问题，让读者看到不同研究者如何理解陈先生工作的意义。</p><p>陈庆云与宇根山的交往也留下了通信。贺信中的研究线索与这些往来，共同呈现了围绕学术内容建立的联系：陈先生的研究被同行阅读，同行又以自己的研究兴趣作出回应。这类具体对话，是学术共同体相互了解的一种方式",
+      "new": "据《氟缘笃志：陈庆云传》所载肖吉昌的回忆，一次赴日本京都大学参加学术会议时，他顺访了卟啉化学家大須賀篤弘（Atsuhiro Osuka）的课题组。谈起陈庆云，大須賀称他是含氟卟啉领域的开拓者，还拿出一本册子：陈先生相关的含氟卟啉论文被收集并装订在一起。同行对研究的关注，落实为一篇篇收集、装订留存的论文。</p><p>书中还记下了刘超的另一段回忆。2007年，陈庆云与刘超等关于独特电子结构含氟烷基卟啉的论文发表于《美国化学会会志》后，大須賀特意发来祝贺邮件，希望有更多交流。师生围绕大环结构和电子性质展开的探索，得到了这位日本卟啉研究者的具体回应。</p><p>一本论文册与一封邮件，呈现了国际学术交往中阅读、理解与相互回应的日常一面。这些往来围绕实际发表的化学研究展开；论文的研究成果归其共同作者，同行的关注与评价则成为学术对话的另一部分。</p><nav class=\"story-actions\" aria-label=\"论文册与祝贺邮件：大須賀篤弘的回应后续阅读\"><a href=\"../../topics/fluoroporphyrins/index.html#a08-isophlorin\">阅读A08（交叉研究与晚年拓展）成果</a> · <a href=\"../../achievements/index.html#heritage-story-st23\">返回本则摘要</a> · <a href=\"#story-index\">返回故事目录 ↑</a></nav></article>\r\n<article class=\"story\" id=\"stories-st24\"><p class=\"story-line\">A06（磺酸酯、二氟卡宾与三氟甲基化） · A08（交叉研究与晚年拓展） · A09（学科建设与人才培养）</p><h2>宇根山健治贺信里的研究线索</h2><p>上海有机所保存的一张1996年照片里，陈庆云与宇根山健治在露台上合影。十三年后，两人在上海的一场学术聚会上再度相见。</p><p>2009年2月19日，日本冈山大学的宇根山健治与夫人来到上海，参加陈庆云的八十寿辰庆贺会。上海有机所次日的报道记载，庆贺会后，林国强主持学术报告会，宇根山健治与美国3M公司的裘再明、上海有机所的黎占亭分别作了报告。</p><p>《氟缘笃志：陈庆云传》第87页转述了宇根山的贺信。信中谈到，两种名称相近的试剂在合成中各有用途：甲酯试剂用于三氟甲基化，硅酯试剂用于二氟环丙烷化。宇根山还谈及单电子转移反应与含氟烷基卟啉。读者从这封信的记述中，可以看到一位同领域的研究者具体关注陈庆云的哪些工作"
+    },
+    {
+      "old": "具名回忆与传记所引书信按书中记载转述",
+      "new": "大須賀篤弘论文册见第77页所引肖吉昌访谈（2018年5月14日）；祝贺邮件见第82页所引刘超访谈（2018年5月15日）。宇根山贺信见第87页"
+    },
+    {
+      "old": "",
+      "new": "li>上海有机所党政办公室，<a href=\"https://sioc.cas.cn/cxwh/whhd/200902/t20090220_1747976.html\">《有机所庆贺陈庆云院士八十华诞》</a>，2009年2月20日。首段列到场嘉宾，末段记学术报告会的主持人与报告人。</li><li>上海有机所陈庆云院士纪念专题，<a href=\"https://sioc.cas.cn/dncqy/sptj/index_2.html\">《生平图集》</a>，图注“1996年与K.Uneyama教授在露台上合影留念”。<a href=\"https://sioc.cas.cn/dncqy/sptj/202303/W020230305370739302318.jpg\">查看馆方照片</a>。</li><li>William H. Gumprecht，<a href=\"https://patents.google.com/patent/US4311863A/en\">美国专利US4311863A</a>，1982年1月19日。首页、摘要及实施例载发明人、受让人和制备方法。1991年访问中的问答见传记第57页。</li><li>陈庆云，<a href=\"https://www.sioc.ac.cn/kxj/ml/hwy/jnc/202308/P020230824356102730823.pdf\">《黄维垣院士90华诞志庆集》“同事眼中的黄先生”栏目署名回忆</a>，2011年，第54—55页，见“1979年初”一段。</li><li>陈庆云，<a href=\"https://sioc.cas.cn/kxj/ml/cqy/shhd/201702/W020230825637128817177.jpg\">《氟化学的进展——介绍美国第四次冬季氟化学会议》原页</a>，《自然杂志》第360页左栏，上海有机所公开。</li><li>陈庆云，<a href=\"https://sioc.cas.cn/kxj/ml/cqy/xsff/tnull_6866369.html\">《难忘的莫斯科岁月》</a>，《科学的道路》，2005年，第436—438页。上海有机所公开原页：<a href=\"https://sioc.cas.cn/kxj/ml/cqy/xsff/W020230824538593515026.jpg\">第437页（实验室讨论与署名）</a>、<a href=\"https://sioc.cas.cn/kxj/ml/cqy/xsff/W020230824538594216371.jpg\">第438页（校样、购药与答辩）</a>。</li><li>Yuri Cheburkov，<a href=\"https://doi.org/10.1016/j.jfluchem.2007.04.021\">About Ivan Ludvigovich Knunyants</a>，Journal of Fluorine Chemistry，2007，128：693—698。第695页第3节是实验室同人对丹娘和克鲁扬茨的回忆。</li><li>陈庆云、甘巴里扬、克鲁扬茨，<a href=\"https://www.mathnet.ru/rus/dan23922\">六氟丙酮衍生物的共轭研究</a>，Доклады АН СССР，1960，133（5）：1113—1116。第1113页载正式发表的作者次序。</li><"
+    }
+  ]
+}

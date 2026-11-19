@@ -4405,7 +4405,7 @@ def _publication_members_v48(root: Path, entries: dict) -> list[dict]:
     return _publication_members_v47(root, entries)
 
 
-def effective_website_entries(root: Path, baseline: dict, *, verify_current=True,
+def _effective_website_entries_v49(root: Path, baseline: dict, *, verify_current=True,
                               revision_chain=None, include_presentation=True) -> tuple[dict, dict]:
     arguments = {'verify_current': verify_current, 'revision_chain': revision_chain,
                  'include_presentation': include_presentation}
@@ -4415,8 +4415,25 @@ def effective_website_entries(root: Path, baseline: dict, *, verify_current=True
     return _effective_website_entries_v48(root, baseline, **arguments)
 
 
-def publication_members(root: Path, entries: dict) -> list[dict]:
+def _publication_members_v49(root: Path, entries: dict) -> list[dict]:
     if (root/'provenance/platform-presentation.v49.json').is_file():
         from story_navigation_publication import publication_members as navigation_members
         return navigation_members(root, entries, _effective_website_entries_v48, _publication_members_v48)
     return _publication_members_v48(root, entries)
+
+
+def effective_website_entries(root: Path, baseline: dict, *, verify_current=True,
+                              revision_chain=None, include_presentation=True) -> tuple[dict, dict]:
+    arguments = {'verify_current': verify_current, 'revision_chain': revision_chain,
+                 'include_presentation': include_presentation}
+    if (root/'provenance/platform-presentation.v50.json').is_file():
+        from story_sources_publication import apply
+        return apply(root, baseline, _effective_website_entries_v49, **arguments)
+    return _effective_website_entries_v49(root, baseline, **arguments)
+
+
+def publication_members(root: Path, entries: dict) -> list[dict]:
+    if (root/'provenance/platform-presentation.v50.json').is_file():
+        from story_sources_publication import publication_members as story_members
+        return story_members(root, entries, _effective_website_entries_v49, _publication_members_v49)
+    return _publication_members_v49(root, entries)

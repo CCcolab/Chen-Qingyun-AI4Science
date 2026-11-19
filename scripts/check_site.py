@@ -117,7 +117,7 @@ def inspect_site(*, require_node: bool = False) -> dict:
             errors.extend("Navigation: " + message for message in navigation["errors"])
         # Only source-rendered historical displays use exact, hash-checked v35
         # data. Navigation, labels, current HTML/JSON/JS and links remain current.
-        from story_navigation_publication import historical_root
+        from story_sources_publication import historical_root
         history_root = historical_root(ROOT)
         if (ROOT / "content/heritage-20261114.v1.json").is_file():
             from render_heritage import inspect_heritage
