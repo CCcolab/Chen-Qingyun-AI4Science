@@ -4329,7 +4329,7 @@ def _publication_members_v44(root: Path, entries: dict) -> list[dict]:
     return _publication_members_v43(root, entries)
 
 
-def effective_website_entries(root: Path, baseline: dict, *, verify_current=True,
+def _effective_website_entries_v45(root: Path, baseline: dict, *, verify_current=True,
                               revision_chain=None, include_presentation=True) -> tuple[dict, dict]:
     """Replay the complete v44 chain before the bounded Stories deepening fix."""
     arguments = {'verify_current': verify_current, 'revision_chain': revision_chain,
@@ -4340,9 +4340,28 @@ def effective_website_entries(root: Path, baseline: dict, *, verify_current=True
     return _effective_website_entries_v44(root, baseline, **arguments)
 
 
-def publication_members(root: Path, entries: dict) -> list[dict]:
+def _publication_members_v45(root: Path, entries: dict) -> list[dict]:
     """Use the exact v44 view while retaining the complete existing allowlist."""
     if (root/'provenance/platform-presentation.v45.json').is_file():
         from home_stories_deepening_publication import publication_members as stories_publication_members
         return stories_publication_members(root, entries, _publication_members_v44)
     return _publication_members_v44(root, entries)
+
+
+def effective_website_entries(root: Path, baseline: dict, *, verify_current=True,
+                              revision_chain=None, include_presentation=True) -> tuple[dict, dict]:
+    """Replay the complete v45 chain before the bounded Site deduplication fix."""
+    arguments = {'verify_current': verify_current, 'revision_chain': revision_chain,
+                 'include_presentation': include_presentation}
+    if (root/'provenance/platform-presentation.v46.json').is_file():
+        from site_deduplication_publication import apply
+        return apply(root, baseline, _effective_website_entries_v45, **arguments)
+    return _effective_website_entries_v45(root, baseline, **arguments)
+
+
+def publication_members(root: Path, entries: dict) -> list[dict]:
+    """Use the exact v45 view while retaining the complete existing allowlist."""
+    if (root/'provenance/platform-presentation.v46.json').is_file():
+        from site_deduplication_publication import publication_members as lifespan_publication_members
+        return lifespan_publication_members(root, entries, _publication_members_v45)
+    return _publication_members_v45(root, entries)
