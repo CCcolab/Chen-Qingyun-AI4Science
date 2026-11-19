@@ -1,4 +1,4 @@
-"""Verify the revised story sources and replay the preceding publication contract."""
+"""Verify the bounded page revisions following the story navigation release."""
 from __future__ import annotations
 
 from copy import deepcopy
@@ -7,6 +7,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 
 import story_navigation_publication as navigation
+import home_achievement_links_publication as home
 from stories_rebalance_publication import PUBLICATION_PATHS, _file, _identity, _reconstruct, _sha
 
 
@@ -19,28 +20,32 @@ CHANGED_FILES = {'site/'+STORY, 'scripts/a01_publication_contract.py', 'scripts/
 _projections = {}
 
 
-def _manifest(root):
-    raw = _file(root, MANIFEST).read_bytes()
-    if _sha(raw) != MANIFEST_SHA256:
-        raise ValueError('Story source manifest differs from the reviewed changes')
+def _manifest(root, path=MANIFEST, digest=MANIFEST_SHA256, html_paths=(STORY,), files=CHANGED_FILES):
+    raw = _file(root, path).read_bytes()
+    if _sha(raw) != digest:
+        raise ValueError('Page revision manifest differs from the reviewed changes: '+path)
     data = json.loads(raw)
-    if data['changed_html_paths'] != [STORY] or {row['path'] for row in data['reversible_text_files']} != CHANGED_FILES:
-        raise ValueError('Story source manifest exceeds the reviewed paths')
+    if data['changed_html_paths'] != list(html_paths) or {row['path'] for row in data['reversible_text_files']} != files:
+        raise ValueError('Page revision exceeds the reviewed paths: '+path)
     return data
 
 
-def projection_root(root: Path) -> Path:
-    """Restore all v49 files from their reviewed identities, including on cache hits."""
-    root = root.resolve()
-    data = _manifest(root)
-    edited = {row['path']: row for row in data['reversible_text_files']}
+def _v49_files(root):
     preceding = navigation._manifest(root)
-    identities = {**navigation.PREVIOUS_FILES,
-                  **{row['path']: (row['new_sha256'], row['new_bytes'])
-                     for row in preceding['reversible_text_files']},
-                  navigation.MANIFEST: (navigation.MANIFEST_SHA256, 74962),
-                  'scripts/story_navigation_publication.py':
-                      ('3ba857bf5b4e5fca4ee685595dfa4231e87042bbfea0d378dd886e07337b4010', 6334)}
+    return {**navigation.PREVIOUS_FILES, **_revised_files(preceding),
+            navigation.MANIFEST: (navigation.MANIFEST_SHA256, 74962),
+            'scripts/story_navigation_publication.py':
+                ('3ba857bf5b4e5fca4ee685595dfa4231e87042bbfea0d378dd886e07337b4010', 6334)}
+
+
+def _revised_files(data):
+    return {row['path']: (row['new_sha256'], row['new_bytes']) for row in data['reversible_text_files']}
+
+
+def _project(root, data, identities):
+    """Restore the complete predecessor tree and verify cached files on every use."""
+    root = root.resolve()
+    edited = {row['path']: row for row in data['reversible_text_files']}
     site = root/'site'
     members = {p.relative_to(site).as_posix() for p in site.rglob('*') if p.is_file() or p.is_symlink()}
     if members != {name[5:] for name in identities if name.startswith('site/')}:
@@ -65,45 +70,86 @@ def projection_root(root: Path) -> Path:
     return target
 
 
+def _previous(root):
+    if (root/home.MANIFEST).is_file():
+        data = _manifest(root, home.MANIFEST, home.MANIFEST_SHA256, home.HTML_PATHS, home.CHANGED_FILES)
+        identities = {**_v49_files(root), **_revised_files(_manifest(root)), **home.V50_ADDITIONS}
+        return _project(root, data, identities), (home.MANIFEST, home.MANIFEST_SHA256, data)
+    if (root/MANIFEST).is_file():
+        data = _manifest(root)
+        return _project(root, data, _v49_files(root)), (MANIFEST, MANIFEST_SHA256, data)
+    return root, None
+
+
+def projection_root(root: Path) -> Path:
+    previous, layer = _previous(root)
+    if layer is None:
+        raise ValueError('No page revision to project')
+    return previous
+
+
+def _layers(root):
+    """Unwind the active revisions, returning the v49 view and oldest-first manifests."""
+    layers = []
+    while True:
+        root, layer = _previous(root)
+        if layer is None:
+            return root, layers[::-1]
+        layers.append(layer)
+
+
 def historical_root(root: Path) -> Path:
-    predecessor = projection_root(root) if (root/MANIFEST).is_file() else root
-    return navigation.historical_root(predecessor)
+    previous, _ = _layers(root)
+    return navigation.historical_root(previous)
 
 
 def _updated(entries, data):
-    row = next(row for row in data['reversible_text_files'] if row['path'] == 'site/'+STORY)
-    old = entries[STORY]
-    if (old['sha256'], old['bytes']) != (row['old_sha256'], row['old_bytes']):
-        raise ValueError('Story entry differs from the preceding publication')
-    return {**entries, STORY: {**old, 'sha256': row['new_sha256'], 'bytes': row['new_bytes'],
-                               'presentation_id': PRESENTATION_ID}}
+    revised = dict(entries)
+    for route in data['changed_html_paths']:
+        row = next(row for row in data['reversible_text_files'] if row['path'] == 'site/'+route)
+        old = entries[route]
+        if (old['sha256'], old['bytes']) != (row['old_sha256'], row['old_bytes']):
+            raise ValueError('Page entry differs from the preceding publication: '+route)
+        revised[route] = {**old, 'sha256': row['new_sha256'], 'bytes': row['new_bytes'],
+                          'presentation_id': data['presentation_id']}
+    return revised
 
 
 def apply(root, baseline, callback, *, verify_current=True, revision_chain=None, include_presentation=True):
-    previous = projection_root(root)
+    previous, layers = _layers(root)
     entries, report = navigation._entries(previous, baseline, callback, {
         'verify_current': verify_current, 'revision_chain': revision_chain,
         'include_presentation': include_presentation})
     if not include_presentation:
         return entries, report
-    data = _manifest(root)
+    for path, digest, data in layers:
+        entries = _updated(entries, data)
+        report = _append_report(report, path, digest, data)
+    return entries, report
+
+
+def _append_report(report, path, digest, data):
     summary = {key: data[key] for key in ('presentation_id', 'publication_kind',
         'previous_presentation_commit', 'scientific_review_status', 'release_eligible',
         'scientific_data_unchanged', 'historical_achievement_independent_of_AI_review',
         'M0_resumed', 'Nemotron_training_resumed')}
-    summary.update(path=MANIFEST, sha256=MANIFEST_SHA256, changed_paths=[STORY], added_paths=[])
+    changed = data['changed_html_paths']
+    summary.update(path=path, sha256=digest, changed_paths=changed, added_paths=[])
     history = report['presentation']['presentation_chain']
-    return _updated(entries, data), {**report, 'changed_paths': sorted(set(report['changed_paths']) | {STORY}),
-                                     'presentation': {**summary, 'presentation_chain': [*history, summary]}}
+    return {**report, 'changed_paths': sorted(set(report['changed_paths']) | set(changed)),
+            'presentation': {**summary, 'presentation_chain': [*history, summary]}}
 
 
 def publication_members(root, entries, prior_entries, prior_members):
-    previous = projection_root(root)
+    previous, layers = _layers(root)
     baseline = json.loads(_file(previous, 'provenance/website-baseline.json').read_bytes())
     old, _ = navigation._entries(previous, baseline, prior_entries, {
         'verify_current': True, 'revision_chain': None, 'include_presentation': True})
-    if entries != _updated(old, _manifest(root)):
-        raise ValueError('Story source publication entries differ in identity, role or membership')
+    revised = old
+    for _, _, data in layers:
+        revised = _updated(revised, data)
+    if entries != revised:
+        raise ValueError('Page revision entries differ in identity, role or membership')
     members = prior_members(previous, old)
     if (len(members) != len(PUBLICATION_PATHS) or {row['path'] for row in members} != set(PUBLICATION_PATHS)
             or any(row != old[row['path']] for row in members)):
