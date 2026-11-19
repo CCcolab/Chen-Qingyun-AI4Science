@@ -8,6 +8,7 @@ from tempfile import TemporaryDirectory
 
 import story_navigation_publication as navigation
 import home_achievement_links_publication as home
+import study_details_publication as studies
 from stories_rebalance_publication import PUBLICATION_PATHS, _file, _identity, _reconstruct, _sha
 
 
@@ -71,14 +72,22 @@ def _project(root, data, identities):
 
 
 def _previous(root):
-    if (root/home.MANIFEST).is_file():
-        data = _manifest(root, home.MANIFEST, home.MANIFEST_SHA256, home.HTML_PATHS, home.CHANGED_FILES)
-        identities = {**_v49_files(root), **_revised_files(_manifest(root)), **home.V50_ADDITIONS}
-        return _project(root, data, identities), (home.MANIFEST, home.MANIFEST_SHA256, data)
-    if (root/MANIFEST).is_file():
-        data = _manifest(root)
-        return _project(root, data, _v49_files(root)), (MANIFEST, MANIFEST_SHA256, data)
-    return root, None
+    revisions = ((home, home.V50_ADDITIONS), (studies, studies.V51_ADDITIONS))
+    latest = next((revision for revision, _ in reversed(revisions) if (root/revision.MANIFEST).is_file()), None)
+    if latest is None and not (root/MANIFEST).is_file():
+        return root, None
+    identities = _v49_files(root)
+    data = _manifest(root)
+    path, digest = MANIFEST, MANIFEST_SHA256
+    if latest is not None:
+        for revision, additions in revisions:
+            identities.update(_revised_files(data))
+            identities.update(additions)
+            path, digest = revision.MANIFEST, revision.MANIFEST_SHA256
+            data = _manifest(root, path, digest, revision.HTML_PATHS, revision.CHANGED_FILES)
+            if revision is latest:
+                break
+    return _project(root, data, identities), (path, digest, data)
 
 
 def projection_root(root: Path) -> Path:
