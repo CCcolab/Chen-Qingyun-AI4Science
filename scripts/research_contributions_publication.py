@@ -2,7 +2,7 @@
 from render_representative_studies import ROUTES
 
 MANIFEST = 'provenance/platform-presentation.v54.json'
-MANIFEST_SHA256 = '49afe43fd0f81d28a2e3c999a3e95a9ba88edb476edc759d118b7dd3188f1db8'
+MANIFEST_SHA256 = '25b2e3339d8f5825e520baa45dbc38b7dfb68f3edc342b97b4fad5b08bff77e8'
 PREDECESSOR = 'a1da87c527cda2b34ac33c324e3b4b4ca1561e88'
 PRESENTATION_ID = 'PLATFORM-RESEARCH-CONTRIBUTIONS-20261120-v54'
 HTML_PATHS = ('index.html', 'achievements/index.html', *ROUTES[:8], 'topics/perfluorosulfonates/index.html')
