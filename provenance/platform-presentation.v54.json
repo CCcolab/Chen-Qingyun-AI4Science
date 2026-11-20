@@ -172,8 +172,8 @@
       "path": "site/pftb/index.html",
       "old_sha256": "03a29f7553ab9f93e94774d551180f78e364d17ae638726340d1b1eb19f782a8",
       "old_bytes": 133458,
-      "new_sha256": "477ae8a2fc9e14c6f096cf093e2a914f43c7b156947b0475551c51dfbd9ac8a3",
-      "new_bytes": 134607,
+      "new_sha256": "18936fcae245a052a4ecaadc9a311c5aefa895b667a8d3eff796fe6845f5f1db",
+      "new_bytes": 134881,
       "edits": [
         {
           "old_offset": 29572,
@@ -210,8 +210,8 @@
       "path": "site/topics/early-fluoroketones/index.html",
       "old_sha256": "5d9fe653879ba1c7c837069bb323d0e610a25cd33a83a95800e1053d62f54378",
       "old_bytes": 252474,
-      "new_sha256": "681ce6c03de269f85f7cc50b83ff5534f0403ffe713c28673c37436807398430",
-      "new_bytes": 253795,
+      "new_sha256": "ece0d6e08cd2727888d87c0973d85b42c54f79ca47ead6750b88438bbb5c83b0",
+      "new_bytes": 254090,
       "edits": [
         {
           "old_offset": 5702,
@@ -248,8 +248,8 @@
       "path": "site/topics/fluoromonomers/index.html",
       "old_sha256": "5b7058b818ec29ba08013fe34c82954f58b301f8db934b458178034242d7a72c",
       "old_bytes": 34523,
-      "new_sha256": "b1c082cd7c4707cbb816968c8f3c0e153fe22be811704b18d286769cd3896176",
-      "new_bytes": 35611,
+      "new_sha256": "70a620b81ab2ef69252ad757b51fddd33aa7e81e76c184a520e60b555e7a291f",
+      "new_bytes": 35931,
       "edits": [
         {
           "old_offset": 5672,
@@ -449,7 +449,7 @@
     },
     {
       "old": "",
-      "new": "<section class=\"cq-study\" id=\"a03-contributions\" aria-labelledby=\"a03-contributions-title\">\n<h2 id=\"a03-contributions-title\">全氟叔丁基卤化物的结构、反应位置与吸电子效应</h2>\n<p>制取六氟丙烯时出现的副产物全氟异丁烯，引出了两种卤化物的研究。陈庆云与陈秉启等采用并拓展Krespan的方法，制备和表征全氟叔丁基碘、全氟叔丁基溴。蒋锡夔想借此弄清楚，当试剂很难靠近中心碳时，取代反应会如何发生。实习生梁梦兰参与课题，四人共同发表了1966年的研究。</p>\n<p>这两种卤化物与亲核试剂反应时，所得产物与从全氟异丁烯出发的对照相符。作者据此提出，试剂可能先作用于卤素。另一组实验比较三种全氟烷基碘代物换用溶剂时的紫外吸收变化。结合其他化学证据，在经验关系适用的前提下，作者提出了全氟烷基的吸电子诱导效应顺序，将全氟叔丁基排在最强的一端。</p>\n</section>\n"
+      "new": "<section class=\"cq-study\" id=\"a03-contributions\" aria-labelledby=\"a03-contributions-title\">\n<h2 id=\"a03-contributions-title\">全氟叔丁基卤化物的结构、反应位置与吸电子效应</h2>\n<p>制取六氟丙烯时出现的副产物全氟异丁烯，引出了两种卤化物的研究。陈庆云与陈秉启等采用并拓展Krespan的方法，制备和表征全氟叔丁基碘、全氟叔丁基溴。蒋锡夔想借此弄清楚，当试剂很难靠近中心碳时，取代反应会如何发生。实习生梁梦兰参与课题，四人共同发表了1966年的研究。</p>\n<p>这两种卤化物与亲核试剂反应时，所得产物与从全氟异丁烯出发的对照相符。作者据此提出，试剂可能先作用于卤素。另一组实验比较三种全氟烷基碘代物换用溶剂时的紫外吸收变化。结合其他化学证据，在经验关系适用的前提下，作者提出了全氟烷基的吸电子诱导效应顺序，将全氟叔丁基排在最强的一端。</p>\n<nav class=\"cq-study-nav cq-journey-nav\" aria-label=\"本成果线研究分支\"><a href=\"#a03-representative-study\">卤化物的结构与反应</a> · <a href=\"#a03-deep-reading\">紫外光谱与基团效应</a> · <a href=\"#arguments\">化学证据与原作者解释</a></nav></section>\n"
     },
     {
       "old": "以结构和产物关系支撑研究对象</h4><p>论文将元素分析、红外与氟核磁等证据用于结构判断；反应产物及水解转化又与全氟异丁烯路径的已知产物比较，给出作者讨论反应方式的实验依据",
@@ -469,7 +469,7 @@
     },
     {
       "old": "",
-      "new": "<section class=\"cq-study\" id=\"a01-contributions\" aria-labelledby=\"a01-contributions-title\">\n<h2 id=\"a01-contributions-title\">六氟丙酮能生成哪些新分子</h2>\n<p>留学苏联期间，陈庆云与克鲁扬茨、甘巴里扬研究六氟丙酮怎样与不同分子成键。他们从醇、炔基试剂及含活泼氢的化合物得到多类加成产物，还鉴定出一种羟基酮受热断开碳碳键所生成的六氟丙酮和苯乙酮。与苯酚反应则通向双酚AF，研究者提出可把这种二酚用作合成高分子的单体。</p>\n<p>研究还追问，两个三氟甲基会怎样改变邻近双键的反应方向。陈庆云、甘巴里扬和克鲁扬茨把一种含氟烯烃与氨的加成产物转化为已知的六氟缬氨酸，借此辨明氨加在双键的哪一端。在与E. M. Rokhlin共同发表的另一项研究中，他们比较含氟噁唑酮与非氟类似物的开环反应，考察三氟甲基怎样影响邻近环的反应性。</p>\n</section>\n"
+      "new": "<section class=\"cq-study\" id=\"a01-contributions\" aria-labelledby=\"a01-contributions-title\">\n<h2 id=\"a01-contributions-title\">六氟丙酮能生成哪些新分子</h2>\n<p>留学苏联期间，陈庆云与克鲁扬茨、甘巴里扬研究六氟丙酮怎样与不同分子成键。他们从醇、炔基试剂及含活泼氢的化合物得到多类加成产物，还鉴定出一种羟基酮受热断开碳碳键所生成的六氟丙酮和苯乙酮。与苯酚反应则通向双酚AF，研究者提出可把这种二酚用作合成高分子的单体。</p>\n<p>研究还追问，两个三氟甲基会怎样改变邻近双键的反应方向。陈庆云、甘巴里扬和克鲁扬茨把一种含氟烯烃与氨的加成产物转化为已知的六氟缬氨酸，借此辨明氨加在双键的哪一端。在与E. M. Rokhlin共同发表的另一项研究中，他们比较含氟噁唑酮与非氟类似物的开环反应，考察三氟甲基怎样影响邻近环的反应性。</p>\n<nav class=\"cq-study-nav cq-journey-nav\" aria-label=\"本成果线研究分支\"><a href=\"#a01-first-report\">第一报的反应与产物</a> · <a href=\"#a01-representative-study\">双酚AF制备与单体用途</a> · <a href=\"#a01-original-achievements\">衍生物的结构与反应效应</a></nav></section>\n"
     },
     {
       "old": "28、30页记日常指导与产物鉴定，第28–29页记双酚AF构想及发明人证书书影。</li><li><span id=\"a01-study-source-a01-hist-p1960\" class=\"cq-display-anchor\" aria-hidden=\"true\"></span><span id=\"a01-deep-reading-source-a01-hist-p1960\" class=\"cq-display-anchor\" aria-hidden=\"true\"></span><span id=\"a01-hist-source-a01-hist-p1960\" class=\"cq-display-anchor\" aria-hidden=\"true\"></span>I. L. Knunyants、Ch’en Ch’ing-yun（陈庆云）、N. P. Gambaryan：<a href=\"https://link.springer.com/article/10.1007/BF00910798\">Fluorinated ketones—Communication 1. Perfluoroacetone and its reactions with alcohols, organometallic compounds, and compounds containing mobile hydrogen</a>。1960，9：647–653。DOI：10.1007/BF00910798。<a href=\"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n100\">馆藏英译原文</a>；俄文原刊：Izvestiya Akademii Nauk SSSR, Otdelenie Khimicheskikh Nauk，1960，No. 4：686–692。英译第649页列XI的结构，<a href=\"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n103\">第650页</a>讨论单体用途，<a href=\"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n105\">第652页</a>列XI、XII的产物、熔点与元素分析。</li><li><span id=\"a01-study-source-cq-h02\" class=\"cq-display-anchor\" aria-hidden=\"true\"></span><span id=\"a01-hist-source-cq-h02\" class=\"cq-display-anchor\" aria-hidden=\"true\"></span>И. Л. Кнунянц、Чэнь-Цинь-Юнь（陈庆云）、Н. П. Гамбарян：<a href=\"https://poleznayamodel.ru/patent/11/117491.html\">第117491号发明人证书所附说明书：双（对羟基苯基）六氟丙烷的制备方法</a>。申请日：1958-07-19；申请号604379/23。实验实例列产物21.7 g、原报理论收率98%及熔点161–162℃。</li><li><span id=\"a01-deep-reading-source-cq-h12\" class=\"cq-display-anchor\" aria-hidden=\"true\"></span><span id=\"a01-hist-source-cq-h12\" class=\"cq-display-anchor\" aria-hidden=\"true\"></span>陈庆云、N. P. Gambaryan、I. L. Knuniants：<a href=\"https://www.mathnet.ru/links/45339c5078a0fc0eab6eab0df3527ff9/dan23922.pdf\">Сопряжение связей в 1,1-бис-(трифторметил)-2-нитроэтилене и гексафторизопропилиденмалоновом эфире</a>。Доклады Академии наук СССР，1960，133(5)：1113–1116。</li><li><span id=\"a01-deep-reading-source-cq-r01\" class=\"cq-display-anchor\" aria-hidden=\"true\"></span><span id=\"a01-hist-source-cq-r01\" class=\"cq-display-anchor\" aria-hidden=\"true\"></span><span id=\"ref-cq-r01\" class=\"cq-display-anchor\" aria-hidden=\"true\"></span>E. M. Rokhlin、N. P. Gambaryan、陈庆云、I. L. Knuniants：<a href=\"https://www.mathnet.ru/links/5f0f232ab0ba1fe58f1d88f43738bbce/dan24193.pdf\">2-Фенил-4-гексафторизопропилиденоксазолон-5</a>。Доклады Академии наук СССР，1960，134(6)：1367–1370",
@@ -489,7 +489,7 @@
     },
     {
       "old": "",
-      "new": "<section class=\"cq-study\" id=\"a02-contributions\" aria-labelledby=\"a02-contributions-title\">\n<h2 id=\"a02-contributions-title\">从含氟单体到橡胶、氟油和短链产物</h2>\n<p>氟橡胶的原料从哪里来？蒋锡夔、胡亚东等人制成氟橡胶1号后，六氟丙烯仍难以供应。陈庆云加入课题组，与蒋锡夔等人研究怎样增加裂解产物中的六氟丙烯，再用低温分馏把它分出来。团队随后陆续研制出氟橡胶2号和3号。</p>\n<p>氟油要解决另一种材料需求。迁沪后，陈庆云和同事研制了供液浮陀螺作支承液的调聚氟溴油，由上海有机所实验厂接续生产。后来，他与马振中、蒋锡夔、张元发、贾世茂另行研究偏氟乙烯的调聚，分离出不同链长的产物，辨认链端的结构，并从中制得含氟酰胺和羧酸。</p>\n</section>\n"
+      "new": "<section class=\"cq-study\" id=\"a02-contributions\" aria-labelledby=\"a02-contributions-title\">\n<h2 id=\"a02-contributions-title\">从含氟单体到橡胶、氟油和短链产物</h2>\n<p>氟橡胶的原料从哪里来？蒋锡夔、胡亚东等人制成氟橡胶1号后，六氟丙烯仍难以供应。陈庆云加入课题组，与蒋锡夔等人研究怎样增加裂解产物中的六氟丙烯，再用低温分馏把它分出来。团队随后陆续研制出氟橡胶2号和3号。</p>\n<p>氟油要解决另一种材料需求。迁沪后，陈庆云和同事研制了供液浮陀螺作支承液的调聚氟溴油，由上海有机所实验厂接续生产。后来，他与马振中、蒋锡夔、张元发、贾世茂另行研究偏氟乙烯的调聚，分离出不同链长的产物，辨认链端的结构，并从中制得含氟酰胺和羧酸。</p>\n<nav class=\"cq-study-nav cq-journey-nav\" aria-label=\"本成果线研究分支\"><a href=\"#a02-monomers\">单体制取与低温分离</a> · <a href=\"#a02-materials\">氟橡胶2号与3号</a> · <a href=\"#record-fluorinated-oils\">调聚氟溴油</a> · <a href=\"#a02-deep-reading\">偏氟乙烯调聚与端基转化</a></nav></section>\n"
     },
     {
       "old": "材料研究接续到实验厂</h4><p>迁沪后的氟溴油研究经上海有机所实验厂生产，面向航天应用需求",
