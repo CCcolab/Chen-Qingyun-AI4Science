@@ -1,6 +1,6 @@
 """Scope the public site navigation and its corresponding GitHub reader documents."""
 MANIFEST = 'provenance/platform-presentation.v55.json'
-MANIFEST_SHA256 = '5fea119556f13009851a5dbd5340793c5ff1404f72b77ba884e9da710e02dea0'
+MANIFEST_SHA256 = '03eabfce24506d575b87a3d7b96dd063739e793134c62c93fc257c080aa870a2'
 PREDECESSOR = '46dd2d9c41b3113f44b98953d36277e421b21ff8'
 PRESENTATION_ID = 'PLATFORM-READER-DIRECTORY-20261120-v55'
 HTML_PATHS = ('index.html', 'achievements/index.html', 'topics/index.html', 'research/index.html',
@@ -10,7 +10,8 @@ HTML_PATHS = ('index.html', 'achievements/index.html', 'topics/index.html', 'res
               'people/stories/index.html', 'pftb/index.html')
 DOCUMENT_PATHS = ('README.md', 'docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md',
                   'docs/CHEN_REAGENT_ACHIEVEMENT_zh-CN.md', 'docs/PLATFORM_PURPOSE_zh-CN.md',
-                  'docs/PLATFORM_ROADMAP_zh-CN.md', 'docs/A01_HISTORICAL_ACHIEVEMENTS_zh-CN.md',
+                  'docs/PLATFORM_ROADMAP_zh-CN.md', 'docs/AI_RESEARCH_zh-CN.md',
+                  'docs/A01_HISTORICAL_ACHIEVEMENTS_zh-CN.md',
                   'docs/A01_FIRST_REPORT_zh-CN.md',
                   *(f'docs/A{i:02d}_ACADEMIC_ACHIEVEMENTS_zh-CN.md' for i in range(2, 9)))
 CHANGED_FILES = {'site/'+name for name in HTML_PATHS} | set(DOCUMENT_PATHS) | {'scripts/story_sources_publication.py'}

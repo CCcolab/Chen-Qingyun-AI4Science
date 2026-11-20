@@ -33,7 +33,7 @@
 
 陈庆云与克鲁扬茨、甘巴里扬等合作者围绕六氟丙酮开展实验化学研究。1960年《Fluorinated ketones》第一报的英译本全文记载了多类基本反应、六氟双酚A及相关二酚的制备与鉴定。第117491号发明文书保存另一项制备记录与单体用途提议。另两篇原刊展示了通过加成方向、化学转化和衍生物比较来判断结构的研究方法。
 
-[A01（全氟酮化学：六氟丙酮与双酚AF）原始学术成果与证据](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-original-achievements) · [第一报原文、学术贡献与合作](docs/A01_FIRST_REPORT_zh-CN.md)
+[A01（全氟酮化学：六氟丙酮与双酚AF）主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-contributions) · [第一报原文、学术贡献与合作](docs/A01_FIRST_REPORT_zh-CN.md)
 
 原论文、发明文书与传记按来源分别呈现，保留陈先生与合作者的署名和各项实验的具体范围。原文核读、数据复核及平台新增分析见[AI辅助资料整理与研究](https://cccolab.github.io/Chen-Qingyun-AI4Science/research/)。
 

@@ -74,7 +74,7 @@
 
 出处：传记60–69、75–77页；磺酸酯系列原刊；1989年三氟甲基化论文；Org. Synth. 2003，80：172–176与2010，87：126–136。
 
-[主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#a06-contributions) · [代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#a06-representative-study) · [A06（磺酸酯、二氟卡宾与三氟甲基化）：陈试剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#topic-chen-reagent) · [A06（磺酸酯、二氟卡宾与三氟甲基化）：磺酸酯与卡宾](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html#record-sulfonate-cleavage) · [原文定位与署名](A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+[主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#a06-contributions) · [代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#a06-representative-study) · [A06（磺酸酯、二氟卡宾与三氟甲基化）：陈试剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#topic-chen-reagent) · [磺酸酯断键](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html#a06-deep-reading) · [多种二氟卡宾前体](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html#a06-difluorocarbene) · [原文定位与署名](A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
 
 ### A07（单电子转移与C–Cl活化）
 

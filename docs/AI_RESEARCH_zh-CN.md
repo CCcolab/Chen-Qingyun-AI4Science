@@ -201,7 +201,9 @@ CQ-H12原文化合物III的三处记载
 
 ### 史料与成果入口
 
-[原始学术成果与证据](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-original-achievements) · [第一报原文与证据](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-first-report)
+[A01（全氟酮化学：六氟丙酮与双酚AF）主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-contributions)
+
+[含氟衍生物的结构与反应](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-original-achievements) · [第一报原文与证据](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-first-report)
 
 ## A02（含氟单体、氟橡胶与氟油）
 
@@ -289,6 +291,8 @@ CQ-H12原文化合物III的三处记载
 [1980原刊：38卷175–184页](https://sioc-journal.cn/Jwk_hxxb/CN/Y1980/V38/I2/175)
 
 ### 史料与成果入口
+
+[A02（含氟单体、氟橡胶与氟油）主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#a02-contributions)
 
 [单体、材料与调聚专题](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html) · [氟油档案](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#record-fluorinated-oils)
 
@@ -414,6 +418,8 @@ H沿用原表C₆H₁₄记号，当前登记未进一步指定异构体；B是�
 
 ### 史料与成果入口
 
+[A03（全氟叔丁基（PFtB）化学）主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html#a03-contributions)
+
 [A03（全氟叔丁基（PFtB）化学）：历史成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html) · [A03（全氟叔丁基（PFtB）化学）：原论文论证细读](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html#arguments)
 
 ## A04（F-53铬雾抑制剂）
@@ -447,6 +453,8 @@ H沿用原表C₆H₁₄记号，当前登记未进一步指定异构体；B是�
 **候选后续问题：**若未来开展独立研究，须先明确具体化合物、工况、已有工作与可检验问题，另行论证方法；当前没有启动新实验或计算，M0继续暂停。
 
 ### 史料与成果入口
+
+[A04（F-53铬雾抑制剂）主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/f53/index.html#a04-contributions)
 
 [A04（F-53铬雾抑制剂）：学术成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/f53/index.html) · [A04（F-53铬雾抑制剂）：工业应用与同期剪报](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/f53/index.html#record-industrial-application)
 
@@ -507,11 +515,13 @@ H沿用原表C₆H₁₄记号，当前登记未进一步指定异构体；B是�
 
 ### 史料与成果入口
 
+[A05（制冷剂与配套技术）主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html#a05-contributions)
+
 [制冷剂与配套技术的历史成果](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html) · [HFC-134a液相连续中试](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html#record-refrigerant-pilot)
 
 ## A06（磺酸酯、二氟卡宾与三氟甲基化）
 
-**科学问题：**磺酸酯断键研究怎样走向二氟卡宾前体与“陈试剂”，原研究者解决了哪些合成问题？
+**科学问题：**磺酸酯断键研究怎样走向二氟卡宾前体和多种三氟甲基化体系，原研究者解决了哪些合成问题？
 
 **AI怎样辅助：**以传记为主线关联具体反应、试剂结构与合作角色；核对新增引用，保留原刊数据、原作者解释及已有方法核查的范围。
 
@@ -579,7 +589,9 @@ H沿用原表C₆H₁₄记号，当前登记未进一步指定异构体；B是�
 
 ### 史料与成果入口
 
-[磺酸酯断键的历史成果](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html#record-sulfonate-cleavage) · [陈试剂的代表性贡献](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#chen-reagent-contribution) · [原始论文与命名证据](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#chen-reagent-evidence)
+[A06（磺酸酯、二氟卡宾与三氟甲基化）主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#a06-contributions)
+
+[磺酸酯断键的历史成果](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html#a06-deep-reading) · [陈试剂的代表性贡献](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#chen-reagent-contribution) · [原始论文与命名证据](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#chen-reagent-evidence)
 
 ## A07（单电子转移与C–Cl活化）
 
@@ -639,6 +651,10 @@ H沿用原表C₆H₁₄记号，当前登记未进一步指定异构体；B是�
 [CN1752059A公开文书入口](https://patents.google.com/patent/CN1752059A/zh) · [CN1298686C授权公告文书入口](https://patents.google.com/patent/CN1298686C/zh)
 
 ### 史料与成果入口
+
+[A07（单电子转移与C–Cl活化）主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#a07-contributions)
+
+[铜参与的含氟烯烃合成](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#a07-set-synthesis) · [分子内环化研究](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#a07-intramolecular-cyclization)
 
 [单电子转移与C–Cl活化的历史成果](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html) · [含氟氯代物的具体方法与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#record-ccl-activation)
 
@@ -733,7 +749,9 @@ H沿用原表C₆H₁₄记号，当前登记未进一步指定异构体；B是�
 
 ### 史料与成果入口
 
-[含氟小环的合成与反应](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluorinated-small-rings/index.html#record-small-rings) · [卟啉与大环的历史成果](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#record-porphyrin-collaboration) · [两种脱氧氟化体系](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/deoxyfluorination/index.html#record-deoxyfluorination-systems) · [晚年构件与表面活性分子](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/sulfonyl-fluoride/index.html#record-late-functional-groups) · [含氟离子液体相关记录](https://cccolab.github.io/Chen-Qingyun-AI4Science/index.html#record-fluorinated-ionic-liquids)
+[A08（交叉研究与晚年拓展）主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#a08-contributions)
+
+[含氟小环的合成与反应](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluorinated-small-rings/index.html#record-small-rings) · [氟烷基卟啉合成与20π大环](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#a08-representative-study) · [两种脱氧氟化体系](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/deoxyfluorination/index.html#record-deoxyfluorination-systems) · [晚年构件与表面活性分子](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/sulfonyl-fluoride/index.html#record-late-functional-groups) · [含氟离子液体相关记录](https://cccolab.github.io/Chen-Qingyun-AI4Science/index.html#record-fluorinated-ionic-liquids)
 
 ## 维护与静态一致性检查
 

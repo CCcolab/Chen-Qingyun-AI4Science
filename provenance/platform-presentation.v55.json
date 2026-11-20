@@ -30,8 +30,8 @@
       "path": "README.md",
       "old_sha256": "d7772373c93e0dbb3b175aa5885f90ec3213e66708de7fb4942b221755675bf7",
       "old_bytes": 9331,
-      "new_sha256": "941399dae51a03ad3aa4bae3c84a36c1f8392f45710f6f698edd1d83f5d54ed1",
-      "new_bytes": 11397,
+      "new_sha256": "161f22fc5069e65499fd2de6569881662ef38df9e9bf4cb0da04c84f29aa9006",
+      "new_bytes": 11389,
       "edits": [
         {
           "old_offset": 684,
@@ -42,16 +42,20 @@
           "replacement": 1
         },
         {
-          "old_offset": 2607,
+          "old_offset": 2043,
           "replacement": 2
         },
         {
-          "old_offset": 2983,
+          "old_offset": 2607,
           "replacement": 3
         },
         {
-          "old_offset": 3413,
+          "old_offset": 2983,
           "replacement": 4
+        },
+        {
+          "old_offset": 3413,
+          "replacement": 5
         }
       ]
     },
@@ -64,7 +68,7 @@
       "edits": [
         {
           "old_offset": 54,
-          "replacement": 5
+          "replacement": 6
         }
       ]
     },
@@ -77,7 +81,7 @@
       "edits": [
         {
           "old_offset": 5,
-          "replacement": 6
+          "replacement": 7
         }
       ]
     },
@@ -90,7 +94,7 @@
       "edits": [
         {
           "old_offset": 45,
-          "replacement": 7
+          "replacement": 8
         }
       ]
     },
@@ -103,7 +107,7 @@
       "edits": [
         {
           "old_offset": 5,
-          "replacement": 8
+          "replacement": 9
         }
       ]
     },
@@ -116,7 +120,7 @@
       "edits": [
         {
           "old_offset": 58,
-          "replacement": 9
+          "replacement": 10
         }
       ]
     },
@@ -129,7 +133,7 @@
       "edits": [
         {
           "old_offset": 69,
-          "replacement": 10
+          "replacement": 11
         }
       ]
     },
@@ -142,7 +146,7 @@
       "edits": [
         {
           "old_offset": 81,
-          "replacement": 11
+          "replacement": 12
         }
       ]
     },
@@ -155,7 +159,7 @@
       "edits": [
         {
           "old_offset": 81,
-          "replacement": 12
+          "replacement": 13
         }
       ]
     },
@@ -168,7 +172,7 @@
       "edits": [
         {
           "old_offset": 84,
-          "replacement": 13
+          "replacement": 14
         }
       ]
     },
@@ -176,144 +180,189 @@
       "path": "docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md",
       "old_sha256": "cbeb047b09402e0c70bf10c5566522a56e18cc6763642662969a237194a582df",
       "old_bytes": 25979,
-      "new_sha256": "84a252bf881a5f6942213c0fee1978cf082a3026318f27d3b783d098d0399fae",
-      "new_bytes": 29356,
+      "new_sha256": "0c8a5f46803c8f0c5a6844422705fb2e4df750026fbf1cecb971a6800b35644d",
+      "new_bytes": 29429,
       "edits": [
         {
           "old_offset": 419,
-          "replacement": 14
-        },
-        {
-          "old_offset": 542,
           "replacement": 15
         },
         {
-          "old_offset": 780,
+          "old_offset": 542,
           "replacement": 16
         },
         {
-          "old_offset": 963,
+          "old_offset": 780,
           "replacement": 17
         },
         {
-          "old_offset": 1057,
+          "old_offset": 963,
           "replacement": 18
         },
         {
-          "old_offset": 1455,
+          "old_offset": 1057,
           "replacement": 19
         },
         {
-          "old_offset": 1572,
+          "old_offset": 1455,
           "replacement": 20
         },
         {
-          "old_offset": 1802,
+          "old_offset": 1572,
           "replacement": 21
         },
         {
-          "old_offset": 2109,
+          "old_offset": 1802,
           "replacement": 22
         },
         {
-          "old_offset": 2478,
+          "old_offset": 2109,
           "replacement": 23
         },
         {
-          "old_offset": 2586,
+          "old_offset": 2478,
           "replacement": 24
         },
         {
-          "old_offset": 2850,
+          "old_offset": 2586,
           "replacement": 25
         },
         {
-          "old_offset": 3162,
+          "old_offset": 2850,
           "replacement": 26
         },
         {
-          "old_offset": 3513,
+          "old_offset": 3162,
           "replacement": 27
         },
         {
-          "old_offset": 3603,
+          "old_offset": 3513,
           "replacement": 28
         },
         {
-          "old_offset": 3841,
+          "old_offset": 3603,
           "replacement": 29
         },
         {
-          "old_offset": 4022,
+          "old_offset": 3841,
           "replacement": 30
         },
         {
-          "old_offset": 4132,
+          "old_offset": 4022,
           "replacement": 31
         },
         {
-          "old_offset": 4516,
+          "old_offset": 4132,
           "replacement": 32
         },
         {
-          "old_offset": 4612,
+          "old_offset": 4516,
           "replacement": 33
         },
         {
-          "old_offset": 4837,
+          "old_offset": 4612,
           "replacement": 34
         },
         {
-          "old_offset": 5102,
+          "old_offset": 4837,
           "replacement": 35
         },
         {
-          "old_offset": 5536,
+          "old_offset": 5102,
           "replacement": 36
         },
         {
-          "old_offset": 5632,
+          "old_offset": 5536,
           "replacement": 37
         },
         {
-          "old_offset": 5841,
+          "old_offset": 5632,
           "replacement": 38
         },
         {
-          "old_offset": 6156,
+          "old_offset": 5841,
           "replacement": 39
         },
         {
-          "old_offset": 6774,
+          "old_offset": 6156,
           "replacement": 40
         },
         {
-          "old_offset": 6906,
+          "old_offset": 6774,
           "replacement": 41
         },
         {
-          "old_offset": 7144,
+          "old_offset": 6906,
           "replacement": 42
         },
         {
-          "old_offset": 7394,
+          "old_offset": 7144,
           "replacement": 43
         },
         {
-          "old_offset": 8020,
+          "old_offset": 7394,
           "replacement": 44
         },
         {
-          "old_offset": 8134,
+          "old_offset": 8020,
           "replacement": 45
         },
         {
-          "old_offset": 8362,
+          "old_offset": 8134,
           "replacement": 46
         },
         {
-          "old_offset": 8676,
+          "old_offset": 8362,
           "replacement": 47
+        },
+        {
+          "old_offset": 8676,
+          "replacement": 48
+        }
+      ]
+    },
+    {
+      "path": "docs/AI_RESEARCH_zh-CN.md",
+      "old_sha256": "b6ab17e0db1794a9f33c370349fc84a37e36f5c50e76492577e447fc4b32d2cb",
+      "old_bytes": 63386,
+      "new_sha256": "768dc2481297d258f7543d53e9f64064ed7e38d27b4f6e942d47b3fe8389b98c",
+      "new_bytes": 65059,
+      "edits": [
+        {
+          "old_offset": 16444,
+          "replacement": 49
+        },
+        {
+          "old_offset": 23296,
+          "replacement": 50
+        },
+        {
+          "old_offset": 33101,
+          "replacement": 51
+        },
+        {
+          "old_offset": 36317,
+          "replacement": 52
+        },
+        {
+          "old_offset": 41419,
+          "replacement": 53
+        },
+        {
+          "old_offset": 41809,
+          "replacement": 54
+        },
+        {
+          "old_offset": 47837,
+          "replacement": 55
+        },
+        {
+          "old_offset": 52981,
+          "replacement": 56
+        },
+        {
+          "old_offset": 62116,
+          "replacement": 57
         }
       ]
     },
@@ -326,7 +375,7 @@
       "edits": [
         {
           "old_offset": 1796,
-          "replacement": 48
+          "replacement": 58
         }
       ]
     },
@@ -339,7 +388,7 @@
       "edits": [
         {
           "old_offset": 1483,
-          "replacement": 49
+          "replacement": 59
         }
       ]
     },
@@ -352,7 +401,7 @@
       "edits": [
         {
           "old_offset": 3183,
-          "replacement": 50
+          "replacement": 60
         }
       ]
     },
@@ -365,15 +414,15 @@
       "edits": [
         {
           "old_offset": 479,
-          "replacement": 51
+          "replacement": 61
         },
         {
           "old_offset": 3529,
-          "replacement": 52
+          "replacement": 62
         },
         {
           "old_offset": 6512,
-          "replacement": 53
+          "replacement": 63
         }
       ]
     },
@@ -386,23 +435,23 @@
       "edits": [
         {
           "old_offset": 17337,
-          "replacement": 54
+          "replacement": 64
         },
         {
           "old_offset": 24314,
-          "replacement": 55
+          "replacement": 65
         },
         {
           "old_offset": 25739,
-          "replacement": 56
+          "replacement": 66
         },
         {
           "old_offset": 27994,
-          "replacement": 57
+          "replacement": 67
         },
         {
           "old_offset": 33722,
-          "replacement": 58
+          "replacement": 68
         }
       ]
     },
@@ -415,23 +464,23 @@
       "edits": [
         {
           "old_offset": 26256,
-          "replacement": 54
+          "replacement": 64
         },
         {
           "old_offset": 32391,
-          "replacement": 59
+          "replacement": 69
         },
         {
           "old_offset": 43459,
-          "replacement": 60
+          "replacement": 70
         },
         {
           "old_offset": 48845,
-          "replacement": 61
+          "replacement": 71
         },
         {
           "old_offset": 55995,
-          "replacement": 62
+          "replacement": 72
         }
       ]
     },
@@ -444,7 +493,7 @@
       "edits": [
         {
           "old_offset": 20468,
-          "replacement": 63
+          "replacement": 73
         }
       ]
     },
@@ -457,7 +506,7 @@
       "edits": [
         {
           "old_offset": 265,
-          "replacement": 64
+          "replacement": 74
         }
       ]
     },
@@ -470,7 +519,7 @@
       "edits": [
         {
           "old_offset": 26975,
-          "replacement": 65
+          "replacement": 75
         }
       ]
     },
@@ -483,11 +532,11 @@
       "edits": [
         {
           "old_offset": 4937,
-          "replacement": 66
+          "replacement": 76
         },
         {
           "old_offset": 11681,
-          "replacement": 67
+          "replacement": 77
         }
       ]
     },
@@ -500,11 +549,11 @@
       "edits": [
         {
           "old_offset": 2060,
-          "replacement": 68
+          "replacement": 78
         },
         {
           "old_offset": 10559,
-          "replacement": 69
+          "replacement": 79
         }
       ]
     },
@@ -517,7 +566,7 @@
       "edits": [
         {
           "old_offset": 9482,
-          "replacement": 70
+          "replacement": 80
         }
       ]
     },
@@ -530,7 +579,7 @@
       "edits": [
         {
           "old_offset": 1988,
-          "replacement": 71
+          "replacement": 81
         }
       ]
     },
@@ -543,11 +592,11 @@
       "edits": [
         {
           "old_offset": 4988,
-          "replacement": 72
+          "replacement": 82
         },
         {
           "old_offset": 12443,
-          "replacement": 73
+          "replacement": 83
         }
       ]
     },
@@ -560,7 +609,7 @@
       "edits": [
         {
           "old_offset": 11386,
-          "replacement": 74
+          "replacement": 84
         }
       ]
     },
@@ -573,11 +622,11 @@
       "edits": [
         {
           "old_offset": 2069,
-          "replacement": 75
+          "replacement": 85
         },
         {
           "old_offset": 11881,
-          "replacement": 69
+          "replacement": 79
         }
       ]
     }
@@ -590,6 +639,10 @@
     {
       "old": "，与同线的磺酸酯、二氟卡宾研究相联系。甲酯的既有分子身份、1989方法开发和后续研究分别呈现。",
       "new": "。同线还介绍哪些结构有利于磺酸酯的硫—氧或碳—氧键断裂，以及研究者怎样发展二氟卡宾前体。[磺酸酯与二氟卡宾专题](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html)"
+    },
+    {
+      "old": "原始学术成果与证据](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-original-achievement",
+      "new": "主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-contribution"
     },
     {
       "old": "按九条成果线呈现开拓性成就、具名合作与育人故事。各项资料注明出处、资料性质和待核原件；原始论文、机构回顾与访谈转引分别呈现",
@@ -740,8 +793,8 @@
       "new": "朱蓉仙、朱士正等分别参与磺酸酯研究，朱士正参与二氟卡宾前体研究。杨国英接续研究甲酯反应条件，Dolbier团队参与硅酯合作。2003年硅酯卡宾方法与2010年甲酯甾体三氟甲基化方法的提交者、核查者各见原文"
     },
     {
-      "old": "",
-      "new": "主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#a06-contributions) · ["
+      "old": "代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#a06-representative-study) · [A06（磺酸酯、二氟卡宾与三氟甲基化）：陈试剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#topic-chen-reagent) · [A06（磺酸酯、二氟卡宾与三氟甲基化）：磺酸酯与卡宾](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html#record-sulfonate-cleavag",
+      "new": "主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#a06-contributions) · [代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#a06-representative-study) · [A06（磺酸酯、二氟卡宾与三氟甲基化）：陈试剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#topic-chen-reagent) · [磺酸酯断键](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html#a06-deep-reading) · [多种二氟卡宾前体](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html#a06-difluorocarben"
     },
     {
       "old": "怎样利用溶剂、还原体系与催化作用，扩大含氟卤代物的转化范围",
@@ -774,6 +827,42 @@
     {
       "old": "",
       "new": "主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#a08-contributions) · ["
+    },
+    {
+      "old": "原始学术成果与证据",
+      "new": "A01（全氟酮化学：六氟丙酮与双酚AF）主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-contributions)\n\n[含氟衍生物的结构与反应"
+    },
+    {
+      "old": "",
+      "new": "\n[A02（含氟单体、氟橡胶与氟油）主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#a02-contributions)\n"
+    },
+    {
+      "old": "",
+      "new": "[A03（全氟叔丁基（PFtB）化学）主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html#a03-contributions)\n\n"
+    },
+    {
+      "old": "",
+      "new": "\n[A04（F-53铬雾抑制剂）主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/f53/index.html#a04-contributions)\n"
+    },
+    {
+      "old": "",
+      "new": "[A05（制冷剂与配套技术）主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html#a05-contributions)\n\n"
+    },
+    {
+      "old": "与“陈试剂”",
+      "new": "和多种三氟甲基化体系"
+    },
+    {
+      "old": "磺酸酯断键的历史成果](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html#record-sulfonate-cleavage",
+      "new": "A06（磺酸酯、二氟卡宾与三氟甲基化）主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#a06-contributions)\n\n[磺酸酯断键的历史成果](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html#a06-deep-reading"
+    },
+    {
+      "old": "",
+      "new": "\n[A07（单电子转移与C–Cl活化）主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#a07-contributions)\n\n[铜参与的含氟烯烃合成](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#a07-set-synthesis) · [分子内环化研究](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#a07-intramolecular-cyclization)\n"
+    },
+    {
+      "old": "含氟小环的合成与反应](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluorinated-small-rings/index.html#record-small-rings) · [卟啉与大环的历史成果](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#record-porphyrin-collaboration",
+      "new": "A08（交叉研究与晚年拓展）主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#a08-contributions)\n\n[含氟小环的合成与反应](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluorinated-small-rings/index.html#record-small-rings) · [氟烷基卟啉合成与20π大环](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#a08-representative-study"
     },
     {
       "old": "陈试剂作为A06（磺酸酯、二氟卡宾与三氟甲基化）成果线的代表性子专题突出展示，与磺酸酯和二氟卡宾研究相联系，不新增第十条成果线。首页和成果汇总页设置显著入口，专题先讲成果与原作者，再呈现实体辨析和后续分支。",
@@ -894,6 +983,7 @@
     "docs/CHEN_REAGENT_ACHIEVEMENT_zh-CN.md",
     "docs/PLATFORM_PURPOSE_zh-CN.md",
     "docs/PLATFORM_ROADMAP_zh-CN.md",
+    "docs/AI_RESEARCH_zh-CN.md",
     "docs/A01_HISTORICAL_ACHIEVEMENTS_zh-CN.md",
     "docs/A01_FIRST_REPORT_zh-CN.md",
     "docs/A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
