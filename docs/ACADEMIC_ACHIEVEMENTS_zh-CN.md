@@ -6,99 +6,99 @@
 
 ### A01（全氟酮化学：六氟丙酮与双酚AF）
 
-**科学问题：**同一全氟酮怎样通向不同产物，并进一步成为含氟二酚的制备原料？
+**科学问题：**六氟丙酮能形成哪些稳定产物，两个三氟甲基又怎样影响相邻双键和环的反应？
 
-**具体贡献：**陈庆云与克鲁扬茨、甘巴里扬围绕六氟丙酮建立醇、炔基试剂和活泼氢化合物的反应与衍生转化，并推进到六氟双酚A制备及单体用途设想，连接基础反应与材料问题。
+**具体贡献：**陈庆云与留苏合作者研究六氟丙酮与醇、炔基试剂和含活泼氢化合物的加成、衍生转化，制得双酚AF并提出将它用作高分子单体。他们还把氨加成产物转化为已知化合物，辨明含氟烯烃的加成方向，并通过噁唑酮开环考察三氟甲基对反应性的影响。
 
-**合作与研究接续：**结合第一报、第117491号说明书与传记，分别阅读共同署名、日常指导和研究训练；双酚用途设想与后来材料应用分开。
+**合作与研究接续：**第一报和第117491号发明说明书均由克鲁扬茨、陈庆云、甘巴里扬共同署名。含氟烯烃论文由陈庆云、甘巴里扬、克鲁扬茨署名，噁唑酮论文还有E. M. Rokhlin参与。传记另记日常指导与研究训练，发明说明书中的单体用途属于当时的提议。
 
-出处：传记23–33页；1960年第一报英译647–653页；第117491号说明书的署名、实例和用途。
+出处：传记23–33页，1960年第一报英译647–653页，第117491号说明书的署名、实例和用途。两篇1960年《苏联科学院报告》分别见第133卷1113–1116页和第134卷1367–1370页。
 
-[代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-representative-study) · [学术成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-primary-records) · [原文定位与署名](A01_FIRST_REPORT_zh-CN.md)
+[主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-contributions) · [代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-representative-study) · [学术成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-primary-records) · [原文定位与署名](A01_FIRST_REPORT_zh-CN.md)
 
 ### A02（含氟单体、氟橡胶与氟油）
 
-**科学问题：**怎样把难得的含氟单体变成可支撑橡胶与功能液体研究的材料基础？
+**科学问题：**怎样获得橡胶所需的单体，又怎样利用调聚反应制出功能液体和不同链长的产物？
 
-**具体贡献：**陈庆云与团队将六氟丙烯的裂解制取和低温分馏一并研究，使原料来源与聚合材料接续；氟橡胶2号、3号及调聚氟溴油又把单体、调聚反应和生产应用连接起来。
+**具体贡献：**陈庆云与蒋锡夔等改进六氟丙烯的裂解制取和低温分馏，支撑团队研制氟橡胶2号、3号。迁沪后，陈庆云与同事研制供液浮陀螺使用的调聚氟溴油，由实验厂接续生产。后来他与马振中等另以偏氟乙烯研究调聚物，分离不同链长的产物，辨认端基并制得含氟酰胺和羧酸。
 
-**合作与研究接续：**以蒋锡夔、胡亚东等人的前期研究为起点，读实验人员、自制仪器和物资保障的协作，以及研究室向上海有机所实验厂的生产接续。
+**合作与研究接续：**蒋锡夔、胡亚东等研制氟橡胶1号在先。陈庆云加入后与同事协作制取和分离新单体，所内团队还承担仪器与物资保障。1980年偏氟乙烯调聚论文由陈庆云、马振中、蒋锡夔、张元发、贾世茂共同发表。
 
 出处：传记35–39页；上海有机所生平与“上海氟”报道；后续调聚研究另见1980年原刊175–184页。
 
-[代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#a02-representative-study) · [学术成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html) · [原文定位与署名](A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+[主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#a02-contributions) · [代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#a02-representative-study) · [学术成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html) · [原文定位与署名](A02_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
 
 ### A03（全氟叔丁基（PFtB）化学）
 
-**科学问题：**含氟结构怎样使熟悉的取代反应和基团效应经验面临新的问题？
+**科学问题：**全氟叔丁基中心碳周围空间拥挤，亲核试剂会从哪里反应，又怎样比较它与其他全氟烷基的吸电子能力？
 
-**具体贡献：**从六氟丙烯制备的副产物出发，陈庆云与同事研究全氟叔丁基卤化物的制备、结构和特殊反应，并用紫外吸收与溶剂位移比较电子效应，把材料任务中的观察推进为基础化学问题。
+**具体贡献：**从制取六氟丙烯时得到的副产物全氟异丁烯出发，研究者制备、表征了全氟叔丁基碘化物和溴化物。对照反应的产物支持亲核试剂先作用于卤素的解释。他们还比较了三种全氟烷基碘代物在不同溶剂中的紫外吸收，结合化学证据，在经验关系适用的前提下提出基团吸电子能力的相对顺序。
 
-**合作与研究接续：**原论文由陈庆云、蒋锡夔、陈秉启、梁梦兰共同署名；结合传记阅读实验、问题讨论和实习参与，区分历史论证与平台六项数值重放。
+**合作与研究接续：**1966年论文由陈庆云、蒋锡夔、陈秉启、梁梦兰共同署名。传记记述蒋锡夔与同事讨论科学问题，陈庆云与陈秉启开展实验，实习生梁梦兰参与研究。原表六项数值的平台重放另见研究资料。
 
 出处：传记42–45页；1966年《化学学报》18页共同署名，18–20页反应讨论，20–21页紫外讨论与表1。
 
-[代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html#a03-representative-study) · [学术成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html#a03-biography-history) · [原文定位与署名](A03_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+[主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html#a03-contributions) · [代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html#a03-representative-study) · [学术成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html#a03-biography-history) · [原文定位与署名](A03_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
 
 ### A04（F-53铬雾抑制剂）
 
-**科学问题：**怎样把含氟合成研究带到电镀现场，解决铬雾抑制问题？
+**科学问题：**怎样从国内可得原料制成镀槽抑雾剂，生产中间体又能帮助研究哪些含氟反应？
 
-**具体贡献：**面向镀铬现场的铬雾问题，陈庆云带领研究组发展含醚键的全氟磺酸盐F-53及自主制备路线，并经工厂试用和实验厂扩大试验，连接含氟合成研究与工业应用。
+**具体贡献：**陈庆云带领研究组制得含醚键的全氟磺酸钾F-53，经电镀厂试用、实验厂放大用于抑制铬雾。这条制备路线还提供了两类中间体。带氯的全氟碘代烷可用于研究碳链延长和碳—氯键反应，带醚键及磺酰氟端基的碘代物则用于合成磺酸衍生物并比较反应性。
 
-**合作与研究接续：**研究组与顾子恺等工程人员、实验厂和电镀厂接续合作。1982年剪报介绍应用价值；原论文的集体署名另按原文保存。
+**合作与研究接续：**光明电镀厂等单位承担现场试用，顾子恺等实验厂工程人员推进工艺放大。黄维垣等团队也利用相关原料开展研究，各项论文保留原集体或个人署名。1982年剪报记录了当时对应用价值的报道。
 
-出处：传记48–53页；1979年原刊315–324页的集体署名与致谢；1982年4月8日《人民日报》第3版铬雾段。
+出处：传记48–53页和60–63页，1979年《化学学报》315–324页的集体署名与致谢，1982年4月8日《人民日报》第3版铬雾段。另见陈庆云2001年《有机化学》805–809页的回顾。
 
-[代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/f53/index.html#a04-representative-study) · [A04（F-53铬雾抑制剂）：研制、应用与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/f53/index.html#topic-f53) · [原文定位与署名](A04_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+[主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/f53/index.html#a04-contributions) · [代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/f53/index.html#a04-representative-study) · [A04（F-53铬雾抑制剂）：研制、应用与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/f53/index.html#topic-f53) · [原文定位与署名](A04_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
 
 ### A05（制冷剂与配套技术）
 
-**科学问题：**制冷剂分子怎样经过工艺、润滑油与设备协作走向应用？
+**科学问题：**怎样从制冷剂组分的合成，走到工质连续生产、润滑油配套和整机使用？
 
-**具体贡献：**从F-115的新制备路线和既有F-502配方试配，走向HFC-134a液相连续工艺、冷冻机油与整机试用，把制冷剂分子合成与配套应用衔接起来。
+**具体贡献：**陈庆云组织605研究小组开辟F-115制备路线，与F-22配制已有配方F-502。研究F-12替代物时，团队又发展HFC-134a液相工艺，推进连续中试，研制相容的冷冻机油，并与设备单位开展整机试用。
 
-**合作与研究接续：**林永达、杨映松参与连续中试，嘉兴冰箱厂等承担应用协作。项目组织贡献、集体论文署名和各专利发明人分别呈现。
+**合作与研究接续：**林永达、杨映松等参与连续中试，陈庆云与林永达研制配套油。嘉兴冰箱厂参与整机试用，广州化学所参与润滑材料研究。论文署名和各专利的发明人另据原件列出。
 
 出处：传记55–59页；1978年《化学学报》77–79页；CN1075708A、CN1308043A的发明人及工艺各自登记。
 
-[代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html#a05-representative-study) · [A05（制冷剂与配套技术）：组分、工艺与设备](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html#topic-refrigerants) · [原文定位与署名](A05_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+[主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html#a05-contributions) · [代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html#a05-representative-study) · [A05（制冷剂与配套技术）：组分、工艺与设备](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html#topic-refrigerants) · [原文定位与署名](A05_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
 
 ### A06（磺酸酯、二氟卡宾与三氟甲基化）
 
-**科学问题：**含氟磺酸酯的反应研究怎样发展出新的合成试剂和方法？
+**科学问题：**哪些结构与条件会改变含氟磺酸酯的断键位置，又怎样把这些反应发展成引入含氟基团的工具？
 
-**具体贡献：**从含氟磺酸酯的断键研究，发展二氟卡宾前体与三氟甲基化方法；陈庆云、吴生文将甲酯MFSDA发展为三氟甲基化试剂，后称“陈试剂”。
+**具体贡献：**陈庆云与合作者比较含氟磺酸酯的硫—氧和碳—氧断裂，并发展多种可在不同条件下产生二氟卡宾的前体。他与吴生文开发甲酯MFSDA（FSO₂CF₂CO₂Me）的三氟甲基化用途，后称“陈试剂”。另一项合作发展硅酯TFDA（FSO₂CF₂CO₂SiMe₃），用它提供二氟卡宾，把烯烃双键转成含氟三元环。
 
-**合作与研究接续：**杨国英接续研究反应条件；Dolbier团队参与TFDA开发。2003年硅酯／卡宾方法和2010年甲酯／甾体方法各有提交与核查名单。
+**合作与研究接续：**朱蓉仙、朱士正等分别参与磺酸酯研究，朱士正参与二氟卡宾前体研究。杨国英接续研究甲酯反应条件，Dolbier团队参与硅酯合作。2003年硅酯卡宾方法与2010年甲酯甾体三氟甲基化方法的提交者、核查者各见原文。
 
 出处：传记60–69、75–77页；磺酸酯系列原刊；1989年三氟甲基化论文；Org. Synth. 2003，80：172–176与2010，87：126–136。
 
-[代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#a06-representative-study) · [A06（磺酸酯、二氟卡宾与三氟甲基化）：陈试剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#topic-chen-reagent) · [A06（磺酸酯、二氟卡宾与三氟甲基化）：磺酸酯与卡宾](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html#record-sulfonate-cleavage) · [原文定位与署名](A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+[主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#a06-contributions) · [代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#a06-representative-study) · [A06（磺酸酯、二氟卡宾与三氟甲基化）：陈试剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#topic-chen-reagent) · [A06（磺酸酯、二氟卡宾与三氟甲基化）：磺酸酯与卡宾](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html#record-sulfonate-cleavage) · [原文定位与署名](A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
 
 ### A07（单电子转移与C–Cl活化）
 
-**科学问题：**怎样利用溶剂、还原体系与催化作用，扩大含氟卤代物的转化范围？
+**科学问题：**改变溶剂和引发方式会怎样改变产物，哪些含氟卤代原料能用于成键和环化？
 
-**具体贡献：**陈庆云与合作者从氟烷基碘的溶剂效应研究出发，发展多种氟烷基化方法，并分别以DMSO／连二亚硫酸钠和零价镍体系拓展特定含氟氯代物的转化。
+**具体贡献：**陈庆云与合作者研究金属、亲核试剂、氧化剂和光照引发的氟烷基化，从铜参与的加成发展出含氟烯烃的立体专一性合成。他们还将原料拓展到特定含氟氯代物，发展分子内环化和由全氟烷基氯制备相应碘代物的方法。
 
-**合作与研究接续：**陈亚雄参与溶剂效应研究，龙正宇、黄小庭分别合作开展两类C–Cl方法；单电子转移保留为各原作讨论的解释。
+**合作与研究接续：**陈亚雄参与溶剂效应研究，杨震宇参与铜体系成键。龙正宇参与改进黄维垣小组发展的脱卤亚磺化，黄小庭参与零价镍体系，曹海萍参与环化和制碘代物方法，唐小军研究工业氯代原料的转化。单电子转移等机理解释随各篇的底物和证据阅读。
 
 出处：传记69–74、83–84页；1984年《化学学报》906–912页；1999及2001年JOC两类C–Cl方法的出版社摘要。
 
-[代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#a07-representative-study) · [A07（单电子转移与C–Cl活化）](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#topic-single-electron-transfer) · [A07（单电子转移与C–Cl活化） 从碘代物到含氟氯代物](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#record-ccl-activation) · [原文定位与署名](A07_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+[主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#a07-contributions) · [代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#a07-representative-study) · [A07（单电子转移与C–Cl活化）](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#topic-single-electron-transfer) · [A07（单电子转移与C–Cl活化） 从碘代物到含氟氯代物](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#record-ccl-activation) · [原文定位与署名](A07_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
 
 ### A08（交叉研究与晚年拓展）
 
-**科学问题：**有机氟反应方法怎样进入小环、大环及新的性质研究？
+**科学问题：**怎样用含氟试剂构建小环和大环，再通过改变结构研究分子的反应性和物性？
 
-**具体贡献：**陈庆云与合作者把含氟试剂和反应方法拓展到小环、卟啉与新大环骨架，并在晚年继续研究脱氧氟化、氟磺酰化及表面活性分子，连接分子构建、反应性与性质问题。
+**具体贡献：**陈庆云与合作者将二氟卡宾用于含氟小环，研究卟啉的氟烷基化。2007年的研究分离并表征了20π非芳香大环，2022年的另一项研究把碳碳三键引入18π共轭大环。晚年的合作还涉及脱氧氟化、氟磺酰化，以及含氟表面活性分子与离子液体的合成和物性。
 
-**合作与研究接续：**郭灿城带来卟啉研究基础，刘超等共同推进大环方向；2022年合著工作的既有理论计算归原作者，不据署名分派执行者。
+**合作与研究接续：**徐伟、程战领等参与小环研究。郭灿城、金利美、曾卓等参与卟啉的直接氟烷基化，刘超、沈冬梅与陈庆云共同发表20π大环论文。2022年含三键大环的结构、光谱和理论研究，以及晚年各项方法，分别归各篇原作者。
 
 出处：传记75–86页及晚期论著目录156–159页；小环、2003/2007卟啉与大环、2022大环及晚年方法分别对应原作者文献。
 
-[代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#a08-representative-study) · [A08（交叉研究与晚年拓展） 含氟小环](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluorinated-small-rings/index.html#topic-fluorinated-small-rings) · [A08（交叉研究与晚年拓展） 卟啉与大环](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#topic-fluoroporphyrins) · [A08（交叉研究与晚年拓展） 脱氧氟化](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/deoxyfluorination/index.html#topic-deoxyfluorination) · [A08（交叉研究与晚年拓展） 晚年试剂与表面活性分子](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/sulfonyl-fluoride/index.html#topic-sulfonyl-fluoride) · [原文定位与署名](A08_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+[主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#a08-contributions) · [代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#a08-representative-study) · [A08（交叉研究与晚年拓展） 含氟小环](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluorinated-small-rings/index.html#topic-fluorinated-small-rings) · [A08（交叉研究与晚年拓展） 卟啉与大环](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#topic-fluoroporphyrins) · [A08（交叉研究与晚年拓展） 脱氧氟化](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/deoxyfluorination/index.html#topic-deoxyfluorination) · [A08（交叉研究与晚年拓展） 晚年试剂与表面活性分子](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/sulfonyl-fluoride/index.html#topic-sulfonyl-fluoride) · [原文定位与署名](A08_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
 
 ### A09（学科建设与人才培养）
 

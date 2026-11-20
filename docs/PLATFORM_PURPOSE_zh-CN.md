@@ -24,6 +24,8 @@
 | A08 | 交叉研究与晚年拓展 |
 | A09 | 学科建设与人才培养 |
 
+正式站的成果总览可逐线进入主要贡献与研究分支，查看科学问题、具名合作与各支代表文献。学术传承另有育人故事和学科服务记录。[八条科研成果线](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#achievement-lines-preview) · [A09（学科建设与人才培养）](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#line-a09)
+
 这是资料导航架构。各条线已经取得什么资料、完成哪些核校、仍缺少什么证据，应按实际条目说明。存在专题网页不等于该线资料完整，也不等于已完成复现验证或研究开发。
 
 ## 面向不同读者安排内容

@@ -1,5 +1,7 @@
 # 六氟丙酮第一报：原始实验与科学问题
 
+[主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-contributions)
+
 1960年《Fluorinated ketones》第一报，研究六氟丙酮与醇、有机金属化合物及含活泼氢化合物的反应。历史英译本p647–653七页影印图已取得并逐页核读；以下是依据该英译本的中文科学释读，未取得俄文原刊，尚未作俄英逐句校勘。[公开馆藏，p647起](https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n100)
 
 ## 原作者与篇目身份

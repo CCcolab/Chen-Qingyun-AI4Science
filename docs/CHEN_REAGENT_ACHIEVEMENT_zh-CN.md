@@ -12,6 +12,6 @@
 
 ## 展示与研究边界
 
-陈试剂作为A06（磺酸酯、二氟卡宾与三氟甲基化）成果线的代表性子专题突出展示，与磺酸酯和二氟卡宾研究相联系，不新增第十条成果线。首页和成果汇总页设置显著入口，专题先讲成果与原作者，再呈现实体辨析和后续分支。
+甲酯的三氟甲基化是这条成果线中的一项。陈庆云与合作者还比较了含氟磺酸酯的硫—氧和碳—氧断裂，发展了多种二氟卡宾前体。他与Dolbier团队共同发展的硅酯TFDA（FSO₂CF₂CO₂SiMe₃）提供二氟卡宾，使烯烃形成偕二氟环丙烷。2003年《Organic Syntheses》记载了硅酯的制备和环丙烷化实例。[A06（磺酸酯、二氟卡宾与三氟甲基化）主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#a06-contributions) · [2003年硅酯方法，172–176页](https://orgsyn.org/demo.aspx?prep=v80p0172)
 
 原51项来源及其稳定编号不改；新增CR-S命名空间独立登记。历史成果与平台新增AI研究分开。M0继续暂停，既有科研记录保持review_required及release_eligible=false；本轮不进行计算或模型API调用。

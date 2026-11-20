@@ -1,5 +1,7 @@
 # A08（交叉研究与晚年拓展）：含氟小环、卟啉大环与晚年研究
 
+[主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#a08-contributions)
+
 以《氟缘笃志：陈庆云传》中的研究经历与合作记述为主线，分别介绍具体化学对象、方法发展及晚年共同成果。
 
 ## A08（交叉研究与晚年拓展）：含氟小环的合成与转化

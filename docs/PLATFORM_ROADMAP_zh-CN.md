@@ -35,6 +35,8 @@
 
 ## 三、按九条导航线逐项整理成果
 
+读者可从成果总览逐线查看主要贡献和研究分支，再按问题选择代表案例及其原文。GitHub学术导读保留各线的文献出处、研究分工与育人故事。[正式站八条科研成果线](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#achievement-lines-preview) · [GitHub学术导读](ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+
 九条成果线沿用现有资料架构，各线按实际来源与内容进度独立推进。每个专题优先回答：当时的问题是什么、陈先生与合作者具体做了什么、依据在哪里、后续研究如何发展。
 
 | 整理项 | 交付内容 |

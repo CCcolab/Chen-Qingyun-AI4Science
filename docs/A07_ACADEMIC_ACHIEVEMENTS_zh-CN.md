@@ -1,5 +1,7 @@
 # A07（单电子转移与C–Cl活化）：从溶剂效应到氟烷基化方法
 
+[主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#a07-contributions)
+
 陈庆云与合作者把含氟卤代物的反应性、溶剂和引发条件组织成持续发展的研究问题。《氟缘笃志：陈庆云传》记述了从全氟烷基碘代物的意外溶剂效应，到多种氟烷基化方法，再到特定含氟氯代物活化的历程。这条成果线既有新的合成入口，也有围绕异常现象深入研究的合作故事。
 
 ## A07（单电子转移与C–Cl活化）：系统发展氟烷基化方法

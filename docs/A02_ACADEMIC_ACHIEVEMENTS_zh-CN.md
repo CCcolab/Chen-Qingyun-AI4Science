@@ -1,5 +1,7 @@
 # A02（含氟单体、氟橡胶与氟油）
 
+[主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoromonomers/index.html#a02-contributions)
+
 从单体制取与低温分离到氟橡胶和氟油
 
 以《氟缘笃志：陈庆云传》为主线，这条成果线呈现陈庆云与合作者怎样把单体来源、反应与分离、聚合材料和应用需求连接起来。六氟丙烯的制取与低温分离是材料研究的基础工作；氟橡胶2号、3号及调聚氟溴油则体现了团队研究与生产条件的接续。

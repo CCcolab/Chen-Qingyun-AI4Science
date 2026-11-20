@@ -1,4 +1,6 @@
-# A01 全氟酮化学早期研究
+# A01（全氟酮化学：六氟丙酮与双酚AF）
+
+[主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-contributions)
 
 上海有机所生平资料将陈庆云留苏期间深入研究六氟丙酮、开创全氟酮化学并取得六氟双酚A制备专利，作为其早期学术贡献。这是机构的历史评价；具体成果应回到原始研究问题、产物与鉴定证据，并保留合作者归属。[上海有机所：陈庆云院士生平](https://sioc.cas.cn/dncqy/)
 
