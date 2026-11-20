@@ -148,7 +148,7 @@ Rₘ=[(n_D²−1)/(n_D²+2)]·M/ρ；ρ≈d⁽²⁰⁾₄×1 g·cm⁻³。整数
 
 **现有资料与记录。**第一报英译本647–653页全部七页影印图已取得并核读；俄文原刊与专业核译仍待核。另两篇Doklady原页共八页已有AI核读，关键结构转录签认待补。传记p29的证书书影已核见，独立高清原始扫描及细字日期仍待核。 第一报与说明书的原报数据、具体化学贡献和共同署名分别呈现；这是对既有历史成果的资料展开，不作为平台新的科学发现。
 
-[早期原文与分支研究说明](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/README.md) · [第一报全文核读范围与历史证据](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A01_FIRST_REPORT_zh-CN.md) · [A01（全氟酮化学：六氟丙酮与双酚AF）原报数据与共同贡献](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-primary-records)
+[早期原文与分支研究说明](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/research/a01/README.md) · [第一报全文核读范围与历史证据](https://github.com/CCcolab/Chen-Qingyun-AI4Science/blob/main/docs/A01_FIRST_REPORT_zh-CN.md) · [双酚AF两份制备记录与共同署名](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-primary-records)
 
 **计量重建：双酚AF制备记录。**已在明确原料身份、原子量和净计量假设下重建第117491号说明书质量—收率账本；原98%收率基准仍待核。论文实例与说明书分别登记，不修正原文质量或认定样品纯度。
 
@@ -591,7 +591,7 @@ H沿用原表C₆H₁₄记号，当前登记未进一步指定异构体；B是�
 
 [A06（磺酸酯、二氟卡宾与三氟甲基化）主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#a06-contributions)
 
-[磺酸酯断键的历史成果](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html#a06-deep-reading) · [陈试剂的代表性贡献](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#chen-reagent-contribution) · [原始论文与命名证据](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#chen-reagent-evidence)
+[磺酸酯断键的历史成果](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html#a06-deep-reading) · [陈试剂的代表性贡献](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#a06-representative-study) · [后续命名证据](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#chen-reagent-evidence)
 
 ## A07（单电子转移与C–Cl活化）
 
@@ -751,7 +751,7 @@ H沿用原表C₆H₁₄记号，当前登记未进一步指定异构体；B是�
 
 [A08（交叉研究与晚年拓展）主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#a08-contributions)
 
-[含氟小环的合成与反应](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluorinated-small-rings/index.html#record-small-rings) · [氟烷基卟啉合成与20π大环](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#a08-representative-study) · [两种脱氧氟化体系](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/deoxyfluorination/index.html#record-deoxyfluorination-systems) · [晚年构件与表面活性分子](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/sulfonyl-fluoride/index.html#record-late-functional-groups) · [含氟离子液体相关记录](https://cccolab.github.io/Chen-Qingyun-AI4Science/index.html#record-fluorinated-ionic-liquids)
+[含氟小环的合成与反应](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluorinated-small-rings/index.html#record-small-rings) · [氟烷基卟啉合成与20π大环](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#a08-representative-study) · [两种脱氧氟化体系](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/deoxyfluorination/index.html) · [晚年构件与表面活性分子](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/sulfonyl-fluoride/index.html) · [含氟离子液体相关记录](https://cccolab.github.io/Chen-Qingyun-AI4Science/index.html#record-fluorinated-ionic-liquids)
 
 ## 维护与静态一致性检查
 

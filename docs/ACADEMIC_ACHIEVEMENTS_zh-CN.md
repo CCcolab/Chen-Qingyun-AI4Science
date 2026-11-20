@@ -14,7 +14,7 @@
 
 出处：传记23–33页，1960年第一报英译647–653页，第117491号说明书的署名、实例和用途。两篇1960年《苏联科学院报告》分别见第133卷1113–1116页和第134卷1367–1370页。
 
-[主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-contributions) · [代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-representative-study) · [学术成果与合作](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-primary-records) · [原文定位与署名](A01_FIRST_REPORT_zh-CN.md)
+[主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-contributions) · [代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-representative-study) · [双酚AF两份制备记录与共同署名](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/early-fluoroketones/index.html#a01-primary-records) · [原文定位与署名](A01_FIRST_REPORT_zh-CN.md)
 
 ### A02（含氟单体、氟橡胶与氟油）
 
@@ -62,7 +62,7 @@
 
 出处：传记55–59页；1978年《化学学报》77–79页；CN1075708A、CN1308043A的发明人及工艺各自登记。
 
-[主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html#a05-contributions) · [代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html#a05-representative-study) · [A05（制冷剂与配套技术）：组分、工艺与设备](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html#topic-refrigerants) · [原文定位与署名](A05_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+[主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html#a05-contributions) · [代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html#a05-representative-study) · [F-115两条制备路线](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html#topic-refrigerants) · [原文定位与署名](A05_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
 
 ### A06（磺酸酯、二氟卡宾与三氟甲基化）
 
@@ -86,7 +86,7 @@
 
 出处：传记69–74、83–84页；1984年《化学学报》906–912页；1999及2001年JOC两类C–Cl方法的出版社摘要。
 
-[主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#a07-contributions) · [代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#a07-representative-study) · [A07（单电子转移与C–Cl活化）](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#topic-single-electron-transfer) · [A07（单电子转移与C–Cl活化） 从碘代物到含氟氯代物](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#record-ccl-activation) · [原文定位与署名](A07_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+[主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#a07-contributions) · [代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#a07-representative-study) · [A07（单电子转移与C–Cl活化）](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#topic-single-electron-transfer) · [工业含氟氯代原料与由氯制碘](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#record-ccl-activation) · [原文定位与署名](A07_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
 
 ### A08（交叉研究与晚年拓展）
 

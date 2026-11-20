@@ -1,6 +1,6 @@
 """Scope the public site navigation and its corresponding GitHub reader documents."""
 MANIFEST = 'provenance/platform-presentation.v55.json'
-MANIFEST_SHA256 = '03eabfce24506d575b87a3d7b96dd063739e793134c62c93fc257c080aa870a2'
+MANIFEST_SHA256 = 'eef3a5d8569ce4a1f40d514a23866c768c5518cac29f82c940955c76dc01d3d5'
 PREDECESSOR = '46dd2d9c41b3113f44b98953d36277e421b21ff8'
 PRESENTATION_ID = 'PLATFORM-READER-DIRECTORY-20261120-v55'
 HTML_PATHS = ('index.html', 'achievements/index.html', 'topics/index.html', 'research/index.html',
