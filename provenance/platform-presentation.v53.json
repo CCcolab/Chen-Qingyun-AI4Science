@@ -1,0 +1,223 @@
+{
+  "schema_version": "53.0",
+  "presentation_id": "PLATFORM-RESEARCH-LINE-OVERVIEWS-20261120-v53",
+  "publication_kind": "research_line_overviews",
+  "previous_presentation_commit": "bdbb270f6ec7978581223a83cd0571be81935ee7",
+  "changed_html_paths": [
+    "index.html",
+    "achievements/index.html",
+    "topics/chen-reagent/index.html",
+    "topics/single-electron-transfer/index.html",
+    "topics/fluoroporphyrins/index.html"
+  ],
+  "previous_presentation": "provenance/platform-presentation.v52.json",
+  "change_reason": "Clarify the scope of the scientific research lines in both directories and introduce the related results in the A06–A08 representative studies.",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "M0_resumed": false,
+  "Nemotron_training_resumed": false,
+  "reversible_text_files": [
+    {
+      "path": "scripts/story_sources_publication.py",
+      "old_sha256": "32ae4642da56ba7683c044d4debb45c0d2129089e33354e3494d0ce7c2c10a23",
+      "old_bytes": 7473,
+      "new_sha256": "77825c1d66e63b88075f71eb609f2d0a4c050d7f29881ddec44dbf7fef2ac5f5",
+      "new_bytes": 7584,
+      "edits": [
+        {
+          "old_offset": 364,
+          "replacement": 0
+        },
+        {
+          "old_offset": 3313,
+          "replacement": 1
+        }
+      ]
+    },
+    {
+      "path": "site/achievements/index.html",
+      "old_sha256": "c7422ad6dc1d129f3c269ca6e48d81e08a9b2e48f95cc973710696bc88eef991",
+      "old_bytes": 79044,
+      "new_sha256": "6f81ecd724e9b319765397c7dc8036c354c428bb5d87c016c2d1f740c93bc9a8",
+      "new_bytes": 79533,
+      "edits": [
+        {
+          "old_offset": 11702,
+          "replacement": 2
+        },
+        {
+          "old_offset": 24519,
+          "replacement": 3
+        },
+        {
+          "old_offset": 25139,
+          "replacement": 4
+        },
+        {
+          "old_offset": 26226,
+          "replacement": 5
+        },
+        {
+          "old_offset": 26814,
+          "replacement": 6
+        },
+        {
+          "old_offset": 27809,
+          "replacement": 7
+        },
+        {
+          "old_offset": 28442,
+          "replacement": 8
+        }
+      ]
+    },
+    {
+      "path": "site/index.html",
+      "old_sha256": "e4661e29278e6fb2c353fa93b2f0147d40695d6645760f6a4a4fd7e2c1ad04da",
+      "old_bytes": 215592,
+      "new_sha256": "20089556cefbf44d10d6684387f9780436aafc6749538b21b1e942b650c65af9",
+      "new_bytes": 215959,
+      "edits": [
+        {
+          "old_offset": 14953,
+          "replacement": 9
+        },
+        {
+          "old_offset": 31215,
+          "replacement": 10
+        },
+        {
+          "old_offset": 32432,
+          "replacement": 11
+        },
+        {
+          "old_offset": 33610,
+          "replacement": 12
+        }
+      ]
+    },
+    {
+      "path": "site/topics/chen-reagent/index.html",
+      "old_sha256": "6ffd2de65a010ed036e155c51596eadcade6ec515cb6c6ea8ed4e215b2956a1c",
+      "old_bytes": 26704,
+      "new_sha256": "6499cb8c677f3e1e4c143d5c6d738957bbfc37d9aa0197f67550dc73fce3f98b",
+      "new_bytes": 27971,
+      "edits": [
+        {
+          "old_offset": 10605,
+          "replacement": 13
+        },
+        {
+          "old_offset": 16845,
+          "replacement": 14
+        }
+      ]
+    },
+    {
+      "path": "site/topics/fluoroporphyrins/index.html",
+      "old_sha256": "8808619a60d1f72e81f1984dd681936ccc4d61c5bd8bffe72bc04450c69d5c60",
+      "old_bytes": 20258,
+      "new_sha256": "1bd0f59b6c27e941afa957dd55b08e4a7bcff4adb249e9fd3e056575f8e37d2d",
+      "new_bytes": 20925,
+      "edits": [
+        {
+          "old_offset": 9168,
+          "replacement": 15
+        }
+      ]
+    },
+    {
+      "path": "site/topics/single-electron-transfer/index.html",
+      "old_sha256": "cd761cf0574a16a52d5dfb499124a93176e76391d1959bbade0c242a9f7a179b",
+      "old_bytes": 25164,
+      "new_sha256": "6df8539a8ce7820597e57aa284aa1feccdc6afffe8ecd69cd579cc6da42d0b9d",
+      "new_bytes": 26791,
+      "edits": [
+        {
+          "old_offset": 11319,
+          "replacement": 16
+        },
+        {
+          "old_offset": 16163,
+          "replacement": 17
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "",
+      "new": "import research_line_overviews_publication as overviews\n"
+    },
+    {
+      "old": "",
+      "new": ",\n                 (overviews, overviews.V52_ADDITIONS)"
+    },
+    {
+      "old": "发现“陈试剂”的三氟甲基化用途</span></a></li>\n<li><a href=\"../topics/single-electron-transfer/index.html#a07-representative-study\"><strong>A07（单电子转移与C–Cl活化）</strong><span>用含氟氯代物引入氟烷基</span></a></li>\n<li><a href=\"../topics/fluoroporphyrins/index.html#a08-representative-study\"><strong>A08（交叉研究与晚年拓展）</strong><span>分离并表征含 20 个 π 电子的卟啉衍生物",
+      "new": "“陈试剂”引入三氟甲基，TFDA提供二氟卡宾</span></a></li>\n<li><a href=\"../topics/single-electron-transfer/index.html#a07-representative-study\"><strong>A07（单电子转移与C–Cl活化）</strong><span>以多种方式引发氟烷基化，拓展碳氯键活化</span></a></li>\n<li><a href=\"../topics/fluoroporphyrins/index.html#a08-representative-study\"><strong>A08（交叉研究与晚年拓展）</strong><span>合成氟烷基卟啉，分离20π非芳香大环"
+    },
+    {
+      "old": "从实验中的副产物得到启发，发现一种已知甲酯可用于向有机分子引入三氟甲基。这种甲酯后来被称为“陈试剂”。团队还发展了以硅酯为前体产生二氟卡宾的方法",
+      "new": "发现，甲酯MFSDA（FSO₂CF₂COOMe，陈试剂）能向有机分子引入–CF₃。陈庆云小组又与Dolbier团队合作，发展硅酯TFDA（FSO₂CF₂COOSiMe₃），以二氟卡宾（:CF₂）将烯烃的双键转为偕二氟三元环。两类试剂把磺酸衍生物的反应性转化为不同的合成工具"
+    },
+    {
+      "old": "代表成果",
+      "new": "陈试剂与二氟卡宾"
+    },
+    {
+      "old": "龙正宇与陈庆云在 1999 年报道，特定含氟氯代物可用于烯烃、炔烃的氟烷基化。2001 年，黄小庭与陈庆云以零价镍体系研究全氟烷基氯代物的转化，研究对象还包括芳烃",
+      "new": "陈庆云与合作者研究低价金属、亲核试剂、氧化剂和光照等引发体系，探索氟烷基卤代物的单电子转移反应。龙正宇与陈庆云随后改进脱卤亚磺化，将DMSO／连二亚硫酸钠体系用于特定氯代物；黄小庭与陈庆云另以零价镍拓展相应转化。这是一组围绕引发方式、底物与产物展开的方法研究"
+    },
+    {
+      "old": "代表成果",
+      "new": "单电子转移与碳氯键活化"
+    },
+    {
+      "old": "在含氟卟啉研究中，刘超、沈冬梅与陈庆云于 2007 年报道了一种可分离的 20π 电子大环，并记录其溶液吸收光谱随时间的变化。在原文图示的二氯甲烷溶液和环境条件下，该化合物的氧化半衰期约为一天",
+      "new": "金利美、曾卓、郭灿城与陈庆云于2003年报道卟啉的直接氟烷基化；刘超与陈庆云于2005年用钯催化偶联，在卟啉的不同位置引入三氟甲基。在一种三氟甲基取代铜卟啉的还原反应中，刘超、沈冬梅与陈庆云于2007年发表论文，报告分离并表征了20π非芳香N,N′-二氢卟啉，使合成方法进入了大环电子结构与性质研究"
+    },
+    {
+      "old": "代表成果",
+      "new": "氟烷基卟啉与20π大环"
+    },
+    {
+      "old": "发现“陈试剂”的三氟甲基化用途</span></a></li>\n<li><a href=\"topics/single-electron-transfer/index.html#a07-representative-study\"><strong>A07（单电子转移与C–Cl活化）</strong><span>用含氟氯代物引入氟烷基</span></a></li>\n<li><a href=\"topics/fluoroporphyrins/index.html#a08-representative-study\"><strong>A08（交叉研究与晚年拓展）</strong><span>分离并表征含 20 个 π 电子的卟啉衍生物",
+      "new": "“陈试剂”引入三氟甲基，TFDA提供二氟卡宾</span></a></li>\n<li><a href=\"topics/single-electron-transfer/index.html#a07-representative-study\"><strong>A07（单电子转移与C–Cl活化）</strong><span>以多种方式引发氟烷基化，拓展碳氯键活化</span></a></li>\n<li><a href=\"topics/fluoroporphyrins/index.html#a08-representative-study\"><strong>A08（交叉研究与晚年拓展）</strong><span>合成氟烷基卟啉，分离20π非芳香大环"
+    },
+    {
+      "old": "含氟磺酸酯的断键研究，发展二氟卡宾前体与三氟甲基化方法；陈庆云、吴生文将甲酯MFSDA发展为三氟甲基化试剂，后称“陈试剂”。</p>\n<nav class=\"cq-journey-actions\" aria-label=\"A06（磺酸酯、二氟卡宾与三氟甲基化）阅读入口\"><a href=\"topics/chen-reagent/index.html#a06-representative-study\">代表成果",
+      "new": "磺酸酯的结构与断键研究出发，陈庆云与吴生文将甲酯MFSDA发展为三氟甲基化试剂，这种甲酯后来被称为“陈试剂”。陈庆云小组还与Dolbier团队合作发展硅酯TFDA，以二氟卡宾构建含两个氟原子的三元环。</p>\n<nav class=\"cq-journey-actions\" aria-label=\"A06（磺酸酯、二氟卡宾与三氟甲基化）阅读入口\"><a href=\"topics/chen-reagent/index.html#a06-representative-study\">陈试剂与二氟卡宾"
+    },
+    {
+      "old": "从氟烷基碘的溶剂效应研究出发，发展多种氟烷基化方法，并分别以DMSO／连二亚硫酸钠和零价镍体系拓展特定含氟氯代物的转化。</p>\n<nav class=\"cq-journey-actions\" aria-label=\"A07（单电子转移与C–Cl活化）阅读入口\"><a href=\"topics/single-electron-transfer/index.html#a07-representative-study\">代表成果",
+      "new": "系统研究金属、亲核试剂、氧化剂和光照等引发的氟烷基化，把单电子转移的研究思路用于含氟分子合成。团队又以DMSO／连二亚硫酸钠和零价镍体系，将方法拓展到较难反应的特定含氟氯代物。</p>\n<nav class=\"cq-journey-actions\" aria-label=\"A07（单电子转移与C–Cl活化）阅读入口\"><a href=\"topics/single-electron-transfer/index.html#a07-representative-study\">单电子转移与碳氯键活化"
+    },
+    {
+      "old": "陈庆云与合作者把含氟试剂和反应方法拓展到小环、卟啉与新大环骨架，并在晚年继续研究脱氧氟化、氟磺酰化及表面活性分子，连接分子构建、反应性与性质问题。</p>\n<nav class=\"cq-journey-actions\" aria-label=\"A08（交叉研究与晚年拓展）阅读入口\"><a href=\"topics/fluoroporphyrins/index.html#a08-representative-study\">代表成果",
+      "new": "氟烷基卟啉是这一交叉方向的代表成果。陈庆云与合作者发展直接氟烷基化和钯催化偶联两种合成策略。他们进一步研究一种三氟甲基取代铜卟啉的还原反应，从中分离出20π非芳香大环。含氟小环、新大环骨架及晚年反应方法另有各自的研究分支。</p>\n<nav class=\"cq-journey-actions\" aria-label=\"A08（交叉研究与晚年拓展）阅读入口\"><a href=\"topics/fluoroporphyrins/index.html#a08-representative-study\">氟烷基卟啉与20π大环"
+    },
+    {
+      "old": "“陈试剂”把一种已知甲酯发展为三氟甲基化工具，体现了陈庆云与合作者从反应线索提出新用途、再持续完善方法的创造过程。甲酯MFSDA与另一种二氟卡宾前体TFDA硅酯是不同化合物，各自形成了后续合作研究。</p><section class=\"cq-study cq-display-feature\" id=\"a06-representative-study\" aria-labelledby=\"a06-representative-study-title\"><h2 id=\"a06-representative-study-title\">陈试剂：从副产物线索开辟三氟甲基化用途</h2",
+      "new": "陈庆云与吴生文把一种已知甲酯发展为三氟甲基化工具，这种甲酯后来被称为“陈试剂”。这项工作体现了从反应线索提出新用途、再持续完善方法的创造过程。甲酯MFSDA与另一种二氟卡宾前体TFDA硅酯是不同化合物，各自形成了后续合作研究。</p><section class=\"cq-study cq-display-feature\" id=\"a06-representative-study\" aria-labelledby=\"a06-representative-study-title\"><h2 id=\"a06-representative-study-title\">从磺酸酯到两类试剂：三氟甲基化与二氟卡宾</h2>\n<p>这条成果线有两个彼此联系的合成方向。甲酯MFSDA（FSO₂CF₂COOMe，后称“陈试剂”）用于引入三氟甲基（–CF₃）；三甲基硅酯TFDA（FSO₂CF₂COOSiMe₃）则可提供二氟卡宾（:CF₂），在烯烃双键处构建一个环碳带两个氟原子的三元环。前者开发三氟甲基的新来源，后者拓宽含氟小环的合成。</p>\n<p>两种用途源自对含氟磺酸衍生物的持续研究。<a href=\"../perfluorosulfonates/index.html#a06-deep-reading\">磺酸酯结构与断键选择性</a>、下文的甲酯三氟甲基化和<a href=\"#a06-tfda-cooperation\">硅酯二氟卡宾方法</a>，分别保留原作者的研究对象与合作记录。</p>\n<h3>陈试剂：从副产物线索开辟三氟甲基化用途</h3"
+    },
+    {
+      "old": "陈庆云与徐伟、周鼎英、程战领等继续研究二氟卡宾及含氟小环反应。前体设计与反应性探索相互推动，扩展了能够合成的含氟小环对象。</p></article><article id=\"heritage-context\" class=\"cq-display-section\"><h2>共同开发与原刊方法核查</h2><section id=\"a06-historical-methods\"><h3>甲酯与硅酯：两项方法分别提交和核查</h3><div class=\"cq-display-table\" role=\"region\" tabindex=\"0\"><table><caption id=\"a06-methods-caption\">2003与2010方法分别保存</caption><thead><tr><th scope=\"col\">方法</th><th scope=\"col\">具体用途</th><th scope=\"col\">Submitted by</th><th scope=\"col\">Checked by</th><th scope=\"col\">卷页</th></tr></thead><tbody><tr><th scope=\"row\">2003：TFDA硅酯／二氟卡宾</th><td>TFDA制备及正丁基偕二氟环丙烷羧酸酯实例</td><td>W. R. Dolbier Jr、F. Tian、J.-X. Duan、Q.-Y. Chen</td><td>Victoria D. Bock、David P. Richardson、Steven Wolff</td><td>Org. Synth. 80：172–176（2003年方法）</td></tr><tr><th scope=\"row\">2010：MFSDA甲酯／三氟甲基化</th><td>甾体分子的三氟甲基化方法</td><td>Xiang-Shu Fei、Wei-Sheng Tian、Kai Ding、Yun Wang、Qing-Yun Chen</td><td>Takayuki Yamakawa、Tohru Fukuyama</td><td>Org. Synth. 87：126–136（2010年方法）</td></tr></tbody></table></div><p>2003年方法使用TFDA硅酯开展二氟卡宾化学；2010年方法使用MFSDA甲酯开展甾体三氟甲基化。表中提交者与核查者是各篇Organic Syntheses方法的历史角色。</p></section><div class=\"cq-display-table\" role=\"region\" tabindex=\"0\"><table><caption id=\"a06-cooperation-caption\">合作分工</caption><thead><tr><th scope=\"col\">人物或团队</th><th scope=\"col\">具体工作与角色</th></tr></thead><tbody><tr><th scope=\"row\">陈庆云与吴生文</th><td>从甲酯二氟卡宾反应的CF₃H线索发展三氟甲基化；两人为1989年论文共同作者。</td></tr><tr><th scope=\"row\">杨国英</th><td>接续研究溶剂、干燥程度和产率波动，并参与铜粉体系及电子转移途径研究。</td></tr><tr><th scope=\"row\">William R. Dolbier Jr与跨国合作团队</th><td>与陈庆云小组共同发展TFDA；2000论文完整七位作者按原文列示，不据此逐人分配实验任务。</td></tr><tr><th scope=\"row\">徐伟、周鼎英、程战领等</th><td>传记明确关联二氟卡宾和含氟小环研究；各项具体反应仍按对应论文归属。</td></tr><tr><th scope=\"row\">两篇Organic Syntheses方法的提交者与核查者</th><td>分别开发／提交和核查所载具体方法；这些为原刊历史角色。</td></tr></tbody></table></div></article><article id=\"record-reagent-identity\" class=\"cq-display-section\"><h2>后续用途与不同试剂形态</h2><p>1998年，Xiang-Shu Fei、Wei-Sheng Tian、Qing-Yun Chen报告甾体衍生物的三氟甲基化。2016年铜盐研究与2017年银盐研究分别拓展了其他含氟盐的反应用途，盐型与甲酯分别介绍。2024年黄广龙、薛小松对特定体系开展的理论计算归两位后续作者。</p></article><article id=\"a06-ai-collation\" class=\"cq-display-section\"><h2>AI辅助整理与研究</h2><p>历史成果与原作者已有计算归实际研究者。平台的文献整理与新增AI研究另列，保持 <code>review_required</code>、<code>release_eligible=false</code>；M0与Nemotron训练继续暂停。</p><p><a href=\"../../research/index.html#ai-a06\">查看AI辅助整理与研究 →</a></p></article><p><a href=\"../../achievements/index.html#line-a06\">A06（磺酸酯、二氟卡宾与三氟甲基化）成果线</a> · <a href=\"../index.html\">返回专题索引 ↑</a></p>\n<section class=\"cq-display-references\" id=\"public-references\"><h2>参考资料</h2><span id=\"a06-scope-caption\" class=\"cq-display-alias\"></span><span id=\"a06-study-sources\" class=\"cq-display-alias\"></span><span id=\"refs\" class=\"cq-display-alias\"></span><ol><li><span id=\"a06-study-source-heritage-s01\" class=\"cq-display-alias\"></span><span id=\"a06-source-book\" class=\"cq-display-alias\"></span>朱晶、刘超：《氟缘笃志：陈庆云传》。中国科学技术出版社，2024年6月第1版。ISBN 978-7-5236-0741-1。第67–69页记氟仿线索、未得预期产物的底物及杨国英回忆，第133页论著目录第107项列陈庆云、杨国英、吴生文的铜粉体系论文（J. Fluorine Chem.，1991，55，291–298）。</li><li><span id=\"a06-study-source-cq-r05\" class=\"cq-display-alias\"></span><span id=\"ref-cq-r05\" class=\"cq-display-alias\"></span>Qing-Yun Chen、Sheng-Wen Wu：<a href=\"https://pubs.rsc.org/en/content/articlelanding/1989/c3/c39890000705\">Methyl fluorosulphonyldifluoroacetate; a new trifluoromethylating agent</a>。1989，J. Chem. Soc., Chem. Commun.,705–706。 DOI 10.1039/C39890000705。</li><li><span id=\"ref-cq-r07\" class=\"cq-display-alias\"></span>Tian、Kruger、Bautista、Duan、Li、Dolbier、Chen：<a href=\"https://pubmed.ncbi.nlm.nih.gov/10814377/\">A Novel and Highly Efficient Synthesis of gem-Difluorocyclopropanes</a>。2000，Organic Letters 2(4),563–564。 DOI 10.1021/ol0055622。</li><li><span id=\"a06-study-source-cq-r08\" class=\"cq-display-alias\"></span><span id=\"ref-cq-r08\" class=\"cq-display-alias\"></span>W. R. Dolbier Jr、F. Tian、J.-X. Duan、Q.-Y. Chen：<a href=\"https://orgsyn.org/demo.aspx?prep=v80p0172\">Preparation and Use of a New Difluorocarbene Reagent. Trimethylsilyl 2-Fluorosulfonyl-2,2-difluoroacetate: n-Butyl 2,2-Difluorocyclopropanecarboxylate</a>。2003，Organic Syntheses 80,172–176。 DOI 10.15227/orgsyn.080.0172",
+      "new": "2003年《Organic Syntheses》收录了TFDA的制备及一个实际用途：以丙烯酸正丁酯得到2,2-二氟环丙烷羧酸正丁酯，该例分离收率为55%。新形成的三元环有一个碳连着两个氟原子，说明二氟卡宾怎样成为构建含氟小环的工具。方法由W. R. Dolbier Jr、F. Tian、J.-X. Duan、Q.-Y. Chen提交，并由Bock、Richardson和Wolff核查。陈庆云与徐伟、周鼎英、程战领等继续研究二氟卡宾及含氟小环的反应。</p></article><article id=\"heritage-context\" class=\"cq-display-section\"><h2>共同开发与原刊方法核查</h2><section id=\"a06-historical-methods\"><h3>甲酯与硅酯：两项方法分别提交和核查</h3><div class=\"cq-display-table\" role=\"region\" tabindex=\"0\"><table><caption id=\"a06-methods-caption\">2003与2010方法分别保存</caption><thead><tr><th scope=\"col\">方法</th><th scope=\"col\">具体用途</th><th scope=\"col\">Submitted by</th><th scope=\"col\">Checked by</th><th scope=\"col\">卷页</th></tr></thead><tbody><tr><th scope=\"row\">2003：TFDA硅酯／二氟卡宾</th><td>TFDA制备及正丁基偕二氟环丙烷羧酸酯实例</td><td>W. R. Dolbier Jr、F. Tian、J.-X. Duan、Q.-Y. Chen</td><td>Victoria D. Bock、David P. Richardson、Steven Wolff</td><td>Org. Synth. 80：172–176（2003年方法）</td></tr><tr><th scope=\"row\">2010：MFSDA甲酯／三氟甲基化</th><td>甾体分子的三氟甲基化方法</td><td>Xiang-Shu Fei、Wei-Sheng Tian、Kai Ding、Yun Wang、Qing-Yun Chen</td><td>Takayuki Yamakawa、Tohru Fukuyama</td><td>Org. Synth. 87：126–136（2010年方法）</td></tr></tbody></table></div><p>2003年方法使用TFDA硅酯开展二氟卡宾化学；2010年方法使用MFSDA甲酯开展甾体三氟甲基化。表中提交者与核查者是各篇Organic Syntheses方法的历史角色。</p></section><div class=\"cq-display-table\" role=\"region\" tabindex=\"0\"><table><caption id=\"a06-cooperation-caption\">合作分工</caption><thead><tr><th scope=\"col\">人物或团队</th><th scope=\"col\">具体工作与角色</th></tr></thead><tbody><tr><th scope=\"row\">陈庆云与吴生文</th><td>从甲酯二氟卡宾反应的CF₃H线索发展三氟甲基化；两人为1989年论文共同作者。</td></tr><tr><th scope=\"row\">杨国英</th><td>接续研究溶剂、干燥程度和产率波动，并参与铜粉体系及电子转移途径研究。</td></tr><tr><th scope=\"row\">William R. Dolbier Jr与跨国合作团队</th><td>与陈庆云小组共同发展TFDA；2000论文完整七位作者按原文列示，不据此逐人分配实验任务。</td></tr><tr><th scope=\"row\">徐伟、周鼎英、程战领等</th><td>传记明确关联二氟卡宾和含氟小环研究；各项具体反应仍按对应论文归属。</td></tr><tr><th scope=\"row\">两篇Organic Syntheses方法的提交者与核查者</th><td>分别开发／提交和核查所载具体方法；这些为原刊历史角色。</td></tr></tbody></table></div></article><article id=\"record-reagent-identity\" class=\"cq-display-section\"><h2>后续用途与不同试剂形态</h2><p>1998年，Xiang-Shu Fei、Wei-Sheng Tian、Qing-Yun Chen报告甾体衍生物的三氟甲基化。2016年铜盐研究与2017年银盐研究分别拓展了其他含氟盐的反应用途，盐型与甲酯分别介绍。2024年黄广龙、薛小松对特定体系开展的理论计算归两位后续作者。</p></article><article id=\"a06-ai-collation\" class=\"cq-display-section\"><h2>AI辅助整理与研究</h2><p>历史成果与原作者已有计算归实际研究者。平台的文献整理与新增AI研究另列，保持 <code>review_required</code>、<code>release_eligible=false</code>；M0与Nemotron训练继续暂停。</p><p><a href=\"../../research/index.html#ai-a06\">查看AI辅助整理与研究 →</a></p></article><p><a href=\"../../achievements/index.html#line-a06\">A06（磺酸酯、二氟卡宾与三氟甲基化）成果线</a> · <a href=\"../index.html\">返回专题索引 ↑</a></p>\n<section class=\"cq-display-references\" id=\"public-references\"><h2>参考资料</h2><span id=\"a06-scope-caption\" class=\"cq-display-alias\"></span><span id=\"a06-study-sources\" class=\"cq-display-alias\"></span><span id=\"refs\" class=\"cq-display-alias\"></span><ol><li><span id=\"a06-study-source-heritage-s01\" class=\"cq-display-alias\"></span><span id=\"a06-source-book\" class=\"cq-display-alias\"></span>朱晶、刘超：《氟缘笃志：陈庆云传》。中国科学技术出版社，2024年6月第1版。ISBN 978-7-5236-0741-1。第67–69页记氟仿线索、未得预期产物的底物及杨国英回忆，第133页论著目录第107项列陈庆云、杨国英、吴生文的铜粉体系论文（J. Fluorine Chem.，1991，55，291–298）。</li><li><span id=\"a06-study-source-cq-r05\" class=\"cq-display-alias\"></span><span id=\"ref-cq-r05\" class=\"cq-display-alias\"></span>Qing-Yun Chen、Sheng-Wen Wu：<a href=\"https://pubs.rsc.org/en/content/articlelanding/1989/c3/c39890000705\">Methyl fluorosulphonyldifluoroacetate; a new trifluoromethylating agent</a>。1989，J. Chem. Soc., Chem. Commun.,705–706。 DOI 10.1039/C39890000705。</li><li><span id=\"ref-cq-r07\" class=\"cq-display-alias\"></span>Tian、Kruger、Bautista、Duan、Li、Dolbier、Chen：<a href=\"https://pubmed.ncbi.nlm.nih.gov/10814377/\">A Novel and Highly Efficient Synthesis of gem-Difluorocyclopropanes</a>。2000，Organic Letters 2(4),563–564。 DOI 10.1021/ol0055622。</li><li><span id=\"a06-study-source-cq-r08\" class=\"cq-display-alias\"></span><span id=\"ref-cq-r08\" class=\"cq-display-alias\"></span>W. R. Dolbier Jr、F. Tian、J.-X. Duan、Q.-Y. Chen：<a href=\"https://orgsyn.org/demo.aspx?prep=v80p0172\">Preparation and Use of a New Difluorocarbene Reagent. Trimethylsilyl 2-Fluorosulfonyl-2,2-difluoroacetate: n-Butyl 2,2-Difluorocyclopropanecarboxylate</a>。2003，Organic Syntheses 80,172–176。 DOI 10.15227/orgsyn.080.0172。 <a href=\"https://orgsyn.org/demo.aspx?prep=v80p0172\">原作者方法全文</a>，B节为丙烯酸正丁酯的偕二氟环丙烷化实例"
+    },
+    {
+      "old": "从绿色变为棕色：分离含 20 个 π 电子的卟啉衍生物</h2",
+      "new": "氟烷基卟啉：从合成方法到20π非芳香大环</h2>\n<p>这一方向先要解决怎样制得氟烷基卟啉。金利美、曾卓、郭灿城与陈庆云发展卟啉的直接氟烷基化；刘超与陈庆云又用钯催化偶联，在卟啉不同位置引入三氟甲基。两种合成策略使研究者能改变含氟基团的位置和数量，比较所得大环的反应与性质。</p>\n<p>从<a href=\"#topic-fluoroporphyrins\">直接氟烷基化</a>到<a href=\"#record-porphyrin-collaboration\">按位引入三氟甲基</a>，方法的发展提供了进一步研究的分子。下面的20π非芳香N,N′-二氢卟啉，是沿这一方向取得的代表性发现。</p>\n<h3>从绿色变为棕色，取得可分离的20π分子</h3"
+    },
+    {
+      "old": "让含氟氯代物参与加成：龙正宇与陈庆云的碳氯键活化研究</h2",
+      "new": "单电子转移氟烷基化：从多种引发方式到碳氯键活化</h2>\n<p>陈庆云与合作者的研究，围绕怎样从氟烷基卤代物出发，把含氟碳链接入有机分子展开。低价金属、亲核试剂、氧化剂和光照分别提供了可以考察的引发方式。原作者以单电子转移和氟烷基自由基等过程讨论相应反应，使引发方式、溶剂和底物结构成为设计合成方法的变量。</p>\n<p>这些研究先以全氟烷基碘代物等为对象，随后又推进到较难活化的特定氯代物。<a href=\"#topic-single-electron-transfer\">各类引发体系与合作者</a>有各自的实验对象；下面的碳氯键活化，是这组系统研究中的一项代表成果。</p>\n<h3>让含氟氯代物参与加成</h3"
+    },
+    {
+      "old": "团队围绕过渡金属、亲核试剂、氧化剂与光照等引发方式，持续探索氟烷基化及氟烷氧基化。</p></article><article id=\"a07-solvent-discovery\" class=\"cq-display-section\"><h2>溶剂成为可以研究的变量</h2><p>陈亚雄的实验观察与三位合作者的1984年论文，使溶剂从反应背景变成明确研究对象。研究者由此把合成结果与反应途径问题联系起来。</p></article><article id=\"a07-set-synthesis\" class=\"cq-display-section\"><h2>铜参与的加成与含氟烯烃合成</h2><p>1986年，陈庆云与杨震宇研究铜存在下氟烷基碘与乙烯基三甲基硅烷的反应，并发展相应含氟烯烃的立体专一性合成。原作者结合抑制实验，以及用碘苯未捕获到氟烷基铜中间体的观察，提出可能由单电子转移引发的自由基链式解释。</p></article><article id=\"record-ccl-activation\" class=\"cq-display-section\"><h2>继续拓展含氟氯代原料</h2><p>唐小军与陈庆云继续研究HCFC-133a、HCFC-123等工业含氟氯代原料的转化。陈庆云与曹海萍共同发明经亚磺酸盐制备相应全氟烷基碘的方法，形成从含氟氯代物通向其他合成原料的技术途径。</p></article><article id=\"a07-chronology\" class=\"cq-display-section\"><h2>研究历程</h2><div class=\"cq-display-table\" role=\"region\" tabindex=\"0\"><table><caption id=\"a07-chronology-caption\">研究历程</caption><thead><tr><th scope=\"col\">时间</th><th scope=\"col\">工作与记录</th></tr></thead><tbody><tr><th scope=\"row\">1984年</th><td>陈庆云、陈亚雄、黄维垣发表溶剂对碘苯氟烷基化的研究。</td></tr><tr><th scope=\"row\">1986年</th><td>陈庆云、杨震宇研究铜体系中氟烷基碘与乙烯基三甲基硅烷的反应。</td></tr><tr><th scope=\"row\">1999年</th><td>龙正宇、陈庆云报道DMSO体系中的特定C–Cl转化与氢全氟烷基化。</td></tr><tr><th scope=\"row\">2001年</th><td>黄小庭、陈庆云报道零价镍催化的全氟烷基氯化物氟烷基化。</td></tr><tr><th scope=\"row\">2005年申请</th><td>陈庆云、曹海萍共同申请从全氟烷基氯制备全氟烷基碘的方法。</td></tr></tbody></table></div></article><article id=\"heritage-context\" class=\"cq-display-section\"><h2>不同方向的共同贡献</h2><div class=\"cq-display-table\" role=\"region\" tabindex=\"0\"><table><caption id=\"a07-cooperation-caption\">合作分工</caption><thead><tr><th scope=\"col\">人物或单位</th><th scope=\"col\">具体贡献与角色</th></tr></thead><tbody><tr><th scope=\"row\">陈庆云与研究组</th><td>围绕溶剂、引发方式和含氟卤代物结构，持续发展氟烷基化与活化方法。</td></tr><tr><th scope=\"row\">黄维垣小组</th><td>传记所述原脱卤亚磺化反应的发现；黄维垣另与陈庆云、陈亚雄共同署名1984年溶剂研究。</td></tr><tr><th scope=\"row\">陈亚雄</th><td>观察铜粉／全氟烷基碘／碘苯体系换溶剂后的不同结果，并参与后续研究。</td></tr><tr><th scope=\"row\">杨震宇、裘再明、何亚波</th><td>参与过渡金属引发方向；杨震宇为1986年所列铜体系论文共同作者。</td></tr><tr><th scope=\"row\">苏德宝、裘再明、陈明芳</th><td>参与亲核试剂引发的全氟烷基碘反应研究。</td></tr><tr><th scope=\"row\">陈建国、陈明芳</th><td>参与氧化剂引发方向。</td></tr><tr><th scope=\"row\">黎占亭</th><td>参与光照引发方向。</td></tr><tr><th scope=\"row\">龙正宇</th><td>与陈庆云研究溶剂和温度条件、改进脱卤亚磺化，并拓展特定C–Cl反应。</td></tr><tr><th scope=\"row\">黄小庭</th><td>与陈庆云研究全氟烷基氯化物的零价镍体系。</td></tr><tr><th scope=\"row\">唐小军</th><td>与陈庆云研究HCFC-133a、HCFC-123等原料的C–Cl活化与转化。</td></tr><tr><th scope=\"row\">曹海萍与陈庆云</th><td>制碘代物方法的共同发明人；不由署名推算各人的实验工序。</td></tr></tbody></table></div><section id=\"a07-authorship\"><h3>论文与技术文书署名</h3><div class=\"cq-display-table\" role=\"region\" tabindex=\"0\"><table><caption id=\"a07-authorship-caption\">保留各份原文的贡献归属</caption><thead><tr><th scope=\"col\">文书</th><th scope=\"col\">原文署名</th><th scope=\"col\">介绍范围</th></tr></thead><tbody><tr><th scope=\"row\">1999 DMSO／连二亚硫酸钠体系</th><td>Zheng-Yu Long、Qing-Yun Chen</td><td>论文4775–4782页；研究对象与方法按原作者摘要介绍。</td></tr><tr><th scope=\"row\">2001零价镍体系</th><td>Xiao-Ting Huang、Qing-Yun Chen</td><td>论文4651–4656页；SET为作者提出的解释。</td></tr><tr><th scope=\"row\">申请200510031063.4</th><td>陈庆云、曹海萍；申请人上海有机所</td><td>CN1752059A和CN1298686C为同一申请的公开／授权公告版本。</td></tr></tbody></table></div></section></article><article id=\"a07-ai-collation\" class=\"cq-display-section\"><h2>AI辅助整理与研究</h2><p>历史成果与原作者已有计算归实际研究者。平台的文献整理与新增AI研究另列，保持 <code>review_required</code>、<code>release_eligible=false</code>；M0与Nemotron训练继续暂停。</p><p><a href=\"../../research/index.html#ai-a07\">查看AI辅助整理与研究 →</a></p></article><p><a href=\"../../achievements/index.html#line-a07\">A07（单电子转移与C–Cl活化）成果线</a> · <a href=\"../index.html\">返回专题索引 ↑</a></p>\n<section class=\"cq-display-references\" id=\"public-references\"><h2>参考资料</h2><span id=\"a07-deep-reading-sources\" class=\"cq-display-alias\"></span><span id=\"a07-scope-caption\" class=\"cq-display-alias\"></span><span id=\"a07-study-sources\" class=\"cq-display-alias\"></span><span id=\"refs\" class=\"cq-display-alias\"></span><ol><li><span id=\"a07-study-source-heritage-s01\" class=\"cq-display-alias\"></span><span id=\"a07-source-book\" class=\"cq-display-alias\"></span>朱晶、刘超：《氟缘笃志：陈庆云传》。中国科学技术出版社，2024年6月第1版。ISBN 978-7-5236-0741-1。第70–72页记黄维垣小组的前期工作、溶剂比较和龙正宇与陈庆云的研究",
+      "new": "陈庆云与同事把不同的引发手段用于氟烷基卤代物的转化，形成了一系列互相接续的研究。</p>\n<ul><li><b>金属引发。</b>陈亚雄、杨震宇、裘再明、何亚波等参与过渡金属体系的研究；铜参与的反应和溶剂效应提供了具体的比较对象。</li>\n<li><b>亲核试剂引发。</b>苏德宝、裘再明、陈明芳等参与考察亲核试剂引发全氟烷基碘代物的氟烷基化。</li>\n<li><b>氧化剂与光照。</b>陈建国、陈明芳等参与氧化剂体系；黎占亭等参与光照引发的研究。</li>\n<li><b>拓展碳氯键活化。</b>龙正宇参与DMSO／连二亚硫酸钠体系，黄小庭参与零价镍体系，使特定含氟氯代原料也能用于成键。</li></ul>\n<p>改进脱卤亚磺化接续黄维垣小组的前期发现。各项合作把原料、溶剂、引发方式与具体产物联系起来，拓宽了可用于有机合成的氟烷基来源。</p></article><article id=\"a07-solvent-discovery\" class=\"cq-display-section\"><h2>溶剂成为可以研究的变量</h2><p>陈亚雄的实验观察与三位合作者的1984年论文，使溶剂从反应背景变成明确研究对象。研究者由此把合成结果与反应途径问题联系起来。</p></article><article id=\"a07-set-synthesis\" class=\"cq-display-section\"><h2>铜参与的加成与含氟烯烃合成</h2><p>1986年，陈庆云与杨震宇研究铜存在下氟烷基碘与乙烯基三甲基硅烷的反应，并发展相应含氟烯烃的立体专一性合成。原作者结合抑制实验，以及用碘苯未捕获到氟烷基铜中间体的观察，提出可能由单电子转移引发的自由基链式解释。</p></article><article id=\"record-ccl-activation\" class=\"cq-display-section\"><h2>继续拓展含氟氯代原料</h2><p>唐小军与陈庆云继续研究HCFC-133a、HCFC-123等工业含氟氯代原料的转化。陈庆云与曹海萍共同发明经亚磺酸盐制备相应全氟烷基碘的方法，形成从含氟氯代物通向其他合成原料的技术途径。</p></article><article id=\"a07-chronology\" class=\"cq-display-section\"><h2>研究历程</h2><div class=\"cq-display-table\" role=\"region\" tabindex=\"0\"><table><caption id=\"a07-chronology-caption\">研究历程</caption><thead><tr><th scope=\"col\">时间</th><th scope=\"col\">工作与记录</th></tr></thead><tbody><tr><th scope=\"row\">1984年</th><td>陈庆云、陈亚雄、黄维垣发表溶剂对碘苯氟烷基化的研究。</td></tr><tr><th scope=\"row\">1986年</th><td>陈庆云、杨震宇研究铜体系中氟烷基碘与乙烯基三甲基硅烷的反应。</td></tr><tr><th scope=\"row\">1999年</th><td>龙正宇、陈庆云报道DMSO体系中的特定C–Cl转化与氢全氟烷基化。</td></tr><tr><th scope=\"row\">2001年</th><td>黄小庭、陈庆云报道零价镍催化的全氟烷基氯化物氟烷基化。</td></tr><tr><th scope=\"row\">2005年申请</th><td>陈庆云、曹海萍共同申请从全氟烷基氯制备全氟烷基碘的方法。</td></tr></tbody></table></div></article><article id=\"heritage-context\" class=\"cq-display-section\"><h2>不同方向的共同贡献</h2><div class=\"cq-display-table\" role=\"region\" tabindex=\"0\"><table><caption id=\"a07-cooperation-caption\">合作分工</caption><thead><tr><th scope=\"col\">人物或单位</th><th scope=\"col\">具体贡献与角色</th></tr></thead><tbody><tr><th scope=\"row\">陈庆云与研究组</th><td>围绕溶剂、引发方式和含氟卤代物结构，持续发展氟烷基化与活化方法。</td></tr><tr><th scope=\"row\">黄维垣小组</th><td>传记所述原脱卤亚磺化反应的发现；黄维垣另与陈庆云、陈亚雄共同署名1984年溶剂研究。</td></tr><tr><th scope=\"row\">陈亚雄</th><td>观察铜粉／全氟烷基碘／碘苯体系换溶剂后的不同结果，并参与后续研究。</td></tr><tr><th scope=\"row\">杨震宇、裘再明、何亚波</th><td>参与过渡金属引发方向；杨震宇为1986年所列铜体系论文共同作者。</td></tr><tr><th scope=\"row\">苏德宝、裘再明、陈明芳</th><td>参与亲核试剂引发的全氟烷基碘反应研究。</td></tr><tr><th scope=\"row\">陈建国、陈明芳</th><td>参与氧化剂引发方向。</td></tr><tr><th scope=\"row\">黎占亭</th><td>参与光照引发方向。</td></tr><tr><th scope=\"row\">龙正宇</th><td>与陈庆云研究溶剂和温度条件、改进脱卤亚磺化，并拓展特定C–Cl反应。</td></tr><tr><th scope=\"row\">黄小庭</th><td>与陈庆云研究全氟烷基氯化物的零价镍体系。</td></tr><tr><th scope=\"row\">唐小军</th><td>与陈庆云研究HCFC-133a、HCFC-123等原料的C–Cl活化与转化。</td></tr><tr><th scope=\"row\">曹海萍与陈庆云</th><td>制碘代物方法的共同发明人；不由署名推算各人的实验工序。</td></tr></tbody></table></div><section id=\"a07-authorship\"><h3>论文与技术文书署名</h3><div class=\"cq-display-table\" role=\"region\" tabindex=\"0\"><table><caption id=\"a07-authorship-caption\">保留各份原文的贡献归属</caption><thead><tr><th scope=\"col\">文书</th><th scope=\"col\">原文署名</th><th scope=\"col\">介绍范围</th></tr></thead><tbody><tr><th scope=\"row\">1999 DMSO／连二亚硫酸钠体系</th><td>Zheng-Yu Long、Qing-Yun Chen</td><td>论文4775–4782页；研究对象与方法按原作者摘要介绍。</td></tr><tr><th scope=\"row\">2001零价镍体系</th><td>Xiao-Ting Huang、Qing-Yun Chen</td><td>论文4651–4656页；SET为作者提出的解释。</td></tr><tr><th scope=\"row\">申请200510031063.4</th><td>陈庆云、曹海萍；申请人上海有机所</td><td>CN1752059A和CN1298686C为同一申请的公开／授权公告版本。</td></tr></tbody></table></div></section></article><article id=\"a07-ai-collation\" class=\"cq-display-section\"><h2>AI辅助整理与研究</h2><p>历史成果与原作者已有计算归实际研究者。平台的文献整理与新增AI研究另列，保持 <code>review_required</code>、<code>release_eligible=false</code>；M0与Nemotron训练继续暂停。</p><p><a href=\"../../research/index.html#ai-a07\">查看AI辅助整理与研究 →</a></p></article><p><a href=\"../../achievements/index.html#line-a07\">A07（单电子转移与C–Cl活化）成果线</a> · <a href=\"../index.html\">返回专题索引 ↑</a></p>\n<section class=\"cq-display-references\" id=\"public-references\"><h2>参考资料</h2><span id=\"a07-deep-reading-sources\" class=\"cq-display-alias\"></span><span id=\"a07-scope-caption\" class=\"cq-display-alias\"></span><span id=\"a07-study-sources\" class=\"cq-display-alias\"></span><span id=\"refs\" class=\"cq-display-alias\"></span><ol><li><span id=\"a07-study-source-heritage-s01\" class=\"cq-display-alias\"></span><span id=\"a07-source-book\" class=\"cq-display-alias\"></span>朱晶、刘超：《氟缘笃志：陈庆云传》。中国科学技术出版社，2024年6月第1版。ISBN 978-7-5236-0741-1。第69–72页记金属、亲核试剂、氧化剂与光照等引发方式及具名合作者，并记黄维垣小组的前期工作、溶剂比较和氯代物研究；第84页记黄小庭的零价镍工作"
+    }
+  ]
+}
