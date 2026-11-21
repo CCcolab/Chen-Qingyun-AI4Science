@@ -1,0 +1,131 @@
+{
+  "schema_version": "58.0",
+  "presentation_id": "PLATFORM-HOMEPAGE-COMPACTION-20261121-v58",
+  "publication_kind": "homepage_compaction",
+  "previous_presentation_commit": "9b93ba618774b4ce86fa3e0860179864ffd8a3a2",
+  "changed_html_paths": [
+    "index.html"
+  ],
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v57.json",
+    "sha256": "02b4091576a82c85e6db1b5a7094873dfeae5a814285368a6ba35b69ca74f537",
+    "presentation_id": "PLATFORM-FOUR-EIGHT-DEEPENING-20261121-v57"
+  },
+  "change_reason": "按读者反馈收紧首页四项主要学术成就与八条科研成果线版式，删除重复层级说明并把陈试剂完整身份说明留在专题页。",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "M0_resumed": false,
+  "Nemotron_training_resumed": false,
+  "reversible_text_files": [
+    {
+      "path": "scripts/story_sources_publication.py",
+      "old_sha256": "61ffbbd99a64a92e1d3b468ff11c1d2c97bcfe4c5d195c36783d32a2469c5dcd",
+      "old_bytes": 8107,
+      "new_sha256": "ad6eee80457037e79dc9c72f8b587b26fa5aa45a90cd59b02202c967d058961b",
+      "new_bytes": 8244,
+      "edits": [
+        {
+          "old_offset": 637,
+          "replacement": 0
+        },
+        {
+          "old_offset": 3778,
+          "replacement": 1
+        }
+      ]
+    },
+    {
+      "path": "site/index.html",
+      "old_sha256": "7d468f9534b84bd0d25f1e098cf25a95b01b0e4a0ba98cddd67fc7ba6276f9e2",
+      "old_bytes": 225490,
+      "new_sha256": "1d435d28e6fffaa8a36327c652ea4462ae25e28361e27aa45b0fefb4293de191",
+      "new_bytes": 222416,
+      "edits": [
+        {
+          "old_offset": 5130,
+          "replacement": 2
+        },
+        {
+          "old_offset": 5332,
+          "replacement": 3
+        },
+        {
+          "old_offset": 5777,
+          "replacement": 4
+        },
+        {
+          "old_offset": 6018,
+          "replacement": 5
+        },
+        {
+          "old_offset": 6725,
+          "replacement": 6
+        },
+        {
+          "old_offset": 6856,
+          "replacement": 7
+        },
+        {
+          "old_offset": 15452,
+          "replacement": 8
+        },
+        {
+          "old_offset": 17429,
+          "replacement": 9
+        },
+        {
+          "old_offset": 28641,
+          "replacement": 10
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "",
+      "new": "import homepage_compaction_publication as homepage_compaction\n"
+    },
+    {
+      "old": "                 (deepening, deepening.V56_ADDITIONS))\n",
+      "new": "                 (deepening, deepening.V56_ADDITIONS),\n                 (homepage_compaction, homepage_compaction.V57_ADDITIONS))\n"
+    },
+    {
+      "old": ".major-achievements{padding:68px 0;background:#e8efea;scroll-margin-top:24px}\n.major-achievements .section-head{align-items:start}\n",
+      "new": ".major-achievements{padding:48px 0;background:#e8efea;scroll-margin-top:24px}\n.major-achievements .section-head{align-items:start;margin-bottom:18px}\n"
+    },
+    {
+      "old": ".major-achievement-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}\n.major-achievement-card{min-width:0;padding:28px;background:var(--white,#fffefa);border:1px solid #b7cbbd;border-top:4px solid #176e62;scroll-margin-top:24px}\n.major-achievement-card h3{font-size:clamp(24px,2.6vw,31px);line-height:1.4;margin:0 0 16px}\n",
+      "new": ".major-achievement-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}\n.major-achievement-card{min-width:0;padding:22px;background:var(--white,#fffefa);border:1px solid #b7cbbd;border-top:4px solid #176e62;scroll-margin-top:24px;align-self:start}\n.major-achievement-card h3{font-size:clamp(24px,2.6vw,31px);line-height:1.4;margin:0 0 10px}\n"
+    },
+    {
+      "old": ".major-achievement-card p{line-height:1.85}\n.major-formula{font-size:clamp(16px,1.7vw,21px);line-height:1.9;overflow-wrap:anywhere;background:#edf3ee;padding:12px 14px}\n",
+      "new": ".major-achievement-card p{line-height:1.7}\n.major-formula{font-size:clamp(16px,1.7vw,21px);line-height:1.75;overflow-wrap:anywhere;background:#edf3ee;padding:10px 12px;margin-bottom:12px}\n"
+    },
+    {
+      "old": ".major-achievement-card .major-line{margin-top:20px;padding-top:12px;border-top:1px solid #d6ded6;font-size:.9rem}\n.major-achievement-card details{font-size:.92rem}\n.major-achievement-card .chen-feature{padding:12px 0 0}\n.major-achievement-card .chen-feature>.wrap{width:100%}\n.major-achievement-card .chen-feature-card{display:block;padding:0;border:0;background:transparent}\n.major-achievement-card .chen-feature-identity{padding:14px;margin-top:16px}\n.major-achievement-card .chen-feature-actions{gap:8px}\n.major-achievement-card .chen-feature-actions a{padding:6px 10px}\n.major-achievement-card h4{font-size:1rem;line-height:1.6}\n",
+      "new": ".major-achievement-card .major-line{margin-top:14px;padding-top:10px;border-top:1px solid #d6ded6;font-size:.9rem}\n"
+    },
+    {
+      "old": ".research-index-section{padding-top:52px;padding-bottom:52px}\n",
+      "new": ".research-index-section{padding-top:40px;padding-bottom:44px}\n.research-index-section .section-head{margin-bottom:18px}\n"
+    },
+    {
+      "old": "@media(max-width:720px){.major-achievements{padding:45px 0}.major-achievement-grid{grid-template-columns:minmax(0,1fr);gap:18px}.major-achievement-card{padding:22px}}\n",
+      "new": "@media(max-width:720px){.major-achievements{padding:36px 0}.major-achievement-grid{grid-template-columns:minmax(0,1fr);gap:14px}.major-achievement-card{padding:18px}.research-index-section{padding:36px 0 40px}}\n"
+    },
+    {
+      "old": "<div class=\"section-head\"><div><h2 id=\"major-achievements-title\">四项主要学术成就</h2></div><p>四项成就是读者认识代表工作的第一层入口：F-53研制、两类含氟试剂、单电子转移反应与氟烷基卟啉。它们分别进入A04（F-53铬雾抑制剂）、A06（磺酸酯、二氟卡宾与三氟甲基化）、A07（单电子转移与C–Cl活化）和A08（交叉研究与晚年拓展），但不替代A01（全氟酮化学：六氟丙酮与双酚AF）—A08（交叉研究与晚年拓展）构成的完整科研脉络。</p></div>\n",
+      "new": "<div class=\"section-head\"><h2 id=\"major-achievements-title\">四项主要学术成就</h2></div>\n"
+    },
+    {
+      "old": "<details><summary>陈试剂的分子身份与命名</summary><section class=\"chen-feature\"><div class=\"wrap\"><div class=\"chen-feature-card\"><div><p class=\"chen-feature-label\">代表性学术成果 · 所属A06（磺酸酯、二氟卡宾与三氟甲基化）子专题</p><h4>被称为“陈试剂”的代表成果</h4><p>氟磺酰基二氟乙酸甲酯（MFSDA）被称为“陈试剂”。1989年，陈庆云与吴生文报道其在碘化亚铜体系中的三氟甲基化用途，使该试剂成为向有机分子引入–CF₃的合成工具。</p><p>从含氟磺酸衍生物的反应研究走向试剂与方法开发，体现了这项工作的开拓意义。2018年，后续作者的论文直接以“Chen’s reagent”为题名的一部分，记录了这项成果的命名与研究接续。</p><p class=\"chen-feature-meta\">原始工作：陈庆云（Qing-Yun Chen）、吴生文（Sheng-Wen Wu）｜1989年</p><div class=\"chen-feature-actions\"><a href=\"topics/chen-reagent/index.html#chen-reagent-contribution\">认识陈试剂 →</a><a href=\"#line-a06\">查看所属成果线 A06（磺酸酯、二氟卡宾与三氟甲基化）</a></div></div><div class=\"chen-feature-identity\"><h3>氟磺酰基二氟乙酸甲酯</h3><p><b>MFSDA · 陈试剂</b><br>FSO<sub>2</sub>CF<sub>2</sub>CO<sub>2</sub>Me</p><p class=\"chen-feature-formula\" aria-label=\"结构连接式：F–S(=O)2–CF2–C(=O)–O–CH3\"><span>F–S(=O)<sub>2</sub></span>–<wbr><span>CF<sub>2</sub></span>–<wbr><span>C(=O)–O–CH<sub>3</sub></span></p><p class=\"chen-feature-meta\">Me＝CH<sub>3</sub>；这里展示甲酯，与酸型及TFDA硅酯分列。</p></div></div></div></section></details>\n",
+      "new": ""
+    },
+    {
+      "old": "<div class=\"section-head\"><h2 id=\"science-lines-heading\">完整科研脉络：八条科研成果线</h2><p>A01（全氟酮化学：六氟丙酮与双酚AF）—A08（交叉研究与晚年拓展）按研究问题展开陈庆云先生各时期的成果。四项主要成就是其中A04（F-53铬雾抑制剂）、A06（磺酸酯、二氟卡宾与三氟甲基化）、A07（单电子转移与C–Cl活化）、A08（交叉研究与晚年拓展）的标志性入口；A01（全氟酮化学：六氟丙酮与双酚AF）、A02（含氟单体、氟橡胶与氟油）、A03（全氟叔丁基（PFtB）化学）、A05（制冷剂与配套技术）及各线的其他分支同样保留在完整脉络中。</p></div>\n",
+      "new": "<div class=\"section-head\"><h2 id=\"science-lines-heading\">完整科研脉络：八条科研成果线</h2></div>\n"
+    }
+  ]
+}

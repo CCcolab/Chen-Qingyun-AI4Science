@@ -18,30 +18,23 @@
 @media(max-width:960px){.science-lines{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.science-lines{grid-template-columns:minmax(0,1fr)}}
 
-.major-achievements{padding:68px 0;background:#e8efea;scroll-margin-top:24px}
-.major-achievements .section-head{align-items:start}
+.major-achievements{padding:48px 0;background:#e8efea;scroll-margin-top:24px}
+.major-achievements .section-head{align-items:start;margin-bottom:18px}
 .major-achievements .section-head h2{font-size:clamp(32px,4.5vw,50px)}
-.major-achievement-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
-.major-achievement-card{min-width:0;padding:28px;background:var(--white,#fffefa);border:1px solid #b7cbbd;border-top:4px solid #176e62;scroll-margin-top:24px}
-.major-achievement-card h3{font-size:clamp(24px,2.6vw,31px);line-height:1.4;margin:0 0 16px}
+.major-achievement-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}
+.major-achievement-card{min-width:0;padding:22px;background:var(--white,#fffefa);border:1px solid #b7cbbd;border-top:4px solid #176e62;scroll-margin-top:24px;align-self:start}
+.major-achievement-card h3{font-size:clamp(24px,2.6vw,31px);line-height:1.4;margin:0 0 10px}
 .major-achievement-card h3 a{color:#135c55;text-decoration-thickness:1px;text-underline-offset:5px}
-.major-achievement-card p{line-height:1.85}
-.major-formula{font-size:clamp(16px,1.7vw,21px);line-height:1.9;overflow-wrap:anywhere;background:#edf3ee;padding:12px 14px}
+.major-achievement-card p{line-height:1.7}
+.major-formula{font-size:clamp(16px,1.7vw,21px);line-height:1.75;overflow-wrap:anywhere;background:#edf3ee;padding:10px 12px;margin-bottom:12px}
 .major-formula span{display:block}
 .major-formula small{font-size:.8em}
-.major-achievement-card .major-line{margin-top:20px;padding-top:12px;border-top:1px solid #d6ded6;font-size:.9rem}
-.major-achievement-card details{font-size:.92rem}
-.major-achievement-card .chen-feature{padding:12px 0 0}
-.major-achievement-card .chen-feature>.wrap{width:100%}
-.major-achievement-card .chen-feature-card{display:block;padding:0;border:0;background:transparent}
-.major-achievement-card .chen-feature-identity{padding:14px;margin-top:16px}
-.major-achievement-card .chen-feature-actions{gap:8px}
-.major-achievement-card .chen-feature-actions a{padding:6px 10px}
-.major-achievement-card h4{font-size:1rem;line-height:1.6}
+.major-achievement-card .major-line{margin-top:14px;padding-top:10px;border-top:1px solid #d6ded6;font-size:.9rem}
 .research-index-section .section-head h2{font-size:clamp(26px,3vw,36px)}
-.research-index-section{padding-top:52px;padding-bottom:52px}
+.research-index-section{padding-top:40px;padding-bottom:44px}
+.research-index-section .section-head{margin-bottom:18px}
 .primary-research-map{font-size:.9rem;color:#135c55;margin-top:16px}
-@media(max-width:720px){.major-achievements{padding:45px 0}.major-achievement-grid{grid-template-columns:minmax(0,1fr);gap:18px}.major-achievement-card{padding:22px}}
+@media(max-width:720px){.major-achievements{padding:36px 0}.major-achievement-grid{grid-template-columns:minmax(0,1fr);gap:14px}.major-achievement-card{padding:18px}.research-index-section{padding:36px 0 40px}}
 </style>
 <style id="platform-presentation-css">@media(max-width:720px){#top.hero h1{font-size:clamp(32px,8.5vw,44px)}}</style>
 <!-- READER_JOURNEY_STYLE:BEGIN -->
@@ -67,7 +60,7 @@
 </style>
 <section class="hero" id="top"><div class="wrap hero-grid"><div><span class="kicker">生平 · 开拓成就 · 科学精神</span><h1>陈庆云院士<br>学术成就与传承</h1><p class="hero-sub">有机氟化学研究与传承</p><p class="hero-desc">纪念陈庆云院士，讲述其研究道路与开拓性成就，保存原始文献与合作记录，传承治学精神。从四项主要学术成就走近陈先生，再沿八条科研成果线和一条学术传承线了解他的研究与学风，让珍贵资料成为后人学习与继续探索的起点。</p><div class="hero-actions"><a class="button primary" href="#people">走近陈先生 →</a><a class="button" href="#major-achievements">四项主要学术成就 →</a><a class="button" href="#chen-reagent-achievement">认识陈试剂 →</a></div></div><figure class="hero-portrait" id="home-portrait" aria-labelledby="home-portrait-caption"><div class="hero-portrait-image"><img src="assets/chen-qingyun-sioc.jpg" width="861" height="1135" alt="陈庆云院士肖像" fetchpriority="high" decoding="async"></div><figcaption id="home-portrait-caption">陈庆云院士<small class="portrait-lifespan" aria-label="生卒日期：1929年1月25日至2023年3月2日">（<time datetime="1929-01-25">1929.1.25</time>—<time datetime="2023-03-02">2023.3.2</time>）</small><small><a href="https://sioc.cas.cn/kxj/ml/cqy/">图片来源：上海有机所</a></small></figcaption></figure></div></section>
 <section class="major-achievements" id="major-achievements" aria-labelledby="major-achievements-title"><div class="wrap">
-<div class="section-head"><div><h2 id="major-achievements-title">四项主要学术成就</h2></div><p>四项成就是读者认识代表工作的第一层入口：F-53研制、两类含氟试剂、单电子转移反应与氟烷基卟啉。它们分别进入A04（F-53铬雾抑制剂）、A06（磺酸酯、二氟卡宾与三氟甲基化）、A07（单电子转移与C–Cl活化）和A08（交叉研究与晚年拓展），但不替代A01（全氟酮化学：六氟丙酮与双酚AF）—A08（交叉研究与晚年拓展）构成的完整科研脉络。</p></div>
+<div class="section-head"><h2 id="major-achievements-title">四项主要学术成就</h2></div>
 <div class="major-achievement-grid">
 <article class="major-achievement-card" id="major-achievement-f53"><h3><a href="topics/f53/index.html#a04-contributions">F-53铬雾抑制剂</a></h3>
 <p class="major-formula">CF₃CF₂(CF₂CF₂)₂OCF₂CF₂SO₃K</p>
@@ -77,7 +70,6 @@
 <p class="major-formula"><span>FSO₂CF₂COOMe → 引入–CF₃</span><span>FSO₂CF₂COOSiMe₃ → 提供 :CF₂</span></p>
 <p>陈庆云与吴生文开发甲酯MFSDA的三氟甲基化用途，这种甲酯后来被称为“陈试剂”。陈庆云小组又与Dolbier等合作发展硅酯TFDA，以二氟卡宾构建含氟三元环。</p>
 <p><a href="topics/chen-reagent/index.html#a06-representative-study">甲酯的三氟甲基化</a> · <a href="topics/chen-reagent/index.html#a06-tfda-cooperation">硅酯与二氟卡宾</a></p>
-<details><summary>陈试剂的分子身份与命名</summary><section class="chen-feature"><div class="wrap"><div class="chen-feature-card"><div><p class="chen-feature-label">代表性学术成果 · 所属A06（磺酸酯、二氟卡宾与三氟甲基化）子专题</p><h4>被称为“陈试剂”的代表成果</h4><p>氟磺酰基二氟乙酸甲酯（MFSDA）被称为“陈试剂”。1989年，陈庆云与吴生文报道其在碘化亚铜体系中的三氟甲基化用途，使该试剂成为向有机分子引入–CF₃的合成工具。</p><p>从含氟磺酸衍生物的反应研究走向试剂与方法开发，体现了这项工作的开拓意义。2018年，后续作者的论文直接以“Chen’s reagent”为题名的一部分，记录了这项成果的命名与研究接续。</p><p class="chen-feature-meta">原始工作：陈庆云（Qing-Yun Chen）、吴生文（Sheng-Wen Wu）｜1989年</p><div class="chen-feature-actions"><a href="topics/chen-reagent/index.html#chen-reagent-contribution">认识陈试剂 →</a><a href="#line-a06">查看所属成果线 A06（磺酸酯、二氟卡宾与三氟甲基化）</a></div></div><div class="chen-feature-identity"><h3>氟磺酰基二氟乙酸甲酯</h3><p><b>MFSDA · 陈试剂</b><br>FSO<sub>2</sub>CF<sub>2</sub>CO<sub>2</sub>Me</p><p class="chen-feature-formula" aria-label="结构连接式：F–S(=O)2–CF2–C(=O)–O–CH3"><span>F–S(=O)<sub>2</sub></span>–<wbr><span>CF<sub>2</sub></span>–<wbr><span>C(=O)–O–CH<sub>3</sub></span></p><p class="chen-feature-meta">Me＝CH<sub>3</sub>；这里展示甲酯，与酸型及TFDA硅酯分列。</p></div></div></div></section></details>
 <p class="major-line"><a href="#line-a06">A06（磺酸酯、二氟卡宾与三氟甲基化）研究线 →</a></p></article>
 <article class="major-achievement-card" id="major-achievement-porphyrins"><h3><a href="topics/fluoroporphyrins/index.html#fluoroalkylporphyrins">氟烷基卟啉</a></h3>
 <p class="major-formula">氟烷基化合成 · 大环反应 · 结构与性质</p>
@@ -123,7 +115,7 @@
 
 <!-- READER_NAVIGATION:BEGIN -->
 <section class="shell-section research-index-section" id="achievement-lines-preview" aria-labelledby="science-lines-heading"><div class="wrap">
-<div class="section-head"><h2 id="science-lines-heading">完整科研脉络：八条科研成果线</h2><p>A01（全氟酮化学：六氟丙酮与双酚AF）—A08（交叉研究与晚年拓展）按研究问题展开陈庆云先生各时期的成果。四项主要成就是其中A04（F-53铬雾抑制剂）、A06（磺酸酯、二氟卡宾与三氟甲基化）、A07（单电子转移与C–Cl活化）、A08（交叉研究与晚年拓展）的标志性入口；A01（全氟酮化学：六氟丙酮与双酚AF）、A02（含氟单体、氟橡胶与氟油）、A03（全氟叔丁基（PFtB）化学）、A05（制冷剂与配套技术）及各线的其他分支同样保留在完整脉络中。</p></div>
+<div class="section-head"><h2 id="science-lines-heading">完整科研脉络：八条科研成果线</h2></div>
 <nav aria-label="八条科研成果线主要贡献"><ul class="topic-directory-links science-lines"><li id="group-early"><a href="topics/early-fluoroketones/index.html#a01-contributions"><strong>A01（全氟酮化学：六氟丙酮与双酚AF）</strong><span>六氟丙酮反应、双酚AF与含氟结构效应</span></a></li>
 <li><a href="topics/fluoromonomers/index.html#a02-contributions"><strong>A02（含氟单体、氟橡胶与氟油）</strong><span>六氟丙烯、氟橡胶与调聚氟油</span></a></li>
 <li><a href="pftb/index.html#a03-contributions"><strong>A03（全氟叔丁基（PFtB）化学）</strong><span>卤化物制备、反应位置与电子效应</span></a></li>
