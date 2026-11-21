@@ -1,8 +1,26 @@
 # 陈庆云院士学术成就与合作资料
 
-沿八条科研成果线与一条学术传承线，先读当时面对的问题、陈先生与合作者的具体贡献，再进入专题原文与合作故事。编号用于导航，不表示贡献排名，也不将不同专题串成未经证明的机理或因果链。
+四项主要学术成就提供首层导读，八条科研成果线展开研究历程，A09（学科建设与人才培养）另列学术传承。先读当时面对的问题、陈先生与合作者的具体贡献，再进入专题原文与合作故事。编号用于导航，不表示贡献排名，也不将不同专题串成未经证明的机理或因果链。
 
-## 九条成果与传承线
+## 四项主要学术成就
+
+### F-53铬雾抑制剂
+
+陈庆云带领研究组制得含醚键的全氟磺酸钾F-53，与电镀厂、实验厂工程人员共同推进镀槽试用与工艺放大。制备中得到的含氟中间体还为碳链反应和磺酸衍生物研究提供了原料。对应A04（F-53铬雾抑制剂），依据包括传记48–53、60–63页、1979年原刊及2001年陈庆云的回顾。[成果展示](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-f53) · [原文定位与合作资料](A04_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+
+### 陈试剂与二氟卡宾试剂
+
+陈庆云与吴生文开发甲酯MFSDA（FSO₂CF₂CO₂Me）的三氟甲基化用途，后称“陈试剂”。陈庆云小组与Dolbier团队共同发展的硅酯TFDA（FSO₂CF₂CO₂SiMe₃）用于提供二氟卡宾，合成偕二氟环丙烷。两种试剂的结构、反应功能与合作记录分别说明。对应A06（磺酸酯、二氟卡宾与三氟甲基化），依据包括1989年甲酯论文、2000年TFDA论文及2003年《Organic Syntheses》方法。[成果展示](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-reagents) · [原文定位与合作资料](A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+
+### 氟烷基卟啉
+
+陈庆云与郭灿城、金利美、曾卓等合作者研究卟啉的直接氟烷基化，又与刘超发展三氟甲基取代卟啉的合成方法。后续合作进一步探索含氟大环的结构与反应。该项对应A08（交叉研究与晚年拓展）的卟啉与大环分支，依据包括传记78–84页、2003年直接氟烷基化论文与2005年钯催化交叉偶联论文。[成果展示](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-porphyrins) · [原文定位与合作资料](A08_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+
+### 单电子转移反应
+
+陈庆云与合作者从溶剂改变产物的现象出发，研究金属、亲核试剂、氧化剂和光照引发的氟烷基化，发展加成、环化及特定含氟氯代物的转化方法。各体系的机理解释依原论文所述底物、条件和证据阅读。对应A07（单电子转移与C–Cl活化），依据包括传记69–74、83–84页、1984及1986年《化学学报》论文和1999及2001年JOC方法论文。[成果展示](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-set) · [原文定位与合作资料](A07_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+
+## 八条科研成果线扩展索引
 
 ### A01（全氟酮化学：六氟丙酮与双酚AF）
 
@@ -99,6 +117,8 @@
 出处：传记75–86页及晚期论著目录156–159页；小环、2003/2007卟啉与大环、2022大环及晚年方法分别对应原作者文献。
 
 [主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#a08-contributions) · [代表成果详读](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#a08-representative-study) · [A08（交叉研究与晚年拓展） 含氟小环](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluorinated-small-rings/index.html#topic-fluorinated-small-rings) · [A08（交叉研究与晚年拓展） 卟啉与大环](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#topic-fluoroporphyrins) · [A08（交叉研究与晚年拓展） 脱氧氟化](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/deoxyfluorination/index.html#topic-deoxyfluorination) · [A08（交叉研究与晚年拓展） 晚年试剂与表面活性分子](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/sulfonyl-fluoride/index.html#topic-sulfonyl-fluoride) · [原文定位与署名](A08_ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+
+## 学术传承
 
 ### A09（学科建设与人才培养）
 

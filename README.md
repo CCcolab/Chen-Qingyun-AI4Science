@@ -4,9 +4,20 @@
 
 [访问学术成就网站](https://cccolab.github.io/Chen-Qingyun-AI4Science/) · [研究历程](https://cccolab.github.io/Chen-Qingyun-AI4Science/#timeline) · [人物与传承](https://cccolab.github.io/Chen-Qingyun-AI4Science/#people) · [资料与依据](https://cccolab.github.io/Chen-Qingyun-AI4Science/#evidence)
 
-## 八条科研成果线与一条学术传承线
+## 四项主要学术成就
 
-每个专题先介绍陈庆云与合作者解决了哪些问题，再以代表成果展开研究经过。[浏览八条科研成果线](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#achievement-lines-preview)
+先从四项主要学术成就走近陈先生与合作者的研究，再沿八条科研成果线阅读更完整的研究历程。A09（学科建设与人才培养）另设学术传承入口。[浏览四项主要学术成就](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievements)
+
+| 主要学术成就 | 贡献概述 | 对应成果线与资料 |
+|---|---|---|
+| [F-53铬雾抑制剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-f53) | 陈庆云带领研究组制得F-53，与电镀厂和实验厂工程人员推进镀槽试用及工艺放大。相关中间体也为后续有机氟反应研究提供了原料。 | [A04（F-53铬雾抑制剂）原文与合作资料](docs/A04_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |
+| [陈试剂与二氟卡宾试剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-reagents) | 陈庆云与吴生文开发甲酯MFSDA“陈试剂”的三氟甲基化用途。与Dolbier团队合作发展的硅酯TFDA则用于提供二氟卡宾，合成偕二氟环丙烷。 | [A06（磺酸酯、二氟卡宾与三氟甲基化）原文与合作资料](docs/A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |
+| [氟烷基卟啉](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-porphyrins) | 陈庆云与郭灿城、金利美、曾卓、刘超等合作者研究卟啉的直接氟烷基化及三氟甲基取代卟啉的合成，进一步探索含氟大环的结构与反应。 | [A08（交叉研究与晚年拓展）卟啉与大环分支资料](docs/A08_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |
+| [单电子转移反应](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-set) | 陈庆云与合作者围绕溶剂和引发方式研究含氟卤代物的反应，发展氟烷基化、加成与环化方法，并将原料拓展到特定含氟氯代物。 | [A07（单电子转移与C–Cl活化）原文与合作资料](docs/A07_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |
+
+## 八条科研成果线扩展索引
+
+八条科研成果线展开各个时期的科学问题、具名合作与研究分支。每个专题先介绍陈庆云与合作者解决了哪些问题，再以代表成果展开研究经过。[浏览八条科研成果线](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#achievement-lines-preview)
 
 | 成果线与专题入口 | 主要贡献 |
 |---|---|
@@ -19,7 +30,9 @@
 | [A07（单电子转移与C–Cl活化）](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#a07-contributions) | 从溶剂改变产物的现象出发，团队研究金属、亲核试剂、氧化剂和光照引发的氟烷基化，发展加成与分子内环化方法，并活化特定含氟氯代物，扩大工业原料的合成用途。 |
 | [A08（交叉研究与晚年拓展）](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#a08-contributions) | 陈庆云与不同合作者研究含氟小环、卟啉的氟烷基化、20π非芳香大环和含三键的18π共轭大环。晚年又拓展脱氧氟化、氟磺酰化，研究含氟表面活性分子和离子液体的物性。 |
 
-[A09（学科建设与人才培养）](https://cccolab.github.io/Chen-Qingyun-AI4Science/#line-a09)汇集自主选题、论文修改、谱图讨论和学术共同体服务的记录。九条线的编号用于导航，各项资料的取得和专业核校进度见对应专题。
+## 学术传承
+
+[A09（学科建设与人才培养）](https://cccolab.github.io/Chen-Qingyun-AI4Science/#line-a09)汇集自主选题、论文修改、谱图讨论和学术共同体服务的记录。各条线的稳定编号用于导航，各项资料的取得和专业核校进度见对应专题。
 
 ## 代表性学术成果：陈试剂
 
@@ -39,7 +52,7 @@
 
 ## 生平、成果与学术传承
 
-沿着陈先生的研究道路，八条科研成果线介绍科学问题与具名合作，一条学术传承线记录育人故事。各项资料注明原始论文、机构回顾或访谈转引等出处和待核原件。
+沿着陈先生的研究道路，四项主要学术成就提供阅读起点，八条科研成果线展开科学问题与具名合作，学术传承线记录育人故事。各项资料注明原始论文、机构回顾或访谈转引等出处和待核原件。
 
 [学术成果与资料](docs/ACADEMIC_ACHIEVEMENTS_zh-CN.md) · [合作与育人故事](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#heritage-stories-all) · [科研成果与学术传承总览](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#heritage-inventory)
 

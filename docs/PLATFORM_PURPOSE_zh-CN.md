@@ -8,9 +8,20 @@
 
 平台的内容主线是人物、生平、科学成就和学术传承。AI资料整理、早期成果复算与未来问题研究为这条主线服务，专业研究的阶段困难与技术细节放在对应记录中。
 
-## 八条成果线与一条传承线
+## 四项主要学术成就
 
-沿用总平台既有九条成果线稳定编号及原始资料登记。A01（全氟酮化学：六氟丙酮与双酚AF）—A08（交叉研究与晚年拓展）组织科研成果，A09（学科建设与人才培养）组织学科建设与人才培养；编号是阅读导航，不表示贡献排名，也不推定专题之间存在科研因果关系。
+首页与成果总览先呈现四项主要学术成就，再通过八条科研成果线展开完整研究历程。四项展示保留陈先生、合作者和原始论文的具体归属。[四项主要学术成就](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievements) · [学术成果与资料](ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+
+| 主要学术成就 | 展示重点与资料归属 |
+|---|---|
+| [F-53铬雾抑制剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-f53) | 研制、厂试和工艺放大，以及相关中间体支持的后续研究，展开于A04（F-53铬雾抑制剂）。 |
+| [陈试剂与二氟卡宾试剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-reagents) | MFSDA甲酯的三氟甲基化用途与TFDA硅酯的二氟卡宾用途分别介绍，展开于A06（磺酸酯、二氟卡宾与三氟甲基化）。 |
+| [氟烷基卟啉](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-porphyrins) | 卟啉的氟烷基化、三氟甲基取代卟啉及相关大环研究，展开于A08（交叉研究与晚年拓展）的卟啉与大环分支。 |
+| [单电子转移反应](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-set) | 溶剂、引发方式与含氟卤代物结构相关的方法发展，展开于A07（单电子转移与C–Cl活化）。 |
+
+## 八条科研成果线扩展索引
+
+沿用总平台既有稳定编号及原始资料登记。A01（全氟酮化学：六氟丙酮与双酚AF）至A08（交叉研究与晚年拓展）组织科研成果，展开各时期的科学问题、合作与研究分支。编号用于阅读导航，各专题的机理与因果关系依其原始证据说明。
 
 | 编号 | 资料范围 |
 |---|---|
@@ -22,11 +33,14 @@
 | A06 | 磺酸酯、二氟卡宾与三氟甲基化 |
 | A07 | 单电子转移与C–Cl活化 |
 | A08 | 交叉研究与晚年拓展 |
-| A09 | 学科建设与人才培养 |
 
-正式站的成果总览可逐线进入主要贡献与研究分支，查看科学问题、具名合作与各支代表文献。学术传承另有育人故事和学科服务记录。[八条科研成果线](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#achievement-lines-preview) · [A09（学科建设与人才培养）](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#line-a09)
+正式站的扩展索引可逐线进入主要贡献与研究分支，查看科学问题、具名合作与各支代表文献。[八条科研成果线](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#achievement-lines-preview)
 
 这是资料导航架构。各条线已经取得什么资料、完成哪些核校、仍缺少什么证据，应按实际条目说明。存在专题网页不等于该线资料完整，也不等于已完成复现验证或研究开发。
+
+## 学术传承
+
+A09（学科建设与人才培养）独立组织育人故事和学科服务记录，保留自主选题、论文修改、谱图讨论及学术交流中的具体人物、事件与出处。[A09（学科建设与人才培养）](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#line-a09)
 
 ## 面向不同读者安排内容
 

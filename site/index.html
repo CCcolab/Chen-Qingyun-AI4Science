@@ -17,6 +17,31 @@
 .science-lines a:hover strong,.science-lines a:focus-visible strong{text-decoration:underline}
 @media(max-width:960px){.science-lines{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.science-lines{grid-template-columns:minmax(0,1fr)}}
+
+.major-achievements{padding:68px 0;background:#e8efea;scroll-margin-top:24px}
+.major-achievements .section-head{align-items:start}
+.major-achievements .section-head h2{font-size:clamp(32px,4.5vw,50px)}
+.major-achievement-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.major-achievement-card{min-width:0;padding:28px;background:var(--white,#fffefa);border:1px solid #b7cbbd;border-top:4px solid #176e62;scroll-margin-top:24px}
+.major-achievement-card h3{font-size:clamp(24px,2.6vw,31px);line-height:1.4;margin:0 0 16px}
+.major-achievement-card h3 a{color:#135c55;text-decoration-thickness:1px;text-underline-offset:5px}
+.major-achievement-card p{line-height:1.85}
+.major-formula{font-size:clamp(16px,1.7vw,21px);line-height:1.9;overflow-wrap:anywhere;background:#edf3ee;padding:12px 14px}
+.major-formula span{display:block}
+.major-formula small{font-size:.8em}
+.major-achievement-card .major-line{margin-top:20px;padding-top:12px;border-top:1px solid #d6ded6;font-size:.9rem}
+.major-achievement-card details{font-size:.92rem}
+.major-achievement-card .chen-feature{padding:12px 0 0}
+.major-achievement-card .chen-feature>.wrap{width:100%}
+.major-achievement-card .chen-feature-card{display:block;padding:0;border:0;background:transparent}
+.major-achievement-card .chen-feature-identity{padding:14px;margin-top:16px}
+.major-achievement-card .chen-feature-actions{gap:8px}
+.major-achievement-card .chen-feature-actions a{padding:6px 10px}
+.major-achievement-card h4{font-size:1rem;line-height:1.6}
+.research-index-section .section-head h2{font-size:clamp(26px,3vw,36px)}
+.research-index-section{padding-top:52px;padding-bottom:52px}
+.primary-research-map{font-size:.9rem;color:#135c55;margin-top:16px}
+@media(max-width:720px){.major-achievements{padding:45px 0}.major-achievement-grid{grid-template-columns:minmax(0,1fr);gap:18px}.major-achievement-card{padding:22px}}
 </style>
 <style id="platform-presentation-css">@media(max-width:720px){#top.hero h1{font-size:clamp(32px,8.5vw,44px)}}</style>
 <!-- READER_JOURNEY_STYLE:BEGIN -->
@@ -34,25 +59,37 @@
 <style>
 .site-header{background:var(--white);border-bottom:1px solid var(--line)}.header-inner{min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:13px;text-decoration:none}.brand-mark{width:38px;height:38px;border:1px solid var(--teal);color:var(--teal);display:grid;place-items:center;font:700 18px var(--serif)}.brand-name{font:700 16px var(--serif);white-space:nowrap}.brand-name small{display:block;color:var(--soft);font:11px var(--sans);margin-top:4px}.nav{display:flex;align-items:center;gap:25px}.nav a{font-size:14px;text-decoration:none;color:var(--soft)}.nav a:hover{color:var(--teal)}.nav-label{font-size:12px;color:#66736e;border-left:1px solid var(--line);padding-left:22px}@media(max-width:720px){.header-inner{display:block;padding:15px 0}.nav{gap:20px;overflow-x:auto;padding-top:15px}.nav a{white-space:nowrap}.nav-label{margin-left:auto;white-space:nowrap}}
 </style>
-<header class="site-header"><div class="wrap header-inner"><a class="brand" href="#top" aria-label="回到首页"><span class="brand-mark" aria-hidden="true">陈</span><span class="brand-name">陈庆云院士学术成就<small>有机氟化学研究与传承</small></span></a><nav class="nav" aria-label="主导航"><a href="#people">生平与传承</a><a href="#heritage-stories">合作与育人故事</a><a href="#achievement-lines-preview">开拓成就</a><a href="#timeline">研究历程</a><a href="#topic-preview">专题资料</a><a href="#evidence">资料与依据</a><a href="#research">AI辅助整理</a><a href="#about">关于平台</a></nav></div></header>
+<header class="site-header"><div class="wrap header-inner"><a class="brand" href="#top" aria-label="回到首页"><span class="brand-mark" aria-hidden="true">陈</span><span class="brand-name">陈庆云院士学术成就<small>有机氟化学研究与传承</small></span></a><nav class="nav" aria-label="主导航"><a href="#people">生平与传承</a><a href="#heritage-stories">合作与育人故事</a><a href="#major-achievements">主要学术成就</a><a href="#timeline">研究历程</a><a href="#topic-preview">专题资料</a><a href="#evidence">资料与依据</a><a href="#research">AI辅助整理</a><a href="#about">关于平台</a></nav></div></header>
 <main id="main" tabindex="-1">
 
 <style>
 .hero{background:var(--dark);color:#f5f7ef;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;min-height:550px;gap:80px;align-items:center;padding:80px 0}.hero .kicker{color:#a5c2b3}.hero h1{font-size:clamp(42px,5.3vw,72px);margin:20px 0 15px;letter-spacing:.02em}.hero-sub{color:#bad0c0;font:clamp(18px,2vw,24px) var(--serif);letter-spacing:.09em}.hero-desc{font-size:17px;color:#c9d9d0;max-width:520px;margin-top:34px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero-actions .button{border-color:#c7d8c9;color:#fff}.hero-actions .primary{background:#edf2e8;border-color:#edf2e8;color:#173f3a}.hero-visual{height:370px;position:relative;border-top:1px solid #6d8e80;border-bottom:1px solid #6d8e80;display:flex;align-items:center;justify-content:center}.orb{width:min(300px,75%);aspect-ratio:1;border:1px solid #729689;border-radius:50%;position:relative;display:grid;place-items:center}.orb:before,.orb:after{content:'';position:absolute;border:1px solid #4c766a;border-radius:50%;inset:18%}.orb:after{inset:36%;background:#d6e2d0}.orbit-label{position:absolute;font-size:12px;letter-spacing:.12em;color:#c8d9ce}.ol1{left:0;top:20px}.ol2{right:0;bottom:22px}.hero-note{position:absolute;bottom:-35px;right:0;font-size:11px;color:#a4bcaf;letter-spacing:.1em}@media(max-width:720px){.hero-grid{display:block;padding:58px 0 68px}.hero-visual{height:240px;margin-top:55px}.orb{height:195px;width:195px}}
 </style>
-<section class="hero" id="top"><div class="wrap hero-grid"><div><span class="kicker">生平 · 开拓成就 · 科学精神</span><h1>陈庆云院士<br>学术成就与传承</h1><p class="hero-sub">有机氟化学研究与传承</p><p class="hero-desc">纪念陈庆云院士，讲述其研究道路与开拓性成就，保存原始文献与合作记录，传承治学精神。沿八条科研成果线和一条学术传承线走近陈先生，让珍贵资料成为后人学习与继续探索的起点。</p><div class="hero-actions"><a class="button primary" href="#people">走近陈先生 →</a><a class="button" href="#achievement-lines-preview">浏览八条科研成果线 →</a><a class="button" href="#chen-reagent-achievement">认识陈试剂 →</a></div></div><figure class="hero-portrait" id="home-portrait" aria-labelledby="home-portrait-caption"><div class="hero-portrait-image"><img src="assets/chen-qingyun-sioc.jpg" width="861" height="1135" alt="陈庆云院士肖像" fetchpriority="high" decoding="async"></div><figcaption id="home-portrait-caption">陈庆云院士<small class="portrait-lifespan" aria-label="生卒日期：1929年1月25日至2023年3月2日">（<time datetime="1929-01-25">1929.1.25</time>—<time datetime="2023-03-02">2023.3.2</time>）</small><small><a href="https://sioc.cas.cn/kxj/ml/cqy/">图片来源：上海有机所</a></small></figcaption></figure></div></section><section class="shell-section" id="achievement-lines-preview" aria-labelledby="science-lines-heading"><div class="wrap">
-<div class="section-head"><h2 id="science-lines-heading">八条科研成果线</h2><p>陈庆云与合作者从六氟丙酮和含氟材料出发，逐步开拓了新的试剂、反应方法和分子结构。</p></div>
-<nav aria-label="八条科研成果线主要贡献"><ul class="topic-directory-links science-lines"><li id="group-early"><a href="topics/early-fluoroketones/index.html#a01-contributions"><strong>A01（全氟酮化学：六氟丙酮与双酚AF）</strong><span>六氟丙酮反应、双酚AF与含氟结构效应</span></a></li>
-<li><a href="topics/fluoromonomers/index.html#a02-contributions"><strong>A02（含氟单体、氟橡胶与氟油）</strong><span>六氟丙烯、氟橡胶与调聚氟油</span></a></li>
-<li><a href="pftb/index.html#a03-contributions"><strong>A03（全氟叔丁基（PFtB）化学）</strong><span>卤化物制备、反应位置与电子效应</span></a></li>
-<li id="group-industry"><a href="topics/f53/index.html#a04-contributions"><strong>A04（F-53铬雾抑制剂）</strong><span>F-53研制、工业应用与含氟中间体</span></a></li>
-<li><a href="topics/refrigerants/index.html#a05-contributions"><strong>A05（制冷剂与配套技术）</strong><span>F-115／F-502、HFC-134a与冷冻机油</span></a></li>
-<li id="group-methods"><a href="topics/chen-reagent/index.html#a06-contributions"><strong>A06（磺酸酯、二氟卡宾与三氟甲基化）</strong><span>磺酸酯断键、二氟卡宾前体与三氟甲基化</span></a></li>
-<li><a href="topics/single-electron-transfer/index.html#a07-contributions"><strong>A07（单电子转移与C–Cl活化）</strong><span>多种引发体系、成键方法与碳氯键活化</span></a></li>
-<li><a href="topics/fluoroporphyrins/index.html#a08-contributions"><strong>A08（交叉研究与晚年拓展）</strong><span>含氟小环、卟啉大环与晚年方法和材料</span></a></li></ul></nav>
-<p id="group-community">学术传承 · <a href="#line-a09">A09（学科建设与人才培养）</a></p>
-</div></section>
-<section class="chen-feature" id="chen-reagent-achievement" aria-labelledby="chen-reagent-achievement-title"><div class="wrap"><div class="chen-feature-card"><div><p class="chen-feature-label">代表性学术成果 · 所属A06（磺酸酯、二氟卡宾与三氟甲基化）子专题</p><h2 id="chen-reagent-achievement-title">被称为“陈试剂”的代表成果</h2><p>氟磺酰基二氟乙酸甲酯（MFSDA）被称为“陈试剂”。1989年，陈庆云与吴生文报道其在碘化亚铜体系中的三氟甲基化用途，使该试剂成为向有机分子引入–CF₃的合成工具。</p><p>从含氟磺酸衍生物的反应研究走向试剂与方法开发，体现了这项工作的开拓意义。2018年，后续作者的论文直接以“Chen’s reagent”为题名的一部分，记录了这项成果的命名与研究接续。</p><p class="chen-feature-meta">原始工作：陈庆云（Qing-Yun Chen）、吴生文（Sheng-Wen Wu）｜1989年</p><div class="chen-feature-actions"><a href="topics/chen-reagent/index.html#chen-reagent-contribution">认识陈试剂 →</a><a href="#line-a06">查看所属成果线 A06（磺酸酯、二氟卡宾与三氟甲基化）</a></div></div><div class="chen-feature-identity"><h3>氟磺酰基二氟乙酸甲酯</h3><p><b>MFSDA · 陈试剂</b><br>FSO<sub>2</sub>CF<sub>2</sub>CO<sub>2</sub>Me</p><p class="chen-feature-formula" aria-label="结构连接式：F–S(=O)2–CF2–C(=O)–O–CH3"><span>F–S(=O)<sub>2</sub></span>–<wbr><span>CF<sub>2</sub></span>–<wbr><span>C(=O)–O–CH<sub>3</sub></span></p><p class="chen-feature-meta">Me＝CH<sub>3</sub>；这里展示甲酯，与酸型及TFDA硅酯分列。</p></div></div></div></section>
+<section class="hero" id="top"><div class="wrap hero-grid"><div><span class="kicker">生平 · 开拓成就 · 科学精神</span><h1>陈庆云院士<br>学术成就与传承</h1><p class="hero-sub">有机氟化学研究与传承</p><p class="hero-desc">纪念陈庆云院士，讲述其研究道路与开拓性成就，保存原始文献与合作记录，传承治学精神。从四项主要学术成就走近陈先生，再沿八条科研成果线和一条学术传承线了解他的研究与学风，让珍贵资料成为后人学习与继续探索的起点。</p><div class="hero-actions"><a class="button primary" href="#people">走近陈先生 →</a><a class="button" href="#major-achievements">四项主要学术成就 →</a><a class="button" href="#chen-reagent-achievement">认识陈试剂 →</a></div></div><figure class="hero-portrait" id="home-portrait" aria-labelledby="home-portrait-caption"><div class="hero-portrait-image"><img src="assets/chen-qingyun-sioc.jpg" width="861" height="1135" alt="陈庆云院士肖像" fetchpriority="high" decoding="async"></div><figcaption id="home-portrait-caption">陈庆云院士<small class="portrait-lifespan" aria-label="生卒日期：1929年1月25日至2023年3月2日">（<time datetime="1929-01-25">1929.1.25</time>—<time datetime="2023-03-02">2023.3.2</time>）</small><small><a href="https://sioc.cas.cn/kxj/ml/cqy/">图片来源：上海有机所</a></small></figcaption></figure></div></section>
+<section class="major-achievements" id="major-achievements" aria-labelledby="major-achievements-title"><div class="wrap">
+<div class="section-head"><div><h2 id="major-achievements-title">四项主要学术成就</h2></div><p>F-53研制、两类含氟试剂、单电子转移反应与氟烷基卟啉，展现陈庆云先生在工业应用、合成方法和交叉研究中的开拓性贡献。</p></div>
+<div class="major-achievement-grid">
+<article class="major-achievement-card" id="major-achievement-f53"><h3><a href="topics/f53/index.html#a04-contributions">F-53铬雾抑制剂</a></h3>
+<p class="major-formula">CF₃CF₂(CF₂CF₂)₂OCF₂CF₂SO₃K</p>
+<p>陈庆云带领研究组研制含醚键的全氟磺酸钾F-53，与实验厂、电镀厂协作，推进抑雾剂从分子设计、合成到工程放大与现场应用。研究过程中得到的含氟中间体，还为后续基础化学提供了原料。</p>
+<p class="major-line"><a href="#line-a04">A04（F-53铬雾抑制剂）研究线 →</a></p></article>
+<article class="major-achievement-card" id="major-achievement-reagents"><span id="chen-reagent-achievement"></span><h3 id="chen-reagent-achievement-title"><a href="topics/chen-reagent/index.html#a06-contributions">陈试剂与二氟卡宾试剂</a></h3>
+<p class="major-formula"><span>FSO₂CF₂COOMe → 引入–CF₃</span><span>FSO₂CF₂COOSiMe₃ → 提供 :CF₂</span></p>
+<p>陈庆云与吴生文开发甲酯MFSDA的三氟甲基化用途，这种甲酯后来被称为“陈试剂”。陈庆云小组又与Dolbier等合作发展硅酯TFDA，以二氟卡宾构建含氟三元环。</p>
+<p><a href="topics/chen-reagent/index.html#a06-representative-study">甲酯的三氟甲基化</a> · <a href="topics/chen-reagent/index.html#a06-tfda-cooperation">硅酯与二氟卡宾</a></p>
+<details><summary>陈试剂的分子身份与命名</summary><section class="chen-feature"><div class="wrap"><div class="chen-feature-card"><div><p class="chen-feature-label">代表性学术成果 · 所属A06（磺酸酯、二氟卡宾与三氟甲基化）子专题</p><h4>被称为“陈试剂”的代表成果</h4><p>氟磺酰基二氟乙酸甲酯（MFSDA）被称为“陈试剂”。1989年，陈庆云与吴生文报道其在碘化亚铜体系中的三氟甲基化用途，使该试剂成为向有机分子引入–CF₃的合成工具。</p><p>从含氟磺酸衍生物的反应研究走向试剂与方法开发，体现了这项工作的开拓意义。2018年，后续作者的论文直接以“Chen’s reagent”为题名的一部分，记录了这项成果的命名与研究接续。</p><p class="chen-feature-meta">原始工作：陈庆云（Qing-Yun Chen）、吴生文（Sheng-Wen Wu）｜1989年</p><div class="chen-feature-actions"><a href="topics/chen-reagent/index.html#chen-reagent-contribution">认识陈试剂 →</a><a href="#line-a06">查看所属成果线 A06（磺酸酯、二氟卡宾与三氟甲基化）</a></div></div><div class="chen-feature-identity"><h3>氟磺酰基二氟乙酸甲酯</h3><p><b>MFSDA · 陈试剂</b><br>FSO<sub>2</sub>CF<sub>2</sub>CO<sub>2</sub>Me</p><p class="chen-feature-formula" aria-label="结构连接式：F–S(=O)2–CF2–C(=O)–O–CH3"><span>F–S(=O)<sub>2</sub></span>–<wbr><span>CF<sub>2</sub></span>–<wbr><span>C(=O)–O–CH<sub>3</sub></span></p><p class="chen-feature-meta">Me＝CH<sub>3</sub>；这里展示甲酯，与酸型及TFDA硅酯分列。</p></div></div></div></section></details>
+<p class="major-line"><a href="#line-a06">A06（磺酸酯、二氟卡宾与三氟甲基化）研究线 →</a></p></article>
+<article class="major-achievement-card" id="major-achievement-porphyrins"><h3><a href="topics/fluoroporphyrins/index.html#fluoroalkylporphyrins">氟烷基卟啉</a></h3>
+<p class="major-formula">氟烷基化合成 · 大环反应 · 结构与性质</p>
+<p>陈庆云与合作者将有机氟方法带入卟啉化学，发展直接氟烷基化和钯催化偶联两种合成策略，并继续研究分子的反应与性质。20π电子非芳香大环的分离和表征，是这一方向的代表性成果。</p>
+<p class="major-line"><a href="#line-a08">A08（交叉研究与晚年拓展）中的卟啉研究分支 →</a></p></article>
+<article class="major-achievement-card" id="major-achievement-set"><h3><a href="topics/single-electron-transfer/index.html#a07-contributions">单电子转移反应</a></h3>
+<p class="major-formula">R<sub>F</sub>–X → R<sub>F</sub>·</p>
+<p>陈庆云与合作者研究金属、亲核试剂、光照等引发体系，发展向有机分子引入氟烷基的方法。改进脱卤亚磺化及零价镍等研究，又把方法拓展到较难反应的特定含氟氯代物。</p>
+<p><a href="topics/single-electron-transfer/index.html#topic-single-electron-transfer">多种引发方式与合作</a> · <a href="topics/single-electron-transfer/index.html#record-ccl-activation">碳氯键活化与原料转化</a></p>
+<p class="major-line"><a href="#line-a07">A07（单电子转移与C–Cl活化）研究线 →</a></p></article>
+</div></div></section>
+
 <section class="shell-section band" id="people"><div class="wrap"><div class="section-head"><div><div class="kicker">PEOPLE AND CONTINUITY</div><h2>走近陈先生：生平与传承</h2></div><p>从求学、归国和科研攻关，到合作、育人与学术交流，理解陈先生的科学道路和治学精神。</p></div><!-- HERITAGE_LIFE_BEGIN -->
 <style id="heritage-home-style">
 /* Existing-page historical cards; no viewport-width layout. */
@@ -84,8 +121,20 @@
 </style>
 
 <!-- READER_NAVIGATION:BEGIN -->
-<section class="shell-section" id="achievement-detail"><div class="wrap"><span id="details"></span>
-<div class="section-head"><div><div class="kicker">SCIENTIFIC ACHIEVEMENTS AND CONTINUITY</div><h2>八条科研成果线与一条学术传承线</h2></div><p><a href="achievements/index.html#heritage-inventory">阅读成果汇总</a>，了解各项工作的科学问题、具体贡献和合作分工。</p></div>
+<section class="shell-section research-index-section" id="achievement-lines-preview" aria-labelledby="science-lines-heading"><div class="wrap">
+<div class="section-head"><h2 id="science-lines-heading">八条科研成果线扩展索引</h2><p>沿八个研究方向继续阅读四项主要成就的相关工作，以及早期全氟酮、氟材料、全氟叔丁基和制冷剂研究。</p></div>
+<nav aria-label="八条科研成果线主要贡献"><ul class="topic-directory-links science-lines"><li id="group-early"><a href="topics/early-fluoroketones/index.html#a01-contributions"><strong>A01（全氟酮化学：六氟丙酮与双酚AF）</strong><span>六氟丙酮反应、双酚AF与含氟结构效应</span></a></li>
+<li><a href="topics/fluoromonomers/index.html#a02-contributions"><strong>A02（含氟单体、氟橡胶与氟油）</strong><span>六氟丙烯、氟橡胶与调聚氟油</span></a></li>
+<li><a href="pftb/index.html#a03-contributions"><strong>A03（全氟叔丁基（PFtB）化学）</strong><span>卤化物制备、反应位置与电子效应</span></a></li>
+<li id="group-industry"><a href="topics/f53/index.html#a04-contributions"><strong>A04（F-53铬雾抑制剂）</strong><span>F-53研制、工业应用与含氟中间体</span></a></li>
+<li><a href="topics/refrigerants/index.html#a05-contributions"><strong>A05（制冷剂与配套技术）</strong><span>F-115／F-502、HFC-134a与冷冻机油</span></a></li>
+<li id="group-methods"><a href="topics/chen-reagent/index.html#a06-contributions"><strong>A06（磺酸酯、二氟卡宾与三氟甲基化）</strong><span>磺酸酯断键、二氟卡宾前体与三氟甲基化</span></a></li>
+<li><a href="topics/single-electron-transfer/index.html#a07-contributions"><strong>A07（单电子转移与C–Cl活化）</strong><span>多种引发体系、成键方法与碳氯键活化</span></a></li>
+<li><a href="topics/fluoroporphyrins/index.html#a08-contributions"><strong>A08（交叉研究与晚年拓展）</strong><span>含氟小环、卟啉大环与晚年方法和材料</span></a></li></ul></nav>
+<p id="group-community">学术传承 · <a href="#line-a09">A09（学科建设与人才培养）</a></p>
+</div></section>
+<section class="shell-section research-index-section" id="achievement-detail"><div class="wrap"><span id="details"></span>
+<div class="section-head"><div><div class="kicker">SCIENTIFIC ACHIEVEMENTS AND CONTINUITY</div><h2>科研成果线与学术传承详读</h2></div><p><a href="achievements/index.html#heritage-inventory">阅读成果汇总</a>，了解各项工作的科学问题、具体贡献和合作分工。</p></div>
 <article class="case" id="line-a01"><div class="case-side">1950年代后期—1960年代初</div><div class="case-main">
 <h3>A01（全氟酮化学：六氟丙酮与双酚AF）</h3>
 <p>留苏期间，陈庆云与合作者系统研究六氟丙酮的加成及衍生转化，制得双酚AF并提出单体用途。他们还通过含氟烯烃的加成方向和噁唑酮开环，考察三氟甲基对反应性的影响。</p>
@@ -107,7 +156,7 @@
 <article class="case" id="line-a04"><div class="case-side">1970—1980年代</div><div class="case-main">
 <h3>A04（F-53铬雾抑制剂）</h3>
 <p>陈庆云带领研究组研制含醚键的全氟磺酸钾F-53，与电镀厂、顾子恺等工程人员完成试用和放大。制备中得到的含氟中间体，又为上海有机所多个团队研究磺酸衍生物和氟烷基反应提供了原料。</p>
-<nav class="cq-journey-actions" aria-label="A04（F-53铬雾抑制剂）阅读入口"><a href="topics/f53/index.html#a04-contributions">主要贡献与研究分支</a><a href="topics/f53/index.html#a04-representative-study">代表成果</a><a href="topics/f53/index.html#a04-deep-reading">原文图解</a><a href="topics/f53/index.html#a04-representative-study-story">合作与育人</a></nav>
+<p class="primary-research-map">对应的主要学术成就 · <a href="#major-achievement-f53">F-53铬雾抑制剂</a></p><nav class="cq-journey-actions" aria-label="A04（F-53铬雾抑制剂）阅读入口"><a href="topics/f53/index.html#a04-contributions">主要贡献与研究分支</a><a href="topics/f53/index.html#a04-representative-study">代表成果</a><a href="topics/f53/index.html#a04-deep-reading">原文图解</a><a href="topics/f53/index.html#a04-representative-study-story">合作与育人</a></nav>
 <details class="cq-journey-fold" id="case-f53"><summary>F-53：应用任务与基础研究相接</summary><p>F-53研制把含氟结构、合成路线与工厂应用连接起来，也留下磺酸酯、二氟卡宾及三氟甲基化等可继续研究的问题。历史F-53、含氯F-53B与商品配方分别理解，后续环境研究针对各自具体对象。</p><p><a href="topics/f53/index.html">进入专题阅读 →</a></p></details>
 </div></article>
 <article class="case" id="line-a05"><div class="case-side">F-115／F-502 与 HFC-134a</div><div class="case-main">
@@ -119,19 +168,19 @@
 <article class="case" id="line-a06"><div class="case-side">1980年代起</div><div class="case-main">
 <h3>A06（磺酸酯、二氟卡宾与三氟甲基化）</h3>
 <p>陈庆云与合作者比较含氟磺酸酯的硫—氧和碳—氧断裂，发展多种二氟卡宾前体和三氟甲基化体系。他与吴生文开发甲酯“陈试剂”的三氟甲基化用途，又与Dolbier团队发展硅酯TFDA，拓展偕二氟环丙烷合成。</p>
-<nav class="cq-journey-actions" aria-label="A06（磺酸酯、二氟卡宾与三氟甲基化）阅读入口"><a href="topics/chen-reagent/index.html#a06-contributions">主要贡献与研究分支</a><a href="topics/chen-reagent/index.html#a06-representative-study">甲酯陈试剂的三氟甲基化</a><a href="topics/perfluorosulfonates/index.html#a06-deep-reading">原文图解（磺酸酯分支）</a><a href="topics/chen-reagent/index.html#a06-representative-study-story">合作与育人</a></nav>
+<p class="primary-research-map">对应的主要学术成就 · <a href="#major-achievement-reagents">陈试剂与二氟卡宾试剂</a></p><nav class="cq-journey-actions" aria-label="A06（磺酸酯、二氟卡宾与三氟甲基化）阅读入口"><a href="topics/chen-reagent/index.html#a06-contributions">主要贡献与研究分支</a><a href="topics/chen-reagent/index.html#a06-representative-study">甲酯陈试剂的三氟甲基化</a><a href="topics/perfluorosulfonates/index.html#a06-deep-reading">原文图解（磺酸酯分支）</a><a href="topics/chen-reagent/index.html#a06-representative-study-story">合作与育人</a></nav>
 <details class="cq-journey-fold" id="case-reagent"><summary>陈试剂：一种合成工具的形成</summary><p>1989年，陈庆云与吴生文报道甲酯MFSDA在铜体系中的三氟甲基化用途，使其成为引入–CF₃的合成工具。甲酯、酸型和硅酯是不同实体；用途报道不等于首次合成，后续新方法归各论文作者。</p><p><a href="topics/chen-reagent/index.html">进入专题阅读 →</a></p></details>
 </div></article>
 <article class="case" id="line-a07"><div class="case-side">1980—2000年代</div><div class="case-main">
 <h3>A07（单电子转移与C–Cl活化）</h3>
 <p>陈庆云与合作者研究金属、亲核试剂、氧化剂和光照等引发体系，发展含氟卤代物的成键方法。龙正宇、黄小庭分别参与特定氯代物活化，曹海萍参与分子内环化和碘代物制备，唐小军研究工业氯代原料的转化。</p>
-<nav class="cq-journey-actions" aria-label="A07（单电子转移与C–Cl活化）阅读入口"><a href="topics/single-electron-transfer/index.html#a07-contributions">主要贡献与研究分支</a><a href="topics/single-electron-transfer/index.html#a07-representative-study">单电子转移与碳氯键活化</a><a href="topics/single-electron-transfer/index.html#a07-deep-reading">原文图解</a><a href="topics/single-electron-transfer/index.html#a07-representative-study-story">合作与育人</a></nav>
+<p class="primary-research-map">对应的主要学术成就 · <a href="#major-achievement-set">单电子转移反应</a></p><nav class="cq-journey-actions" aria-label="A07（单电子转移与C–Cl活化）阅读入口"><a href="topics/single-electron-transfer/index.html#a07-contributions">主要贡献与研究分支</a><a href="topics/single-electron-transfer/index.html#a07-representative-study">单电子转移与碳氯键活化</a><a href="topics/single-electron-transfer/index.html#a07-deep-reading">原文图解</a><a href="topics/single-electron-transfer/index.html#a07-representative-study-story">合作与育人</a></nav>
 <details class="cq-journey-fold" id="case-activation"><summary>含氟氯代物：拓展C–Cl转化</summary><p>龙正宇与陈庆云1999年的研究，以DMSO和连二亚硫酸钠体系使特定含氟氯代物与烯烃、炔烃反应。这是指定底物和条件下的C–Cl活化，不等同普遍C–F断裂或全部含氟物质降解。</p><p><a href="topics/single-electron-transfer/index.html">进入专题阅读 →</a></p></details>
 </div></article>
 <article class="case" id="line-a08"><div class="case-side">2000—2020年代</div><div class="case-main">
 <h3>A08（交叉研究与晚年拓展）</h3>
 <p>陈庆云与合作者将二氟卡宾用于含氟小环，发展卟啉的氟烷基化及20π大环研究，并继续探索含三键的新大环。晚年的共同研究还涉及脱氧氟化、氟磺酰化及含氟功能材料的合成与物性。</p>
-<nav class="cq-journey-actions" aria-label="A08（交叉研究与晚年拓展）阅读入口"><a href="topics/fluoroporphyrins/index.html#a08-contributions">主要贡献与研究分支</a><a href="topics/fluoroporphyrins/index.html#a08-representative-study">氟烷基卟啉与20π大环</a><a href="topics/deoxyfluorination/index.html#a08-deep-reading">原文图解（脱氧氟化分支）</a><a href="topics/fluoroporphyrins/index.html#a08-representative-study-story">合作与育人</a></nav>
+<p class="primary-research-map">卟啉研究分支对应的主要成就 · <a href="#major-achievement-porphyrins">氟烷基卟啉</a></p><nav class="cq-journey-actions" aria-label="A08（交叉研究与晚年拓展）阅读入口"><a href="topics/fluoroporphyrins/index.html#a08-contributions">主要贡献与研究分支</a><a href="topics/fluoroporphyrins/index.html#a08-representative-study">氟烷基卟啉与20π大环</a><a href="topics/deoxyfluorination/index.html#a08-deep-reading">原文图解（脱氧氟化分支）</a><a href="topics/fluoroporphyrins/index.html#a08-representative-study-story">合作与育人</a></nav>
 <details class="cq-journey-fold" id="case-porphyrin"><summary>含氟大环：结构与性质的新问题</summary><p>2007年，刘超、沈冬梅、陈庆云共同报道分离和表征的20π电子非芳香isophlorin。非芳香判断结合具体结构和证据理解，不能仅凭电子数改称反芳香，也不直接证明器件或治疗用途。</p><p><a href="topics/fluoroporphyrins/index.html">进入专题阅读 →</a></p><section class="supporting-record" id="record-fluorinated-ionic-liquids"><h4>学术档案：含氟离子液体</h4><p>2010年，Cheng-Pan Zhang、Zong-Ling Wang、Qing-Yun Chen、Chun-Tao Zhang、Yu-Cheng Gu、Ji-Chang Xiao共同报告含氟磺酰胺类离子液体的合成与所测物性。电池性能和应用须由各自研究另证。</p><p><a href="#source-cq-h22">论文书目 →</a></p></section></details>
 </div></article>
 <article class="case" id="line-a09"><div class="case-side">独立研究与学术共同体</div><div class="case-main">
