@@ -13,6 +13,7 @@ import research_line_overviews_publication as overviews
 import research_contributions_publication as contributions
 import reader_directory_publication as directory
 import four_primary_achievements_publication as primary
+import four_eight_deepening_publication as deepening
 from stories_rebalance_publication import PUBLICATION_PATHS, _file, _identity, _reconstruct, _sha
 
 
@@ -78,7 +79,8 @@ def _project(root, data, identities):
 def _previous(root):
     revisions = ((home, home.V50_ADDITIONS), (studies, studies.V51_ADDITIONS),
                  (overviews, overviews.V52_ADDITIONS), (contributions, contributions.V53_ADDITIONS),
-                 (directory, directory.V54_ADDITIONS), (primary, primary.V55_ADDITIONS))
+                 (directory, directory.V54_ADDITIONS), (primary, primary.V55_ADDITIONS),
+                 (deepening, deepening.V56_ADDITIONS))
     latest = next((revision for revision, _ in reversed(revisions) if (root/revision.MANIFEST).is_file()), None)
     if latest is None and not (root/MANIFEST).is_file():
         return root, None

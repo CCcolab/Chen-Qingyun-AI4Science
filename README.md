@@ -6,16 +6,16 @@
 
 ## 四项主要学术成就
 
-先从四项主要学术成就走近陈先生与合作者的研究，再沿八条科研成果线阅读更完整的研究历程。A09（学科建设与人才培养）另设学术传承入口。[浏览四项主要学术成就](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievements)
+先从四项主要学术成就走近陈先生与合作者的代表工作，再沿A01（全氟酮化学：六氟丙酮与双酚AF）—A08（交叉研究与晚年拓展）八条科研成果线阅读完整研究脉络。四项分别是A04（F-53铬雾抑制剂）、A06（磺酸酯、二氟卡宾与三氟甲基化）、A07（单电子转移与C–Cl活化）、A08（交叉研究与晚年拓展）的标志性入口，不代替其他成果线或同线的其他分支；A09（学科建设与人才培养）另设学术传承入口。[浏览四项主要学术成就](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievements)
 
 | 主要学术成就 | 贡献概述 | 对应成果线与资料 |
 |---|---|---|
 | [F-53铬雾抑制剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-f53) | 陈庆云带领研究组制得F-53，与电镀厂和实验厂工程人员推进镀槽试用及工艺放大。相关中间体也为后续有机氟反应研究提供了原料。 | [A04（F-53铬雾抑制剂）原文与合作资料](docs/A04_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |
 | [陈试剂与二氟卡宾试剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-reagents) | 陈庆云与吴生文开发甲酯MFSDA“陈试剂”的三氟甲基化用途。与Dolbier团队合作发展的硅酯TFDA则用于提供二氟卡宾，合成偕二氟环丙烷。 | [A06（磺酸酯、二氟卡宾与三氟甲基化）原文与合作资料](docs/A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |
-| [氟烷基卟啉](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-porphyrins) | 陈庆云与郭灿城、金利美、曾卓、刘超等合作者研究卟啉的直接氟烷基化及三氟甲基取代卟啉的合成，进一步探索含氟大环的结构与反应。 | [A08（交叉研究与晚年拓展）卟啉与大环分支资料](docs/A08_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |
-| [单电子转移反应](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-set) | 陈庆云与合作者围绕溶剂和引发方式研究含氟卤代物的反应，发展氟烷基化、加成与环化方法，并将原料拓展到特定含氟氯代物。 | [A07（单电子转移与C–Cl活化）原文与合作资料](docs/A07_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |
+| [氟烷基卟啉](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#fluoroalkylporphyrins) | 从已有卟啉的直接氟烷基化、按位置和数量引入三氟甲基，推进到选择性环化、结构与光物性研究；20π非芳香大环是其中的代表发现。这是A08（交叉研究与晚年拓展）的卟啉分支，不等于A08（交叉研究与晚年拓展）全部内容。 | [A08（交叉研究与晚年拓展）卟啉与大环分支资料](docs/A08_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |
+| [单电子转移反应](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#topic-single-electron-transfer) | 陈庆云与合作者围绕溶剂及金属、亲核试剂、氧化剂和光照等引发方式，形成多入口的氟烷基化方法体系；特定C–Cl活化是后期拓展，不代替整项成就。 | [A07（单电子转移与C–Cl活化）原文与合作资料](docs/A07_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |
 
-## 八条科研成果线扩展索引
+## 完整科研脉络：八条科研成果线
 
 八条科研成果线展开各个时期的科学问题、具名合作与研究分支。每个专题先介绍陈庆云与合作者解决了哪些问题，再以代表成果展开研究经过。[浏览八条科研成果线](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#achievement-lines-preview)
 

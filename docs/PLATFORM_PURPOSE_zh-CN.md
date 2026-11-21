@@ -10,16 +10,16 @@
 
 ## 四项主要学术成就
 
-首页与成果总览先呈现四项主要学术成就，再通过八条科研成果线展开完整研究历程。四项展示保留陈先生、合作者和原始论文的具体归属。[四项主要学术成就](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievements) · [学术成果与资料](ACADEMIC_ACHIEVEMENTS_zh-CN.md)
+首页与成果总览先呈现四项主要学术成就，再通过A01（全氟酮化学：六氟丙酮与双酚AF）—A08（交叉研究与晚年拓展）八条科研成果线展开完整研究历程。四项是A04（F-53铬雾抑制剂）、A06（磺酸酯、二氟卡宾与三氟甲基化）、A07（单电子转移与C–Cl活化）、A08（交叉研究与晚年拓展）中的标志性成果入口，不代替其他成果线或同线其他分支；展示保留陈先生、合作者和原始论文的具体归属。[四项主要学术成就](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievements) · [学术成果与资料](ACADEMIC_ACHIEVEMENTS_zh-CN.md)
 
 | 主要学术成就 | 展示重点与资料归属 |
 |---|---|
 | [F-53铬雾抑制剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-f53) | 研制、厂试和工艺放大，以及相关中间体支持的后续研究，展开于A04（F-53铬雾抑制剂）。 |
 | [陈试剂与二氟卡宾试剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-reagents) | MFSDA甲酯的三氟甲基化用途与TFDA硅酯的二氟卡宾用途分别介绍，展开于A06（磺酸酯、二氟卡宾与三氟甲基化）。 |
-| [氟烷基卟啉](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-porphyrins) | 卟啉的氟烷基化、三氟甲基取代卟啉及相关大环研究，展开于A08（交叉研究与晚年拓展）的卟啉与大环分支。 |
-| [单电子转移反应](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-set) | 溶剂、引发方式与含氟卤代物结构相关的方法发展，展开于A07（单电子转移与C–Cl活化）。 |
+| [氟烷基卟啉](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#fluoroalkylporphyrins) | 直接修饰、按位引入三氟甲基、选择性环化以及结构与性质研究，展开于A08（交叉研究与晚年拓展）的卟啉分支；A08（交叉研究与晚年拓展）另含小环、新大环与晚年方法。 |
+| [单电子转移反应](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#topic-single-electron-transfer) | 溶剂及金属、亲核试剂、氧化剂、光照等多种引发方式构成方法主线；特定C–Cl活化作为后期拓展，展开于A07（单电子转移与C–Cl活化）。 |
 
-## 八条科研成果线扩展索引
+## 完整科研脉络：八条科研成果线
 
 沿用总平台既有稳定编号及原始资料登记。A01（全氟酮化学：六氟丙酮与双酚AF）至A08（交叉研究与晚年拓展）组织科研成果，展开各时期的科学问题、合作与研究分支。编号用于阅读导航，各专题的机理与因果关系依其原始证据说明。
 

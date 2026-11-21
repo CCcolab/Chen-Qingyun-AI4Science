@@ -148,16 +148,18 @@
         },
         {
           "id": "record-porphyrin-collaboration",
-          "title": "从直接修饰到取代位置、数量与性质研究",
+          "title": "从直接修饰到取代位置、数量、稠合骨架与性质研究",
           "paragraphs": [
             "陈庆云与刘超从溴代卟啉出发，运用钯催化交叉偶联和甲酯“陈试剂”，发展三氟甲基取代卟啉的合成方法。2005年的代表论文与2003年直接氟烷基化分别著录；β位、meso位及取代数量成为可以改变和比较的结构因素。",
+            "2006年，刘超、沈冬梅、曾卓、郭灿城、陈庆云进一步以β-(ω-氯全氟烷基)卟啉为对象，在特定条件下经选择性C–F转化、分子内环化和还原脱氟芳构化得到四氟苯并卟啉。原作者还比较还原剂、碱和中心金属，并研究所得稠合大环的晶体结构、光物理和电化学性质。这一步把含氟取代推进到利用侧链构建新大环骨架。",
             "2008年，Hua-Wei Jiang、Qing-Yun Chen、Ji-Chang Xiao与Yu-Cheng Gu另有氟烷基化Ni(II) N-confused卟啉的合成与反应研究。这是另一类明确的大环对象，与2007年的20π结构分别介绍。传记还记述，卟啉中的分子内环化线索曾启发曹海萍与陈庆云研究小分子环化。"
           ],
           "meaning": "使结构修饰成为研究大环反应性与性质的工具；大环中的观察也反过来启发小分子合成。",
-          "locator": "传记80–84页；2005、2008原作既有题录与摘要",
+          "locator": "传记80–84页；2005、2006、2008原作题录与摘要",
           "source_ids": [
             "HERITAGE-S01",
             "CQ-H19",
+            "A08-JOC2006",
             "CQ-R11"
           ]
         },
@@ -179,7 +181,7 @@
           "id": "a08-porphyriynes",
           "title": "Porphyriynes：含三键的18π共轭大环",
           "paragraphs": [
-            "2022年的合著论文报告了包含碳—碳三键的18π共轭大环Porphyriynes。它与2007年的20π isophlorin属于不同结构与研究问题；原作结合制备、结构、光谱及相关理论研究探索这一大环骨架。",
+            "2022年的合著论文报告了包含碳—碳三键的18π共轭大环Porphyriynes。代表分子本身不含氟，它与2007年的含氟20π isophlorin属于不同结构与研究问题；原作结合制备、结构、光谱及相关理论研究探索这一大环骨架。因此它属于A08后续新大环拓展，不代替氟烷基卟啉这项主要成就。",
             "附件中已有原作者的DFT／TD-DFT、电子性质及候选路径模型。实验对象、全分子性质模型与简化路径模型各有范围，平台保留其原作者归属，不把这些计算作为平台新成果，也不从合著署名推定陈先生本人执行了计算。"
           ],
           "meaning": "通过构建新的共轭大环骨架，把结构、实验性质与理论模型放在具体分子上比较。",
@@ -207,6 +209,11 @@
           "传记79–82页；CQ-H19"
         ],
         [
+          "刘超、沈冬梅、曾卓、郭灿城、陈庆云",
+          "2006年四氟苯并卟啉合成及结构、光物理与电化学研究的共同作者。",
+          "A08-JOC2006"
+        ],
+        [
           "Dong-Mei Shen",
           "2007年20π大环论文共同作者，按原刊英文署名保存。",
           "CQ-R10"
@@ -232,6 +239,11 @@
           "2005钯催化方法",
           "Chao Liu、Qing-Yun Chen",
           "Eur. J. Org. Chem.2005(17)：3680–3686"
+        ],
+        [
+          "2006四氟苯并卟啉",
+          "Chao Liu、Dong-Mei Shen、Zhuo Zeng、Can-Cheng Guo、Qing-Yun Chen",
+          "J. Org. Chem.71(26)：9772–9783"
         ],
         [
           "2007 20π大环",
@@ -272,6 +284,13 @@
           "locator": "2005，Eur. J. Org. Chem.(17)：3680–3686；DOI 10.1002/ejoc.200500027；沿用既有原作者摘要范围"
         },
         {
+          "id": "A08-JOC2006",
+          "anchor": "ref-a08-joc2006",
+          "title": "C−F Bond Activation by Modified Sulfinatodehalogenation: Facile Synthesis and Properties of Novel Tetrafluorobenzoporphyrins",
+          "url": "https://pubs.acs.org/doi/10.1021/jo061743r",
+          "locator": "Liu、Shen、Zeng、Guo、Chen；2006，J. Org. Chem.71(26)：9772–9783；DOI 10.1021/jo061743r；按出版社摘要介绍选择性转化、稠合大环与性质研究"
+        },
+        {
           "id": "CQ-R10",
           "anchor": "ref-cq-r10",
           "title": "Synthesis and Reactions of 20 π-Electron β-Tetrakis(trifluoromethyl)-meso-tetraphenylporphyrins",
@@ -294,6 +313,11 @@
         }
       ],
       "scope_rows": [
+        [
+          "2006选择性C–F转化",
+          "论文所载卟啉底物、条件及稠合大环产物。",
+          "不外推为任意C–F键活化、普遍含氟物质转化或PFAS降解。"
+        ],
         [
           "2007与2022",
           "20π isophlorin与含三键18π大环分别介绍。",

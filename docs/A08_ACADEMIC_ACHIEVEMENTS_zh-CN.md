@@ -79,15 +79,17 @@ JOC2002，67：9421–9427；Synlett2006(3)：478–480；传记77页 · CQ-H21�
 
 传记78–80、92页；2003原作3912–3917页 · HERITAGE-S01、CQ-H09
 
-### 从直接修饰到取代位置、数量与性质研究
+### 从直接修饰到取代位置、数量、稠合骨架与性质研究
 
 陈庆云与刘超从溴代卟啉出发，运用钯催化交叉偶联和甲酯“陈试剂”，发展三氟甲基取代卟啉的合成方法。2005年的代表论文与2003年直接氟烷基化分别著录；β位、meso位及取代数量成为可以改变和比较的结构因素。
+
+2006年，刘超、沈冬梅、曾卓、郭灿城、陈庆云进一步以β-(ω-氯全氟烷基)卟啉为对象，在特定条件下经选择性C–F转化、分子内环化和还原脱氟芳构化得到四氟苯并卟啉。原作者还比较还原剂、碱和中心金属，并研究所得稠合大环的晶体结构、光物理和电化学性质。这一工作把“在卟啉外围引入含氟基团”推进到“利用含氟侧链构建新大环骨架”，是2003／2005年合成方法通向2007年特殊电子结构研究之间的重要一环。
 
 2008年，Hua-Wei Jiang、Qing-Yun Chen、Ji-Chang Xiao与Yu-Cheng Gu另有氟烷基化Ni(II) N-confused卟啉的合成与反应研究。这是另一类明确的大环对象，与2007年的20π结构分别介绍。传记还记述，卟啉中的分子内环化线索曾启发曹海萍与陈庆云研究小分子环化。
 
 **学术与应用意义：**使结构修饰成为研究大环反应性与性质的工具；大环中的观察也反过来启发小分子合成。
 
-传记80–84页；2005、2008原作既有题录与摘要 · HERITAGE-S01、CQ-H19、CQ-R11
+传记80–84页；2005、2006、2008原作题录与摘要 · HERITAGE-S01、CQ-H19、A08-JOC2006、CQ-R11
 
 ### 20π非芳香大环：从颜色变化进入结构问题
 
@@ -101,7 +103,7 @@ JOC2002，67：9421–9427；Synlett2006(3)：478–480；传记77页 · CQ-H21�
 
 ### Porphyriynes：含三键的18π共轭大环
 
-2022年的合著论文报告了包含碳—碳三键的18π共轭大环Porphyriynes。它与2007年的20π isophlorin属于不同结构与研究问题；原作结合制备、结构、光谱及相关理论研究探索这一大环骨架。
+2022年的合著论文报告了包含碳—碳三键的18π共轭大环Porphyriynes。代表分子本身不含氟，它与2007年的含氟20π isophlorin属于不同结构与研究问题；原作结合制备、结构、光谱及相关理论研究探索这一大环骨架。因此它属于A08后续新大环拓展，不代替“四项主要学术成就”中的氟烷基卟啉。
 
 附件中已有原作者的DFT／TD-DFT、电子性质及候选路径模型。实验对象、全分子性质模型与简化路径模型各有范围，平台保留其原作者归属，不把这些计算作为平台新成果，也不从合著署名推定陈先生本人执行了计算。
 
@@ -116,6 +118,7 @@ JOC2002，67：9421–9427；Synlett2006(3)：478–480；传记77页 · CQ-H21�
 | 郭灿城与陈庆云 | 结合湖南大学的卟啉研究与陈先生的氟化学积累，形成交叉研究起点。 | 传记78–80页 |
 | 金利美、曾卓、郭灿城、陈庆云 | 2003年自由碱卟啉直接氟烷基化论文共同作者。 | CQ-H09；传记79页 |
 | 刘超与陈庆云 | 开展三氟甲基取代卟啉等研究；传记记录共同学习及还原反应中的发现过程。 | 传记79–82页；CQ-H19 |
+| 刘超、沈冬梅、曾卓、郭灿城、陈庆云 | 2006年四氟苯并卟啉合成及结构、光物理与电化学研究的共同作者。 | A08-JOC2006 |
 | Dong-Mei Shen | 2007年20π大环论文共同作者，按原刊英文署名保存。 | CQ-R10 |
 | 曹海萍与陈庆云 | 把卟啉研究中的环化线索用于小分子环化研究。 | 传记83–84页 |
 | 2022年七位共同作者 | 含三键大环的实验与理论研究按论文集体归属，具体执行任务不从作者顺序推断。 | CQ-H20 |
@@ -126,6 +129,7 @@ JOC2002，67：9421–9427；Synlett2006(3)：478–480；传记77页 · CQ-H21�
 | --- | --- | --- |
 | 2003直接氟烷基化 | Li-Mei Jin、Zhuo Zeng、Can-Cheng Guo、Qing-Yun Chen | J. Org. Chem.68(10)：3912–3917 |
 | 2005钯催化方法 | Chao Liu、Qing-Yun Chen | Eur. J. Org. Chem.2005(17)：3680–3686 |
+| 2006四氟苯并卟啉 | Chao Liu、Dong-Mei Shen、Zhuo Zeng、Can-Cheng Guo、Qing-Yun Chen | J. Org. Chem.71(26)：9772–9783 |
 | 2007 20π大环 | Chao Liu、Dong-Mei Shen、Qing-Yun Chen | JACS129(18)：5814–5815 |
 | 2008 N-confused卟啉 | Hua-Wei Jiang、Qing-Yun Chen、Ji-Chang Xiao、Yu-Cheng Gu | Chem. Commun.：5435–5437 |
 | 2022 Porphyriynes | Fei Hao、Tian Zhang、Donghai Yu、Xiaodeng Yang、Hua-Wei Jiang、Ji-Chang Xiao、Qing-Yun Chen | Org. Lett.24(8)：1716–1721 |
@@ -137,6 +141,7 @@ JOC2002，67：9421–9427；Synlett2006(3)：478–480；传记77页 · CQ-H21�
 - **HERITAGE-S01** · 朱晶、刘超：《氟缘笃志：陈庆云传》；参考底本75–86页；晚期成果书目156–159页，正文叙述与附录题录分别使用
 - **CQ-H09** · [Fluoroalkylation of Porphyrins: Synthesis and Reactions of β-Fluoroalkyltetraarylporphyrins](https://pubs.acs.org/doi/10.1021/jo0207269)；2003，J. Org. Chem.68(10)：3912–3917；DOI 10.1021/jo0207269；原文作者及摘要；两卷SI已有取得登记
 - **CQ-H19** · [Fluoroalkylation of Porphyrins: A Facile Synthesis of Trifluoromethylated Porphyrins by a Palladium-Catalyzed Cross-Coupling Reaction](https://doi.org/10.1002/ejoc.200500027)；2005，Eur. J. Org. Chem.(17)：3680–3686；DOI 10.1002/ejoc.200500027；沿用既有原作者摘要范围
+- **A08-JOC2006** · [C−F Bond Activation by Modified Sulfinatodehalogenation: Facile Synthesis and Properties of Novel Tetrafluorobenzoporphyrins](https://pubs.acs.org/doi/10.1021/jo061743r)；Liu、Shen、Zeng、Guo、Chen；2006，J. Org. Chem.71(26)：9772–9783；DOI 10.1021/jo061743r；按出版社摘要介绍选择性转化、稠合大环与性质研究
 - **CQ-R10** · [Synthesis and Reactions of 20 π-Electron β-Tetrakis(trifluoromethyl)-meso-tetraphenylporphyrins](https://pubs.acs.org/doi/10.1021/ja070855c)；2007，JACS129(18)：5814–5815；DOI 10.1021/ja070855c；摘要、已有13页SI及四份CIF对应记录
 - **CQ-R11** · [Synthesis and reactions of the first fluoroalkylated Ni(II) N-confused porphyrins](https://pubs.rsc.org/en/content/articlelanding/2008/cc/b811831k)；2008，Chem. Commun.：5435–5437；DOI 10.1039/B811831K；沿用既有作者与原摘要范围
 - **CQ-H20** · [Porphyriynes: 18-π-Conjugated Macrocycles Incorporating a Triple Bond](https://pubs.acs.org/doi/10.1021/acs.orglett.2c00356)；2022，Org. Lett.24(8)：1716–1721；DOI 10.1021/acs.orglett.2c00356；已有55页SI及原作者计算覆盖核读记录
@@ -146,6 +151,7 @@ JOC2002，67：9421–9427；Synlett2006(3)：478–480；传记77页 · CQ-H21�
 | 对象 | 资料所述内容 | 解释范围 |
 | --- | --- | --- |
 | 2007与2022 | 20π isophlorin与含三键18π大环分别介绍。 | 不由电子数独自判定芳香性，也不把不同骨架性质混同。 |
+| 2006选择性C–F转化 | 论文所载卟啉底物、条件及稠合大环产物。 | 不外推为任意C–F键活化、普遍含氟物质转化或PFAS降解。 |
 | 结构与模型 | SI、CIF及性质／路径计算各有具体对象和简化范围。 | 附件取得与资料对应不是平台重新精修、结构认证或机理验证。 |
 | 已有理论计算 | 归原作者，平台整理其覆盖范围。 | 不据共同署名认定个人计算任务，也不包装成平台首次理论研究。 |
 
