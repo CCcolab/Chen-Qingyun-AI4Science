@@ -11,7 +11,7 @@
 | 主要学术成就 | 贡献概述 | 对应成果线与资料 |
 |---|---|---|
 | [F-53铬雾抑制剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-f53) | 陈庆云带领研究组制得F-53，与电镀厂和实验厂工程人员推进镀槽试用及工艺放大。相关中间体也为后续有机氟反应研究提供了原料。 | [A04（F-53铬雾抑制剂）原文与合作资料](docs/A04_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |
-| [陈试剂与二氟卡宾试剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-reagents) | 陈庆云与吴生文开发甲酯MFSDA“陈试剂”的三氟甲基化用途。与Dolbier团队合作发展的硅酯TFDA则用于提供二氟卡宾，合成偕二氟环丙烷。 | [A06（磺酸酯、二氟卡宾与三氟甲基化）原文与合作资料](docs/A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |
+| [陈试剂与二氟卡宾试剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-reagents) | 陈庆云与合作者开发甲酯MFSDA“陈试剂”的三氟甲基化用途，并发展以硅酯TFDA提供二氟卡宾、合成偕二氟环丙烷的方法。 | [A06（磺酸酯、二氟卡宾与三氟甲基化）原文与合作资料](docs/A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |
 | [氟烷基卟啉](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#fluoroalkylporphyrins) | 从已有卟啉的直接氟烷基化、按位置和数量引入三氟甲基，推进到选择性环化、结构与光物性研究；20π非芳香大环是其中的代表发现。这是A08（交叉研究与晚年拓展）的卟啉分支，不等于A08（交叉研究与晚年拓展）全部内容。 | [A08（交叉研究与晚年拓展）卟啉与大环分支资料](docs/A08_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |
 | [单电子转移反应](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#topic-single-electron-transfer) | 陈庆云与合作者围绕溶剂及金属、亲核试剂、氧化剂和光照等引发方式，形成多入口的氟烷基化方法体系；特定C–Cl活化是后期拓展，不代替整项成就。 | [A07（单电子转移与C–Cl活化）原文与合作资料](docs/A07_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |
 
@@ -26,7 +26,7 @@
 | [A03（全氟叔丁基（PFtB）化学）](https://cccolab.github.io/Chen-Qingyun-AI4Science/pftb/index.html#a03-contributions) | 陈庆云、蒋锡夔、陈秉启、梁梦兰研究全氟叔丁基碘化物和溴化物。产物对照支持亲核试剂先作用于卤素的解释，光谱和化学证据则用来讨论经验关系适用时各基团的吸电子能力。 |
 | [A04（F-53铬雾抑制剂）](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/f53/index.html#a04-contributions) | 陈庆云带领研究组制成含醚键的全氟磺酸钾F-53，与电镀厂和工程人员完成镀槽试用、工艺放大。制备中得到的两类中间体为多个团队研究含氟磺酸衍生物和碳链反应提供了原料。 |
 | [A05（制冷剂与配套技术）](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html#a05-contributions) | 605研究小组开辟F-115制备路线，并与F-22配制已有工质F-502。后来团队与工程、材料和设备单位合作，从HFC-134a液相工艺与连续中试推进到配套冷冻机油和整机试用。 |
-| [A06（磺酸酯、二氟卡宾与三氟甲基化）](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#a06-contributions) | 团队比较含氟磺酸酯的硫—氧与碳—氧断裂，发展多种二氟卡宾前体。陈庆云与吴生文开发甲酯“陈试剂”的三氟甲基化用途，又与Dolbier团队发展能提供二氟卡宾的硅酯TFDA。 |
+| [A06（磺酸酯、二氟卡宾与三氟甲基化）](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#a06-contributions) | 陈庆云与合作者比较含氟磺酸酯的硫—氧与碳—氧断裂，发展多种二氟卡宾前体、甲酯“陈试剂”的三氟甲基化用途及硅酯TFDA方法。 |
 | [A07（单电子转移与C–Cl活化）](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#a07-contributions) | 从溶剂改变产物的现象出发，团队研究金属、亲核试剂、氧化剂和光照引发的氟烷基化，发展加成与分子内环化方法，并活化特定含氟氯代物，扩大工业原料的合成用途。 |
 | [A08（交叉研究与晚年拓展）](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#a08-contributions) | 陈庆云与不同合作者研究含氟小环、卟啉的氟烷基化、20π非芳香大环和含三键的18π共轭大环。晚年又拓展脱氧氟化、氟磺酰化，研究含氟表面活性分子和离子液体的物性。 |
 

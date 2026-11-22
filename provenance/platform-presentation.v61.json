@@ -1,0 +1,200 @@
+{
+  "schema_version": "61.0",
+  "presentation_id": "PLATFORM-MAJOR-ACHIEVEMENT-CARD-CONSISTENCY-20261122-v61",
+  "publication_kind": "major_achievement_card_consistency",
+  "previous_presentation_commit": "b297f2589fdd71a71736269f624ad3536fe96528",
+  "changed_html_paths": [
+    "achievements/index.html",
+    "index.html",
+    "topics/chen-reagent/index.html"
+  ],
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v60.json",
+    "sha256": "e932b4cc9aa011e1a5e493c27d5f0409ec94d6d3b49aa71932cc15833ca5d153",
+    "presentation_id": "PLATFORM-CI-COMPATIBILITY-20261122-v60"
+  },
+  "change_reason": "统一“陈试剂与二氟卡宾试剂”概述为“陈庆云与合作者”，保留详细署名；移除成果卡片中的重复层级并统一四项主要学术成就卡片结构与等高排版。",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "M0_resumed": false,
+  "Nemotron_training_resumed": false,
+  "reversible_text_files": [
+    {
+      "path": "README.md",
+      "old_sha256": "58e49c27f2e886669a5dd73aeb535082a310b30d91ed6133c7ccc39cac996186",
+      "old_bytes": 14140,
+      "new_sha256": "b0189aa2118f28c251e81b374c7c4829d7b1454040639f0f0f095a0b6bdd5ef6",
+      "new_bytes": 14066,
+      "edits": [
+        {
+          "old_offset": 1847,
+          "replacement": 0
+        },
+        {
+          "old_offset": 5546,
+          "replacement": 1
+        }
+      ]
+    },
+    {
+      "path": "scripts/story_sources_publication.py",
+      "old_sha256": "34ff5dda67b933a65b2b8c05acc40fac1f2f8106ad3aa35fcc4a0dadeddca1b8",
+      "old_bytes": 8472,
+      "new_sha256": "6b2d38770a5991b4b6c3773765959807fdb9de60c042849b581ffef8d80911d9",
+      "new_bytes": 8585,
+      "edits": [
+        {
+          "old_offset": 807,
+          "replacement": 2
+        },
+        {
+          "old_offset": 4143,
+          "replacement": 3
+        }
+      ]
+    },
+    {
+      "path": "site/achievements/index.html",
+      "old_sha256": "a7697dee68feac9eaa31bedf2742594dc7157e555835660212df68a3e7f03a83",
+      "old_bytes": 85806,
+      "new_sha256": "2e2bb5898ec75a2614ade430b7e4bee8f31d7fe88e2bc5d7f85b220aff7cda4a",
+      "new_bytes": 83770,
+      "edits": [
+        {
+          "old_offset": 5335,
+          "replacement": 4
+        },
+        {
+          "old_offset": 6021,
+          "replacement": 5
+        },
+        {
+          "old_offset": 13810,
+          "replacement": 6
+        },
+        {
+          "old_offset": 16277,
+          "replacement": 7
+        },
+        {
+          "old_offset": 17112,
+          "replacement": 8
+        }
+      ]
+    },
+    {
+      "path": "site/index.html",
+      "old_sha256": "a52a270c23c79c149143cba22a5f6399bf1d6e68a8debbbaa1f3d357e4bd0ad2",
+      "old_bytes": 221073,
+      "new_sha256": "10a50487608cc207ae59bf1c72de07806a8d9c5cadb1bee3bf70ce6e4cceadfe",
+      "new_bytes": 220430,
+      "edits": [
+        {
+          "old_offset": 5351,
+          "replacement": 9
+        },
+        {
+          "old_offset": 6091,
+          "replacement": 10
+        },
+        {
+          "old_offset": 16210,
+          "replacement": 11
+        },
+        {
+          "old_offset": 17258,
+          "replacement": 12
+        },
+        {
+          "old_offset": 18084,
+          "replacement": 13
+        }
+      ]
+    },
+    {
+      "path": "site/topics/chen-reagent/index.html",
+      "old_sha256": "62e1955e9f5433ab3b6265025fc36acccc820470b0dfff74e13da4c4d565b2cc",
+      "old_bytes": 29077,
+      "new_sha256": "0dfd455605939d5fc902d708987085ee429900fc2561454d882e8468c946aff4",
+      "new_bytes": 29013,
+      "edits": [
+        {
+          "old_offset": 10790,
+          "replacement": 14
+        },
+        {
+          "old_offset": 12293,
+          "replacement": 15
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "| [陈试剂与二氟卡宾试剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-reagents) | 陈庆云与吴生文开发甲酯MFSDA“陈试剂”的三氟甲基化用途。与Dolbier团队合作发展的硅酯TFDA则用于提供二氟卡宾，合成偕二氟环丙烷。 | [A06（磺酸酯、二氟卡宾与三氟甲基化）原文与合作资料](docs/A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |\n",
+      "new": "| [陈试剂与二氟卡宾试剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-reagents) | 陈庆云与合作者开发甲酯MFSDA“陈试剂”的三氟甲基化用途，并发展以硅酯TFDA提供二氟卡宾、合成偕二氟环丙烷的方法。 | [A06（磺酸酯、二氟卡宾与三氟甲基化）原文与合作资料](docs/A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |\n"
+    },
+    {
+      "old": "| [A06（磺酸酯、二氟卡宾与三氟甲基化）](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#a06-contributions) | 团队比较含氟磺酸酯的硫—氧与碳—氧断裂，发展多种二氟卡宾前体。陈庆云与吴生文开发甲酯“陈试剂”的三氟甲基化用途，又与Dolbier团队发展能提供二氟卡宾的硅酯TFDA。 |\n",
+      "new": "| [A06（磺酸酯、二氟卡宾与三氟甲基化）](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/chen-reagent/index.html#a06-contributions) | 陈庆云与合作者比较含氟磺酸酯的硫—氧与碳—氧断裂，发展多种二氟卡宾前体、甲酯“陈试剂”的三氟甲基化用途及硅酯TFDA方法。 |\n"
+    },
+    {
+      "old": "",
+      "new": "import major_achievement_card_publication as major_card\n"
+    },
+    {
+      "old": "                 (ci_compat, ci_compat.V59_ADDITIONS))\n",
+      "new": "                 (ci_compat, ci_compat.V59_ADDITIONS),\n                 (major_card, major_card.V60_ADDITIONS))\n"
+    },
+    {
+      "old": ".major-achievement-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}\n.major-achievement-card{min-width:0;padding:28px;background:var(--white,#fffefa);border:1px solid #b7cbbd;border-top:4px solid #176e62;scroll-margin-top:24px}\n",
+      "new": ".major-achievement-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:stretch}\n.major-achievement-card{display:flex;flex-direction:column;min-width:0;height:100%;padding:28px;background:var(--white,#fffefa);border:1px solid #b7cbbd;border-top:4px solid #176e62;scroll-margin-top:24px}\n"
+    },
+    {
+      "old": ".major-achievement-card .major-line{margin-top:20px;padding-top:12px;border-top:1px solid #d6ded6;font-size:.9rem}\n",
+      "new": ".major-achievement-card .major-line{margin-top:auto;padding-top:12px;border-top:1px solid #d6ded6;font-size:.9rem}\n"
+    },
+    {
+      "old": "<p>陈庆云与吴生文开发甲酯MFSDA的三氟甲基化用途，这种甲酯后来被称为“陈试剂”。陈庆云小组又与Dolbier等合作发展硅酯TFDA，以二氟卡宾构建含氟三元环。</p>\n<p><a href=\"../topics/chen-reagent/index.html#a06-representative-study\">甲酯的三氟甲基化</a> · <a href=\"../topics/chen-reagent/index.html#a06-tfda-cooperation\">硅酯与二氟卡宾</a></p>\n<details><summary>陈试剂的分子身份与命名</summary><section class=\"chen-feature\"><div class=\"wrap\"><div class=\"chen-feature-card\"><div><p class=\"chen-feature-label\">代表性学术成果 · 所属A06（磺酸酯、二氟卡宾与三氟甲基化）子专题</p><h4>被称为“陈试剂”的代表成果</h4><p>“陈试剂”是A06（磺酸酯、二氟卡宾与三氟甲基化）中由反应研究发展为合成工具的代表成果；其甲酯身份、1989年共同工作及后来的研究接续，可在专题中阅读。</p><p class=\"chen-feature-meta\">原始工作：陈庆云（Qing-Yun Chen）、吴生文（Sheng-Wen Wu）｜1989年</p><div class=\"chen-feature-actions\"><a href=\"../topics/chen-reagent/index.html#chen-reagent-contribution\">认识陈试剂 →</a><a href=\"#line-a06\">查看所属成果线 A06（磺酸酯、二氟卡宾与三氟甲基化）</a></div></div><div class=\"chen-feature-identity\"><h3>氟磺酰基二氟乙酸甲酯</h3><p><b>MFSDA · 陈试剂</b><br>FSO<sub>2</sub>CF<sub>2</sub>CO<sub>2</sub>Me</p><p class=\"chen-feature-formula\" aria-label=\"结构连接式：F–S(=O)2–CF2–C(=O)–O–CH3\"><span>F–S(=O)<sub>2</sub></span>–<wbr><span>CF<sub>2</sub></span>–<wbr><span>C(=O)–O–CH<sub>3</sub></span></p><p class=\"chen-feature-meta\">Me＝CH<sub>3</sub>；这里展示甲酯，与酸型及TFDA硅酯分列。</p></div></div></div></section></details>\n",
+      "new": "<p>陈庆云与合作者开发甲酯MFSDA的三氟甲基化用途，这种甲酯后来被称为“陈试剂”；并发展硅酯TFDA，以二氟卡宾构建含氟三元环。</p>\n"
+    },
+    {
+      "old": "<p><a href=\"../topics/fluoroporphyrins/index.html#fluoroalkylporphyrins\">合成—环化—性质研究进程</a> · <a href=\"../topics/fluoroporphyrins/index.html#a08-representative-study\">20π大环代表成果</a></p>\n",
+      "new": ""
+    },
+    {
+      "old": "<p><a href=\"../topics/single-electron-transfer/index.html#topic-single-electron-transfer\">多种引发方式与方法演进</a> · <a href=\"../topics/single-electron-transfer/index.html#a07-representative-study\">后续C–Cl拓展</a></p>\n",
+      "new": ""
+    },
+    {
+      "old": ".major-achievement-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}\n.major-achievement-card{min-width:0;padding:22px;background:var(--white,#fffefa);border:1px solid #b7cbbd;border-top:4px solid #176e62;scroll-margin-top:24px;align-self:start}\n",
+      "new": ".major-achievement-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:stretch}\n.major-achievement-card{display:flex;flex-direction:column;min-width:0;height:100%;padding:22px;background:var(--white,#fffefa);border:1px solid #b7cbbd;border-top:4px solid #176e62;scroll-margin-top:24px}\n"
+    },
+    {
+      "old": ".major-achievement-card .major-line{margin-top:14px;padding-top:10px;border-top:1px solid #d6ded6;font-size:.9rem}\n",
+      "new": ".major-achievement-card .major-line{margin-top:auto;padding-top:10px;border-top:1px solid #d6ded6;font-size:.9rem}\n"
+    },
+    {
+      "old": "<p>陈庆云与吴生文开发甲酯MFSDA的三氟甲基化用途，这种甲酯后来被称为“陈试剂”。陈庆云小组又与Dolbier等合作发展硅酯TFDA，以二氟卡宾构建含氟三元环。</p>\n<p><a href=\"topics/chen-reagent/index.html#a06-representative-study\">甲酯的三氟甲基化</a> · <a href=\"topics/chen-reagent/index.html#a06-tfda-cooperation\">硅酯与二氟卡宾</a></p>\n",
+      "new": "<p>陈庆云与合作者开发甲酯MFSDA的三氟甲基化用途，这种甲酯后来被称为“陈试剂”；并发展硅酯TFDA，以二氟卡宾构建含氟三元环。</p>\n"
+    },
+    {
+      "old": "<p><a href=\"topics/fluoroporphyrins/index.html#fluoroalkylporphyrins\">合成—环化—性质研究进程</a> · <a href=\"topics/fluoroporphyrins/index.html#a08-representative-study\">20π大环代表成果</a></p>\n",
+      "new": ""
+    },
+    {
+      "old": "<p><a href=\"topics/single-electron-transfer/index.html#topic-single-electron-transfer\">多种引发方式与方法演进</a> · <a href=\"topics/single-electron-transfer/index.html#a07-representative-study\">后续C–Cl拓展</a></p>\n",
+      "new": ""
+    },
+    {
+      "old": "<p>比较含氟磺酸酯与亲核试剂的反应，陈庆云和合作者发现，改变酯基结构会改变断键位置。陈庆云与朱士正又从二氟甲基磺酸酯及类似物找到一系列二氟卡宾前体，合成者由此可以按底物需要，选择在酸性、碱性或中性条件下产生二氟卡宾（:CF₂）。</p>\n<p>从二氟卡宾出发，陈庆云小组还发展了多种向有机分子引入–CF₃的试剂和体系。其中陈庆云与吴生文开发了甲酯MFSDA的三氟甲基化用途，后来称为“陈试剂”。在另一项合作中，陈庆云小组与Dolbier团队发展硅酯TFDA，用二氟卡宾把烯烃的双键转成含氟三元环。</p>\n",
+      "new": "<p>陈庆云与合作者比较含氟磺酸酯与亲核试剂的反应，发现改变酯基结构会改变断键位置。他们还从二氟甲基磺酸酯及类似物找到一系列二氟卡宾前体，使合成者可以按底物需要，在酸性、碱性或中性条件下产生二氟卡宾（:CF₂）。</p>\n<p>从二氟卡宾出发，陈庆云与合作者还发展了多种向有机分子引入–CF₃的试剂和体系。其中，甲酯MFSDA的三氟甲基化用途后来成为“陈试剂”的代表工作；在另一项合作中，硅酯TFDA作为二氟卡宾前体，用于把烯烃的双键转成含氟三元环。</p>\n"
+    },
+    {
+      "old": "<p>如果二氟卡宾（:CF₂）结合一个氟离子，得到的三氟甲基物种能否把整个–CF₃基团接到另一个分子上？20世纪80年代末起，陈庆云小组据此研究不同卡宾前体在铜参与下的反应。这一时期，陈庆云小组发展的三氟甲基化试剂和体系合计为八种。与吴生文开发的氟磺酰基二氟乙酸甲酯是其中应用最广的一种。</p>\n",
+      "new": "<p>如果二氟卡宾（:CF₂）结合一个氟离子，得到的三氟甲基物种能否把整个–CF₃基团接到另一个分子上？20世纪80年代末起，陈庆云与合作者据此研究不同卡宾前体在铜参与下的反应。这一时期，他们发展的三氟甲基化试剂和体系合计为八种；其中，与吴生文共同开发的氟磺酰基二氟乙酸甲酯应用最广。</p>\n"
+    }
+  ]
+}
