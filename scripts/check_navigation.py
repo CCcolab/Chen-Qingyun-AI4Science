@@ -161,12 +161,24 @@ def inspect_navigation(root: Path = ROOT) -> dict:
             def overview_check(name=name):
                 result = inspect_line_numbering(site/name)
                 overview = page(name)
-                nav = one((n for n in overview.nodes() if n.tag == 'nav' and n.attrs.get('aria-label') == '按九条成果线查阅专题'), 'Nine-line directory navigation')
+                science = one((n for n in overview.nodes() if n.attrs.get('id') == 'achievement-lines-preview'), 'Achievement-line preview')
+                for ident in ('topic-preview', 'overview'):
+                    anchor = one((n for n in overview.nodes() if n.attrs.get('id') == ident), ident+' compatibility anchor')
+                    if science not in set(anchor.ancestors()):
+                        raise ValueError(ident+' must remain inside the retained achievement-line preview')
+                nav = one((n for n in science.nodes() if n.tag == 'nav' and n.attrs.get('aria-label') == '八条科研成果线主要贡献'), 'Eight-line achievement navigation')
                 anchors = links(nav)
-                if [destination(site, name, a) for a in anchors] != [(DIRECTORY, 'topic-line-'+n.lower()) for n in LINES]:
-                    raise ValueError('Directory navigation must link to the nine corresponding groups in order')
-                if any(not re.match(number+r'\b', a.text()) for number, a in zip(LINES, anchors)):
-                    raise ValueError('Directory entry labels must agree with their line destinations')
+                if len(anchors) != 8 or any(not re.match(number+r'\b', a.text()) for number, a in zip(LINES[:8], anchors)):
+                    raise ValueError('Achievement preview must retain the ordered A01–A08 entries')
+                community = one((n for n in science.nodes() if n.attrs.get('id') == 'group-community'), 'A09 heritage entry')
+                community_link = one(links(community), 'A09 heritage link')
+                if not re.match(r'A09\b', community_link.text()) or destination(site, name, community_link) != (name, 'line-a09'):
+                    raise ValueError('Achievement preview must retain the A09 heritage entry')
+                directory_link = one((a for a in links(science) if a.text() == '打开完整专题目录'), 'Complete topic-directory link')
+                if destination(site, name, directory_link) != (DIRECTORY, ''):
+                    raise ValueError('Complete topic-directory link must lead to the real directory')
+                result.update({'achievement_preview_lines': LINES[:8], 'heritage_entry': 'A09',
+                               'compatibility_anchors': ['topic-preview', 'overview']})
                 if name == 'index.html':
                     for ident, owner in LEGACY_ARCHIVES.items():
                         archive = one((n for n in overview.nodes() if n.attrs.get('id') == ident), ident)

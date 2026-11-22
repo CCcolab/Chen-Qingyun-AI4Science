@@ -1,0 +1,1890 @@
+{
+  "schema_version": "59.0",
+  "presentation_id": "PLATFORM-READER-SOURCE-CLEANUP-20261122-v59",
+  "publication_kind": "reader_source_cleanup_and_layout",
+  "previous_presentation_commit": "c20f4f0a237b7406e9f7633a5c28caba33b74af7",
+  "changed_html_paths": [
+    "achievements/index.html",
+    "index.html",
+    "people/index.html",
+    "people/stories/index.html",
+    "pftb/index.html",
+    "research/index.html",
+    "topics/chen-reagent/index.html",
+    "topics/early-fluoroketones/index.html",
+    "topics/f53/index.html",
+    "topics/fluorinated-small-rings/index.html",
+    "topics/fluoromonomers/index.html",
+    "topics/fluoroporphyrins/index.html",
+    "topics/perfluorosulfonates/index.html",
+    "topics/refrigerants/index.html",
+    "topics/single-electron-transfer/index.html",
+    "topics/sulfonyl-fluoride/index.html"
+  ],
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v58.json",
+    "sha256": "33dde6a5985c6aaa4b574df058a5a53f5a9f0ffe61a8986073cae0372d3f5ffc",
+    "presentation_id": "PLATFORM-HOMEPAGE-COMPACTION-20261121-v58"
+  },
+  "change_reason": "合并首页重复目录，清理读者正文中的核查式出处与传记定位，并修复A03参考资料和页脚排版；标准书目、作者归属与科学边界继续保留。",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "M0_resumed": false,
+  "Nemotron_training_resumed": false,
+  "reversible_text_files": [
+    {
+      "path": "scripts/check_navigation.py",
+      "old_sha256": "64ea7d6020a11b8fed8731998a2d0b1f142333239844090ae3b0d7536e313636",
+      "old_bytes": 9884,
+      "new_sha256": "0944eccf173539751930f77ec4372dde5bc42e0ae09c2dc9e7ebbe2d4b996b94",
+      "new_bytes": 11108,
+      "edits": [
+        {
+          "old_offset": 7385,
+          "replacement": 0
+        },
+        {
+          "old_offset": 7600,
+          "replacement": 1
+        }
+      ]
+    },
+    {
+      "path": "scripts/story_sources_publication.py",
+      "old_sha256": "ad6eee80457037e79dc9c72f8b587b26fa5aa45a90cd59b02202c967d058961b",
+      "old_bytes": 8244,
+      "new_sha256": "2ab9b34be36e5e03619de6112c4454fd4174ce849b05c8bdb0ef5677a4efc6e0",
+      "new_bytes": 8368,
+      "edits": [
+        {
+          "old_offset": 699,
+          "replacement": 2
+        },
+        {
+          "old_offset": 3968,
+          "replacement": 3
+        }
+      ]
+    },
+    {
+      "path": "site/achievements/index.html",
+      "old_sha256": "57937ac6691312c131486a0fe758dd6cc2222410642737f253222f39deee75c6",
+      "old_bytes": 87107,
+      "new_sha256": "a7697dee68feac9eaa31bedf2742594dc7157e555835660212df68a3e7f03a83",
+      "new_bytes": 85806,
+      "edits": [
+        {
+          "old_offset": 19372,
+          "replacement": 4
+        },
+        {
+          "old_offset": 21882,
+          "replacement": 5
+        },
+        {
+          "old_offset": 40598,
+          "replacement": 6
+        },
+        {
+          "old_offset": 43003,
+          "replacement": 7
+        }
+      ]
+    },
+    {
+      "path": "site/index.html",
+      "old_sha256": "1d435d28e6fffaa8a36327c652ea4462ae25e28361e27aa45b0fefb4293de191",
+      "old_bytes": 222416,
+      "new_sha256": "a52a270c23c79c149143cba22a5f6399bf1d6e68a8debbbaa1f3d357e4bd0ad2",
+      "new_bytes": 221073,
+      "edits": [
+        {
+          "old_offset": 24015,
+          "replacement": 8
+        },
+        {
+          "old_offset": 26161,
+          "replacement": 4
+        },
+        {
+          "old_offset": 28052,
+          "replacement": 9
+        },
+        {
+          "old_offset": 47131,
+          "replacement": 10
+        },
+        {
+          "old_offset": 60517,
+          "replacement": 11
+        },
+        {
+          "old_offset": 69790,
+          "replacement": 12
+        }
+      ]
+    },
+    {
+      "path": "site/people/index.html",
+      "old_sha256": "657b7fd8b254c4ce02feb7d03b4bca6acb15883c7fab4018dbf5415f9d4f1495",
+      "old_bytes": 26059,
+      "new_sha256": "f9826d6e9c447c89f110b49491d9216959054f0b1af7b758b7cbf7a74e0a4556",
+      "new_bytes": 26030,
+      "edits": [
+        {
+          "old_offset": 166,
+          "replacement": 13
+        },
+        {
+          "old_offset": 20748,
+          "replacement": 14
+        },
+        {
+          "old_offset": 24099,
+          "replacement": 15
+        },
+        {
+          "old_offset": 26059,
+          "replacement": 16
+        }
+      ]
+    },
+    {
+      "path": "site/people/stories/index.html",
+      "old_sha256": "e0957284706503a75c806a9fc04c885d125a2d36375dcc8aaca4aeddb9c0d4d7",
+      "old_bytes": 29320,
+      "new_sha256": "b7b0b31f17b02e2b7bc0a7da5e8e004e7b3a3bc1b1d58a8bc432ef353f006c23",
+      "new_bytes": 28333,
+      "edits": [
+        {
+          "old_offset": 5351,
+          "replacement": 17
+        },
+        {
+          "old_offset": 6439,
+          "replacement": 18
+        },
+        {
+          "old_offset": 16209,
+          "replacement": 19
+        },
+        {
+          "old_offset": 17290,
+          "replacement": 18
+        },
+        {
+          "old_offset": 17512,
+          "replacement": 20
+        },
+        {
+          "old_offset": 18705,
+          "replacement": 18
+        },
+        {
+          "old_offset": 18913,
+          "replacement": 21
+        },
+        {
+          "old_offset": 19348,
+          "replacement": 22
+        },
+        {
+          "old_offset": 20346,
+          "replacement": 18
+        },
+        {
+          "old_offset": 21123,
+          "replacement": 23
+        },
+        {
+          "old_offset": 22156,
+          "replacement": 18
+        },
+        {
+          "old_offset": 24029,
+          "replacement": 24
+        },
+        {
+          "old_offset": 27176,
+          "replacement": 25
+        }
+      ]
+    },
+    {
+      "path": "site/pftb/index.html",
+      "old_sha256": "b401fab3705f3165eb03eac5325c8437b466700a170dff8d9b679109a44c4d59",
+      "old_bytes": 134896,
+      "new_sha256": "0ff4922c22f4bfa325c65bb55e397856caec8491f08d9c7439c7754d0d501146",
+      "new_bytes": 134697,
+      "edits": [
+        {
+          "old_offset": 23288,
+          "replacement": 26
+        },
+        {
+          "old_offset": 36761,
+          "replacement": 27
+        },
+        {
+          "old_offset": 37648,
+          "replacement": 28
+        },
+        {
+          "old_offset": 38740,
+          "replacement": 29
+        },
+        {
+          "old_offset": 72183,
+          "replacement": 30
+        },
+        {
+          "old_offset": 72325,
+          "replacement": 31
+        },
+        {
+          "old_offset": 72431,
+          "replacement": 32
+        },
+        {
+          "old_offset": 72662,
+          "replacement": 33
+        },
+        {
+          "old_offset": 72860,
+          "replacement": 34
+        },
+        {
+          "old_offset": 73044,
+          "replacement": 35
+        },
+        {
+          "old_offset": 73126,
+          "replacement": 36
+        },
+        {
+          "old_offset": 95737,
+          "replacement": 37
+        },
+        {
+          "old_offset": 95758,
+          "replacement": 38
+        },
+        {
+          "old_offset": 96185,
+          "replacement": 39
+        },
+        {
+          "old_offset": 96815,
+          "replacement": 38
+        },
+        {
+          "old_offset": 96908,
+          "replacement": 40
+        },
+        {
+          "old_offset": 96930,
+          "replacement": 41
+        },
+        {
+          "old_offset": 103521,
+          "replacement": 42
+        },
+        {
+          "old_offset": 103528,
+          "replacement": 43
+        },
+        {
+          "old_offset": 103575,
+          "replacement": 44
+        },
+        {
+          "old_offset": 134896,
+          "replacement": 16
+        }
+      ]
+    },
+    {
+      "path": "site/research/index.html",
+      "old_sha256": "9a396712269a41eff554094109b2eabadaec04199224dca4ebfa236af6f59a31",
+      "old_bytes": 84362,
+      "new_sha256": "70ea732f44a5ce9264340a9f97e06a98ec1f2085ebe6df58b33c8ea68be69832",
+      "new_bytes": 83832,
+      "edits": [
+        {
+          "old_offset": 5041,
+          "replacement": 45
+        },
+        {
+          "old_offset": 7927,
+          "replacement": 46
+        },
+        {
+          "old_offset": 8020,
+          "replacement": 47
+        },
+        {
+          "old_offset": 8072,
+          "replacement": 48
+        },
+        {
+          "old_offset": 10872,
+          "replacement": 49
+        },
+        {
+          "old_offset": 11232,
+          "replacement": 50
+        },
+        {
+          "old_offset": 12264,
+          "replacement": 51
+        },
+        {
+          "old_offset": 12760,
+          "replacement": 52
+        },
+        {
+          "old_offset": 14087,
+          "replacement": 50
+        },
+        {
+          "old_offset": 16749,
+          "replacement": 50
+        },
+        {
+          "old_offset": 20453,
+          "replacement": 50
+        },
+        {
+          "old_offset": 20993,
+          "replacement": 53
+        },
+        {
+          "old_offset": 21040,
+          "replacement": 54
+        },
+        {
+          "old_offset": 21975,
+          "replacement": 55
+        },
+        {
+          "old_offset": 23737,
+          "replacement": 56
+        },
+        {
+          "old_offset": 23771,
+          "replacement": 57
+        },
+        {
+          "old_offset": 23952,
+          "replacement": 58
+        },
+        {
+          "old_offset": 24163,
+          "replacement": 59
+        },
+        {
+          "old_offset": 27787,
+          "replacement": 60
+        },
+        {
+          "old_offset": 28061,
+          "replacement": 61
+        },
+        {
+          "old_offset": 28111,
+          "replacement": 62
+        },
+        {
+          "old_offset": 28708,
+          "replacement": 63
+        },
+        {
+          "old_offset": 29662,
+          "replacement": 64
+        },
+        {
+          "old_offset": 29802,
+          "replacement": 65
+        },
+        {
+          "old_offset": 29842,
+          "replacement": 66
+        },
+        {
+          "old_offset": 30454,
+          "replacement": 67
+        },
+        {
+          "old_offset": 33029,
+          "replacement": 68
+        },
+        {
+          "old_offset": 36334,
+          "replacement": 69
+        },
+        {
+          "old_offset": 40114,
+          "replacement": 50
+        },
+        {
+          "old_offset": 42283,
+          "replacement": 50
+        },
+        {
+          "old_offset": 42891,
+          "replacement": 70
+        },
+        {
+          "old_offset": 43431,
+          "replacement": 71
+        },
+        {
+          "old_offset": 43460,
+          "replacement": 72
+        },
+        {
+          "old_offset": 48631,
+          "replacement": 73
+        },
+        {
+          "old_offset": 49013,
+          "replacement": 74
+        },
+        {
+          "old_offset": 50485,
+          "replacement": 50
+        },
+        {
+          "old_offset": 51182,
+          "replacement": 75
+        },
+        {
+          "old_offset": 52344,
+          "replacement": 76
+        },
+        {
+          "old_offset": 52541,
+          "replacement": 61
+        },
+        {
+          "old_offset": 52600,
+          "replacement": 77
+        },
+        {
+          "old_offset": 53231,
+          "replacement": 78
+        },
+        {
+          "old_offset": 54087,
+          "replacement": 79
+        },
+        {
+          "old_offset": 54851,
+          "replacement": 80
+        },
+        {
+          "old_offset": 55556,
+          "replacement": 81
+        },
+        {
+          "old_offset": 57150,
+          "replacement": 82
+        },
+        {
+          "old_offset": 57402,
+          "replacement": 83
+        },
+        {
+          "old_offset": 58685,
+          "replacement": 84
+        },
+        {
+          "old_offset": 58986,
+          "replacement": 85
+        },
+        {
+          "old_offset": 59489,
+          "replacement": 86
+        },
+        {
+          "old_offset": 59530,
+          "replacement": 87
+        },
+        {
+          "old_offset": 66511,
+          "replacement": 88
+        },
+        {
+          "old_offset": 66779,
+          "replacement": 89
+        },
+        {
+          "old_offset": 67840,
+          "replacement": 90
+        },
+        {
+          "old_offset": 67898,
+          "replacement": 91
+        },
+        {
+          "old_offset": 68890,
+          "replacement": 92
+        },
+        {
+          "old_offset": 71530,
+          "replacement": 93
+        },
+        {
+          "old_offset": 73043,
+          "replacement": 94
+        },
+        {
+          "old_offset": 73314,
+          "replacement": 95
+        },
+        {
+          "old_offset": 75341,
+          "replacement": 96
+        },
+        {
+          "old_offset": 78937,
+          "replacement": 97
+        },
+        {
+          "old_offset": 82812,
+          "replacement": 98
+        }
+      ]
+    },
+    {
+      "path": "site/topics/chen-reagent/index.html",
+      "old_sha256": "9366f11d48a040ca86156f2b0c3b2bdd47bcf0f8f9bf95fd12683f4d78d52a2e",
+      "old_bytes": 29477,
+      "new_sha256": "62e1955e9f5433ab3b6265025fc36acccc820470b0dfff74e13da4c4d565b2cc",
+      "new_bytes": 29077,
+      "edits": [
+        {
+          "old_offset": 12530,
+          "replacement": 99
+        },
+        {
+          "old_offset": 12988,
+          "replacement": 100
+        },
+        {
+          "old_offset": 13657,
+          "replacement": 101
+        },
+        {
+          "old_offset": 21215,
+          "replacement": 102
+        },
+        {
+          "old_offset": 23503,
+          "replacement": 103
+        }
+      ]
+    },
+    {
+      "path": "site/topics/early-fluoroketones/index.html",
+      "old_sha256": "ece0d6e08cd2727888d87c0973d85b42c54f79ca47ead6750b88438bbb5c83b0",
+      "old_bytes": 254090,
+      "new_sha256": "17d9353b9d51f0012d3899443e71dbfafa0b888a6fbbbf2d1f806a00ebe4d538",
+      "new_bytes": 253022,
+      "edits": [
+        {
+          "old_offset": 9836,
+          "replacement": 104
+        },
+        {
+          "old_offset": 11373,
+          "replacement": 105
+        },
+        {
+          "old_offset": 14766,
+          "replacement": 29
+        },
+        {
+          "old_offset": 33482,
+          "replacement": 106
+        },
+        {
+          "old_offset": 33644,
+          "replacement": 107
+        },
+        {
+          "old_offset": 33912,
+          "replacement": 108
+        },
+        {
+          "old_offset": 34026,
+          "replacement": 109
+        },
+        {
+          "old_offset": 248773,
+          "replacement": 110
+        },
+        {
+          "old_offset": 249764,
+          "replacement": 111
+        },
+        {
+          "old_offset": 250678,
+          "replacement": 112
+        },
+        {
+          "old_offset": 251342,
+          "replacement": 113
+        },
+        {
+          "old_offset": 252017,
+          "replacement": 114
+        },
+        {
+          "old_offset": 253100,
+          "replacement": 115
+        },
+        {
+          "old_offset": 254090,
+          "replacement": 16
+        }
+      ]
+    },
+    {
+      "path": "site/topics/f53/index.html",
+      "old_sha256": "d609b46032a3cccb305a1f9e7f9998802b755a4d3deafbb2c211c2723a6df965",
+      "old_bytes": 32932,
+      "new_sha256": "c6aa78a980b8fadd777ff3d1bbf602107dcdfe211730198f3e0886d4e81a7a3a",
+      "new_bytes": 32054,
+      "edits": [
+        {
+          "old_offset": 9577,
+          "replacement": 116
+        },
+        {
+          "old_offset": 10739,
+          "replacement": 117
+        },
+        {
+          "old_offset": 10901,
+          "replacement": 118
+        },
+        {
+          "old_offset": 11623,
+          "replacement": 119
+        },
+        {
+          "old_offset": 13218,
+          "replacement": 29
+        },
+        {
+          "old_offset": 22651,
+          "replacement": 106
+        },
+        {
+          "old_offset": 22811,
+          "replacement": 120
+        },
+        {
+          "old_offset": 22938,
+          "replacement": 121
+        },
+        {
+          "old_offset": 23115,
+          "replacement": 122
+        },
+        {
+          "old_offset": 23235,
+          "replacement": 123
+        },
+        {
+          "old_offset": 23414,
+          "replacement": 124
+        },
+        {
+          "old_offset": 26697,
+          "replacement": 125
+        },
+        {
+          "old_offset": 26836,
+          "replacement": 32
+        },
+        {
+          "old_offset": 27063,
+          "replacement": 126
+        },
+        {
+          "old_offset": 27136,
+          "replacement": 127
+        },
+        {
+          "old_offset": 27476,
+          "replacement": 128
+        },
+        {
+          "old_offset": 27648,
+          "replacement": 129
+        },
+        {
+          "old_offset": 27826,
+          "replacement": 130
+        },
+        {
+          "old_offset": 27916,
+          "replacement": 131
+        },
+        {
+          "old_offset": 28313,
+          "replacement": 132
+        },
+        {
+          "old_offset": 30168,
+          "replacement": 133
+        },
+        {
+          "old_offset": 31830,
+          "replacement": 134
+        },
+        {
+          "old_offset": 32837,
+          "replacement": 135
+        },
+        {
+          "old_offset": 32932,
+          "replacement": 16
+        }
+      ]
+    },
+    {
+      "path": "site/topics/fluorinated-small-rings/index.html",
+      "old_sha256": "4d23df42b91214c78c1f2ec24b4b87265180b93648624a033fedba2226212484",
+      "old_bytes": 10963,
+      "new_sha256": "bd30de78fd2a1c4771e3621d6293c3fcf557eeb07f28af1d1cf770d12110b574",
+      "new_bytes": 10305,
+      "edits": [
+        {
+          "old_offset": 4094,
+          "replacement": 136
+        },
+        {
+          "old_offset": 4772,
+          "replacement": 137
+        },
+        {
+          "old_offset": 5195,
+          "replacement": 138
+        },
+        {
+          "old_offset": 5808,
+          "replacement": 139
+        },
+        {
+          "old_offset": 6232,
+          "replacement": 140
+        },
+        {
+          "old_offset": 6353,
+          "replacement": 32
+        },
+        {
+          "old_offset": 6517,
+          "replacement": 141
+        },
+        {
+          "old_offset": 6684,
+          "replacement": 142
+        },
+        {
+          "old_offset": 6759,
+          "replacement": 143
+        },
+        {
+          "old_offset": 7068,
+          "replacement": 144
+        },
+        {
+          "old_offset": 7762,
+          "replacement": 145
+        },
+        {
+          "old_offset": 8066,
+          "replacement": 146
+        },
+        {
+          "old_offset": 10963,
+          "replacement": 16
+        }
+      ]
+    },
+    {
+      "path": "site/topics/fluoromonomers/index.html",
+      "old_sha256": "70a620b81ab2ef69252ad757b51fddd33aa7e81e76c184a520e60b555e7a291f",
+      "old_bytes": 35931,
+      "new_sha256": "7c636fb4fd58b4871ae3dee7bff4704538496857f0f2dd0abd127fdcd86de2dd",
+      "new_bytes": 35270,
+      "edits": [
+        {
+          "old_offset": 9811,
+          "replacement": 147
+        },
+        {
+          "old_offset": 10491,
+          "replacement": 148
+        },
+        {
+          "old_offset": 10702,
+          "replacement": 149
+        },
+        {
+          "old_offset": 11150,
+          "replacement": 136
+        },
+        {
+          "old_offset": 11599,
+          "replacement": 150
+        },
+        {
+          "old_offset": 12223,
+          "replacement": 151
+        },
+        {
+          "old_offset": 13878,
+          "replacement": 152
+        },
+        {
+          "old_offset": 14370,
+          "replacement": 29
+        },
+        {
+          "old_offset": 25421,
+          "replacement": 153
+        },
+        {
+          "old_offset": 25719,
+          "replacement": 106
+        },
+        {
+          "old_offset": 25942,
+          "replacement": 154
+        },
+        {
+          "old_offset": 26139,
+          "replacement": 155
+        },
+        {
+          "old_offset": 26346,
+          "replacement": 156
+        },
+        {
+          "old_offset": 26507,
+          "replacement": 156
+        },
+        {
+          "old_offset": 26705,
+          "replacement": 157
+        },
+        {
+          "old_offset": 33804,
+          "replacement": 158
+        },
+        {
+          "old_offset": 34251,
+          "replacement": 159
+        },
+        {
+          "old_offset": 34618,
+          "replacement": 134
+        },
+        {
+          "old_offset": 35148,
+          "replacement": 160
+        },
+        {
+          "old_offset": 35496,
+          "replacement": 161
+        },
+        {
+          "old_offset": 35836,
+          "replacement": 135
+        },
+        {
+          "old_offset": 35931,
+          "replacement": 16
+        }
+      ]
+    },
+    {
+      "path": "site/topics/fluoroporphyrins/index.html",
+      "old_sha256": "3e6450ced8ff5e43688e77eff554259a998641d390563f373cfb538de97d28b7",
+      "old_bytes": 29140,
+      "new_sha256": "8b8166341a4b794840729bf4638417539eb9a9703d87f4c2deb6af343cd24b34",
+      "new_bytes": 29075,
+      "edits": [
+        {
+          "old_offset": 11426,
+          "replacement": 162
+        },
+        {
+          "old_offset": 19035,
+          "replacement": 163
+        },
+        {
+          "old_offset": 19350,
+          "replacement": 18
+        },
+        {
+          "old_offset": 22792,
+          "replacement": 164
+        },
+        {
+          "old_offset": 22860,
+          "replacement": 18
+        }
+      ]
+    },
+    {
+      "path": "site/topics/perfluorosulfonates/index.html",
+      "old_sha256": "15a1913a78050c21cb27259593fbe248de09ca447b8cc074064c49ac19307482",
+      "old_bytes": 19364,
+      "new_sha256": "9379588a2b69bde497534c9cf053f95559c57244bb753204b1ad4a8824c3836d",
+      "new_bytes": 19271,
+      "edits": [
+        {
+          "old_offset": 14249,
+          "replacement": 165
+        },
+        {
+          "old_offset": 15689,
+          "replacement": 166
+        },
+        {
+          "old_offset": 15722,
+          "replacement": 167
+        },
+        {
+          "old_offset": 15959,
+          "replacement": 168
+        },
+        {
+          "old_offset": 17078,
+          "replacement": 169
+        },
+        {
+          "old_offset": 19364,
+          "replacement": 16
+        }
+      ]
+    },
+    {
+      "path": "site/topics/refrigerants/index.html",
+      "old_sha256": "80d89da7769490ad03657005ee25bed97c05fc21c33a94bd590d9d5ba707e504",
+      "old_bytes": 27267,
+      "new_sha256": "7445fba0d858179eaaddb1bce20ef46d4ca1a38597a327cbdce7b53e63f02f64",
+      "new_bytes": 26893,
+      "edits": [
+        {
+          "old_offset": 13246,
+          "replacement": 170
+        },
+        {
+          "old_offset": 13791,
+          "replacement": 171
+        },
+        {
+          "old_offset": 19590,
+          "replacement": 172
+        },
+        {
+          "old_offset": 21057,
+          "replacement": 173
+        },
+        {
+          "old_offset": 22060,
+          "replacement": 174
+        },
+        {
+          "old_offset": 23088,
+          "replacement": 175
+        },
+        {
+          "old_offset": 23603,
+          "replacement": 176
+        },
+        {
+          "old_offset": 25116,
+          "replacement": 177
+        },
+        {
+          "old_offset": 26145,
+          "replacement": 178
+        }
+      ]
+    },
+    {
+      "path": "site/topics/single-electron-transfer/index.html",
+      "old_sha256": "db4f8b921ba6617dbab9a7db34b3270a1bd5caaef3129d52fa8354388f26d0b6",
+      "old_bytes": 31909,
+      "new_sha256": "68852bac4bf740a3b4849784dc0ea9bed5ce7d2ee6e936023888d88a8f65ca55",
+      "new_bytes": 31704,
+      "edits": [
+        {
+          "old_offset": 25289,
+          "replacement": 179
+        },
+        {
+          "old_offset": 25412,
+          "replacement": 18
+        },
+        {
+          "old_offset": 28810,
+          "replacement": 180
+        },
+        {
+          "old_offset": 29003,
+          "replacement": 18
+        }
+      ]
+    },
+    {
+      "path": "site/topics/sulfonyl-fluoride/index.html",
+      "old_sha256": "f6fbcac4c5e6050f079afe7f3512675d2452814482aa301308f990af4debfc3a",
+      "old_bytes": 12285,
+      "new_sha256": "b4701572a2316ca406d81000d59990f0573f6df2069e01cdcd43f6e13aeaabfc",
+      "new_bytes": 11389,
+      "edits": [
+        {
+          "old_offset": 3373,
+          "replacement": 136
+        },
+        {
+          "old_offset": 4697,
+          "replacement": 181
+        },
+        {
+          "old_offset": 5093,
+          "replacement": 182
+        },
+        {
+          "old_offset": 5769,
+          "replacement": 183
+        },
+        {
+          "old_offset": 6092,
+          "replacement": 184
+        },
+        {
+          "old_offset": 6788,
+          "replacement": 185
+        },
+        {
+          "old_offset": 7176,
+          "replacement": 140
+        },
+        {
+          "old_offset": 7302,
+          "replacement": 106
+        },
+        {
+          "old_offset": 7396,
+          "replacement": 186
+        },
+        {
+          "old_offset": 7563,
+          "replacement": 187
+        },
+        {
+          "old_offset": 7863,
+          "replacement": 188
+        },
+        {
+          "old_offset": 7918,
+          "replacement": 189
+        },
+        {
+          "old_offset": 8167,
+          "replacement": 190
+        },
+        {
+          "old_offset": 8989,
+          "replacement": 145
+        },
+        {
+          "old_offset": 9293,
+          "replacement": 146
+        },
+        {
+          "old_offset": 12285,
+          "replacement": 16
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "nav = one((n for n in overview.nodes() if n.tag == 'nav' and n.attrs.get('aria-label') == '按九条成果线查阅专题'), 'Nine-line directory",
+      "new": "science = one((n for n in overview.nodes() if n.attrs.get('id') == 'achievement-lines-preview'), 'Achievement-line preview')\n                for ident in ('topic-preview', 'overview'):\n                    anchor = one((n for n in overview.nodes() if n.attrs.get('id') == ident), ident+' compatibility anchor')\n                    if science not in set(anchor.ancestors()):\n                        raise ValueError(ident+' must remain inside the retained achievement-line preview')\n                nav = one((n for n in science.nodes() if n.tag == 'nav' and n.attrs.get('aria-label') == '八条科研成果线主要贡献'), 'Eight-line achievement"
+    },
+    {
+      "old": "[destination(site, name, a) for a in anchors] != [(DIRECTORY, 'topic-line-'+n.lower()) for n in LINES]:\n                    raise ValueError('Directory navigation must link to the nine corresponding groups in order')\n                if any(not re.match(number+r'\\b', a.text()) for number, a in zip(LINES, anchors)):\n                    raise ValueError('Directory entry labels must agree with their line destinations'",
+      "new": "len(anchors) != 8 or any(not re.match(number+r'\\b', a.text()) for number, a in zip(LINES[:8], anchors)):\n                    raise ValueError('Achievement preview must retain the ordered A01–A08 entries')\n                community = one((n for n in science.nodes() if n.attrs.get('id') == 'group-community'), 'A09 heritage entry')\n                community_link = one(links(community), 'A09 heritage link')\n                if not re.match(r'A09\\b', community_link.text()) or destination(site, name, community_link) != (name, 'line-a09'):\n                    raise ValueError('Achievement preview must retain the A09 heritage entry')\n                directory_link = one((a for a in links(science) if a.text() == '打开完整专题目录'), 'Complete topic-directory link')\n                if destination(site, name, directory_link) != (DIRECTORY, ''):\n                    raise ValueError('Complete topic-directory link must lead to the real directory')\n                result.update({'achievement_preview_lines': LINES[:8], 'heritage_entry': 'A09',\n                               'compatibility_anchors': ['topic-preview', 'overview']}"
+    },
+    {
+      "old": "",
+      "new": "import reader_source_cleanup_publication as reader_cleanup\n"
+    },
+    {
+      "old": "",
+      "new": ",\n                 (reader_cleanup, reader_cleanup.V58_ADDITIONS)"
+    },
+    {
+      "old": "",
+      "new": "<span id=\"topic-preview\"></span><span id=\"overview\"></span>"
+    },
+    {
+      "old": "",
+      "new": "</a></p>\n<p><a class=\"button\" href=\"../topics/index.html\">打开完整专题目录"
+    },
+    {
+      "old": "\n\n<section id=\"overview\" class=\"shell-section\"><div class=\"wrap\"><div class=\"section-head\"><div><div class=\"kicker\">TOPICS WITHIN THE NINE LINES</div><h2>专题与档案目录</h2></div><p>专题按八条科研成果线与一条学术传承线归组，同一线可含多个研究分支；各线目录提供主要贡献总述与详细入口。</p></div><nav aria-label=\"按九条成果线查阅专题\"><ul class=\"topic-directory-links\"><li><a href=\"../topics/index.html#topic-line-a01\">A01（全氟酮化学：六氟丙酮与双酚AF）</a></li><li><a href=\"../topics/index.html#topic-line-a02\">A02（含氟单体、氟橡胶与氟油）</a></li><li><a href=\"../topics/index.html#topic-line-a03\">A03（全氟叔丁基（PFtB）化学）</a></li><li><a href=\"../topics/index.html#topic-line-a04\">A04（F-53铬雾抑制剂）</a></li><li><a href=\"../topics/index.html#topic-line-a05\">A05（制冷剂与配套技术）</a></li><li><a href=\"../topics/index.html#topic-line-a06\">A06（磺酸酯、二氟卡宾与三氟甲基化）</a></li><li><a href=\"../topics/index.html#topic-line-a07\">A07（单电子转移与C–Cl活化）</a></li><li><a href=\"../topics/index.html#topic-line-a08\">A08（交叉研究与晚年拓展）</a></li><li><a href=\"../topics/index.html#topic-line-a09\">A09（学科建设与人才培养）</a></li></ul></nav><p><a class=\"button\" href=\"../topics/index.html\">打开完整专题目录 →</a></p></div></section>",
+      "new": ""
+    },
+    {
+      "old": "出处与",
+      "new": ""
+    },
+    {
+      "old": "机构纪念资料、传记与原始研究记录共同构成后续整理的基础",
+      "new": "今天继续保存他的开拓性成果、合作经历与治学精神"
+    },
+    {
+      "old": "",
+      "new": "</a></p>\n<p><a class=\"button\" href=\"topics/index.html\">打开完整专题目录"
+    },
+    {
+      "old": "<section id=\"overview\" class=\"shell-section\"><div class=\"wrap\"><span id=\"topic-preview\"></span><div class=\"section-head\"><div><div class=\"kicker\">TOPICS WITHIN THE NINE LINES</div><h2 id=\"topic-preview-title\">专题与档案目录</h2></div><p>专题按八条科研成果线与一条学术传承线归组，同一线可含多个研究分支；各线目录提供主要贡献总述与详细入口。</p></div><nav aria-label=\"按九条成果线查阅专题\"><ul class=\"topic-directory-links\"><li><a href=\"topics/index.html#topic-line-a01\">A01（全氟酮化学：六氟丙酮与双酚AF）</a></li><li><a href=\"topics/index.html#topic-line-a02\">A02（含氟单体、氟橡胶与氟油）</a></li><li><a href=\"topics/index.html#topic-line-a03\">A03（全氟叔丁基（PFtB）化学）</a></li><li><a href=\"topics/index.html#topic-line-a04\">A04（F-53铬雾抑制剂）</a></li><li><a href=\"topics/index.html#topic-line-a05\">A05（制冷剂与配套技术）</a></li><li><a href=\"topics/index.html#topic-line-a06\">A06（磺酸酯、二氟卡宾与三氟甲基化）</a></li><li><a href=\"topics/index.html#topic-line-a07\">A07（单电子转移与C–Cl活化）</a></li><li><a href=\"topics/index.html#topic-line-a08\">A08（交叉研究与晚年拓展）</a></li><li><a href=\"topics/index.html#topic-line-a09\">A09（学科建设与人才培养）</a></li></ul></nav><p><a class=\"button\" href=\"topics/index.html\">打开完整专题目录 →</a></p></div></section>\n\n",
+      "new": ""
+    },
+    {
+      "old": "按编号查找原文出处",
+      "new": "查阅原始文献"
+    },
+    {
+      "old": "具体出处",
+      "new": "参考资料"
+    },
+    {
+      "old": "以陈庆云传记与机构资料介绍学科建设、具体培养方法、合作与学术传承",
+      "new": "介绍陈庆云在学科建设、人才培养、合作与学术传承方面的具体实践"
+    },
+    {
+      "old": "传记中鼓励自主想法的回忆者；2019年活动明列",
+      "new": "回忆自主选题获得鼓励；2019年九十华诞学术报告会"
+    },
+    {
+      "old": "人物回忆据书中记述。",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "\n"
+    },
+    {
+      "old": "传记还记下了一次批评：陈庆云把盛有六氟丙酮水合物的玻璃瓶放在实验台中间",
+      "new": "一次实验中，陈庆云把盛有六氟丙酮水合物的玻璃瓶放在实验台中间，受到导师批评"
+    },
+    {
+      "old": "\r",
+      "new": ""
+    },
+    {
+      "old": "《氟缘笃志：陈庆云传》第57页记载，1991年陈庆云访问杜邦，向贡普雷希特（W. H. Gumprecht）问起制冷剂HFC-134a的制备。团队关心的是一个具体的化学问题：在水溶液中，氟离子为什么能够取代原料分子上的氯？据传记记述，两人当时都没有给出明确的",
+      "new": "1991年，陈庆云访问杜邦，向贡普雷希特（W. H. Gumprecht）问起制冷剂HFC-134a的制备。团队关心的是一个具体的化学问题：在水溶液中，氟离子为什么能够取代原料分子上的氯？两人当时都没有给出明确"
+    },
+    {
+      "old": "传记转引的一封唐纳德·伯顿教授来信，",
+      "new": "唐纳德·伯顿教授曾在来信中"
+    },
+    {
+      "old": "据《氟缘笃志：陈庆云传》所载肖吉昌的",
+      "new": "肖吉昌"
+    },
+    {
+      "old": "书中还记下了刘超的另一段回忆。",
+      "new": "刘超还回忆，"
+    },
+    {
+      "old": "《氟缘笃志：陈庆云传》第87页转述了宇根山的贺信。",
+      "new": "宇根山在贺"
+    },
+    {
+      "old": "，ISBN 978-7-5236-0741-1。本页采用的传记底本印页定位：正文2页（资料采集与通信），23、25—31页（留苏训练、署名与关怀），35—37页（单体与低温分离），48—53页（F-53与对外报告），57—59页（制冷剂工艺与杜邦请教），77—82页（卟啉合作与日本同行），87页（2009年贺信），92—93页（自主选题与论文指导），95—100页（国际交流），103—105页（企业合作与应用问题），111页（伯顿来信）；卷前序二《我心目中的父亲》自编2—3页（陈肖回忆）。大須賀篤弘论文册见第77页所引肖吉昌访谈（2018年5月14日）；祝贺邮件见第82页所引刘超访谈（2018年5月15日）。宇根山贺信见第87页",
+      "new": "第1版。ISBN 978-7-5236-0741-1"
+    },
+    {
+      "old": "1991年访问中的问答见传记第57页。",
+      "new": ""
+    },
+    {
+      "old": "2.5rem;padding-top:1.6rem;border-top:1px solid #d3dfdf;line-height:1.85}.cq-display-references h2{font-size:1.6rem}.cq-display-references li,.cq-display-references article{margin:.8rem 0;overflow-wrap:anywhere}.cq-display-references article h3{font-size:1rem;margin:.3rem 0}.cq-display-references p{margin:.4rem 0}.cq-display-anchor{scroll-margin-top:6rem}.cq-display-source-index{margin-top:1rem}.cq-display-source-index>summary{cursor:pointer;font-weight:600}.cq-display-science{line-height:1.85}.cq-display-science h3{margin-top:1.5rem}.cq-display-bibliography{padding-left:1.4rem}.cq-display-ai{margin:1.5rem 0;padding:1rem 1.2rem;background:#f3f7f7;border-left:3px solid #698987}.cq-display-references .source-search{display:flex;flex-wrap:wrap;gap:.6rem}.cq-display-references input{max-width:100%;box-sizing:border-box}.cq-display-references a{overflow-wrap:anywhere}.cq-display-references .meta{font-size:.9rem}@media(max-width:700px){.cq-display-references{margin-top:1.5rem",
+      "new": "0;padding:36px 0 40px;border-top:0;line-height:1.85}.cq-display-references #sources{padding:28px 0 0;border-bottom:0}.cq-display-references h2{font-size:1.6rem}.cq-display-references li,.cq-display-references article{margin:.8rem 0;overflow-wrap:anywhere}.cq-display-references article h3{font-size:1rem;margin:.3rem 0}.cq-display-references p{margin:.4rem 0}.cq-display-anchor{scroll-margin-top:6rem}.cq-display-source-index{margin-top:1rem}.cq-display-source-index>summary{cursor:pointer;font-weight:600}.cq-display-science{line-height:1.85}.cq-display-science h3{margin-top:1.5rem}.cq-display-bibliography{padding-left:1.4rem}.cq-display-ai{margin:1.5rem 0;padding:1rem 1.2rem;background:#f3f7f7;border-left:3px solid #698987}.cq-display-references .source-search{display:flex;flex-wrap:wrap;gap:.6rem}.cq-display-references input{max-width:100%;box-sizing:border-box}.cq-display-references a{overflow-wrap:anywhere}.cq-display-references .meta{font-size:.9rem}@media(max-width:700px){.cq-display-references{margin-top:0;padding:30px 0 34px"
+    },
+    {
+      "old": "据传记记述，",
+      "new": ""
+    },
+    {
+      "old": "后来陈庆云在访谈中用“亲卤反应”回顾了它",
+      "new": "陈庆云将这种反应概括为“亲卤反应”"
+    },
+    {
+      "old": "原文出处",
+      "new": "参考资料"
+    },
+    {
+      "old": "的传记与原论文定位",
+      "new": "与原论文署名"
+    },
+    {
+      "old": "传记与原论文所记合作",
+      "new": "合作分工与原论文署名"
+    },
+    {
+      "old": "</th><th scope=\"col\">出处",
+      "new": ""
+    },
+    {
+      "old": "<td>传记42–45页；原论文署名</td>",
+      "new": ""
+    },
+    {
+      "old": "</td><td>传记43–45页；原论文署名",
+      "new": ""
+    },
+    {
+      "old": "<td>传记44页；原论文署名</td>",
+      "new": ""
+    },
+    {
+      "old": "传记列为参与该小课题的实习生；1966年论文共同作者。</td><td>传记44页；原论文18页",
+      "new": "以实习生身份参与该小课题，并成为1966年论文共同作者。"
+    },
+    {
+      "old": "",
+      "new": "\n  <div class=\"wrap\">\n    "
+    },
+    {
+      "old": "",
+      "new": "\n    "
+    },
+    {
+      "old": "第42–45页记课题缘起与研究分工，第44页引陈庆云2018年1月26日上海访谈，回顾亲卤反应。",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "\n      "
+    },
+    {
+      "old": "<div class=\"wrap\"></div>\n  <div class=\"wrap",
+      "new": "\n        <div class=\"source-list"
+    },
+    {
+      "old": "",
+      "new": "      </div>\n      </section>\n    </details>\n  "
+    },
+    {
+      "old": "</section></details>",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": " class=\"site-footer\""
+    },
+    {
+      "old": "核对化学对象和数据，并从具体缺口提出可检验的问题。这里沿八条科研成果线说明可用的方法、现有记录与仍待核对的证据。",
+      "new": "理解化学对象和数据，并从具体科学问题提出可检验的研究方向。这里沿八条科研成果线呈现资料整理方法、现有结果与科学边界；"
+    },
+    {
+      "old": "待核事项",
+      "new": "科学边界"
+    },
+    {
+      "old": "已完成工作：原文",
+      "new": "现有结果：原文释读"
+    },
+    {
+      "old": "已将1960年第一报英译本647–653页",
+      "new": "将1960年第一报"
+    },
+    {
+      "old": "出处",
+      "new": "记录"
+    },
+    {
+      "old": "出处",
+      "new": ""
+    },
+    {
+      "old": "传记中",
+      "new": "书中收录"
+    },
+    {
+      "old": "出处",
+      "new": "原文记录"
+    },
+    {
+      "old": "现有资料与记录",
+      "new": "历史原文与材料"
+    },
+    {
+      "old": "647–653页全部七页影印图已取得并核读；俄文原刊与专业核译仍待核。另两篇Doklady原页共八页已有AI核读，关键结构转录签认待补。传记p29的证书书影已核见，独立高清原始扫描及细字日期仍待核。 第一报与说明书的原报数据、具体化学贡献和共同署名分别呈现",
+      "new": "、两篇Doklady原页与第117491号说明书共同呈现原报数据、具体化学贡献和共同署名。关键结构转录、收率基准与独立证书细节仍不能由现有材料完全说明"
+    },
+    {
+      "old": "已在明确原料身份、原子量和净计量假设下重建第117491号说明书质量—收率账本；原98%收率基准仍待核",
+      "new": "在明确原料身份、原子量和净计量假设下重建第117491号说明书质量—收率账本；原98%收率基准仍未解释"
+    },
+    {
+      "old": "待核事项",
+      "new": "科学边界与未解问题"
+    },
+    {
+      "old": "俄文原刊、俄英逐句校勘、专业核译与关键结构签认仍待完成；吡啶／哌啶、氯／溴代乙酸酯和X投料列项三处异文保留",
+      "new": "的吡啶／哌啶、氯／溴代乙酸酯和X投料列项三处异文仍需在专业核译中保留并解释"
+    },
+    {
+      "old": "授予证书独立高清原件和档案来源待补；说明书的收率基准、原料与样品纯度未明。传记证书书影已核见，",
+      "new": "说明书的收率基准、原料与样品纯度未明；书中证书书影"
+    },
+    {
+      "old": "、真实测量不确定度及V残差原因待核",
+      "new": "和真实测量不确定度未说明，V残差原因尚不确定"
+    },
+    {
+      "old": "以传记主",
+      "new": "围绕A02成果"
+    },
+    {
+      "old": "传记",
+      "new": "成果"
+    },
+    {
+      "old": "依据传记35–39页，呈现六氟丙烯来源与低温分离、氟橡胶2号和3号研制成功，以及调聚氟溴陀螺油从研究室到实验厂生产的接续；按书中叙述保留陈庆云与合作者的分工",
+      "new": "六氟丙烯来源与低温分离、氟橡胶2号和3号研制，以及调聚氟溴陀螺油从研究室到实验厂生产的接续，共同构成这条成果线；陈庆云与合作者的分工分别呈现"
+    },
+    {
+      "old": "依据已取得并整理的1980年《化学学报》175–184页原刊，把",
+      "new": "1980年《化学学报》原刊记录了"
+    },
+    {
+      "old": "与出处",
+      "new": ""
+    },
+    {
+      "old": "待核事项与",
+      "new": "科学"
+    },
+    {
+      "old": "叙述以传记与机构资料为主线",
+      "new": "研究沿成果线与机构资料呈现"
+    },
+    {
+      "old": "已记载成果完善人物—化学对象—原文—用途的资料关联；新增引用对照对应出处",
+      "new": "代表成果完善人物—化学对象—原文—用途的资料关联；新增引用按原文范围说明"
+    },
+    {
+      "old": "出处",
+      "new": "字段"
+    },
+    {
+      "old": "以传记为主线关联人物、化合物、原论文和学术贡献；对平台新增引用核对出处",
+      "new": "围绕A03成果线关联人物、化合物、原论文和学术贡献；对平台新增引用核对原文"
+    },
+    {
+      "old": "已将传记42–45页与1966年原论文联系",
+      "new": "结合历史研究与1966年原论文"
+    },
+    {
+      "old": "现有资料与记录",
+      "new": "原表数值与实验条件"
+    },
+    {
+      "old": "已按1966年原表转录10个波长记录，其中9个配对记录形成6项位移；波长差、波数蓝移与有界扰动诊断属于同批原表数值重放。原刊印刷21页表1及24页实验部分的引用已核对：",
+      "new": "1966年原表包含10个波长记录，其中9个配对记录形成6项位移；波长差、波数蓝移与有界扰动诊断属于同批原表数值重放。论文记载"
+    },
+    {
+      "old": "以传记为主",
+      "new": "围绕A04成果"
+    },
+    {
+      "old": "已围绕传记48–54、60页整理1975年路线探索、工厂试用、1979年扩大试验与后续基础研究",
+      "new": "1975年路线探索、工厂试用、1979年扩大试验与后续基础研究共同构成F-53成果脉络"
+    },
+    {
+      "old": "资料取得与身份待查清单继续",
+      "new": "专业核查记录"
+    },
+    {
+      "old": "传记",
+      "new": "A05成果线"
+    },
+    {
+      "old": "已按传记55–59页及相关年表，整理F-115两条制备路线与F-502试配、HFC-134a液相连续中试、配套冷冻机油和整机协作",
+      "new": "F-115两条制备路线与F-502试配、HFC-134a液相连续中试、配套冷冻机油和整机协作共同构成这条成果线"
+    },
+    {
+      "old": "77–79页已取得并核读，原刊集体署“致冷剂小组”；它提供F-115制备研究记录。两份已取得的工艺说明书分别列林永达／梁与达、吴永明／林永达为发明人；传记中的陈先生",
+      "new": "原刊集体署“致冷剂小组”，提供F-115制备研究记录。两份工艺说明书分别列林永达／梁与达、吴永明／林永达为发明人；陈先生的"
+    },
+    {
+      "old": "本轮完成的是传记关联整理及新增引用的出处、署名和解释核对",
+      "new": "平台将成果线与新增引用关联，区分署名与解释范围"
+    },
+    {
+      "old": "已出版传记",
+      "new": "A05成果线"
+    },
+    {
+      "old": "传记",
+      "new": "历史研究"
+    },
+    {
+      "old": "传记所记",
+      "new": "历史记录中的"
+    },
+    {
+      "old": "传记的F-133a起点／F-134a含氯句仍按原文保留，不能仅凭HFC-134a身份判定传记",
+      "new": "《氟缘笃志：陈庆云传》中的F-133a起点／F-134a含氯句仍按书中文字保留，不能仅凭HFC-134a身份判定其"
+    },
+    {
+      "old": "以传记为主",
+      "new": "围绕A06成果"
+    },
+    {
+      "old": "已按传记60–69、75–77页整理磺酸酯结构与断键、14种二氟卡宾前体、甲酯陈试剂的发现及接续研究、TFDA合作开发",
+      "new": "磺酸酯结构与断键、14种二氟卡宾前体、甲酯陈试剂的发现及接续研究、TFDA合作开发共同构成A06成果脉络"
+    },
+    {
+      "old": "已有",
+      "new": ""
+    },
+    {
+      "old": "已取得并核读的1982／1983三篇原刊及三个代表断键实例保留",
+      "new": "1982／1983三篇原刊及三个代表断键实例呈现"
+    },
+    {
+      "old": "以传记",
+      "new": "围绕A07成果线"
+    },
+    {
+      "old": "已按传记69–74、83–84页，整理全氟烷基碘的溶剂效应、多种引发方向和含氟氯代物活化",
+      "new": "全氟烷基碘的溶剂效应、多种引发方向和含氟氯代物活化共同构成A07成果脉络"
+    },
+    {
+      "old": "已有附件与技术文书记录",
+      "new": "附件与技术文书"
+    },
+    {
+      "old": "31页、26页SI已取得",
+      "new": "SI提供反应条件与谱图等补充材料"
+    },
+    {
+      "old": "传记",
+      "new": ""
+    },
+    {
+      "old": "已取得不等于正文或全谱核校完成",
+      "new": "不能替代正文或全谱核校"
+    },
+    {
+      "old": "以传记",
+      "new": "围绕A08成果线"
+    },
+    {
+      "old": "已按传记77–86页整理小环后续转化、湖南大学卟啉合作与共同学习、20π大环的发现故事及晚年研究动机",
+      "new": "小环后续转化、湖南大学卟啉合作与共同学习、20π大环的发现故事及晚年研究动机共同构成A08成果脉络"
+    },
+    {
+      "old": "本轮为传记关联和新增引用核对",
+      "new": "平台关联历史研究和新增引用"
+    },
+    {
+      "old": "已取得；JACS正文仍未取得，不以附件冒充正文核读",
+      "new": "不能替代JACS正文，也不作为完整结构或实验认证"
+    },
+    {
+      "old": "SI已取得，2022正文仍未取得",
+      "new": "2022年SI不能替代论文正文"
+    },
+    {
+      "old": "传记将这一时期",
+      "new": "这一时期，陈庆云小组"
+    },
+    {
+      "old": "据传记第67页记述，",
+      "new": ""
+    },
+    {
+      "old": "传记第68页记载，",
+      "new": ""
+    },
+    {
+      "old": "传记明确关联",
+      "new": "参与"
+    },
+    {
+      "old": "第63–66页记磺酸酯断键和二氟卡宾前体，第67–69页记三氟甲基化体系、氟仿线索及杨国英回忆，第75–77页记硅酯和环丙烷化，第85–86页记金属盐的后续用途，第133页论著目录第107项列陈庆云、杨国英、吴生文的铜粉体系论文（J. Fluorine Chem.，1991，55，291–298）。",
+      "new": ""
+    },
+    {
+      "old": "传记记述，他比较反应条件后，",
+      "new": "经过反应条件比较，他"
+    },
+    {
+      "old": "出处",
+      "new": "文献"
+    },
+    {
+      "old": "<th scope=\"col\">出处</th>",
+      "new": ""
+    },
+    {
+      "old": "；同列苏联科学院元素有机化合物研究所。</td><td>英译647页作者及机构栏；出版社作者表",
+      "new": "共同署名，并同列苏联科学院元素有机化合物研究所。"
+    },
+    {
+      "old": "。</td><td>说明书标题上方印刷署名栏",
+      "new": "共同署名。"
+    },
+    {
+      "old": "传记叙述师承和合作，原论文与文书提供共同署名及实验内容；二者各按材料范围介绍。原件未逐项列出作者角色，不按署名次序推定个人贡献比例。</td><td>《氟缘笃志：陈庆云传》相关留苏章节；第一报与说明书署名",
+      "new": "师承和合作经历说明研究如何推进，原论文与文书保存共同署名及实验内容。现有文书未逐项列出作者角色，不按署名次序推定个人贡献比例。"
+    },
+    {
+      "old": "第25–30页记六氟丙酮研究、双酚AF构想与发明人证书，以及含氟烯烃的取代基效应与合作署名。",
+      "new": ""
+    },
+    {
+      "old": "英译第647–649页记醇、炔基试剂和含活泼氢化合物的反应，第648、651页记羟基酮VII的裂解与产物鉴定，第649页列XI的结构，<a href=\"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n103\">第650页</a>讨论单体用途，<a href=\"https://archive.org/details/sim_russian-chemical-bulletin_1960-04_4/page/n105\">第652页</a>列XI、XII的产物、熔点与元素分析。",
+      "new": ""
+    },
+    {
+      "old": "实验实例列产物21.7 g、原报理论收率98%及熔点161–162℃。",
+      "new": ""
+    },
+    {
+      "old": "第1113–1115页列不饱和酯的氨加成、六氟缬氨酸的鉴定与反应方向讨论。",
+      "new": ""
+    },
+    {
+      "old": "第1367–1369页记含氟噁唑酮的制备、开环反应及表1中的非氟类似物对照。",
+      "new": ""
+    },
+    {
+      "old": "；相关引文见2页1–9行",
+      "new": ""
+    },
+    {
+      "old": "据传记记载，陈庆云想到所里做全氟磺酸离子交换膜时积累的含氟原料",
+      "new": "陈庆云把所里开展全氟磺酸离子交换膜研究时积累的含氟原料用于新的制备路线"
+    },
+    {
+      "old": "传记第53页图5-2还留下了陈庆云1981年在光明电镀厂参加测试的现场照片",
+      "new": "1981年的现场照片还记录了陈庆云在光明电镀厂参加测试"
+    },
+    {
+      "old": "天津市五金电镀厂提供了一组有明确地点和时间的记录。据传记第52页转引李宗志发表于《天津电镀》的报告，该厂在1980年9—10月全面使用F-53后，每月节约氧化铬10千克。另据肖关根1982年《人民日报》的报道，使用F-53后铬雾逸出量“降低一千倍”，铬酸用量节约20%以上。报道未注明具体镀槽和工况，这两项数字属于当时的新闻报道",
+      "new": "李宗志发表于《天津电镀》的报告称，天津市五金电镀厂在1980年9—10月全面使用F-53后，每月节约氧化铬10千克。肖关根1982年《人民日报》的报道又记载，使用F-53后铬雾逸出量“降低一千倍”，铬酸用量节约20%以上。两份报道均未提供完整厂试原表；后者也未注明具体镀槽和工况，因此这些数字只代表当时报道的使用记录"
+    },
+    {
+      "old": "传记第52页记录了他对总工程师顾子恺的回忆",
+      "new": "他特别肯定总工程师顾子恺在工程转化中的作用"
+    },
+    {
+      "old": "<td>传记48–51页</td>",
+      "new": ""
+    },
+    {
+      "old": "</td><td>传记116页年表；CQ-H05机构书目",
+      "new": ""
+    },
+    {
+      "old": "<td>传记51页</td>",
+      "new": ""
+    },
+    {
+      "old": "<td>传记53页图5-2；CQ-H04图注</td>",
+      "new": ""
+    },
+    {
+      "old": "</td><td>CQ-H03；传记53页图5-3、116页年表",
+      "new": ""
+    },
+    {
+      "old": "按传记、署名与致谢分别介绍角色",
+      "new": "合作角色与共同贡献"
+    },
+    {
+      "old": "<td>传记49、51–52页</td>",
+      "new": ""
+    },
+    {
+      "old": "传记记述其送样及相关分析工作，与研究组合作推进研制。</td><td>传记51页（该段转引《虚怀若谷：黄维垣传》）",
+      "new": "参与送样及相关分析工作，与研究组合作推进研制。"
+    },
+    {
+      "old": "<td>传记52页，转引2018-02-02访谈</td>",
+      "new": ""
+    },
+    {
+      "old": "</td><td>传记51–52页",
+      "new": ""
+    },
+    {
+      "old": "<td>传记51、53页；CQ-H04</td>",
+      "new": ""
+    },
+    {
+      "old": "机构书目列上海光明电镀厂、中国科学院上海有机化学研究所、江苏省泰州市电化厂共同署名。</td><td>CQ-H05机构书目；传记116页年表记三单位合作",
+      "new": "上海光明电镀厂、中国科学院上海有机化学研究所、江苏省泰州市电化厂共同署名。"
+    },
+    {
+      "old": "</td><td>CQ-H15，原刊315、323–324页",
+      "new": ""
+    },
+    {
+      "old": "第48–53页记研制与扩大试验，第52页转引李宗志《使用F53的经济效果》（《天津电镀》，1981年第1期，第19页），第53页图5-2为光明电镀厂现场照片，第60–63页记两类中间体、调聚和各组的后续工作。",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "。"
+    },
+    {
+      "old": "专题正文与来源供审阅；具体科学表述仍需专业核校",
+      "new": "陈庆云院士的科研成果、共同贡献与学术传承"
+    },
+    {
+      "old": "传记记述，",
+      "new": ""
+    },
+    {
+      "old": "<p class=\"a08-locator\">传记75–77页 · <a href=\"#a08-source-book\">HERITAGE-S01</a> · <a href=\"#ref-cq-r07\">CQ-R07</a> · <a href=\"#ref-cq-r08\">CQ-R08</a></p>",
+      "new": ""
+    },
+    {
+      "old": "传记记述获得了相对稳定的这类分子；原作研究还包括",
+      "new": "研究获得了相对稳定的这类分子，并考察"
+    },
+    {
+      "old": "<p class=\"a08-locator\">JOC2002，67：9421–9427；Synlett2006(3)：478–480；传记77页 · <a href=\"#ref-cq-h21\">CQ-H21</a> · <a href=\"#ref-cq-r09\">CQ-R09</a> · <a href=\"#a08-source-book\">HERITAGE-S01</a></p>",
+      "new": ""
+    },
+    {
+      "old": "传记所记角色与具体合作",
+      "new": "合作角色与共同研究"
+    },
+    {
+      "old": "<td>传记77页；CQ-H21</td>",
+      "new": ""
+    },
+    {
+      "old": "<td>传记77页；CQ-R09</td>",
+      "new": ""
+    },
+    {
+      "old": "传记列为参与二氟卡宾与小环方向的合作者，不据概述分派每项反应。</td><td>传记77页",
+      "new": "参与二氟卡宾与小环方向的研究；不据概述分派每项反应。"
+    },
+    {
+      "old": "</td><td>CQ-R07、CQ-R08",
+      "new": ""
+    },
+    {
+      "old": "传记明确记载的指导与合作角色按原叙述介绍；论文署名用于说明共同成果，不据署名",
+      "new": "合作角色与论文署名分别说明；共同署名不用于"
+    },
+    {
+      "old": "本轮以传记关联论文、具体化学对象和合作角色，只核对新增引用；SI／CIF对应与原作者已有理论研究的覆盖记录放在下一层AI资料页",
+      "new": "把论文、具体化学对象和合作角色相互对应；SI／CIF资料及原作者已有理论研究另在AI资料页说明"
+    },
+    {
+      "old": "在2018年的上海访谈中，他回忆",
+      "new": "他回忆，"
+    },
+    {
+      "old": "传记写到，",
+      "new": ""
+    },
+    {
+      "old": "据传记记述，经两年多探索，陈庆云等人找到了六氟丙烯的制取条件。后来的共聚研究用到了六氟丙烯、偏氟乙烯和四氟乙烯，团队陆续研制出氟橡胶2号、3号。上海有机所的生平资料也将原料路线的改进列为陈庆云的早期贡献",
+      "new": "经两年多探索，陈庆云等人找到了六氟丙烯的制取条件。后来的共聚研究用到了六氟丙烯、偏氟乙烯和四氟乙烯，团队陆续研制出氟橡胶2号、3号。六氟丙烯原料路线的改进成为陈庆云回国后的早期贡献之一"
+    },
+    {
+      "old": "传记所记",
+      "new": "关键"
+    },
+    {
+      "old": "这里沿传记叙述历史工作，不从历史1号、2号、3号名称自行生成",
+      "new": "历史上的1号、2号、3号是相应研究阶段的材料名称，不据此补写"
+    },
+    {
+      "old": "陈庆云对首项任务的回忆由传记转引，分馏与团队分工见传记正文。团队的早期试制报告尚待查得，传记中的“两年多”指研究历时",
+      "new": "这里呈现六氟丙烯制取、低温分离与后续材料工作的历史接续。“两年多”指研究历时，不代表具体装置产能；现有材料也不足以给出各阶段的完整配方与性能参数"
+    },
+    {
+      "old": "及出处",
+      "new": ""
+    },
+    {
+      "old": "<td>传记35–36页</td>",
+      "new": ""
+    },
+    {
+      "old": "</td><td>传记36–37页",
+      "new": ""
+    },
+    {
+      "old": "<td>传记37页</td>",
+      "new": ""
+    },
+    {
+      "old": "</td><td>传记39页",
+      "new": ""
+    },
+    {
+      "old": "第35–36页记氟橡胶1号及原料困难，第36页引陈庆云2018年1月3日上海访谈。第37页记裂解观察、低温分馏、研究室分工与后续橡胶，第39页记氟溴油。",
+      "new": ""
+    },
+    {
+      "old": "六氟丙烯段回顾原料制备路线的改进。",
+      "new": ""
+    },
+    {
+      "old": "第175–179页记两类调聚产物及链端结构，第177–182页记酰胺和羧酸等衍生转化。",
+      "new": ""
+    },
+    {
+      "old": "，第123–130页。第123页的低温分馏与色谱检查属于中国科学院应用化学研究所两位作者的实验",
+      "new": "：123–130"
+    },
+    {
+      "old": "传记还记载了自组装、液晶行为及氟碳相催化氧化等初步探索；这些性质目前按传记所述学位工作理解，不补写未经原文核读",
+      "new": "研究还延伸到自组装、液晶行为及氟碳相催化氧化等初步探索；这里不补写尚无代表性原文支持"
+    },
+    {
+      "old": "据传记记述，金利美与陈庆云研究的5-氟烷基卟啉具有自组装与液晶行为；刘超与陈庆云还利用带长氟烷基链的金属卟啉，初步研究了",
+      "new": "金利美与陈庆云研究5-氟烷基卟啉的自组装与液晶行为；刘超与陈庆云还利用带长氟烷基链的金属卟啉，初步研究"
+    },
+    {
+      "old": "；传记记录共同学习及还原反应中的发现过程",
+      "new": "，并在共同学习与还原实验中推进新的结构问题"
+    },
+    {
+      "old": "仕正从二氟甲基磺酸衍生物的断裂行为出发，发展二氟卡宾的产生与应用方法。据传记记载，",
+      "new": "士正从二氟甲基磺酸衍生物的断裂行为出发，发展二氟卡宾的产生与应用方法。"
+    },
+    {
+      "old": "仕正（传记用字",
+      "new": "士正（原刊署名；历史资料另见“朱仕正”"
+    },
+    {
+      "old": "传记记述其与陈庆云研究磺酸酯反应和二氟卡宾前体；相关两篇原刊作者字样保存为“朱士正”",
+      "new": "与陈庆云共同研究磺酸酯反应和二氟卡宾前体；具体工作仍按相应原论文归属"
+    },
+    {
+      "old": "传记记为",
+      "new": "该书章于"
+    },
+    {
+      "old": "第62–66页记磺酸酯的制备与反应、二氟卡宾前体及二氟二碘甲烷。",
+      "new": ""
+    },
+    {
+      "old": "据传记第58页，林永达、杨映松在实验室完成工艺工作后，又到上海有机所实验厂参加扩大试验，把液相连续工艺做到30吨级中试，所得产品质量通过技术鉴定。专利实例记录一次实验，中试规模和鉴定结果来自工程阶段的记载",
+      "new": "林永达、杨映松在实验室完成工艺工作后，又到上海有机所实验厂参加扩大试验，把液相连续工艺做到30吨级中试，所得产品质量通过技术鉴定。专利实例记录一次实验，中试规模和鉴定结果则属于后续工程阶段，不能相互替代"
+    },
+    {
+      "old": "传记记载，",
+      "new": ""
+    },
+    {
+      "old": "按陈庆云的回忆，初期试验用F-53作催化剂，后来团队",
+      "new": "陈庆云后来回忆，初期试验用F-53作催化剂；团队随后"
+    },
+    {
+      "old": "与",
+      "new": "和"
+    },
+    {
+      "old": "按公开说明书首页署名保存，独立于传记的项目贡献叙述",
+      "new": "该专利只对应具名发明人和申请人，不据此分配未列明的项目贡献"
+    },
+    {
+      "old": "传记还引用其1994年配套润滑油论文",
+      "new": "其1994年论文另记录配套润滑油研究"
+    },
+    {
+      "old": "传记此段",
+      "new": "现有材料"
+    },
+    {
+      "old": "第55页及图5-5记F-115的两条路线、F-502配制及奖证，第57–59页记HFC-134a路线选择、连续中试和配套用油，第118页载项目时间。第58–59页转引陈庆云、林永达发表于《上海化工》（1996年第1期，第11–14页）及杨映松发表于《制冷》（1994年第3期，第1–6页）的研究。",
+      "new": ""
+    },
+    {
+      "old": "见说明书第4页例一。",
+      "new": ""
+    },
+    {
+      "old": "传记所述原脱卤亚磺化反应的发现",
+      "new": "发现原脱卤亚磺化反应"
+    },
+    {
+      "old": "第69–72页记各类引发体系、具名合作者及改进脱卤亚磺化；第83–84页记曹海萍的分子内环化、黄小庭的零价镍及唐小军的工业氯代原料研究。",
+      "new": ""
+    },
+    {
+      "old": "<p class=\"a08-locator\">传记156页相关论著条目；Org. Lett.2020，22：2281–2286原摘要 · <a href=\"#a08-source-book\">HERITAGE-S01</a> · <a href=\"#ref-cq-r16\">CQ-R16</a></p>",
+      "new": ""
+    },
+    {
+      "old": "传记记述",
+      "new": ""
+    },
+    {
+      "old": "<p class=\"a08-locator\">传记85–86页；2017原论文既有摘要登记 · <a href=\"#a08-source-book\">HERITAGE-S01</a> · <a href=\"#ref-cq-h10\">CQ-H10</a></p>",
+      "new": ""
+    },
+    {
+      "old": "传记记录了陈庆云对含氟表面活性剂稳定性与环境问题的再思考，并记述郭勇承担相关替代化学研究。这里保存的是研究动机和合作分工，反映已有应用知识在新的环境认识下继续提出",
+      "new": "陈庆云重新思考含氟表面活性剂的稳定性与环境问题，郭勇承担相关替代化学研究。已有应用知识由此在新的环境认识下继续形成研究"
+    },
+    {
+      "old": "<p class=\"a08-locator\">传记86、158–159页；Langmuir2023，39(41)：14519–14527摘要 · <a href=\"#a08-source-book\">HERITAGE-S01</a> · <a href=\"#ref-cq-h11\">CQ-H11</a></p>",
+      "new": ""
+    },
+    {
+      "old": "传记记录2013年回组后沿既有特色继续拓展的研究思路。</td><td>传记85–86页",
+      "new": "2013年回组后沿既有特色继续拓展研究思路。"
+    },
+    {
+      "old": "传记在金属盐研究方向中具名列示；不把方向参与名单套为每篇论文的全体作者。</td><td>传记85–86页",
+      "new": "参与金属盐研究方向；不把方向参与名单套为每篇论文的全体作者。"
+    },
+    {
+      "old": "<td>CQ-R16</td>",
+      "new": ""
+    },
+    {
+      "old": "传记记述其承担相关含氟表面活性剂替代化学研究。</td><td>传记86页",
+      "new": "承担相关含氟表面活性剂替代化学研究。"
+    },
+    {
+      "old": "</td><td>CQ-H11",
+      "new": ""
+    }
+  ]
+}
