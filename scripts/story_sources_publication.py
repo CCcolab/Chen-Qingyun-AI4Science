@@ -16,6 +16,7 @@ import four_primary_achievements_publication as primary
 import four_eight_deepening_publication as deepening
 import homepage_compaction_publication as homepage_compaction
 import reader_source_cleanup_publication as reader_cleanup
+import ci_compatibility_publication as ci_compat
 from stories_rebalance_publication import PUBLICATION_PATHS, _file, _identity, _reconstruct, _sha
 
 
@@ -84,7 +85,8 @@ def _previous(root):
                  (directory, directory.V54_ADDITIONS), (primary, primary.V55_ADDITIONS),
                  (deepening, deepening.V56_ADDITIONS),
                  (homepage_compaction, homepage_compaction.V57_ADDITIONS),
-                 (reader_cleanup, reader_cleanup.V58_ADDITIONS))
+                 (reader_cleanup, reader_cleanup.V58_ADDITIONS),
+                 (ci_compat, ci_compat.V59_ADDITIONS))
     latest = next((revision for revision, _ in reversed(revisions) if (root/revision.MANIFEST).is_file()), None)
     if latest is None and not (root/MANIFEST).is_file():
         return root, None

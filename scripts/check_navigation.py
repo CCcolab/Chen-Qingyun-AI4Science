@@ -161,6 +161,21 @@ def inspect_navigation(root: Path = ROOT) -> dict:
             def overview_check(name=name):
                 result = inspect_line_numbering(site/name)
                 overview = page(name)
+                legacy_navs = [n for n in overview.nodes() if n.tag == 'nav'
+                               and n.attrs.get('aria-label') == '按九条成果线查阅专题']
+                if legacy_navs:
+                    legacy_nav = one(legacy_navs, 'Legacy nine-line topic navigation')
+                    legacy_links = links(legacy_nav)
+                    expected = [(DIRECTORY, 'topic-line-'+number.lower()) for number in LINES]
+                    actual = [destination(site, name, link) for link in legacy_links]
+                    if len(legacy_links) != len(LINES) or actual != expected:
+                        raise ValueError('Legacy topic navigation must retain the ordered A01–A09 directory links')
+                    if any(not re.match(number+r'\b', link.text())
+                           for number, link in zip(LINES, legacy_links)):
+                        raise ValueError('Legacy topic navigation labels must retain the ordered A01–A09 entries')
+                    result.update({'directory_layout': 'legacy-nine-line',
+                                   'topic_directory_lines': LINES})
+                    return result
                 science = one((n for n in overview.nodes() if n.attrs.get('id') == 'achievement-lines-preview'), 'Achievement-line preview')
                 for ident in ('topic-preview', 'overview'):
                     anchor = one((n for n in overview.nodes() if n.attrs.get('id') == ident), ident+' compatibility anchor')
@@ -178,7 +193,8 @@ def inspect_navigation(root: Path = ROOT) -> dict:
                 if destination(site, name, directory_link) != (DIRECTORY, ''):
                     raise ValueError('Complete topic-directory link must lead to the real directory')
                 result.update({'achievement_preview_lines': LINES[:8], 'heritage_entry': 'A09',
-                               'compatibility_anchors': ['topic-preview', 'overview']})
+                               'compatibility_anchors': ['topic-preview', 'overview'],
+                               'directory_layout': 'compact-achievement-preview'})
                 if name == 'index.html':
                     for ident, owner in LEGACY_ARCHIVES.items():
                         archive = one((n for n in overview.nodes() if n.attrs.get('id') == ident), ident)

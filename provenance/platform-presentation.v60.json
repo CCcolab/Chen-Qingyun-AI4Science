@@ -1,0 +1,156 @@
+{
+  "schema_version": "60.0",
+  "presentation_id": "PLATFORM-CI-COMPATIBILITY-20261122-v60",
+  "publication_kind": "ci_compatibility_and_public_label_cleanup",
+  "previous_presentation_commit": "9b1831a57f1185d5fa81895997a7579111db5d41",
+  "changed_html_paths": [
+    "research/index.html"
+  ],
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v59.json",
+    "sha256": "b50513ba1f83c131fffaf6da0cbf32e0b63330f325c4a15033740d4602c9a75b",
+    "presentation_id": "PLATFORM-READER-SOURCE-CLEANUP-20261122-v59"
+  },
+  "change_reason": "补齐AI研究页成果线名称，并让导航检查兼容已归档的九线目录与当前精简结构；不改变历史成果、科学数据或研究状态。",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "M0_resumed": false,
+  "Nemotron_training_resumed": false,
+  "reversible_text_files": [
+    {
+      "path": "scripts/check_navigation.py",
+      "old_sha256": "0944eccf173539751930f77ec4372dde5bc42e0ae09c2dc9e7ebbe2d4b996b94",
+      "old_bytes": 11108,
+      "new_sha256": "603f2c0200cfa8980a232cd5d279d3ec488c6b31a5636d5147a8492fd837a681",
+      "new_bytes": 12349,
+      "edits": [
+        {
+          "old_offset": 7385,
+          "replacement": 0
+        },
+        {
+          "old_offset": 9240,
+          "replacement": 1
+        }
+      ]
+    },
+    {
+      "path": "scripts/story_sources_publication.py",
+      "old_sha256": "2ab9b34be36e5e03619de6112c4454fd4174ce849b05c8bdb0ef5677a4efc6e0",
+      "old_bytes": 8368,
+      "new_sha256": "34ff5dda67b933a65b2b8c05acc40fac1f2f8106ad3aa35fcc4a0dadeddca1b8",
+      "new_bytes": 8472,
+      "edits": [
+        {
+          "old_offset": 757,
+          "replacement": 2
+        },
+        {
+          "old_offset": 4081,
+          "replacement": 3
+        }
+      ]
+    },
+    {
+      "path": "site/research/index.html",
+      "old_sha256": "70ea732f44a5ce9264340a9f97e06a98ec1f2085ebe6df58b33c8ea68be69832",
+      "old_bytes": 83832,
+      "new_sha256": "e1abf3d84968c6e86b0c0311ffa23632adde0af48fd279a26efa1337d9fa9fcb",
+      "new_bytes": 84227,
+      "edits": [
+        {
+          "old_offset": 27535,
+          "replacement": 4
+        },
+        {
+          "old_offset": 36015,
+          "replacement": 5
+        },
+        {
+          "old_offset": 48240,
+          "replacement": 6
+        },
+        {
+          "old_offset": 51912,
+          "replacement": 7
+        },
+        {
+          "old_offset": 54336,
+          "replacement": 7
+        },
+        {
+          "old_offset": 58218,
+          "replacement": 8
+        },
+        {
+          "old_offset": 58636,
+          "replacement": 8
+        },
+        {
+          "old_offset": 66006,
+          "replacement": 9
+        },
+        {
+          "old_offset": 66364,
+          "replacement": 9
+        },
+        {
+          "old_offset": 72523,
+          "replacement": 10
+        },
+        {
+          "old_offset": 72918,
+          "replacement": 10
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "",
+      "new": "legacy_navs = [n for n in overview.nodes() if n.tag == 'nav'\n                               and n.attrs.get('aria-label') == '按九条成果线查阅专题']\n                if legacy_navs:\n                    legacy_nav = one(legacy_navs, 'Legacy nine-line topic navigation')\n                    legacy_links = links(legacy_nav)\n                    expected = [(DIRECTORY, 'topic-line-'+number.lower()) for number in LINES]\n                    actual = [destination(site, name, link) for link in legacy_links]\n                    if len(legacy_links) != len(LINES) or actual != expected:\n                        raise ValueError('Legacy topic navigation must retain the ordered A01–A09 directory links')\n                    if any(not re.match(number+r'\\b', link.text())\n                           for number, link in zip(LINES, legacy_links)):\n                        raise ValueError('Legacy topic navigation labels must retain the ordered A01–A09 entries')\n                    result.update({'directory_layout': 'legacy-nine-line',\n                                   'topic_directory_lines': LINES})\n                    return result\n                "
+    },
+    {
+      "old": "",
+      "new": ",\n                               'directory_layout': 'compact-achievement-preview'"
+    },
+    {
+      "old": "",
+      "new": "\nimport ci_compatibility_publication as ci_compat"
+    },
+    {
+      "old": "",
+      "new": "_ADDITIONS),\n                 (ci_compat, ci_compat.V59"
+    },
+    {
+      "old": "",
+      "new": "（含氟单体、氟橡胶与氟油）"
+    },
+    {
+      "old": "",
+      "new": "（全氟叔丁基（PFtB）化学）"
+    },
+    {
+      "old": "",
+      "new": "（F-53铬雾抑制剂）"
+    },
+    {
+      "old": "",
+      "new": "（制冷剂与配套技术）"
+    },
+    {
+      "old": "",
+      "new": "（磺酸酯、二氟卡宾与三氟甲基化）"
+    },
+    {
+      "old": "",
+      "new": "（单电子转移与C–Cl活化）"
+    },
+    {
+      "old": "",
+      "new": "（交叉研究与晚年拓展）"
+    }
+  ]
+}
