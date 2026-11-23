@@ -18,6 +18,7 @@ import homepage_compaction_publication as homepage_compaction
 import reader_source_cleanup_publication as reader_cleanup
 import ci_compatibility_publication as ci_compat
 import major_achievement_card_publication as major_card
+import centenary_heritage_publication as centenary
 from stories_rebalance_publication import PUBLICATION_PATHS, _file, _identity, _reconstruct, _sha
 
 
@@ -88,7 +89,8 @@ def _previous(root):
                  (homepage_compaction, homepage_compaction.V57_ADDITIONS),
                  (reader_cleanup, reader_cleanup.V58_ADDITIONS),
                  (ci_compat, ci_compat.V59_ADDITIONS),
-                 (major_card, major_card.V60_ADDITIONS))
+                 (major_card, major_card.V60_ADDITIONS),
+                 (centenary, centenary.V61_ADDITIONS))
     latest = next((revision for revision, _ in reversed(revisions) if (root/revision.MANIFEST).is_file()), None)
     if latest is None and not (root/MANIFEST).is_file():
         return root, None
