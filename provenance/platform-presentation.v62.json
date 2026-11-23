@@ -34,7 +34,7 @@
       "new_bytes": 8691,
       "edits": [
         {
-          "old_offset": 863,
+          "old_offset": 862,
           "replacement": 0
         },
         {
@@ -47,44 +47,132 @@
       "path": "site/achievements/index.html",
       "old_sha256": "2e2bb5898ec75a2614ade430b7e4bee8f31d7fe88e2bc5d7f85b220aff7cda4a",
       "old_bytes": 83770,
-      "new_sha256": "2d97d63d08b9efa7bc91a2f9db4c5573d77fcd149f0a1fab25f33c5ad23c5d37",
-      "new_bytes": 84166,
+      "new_sha256": "86bb5d58be15efad04a311c2390cc846b210d9d37cbf8eb9dedabdbdbd7fe740",
+      "new_bytes": 84246,
       "edits": [
         {
           "old_offset": 313,
           "replacement": 2
         },
         {
-          "old_offset": 6926,
+          "old_offset": 325,
           "replacement": 3
         },
         {
-          "old_offset": 10003,
+          "old_offset": 358,
           "replacement": 4
         },
         {
-          "old_offset": 10893,
+          "old_offset": 6926,
           "replacement": 5
         },
         {
-          "old_offset": 17495,
+          "old_offset": 7088,
           "replacement": 6
         },
         {
-          "old_offset": 19810,
+          "old_offset": 10003,
           "replacement": 7
         },
         {
-          "old_offset": 20179,
+          "old_offset": 10007,
           "replacement": 8
         },
         {
-          "old_offset": 36451,
+          "old_offset": 10893,
           "replacement": 9
         },
         {
-          "old_offset": 82869,
+          "old_offset": 10962,
           "replacement": 10
+        },
+        {
+          "old_offset": 10980,
+          "replacement": 11
+        },
+        {
+          "old_offset": 11675,
+          "replacement": 12
+        },
+        {
+          "old_offset": 11717,
+          "replacement": 13
+        },
+        {
+          "old_offset": 11754,
+          "replacement": 14
+        },
+        {
+          "old_offset": 12723,
+          "replacement": 15
+        },
+        {
+          "old_offset": 12824,
+          "replacement": 16
+        },
+        {
+          "old_offset": 12830,
+          "replacement": 17
+        },
+        {
+          "old_offset": 17495,
+          "replacement": 18
+        },
+        {
+          "old_offset": 17646,
+          "replacement": 19
+        },
+        {
+          "old_offset": 17678,
+          "replacement": 20
+        },
+        {
+          "old_offset": 17682,
+          "replacement": 21
+        },
+        {
+          "old_offset": 17704,
+          "replacement": 22
+        },
+        {
+          "old_offset": 17821,
+          "replacement": 23
+        },
+        {
+          "old_offset": 17881,
+          "replacement": 24
+        },
+        {
+          "old_offset": 18031,
+          "replacement": 25
+        },
+        {
+          "old_offset": 19810,
+          "replacement": 26
+        },
+        {
+          "old_offset": 19832,
+          "replacement": 27
+        },
+        {
+          "old_offset": 19845,
+          "replacement": 28
+        },
+        {
+          "old_offset": 19911,
+          "replacement": 29
+        },
+        {
+          "old_offset": 20174,
+          "replacement": 30
+        },
+        {
+          "old_offset": 36447,
+          "replacement": 31
+        },
+        {
+          "old_offset": 82869,
+          "replacement": 32
         }
       ]
     },
@@ -92,124 +180,352 @@
       "path": "site/index.html",
       "old_sha256": "10a50487608cc207ae59bf1c72de07806a8d9c5cadb1bee3bf70ce6e4cceadfe",
       "old_bytes": 220430,
-      "new_sha256": "2443f5eecd33a6a6c90e33b28f39d8e7d710dc4def6eaaf63bd179fc2a7eba51",
-      "new_bytes": 220211,
+      "new_sha256": "d208a78698d2ab3e5569d9bd47d17e931fc737f2288e2d3d90761a5ea2c60fde",
+      "new_bytes": 220244,
       "edits": [
         {
           "old_offset": 168,
-          "replacement": 11
-        },
-        {
-          "old_offset": 6500,
-          "replacement": 12
-        },
-        {
-          "old_offset": 10644,
-          "replacement": 13
-        },
-        {
-          "old_offset": 11521,
-          "replacement": 14
-        },
-        {
-          "old_offset": 12302,
-          "replacement": 15
-        },
-        {
-          "old_offset": 13631,
-          "replacement": 16
-        },
-        {
-          "old_offset": 17909,
-          "replacement": 17
-        },
-        {
-          "old_offset": 21082,
-          "replacement": 18
-        },
-        {
-          "old_offset": 25665,
-          "replacement": 19
-        },
-        {
-          "old_offset": 27361,
-          "replacement": 20
-        },
-        {
-          "old_offset": 27716,
-          "replacement": 21
-        },
-        {
-          "old_offset": 31688,
-          "replacement": 22
-        },
-        {
-          "old_offset": 33012,
-          "replacement": 23
-        },
-        {
-          "old_offset": 34262,
-          "replacement": 24
-        },
-        {
-          "old_offset": 35811,
-          "replacement": 25
-        },
-        {
-          "old_offset": 37402,
-          "replacement": 26
-        },
-        {
-          "old_offset": 38804,
-          "replacement": 27
-        },
-        {
-          "old_offset": 39690,
-          "replacement": 28
-        },
-        {
-          "old_offset": 40369,
-          "replacement": 29
-        },
-        {
-          "old_offset": 48567,
-          "replacement": 30
-        },
-        {
-          "old_offset": 50277,
-          "replacement": 31
-        },
-        {
-          "old_offset": 55378,
-          "replacement": 32
-        },
-        {
-          "old_offset": 58279,
           "replacement": 33
         },
         {
-          "old_offset": 59045,
+          "old_offset": 189,
           "replacement": 34
         },
         {
-          "old_offset": 67464,
+          "old_offset": 198,
           "replacement": 35
         },
         {
-          "old_offset": 79393,
+          "old_offset": 343,
           "replacement": 36
         },
         {
-          "old_offset": 82548,
+          "old_offset": 6500,
+          "replacement": 5
+        },
+        {
+          "old_offset": 6705,
           "replacement": 37
         },
         {
-          "old_offset": 141294,
+          "old_offset": 10644,
           "replacement": 38
         },
         {
-          "old_offset": 169495,
+          "old_offset": 10652,
           "replacement": 39
+        },
+        {
+          "old_offset": 11521,
+          "replacement": 9
+        },
+        {
+          "old_offset": 11590,
+          "replacement": 10
+        },
+        {
+          "old_offset": 11608,
+          "replacement": 11
+        },
+        {
+          "old_offset": 12300,
+          "replacement": 40
+        },
+        {
+          "old_offset": 13543,
+          "replacement": 41
+        },
+        {
+          "old_offset": 13544,
+          "replacement": 42
+        },
+        {
+          "old_offset": 13617,
+          "replacement": 43
+        },
+        {
+          "old_offset": 17909,
+          "replacement": 44
+        },
+        {
+          "old_offset": 21082,
+          "replacement": 45
+        },
+        {
+          "old_offset": 23011,
+          "replacement": 46
+        },
+        {
+          "old_offset": 23017,
+          "replacement": 47
+        },
+        {
+          "old_offset": 25665,
+          "replacement": 18
+        },
+        {
+          "old_offset": 27361,
+          "replacement": 26
+        },
+        {
+          "old_offset": 27383,
+          "replacement": 27
+        },
+        {
+          "old_offset": 27396,
+          "replacement": 28
+        },
+        {
+          "old_offset": 27462,
+          "replacement": 29
+        },
+        {
+          "old_offset": 27711,
+          "replacement": 30
+        },
+        {
+          "old_offset": 31688,
+          "replacement": 48
+        },
+        {
+          "old_offset": 31820,
+          "replacement": 49
+        },
+        {
+          "old_offset": 33012,
+          "replacement": 50
+        },
+        {
+          "old_offset": 33015,
+          "replacement": 51
+        },
+        {
+          "old_offset": 33069,
+          "replacement": 52
+        },
+        {
+          "old_offset": 33084,
+          "replacement": 53
+        },
+        {
+          "old_offset": 34262,
+          "replacement": 54
+        },
+        {
+          "old_offset": 34291,
+          "replacement": 55
+        },
+        {
+          "old_offset": 34305,
+          "replacement": 56
+        },
+        {
+          "old_offset": 34320,
+          "replacement": 57
+        },
+        {
+          "old_offset": 34340,
+          "replacement": 58
+        },
+        {
+          "old_offset": 34346,
+          "replacement": 59
+        },
+        {
+          "old_offset": 34412,
+          "replacement": 60
+        },
+        {
+          "old_offset": 35811,
+          "replacement": 61
+        },
+        {
+          "old_offset": 35828,
+          "replacement": 62
+        },
+        {
+          "old_offset": 35861,
+          "replacement": 63
+        },
+        {
+          "old_offset": 35911,
+          "replacement": 64
+        },
+        {
+          "old_offset": 35956,
+          "replacement": 65
+        },
+        {
+          "old_offset": 35998,
+          "replacement": 66
+        },
+        {
+          "old_offset": 36022,
+          "replacement": 67
+        },
+        {
+          "old_offset": 37402,
+          "replacement": 68
+        },
+        {
+          "old_offset": 37444,
+          "replacement": 69
+        },
+        {
+          "old_offset": 37450,
+          "replacement": 70
+        },
+        {
+          "old_offset": 37492,
+          "replacement": 71
+        },
+        {
+          "old_offset": 37545,
+          "replacement": 72
+        },
+        {
+          "old_offset": 38804,
+          "replacement": 73
+        },
+        {
+          "old_offset": 38966,
+          "replacement": 74
+        },
+        {
+          "old_offset": 38978,
+          "replacement": 75
+        },
+        {
+          "old_offset": 38987,
+          "replacement": 17
+        },
+        {
+          "old_offset": 39019,
+          "replacement": 76
+        },
+        {
+          "old_offset": 39043,
+          "replacement": 77
+        },
+        {
+          "old_offset": 39055,
+          "replacement": 78
+        },
+        {
+          "old_offset": 39124,
+          "replacement": 79
+        },
+        {
+          "old_offset": 39232,
+          "replacement": 80
+        },
+        {
+          "old_offset": 39252,
+          "replacement": 81
+        },
+        {
+          "old_offset": 39309,
+          "replacement": 82
+        },
+        {
+          "old_offset": 39346,
+          "replacement": 83
+        },
+        {
+          "old_offset": 39369,
+          "replacement": 84
+        },
+        {
+          "old_offset": 40369,
+          "replacement": 85
+        },
+        {
+          "old_offset": 40433,
+          "replacement": 86
+        },
+        {
+          "old_offset": 40507,
+          "replacement": 87
+        },
+        {
+          "old_offset": 40513,
+          "replacement": 88
+        },
+        {
+          "old_offset": 40657,
+          "replacement": 89
+        },
+        {
+          "old_offset": 41002,
+          "replacement": 90
+        },
+        {
+          "old_offset": 41017,
+          "replacement": 91
+        },
+        {
+          "old_offset": 41262,
+          "replacement": 92
+        },
+        {
+          "old_offset": 48567,
+          "replacement": 93
+        },
+        {
+          "old_offset": 50272,
+          "replacement": 94
+        },
+        {
+          "old_offset": 55373,
+          "replacement": 95
+        },
+        {
+          "old_offset": 58279,
+          "replacement": 96
+        },
+        {
+          "old_offset": 59040,
+          "replacement": 97
+        },
+        {
+          "old_offset": 60451,
+          "replacement": 98
+        },
+        {
+          "old_offset": 63526,
+          "replacement": 99
+        },
+        {
+          "old_offset": 64980,
+          "replacement": 100
+        },
+        {
+          "old_offset": 66850,
+          "replacement": 101
+        },
+        {
+          "old_offset": 67459,
+          "replacement": 102
+        },
+        {
+          "old_offset": 79393,
+          "replacement": 45
+        },
+        {
+          "old_offset": 82548,
+          "replacement": 46
+        },
+        {
+          "old_offset": 82554,
+          "replacement": 47
+        },
+        {
+          "old_offset": 141294,
+          "replacement": 103
+        },
+        {
+          "old_offset": 169495,
+          "replacement": 32
         }
       ]
     },
@@ -222,7 +538,7 @@
       "edits": [
         {
           "old_offset": 231,
-          "replacement": 40
+          "replacement": 32
         }
       ]
     },
@@ -235,7 +551,7 @@
       "edits": [
         {
           "old_offset": 196,
-          "replacement": 41
+          "replacement": 32
         }
       ]
     },
@@ -248,7 +564,11 @@
       "edits": [
         {
           "old_offset": 138,
-          "replacement": 42
+          "replacement": 104
+        },
+        {
+          "old_offset": 159,
+          "replacement": 105
         }
       ]
     },
@@ -261,11 +581,15 @@
       "edits": [
         {
           "old_offset": 137,
-          "replacement": 43
+          "replacement": 106
         },
         {
-          "old_offset": 1884,
-          "replacement": 44
+          "old_offset": 188,
+          "replacement": 4
+        },
+        {
+          "old_offset": 1881,
+          "replacement": 107
         }
       ]
     },
@@ -278,7 +602,7 @@
       "edits": [
         {
           "old_offset": 201,
-          "replacement": 45
+          "replacement": 32
         }
       ]
     },
@@ -291,7 +615,11 @@
       "edits": [
         {
           "old_offset": 138,
-          "replacement": 46
+          "replacement": 104
+        },
+        {
+          "old_offset": 168,
+          "replacement": 105
         }
       ]
     }
@@ -299,146 +627,182 @@
   "reverse_text_patch_pool": [
     {
       "old": "",
-      "new": "import centenary_heritage_publication as centenary\n"
+      "new": "\nimport centenary_heritage_publication as centenary"
     },
     {
       "old": "",
       "new": ",\n                 (centenary, centenary.V61_ADDITIONS)"
     },
     {
-      "old": "开拓成就与学术传承｜陈庆云院士",
-      "new": "主要学术成就｜陈庆云院士学术成就与传承"
+      "old": "开拓",
+      "new": "主要学术"
     },
     {
-      "old": "@media(max-width:720px){.major-achievements{padding:45px 0}.major-achievement-grid{grid-template-columns:minmax(0,1fr);gap:18px}.major-achievement-card{padding:22",
-      "new": ".heritage-line-feature{display:grid;grid-template-columns:minmax(220px,.8fr) minmax(0,1.2fr);gap:28px;align-items:center;margin:22px 0 18px;padding:24px 28px;background:#173b37;color:#f5f7ef;border-left:5px solid var(--gold)}\n.heritage-line-feature h3{font-size:clamp(22px,2.5vw,30px);margin:.2rem 0}\n.heritage-line-feature a{color:#fff;text-decoration-thickness:1px;text-underline-offset:.22em}\n.heritage-line-feature p{margin:0;line-height:1.8}\n.heritage-line-kicker{font-size:14px;font-weight:700;letter-spacing:.08em;color:#cbded3}\n.case.heritage-case{border-top:4px solid var(--gold);padding-top:32px}\n.heritage-case .case-main{background:#f7f1e7;border-color:#c9ad86}\n@media(max-width:720px){.major-achievements{padding:45px 0}.major-achievement-grid{grid-template-columns:minmax(0,1fr);gap:18px}.major-achievement-card{padding:22px}.heritage-line-feature{grid-template-columns:1fr;gap:10px;padding:20"
-    },
-    {
-      "old": "gap:13px;text-decoration:none}.brand-mark{width:38px;height:38px;border:1px solid var(--teal);color:var(--teal);display:grid;place-items:center;font:700 18px var(--serif)",
-      "new": "text-decoration:none"
-    },
-    {
-      "old": "mark\" aria-hidden=\"true\">陈</span><span class=\"brand-name\">陈庆云院士学术成就<small>有机氟化学研究与传承</small></span></a><nav class=\"nav\" aria-label=\"主导航\"><a href=\"../index.html#people\">生平与传承</a><a href=\"#major-achievements\">主要学术成就</a><a href=\"../index.html#timeline\">研究历程</a><a href=\"../index.html#topic-preview\">专题资料</a><a href=\"../index.html#evidence\">资料与依据</a><a href=\"../index.html#research\">AI辅助整理</a><a href=\"../index.html#about\">关于平台</a></nav></div></header>\n<main id=\"main\" tabindex=\"-1\"><section class=\"shell-section\"><div class=\"wrap\"><h1>主要学术成就与研究传承</h1><p><a href=\"#major-achievements\">四项主要学术成就</a> · <a href=\"#achievement-lines-preview\">完整科研脉络：八条科研成果线</a> · <a href=\"#line-a09\">A09（学科建设与人才培养）</a> · <a href=\"#heritage-stories-all\">合作与育人故事</a></p><p>从六氟丙酮到含氟大环，陈庆云与合作者既探索分子怎样反应，也把实验室中的发现带到材料生产现场。</p><p><a href=\"../index.html\">返回平台首页</a> · <a href=\"../topics/index.html\">专题目录</a> · <a href=\"../index.html#source-index\">公开资料索引</a></p></div></section><section class=\"major-achievements\" id=\"major-achievements\" aria-labelledby=\"major-achievements-title\"><div class=\"wrap\">\n<div class=\"section-head\"><div><h2 id=\"major-achievements-title\">四项主要学术成就</h2></div><p>四项成就是读者认识代表工作的第一层入口：F-53研制、两类含氟试剂、单电子转移反应与氟烷基卟啉。它们分别进入A04（F-53铬雾抑制剂）、A06（磺酸酯、二氟卡宾与三氟甲基化）、A07（单电子转移与C–Cl活化）和A08（交叉研究与晚年拓展），但不替代A01（全氟酮化学：六氟丙酮与双酚AF）—A08（交叉研究与晚年拓展）构成的",
-      "new": "name\">陈庆云纪念专题<small>学术成就与传承</small></span></a><nav class=\"nav\" aria-label=\"主导航\"><a href=\"../index.html#people\">生平与传承</a><a href=\"#major-achievements\">主要学术成就</a><a href=\"../index.html#timeline\">研究历程</a><a href=\"../index.html#topic-preview\">专题资料</a><a href=\"../index.html#evidence\">资料与依据</a><a href=\"../index.html#research\">AI辅助整理</a><a href=\"../index.html#about\">关于平台</a></nav></div></header>\n<main id=\"main\" tabindex=\"-1\"><section class=\"shell-section\"><div class=\"wrap\"><h1>主要学术成就与研究传承</h1><p><a href=\"#major-achievements\">四项主要学术成就</a> · <a href=\"#achievement-lines-preview\">八条科研成果线与一条学术传承线</a> · <a href=\"#heritage-stories-all\">合作与育人故事</a></p><p>从六氟丙酮到含氟大环，陈庆云与合作者既探索分子怎样反应，也把实验室中的发现带到材料生产现场。</p><p><a href=\"../index.html\">返回平台首页</a> · <a href=\"../topics/index.html\">专题目录</a> · <a href=\"../index.html#source-index\">公开资料索引</a></p></div></section><section class=\"major-achievements\" id=\"major-achievements\" aria-labelledby=\"major-achievements-title\"><div class=\"wrap\">\n<div class=\"section-head\"><div><h2 id=\"major-achievements-title\">四项主要学术成就</h2></div><p>四项成就是读者认识代表工作的第一层入口：F-53研制、两类含氟试剂、单电子转移反应与氟烷基卟啉。它们分别进入A04（F-53铬雾抑制剂）、A06（磺酸酯、二氟卡宾与三氟甲基化）、A07（单电子转移与C–Cl活化）和A08（交叉研究与晚年拓展），并与A01—A08各线的其他工作共同构成"
-    },
-    {
-      "old": "</h2><p>A01（全氟酮化学：六氟丙酮与双酚AF）—A08（交叉研究与晚年拓展）按研究问题展开陈庆云先生各时期的成果。四项主要成就是其中A04（F-53铬雾抑制剂）、A06（磺酸酯、二氟卡宾与三氟甲基化）、A07（单电子转移与C–Cl活化）、A08（交叉研究与晚年拓展）的标志性入口；A01（全氟酮化学：六氟丙酮与双酚AF）、A02（含氟单体、氟橡胶与氟油）、A03（全氟叔丁基（PFtB）化学）、A05（制冷剂与配套技术）及各线的其他分支同样保留在完整脉络中",
-      "new": "与一条学术传承线</h2><p>A01（全氟酮化学：六氟丙酮与双酚AF）—A08（交叉研究与晚年拓展）按研究问题展开陈庆云先生各时期的成果；A09（学科建设与人才培养）独立呈现研究经验怎样通过合作、育人和学术服务传给后人"
-    },
-    {
-      "old": "p id=\"group-community\">学术传承 · <a href=\"#line-a09\">A09（学科建设与人才培养）</a></p",
-      "new": "aside class=\"heritage-line-feature\" id=\"group-community\" aria-labelledby=\"heritage-line-feature-title\"><div><p class=\"heritage-line-kicker\">一条学术传承主线</p><h3 id=\"heritage-line-feature-title\"><a href=\"#line-a09\">A09（学科建设与人才培养）</a></h3></div><p>从自主选题、谱图讨论和论文写作，到团队带教、期刊工作与国际交流，呈现研究经验怎样传给后人。</p></aside"
-    },
-    {
-      "old": "div class=\"kicker\">SCIENTIFIC ACHIEVEMENTS AND CONTINUITY</div><",
+      "old": "与学术传承",
       "new": ""
     },
     {
       "old": "",
-      "new": " heritage-case"
+      "new": "学术成就与传承"
     },
     {
       "old": "",
-      "new": "与传承"
-    },
-    {
-      "old": "纪念陈庆云院士，介绍生平、开拓性学术成就与育人学风，保存原始文献与合作记录，传承科学精神。\">\n<title>陈庆云院士学术成就与科学",
-      "new": "迎接陈庆云院士诞辰一百周年，介绍其生平、开拓性学术成就与育人学风，保存原始文献与合作记录，传承科学精神。\">\n<title>陈庆云院士学术成就与"
-    },
-    {
-      "old": "@media(max-width:720px){.major-achievements{padding:36px 0}.major-achievement-grid{grid-template-columns:minmax(0,1fr);gap:14px}.major-achievement-card{padding:18px}.research-index-section{padding:36px 0 4",
-      "new": ".heritage-line-feature{display:grid;grid-template-columns:minmax(220px,.8fr) minmax(0,1.2fr);gap:28px;align-items:center;margin:22px 0 18px;padding:24px 28px;background:#173b37;color:#f5f7ef;border-left:5px solid var(--gold)}\n.heritage-line-feature h3{font-size:clamp(22px,2.5vw,30px);margin:.2rem 0}\n.heritage-line-feature a{color:#fff;text-decoration-thickness:1px;text-underline-offset:.22em}\n.heritage-line-feature p{margin:0;line-height:1.8}\n.heritage-line-kicker{font-size:14px;font-weight:700;letter-spacing:.08em;color:#cbded3}\n.case.heritage-case{border-top:4px solid var(--gold);padding-top:32px}\n.heritage-case .case-main{background:#f7f1e7;border-color:#c9ad86}\n@media(max-width:720px){.major-achievements{padding:36px 0}.major-achievement-grid{grid-template-columns:minmax(0,1fr);gap:14px}.major-achievement-card{padding:18px}.research-index-section{padding:36px 0 40px}.heritage-line-feature{grid-template-columns:1fr;gap:10px;padding:2"
-    },
-    {
-      "old": "gap:13px;text-decoration:none}.brand-mark{width:38px;height:38px;border:1px solid var(--teal);color:var(--teal);display:grid;place-items:center;font:700 18px var(--serif)",
-      "new": "text-decoration:none"
-    },
-    {
-      "old": "mark\" aria-hidden=\"true\">陈</span><span class=\"brand-name\">陈庆云院士学术成就<small>有机氟化学研究",
-      "new": "name\">陈庆云纪念专题<small>学术成就"
-    },
-    {
-      "old": "hero h1{font-size:clamp(42px,5.3vw,72px);margin:20px 0 15px;letter-spacing:.02em}.hero-sub{color:#bad0c0;font:clamp(18px,2vw,24px) var(--serif);letter-spacing:.09em}.hero-desc{font-size:17px;color:#c9d9d0;max-width:520px;margin-top:34px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero-actions .button{border-color:#c7d8c9;color:#fff}.hero-actions .primary{background:#edf2e8;border-color:#edf2e8;color:#173f3a}.hero-visual{height:370px;position:relative;border-top:1px solid #6d8e80;border-bottom:1px solid #6d8e80;display:flex;align-items:center;justify-content:center}.orb{width:min(300px,75%);aspect-ratio:1;border:1px solid #729689;border-radius:50%;position:relative;display:grid;place-items:center}.orb:before,.orb:after{content:'';position:absolute;border:1px solid #4c766a;border-radius:50%;inset:18%}.orb:after{inset:36%;background:#d6e2d0}.orbit-label{position:absolute;font-size:12px;letter-spacing:.12em;color:#c8d9ce}.ol1{left:0;top:20px}.ol2{right:0;bottom:22px}.hero-note{position:absolute;bottom:-35px;right:0;font-size:11px;color:#a4bcaf;letter-spacing:.1em}@media(max-width:720px){.hero-grid{display:block;padding:58px 0 68px}.hero-visual{height:240px;margin-top:55px}.orb{height:195px;width:195px",
-      "new": "centenary-badge{display:inline-block;margin-bottom:12px;padding:5px 10px;border:1px solid #8fb0a0;color:#dce9df;font-size:14px;letter-spacing:.08em}.hero h1{font-size:clamp(42px,5.3vw,72px);margin:20px 0 15px;letter-spacing:.02em}.hero-sub{color:#bad0c0;font:clamp(18px,2vw,24px) var(--serif);letter-spacing:.09em}.hero-desc{font-size:17px;color:#c9d9d0;max-width:520px;margin-top:34px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero-actions .button{border-color:#c7d8c9;color:#fff}.hero-actions .primary{background:#edf2e8;border-color:#edf2e8;color:#173f3a}.hero-visual{height:370px;position:relative;border-top:1px solid #6d8e80;border-bottom:1px solid #6d8e80;display:flex;align-items:center;justify-content:center}.orb{width:min(300px,75%);aspect-ratio:1;border:1px solid #729689;border-radius:50%;position:relative;display:grid;place-items:center}.orb:before,.orb:after{content:'';position:absolute;border:1px solid #4c766a;border-radius:50%;inset:18%}.orb:after{inset:36%;background:#d6e2d0}.orbit-label{position:absolute;font-size:12px;letter-spacing:.12em;color:#c8d9ce}.ol1{left:0;top:20px}.ol2{right:0;bottom:22px}.hero-note{position:absolute;bottom:-35px;right:0;font-size:11px;color:#a4bcaf;letter-spacing:.1em}@media(max-width:720px){.hero-grid{display:block;padding:58px 0 68px}.hero-visual{height:240px;margin-top:55px}.orb{height:195px;width:195px}.centenary-badge{font-size:12px;letter-spacing:.04em"
+      "new": ".heritage-line-feature{display:grid;grid-template-columns:minmax(220px,.8fr) minmax(0,1.2fr);gap:28px;align-items:center;margin:22px 0 18px;padding:24px 28px;background:#173b37;color:#f5f7ef;border-left:5px solid var(--gold)}\n.heritage-line-feature h3{font-size:clamp(22px,2.5vw,30px);margin:.2rem 0}\n.heritage-line-feature a{color:#fff;text-decoration-thickness:1px;text-underline-offset:.22em}\n.heritage-line-feature p{margin:0;line-height:1.8}\n.heritage-line-kicker{font-size:14px;font-weight:700;letter-spacing:.08em;color:#cbded3}\n.case.heritage-case{border-top:4px solid var(--gold);padding-top:32px}\n.heritage-case .case-main{background:#f7f1e7;border-color:#c9ad86}\n"
     },
     {
       "old": "",
-      "new": "centenary-badge\">迎接陈庆云院士诞辰一百周年（1929—2029）</span><br><span class=\""
+      "new": "px}.heritage-line-feature{grid-template-columns:1fr;gap:10px;padding:20"
     },
     {
-      "old": "div class=\"kicker\">PEOPLE AND CONTINUITY</div><",
+      "old": "gap",
+      "new": "text-decoration"
+    },
+    {
+      "old": "13px;text-decoration:none}.brand-mark{width:38px;height:38px;border:1px solid var(--teal);color:var(--teal);display:grid;place-items:center;font:700 18px var(--serif)",
+      "new": "none"
+    },
+    {
+      "old": "mark\" aria-hidden=\"true\">陈</span><span class=\"brand-",
       "new": ""
     },
     {
-      "old": "留苏时期</p><h3>六氟双酚A与发明人证书</h3><p>与克鲁扬茨、甘巴里扬开展六氟双酚A制备研究。第117491号说明书记载了具体方法及共同署名；申请日为1958年7月19日。</p></article><article class=\"heritage-card\"><p class=\"heritage-meta\">1960年起</p><h3>加入化学所氟橡胶研究团队</h3><p>回国后加入蒋锡夔领导的团队，承担六氟丙烯等材料任务中的研究；已有的氟橡胶1号前期成果与其后加入的工作分别说明。</p></article><article class=\"heritage-card\"><p class=\"heritage-meta\">1963年7月</p><h3>随课题组同事调入上海</h3><p>1963年7月，人员与仪器一起南迁，在上海有机所继续研究，使既有实验经验与上海的原料和工业条件接续。</p></article><article class=\"heritage-card\"><p class=\"heritage-meta\">1970年代起</p><h3>从电镀需求开展F-53协作研制</h3><p>围绕工厂铬雾问题，研究组、实验厂与电镀厂参与研制和应用工作；1977年三单位署名与1981年厂试图注各自保留。</p></article><article class=\"heritage-card\"><p class=\"heritage-meta\">1980年代起</p><h3>由应用问题走向基础反应研究</h3><p>在含氟磺酸及其衍生物、二氟卡宾、三氟甲基化与单电子转移等方面开展系列研究，各体系与合作者分别著录。</p></article><article class=\"heritage-card\"><p class=\"heritage-meta\">1993</p><h3>学术任职与学科服务</h3><p>当选中国科学院院士，参与学术期刊、会议与人才培养；这些学术服务与具体科研论文分别整理。</p></article><article class=\"heritage-card\"><p class=\"heritage-meta\">2000年起</p><h3>向卟啉与其他交叉问题拓展</h3><p>与郭灿城、刘超及其他合作者开展含氟卟啉等研究，原论文保留完整署名；不同分子和性质逐项区分。</p></article><article class=\"heritage-card\"><p class=\"heritage-meta\">晚年",
-      "new": "1958</p><h3>六氟双酚A与发明人证书</h3><p>与克鲁扬茨、甘巴里扬开展六氟双酚A制备研究。第117491号说明书记载了具体方法及共同署名；申请日为1958年7月19日。</p></article><article class=\"heritage-card\"><p class=\"heritage-meta\">1960年起</p><h3>加入化学所氟橡胶研究团队</h3><p>回国后加入蒋锡夔领导的团队，承担六氟丙烯等材料任务中的研究；已有的氟橡胶1号前期成果与其后加入的工作分别说明。</p></article><article class=\"heritage-card\"><p class=\"heritage-meta\">1963年7月</p><h3>随课题组同事调入上海</h3><p>1963年7月，人员与仪器一起南迁，在上海有机所继续研究，使既有实验经验与上海的原料和工业条件接续。</p></article><article class=\"heritage-card\"><p class=\"heritage-meta\">1970年代起</p><h3>从电镀需求开展F-53协作研制</h3><p>围绕工厂铬雾问题，研究组、实验厂与电镀厂参与研制和应用工作；1977年三单位署名与1981年厂试图注各自保留。</p></article><article class=\"heritage-card\"><p class=\"heritage-meta\">1980年代起</p><h3>由应用问题走向基础反应研究</h3><p>在含氟磺酸及其衍生物、二氟卡宾、三氟甲基化与单电子转移等方面开展系列研究，各体系与合作者分别著录。</p></article><article class=\"heritage-card\"><p class=\"heritage-meta\">1993</p><h3>学术任职与学科服务</h3><p>当选中国科学院院士，参与学术期刊、会议与人才培养；这些学术服务与具体科研论文分别整理。</p></article><article class=\"heritage-card\"><p class=\"heritage-meta\">2000年起</p><h3>向卟啉与其他交叉问题拓展</h3><p>与郭灿城、刘超及其他合作者开展含氟卟啉等研究，原论文保留完整署名；不同分子和性质逐项区分。</p></article><article class=\"heritage-card\"><p class=\"heritage-meta\">2010年代—2020年代"
+      "old": "院士",
+      "new": "纪念专题<small>"
+    },
+    {
+      "old": "<small>有机氟化学研究",
+      "new": ""
+    },
+    {
+      "old": "完整科研脉络：",
+      "new": ""
+    },
+    {
+      "old": "</a> · <a href=\"#line-a09\">A09（",
+      "new": "与一条"
+    },
+    {
+      "old": "科建设与人才培养）",
+      "new": "术传承线"
+    },
+    {
+      "old": "但不替代",
+      "new": "并与"
+    },
+    {
+      "old": "",
+      "new": "各线的其他工作共同"
+    },
+    {
+      "old": "的",
+      "new": ""
     },
     {
       "old": "",
       "new": "与一条学术传承线"
     },
     {
-      "old": "p id=\"group-community\">学术传承 · <a href=\"#line-a09\">A09（学科建设与人才培养）</a></p",
-      "new": "aside class=\"heritage-line-feature\" id=\"group-community\" aria-labelledby=\"heritage-line-feature-title\"><div><p class=\"heritage-line-kicker\">一条学术传承主线</p><h3 id=\"heritage-line-feature-title\"><a href=\"#line-a09\">A09（学科建设与人才培养）</a></h3></div><p>从自主选题、谱图讨论和论文写作，到团队带教、期刊工作与国际交流，呈现研究经验怎样传给后人。</p></aside"
+      "old": "。四项主要成就是其中",
+      "new": "；"
     },
     {
-      "old": "div class=\"kicker\">SCIENTIFIC ACHIEVEMENTS AND CONTINUITY</div><",
+      "old": "4",
+      "new": "9"
+    },
+    {
+      "old": "F-53铬雾抑制剂",
+      "new": "学科建设与人才培养"
+    },
+    {
+      "old": "、A06（磺酸酯、二氟卡宾与三氟甲基化）、A07（单电子转移与C–Cl活化）、A08（交叉",
+      "new": "独立呈现"
+    },
+    {
+      "old": "与晚年拓展）的标志性入口；A01（全氟酮化",
+      "new": "经验怎样通过合作、育人和"
+    },
+    {
+      "old": "：六氟丙酮与双酚AF）、A02（含氟单体、氟橡胶与氟油）、A03（全氟叔丁基（PFtB）化学）、A05（制冷剂与配套技",
       "new": ""
     },
     {
-      "old": "。三种碘代物的实测比较与包含外推的四基团顺序各有范围；当年未直接观测游离全氟叔丁基阴离子",
-      "new": "，呈现结构、反应和电子效应怎样互相支持"
+      "old": "）及各线的其他分支同样保留在完整脉络中",
+      "new": "服务传给后人"
     },
     {
-      "old": "，也留下磺酸酯、二氟卡宾及三氟甲基化等可继续研究的问题。历史F-53、含氯F-53B与商品配方分别理解，后续环境研究针对各自具体对象",
-      "new": "；制备过程中形成的中间体和反应线索，又推动磺酸酯、二氟卡宾及三氟甲基化等基础研究"
+      "old": "p",
+      "new": "aside class=\"heritage-line-feature\""
     },
     {
-      "old": "团队分别研究F-115制备、既有F-502配方的试配和后来的HFC-134a工艺。分子合成、连续中试、配套冷冻机油与整机试用各有参与者和任务，不能合并为发明整类制冷剂",
-      "new": "从F-115制备和F-502试配，到HFC-134a液相工艺，团队把分子合成、连续中试、配套冷冻机油与整机试用连接成跨单位协作链"
+      "old": ">",
+      "new": " aria-labelledby=\"heritage-line-feature-title\"><div><p class=\"heritage-line-kicker\">一条"
     },
     {
-      "old": "报道甲酯MFSDA在铜体系中的三氟甲基化用途，使其成为引入–CF₃的合成工具。甲酯、酸型和硅酯是不同实体；用途报道不等于首次合成，后续新方法归各论文作者",
-      "new": "把反应线索发展为甲酯MFSDA的三氟甲基化方法，使其成为引入–CF₃的合成工具；后续合作又拓展了相关试剂与应用"
+      "old": " · ",
+      "new": "主线</p><h3 id=\"heritage-line-feature-title\">"
     },
     {
-      "old": "使特定含氟氯代物与烯烃、炔烃反应。这是指定底物和条件下的C–Cl活化，不等同普遍C–F断裂或全部含氟物质降解",
-      "new": "推动特定含氟氯代物与烯烃、炔烃成键，把单电子转移方法拓展到较难反应的C–Cl底物"
+      "old": "p",
+      "new": "h3></div><p>从自主选题、谱图讨论和论文写作，到团队带教、期刊工作与国际交流，呈现研究经验怎样传给后人。</p></aside"
     },
     {
-      "old": "details class=\"cq-journey-fold\" id=\"case-porphyrin\"><summary>含氟大环：结构与性质的新问题</summary><p>2007年，刘超、沈冬梅、陈庆云共同报道分离和表征的20π电子非芳香isophlorin。非芳香判断结合具体结构和证据理解，不能仅凭电子数改称反芳香，也不直接证明器件或治疗用途。</p><p><a href=\"topics/fluoroporphyrins/index.html\">进入专题阅读 →</a></p><section class=\"supporting-record\" id=\"record-fluorinated-ionic-liquids\"><h4>学术档案：含氟离子液体</h4><p>2010年，Cheng-Pan Zhang、Zong-Ling Wang、Qing-Yun Chen、Chun-Tao Zhang、Yu-Cheng Gu、Ji-Chang Xiao共同报告含氟磺酰胺类离子液体的合成与所测物性。电池性能和应用须由各自研究另证。</p><p><a href=\"#source-cq-h22\">论文书目 →</a></p></section",
-      "new": "span id=\"record-fluorinated-ionic-liquids\" aria-hidden=\"true\"></span><details class=\"cq-journey-fold\" id=\"case-porphyrin\"><summary>含氟大环：结构与性质的新问题</summary><p>2007年，刘超、沈冬梅、陈庆云共同分离并表征20π电子非芳香isophlorin，把含氟合成、选择性环化与大环结构性质研究连接起来。</p><p><a href=\"topics/fluoroporphyrins/index.html\">进入专题阅读 →</a> · <a href=\"achievements/index.html#record-fluorinated-ionic-liquids\">含氟离子液体相关记录 →</a></p"
+      "old": "div><div class=\"kicker\">SCIENTIFIC ACHIEVEMENTS AND CONTINUITY</",
+      "new": ""
     },
     {
       "old": "",
-      "new": " heritage-case"
+      "new": "case heritage-"
     },
     {
-      "old": "details class=\"cq-journey-fold\"><summary>继续阅读</summary><section class=\"supporting-record\" id=\"record-publication-index\"><h4>学术档案与年度统计</h4><p>论著目录编列1–327号，包括不同文书和共同成果；编目数不等于独著数或论文总量。</p><p>1989年报道转述对1987年科技论文的索引调查：陈庆云收录9篇，与王文山、张其瑞同为9篇。该数字是年度收录数，不是被引次数、职业排名或全生涯总量。</p></section><p><a href=\"people/index.html#a09-academic-archive\">学术档案与统计范围 →</a> · <a href=\"people/index.html\">学科建设、育人故事与合作传承 →</a> · <a href=\"people/index.html#a09-independent\">自主选题与论证训练</a> · <a href=\"people/index.html#a09-team\">团队带教与人才接续</a> · <a href=\"people/index.html#a09-service\">期刊与国际学术服务",
-      "new": "span id=\"record-publication-index\" aria-hidden=\"true\"></span><details class=\"cq-journey-fold\"><summary>继续阅读</summary><p>从自主选题、团队带教、论文写作到期刊与国际学术服务，更多经历与相关档案在A09专题中分别呈现。</p><p><a href=\"people/index.html#a09-representative-study-story\">合作与育人故事 →</a> · <a href=\"people/index.html#a09-independent\">自主选题与论证训练</a> · <a href=\"people/index.html#a09-team\">团队带教与人才接续</a> · <a href=\"people/index.html#a09-service\">期刊与国际学术服务</a> · <a href=\"people/index.html#a09-academic-archive\">学术档案 →"
+      "old": "",
+      "new": "与传承"
     },
     {
-      "old": "div class=\"kicker\">HOW TO READ</div><",
+      "old": "纪念",
+      "new": "迎接"
+    },
+    {
+      "old": "",
+      "new": "诞辰一百周年"
+    },
+    {
+      "old": "",
+      "new": "其"
+    },
+    {
+      "old": "科学",
       "new": ""
     },
     {
-      "old": "div class=\"kicker\">RESEARCH OVER TIME</div><",
-      "new": ""
+      "old": "",
+      "new": "0px}.heritage-line-feature{grid-template-columns:1fr;gap:10px;padding:2"
     },
     {
-      "old": "div class=\"kicker\">AI FOR ARCHIVES AND INQUIRY</div><",
-      "new": ""
+      "old": "gap:13p",
+      "new": "te"
     },
     {
-      "old": "div class=\"kicker\">SOURCES AND READING</div><",
-      "new": ""
+      "old": ";text-decoration:none}.brand-mark{width:38px;height:38px;border:1px solid var(--teal);color:var(--teal);display:grid;place-items:center;font:700 18px var(--serif)",
+      "new": "t-decoration:none"
     },
     {
-      "old": "div class=\"kicker\">EARLY INTERNATIONAL RECORDS</div><h2>早期国际文献与署名</h2></div><p>同一研究者在不同出版记录中可能有不同转写；仍需以年代、机构和合作者确认，不能自动合并同名作者。</p></div><div class=\"story-grid\"><article class=\"story-card\"><small>1960 · 六氟丙酮第一报</small><h3>基本反应与含氟二酚</h3><p>I. L. Knunyants、陈庆云、N. P. Gambaryan共同署名第一报。<a href=\"topics/early-fluoroketones/index.html#a01-first-report\">第一报原文与成果 →</a></p></article><article class=\"story-card\"><small>1960 · 原始档案书目</small><h3>噁唑酮及其亲核反应</h3><p>俄文档案中的作者为 E. M. Rokhlin、N. P. Gambaryan、Chen Qing-yun、I. L. Knuniants。</p></article><article class=\"story-card\"><small>1962 · 出版社摘要与书目</small><h3>六氟丙酮的若干反应</h3><p>论文作者署名包括 I. I. Knunyants、N. P. Gambaryan、Ch’en Ch’ing-yun、E. M. Rokhlin；摘要讨论六氟丙酮反应和亲电性。</p></article><article class=\"story-card\"><small>1966 · 共同综述</small><h3>含氟酮羰基反应</h3><p>国际期刊共同综述的作者包括 N. P. Gambaryan 等及 Chen Ching-yun；其参考文献列出 1960 年学位论文。</p></article></div></div></section><section class=\"shell-section band\" id=\"d02\"><div class=\"wrap\"><div class=\"section-head\"><div><div class=\"kicker\">HOW WORK TRAVELS</div><h2>从合作到复核、评价与采用</h2></div><p>发表、合作、复核、评价和采用是不同关系；每个案例只说明它实际支持的范围。</p></div><div id=\"d02-filters\" hidden=\"\"><div role=\"group\" aria-label=\"筛选证据类型\" class=\"filter-row\"><button type=\"button\" data-filter=\"all\" aria-pressed=\"true\">全部</button><button type=\"button\" data-filter=\"发表\" aria-pressed=\"false\">发表</button><button type=\"button\" data-filter=\"合作\" aria-pressed=\"false\">合作</button><button type=\"button\" data-filter=\"复核\" aria-pressed=\"false\">复核</button><button type=\"button\" data-filter=\"评价\" aria-pressed=\"false\">评价</button><button type=\"button\" data-filter=\"采用\" aria-pressed=\"false\">采用</button></div><p id=\"d02-status\" role=\"status\" aria-live=\"polite\"></p></div><div class=\"reading-list\" id=\"d02-list\"><article data-types=\"发表 合作\"><h3>共同发表与国际合作 · 2000</h3><p>F. Tian、W. R. Dolbier Jr与Q.-Y. Chen等共同报道TFDA作为二氟卡宾来源。TFDA是硅酯，与甲酯MFSDA分别理解。 <a href=\"https://pubmed.ncbi.nlm.nih.gov/10814377/\" rel=\"noopener noreferrer\" target=\"_blank\">查看记录 ↗</a></p></article><article data-types=\"发表 合作 复核\"><h3>具名复核 · 2003</h3><p>Dolbier、F. Tian、J.-X. Duan、Q.-Y. Chen提交的TFDA方法，由Victoria D. Bock、David P. Richardson、Steven Wolff独立核查。核查限于原文方法，不代表全面工业验证。 <a href=\"https://orgsyn.org/demo.aspx?prep=v80p0172\" rel=\"noopener noreferrer\" target=\"_blank\">查看条目 ↗</a></p></article><article data-types=\"发表 评价\"><h3>外部评述 · 2017</h3><p>Sarah L. Clarke和Gerard P. McGlacken专题评述MFSDA，使其合成用途继续成为后续讨论的对象；评述与独立实验采用分别理解。 <a href=\"https://research.ucc.ie/en/publications/methyl-fluorosulfonyldifluoroacetate-mfsda-an-underutilised-reage/\" rel=\"noopener noreferrer\" target=\"_blank\">查看文献 →</a></p></article><article data-types=\"发表 合作 评价\"><h3>国际合著评价 · 2021</h3><p>2021年国际合著方法总览介绍1989年工作。该综述包含中国合作者，其评述与完全独立团队的实验复核分别理解。 <a href=\"https://www.nature.com/articles/s43586-021-00042-1\" rel=\"noopener noreferrer\" target=\"_blank\">查看文献 →</a></p></article><article data-types=\"发表 采用\"><h3>实际后续采用 · 2025</h3><p>Jiyoon Song、Vikas R. Aswar、Dnyandev B. Jarhad、Lak Shin Jeong把陈试剂用于核苷糖环三氟甲基化。该新方法归后续作者，并不直接证明临床有效或商业化。 <a href=\"https://snu.elsevierpure.com/en/publications/trifluoromethylation-on-a-nucleoside-sugar-scaffold-design-and-sy-2/\" rel=\"noopener noreferrer\" target=\"_blank\">查看成果记录 ↗</a></p></article></div><p id=\"d02-empty\" hidden=\"\">此类别暂无条目；可选择“全部”恢复。</p></div></section><section class=\"shell-section\" id=\"d03\"><div class=\"wrap\"><div class=\"section-head\"><div><div class=\"kicker\">LATER COAUTHORED WORK</div><h2>晚年研究仍在展开</h2></div><p>以下为陈庆云参与的共同研究，分别连接含氟分子构建、反应性与性质问题。 </p></div><div class=\"story-grid\"><article class=\"story-card\"><small>2020</small><h3>含 OCF₂ 单元的脱氧氟化试剂</h3><p>Shiyu Zhao 等与 Yong Guo、Chengying Wu、Qing-Yun Chen 合著，研究由特定含氟醚羧酸衍生的试剂。副产物利用或原位生成不等于已证明绿色或无害。</p></article><article class=\"story-card\"><small>2020</small><h3>芳基磺酰氟的一种合成</h3><p>Yongan Liu 等、Qing-Yun Chen 与 Chao Liu 共同报道一种具体构件方法；不据此将整个 SuFEx 领域或药物应用归为其发明。</p></article><article class=\"story-card\"><small>2021</small><h3>多类含氧底物的脱氧氟化</h3><p>Shiyu Zhao、Yong Guo等与Qing-Yun Chen共同研究含CF₂O单元的全氟醚羧酸钾盐，拓展多类含氧底物的脱氧氟化；该体系不代表处理任意含氟废物的通用技术。 </p></article><article class=\"story-card\"><small>2021</small><h3>含氟醚链氧化胺的表面性质</h3><p>Longhao Dai 等、Yong Guo 与 Qing-Yun Chen 的共同论文比较相关物质的表面性质。表面表现不能推导低毒或全生命周期安全。</p></article></div></div></section><section class=\"shell-section band\" id=\"d04\"><div class=\"wrap\"><div class=\"section-head\"><div><div class=\"kicker\">ONE ENTITY, DIFFERENT ROLES</div><h2>试剂与后来的用途</h2></div><p>甲酯、酸型和硅酯分开；同一实体的新用途不自动证明引用关系或方法继承。</p></div><div class=\"reading-list\"><article><h3>甲酯的早期用途 · 1989</h3><p>陈庆云与 S.-W. Wu 报道铜体系中的三氟甲基化用途。<a href=\"#case-reagent\">查看文献 →</a></p></article><article><h3>后来方法 · 2016 和 2025</h3><p>2016年，Wei Yu、Xiu-Hua Xu、Feng-Ling Qing用甲酯MFSDA开展可见光自由基二氟烷基化；2025年首尔大学团队把该试剂用于核苷糖环研究。这些新方法属于相应后续作者。 <a href=\"https://pubs.acs.org/doi/10.1021/acs.orglett.6b02580\" rel=\"noopener noreferrer\" target=\"_blank\">查看文献 →</a><a href=\"https://snu.elsevierpure.com/en/publications/trifluoromethylation-on-a-nucleoside-sugar-scaffold-design-and-sy-2/\" rel=\"noopener noreferrer\" target=\"_blank\">查看文献 →</a></p></article><article><h3>酸型试剂与工艺 · 2024</h3><p>Pablo J. Cabrera、Christophe Allais等的工艺研究使用酸型试剂，与甲酯MFSDA分别理解；其方法与放大结果归该论文作者。 <a href=\"https://pubs.acs.org/doi/10.1021/acs.oprd.3c00493\" rel=\"noopener noreferrer\" target=\"_blank\">查看论文 ↗</a></p></article><article><h3>同名甲酯的电池研究 · 2026</h3><p>Xue Li、Yuxin Rao等研究以MFSDA名称介绍的电解液添加剂。用途归2026年作者；名称对应不能单独证明结构同一、直接方法传承、量产或普遍安全。 <a href=\"https://publikationen.bibliothek.kit.edu/1000197061\" rel=\"noopener noreferrer\" target=\"_blank\">查看机构记录 ↗</a></p></article></div></div></section></section><!-- AI_RESEARCH_FUTURE:BEGIN -->\n<section class=\"shell-section\" id=\"d05\"><div class=\"wrap\"><div class=\"section-head\"><div><div class=\"kicker\">QUESTIONS AND EXISTING WORK</",
-      "new": "h2>早期国际文献与署名</h2></div><p>同一研究者在不同出版记录中可能有不同转写；仍需以年代、机构和合作者确认，不能自动合并同名作者。</p></div><div class=\"story-grid\"><article class=\"story-card\"><small>1960 · 六氟丙酮第一报</small><h3>基本反应与含氟二酚</h3><p>I. L. Knunyants、陈庆云、N. P. Gambaryan共同署名第一报。<a href=\"topics/early-fluoroketones/index.html#a01-first-report\">第一报原文与成果 →</a></p></article><article class=\"story-card\"><small>1960 · 原始档案书目</small><h3>噁唑酮及其亲核反应</h3><p>俄文档案中的作者为 E. M. Rokhlin、N. P. Gambaryan、Chen Qing-yun、I. L. Knuniants。</p></article><article class=\"story-card\"><small>1962 · 出版社摘要与书目</small><h3>六氟丙酮的若干反应</h3><p>论文作者署名包括 I. I. Knunyants、N. P. Gambaryan、Ch’en Ch’ing-yun、E. M. Rokhlin；摘要讨论六氟丙酮反应和亲电性。</p></article><article class=\"story-card\"><small>1966 · 共同综述</small><h3>含氟酮羰基反应</h3><p>国际期刊共同综述的作者包括 N. P. Gambaryan 等及 Chen Ching-yun；其参考文献列出 1960 年学位论文。</p></article></div></div></section><section class=\"shell-section band\" id=\"d02\"><div class=\"wrap\"><div class=\"section-head\"><div><h2>从合作到复核、评价与采用</h2></div><p>发表、合作、复核、评价和采用是不同关系；每个案例只说明它实际支持的范围。</p></div><div id=\"d02-filters\" hidden=\"\"><div role=\"group\" aria-label=\"筛选证据类型\" class=\"filter-row\"><button type=\"button\" data-filter=\"all\" aria-pressed=\"true\">全部</button><button type=\"button\" data-filter=\"发表\" aria-pressed=\"false\">发表</button><button type=\"button\" data-filter=\"合作\" aria-pressed=\"false\">合作</button><button type=\"button\" data-filter=\"复核\" aria-pressed=\"false\">复核</button><button type=\"button\" data-filter=\"评价\" aria-pressed=\"false\">评价</button><button type=\"button\" data-filter=\"采用\" aria-pressed=\"false\">采用</button></div><p id=\"d02-status\" role=\"status\" aria-live=\"polite\"></p></div><div class=\"reading-list\" id=\"d02-list\"><article data-types=\"发表 合作\"><h3>共同发表与国际合作 · 2000</h3><p>F. Tian、W. R. Dolbier Jr与Q.-Y. Chen等共同报道TFDA作为二氟卡宾来源。TFDA是硅酯，与甲酯MFSDA分别理解。 <a href=\"https://pubmed.ncbi.nlm.nih.gov/10814377/\" rel=\"noopener noreferrer\" target=\"_blank\">查看记录 ↗</a></p></article><article data-types=\"发表 合作 复核\"><h3>具名复核 · 2003</h3><p>Dolbier、F. Tian、J.-X. Duan、Q.-Y. Chen提交的TFDA方法，由Victoria D. Bock、David P. Richardson、Steven Wolff独立核查。核查限于原文方法，不代表全面工业验证。 <a href=\"https://orgsyn.org/demo.aspx?prep=v80p0172\" rel=\"noopener noreferrer\" target=\"_blank\">查看条目 ↗</a></p></article><article data-types=\"发表 评价\"><h3>外部评述 · 2017</h3><p>Sarah L. Clarke和Gerard P. McGlacken专题评述MFSDA，使其合成用途继续成为后续讨论的对象；评述与独立实验采用分别理解。 <a href=\"https://research.ucc.ie/en/publications/methyl-fluorosulfonyldifluoroacetate-mfsda-an-underutilised-reage/\" rel=\"noopener noreferrer\" target=\"_blank\">查看文献 →</a></p></article><article data-types=\"发表 合作 评价\"><h3>国际合著评价 · 2021</h3><p>2021年国际合著方法总览介绍1989年工作。该综述包含中国合作者，其评述与完全独立团队的实验复核分别理解。 <a href=\"https://www.nature.com/articles/s43586-021-00042-1\" rel=\"noopener noreferrer\" target=\"_blank\">查看文献 →</a></p></article><article data-types=\"发表 采用\"><h3>实际后续采用 · 2025</h3><p>Jiyoon Song、Vikas R. Aswar、Dnyandev B. Jarhad、Lak Shin Jeong把陈试剂用于核苷糖环三氟甲基化。该新方法归后续作者，并不直接证明临床有效或商业化。 <a href=\"https://snu.elsevierpure.com/en/publications/trifluoromethylation-on-a-nucleoside-sugar-scaffold-design-and-sy-2/\" rel=\"noopener noreferrer\" target=\"_blank\">查看成果记录 ↗</a></p></article></div><p id=\"d02-empty\" hidden=\"\">此类别暂无条目；可选择“全部”恢复。</p></div></section><section class=\"shell-section\" id=\"d03\"><div class=\"wrap\"><div class=\"section-head\"><div><h2>晚年研究仍在展开</h2></div><p>以下为陈庆云参与的共同研究，分别连接含氟分子构建、反应性与性质问题。 </p></div><div class=\"story-grid\"><article class=\"story-card\"><small>2020</small><h3>含 OCF₂ 单元的脱氧氟化试剂</h3><p>Shiyu Zhao 等与 Yong Guo、Chengying Wu、Qing-Yun Chen 合著，研究由特定含氟醚羧酸衍生的试剂。副产物利用或原位生成不等于已证明绿色或无害。</p></article><article class=\"story-card\"><small>2020</small><h3>芳基磺酰氟的一种合成</h3><p>Yongan Liu 等、Qing-Yun Chen 与 Chao Liu 共同报道一种具体构件方法；不据此将整个 SuFEx 领域或药物应用归为其发明。</p></article><article class=\"story-card\"><small>2021</small><h3>多类含氧底物的脱氧氟化</h3><p>Shiyu Zhao、Yong Guo等与Qing-Yun Chen共同研究含CF₂O单元的全氟醚羧酸钾盐，拓展多类含氧底物的脱氧氟化；该体系不代表处理任意含氟废物的通用技术。 </p></article><article class=\"story-card\"><small>2021</small><h3>含氟醚链氧化胺的表面性质</h3><p>Longhao Dai 等、Yong Guo 与 Qing-Yun Chen 的共同论文比较相关物质的表面性质。表面表现不能推导低毒或全生命周期安全。</p></article></div></div></section><section class=\"shell-section band\" id=\"d04\"><div class=\"wrap\"><div class=\"section-head\"><div><h2>试剂与后来的用途</h2></div><p>甲酯、酸型和硅酯分开；同一实体的新用途不自动证明引用关系或方法继承。</p></div><div class=\"reading-list\"><article><h3>甲酯的早期用途 · 1989</h3><p>陈庆云与 S.-W. Wu 报道铜体系中的三氟甲基化用途。<a href=\"#case-reagent\">查看文献 →</a></p></article><article><h3>后来方法 · 2016 和 2025</h3><p>2016年，Wei Yu、Xiu-Hua Xu、Feng-Ling Qing用甲酯MFSDA开展可见光自由基二氟烷基化；2025年首尔大学团队把该试剂用于核苷糖环研究。这些新方法属于相应后续作者。 <a href=\"https://pubs.acs.org/doi/10.1021/acs.orglett.6b02580\" rel=\"noopener noreferrer\" target=\"_blank\">查看文献 →</a><a href=\"https://snu.elsevierpure.com/en/publications/trifluoromethylation-on-a-nucleoside-sugar-scaffold-design-and-sy-2/\" rel=\"noopener noreferrer\" target=\"_blank\">查看文献 →</a></p></article><article><h3>酸型试剂与工艺 · 2024</h3><p>Pablo J. Cabrera、Christophe Allais等的工艺研究使用酸型试剂，与甲酯MFSDA分别理解；其方法与放大结果归该论文作者。 <a href=\"https://pubs.acs.org/doi/10.1021/acs.oprd.3c00493\" rel=\"noopener noreferrer\" target=\"_blank\">查看论文 ↗</a></p></article><article><h3>同名甲酯的电池研究 · 2026</h3><p>Xue Li、Yuxin Rao等研究以MFSDA名称介绍的电解液添加剂。用途归2026年作者；名称对应不能单独证明结构同一、直接方法传承、量产或普遍安全。 <a href=\"https://publikationen.bibliothek.kit.edu/1000197061\" rel=\"noopener noreferrer\" target=\"_blank\">查看机构记录 ↗</a></p></article></div></div></section></section><!-- AI_RESEARCH_FUTURE:BEGIN -->\n<section class=\"shell-section\" id=\"d05\"><div class=\"wrap\"><div class=\"section-head\"><"
+      "old": "",
+      "new": "}.centenary-badge{display:inline-block;margin-bottom:12px;padding:5px 10px;border:1px solid #8fb0a0;color:#dce9df;font-size:14px;letter-spacing:.08em"
     },
     {
-      "old": "div class=\"kicker\">ABOUT THIS PLATFORM</div><",
+      "old": "",
+      "new": ".centenary-badge{font-size:12px;letter-spacing:.04em"
+    },
+    {
+      "old": "",
+      "new": "}"
+    },
+    {
+      "old": "",
+      "new": "><span class=\"centenary-badge\">迎接陈庆云院士诞辰一百周年（1929—2029）</span><br"
+    },
+    {
+      "old": "div class=\"kicker\">PEOPLE AND CONTINUITY</div><",
       "new": ""
     },
     {
@@ -446,44 +810,252 @@
       "new": "1958"
     },
     {
-      "old": "晚年",
-      "new": "2010年代—2020年代"
+      "old": "晚",
+      "new": "2010"
+    },
+    {
+      "old": "",
+      "new": "代—2020年代"
+    },
+    {
+      "old": "。三种碘代物的实测比较与包含外推的四基团顺序各有范围；当年未直接观测游离全氟叔丁基阴离",
+      "new": "，呈现结构、反应和电"
+    },
+    {
+      "old": "",
+      "new": "效应怎样互相支持"
+    },
+    {
+      "old": "",
+      "new": "；制备过程中形成的中间体和反应线索"
+    },
+    {
+      "old": "也留下",
+      "new": "又推动"
+    },
+    {
+      "old": "可继续",
+      "new": "基础"
+    },
+    {
+      "old": "的问题。历史F-53、含氯F-53B与商品配方分别理解，后续环境研究针对各自具体对象",
+      "new": ""
+    },
+    {
+      "old": "团队分别研究",
+      "new": "从"
+    },
+    {
+      "old": "、既有",
+      "new": "和"
+    },
+    {
+      "old": "配方的",
+      "new": ""
+    },
+    {
+      "old": "和后来的",
+      "new": "，到"
+    },
+    {
+      "old": "",
+      "new": "液相"
+    },
+    {
+      "old": "。",
+      "new": "，团队把"
+    },
+    {
+      "old": "各有参与者和任务，不能合并为发明整类制冷剂",
+      "new": "连接成跨单位协作链"
+    },
+    {
+      "old": "报道",
+      "new": "把反应线索发展为"
+    },
+    {
+      "old": "在铜体系中",
+      "new": ""
+    },
+    {
+      "old": "用途",
+      "new": "方法"
+    },
+    {
+      "old": "。甲酯、酸型和硅酯是不同实体",
+      "new": ""
+    },
+    {
+      "old": "用途报道不等于首次合成，",
+      "new": ""
+    },
+    {
+      "old": "新方法归各论文",
+      "new": "合"
+    },
+    {
+      "old": "者",
+      "new": "又拓展了相关试剂与应用"
+    },
+    {
+      "old": "使",
+      "new": "推动"
+    },
+    {
+      "old": "",
+      "new": "成键，把单电子转移方法拓展到较难"
+    },
+    {
+      "old": "。这是指定底物和条件下",
+      "new": ""
+    },
+    {
+      "old": "活化，不等同普遍C–F断裂或全部含氟",
+      "new": "底"
+    },
+    {
+      "old": "质降解",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "span id=\"record-fluorinated-ionic-liquids\" aria-hidden=\"true\"></span><"
+    },
+    {
+      "old": "报道",
+      "new": ""
+    },
+    {
+      "old": "和",
+      "new": "并"
+    },
+    {
+      "old": "。非芳香判断结",
+      "new": "，把含氟"
+    },
+    {
+      "old": "具体",
+      "new": "成、选择性环化与大环"
+    },
+    {
+      "old": "和证据理解，不能仅凭电子数改称反芳香，也不直",
+      "new": "性质研究连"
+    },
+    {
+      "old": "证明器件或治疗用途",
+      "new": "起来"
+    },
+    {
+      "old": "</p><section class",
+      "new": " · <a href"
+    },
+    {
+      "old": "supporting-record\" id=\"",
+      "new": "achievements/index.html#"
+    },
+    {
+      "old": "<h4>学术档案：",
+      "new": ""
+    },
+    {
+      "old": "</h4><p>2010年，Chen",
+      "new": "相关记录 →</a></p></details>\n</div></article>\n<article class=\"case herita"
+    },
+    {
+      "old": "-Pan Zhang、Zong-Ling Wang、Qing-Yun Chen、Chun-Tao Zhang、Yu-Cheng Gu、Ji-Chang Xiao共同报告含氟磺酰胺类离子液体的合成与所测物性。电池性能和应用须由各自研究另证。</p><p><a href=\"#source-cq-h22\">论文书目 →</a></p></section></details>\n</div></article>\n<article class=\"",
+      "new": "e-"
+    },
+    {
+      "old": "",
+      "new": "span id=\"record-publication-index\" aria-hidden=\"true\"></span><"
+    },
+    {
+      "old": "section class=\"supporting-record\" id=\"record-publication-index\"><h4>",
+      "new": "p>从自主选题、团队带教、论文写作到期刊与国际"
+    },
+    {
+      "old": "",
+      "new": "服务，更多经历与相关"
+    },
+    {
+      "old": "与年度统计</h4><p>论著目录编列1–327号，包括不同文书和共同成果；编目数不等于独著数或论文总量。</p><p>1",
+      "new": "在A0"
+    },
+    {
+      "old": "89年报道转述对1987年科技论文的索引调查：陈庆云收录9篇，与王文山、张其瑞同为9篇。该数字是年度收录数，不是被引次数、职业排名或全生涯总量。</p></section><p><a href=\"people/index.html#a09-academic-archive\">学术档案与统计范围 →</a> · <a href=\"people/index.html\">",
+      "new": "（"
+    },
+    {
+      "old": "、",
+      "new": "与人才培养）专题中分别呈现。</p><p><a href=\"people/index.html#a09-representative-study-story\">合作与"
+    },
+    {
+      "old": "与合作传承",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "</a> · <a href=\"people/index.html#a09-academic-archive\">学术档案 →"
+    },
+    {
+      "old": "div class=\"kicker\">HOW TO READ</div><",
+      "new": ""
+    },
+    {
+      "old": "div><div class=\"kicker\">RESEARCH OVER TIME</",
+      "new": ""
+    },
+    {
+      "old": "div><div class=\"kicker\">AI FOR ARCHIVES AND INQUIRY</",
+      "new": ""
+    },
+    {
+      "old": "div class=\"kicker\">SOURCES AND READING</div><",
+      "new": ""
+    },
+    {
+      "old": "div><div class=\"kicker\">EARLY INTERNATIONAL RECORDS</",
+      "new": ""
+    },
+    {
+      "old": "div class=\"kicker\">HOW WORK TRAVELS</div><",
+      "new": ""
+    },
+    {
+      "old": "div><div class=\"kicker\">LATER COAUTHORED WORK</",
+      "new": ""
+    },
+    {
+      "old": "div class=\"kicker\">ONE ENTITY, DIFFERENT ROLES</div><",
+      "new": ""
+    },
+    {
+      "old": "div class=\"kicker\">QUESTIONS AND EXISTING WORK</div><",
+      "new": ""
+    },
+    {
+      "old": "div><div class=\"kicker\">ABOUT THIS PLATFORM</",
+      "new": ""
     },
     {
       "old": "div class=\"kicker\">SOURCE INDEX</div><",
       "new": ""
     },
     {
-      "old": "",
-      "new": "与传承"
+      "old": "专题",
+      "new": "A08（交叉研究与晚年拓展）"
     },
     {
       "old": "",
-      "new": "与传承"
+      "new": "｜陈庆云院士学术成就与传承"
+    },
+    {
+      "old": "主要学术成就与",
+      "new": ""
     },
     {
       "old": "",
-      "new": "与传承"
-    },
-    {
-      "old": "专题｜含氟小环",
-      "new": "A08（交叉研究与晚年拓展）｜含氟小环｜陈庆云院士学术成就与传承"
-    },
-    {
-      "old": "主要学术成就与专题索引｜陈庆云院士",
-      "new": "专题索引｜陈庆云院士学术成就与传承"
-    },
-    {
-      "old": "",
-      "new": "与一条学术传承线"
-    },
-    {
-      "old": "",
-      "new": "与传承"
-    },
-    {
-      "old": "专题｜磺酰氟构件方法",
-      "new": "A08（交叉研究与晚年拓展）｜磺酰氟构件方法｜陈庆云院士学术成就与传承"
+      "new": "线与一条学术传承"
     }
   ]
 }

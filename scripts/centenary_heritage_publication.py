@@ -1,7 +1,7 @@
 """Scope the centenary framing, reader tone and 8+1 heritage presentation after v61."""
 
 MANIFEST = 'provenance/platform-presentation.v62.json'
-MANIFEST_SHA256 = '5fc68daf022b481bf33cdbb391ab13aee798f9adbed79771eecd05a22f911d81'
+MANIFEST_SHA256 = '832ab18b70279900de448691e940a26207569adf94893458323fed438388bc32'
 PREDECESSOR = 'afdf23a1a8f1e74158d05f29405d4e2c30b272b3'
 PRESENTATION_ID = 'PLATFORM-CENTENARY-AND-HERITAGE-PRESENTATION-20261123-v62'
 HTML_PATHS = (
