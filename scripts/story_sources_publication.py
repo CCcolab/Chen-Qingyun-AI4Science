@@ -19,6 +19,7 @@ import reader_source_cleanup_publication as reader_cleanup
 import ci_compatibility_publication as ci_compat
 import major_achievement_card_publication as major_card
 import centenary_heritage_publication as centenary
+import f53_achievement_publication as f53
 from stories_rebalance_publication import PUBLICATION_PATHS, _file, _identity, _reconstruct, _sha
 
 
@@ -90,7 +91,8 @@ def _previous(root):
                  (reader_cleanup, reader_cleanup.V58_ADDITIONS),
                  (ci_compat, ci_compat.V59_ADDITIONS),
                  (major_card, major_card.V60_ADDITIONS),
-                 (centenary, centenary.V61_ADDITIONS))
+                 (centenary, centenary.V61_ADDITIONS),
+                 (f53, f53.V62_ADDITIONS))
     latest = next((revision for revision, _ in reversed(revisions) if (root/revision.MANIFEST).is_file()), None)
     if latest is None and not (root/MANIFEST).is_file():
         return root, None
