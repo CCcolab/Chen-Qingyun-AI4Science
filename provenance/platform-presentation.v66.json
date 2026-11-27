@@ -1,0 +1,147 @@
+{
+  "schema_version": "66.0",
+  "presentation_id": "PLATFORM-A04-CHAPTER-NAVIGATION-20261127-v66",
+  "publication_kind": "a04_chapter_navigation",
+  "previous_presentation_commit": "16411b0bbfbf9fda5b105aa45c018a8156feafb8",
+  "changed_html_paths": [
+    "topics/f53/index.html"
+  ],
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v65.json",
+    "sha256": "63e4f1af8a383e92a9b7a8850fb7d0f4ce550ad717d68c8982ad0108e1be58a6",
+    "presentation_id": "PLATFORM-A04-ACHIEVEMENT-CARD-NAVIGATION-20261127-v65"
+  },
+  "change_reason": "统一四张成就卡片和正文章节的标题与顺序，标明各章阅读范围，并合并页末参考资料入口。",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "M0_resumed": false,
+  "Nemotron_training_resumed": false,
+  "reversible_text_files": [
+    {
+      "path": "scripts/story_sources_publication.py",
+      "old_sha256": "b948935b7d3171a5837d60b3f1d5351c13754a318268b8a4fdb6c7263e116aed",
+      "old_bytes": 9022,
+      "new_sha256": "a311e8987976bec7d7c50432345bf0fe684bba7bc4c833a5f05e967c5ad20ec2",
+      "new_bytes": 9171,
+      "edits": [
+        {
+          "old_offset": 1066,
+          "replacement": 0
+        },
+        {
+          "old_offset": 4673,
+          "replacement": 1
+        }
+      ]
+    },
+    {
+      "path": "site/topics/f53/index.html",
+      "old_sha256": "f4f4c09c0968cd1369358ba83ad5a2e1a9f9adc9e8ca9f3e0b4c7707f61c22f4",
+      "old_bytes": 30021,
+      "new_sha256": "96ee0a902f1c093623f2d154fa893357ad73a2230e9c1c7b997171e0da228d4e",
+      "new_bytes": 30259,
+      "edits": [
+        {
+          "old_offset": 7050,
+          "replacement": 2
+        },
+        {
+          "old_offset": 8009,
+          "replacement": 3
+        },
+        {
+          "old_offset": 9336,
+          "replacement": 4
+        },
+        {
+          "old_offset": 11212,
+          "replacement": 5
+        },
+        {
+          "old_offset": 11968,
+          "replacement": 6
+        },
+        {
+          "old_offset": 12454,
+          "replacement": 7
+        },
+        {
+          "old_offset": 12650,
+          "replacement": 8
+        },
+        {
+          "old_offset": 14592,
+          "replacement": 9
+        },
+        {
+          "old_offset": 15535,
+          "replacement": 10
+        },
+        {
+          "old_offset": 16438,
+          "replacement": 11
+        },
+        {
+          "old_offset": 18117,
+          "replacement": 12
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "",
+      "new": "import f53_chapter_navigation_publication as f53_chapter_navigation\n"
+    },
+    {
+      "old": "                 (f53_card_navigation, f53_card_navigation.V64_ADDITIONS))\n",
+      "new": "                 (f53_card_navigation, f53_card_navigation.V64_ADDITIONS),\n                 (f53_chapter_navigation, f53_chapter_navigation.V65_ADDITIONS))\n"
+    },
+    {
+      "old": "",
+      "new": "  .a04-panel .a04-chapter-return { max-width: none; margin: 1.25rem 0 0; padding-top: .7rem; border-top: 1px solid var(--line); font-size: .92rem; }\n"
+    },
+    {
+      "old": "  <div class=\"a04-cards\" role=\"group\" aria-label=\"四项核心成就\">\n    <div class=\"a04-card\"><h3><a href=\"#a04-representative-study\">自主设计含醚键结构</a></h3><p>1975年启动，研究组用不到三年研制出含醚键的抑雾剂，走通一条新的制备路线。</p></div>\n    <div class=\"a04-card\"><h3><a href=\"#a04-cooperation\">走通工程放大</a></h3><p>1979年实验厂完成扩大试验。1982年展览资料记载，实验厂具备年产2吨的能力。</p></div>\n    <div class=\"a04-card\"><h3><a href=\"#a04-industry\">推广使用与获奖</a></h3><p>1982年展览资料记载全国有985个使用单位。同年10月，项目获国家发明奖三等奖和上海市重大科研成果奖一等奖。</p></div>\n    <div class=\"a04-card\"><h3><a href=\"#a04-research-continuity\">建立含氟醚磺酰氟合成方法</a></h3><p>研究组建立了制备一系列含醚磺酰氟的方法，并根据副产物提出可能生成二氟卡宾的解释。</p></div>\n  </div>\n  <p class=\"a04-source\"><a href=\"#a04-source-book\">研制、扩试与推广的参考资料</a> · <a href=\"#ref-cq-r04\">陈庆云的学术回顾</a> · <a href=\"#a04-source-cas\">“上海氟”的团队接续</a></p>\n",
+      "new": "  <nav class=\"a04-cards\" aria-label=\"四项核心成就\">\n    <div class=\"a04-card\"><h3><a href=\"#a04-representative-study\">自主设计含醚键结构</a></h3><p>分子设计与路线对照、端基回用与原刊物性、赴美学术交流。</p></div>\n    <div class=\"a04-card\"><h3><a href=\"#a04-cooperation\">走通工程放大</a></h3><p>试制与扩大试验、实验厂和电镀厂等单位的合作分工。</p></div>\n    <div class=\"a04-card\"><h3><a href=\"#a04-application\">推广使用与获奖</a></h3><p>全国推广与两项获奖、车间抑雾与工厂应用。</p></div>\n    <div class=\"a04-card\"><h3><a href=\"#a04-research-continuity\">建立含氟醚磺酰氟合成方法</a></h3><p>原刊的合成方法与二氟卡宾推断，以及由此展开的基础研究。</p></div>\n  </nav>\n  <p class=\"a04-source\"><a href=\"#refs\">参考资料</a></p>\n"
+    },
+    {
+      "old": "  <h2 id=\"a04-representative-study-title\">开拓性在哪里：为同一个问题设计另一种分子</h2>\n",
+      "new": "  <h2 id=\"a04-representative-study-title\">自主设计含醚键结构</h2>\n  <h3>分子设计与路线对照</h3>\n"
+    },
+    {
+      "old": "",
+      "new": "  <h3>端基回用与原刊物性</h3>\n"
+    },
+    {
+      "old": "  <h3 id=\"a04-international-exchange\">在国外同行面前</h3>\n",
+      "new": "  <h3 id=\"a04-international-exchange\">赴美学术交流</h3>\n"
+    },
+    {
+      "old": "",
+      "new": "  <p class=\"a04-chapter-return\"><a href=\"#a04-contributions\">返回成就概览</a></p>\n</section>\n\n<section class=\"a04-panel\" id=\"a04-cooperation\" aria-labelledby=\"a04-cooperation-title\">\n  <span class=\"a04-anchor-alias\" id=\"a04-representative-study-story\" aria-hidden=\"true\"></span>\n  <h2 id=\"a04-cooperation-title\">走通工程放大</h2>\n  <h3>试制与扩大试验</h3>\n  <p>陈庆云回忆，顾子恺和实验厂工程人员在F-53放大时启用管道，把四氟乙烯送入高压反应釜。他把这称为当时国内从F-53开始的一项工程尝试。实验厂随后完成试制。1979年的扩大试验表明，整条合成路线可用于工业生产。1982年展览资料记载，实验厂具备年产2吨的能力。</p>\n  <h3>合作分工</h3>\n  <p>陈庆云负责组织路线探索，并随项目进入实验厂。黄维垣参与送样和相关分析，研究组在实验室制备并比较样品。</p>\n  <p id=\"a04-cooperation-caption\">上海光明电镀厂和上海电镀厂参与早期试用。江苏省泰州市电化厂参与了合作，上海有机所质谱组和上海医药工业研究院核磁组协助完成分析。</p>\n  <p class=\"a04-source\"><a href=\"#a04-source-book\">陈庆云的工程放大回忆</a> · <a href=\"#a04-authorship\">合作署名记录</a> · <a href=\"#a04-source-1979\">1979年论文致谢</a></p>\n  <p class=\"a04-chapter-return\"><a href=\"#a04-contributions\">返回成就概览</a></p>\n"
+    },
+    {
+      "old": "  <h2 id=\"a04-application-title\">现场应用：从车间试用到全国推广</h2>\n",
+      "new": "  <h2 id=\"a04-application-title\">推广使用与获奖</h2>\n  <h3 id=\"a04-industry\">全国推广与获奖</h3>\n  <p id=\"a04-timeline-caption\">1982年全国已有985个使用单位。按当时奖励审批材料的统计口径，至1988年夏，项目已获1050万元纯利润效益。<a href=\"#a04-source-book\">推广与效益记录</a></p>\n  <h4 id=\"a04-awards\">项目获奖</h4>\n  <p>1982年10月，「抑铬雾剂F-53及其制备」获两项奖励。</p>\n  <ul>\n    <li><strong>国家发明奖三等奖。</strong> <a href=\"#a04-source-national-award\">国家科委公告与证书书影</a></li>\n    <li><strong>上海市重大科研成果奖一等奖。</strong> <a href=\"#a04-source-shanghai-award\">获奖记载与年表</a></li>\n  </ul>\n  <p class=\"a04-source\"><a href=\"#a04-award-attribution\">合作项目与署名</a> · <a href=\"#a04-source-1982\">1982年应用报道</a></p>\n"
+    },
+    {
+      "old": "  <h3 id=\"a04-industry\">行业 · 推广、获奖与效益</h3>\n  <p id=\"a04-timeline-caption\">1982年全国已有985个使用单位。按当时奖励审批材料的统计口径，至1988年夏，项目已获1050万元纯利润效益。<a href=\"#a04-source-book\">推广与效益记录</a></p>\n  <h4 id=\"a04-awards\">项目获奖</h4>\n  <p>1982年10月，「抑铬雾剂F-53及其制备」获两项奖励。</p>\n  <ul>\n    <li><strong>国家发明奖三等奖。</strong> <a href=\"#a04-source-national-award\">国家科委公告与证书书影</a></li>\n    <li><strong>上海市重大科研成果奖一等奖。</strong> <a href=\"#a04-source-shanghai-award\">获奖记载与年表</a></li>\n  </ul>\n  <p class=\"a04-source\"><a href=\"#a04-award-attribution\">合作项目与署名</a> · <a href=\"#a04-source-1982\">1982年应用报道</a></p>\n",
+      "new": "  <p class=\"a04-chapter-return\"><a href=\"#a04-contributions\">返回成就概览</a></p>\n"
+    },
+    {
+      "old": "  <h2 id=\"a04-continuity-title\">研制怎样带动“上海氟”的基础研究</h2>\n  <h3>从一个产品到一类合成方法</h3>\n",
+      "new": "  <h2 id=\"a04-continuity-title\">建立含氟醚磺酰氟合成方法</h2>\n  <h3>原刊的合成方法与机理推断</h3>\n"
+    },
+    {
+      "old": "",
+      "new": "  <h3>研制怎样带动“上海氟”的基础研究</h3>\n"
+    },
+    {
+      "old": "</section>\n\n<section class=\"a04-panel\" id=\"a04-cooperation\" aria-labelledby=\"a04-cooperation-title\">\n  <span class=\"a04-anchor-alias\" id=\"a04-representative-study-story\" aria-hidden=\"true\"></span>\n  <h2 id=\"a04-cooperation-title\">合作分工：从实验室的反应瓶到工厂镀槽</h2>\n  <p>陈庆云负责组织路线探索，并随项目进入实验厂。黄维垣参与送样和相关分析，研究组在实验室制备并比较样品。陈庆云回忆，顾子恺和实验厂工程人员在F-53放大时启用管道，把四氟乙烯送入高压反应釜。他把这称为当时国内从F-53开始的一项工程尝试。实验厂随后完成试制。1979年的扩大试验表明，整条合成路线可用于工业生产。1982年展览资料记载，实验厂具备年产2吨的能力。</p>\n  <p id=\"a04-cooperation-caption\">上海光明电镀厂和上海电镀厂参与早期试用。江苏省泰州市电化厂参与了合作，上海有机所质谱组和上海医药工业研究院核磁组协助完成分析。</p>\n  <p class=\"a04-source\"><a href=\"#a04-source-book\">陈庆云的工程放大回忆</a> · <a href=\"#a04-authorship\">合作署名记录</a> · <a href=\"#a04-source-1979\">1979年论文致谢</a></p>\n",
+      "new": "  <p class=\"a04-chapter-return\"><a href=\"#a04-contributions\">返回成就概览</a></p>\n"
+    }
+  ]
+}
