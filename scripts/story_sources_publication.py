@@ -25,6 +25,7 @@ import f53_card_navigation_publication as f53_card_navigation
 import f53_chapter_navigation_publication as f53_chapter_navigation
 import f53_original_reading_publication as f53_original_reading
 import f53_product_identity_publication as f53_product_identity
+import f53_evidence_links_publication as f53_evidence_links
 from stories_rebalance_publication import PUBLICATION_PATHS, _file, _identity, _reconstruct, _sha
 
 
@@ -102,7 +103,8 @@ def _previous(root):
                  (f53_card_navigation, f53_card_navigation.V64_ADDITIONS),
                  (f53_chapter_navigation, f53_chapter_navigation.V65_ADDITIONS),
                  (f53_original_reading, f53_original_reading.V66_ADDITIONS),
-                 (f53_product_identity, f53_product_identity.V67_ADDITIONS))
+                 (f53_product_identity, f53_product_identity.V67_ADDITIONS),
+                 (f53_evidence_links, f53_evidence_links.V68_ADDITIONS))
     latest = next((revision for revision, _ in reversed(revisions) if (root/revision.MANIFEST).is_file()), None)
     if latest is None and not (root/MANIFEST).is_file():
         return root, None

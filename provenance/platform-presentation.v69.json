@@ -1,0 +1,124 @@
+{
+  "schema_version": "69.0",
+  "presentation_id": "PLATFORM-A04-EVIDENCE-ACCESS-20261127-v69",
+  "publication_kind": "a04_evidence_access",
+  "previous_presentation_commit": "6e7f2989bd5231e8bf882abe76ba91695adcf090",
+  "changed_html_paths": [
+    "topics/f53/index.html"
+  ],
+  "changed_document_paths": [],
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v68.json",
+    "sha256": "36ba6af6ed831149b1cddd05cc99280bd2993af4817aac2ee04b72756d2471ec",
+    "presentation_id": "PLATFORM-A04-F53-AND-F53B-EVIDENCE-20261127-v68"
+  },
+  "change_reason": "改进原刊及原作者文献入口，补充1978年论文著录及2015年商品样品组分分析，明确表4与商品名的关系。",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "M0_resumed": false,
+  "Nemotron_training_resumed": false,
+  "reversible_text_files": [
+    {
+      "path": "scripts/story_sources_publication.py",
+      "old_sha256": "910917cdc24d943f9dddb61a15929cb3765f6254ae88cb0ed41f12ca8ed1e19f",
+      "old_bytes": 9453,
+      "new_sha256": "5628098948cf20b7440d13999799243dbe6de931ed0aa0dfbc9555de0314795f",
+      "new_bytes": 9586,
+      "edits": [
+        {
+          "old_offset": 1262,
+          "replacement": 0
+        },
+        {
+          "old_offset": 5102,
+          "replacement": 1
+        }
+      ]
+    },
+    {
+      "path": "site/topics/f53/index.html",
+      "old_sha256": "28f7eaf24d8034b034e868c86e1825653dd64e7c9a1f3fed4670215ae10330ed",
+      "old_bytes": 35386,
+      "new_sha256": "c8e1697c31dfe1772ff3a7b90a59782d0208a52cc3fa333810df51958bc0f7eb",
+      "new_bytes": 36870,
+      "edits": [
+        {
+          "old_offset": 13075,
+          "replacement": 2
+        },
+        {
+          "old_offset": 23383,
+          "replacement": 3
+        },
+        {
+          "old_offset": 24768,
+          "replacement": 4
+        },
+        {
+          "old_offset": 25271,
+          "replacement": 5
+        },
+        {
+          "old_offset": 27334,
+          "replacement": 6
+        },
+        {
+          "old_offset": 28998,
+          "replacement": 7
+        },
+        {
+          "old_offset": 31638,
+          "replacement": 8
+        },
+        {
+          "old_offset": 32646,
+          "replacement": 9
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "",
+      "new": "import f53_evidence_links_publication as f53_evidence_links\n"
+    },
+    {
+      "old": "                 (f53_product_identity, f53_product_identity.V67_ADDITIONS))\n",
+      "new": "                 (f53_product_identity, f53_product_identity.V67_ADDITIONS),\n                 (f53_evidence_links, f53_evidence_links.V68_ADDITIONS))\n"
+    },
+    {
+      "old": "  <p>这些数值描述水溶液的表面张力。实际镀槽中的抑雾效果见<a href=\"#a04-workshop\">现场记录</a>。</p>\n  <p class=\"a04-source\"><a href=\"#a04-source-book\">路线与端基回用</a> · <a href=\"#a04-source-3m\">Zeromist历史技术文献</a> · <a href=\"#a04-source-1979\">1979年原刊第319页及表4</a></p>\n",
+      "new": "  <p>这些数值描述水溶液的表面张力。实际镀槽中的抑雾效果见<a href=\"#a04-workshop\">现场记录</a>。<a href=\"#a04-identity-caption\">查看两种钾盐与商品名的关系</a>。</p>\n  <p class=\"a04-source\"><a href=\"#a04-source-book\">路线与端基回用</a> · <a href=\"#a04-source-3m\">Zeromist历史技术文献</a> · <a href=\"#a04-source-1979\">查阅1979年原刊及表4页码</a></p>\n"
+    },
+    {
+      "old": "    <p>换氯的直接产物是十碳磺酰氟。将磺酰氟端（–SO₂F）水解成磺酸钾端（–SO₃K）时，碳数和链末氯保留。原作者把这个十碳钾盐与同系列的八碳末端氯代钾盐都列为可用的抑雾剂。表4中与2013年 F-53B 研究对象结构对应的是八碳氯代钾盐。</p>\n",
+      "new": "    <p>换氯的直接产物是十碳磺酰氟。将磺酰氟端（–SO₂F）水解成磺酸钾端（–SO₃K）时，碳数和链末氯保留。原作者把这个十碳钾盐与同系列的八碳末端氯代钾盐都列为可用的抑雾剂。<a href=\"#a04-surface-tension-caption\">表4中的八碳末端氯代钾盐</a>与2013年 F-53B 研究的目标物结构相同。</p>\n"
+    },
+    {
+      "old": "  <p>Wang等在2013年回顾了从早期全氟端钾盐到含氯 F-53B 的商品化过程，并说明开始改用 F-53B 的确切时间未明。论文研究的八碳含氯结构，与1979年原刊表4第二行的钾盐相同。</p>\n",
+      "new": "  <p>Wang等在2013年回顾了从早期全氟端钾盐到含氯 F-53B 的商品化过程，并说明开始改用 F-53B 的确切时间未明。论文研究的八碳含氯结构，与<a href=\"#a04-surface-tension-caption\">1979年原刊表4第二行的钾盐</a>相同。</p>\n"
+    },
+    {
+      "old": "",
+      "new": "  <p>2015年，Ruan等在所分析的 F-53B 商品样品中鉴定出八碳和十碳两种末端氯代含氟醚磺酸盐，分别简称 6:2 和 8:2，数字表示醚氧两侧的碳数。这项分析说明，同一个商品样品可以含有不同链长的组分。<a href=\"#a04-source-ruan-2015\">Ruan等2015年研究</a></p>\n"
+    },
+    {
+      "old": "    <li id=\"a04-award-cas-record\"><strong>院级奖记载。</strong> 《黄维垣院士90华诞志庆集》记有中国科学院重大科技成果一等奖。第37页年谱将“抑铬药剂F-53”所获院级奖列在1982年，第42–43页的成果表将“新型铬雾抑制剂F-53”的院级奖列为1980年。《氟缘笃志：陈庆云传》未载这一项，授奖文件和年份待核。<a href=\"#a04-source-huang-anniversary\">志庆集原页</a></li>\n",
+      "new": "    <li id=\"a04-award-cas-record\"><strong>院级奖记载。</strong> 《黄维垣院士90华诞志庆集》记有中国科学院重大科技成果一等奖。第37页年谱将“抑铬药剂F-53”所获院级奖列在1982年，第42页的成果表将“新型铬雾抑制剂F-53”的院级奖列为1980年。《氟缘笃志：陈庆云传》未载这一项，授奖文件和年份待核。<a href=\"#a04-source-huang-anniversary\">志庆集原页</a></li>\n"
+    },
+    {
+      "old": "    <li id=\"a04-source-1979\"><span id=\"a04-study-source-cq-h15\"></span><span id=\"a04-deep-reading-source-cq-h15\"></span>全氟磺酸组。<a href=\"https://www.sioc.ac.cn/kxj/ml/hwy/xscj/202308/t20230823_6866955.html\">《全氟和多氟烷基磺酸的研究 II. 一些多氟烷基醚磺酸的合成》</a>。《化学学报》1979，37：315–324。合成方法见第315页，原作者的机理讨论见第318–319页。第319页另记末端氯代钾盐的抑雾用途及碘氯化物的回收，第320页表4列水溶液表面张力，第321页表6为核磁记录，第323页载氯化实例、致谢与参考文献[1]。</li>\n    <li id=\"ref-cq-r04\"><span id=\"a04-study-source-cq-r04\"></span>陈庆云。<a href=\"https://sioc-journal.cn/Jwk_yjhx/CN/abstract/abstract325798.shtml\">《抑铬雾剂F-53的研制带动了有机氟化学的发展》</a>。《有机化学》2001，21(11)：805–809。</li>\n",
+      "new": "    <li id=\"a04-source-1978\">中国科学院上海有机化学研究所全氟磺酸组。<a href=\"https://sioc.cas.cn/kxj/ml/hwy/xscj/202308/t20230823_6866954.html\">《Synthesis and Application of Oxa-Perfluoroalkane Sulfonic Acids》机构著录</a>。Scientia Sinica，1978，21卷，第773页起。1979年原刊参考文献[1]并列引述这篇英文论文和1977年《化学学报》论文。</li>\n    <li id=\"a04-source-1979\"><span id=\"a04-study-source-cq-h15\"></span><span id=\"a04-deep-reading-source-cq-h15\"></span>全氟磺酸组。<a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1979/V37/I4/315\">《全氟和多氟烷基磺酸的研究 II. 一些多氟烷基醚磺酸的合成》</a>。《化学学报》1979，37(4)：315–324。链接为期刊摘要页，可从页内找 PDF。合成方法见第315页，原作者的机理讨论见第318–319页。第319页另记末端氯代钾盐的抑雾用途及碘氯化物的回收，第320页（PDF第6页）表4列水溶液表面张力，第321页表6为核磁记录，第323页载氯化实例、致谢与参考文献[1]。</li>\n    <li id=\"ref-cq-r04\"><span id=\"a04-study-source-cq-r04\"></span>陈庆云。<a href=\"https://sioc-journal.cn/Jwk_yjhx/EN/Y2001/V21/I11/805\">《抑铬雾剂F-53的研制带动了有机氟化学的发展》</a>。《有机化学》2001，21(11)：805–809。期刊摘要列出 F-53 结构式。</li>\n"
+    },
+    {
+      "old": "    <li id=\"a04-source-huang-anniversary\"><a href=\"https://www.sioc.ac.cn/kxj/ml/hwy/jnc/202308/P020230824356102730823.pdf\">《黄维垣院士90华诞志庆集》</a>。印刷第37页年谱和第42–43页成果表记载院级奖。第54–55页陈庆云《高山景行 士之楷模》记载赴美途中所作报告。</li>\n",
+      "new": "    <li id=\"a04-source-huang-anniversary\"><a href=\"https://www.sioc.ac.cn/kxj/ml/hwy/jnc/202308/P020230824356102730823.pdf\">《黄维垣院士90华诞志庆集》</a>。印刷第37页年谱和第42页成果表记载院级奖。第54–55页陈庆云《高山景行 士之楷模》记载赴美途中所作报告。</li>\n"
+    },
+    {
+      "old": "    <li id=\"ref-cq-r12\">Siwen Wang等。<a href=\"https://pubmed.ncbi.nlm.nih.gov/23952109/\">2013年F-53B环境研究摘要</a>。Environmental Science &amp; Technology，47：10163–10170。样品结构见表1，商品化回顾见第10163页，温州采样与降解筛查见第10167–10169页。<a href=\"https://pubs.acs.org/doi/10.1021/es401525n\">DOI 10.1021/es401525n</a>。</li>\n",
+      "new": "    <li id=\"ref-cq-r12\">Siwen Wang等。<a href=\"https://pubmed.ncbi.nlm.nih.gov/23952109/\">2013年F-53B环境研究摘要</a>。Environmental Science &amp; Technology，47：10163–10170。结构见第10164页表1，商品化回顾见第10163页，温州采样与降解筛查见第10167–10169页。<a href=\"https://doi.org/10.1021/es401525n\">DOI 10.1021/es401525n</a> · <a href=\"https://www.researchgate.net/publication/256639606_First_Report_of_a_Chinese_PFOS_Alternative_Overlooked_for_30_Years_Its_Toxicity_Persistence_and_Presence_in_the_Environment\">第一作者公开的全文</a>。</li>\n    <li id=\"a04-source-ruan-2015\">Ting Ruan等。<a href=\"https://pubmed.ncbi.nlm.nih.gov/25961764/\">2015年 F-53B 商品组分分析摘要</a>。Environmental Science &amp; Technology，49(11)：6519–6527。<a href=\"https://doi.org/10.1021/acs.est.5b01010\">DOI 10.1021/acs.est.5b01010</a>。</li>\n"
+    }
+  ]
+}
