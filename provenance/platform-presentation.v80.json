@@ -1,0 +1,437 @@
+{
+  "schema_version": "80.0",
+  "presentation_id": "PLATFORM-A08-PORPHYRIN-CONTRIBUTIONS-20261128-v80",
+  "publication_kind": "a08_porphyrin_contributions",
+  "previous_presentation_commit": "d6ec2ee42c9d55ad2025f34efaa18b83e7aad608",
+  "changed_html_paths": [
+    "achievements/index.html",
+    "index.html",
+    "topics/fluoroporphyrins/index.html"
+  ],
+  "changed_document_paths": [
+    "README.md",
+    "docs/A08_ACADEMIC_ACHIEVEMENTS_zh-CN.md"
+  ],
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v79.json",
+    "sha256": "230f49e6e9aec6d1901dfed7fe2371935335cd4f4b219a25c0bb45c832aff408",
+    "presentation_id": "PLATFORM-A06-REAGENT-CONTRIBUTIONS-20261127-v79"
+  },
+  "change_reason": "根据传记与论文原文分别呈现卟啉氟烷基化和20π非芳香大环，补足合作分工和A08理论成果归属。",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "M0_resumed": false,
+  "Nemotron_training_resumed": false,
+  "reversible_text_files": [
+    {
+      "path": "README.md",
+      "old_sha256": "d361e57efdda211eb995112de2ee2e904ea6b3ab622121a4bcb8317c51acd231",
+      "old_bytes": 14583,
+      "new_sha256": "6429a41927509697b31dce7722664e2bf156f0cef24389568a6b624ff2a3e22e",
+      "new_bytes": 14766,
+      "edits": [
+        {
+          "old_offset": 2563,
+          "replacement": 0
+        },
+        {
+          "old_offset": 6772,
+          "replacement": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/A08_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "old_sha256": "4b72c34667578da7dbfee2427cb8a1dbb51aeb39abb060861469305440bb9815",
+      "old_bytes": 24654,
+      "new_sha256": "315dffdd317d7f85d838193e8d539cc229974a7e5b5584a3f8c5f1abdd64c231",
+      "new_bytes": 26062,
+      "edits": [
+        {
+          "old_offset": 5086,
+          "replacement": 2
+        },
+        {
+          "old_offset": 5328,
+          "replacement": 3
+        },
+        {
+          "old_offset": 5448,
+          "replacement": 4
+        },
+        {
+          "old_offset": 5748,
+          "replacement": 5
+        },
+        {
+          "old_offset": 6231,
+          "replacement": 6
+        },
+        {
+          "old_offset": 6306,
+          "replacement": 7
+        },
+        {
+          "old_offset": 6592,
+          "replacement": 8
+        },
+        {
+          "old_offset": 7721,
+          "replacement": 9
+        },
+        {
+          "old_offset": 7782,
+          "replacement": 10
+        },
+        {
+          "old_offset": 8068,
+          "replacement": 11
+        },
+        {
+          "old_offset": 8325,
+          "replacement": 12
+        },
+        {
+          "old_offset": 8484,
+          "replacement": 13
+        },
+        {
+          "old_offset": 8636,
+          "replacement": 14
+        },
+        {
+          "old_offset": 9016,
+          "replacement": 15
+        },
+        {
+          "old_offset": 9639,
+          "replacement": 16
+        },
+        {
+          "old_offset": 10231,
+          "replacement": 17
+        },
+        {
+          "old_offset": 12685,
+          "replacement": 18
+        },
+        {
+          "old_offset": 13217,
+          "replacement": 19
+        }
+      ]
+    },
+    {
+      "path": "scripts/story_sources_publication.py",
+      "old_sha256": "184ba5161676e8f9b8244d15b27d6f8bd0d571245e4d980109573741a488aa2b",
+      "old_bytes": 11020,
+      "new_sha256": "6a34043c0b06e7bc8d81e2cb8992a31f092c22d9d0aa3628e8851996032ea1c5",
+      "new_bytes": 11189,
+      "edits": [
+        {
+          "old_offset": 1974,
+          "replacement": 20
+        },
+        {
+          "old_offset": 6659,
+          "replacement": 21
+        }
+      ]
+    },
+    {
+      "path": "site/achievements/index.html",
+      "old_sha256": "14233851cfc0bc3ed880303f966674b698b2a123a1271887db9d5e7bc6cb6d5f",
+      "old_bytes": 84909,
+      "new_sha256": "32037a0d3282a1538edbb52cf95174f4e97e4329d17841d22050bdcd404a29f5",
+      "new_bytes": 85146,
+      "edits": [
+        {
+          "old_offset": 15266,
+          "replacement": 22
+        },
+        {
+          "old_offset": 34696,
+          "replacement": 23
+        },
+        {
+          "old_offset": 35283,
+          "replacement": 24
+        }
+      ]
+    },
+    {
+      "path": "site/index.html",
+      "old_sha256": "fccaf918d2f31d19209513f72a0c8553d3694676c0660588c55f7533f74167ff",
+      "old_bytes": 220931,
+      "new_sha256": "6559d7c4878bedf8bce7f048b7990b7adf5ea8d882d589a89a63fc1e2b514186",
+      "new_bytes": 221162,
+      "edits": [
+        {
+          "old_offset": 17964,
+          "replacement": 25
+        },
+        {
+          "old_offset": 39306,
+          "replacement": 26
+        }
+      ]
+    },
+    {
+      "path": "site/topics/fluoroporphyrins/index.html",
+      "old_sha256": "8b8166341a4b794840729bf4638417539eb9a9703d87f4c2deb6af343cd24b34",
+      "old_bytes": 29075,
+      "new_sha256": "585859a4e99919802b8c4b536824d02223d0537949cd08fc5a824e67e318f302",
+      "new_bytes": 26901,
+      "edits": [
+        {
+          "old_offset": 5065,
+          "replacement": 27
+        },
+        {
+          "old_offset": 8819,
+          "replacement": 28
+        },
+        {
+          "old_offset": 12510,
+          "replacement": 29
+        },
+        {
+          "old_offset": 14705,
+          "replacement": 30
+        },
+        {
+          "old_offset": 17975,
+          "replacement": 31
+        },
+        {
+          "old_offset": 18567,
+          "replacement": 32
+        },
+        {
+          "old_offset": 21152,
+          "replacement": 33
+        },
+        {
+          "old_offset": 22374,
+          "replacement": 34
+        },
+        {
+          "old_offset": 22556,
+          "replacement": 35
+        },
+        {
+          "old_offset": 22991,
+          "replacement": 36
+        },
+        {
+          "old_offset": 25849,
+          "replacement": 37
+        },
+        {
+          "old_offset": 26371,
+          "replacement": 38
+        },
+        {
+          "old_offset": 26709,
+          "replacement": 39
+        },
+        {
+          "old_offset": 27097,
+          "replacement": 40
+        },
+        {
+          "old_offset": 27631,
+          "replacement": 41
+        },
+        {
+          "old_offset": 28573,
+          "replacement": 42
+        },
+        {
+          "old_offset": 28957,
+          "replacement": 43
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "| [氟烷基卟啉](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#fluoroalkylporphyrins) | 从已有卟啉的直接氟烷基化、按位置和数量引入三氟甲基，推进到选择性环化、结构与光物性研究；20π非芳香大环是其中的代表发现。这是A08（交叉研究与晚年拓展）的卟啉分支，不等于A08（交叉研究与晚年拓展）全部内容。 | [A08（交叉研究与晚年拓展）卟啉与大环分支资料](docs/A08_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |\n",
+      "new": "| [氟烷基卟啉](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#fluoroalkylporphyrins) | 陈庆云与合作者发展了直接在已有卟啉大环上引入氟烷基的方法，并在另一项研究中分离和表征了20π非芳香大环。这两项工作是A08（交叉研究与晚年拓展）卟啉分支的代表成果。 | [直接在卟啉上引入氟烷基](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#topic-fluoroporphyrins) · [分离并表征20π非芳香大环](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#a08-representative-study) |\n"
+    },
+    {
+      "old": "| [A08（交叉研究与晚年拓展）](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#a08-contributions) | 陈庆云与不同合作者研究含氟小环、卟啉的氟烷基化、20π非芳香大环和含三键的18π共轭大环。晚年又拓展脱氧氟化、氟磺酰化，研究含氟表面活性分子和离子液体的物性。 |\n",
+      "new": "| [A08（交叉研究与晚年拓展）](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#a08-contributions) | 陈庆云与不同合作者研究含氟小环，发展了卟啉的直接氟烷基化方法，分离并表征了20π非芳香大环，后来又研究了含三键的18π共轭大环。晚年又拓展脱氧氟化、氟磺酰化，研究含氟表面活性分子和离子液体的物性。 |\n"
+    },
+    {
+      "old": "这一方向把陈庆云小组的含氟试剂和反应方法带入大环化学。研究从如何直接修饰卟啉，走向取代位置、电子结构和新大环骨架；传记同时保存了跨学科合作和师生共同学习的过程。\n",
+      "new": "这是四项主要学术成就中「氟烷基卟啉」在A08（交叉研究与晚年拓展）中的代表分支。它包括两个具体问题。其一是怎样在已有卟啉骨架上引入氟烷基，其二是怎样获得可以分离和表征的20π非芳香大环。含氟小环、含三键的18π大环和晚年试剂等研究也在A08另有介绍。\n"
+    },
+    {
+      "old": "[阅读专题](../site/topics/fluoroporphyrins/index.html)\n",
+      "new": "[直接在卟啉上引入氟烷基](../site/topics/fluoroporphyrins/index.html#topic-fluoroporphyrins) · [分离并表征20π非芳香大环](../site/topics/fluoroporphyrins/index.html#a08-representative-study)\n"
+    },
+    {
+      "old": "2000年受聘为湖南大学特聘教授后，陈庆云希望把氟化学方法与郭灿城等人的卟啉研究基础结合起来。刘超在传记转引的回忆中介绍，陈先生向同行请教，自学整套卟啉资料，作标记和笔记，再与学生一起讨论文献和实验问题。\n",
+      "new": "2000年受聘为湖南大学特聘教授后，陈庆云提出把有机氟反应方法用于卟啉研究。郭灿城团队已有卟啉与催化研究基础，两方由此展开合作。刘超在传记转引的回忆中介绍，陈先生向湖南大学同行借阅资料，边读边做标记，再与学生讨论文献和实验问题。\n"
+    },
+    {
+      "old": "团队转向直接修饰卟啉大环。2003年，金利美、曾卓、郭灿城、陈庆云共同发表自由碱卟啉的直接氟烷基化研究，将既有含氟方法用于大环骨架，为获得不同取代的含氟卟啉提供合成入口。\n",
+      "new": "从含氟构件重建卟啉大环时，每换一种取代结构都可能要另备构件。金利美、曾卓、郭灿城、陈庆云在2003年验证了直接修饰已有大环的办法。他们使用改进的脱卤亚磺化方法，使若干全氟烷基碘化物与自由碱四芳基卟啉反应，获得2位（β位）取代的全氟烷基产物。保留大环骨架后再引入氟烷基，为比较不同取代结构提供了合成途径。\n"
+    },
+    {
+      "old": "### 从直接修饰到取代位置、数量、稠合骨架与性质研究\n",
+      "new": "### 从改变取代位置到研究不同大环骨架\n"
+    },
+    {
+      "old": "陈庆云与刘超从溴代卟啉出发，运用钯催化交叉偶联和甲酯“陈试剂”，发展三氟甲基取代卟啉的合成方法。2005年的代表论文与2003年直接氟烷基化分别著录；β位、meso位及取代数量成为可以改变和比较的结构因素。\n",
+      "new": "2005年，刘超与陈庆云把A06（磺酸酯、二氟卡宾与三氟甲基化）中的甲酯“陈试剂”用于钯催化交叉偶联。选择溴代位点和数目不同的卟啉作为起点，可以把三氟甲基引到相应的β位或meso位，为比较位置与取代数的影响提供样品。\n"
+    },
+    {
+      "old": "2006年，刘超、沈冬梅、曾卓、郭灿城、陈庆云进一步以β-(ω-氯全氟烷基)卟啉为对象，在特定条件下经选择性C–F转化、分子内环化和还原脱氟芳构化得到四氟苯并卟啉。原作者还比较还原剂、碱和中心金属，并研究所得稠合大环的晶体结构、光物理和电化学性质。这一工作把“在卟啉外围引入含氟基团”推进到“利用含氟侧链构建新大环骨架”，是2003／2005年合成方法通向2007年特殊电子结构研究之间的重要一环。\n",
+      "new": "2006年，刘超、沈冬梅、曾卓、郭灿城、陈庆云进一步以β-(ω-氯全氟烷基)卟啉为对象，在特定条件下经选择性C–F转化、分子内环化和还原脱氟芳构化得到四氟苯并卟啉。原作者还比较还原剂、碱和中心金属，并研究所得稠合大环的晶体结构、光物理和电化学性质。它说明含氟侧链也可用于构建稠合骨架。2007年的20π工作则从四三氟甲基取代铜卟啉出发，考察另一种大环骨架在还原下的变化。\n"
+    },
+    {
+      "old": "### 20π非芳香大环：从颜色变化进入结构问题\n",
+      "new": "### 分离并表征20π非芳香大环\n"
+    },
+    {
+      "old": "传记记述，2006年刘超与陈庆云研究三氟甲基取代铜卟啉的还原反应时，观察到溶液由绿色转为棕色。分离与表征后，研究者获得20π电子非芳香性N,N′-二氢卟啉。2007年论文由Chao Liu、Dong-Mei Shen、Qing-Yun Chen共同署名。\n",
+      "new": "Woodward曾在讨论叶绿素合成时设想过20π的isophlorin结构。刘超与陈庆云研究四个β位三氟甲基取代的四苯基铜卟啉时，发现其还原反应使溶液从绿色转为棕色。后来由刘超、沈冬梅、陈庆云共同发表的2007年论文报告了还原产物的分离和表征。原作者支持信息第S2页记录，从该次实验中分离出50毫克化合物2，分离收率为82%。\n"
+    },
+    {
+      "old": "原作报告了可分离和表征的isophlorin及其衍生研究。颜色变化是发现线索，结构与性质判断来自原研究的表征和分析；20π计数本身不代替芳香性判断。已有SI及晶体模型的具体对应另见AI资料页。\n",
+      "new": "颜色变化提供了寻找新结构的线索。原作者结合单晶衍射和核磁共振等证据，将化合物2鉴定为20π非芳香性N,N′-二氢卟啉。支持信息第S9–S11页给出晶体数据，第S12页图3和第S13页图4分别比较它与氧化所得18π卟啉的核磁共振谱和紫外–可见吸收光谱。图4还记录了化合物2在二氯甲烷中、室温空气下的氧化过程。原作的非芳香性判断来自这些具体结构与表征证据。\n"
+    },
+    {
+      "old": "**学术与应用意义：**使含氟大环成为研究特殊电子结构和骨架变化的具体分子对象，体现合成与性质问题的相互推动。\n",
+      "new": "这项工作使一类20π isophlorin从结构设想成为可分离和研究的分子，也提供了在同一体系内比较还原态和氧化产物的依据。\n"
+    },
+    {
+      "old": "传记81–82页；JACS2007，129：5814–5815；已有SI／CIF核读登记 · HERITAGE-S01、CQ-R10\n",
+      "new": "出处为传记第81–82页、Woodward讲演整理稿第396页及2007年原论文与支持信息（CQ-R10）。\n"
+    },
+    {
+      "old": "2022年的合著论文报告了包含碳—碳三键的18π共轭大环Porphyriynes。代表分子本身不含氟，它与2007年的含氟20π isophlorin属于不同结构与研究问题；原作结合制备、结构、光谱及相关理论研究探索这一大环骨架。因此它属于A08后续新大环拓展，不代替“四项主要学术成就”中的氟烷基卟啉。\n",
+      "new": "2022年的合著论文报告了包含碳—碳三键的18π共轭大环Porphyriynes。代表分子本身不含氟，是A08后续研究中的另一种大环骨架。原作者用制备、单晶结构、光谱和理论模型考察三键如何纳入这一共轭体系。\n"
+    },
+    {
+      "old": "附件中已有原作者的DFT／TD-DFT、电子性质及候选路径模型。实验对象、全分子性质模型与简化路径模型各有范围，平台保留其原作者归属，不把这些计算作为平台新成果，也不从合著署名推定陈先生本人执行了计算。\n",
+      "new": "原作者在支持信息第S15–S21页说明DFT／TD-DFT等计算及模型，第S38页起列出计算结果。实验对象、全分子性质模型和简化候选路径各有适用范围。计算归原论文作者团队，平台的AI资料页整理其研究对象与已有结果。\n"
+    },
+    {
+      "old": "| 郭灿城与陈庆云 | 结合湖南大学的卟啉研究与陈先生的氟化学积累，形成交叉研究起点。 | 传记78–80页 |\n| 金利美、曾卓、郭灿城、陈庆云 | 2003年自由碱卟啉直接氟烷基化论文共同作者。 | CQ-H09；传记79页 |\n| 刘超与陈庆云 | 开展三氟甲基取代卟啉等研究；传记记录共同学习及还原反应中的发现过程。 | 传记79–82页；CQ-H19 |\n",
+      "new": "| 郭灿城团队与陈庆云 | 湖南大学团队带来卟啉与催化研究基础，陈庆云提出把有机氟方法用于卟啉，并与学生讨论文献和实验。 | 传记78–80页 |\n| 金利美、曾卓 | 据传记所述的学位研究，金利美研究直接引入氟烷基及5位氟烷基卟啉的自组装，曾卓研究在已有四芳基卟啉β位引入全氟烷基。两人与郭灿城、陈庆云共同发表2003年论文。 | 传记79–80页、CQ-H09 |\n| 刘超与陈庆云 | 共同发展三氟甲基取代卟啉的钯催化方法，随后研究取代位置和数目的影响。传记也记下两人研究铜卟啉还原时的观察。 | 传记79–82页、CQ-H19 |\n"
+    },
+    {
+      "old": "| Dong-Mei Shen | 2007年20π大环论文共同作者，按原刊英文署名保存。 | CQ-R10 |\n",
+      "new": "| 刘超、沈冬梅、陈庆云 | 共同发表2007年20π大环的分离、结构和性质研究。 | CQ-R10 |\n"
+    },
+    {
+      "old": "- **CQ-R10** · [Synthesis and Reactions of 20 π-Electron β-Tetrakis(trifluoromethyl)-meso-tetraphenylporphyrins](https://pubs.acs.org/doi/10.1021/ja070855c)；2007，JACS129(18)：5814–5815；DOI 10.1021/ja070855c；摘要、已有13页SI及四份CIF对应记录\n",
+      "new": "- **CQ-R10** · [Synthesis and Reactions of 20 π-Electron β-Tetrakis(trifluoromethyl)-meso-tetraphenylporphyrins](https://pubs.acs.org/doi/10.1021/ja070855c)（J. Am. Chem. Soc. 129(18)，5814–5815，2007）。[原作者支持信息](https://ndownloader.figshare.com/files/4710160)中的分离数据见S2，晶体数据见S9–S11，光谱与氧化记录见S12–S13。平台另有四份CIF的对应记录。\n- R. B. Woodward，[The Total Synthesis of Chlorophyll](https://publications.iupac.org/pac/2/3/0383/index.html)（Pure Appl. Chem. 2，383–404，1961）。第396页讨论叶绿素合成中的一种isophlorin候选结构。\n"
+    },
+    {
+      "old": "- **CQ-H20** · [Porphyriynes: 18-π-Conjugated Macrocycles Incorporating a Triple Bond](https://pubs.acs.org/doi/10.1021/acs.orglett.2c00356)；2022，Org. Lett.24(8)：1716–1721；DOI 10.1021/acs.orglett.2c00356；已有55页SI及原作者计算覆盖核读记录\n",
+      "new": "- **CQ-H20** · [Porphyriynes: 18-π-Conjugated Macrocycles Incorporating a Triple Bond](https://pubs.acs.org/doi/10.1021/acs.orglett.2c00356)（Org. Lett. 24(8)，1716–1721，2022）。[原作者支持信息](https://ndownloader.figshare.com/files/34165511)共55页，计算说明与相关图表见S15–S21，计算结果见S38起。\n"
+    },
+    {
+      "old": "",
+      "new": "import a08_porphyrin_contributions_publication as a08_porphyrin_contributions\n"
+    },
+    {
+      "old": "                 (a06_reagent_contributions, a06_reagent_contributions.V78_ADDITIONS))\n",
+      "new": "                 (a06_reagent_contributions, a06_reagent_contributions.V78_ADDITIONS),\n                 (a08_porphyrin_contributions, a08_porphyrin_contributions.V79_ADDITIONS))\n"
+    },
+    {
+      "old": "<p class=\"major-formula\">氟烷基化合成 · 大环反应 · 结构与性质</p>\n<p>陈庆云与合作者把有机氟方法带入卟啉化学：从已有大环的直接氟烷基化、按位置和数量引入三氟甲基，推进到选择性环化、结构与光物性研究；20π非芳香大环的分离和表征是其中的代表发现。</p>\n<p class=\"major-line\"><a href=\"#line-a08\">A08（交叉研究与晚年拓展）中的卟啉研究分支 →</a></p></article>\n",
+      "new": "<p class=\"major-formula\">直接氟烷基化 · 20π非芳香大环</p>\n<p>陈庆云与合作者从已有卟啉出发，在环上直接引入氟烷基，又用偶联控制三氟甲基的取代位置和数量。由这类方法制得的含氟铜卟啉，为后来分离并表征20π非芳香大环提供了具体研究对象。</p>\n<p class=\"major-line\"><a href=\"../topics/fluoroporphyrins/index.html#topic-fluoroporphyrins\">直接在卟啉上引入氟烷基</a> · <a href=\"../topics/fluoroporphyrins/index.html#a08-representative-study\">分离并表征20π非芳香大环</a> · <a href=\"#line-a08\">所属成果线 A08（交叉研究与晚年拓展）</a></p></article>\n"
+    },
+    {
+      "old": "<p><b>具体贡献：</b>陈庆云与合作者将二氟卡宾用于含氟小环；在卟啉方向，从直接氟烷基化、按位三氟甲基化推进到选择性环化、稠合大环和20π非芳香大环，并继续探索含三键的新大环。晚年的共同研究还涉及脱氧氟化、氟磺酰化及含氟功能材料的合成与物性。</p>\n",
+      "new": "<p><b>具体贡献：</b>陈庆云与合作者将二氟卡宾用于含氟小环；卟啉方向从直接氟烷基化和位点控制出发，分别研究稠合大环与20π非芳香大环。A08（交叉研究与晚年拓展）还包括后续含三键的18π大环研究。晚年的共同研究还涉及脱氧氟化、氟磺酰化及含氟功能材料的合成与物性。</p>\n"
+    },
+    {
+      "old": "<p class=\"primary-research-map\">卟啉研究分支对应的主要成就 · <a href=\"#major-achievement-porphyrins\">氟烷基卟啉</a></p><nav class=\"cq-journey-actions\" aria-label=\"A08（交叉研究与晚年拓展）阅读入口\"><a href=\"../topics/fluoroporphyrins/index.html#fluoroalkylporphyrins\">主要成就：完整研究链</a><a href=\"../topics/fluoroporphyrins/index.html#a08-contributions\">A08（交叉研究与晚年拓展）其他研究分支</a><a href=\"../topics/fluoroporphyrins/index.html#a08-representative-study\">20π代表发现</a><a href=\"../topics/fluoroporphyrins/index.html#a08-representative-study-story\">合作与育人</a></nav>\n",
+      "new": "<p class=\"primary-research-map\">卟啉研究分支对应的主要成就 · <a href=\"#major-achievement-porphyrins\">氟烷基卟啉</a></p><nav class=\"cq-journey-actions\" aria-label=\"A08（交叉研究与晚年拓展）阅读入口\"><a href=\"../topics/fluoroporphyrins/index.html#fluoroalkylporphyrins\">主要成就：完整研究链</a><a href=\"../topics/fluoroporphyrins/index.html#a08-contributions\">A08（交叉研究与晚年拓展）其他研究分支</a><a href=\"../topics/fluoroporphyrins/index.html#a08-representative-study\">分离并表征20π非芳香大环</a><a href=\"../topics/fluoroporphyrins/index.html#a08-representative-study-story\">合作与育人</a></nav>\n"
+    },
+    {
+      "old": "<p class=\"major-formula\">氟烷基化合成 · 大环反应 · 结构与性质</p>\n<p>陈庆云与合作者把有机氟方法带入卟啉化学：从已有大环的直接氟烷基化、按位置和数量引入三氟甲基，推进到选择性环化、结构与光物性研究；20π非芳香大环的分离和表征是其中的代表发现。</p>\n<p class=\"major-line\"><a href=\"#line-a08\">A08（交叉研究与晚年拓展）中的卟啉研究分支 →</a></p></article>\n",
+      "new": "<p class=\"major-formula\">直接氟烷基化 · 20π非芳香大环</p>\n<p>陈庆云与合作者从已有卟啉出发，在环上直接引入氟烷基，又用偶联控制三氟甲基的取代位置和数量。由这类方法制得的含氟铜卟啉，为后来分离并表征20π非芳香大环提供了具体研究对象。</p>\n<p class=\"major-line\"><a href=\"topics/fluoroporphyrins/index.html#topic-fluoroporphyrins\">直接在卟啉上引入氟烷基</a> · <a href=\"topics/fluoroporphyrins/index.html#a08-representative-study\">分离并表征20π非芳香大环</a> · <a href=\"#line-a08\">所属成果线 A08（交叉研究与晚年拓展）</a></p></article>\n"
+    },
+    {
+      "old": "<p>陈庆云与合作者将二氟卡宾用于含氟小环；在卟啉方向，从直接氟烷基化、按位三氟甲基化推进到选择性环化、稠合大环和20π非芳香大环，并继续探索含三键的新大环。晚年的共同研究还涉及脱氧氟化、氟磺酰化及含氟功能材料的合成与物性。</p>\n<p class=\"primary-research-map\">卟啉研究分支对应的主要成就 · <a href=\"#major-achievement-porphyrins\">氟烷基卟啉</a></p><nav class=\"cq-journey-actions\" aria-label=\"A08（交叉研究与晚年拓展）阅读入口\"><a href=\"topics/fluoroporphyrins/index.html#fluoroalkylporphyrins\">主要成就：完整研究链</a><a href=\"topics/fluoroporphyrins/index.html#a08-contributions\">A08（交叉研究与晚年拓展）其他研究分支</a><a href=\"topics/fluoroporphyrins/index.html#a08-representative-study\">20π代表发现</a><a href=\"topics/fluoroporphyrins/index.html#a08-representative-study-story\">合作与育人</a></nav>\n",
+      "new": "<p>陈庆云与合作者将二氟卡宾用于含氟小环；卟啉方向从直接氟烷基化和位点控制出发，分别研究稠合大环与20π非芳香大环。A08（交叉研究与晚年拓展）还包括后续含三键的18π大环研究。晚年的共同研究还涉及脱氧氟化、氟磺酰化及含氟功能材料的合成与物性。</p>\n<p class=\"primary-research-map\">卟啉研究分支对应的主要成就 · <a href=\"#major-achievement-porphyrins\">氟烷基卟啉</a></p><nav class=\"cq-journey-actions\" aria-label=\"A08（交叉研究与晚年拓展）阅读入口\"><a href=\"topics/fluoroporphyrins/index.html#fluoroalkylporphyrins\">主要成就：完整研究链</a><a href=\"topics/fluoroporphyrins/index.html#a08-contributions\">A08（交叉研究与晚年拓展）其他研究分支</a><a href=\"topics/fluoroporphyrins/index.html#a08-representative-study\">分离并表征20π非芳香大环</a><a href=\"topics/fluoroporphyrins/index.html#a08-representative-study-story\">合作与育人</a></nav>\n"
+    },
+    {
+      "old": "<a class=\"cq-journey-link\" href=\"../../index.html\">平台首页</a> · <a class=\"cq-journey-link\" href=\"../../achievements/index.html#major-achievements\">主要学术成就</a> · <a class=\"cq-journey-link\" href=\"#a08-representative-study\">代表成果</a> · <a class=\"cq-journey-link\" href=\"../deoxyfluorination/index.html#a08-deep-reading\">同线另一分支：脱氧氟化图解</a> · <a class=\"cq-journey-link\" href=\"#a08-representative-study-story\">合作与育人</a> · <a class=\"cq-journey-link\" href=\"#a08-ai-collation\">AI辅助整理</a>\r\n",
+      "new": "<a class=\"cq-journey-link\" href=\"../../index.html\">平台首页</a> · <a class=\"cq-journey-link\" href=\"../../achievements/index.html#major-achievements\">主要学术成就</a> · <a class=\"cq-journey-link\" href=\"#fluoroalkylporphyrins\">两项代表成果</a> · <a class=\"cq-journey-link\" href=\"../deoxyfluorination/index.html#a08-deep-reading\">同线另一分支：脱氧氟化图解</a> · <a class=\"cq-journey-link\" href=\"#a08-representative-study-story\">合作与育人</a> · <a class=\"cq-journey-link\" href=\"#a08-ai-collation\">AI辅助整理</a>\r\n"
+    },
+    {
+      "old": "<h2 id=\"fluoroalkylporphyrins-title\">氟烷基卟啉：从直接修饰到大环结构与性质</h2>\n<p>这项主要学术成就不是一篇20π论文的简称，而是一条连续的研究链。此前常由含氟吡咯或含氟醛从头构建卟啉，路线较长、总收率和分离都受限制；陈庆云与合作者转而把成熟的有机氟试剂与反应方法用于已有卟啉，使“怎样引入含氟基团、怎样继续转化、结构怎样影响性质”成为可逐步比较的问题。</p>\n<div class=\"cq-display-table\" role=\"region\" tabindex=\"0\">\r\n<table>\r\n<caption>2003—2008年的核心研究进程</caption>\r\n<thead>\r\n<tr>\r\n<th scope=\"col\">研究推进</th>\r\n<th scope=\"col\">关键结果与科学问题</th>\r\n<th scope=\"col\">共同完成者</th>\r\n</tr>\r\n</thead>\r\n<tbody>\n<tr>\r\n<th scope=\"row\">2003 · 直接氟烷基化</th>\r\n<td>四芳基卟啉与全氟烷基碘在连二亚硫酸钠／碳酸氢钠体系中得到2-全氟烷基卟啉；所得分子还可继续发生亲核加成及区域选择性溴化、硝化。研究由“接上氟烷基”进入“继续改变大环”的阶段。</td>\r\n<td>金利美、曾卓、郭灿城、陈庆云</td>\r\n</tr>\n<tr>\r\n<th scope=\"row\">2005 · 控制CF₃位置与数量</th>\r\n<td>由溴代卟啉、甲酯陈试剂、CuI及钯催化体系制备多种三氟甲基取代卟啉，使β位、meso位及CF₃数量成为可调结构因素；这是A06（磺酸酯、二氟卡宾与三氟甲基化）试剂成果进入A08（交叉研究与晚年拓展）大环研究的具体衔接。</td>\r\n<td>刘超、陈庆云</td>\r\n</tr>\n<tr>\r\n<th scope=\"row\">2006 · 稠合大环与性质</th>\r\n<td>β-(ω-氯全氟烷基)卟啉经选择性C–F转化、分子内环化和还原脱氟芳构化，得到四氟苯并卟啉；原作者同时考察晶体结构、光物理和电化学性质。这里的选择性反应只适用于该论文所研究的底物和条件。</td>\r\n<td>刘超、沈冬梅、曾卓、郭灿城、陈庆云</td>\r\n</tr>\n<tr>\r\n<th scope=\"row\">2007—2008 · 特殊电子结构</th>\r\n<td>2007年取得可分离、可继续反应的20π非芳香N,N′-二氢卟啉；2008年另研究氟烷基化Ni(II) N-confused卟啉。两类大环分别对应不同骨架与问题。</td>\r\n<td>刘超、沈冬梅、陈庆云；蒋华伟、陈庆云、肖吉昌、顾玉成</td>\r\n</tr>\n</tbody>\r\n</table>\r\n</div>\n<h3>为什么具有开拓意义</h3>\r\n<p>这条路线把有机氟反应方法变成研究卟啉的工具：先获得一组可比较的含氟大环，再利用侧链、取代位置、中心金属和反应条件研究环化、电子结构与性质。研究还延伸到自组装、液晶行为及氟碳相催化氧化等初步探索；这里不补写尚无代表性原文支持的性能数据或应用规模。</p>\n<h3>跨领域合作怎样形成</h3>\r\n<p>郭灿城及湖南大学团队提供卟啉研究基础，陈庆云带入有机氟试剂与反应经验；金利美、曾卓、刘超、沈冬梅等分别推进直接修饰、三氟甲基化、稠合大环和20π研究。陈庆云进入新领域时系统阅读资料、向同行请教，再与学生讨论实验问题；合作关系与每篇论文的成果归属分别保留。</p>\n<p>\r\n<a href=\"#a08-representative-study\">详读20π非芳香大环代表成果 →</a> · <a href=\"#a08-contributions\">沿A08（交叉研究与晚年拓展）继续阅读含氟小环、新大环与晚年工作 →</a> · <a href=\"../single-electron-transfer/index.html#topic-single-electron-transfer\">查看与A07（单电子转移与C–Cl活化）反应方法的联系 →</a> · <a href=\"../../achievements/index.html#major-achievements\">返回四项主要学术成就 →</a>\r\n</p>\n",
+      "new": "<h2 id=\"fluoroalkylporphyrins-title\">氟烷基卟啉</h2>\r\n<p>陈庆云与合作者把有机氟反应用于卟啉，先解决怎样在已有大环上引入氟烷基、怎样控制三氟甲基的取代位置和数量。按2005年偶联方法制得的含氟铜卟啉，又让团队能够分离并表征一个有20个π电子的还原产物，研究它的结构、谱图和氧化变化。</p>\r\n<nav class=\"cq-journey-nav\" aria-label=\"氟烷基卟啉两项代表成果\"><a href=\"#topic-fluoroporphyrins\">直接在卟啉上引入氟烷基</a> · <a href=\"#a08-representative-study\">分离并表征20π非芳香大环</a></nav>\r\n<p>这项成就是<a href=\"#a08-contributions\">A08（交叉研究与晚年拓展）</a>中的卟啉分支。其他专题介绍含氟小环、含三键的新大环及晚年方法。</p>\r\n"
+    },
+    {
+      "old": "<section class=\"cq-display-section\" id=\"a08-contributions\" aria-labelledby=\"a08-contributions-title\">\r\n<h2 id=\"a08-contributions-title\">含氟小环、卟啉大环与后续方法研究</h2>\n<p>陈庆云与合作者把已有含氟试剂用于新骨架的构建，再由合成得到的分子研究反应性和性质。这条线包括含氟小环、氟烷基卟啉及新大环，也延伸到晚年的官能团构建和功能分子研究。</p>\n<ul>\r\n<li>\r\n<a href=\"../fluorinated-small-rings/index.html#record-small-rings\">含氟小环的获得与转化</a>。徐伟与陈庆云制得相对稳定的含碘偕二氟环丙烯，再研究其偶联、取代等反应；程战领等继续研究二氟卡宾环加成及不同含氟小环的构建。</li>\n<li>\r\n<a href=\"#fluoroalkylporphyrins\">氟烷基卟啉的完整研究链</a>。直接氟烷基化、按位三氟甲基化、2006年稠合大环和2007年20π非芳香大环互相接续；20π成果是其中一项代表发现，而不是整条卟啉路线。</li>\n<li>\r\n<a href=\"#a08-porphyriynes\">含三键的18π共轭大环</a>。2022年的合著工作把碳碳三键纳入大环骨架，结合原作者的结构、光谱和理论计算讨论其性质。</li>\n<li>\r\n<a href=\"../deoxyfluorination/index.html#topic-deoxyfluorination\">脱氧氟化试剂</a>。2020年和2021年的合作研究，分别发展将醇以及特定酸、膦氧化物转化为相应氟化产物的试剂体系。</li>\n<li>\r\n<a href=\"../sulfonyl-fluoride/index.html#record-late-functional-groups\">氟磺酰化与试剂功能拓展</a>。从金属盐参与的烯烃双官能化，到由芳基重氮盐构建芳基磺酰氟，团队继续探索含氟官能团怎样进入目标分子。</li>\n<li>\r\n<a href=\"../sulfonyl-fluoride/index.html#a08-surfactants\">功能分子的物性研究</a>。短链含醚磺酸盐的研究联系分子结构、表面活性和起泡性；另有<a href=\"../../achievements/index.html#record-fluorinated-ionic-liquids\">含氟磺酰胺型离子液体</a>的合成与物性记录。</li>\r\n</ul>\n<p>各项成果由其论文署名者共同完成。2022年大环研究中的理论计算归原作者，平台AI资料整理另有入口。</p>\r\n",
+      "new": "\r\n<section class=\"cq-study\" id=\"topic-fluoroporphyrins\" aria-labelledby=\"a08-fluoroalkylation-title\"><h2 id=\"a08-fluoroalkylation-title\">直接在卟啉上引入氟烷基</h2>\r\n<h3>在已有大环上改变外围结构</h3>\r\n<p>每次换一个氟烷基，能否沿用已经制成的卟啉骨架？2003年，金利美、曾卓、郭灿城和陈庆云将改进的脱卤亚磺化方法用于四芳基自由碱卟啉，在大环外围的2位（β位）接上全氟烷基。所得卟啉还可进行亲核反应以及有区域选择性的溴化、硝化，因而可作为后续改造的原料。</p>\r\n<h3 id=\"record-porphyrin-collaboration\">按预设位置引入三氟甲基</h3>\r\n<p>刘超与陈庆云在2005年发表了另一方法。他们利用溴代卟啉预先确定反应位置，再用<a href=\"../chen-reagent/index.html#a06-representative-study\">MFSDA甲酯陈试剂</a>和钯催化偶联引入三氟甲基。原刊表2中，四个β位接入三氟甲基的铜卟啉实例分离收率为95%，另一例在两个meso位引入三氟甲基。这样就有了取代位置和数量不同的样品，可比较它们的反应和性质。</p>\r\n<h3>从含氟侧链研究环化与物性</h3>\r\n<p>2006年，刘超、沈冬梅、曾卓、郭灿城和陈庆云选择带末端氯的全氟烷基卟啉，利用侧链发生选择性C–F转化和分子内环化，制得四氟苯并卟啉，并研究稠合产物的晶体结构、光物理和电化学性质。金利美等人的另一篇论文则比较了所研究的5-氟烷基卟啉与相近非氟化合物的聚集行为，并在部分样品中观察到液晶相。</p>\r\n<h3>跨学科合作怎样形成</h3>\r\n<p>郭灿城和湖南大学团队已有卟啉研究基础，陈庆云带入有机氟试剂和反应方法。传记据学位论文记载了不同研究方向。金利美与陈庆云研究直接氟烷基化及部分产物的自组装，曾卓与陈庆云研究四芳基卟啉的β位改造，刘超与陈庆云研究偶联和取代位置、数量对性质的影响。相关成果按各篇论文署名归属。</p>\r\n<nav class=\"cq-journey-nav\" aria-label=\"卟啉氟烷基化后续阅读\"><a href=\"#a08-representative-study\">分离并表征20π非芳香大环</a> · <a href=\"#fluoroalkylporphyrins\">返回两项代表成果</a></nav>\r\n"
+    },
+    {
+      "old": "<section class=\"cq-study cq-display-feature\" id=\"a08-representative-study\" aria-labelledby=\"a08-representative-study-title\">\r\n<h2 id=\"a08-representative-study-title\">代表发现：可分离的20π非芳香大环</h2>\n<p>这一方向先要解决怎样制得氟烷基卟啉。金利美、曾卓、郭灿城与陈庆云发展卟啉的直接氟烷基化；刘超与陈庆云又用钯催化偶联，在卟啉不同位置引入三氟甲基。两种合成策略使研究者能改变含氟基团的位置和数量，比较所得大环的反应与性质。</p>\n<p>从<a href=\"#topic-fluoroporphyrins\">直接氟烷基化</a>到<a href=\"#record-porphyrin-collaboration\">按位引入三氟甲基</a>，方法的发展提供了进一步研究的分子。下面的20π非芳香N,N′-二氢卟啉，是沿这一方向取得的代表性发现。</p>\n<h3>从绿色变为棕色，取得可分离的20π分子</h3>\n<p>普通卟啉有一条含 18 个 π 电子的芳香共轭路径。如果保留原有环的大小，却把这条路径上的电子数变为 20，能否得到一种可以取出、测量并继续反应的分子？困难在于，还原产物在溶液中可能继续变化，单凭反应时的颜色很难判断得到了什么。</p>\n<h3>让一次变色留下可以研究的样品</h3>\n<p>陈庆云与刘超此前已把三氟甲基引入卟啉的不同位置，为研究取代基对大环的影响准备了一系列化合物。2006 年，他们研究带四个三氟甲基的铜卟啉时发现，还原过程中溶液从绿色转为棕色。刘超、沈冬梅、陈庆云在 2007 年的合著论文中报告，从这一反应中分离出 50 毫克化合物 2，该例分离收率为 82%。</p>\n<h3>从 20π 到 18π，光谱怎样变化？</h3>\n<p>研究者测定了化合物 2 的晶体结构，并比较它与相应 18π 卟啉的核磁共振谱和吸收谱。结合结构与光谱，他们将 2 鉴定为 20π 电子的非芳香性 N,N′-二氢卟啉（isophlorin）。把它溶于二氯甲烷、置于室温空气中，最初约 418 纳米的吸收峰逐渐减弱，相应 18π 卟啉的特征吸收逐渐出现。作者根据这组谱图估计，该条件下氧化半衰期约为一天。</p>\n<p>有了能分离的 20π 样品，研究者既能在晶体中看大环的空间形状，也能在溶液中跟踪它向 18π 卟啉的转变。这个例子把一个关于芳香性的问题落实到同一含氟骨架上可直接比较的两种化合物。</p>\r\n",
+      "new": "<section class=\"cq-study cq-display-feature\" id=\"a08-representative-study\" aria-labelledby=\"a08-representative-study-title\"><h2 id=\"a08-representative-study-title\">分离并表征20π非芳香大环</h2>\r\n<h3>能否取出并测量20π卟啉型分子</h3>\r\n<p>通常的卟啉具有18π芳香共轭路径。伍德沃德曾设想过一类具有20个π电子的卟啉型结构。这个问题需要有可以分离、测量并继续反应的样品，才能把电子数、分子构型和实验性质联系起来。</p>\r\n<h3 id=\"a08-isophlorin\">从变色线索到可分离样品</h3>\r\n<p>2007年论文的支持信息明确记载，四个β位带三氟甲基的铜卟啉Cu1按<a href=\"#record-porphyrin-collaboration\">2005年报道的偶联方法</a>制备。传记记述，刘超与陈庆云研究该铜卟啉的还原时观察到溶液由绿转棕。刘超、沈冬梅（Dong-Mei Shen）和陈庆云的合著论文报告获得50毫克无金属的化合物2，所报分离收率为82%。</p>\r\n<h3>用晶体结构和谱图区分20π与18π</h3>\r\n<p>原作者结合单晶X射线结构及核磁、吸收谱，将化合物2鉴定为20π非芳香性N,N′-二氢卟啉（isophlorin）。支持信息并列给出了它与氧化所得18π卟啉的核磁谱。在室温二氯甲烷中暴露于空气时，作者用吸收谱跟踪氧化过程，估计该条件下的半衰期约一天。</p>\r\n<p>这项工作为早先设想的卟啉型结构提供了可表征的含氟样品。原作者还从化合物2制得两种N-甲基化衍生物，使同一骨架的后续反应也可以研究。陈庆云是论文通讯作者，成果由刘超、沈冬梅与陈庆云共同发表。</p>\r\n"
+    },
+    {
+      "old": "<a class=\"cq-journey-link\" href=\"../deoxyfluorination/index.html#a08-deep-reading\">同线另一分支：脱氧氟化成果图解</a> · <a class=\"cq-journey-link\" href=\"#a08-representative-study-story\">合作与育人</a> · <a class=\"cq-journey-link\" href=\"#a08-study-sources\">参考资料</a> · <a class=\"cq-journey-link\" href=\"../../achievements/index.html#heritage-inventory\">科研成果线与学术传承详读</a> · <a class=\"cq-journey-link\" href=\"#a08-ai-collation\">AI辅助资料整理</a> · <a class=\"cq-journey-link\" href=\"#refs\">本专题参考资料</a>\r\n",
+      "new": "<a class=\"cq-journey-link\" href=\"../deoxyfluorination/index.html#a08-deep-reading\">同线另一分支：脱氧氟化成果图解</a> · <a class=\"cq-journey-link\" href=\"#a08-representative-study-story\">合作与育人</a> · <a class=\"cq-journey-link\" href=\"#a08-study-sources\">参考资料</a> · <a class=\"cq-journey-link\" href=\"../../achievements/index.html#heritage-inventory\">科研成果线与学术传承详读</a> · <a class=\"cq-journey-link\" href=\"#a08-ai-collation\">AI辅助资料整理</a> · <a class=\"cq-journey-link\" href=\"#fluoroalkylporphyrins\">返回两项代表成果</a>\r\n"
+    },
+    {
+      "old": "<article id=\"topic-fluoroporphyrins\" class=\"cq-display-section\">\r\n<h2>2003年：把氟烷基引入卟啉大环</h2>\r\n<p>金利美、曾卓、郭灿城、陈庆云共同发表自由碱卟啉的直接氟烷基化研究，把含氟基团接到已有卟啉环上。研究由此能比较不同氟烷基链及取代位置，避免每换一个外围基团都从头构建大环。</p>\r\n<p>这些分子也进入了性质和功能研究。金利美与陈庆云研究5-氟烷基卟啉的自组装与液晶行为；刘超与陈庆云还利用带长氟烷基链的金属卟啉，初步研究氟碳相中的催化氧化。含氟基团因而既是合成中改变的结构，也成为探索分子聚集和催化行为的因素。</p>\n<nav class=\"a08-nav\" aria-label=\"A08（交叉研究与晚年拓展）分专题\">\r\n<a href=\"../fluorinated-small-rings/index.html\">含氟小环</a>\r\n<a href=\"../deoxyfluorination/index.html\">晚年脱氧氟化</a>\r\n<a href=\"../sulfonyl-fluoride/index.html\">磺酰氟与表面活性分子</a>\r\n</nav>\r\n</article>\r\n<article id=\"record-porphyrin-collaboration\" class=\"cq-display-section\">\n<h2>从位置控制到选择性环化</h2>\n<p>2005年，刘超与陈庆云报道钯催化交叉偶联制备三氟甲基取代卟啉的方法，β位、meso位与取代数量成为可以调节的结构因素。</p>\n<p>2006年，刘超、沈冬梅、曾卓、郭灿城、陈庆云以β-(ω-氯全氟烷基)卟啉为对象，在改进的脱卤亚磺化条件下进行选择性C–F转化、分子内环化和还原脱氟芳构化，获得四氟苯并卟啉，并比较还原剂、碱和中心金属的影响。原作者还研究了新分子的晶体结构、光物理与电化学性质。这一步把“含氟取代”推进为利用侧链构建稠合大环；不能外推为任意C–F键活化或含氟物质降解。</p>\n<p>2008年，蒋华伟、陈庆云、肖吉昌、顾玉成另研究氟烷基化Ni(II) N-confused卟啉。卟啉中的环化线索也启发曹海萍与陈庆云把相应问题带入普通芳香族小分子研究，形成与A07（单电子转移与C–Cl活化）后续环化分支的联系。</p>\n</article>\n<article id=\"a08-isophlorin\" class=\"cq-display-section\">\r\n<h2>从颜色线索到20π大环的分离与表征</h2>\r\n<p>2006年的还原观察推动了2007年20π大环成果。刘超、沈冬梅、陈庆云共同发表的研究，把分离结果、结构表征与分子的存在条件联系起来，具体结果见上方代表成果。</p>\r\n</article>\r\n",
+      "new": "<section class=\"cq-display-section\" id=\"a08-contributions\" aria-labelledby=\"a08-contributions-title\">\r\n<h2 id=\"a08-contributions-title\">A08（交叉研究与晚年拓展）的研究分支</h2>\n<p>陈庆云与合作者把已有含氟试剂用于新骨架的构建，再由合成得到的分子研究反应性和性质。这条线包括含氟小环、氟烷基卟啉及新大环，也延伸到晚年的官能团构建和功能分子研究。</p>\n<ul>\r\n<li>\r\n<a href=\"../fluorinated-small-rings/index.html#record-small-rings\">含氟小环的获得与转化</a>。徐伟与陈庆云制得相对稳定的含碘偕二氟环丙烯，再研究其偶联、取代等反应；程战领等继续研究二氟卡宾环加成及不同含氟小环的构建。</li>\n<li>\r\n<a href=\"#fluoroalkylporphyrins\">氟烷基卟啉的完整研究链</a>。直接氟烷基化与位点控制提供了可比较的取代卟啉，随后展开了侧链环化、20π非芳香大环等不同的研究。</li>\n<li>\r\n<a href=\"#a08-porphyriynes\">含三键的18π共轭大环</a>。2022年的合著工作把碳碳三键纳入大环骨架，结合原作者的结构、光谱和理论计算讨论其性质。</li>\n<li>\r\n<a href=\"../deoxyfluorination/index.html#topic-deoxyfluorination\">脱氧氟化试剂</a>。2020年和2021年的合作研究，分别发展将醇以及特定酸、膦氧化物转化为相应氟化产物的试剂体系。</li>\n<li>\r\n<a href=\"../sulfonyl-fluoride/index.html#record-late-functional-groups\">氟磺酰化与试剂功能拓展</a>。从金属盐参与的烯烃双官能化，到由芳基重氮盐构建芳基磺酰氟，团队继续探索含氟官能团怎样进入目标分子。</li>\n<li>\r\n<a href=\"../sulfonyl-fluoride/index.html#a08-surfactants\">功能分子的物性研究</a>。短链含醚磺酸盐的研究联系分子结构、表面活性和起泡性；另有<a href=\"../../achievements/index.html#record-fluorinated-ionic-liquids\">含氟磺酰胺型离子液体</a>的合成与物性记录。</li>\r\n</ul>\n<p>2008年，蒋华伟、陈庆云、肖吉昌、顾玉成还研究了氟烷基化的镍(II) N-confused卟啉。卟啉侧链环化的线索启发曹海萍与陈庆云探索小分子环化，可参阅<a href=\"../single-electron-transfer/index.html#topic-single-electron-transfer\">A07（单电子转移与C–Cl活化）</a>。2022年含三键大环的理论计算归原作者。</p>\r\n</section>\r\n\r\n\n\r\n"
+    },
+    {
+      "old": "<p>2022年，Fei Hao、Tian Zhang、Donghai Yu、Xiaodeng Yang、Hua-Wei Jiang、Ji-Chang Xiao、Qing-Yun Chen共同报告Porphyriynes：在18π共轭大环中引入碳—碳三键。该代表分子本身不含氟，与2007年的20π isophlorin具有不同骨架和研究问题；它属于A08（交叉研究与晚年拓展）后续新大环拓展，不代替“氟烷基卟啉”这项主要成就。</p>\n<p>原作者结合制备、结构与光谱，以及DFT／TD-DFT、电子性质和候选路径模型，探索新骨架的性质。实验、全分子模型和简化路径模型各有研究范围；这些既有理论计算归原作者团队。</p>\r\n",
+      "new": "<p>2022年，Fei Hao、Tian Zhang、Donghai Yu、Xiaodeng Yang、Hua-Wei Jiang、Ji-Chang Xiao、Qing-Yun Chen共同报告Porphyriynes：在18π共轭大环中引入碳—碳三键。代表分子Pyne1本身不含氟，归入A08（交叉研究与晚年拓展）的新大环分支。该研究关注把碳碳三键置入18π共轭路径后，环的结构和电子性质怎样变化。</p>\n<p>原论文结合结构和光谱，并用DFT与TD-DFT考察性质、模拟部分吸收光谱，另建模型研究开环路径。计算对象和方法见原作者支持信息。上述理论研究均归2022年论文署名团队。</p>\r\n"
+    },
+    {
+      "old": "<td>结合湖南大学的卟啉研究与陈先生的氟化学积累，形成交叉研究起点。</td>\r\n",
+      "new": "<td>郭灿城团队提供卟啉研究基础，陈庆云带入有机氟试剂与反应方法。</td>\r\n"
+    },
+    {
+      "old": "<td>2003年自由碱卟啉直接氟烷基化论文共同作者。</td>\r\n",
+      "new": "<td>2003年直接氟烷基化论文的共同作者。传记另记金利美和曾卓分别推进直接修饰与产物性质、β位改造等研究。</td>\r\n"
+    },
+    {
+      "old": "<th scope=\"row\">Dong-Mei Shen</th>\r\n<td>2007年20π大环论文共同作者，按原刊英文署名保存。</td>\r\n",
+      "new": "<th scope=\"row\">刘超、沈冬梅（Dong-Mei Shen）、陈庆云</th>\r\n<td>2007年20π大环论文共同作者，陈庆云为通讯作者。</td>\r\n"
+    },
+    {
+      "old": "</span>朱晶、刘超：《氟缘笃志：陈庆云传》。中国科学技术出版社，2024年6月第1版。ISBN 978-7-5236-0741-1。第75–77页记二氟卡宾及含氟小环合作；第78–82页记卟啉的合成、初步物性与催化研究和20π大环，第80页转引金利美2006年及刘超2007年学位论文的相关工作；第83–86页记环化、金属盐试剂和表面活性分子研究。各支线的代表原文见对应专题页末。</li>\r\n",
+      "new": "</span>朱晶、刘超：《氟缘笃志：陈庆云传》。中国科学技术出版社，2024年6月第1版。ISBN 978-7-5236-0741-1。第75–77页记二氟卡宾及含氟小环合作；第78–82页记卟啉的合成、初步物性与催化研究和20π大环，第80页转引金利美、曾卓和刘超学位论文的相关工作；第83–86页记环化、金属盐试剂和表面活性分子研究。各支线的代表原文见对应专题页末。</li>\r\n"
+    },
+    {
+      "old": "</span>Li-Mei Jin、Zhuo Zeng、Can-Cheng Guo、Qing-Yun Chen：<a href=\"https://doi.org/10.1021/jo0207269\">Fluoroalkylation of Porphyrins: Synthesis and Reactions of β-Fluoroalkyltetraarylporphyrins</a>。2003，J. Org. Chem. 68(10)：3912–3917。 DOI 10.1021/jo0207269。</li>\r\n",
+      "new": "</span>Li-Mei Jin、Zhuo Zeng、Can-Cheng Guo、Qing-Yun Chen：<a href=\"https://doi.org/10.1021/jo0207269\">Fluoroalkylation of Porphyrins: Synthesis and Reactions of β-Fluoroalkyltetraarylporphyrins</a>。2003，J. Org. Chem. 68(10)：3912–3917。 DOI 10.1021/jo0207269。<a href=\"https://pubmed.ncbi.nlm.nih.gov/12737571/\">公开原作者摘要</a>记2位取代及后续反应。</li>\r\n"
+    },
+    {
+      "old": "</span>Chao Liu、Qing-Yun Chen：<a href=\"https://doi.org/10.1002/ejoc.200500027\">Fluoroalkylation of Porphyrins: A Facile Synthesis of Trifluoromethylated Porphyrins by a Palladium-Catalyzed Cross-Coupling Reaction</a>。2005，European Journal of Organic Chemistry 2005(17), 3680–3686。 DOI 10.1002/ejoc.200500027。</li>\r\n",
+      "new": "</span>Chao Liu、Qing-Yun Chen：<a href=\"https://doi.org/10.1002/ejoc.200500027\">Fluoroalkylation of Porphyrins: A Facile Synthesis of Trifluoromethylated Porphyrins by a Palladium-Catalyzed Cross-Coupling Reaction</a>。2005，European Journal of Organic Chemistry 2005(17), 3680–3686。 DOI 10.1002/ejoc.200500027。第3681页表2记录β位和meso位的取代实例。</li>\r\n"
+    },
+    {
+      "old": "</span>Chao Liu、Dong-Mei Shen、Zhuo Zeng、Can-Cheng Guo、Qing-Yun Chen：<a href=\"https://pubs.acs.org/doi/10.1021/jo061743r\">C−F Bond Activation by Modified Sulfinatodehalogenation: Facile Synthesis and Properties of Novel Tetrafluorobenzoporphyrins</a>。2006，J. Org. Chem. 71(26), 9772–9783。DOI 10.1021/jo061743r。研究对象、条件与性质范围按出版社原作者摘要介绍。</li>\n",
+      "new": "</span>Chao Liu、Dong-Mei Shen、Zhuo Zeng、Can-Cheng Guo、Qing-Yun Chen：<a href=\"https://pubs.acs.org/doi/10.1021/jo061743r\">C−F Bond Activation by Modified Sulfinatodehalogenation: Facile Synthesis and Properties of Novel Tetrafluorobenzoporphyrins</a>。2006，J. Org. Chem. 71(26), 9772–9783。DOI 10.1021/jo061743r。研究对象、条件与性质范围按出版社原作者摘要介绍。</li><li>Jin、Yin、Chen、Zhou、Xiao、Guo、Chen。<a href=\"https://www.sioc.cas.cn/xiaogroup/publications/thesis/2010/202407/P020240724610080847876.pdf\">5-氟烷基卟啉的聚集及液晶研究（原文PDF）</a>。Chemistry – A European Journal，2006，12：7935–7941。DOI 10.1002/chem.200600487。</li><li>R. B. Woodward。<a href=\"https://doi.org/10.1351/pac196102030383\">The Total Synthesis of Chlorophyll</a>。Pure and Applied Chemistry，1961，2：383–404。第396页图XLVIII提出20π isophlorin的结构设想。</li>\n"
+    },
+    {
+      "old": "</span>Chao Liu、Dong-Mei Shen、Qing-Yun Chen：<a href=\"https://pubs.acs.org/doi/10.1021/ja070855c\">Synthesis and Reactions of 20 π-Electron β-Tetrakis(trifluoromethyl)-meso-tetraphenylporphyrins</a>。2007，J. Am. Chem. Soc. 129(18),5814–5815。 DOI 10.1021/ja070855c。<a href=\"https://ndownloader.figshare.com/files/4710160\">原作者支持信息（PDF）</a>第S2页列分离结果和吸收峰，第S9–S11页列晶体资料，第S12–S13页图3、4比较两种化合物的谱图并记录氧化过程。</li>\r\n",
+      "new": "</span>Chao Liu、Dong-Mei Shen、Qing-Yun Chen：<a href=\"https://pubs.acs.org/doi/10.1021/ja070855c\">Synthesis and Reactions of 20 π-Electron β-Tetrakis(trifluoromethyl)-meso-tetraphenylporphyrins</a>。2007，J. Am. Chem. Soc. 129(18),5814–5815。 DOI 10.1021/ja070855c。<a href=\"https://ndownloader.figshare.com/files/4710160\">原作者支持信息（PDF）</a>第S2页注明起始卟啉沿用2005年方法，并记载分离量和收率。第S9–S11页列晶体资料，第S12–S13页图3、4给出谱图和氧化过程。<a href=\"https://pubmed.ncbi.nlm.nih.gov/17439129/\">公开原作者摘要</a>。</li>\r\n"
+    },
+    {
+      "old": "</span>Fei Hao、Tian Zhang、Donghai Yu、Xiaodeng Yang、Hua-Wei Jiang、Ji-Chang Xiao、Qing-Yun Chen：<a href=\"https://doi.org/10.1021/acs.orglett.2c00356\">Porphyriynes: 18-π-Conjugated Macrocycles Incorporating a Triple Bond</a>。2022，Organic Letters 24(8), 1716–1721。 DOI 10.1021/acs.orglett.2c00356。原作者支持信息包括理论计算。</li>\r\n",
+      "new": "</span>Fei Hao、Tian Zhang、Donghai Yu、Xiaodeng Yang、Hua-Wei Jiang、Ji-Chang Xiao、Qing-Yun Chen：<a href=\"https://doi.org/10.1021/acs.orglett.2c00356\">Porphyriynes: 18-π-Conjugated Macrocycles Incorporating a Triple Bond</a>。2022，Organic Letters 24(8), 1716–1721。 DOI 10.1021/acs.orglett.2c00356。<a href=\"https://sioc.cas.cn/xiaogroup/publications/thesis/2022/202407/P020240725607972054645.pdf\">上海有机所公开原文</a>和<a href=\"https://ndownloader.figshare.com/files/34165511\">原作者支持信息</a>可查，计算说明及相关图表见S15–S21页。</li>\r\n"
+    },
+    {
+      "old": "",
+      "new": "<nav class=\"cq-journey-nav\" aria-label=\"页末阅读导航\"><a href=\"../../index.html\">返回平台首页</a> · <a href=\"../../achievements/index.html#major-achievement-porphyrins\">返回成果汇总</a> · <a href=\"#a08-contributions\">A08（交叉研究与晚年拓展）</a> · <a href=\"#fluoroalkylporphyrins\">返回两项代表成果</a></nav>\r\n"
+    }
+  ]
+}
