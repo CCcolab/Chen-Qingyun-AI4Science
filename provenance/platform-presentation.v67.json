@@ -1,0 +1,99 @@
+{
+  "schema_version": "67.0",
+  "presentation_id": "PLATFORM-A04-ORIGINAL-CHEMISTRY-READING-20261127-v67",
+  "publication_kind": "a04_original_chemistry_reading",
+  "previous_presentation_commit": "a23659ed7d93ddf7a8dcf45ab6598093f6dec718",
+  "changed_html_paths": [
+    "topics/f53/index.html"
+  ],
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v66.json",
+    "sha256": "4e00d1bb11d2452847005466b2acc6cd52a2d168befc3dde964c98436ac34ed1",
+    "presentation_id": "PLATFORM-A04-CHAPTER-NAVIGATION-20261127-v66"
+  },
+  "change_reason": "依据1979年原刊说明调聚编号与总碳数，区分链末换氯、末端氟化与磺酰氟端水解。",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "M0_resumed": false,
+  "Nemotron_training_resumed": false,
+  "reversible_text_files": [
+    {
+      "path": "scripts/story_sources_publication.py",
+      "old_sha256": "a311e8987976bec7d7c50432345bf0fe684bba7bc4c833a5f05e967c5ad20ec2",
+      "old_bytes": 9171,
+      "new_sha256": "9eef2fa0af9e3d967b23e5f8475f71b1cf22c2ba1aa8222e4b917c3d1cae692f",
+      "new_bytes": 9312,
+      "edits": [
+        {
+          "old_offset": 1066,
+          "replacement": 0
+        },
+        {
+          "old_offset": 4833,
+          "replacement": 1
+        }
+      ]
+    },
+    {
+      "path": "site/topics/f53/index.html",
+      "old_sha256": "96ee0a902f1c093623f2d154fa893357ad73a2230e9c1c7b997171e0da228d4e",
+      "old_bytes": 30259,
+      "new_sha256": "e72f7c7ce670c025047ef0caa071398f7e266fedb5f2207a044bc7e2a2d990f0",
+      "new_bytes": 31101,
+      "edits": [
+        {
+          "old_offset": 10574,
+          "replacement": 2
+        },
+        {
+          "old_offset": 11220,
+          "replacement": 3
+        },
+        {
+          "old_offset": 19793,
+          "replacement": 4
+        },
+        {
+          "old_offset": 20373,
+          "replacement": 5
+        },
+        {
+          "old_offset": 21216,
+          "replacement": 6
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "import f53_chapter_navigation_publication as f53_chapter_navigation\n",
+      "new": "import f53_chapter_navigation_publication as f53_chapter_navigation\nimport f53_original_reading_publication as f53_original_reading\n"
+    },
+    {
+      "old": "(f53_chapter_navigation, f53_chapter_navigation.V65_ADDITIONS))",
+      "new": "(f53_chapter_navigation, f53_chapter_navigation.V65_ADDITIONS),\n                 (f53_original_reading, f53_original_reading.V66_ADDITIONS))"
+    },
+    {
+      "old": "从已有的含氟磺内酯和四氟乙烯等原料出发，通过调聚等转化建立含醚骨架，再制得相应磺酸盐。",
+      "new": "从含氟磺内酯和四氟乙烯等原料出发，先形成含醚前体，再经调聚延长氟碳链。所列无氯F-53的路线经碳链末端氟化和磺酰氟端水解制得钾盐。<a href=\"#ref-s1\">研制路线</a>"
+    },
+    {
+      "old": "<a href=\"#a04-deep-reading\">查看原刊所载末端换氯实例</a>",
+      "new": "<a href=\"#a04-deep-reading-figure-caption\">查看原刊的十碳末端换氯实例</a>"
+    },
+    {
+      "old": "<summary id=\"a04-deep-reading-figure-caption\">一条含氟醚链怎样实现末端换氯？</summary>\n    <p>1979年原刊第323页有一个常压氯化实例。原作者比较的是一端带碘、另一端带磺酰氟的n=3中间体。在相应产物中，链末端变为氯，磺酰氟端保留，反应中有碘的氯化物蒸出。陈庆云对前段工艺回用一氯化碘的记述另见其回忆。</p>",
+      "new": "<summary id=\"a04-deep-reading-figure-caption\">十碳磺酰氟怎样实现末端换氯？</summary>\n    <p>原刊用 <span class=\"a04-formula\">I(CF₂CF₂)<sub><i>n</i>+1</sub>OCF₂CF₂SO₂F</span> 表示含碘调聚物。醚氧靠碘的一侧在调聚前已有一个 CF₂CF₂ 单元，<i>n</i> 计调聚新增的单元。<i>n</i>=3 时这一侧有四个单元、八个碳，加上醚氧另一侧的两个碳，共十个碳。<i>n</i>=2 时共八个碳，与前文所列无氯 F-53 的碳骨架相同。</p>\n    <p>第323页的常压实例选取 <i>n</i>=3 的含碘磺酰氟。反应把碳链末端的碘换成氯，另一端的磺酰氟保留，同时有碘的氯化物蒸出。陈庆云对前段工艺回用一氯化碘的记述另见其回忆。</p>"
+    },
+    {
+      "old": "1979年《化学学报》所载n=3磺酰氟实例",
+      "new": "1979年《化学学报》所载十碳磺酰氟换氯实例（<i>n</i>=3）"
+    },
+    {
+      "old": "    <p class=\"a04-source\"><a href=\"#a04-source-1979\">原刊定位</a> · <a href=\"#a04-source-book\">工艺回忆定位</a></p>",
+      "new": "    <p>磺酰氟端（–SO₂F）水解成磺酸钾端（–SO₃K）时，碳数和链末氯保留。第320页表4分别列出八碳无氯钾盐和八碳末端含氯钾盐的水溶液物性。无氯 F-53 路线先把八碳前体的链末碘换成氟，再经水解得到钾盐。</p>\n    <p class=\"a04-source\"><a href=\"#a04-source-1979\">原刊第315、319–320、323页</a> · <a href=\"#ref-s1\">无氯 F-53 研制路线</a> · <a href=\"#a04-source-book\">工艺回忆定位</a></p>"
+    }
+  ]
+}
