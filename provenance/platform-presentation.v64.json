@@ -1,0 +1,203 @@
+{
+  "schema_version": "64.0",
+  "presentation_id": "PLATFORM-A04-SCIENCE-AND-HISTORICAL-CONTEXT-20261127-v64",
+  "publication_kind": "a04_science_and_historical_context",
+  "previous_presentation_commit": "297afe2bca87d56adc52e2bb8509e8a3b173aa43",
+  "changed_html_paths": [
+    "topics/f53/index.html"
+  ],
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v63.json",
+    "sha256": "cde8b2ef98fcd256efca271daf1113b0811c6c943a0e65feff3ae37b15272dc1",
+    "presentation_id": "PLATFORM-A04-ACHIEVEMENT-PRESENTATION-20261126-v63"
+  },
+  "change_reason": "补记F-53原刊的合成贡献、工程回忆、职业健康与环境背景，按传记第53、116页更新两项获奖记录。",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "M0_resumed": false,
+  "Nemotron_training_resumed": false,
+  "reversible_text_files": [
+    {
+      "path": "scripts/story_sources_publication.py",
+      "old_sha256": "1898d3685b5bae55a10f6cb11fd3238917a410190fa32a8b0150a66204864c86",
+      "old_bytes": 8776,
+      "new_sha256": "af36700f540e81ec016c47b67b625cb5a5b7982d40fdb882b9521affd425aba3",
+      "new_bytes": 8885,
+      "edits": [
+        {
+          "old_offset": 956,
+          "replacement": 0
+        },
+        {
+          "old_offset": 4500,
+          "replacement": 1
+        }
+      ]
+    },
+    {
+      "path": "site/topics/f53/index.html",
+      "old_sha256": "0e95a30f481d451446fd561df0fa4fd09706f18046f415762fead88edcc28ead",
+      "old_bytes": 24497,
+      "new_sha256": "847a94638d2f4986dddbdfbbdaf4bffa1b4522454ccc24e4b6fcee43be31c391",
+      "new_bytes": 29869,
+      "edits": [
+        {
+          "old_offset": 5438,
+          "replacement": 2
+        },
+        {
+          "old_offset": 7068,
+          "replacement": 3
+        },
+        {
+          "old_offset": 8130,
+          "replacement": 4
+        },
+        {
+          "old_offset": 8520,
+          "replacement": 5
+        },
+        {
+          "old_offset": 10956,
+          "replacement": 6
+        },
+        {
+          "old_offset": 11712,
+          "replacement": 7
+        },
+        {
+          "old_offset": 11755,
+          "replacement": 8
+        },
+        {
+          "old_offset": 11914,
+          "replacement": 9
+        },
+        {
+          "old_offset": 13528,
+          "replacement": 10
+        },
+        {
+          "old_offset": 14594,
+          "replacement": 11
+        },
+        {
+          "old_offset": 15623,
+          "replacement": 12
+        },
+        {
+          "old_offset": 16235,
+          "replacement": 13
+        },
+        {
+          "old_offset": 19515,
+          "replacement": 14
+        },
+        {
+          "old_offset": 20090,
+          "replacement": 15
+        },
+        {
+          "old_offset": 20283,
+          "replacement": 16
+        },
+        {
+          "old_offset": 20887,
+          "replacement": 17
+        },
+        {
+          "old_offset": 22030,
+          "replacement": 18
+        },
+        {
+          "old_offset": 22823,
+          "replacement": 19
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "",
+      "new": "import f53_followup_publication as f53_followup\n"
+    },
+    {
+      "old": "",
+      "new": ",\n                 (f53_followup, f53_followup.V63_ADDITIONS)"
+    },
+    {
+      "old": "representative-study-story\">合作与育人",
+      "new": "cooperation\">合作分工"
+    },
+    {
+      "old": "",
+      "new": "  .a04-anchor-alias { display: block; }\n"
+    },
+    {
+      "old": "制备",
+      "new": "设计"
+    },
+    {
+      "old": "record-industrial-application\">推广使用与获奖</a></h3><p>1982年展览资料记载全国有985个使用单位。同年项目获国家发明奖三等奖。</p></div>\n    <div class=\"a04-card\"><h3><a href=\"#a04-research-continuity\">推动基础氟化学研究</a></h3><p>双官能含氟原料带出磺酸酯断键、单电子转移与二氟卡宾研究，后续工作发展出<a href=\"../chen-reagent/index.html#a06-contributions\">用于三氟甲基化的“陈试剂”</a>",
+      "new": "a04-awards\">推广使用与获奖</a></h3><p>1982年展览资料记载全国有985个使用单位。同年10月，项目获国家发明奖三等奖和上海市重大科研成果奖一等奖。</p></div>\n    <div class=\"a04-card\"><h3><a href=\"#a04-research-continuity\">建立含氟醚磺酰氟合成方法</a></h3><p>研究组建立了制备一系列含醚磺酰氟的方法，并根据副产物提出可能生成二氟卡宾的解释"
+    },
+    {
+      "old": "",
+      "new": "  <p>陈庆云后来回忆，设计路线时已经知道分子链中会引入氧，但当时还不知道这对性能有何影响。使用效果出来后，他推测醚氧可能是抑雾表现较好的原因之一。<a href=\"#a04-source-book\">分子设计回忆</a></p>\n"
+    },
+    {
+      "old": "",
+      "new": "  <h3 id=\"a04-international-exchange\">在国外同行面前</h3>\n  <p id=\"a04-story-links\">1979年1月，陈庆云随中国氟化学代表团参加美国化学会第四次冬季氟化学会议。据传记，这是中国化学研究者首次以中国化学会名义在美国化学会举办的氟化学会议上作论文报告。陈庆云还到杜邦及Zeromist生产商3M等单位介绍F-53研究。<a href=\"../../people/stories/index.html#stories-st20\">阅读赴美交流故事</a></p>\n"
+    },
+    {
+      "old": "record-industrial-application\" aria-labelledby=\"a04-application-title\"",
+      "new": "a04-application\" aria-labelledby=\"a04-application-title\">\n  <span class=\"a04-anchor-alias\" id=\"record-industrial-application\" aria-hidden=\"true\"></span"
+    },
+    {
+      "old": "h3 id=\"a04-1982-report\">车间 · 减少铬雾逸出</h3>\n  <p>镀铬时，气泡在液面破裂，把含六价铬的镀液微滴带入空气。",
+      "new": "span class=\"a04-anchor-alias\" id=\"a04-1982-report\" aria-hidden=\"true\"></span>\n  <h3 id=\"a04-workshop\">车间 · 减少镀槽旁的铬雾暴露</h3>\n  <p>镀铬时，气泡在液面破裂，把含六价铬的镀液微滴带进镀槽旁工人的呼吸区。吸入六价铬化合物可损伤呼吸道，长期职业暴露与肺癌风险增加有关。<a href=\"#a04-source-iarc\">六价铬的职业健康证据</a></p>\n  <p>"
+    },
+    {
+      "old": "交流</h3>\n  <p id=\"a04-timeline-caption\">1979年上海有机所实验厂完成扩大试验。1982年全国已有985个使用单位，项目获国家发明奖三等奖及上海市重大科研成果一等奖。按当时奖励审批材料的统计口径，至1988年夏，项目已获1050万元纯利润效益。</p>\n  <p>1979年1月，陈庆云随中国氟化学代表团参加美国化学会第四次冬季氟化学会议。据传记，这是中国化学研究者首次以中国化学会名义在美国化学会举办的氟化学会议上作论文报告。陈庆云还到杜邦及Zeromist生产商3M等单位介绍F-53研究。<a href=\"../../people/stories/index.html#stories-st20\">阅读赴美交流故事</a></p>\n  <p class=\"a04-source\"><a href=\"#a04-source-1982\">1982年同期报道</a> · <a href=\"#a04-source-book\">工厂记录、奖项与效益档案定位",
+      "new": "效益</h3>\n  <p id=\"a04-timeline-caption\">1982年全国已有985个使用单位。按当时奖励审批材料的统计口径，至1988年夏，项目已获1050万元纯利润效益。<a href=\"#a04-source-book\">推广与效益记录</a></p>\n  <h4 id=\"a04-awards\">项目获奖</h4>\n  <p>1982年10月，「抑铬雾剂F-53及其制备」获两项奖励。</p>\n  <ul>\n    <li><strong>国家发明奖三等奖。</strong> <a href=\"#a04-source-national-award\">国家科委公告与证书书影</a></li>\n    <li><strong>上海市重大科研成果奖一等奖。</strong> <a href=\"#a04-source-shanghai-award\">获奖记载与年表</a></li>\n  </ul>\n  <p class=\"a04-source\"><a href=\"#a04-award-attribution\">合作项目与署名</a> · <a href=\"#a04-source-1982\">1982年应用报道"
+    },
+    {
+      "old": "",
+      "new": "  <h3>从一个产品到一类合成方法</h3>\n  <p>1979年，“全氟磺酸组”报告了以四氟乙烷-β-磺内酯等为起点，在氟化钾参与下，一步构建含醚键多氟磺酰氟骨架的方法。原刊列有四氟乙烯、六氟丙烯等多种烯烃，以及一氯化碘、溴、氯等卤化试剂。这使同类分子可以沿一条合成思路变化骨架和端基。<a href=\"#a04-source-1979\">1979年原刊第315页</a></p>\n  <p>研究组用色谱—质谱分析了四氟乙烯与一氯化碘反应体系中的副产物，并据此提出一条可能路径：先形成次卤酸酯，随后与烯烃加成，或分解生成二氟卡宾和氟光气。二氟卡宾在这项工作中属于原作者根据副产物推断的中间体。<a href=\"#a04-source-1979\">原刊第318–319页的讨论</a></p>\n"
+    },
+    {
+      "old": "陈庆云和合作者沿含氟磺酸衍生物继续探索卡宾前体及三氟甲基化试剂，甲酯“陈试剂”是这条后续合成研究线中的代表成果",
+      "new": "F-53路线所用的四氟乙烷-β-磺内酯也是氟磺酰二氟乙酸甲酯的直接前体。陈庆云与吴生文后来开发了这种甲酯的三氟甲基化用途，它被称作“陈试剂”。此后，陈庆云与合作者还沿含氟磺酸衍生物发展了二氟卡宾试剂"
+    },
+    {
+      "old": "representative-study-story\">\n  <h2 id=\"a04-representative-study-story\">合作分工：从实验室的反应瓶到工厂镀槽</h2>\n  <p>陈庆云负责组织路线探索，并随项目进入实验厂。黄维垣参与送样和相关分析，研究组在实验室制备并比较样品。进入放大阶段后，顾子恺和上海有机所实验厂工程人员解决了四氟乙烯向反应设备输送等工程问题，实验厂承担试制与扩大试验。</p>\n  <p id=\"a04-cooperation-caption\">上海光明电镀厂和上海电镀厂参与早期试用。1977年论文的机构著录列上海光明电镀厂、中国科学院上海有机化学研究所和江苏省泰州市电化厂。1979年论文的参考文献[1]则将同卷同页的记录引作“中国科学院上海有机化学研究所全氟磺酸组”。1979年论文自身也以“全氟磺酸组”署名，并致谢上海有机所质谱组和上海医药工业研究院核磁组的分析协作。</p>\n  <p id=\"a04-story-links\"><a href=\"../../people/stories/index.html#stories-st20\">阅读人物故事：在杜邦与3M报告F-53研究</a></p>\n  <p class=\"a04-source\"><a href=\"#a04-source-book\">工程转化与获奖资料</a> · <a href=\"#a04-source-1977\">1977年论文署名",
+      "new": "cooperation-title\">\n  <span class=\"a04-anchor-alias\" id=\"a04-representative-study-story\" aria-hidden=\"true\"></span>\n  <h2 id=\"a04-cooperation-title\">合作分工：从实验室的反应瓶到工厂镀槽</h2>\n  <p>陈庆云负责组织路线探索，并随项目进入实验厂。黄维垣参与送样和相关分析，研究组在实验室制备并比较样品。陈庆云回忆，顾子恺和实验厂工程人员在F-53放大时启用管道，把四氟乙烯送入高压反应釜。他把这称为当时国内从F-53开始的一项工程尝试。实验厂随后完成试制与扩大试验。</p>\n  <p id=\"a04-cooperation-caption\">上海光明电镀厂和上海电镀厂参与早期试用。江苏省泰州市电化厂参与了合作，上海有机所质谱组和上海医药工业研究院核磁组协助完成分析。</p>\n  <p class=\"a04-source\"><a href=\"#a04-source-book\">陈庆云的工程放大回忆</a> · <a href=\"#a04-authorship\">合作署名记录"
+    },
+    {
+      "old": "、样品及中间体。</strong> F-53按陈庆云2001年回顾所列含醚、无氯的钾盐介绍。原刊末端换氯示例是磺酰氟中间体。Wang等2013年环境研究讨论的是含氯醚磺酸盐F-53B。<a href=\"#ref-cq-r04\">F-53原作者回顾</a> · <a href=\"#ref-cq-r12\">F-53B环境研究",
+      "new": "和中间体。</strong> F-53按陈庆云2001年回顾所列含醚、无氯的钾盐介绍。原刊末端换氯示例是一个磺酰氟中间体。<a href=\"#ref-cq-r04\">F-53原作者回顾"
+    },
+    {
+      "old": "命名与归属。</strong> 现有回忆把“53”与记录送检样品的实验本第53页相联系。发明奖为合作项目奖，证书发明者栏可辨“黄维垣等”。",
+      "new": "产品命名。</strong> 现有回忆把“53”与记录送检样品的实验本第53页相联系。</li>\n    <li id=\"a04-award-attribution\"><strong>发明奖署名。</strong> 国家发明奖证书发明者栏署「中国科学院上海有机化学研究所黄维垣等」。书影所见为合作项目署名。<a href=\"#a04-source-national-award\">发明奖证书</a></li>\n    <li id=\"a04-authorship\"><strong>1977年论文署名记录。</strong> 中国科学院上海有机化学研究所官方档案著录上海光明电镀厂、中国科学院上海有机化学研究所和江苏省泰州市电化厂。1979年论文参考文献[1]将同卷同页的论文引作“中国科学院上海有机化学研究所全氟磺酸组”。两种记录各有出处，1977年原刊首页署名待核。<a href=\"#a04-source-1977\">1977年论文档案著录</a> · <a href=\"#a04-source-1979\">1979年原刊参考文献</a>"
+    },
+    {
+      "old": "",
+      "new": "</section>\n\n<section class=\"a04-panel\" id=\"a04-historical-perspective\" aria-labelledby=\"a04-historical-perspective-title\">\n  <h2 id=\"a04-historical-perspective-title\">历史贡献与今天的认识</h2>\n  <p>F-53把抑雾措施推进到镀槽液面。国内研究组、实验厂和电镀厂共同走通了从分子设计到规模应用的路径，减少铬雾逸出，改善了镀槽旁工人的劳动条件。</p>\n  <p>后来的研究把关注范围延伸到抑雾剂在环境中的归趋。全氟辛磺酸（PFOS）因环境持久性等受到国际关注。2009年，《斯德哥尔摩公约》将PFOS及其盐类和全氟辛基磺酰氟（PFOSF）列入附件B。2019年修订把这组物质用于闭环硬金属电镀的条目从可接受用途改为特定豁免。<a href=\"#a04-source-stockholm\">公约附件B及缔约方决定</a></p>\n  <p>2013年，Wang等人在温州电镀废水和接纳排水的地表水中检出含氯的F-53B，初步试验也显示该物质难降解。这些数据针对含氯的F-53B。历史F-53为无氯的含醚磺酸钾，其环境风险需要该物质的独立数据。<a href=\"#ref-cq-r12\">2013年F-53B环境研究</a></p>\n"
+    },
+    {
+      "old": "三单位名单据上海有机所著录，原刊首页署名待核。</li>\n    <li id=\"a04-source-1979\"><span id=\"a04-study-source-cq-h15\"></span><span id=\"a04-deep-reading-source-cq-h15\"></span>全氟磺酸组。<a href=\"https://www.sioc.ac.cn/kxj/ml/hwy/xscj/202308/t20230823_6866955.html\">《全氟和多氟烷基磺酸的研究 II. 一些多氟烷基醚磺酸的合成》</a>。《化学学报》1979，37：315–324",
+      "new": "据中国科学院上海有机化学研究所官方档案著录。<a href=\"#a04-authorship\">参见两种署名记录说明</a>。</li>\n    <li id=\"a04-source-1979\"><span id=\"a04-study-source-cq-h15\"></span><span id=\"a04-deep-reading-source-cq-h15\"></span>全氟磺酸组。<a href=\"https://www.sioc.ac.cn/kxj/ml/hwy/xscj/202308/t20230823_6866955.html\">《全氟和多氟烷基磺酸的研究 II. 一些多氟烷基醚磺酸的合成》</a>。《化学学报》1979，37：315–324。合成方法见第315页，原作者的机理讨论见第318–319页"
+    },
+    {
+      "old": "",
+      "new": "    <li id=\"a04-source-national-award\"><a href=\"#a04-source-book\">《氟缘笃志：陈庆云传》第53页图5-3</a>为国家发明奖证书书影。编号A00212，落款1982年10月。《人民日报》1982年8月1日第4版曾刊登<a href=\"https://rmrb.zhouenlai.info/%E4%BA%BA%E6%B0%91%E6%97%A5%E6%8A%A5%EF%BC%881946-2003%EF%BC%89/1982/08/1982-08-01.htm\">《国家科委发明评选委员会公告》</a>，将项目列入三等奖。报纸转录中的项目名以证书校准。</li>\n    <li id=\"a04-source-shanghai-award\">上海市奖奖名据<a href=\"#a04-source-book\">《氟缘笃志：陈庆云传》第53页正文与第116页年表</a>，以年表所记「上海市重大科研成果奖一等奖」为准。<a href=\"https://sioc.cas.cn/science/kpzy/twzy/202306/P020230625481271352854.pdf\">上海有机所展板</a>写作「上海市重大科技成果一等奖」。市级证书原件待核。</li>\n"
+    },
+    {
+      "old": "s.acs.org/doi/10.1021/es401525n\">2013年F-53B环境研究</a>。Environmental Science &amp; Technology，47：10163–10170。DOI 10.1021/es401525n。</li>\n    <li id=\"a04-source-book\"><span id=\"a04-study-source-heritage-s01\"></span>朱晶、刘超。《氟缘笃志：陈庆云传》。中国科学技术出版社，2024。ISBN 978-7-5236-0741-1。第48–54页、第60–63页、第88页（引陈庆云2018年5月15日访谈）",
+      "new": "med.ncbi.nlm.nih.gov/23952109/\">2013年F-53B环境研究摘要</a>。Environmental Science &amp; Technology，47：10163–10170。<a href=\"https://pubs.acs.org/doi/10.1021/es401525n\">DOI 10.1021/es401525n</a>。</li>\n    <li id=\"a04-source-iarc\">国际癌症研究机构（IARC）。<a href=\"https://publications.iarc.who.int/_publications/media/download/6143/ef2dcba35d394362f6f5346d042bd48e5792ded3.pdf\">六价铬化合物致癌性评估</a>。《IARC专著》第100C卷，2012年，“Chromium (VI) Compounds”第5节将六价铬化合物列为对人类致癌（第1类）。<a href=\"https://www.osha.gov/hexavalent-chromium/health-effects\">美国职业安全与健康管理局的呼吸道健康资料</a>。</li>\n    <li id=\"a04-source-stockholm\">《斯德哥尔摩公约》。<a href=\"https://chm.pops.int/Implementation/IndustrialPOPs/PFOS/Decisions/tabid/5222/Default.aspx\">缔约方大会决定SC-4/17（2009）</a>。<a href=\"https://www.pops.int/Portals/0/download.aspx?d=UNEP-POPS-COP.9-30.English.pdf#page=43\">缔约方大会决定SC-9/4（2019），第43页</a>。</li>\n    <li id=\"a04-source-book\"><span id=\"a04-study-source-heritage-s01\"></span>朱晶、刘超。《氟缘笃志：陈庆云传》。中国科学技术出版社，2024。ISBN 978-7-5236-0741-1。第48–54页、第60–63页、第69页、第88页"
+    }
+  ]
+}
