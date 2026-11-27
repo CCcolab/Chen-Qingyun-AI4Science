@@ -1,0 +1,91 @@
+{
+  "schema_version": "65.0",
+  "presentation_id": "PLATFORM-A04-ACHIEVEMENT-CARD-NAVIGATION-20261127-v65",
+  "publication_kind": "a04_achievement_card_navigation",
+  "previous_presentation_commit": "7349543ac34808770d3052176cec8b7435579ab5",
+  "changed_html_paths": [
+    "topics/f53/index.html"
+  ],
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v64.json",
+    "sha256": "7686339bd4467584cc53b6b45307957096dd0967783ace15f1ba118bff545762",
+    "presentation_id": "PLATFORM-A04-SCIENCE-AND-HISTORICAL-CONTEXT-20261127-v64"
+  },
+  "change_reason": "补齐工程放大落点内容，将推广入口移至行业小节起始处，并准确标明参考资料入口。",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "M0_resumed": false,
+  "Nemotron_training_resumed": false,
+  "reversible_text_files": [
+    {
+      "path": "scripts/story_sources_publication.py",
+      "old_sha256": "af36700f540e81ec016c47b67b625cb5a5b7982d40fdb882b9521affd425aba3",
+      "old_bytes": 8885,
+      "new_sha256": "b948935b7d3171a5837d60b3f1d5351c13754a318268b8a4fdb6c7263e116aed",
+      "new_bytes": 9022,
+      "edits": [
+        {
+          "old_offset": 956,
+          "replacement": 0
+        },
+        {
+          "old_offset": 4567,
+          "replacement": 1
+        }
+      ]
+    },
+    {
+      "path": "site/topics/f53/index.html",
+      "old_sha256": "847a94638d2f4986dddbdfbbdaf4bffa1b4522454ccc24e4b6fcee43be31c391",
+      "old_bytes": 29869,
+      "new_sha256": "f4f4c09c0968cd1369358ba83ad5a2e1a9f9adc9e8ca9f3e0b4c7707f61c22f4",
+      "new_bytes": 30021,
+      "edits": [
+        {
+          "old_offset": 8532,
+          "replacement": 2
+        },
+        {
+          "old_offset": 9048,
+          "replacement": 3
+        },
+        {
+          "old_offset": 14583,
+          "replacement": 4
+        },
+        {
+          "old_offset": 18718,
+          "replacement": 5
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "import f53_followup_publication as f53_followup\n",
+      "new": "import f53_followup_publication as f53_followup\nimport f53_card_navigation_publication as f53_card_navigation\n"
+    },
+    {
+      "old": "(f53_followup, f53_followup.V63_ADDITIONS))",
+      "new": "(f53_followup, f53_followup.V63_ADDITIONS),\n                 (f53_card_navigation, f53_card_navigation.V64_ADDITIONS))"
+    },
+    {
+      "old": "<a href=\"#a04-awards\">推广使用与获奖</a>",
+      "new": "<a href=\"#a04-industry\">推广使用与获奖</a>"
+    },
+    {
+      "old": ">研制、扩试与推广记录</a>",
+      "new": ">研制、扩试与推广的参考资料</a>"
+    },
+    {
+      "old": "<h3>行业 · 推广、获奖与效益</h3>",
+      "new": "<h3 id=\"a04-industry\">行业 · 推广、获奖与效益</h3>"
+    },
+    {
+      "old": "实验厂随后完成试制与扩大试验。",
+      "new": "实验厂随后完成试制。1979年的扩大试验表明，整条合成路线可用于工业生产。1982年展览资料记载，实验厂具备年产2吨的能力。"
+    }
+  ]
+}
