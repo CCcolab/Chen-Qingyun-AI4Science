@@ -1,0 +1,155 @@
+{
+  "schema_version": "78.0",
+  "presentation_id": "PLATFORM-A04-AWARD-ALIGNMENT-20261127-v78",
+  "publication_kind": "a04_award_alignment",
+  "previous_presentation_commit": "5724c010ed8de2c9c9ddd6b6d9b77f5ad5c0829f",
+  "changed_html_paths": [
+    "achievements/index.html",
+    "index.html",
+    "topics/f53/index.html"
+  ],
+  "changed_document_paths": [
+    "README.md"
+  ],
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v77.json",
+    "sha256": "6dcdbe45eae48e9c1447a00d4ee9ba7910c5c482a5178837b76e8f6bbf4de380",
+    "presentation_id": "PLATFORM-A04-AWARDS-BIOGRAPHY-20261127-v77"
+  },
+  "change_reason": "按《氟缘笃志：陈庆云传》第53、55、116页统一四处F-53获奖表达，并在制冷剂成果线内单列F-115市奖。",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "M0_resumed": false,
+  "Nemotron_training_resumed": false,
+  "reversible_text_files": [
+    {
+      "path": "README.md",
+      "old_sha256": "7a4821e757b261c47a48f696070b8aeece407aa42386176ea843e21c3ae97dab",
+      "old_bytes": 14117,
+      "new_sha256": "2fab63c896287e9ea6c69da292be479c6431d95c2e3f685d869dd0a529b766ae",
+      "new_bytes": 14497,
+      "edits": [
+        {
+          "old_offset": 1451,
+          "replacement": 0
+        },
+        {
+          "old_offset": 5221,
+          "replacement": 1
+        }
+      ]
+    },
+    {
+      "path": "scripts/story_sources_publication.py",
+      "old_sha256": "dd508f2e8f21996838a16ee71712efc4a467c80378ffc10365497d149906fcaf",
+      "old_bytes": 10722,
+      "new_sha256": "b8a4b37ab61047d6a772c0da62e59e69f3e49080087ca4a5be700206b899633f",
+      "new_bytes": 10859,
+      "edits": [
+        {
+          "old_offset": 1838,
+          "replacement": 2
+        },
+        {
+          "old_offset": 6371,
+          "replacement": 3
+        }
+      ]
+    },
+    {
+      "path": "site/achievements/index.html",
+      "old_sha256": "f462de380ecb688b3c44b0c058d460df27c976cfccadf9a61169119d5a66a21c",
+      "old_bytes": 84291,
+      "new_sha256": "2bf5d99815a03e3a43ee70b95c383735b7d46c110a6f20fb68e60c8d1ad41834",
+      "new_bytes": 84599,
+      "edits": [
+        {
+          "old_offset": 13675,
+          "replacement": 4
+        },
+        {
+          "old_offset": 28431,
+          "replacement": 5
+        }
+      ]
+    },
+    {
+      "path": "site/index.html",
+      "old_sha256": "8170d9aa0c5dcc9d7e235c80e63078f406fa5fcf807f73feb996007218d14fc7",
+      "old_bytes": 220328,
+      "new_sha256": "fe55226b31d9898bbe2d132297206e3cb005a26fcd5f451a7690ae3b3eb12f94",
+      "new_bytes": 220630,
+      "edits": [
+        {
+          "old_offset": 16388,
+          "replacement": 6
+        },
+        {
+          "old_offset": 34484,
+          "replacement": 7
+        }
+      ]
+    },
+    {
+      "path": "site/topics/f53/index.html",
+      "old_sha256": "a0e1ca33bc56dcf00c72ef9c51d152593f1c8cacd8f57db3ac7d38fd920930a0",
+      "old_bytes": 37072,
+      "new_sha256": "d9b8e85f84bedd89d7431c3b9bbab6bd512daa3198df7e8f5bb585350fbeebf2",
+      "new_bytes": 37098,
+      "edits": [
+        {
+          "old_offset": 8593,
+          "replacement": 8
+        },
+        {
+          "old_offset": 28162,
+          "replacement": 9
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "| [F-53铬雾抑制剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-f53) | 陈庆云带领研究组制得F-53，与电镀厂和实验厂工程人员推进镀槽试用及工艺放大。相关中间体也为后续有机氟反应研究提供了原料。 | [A04（F-53铬雾抑制剂）原文与合作资料](docs/A04_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |\n",
+      "new": "| [F-53铬雾抑制剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-f53) | 陈庆云带领研究组制得F-53，与电镀厂和实验厂工程人员推进镀槽试用及工艺放大。相关中间体也为后续有机氟反应研究提供了原料。1982年10月，F-53研制项目获国家发明奖三等奖和上海市重大科研成果奖一等奖。 | [A04（F-53铬雾抑制剂）原文与合作资料](docs/A04_ACADEMIC_ACHIEVEMENTS_zh-CN.md) · [获奖记录](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/f53/index.html#a04-awards) |\n"
+    },
+    {
+      "old": "| [A05（制冷剂与配套技术）](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html#a05-contributions) | 605研究小组开辟F-115制备路线，并与F-22配制已有工质F-502。后来团队与工程、材料和设备单位合作，从HFC-134a液相工艺与连续中试推进到配套冷冻机油和整机试用。 |\n",
+      "new": "| [A05（制冷剂与配套技术）](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html#a05-contributions) | 605研究小组开辟F-115制备路线，并与F-22配制已有工质F-502。F-115研制项目于[1980年2月获上海市重大科研成果奖三等奖](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/refrigerants/index.html#a05-chronology)。后来团队与工程、材料和设备单位合作，从HFC-134a液相工艺与连续中试推进到配套冷冻机油和整机试用。 |\n"
+    },
+    {
+      "old": "",
+      "new": "import a04_award_alignment_publication as a04_award_alignment\n"
+    },
+    {
+      "old": "                 (a04_awards_biography, a04_awards_biography.V76_ADDITIONS))\n",
+      "new": "                 (a04_awards_biography, a04_awards_biography.V76_ADDITIONS),\n                 (a04_award_alignment, a04_award_alignment.V77_ADDITIONS))\n"
+    },
+    {
+      "old": "<p>陈庆云带领研究组研制含醚键的F-53铬雾抑制剂，与实验厂、电镀厂协作，将抑雾剂从分子设计和合成推进到工厂试制、扩大试验与现场应用。研究过程中得到的含氟中间体，还为后续基础化学提供了原料。</p>\n<p class=\"major-line\"><a href=\"#line-a04\">A04（F-53铬雾抑制剂）研究线 →</a></p></article>\n",
+      "new": "<p>陈庆云带领研究组研制含醚键的F-53铬雾抑制剂，与实验厂、电镀厂协作，将抑雾剂从分子设计和合成推进到工厂试制、扩大试验与现场应用。研究过程中得到的含氟中间体，还为后续基础化学提供了原料。1982年10月，F-53研制项目获国家发明奖三等奖和上海市重大科研成果奖一等奖。</p>\n<p class=\"major-line\"><a href=\"#line-a04\">A04（F-53铬雾抑制剂）研究线 →</a> · <a href=\"../topics/f53/index.html#a04-awards\">获奖记录</a></p></article>\n"
+    },
+    {
+      "old": "<p><b>具体贡献：</b>陈庆云组织605研究小组开辟F-115制备路线，用它与F-22配制已有配方F-502。后来团队发展HFC-134a液相工艺，林永达、杨映松等推进连续中试，再与材料和设备单位解决冷冻机油配套及整机试用。</p>\n",
+      "new": "<p><b>具体贡献：</b>陈庆云组织605研究小组开辟F-115制备路线，用它与F-22配制已有配方F-502。F-115研制项目于<a href=\"../topics/refrigerants/index.html#a05-chronology\">1980年2月获上海市重大科研成果奖三等奖</a>。后来团队发展HFC-134a液相工艺，林永达、杨映松等推进连续中试，再与材料和设备单位解决冷冻机油配套及整机试用。</p>\n"
+    },
+    {
+      "old": "<p>陈庆云带领研究组研制含醚键的F-53铬雾抑制剂，与实验厂、电镀厂协作，将抑雾剂从分子设计和合成推进到工厂试制、扩大试验与现场应用。研究过程中得到的含氟中间体，还为后续基础化学提供了原料。</p>\n<p class=\"major-line\"><a href=\"#line-a04\">A04（F-53铬雾抑制剂）研究线 →</a></p></article>\n",
+      "new": "<p>陈庆云带领研究组研制含醚键的F-53铬雾抑制剂，与实验厂、电镀厂协作，将抑雾剂从分子设计和合成推进到工厂试制、扩大试验与现场应用。研究过程中得到的含氟中间体，还为后续基础化学提供了原料。1982年10月，F-53研制项目获国家发明奖三等奖和上海市重大科研成果奖一等奖。</p>\n<p class=\"major-line\"><a href=\"#line-a04\">A04（F-53铬雾抑制剂）研究线 →</a> · <a href=\"topics/f53/index.html#a04-awards\">获奖记录</a></p></article>\n"
+    },
+    {
+      "old": "<p>陈庆云组织605研究小组开辟F-115制备路线，用它与F-22配制已有配方F-502。后来团队发展HFC-134a液相工艺，林永达、杨映松等推进连续中试，再与材料和设备单位解决冷冻机油配套及整机试用。</p>\n",
+      "new": "<p>陈庆云组织605研究小组开辟F-115制备路线，用它与F-22配制已有配方F-502。F-115研制项目于<a href=\"topics/refrigerants/index.html#a05-chronology\">1980年2月获上海市重大科研成果奖三等奖</a>。后来团队发展HFC-134a液相工艺，林永达、杨映松等推进连续中试，再与材料和设备单位解决冷冻机油配套及整机试用。</p>\n"
+    },
+    {
+      "old": "    <div class=\"a04-card\"><h3><a href=\"#a04-application\">近千个单位采用 F-53</a></h3><p>1982年展览资料记载全国已有985个使用单位。同年项目获国家发明奖三等奖和上海市重大科研成果奖一等奖。</p><p class=\"a04-card-scope\">车间抑雾、工厂使用和项目获奖。</p></div>\n",
+      "new": "    <div class=\"a04-card\"><h3><a href=\"#a04-application\">近千个单位采用 F-53</a></h3><p>1982年展览资料记载全国已有985个使用单位。1982年10月，F-53研制项目获国家发明奖三等奖和上海市重大科研成果奖一等奖。</p><p class=\"a04-card-scope\">车间抑雾、工厂使用和项目获奖。</p></div>\n"
+    },
+    {
+      "old": "  <li id=\"a04-award-cas-record\"><strong>获奖项目与年份。</strong> 传记第53页正文和图5-3用「抑铬雾剂F-53及其制备」，第116页年表用「抑铬雾剂F-53的研制」，均记载该项目于1982年10月获国家发明奖三等奖和上海市一等奖。第55页和第116页所载1980年上海市重大科研成果奖三等奖授予F-115制冷剂项目。<a href=\"#a04-source-book\">传记书目与页码</a></li>\n",
+      "new": "  <li id=\"a04-award-cas-record\"><strong>获奖项目与年份。</strong> 传记第53页正文和图5-3用「抑铬雾剂F-53及其制备」，第116页年表用「抑铬雾剂F-53的研制」，两处所记获奖年月均为1982年10月。第55页图5-5为F-115制冷剂项目的获奖证书书影，第116页年表记该项目于1980年2月获上海市重大科研成果奖三等奖。<a href=\"#a04-source-book\">传记书目与页码</a></li>\n"
+    }
+  ]
+}
