@@ -1,0 +1,100 @@
+{
+  "schema_version": "73.0",
+  "presentation_id": "PLATFORM-A04-VISIBLE-READING-20261127-v73",
+  "publication_kind": "a04_visible_reading",
+  "previous_presentation_commit": "9b69be9bde8c93124a849280d0e4221923de20c9",
+  "changed_html_paths": [
+    "topics/f53/index.html"
+  ],
+  "changed_document_paths": [],
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v72.json",
+    "sha256": "d16911a963e13d10dab6ce551621d5afb754f2e61f1abce8cdde2b8eca8529a2",
+    "presentation_id": "PLATFORM-A04-READER-HEADINGS-20261127-v72"
+  },
+  "change_reason": "直接呈现同期报道的节能测算与原刊精读，保留原有锚点及来源说明。",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "M0_resumed": false,
+  "Nemotron_training_resumed": false,
+  "reversible_text_files": [
+    {
+      "path": "scripts/story_sources_publication.py",
+      "old_sha256": "acd15dd084c68bd7e9953ebeb8d196c38f2cb85881f30dcb0c2ca714f02f26a4",
+      "old_bytes": 10013,
+      "new_sha256": "02fac2aadcbc620080cef4d2fe5b9eadee47d6b39ee903f290953b13bdda31c0",
+      "new_bytes": 10150,
+      "edits": [
+        {
+          "old_offset": 1516,
+          "replacement": 0
+        },
+        {
+          "old_offset": 5666,
+          "replacement": 1
+        }
+      ]
+    },
+    {
+      "path": "site/topics/f53/index.html",
+      "old_sha256": "eadbc351f6f53b78e1e6235256383cfc7ca95def453299d02768df419a82bc5a",
+      "old_bytes": 37532,
+      "new_sha256": "706a750c0566edc88ecabd67b391eb447082b6c54f1f39b80f78dbdf392123e8",
+      "new_bytes": 36459,
+      "edits": [
+        {
+          "old_offset": 2052,
+          "replacement": 2
+        },
+        {
+          "old_offset": 6989,
+          "replacement": 3
+        },
+        {
+          "old_offset": 17990,
+          "replacement": 4
+        },
+        {
+          "old_offset": 21925,
+          "replacement": 5
+        },
+        {
+          "old_offset": 36939,
+          "replacement": 6
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "",
+      "new": "import f53_visible_reading_publication as f53_visible_reading\n"
+    },
+    {
+      "old": "                 (f53_reader_heading, f53_reader_heading.V71_ADDITIONS))\n",
+      "new": "                 (f53_reader_heading, f53_reader_heading.V71_ADDITIONS),\n                 (f53_visible_reading, f53_visible_reading.V72_ADDITIONS))\n"
+    },
+    {
+      "old": "<style id=\"cq-reader-journey-style\">.cq-journey-nav{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem 1.1rem;margin:1rem 0;padding:.7rem 0;line-height:1.7;font-size:.9rem}.cq-journey-nav a{white-space:normal;text-decoration:underline;text-underline-offset:.18em}.cq-journey-actions{display:flex;flex-wrap:wrap;gap:.6rem 1.3rem;align-items:center;margin:1rem 0}.cq-journey-actions a{font-weight:600;text-decoration:underline;text-underline-offset:.2em}.cq-journey-bridge{box-sizing:border-box;max-width:1120px;margin:1rem auto 1.5rem;padding:1rem 1.2rem;background:#f0f7f7;border-left:3px solid #177c80;line-height:1.85;color:#294e5a}.cq-journey-bridge p{margin:.3rem 0}.cq-journey-fold{margin:1rem 0;padding:.8rem 1rem;border:1px solid #d5e1e5;border-radius:8px;background:#f8fafb;line-height:1.8}.cq-journey-fold>summary{font-weight:600;cursor:pointer;color:#275867}.cq-journey-fold[open]>summary{margin-bottom:.8rem}.cq-deep:target,.cq-study:target{scroll-margin-top:6rem}.cq-journey-note{font-size:.88rem;color:#496471}.cq-journey-nav .cq-journey-ai{margin-left:auto;font-weight:400}@media(max-width:700px){.cq-journey-nav{gap:.4rem .8rem}.cq-journey-nav .cq-journey-ai{margin-left:0}.cq-journey-actions{gap:.6rem 1rem}.cq-journey-bridge{margin:1rem 0;padding:.9rem 1rem}.cq-journey-fold{padding:.7rem .8rem}}</style>\n",
+      "new": "<style id=\"cq-reader-journey-style\">.cq-journey-nav{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem 1.1rem;margin:1rem 0;padding:.7rem 0;line-height:1.7;font-size:.9rem}.cq-journey-nav a{white-space:normal;text-decoration:underline;text-underline-offset:.18em}.cq-journey-actions{display:flex;flex-wrap:wrap;gap:.6rem 1.3rem;align-items:center;margin:1rem 0}.cq-journey-actions a{font-weight:600;text-decoration:underline;text-underline-offset:.2em}.cq-journey-bridge{box-sizing:border-box;max-width:1120px;margin:1rem auto 1.5rem;padding:1rem 1.2rem;background:#f0f7f7;border-left:3px solid #177c80;line-height:1.85;color:#294e5a}.cq-journey-bridge p{margin:.3rem 0}.cq-deep:target,.cq-study:target{scroll-margin-top:6rem}.cq-journey-note{font-size:.88rem;color:#496471}.cq-journey-nav .cq-journey-ai{margin-left:auto;font-weight:400}@media(max-width:700px){.cq-journey-nav{gap:.4rem .8rem}.cq-journey-nav .cq-journey-ai{margin-left:0}.cq-journey-actions{gap:.6rem 1rem}.cq-journey-bridge{margin:1rem 0;padding:.9rem 1rem}}</style>\n"
+    },
+    {
+      "old": "  .a04-panel details { margin-top: 14px; }\n  .a04-panel summary { color: #155d55; cursor: pointer; font-weight: 650; }\n",
+      "new": ""
+    },
+    {
+      "old": "  <details class=\"cq-journey-fold\"><summary>查看同期报道中的节能测算</summary>\n    <p id=\"a04-clip-caption\">同一报道按每使用1吨F-53测算，可节电1,800万度，电费和铬酸费合计节约344万元。报道未列测定工况，这里保留其历史测算口径。</p>\n  </details>\n",
+      "new": "  <p id=\"a04-clip-caption\"><strong>同期报道的节能测算。</strong> 按每使用1吨F-53计，报道估算可节电1,800万度，电费和铬酸费合计节约344万元。报道未列测定工况。</p>\n"
+    },
+    {
+      "old": "  <details class=\"cq-journey-fold\">\n    <summary id=\"a04-deep-reading-figure-caption\">十碳磺酰氟怎样实现末端换氯？</summary>\n    <p>原刊用 <span class=\"a04-formula\">I(CF₂CF₂)<sub><i>n</i>+1</sub>OCF₂CF₂SO₂F</span> 表示含碘调聚物。醚氧靠碘的一侧在调聚前已有一个 CF₂CF₂ 单元，<i>n</i> 计调聚新增的单元。<i>n</i>=3 时这一侧有四个单元、八个碳，加上醚氧另一侧的两个碳，共十个碳。<i>n</i>=2 时共八个碳，与陈庆云2001年回顾所列全氟端 F-53 的碳骨架相同。</p>\n    <p>第323页的常压实例选取 <i>n</i>=3 的含碘磺酰氟。反应把碳链末端的碘换成氯，另一端的磺酰氟保留，同时有碘的氯化物蒸出。陈庆云对前段工艺回用一氯化碘的记述另见其回忆。</p>\n    <div class=\"a04-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a04-deep-reading-table-caption\">\n      <table>\n        <caption id=\"a04-deep-reading-table-caption\">1979年《化学学报》所载十碳磺酰氟换氯实例（<i>n</i>=3）</caption>\n        <thead><tr><th scope=\"col\">观察</th><th scope=\"col\">原刊记录</th><th scope=\"col\">位置</th></tr></thead>\n        <tbody>\n          <tr><th scope=\"row\">端基变化</th><td><span class=\"a04-formula\">I(CF₂CF₂)₄OCF₂CF₂SO₂F</span> 转为 <span class=\"a04-formula\">Cl(CF₂CF₂)₄OCF₂CF₂SO₂F</span>。</td><td>第323页</td></tr>\n          <tr><th scope=\"row\">分离结果</th><td>29克底物（原报0.04 mol）获得23克相应氯化物，原报收率81.4%、色谱纯度100%。</td><td>第323页</td></tr>\n          <tr><th scope=\"row\">结构表征</th><td>核磁表按化合物分列CF₂O、CF₂SO₂F和SO₂F等环境。论文另记质谱组参与色谱—质谱分析。</td><td>第321页表6、第323页致谢</td></tr>\n        </tbody>\n      </table>\n    </div>\n    <p id=\"a04-yield-check\"><strong>平台计量核校（待审）。</strong> 按原报投料0.04 mol，将23克按所列十碳氯代磺酰氟（<span class=\"a04-formula\">C₁₀ClF₂₁O₃S</span>，约634.58 g/mol）计，并采用1∶1计量关系，得到条件性估算约90.6%。原刊第323页未说明81.4%的计算口径。差异原因待核，原报收率仍保留。</p>\n    <p>换氯的直接产物是十碳磺酰氟。将磺酰氟端（–SO₂F）水解成磺酸钾端（–SO₃K）时，碳数和链末氯保留。原作者把这个十碳钾盐与同系列的八碳末端氯代钾盐都列为可用的抑雾剂。<a href=\"#a04-surface-tension-caption\">表4中的八碳末端氯代钾盐</a>与2013年 F-53B 研究的目标物结构相同。</p>\n    <p class=\"a04-source\"><a href=\"#a04-source-1979\">原刊第315、319–320、323页</a> · <a href=\"#ref-s1\">全氟端钾盐的研制路线</a> · <a href=\"#a04-source-book\">工艺回忆定位</a></p>\n  </details>\n",
+      "new": "  <h3 id=\"a04-deep-reading-figure-caption\">十碳磺酰氟怎样实现末端换氯？</h3>\n  <p>原刊用 <span class=\"a04-formula\">I(CF₂CF₂)<sub><i>n</i>+1</sub>OCF₂CF₂SO₂F</span> 表示含碘调聚物。醚氧靠碘的一侧在调聚前已有一个 CF₂CF₂ 单元，<i>n</i> 计调聚新增的单元。<i>n</i>=3 时这一侧有四个单元、八个碳，加上醚氧另一侧的两个碳，共十个碳。<i>n</i>=2 时共八个碳，与陈庆云2001年回顾所列全氟端 F-53 的碳骨架相同。</p>\n  <p>第323页的常压实例选取 <i>n</i>=3 的含碘磺酰氟。反应把碳链末端的碘换成氯，另一端的磺酰氟保留，同时有碘的氯化物蒸出。陈庆云对前段工艺回用一氯化碘的记述另见其回忆。</p>\n  <div class=\"a04-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a04-deep-reading-table-caption\">\n    <table>\n      <caption id=\"a04-deep-reading-table-caption\">1979年《化学学报》所载十碳磺酰氟换氯实例（<i>n</i>=3）</caption>\n      <thead><tr><th scope=\"col\">观察</th><th scope=\"col\">原刊记录</th><th scope=\"col\">位置</th></tr></thead>\n      <tbody>\n        <tr><th scope=\"row\">端基变化</th><td><span class=\"a04-formula\">I(CF₂CF₂)₄OCF₂CF₂SO₂F</span> 转为 <span class=\"a04-formula\">Cl(CF₂CF₂)₄OCF₂CF₂SO₂F</span>。</td><td>第323页</td></tr>\n        <tr><th scope=\"row\">分离结果</th><td>29克底物（原报0.04 mol）获得23克相应氯化物，原报收率81.4%、色谱纯度100%。</td><td>第323页</td></tr>\n        <tr><th scope=\"row\">结构表征</th><td>核磁表按化合物分列CF₂O、CF₂SO₂F和SO₂F等环境。论文另记质谱组参与色谱—质谱分析。</td><td>第321页表6、第323页致谢</td></tr>\n      </tbody>\n    </table>\n  </div>\n  <p id=\"a04-yield-check\"><strong>平台计量核校（待审）。</strong> 按原报投料0.04 mol，将23克按所列十碳氯代磺酰氟（<span class=\"a04-formula\">C₁₀ClF₂₁O₃S</span>，约634.58 g/mol）计，并采用1∶1计量关系，得到条件性估算约90.6%。原刊第323页未说明81.4%的计算口径。差异原因待核，原报收率仍保留。</p>\n  <p>换氯的直接产物是十碳磺酰氟。将磺酰氟端（–SO₂F）水解成磺酸钾端（–SO₃K）时，碳数和链末氯保留。原作者把这个十碳钾盐与同系列的八碳末端氯代钾盐都列为可用的抑雾剂。<a href=\"#a04-surface-tension-caption\">表4中的八碳末端氯代钾盐</a>与2013年 F-53B 研究的目标物结构相同。</p>\n  <p class=\"a04-source\"><a href=\"#a04-source-1979\">原刊第315、319–320、323页</a> · <a href=\"#ref-s1\">全氟端钾盐的研制路线</a> · <a href=\"#a04-source-book\">工艺回忆定位</a></p>\n"
+    },
+    {
+      "old": "<script>\n(() => {\n  function revealLinkedDetails() {\n    const fragment = location.hash.slice(1);\n    if (!fragment) return;\n    const target = document.getElementById(fragment);\n    if (!target) return;\n    const details = target.id === 'a04-deep-reading'\n      ? target.querySelector('details')\n      : target.closest('details');\n    if (details) details.open = true;\n  }\n\n  revealLinkedDetails();\n  window.addEventListener('hashchange', revealLinkedDetails);\n})();\n</script>\n",
+      "new": ""
+    }
+  ]
+}

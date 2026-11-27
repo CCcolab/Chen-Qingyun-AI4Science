@@ -29,6 +29,7 @@ import f53_evidence_links_publication as f53_evidence_links
 import f53_scientific_boundaries_publication as f53_scientific_boundaries
 import f53_reading_titles_publication as f53_reading_titles
 import f53_reader_heading_publication as f53_reader_heading
+import f53_visible_reading_publication as f53_visible_reading
 from stories_rebalance_publication import PUBLICATION_PATHS, _file, _identity, _reconstruct, _sha
 
 
@@ -110,7 +111,8 @@ def _previous(root):
                  (f53_evidence_links, f53_evidence_links.V68_ADDITIONS),
                  (f53_scientific_boundaries, f53_scientific_boundaries.V69_ADDITIONS),
                  (f53_reading_titles, f53_reading_titles.V70_ADDITIONS),
-                 (f53_reader_heading, f53_reader_heading.V71_ADDITIONS))
+                 (f53_reader_heading, f53_reader_heading.V71_ADDITIONS),
+                 (f53_visible_reading, f53_visible_reading.V72_ADDITIONS))
     latest = next((revision for revision, _ in reversed(revisions) if (root/revision.MANIFEST).is_file()), None)
     if latest is None and not (root/MANIFEST).is_file():
         return root, None
