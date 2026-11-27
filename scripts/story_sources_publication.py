@@ -35,6 +35,7 @@ import a04_link_review_followup_publication as a04_link_review_followup
 import a04_browser_links_publication as a04_browser_links
 import a04_awards_biography_publication as a04_awards_biography
 import a04_award_alignment_publication as a04_award_alignment
+import a06_reagent_contributions_publication as a06_reagent_contributions
 from stories_rebalance_publication import PUBLICATION_PATHS, _file, _identity, _reconstruct, _sha
 
 
@@ -122,7 +123,8 @@ def _previous(root):
                  (a04_link_review_followup, a04_link_review_followup.V74_ADDITIONS),
                  (a04_browser_links, a04_browser_links.V75_ADDITIONS),
                  (a04_awards_biography, a04_awards_biography.V76_ADDITIONS),
-                 (a04_award_alignment, a04_award_alignment.V77_ADDITIONS))
+                 (a04_award_alignment, a04_award_alignment.V77_ADDITIONS),
+                 (a06_reagent_contributions, a06_reagent_contributions.V78_ADDITIONS))
     latest = next((revision for revision, _ in reversed(revisions) if (root/revision.MANIFEST).is_file()), None)
     if latest is None and not (root/MANIFEST).is_file():
         return root, None

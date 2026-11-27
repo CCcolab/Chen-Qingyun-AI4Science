@@ -11,7 +11,7 @@
 | 主要学术成就 | 贡献概述 | 对应成果线与资料 |
 |---|---|---|
 | [F-53铬雾抑制剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-f53) | 陈庆云带领研究组制得F-53，与电镀厂和实验厂工程人员推进镀槽试用及工艺放大。相关中间体也为后续有机氟反应研究提供了原料。1982年10月，F-53研制项目获国家发明奖三等奖和上海市重大科研成果奖一等奖。 | [A04（F-53铬雾抑制剂）原文与合作资料](docs/A04_ACADEMIC_ACHIEVEMENTS_zh-CN.md) · [获奖记录](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/f53/index.html#a04-awards) |
-| [陈试剂与二氟卡宾试剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-reagents) | 陈庆云与合作者开发甲酯MFSDA“陈试剂”的三氟甲基化用途，并发展以硅酯TFDA提供二氟卡宾、合成偕二氟环丙烷的方法。 | [A06（磺酸酯、二氟卡宾与三氟甲基化）原文与合作资料](docs/A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |
+| [陈试剂与二氟卡宾试剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-reagents) | 1989年，陈庆云与吴生文用甲酯MFSDA“陈试剂”在选定的卤代物上引入三氟甲基。2000年，陈庆云小组与多比尔团队发展硅酯TFDA，将二氟卡宾环丙烷化扩展到丙烯酸酯等较难反应的缺电子烯烃。 | [A06（磺酸酯、二氟卡宾与三氟甲基化）原文与合作资料](docs/A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |
 | [氟烷基卟啉](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#fluoroalkylporphyrins) | 从已有卟啉的直接氟烷基化、按位置和数量引入三氟甲基，推进到选择性环化、结构与光物性研究；20π非芳香大环是其中的代表发现。这是A08（交叉研究与晚年拓展）的卟啉分支，不等于A08（交叉研究与晚年拓展）全部内容。 | [A08（交叉研究与晚年拓展）卟啉与大环分支资料](docs/A08_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |
 | [单电子转移反应](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#topic-single-electron-transfer) | 陈庆云与合作者围绕溶剂及金属、亲核试剂、氧化剂和光照等引发方式，形成多入口的氟烷基化方法体系；特定C–Cl活化是后期拓展，不代替整项成就。 | [A07（单电子转移与C–Cl活化）原文与合作资料](docs/A07_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |
 
@@ -36,7 +36,7 @@
 
 ## 代表性学术成果：陈试剂
 
-氟磺酰基二氟乙酸甲酯（MFSDA，FSO₂CF₂CO₂Me）被称为“陈试剂”。1989年，陈庆云与吴生文报道其在碘化亚铜体系中的三氟甲基化用途，使这一甲酯成为向有机分子引入三氟甲基的合成工具。2018年后续原论文题名直接使用“Chen’s reagent”，展示了这项成果的命名与研究接续；后续改进保留实际作者归属。
+氟磺酰基二氟乙酸甲酯（MFSDA，FSO₂CF₂CO₂Me）被称为“陈试剂”。1989年，陈庆云与吴生文报道了用这一甲酯替换芳基、烯基和烷基卤化物上选定卤素的方法，在相应位置引入三氟甲基。2018年后续原论文题名直接使用“Chen’s reagent”，展示了这项成果的命名与研究接续；后续改进保留实际作者归属。
 
 陈试剂列入A06（磺酸酯、二氟卡宾与三氟甲基化）成果线。同线还介绍哪些结构有利于磺酸酯的硫—氧或碳—氧键断裂，以及研究者怎样发展二氟卡宾前体。[磺酸酯与二氟卡宾专题](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/perfluorosulfonates/index.html)
 
