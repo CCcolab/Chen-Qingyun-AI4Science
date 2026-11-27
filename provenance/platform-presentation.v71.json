@@ -1,0 +1,144 @@
+{
+  "schema_version": "71.0",
+  "presentation_id": "PLATFORM-A04-READING-TITLES-20261127-v71",
+  "publication_kind": "a04_reading_titles",
+  "previous_presentation_commit": "20f3e1cdb8c4514cadd76cd4b6c5354cebd91584",
+  "changed_html_paths": [
+    "achievements/index.html",
+    "topics/f53/index.html",
+    "topics/index.html"
+  ],
+  "changed_document_paths": [],
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v70.json",
+    "sha256": "c1ebaef2a37c3552f52548453f0f400fe091414d6906a872e38a2a4a5e1c2871",
+    "presentation_id": "PLATFORM-A04-SCIENTIFIC-BOUNDARIES-20261127-v70"
+  },
+  "change_reason": "用读者易懂的标题统一 A04 四张卡片、正文章节和相关阅读入口。",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "M0_resumed": false,
+  "Nemotron_training_resumed": false,
+  "reversible_text_files": [
+    {
+      "path": "scripts/story_sources_publication.py",
+      "old_sha256": "6cc9977aa8b417997a906d9184d26bc4237a5d14a7dd23621e8dd4ed31a86216",
+      "old_bytes": 9747,
+      "new_sha256": "ae377261e3fb00245f4069bc9c16ccc79d6f8bd3e492e44de8c6ecb3bd1db3e2",
+      "new_bytes": 9880,
+      "edits": [
+        {
+          "old_offset": 1396,
+          "replacement": 0
+        },
+        {
+          "old_offset": 5386,
+          "replacement": 1
+        }
+      ]
+    },
+    {
+      "path": "site/achievements/index.html",
+      "old_sha256": "36ea49f686e54cf5285a1a6d74fa3b517d0cb49698cb3c44ddb53d9e1ed3b148",
+      "old_bytes": 84299,
+      "new_sha256": "33062638edad3efaeef2c8b141f5becec92a73d7faad5c9375d90412ea9790f1",
+      "new_bytes": 84291,
+      "edits": [
+        {
+          "old_offset": 27715,
+          "replacement": 2
+        }
+      ]
+    },
+    {
+      "path": "site/topics/f53/index.html",
+      "old_sha256": "3047ec81479d2b3411aa5dd5a0a23c9e1627ec85de188c7a7314ab82fdde2f45",
+      "old_bytes": 37263,
+      "new_sha256": "7626c998f4f5dc99aaaa79a0a9f9f8fa303d02a6e2155a8d7fa6486e4d6116e3",
+      "new_bytes": 37353,
+      "edits": [
+        {
+          "old_offset": 4635,
+          "replacement": 3
+        },
+        {
+          "old_offset": 8315,
+          "replacement": 4
+        },
+        {
+          "old_offset": 9792,
+          "replacement": 5
+        },
+        {
+          "old_offset": 14328,
+          "replacement": 6
+        },
+        {
+          "old_offset": 15734,
+          "replacement": 7
+        },
+        {
+          "old_offset": 18737,
+          "replacement": 8
+        }
+      ]
+    },
+    {
+      "path": "site/topics/index.html",
+      "old_sha256": "15e9fed459abde673a88139f9b22f4df15519746fc9960c711a97ec8f7f4274e",
+      "old_bytes": 9238,
+      "new_sha256": "746c35325c18b8511aeec38f3658fa9f7f4a5a924e67bb397e7c1f5d7fcc9f85",
+      "new_bytes": 9331,
+      "edits": [
+        {
+          "old_offset": 5065,
+          "replacement": 9
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "",
+      "new": "import f53_reading_titles_publication as f53_reading_titles\n"
+    },
+    {
+      "old": "                 (f53_scientific_boundaries, f53_scientific_boundaries.V69_ADDITIONS))\n",
+      "new": "                 (f53_scientific_boundaries, f53_scientific_boundaries.V69_ADDITIONS),\n                 (f53_reading_titles, f53_reading_titles.V70_ADDITIONS))\n"
+    },
+    {
+      "old": "<details class=\"cq-journey-fold\"><summary>继续阅读</summary><p><a href=\"../topics/f53/index.html#record-industrial-application\">合作研制与厂试档案 →</a> · <a href=\"../topics/f53/index.html#a04-representative-study\">代表成果详读 →</a> · <a href=\"../topics/f53/index.html#topic-f53\">A04（F-53铬雾抑制剂）：研制、应用与合作 →</a></p></details>\n",
+      "new": "<details class=\"cq-journey-fold\"><summary>继续阅读</summary><p><a href=\"../topics/f53/index.html#a04-cooperation\">从实验室样品到工厂试制 →</a> · <a href=\"../topics/f53/index.html#a04-representative-study\">代表成果详读 →</a> · <a href=\"../topics/f53/index.html#topic-f53\">A04（F-53铬雾抑制剂）：研制、应用与合作 →</a></p></details>\n"
+    },
+    {
+      "old": "</head><body><header><div class=\"wrap\"><div class=\"eyebrow\">有机氟化学研究与传承</div><h1>A04（F-53铬雾抑制剂）</h1><p class=\"reader-breadcrumbs\" style=\"font-size:.9rem;line-height:1.8;margin:12px 0\"><a href=\"../../index.html#line-a04\">所属成果线 A04（F-53铬雾抑制剂）</a> · <a href=\"../../topics/index.html\">专题索引</a></p><nav class=\"cq-reader-nav cq-journey-nav\" aria-label=\"本专题阅读导航\"><a class=\"cq-journey-link\" href=\"../../index.html\">平台首页</a> · <a class=\"cq-journey-link\" href=\"../../achievements/index.html#heritage-inventory\">九条成果线</a> · <a class=\"cq-journey-link\" href=\"#a04-representative-study\">代表成果</a> · <a class=\"cq-journey-link\" href=\"#a04-deep-reading\">原文图解</a> · <a class=\"cq-journey-link\" href=\"#a04-cooperation\">合作分工</a> · <a class=\"cq-journey-link\" href=\"../../research/index.html#ai-a04\">AI辅助整理</a></nav></div></header><main class=\"wrap\">\n",
+      "new": "</head><body><header><div class=\"wrap\"><div class=\"eyebrow\">有机氟化学研究与传承</div><h1>A04（F-53铬雾抑制剂）</h1><p class=\"reader-breadcrumbs\" style=\"font-size:.9rem;line-height:1.8;margin:12px 0\"><a href=\"../../index.html#line-a04\">所属成果线 A04（F-53铬雾抑制剂）</a> · <a href=\"../../topics/index.html\">专题索引</a></p><nav class=\"cq-reader-nav cq-journey-nav\" aria-label=\"本专题阅读导航\"><a class=\"cq-journey-link\" href=\"../../index.html\">平台首页</a> · <a class=\"cq-journey-link\" href=\"../../achievements/index.html#heritage-inventory\">九条成果线</a> · <a class=\"cq-journey-link\" href=\"#a04-representative-study\">代表成果</a> · <a class=\"cq-journey-link\" href=\"#a04-deep-reading\">原文图解</a> · <a class=\"cq-journey-link\" href=\"#a04-cooperation\">试制与合作</a> · <a class=\"cq-journey-link\" href=\"../../research/index.html#ai-a04\">AI辅助整理</a></nav></div></header><main class=\"wrap\">\n"
+    },
+    {
+      "old": "    <div class=\"a04-card\"><h3><a href=\"#a04-representative-study\">自主设计含醚键结构</a></h3><p>1975年启动研制，不到三年制得含醚键抑雾剂的实验室样品。</p><p class=\"a04-card-scope\">分子设计与路线对照、端基回用与原刊物性、赴美学术交流。</p></div>\n    <div class=\"a04-card\"><h3><a href=\"#a04-cooperation\">走通工程放大</a></h3><p>1979年完成扩大试验。1982年展览资料记载，实验厂具备年产2吨的能力。</p><p class=\"a04-card-scope\">试制与扩大试验、实验厂和电镀厂等单位的合作分工。</p></div>\n    <div class=\"a04-card\"><h3><a href=\"#a04-application\">推广使用与获奖</a></h3><p>1982年展览资料记载全国已有985个使用单位。同年项目获国家发明奖三等奖和上海市重大科研成果奖一等奖。</p><p class=\"a04-card-scope\">全国推广与两项获奖、车间抑雾与工厂应用。</p></div>\n    <div class=\"a04-card\"><h3><a href=\"#a04-research-continuity\">建立含氟醚磺酰氟合成方法</a></h3><p>1979年原刊发表了合成一系列含醚磺酰氟的方法，并根据副产物提出了生成二氟卡宾的解释。</p><p class=\"a04-card-scope\">原刊的合成方法与二氟卡宾推断，以及由此展开的基础研究。</p></div>\n",
+      "new": "    <div class=\"a04-card\"><h3><a href=\"#a04-representative-study\">含醚键抑雾剂的设计</a></h3><p>1975年启动研制，不到三年制得含醚键抑雾剂的实验室样品。</p><p class=\"a04-card-scope\">分子设计与路线对照、端基回用与原刊物性、赴美学术交流。</p></div>\n    <div class=\"a04-card\"><h3><a href=\"#a04-cooperation\">从实验室样品到工厂试制</a></h3><p>研究组与实验厂合作，把实验室的制备方法用于工厂试制，1979年完成扩大试验。1982年展览资料记载，实验厂具备年产2吨的能力。</p><p class=\"a04-card-scope\">试制、设备改进及各单位的分工。</p></div>\n    <div class=\"a04-card\"><h3><a href=\"#a04-application\">推广应用与项目获奖</a></h3><p>1982年展览资料记载全国已有985个使用单位。同年项目获国家发明奖三等奖和上海市重大科研成果奖一等奖。</p><p class=\"a04-card-scope\">全国推广与两项获奖、车间抑雾与工厂应用。</p></div>\n    <div class=\"a04-card\"><h3><a href=\"#a04-research-continuity\">新的合成方法与后续研究</a></h3><p>1979年原刊发表了合成一系列含醚磺酰氟的方法，并根据副产物提出了生成二氟卡宾的解释。</p><p class=\"a04-card-scope\">原刊的合成方法与二氟卡宾推断，以及由此展开的基础研究。</p></div>\n"
+    },
+    {
+      "old": "  <h2 id=\"a04-representative-study-title\">自主设计含醚键结构</h2>\n",
+      "new": "  <h2 id=\"a04-representative-study-title\">含醚键抑雾剂的设计</h2>\n"
+    },
+    {
+      "old": "  <h2 id=\"a04-cooperation-title\">走通工程放大</h2>\n",
+      "new": "  <h2 id=\"a04-cooperation-title\">从实验室样品到工厂试制</h2>\n"
+    },
+    {
+      "old": "  <h2 id=\"a04-application-title\">推广使用与获奖</h2>\n",
+      "new": "  <h2 id=\"a04-application-title\">推广应用与项目获奖</h2>\n"
+    },
+    {
+      "old": "  <h2 id=\"a04-continuity-title\">建立含氟醚磺酰氟合成方法</h2>\n",
+      "new": "  <h2 id=\"a04-continuity-title\">新的合成方法与后续研究</h2>\n"
+    },
+    {
+      "old": "<section class=\"topic-line\" id=\"topic-line-a04\"><h2><a href=\"../index.html#line-a04\">A04（F-53铬雾抑制剂）</a></h2><ul><li><a href=\"f53/index.html#a04-contributions\">主要贡献与研究分支</a></li><li><a href=\"f53/index.html#a04-representative-study\">F-53研制</a></li><li><a href=\"f53/index.html#record-industrial-application\">工厂试用与工程放大</a></li><li><a href=\"f53/index.html#a04-research-continuity\">两类中间体与后续化学</a></li></ul></section>\n",
+      "new": "<section class=\"topic-line\" id=\"topic-line-a04\"><h2><a href=\"../index.html#line-a04\">A04（F-53铬雾抑制剂）</a></h2><ul><li><a href=\"f53/index.html#a04-contributions\">主要贡献与研究分支</a></li><li><a href=\"f53/index.html#a04-representative-study\">含醚键抑雾剂的设计</a></li><li><a href=\"f53/index.html#a04-cooperation\">从实验室样品到工厂试制</a></li><li><a href=\"f53/index.html#a04-application\">推广应用与项目获奖</a></li><li><a href=\"f53/index.html#a04-research-continuity\">新的合成方法与后续研究</a></li></ul></section>\n"
+    }
+  ]
+}
