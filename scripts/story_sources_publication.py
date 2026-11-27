@@ -31,6 +31,7 @@ import f53_reading_titles_publication as f53_reading_titles
 import f53_reader_heading_publication as f53_reader_heading
 import f53_visible_reading_publication as f53_visible_reading
 import f53_reference_targets_publication as f53_reference_targets
+import a04_link_review_followup_publication as a04_link_review_followup
 from stories_rebalance_publication import PUBLICATION_PATHS, _file, _identity, _reconstruct, _sha
 
 
@@ -114,7 +115,8 @@ def _previous(root):
                  (f53_reading_titles, f53_reading_titles.V70_ADDITIONS),
                  (f53_reader_heading, f53_reader_heading.V71_ADDITIONS),
                  (f53_visible_reading, f53_visible_reading.V72_ADDITIONS),
-                 (f53_reference_targets, f53_reference_targets.V73_ADDITIONS))
+                 (f53_reference_targets, f53_reference_targets.V73_ADDITIONS),
+                 (a04_link_review_followup, a04_link_review_followup.V74_ADDITIONS))
     latest = next((revision for revision, _ in reversed(revisions) if (root/revision.MANIFEST).is_file()), None)
     if latest is None and not (root/MANIFEST).is_file():
         return root, None
