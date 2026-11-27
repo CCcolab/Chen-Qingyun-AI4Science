@@ -1,0 +1,269 @@
+{
+  "schema_version": "68.0",
+  "presentation_id": "PLATFORM-A04-F53-AND-F53B-EVIDENCE-20261127-v68",
+  "publication_kind": "a04_f53_and_f53b_evidence",
+  "previous_presentation_commit": "e3033124ce645caeac0fad5a4e169c805d68ccf4",
+  "changed_html_paths": [
+    "achievements/index.html",
+    "index.html",
+    "research/index.html",
+    "topics/f53/index.html"
+  ],
+  "changed_document_paths": [
+    "README.md"
+  ],
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v67.json",
+    "sha256": "b167eb4a2804094b3a21f1581e1f6a188a7fcf3f57604c067dad939513108371",
+    "presentation_id": "PLATFORM-A04-ORIGINAL-CHEMISTRY-READING-20261127-v67"
+  },
+  "change_reason": "并列原刊所载的全氟端和末端含氯钾盐，交代与后续研究对象的结构关系，按原始来源补充试制、合作、获奖和会议记录。",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "M0_resumed": false,
+  "Nemotron_training_resumed": false,
+  "reversible_text_files": [
+    {
+      "path": "README.md",
+      "old_sha256": "b0189aa2118f28c251e81b374c7c4829d7b1454040639f0f0f095a0b6bdd5ef6",
+      "old_bytes": 14066,
+      "new_sha256": "7a4821e757b261c47a48f696070b8aeece407aa42386176ea843e21c3ae97dab",
+      "new_bytes": 14117,
+      "edits": [
+        {
+          "old_offset": 4956,
+          "replacement": 0
+        }
+      ]
+    },
+    {
+      "path": "scripts/story_sources_publication.py",
+      "old_sha256": "9eef2fa0af9e3d967b23e5f8475f71b1cf22c2ba1aa8222e4b917c3d1cae692f",
+      "old_bytes": 9312,
+      "new_sha256": "910917cdc24d943f9dddb61a15929cb3765f6254ae88cb0ed41f12ca8ed1e19f",
+      "new_bytes": 9453,
+      "edits": [
+        {
+          "old_offset": 1198,
+          "replacement": 1
+        },
+        {
+          "old_offset": 5036,
+          "replacement": 2
+        }
+      ]
+    },
+    {
+      "path": "site/achievements/index.html",
+      "old_sha256": "86bb5d58be15efad04a311c2390cc846b210d9d37cbf8eb9dedabdbdbd7fe740",
+      "old_bytes": 84246,
+      "new_sha256": "36ea49f686e54cf5285a1a6d74fa3b517d0cb49698cb3c44ddb53d9e1ed3b148",
+      "new_bytes": 84299,
+      "edits": [
+        {
+          "old_offset": 13618,
+          "replacement": 3
+        },
+        {
+          "old_offset": 26717,
+          "replacement": 4
+        }
+      ]
+    },
+    {
+      "path": "site/index.html",
+      "old_sha256": "d208a78698d2ab3e5569d9bd47d17e931fc737f2288e2d3d90761a5ea2c60fde",
+      "old_bytes": 220244,
+      "new_sha256": "0a0ed03d3c3b4f0d493033d19cfedebacfde45c5eccb8f4892aedea23bcca8b5",
+      "new_bytes": 220297,
+      "edits": [
+        {
+          "old_offset": 16331,
+          "replacement": 5
+        },
+        {
+          "old_offset": 33113,
+          "replacement": 6
+        }
+      ]
+    },
+    {
+      "path": "site/research/index.html",
+      "old_sha256": "e1abf3d84968c6e86b0c0311ffa23632adde0af48fd279a26efa1337d9fa9fcb",
+      "old_bytes": 84227,
+      "new_sha256": "fc0b40fb4a39c222f0d307baa674c97e42e8ae107bc631b5f52fb6938dd128e6",
+      "new_bytes": 84434,
+      "edits": [
+        {
+          "old_offset": 50489,
+          "replacement": 7
+        }
+      ]
+    },
+    {
+      "path": "site/topics/f53/index.html",
+      "old_sha256": "e72f7c7ce670c025047ef0caa071398f7e266fedb5f2207a044bc7e2a2d990f0",
+      "old_bytes": 31101,
+      "new_sha256": "28f7eaf24d8034b034e868c86e1825653dd64e7c9a1f3fed4670215ae10330ed",
+      "new_bytes": 35386,
+      "edits": [
+        {
+          "old_offset": 6418,
+          "replacement": 8
+        },
+        {
+          "old_offset": 7918,
+          "replacement": 9
+        },
+        {
+          "old_offset": 8321,
+          "replacement": 10
+        },
+        {
+          "old_offset": 10679,
+          "replacement": 11
+        },
+        {
+          "old_offset": 11210,
+          "replacement": 12
+        },
+        {
+          "old_offset": 12249,
+          "replacement": 13
+        },
+        {
+          "old_offset": 12912,
+          "replacement": 14
+        },
+        {
+          "old_offset": 14472,
+          "replacement": 15
+        },
+        {
+          "old_offset": 14879,
+          "replacement": 16
+        },
+        {
+          "old_offset": 21708,
+          "replacement": 17
+        },
+        {
+          "old_offset": 22198,
+          "replacement": 18
+        },
+        {
+          "old_offset": 24632,
+          "replacement": 19
+        },
+        {
+          "old_offset": 26110,
+          "replacement": 20
+        },
+        {
+          "old_offset": 28008,
+          "replacement": 21
+        },
+        {
+          "old_offset": 28658,
+          "replacement": 22
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "制成含醚键的全氟磺酸钾F-53，与电镀厂和工程人员完成镀槽试用、工艺放大",
+      "new": "研制含醚键的F-53铬雾抑制剂，与电镀厂和工程人员完成镀槽试用、工艺放大。原刊记录了全氟端与末端氯代的钾盐"
+    },
+    {
+      "old": "",
+      "new": "import f53_product_identity_publication as f53_product_identity\n"
+    },
+    {
+      "old": "",
+      "new": ",\n                 (f53_product_identity, f53_product_identity.V67_ADDITIONS)"
+    },
+    {
+      "old": "/p>\n<p>陈庆云带领研究组研制含醚键的全氟磺酸钾F-53",
+      "new": "br><small>陈庆云2001年回顾所列结构</small></p>\n<p>陈庆云带领研究组研制含醚键的F-53铬雾抑制剂"
+    },
+    {
+      "old": "全氟磺酸钾F-53",
+      "new": "F-53铬雾抑制剂"
+    },
+    {
+      "old": "/p>\n<p>陈庆云带领研究组研制含醚键的全氟磺酸钾F-53",
+      "new": "br><small>陈庆云2001年回顾所列结构</small></p>\n<p>陈庆云带领研究组研制含醚键的F-53铬雾抑制剂"
+    },
+    {
+      "old": "全氟磺酸钾F-53",
+      "new": "F-53铬雾抑制剂"
+    },
+    {
+      "old": "F-53、含氯F-53B、不同盐型和商品混合物不凭名称合并。",
+      "new": "原刊表4分别记录全氟端和末端含氯的八碳钾盐。后者与2013年 F-53B 研究对象结构相同，早期生产及推广批次的组成需据产品规格和生产记录核定。<a href=\"../topics/f53/index.html#a04-identity-caption\">原刊与商品名的对应</a>"
+    },
+    {
+      "old": "",
+      "new": "  .a04-card .a04-card-scope { margin-top: .4rem; color: var(--muted); font-size: .88rem; }\n"
+    },
+    {
+      "old": "制得全氟烷基醚磺酸钾F-53",
+      "new": "研制出一类含醚键的铬雾抑制剂"
+    },
+    {
+      "old": "分子设计与路线对照、端基回用与原刊物性、赴美学术交流。</p></div>\n    <div class=\"a04-card\"><h3><a href=\"#a04-cooperation\">走通工程放大</a></h3><p>试制与扩大试验、实验厂和电镀厂等单位的合作分工。</p></div>\n    <div class=\"a04-card\"><h3><a href=\"#a04-application\">推广使用与获奖</a></h3><p>全国推广与两项获奖、车间抑雾与工厂应用。</p></div>\n    <div class=\"a04-card\"><h3><a href=\"#a04-research-continuity\">建立含氟醚磺酰氟合成方法</a></h3><p",
+      "new": "1975年启动研制，不到三年制得含醚键抑雾剂的实验室样品。</p><p class=\"a04-card-scope\">分子设计与路线对照、端基回用与原刊物性、赴美学术交流。</p></div>\n    <div class=\"a04-card\"><h3><a href=\"#a04-cooperation\">走通工程放大</a></h3><p>1979年完成扩大试验。1982年展览资料记载，实验厂具备年产2吨的能力。</p><p class=\"a04-card-scope\">试制与扩大试验、实验厂和电镀厂等单位的合作分工。</p></div>\n    <div class=\"a04-card\"><h3><a href=\"#a04-application\">推广使用与获奖</a></h3><p>1982年展览资料记载全国已有985个使用单位。同年项目获国家发明奖三等奖和上海市重大科研成果奖一等奖。</p><p class=\"a04-card-scope\">全国推广与两项获奖、车间抑雾与工厂应用。</p></div>\n    <div class=\"a04-card\"><h3><a href=\"#a04-research-continuity\">建立含氟醚磺酰氟合成方法</a></h3><p>1979年原刊发表了合成一系列含醚磺酰氟的方法，并根据副产物提出了生成二氟卡宾的解释。</p><p class=\"a04-card-scope\""
+    },
+    {
+      "old": "所列无氯F-53的路线经碳链末端氟化和磺酰氟端水解制得钾",
+      "new": "制备上列全氟端钾盐时，碳链末端由碘换成氟，磺酰氟端再水解成"
+    },
+    {
+      "old": "研究组在相关工艺中采用较简便的末端换氯，并将所得一氯化碘回用于前段。<a href=\"#a04-deep-reading-figure-caption\">查看原刊的十碳末端换氯实例</a></p>\n  <p><strong>原刊物性。</strong> 1979年《化学学报》第320页表4采用环法测量。24.5 ℃下，上表所列F-53钾盐的水溶液浓度由1×10⁻⁴%升至5×10⁻⁴%时，表面张力由52.4降至42.7达因/厘米。这是该分子在水溶液中的数据，现场抑雾效果由镀槽使用记录说明。</p>\n  <p class=\"a04-source\"><a href=\"#a04-source-book\">路线与端基回用</a> · <a href=\"#a04-source-3m\">Zeromist历史技术文献</a> · <a href=\"#a04-source-1979\">1979年原刊",
+      "new": "团队为降低制备成本，改用较简便的链末换氯，并把所得的一氯化碘回用于前段。第319页原刊记载，这一反应可定量回收一氯化碘或三氯化碘。<a href=\"#a04-deep-reading-figure-caption\">查看原刊的十碳末端换氯实例</a></p>\n  <p>1979年原刊第320页表4列出两种八碳醚磺酸钾在相同条件下的物性。第319页还指出，<i>n</i>=2 和 <i>n</i>=3 的末端氯代钾盐也可作抑铬雾剂。</p>\n  <div class=\"a04-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a04-surface-tension-caption\">\n    <table>\n      <caption id=\"a04-surface-tension-caption\">表4的两条八碳钾盐记录，24.5 ℃水溶液环法测定（达因/厘米）</caption>\n      <thead><tr><th scope=\"col\">原刊样品</th><th scope=\"col\">浓度 1×10⁻⁴%</th><th scope=\"col\">浓度 5×10⁻⁴%</th></tr></thead>\n      <tbody>\n        <tr><th scope=\"row\">全氟端 <span class=\"a04-formula\">CF₃(CF₂)₅OCF₂CF₂SO₃K</span></th><td>52.4</td><td>42.7</td></tr>\n        <tr><th scope=\"row\">末端含氯 <span class=\"a04-formula\">ClCF₂(CF₂)₅OCF₂CF₂SO₃K</span></th><td>54.5</td><td>44.9</td></tr>\n      </tbody>\n    </table>\n  </div>\n  <p>这些数值描述水溶液的表面张力。实际镀槽中的抑雾效果见<a href=\"#a04-workshop\">现场记录</a>。</p>\n  <p class=\"a04-source\"><a href=\"#a04-source-book\">路线与端基回用</a> · <a href=\"#a04-source-3m\">Zeromist历史技术文献</a> · <a href=\"#a04-source-1979\">1979年原刊第319页及"
+    },
+    {
+      "old": "",
+      "new": "同期会讯记载的题名是《多氟烷基醚磺酸的制备》。"
+    },
+    {
+      "old": "把这称为当时国内从F-53开始的一项工程尝试",
+      "new": "在2018年访谈中回忆：“当年中国还没人将四氟乙烯通过管道输到高压釜里，是从F-53开始”"
+    },
+    {
+      "old": "获两项奖励",
+      "new": "的两项获奖记录如下"
+    },
+    {
+      "old": "",
+      "new": "award-cas-record\">院级奖记载</a> · <a href=\"#a04-"
+    },
+    {
+      "old": "磺酰氟端（–SO₂F）水解成磺酸钾端（–SO₃K）时，碳数和链末氯保留。第320页表4分别列出八碳无氯钾盐和八碳末端含氯钾盐的水溶液物性。无氯 F-53 路线先把八碳前体的链末碘换成氟，再经水解得到钾盐。</p>\n    <p class=\"a04-source\"><a href=\"#a04-source-1979\">原刊第315、319–320、323页</a> · <a href=\"#ref-s1\">无氯 F-53 ",
+      "new": "换氯的直接产物是十碳磺酰氟。将磺酰氟端（–SO₂F）水解成磺酸钾端（–SO₃K）时，碳数和链末氯保留。原作者把这个十碳钾盐与同系列的八碳末端氯代钾盐都列为可用的抑雾剂。表4中与2013年 F-53B 研究对象结构对应的是八碳氯代钾盐。</p>\n    <p class=\"a04-source\"><a href=\"#a04-source-1979\">原刊第315、319–320、323页</a> · <a href=\"#ref-s1\">全氟端钾盐的"
+    },
+    {
+      "old": "</section>\n\n<section class=\"a04-panel\" id=\"a04-scope\" aria-labelledby=\"a04-scope-title\">\n  <h2 id=\"a04-scope-title\">史料口径与化学对象</h2>\n  <ul>\n    <li id=\"a04-identity-caption\"><strong>产品和中间体。</strong> F-53按陈庆云2001年回顾所列含醚、无氯的钾盐介绍。原刊末端换氯示例是一个磺酰氟中间体。<a href=\"#ref-cq-r04\">F-53原作者回顾</a></li>\n    <li><strong>年代及数字。</strong> 1979年为路线扩大试验，1982年的2吨为年产能力，985为使用单位数。1988年的纯利润效益、1982年报纸的每吨测算、工厂用例和原刊物性各按原出处理解。</li>\n    <li><strong>产品命名。</strong> 现有回忆把“53”与记录送检样品的实验本第53页相联系。</li>\n    <li id=\"a04-award-attribution\"><strong>发明奖署名。</strong> 国家发明奖证书发明者栏署「中国科学院上海有机化学研究所黄维垣等」。书影所见为合作项目署名。<a href=\"#a04-source-national-award\">发明奖证书</a></li>\n    <li id=\"a04-authorship\"><strong>1977年论文署名记录。</strong> 中国科学院上海有机化学研究所官方档案著录上海光明电镀厂、中国科学院上海有机化学研究所和江苏省泰州市电化厂。1979年论文参考文献[1]将同卷同页的论文引作“中国科学院上海有机化学研究所全氟磺酸组”。两种记录各有出处，1977年原刊首页署名待核。<a href=\"#a04-source-1977\">1977年论文档案著录</a> · <a href=\"#a04-source-1979\">1979年原刊参考文献</a></li>\n  </ul>\n",
+      "new": ""
+    },
+    {
+      "old": "2013年，Wang等人在温州电镀废水和接纳排水的地表水中检出含氯的F-53B，初步试验也显示该物质难降解。这些数据针对含氯的F-53B。历史F-53为无氯的含醚磺酸钾，其环境风险需要该物质的独立数据。<a href=\"#ref-cq-r12\">2013年F-53B环境研究</a></p",
+      "new": "Wang等在2013年回顾了从早期全氟端钾盐到含氯 F-53B 的商品化过程，并说明开始改用 F-53B 的确切时间未明。论文研究的八碳含氯结构，与1979年原刊表4第二行的钾盐相同。</p>\n  <p>该研究在温州电镀园区废水和瓯江排口附近地表水中检出这一含氯物质。受测样品在28天实验室筛查中未达到易生物降解判据。这一结果来自所测样品和实验条件。<a href=\"#ref-cq-r12\">Wang等2013年研究</a></p>\n</section>\n\n<section class=\"a04-panel\" id=\"a04-scope\" aria-labelledby=\"a04-scope-title\">\n  <h2 id=\"a04-scope-title\">史料口径与化学对象</h2>\n  <ul>\n    <li id=\"a04-identity-caption\"><strong>结构与商品名。</strong> 陈庆云2001年回顾所列 F-53 是全氟端钾盐。1979年原刊还报道了八碳末端氯代同系物 <span class=\"a04-formula\">ClCF₂(CF₂)₅OCF₂CF₂SO₃K</span>。这个结构与后来称为 F-53B 的八碳化合物对应，分子式为 C₈ClF₁₆O₄SK。早期试用和以 F-53 名义推广的不同批次如何对应这些结构，仍需查具体生产记录和产品规格。<a href=\"#ref-cq-r04\">2001年回顾</a> · <a href=\"#a04-source-1979\">1979年原刊</a> · <a href=\"#a04-source-sioc-f53b\">上海有机所后续记载</a></li>\n    <li><strong>年代及数字。</strong> 1979年为路线扩大试验，1982年的2吨为年产能力，985为使用单位数。1988年的纯利润效益、1982年报纸的每吨测算、工厂用例和原刊物性各按原出处理解。</li>\n    <li><strong>产品命名。</strong> 现有回忆把“53”与记录送检样品的实验本第53页相联系。</li>\n    <li id=\"a04-award-attribution\"><strong>发明奖署名。</strong> 国家发明奖证书发明者栏署「中国科学院上海有机化学研究所黄维垣等」。书影所见为合作项目署名。<a href=\"#a04-source-national-award\">发明奖证书</a></li>\n    <li id=\"a04-authorship\"><strong>1977年论文署名记录。</strong> 中国科学院上海有机化学研究所官方档案著录上海光明电镀厂、中国科学院上海有机化学研究所和江苏省泰州市电化厂。1979年论文参考文献[1]将同卷同页的论文引作“中国科学院上海有机化学研究所全氟磺酸组”。《氟缘笃志：陈庆云传》第116页年表也记载三单位合作并发表论文，所录题名与机构著录有别。1977年原刊首页署名待核。<a href=\"#a04-source-1977\">1977年论文档案著录</a> · <a href=\"#a04-source-1979\">1979年原刊参考文献</a></li>\n    <li id=\"a04-award-cas-record\"><strong>院级奖记载。</strong> 《黄维垣院士90华诞志庆集》记有中国科学院重大科技成果一等奖。第37页年谱将“抑铬药剂F-53”所获院级奖列在1982年，第42–43页的成果表将“新型铬雾抑制剂F-53”的院级奖列为1980年。《氟缘笃志：陈庆云传》未载这一项，授奖文件和年份待核。<a href=\"#a04-source-huang-anniversary\">志庆集原页</a></li>\n    <li id=\"a04-visit-report-titles\"><strong>1979年赴美报告题名。</strong> 同期会讯和传记第53页作《多氟烷基醚磺酸的制备》。传记第116页年表记作《全氟醚基磺酰氟的制备和反应》。陈庆云后来回忆沿途所作报告时用《全氟醚基磺酸的合成和应用》这一题名。<a href=\"#a04-source-1979-visit\">同期会讯</a> · <a href=\"#a04-source-huang-anniversary\">陈庆云书面回忆</a></li>\n  </ul"
+    },
+    {
+      "old": "20页表4为",
+      "new": "19页另记末端氯代钾盐的抑雾用途及碘氯化物的回收，第320页表4列"
+    },
+    {
+      "old": "",
+      "new": "    <li id=\"a04-source-sioc-f53b\"><a href=\"https://sioc.cas.cn/news/kjdt/202306/t20230602_6768151.html\">上海有机所关于含氟中间体与后续研究的报道</a>。2018年1月30日。正文列 F-53B 的八碳末端氯代结构。</li>\n    <li id=\"a04-source-huang-anniversary\"><a href=\"https://www.sioc.ac.cn/kxj/ml/hwy/jnc/202308/P020230824356102730823.pdf\">《黄维垣院士90华诞志庆集》</a>。印刷第37页年谱和第42–43页成果表记载院级奖。第54–55页陈庆云《高山景行 士之楷模》记载赴美途中所作报告。</li>\n    <li id=\"a04-source-1979-visit\"><a href=\"https://sioc.cas.cn/kxj/ml/cqy/shhd/201702/W020230825637128817177.jpg\">《自然杂志》1979年会讯原页</a>。印刷第360页左栏记载陈庆云的会议报告题名。</li>\n"
+    },
+    {
+      "old": "",
+      "new": "样品结构见表1，商品化回顾见第10163页，温州采样与降解筛查见第10167–10169页。"
+    }
+  ]
+}
