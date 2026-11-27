@@ -1,0 +1,167 @@
+{
+  "schema_version": "70.0",
+  "presentation_id": "PLATFORM-A04-SCIENTIFIC-BOUNDARIES-20261127-v70",
+  "publication_kind": "a04_scientific_boundaries",
+  "previous_presentation_commit": "35255d6d81b3ed6375f4b64a6d5fb19e04fb527b",
+  "changed_html_paths": [
+    "topics/f53/index.html"
+  ],
+  "changed_document_paths": [
+    "docs/A04_ACADEMIC_ACHIEVEMENTS_zh-CN.md"
+  ],
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v69.json",
+    "sha256": "e116811244e3c418f9070f0b4fea812200443453af253b88fd5945c9f26d62d2",
+    "presentation_id": "PLATFORM-A04-EVIDENCE-ACCESS-20261127-v69"
+  },
+  "change_reason": "分别呈现原刊收率与待审计量估算，统一专题与仓库资料页的文献署名和化学对象口径，更新 IARC 原章入口。",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "M0_resumed": false,
+  "Nemotron_training_resumed": false,
+  "reversible_text_files": [
+    {
+      "path": "docs/A04_ACADEMIC_ACHIEVEMENTS_zh-CN.md",
+      "old_sha256": "d05956ddf34bd23e2376e11b3fa4f3845bcb6ff1d8288cdc02a8830c3361fc09",
+      "old_bytes": 10060,
+      "new_sha256": "2aeff629f0e059ce0770318b4d79c47a8becb4e5ddec85ea75982a3b5606ba69",
+      "new_bytes": 12035,
+      "edits": [
+        {
+          "old_offset": 2577,
+          "replacement": 0
+        },
+        {
+          "old_offset": 2906,
+          "replacement": 1
+        },
+        {
+          "old_offset": 6394,
+          "replacement": 2
+        },
+        {
+          "old_offset": 8281,
+          "replacement": 3
+        },
+        {
+          "old_offset": 9265,
+          "replacement": 4
+        },
+        {
+          "old_offset": 9596,
+          "replacement": 5
+        },
+        {
+          "old_offset": 9927,
+          "replacement": 6
+        }
+      ]
+    },
+    {
+      "path": "scripts/story_sources_publication.py",
+      "old_sha256": "5628098948cf20b7440d13999799243dbe6de931ed0aa0dfbc9555de0314795f",
+      "old_bytes": 9586,
+      "new_sha256": "6cc9977aa8b417997a906d9184d26bc4237a5d14a7dd23621e8dd4ed31a86216",
+      "new_bytes": 9747,
+      "edits": [
+        {
+          "old_offset": 1322,
+          "replacement": 7
+        },
+        {
+          "old_offset": 5239,
+          "replacement": 8
+        }
+      ]
+    },
+    {
+      "path": "site/topics/f53/index.html",
+      "old_sha256": "c8e1697c31dfe1772ff3a7b90a59782d0208a52cc3fa333810df51958bc0f7eb",
+      "old_bytes": 36870,
+      "new_sha256": "3047ec81479d2b3411aa5dd5a0a23c9e1627ec85de188c7a7314ab82fdde2f45",
+      "new_bytes": 37263,
+      "edits": [
+        {
+          "old_offset": 19257,
+          "replacement": 9
+        },
+        {
+          "old_offset": 21765,
+          "replacement": 10
+        },
+        {
+          "old_offset": 23041,
+          "replacement": 11
+        },
+        {
+          "old_offset": 23464,
+          "replacement": 12
+        },
+        {
+          "old_offset": 34514,
+          "replacement": 13
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "| 1977年 | F-53相关合成及应用论文采用三单位合作署名。 | 传记116页年表；CQ-H05机构书目 |\n",
+      "new": "| 1977年 | 三单位合作并发表F-53相关论文。机构著录与1979年论文引文的署名写法有别，原刊首页待核。 | 传记116页年表；CQ-H05；CQ-H15第323页参考文献[1] |\n"
+    },
+    {
+      "old": "| 1982年 | 同期报纸介绍应用价值；“抑铬雾剂F-53及其制备”获国家发明奖三等奖。 | CQ-H03；传记53页图5-3、116页年表 |\n",
+      "new": "| 1982年 | 同期报纸介绍应用价值；“抑铬雾剂F-53及其制备”获国家发明奖三等奖、上海市重大科研成果奖一等奖。 | CQ-H03；传记53页及图5-3、116页年表 |\n"
+    },
+    {
+      "old": "| 1977年三单位合作 | 机构书目列上海光明电镀厂、中国科学院上海有机化学研究所、江苏省泰州市电化厂共同署名。 | CQ-H05机构书目；传记116页年表记三单位合作 |\n",
+      "new": "| 1977年三单位合作 | 上海有机所机构书目列上海光明电镀厂、中国科学院上海有机化学研究所、江苏省泰州市电化厂。1979年论文引用同卷同页时引作“中国科学院上海有机化学研究所全氟磺酸组”。1977年原刊首页署名待核。 | CQ-H05；CQ-H15第323页参考文献[1]；传记116页年表记三单位合作 |\n"
+    },
+    {
+      "old": "- **CQ-H05** · [1977年F-53相关合作论文的机构书目](https://sioc.cas.cn/kxj/ml/hwy/xscj/202308/t20230823_6866952.html)；《化学学报》35：209–220；三单位署名按机构登记，传记116页年表记合作研究\n- **CQ-H15** · [全氟磺酸组：全氟和多氟烷基磺酸的研究 II. 一些多氟烷基醚磺酸的合成](https://www.sioc.ac.cn/kxj/ml/hwy/xscj/202308/t20230823_6866955.html)；《化学学报》1979，37：315–324，324为同篇英文摘要；323页致谢分析协作。链接为机构书目，正文据已取得原刊\n- **CQ-R04** · [陈庆云：抑铬雾剂F-53的研制带动了有机氟化学的发展](https://sioc-journal.cn/Jwk_yjhx/CN/abstract/abstract325798.shtml)；《有机化学》2001，21(11)：805–809；本段引用原作者回顾的中英文摘要\n",
+      "new": "- **CQ-H05** · [1977年F-53相关合作论文的机构书目](https://sioc.cas.cn/kxj/ml/hwy/xscj/202308/t20230823_6866952.html)。《化学学报》35：209–220。机构著录列三单位，原刊首页署名待核。\n- **CQ-H15** · [全氟磺酸组：全氟和多氟烷基磺酸的研究 II. 一些多氟烷基醚磺酸的合成](https://sioc-journal.cn/Jwk_hxxb/CN/Y1979/V37/I4/315)。《化学学报》1979，37(4)：315–324。第319页记钾盐用途，第320页表4列水溶液表面张力，第323页载换氯实例、致谢及参考文献[1]，第324页为同篇英文摘要。链接为期刊摘要页，页码据原刊。\n- **CQ-R04** · [陈庆云：抑铬雾剂F-53的研制带动了有机氟化学的发展](https://sioc-journal.cn/Jwk_yjhx/EN/Y2001/V21/I11/805)。《有机化学》2001，21(11)：805–809。期刊摘要列出F-53结构式。\n"
+    },
+    {
+      "old": "- **CQ-R12** · [Siwen Wang等：2013年F-53B研究](https://pubs.acs.org/doi/10.1021/es401525n)；Environmental Science & Technology 47：10163–10170；沿用既有摘要范围，仅用于区分化学对象和作者归属\n",
+      "new": "- **CQ-R12** · [Siwen Wang等：2013年F-53B研究](https://doi.org/10.1021/es401525n)。Environmental Science & Technology，47：10163–10170。结构见第10164页表1。[第一作者公开的全文](https://www.researchgate.net/publication/256639606_First_Report_of_a_Chinese_PFOS_Alternative_Overlooked_for_30_Years_Its_Toxicity_Persistence_and_Presence_in_the_Environment)\n- **2015年商品组分分析** · [Ting Ruan等：Identification of Novel Polyfluorinated Ether Sulfonates as PFOS Alternatives in Municipal Sewage Sludge in China](https://doi.org/10.1021/acs.est.5b01010)。Environmental Science & Technology，49(11)：6519–6527。[作者摘要](https://pubmed.ncbi.nlm.nih.gov/25961764/)\n"
+    },
+    {
+      "old": "| CQ-R04，2001年原作者回顾摘要 | F-53：CF₃(CF₂)₅OCF₂CF₂SO₃K | 按该摘要所写结构介绍，不据此覆盖所有历史商品配方。 |\n| CQ-R12，2013年后续作者研究摘要 | 含氯F-53B：C₈ClF₁₆O₄SK | 属于后续作者研究的特定对象，不改列为陈先生团队新增成果。 |\n",
+      "new": "| CQ-H15，1979年原刊第319–320页 | 全氟端八碳钾盐 CF₃(CF₂)₅OCF₂CF₂SO₃K、末端氯代八碳钾盐 ClCF₂(CF₂)₅OCF₂CF₂SO₃K | 原作者指出末端氯代盐也可用作抑雾剂。表4在24.5 ℃、浓度5×10⁻⁴%的水溶液中测得两者的表面张力分别为42.7和44.9达因/厘米。 |\n| CQ-R04，2001年原作者回顾摘要 | 全氟端八碳钾盐 CF₃(CF₂)₅OCF₂CF₂SO₃K | 这是陈庆云回顾所列的F-53结构。 |\n| CQ-R12，2013年后续环境研究 | 含氯目标物 F-53B，分子式 C₈ClF₁₆O₄SK | 表1所列结构与1979年原刊的八碳末端氯代钾盐一致。环境研究结论限于相应目标物、样品和实验条件。 |\n| Ruan等，2015年商品组分分析 | 八碳和十碳末端氯代醚磺酸盐，分别简称6:2和8:2 | 两种同系物在该研究分析的F-53B商品样品中检出。 |\n"
+    },
+    {
+      "old": "F-53、含氯F-53B、不同盐型和商品混合物不凭名称合并；后续研究与当年的产品及应用记录分别归属。\n",
+      "new": "早期以F-53名义生产和推广的具体批次组成仍待生产档案及产品规格确认。后续环境研究按原作者和所测对象分别归属。[专题的结构与商品名说明](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/f53/index.html#a04-identity-caption)\n\n**平台计量核校（待审）。** 1979年原刊第323页的十碳磺酰氟换氯实例记载投入29克（原报0.04 mol）、分离23克，原报收率81.4%。按所列产物 C₁₀ClF₂₁O₃S（约634.58 g/mol）计，以0.04 mol 投料与1∶1计量关系估算约90.6%。原报收率保留，差异原因待核。[原刊精读的核校说明](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/f53/index.html#a04-yield-check)\n"
+    },
+    {
+      "old": "",
+      "new": "import f53_scientific_boundaries_publication as f53_scientific_boundaries\n"
+    },
+    {
+      "old": "                 (f53_evidence_links, f53_evidence_links.V68_ADDITIONS))\n",
+      "new": "                 (f53_evidence_links, f53_evidence_links.V68_ADDITIONS),\n                 (f53_scientific_boundaries, f53_scientific_boundaries.V69_ADDITIONS))\n"
+    },
+    {
+      "old": "  <p>研究组用色谱—质谱分析了四氟乙烯与一氯化碘反应体系中的副产物，并据此提出一条可能路径：先形成次卤酸酯，随后与烯烃加成，或分解生成二氟卡宾和氟光气。二氟卡宾在这项工作中属于原作者根据副产物推断的中间体。<a href=\"#a04-source-1979\">原刊第318–319页的讨论</a></p>\n",
+      "new": "  <p>研究组用色谱—质谱分析了四氟乙烯与一氯化碘反应体系中的副产物，并据此提出一条可能路径：先形成次卤酸酯，随后与烯烃加成，或分解生成二氟卡宾和氟光气。二氟卡宾是原作者根据副产物推断的中间体。原刊也保留了另一条可能的分解路径。<a href=\"#a04-source-1979\">原刊第318–319页的讨论</a></p>\n"
+    },
+    {
+      "old": "    <p>原刊用 <span class=\"a04-formula\">I(CF₂CF₂)<sub><i>n</i>+1</sub>OCF₂CF₂SO₂F</span> 表示含碘调聚物。醚氧靠碘的一侧在调聚前已有一个 CF₂CF₂ 单元，<i>n</i> 计调聚新增的单元。<i>n</i>=3 时这一侧有四个单元、八个碳，加上醚氧另一侧的两个碳，共十个碳。<i>n</i>=2 时共八个碳，与前文所列无氯 F-53 的碳骨架相同。</p>\n",
+      "new": "    <p>原刊用 <span class=\"a04-formula\">I(CF₂CF₂)<sub><i>n</i>+1</sub>OCF₂CF₂SO₂F</span> 表示含碘调聚物。醚氧靠碘的一侧在调聚前已有一个 CF₂CF₂ 单元，<i>n</i> 计调聚新增的单元。<i>n</i>=3 时这一侧有四个单元、八个碳，加上醚氧另一侧的两个碳，共十个碳。<i>n</i>=2 时共八个碳，与陈庆云2001年回顾所列全氟端 F-53 的碳骨架相同。</p>\n"
+    },
+    {
+      "old": "          <tr><th scope=\"row\">分离结果</th><td>29克底物获得23克相应氯化物，原报收率81.4%，色谱纯度100%。</td><td>第323页</td></tr>\n",
+      "new": "          <tr><th scope=\"row\">分离结果</th><td>29克底物（原报0.04 mol）获得23克相应氯化物，原报收率81.4%、色谱纯度100%。</td><td>第323页</td></tr>\n"
+    },
+    {
+      "old": "",
+      "new": "    <p id=\"a04-yield-check\"><strong>平台计量核校（待审）。</strong> 按原报投料0.04 mol，将23克按所列十碳氯代磺酰氟（<span class=\"a04-formula\">C₁₀ClF₂₁O₃S</span>，约634.58 g/mol）计，并采用1∶1计量关系，得到条件性估算约90.6%。原刊第323页未说明81.4%的计算口径。差异原因待核，原报收率仍保留。</p>\n"
+    },
+    {
+      "old": "    <li id=\"a04-source-iarc\">国际癌症研究机构（IARC）。<a href=\"https://publications.iarc.who.int/_publications/media/download/6143/ef2dcba35d394362f6f5346d042bd48e5792ded3.pdf\">六价铬化合物致癌性评估</a>。《IARC专著》第100C卷，2012年，“Chromium (VI) Compounds”第5节将六价铬化合物列为对人类致癌（第1类）。<a href=\"https://www.osha.gov/hexavalent-chromium/health-effects\">美国职业安全与健康管理局的呼吸道健康资料</a>。</li>\n",
+      "new": "    <li id=\"a04-source-iarc\">国际癌症研究机构（IARC）。<a href=\"https://www.ncbi.nlm.nih.gov/sites/books/NBK304377/\">六价铬化合物致癌性评估</a>。《IARC专著》第100C卷，2012年，“Chromium (VI) Compounds”第5节将六价铬化合物列为对人类致癌（第1类）。<a href=\"https://www.osha.gov/hexavalent-chromium/health-effects\">美国职业安全与健康管理局的呼吸道健康资料</a>。</li>\n"
+    }
+  ]
+}
