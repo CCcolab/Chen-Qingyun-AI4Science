@@ -1,0 +1,108 @@
+{
+  "schema_version": "83.0",
+  "presentation_id": "PLATFORM-A06-OVERVIEW-ALIGNMENT-20261128-v83",
+  "publication_kind": "a06_overview_alignment",
+  "previous_presentation_commit": "841e15a446c858073056bf33bcb5391580ce6fa8",
+  "changed_html_paths": [
+    "topics/chen-reagent/index.html"
+  ],
+  "changed_document_paths": [],
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v82.json",
+    "sha256": "d0088cf8da350b4cc9b411e63e607788daf672e867c015b3d3defa93b929f4b7",
+    "presentation_id": "PLATFORM-MAJOR-ACHIEVEMENT-OVERVIEWS-20261128-v82"
+  },
+  "change_reason": "按F-53概览对齐陈试剂与二氟卡宾试剂专题的卡片标题、导航和单独的参考资料入口。",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "M0_resumed": false,
+  "Nemotron_training_resumed": false,
+  "reversible_text_files": [
+    {
+      "path": "scripts/story_sources_publication.py",
+      "old_sha256": "eaf57c127c89889938fc5fa9e6e334403edae629cd91a17f92d8f6578613cbd0",
+      "old_bytes": 11503,
+      "new_sha256": "419929f19714dd961e9886acd131b5c934abcb388d36d90f8cdd37903266fe49",
+      "new_bytes": 11652,
+      "edits": [
+        {
+          "old_offset": 2196,
+          "replacement": 0
+        },
+        {
+          "old_offset": 7138,
+          "replacement": 1
+        }
+      ]
+    },
+    {
+      "path": "site/topics/chen-reagent/index.html",
+      "old_sha256": "8c1162145dfe584e4ffc995da5be8d9966b6a0da3638f68abb45f9abc547553f",
+      "old_bytes": 32052,
+      "new_sha256": "8ee02bbfdbf93135a546c1f2f09cd220f115f3df38f70cb3e9167586018a52a5",
+      "new_bytes": 32164,
+      "edits": [
+        {
+          "old_offset": 6497,
+          "replacement": 2
+        },
+        {
+          "old_offset": 7297,
+          "replacement": 3
+        },
+        {
+          "old_offset": 7470,
+          "replacement": 4
+        },
+        {
+          "old_offset": 12258,
+          "replacement": 5
+        },
+        {
+          "old_offset": 13917,
+          "replacement": 6
+        },
+        {
+          "old_offset": 18444,
+          "replacement": 7
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "",
+      "new": "import a06_overview_alignment_publication as a06_overview_alignment\n"
+    },
+    {
+      "old": "                 (major_achievement_overviews, major_achievement_overviews.V81_ADDITIONS))\n",
+      "new": "                 (major_achievement_overviews, major_achievement_overviews.V81_ADDITIONS),\n                 (a06_overview_alignment, a06_overview_alignment.V82_ADDITIONS))\n"
+    },
+    {
+      "old": "",
+      "new": "  line-height: 1.8;\n"
+    },
+    {
+      "old": "  line-height: 1.5;\n",
+      "new": "  line-height: inherit;\n"
+    },
+    {
+      "old": "",
+      "new": "}\n.cq-achievement-references {\n  max-width: 78ch;\n  margin: .6em 0;\n  color: var(--muted);\n  font-size: .92rem;\n"
+    },
+    {
+      "old": "  <div class=\"cq-achievement-grid\">\n",
+      "new": "  <nav class=\"cq-achievement-grid\" aria-label=\"四项核心成就\">\n"
+    },
+    {
+      "old": "  </div>\n  <p><a href=\"#refs\">参考资料</a> · <a href=\"../perfluorosulfonates/index.html#a06-deep-reading\">磺酸酯断键研究</a> · <a href=\"../perfluorosulfonates/index.html#a06-difluorocarbene\">多种二氟卡宾前体</a></p>\n",
+      "new": "  </nav>\n  <p class=\"cq-achievement-references\"><a href=\"#refs\">参考资料</a></p>\n"
+    },
+    {
+      "old": "<nav class=\"cq-journey-nav\" aria-label=\"二氟卡宾试剂的后续阅读\"><a href=\"#a06-historical-methods\">两项方法的提交与核查</a> · <a href=\"#a06-contributions\">返回成就概览</a></nav>\n",
+      "new": "<nav class=\"cq-journey-nav\" aria-label=\"二氟卡宾试剂的后续阅读\"><a href=\"#a06-historical-methods\">两项方法的提交与核查</a> · <a href=\"../perfluorosulfonates/index.html#a06-difluorocarbene\">多种二氟卡宾前体</a> · <a href=\"#a06-contributions\">返回成就概览</a></nav>\n"
+    }
+  ]
+}
