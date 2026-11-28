@@ -1,0 +1,180 @@
+{
+  "schema_version": "94.0",
+  "presentation_id": "PLATFORM-A06-READER-AUDIT-20261128-v94",
+  "publication_kind": "a06_reader_audit",
+  "previous_presentation_commit": "0b831c803891782ab9e14a3d671c05272b7fa6f0",
+  "changed_html_paths": [
+    "topics/chen-reagent/index.html"
+  ],
+  "changed_document_paths": [],
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v93.json",
+    "sha256": "be69066122c2f8ac8e0205c35e6247f4e8d566ebd7b33aa2555301089b901bf2",
+    "presentation_id": "PLATFORM-MAJOR-ACHIEVEMENT-TITLES-20261128-v93"
+  },
+  "change_reason": "按读者核查修复A06参考资料入口，明确甲酯与硅酯的合成用途、收率基准和机理表述。",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "M0_resumed": false,
+  "Nemotron_training_resumed": false,
+  "reversible_text_files": [
+    {
+      "path": "scripts/story_sources_publication.py",
+      "old_sha256": "810ebb2bf537b9f2d3f2c13be5968a85dbf88e29f416d359efff8d09fe565b9d",
+      "old_bytes": 13126,
+      "new_sha256": "67dafd8656e47acea78fc54b1fdf4929556da990f1d48a881a126831acb525c3",
+      "new_bytes": 13251,
+      "edits": [
+        {
+          "old_offset": 2936,
+          "replacement": 0
+        },
+        {
+          "old_offset": 8767,
+          "replacement": 1
+        }
+      ]
+    },
+    {
+      "path": "site/topics/chen-reagent/index.html",
+      "old_sha256": "5a024e35e1d4c247d10e93d469b27db8c53566d8b768bfc937796d28c9e640c7",
+      "old_bytes": 34677,
+      "new_sha256": "4cd74eaf87318d608a8a01911eaeb8b801ea874b784e2abfe4abfdef0b568b2b",
+      "new_bytes": 34757,
+      "edits": [
+        {
+          "old_offset": 11063,
+          "replacement": 2
+        },
+        {
+          "old_offset": 14198,
+          "replacement": 3
+        },
+        {
+          "old_offset": 14782,
+          "replacement": 4
+        },
+        {
+          "old_offset": 16091,
+          "replacement": 5
+        },
+        {
+          "old_offset": 16572,
+          "replacement": 6
+        },
+        {
+          "old_offset": 18044,
+          "replacement": 7
+        },
+        {
+          "old_offset": 19356,
+          "replacement": 8
+        },
+        {
+          "old_offset": 19878,
+          "replacement": 9
+        },
+        {
+          "old_offset": 22257,
+          "replacement": 10
+        },
+        {
+          "old_offset": 23105,
+          "replacement": 11
+        },
+        {
+          "old_offset": 26297,
+          "replacement": 12
+        },
+        {
+          "old_offset": 27603,
+          "replacement": 13
+        },
+        {
+          "old_offset": 30296,
+          "replacement": 14
+        },
+        {
+          "old_offset": 33346,
+          "replacement": 15
+        },
+        {
+          "old_offset": 33988,
+          "replacement": 16
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "",
+      "new": "import a06_reader_audit_publication as a06_reader_audit\n"
+    },
+    {
+      "old": "                 (major_achievement_titles, major_achievement_titles.V92_ADDITIONS))\n",
+      "new": "                 (major_achievement_titles, major_achievement_titles.V92_ADDITIONS),\n                 (a06_reader_audit, a06_reader_audit.V93_ADDITIONS))\n"
+    },
+    {
+      "old": "  <h2 id=\"a06-contributions-title\">陈试剂与二氟卡宾试剂：把含氟基团接到指定位置</h2>\n  <p class=\"cq-achievement-lede\">含氟片段在药物、农药和材料的分子设计中有重要用途。陈庆云与合作者从F-53研制积累的含氟原料出发，把断键研究发展成两种成键方法。1989年，陈庆云与吴生文开发甲酯MFSDA的三氟甲基化用途。2000年，陈庆云小组与威廉·多比尔团队发展硅酯TFDA，使部分难以反应的烯烃也能形成含氟三元环。两种方法为在已有分子上引入含氟结构提供了各自的途径。</p>\n",
+      "new": "  <h2 id=\"a06-contributions-title\">陈试剂与二氟卡宾试剂：引入三氟甲基与构建含氟三元环</h2>\n  <p class=\"cq-achievement-lede\">陈庆云与合作者从F-53研制积累的含氟原料出发，把断键研究发展成两种成键方法。1989年，陈庆云与吴生文将氟磺酰基二氟乙酸甲酯（MFSDA，后来被称为“陈试剂”）用作三氟甲基来源。2000年，陈庆云小组与威廉·多比尔团队发展了相应的三甲基硅酯（TFDA），用它提供二氟卡宾，使部分难以反应的烯烃也能形成含氟三元环。</p>\n"
+    },
+    {
+      "old": "  <p>对氯碘苯同时带氯和碘，原刊表1第6项显示三氟甲基取代碘，氯留在原位。该项分离收率为78%，以甲酯计。原作者结合副产物和对照，提出二氟卡宾可能与氟离子结合形成三氟甲基物种，并讨论铜如何参与转化。<a href=\"#ref-cq-r05\">表1与原作者讨论</a> · <a href=\"#ref-a06-xie2020\">公开综述图式2</a></p>\n",
+      "new": "  <p>对氯碘苯同时带氯和碘，原刊表1第6项显示三氟甲基取代碘，氯留在原位。按表1脚注c，此项分离收率为78%，以甲酯用量为基准。原作者结合副产物和对照，提出二氟卡宾可能与氟离子结合形成三氟甲基物种，并讨论铜如何参与转化。<a href=\"#ref-cq-r05\">表1与原作者讨论</a> · <a href=\"#ref-a06-xie2020\">公开综述图式2</a></p>\n"
+    },
+    {
+      "old": "  <p>杨国英接续吴生文的实验时遇到产率波动，逐项比较后注意到溶剂干燥程度的影响，随后考察了铜粉体系。陈庆云、杨国英与吴生文于1991年发表研究，根据抑制实验讨论电子转移路径。<a href=\"#a06-source-book\">研究经历</a> · <a href=\"#ref-a06-copper1991\">1991年论文</a></p>\n",
+      "new": "  <p>杨国英接续吴生文的实验时遇到产率波动，逐项比较后注意到溶剂干燥程度的影响，随后考察了铜粉体系。陈庆云、杨国英与吴生文于1991年发表研究，根据抑制实验讨论电子转移路径。<a href=\"#a06-source-book\">接续研究的书目与页码</a> · <a href=\"#ref-a06-copper1991\">1991年论文</a></p>\n"
+    },
+    {
+      "old": "  <p>2000年论文摘要报告，丙烯酸正丁酯的环丙烷化产率为73%。2003年《Organic Syntheses》B段另记录分离得到15.4克产物，收率55%。团队2004年的对照研究还表明，较早使用的氯二氟乙酸钠在另一组条件下也能与该底物加成。TFDA为这一类底物提供了新的制备选择。<a href=\"#ref-cq-r08\">2003年方法</a> · <a href=\"#ref-a06-comparison2004\">2004年比较实验</a></p>\n",
+      "new": "  <p>2000年论文摘要报告，丙烯酸正丁酯的环丙烷化产率为73%。2003年《Organic Syntheses》B段另报告分离得15.4克产物，收率55%。同篇附注11记载，独立核查所得样品含少量未反应的丙烯酸正丁酯。团队2004年的对照研究还表明，较早使用的氯二氟乙酸钠在另一组条件下也能与该底物加成。TFDA为这一类底物提供了新的制备选择。<a href=\"#ref-cq-r08\">2003年方法B段与附注11</a> · <a href=\"#ref-a06-comparison2004\">2004年比较实验</a></p>\n"
+    },
+    {
+      "old": "  <p>2000年论文由Feng Tian、Virginie Kruger、Olivia Bautista、Jian-Xin Duan、An-Rong Li、William R. Dolbier Jr.与陈庆云共同发表。随后徐伟与陈庆云研究含碘的偕二氟环丙烯，程战领与陈庆云继续探索二氟卡宾与多重键的环加成。<a href=\"#a06-source-book\">合作记录</a> · <a href=\"../fluorinated-small-rings/index.html#record-small-rings\">含氟小环专题</a></p>\n",
+      "new": "  <p>2000年论文由Feng Tian、Virginie Kruger、Olivia Bautista、Jian-Xin Duan、An-Rong Li、William R. Dolbier Jr.与陈庆云共同发表。随后徐伟与陈庆云研究含碘的偕二氟环丙烯，程战领与陈庆云继续探索二氟卡宾与多重键的环加成。<a href=\"#a06-source-book\">硅酯合作的书目与页码</a> · <a href=\"../fluorinated-small-rings/index.html#record-small-rings\">含氟小环专题</a></p>\n"
+    },
+    {
+      "old": "  <p>1992年，McClinton等的综述已引用1989年的甲酯论文。甲酯也见于Aldrich与TCI现行试剂目录。2017年，爱尔兰科克大学的Clarke与McGlacken发表专题综述，讨论它在复杂分子后期修饰中的用途和适用范围。2025年，首尔大学Song等用甲酯在糖骨架引入三氟甲基，制备了环戊烯基核苷类似物。<a href=\"#ref-a06-mcclinton1992\">1992年综述</a> · <a href=\"#ref-a06-catalogs\">试剂目录</a> · <a href=\"#ref-cq-r14\">2017年综述</a> · <a href=\"#ref-cq-r23\">2025年核苷论文</a></p>\n",
+      "new": "  <p>1992年，McClinton等的综述已引用1989年的甲酯论文。甲酯后来收入Aldrich与TCI的试剂目录。2017年，爱尔兰科克大学的Clarke与McGlacken发表专题综述，讨论它在复杂分子后期修饰中的用途和适用范围。2025年，首尔大学Song等用甲酯在糖骨架引入三氟甲基，制备了环戊烯基核苷类似物。<a href=\"#ref-a06-mcclinton1992\">1992年综述</a> · <a href=\"#ref-a06-catalogs\">试剂目录编号</a> · <a href=\"#ref-cq-r14\">2017年综述</a> · <a href=\"#ref-cq-r23\">2025年核苷论文</a></p>\n"
+    },
+    {
+      "old": "  <p>F-53研制积累的含氟磺内酯为断键研究提供了原料。陈庆云与朱士正于1985年报告了以二氟甲磺酸在酸性条件下产生二氟卡宾的实例。后来发展出的前体覆盖酸性、碱性和中性条件，使研究者可以根据底物选择生成卡宾的方式。<a href=\"../f53/index.html#a04-science\">F-53带动的基础研究</a> · <a href=\"#ref-a06-acid1985\">1985年论文</a> · <a href=\"#a06-source-book\">研究脉络</a></p>\n",
+      "new": "  <p>F-53研制积累的含氟磺内酯为断键研究提供了原料。陈庆云与朱士正于1985年报告了以二氟甲磺酸在酸性条件下产生二氟卡宾的实例。后来发展出的前体覆盖酸性、碱性和中性条件，使研究者可以根据底物选择生成卡宾的方式。<a href=\"../f53/index.html#a04-science\">F-53带动的基础研究</a> · <a href=\"#ref-a06-acid1985\">1985年论文</a> · <a href=\"#a06-source-book\">卡宾前体研究的书目与页码</a></p>\n"
+    },
+    {
+      "old": "  <p>2016年，卿凤翎等在可见光条件下用甲酯提供带甲酯基的二氟烷基片段。同年，Gang Zhao、Hao Wu、Zhiwei Xiao、陈庆云与刘超报道了相关游离酸的铜盐用于芳基卤代物三氟甲基化。2017年，刘永安、吴浩、郭勇、肖吉昌、陈庆云与刘超用相关银盐在一些烯烃双键的两端分别引入–CF₃与–SO₂F，反应生成的二氧化硫为磺酰氟基团提供硫。<a href=\"#ref-cq-r13\">光催化论文</a> · <a href=\"#ref-a06-cu2016\">铜盐论文</a> · <a href=\"#ref-a06-ag2017\">银盐论文</a></p>\n",
+      "new": "  <p>2016年，卿凤翎等在可见光条件下用甲酯提供带甲酯基的二氟烷基片段。同年，Gang Zhao、Hao Wu、Zhiwei Xiao、陈庆云与刘超报道了相关游离酸的铜盐用于芳基卤代物三氟甲基化。2017年，刘永安、吴浩、郭勇、肖吉昌、陈庆云与刘超在一些烯烃双键的两端分别引入–CF₃与–SO₂F，报道产物中的三氟甲基和磺酰部分均来自同一银盐。作者对反应路径的解释涉及原位释放的二氧化硫。<a href=\"#ref-cq-r13\">光催化论文</a> · <a href=\"#ref-a06-cu2016\">铜盐论文</a> · <a href=\"#ref-a06-ag2017\">银盐论文</a></p>\n"
+    },
+    {
+      "old": "  <p>2003年的附注11记载，核查得到的TFDA反应产物中仍有少量起始丙烯酸正丁酯。2010年的附注9记录了另一类问题：甲酯会与原溶剂DMF反应生成副产物CF₃SO₂CH=CHNMe₂。它与目标甾体在薄层色谱上的迁移相近，原提交方法以升华去除。核查者改用NMP，避免了这一步。两份记录说明，报告分离量时也要交代样品组成、纯化和条件变化。<a href=\"#ref-cq-r08\">2003年附注11</a> · <a href=\"#ref-cq-h18\">2010年附注9</a></p>\n",
+      "new": "  <p>2010年的附注9记录了核查者为何调整溶剂。甲酯会与原溶剂DMF反应生成副产物CF₃SO₂CH=CHNMe₂。它与目标甾体在薄层色谱上的迁移相近，提交者用升华分离。核查者换用NMP后省去了这一步。<a href=\"#ref-cq-h18\">2010年附注9</a></p>\n"
+    },
+    {
+      "old": "  <p>甲酯和硅酯把含氟片段带进了不同的合成问题。选择方法仍取决于目标结构、底物和反应条件。早期甲酯试验中，所试的α-溴代乙酸酯和α-溴代酮未得到相应目标产物。硅酯的原刊方法也明确记录它对水分敏感。<a href=\"#a06-source-book\">所试底物</a> · <a href=\"#ref-cq-r08\">TFDA附注5</a></p>\n",
+      "new": "  <p>选择甲酯或硅酯，取决于目标结构、底物与反应条件。1989年论文把苄氯、苄溴和苄碘在各自条件下的转化率和分离收率分开列出。2003年的硅酯方法附注记录了TFDA对水分敏感。<a href=\"#ref-cq-r05\">1989年表1第8–10项</a> · <a href=\"#ref-cq-r08\">2003年TFDA附注5</a></p>\n"
+    },
+    {
+      "old": "    <li id=\"ref-cq-r05\"><span id=\"a06-study-source-cq-r05\" class=\"cq-display-alias\"></span>Qing-Yun Chen、Sheng-Wen Wu：<a href=\"https://doi.org/10.1039/C39890000705\">Methyl fluorosulphonyldifluoroacetate; a new trifluoromethylating agent</a>。1989，J. Chem. Soc., Chem. Commun.,705–706。DOI 10.1039/C39890000705。第705页及第706页表1载底物和反应结果，对氯碘苯为表1第6项。</li>\n",
+      "new": "    <li id=\"ref-cq-r05\"><span id=\"a06-study-source-cq-r05\" class=\"cq-display-alias\"></span>Qing-Yun Chen、Sheng-Wen Wu：<a href=\"https://doi.org/10.1039/C39890000705\">Methyl fluorosulphonyldifluoroacetate; a new trifluoromethylating agent</a>。1989，J. Chem. Soc., Chem. Commun.,705–706。DOI 10.1039/C39890000705。第706页表1列底物和实验结果，对氯碘苯见第6项，分离收率的计量基准见脚注c。</li>\n"
+    },
+    {
+      "old": "    <li id=\"ref-cq-r08\"><span id=\"a06-study-source-cq-r08\" class=\"cq-display-alias\"></span>W. R. Dolbier Jr、F. Tian、J.-X. Duan、Q.-Y. Chen：<a href=\"https://orgsyn.org/demo.aspx?prep=v80p0172\">Preparation and Use of a New Difluorocarbene Reagent. Trimethylsilyl 2-Fluorosulfonyl-2,2-difluoroacetate: n-Butyl 2,2-Difluorocyclopropanecarboxylate</a>。2003，Organic Syntheses 80,172–176。 DOI 10.15227/orgsyn.080.0172。 <a href=\"https://www.orgsyn.org/Content/pdfs/procedures/v80p0172.pdf\">原文PDF</a>，B段记丙烯酸正丁酯实例、分离量和收率，附注11另记核查样品的残留起始物。</li>\n    <li id=\"ref-cq-h18\"><span id=\"a06-study-source-cq-h18\" class=\"cq-display-alias\"></span>Xiang-Shu Fei、Wei-Sheng Tian、Kai Ding、Yun Wang、Qing-Yun Chen：<a href=\"https://orgsyn.org/demo.aspx?prep=v87p0126\">New, convenient route for trifluoromethylation of steroidal molecules</a>。2010，Organic Syntheses 87：126–136。 DOI 10.15227/orgsyn.087.0126。第126页列提交者及核查者，第128页B段载首批重结晶及母液回收结果，附注9记核查时的溶剂调整。</li>\n",
+      "new": "    <li id=\"ref-cq-r08\"><span id=\"a06-study-source-cq-r08\" class=\"cq-display-alias\"></span>W. R. Dolbier Jr、F. Tian、J.-X. Duan、Q.-Y. Chen：Preparation and Use of a New Difluorocarbene Reagent. Trimethylsilyl 2-Fluorosulfonyl-2,2-difluoroacetate: n-Butyl 2,2-Difluorocyclopropanecarboxylate。2003，Organic Syntheses 80：172–176。DOI 10.15227/orgsyn.080.0172。B段记分离量与收率，附注11记核查样品的残留起始物。<a href=\"https://www.orgsyn.org/Content/pdfs/procedures/v80p0172.pdf\">官方原文PDF</a> · <a href=\"https://orgsyn.org/demo.aspx?prep=v80p0172\">期刊网页</a></li>\n    <li id=\"ref-cq-h18\"><span id=\"a06-study-source-cq-h18\" class=\"cq-display-alias\"></span>Xiang-Shu Fei、Wei-Sheng Tian、Kai Ding、Yun Wang、Qing-Yun Chen：New, convenient route for trifluoromethylation of steroidal molecules。2010，Organic Syntheses 87：126–136。DOI 10.15227/orgsyn.087.0126。第126页列提交者及核查者，第128页B段载首批重结晶及母液回收结果，附注9记核查时的溶剂调整。<a href=\"https://www.orgsyn.org/Content/pdfs/procedures/v87p0126.pdf\">官方原文PDF</a> · <a href=\"https://orgsyn.org/demo.aspx?prep=v87p0126\">期刊网页</a></li>\n"
+    },
+    {
+      "old": "    <li id=\"ref-cq-r22\">Pablo J. Cabrera、Christophe Allais等：<a href=\"https://pubs.acs.org/doi/10.1021/acs.oprd.3c00493\">辉瑞工艺论文：二氟甲氧基与三氟甲氧基脯氨酸衍生物的放大</a>。2024，Organic Process Research &amp; Development 28(4),1119–1128。 DOI 10.1021/acs.oprd.3c00493。</li>\n",
+      "new": "    <li id=\"ref-cq-r22\">Pablo J. Cabrera、Christophe Allais等：辉瑞工艺论文《二氟甲氧基与三氟甲氧基脯氨酸衍生物的放大》。2024，Organic Process Research &amp; Development 28(4)，1119–1128。DOI 10.1021/acs.oprd.3c00493。<a href=\"https://hero.epa.gov/reference/13080941/\">作者摘要（美国环保署文献库）</a> · <a href=\"https://pubs.acs.org/doi/10.1021/acs.oprd.3c00493\">出版社页面</a></li>\n"
+    },
+    {
+      "old": "    <li id=\"ref-a06-xie2020\">Q. Xie、J. Hu。<a href=\"https://www.sioc.cas.cn/hjbktz/lwfb/202109/P020210923609239291053.pdf\">Chen’s Reagent: A Versatile Reagent for Trifluoromethylation, Difluoromethylenation, and Difluoroalkylation in Organic Synthesis</a>。Chinese Journal of Chemistry，2020，38：202–212。图式2重列1989年对氯碘苯实例。DOI 10.1002/cjoc.201900424。</li>\n",
+      "new": "    <li id=\"ref-a06-xie2020\">Q. Xie、J. Hu。<a href=\"https://sioc.cas.cn/hjbktz/lwfb/202109/P020210923609239291053.pdf\">Chen’s Reagent: A Versatile Reagent for Trifluoromethylation, Difluoromethylenation, and Difluoroalkylation in Organic Synthesis</a>。Chinese Journal of Chemistry，2020，38：202–212。图式2重列1989年对氯碘苯实例。DOI 10.1002/cjoc.201900424。</li>\n"
+    },
+    {
+      "old": "    <li id=\"ref-a06-catalogs\"><a href=\"https://www.sigmaaldrich.com/US/en/product/aldrich/390755\">Aldrich 390755</a>与<a href=\"https://www.tcichemicals.com/US/en/p/F0311\">TCI F0311</a>所列甲酯均为CAS 680-15-9。</li>\n",
+      "new": "    <li id=\"ref-a06-catalogs\">甲酯目录编号为Aldrich 390755和TCI F0311，CAS号为680-15-9。</li>\n"
+    }
+  ]
+}
