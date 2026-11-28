@@ -11,6 +11,56 @@
 <!-- ACHIEVEMENT_DISPLAY_STYLE:BEGIN -->
 <style id="cq-achievement-display-style">.cq-display-references{margin-top:2.5rem;padding-top:1.6rem;border-top:1px solid #d3dfdf;line-height:1.85}.cq-display-references h2{font-size:1.6rem}.cq-display-references li,.cq-display-references article{margin:.8rem 0;overflow-wrap:anywhere}.cq-display-references article h3{font-size:1rem;margin:.3rem 0}.cq-display-references p{margin:.4rem 0}.cq-display-anchor{scroll-margin-top:6rem}.cq-display-source-index{margin-top:1rem}.cq-display-source-index>summary{cursor:pointer;font-weight:600}.cq-display-science{line-height:1.85}.cq-display-science h3{margin-top:1.5rem}.cq-display-bibliography{padding-left:1.4rem}.cq-display-ai{margin:1.5rem 0;padding:1rem 1.2rem;background:#f3f7f7;border-left:3px solid #698987}.cq-display-references .source-search{display:flex;flex-wrap:wrap;gap:.6rem}.cq-display-references input{max-width:100%;box-sizing:border-box}.cq-display-references a{overflow-wrap:anywhere}.cq-display-references .meta{font-size:.9rem}@media(max-width:700px){.cq-display-references{margin-top:1.5rem}.cq-display-ai{padding:.8rem}.cq-display-references h2{font-size:1.4rem}}</style>
 <!-- ACHIEVEMENT_DISPLAY_STYLE:END -->
+<style id="cq-achievement-overview-style">
+.cq-achievement-overview {
+  margin: 24px 0;
+  padding: clamp(18px, 4vw, 38px);
+  background: #fffefa;
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--accent);
+  border-radius: 12px;
+  scroll-margin-top: 20px;
+}
+.cq-achievement-overview h2 {
+  margin: 0 0 .65em;
+  font-size: clamp(1.45rem, 3vw, 2.05rem);
+  line-height: 1.35;
+}
+.cq-achievement-lede {
+  max-width: 78ch;
+  margin: .6em 0;
+}
+.cq-achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 22px 0;
+}
+.cq-achievement-grid > article {
+  min-width: 0;
+  margin: 0;
+  padding: 12px 16px;
+  overflow-wrap: anywhere;
+  background: #edf4ee;
+  border: 1px solid #d6e3d8;
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+}
+.cq-achievement-grid h3 {
+  margin: 0 0 .35em;
+  font-size: 1.12rem;
+  line-height: 1.5;
+}
+.cq-achievement-grid p { margin: 0; }
+.cq-achievement-overview .cq-achievement-note {
+  margin-top: .4rem;
+  color: var(--muted);
+  font-size: .88rem;
+}
+@media (max-width: 640px) {
+  .cq-achievement-grid { grid-template-columns: minmax(0, 1fr); }
+}
+</style>
 </head>
 <body>
 <header>
@@ -21,7 +71,7 @@
 <a href="../../index.html#line-a08">所属成果线 A08（交叉研究与晚年拓展）</a> · <a href="../../topics/index.html">专题索引</a>
 </p>
 <nav class="cq-journey-nav" aria-label="平台主导航">
-<a class="cq-journey-link" href="../../index.html">平台首页</a> · <a class="cq-journey-link" href="../../achievements/index.html#major-achievements">主要学术成就</a> · <a class="cq-journey-link" href="#fluoroalkylporphyrins">两项代表成果</a> · <a class="cq-journey-link" href="../deoxyfluorination/index.html#a08-deep-reading">同线另一分支：脱氧氟化图解</a> · <a class="cq-journey-link" href="#a08-representative-study-story">合作与育人</a> · <a class="cq-journey-link" href="#a08-ai-collation">AI辅助整理</a>
+<a class="cq-journey-link" href="../../index.html">平台首页</a> · <a class="cq-journey-link" href="../../achievements/index.html#major-achievements">主要学术成就</a> · <a class="cq-journey-link" href="#fluoroalkylporphyrins">成就概览</a> · <a class="cq-journey-link" href="../deoxyfluorination/index.html#a08-deep-reading">同线另一分支：脱氧氟化图解</a> · <a class="cq-journey-link" href="#a08-representative-study-story">合作与育人</a> · <a class="cq-journey-link" href="#a08-ai-collation">AI辅助整理</a>
 </nav>
 </div>
 </header>
@@ -29,11 +79,32 @@
 <style id="a08-representative-study-style">.cq-study{box-sizing:border-box;max-width:1120px;margin:28px auto;padding:clamp(22px,4vw,42px);border:1px solid #c8d8cd;border-top:4px solid #176e62;border-radius:10px;background:#fffefa;color:#182f2b;line-height:1.85;scroll-margin-top:24px}.cq-study *{box-sizing:border-box}.cq-study h2{font-size:clamp(25px,3.5vw,36px);line-height:1.45;margin:.3em 0 .7em}.cq-study h3{font-size:1.25rem;line-height:1.5;margin:1.6em 0 .7em;color:#155d55}.cq-study h4{font-size:1rem;line-height:1.6;margin:.8em 0 .3em}.cq-study p{max-width:84ch;margin:.65em 0}.cq-study a{color:#155d55;text-underline-offset:.2em}.cq-study a:focus-visible,.cq-study [tabindex]:focus-visible{outline:3px solid #aa7545;outline-offset:3px}.cq-study-label{font-size:.85rem;color:#155d55;font-weight:700}.cq-study-locator{font-size:.83rem;color:#51685e;overflow-wrap:anywhere}.cq-study-process{padding-left:1.5em}.cq-study-process>li{padding-left:.3em;margin:1.1em 0}.cq-study-table{overflow-x:auto;width:100%;margin:18px 0;border:1px solid #d6e0d9}.cq-study-table table{border-collapse:collapse;min-width:580px;width:100%;font-size:.91rem}.cq-study-table caption{text-align:left;font-weight:700;padding:12px;background:#edf3ee}.cq-study-table th,.cq-study-table td{padding:12px;border-top:1px solid #d6e0d9;text-align:left;vertical-align:top;overflow-wrap:anywhere}.cq-study-story{margin:24px 0;padding:18px 22px;background:#edf3ee;border-left:3px solid #aa7545}.cq-study-story h3{margin-top:0}.cq-study-meaning{padding:12px 18px;border-left:3px solid #176e62;background:#f5f3e9}.cq-study-references{padding-left:1.4em;font-size:.86rem;overflow-wrap:anywhere}.cq-study-references>li{margin:.9em 0;scroll-margin-top:24px}.cq-study-scope{font-size:.87rem;color:#51685e}.cq-study-nav{display:flex;flex-wrap:wrap;gap:10px 20px;border-top:1px solid #d6e0d9;padding-top:16px;margin-top:24px}@media(max-width:620px){.cq-study{margin:20px 0;padding:20px 16px;border-radius:6px}.cq-study-story{padding:14px 16px}.cq-study h2{font-size:25px}}</style>
 <style id="a08-deep-reading-entry-style">.cq-deep-entry{box-sizing:border-box;max-width:1120px;margin:20px auto;padding:12px 18px;background:#eef7f7;border-left:4px solid #177c80;line-height:1.8}.cq-deep-entry a{color:#086878;text-decoration:underline}@media(max-width:620px){.cq-deep-entry{margin:14px 10px}}</style>
 <style id="a08-biography-css">.a08-meaning{border-left:3px solid #aa7545;padding:10px 16px;background:#f7f4eb}.a08-locator{font-size:.86rem;color:var(--muted)}.a08-nav{display:flex;flex-wrap:wrap;gap:8px 18px}.a08-table{overflow-x:auto;max-width:100%;margin:20px 0;border:1px solid var(--line)}.a08-table table{border-collapse:collapse;min-width:640px;width:100%;font-size:.92rem}.a08-table caption{text-align:left;padding:14px;background:#edf3ee;color:var(--accent);font-weight:700}.a08-table th,.a08-table td{border-top:1px solid var(--line);padding:12px;text-align:left;vertical-align:top}.a08-table:focus-visible{outline:3px solid #aa7545}#refs{overflow-wrap:anywhere}</style>
-<section class="cq-display-section" id="fluoroalkylporphyrins" aria-labelledby="fluoroalkylporphyrins-title">
-<h2 id="fluoroalkylporphyrins-title">氟烷基卟啉</h2>
-<p>陈庆云与合作者把有机氟反应用于卟啉，先解决怎样在已有大环上引入氟烷基、怎样控制三氟甲基的取代位置和数量。按2005年偶联方法制得的含氟铜卟啉，又让团队能够分离并表征一个有20个π电子的还原产物，研究它的结构、谱图和氧化变化。</p>
-<nav class="cq-journey-nav" aria-label="氟烷基卟啉两项代表成果"><a href="#topic-fluoroporphyrins">直接在卟啉上引入氟烷基</a> · <a href="#a08-representative-study">分离并表征20π非芳香大环</a></nav>
-<p>这项成就是<a href="#a08-contributions">A08（交叉研究与晚年拓展）</a>中的卟啉分支。其他专题介绍含氟小环、含三键的新大环及晚年方法。</p>
+<section class="cq-achievement-overview" id="fluoroalkylporphyrins" aria-labelledby="fluoroalkylporphyrins-title">
+  <h2 id="fluoroalkylporphyrins-title">氟烷基卟啉：从大环修饰到新结构</h2>
+  <p class="cq-achievement-lede">陈庆云与合作者将有机氟反应用于卟啉，建立了在已有大环上引入氟烷基的方法，并通过预先选定反应位置控制三氟甲基取代。由此制得的含氟卟啉，为研究分子内环化、光物理性质，以及可分离的20π非芳香大环提供了样品。</p>
+  <div class="cq-achievement-grid">
+    <article>
+      <h3><a href="#topic-fluoroporphyrins">直接在卟啉上引入氟烷基</a></h3>
+      <p>2003年，金利美、曾卓、郭灿城和陈庆云利用改进的脱卤亚磺化方法，在已有卟啉大环的β位接上全氟烷基。</p>
+      <p class="cq-achievement-note">所得卟啉可作为后续亲核反应、溴化和硝化的原料。</p>
+    </article>
+    <article>
+      <h3><a href="#record-porphyrin-collaboration">按预设位置引入三氟甲基</a></h3>
+      <p>2005年，刘超与陈庆云利用溴代位置引导偶联，用陈试剂在指定位置接上三氟甲基。四个β位被取代的铜卟啉实例分离收率为95%。</p>
+      <p class="cq-achievement-note">位置和数量有别的产物可用于比较反应和性质。</p>
+    </article>
+    <article>
+      <h3><a href="#a08-porphyrin-cyclization">从含氟侧链研究环化与物性</a></h3>
+      <p>2006年，刘超、沈冬梅、曾卓、郭灿城和陈庆云利用含氟侧链的分子内环化，制得四氟苯并卟啉。</p>
+      <p class="cq-achievement-note">原作者进一步考察了产物的晶体结构、光物理和电化学性质。</p>
+    </article>
+    <article>
+      <h3><a href="#a08-representative-study">分离并表征20π非芳香大环</a></h3>
+      <p>2007年，刘超、沈冬梅与陈庆云从含氟铜卟啉的还原反应中分离出20π二氢卟啉，论文所报分离收率为82%。</p>
+      <p class="cq-achievement-note">原作者用单晶结构和谱图鉴定产物，并跟踪其氧化为18π卟啉的过程。</p>
+    </article>
+  </div>
+  <p><a href="#refs">参考资料</a> · <a href="#a08-contributions">A08（交叉研究与晚年拓展）的研究分支</a></p>
 </section>
 
 <section class="cq-study" id="topic-fluoroporphyrins" aria-labelledby="a08-fluoroalkylation-title"><h2 id="a08-fluoroalkylation-title">直接在卟啉上引入氟烷基</h2>
@@ -41,11 +112,11 @@
 <p>每次换一个氟烷基，能否沿用已经制成的卟啉骨架？2003年，金利美、曾卓、郭灿城和陈庆云将改进的脱卤亚磺化方法用于四芳基自由碱卟啉，在大环外围的2位（β位）接上全氟烷基。所得卟啉还可进行亲核反应以及有区域选择性的溴化、硝化，因而可作为后续改造的原料。</p>
 <h3 id="record-porphyrin-collaboration">按预设位置引入三氟甲基</h3>
 <p>刘超与陈庆云在2005年发表了另一方法。他们利用溴代卟啉预先确定反应位置，再用<a href="../chen-reagent/index.html#a06-representative-study">MFSDA甲酯陈试剂</a>和钯催化偶联引入三氟甲基。原刊表2中，四个β位接入三氟甲基的铜卟啉实例分离收率为95%，另一例在两个meso位引入三氟甲基。这样就有了取代位置和数量不同的样品，可比较它们的反应和性质。</p>
-<h3>从含氟侧链研究环化与物性</h3>
+<h3 id="a08-porphyrin-cyclization">从含氟侧链研究环化与物性</h3>
 <p>2006年，刘超、沈冬梅、曾卓、郭灿城和陈庆云选择带末端氯的全氟烷基卟啉，利用侧链发生选择性C–F转化和分子内环化，制得四氟苯并卟啉，并研究稠合产物的晶体结构、光物理和电化学性质。金利美等人的另一篇论文则比较了所研究的5-氟烷基卟啉与相近非氟化合物的聚集行为，并在部分样品中观察到液晶相。</p>
 <h3>跨学科合作怎样形成</h3>
 <p>郭灿城和湖南大学团队已有卟啉研究基础，陈庆云带入有机氟试剂和反应方法。传记据学位论文记载了不同研究方向。金利美与陈庆云研究直接氟烷基化及部分产物的自组装，曾卓与陈庆云研究四芳基卟啉的β位改造，刘超与陈庆云研究偶联和取代位置、数量对性质的影响。相关成果按各篇论文署名归属。</p>
-<nav class="cq-journey-nav" aria-label="卟啉氟烷基化后续阅读"><a href="#a08-representative-study">分离并表征20π非芳香大环</a> · <a href="#fluoroalkylporphyrins">返回两项代表成果</a></nav>
+<nav class="cq-journey-nav" aria-label="卟啉氟烷基化后续阅读"><a href="#a08-representative-study">分离并表征20π非芳香大环</a> · <a href="#fluoroalkylporphyrins">返回成就概览</a></nav>
 </section>
 <section class="cq-study cq-display-feature" id="a08-representative-study" aria-labelledby="a08-representative-study-title"><h2 id="a08-representative-study-title">分离并表征20π非芳香大环</h2>
 <h3>能否取出并测量20π卟啉型分子</h3>
@@ -66,7 +137,7 @@
 </p>
 </nav>
 <nav class="cq-study-nav cq-journey-nav" aria-label="代表成果阅读导航">
-<a class="cq-journey-link" href="../deoxyfluorination/index.html#a08-deep-reading">同线另一分支：脱氧氟化成果图解</a> · <a class="cq-journey-link" href="#a08-representative-study-story">合作与育人</a> · <a class="cq-journey-link" href="#a08-study-sources">参考资料</a> · <a class="cq-journey-link" href="../../achievements/index.html#heritage-inventory">科研成果线与学术传承详读</a> · <a class="cq-journey-link" href="#a08-ai-collation">AI辅助资料整理</a> · <a class="cq-journey-link" href="#fluoroalkylporphyrins">返回两项代表成果</a>
+<a class="cq-journey-link" href="../deoxyfluorination/index.html#a08-deep-reading">同线另一分支：脱氧氟化成果图解</a> · <a class="cq-journey-link" href="#a08-representative-study-story">合作与育人</a> · <a class="cq-journey-link" href="#a08-study-sources">参考资料</a> · <a class="cq-journey-link" href="../../achievements/index.html#heritage-inventory">科研成果线与学术传承详读</a> · <a class="cq-journey-link" href="#a08-ai-collation">AI辅助资料整理</a> · <a class="cq-journey-link" href="#fluoroalkylporphyrins">返回成就概览</a>
 </nav>
 </section>
 <section class="cq-display-section" id="a08-contributions" aria-labelledby="a08-contributions-title">
@@ -234,7 +305,7 @@
 </span>Fei Hao、Tian Zhang、Donghai Yu、Xiaodeng Yang、Hua-Wei Jiang、Ji-Chang Xiao、Qing-Yun Chen：<a href="https://doi.org/10.1021/acs.orglett.2c00356">Porphyriynes: 18-π-Conjugated Macrocycles Incorporating a Triple Bond</a>。2022，Organic Letters 24(8), 1716–1721。 DOI 10.1021/acs.orglett.2c00356。<a href="https://sioc.cas.cn/xiaogroup/publications/thesis/2022/202407/P020240725607972054645.pdf">上海有机所公开原文</a>和<a href="https://ndownloader.figshare.com/files/34165511">原作者支持信息</a>可查，计算说明及相关图表见S15–S21页。</li>
 </ol>
 </section>
-<nav class="cq-journey-nav" aria-label="页末阅读导航"><a href="../../index.html">返回平台首页</a> · <a href="../../achievements/index.html#major-achievement-porphyrins">返回成果汇总</a> · <a href="#a08-contributions">A08（交叉研究与晚年拓展）</a> · <a href="#fluoroalkylporphyrins">返回两项代表成果</a></nav>
+<nav class="cq-journey-nav" aria-label="页末阅读导航"><a href="../../index.html">返回平台首页</a> · <a href="../../achievements/index.html#major-achievement-porphyrins">返回成果汇总</a> · <a href="#a08-contributions">A08（交叉研究与晚年拓展）</a> · <a href="#fluoroalkylporphyrins">返回成就概览</a></nav>
 </main>
 <footer class="wrap">历史成果与共同贡献归陈庆云及实际参与者。</footer>
 </body>

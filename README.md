@@ -13,7 +13,7 @@
 | [F-53铬雾抑制剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-f53) | 陈庆云带领研究组制得F-53，与电镀厂和实验厂工程人员推进镀槽试用及工艺放大。相关中间体也为后续有机氟反应研究提供了原料。1982年10月，F-53研制项目获国家发明奖三等奖和上海市重大科研成果奖一等奖。 | [A04（F-53铬雾抑制剂）原文与合作资料](docs/A04_ACADEMIC_ACHIEVEMENTS_zh-CN.md) · [获奖记录](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/f53/index.html#a04-awards) |
 | [陈试剂与二氟卡宾试剂](https://cccolab.github.io/Chen-Qingyun-AI4Science/achievements/index.html#major-achievement-reagents) | 1989年，陈庆云与吴生文用甲酯MFSDA“陈试剂”在选定的卤代物上引入三氟甲基。2000年，陈庆云小组与多比尔团队发展硅酯TFDA，将二氟卡宾环丙烷化扩展到丙烯酸酯等较难反应的缺电子烯烃。 | [A06（磺酸酯、二氟卡宾与三氟甲基化）原文与合作资料](docs/A06_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |
 | [氟烷基卟啉](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#fluoroalkylporphyrins) | 陈庆云与合作者发展了直接在已有卟啉大环上引入氟烷基的方法，并在另一项研究中分离和表征了20π非芳香大环。这两项工作是A08（交叉研究与晚年拓展）卟啉分支的代表成果。 | [直接在卟啉上引入氟烷基](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#topic-fluoroporphyrins) · [分离并表征20π非芳香大环](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/fluoroporphyrins/index.html#a08-representative-study) |
-| [单电子转移反应](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#topic-single-electron-transfer) | 陈庆云与合作者研究溶剂、低价金属、亲核试剂、氧化剂和光照对反应的影响，发展了氟烷基加成与取代等合成途径，后来也使部分含氟氯代物参与成键。陈庆云主持的相关研究获1989年度国家自然科学奖二等奖。 | [A07（单电子转移与C–Cl活化）原文与合作资料](docs/A07_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |
+| [单电子转移反应](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#a07-contributions) | 陈庆云与合作者研究溶剂、低价金属、亲核试剂、氧化剂和光照对反应的影响，发展了氟烷基加成与取代等合成途径，后来也使部分含氟氯代物参与成键。陈庆云主持的相关研究获1989年度国家自然科学奖二等奖。 | [A07（单电子转移与C–Cl活化）原文与合作资料](docs/A07_ACADEMIC_ACHIEVEMENTS_zh-CN.md) |
 
 ## 完整科研脉络：八条科研成果线
 
