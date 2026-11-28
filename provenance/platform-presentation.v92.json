@@ -1,0 +1,562 @@
+{
+  "schema_version": "92.0",
+  "presentation_id": "PLATFORM-MAJOR-ACHIEVEMENT-NAVIGATION-20261128-v92",
+  "publication_kind": "major_achievement_navigation",
+  "previous_presentation_commit": "d4daf9517aaa8d23396e6af687536e058ac9f8ab",
+  "changed_html_paths": [
+    "achievements/index.html",
+    "index.html",
+    "people/stories/index.html",
+    "research/index.html",
+    "topics/chen-reagent/index.html",
+    "topics/deoxyfluorination/index.html",
+    "topics/f53/index.html",
+    "topics/fluorinated-small-rings/index.html",
+    "topics/fluoroporphyrins/index.html",
+    "topics/index.html",
+    "topics/single-electron-transfer/index.html",
+    "topics/sulfonyl-fluoride/index.html"
+  ],
+  "changed_document_paths": [],
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v91.json",
+    "sha256": "a8ca1e0b72b9492a13d6439443b26fbba5a5b07c5b7f9781be09797ec041d58f",
+    "presentation_id": "PLATFORM-A06-REAGENT-DEPTH-20261128-v91"
+  },
+  "change_reason": "统一四项成就专题导航，修复氟烷基卟啉回链和单电子转移阅读入口，补充单电子转移史料与合作故事。",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "M0_resumed": false,
+  "Nemotron_training_resumed": false,
+  "reversible_text_files": [
+    {
+      "path": "scripts/story_sources_publication.py",
+      "old_sha256": "4d98394d9c82b687b1ac6725e58eb43bfdeebf5133dbada1928799f630e459c2",
+      "old_bytes": 12796,
+      "new_sha256": "44cbca6c3e69dbca10101ef1143b279038c517f075fc4e84ec41e612222d1b59",
+      "new_bytes": 12969,
+      "edits": [
+        {
+          "old_offset": 2784,
+          "replacement": 0
+        },
+        {
+          "old_offset": 8520,
+          "replacement": 1
+        }
+      ]
+    },
+    {
+      "path": "site/achievements/index.html",
+      "old_sha256": "31bb876c678f5a4290caf0a0f5b62eee4ade8e2f2a575b3f9390b80b980594a5",
+      "old_bytes": 85356,
+      "new_sha256": "4e5804f7fdf451fefbcbf3d22fc2b55e3d75fc57c7b7ea99079165189f58508e",
+      "new_bytes": 85361,
+      "edits": [
+        {
+          "old_offset": 20826,
+          "replacement": 2
+        },
+        {
+          "old_offset": 36099,
+          "replacement": 3
+        }
+      ]
+    },
+    {
+      "path": "site/index.html",
+      "old_sha256": "b6f5cd710514f42efa1d43ead99399d0dbdbdcfe5a3285e53cb6b650b204dc09",
+      "old_bytes": 221521,
+      "new_sha256": "f0d483b57afc76e97db68370ff222efccc4183d8366817d561e0cb6150844fc0",
+      "new_bytes": 221526,
+      "edits": [
+        {
+          "old_offset": 28988,
+          "replacement": 4
+        },
+        {
+          "old_offset": 40578,
+          "replacement": 5
+        }
+      ]
+    },
+    {
+      "path": "site/people/stories/index.html",
+      "old_sha256": "f5847dbee71910c6b8aef2f30bc33abc973c41a735c64bd746a55dde1956ab9b",
+      "old_bytes": 28346,
+      "new_sha256": "398de62d17d556e8a3119cfe7e888951244ab27f1b7d29eb0be03bdfc443b0f2",
+      "new_bytes": 28349,
+      "edits": [
+        {
+          "old_offset": 21470,
+          "replacement": 6
+        }
+      ]
+    },
+    {
+      "path": "site/research/index.html",
+      "old_sha256": "0aa60664c06272429e2f172accd417788a89b15926dcff2e1d37eead019f368f",
+      "old_bytes": 84326,
+      "new_sha256": "0c31c729e17030c68b68ebd396285d2caca0b4571680869199e434aab4bac9df",
+      "new_bytes": 84330,
+      "edits": [
+        {
+          "old_offset": 83240,
+          "replacement": 7
+        }
+      ]
+    },
+    {
+      "path": "site/topics/chen-reagent/index.html",
+      "old_sha256": "790d98ba9c0578d7f0cce23b202078a59c1f4dccc7b8b02eaa0136e606785cf6",
+      "old_bytes": 34258,
+      "new_sha256": "5a024e35e1d4c247d10e93d469b27db8c53566d8b768bfc937796d28c9e640c7",
+      "new_bytes": 34677,
+      "edits": [
+        {
+          "old_offset": 8614,
+          "replacement": 8
+        },
+        {
+          "old_offset": 8723,
+          "replacement": 9
+        },
+        {
+          "old_offset": 9165,
+          "replacement": 10
+        }
+      ]
+    },
+    {
+      "path": "site/topics/deoxyfluorination/index.html",
+      "old_sha256": "ac5e2e9f377ae8397eea1e7d890e48d87200403daf6ab0629632123fade78fb2",
+      "old_bytes": 17013,
+      "new_sha256": "27a8973e3209365e8548b88083c43981f6eb06c630ff55aef7b19dede8a789ea",
+      "new_bytes": 17025,
+      "edits": [
+        {
+          "old_offset": 4965,
+          "replacement": 11
+        },
+        {
+          "old_offset": 11803,
+          "replacement": 12
+        }
+      ]
+    },
+    {
+      "path": "site/topics/f53/index.html",
+      "old_sha256": "d9b8e85f84bedd89d7431c3b9bbab6bd512daa3198df7e8f5bb585350fbeebf2",
+      "old_bytes": 37098,
+      "new_sha256": "5b77781cb19be02da9b1f306667c3a388e65a8970331ed9b583a08b29af2e6d6",
+      "new_bytes": 37859,
+      "edits": [
+        {
+          "old_offset": 4785,
+          "replacement": 13
+        }
+      ]
+    },
+    {
+      "path": "site/topics/fluorinated-small-rings/index.html",
+      "old_sha256": "37ee6112136ba150b8af0b9c0a6c5b9e1e95b948a9ca209567323a386536b3ec",
+      "old_bytes": 10374,
+      "new_sha256": "1b141d5d5e4466f1f3be3690c3afca71a7951de0dc8cbf36b0acb2dfc7794a94",
+      "new_bytes": 10382,
+      "edits": [
+        {
+          "old_offset": 2295,
+          "replacement": 14
+        },
+        {
+          "old_offset": 10076,
+          "replacement": 15
+        }
+      ]
+    },
+    {
+      "path": "site/topics/fluoroporphyrins/index.html",
+      "old_sha256": "1948aa9e056ea00ba53db78e0e943dfc00d4ffe0f418e688851a3b467f233ede",
+      "old_bytes": 27766,
+      "new_sha256": "412c37c0ddf284964d17d375a850b123d8b8fba2fc2f33b589813f1f1ee85619",
+      "new_bytes": 28430,
+      "edits": [
+        {
+          "old_offset": 6791,
+          "replacement": 16
+        },
+        {
+          "old_offset": 7025,
+          "replacement": 17
+        },
+        {
+          "old_offset": 7338,
+          "replacement": 18
+        },
+        {
+          "old_offset": 8896,
+          "replacement": 19
+        },
+        {
+          "old_offset": 10468,
+          "replacement": 20
+        },
+        {
+          "old_offset": 10740,
+          "replacement": 21
+        },
+        {
+          "old_offset": 11217,
+          "replacement": 22
+        },
+        {
+          "old_offset": 15288,
+          "replacement": 23
+        },
+        {
+          "old_offset": 16743,
+          "replacement": 24
+        },
+        {
+          "old_offset": 20282,
+          "replacement": 25
+        },
+        {
+          "old_offset": 20399,
+          "replacement": 26
+        },
+        {
+          "old_offset": 22993,
+          "replacement": 27
+        },
+        {
+          "old_offset": 24177,
+          "replacement": 28
+        }
+      ]
+    },
+    {
+      "path": "site/topics/index.html",
+      "old_sha256": "6e046ac7afe1669da5ee03819bbbb2b79c18b3d7ef56894742070177dc2ca8d0",
+      "old_bytes": 9326,
+      "new_sha256": "a31ab47e2e668bebbcfc44fff6aa56dc1daa1d7d55844611b6405f2fa0dff99d",
+      "new_bytes": 9301,
+      "edits": [
+        {
+          "old_offset": 2740,
+          "replacement": 29
+        },
+        {
+          "old_offset": 7095,
+          "replacement": 30
+        }
+      ]
+    },
+    {
+      "path": "site/topics/single-electron-transfer/index.html",
+      "old_sha256": "a9e744e828bd25e4fce004bb900daa1b526941866c418e5217b0d2ec21c33b54",
+      "old_bytes": 30757,
+      "new_sha256": "fa45050a1a2e3b7e79e0f73cd1b2db50fa3a9471ad1b4a61138f4ce0434f5a53",
+      "new_bytes": 34444,
+      "edits": [
+        {
+          "old_offset": 6885,
+          "replacement": 31
+        },
+        {
+          "old_offset": 7097,
+          "replacement": 32
+        },
+        {
+          "old_offset": 7431,
+          "replacement": 33
+        },
+        {
+          "old_offset": 12088,
+          "replacement": 34
+        },
+        {
+          "old_offset": 12817,
+          "replacement": 35
+        },
+        {
+          "old_offset": 13056,
+          "replacement": 36
+        },
+        {
+          "old_offset": 14618,
+          "replacement": 37
+        },
+        {
+          "old_offset": 16379,
+          "replacement": 38
+        },
+        {
+          "old_offset": 17919,
+          "replacement": 39
+        },
+        {
+          "old_offset": 18339,
+          "replacement": 40
+        },
+        {
+          "old_offset": 21206,
+          "replacement": 41
+        },
+        {
+          "old_offset": 22792,
+          "replacement": 42
+        },
+        {
+          "old_offset": 22909,
+          "replacement": 43
+        },
+        {
+          "old_offset": 24195,
+          "replacement": 44
+        },
+        {
+          "old_offset": 25828,
+          "replacement": 45
+        },
+        {
+          "old_offset": 26203,
+          "replacement": 46
+        },
+        {
+          "old_offset": 27816,
+          "replacement": 47
+        },
+        {
+          "old_offset": 30315,
+          "replacement": 48
+        }
+      ]
+    },
+    {
+      "path": "site/topics/sulfonyl-fluoride/index.html",
+      "old_sha256": "69c798e8752634784db98441b76641eea165357e3cd9dc6a90b4564b64e3ab00",
+      "old_bytes": 11458,
+      "new_sha256": "ab71c5f82b1ec0156bfb11ae1295fefddc0517aa17c8bb5edf327c16b380ca20",
+      "new_bytes": 11466,
+      "edits": [
+        {
+          "old_offset": 2313,
+          "replacement": 49
+        },
+        {
+          "old_offset": 11160,
+          "replacement": 50
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "",
+      "new": "import major_achievement_navigation_publication as major_achievement_navigation\n"
+    },
+    {
+      "old": "",
+      "new": ",\n                 (major_achievement_navigation, major_achievement_navigation.V91_ADDITIONS)"
+    },
+    {
+      "old": "a08-contributio",
+      "new": "fluoroalkylporphyri"
+    },
+    {
+      "old": "contribution",
+      "new": "other-branche"
+    },
+    {
+      "old": "a08-contributio",
+      "new": "fluoroalkylporphyri"
+    },
+    {
+      "old": "contribution",
+      "new": "other-branche"
+    },
+    {
+      "old": "topic-single-electron-transfer\">A07（单电子转移与C–Cl活化）引发方法</a> · <a href=\"../../topics/chen-reagent/index.html#a06-contributions\">阅读A06（磺酸酯、二氟卡宾与三氟甲基化）成果</a> · <a href=\"../../topics/fluoroporphyrins/index.html#a08-representative-study\">氟烷基卟啉与20π大环</a> · <a href=\"../../achievements/index.html#heritage-story-st24\">返回本则摘要</a> · <a href=\"#story-index\">返回故事目录 ↑</a></nav></article>\n<article class=\"story\" id=\"stories-st25\"><p class=\"story-line\">A07（单电子转移与C–Cl活化） · A09（学科建设与人才培养）</p><h2>从企业原料问题接续碳–氯键转化研究</h2><p>2010年，张成潘与陈庆云访问中化蓝天集团。集团在太仓设有氟化工研发基地和生产车间。企业提出一个实际问题：怎样把生产中产生的五氟氯乙烷转为有用的含氟产品？这把企业原料与研究团队已有的碳–氯键转化方法联系起来。</p><p>张成潘回忆，团队利用改进的脱卤亚磺化反应，先把该原料转为相应亚磺酸盐，再制得五氟碘乙烷。实验室阶段开发完成后，他们将工作移交企业；企业后来反馈能够重复，并可在原有反应规模上放大。企业提出需求，研究团队开展实验室开发，再由企业反馈后续进展，实验室方法由此走向新的应用对象。</p><p>陈先生也向胡金波、肖吉昌等年轻同行谈起类似的研究取向：重视国家和社会需要，并在解决实际问题的过程中发现基础性的科学问题。把原料、反应与用途连在一起，需要研究人员和企业共同工作。这段经历保存了合作过程与企业反馈，体现了他把氟化学用起来的持续追求。</p><nav class=\"story-actions\" aria-label=\"从企业原料问题接续碳–氯键转化研究后续阅读\"><a href=\"../../topics/single-electron-transfer/index.html#a07-representative-study\">阅读A07（单电子转移与C–Cl活化）成果",
+      "new": "a07-initiation-systems\">A07（单电子转移与C–Cl活化）引发方法</a> · <a href=\"../../topics/chen-reagent/index.html#a06-contributions\">阅读A06（磺酸酯、二氟卡宾与三氟甲基化）成果</a> · <a href=\"../../topics/fluoroporphyrins/index.html#a08-representative-study\">氟烷基卟啉与20π大环</a> · <a href=\"../../achievements/index.html#heritage-story-st24\">返回本则摘要</a> · <a href=\"#story-index\">返回故事目录 ↑</a></nav></article>\n<article class=\"story\" id=\"stories-st25\"><p class=\"story-line\">A07（单电子转移与C–Cl活化） · A09（学科建设与人才培养）</p><h2>从企业原料问题接续碳–氯键转化研究</h2><p>2010年，张成潘与陈庆云访问中化蓝天集团。集团在太仓设有氟化工研发基地和生产车间。企业提出一个实际问题：怎样把生产中产生的五氟氯乙烷转为有用的含氟产品？这把企业原料与研究团队已有的碳–氯键转化方法联系起来。</p><p>张成潘回忆，团队利用改进的脱卤亚磺化反应，先把该原料转为相应亚磺酸盐，再制得五氟碘乙烷。实验室阶段开发完成后，他们将工作移交企业；企业后来反馈能够重复，并可在原有反应规模上放大。企业提出需求，研究团队开展实验室开发，再由企业反馈后续进展，实验室方法由此走向新的应用对象。</p><p>陈先生也向胡金波、肖吉昌等年轻同行谈起类似的研究取向：重视国家和社会需要，并在解决实际问题的过程中发现基础性的科学问题。把原料、反应与用途连在一起，需要研究人员和企业共同工作。这段经历保存了合作过程与企业反馈，体现了他把氟化学用起来的持续追求。</p><nav class=\"story-actions\" aria-label=\"从企业原料问题接续碳–氯键转化研究后续阅读\"><a href=\"../../topics/single-electron-transfer/index.html#a07-enterprise-cooperation\">阅读A07（单电子转移与C–Cl活化）的企业合作"
+    },
+    {
+      "old": "a08-contributio",
+      "new": "fluoroalkylporphyri"
+    },
+    {
+      "old": "",
+      "new": "  <a class=\"cq-journey-link\" href=\"#a06-contributions\">成就概览</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n"
+    },
+    {
+      "old": "  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"#a06-deep-reading\" title=\"两项方法的提交与核查\">原刊精读</a>\n",
+      "new": ""
+    },
+    {
+      "old": "../../research/index.html#ai-a06\">AI辅助",
+      "new": "#a06-steroid-application\">从复杂分子合成到国际应用</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"#a06-evolution\">拓展反应类型，追问试剂机理</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"#a06-deep-reading\">原刊精读</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"#a06-ai-collation\">AI辅助资料"
+    },
+    {
+      "old": "a08-contributio",
+      "new": "fluoroalkylporphyri"
+    },
+    {
+      "old": "a08-contributions\">A08（交叉研究与晚年拓展）主要贡献</a> · <a class=\"cq-journey-link\" href=\"../../achievements/index.html#heritage-inventory\">九条成果线导读</a> · <a class=\"cq-journey-link\" href=\"#a08-ai-collation\">AI辅助资料整理</a></nav></section><article id=\"topic-deoxyfluorination\" class=\"cq-display-section\"><h2>2020年：含OCF₂单元的系列脱氧氟化试剂</h2><p>研究把特定含氟醚羧酸衍生物用于醇到烷基氟化物的转化，原作者讨论了原位生成COF₂在所研究转化中的作用。系列试剂包括不同盐型和链长；上方实例对应明确的钾盐2a。</p><nav class=\"a08-nav\" aria-label=\"A08（交叉研究与晚年拓展）专题导航\"><a href=\"../fluorinated-small-rings/index.html\">含氟小环</a><a href=\"../fluoroporphyrins/index.html\">卟啉与大环</a><a href=\"../deoxyfluorination/index.html\">脱氧氟化</a><a href=\"../sulfonyl-fluoride/index.html\">氟磺酰化与表面活性分子</a><a href=\"#a08-cooperation\">合作与传承</a><a href=\"#refs\">参考资料</a></nav></article><article id=\"record-deoxyfluorination-systems\" class=\"cq-display-section\"><h2>2021年：面向其他含氧底物的另一种体系</h2><p>2021年，Shiyu Zhao、Yong Guo、Zhaoben Su、Chengying Wu、W. Chen、Qing-Yun Chen研究含CF₂O单元的全氟烷基醚羧酸钾盐，用于羧酸、磺酸、次膦酸和膦氧化物的脱氧氟化。</p><p>两项工作通过试剂结构与用途的持续探索扩展合成工具。2020年系列试剂与2021年体系分别评价，具体盐型、反应物种和底物范围各按对应研究理解。</p></article><article id=\"a08-cooperation\" class=\"cq-display-section\"><h2>两项研究的合作与署名</h2><div class=\"cq-display-table\" role=\"region\" tabindex=\"0\"><table><caption id=\"a08-cooperation-caption\">共同研究与角色</caption><thead><tr><th scope=\"col\">人物或团队</th><th scope=\"col\">贡献与角色</th></tr></thead><tbody><tr><th scope=\"row\">2020论文共同作者</th><td>Shiyu Zhao、Yong Guo、Zhaoben Su、Wei Cao、Chengying Wu、Qing-Yun Chen共同开展所载试剂研究。</td></tr><tr><th scope=\"row\">2021论文合作</th><td>Shiyu Zhao、Yong Guo等（含Qing-Yun Chen）研究另一含氟醚羧酸钾盐体系。</td></tr></tbody></table></div><section id=\"a08-authorship\"><h3>原论文共同作者</h3><div class=\"cq-display-table\" role=\"region\" tabindex=\"0\"><table><caption id=\"a08-authorship-caption\">按论文分别保留研究归属</caption><thead><tr><th scope=\"col\">研究</th><th scope=\"col\">原文署名</th><th scope=\"col\">发表定位</th></tr></thead><tbody><tr><th scope=\"row\">2020系列试剂</th><td>Shiyu Zhao、Yong Guo、Zhaoben Su、Wei Cao、Chengying Wu、Qing-Yun Chen</td><td>Org. Lett.22(21)：8634–8637</td></tr><tr><th scope=\"row\">2021钾盐体系</th><td>Zhao, S.；Guo, Y.；Su, Z.；Wu, C.；Chen, W.；Chen, Q.-Y.（按出版社citation署名顺序）</td><td>Chin. J. Chem.39(5)：1225–1232</td></tr></tbody></table></div></section></article><article id=\"a08-ai-collation\" class=\"cq-display-section\"><h2>AI辅助整理与研究</h2><p>历史成果与原作者已有计算归实际研究者。平台的文献整理与新增AI研究另列，保持 <code>review_required</code>、<code>release_eligible=false</code>；M0与Nemotron训练继续暂停。</p><p><a href=\"../../research/index.html#ai-a08\">查看AI辅助整理与研究 →</a></p></article><p><a href=\"../fluoroporphyrins/index.html#a08-contributio",
+      "new": "fluoroalkylporphyrins\">A08（交叉研究与晚年拓展）主要贡献</a> · <a class=\"cq-journey-link\" href=\"../../achievements/index.html#heritage-inventory\">九条成果线导读</a> · <a class=\"cq-journey-link\" href=\"#a08-ai-collation\">AI辅助资料整理</a></nav></section><article id=\"topic-deoxyfluorination\" class=\"cq-display-section\"><h2>2020年：含OCF₂单元的系列脱氧氟化试剂</h2><p>研究把特定含氟醚羧酸衍生物用于醇到烷基氟化物的转化，原作者讨论了原位生成COF₂在所研究转化中的作用。系列试剂包括不同盐型和链长；上方实例对应明确的钾盐2a。</p><nav class=\"a08-nav\" aria-label=\"A08（交叉研究与晚年拓展）专题导航\"><a href=\"../fluorinated-small-rings/index.html\">含氟小环</a><a href=\"../fluoroporphyrins/index.html\">卟啉与大环</a><a href=\"../deoxyfluorination/index.html\">脱氧氟化</a><a href=\"../sulfonyl-fluoride/index.html\">氟磺酰化与表面活性分子</a><a href=\"#a08-cooperation\">合作与传承</a><a href=\"#refs\">参考资料</a></nav></article><article id=\"record-deoxyfluorination-systems\" class=\"cq-display-section\"><h2>2021年：面向其他含氧底物的另一种体系</h2><p>2021年，Shiyu Zhao、Yong Guo、Zhaoben Su、Chengying Wu、W. Chen、Qing-Yun Chen研究含CF₂O单元的全氟烷基醚羧酸钾盐，用于羧酸、磺酸、次膦酸和膦氧化物的脱氧氟化。</p><p>两项工作通过试剂结构与用途的持续探索扩展合成工具。2020年系列试剂与2021年体系分别评价，具体盐型、反应物种和底物范围各按对应研究理解。</p></article><article id=\"a08-cooperation\" class=\"cq-display-section\"><h2>两项研究的合作与署名</h2><div class=\"cq-display-table\" role=\"region\" tabindex=\"0\"><table><caption id=\"a08-cooperation-caption\">共同研究与角色</caption><thead><tr><th scope=\"col\">人物或团队</th><th scope=\"col\">贡献与角色</th></tr></thead><tbody><tr><th scope=\"row\">2020论文共同作者</th><td>Shiyu Zhao、Yong Guo、Zhaoben Su、Wei Cao、Chengying Wu、Qing-Yun Chen共同开展所载试剂研究。</td></tr><tr><th scope=\"row\">2021论文合作</th><td>Shiyu Zhao、Yong Guo等（含Qing-Yun Chen）研究另一含氟醚羧酸钾盐体系。</td></tr></tbody></table></div><section id=\"a08-authorship\"><h3>原论文共同作者</h3><div class=\"cq-display-table\" role=\"region\" tabindex=\"0\"><table><caption id=\"a08-authorship-caption\">按论文分别保留研究归属</caption><thead><tr><th scope=\"col\">研究</th><th scope=\"col\">原文署名</th><th scope=\"col\">发表定位</th></tr></thead><tbody><tr><th scope=\"row\">2020系列试剂</th><td>Shiyu Zhao、Yong Guo、Zhaoben Su、Wei Cao、Chengying Wu、Qing-Yun Chen</td><td>Org. Lett.22(21)：8634–8637</td></tr><tr><th scope=\"row\">2021钾盐体系</th><td>Zhao, S.；Guo, Y.；Su, Z.；Wu, C.；Chen, W.；Chen, Q.-Y.（按出版社citation署名顺序）</td><td>Chin. J. Chem.39(5)：1225–1232</td></tr></tbody></table></div></section></article><article id=\"a08-ai-collation\" class=\"cq-display-section\"><h2>AI辅助整理与研究</h2><p>历史成果与原作者已有计算归实际研究者。平台的文献整理与新增AI研究另列，保持 <code>review_required</code>、<code>release_eligible=false</code>；M0与Nemotron训练继续暂停。</p><p><a href=\"../../research/index.html#ai-a08\">查看AI辅助整理与研究 →</a></p></article><p><a href=\"../fluoroporphyrins/index.html#fluoroalkylporphyri"
+    },
+    {
+      "old": "<a class=\"cq-journey-link\" href=\"../../index.html\">平台首页</a> · <a class=\"cq-journey-link\" href=\"../../achievements/index.html#heritage-inventory\">九条成果线</a> · <a class=\"cq-journey-link\" href=\"#a04-design\">设计含醚键的新型抑雾剂</a> · <a class=\"cq-journey-link\" href=\"#a04-deep-reading\">原刊精读</a> · <a class=\"cq-journey-link\" href=\"#a04-scale-up\">从实验室样品到工厂试制</a> · <a class=\"cq-journey-link\" href=\"../../research/index.html#ai-a04\">AI辅助整理</a>",
+      "new": "\n  <a class=\"cq-journey-link\" href=\"../../index.html\">平台首页</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"../../achievements/index.html#heritage-inventory\">九条成果线</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"#a04-contributions\">成就概览</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"#a04-design\">设计含醚键的新型抑雾剂</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"#a04-scale-up\">从实验室样品到工厂试制</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"#a04-application\">近千个单位采用 F-53</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"#a04-science\">合成新方法带动基础研究</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"#a04-deep-reading\">原刊精读</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"#a04-ai-collation\">AI辅助资料整理</a>\n"
+    },
+    {
+      "old": "a08-contributio",
+      "new": "fluoroalkylporphyri"
+    },
+    {
+      "old": "a08-contributio",
+      "new": "fluoroalkylporphyri"
+    },
+    {
+      "old": "",
+      "new": "  <a class=\"cq-journey-link\" href=\"#fluoroalkylporphyrins\">成就概览</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n"
+    },
+    {
+      "old": " title=\"分离并表征20π非芳香大环\">原刊精读",
+      "new": ">分离并表征20π非芳香大环</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"#a08-macrocycle-expansion\">从卟啉侧链到新型大环"
+    },
+    {
+      "old": "../../research/index.html#ai-a08\">AI辅助",
+      "new": "#a08-ai-collation\">AI辅助资料"
+    },
+    {
+      "old": "",
+      "new": "  <span class=\"a08-anchor-alias\" id=\"a08-contributions\" aria-hidden=\"true\"></span>\n"
+    },
+    {
+      "old": "contributions",
+      "new": "macrocycle-expansion"
+    },
+    {
+      "old": "共轭研究与同线专题",
+      "new": "液晶性质与共轭研究"
+    },
+    {
+      "old": "",
+      "new": "a08-other-branches\">A08其他研究分支</a> · <a href=\"#"
+    },
+    {
+      "old": "contributions",
+      "new": "macrocycle-expansion"
+    },
+    {
+      "old": "  <h3 id=\"a08-other-branches\">A08（交叉研究与晚年拓展）的其他专题</h3>\n  <nav class=\"a08-branch-links\" aria-label=\"A08（交叉研究与晚年拓展）的其他研究分支\">\n    <a href=\"../fluorinated-small-rings/index.html#record-small-rings\">含氟小环的获得与转化</a>\n    <a href=\"../deoxyfluorination/index.html#topic-deoxyfluorination\">脱氧氟化试剂</a>\n    <a href=\"../sulfonyl-fluoride/index.html#record-late-functional-groups\">氟磺酰化与官能团构建</a>\n    <a href=\"../sulfonyl-fluoride/index.html#a08-surfactants\">含氟表面活性剂</a>\n    <a href=\"../../achievements/index.html#record-fluorinated-ionic-liquids\">含氟离子液体</a>\n  </nav>\n",
+      "new": ""
+    },
+    {
+      "old": "",
+      "new": "<section class=\"a08-chapter\" id=\"a08-other-branches\" aria-labelledby=\"a08-other-branches-title\">\n  <h2 id=\"a08-other-branches-title\">A08（交叉研究与晚年拓展）的其他专题</h2>\n  <nav class=\"a08-branch-links\" aria-label=\"A08（交叉研究与晚年拓展）的其他研究分支\">\n    <a href=\"../fluorinated-small-rings/index.html#record-small-rings\">含氟小环的获得与转化</a>\n    <a href=\"../deoxyfluorination/index.html#topic-deoxyfluorination\">脱氧氟化试剂</a>\n    <a href=\"../sulfonyl-fluoride/index.html#record-late-functional-groups\">氟磺酰化与官能团构建</a>\n    <a href=\"../sulfonyl-fluoride/index.html#a08-surfactants\">含氟表面活性剂</a>\n    <a href=\"../../achievements/index.html#record-fluorinated-ionic-liquids\">含氟离子液体</a>\n  </nav>\n  <p class=\"a08-return\"><a href=\"#fluoroalkylporphyrins\"><span aria-hidden=\"true\">↑ </span>返回本页概览</a></p>\n</section>\n\n"
+    },
+    {
+      "old": "",
+      "new": "资料"
+    },
+    {
+      "old": "www.",
+      "new": ""
+    },
+    {
+      "old": "www.",
+      "new": ""
+    },
+    {
+      "old": "topic-single-electron-transfer",
+      "new": "a07-contributions"
+    },
+    {
+      "old": "topic-single-electron-transfer\">主要成就：单电子转移与氟烷基化方法</a></li><li><a href=\"single-electron-transfer/index.html#a07-contributions\">完整研究分支</a></li><li><a href=\"single-electron-transfer/index.html#a07-set-synthesis\">铜参与的含氟烯烃合成</a></li><li><a href=\"single-electron-transfer/index.html#record-ccl-activation\">含氟氯代原料的选择性转化</a></li><li><a href=\"single-electron-transfer/index.html#a07-intramolecular-cyclization\">分子内环化</a></li></ul></section>\n<section class=\"topic-line\" id=\"topic-line-a08\"><h2><a href=\"../index.html#line-a08\">A08（交叉研究与晚年拓展）</a></h2><ul><li><a href=\"fluoroporphyrins/index.html#fluoroalkylporphyrins\">主要成就：氟烷基卟啉完整研究链</a></li><li><a href=\"fluoroporphyrins/index.html#a08-contribution",
+      "new": "a07-contributions\">主要成就：单电子转移与氟烷基化方法</a></li><li><a href=\"single-electron-transfer/index.html#a07-contributions\">完整研究分支</a></li><li><a href=\"single-electron-transfer/index.html#a07-set-synthesis\">铜参与的含氟烯烃合成</a></li><li><a href=\"single-electron-transfer/index.html#record-ccl-activation\">含氟氯代原料的选择性转化</a></li><li><a href=\"single-electron-transfer/index.html#a07-intramolecular-cyclization\">分子内环化</a></li></ul></section>\n<section class=\"topic-line\" id=\"topic-line-a08\"><h2><a href=\"../index.html#line-a08\">A08（交叉研究与晚年拓展）</a></h2><ul><li><a href=\"fluoroporphyrins/index.html#fluoroalkylporphyrins\">主要成就：氟烷基卟啉完整研究链</a></li><li><a href=\"fluoroporphyrins/index.html#a08-other-branche"
+    },
+    {
+      "old": "",
+      "new": "  <a class=\"cq-journey-link\" href=\"#a07-contributions\">成就概览</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n"
+    },
+    {
+      "old": "deep-reading\" title=\"反应对照与产物证据\">原刊精读",
+      "new": "initiation-systems\">用不同引发方式发展氟烷基化</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"#a07-representative-study\">让特定含氟氯代物参与成键"
+    },
+    {
+      "old": "../../research/index.html#ai-a07\">AI辅助",
+      "new": "#a07-deep-reading\">原刊精读</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"#a07-ai-collation\">AI辅助资料"
+    },
+    {
+      "old": "",
+      "new": "a href=\"#ref-a07-acta1984-906\">1984年论文</a><"
+    },
+    {
+      "old": "",
+      "new": "a href=\"#ref-a07-acta1985-1073\">1985年论文</a><"
+    },
+    {
+      "old": "胡昌明小组研究",
+      "new": "<a href=\"#ref-a07-deiodosulfination1981\">1981年论文</a>署名为黄炳南、黄维垣和胡昌明。胡昌明小组还研究了"
+    },
+    {
+      "old": "",
+      "new": "a href=\"#ref-a07-acta1986-265\">1986年论文</a><"
+    },
+    {
+      "old": "据传记记载，何亚波也参与过渡金属引发研究，裘再明还参与亲核引发研究，陈明芳参与亲核引发及氧化剂研究。",
+      "new": "何亚波参与过渡金属引发研究，裘再明也参与亲核引发研究，陈明芳参与亲核引发及氧化剂研究。<a href=\"#a07-source-book\">合作记述</a></p>\n  <h3 id=\"a07-awards\">单电子转移研究获奖</h3>\n  <p>陈庆云主持的「氟化学中单电子转移反应的研究」获1989年度国家自然科学奖二等奖（1990年8月）。同名项目另获1988年度中国科学院科学技术进步奖二等奖。<a href=\"#a07-source-book\">国家奖记录</a> · <a href=\"#ref-a07-cas-award1988\">院级奖记录</a></p>\n  <p>日本有机氟化学家宇根山健治在贺信中回顾了陈庆云在单电子转移等方面的工作。<a href=\"../../people/stories/index.html#stories-st24\">阅读宇根山健治的贺信故事</a>"
+    },
+    {
+      "old": "",
+      "new": "a href=\"#ref-a07-aromatics2000\">2000年论文</a><"
+    },
+    {
+      "old": "section id=\"a07-deep-reading\" aria-labelledby=\"a07-deep-reading-title\">\n    <h3 id=\"a07-deep-reading-title\">原刊精读：反应对照与产物证据</h3>\n    <span id=\"a07-deep-reading-figure-caption\" class=\"a07-anchor-alias\" aria-hidden=\"true\"></span>\n    <div class=\"a07-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a07-deep-reading-table-caption\">\n      <table>\n        <caption id=\"a07-deep-reading-table-caption\">1999年与2001年论文中各自的代表性实验</caption>\n        <thead><tr><th scope=\"col\">论文与体系</th><th scope=\"col\">实验结果</th><th scope=\"col\">产物表征</th></tr></thead>\n        <tbody>\n          <tr><th scope=\"row\"><a href=\"#ref-cq-r06\">1999年，连二亚硫酸钠体系</a></th><td>表4同组底物（1a与2b）在DMSO中转化率为100%（<sup>19</sup>F核磁），表列加成产物为80%。乙腈／水对照中两项均为0%。</td><td>另一组实验的产物3bc为1,1,2,2,3,3,4,4-八氟十二烷，支持信息保留了氢谱和氟谱。</td></tr>\n          <tr><th scope=\"row\"><a href=\"#ref-heritage-s07\">2001年，零价镍体系</a></th><td>第4654页的代表性烯烃加成实验报告产物3aa的分离收率为72%。</td><td>支持信息第1–2页保留了3aa的核磁谱图。</td></tr>\n        </tbody>\n      </table>\n    </div>\n    <h3>作者怎样解释氯代物开始反应</h3>\n    <p>两篇论文各自报告了抑制实验和二烯丙基醚的关环结果，作者据此提出全氟烷基自由基参与反应。1999年论文提出由二氧化硫自由基阴离子给出电子，并把溶剂影响反应性的原因留作问题。2001年论文则提出由零价镍络合物给出电子。这些解释分别对应各自实验体系。</p>\n  </section",
+      "new": "h3 id=\"a07-solvent-followup\">2004年：继续追问溶剂和温度的影响</h3>\n  <p>吴恺与陈庆云进一步比较了全卤代烃脱卤亚磺化的条件。以所试全氟己基氯与1-辛烯为例，在其比较的溶剂和温度条件下，二甲基亚砜最适合该反应，氯代物的转化随反应温度明显变化。<a href=\"#ref-a07-wu2004\">2004年论文</a> · <a href=\"#a07-deep-reading\">查看1999年与2001年的实验对照</a></p"
+    },
+    {
+      "old": ">把氯代原料变为后续合成所需的碘代物</h3>\n  <p>陈庆云与曹海萍以专利说明书所述较易取得、价格较低的全氟烷基氯为起点制备相应碘代物。所列氯代物或溴代物先转成亚磺酸盐，再用碘和氧化剂制得碘代产物。这条路线避开了专利所比较的元素氟起始工艺。上海有机所于2005年<a href=\"#a07-source-patent\">申请专利</a>，2007年获授权。授权稿实例4报告，从全氟辛基氯制得7.2克全氟辛基碘，产率为66%。</p>\n  <h3>原料利用与环境效益",
+      "new": " id=\"a07-iodide-route\">把氯代原料变为后续合成所需的碘代物</h3>\n  <p>陈庆云与曹海萍以专利说明书所述较易取得、价格较低的全氟烷基氯为起点制备相应碘代物。所列氯代物或溴代物先转成亚磺酸盐，再用碘和氧化剂制得碘代产物。这条路线避开了专利所比较的元素氟起始工艺。上海有机所于2005年<a href=\"#a07-source-patent\">申请专利</a>，2007年获授权。授权稿实例4报告，从全氟辛基氯制得7.2克全氟辛基碘，产率为66%。曹海萍与陈庆云于2007年发表论文，报道在同一容器中先制亚磺酸盐、再得到相应的碘代物，并将方法用于制备两端带碘的全氟烷烃。<a href=\"#ref-a07-cao2007\">2007年论文</a></p>\n  <h3 id=\"a07-enterprise-cooperation\">从企业副产原料出发的合作</h3>\n  <p>2010年，张成潘与陈庆云访问中化蓝天集团。企业提出五氟氯乙烷副产物的利用问题。据张成潘回忆，研究团队在实验室把这种原料转化为五氟碘乙烷，随后移交企业。企业反馈可以重复并放大反应。<a href=\"../../people/stories/index.html#stories-st25\">阅读企业合作故事</a></p>\n  <h3>受控原料的转化与环境评价"
+    },
+    {
+      "old": "",
+      "new": "<section class=\"a07-chapter\" id=\"a07-deep-reading\" aria-labelledby=\"a07-deep-reading-title\">\n  <h2 id=\"a07-deep-reading-title\">延伸阅读 · 原刊精读</h2>\n  <span id=\"a07-deep-reading-figure-caption\" class=\"a07-anchor-alias\" aria-hidden=\"true\"></span>\n  <div class=\"a07-table\" role=\"region\" tabindex=\"0\" aria-labelledby=\"a07-deep-reading-table-caption\">\n    <table>\n      <caption id=\"a07-deep-reading-table-caption\">1999年与2001年论文中各自的代表性实验</caption>\n      <thead><tr><th scope=\"col\">论文与体系</th><th scope=\"col\">实验结果</th><th scope=\"col\">产物表征</th></tr></thead>\n      <tbody>\n        <tr><th scope=\"row\"><a href=\"#ref-cq-r06\">1999年，连二亚硫酸钠体系</a></th><td>表4同组底物（1a与2b）在DMSO中转化率为100%（<sup>19</sup>F核磁），表列加成产物为80%。乙腈／水对照中两项均为0%。</td><td>另一组实验的产物3bc为1,1,2,2,3,3,4,4-八氟十二烷，支持信息保留了氢谱和氟谱。</td></tr>\n        <tr><th scope=\"row\"><a href=\"#ref-heritage-s07\">2001年，零价镍体系</a></th><td>第4654页的代表性烯烃加成实验报告产物3aa的分离收率为72%。</td><td>支持信息第1–2页保留了3aa的核磁谱图。</td></tr>\n      </tbody>\n    </table>\n  </div>\n  <h3>作者怎样解释氯代物开始反应</h3>\n  <p>两篇论文各自报告了抑制实验和二烯丙基醚的关环结果，作者据此提出全氟烷基自由基参与反应。1999年论文提出由二氧化硫自由基阴离子给出电子，当时仍有待解释溶剂为何影响反应性。2001年论文则提出由零价镍络合物给出电子。这些解释分别对应各自实验体系。<a href=\"#a07-solvent-followup\">继续阅读2004年的溶剂效应研究</a></p>\n  <p class=\"a07-return\"><a href=\"#a07-contributions\"><span aria-hidden=\"true\">↑ </span>返回本页概览</a></p>\n</section>\n\n"
+    },
+    {
+      "old": "整理与研究",
+      "new": "资料整理"
+    },
+    {
+      "old": "EN/abstract/abstract333975.shtml\">氟烷基化和氟烷氧基化的研究I.溶剂对碘苯氟烷基化的影响</a>；陈庆云、陈亚雄、黄维垣；《化学学报》1984，42(9)：906–912。</li>\r\n<li",
+      "new": "Jwk_hxxb/CN/abstract/abstract333975.shtml\">氟烷基化和氟烷氧基化的研究I.溶剂对碘苯氟烷基化的影响</a>；陈庆云、陈亚雄、黄维垣；《化学学报》1984，42(9)：906–912。</li>\r\n<li id=\"ref-a07-acta1985-1073\""
+    },
+    {
+      "old": "EN/abstract/abstract334705.shtml\">铅(IV)氧化剂引发的氟烷基碘对烯烃加成</a>。《化学学报》1988，46(3)：301–304。链接为英文摘要",
+      "new": "CN/abstract/abstract334705.shtml\">铅(IV)氧化剂引发的氟烷基碘对烯烃加成</a>。《化学学报》1988，46(3)：301–304"
+    },
+    {
+      "old": ">黄炳南、黄维垣、胡昌明。<a href=\"https://sioc-journal.cn/Jwk_hxxb/EN/Y1981/V39/I5/481\">氟烷基碘的脱碘亚磺化</a>。《化学学报》1981，39(5)：481–483。",
+      "new": " id=\"ref-a07-deiodosulfination1981\">黄炳南、黄维垣、胡昌明。<a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1981/V39/I5/481\">氟烷基碘的脱碘亚磺化</a>。《化学学报》1981，39(5)：481–483。</li>\n<li>"
+    },
+    {
+      "old": ">龙正宇、陈庆云。<a href=\"https://sioc-journal.cn/Jwk_hxxb/E",
+      "new": " id=\"ref-a07-aromatics2000\">龙正宇、陈庆云。<a href=\"https://sioc-journal.cn/Jwk_hxxb/C"
+    },
+    {
+      "old": "",
+      "new": "<li id=\"ref-a07-cas-award1988\">中国科学院计划局成果专利处。<a href=\"https://files.sciengine.com/pdfs/1000-3045/C63B4CCD307F45AB89ECF51EE36AC70D.pdf\">中国科学院1988年度科学技术进步奖获奖项目介绍</a>。《中国科学院院刊》1989年第1期，第64页，二等奖第39项。</li>\r\n<li id=\"ref-a07-wu2004\">吴恺、陈庆云。<a href=\"https://doi.org/10.1002/cjoc.20040220411\">Factors Influencing Sulfinatodehalogenation Reactions of Perhalocarbons</a>。Chin. J. Chem. 2004，22(4)：371–376。<a href=\"https://onlinelibrary.wiley.com/toc/16147065/2004/22/4\">出版社当期目录</a>。</li>\r\n<li id=\"ref-a07-cao2007\">曹海萍、陈庆云。<a href=\"https://www.sciencedirect.com/science/article/abs/pii/S0022113907001650\">Practical and efficient synthesis of perfluoroalkyl iodides from perfluoroalkyl chlorides via modified sulfinatodehalogenation</a>。J. Fluorine Chem. 2007，128(10)：1187–1190。</li>\r\n"
+    },
+    {
+      "old": "a08-contributio",
+      "new": "fluoroalkylporphyri"
+    },
+    {
+      "old": "a08-contributio",
+      "new": "fluoroalkylporphyri"
+    }
+  ]
+}
