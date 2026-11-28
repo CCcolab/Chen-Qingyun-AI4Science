@@ -1,0 +1,144 @@
+{
+  "schema_version": "90.0",
+  "presentation_id": "PLATFORM-MAJOR-ACHIEVEMENT-BANNERS-20261128-v90",
+  "publication_kind": "major_achievement_banners",
+  "previous_presentation_commit": "13d3af52c453f63175d40929a644e7f245fca31e",
+  "changed_html_paths": [
+    "topics/chen-reagent/index.html",
+    "topics/fluoroporphyrins/index.html",
+    "topics/single-electron-transfer/index.html"
+  ],
+  "changed_document_paths": [],
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v89.json",
+    "sha256": "380bb78e1fc75c2ff2f8adb26e696b579e656c83ac552e00edcff03e5da7a2b5",
+    "presentation_id": "PLATFORM-A07-SET-CONTEXT-20261128-v89"
+  },
+  "change_reason": "沿用F-53专题的两层横幅导航，为陈试剂与二氟卡宾试剂、氟烷基卟啉和单电子转移反应对齐站级入口、原刊精读、专题与AI整理入口。",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "M0_resumed": false,
+  "Nemotron_training_resumed": false,
+  "reversible_text_files": [
+    {
+      "path": "scripts/story_sources_publication.py",
+      "old_sha256": "2e319bd2f4525addc0ea5f87151b3d3abf01166761d0429dd5162e72010f79a5",
+      "old_bytes": 12506,
+      "new_sha256": "9049a2c78c2fbc77b3768d247d4f1a12af0e5f51d99b86e68c10ff3bd259a128",
+      "new_bytes": 12667,
+      "edits": [
+        {
+          "old_offset": 2652,
+          "replacement": 0
+        },
+        {
+          "old_offset": 8165,
+          "replacement": 1
+        }
+      ]
+    },
+    {
+      "path": "site/topics/chen-reagent/index.html",
+      "old_sha256": "b363b862deaaf7d996ae73a0f93a58a401be35ca6a49e1ce0a2c2934915b3cf0",
+      "old_bytes": 28602,
+      "new_sha256": "28e3f1c4746dc0d3ea1900f8e231190c73faeabb7819092c1e1de60bafb3b6a5",
+      "new_bytes": 29097,
+      "edits": [
+        {
+          "old_offset": 3844,
+          "replacement": 2
+        },
+        {
+          "old_offset": 7857,
+          "replacement": 3
+        }
+      ]
+    },
+    {
+      "path": "site/topics/fluoroporphyrins/index.html",
+      "old_sha256": "360c36de049cf8566c9fb701891546313015dea8e7ce0a39a0881965fc13cd51",
+      "old_bytes": 27237,
+      "new_sha256": "1948aa9e056ea00ba53db78e0e943dfc00d4ffe0f418e688851a3b467f233ede",
+      "new_bytes": 27766,
+      "edits": [
+        {
+          "old_offset": 2051,
+          "replacement": 4
+        },
+        {
+          "old_offset": 6052,
+          "replacement": 5
+        },
+        {
+          "old_offset": 6424,
+          "replacement": 6
+        }
+      ]
+    },
+    {
+      "path": "site/topics/single-electron-transfer/index.html",
+      "old_sha256": "5cd877c9430199aa6cc4ef470cd2a5631454c79fe9ff6d33be93d636b7579f55",
+      "old_bytes": 30249,
+      "new_sha256": "a9e744e828bd25e4fce004bb900daa1b526941866c418e5217b0d2ec21c33b54",
+      "new_bytes": 30757,
+      "edits": [
+        {
+          "old_offset": 2119,
+          "replacement": 7
+        },
+        {
+          "old_offset": 6143,
+          "replacement": 8
+        },
+        {
+          "old_offset": 6510,
+          "replacement": 9
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "",
+      "new": "import major_achievement_banners_publication as major_achievement_banners\n"
+    },
+    {
+      "old": "                 (a07_set_context, a07_set_context.V88_ADDITIONS))\n",
+      "new": "                 (a07_set_context, a07_set_context.V88_ADDITIONS),\n                 (major_achievement_banners, major_achievement_banners.V89_ADDITIONS))\n"
+    },
+    {
+      "old": "<style id=\"cq-reader-journey-style\">.cq-journey-nav{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem 1.1rem;margin:1rem 0;padding:.7rem 0;line-height:1.7;font-size:.9rem}.cq-journey-nav a{white-space:normal;text-decoration:underline;text-underline-offset:.18em}.cq-journey-actions{display:flex;flex-wrap:wrap;gap:.6rem 1.3rem;align-items:center;margin:1rem 0}.cq-journey-actions a{font-weight:600;text-decoration:underline;text-underline-offset:.2em}.cq-journey-bridge{box-sizing:border-box;max-width:1120px;margin:1rem auto 1.5rem;padding:1rem 1.2rem;background:#f0f7f7;border-left:3px solid #177c80;line-height:1.85;color:#294e5a}.cq-journey-bridge p{margin:.3rem 0}.cq-journey-fold{margin:1rem 0;padding:.8rem 1rem;border:1px solid #d5e1e5;border-radius:8px;background:#f8fafb;line-height:1.8}.cq-journey-fold>summary{font-weight:600;cursor:pointer;color:#275867}.cq-journey-fold[open]>summary{margin-bottom:.8rem}.cq-deep:target,.cq-study:target{scroll-margin-top:6rem}.cq-journey-note{font-size:.88rem;color:#496471}.cq-journey-nav .cq-journey-ai{margin-left:auto;font-weight:400}@media(max-width:700px){.cq-journey-nav{gap:.4rem .8rem}.cq-journey-nav .cq-journey-ai{margin-left:0}.cq-journey-actions{gap:.6rem 1rem}.cq-journey-bridge{margin:1rem 0;padding:.9rem 1rem}.cq-journey-fold{padding:.7rem .8rem}}</style>\n",
+      "new": "<style id=\"cq-reader-journey-style\">.cq-journey-nav{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem 1.1rem;margin:1rem 0;padding:.7rem 0;line-height:1.7;font-size:.9rem}.cq-journey-nav a{white-space:normal;text-decoration:underline;text-underline-offset:.18em}.cq-journey-actions{display:flex;flex-wrap:wrap;gap:.6rem 1.3rem;align-items:center;margin:1rem 0}.cq-journey-actions a{font-weight:600;text-decoration:underline;text-underline-offset:.2em}.cq-journey-bridge{box-sizing:border-box;max-width:1120px;margin:1rem auto 1.5rem;padding:1rem 1.2rem;background:#f0f7f7;border-left:3px solid #177c80;line-height:1.85;color:#294e5a}.cq-journey-bridge p{margin:.3rem 0}.cq-journey-fold{margin:1rem 0;padding:.8rem 1rem;border:1px solid #d5e1e5;border-radius:8px;background:#f8fafb;line-height:1.8}.cq-journey-fold>summary{font-weight:600;cursor:pointer;color:#275867}.cq-journey-fold[open]>summary{margin-bottom:.8rem}.cq-deep:target,.cq-study:target{scroll-margin-top:6rem}.cq-journey-note{font-size:.88rem;color:#496471}.cq-journey-nav .cq-journey-ai{margin-left:auto;font-weight:400}@media(max-width:700px){.cq-journey-nav{gap:.4rem .8rem}.cq-journey-nav .cq-journey-ai{margin-left:0}.cq-journey-actions{gap:.6rem 1rem}.cq-journey-bridge{margin:1rem 0;padding:.9rem 1rem}.cq-journey-fold{padding:.7rem .8rem}}@media(max-width:700px){header .cq-reader-nav .cq-journey-separator{display:none}}</style>\n"
+    },
+    {
+      "old": "  <p class=\"reader-breadcrumbs\" style=\"font-size:.9rem;line-height:1.8;margin:12px 0\"><a href=\"../../index.html#line-a06\">所属成果线 A06（磺酸酯、二氟卡宾与三氟甲基化）</a> · <a href=\"../../index.html\">平台首页</a> · <a href=\"../../achievements/index.html#major-achievement-reagents\">主要学术成就</a> · <a href=\"../index.html\">专题索引</a></p>\n  <nav class=\"cq-journey-nav\" aria-label=\"本专题阅读导航\">\n    <a href=\"#a06-contributions\">成就概览</a>\n    <a href=\"#a06-representative-study\">用MFSDA甲酯引入三氟甲基</a>\n    <a href=\"#a06-tfda-cooperation\">用TFDA硅酯构建偕二氟环丙烷</a>\n    <a href=\"#a06-steroid-application\">甾体应用与两项原刊核查</a>\n    <a href=\"#record-reagent-identity\">从甲酯到金属盐的后续用途</a>\n    <a href=\"#a06-ai-collation\">AI辅助整理</a>\n  </nav>\n",
+      "new": "  <p class=\"reader-breadcrumbs\" style=\"font-size:.9rem;line-height:1.8;margin:12px 0\">\n  <a href=\"../../index.html#line-a06\">所属成果线 A06（磺酸酯、二氟卡宾与三氟甲基化）</a> <span aria-hidden=\"true\">·</span> <a href=\"../../topics/index.html\">专题索引</a>\n</p>\n  <nav class=\"cq-reader-nav cq-journey-nav\" aria-label=\"本专题阅读导航\">\n  <a class=\"cq-journey-link\" href=\"../../index.html\">平台首页</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"../../achievements/index.html#heritage-inventory\">九条成果线</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"#a06-representative-study\">用MFSDA甲酯引入三氟甲基</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"#a06-historical-methods\" title=\"两项方法的提交与核查\">原刊精读</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"#a06-tfda-cooperation\">用TFDA硅酯构建偕二氟环丙烷</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"../../research/index.html#ai-a06\">AI辅助整理</a>\n</nav>\n"
+    },
+    {
+      "old": "<style id=\"cq-reader-journey-style\">.cq-journey-nav{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem 1.1rem;margin:1rem 0;padding:.7rem 0;line-height:1.7;font-size:.9rem}.cq-journey-nav a{white-space:normal;text-decoration:underline;text-underline-offset:.18em}.cq-journey-actions{display:flex;flex-wrap:wrap;gap:.6rem 1.3rem;align-items:center;margin:1rem 0}.cq-journey-actions a{font-weight:600;text-decoration:underline;text-underline-offset:.2em}.cq-journey-bridge{box-sizing:border-box;max-width:1120px;margin:1rem auto 1.5rem;padding:1rem 1.2rem;background:#f0f7f7;border-left:3px solid #177c80;line-height:1.85;color:#294e5a}.cq-journey-bridge p{margin:.3rem 0}.cq-journey-fold{margin:1rem 0;padding:.8rem 1rem;border:1px solid #d5e1e5;border-radius:8px;background:#f8fafb;line-height:1.8}.cq-journey-fold>summary{font-weight:600;cursor:pointer;color:#275867}.cq-journey-fold[open]>summary{margin-bottom:.8rem}.cq-deep:target,.cq-study:target{scroll-margin-top:6rem}.cq-journey-note{font-size:.88rem;color:#496471}.cq-journey-nav .cq-journey-ai{margin-left:auto;font-weight:400}@media(max-width:700px){.cq-journey-nav{gap:.4rem .8rem}.cq-journey-nav .cq-journey-ai{margin-left:0}.cq-journey-actions{gap:.6rem 1rem}.cq-journey-bridge{margin:1rem 0;padding:.9rem 1rem}.cq-journey-fold{padding:.7rem .8rem}}</style>\n",
+      "new": "<style id=\"cq-reader-journey-style\">.cq-journey-nav{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem 1.1rem;margin:1rem 0;padding:.7rem 0;line-height:1.7;font-size:.9rem}.cq-journey-nav a{white-space:normal;text-decoration:underline;text-underline-offset:.18em}.cq-journey-actions{display:flex;flex-wrap:wrap;gap:.6rem 1.3rem;align-items:center;margin:1rem 0}.cq-journey-actions a{font-weight:600;text-decoration:underline;text-underline-offset:.2em}.cq-journey-bridge{box-sizing:border-box;max-width:1120px;margin:1rem auto 1.5rem;padding:1rem 1.2rem;background:#f0f7f7;border-left:3px solid #177c80;line-height:1.85;color:#294e5a}.cq-journey-bridge p{margin:.3rem 0}.cq-journey-fold{margin:1rem 0;padding:.8rem 1rem;border:1px solid #d5e1e5;border-radius:8px;background:#f8fafb;line-height:1.8}.cq-journey-fold>summary{font-weight:600;cursor:pointer;color:#275867}.cq-journey-fold[open]>summary{margin-bottom:.8rem}.cq-deep:target,.cq-study:target{scroll-margin-top:6rem}.cq-journey-note{font-size:.88rem;color:#496471}.cq-journey-nav .cq-journey-ai{margin-left:auto;font-weight:400}@media(max-width:700px){.cq-journey-nav{gap:.4rem .8rem}.cq-journey-nav .cq-journey-ai{margin-left:0}.cq-journey-actions{gap:.6rem 1rem}.cq-journey-bridge{margin:1rem 0;padding:.9rem 1rem}.cq-journey-fold{padding:.7rem .8rem}}@media(max-width:700px){header .cq-reader-nav .cq-journey-separator{display:none}}</style>\n"
+    },
+    {
+      "old": "<p class=\"reader-breadcrumbs\" style=\"font-size:.9rem;line-height:1.8;margin:12px 0\">\r\n<a href=\"../../index.html#line-a08\">所属成果线 A08（交叉研究与晚年拓展）</a> · <a href=\"../../index.html\">平台首页</a> · <a href=\"../../achievements/index.html#major-achievement-porphyrins\">主要学术成就</a> · <a href=\"../index.html\">专题索引</a>\r\n",
+      "new": "<p class=\"reader-breadcrumbs\" style=\"font-size:.9rem;line-height:1.8;margin:12px 0\">\n  <a href=\"../../index.html#line-a08\">所属成果线 A08（交叉研究与晚年拓展）</a> <span aria-hidden=\"true\">·</span> <a href=\"../../topics/index.html\">专题索引</a>\n"
+    },
+    {
+      "old": "<nav class=\"cq-journey-nav\" aria-label=\"本专题阅读导航\">\n  <a href=\"#fluoroalkylporphyrins\">成就概览</a>\n  <a href=\"#topic-fluoroporphyrins\">卟啉的直接氟烷基化与定点取代</a>\n  <a href=\"#a08-representative-study\">分离并表征20π非芳香大环</a>\n  <a href=\"#a08-contributions\">从卟啉侧链到新型大环</a>\n  <a href=\"#a08-cooperation\">跨校合作与学生培养</a>\n  <a href=\"#refs\">参考资料</a>\n",
+      "new": "<nav class=\"cq-reader-nav cq-journey-nav\" aria-label=\"本专题阅读导航\">\n  <a class=\"cq-journey-link\" href=\"../../index.html\">平台首页</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"../../achievements/index.html#heritage-inventory\">九条成果线</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"#topic-fluoroporphyrins\">卟啉的直接氟烷基化与定点取代</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"#a08-representative-study\" title=\"分离并表征20π非芳香大环\">原刊精读</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"#a08-cooperation\">跨校合作与学生培养</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"../../research/index.html#ai-a08\">AI辅助整理</a>\n"
+    },
+    {
+      "old": "<style id=\"cq-reader-journey-style\">.cq-journey-nav{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem 1.1rem;margin:1rem 0;padding:.7rem 0;line-height:1.7;font-size:.9rem}.cq-journey-nav a{white-space:normal;text-decoration:underline;text-underline-offset:.18em}.cq-journey-actions{display:flex;flex-wrap:wrap;gap:.6rem 1.3rem;align-items:center;margin:1rem 0}.cq-journey-actions a{font-weight:600;text-decoration:underline;text-underline-offset:.2em}.cq-journey-bridge{box-sizing:border-box;max-width:1120px;margin:1rem auto 1.5rem;padding:1rem 1.2rem;background:#f0f7f7;border-left:3px solid #177c80;line-height:1.85;color:#294e5a}.cq-journey-bridge p{margin:.3rem 0}.cq-journey-fold{margin:1rem 0;padding:.8rem 1rem;border:1px solid #d5e1e5;border-radius:8px;background:#f8fafb;line-height:1.8}.cq-journey-fold>summary{font-weight:600;cursor:pointer;color:#275867}.cq-journey-fold[open]>summary{margin-bottom:.8rem}.cq-deep:target,.cq-study:target{scroll-margin-top:6rem}.cq-journey-note{font-size:.88rem;color:#496471}.cq-journey-nav .cq-journey-ai{margin-left:auto;font-weight:400}@media(max-width:700px){.cq-journey-nav{gap:.4rem .8rem}.cq-journey-nav .cq-journey-ai{margin-left:0}.cq-journey-actions{gap:.6rem 1rem}.cq-journey-bridge{margin:1rem 0;padding:.9rem 1rem}.cq-journey-fold{padding:.7rem .8rem}}</style>\n",
+      "new": "<style id=\"cq-reader-journey-style\">.cq-journey-nav{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem 1.1rem;margin:1rem 0;padding:.7rem 0;line-height:1.7;font-size:.9rem}.cq-journey-nav a{white-space:normal;text-decoration:underline;text-underline-offset:.18em}.cq-journey-actions{display:flex;flex-wrap:wrap;gap:.6rem 1.3rem;align-items:center;margin:1rem 0}.cq-journey-actions a{font-weight:600;text-decoration:underline;text-underline-offset:.2em}.cq-journey-bridge{box-sizing:border-box;max-width:1120px;margin:1rem auto 1.5rem;padding:1rem 1.2rem;background:#f0f7f7;border-left:3px solid #177c80;line-height:1.85;color:#294e5a}.cq-journey-bridge p{margin:.3rem 0}.cq-journey-fold{margin:1rem 0;padding:.8rem 1rem;border:1px solid #d5e1e5;border-radius:8px;background:#f8fafb;line-height:1.8}.cq-journey-fold>summary{font-weight:600;cursor:pointer;color:#275867}.cq-journey-fold[open]>summary{margin-bottom:.8rem}.cq-deep:target,.cq-study:target{scroll-margin-top:6rem}.cq-journey-note{font-size:.88rem;color:#496471}.cq-journey-nav .cq-journey-ai{margin-left:auto;font-weight:400}@media(max-width:700px){.cq-journey-nav{gap:.4rem .8rem}.cq-journey-nav .cq-journey-ai{margin-left:0}.cq-journey-actions{gap:.6rem 1rem}.cq-journey-bridge{margin:1rem 0;padding:.9rem 1rem}.cq-journey-fold{padding:.7rem .8rem}}@media(max-width:700px){header .cq-reader-nav .cq-journey-separator{display:none}}</style>\n"
+    },
+    {
+      "old": "<p class=\"reader-breadcrumbs\" style=\"font-size:.9rem;line-height:1.8;margin:12px 0\">\r\n<a href=\"../../index.html#line-a07\">所属成果线 A07（单电子转移与C–Cl活化）</a> · <a href=\"../../index.html\">平台首页</a> · <a href=\"../../achievements/index.html#major-achievement-set\">主要学术成就</a> · <a href=\"../index.html\">专题索引</a>\n",
+      "new": "<p class=\"reader-breadcrumbs\" style=\"font-size:.9rem;line-height:1.8;margin:12px 0\">\n  <a href=\"../../index.html#line-a07\">所属成果线 A07（单电子转移与C–Cl活化）</a> <span aria-hidden=\"true\">·</span> <a href=\"../../topics/index.html\">专题索引</a>\n"
+    },
+    {
+      "old": "<nav class=\"cq-journey-nav\" aria-label=\"本专题阅读导航\">\n<a href=\"#a07-contributions\">成就概览</a>\n<a href=\"#topic-single-electron-transfer\">从溶剂效应追问反应途径</a>\n<a href=\"#a07-initiation-systems\">用不同引发方式发展氟烷基化</a>\n<a href=\"#a07-representative-study\">让特定含氟氯代物参与成键</a>\n<a href=\"#record-ccl-activation\">含氟氯代原料的选择性转化</a>\n<a href=\"#a07-ai-collation\">AI辅助整理</a>\n",
+      "new": "<nav class=\"cq-reader-nav cq-journey-nav\" aria-label=\"本专题阅读导航\">\n  <a class=\"cq-journey-link\" href=\"../../index.html\">平台首页</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"../../achievements/index.html#heritage-inventory\">九条成果线</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"#topic-single-electron-transfer\">从溶剂效应追问反应途径</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"#a07-deep-reading\" title=\"反应对照与产物证据\">原刊精读</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"#record-ccl-activation\">含氟氯代原料的选择性转化</a>\n  <span class=\"cq-journey-separator\" aria-hidden=\"true\">·</span>\n  <a class=\"cq-journey-link\" href=\"../../research/index.html#ai-a07\">AI辅助整理</a>\n"
+    }
+  ]
+}
