@@ -47,6 +47,7 @@ import a08_porphyrin_achievement_publication as a08_porphyrin_achievement
 import a08_porphyrin_context_publication as a08_porphyrin_context
 import a07_set_context_publication as a07_set_context
 import major_achievement_banners_publication as major_achievement_banners
+import a06_reagent_depth_publication as a06_reagent_depth
 from stories_rebalance_publication import PUBLICATION_PATHS, _file, _identity, _reconstruct, _sha
 
 
@@ -146,7 +147,8 @@ def _previous(root):
                  (a08_porphyrin_achievement, a08_porphyrin_achievement.V86_ADDITIONS),
                  (a08_porphyrin_context, a08_porphyrin_context.V87_ADDITIONS),
                  (a07_set_context, a07_set_context.V88_ADDITIONS),
-                 (major_achievement_banners, major_achievement_banners.V89_ADDITIONS))
+                 (major_achievement_banners, major_achievement_banners.V89_ADDITIONS),
+                 (a06_reagent_depth, a06_reagent_depth.V90_ADDITIONS))
     latest = next((revision for revision, _ in reversed(revisions) if (root/revision.MANIFEST).is_file()), None)
     if latest is None and not (root/MANIFEST).is_file():
         return root, None
