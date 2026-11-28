@@ -1,7 +1,7 @@
 """Record the aligned navigation and SET evidence updates for the major achievements."""
 
 MANIFEST = 'provenance/platform-presentation.v92.json'
-MANIFEST_SHA256 = '8a9996eb157b75423fa72c40aa4dd219ff3ab4845625335dfe81115b48cd07a3'
+MANIFEST_SHA256 = 'f7608221c992468e5bcddd790e327eb2cf03efa5716033ab18dd007c93f10e7e'
 PREDECESSOR = 'd4daf9517aaa8d23396e6af687536e058ac9f8ab'
 PRESENTATION_ID = 'PLATFORM-MAJOR-ACHIEVEMENT-NAVIGATION-20261128-v92'
 HTML_PATHS = (

@@ -180,8 +180,8 @@
       "path": "site/topics/fluoroporphyrins/index.html",
       "old_sha256": "1948aa9e056ea00ba53db78e0e943dfc00d4ffe0f418e688851a3b467f233ede",
       "old_bytes": 27766,
-      "new_sha256": "412c37c0ddf284964d17d375a850b123d8b8fba2fc2f33b589813f1f1ee85619",
-      "new_bytes": 28430,
+      "new_sha256": "ea96e6b614a1da3a03abdce9270335a9f4935546ec7a8c84ea1f138994216c82",
+      "new_bytes": 28469,
       "edits": [
         {
           "old_offset": 6791,
@@ -208,7 +208,7 @@
           "replacement": 21
         },
         {
-          "old_offset": 11217,
+          "old_offset": 11168,
           "replacement": 22
         },
         {
@@ -444,7 +444,7 @@
     },
     {
       "old": "",
-      "new": "a08-other-branches\">A08其他研究分支</a> · <a href=\"#"
+      "new": "  <p><a href=\"#a08-other-branches\">A08（交叉研究与晚年拓展）其他研究分支</a></p>\n"
     },
     {
       "old": "contributions",
