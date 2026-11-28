@@ -1,0 +1,232 @@
+{
+  "schema_version": "89.0",
+  "presentation_id": "PLATFORM-A07-SET-CONTEXT-20261128-v89",
+  "publication_kind": "a07_set_context",
+  "previous_presentation_commit": "b62fa95b1d428f3104ee45bb5e48fa3171d75d02",
+  "changed_html_paths": [
+    "achievements/index.html",
+    "topics/index.html",
+    "topics/single-electron-transfer/index.html"
+  ],
+  "changed_document_paths": [],
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v88.json",
+    "sha256": "4bead937c58fed35771b2f11242890a610333be3f8062abfffc10ddce54917b3",
+    "presentation_id": "PLATFORM-A08-PORPHYRIN-CONTEXT-20261128-v88"
+  },
+  "change_reason": "用代表实验阐明单电子转移从反应解释到成键方法的贡献，补足氯代原料转化、专利和应用边界，统一第四章与返回导航。",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "M0_resumed": false,
+  "Nemotron_training_resumed": false,
+  "reversible_text_files": [
+    {
+      "path": "scripts/story_sources_publication.py",
+      "old_sha256": "2209d9cb9fc0e9eb9f88ad0382c5cce7638d772ef829ec402b96eb3ff5a18cf2",
+      "old_bytes": 12385,
+      "new_sha256": "2e319bd2f4525addc0ea5f87151b3d3abf01166761d0429dd5162e72010f79a5",
+      "new_bytes": 12506,
+      "edits": [
+        {
+          "old_offset": 2598,
+          "replacement": 0
+        },
+        {
+          "old_offset": 8032,
+          "replacement": 1
+        }
+      ]
+    },
+    {
+      "path": "site/achievements/index.html",
+      "old_sha256": "9b08ecc3867e0525e18884dfd3cca878253fdc3b77aeec073c630de30ab2476c",
+      "old_bytes": 85322,
+      "new_sha256": "97df24760cb11c42186029e227507db227d36ce45fc4ce4c248f7c9b46af0dd7",
+      "new_bytes": 85322,
+      "edits": [
+        {
+          "old_offset": 34427,
+          "replacement": 2
+        }
+      ]
+    },
+    {
+      "path": "site/topics/index.html",
+      "old_sha256": "4c491d850391469ac5d51f7329dca293406321c594cb2efcbb4f66e83d356f29",
+      "old_bytes": 9307,
+      "new_sha256": "d5bbf534e86ea2f15eb30dd139d46b026f25346aed9b7c39f8e952bf1d7bdae0",
+      "new_bytes": 9310,
+      "edits": [
+        {
+          "old_offset": 6893,
+          "replacement": 3
+        }
+      ]
+    },
+    {
+      "path": "site/topics/single-electron-transfer/index.html",
+      "old_sha256": "8703ddf1214c2f094bf13d83e0b96f208daef31e91e6fef244cc4cb6957f8184",
+      "old_bytes": 26908,
+      "new_sha256": "5cd877c9430199aa6cc4ef470cd2a5631454c79fe9ff6d33be93d636b7579f55",
+      "new_bytes": 30249,
+      "edits": [
+        {
+          "old_offset": 6855,
+          "replacement": 4
+        },
+        {
+          "old_offset": 8497,
+          "replacement": 5
+        },
+        {
+          "old_offset": 9265,
+          "replacement": 6
+        },
+        {
+          "old_offset": 10162,
+          "replacement": 7
+        },
+        {
+          "old_offset": 11332,
+          "replacement": 8
+        },
+        {
+          "old_offset": 11402,
+          "replacement": 9
+        },
+        {
+          "old_offset": 12222,
+          "replacement": 10
+        },
+        {
+          "old_offset": 14994,
+          "replacement": 11
+        },
+        {
+          "old_offset": 15279,
+          "replacement": 12
+        },
+        {
+          "old_offset": 18157,
+          "replacement": 13
+        },
+        {
+          "old_offset": 18348,
+          "replacement": 14
+        },
+        {
+          "old_offset": 19003,
+          "replacement": 15
+        },
+        {
+          "old_offset": 19822,
+          "replacement": 16
+        },
+        {
+          "old_offset": 21529,
+          "replacement": 17
+        },
+        {
+          "old_offset": 25603,
+          "replacement": 18
+        },
+        {
+          "old_offset": 26201,
+          "replacement": 19
+        },
+        {
+          "old_offset": 26520,
+          "replacement": 20
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "",
+      "new": "import a07_set_context_publication as a07_set_context\n"
+    },
+    {
+      "old": "                 (a08_porphyrin_context, a08_porphyrin_context.V87_ADDITIONS))\n",
+      "new": "                 (a08_porphyrin_context, a08_porphyrin_context.V87_ADDITIONS),\n                 (a07_set_context, a07_set_context.V88_ADDITIONS))\n"
+    },
+    {
+      "old": "<details class=\"cq-journey-fold\"><summary>继续阅读</summary><p><a href=\"../topics/single-electron-transfer/index.html#record-ccl-activation\">工业氯代原料与碘代物制备 →</a> · <a href=\"../topics/single-electron-transfer/index.html#a07-deep-reading\">两种方法的产物与谱图 →</a></p></details>\n",
+      "new": "<details class=\"cq-journey-fold\"><summary>继续阅读</summary><p><a href=\"../topics/single-electron-transfer/index.html#record-ccl-activation\">含氟氯代原料的选择性转化 →</a> · <a href=\"../topics/single-electron-transfer/index.html#a07-deep-reading\">两种方法的产物与谱图 →</a></p></details>\n"
+    },
+    {
+      "old": "<section class=\"topic-line\" id=\"topic-line-a07\"><h2><a href=\"../index.html#line-a07\">A07（单电子转移与C–Cl活化）</a></h2><ul><li><a href=\"single-electron-transfer/index.html#topic-single-electron-transfer\">主要成就：单电子转移与氟烷基化方法</a></li><li><a href=\"single-electron-transfer/index.html#a07-contributions\">完整研究分支</a></li><li><a href=\"single-electron-transfer/index.html#a07-set-synthesis\">铜参与的含氟烯烃合成</a></li><li><a href=\"single-electron-transfer/index.html#record-ccl-activation\">后续C–Cl活化与原料转化</a></li><li><a href=\"single-electron-transfer/index.html#a07-intramolecular-cyclization\">分子内环化</a></li></ul></section>\n",
+      "new": "<section class=\"topic-line\" id=\"topic-line-a07\"><h2><a href=\"../index.html#line-a07\">A07（单电子转移与C–Cl活化）</a></h2><ul><li><a href=\"single-electron-transfer/index.html#topic-single-electron-transfer\">主要成就：单电子转移与氟烷基化方法</a></li><li><a href=\"single-electron-transfer/index.html#a07-contributions\">完整研究分支</a></li><li><a href=\"single-electron-transfer/index.html#a07-set-synthesis\">铜参与的含氟烯烃合成</a></li><li><a href=\"single-electron-transfer/index.html#record-ccl-activation\">含氟氯代原料的选择性转化</a></li><li><a href=\"single-electron-transfer/index.html#a07-intramolecular-cyclization\">分子内环化</a></li></ul></section>\n"
+    },
+    {
+      "old": "<a href=\"#record-ccl-activation\">拓展含氟氯代原料的用途</a>\n",
+      "new": "<a href=\"#record-ccl-activation\">含氟氯代原料的选择性转化</a>\n"
+    },
+    {
+      "old": "  <p class=\"cq-achievement-lede\">陈庆云与合作者从换溶剂后产物发生变化的现象出发，系统考察金属、亲核试剂、氧化剂和光照怎样引发含氟卤代物反应。他们发展了多种氟烷基化方法，后来又使部分较难反应的含氟氯代物参与合成。陈庆云主持的“氟化学中单电子转移反应的研究”获1989年度国家自然科学奖二等奖。</p>\n",
+      "new": "  <p class=\"cq-achievement-lede\">当经典亲核取代难以把氟烷基接到目标分子上，能否先让含氟卤代物接受一个电子，再由生成的自由基成键？陈庆云与合作者从更换溶剂后产物发生变化的现象出发，系统探索了这条思路。他们比较不同引发条件与实验现象，把对反应起点的研究变成了多种氟烷基化方法。陈庆云主持的“氟化学中单电子转移反应的研究”获1989年度国家自然科学奖二等奖。后续工作把原料范围扩展到一些原本难以参与成键的含氟氯代物。</p>\n"
+    },
+    {
+      "old": "      <p class=\"cq-achievement-note\">从异常观察到可比较的实验问题。</p>\n",
+      "new": "      <p class=\"cq-achievement-note\">用溶剂和对照实验研究成键从何开始。</p>\n"
+    },
+    {
+      "old": "      <h3><a href=\"#record-ccl-activation\">拓展含氟氯代原料的用途</a></h3>\n      <p>团队使同一种工业来源原料在不同金属体系中生成不同产物，并发展了制备全氟烷基碘、构建含氟稠环的途径。</p>\n      <p class=\"cq-achievement-note\">原料转化、共同发明及卟啉研究的启发。</p>\n",
+      "new": "      <h3><a href=\"#record-ccl-activation\">含氟氯代原料的选择性转化</a></h3>\n      <p>唐小军与陈庆云让同一种氢氯氟烃在镍、铜体系中生成不同产物。陈庆云与曹海萍则以较易取得的全氟氯代物为起点，制备后续合成所需的全氟烷基碘。</p>\n      <p class=\"cq-achievement-note\">受控原料的实验转化、专利路线与含氟稠环。</p>\n"
+    },
+    {
+      "old": "",
+      "new": "  <h3>从直接进攻碳原子到先转移一个电子</h3>\n  <p>经典双分子亲核取代（S<sub>N</sub>2）由亲核试剂直接进攻带离去基团的碳原子。陈庆云与合作者发展了单电子转移（SET）在有机氟化学中的应用。在合适的体系中，含氟卤代物接受一个电子并发生碳–卤键断裂，生成可以参与成键的氟烷基自由基。</p>\n  <p>1985年，陈庆云与杨震宇报告，在乙酸酐体系中观察到符合自由基途径的捕获反应和苯乙烯聚合现象。改用二甲基亚砜（DMSO）时，作者提出反应可能经过氟烷基铜中间体。同一研究中的介质对照显示，解释反应路径要与具体条件和实验现象对应。</p>\n"
+    },
+    {
+      "old": "  <p>F-53研究积累的含氟原料为后续基础研究提供了材料。黄维垣小组发展脱卤亚磺化，即把含氟卤代物转成相应的亚磺酸盐。胡昌明小组研究氧化还原引发。陈庆云小组从低价金属切入，进而考察其他引发条件。在部分反应中，作者用单电子转移解释含氟卤代物怎样接受一个电子，生成随后参与成键的氟烷基自由基。</p>\n",
+      "new": "  <p>F-53研究积累的含氟原料为后续基础研究提供了材料。黄维垣小组发展脱卤亚磺化，即把含氟卤代物转成相应的亚磺酸盐。胡昌明小组研究氧化还原引发。陈庆云小组从低价金属切入，进而将亲核试剂、氧化剂和光照列入研究。他们用产物、捕获和抑制等实验寻找反应如何启动的证据，也由此拓展了氟烷基化能构建的化学键。</p>\n"
+    },
+    {
+      "old": "  <p class=\"a07-return\"><a href=\"#a07-contributions\">返回成就概览</a></p>\n",
+      "new": "  <p class=\"a07-return\"><a href=\"#a07-contributions\"><span aria-hidden=\"true\">↑ </span>返回本页概览</a></p>\n"
+    },
+    {
+      "old": "  <p class=\"a07-return\"><a href=\"#a07-contributions\">返回成就概览</a></p>\n",
+      "new": "  <p class=\"a07-return\"><a href=\"#a07-contributions\"><span aria-hidden=\"true\">↑ </span>返回本页概览</a></p>\n"
+    },
+    {
+      "old": "",
+      "new": "  <p>早期氟烷基化多以反应性较高的碘代物为起点。针对部分全氟和多氟烷基氯代物，困难在于能否启动碳–氯键断裂，再让氟烷基与目标分子成键。龙正宇、黄小庭与陈庆云分别从溶剂和金属体系入手，获得了从这些氯代物直接引入氟烷基的方法。</p>\n"
+    },
+    {
+      "old": "  <p class=\"a07-return\"><a href=\"#a07-contributions\">返回成就概览</a></p>\n",
+      "new": "  <p class=\"a07-return\"><a href=\"#a07-contributions\"><span aria-hidden=\"true\">↑ </span>返回本页概览</a></p>\n"
+    },
+    {
+      "old": "  <h2 id=\"a07-ccl-extension-title\">拓展含氟氯代原料的用途</h2>\n  <h3>让同一种原料走向不同产物</h3>\n  <p>2012年，唐小军与陈庆云报告，同一种工业来源原料HCFC-133a在零价镍体系中生成1,1,1-三氟乙烷，在零价铜体系中则生成偏二氟乙烯。两人还报道，HCFC-123可在铜参与下与苯酚类或苯硫酚类化合物偶联，构建碳氧键或碳硫键。</p>\n",
+      "new": "  <h2 id=\"a07-ccl-extension-title\">含氟氯代原料的选择性转化</h2>\n  <h3>让同一种氢氯氟烃走向不同产物</h3>\n  <p>2012年，唐小军与陈庆云用两套体系转化HCFC-133a。零价镍体系得到1,1,1-三氟乙烷（HFC-143a），零价铜体系得到偏二氟乙烯，这是制备含氟聚合物的一种单体。作者提出，铜体系得到烯烃，可能是碳–氯键断裂生成的自由基再从一价铜中间体接受一个电子，随后发生消除反应。</p>\n  <p>在另一项研究中，两人用铜介导HCFC-123与苯酚或苯硫酚类化合物偶联，分别构建碳–氧键或碳–硫键。作者发现二乙胺兼作活化剂与铜配体，并提出两种可能的自由基途径。</p>\n"
+    },
+    {
+      "old": "  <p>陈庆云与曹海萍共同发明了把所列全氟烷基氯、溴代物经亚磺酸盐转化为相应全氟烷基碘的方法。2005年由上海有机所申请的<a href=\"#a07-source-patent\">专利文书</a>记录了这条原料转化路线及发明人。</p>\n",
+      "new": "  <p>陈庆云与曹海萍以专利说明书所述较易取得、价格较低的全氟烷基氯为起点制备相应碘代物。所列氯代物或溴代物先转成亚磺酸盐，再用碘和氧化剂制得碘代产物。这条路线避开了专利所比较的元素氟起始工艺。上海有机所于2005年<a href=\"#a07-source-patent\">申请专利</a>，2007年获授权。授权稿实例4报告，从全氟辛基氯制得7.2克全氟辛基碘，产率为66%。</p>\n  <h3>原料利用与环境效益</h3>\n  <p>HCFC-123和HCFC-133a属于《蒙特利尔议定书》管控的氢氯氟烃。上述实验展示了这些受控原料可以转化为不同的含氟产物。实际工业成本与环境效益仍需结合放大运行、原料和试剂消耗、排放与产物用途评估。镍体系所得的HFC-143a也列入该议定书的附件F。</p>\n"
+    },
+    {
+      "old": "  <p class=\"a07-return\"><a href=\"#a07-contributions\">返回成就概览</a></p>\n",
+      "new": "  <p class=\"a07-return\"><a href=\"#a07-contributions\"><span aria-hidden=\"true\">↑ </span>返回本页概览</a></p>\n"
+    },
+    {
+      "old": "",
+      "new": "陈庆云、杨震宇。<a href=\"https://sioc-journal.cn/Jwk_hxxb/CN/Y1985/V43/I11/1073\">氟烷基化和氟烷氧基化的研究2.在铜存在下氟烷基碘与芳烃的反应</a>。《化学学报》1985，43(11)：1073–1078。摘要记乙酸酐体系中的捕获和聚合现象，以及二甲基亚砜体系的机理解释。</li>\r\n<li>\r\n"
+    },
+    {
+      "old": "</span>陈庆云、曹海萍：<a href=\"https://patents.google.com/patent/CN1752059A/zh\">从全氟烷基氯制备全氟烷基碘</a>。申请200510031063.4，2005年10月21日；CN1752059A与CN1298686C为同一申请的公开／授权公告版本。申请人：中国科学院上海有机化学研究所。</li>\r\n",
+      "new": "</span>陈庆云、曹海萍：<a href=\"https://patents.google.com/patent/CN1752059A/zh\">从全氟烷基氯制备全氟烷基碘</a>。申请200510031063.4，2005年10月21日；2006年3月29日<a href=\"https://patents.google.com/patent/CN1752059A/zh\">公开（CN1752059A）</a>，2007年2月7日<a href=\"https://patents.google.com/patent/CN1298686C/zh\">授权公告（CN1298686C）</a>。申请人：中国科学院上海有机化学研究所。</li>\r\n"
+    },
+    {
+      "old": "",
+      "new": "<li>联合国环境规划署臭氧秘书处。《蒙特利尔议定书》<a href=\"https://ozone.unep.org/treaties/montreal-protocol/articles/annex-c-controlled-substances\">附件C</a>列氢氯氟烃及HCFC-133同分异构体组，<a href=\"https://ozone.unep.org/lists-substances-and-blends\">物质清单</a>列HCFC-133a，<a href=\"https://ozone.unep.org/treaties/montreal-protocol/articles/annex-f-controlled-substances\">附件F</a>列HFC-143a。</li>\r\n"
+    },
+    {
+      "old": "<nav class=\"cq-journey-nav\" aria-label=\"页末阅读导航\"><a href=\"../../index.html\">返回平台首页</a> · <a href=\"../../achievements/index.html#line-a07\">返回成果汇总</a> · <a href=\"../index.html\">返回专题索引</a> · <a href=\"#a07-contributions\">返回成就概览</a></nav>\n",
+      "new": "<nav class=\"cq-journey-nav\" aria-label=\"页末阅读导航\"><a href=\"../../index.html\">返回平台首页</a> · <a href=\"../../achievements/index.html#line-a07\">返回成果汇总</a> · <a href=\"../index.html\">返回专题索引</a> · <a href=\"#a07-contributions\"><span aria-hidden=\"true\">↑ </span>返回本页概览</a></nav>\n"
+    }
+  ]
+}
