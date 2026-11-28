@@ -1,0 +1,86 @@
+{
+  "schema_version": "93.0",
+  "presentation_id": "PLATFORM-MAJOR-ACHIEVEMENT-TITLES-20261128-v93",
+  "publication_kind": "major_achievement_titles",
+  "previous_presentation_commit": "a70695525c33f69b6b7668d33c01ffcd060139d6",
+  "changed_html_paths": [
+    "topics/f53/index.html",
+    "topics/single-electron-transfer/index.html"
+  ],
+  "changed_document_paths": [],
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v92.json",
+    "sha256": "f7608221c992468e5bcddd790e327eb2cf03efa5716033ab18dd007c93f10e7e",
+    "presentation_id": "PLATFORM-MAJOR-ACHIEVEMENT-NAVIGATION-20261128-v92"
+  },
+  "change_reason": "将A04和A07的页首标题精简为专题名称，与A06的标题样式一致。",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "M0_resumed": false,
+  "Nemotron_training_resumed": false,
+  "reversible_text_files": [
+    {
+      "path": "scripts/story_sources_publication.py",
+      "old_sha256": "44cbca6c3e69dbca10101ef1143b279038c517f075fc4e84ec41e612222d1b59",
+      "old_bytes": 12969,
+      "new_sha256": "810ebb2bf537b9f2d3f2c13be5968a85dbf88e29f416d359efff8d09fe565b9d",
+      "new_bytes": 13126,
+      "edits": [
+        {
+          "old_offset": 2784,
+          "replacement": 0
+        },
+        {
+          "old_offset": 8602,
+          "replacement": 1
+        }
+      ]
+    },
+    {
+      "path": "site/topics/f53/index.html",
+      "old_sha256": "5b77781cb19be02da9b1f306667c3a388e65a8970331ed9b583a08b29af2e6d6",
+      "old_bytes": 37859,
+      "new_sha256": "73c9784b96eb9f789d2668ec5c7601cbc12b766f990aeea7bdb3d58d88fb67b9",
+      "new_bytes": 37850,
+      "edits": [
+        {
+          "old_offset": 4445,
+          "replacement": 2
+        }
+      ]
+    },
+    {
+      "path": "site/topics/single-electron-transfer/index.html",
+      "old_sha256": "fa45050a1a2e3b7e79e0f73cd1b2db50fa3a9471ad1b4a61138f4ce0434f5a53",
+      "old_bytes": 34444,
+      "new_sha256": "91bc3a649098fe0f6e75a4b20b22a1169a90a90ebd8dedf99c53be21f0aac05d",
+      "new_bytes": 34435,
+      "edits": [
+        {
+          "old_offset": 6176,
+          "replacement": 3
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "import major_achievement_navigation_publication as major_achievement_navigation\n",
+      "new": "import major_achievement_navigation_publication as major_achievement_navigation\nimport major_achievement_titles_publication as major_achievement_titles\n"
+    },
+    {
+      "old": "                 (major_achievement_navigation, major_achievement_navigation.V91_ADDITIONS))\n",
+      "new": "                 (major_achievement_navigation, major_achievement_navigation.V91_ADDITIONS),\n                 (major_achievement_titles, major_achievement_titles.V92_ADDITIONS))\n"
+    },
+    {
+      "old": "<h1>A04（F-53铬雾抑制剂）</h1>",
+      "new": "<h1>F-53铬雾抑制剂</h1>"
+    },
+    {
+      "old": "<h1>A07（单电子转移与C–Cl活化）</h1>",
+      "new": "<h1>单电子转移与C–Cl活化</h1>"
+    }
+  ]
+}

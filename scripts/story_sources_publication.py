@@ -49,6 +49,7 @@ import a07_set_context_publication as a07_set_context
 import major_achievement_banners_publication as major_achievement_banners
 import a06_reagent_depth_publication as a06_reagent_depth
 import major_achievement_navigation_publication as major_achievement_navigation
+import major_achievement_titles_publication as major_achievement_titles
 from stories_rebalance_publication import PUBLICATION_PATHS, _file, _identity, _reconstruct, _sha
 
 
@@ -150,7 +151,8 @@ def _previous(root):
                  (a07_set_context, a07_set_context.V88_ADDITIONS),
                  (major_achievement_banners, major_achievement_banners.V89_ADDITIONS),
                  (a06_reagent_depth, a06_reagent_depth.V90_ADDITIONS),
-                 (major_achievement_navigation, major_achievement_navigation.V91_ADDITIONS))
+                 (major_achievement_navigation, major_achievement_navigation.V91_ADDITIONS),
+                 (major_achievement_titles, major_achievement_titles.V92_ADDITIONS))
     latest = next((revision for revision, _ in reversed(revisions) if (root/revision.MANIFEST).is_file()), None)
     if latest is None and not (root/MANIFEST).is_file():
         return root, None
