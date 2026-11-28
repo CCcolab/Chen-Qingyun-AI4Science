@@ -1,0 +1,192 @@
+{
+  "schema_version": "88.0",
+  "presentation_id": "PLATFORM-A08-PORPHYRIN-CONTEXT-20261128-v88",
+  "publication_kind": "a08_porphyrin_context",
+  "previous_presentation_commit": "b4bd41e5749e80958179018359315a7c370d40c9",
+  "changed_html_paths": [
+    "achievements/index.html",
+    "index.html",
+    "topics/fluoroporphyrins/index.html"
+  ],
+  "changed_document_paths": [],
+  "previous_presentation": {
+    "path": "provenance/platform-presentation.v87.json",
+    "sha256": "c451771f4358a208033753a44f3d4cc1f73174f2f493031e64058ad27334e979",
+    "presentation_id": "PLATFORM-A08-PORPHYRIN-ACHIEVEMENT-20261128-v87"
+  },
+  "change_reason": "补充氟烷基卟啉合作起点与20π异卟啉分离的历史背景，区分实验、综述解释和学术评价，统一第一章与返回导航文案。",
+  "scientific_review_status": "review_required",
+  "release_eligible": false,
+  "scientific_data_unchanged": true,
+  "historical_achievement_independent_of_AI_review": true,
+  "M0_resumed": false,
+  "Nemotron_training_resumed": false,
+  "reversible_text_files": [
+    {
+      "path": "scripts/story_sources_publication.py",
+      "old_sha256": "3501a1d09676084635c573d1f344f76b0de4eff7473db9ecb02475dbc506eb1a",
+      "old_bytes": 12240,
+      "new_sha256": "2209d9cb9fc0e9eb9f88ad0382c5cce7638d772ef829ec402b96eb3ff5a18cf2",
+      "new_bytes": 12385,
+      "edits": [
+        {
+          "old_offset": 2532,
+          "replacement": 0
+        },
+        {
+          "old_offset": 7879,
+          "replacement": 1
+        }
+      ]
+    },
+    {
+      "path": "site/achievements/index.html",
+      "old_sha256": "ad197f592f95df11a48d6ced98b7f9db462ea6dee2d21bdd20724626bbf23395",
+      "old_bytes": 85322,
+      "new_sha256": "9b08ecc3867e0525e18884dfd3cca878253fdc3b77aeec073c630de30ab2476c",
+      "new_bytes": 85322,
+      "edits": [
+        {
+          "old_offset": 15595,
+          "replacement": 2
+        }
+      ]
+    },
+    {
+      "path": "site/index.html",
+      "old_sha256": "e12125496927c43d9756bd06758dd8f4cad046616ef30c171ff555256d7d90bf",
+      "old_bytes": 221492,
+      "new_sha256": "50c06a184ce7038e4b5b74aa41c59c263163b7f5eab2196d2a9acfc6bb37b09b",
+      "new_bytes": 221492,
+      "edits": [
+        {
+          "old_offset": 18293,
+          "replacement": 3
+        }
+      ]
+    },
+    {
+      "path": "site/topics/fluoroporphyrins/index.html",
+      "old_sha256": "eb65a74298044820cd10574fa72cdbcbd379064bafa9648c07cd36c85092181e",
+      "old_bytes": 25772,
+      "new_sha256": "360c36de049cf8566c9fb701891546313015dea8e7ce0a39a0881965fc13cd51",
+      "new_bytes": 27237,
+      "edits": [
+        {
+          "old_offset": 6540,
+          "replacement": 4
+        },
+        {
+          "old_offset": 8464,
+          "replacement": 5
+        },
+        {
+          "old_offset": 9023,
+          "replacement": 6
+        },
+        {
+          "old_offset": 9492,
+          "replacement": 7
+        },
+        {
+          "old_offset": 10696,
+          "replacement": 8
+        },
+        {
+          "old_offset": 12504,
+          "replacement": 9
+        },
+        {
+          "old_offset": 14135,
+          "replacement": 10
+        },
+        {
+          "old_offset": 16421,
+          "replacement": 11
+        },
+        {
+          "old_offset": 19094,
+          "replacement": 12
+        },
+        {
+          "old_offset": 22804,
+          "replacement": 13
+        },
+        {
+          "old_offset": 23931,
+          "replacement": 14
+        },
+        {
+          "old_offset": 25301,
+          "replacement": 15
+        }
+      ]
+    }
+  ],
+  "reverse_text_patch_pool": [
+    {
+      "old": "",
+      "new": "import a08_porphyrin_context_publication as a08_porphyrin_context\n"
+    },
+    {
+      "old": "                 (a08_porphyrin_achievement, a08_porphyrin_achievement.V86_ADDITIONS))\n",
+      "new": "                 (a08_porphyrin_achievement, a08_porphyrin_achievement.V86_ADDITIONS),\n                 (a08_porphyrin_context, a08_porphyrin_context.V87_ADDITIONS))\n"
+    },
+    {
+      "old": "<p class=\"major-line\"><a href=\"../topics/fluoroporphyrins/index.html#topic-fluoroporphyrins\">在卟啉上控制氟烷基的引入位置</a> · <a href=\"../topics/fluoroporphyrins/index.html#a08-representative-study\">分离并表征20π非芳香大环</a> · <a href=\"#line-a08\">所属成果线 A08（交叉研究与晚年拓展）</a></p></article>\n",
+      "new": "<p class=\"major-line\"><a href=\"../topics/fluoroporphyrins/index.html#topic-fluoroporphyrins\">卟啉的直接氟烷基化与定点取代</a> · <a href=\"../topics/fluoroporphyrins/index.html#a08-representative-study\">分离并表征20π非芳香大环</a> · <a href=\"#line-a08\">所属成果线 A08（交叉研究与晚年拓展）</a></p></article>\n"
+    },
+    {
+      "old": "<p class=\"major-line\"><a href=\"topics/fluoroporphyrins/index.html#topic-fluoroporphyrins\">在卟啉上控制氟烷基的引入位置</a> · <a href=\"topics/fluoroporphyrins/index.html#a08-representative-study\">分离并表征20π非芳香大环</a> · <a href=\"#line-a08\">所属成果线 A08（交叉研究与晚年拓展）</a></p></article>\n",
+      "new": "<p class=\"major-line\"><a href=\"topics/fluoroporphyrins/index.html#topic-fluoroporphyrins\">卟啉的直接氟烷基化与定点取代</a> · <a href=\"topics/fluoroporphyrins/index.html#a08-representative-study\">分离并表征20π非芳香大环</a> · <a href=\"#line-a08\">所属成果线 A08（交叉研究与晚年拓展）</a></p></article>\n"
+    },
+    {
+      "old": "  <a href=\"#topic-fluoroporphyrins\">在卟啉上控制氟烷基的引入位置</a>\n",
+      "new": "  <a href=\"#topic-fluoroporphyrins\">卟啉的直接氟烷基化与定点取代</a>\n"
+    },
+    {
+      "old": "  <p class=\"cq-achievement-lede\">陈庆云与合作者把有机氟反应带入卟啉化学。团队先发表了在已成环的卟啉上直接接入全氟烷基的方法，随后发展了另一条路线，借助溴代位点控制三氟甲基的引入位置和数量。在此基础上，刘超、沈冬梅与陈庆云分离并表征了一种无中心金属的20π非芳香大环，使伍德沃德曾设想的卟啉型结构有了一个可分离、可测量的含氟实例。</p>\n",
+      "new": "  <p class=\"cq-achievement-lede\">2000年，71岁的陈庆云受聘湖南大学，与合作者把有机氟方法用于卟啉研究。他们先在已成环的卟啉上直接引入全氟烷基，再发展定点引入三氟甲基的方法。伍德沃德曾在叶绿素全合成研究中提出20π异卟啉的结构设想，这类大环容易氧化，长期难以分离。2007年，刘超、沈冬梅与陈庆云从带四个三氟甲基的铜卟啉出发，分离出无中心金属的20π非芳香异卟啉并测定单晶结构，为这一设想提供了可独立表征的含氟实例。</p>\n"
+    },
+    {
+      "old": "      <h3><a href=\"#topic-fluoroporphyrins\">在卟啉上控制氟烷基的引入位置</a></h3>\n      <p>2005年，团队按预设的溴代位点引入三氟甲基。其中，一例在四个β位接上三氟甲基的铜卟啉，分离收率为95%。</p>\n      <p class=\"cq-achievement-note\">从直接氟烷基化到控制取代位置和数量。</p>\n",
+      "new": "      <h3><a href=\"#topic-fluoroporphyrins\">卟啉的直接氟烷基化与定点取代</a></h3>\n      <p>2003年，团队在已经成环的卟啉上接入全氟烷基。2005年，他们按预设的溴代位点引入三氟甲基，四个β位被取代的一例铜卟啉分离收率为95%。</p>\n      <p class=\"cq-achievement-note\">β位与meso位的代表性实验。</p>\n"
+    },
+    {
+      "old": "      <p>2007年，研究团队分离出无中心金属的20π二氢卟啉。论文记录的分离收率为82%，并给出单晶结构、谱图和氧化转变记录。</p>\n      <p class=\"cq-achievement-note\">从取代铜卟啉到可测量的20π样品。</p>\n",
+      "new": "      <p>从四个β位带三氟甲基的铜卟啉出发，团队分离出50毫克无中心金属的20π异卟啉，分离收率为82%，并以单晶和谱图表征。</p>\n      <p class=\"cq-achievement-note\">单晶证据、空气氧化与取代基作用。</p>\n"
+    },
+    {
+      "old": "  <h2 id=\"a08-fluoroalkylation-title\">在卟啉上控制氟烷基的引入位置</h2>\n",
+      "new": "  <h2 id=\"a08-fluoroalkylation-title\">卟啉的直接氟烷基化与定点取代</h2>\n"
+    },
+    {
+      "old": "  <p class=\"a08-return\"><a href=\"#fluoroalkylporphyrins\">返回成就概览</a></p>\n",
+      "new": "  <p class=\"a08-return\"><a href=\"#fluoroalkylporphyrins\"><span aria-hidden=\"true\">↑ </span>返回本页概览</a></p>\n"
+    },
+    {
+      "old": "  <p class=\"a08-return\"><a href=\"#fluoroalkylporphyrins\">返回成就概览</a></p>\n",
+      "new": "  <p>后续综述认为，外围四个三氟甲基的吸电子作用可能有助于稳定20π骨架，并指出内环氢之间的空间拥挤可能影响大环构型。刘超等在2024年的学术回顾中将这一成果描述为对伍德沃德结构设想的首次实验印证。</p>\n  <p class=\"a08-return\"><a href=\"#fluoroalkylporphyrins\"><span aria-hidden=\"true\">↑ </span>返回本页概览</a></p>\n"
+    },
+    {
+      "old": "  <p class=\"a08-return\"><a href=\"#fluoroalkylporphyrins\">返回成就概览</a></p>\n",
+      "new": "  <p class=\"a08-return\"><a href=\"#fluoroalkylporphyrins\"><span aria-hidden=\"true\">↑ </span>返回本页概览</a></p>\n"
+    },
+    {
+      "old": "  <p class=\"a08-return\"><a href=\"#fluoroalkylporphyrins\">返回成就概览</a></p>\n",
+      "new": "  <p class=\"a08-return\"><a href=\"#fluoroalkylporphyrins\"><span aria-hidden=\"true\">↑ </span>返回本页概览</a></p>\n"
+    },
+    {
+      "old": "<li>R. B. Woodward。<a href=\"https://doi.org/10.1351/pac196102030383\">The Total Synthesis of Chlorophyll</a>。Pure and Applied Chemistry，1961，2：383–404。<a href=\"https://media.iupac.org/publications/pac/1961/pdf/0203x0383.pdf#page=14\">IUPAC公开原刊第396页</a>图XLVIII提出20π异卟啉的结构设想。</li>\n",
+      "new": "<li>湖南大学化学化工学院。<a href=\"https://cc.hnu.edu.cn/info/1312/19003.htm\">我院举行庆祝陈庆云院士八十华诞学术报告会</a>，记载陈庆云自2000年起在湖南大学任教。</li>\r\n<li>中国科学院上海有机化学研究所。<a href=\"https://www.sioc.cas.cn/dncqy/sp/\">陈庆云先生生平</a>，记载出生日期及2000年起开展氟化学与卟啉化学的交叉研究。</li>\r\n<li>R. B. Woodward。<a href=\"https://doi.org/10.1351/pac196102030383\">The Total Synthesis of Chlorophyll</a>。Pure and Applied Chemistry，1961，2：383–404。第396页图XLVIII提出20π异卟啉的结构设想。</li>\n"
+    },
+    {
+      "old": "",
+      "new": "<li>\r\nB. K. Reddy、A. Basavarajappa、M. D. Ambhore、V. G. Anand。<a href=\"https://doi.org/10.1021/acs.chemrev.6b00544\">Isophlorinoids: The Antiaromatic Congeners of Porphyrinoids</a>。Chemical Reviews，2017，117：3420–3443。第2.5节讨论三氟甲基取代异卟啉的稳定性和构型。</li>\r\n<li>刘超、郭勇、肖吉昌。<a href=\"https://doi.org/10.1016/j.chempr.2023.12.002\">The legacy of Prof. Qing-Yun Chen: Organofluorine chemistry</a>。Chem，2024，10：7–18。回顾含氟卟啉合成与20π异卟啉研究。</li>\r\n"
+    },
+    {
+      "old": "<nav class=\"cq-journey-nav\" aria-label=\"页末阅读导航\"><a href=\"../../index.html\">返回平台首页</a> · <a href=\"../../achievements/index.html#major-achievement-porphyrins\">返回成果汇总</a> · <a href=\"../index.html\">返回专题索引</a> · <a href=\"#a08-other-branches\">同线其他专题</a> · <a href=\"#fluoroalkylporphyrins\">返回成就概览</a></nav>\r\n",
+      "new": "<nav class=\"cq-journey-nav\" aria-label=\"页末阅读导航\"><a href=\"../../index.html\">返回平台首页</a> · <a href=\"../../achievements/index.html#major-achievement-porphyrins\">返回成果汇总</a> · <a href=\"../index.html\">返回专题索引</a> · <a href=\"#a08-other-branches\">同线其他专题</a> · <a href=\"#fluoroalkylporphyrins\"><span aria-hidden=\"true\">↑ </span>返回本页概览</a></nav>\r\n"
+    }
+  ]
+}
