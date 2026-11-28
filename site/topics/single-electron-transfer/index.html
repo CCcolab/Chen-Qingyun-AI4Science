@@ -13,6 +13,7 @@
 <!-- ACHIEVEMENT_DISPLAY_STYLE:END -->
 <style id="cq-achievement-overview-style">
 .cq-achievement-overview {
+  line-height: 1.8;
   margin: 24px 0;
   padding: clamp(18px, 4vw, 38px);
   background: #fffefa;
@@ -49,13 +50,19 @@
 .cq-achievement-grid h3 {
   margin: 0 0 .35em;
   font-size: 1.12rem;
-  line-height: 1.5;
+  line-height: inherit;
 }
 .cq-achievement-grid p { margin: 0; }
 .cq-achievement-overview .cq-achievement-note {
   margin-top: .4rem;
   color: var(--muted);
   font-size: .88rem;
+}
+.cq-achievement-references {
+  max-width: 78ch;
+  margin: .6em 0;
+  color: var(--muted);
+  font-size: .92rem;
 }
 @media (max-width: 640px) {
   .cq-achievement-grid { grid-template-columns: minmax(0, 1fr); }
@@ -67,273 +74,151 @@
 <div class="wrap">
 <div class="eyebrow">有机氟化学研究与传承</div>
 <h1>A07（单电子转移与C–Cl活化）</h1>
-<p><strong>陈庆云与合作者用不同方式引发含氟卤代物反应，把氟烷基接到烯烃、炔烃和芳环等分子骨架上，后来也使部分较难反应的含氟氯代物成为合成原料。</strong></p>
 <p class="reader-breadcrumbs" style="font-size:.9rem;line-height:1.8;margin:12px 0">
-<a href="../../index.html#line-a07">所属成果线 A07（单电子转移与C–Cl活化）</a> · <a href="../../topics/index.html">专题索引</a>
+<a href="../../index.html#line-a07">所属成果线 A07（单电子转移与C–Cl活化）</a> · <a href="../../index.html">平台首页</a> · <a href="../../achievements/index.html#major-achievement-set">主要学术成就</a> · <a href="../index.html">专题索引</a>
 </p>
-<nav class="cq-journey-nav" aria-label="平台主导航">
-<a class="cq-journey-link" href="../../index.html">平台首页</a> · <a class="cq-journey-link" href="../../achievements/index.html#heritage-inventory">完整科研脉络</a> · <a class="cq-journey-link" href="#a07-initiation-systems">引发体系与合成方法</a> · <a class="cq-journey-link" href="#a07-representative-study">含氟氯代物的后续研究</a> · <a class="cq-journey-link" href="#a07-representative-study-story">合作与育人</a> · <a class="cq-journey-link" href="#a07-ai-collation">AI辅助整理</a>
+<nav class="cq-journey-nav" aria-label="本专题阅读导航">
+<a href="#a07-contributions">成就概览</a>
+<a href="#topic-single-electron-transfer">从溶剂效应追问反应途径</a>
+<a href="#a07-initiation-systems">用不同引发方式发展氟烷基化</a>
+<a href="#a07-representative-study">让特定含氟氯代物参与成键</a>
+<a href="#record-ccl-activation">拓展含氟氯代原料的用途</a>
+<a href="#a07-ai-collation">AI辅助整理</a>
 </nav>
 </div>
 </header>
 <main class="wrap">
-<style id="a07-representative-study-style">.cq-study{box-sizing:border-box;max-width:1120px;margin:28px auto;padding:clamp(22px,4vw,42px);border:1px solid #c8d8cd;border-top:4px solid #176e62;border-radius:10px;background:#fffefa;color:#182f2b;line-height:1.85;scroll-margin-top:24px}.cq-study *{box-sizing:border-box}.cq-study h2{font-size:clamp(25px,3.5vw,36px);line-height:1.45;margin:.3em 0 .7em}.cq-study h3{font-size:1.25rem;line-height:1.5;margin:1.6em 0 .7em;color:#155d55}.cq-study h4{font-size:1rem;line-height:1.6;margin:.8em 0 .3em}.cq-study p{max-width:84ch;margin:.65em 0}.cq-study a{color:#155d55;text-underline-offset:.2em}.cq-study a:focus-visible,.cq-study [tabindex]:focus-visible{outline:3px solid #aa7545;outline-offset:3px}.cq-study-label{font-size:.85rem;color:#155d55;font-weight:700}.cq-study-locator{font-size:.83rem;color:#51685e;overflow-wrap:anywhere}.cq-study-process{padding-left:1.5em}.cq-study-process>li{padding-left:.3em;margin:1.1em 0}.cq-study-table{overflow-x:auto;width:100%;margin:18px 0;border:1px solid #d6e0d9}.cq-study-table table{border-collapse:collapse;min-width:580px;width:100%;font-size:.91rem}.cq-study-table caption{text-align:left;font-weight:700;padding:12px;background:#edf3ee}.cq-study-table th,.cq-study-table td{padding:12px;border-top:1px solid #d6e0d9;text-align:left;vertical-align:top;overflow-wrap:anywhere}.cq-study-story{margin:24px 0;padding:18px 22px;background:#edf3ee;border-left:3px solid #aa7545}.cq-study-story h3{margin-top:0}.cq-study-meaning{padding:12px 18px;border-left:3px solid #176e62;background:#f5f3e9}.cq-study-references{padding-left:1.4em;font-size:.86rem;overflow-wrap:anywhere}.cq-study-references>li{margin:.9em 0;scroll-margin-top:24px}.cq-study-scope{font-size:.87rem;color:#51685e}.cq-study-nav{display:flex;flex-wrap:wrap;gap:10px 20px;border-top:1px solid #d6e0d9;padding-top:16px;margin-top:24px}@media(max-width:620px){.cq-study{margin:20px 0;padding:20px 16px;border-radius:6px}.cq-study-story{padding:14px 16px}.cq-study h2{font-size:25px}}</style>
-<style id="a07-deep-reading-entry-style">.cq-deep-entry{box-sizing:border-box;max-width:1120px;margin:20px auto;padding:12px 18px;background:#eef7f7;border-left:4px solid #177c80;line-height:1.8}.cq-deep-entry a{color:#086878;text-decoration:underline}@media(max-width:620px){.cq-deep-entry{margin:14px 10px}}</style>
-<style id="a07-deep-reading-style">.cq-deep{box-sizing:border-box;max-width:1120px;margin:28px auto;padding:clamp(20px,4vw,40px);border:1px solid #c7d9df;border-top:4px solid #177c80;border-radius:14px;background:#fff;color:#172b3a;line-height:1.85;overflow-wrap:anywhere}.cq-deep h2{font-size:clamp(1.4rem,3vw,1.9rem);line-height:1.5;margin:.4em 0 1em}.cq-deep h3{font-size:1.15rem;margin:1.6em 0 .6em}.cq-deep h4{margin:.5em 0}.cq-deep p{max-width:78ch}.cq-deep-label{font-size:.9rem;color:#25636d}.cq-deep-identity,.cq-deep-cite{font-size:.86rem;color:#496471}.cq-deep-cite{margin-top:.25em}.cq-deep a{color:#087080;text-decoration:underline;text-underline-offset:.15em}.cq-deep-flow,.cq-deep-molecules{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:16px;margin:1.2em 0;padding:0;list-style:none}.cq-deep-flow>li,.cq-deep-molecule{border:1px solid #cfdee3;border-radius:10px;padding:16px;background:#f5fafb;min-width:0}.cq-deep-step{display:block;color:#177c80;font-size:.82rem;font-weight:700}.cq-deep-flow>li p,.cq-deep-molecule p{margin:.6em 0}.cq-deep svg{display:block;max-width:100%;width:100%;height:auto;background:#fff}.cq-deep figure{margin:1.4em 0}.cq-deep figcaption{font-weight:600;margin:.8em 0}.cq-deep-note,.cq-deep-scope{font-size:.9rem;color:#3c5360;background:#f5f8fa;border-left:3px solid #c0d1d9;padding:12px 16px}.cq-deep-table{overflow-x:auto;margin:1.4em 0}.cq-deep table{width:100%;min-width:540px;border-collapse:collapse;font-size:.92rem}.cq-deep th,.cq-deep td{border:1px solid #cfdbe1;padding:10px 12px;text-align:left;vertical-align:top}.cq-deep thead{background:#edf5f7}.cq-deep caption{text-align:left;font-weight:600;margin-bottom:10px}.cq-deep-nav{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:24px}.cq-deep-sources{font-size:.9rem;padding-left:1.4em}.cq-deep-entry{box-sizing:border-box;max-width:1120px;margin:20px auto;padding:12px 18px;background:#eef7f7;border-left:4px solid #177c80;line-height:1.8}.cq-deep-entry a{color:#086878;text-decoration:underline}@media(max-width:620px){.cq-deep{margin:18px 10px;padding:20px 16px}.cq-deep-flow,.cq-deep-molecules{grid-template-columns:1fr}.cq-deep-entry{margin:14px 10px}.cq-deep h2{font-size:1.35rem}}</style>
-<style id="heritage-context-style">.a07-meaning{border-left:3px solid #aa7545;padding:10px 16px;background:#f7f4eb}.a07-locator{font-size:.86rem;color:var(--muted)}.a07-nav{display:flex;flex-wrap:wrap;gap:8px 18px}.a07-table{overflow-x:auto;max-width:100%;margin:20px 0;border:1px solid var(--line)}.a07-table table{border-collapse:collapse;min-width:640px;width:100%;font-size:.92rem}.a07-table caption{text-align:left;padding:14px;background:#edf3ee;color:var(--accent);font-weight:700}.a07-table th,.a07-table td{border-top:1px solid var(--line);padding:12px;text-align:left;vertical-align:top}.a07-table:focus-visible{outline:3px solid #aa7545}#refs{overflow-wrap:anywhere}</style>
+<style id="a07-representative-study-style">
+.a07-chapter {
+  margin: 24px 0;
+  padding: clamp(18px, 4vw, 38px);
+  background: #fffefa;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  scroll-margin-top: 20px;
+}
+.a07-chapter h2 { margin: 0 0 .65em; font-size: clamp(1.45rem, 3vw, 2.05rem); line-height: 1.35; }
+.a07-chapter h3 { margin: 1.15em 0 .35em; color: var(--accent); font-size: 1.12rem; }
+.a07-chapter p, .a07-chapter ul { max-width: 78ch; margin: .6em 0; }
+.a07-chapter ul { padding-left: 1.2em; }
+.a07-chapter li { margin: .45em 0; }
+.a07-chapter [id], #refs { scroll-margin-top: 20px; }
+.a07-table { overflow-x: auto; max-width: 100%; margin: 16px 0; border: 1px solid var(--line); }
+.a07-table:focus-visible { outline: 3px solid #aa7545; outline-offset: 3px; }
+.a07-table table { border-collapse: collapse; min-width: 36rem; width: 100%; }
+.a07-table caption { text-align: left; padding: 10px 12px; background: #edf4ee; font-weight: 650; }
+.a07-table th, .a07-table td { border-top: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
+.a07-chapter .a07-return { max-width: none; margin: 1.25rem 0 0; padding-top: .7rem; border-top: 1px solid var(--line); font-size: .92rem; }
+.a07-anchor-alias { display: block; }
+</style>
 <section class="cq-achievement-overview" id="a07-contributions" aria-labelledby="a07-contributions-title">
-<h2 id="a07-contributions-title">单电子转移反应：从溶剂效应到成键方法</h2>
-<p class="cq-achievement-lede">陈庆云与合作者从更换溶剂后产物发生变化的现象出发，系统研究怎样把氟烷基接到不同的分子骨架上，并把方法拓展到部分较难反应的含氟氯代物。陈庆云主持的“氟化学中单电子转移反应的研究”获1989年度国家自然科学奖二等奖。</p>
-<div class="cq-achievement-grid">
-  <article>
-    <h3><a href="#a07-solvent-discovery">从换溶剂开始追问产物为什么改变</a></h3>
-    <p>陈亚雄发现换溶剂会改变产物，陈庆云建议先重复实验。1984年，两人与黄维垣发表溶剂对碘苯氟烷基化影响的研究。</p>
-    <p class="cq-achievement-note">发现过程与合作发表。</p>
-  </article>
-  <article>
-    <h3><a href="#a07-initiation-systems">不同引发体系怎样发展出氟烷基化方法</a></h3>
-    <p>低价金属和氧化剂用于烯烃加成，亲核试剂用于特定卤代物的取代，光照可把全氟烷基引入吡啶环。</p>
-    <p class="cq-achievement-note">四类代表反应、合作作者和原文的机理解释。</p>
-  </article>
-  <article>
-    <h3><a href="#a07-representative-study">后续拓展：让特定含氟氯代物参与成键</a></h3>
-    <p>龙正宇与陈庆云把连二亚硫酸钠体系用于烯烃、炔烃和富电子芳环。黄小庭与陈庆云发展的零价镍体系还适用于部分缺电子烯烃。</p>
-    <p class="cq-achievement-note">溶剂对照、底物范围与产物证据。</p>
-  </article>
-  <article>
-    <h3><a href="#record-ccl-activation">含氟氯代原料的其他用途</a></h3>
-    <p>团队继续研究工业含氟氯代物的选择性转化、全氟烷基碘制备，并从卟啉环化得到启发，合成含氟稠合六元环。</p>
-    <p class="cq-achievement-note">原料转化、共同发明与小分子环化。</p>
-  </article>
-</div>
-<p class="cq-achievement-note"><a href="#refs">参考资料</a> · <a href="#heritage-context">合作分工</a></p>
+  <h2 id="a07-contributions-title">单电子转移反应：从溶剂效应到成键方法</h2>
+  <p class="cq-achievement-lede">陈庆云与合作者从换溶剂后产物发生变化的现象出发，系统考察金属、亲核试剂、氧化剂和光照怎样引发含氟卤代物反应。他们发展了多种氟烷基化方法，后来又使部分较难反应的含氟氯代物参与合成。陈庆云主持的“氟化学中单电子转移反应的研究”获1989年度国家自然科学奖二等奖。</p>
+  <nav class="cq-achievement-grid" aria-label="四项核心成就">
+    <article>
+      <h3><a href="#topic-single-electron-transfer">从溶剂效应追问反应途径</a></h3>
+      <p>陈亚雄发现换溶剂会改变反应结果。陈庆云让他先重复实验，再一起追查原因。两人与黄维垣于1984年发表溶剂效应研究。</p>
+      <p class="cq-achievement-note">从异常观察到可比较的实验问题。</p>
+    </article>
+    <article>
+      <h3><a href="#a07-initiation-systems">用不同引发方式发展氟烷基化</a></h3>
+      <p>低价金属和氧化剂开辟烯烃加成途径，亲核试剂用于制备含硫取代产物，光照使全氟烷基可以接到吡啶环上。</p>
+      <p class="cq-achievement-note">四类引发体系的产物、对照和作者解释。</p>
+    </article>
+    <article>
+      <h3><a href="#a07-representative-study">让特定含氟氯代物参与成键</a></h3>
+      <p>龙正宇与陈庆云把连二亚硫酸钠体系用于烯烃、炔烃和富电子芳环。黄小庭与陈庆云发展的零价镍体系扩大了可参与反应的烯烃范围。</p>
+      <p class="cq-achievement-note">溶剂对照、产物谱图和后续催化方法。</p>
+    </article>
+    <article>
+      <h3><a href="#record-ccl-activation">拓展含氟氯代原料的用途</a></h3>
+      <p>团队使同一种工业来源原料在不同金属体系中生成不同产物，并发展了制备全氟烷基碘、构建含氟稠环的途径。</p>
+      <p class="cq-achievement-note">原料转化、共同发明及卟啉研究的启发。</p>
+    </article>
+  </nav>
+  <p class="cq-achievement-references"><a href="#refs">参考资料</a></p>
 </section>
-<article id="topic-single-electron-transfer" class="cq-display-section">
-<h2>单电子转移反应与氟烷基化</h2>
-<p>单电子转移指反应物之间传递一个电子。在这组研究中，作者用这一思路解释某些含氟卤代物怎样生成可以成键的自由基，并通过反应产物与对照实验检验各自的解释。开拓性在于把这一思路系统用于有机氟合成，让原料、引发方式和产物可以按具体问题选择。</p>
-<h3 id="a07-solvent-discovery">从换溶剂开始追问产物为什么改变</h3>
-<p>陈亚雄研究全氟烷基碘、铜粉与碘苯的反应时，发现更换溶剂后得到的结果与文献不同。陈庆云让他先反复实验，确认差异，再讨论怎样用新的实验寻找原因。1984年，陈庆云、陈亚雄、黄维垣共同发表了溶剂对碘苯氟烷基化影响的研究。</p>
-<p><a href="#a07-representative-study-story">读陈庆云回忆中的实验指导 →</a></p>
-</article>
-<section class="cq-study cq-display-feature" id="a07-initiation-systems" aria-labelledby="a07-initiation-systems-title">
-<h2 id="a07-initiation-systems-title">不同引发体系怎样发展出氟烷基化方法</h2>
-<p>早期研究主要从含氟碘代物等原料出发。低价金属和氧化剂研究发展了烯烃加成，亲核试剂研究解决了特定含氟卤代物的取代问题，光照则把全氟烷基引入了吡啶环。</p>
-<h3 id="a07-set-synthesis">低价金属：把加成转化为含氟烯烃合成</h3>
-<p><strong>实验结果。</strong>1986年，陈庆云与杨震宇用铜参与的反应将氟烷基碘与乙烯基三甲基硅烷加成，再以所得加成物制得相应的反式含氟烯烃。1988年，陈庆云、杨震宇、赵成学、裘再明又比较了低价钯和二价钯。论文所列低价钯体系可使氟烷基碘加成到烯烃，而所试二价钯络合物在同样条件下无效。</p>
-<p><strong>作者解释。</strong>铜体系中，加入抑制剂会抑制反应，用碘苯也未捕获到氟烷基铜中间体。作者据此提出可能由单电子转移引发自由基链反应。钯体系也观察到关环产物，作者提出可能由零价钯向碘代物转移电子，进而引发自由基链反应。</p>
-<h3>亲核试剂：从卤代物得到含硫取代产物</h3>
-<p><strong>实验结果。</strong>1986年，苏德宝、陈庆云、朱蓉仙研究苯硫酚钠与特定含氟碘代物、溴代物的反应，得到单取代或双取代产物。<strong>作者解释。</strong>论文按底物和产物差异讨论了自由基链式亲核取代。</p>
-<h3>氧化剂：为烯烃加成提供另一种引发方式</h3>
-<p><strong>实验结果。</strong>1988年，陈庆云与陈建国报道，两种铅(IV)氧化剂均能引发所研究的氟烷基碘与烯烃加成。用二烯丙基醚作探针时，还观察到四氢呋喃衍生物。<strong>作者解释。</strong>作者把探针的关环产物作为讨论自由基中间体的线索。</p>
-<h3>光照：把全氟烷基引入吡啶环</h3>
-<p><strong>实验结果。</strong>1992年，陈庆云与黎占亭报道，氨基吡啶与全氟烷基碘在光照下生成吡啶环的全氟烷基化产物。<strong>作者解释。</strong>论文提出电子转移途径，说明这一合成结果怎样可能由光引发。</p>
-<p>上述研究把加成、取代、芳环成键和后续烯烃构建落到具体底物上。溶剂对照、抑制和捕获实验各有适用范围，论文中的机理判断分别对应各自体系。</p>
+
+<section class="a07-chapter" id="topic-single-electron-transfer" aria-labelledby="a07-solvent-title">
+  <h2 id="a07-solvent-title">从溶剂效应追问反应途径</h2>
+  <span id="a07-chronology" class="a07-anchor-alias" aria-hidden="true"></span>
+  <span id="a07-chronology-caption" class="a07-anchor-alias" aria-hidden="true"></span>
+  <h3 id="a07-solvent-discovery">换了溶剂，产物为什么不同</h3>
+  <p>陈亚雄在研究全氟烷基碘、铜粉与碘苯的反应时，发现更换溶剂后得到的结果与文献不同。1984年，陈庆云、陈亚雄和黄维垣共同发表了溶剂对碘苯氟烷基化的影响。这个发现使溶剂成为解释产物如何生成的一个实验变量。</p>
+  <h3 id="heritage-context">上海有机所的几条研究路径</h3>
+  <p>F-53研究积累的含氟原料为后续基础研究提供了材料。黄维垣小组发展脱卤亚磺化，即把含氟卤代物转成相应的亚磺酸盐。胡昌明小组研究氧化还原引发。陈庆云小组从低价金属切入，进而考察其他引发条件。在部分反应中，作者用单电子转移解释含氟卤代物怎样接受一个电子，生成随后参与成键的氟烷基自由基。</p>
+  <h3 id="a07-representative-study-story">先重复意外结果，再讨论原因</h3>
+  <p>陈庆云回忆，他请陈亚雄先重复意外结果，再一起讨论该怎样用新实验追查原因。面对不合预期的产物，师生由此把一个偶见现象变成可以继续研究的问题。<a href="../../achievements/index.html#heritage-story-st12">阅读合作与育人故事</a></p>
+  <p class="a07-return"><a href="#a07-contributions">返回成就概览</a></p>
 </section>
-<section class="cq-study cq-display-feature" id="a07-representative-study" aria-labelledby="a07-representative-study-title">
-<h2 id="a07-representative-study-title">后续拓展：让特定含氟氯代物参与成键</h2>
-<p>黄维垣小组发现并发展了脱卤亚磺化反应，能由含氟碘代物或溴代物制取相应亚磺酸盐。龙正宇与陈庆云沿这一基础研究溶剂如何改变产物，随后追问更难活化的含氟氯代物能否也用来成键。</p>
-<h3>1999年：用溶剂对照打开烯烃、炔烃加成</h3>
-<p><strong>实验结果。</strong>龙正宇、陈庆云用二甲基亚砜（DMSO）和连二亚硫酸钠，使论文所列的全氟或多氟烷基氯代物与烯烃、炔烃发生加成。原文表4中，同一组底物（1a与2b）在DMSO中转化率为100%（<sup>19</sup>F NMR），表列加成产物为80%。在乙腈／水对照中两项均为0%。</p>
-<p>对于一端带碘、另一端带氯的含氟链，二人先利用碘端成键，再借氯端与另一分子烯烃反应，得到两端可以分别修饰的产物。尝试双氯端原料时，还出现末端以氢替代氯的副产物。</p>
-<p><strong>作者解释。</strong>作者根据抑制实验与二烯丙基醚的关环结果，提出全氟烷基自由基参与的可能性，并给出了电子转移示意。论文明确留下溶剂为何改变反应性的科学问题。</p>
-<h3>2000年：把连二亚硫酸钠体系用到富电子芳环</h3>
-<p>龙正宇、陈庆云沿用这一体系，进一步获得富电子芳香化合物的氟烷基化产物。论文比较了芳环取代基的给电子能力与位置对产物的影响。这使同类含氟氯代原料既能用于烯烃或炔烃加成，也能在适合的芳环上成键。</p>
-<h3>2001年：用零价镍体系开辟另一条成键途径</h3>
-<p><strong>实验结果。</strong>陈庆云与吴建平在1991年已报道，用镍体系将特定全氟烷基氯代物还原为末端带氢的产物。2001年，黄小庭、陈庆云继续研究如何让含氟片段优先参与成键。加入三苯基膦作配体后，竞争生成的氢代副产物减少，加成产物增多。他们由此发展出适用于一定范围烯烃、炔烃与富电子芳香化合物的零价镍方法，烯烃范围还包括原文所列的部分缺电子底物。其中烯烃加成产物3aa的分离收率为72%。<strong>作者解释。</strong>抑制实验和二烯丙基醚探针的关环产物为讨论自由基提供了线索，作者进一步提出镍(0)络合物给出电子的机理。</p>
-<p>这几项研究的贡献，是扩大含氟氯代原料参与成键的范围，并比较不同体系各能得到什么产物。结论对应原文所列底物、官能团及对照条件。</p>
-<aside class="cq-study-story">
-<h3 id="a07-representative-study-story">从追问意外结果开始训练研究判断</h3>
-<p>陈庆云回忆，学生遇到意外产物时，他先让学生把现象重复出来，再一起讨论变化从何而来。当一种推测解释不了观察，就继续寻找可以检验的原因。这段经历与陈亚雄的溶剂观察相连，展示了新的合成问题怎样从一次异常实验中产生。</p>
-</aside>
-<nav class="cq-study-nav cq-journey-nav" aria-label="含氟氯代物研究阅读导航">
-<a href="#a07-deep-reading">两种方法的产物与谱图</a>
-<a href="#record-ccl-activation">含氟氯代原料的其他用途</a>
-<a href="#refs">参考资料</a>
-</nav>
+
+<section class="a07-chapter" id="a07-initiation-systems" aria-labelledby="a07-initiation-systems-title">
+  <h2 id="a07-initiation-systems-title">用不同引发方式发展氟烷基化</h2>
+  <p>早期工作多以含氟碘代物等为原料，分别探索怎样实现烯烃加成、含硫取代和芳环成键。不同引发方式由此对应各自的底物和合成目标。</p>
+  <h3 id="a07-set-synthesis">从铜参与的加成得到反式含氟烯烃</h3>
+  <p>1986年，陈庆云与杨震宇得到氟烷基碘与乙烯基三甲基硅烷的加成物，进一步制得反式含氟烯烃。铜体系中加入自由基抑制剂后反应受抑，用碘苯也未捕获到氟烷基铜中间体。作者据此提出可能由单电子转移引发自由基链反应。</p>
+  <div class="a07-table" role="region" tabindex="0" aria-labelledby="a07-systems-caption">
+    <table>
+      <caption id="a07-systems-caption">不同引发体系的合成结果、对照和机理解释</caption>
+      <thead><tr><th scope="col">引发体系</th><th scope="col">实验结果与对照</th><th scope="col">原作者的机理解释</th></tr></thead>
+      <tbody>
+        <tr><th scope="row"><a href="#ref-a07-pd1988">金属（零价钯）</a></th><td>1988年，陈庆云、杨震宇、赵成学与裘再明以零价钯促成氟烷基碘对烯烃的加成。在同样条件下，所试二价钯络合物未能引发该反应。用二烯丙基醚作探针时观察到关环产物。</td><td>提出零价钯可能向碘代物转移电子，进而引发自由基链反应。</td></tr>
+        <tr><th scope="row"><a href="#ref-a07-nucleophile1986">亲核试剂</a></th><td>1986年，苏德宝、陈庆云与朱蓉仙用苯硫酚钠与所试含氟碘代物、溴代物反应，得到单取代或双取代产物，由此构建碳硫键。</td><td>按底物和产物的差异讨论自由基链式亲核取代。</td></tr>
+        <tr><th scope="row"><a href="#ref-a07-oxidant1988">氧化剂</a></th><td>1988年，陈庆云与陈建国发现两种铅(IV)氧化剂也能引发所研究的烯烃加成。用二烯丙基醚作探针观察到四氢呋喃衍生物。</td><td>将探针的关环产物作为讨论自由基中间体的线索。</td></tr>
+        <tr><th scope="row"><a href="#ref-a07-light1992">光照</a></th><td>1992年，陈庆云与黎占亭把全氟烷基从碘代物引入氨基吡啶的吡啶环，提供了芳杂环成键的实例。</td><td>提出光引发的电子转移途径。</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>据传记记载，何亚波也参与过渡金属引发研究，裘再明还参与亲核引发研究，陈明芳参与亲核引发及氧化剂研究。</p>
+  <p class="a07-return"><a href="#a07-contributions">返回成就概览</a></p>
 </section>
-<section class="cq-deep cq-display-feature" id="a07-deep-reading" aria-labelledby="a07-deep-reading-title">
-<h2 id="a07-deep-reading-title">两种C–Cl方法：从方法范围落实到产物证据</h2>
-<figure>
-<figcaption id="a07-deep-reading-figure-caption">1999与2001年方法各有自己的产物编号和表征记录</figcaption>
-<p>1999年论文的附件以3bc编号，写明1,1,2,2,3,3,4,4-八氟十二烷，并保留¹H与¹⁹F NMR谱图。2001年附件开头两张谱页则同标3aa。两组记录对应不同体系，也展示了合成研究如何为具体产物留下表征依据。</p>
-</figure>
-<div class="cq-display-table" role="region" tabindex="0">
-<table>
-<caption id="a07-deep-reading-table-caption">两份实际产物记录各能读到什么</caption>
-<thead>
-<tr>
-<th scope="col">论文与方法范围</th>
-<th scope="col">原作者的产物记录</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th scope="row">1999，DMSO／连二亚硫酸钠体系</th>
-<td>3bc：1,1,2,2,3,3,4,4-八氟十二烷；¹H、¹⁹F NMR</td>
-</tr>
-<tr>
-<th scope="row">2001，零价镍体系</th>
-<td>3aa：原文报告分离收率72%，支持信息保留了两张标注3aa的核磁谱页。</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>1999年论文署Zheng-Yu Long、Qing-Yun Chen；2001年论文署Xiao-Ting Huang、Qing-Yun Chen。这些谱学记录用于表征具体产物。作者关于电子转移的解释另外依据抑制实验和关环探针等观察。</p>
-<nav class="cq-deep-nav cq-journey-nav" aria-label="产物与谱图阅读导航">
-<a class="cq-journey-link" href="#topic-single-electron-transfer">返回主要学术成就</a> · <a class="cq-journey-link" href="#a07-representative-study-story">合作与育人</a> · <a class="cq-journey-link" href="#a07-deep-reading-sources">参考资料</a> · <a class="cq-journey-link" href="../../achievements/index.html#line-a07">本线概览</a> · <a class="cq-journey-link" href="../../achievements/index.html#heritage-inventory">完整科研脉络</a> · <a class="cq-journey-link" href="#a07-ai-collation">AI辅助资料整理</a>
-</nav>
+
+<section class="a07-chapter" id="a07-representative-study" aria-labelledby="a07-representative-study-title">
+  <h2 id="a07-representative-study-title">让特定含氟氯代物参与成键</h2>
+  <h3>1999年：改变溶剂，让氯代物与烯烃和炔烃加成</h3>
+  <p>龙正宇和陈庆云在脱卤亚磺化的基础上，利用二甲基亚砜（DMSO）与连二亚硫酸钠（保险粉）实现特定全氟、多氟烷基氯代物的加成。对于一端带碘、另一端带氯的含氟链，先利用碘端成键，再让氯端与另一分子烯烃反应，就能分步修饰两端。直接从双氯端原料出发时，实验也得到末端以氢替代氯的副产物。</p>
+  <h3>2000年：把成键对象扩展到富电子芳烃</h3>
+  <p>龙正宇和陈庆云沿用连二亚硫酸钠体系，把氟烷基接到部分富电子芳环上，并比较了芳环取代基的给电子能力和位置对产物的影响。</p>
+  <h3>2001年：用零价镍体系扩大烯烃范围</h3>
+  <p>陈庆云与吴建平早先用镍体系把特定全氟烷基氯代物还原为末端带氢的产物。黄小庭和陈庆云改进镍反应体系，使用三苯基膦配体等条件促进加成。论文报道了烯烃、炔烃和富电子芳烃的实例，烯烃范围还包括此前连二亚硫酸钠方法较难处理的部分缺电子底物。</p>
+  <section id="a07-deep-reading" aria-labelledby="a07-deep-reading-title">
+    <h3 id="a07-deep-reading-title">原刊精读：反应对照与产物证据</h3>
+    <span id="a07-deep-reading-figure-caption" class="a07-anchor-alias" aria-hidden="true"></span>
+    <div class="a07-table" role="region" tabindex="0" aria-labelledby="a07-deep-reading-table-caption">
+      <table>
+        <caption id="a07-deep-reading-table-caption">1999年与2001年论文中各自的代表性实验</caption>
+        <thead><tr><th scope="col">论文与体系</th><th scope="col">实验结果</th><th scope="col">产物表征</th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><a href="#ref-cq-r06">1999年，连二亚硫酸钠体系</a></th><td>表4同组底物（1a与2b）在DMSO中转化率为100%（<sup>19</sup>F核磁），表列加成产物为80%。乙腈／水对照中两项均为0%。</td><td>另一组实验的产物3bc为1,1,2,2,3,3,4,4-八氟十二烷，支持信息保留了氢谱和氟谱。</td></tr>
+          <tr><th scope="row"><a href="#ref-heritage-s07">2001年，零价镍体系</a></th><td>第4654页的代表性烯烃加成实验报告产物3aa的分离收率为72%。</td><td>支持信息第1–2页保留了3aa的核磁谱图。</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>作者怎样解释氯代物开始反应</h3>
+    <p>两篇论文各自报告了抑制实验和二烯丙基醚的关环结果，作者据此提出全氟烷基自由基参与反应。1999年论文提出由二氧化硫自由基阴离子给出电子，并把溶剂影响反应性的原因留作问题。2001年论文则提出由零价镍络合物给出电子。这些解释分别对应各自实验体系。</p>
+  </section>
+  <p class="a07-return"><a href="#a07-contributions">返回成就概览</a></p>
 </section>
-<article id="record-ccl-activation" class="cq-display-section">
-<h2>含氟氯代原料的其他用途</h2>
-<p>唐小军与陈庆云把问题推进到工业含氟氯代原料。2012年以HCFC-133a为例，论文报告零价镍体系得到1,1,1-三氟乙烷，零价铜体系则得到偏二氟乙烯。同一种原料可以随金属体系不同走向不同产品。二人还以HCFC-123为原料，报道了它在铜参与下与苯酚类或苯硫酚类化合物偶联，为这类工业含氟原料提供了形成碳氧键或碳硫键的途径。</p>
-<p>陈庆云与曹海萍共同发明了经亚磺酸盐将特定全氟烷基氯、溴代物转化为相应碘代物的方法，为把这类氯代原料转成后续合成所需的含氟碘代物提供了一条路线。专利申请人为中国科学院上海有机化学研究所。</p>
-<h3 id="a07-intramolecular-cyclization">从卟啉中的环化发现走向小分子合成</h3>
-<p>曹海萍、肖吉昌和陈庆云在2006年论文中指出，氟烷基卟啉发生的意外分子内环化，启发他们考察较简单的芳香化合物。他们使带末端氯的氟烷基苯衍生物发生关环，得到含氟稠合六元环产物。</p>
-<p><a href="../fluoroporphyrins/index.html#fluoroalkylporphyrins">继续阅读A08（交叉研究与晚年拓展）的氟烷基卟啉 →</a></p>
-</article>
-<article id="a07-chronology" class="cq-display-section">
-<h2>研究历程</h2>
-<div class="cq-display-table" role="region" tabindex="0">
-<table>
-<caption id="a07-chronology-caption">研究历程</caption>
-<thead>
-<tr>
-<th scope="col">时间</th>
-<th scope="col">工作与记录</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th scope="row">1984年</th>
-<td>陈庆云、陈亚雄、黄维垣发表溶剂对碘苯氟烷基化的研究。</td>
-</tr>
-<tr>
-<th scope="row">1986年</th>
-<td>陈庆云、杨震宇报道铜参与的加成和含氟烯烃合成。苏德宝、陈庆云、朱蓉仙报道亲核试剂引发的取代反应。</td>
-</tr>
-<tr>
-<th scope="row">1988—1992年</th>
-<td>研究扩展到低价钯、铅(IV)氧化剂和光照等引发体系。陈庆云主持的相关研究获1989年度国家自然科学奖二等奖。</td>
-</tr>
-<tr>
-<th scope="row">1999—2000年</th>
-<td>龙正宇、陈庆云先后报道含氟氯代物与烯烃、炔烃以及富电子芳香化合物的反应。</td>
-</tr>
-<tr>
-<th scope="row">2001年</th>
-<td>黄小庭、陈庆云报道零价镍催化的全氟烷基氯化物氟烷基化。</td>
-</tr>
-<tr>
-<th scope="row">2005年申请</th>
-<td>陈庆云、曹海萍共同申请从全氟烷基氯制备全氟烷基碘的方法。</td>
-</tr>
-</tbody>
-</table>
-</div>
-</article>
-<article id="heritage-context" class="cq-display-section">
-<h2>不同方向的共同贡献</h2>
-<p>上海有机所的几组相关研究各有侧重。黄维垣小组发展脱卤亚磺化，胡昌明小组研究氧化还原引发，陈庆云小组从低价金属引发切入，再系统研究亲核试剂、氧化剂和光照等不同方式。</p>
-<div class="cq-display-table" role="region" tabindex="0">
-<table>
-<caption id="a07-cooperation-caption">合作分工</caption>
-<thead>
-<tr>
-<th scope="col">人物或单位</th>
-<th scope="col">具体贡献与角色</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th scope="row">陈庆云与研究组</th>
-<td>围绕溶剂、引发方式和含氟卤代物结构，持续发展氟烷基化与活化方法。</td>
-</tr>
-<tr>
-<th scope="row">黄维垣小组</th>
-<td>发现原脱卤亚磺化反应；黄维垣另与陈庆云、陈亚雄共同署名1984年溶剂研究。</td>
-</tr>
-<tr>
-<th scope="row">陈亚雄</th>
-<td>观察铜粉／全氟烷基碘／碘苯体系换溶剂后的不同结果，并参与后续研究。</td>
-</tr>
-<tr>
-<th scope="row">杨震宇、裘再明、何亚波</th>
-<td>参与过渡金属引发方向；杨震宇为1986年所列铜体系论文共同作者。</td>
-</tr>
-<tr>
-<th scope="row">苏德宝、裘再明、陈明芳</th>
-<td>参与亲核试剂引发的全氟烷基碘反应研究。</td>
-</tr>
-<tr>
-<th scope="row">陈建国、陈明芳</th>
-<td>参与氧化剂引发方向。</td>
-</tr>
-<tr>
-<th scope="row">黎占亭</th>
-<td>参与光照引发方向。</td>
-</tr>
-<tr>
-<th scope="row">龙正宇</th>
-<td>与陈庆云研究溶剂和温度条件、改进脱卤亚磺化，并拓展特定C–Cl反应。</td>
-</tr>
-<tr>
-<th scope="row">黄小庭</th>
-<td>与陈庆云研究全氟烷基氯化物的零价镍体系。</td>
-</tr>
-<tr>
-<th scope="row">唐小军</th>
-<td>与陈庆云研究HCFC-133a、HCFC-123等原料的C–Cl活化与转化。</td>
-</tr>
-<tr>
-<th scope="row">曹海萍与陈庆云</th>
-<td>制碘代物方法的共同发明人；不由署名推算各人的实验工序。</td>
-</tr>
-</tbody>
-</table>
-</div>
-<section id="a07-authorship">
-<h3>论文与技术文书署名</h3>
-<div class="cq-display-table" role="region" tabindex="0">
-<table>
-<caption id="a07-authorship-caption">保留各份原文的贡献归属</caption>
-<thead>
-<tr>
-<th scope="col">文书</th>
-<th scope="col">原文署名</th>
-<th scope="col">介绍范围</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th scope="row">1999 DMSO／连二亚硫酸钠体系</th>
-<td>Zheng-Yu Long、Qing-Yun Chen</td>
-<td>原文第4778页表4记录溶剂对照，第4778–4779页讨论探针和机理。</td>
-</tr>
-<tr>
-<th scope="row">2001零价镍体系</th>
-<td>Xiao-Ting Huang、Qing-Yun Chen</td>
-<td>原文第4653–4654页记录反应探针、产物与收率，单电子转移为作者提出的解释。</td>
-</tr>
-<tr>
-<th scope="row">申请200510031063.4</th>
-<td>陈庆云、曹海萍；申请人上海有机所</td>
-<td>CN1752059A和CN1298686C为同一申请的公开／授权公告版本。</td>
-</tr>
-</tbody>
-</table>
-</div>
+
+<section class="a07-chapter" id="record-ccl-activation" aria-labelledby="a07-ccl-extension-title">
+  <h2 id="a07-ccl-extension-title">拓展含氟氯代原料的用途</h2>
+  <h3>让同一种原料走向不同产物</h3>
+  <p>2012年，唐小军与陈庆云报告，同一种工业来源原料HCFC-133a在零价镍体系中生成1,1,1-三氟乙烷，在零价铜体系中则生成偏二氟乙烯。两人还报道，HCFC-123可在铜参与下与苯酚类或苯硫酚类化合物偶联，构建碳氧键或碳硫键。</p>
+  <span id="a07-cooperation-caption" class="a07-anchor-alias" aria-hidden="true"></span>
+  <span id="a07-authorship" class="a07-anchor-alias" aria-hidden="true"></span>
+  <h3>把氯代原料变为后续合成所需的碘代物</h3>
+  <p>陈庆云与曹海萍共同发明了把所列全氟烷基氯、溴代物经亚磺酸盐转化为相应全氟烷基碘的方法。2005年由上海有机所申请的<a href="#a07-source-patent">专利文书</a>记录了这条原料转化路线及发明人。</p>
+  <h3 id="a07-intramolecular-cyclization">从卟啉中的环化发现走向小分子合成</h3>
+  <p>曹海萍、肖吉昌和陈庆云在2006年论文中指出，氟烷基卟啉的意外分子内环化启发了他们研究较简单的芳香分子。他们使带末端氯的氟烷基苯衍生物关环，得到含氟稠合六元环。<a href="../fluoroporphyrins/index.html#fluoroalkylporphyrins">阅读A08（交叉研究与晚年拓展）的氟烷基卟啉</a></p>
+  <span id="a07-authorship-caption" class="a07-anchor-alias" aria-hidden="true"></span>
+  <p class="a07-return"><a href="#a07-contributions">返回成就概览</a></p>
 </section>
-</article>
-<article id="a07-ai-collation" class="cq-display-section">
-<h2>AI辅助整理与研究</h2>
-<p>本专题的实验、产物表征和机理解释来自各篇原作。平台AI工作用于整理文献、对照出处和区分证据层次。相关记录保持 <code>review_required</code>、<code>release_eligible=false</code>；M0与Nemotron训练继续暂停。</p>
-<p>
-<a href="../../research/index.html#ai-a07">查看AI辅助整理与研究 →</a>
-</p>
-</article>
-<p>
-<a href="../../achievements/index.html#line-a07">A07（单电子转移与C–Cl活化）成果线</a> · <a href="../index.html">返回专题索引 ↑</a>
-</p>
+
+<section id="a07-ai-collation" class="cq-display-ai" aria-labelledby="a07-ai-title">
+  <h2 id="a07-ai-title">AI辅助整理与研究</h2>
+  <p>平台借助AI整理原论文、对照实验和产物谱图，并逐步核对出处，方便读者从实验观察追溯原作者提出的解释。</p>
+  <p><a href="../../research/index.html#ai-a07">查看AI辅助整理与研究 →</a></p>
+</section>
 <section class="cq-display-references" id="public-references">
 <h2>参考资料</h2>
 <span id="a07-deep-reading-sources" class="cq-display-alias">
@@ -359,11 +244,11 @@
 <li>
 <span id="ref-a07-acta1986-265" class="cq-display-alias">
 </span>
-<a href="https://sioc-journal.cn/Jwk_hxxb/CN/abstract/abstract334540.shtml">Studies on fluoroalkylation and fluoroalkoxylation 4. Reaction of fluoroalkyl iodides with vinyltrimethylsilane in the presence of copper and stereospecific synthesis of the corresponding olefins</a>；陈庆云、杨震宇；《化学学报》1986，44(3)：265–269。</li>
-<li>陈庆云、杨震宇、赵成学、裘再明。<a href="https://doi.org/10.1039/P19880000563">低价钯催化氟烷基碘与烯烃加成</a>。J. Chem. Soc., Perkin Trans. 1，1988：563–567。</li>
-<li>苏德宝、陈庆云、朱蓉仙。<a href="https://sioc-journal.cn/Jwk_yjhx/CN/abstract/abstract329365.shtml">苯基硫酚阴离子与5-卤-3-氧杂全氟戊基二乙基磺酰胺的反应</a>。《有机化学》1986，6(2)：112–120。</li>
-<li>陈庆云、陈建国。<a href="https://sioc-journal.cn/Jwk_hxxb/EN/abstract/abstract334705.shtml">铅(IV)氧化剂引发的氟烷基碘对烯烃加成</a>。《化学学报》1988，46(3)：301–304。链接为英文摘要。</li>
-<li>陈庆云、黎占亭。<a href="https://doi.org/10.1039/P19920001443">光引发氨基吡啶的全氟烷基化</a>。J. Chem. Soc., Perkin Trans. 1，1992：1443–1445。</li>
+<a href="https://sioc-journal.cn/Jwk_hxxb/CN/abstract/abstract334540.shtml">Studies on fluoroalkylation and fluoroalkoxylation 4. Reaction of fluoroalkyl iodides with vinyltrimethylsilane in the presence of copper and stereospecific synthesis of the corresponding olefins</a>；陈庆云、杨震宇；《化学学报》1986，44(3)：265–269。摘要记加成、反式产物及抑制和捕获实验。</li>
+<li id="ref-a07-pd1988">陈庆云、杨震宇、赵成学、裘再明。<a href="https://doi.org/10.1039/P19880000563">低价钯催化氟烷基碘与烯烃加成</a>。J. Chem. Soc., Perkin Trans. 1，1988：563–567。</li>
+<li id="ref-a07-nucleophile1986">苏德宝、陈庆云、朱蓉仙。<a href="https://sioc-journal.cn/Jwk_yjhx/CN/abstract/abstract329365.shtml">苯基硫酚阴离子与5-卤-3-氧杂全氟戊基二乙基磺酰胺的反应</a>。《有机化学》1986，6(2)：112–120。</li>
+<li id="ref-a07-oxidant1988">陈庆云、陈建国。<a href="https://sioc-journal.cn/Jwk_hxxb/EN/abstract/abstract334705.shtml">铅(IV)氧化剂引发的氟烷基碘对烯烃加成</a>。《化学学报》1988，46(3)：301–304。链接为英文摘要。</li>
+<li id="ref-a07-light1992">陈庆云、黎占亭。<a href="https://doi.org/10.1039/P19920001443">光引发氨基吡啶的全氟烷基化</a>。J. Chem. Soc., Perkin Trans. 1，1992：1443–1445。</li>
 <li>黄炳南、黄维垣、胡昌明。<a href="https://sioc-journal.cn/Jwk_hxxb/EN/Y1981/V39/I5/481">氟烷基碘的脱碘亚磺化</a>。《化学学报》1981，39(5)：481–483。黄维垣、黄炳南、王巍。<a href="https://sioc-journal.cn/Jwk_hxxb/CN/abstract/abstract335705.shtml">用连二亚硫酸钠制备全氟烷基亚磺酸盐</a>。《化学学报》1983，41(12)：1193–1195。</li>
 <li>
 <span id="ref-cq-r04" class="cq-display-alias">
@@ -383,7 +268,7 @@
 <span id="a07-deep-reading-source-heritage-s07" class="cq-display-alias">
 </span>
 <span id="ref-heritage-s07" class="cq-display-alias">
-</span>Xiao-Ting Huang、Qing-Yun Chen：<a href="https://pubs.acs.org/doi/abs/10.1021/jo010178j">Nickel(0)-Catalyzed Fluoroalkylation of Alkenes, Alkynes, and Aromatics with Perfluoroalkyl Chlorides</a>。J. Org. Chem. 2001，66(13)：4651–4656。DOI 10.1021/jo010178j。第4652–4654页记录烯烃范围、反应探针和加成产物。<a href="https://ndownloader.figshare.com/files/5779449">原作者支持信息</a>第1–2页为样品3aa的谱图。</li>
+</span>Xiao-Ting Huang、Qing-Yun Chen：<a href="https://pubs.acs.org/doi/abs/10.1021/jo010178j">Nickel(0)-Catalyzed Fluoroalkylation of Alkenes, Alkynes, and Aromatics with Perfluoroalkyl Chlorides</a>。J. Org. Chem. 2001，66(13)：4651–4656。DOI 10.1021/jo010178j。第4652页表2列所试缺电子烯烃，第4653–4654页记录反应探针和加成产物。<a href="https://ndownloader.figshare.com/files/5779449">原作者支持信息</a>第1–2页为样品3aa的谱图。</li>
 <li>
 <span id="a07-source-patent" class="cq-display-alias">
 </span>陈庆云、曹海萍：<a href="https://patents.google.com/patent/CN1752059A/zh">从全氟烷基氯制备全氟烷基碘</a>。申请200510031063.4，2005年10月21日；CN1752059A与CN1298686C为同一申请的公开／授权公告版本。申请人：中国科学院上海有机化学研究所。</li>
@@ -391,10 +276,8 @@
 <li>曹海萍、肖吉昌、陈庆云。<a href="https://sioc.cas.cn/xiaogroup/publications/thesis/2010/202407/P020240724607639776752.pdf">末端氯代氟烷基苯的分子内环化</a>。J. Fluorine Chem. 2006，127(8)：1079–1086。第1079页方案1说明与氟烷基卟啉研究的联系。</li>
 </ol>
 </section>
+<nav class="cq-journey-nav" aria-label="页末阅读导航"><a href="../../index.html">返回平台首页</a> · <a href="../../achievements/index.html#line-a07">返回成果汇总</a> · <a href="../index.html">返回专题索引</a> · <a href="#a07-contributions">返回成就概览</a></nav>
 </main>
-<footer class="wrap">
-<p>历史成果与共同贡献归陈庆云及实际参与者。</p>
-<nav class="cq-journey-nav" aria-label="页末返回导航"><a href="#a07-contributions">返回专题导读</a><a href="../../achievements/index.html#line-a07">返回成果汇总</a><a href="../../index.html#major-achievement-set">返回首页</a></nav>
-</footer>
+<footer class="wrap">陈庆云院士学术成就与传承</footer>
 </body>
 </html>

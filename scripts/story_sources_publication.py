@@ -41,6 +41,7 @@ import a07_set_contributions_publication as a07_set_contributions
 import major_achievement_overviews_publication as major_achievement_overviews
 import a06_overview_alignment_publication as a06_overview_alignment
 import a08_porphyrin_editorial_publication as a08_porphyrin_editorial
+import a07_set_editorial_publication as a07_set_editorial
 from stories_rebalance_publication import PUBLICATION_PATHS, _file, _identity, _reconstruct, _sha
 
 
@@ -134,7 +135,8 @@ def _previous(root):
                  (a07_set_contributions, a07_set_contributions.V80_ADDITIONS),
                  (major_achievement_overviews, major_achievement_overviews.V81_ADDITIONS),
                  (a06_overview_alignment, a06_overview_alignment.V82_ADDITIONS),
-                 (a08_porphyrin_editorial, a08_porphyrin_editorial.V83_ADDITIONS))
+                 (a08_porphyrin_editorial, a08_porphyrin_editorial.V83_ADDITIONS),
+                 (a07_set_editorial, a07_set_editorial.V84_ADDITIONS))
     latest = next((revision for revision, _ in reversed(revisions) if (root/revision.MANIFEST).is_file()), None)
     if latest is None and not (root/MANIFEST).is_file():
         return root, None
