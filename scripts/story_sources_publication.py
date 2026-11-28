@@ -37,6 +37,7 @@ import a04_awards_biography_publication as a04_awards_biography
 import a04_award_alignment_publication as a04_award_alignment
 import a06_reagent_contributions_publication as a06_reagent_contributions
 import a08_porphyrin_contributions_publication as a08_porphyrin_contributions
+import a07_set_contributions_publication as a07_set_contributions
 from stories_rebalance_publication import PUBLICATION_PATHS, _file, _identity, _reconstruct, _sha
 
 
@@ -126,7 +127,8 @@ def _previous(root):
                  (a04_awards_biography, a04_awards_biography.V76_ADDITIONS),
                  (a04_award_alignment, a04_award_alignment.V77_ADDITIONS),
                  (a06_reagent_contributions, a06_reagent_contributions.V78_ADDITIONS),
-                 (a08_porphyrin_contributions, a08_porphyrin_contributions.V79_ADDITIONS))
+                 (a08_porphyrin_contributions, a08_porphyrin_contributions.V79_ADDITIONS),
+                 (a07_set_contributions, a07_set_contributions.V80_ADDITIONS))
     latest = next((revision for revision, _ in reversed(revisions) if (root/revision.MANIFEST).is_file()), None)
     if latest is None and not (root/MANIFEST).is_file():
         return root, None

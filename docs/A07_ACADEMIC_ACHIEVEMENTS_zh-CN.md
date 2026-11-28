@@ -1,6 +1,6 @@
 # A07（单电子转移与C–Cl活化）：单电子转移反应与氟烷基化方法
 
-[主要贡献与研究分支](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#a07-contributions)
+[不同引发体系怎样发展出氟烷基化方法](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#a07-initiation-systems) · [后续拓展：让特定含氟氯代物参与成键](https://cccolab.github.io/Chen-Qingyun-AI4Science/topics/single-electron-transfer/index.html#a07-representative-study)
 
 陈庆云与合作者把含氟卤代物的反应性、溶剂和引发条件组织成持续发展的研究问题。《氟缘笃志：陈庆云传》记述了从全氟烷基碘代物的意外溶剂效应，到多种氟烷基化方法，再到特定含氟氯代物活化的历程。这条成果线既有新的合成入口，也有围绕异常现象深入研究的合作故事。
 
@@ -10,7 +10,7 @@ F-53相关研究提供的含氟原料，为后续基础研究创造了条件。�
 
 这项工作的开拓性体现在把单电子转移的研究思路用于一系列具体的有机氟合成问题：选择怎样的引发体系，哪些含氟卤代物能够参与反应，能形成什么产物？传记把它放在国际已有单电子转移研究的发展背景中介绍，同时分别记述黄维垣、胡昌明和陈庆云等研究组的方向。
 
-这里的主要成就是一组相互衔接的方法与研究思路，不是1999年某一项C–Cl反应的简称。研究先从全氟烷基碘代物的溶剂效应和多种引发方式展开，落实到具体含氟烯烃合成，随后才推进到部分较难活化的含氟氯代物。平台据此把C–Cl活化列作后期拓展，而不让单个案例遮蔽整条成果线。
+研究先从全氟烷基碘代物的溶剂效应和多种引发方式展开，随后拓展到部分较难活化的含氟氯代物。据《氟缘笃志：陈庆云传》第118页年表，陈庆云主持的“氟化学中单电子转移反应的研究”获1989年度国家自然科学奖二等奖。
 
 **学术与应用意义：**将反应性认识转化为多种合成入口，并围绕溶剂、引发方式和底物结构持续拓展方法。
 
@@ -26,11 +26,17 @@ F-53相关研究提供的含氟原料，为后续基础研究创造了条件。�
 
 传记72页、117页年表；1984《化学学报》42：906–912官方题录 · HERITAGE-S01、A07-ACTA1984-906
 
-## 具体反应：铜参与的加成与烯烃合成
+## 不同引发体系怎样发展出氟烷基化方法
 
 陈庆云与杨震宇1986年的研究，以铜存在下氟烷基碘与乙烯基三甲基硅烷的反应为具体对象，并研究相应含氟烯烃的立体专一性合成。它体现了从引发方式研究走向具体碳骨架和产物合成的方法贡献。
 
-期刊摘要还记载抑制实验，以及用碘苯未捕获到氟烷基铜中间体的结果，并据此提出可能由单电子转移引发的自由基链式解释。这里将原报反应、观察和作者提出的解释分别介绍。传记另记述亲核试剂、氧化剂和光照等方向，由不同合作者共同展开。
+期刊摘要还记载抑制实验，以及用碘苯未捕获到氟烷基铜中间体的结果，并据此提出可能由单电子转移引发的自由基链式解释。这里将原报反应、观察和作者提出的解释分别介绍。1988年陈庆云、杨震宇、赵成学、裘再明在所试条件下观察到低价钯可以引发烯烃加成，二价钯对照无效。作者由关环产物等线索讨论零价钯引发自由基链反应。
+
+| 其他引发体系 | 原文报告的合成结果 | 作者如何解释 |
+| --- | --- | --- |
+| 亲核试剂 | 苏德宝、陈庆云、朱蓉仙以所试含氟碘代物或溴代物得到单、双取代产物。 | 作者按底物和产物讨论自由基链式亲核取代。 |
+| 氧化剂 | 陈庆云、陈建国以铅(IV)氧化剂引发烯烃加成，二烯丙基醚探针出现四氢呋喃衍生物。 | 以关环观察讨论自由基中间体。 |
+| 光照 | 陈庆云、黎占亭得到吡啶环全氟烷基化产物。 | 提出电子转移解释。 |
 
 **学术与应用意义：**把合成结果与用于讨论反应途径的观察联系起来，推动单电子转移在有机氟反应中的具体研究。
 
@@ -40,13 +46,17 @@ F-53相关研究提供的含氟原料，为后续基础研究创造了条件。�
 
 传记明确把原脱卤亚磺化反应的发现归于黄维垣小组。陈庆云与龙正宇在这一研究基础上，比较溶剂和温度等条件，将方法拓展到特定全氟或多氟烷基氯代物。1999年两人的论文以DMSO／连二亚硫酸钠体系中氯代物对烯烃、炔烃的氢全氟烷基化为具体研究对象。
 
-2001年，黄小庭与陈庆云报道另一种零价镍体系，使全氟烷基氯代物参与烯烃、炔烃和芳烃的氟烷基化；摘要提出单电子转移机理解释。两篇论文的引发方式、底物范围和证据各有对应，不能互相替代。传记还记述唐小军与陈庆云对HCFC-133a、HCFC-123等工业含氟氯代原料的研究。
+1999年论文第4778页表4的同一组底物（1a与2b）在DMSO中转化率为100%（¹⁹F NMR），表列加成产物为80%，乙腈／水对照均为0%。作者据抑制实验和关环探针提出自由基途径，溶剂何以改变反应性仍是原文留下的问题。2000年，两人将连二亚硫酸钠体系用于富电子芳香化合物。
+
+2001年，黄小庭与陈庆云报道另一种零价镍体系，用于特定烯烃、炔烃和富电子芳烃的氟烷基化，也包括部分缺电子烯烃。论文对照显示三苯基膦有助于减少氢代副产物。当中烯烃加成产物3aa的分离收率为72%。镍(0)给予电子是作者根据抑制及关环探针提出的解释。
+
+唐小军与陈庆云的两篇2012年论文报告，HCFC-133a可随金属体系不同生成1,1,1-三氟乙烷或偏二氟乙烯，HCFC-123则可在铜参与下与酚类或硫酚类化合物偶联。曹海萍、肖吉昌、陈庆云的2006年论文把氟烷基卟啉中发现的意外环化拓展到较简单的末端氯代氟烷基苯，取得含氟稠合六元环产物。这项合成工作也连接了A08（交叉研究与晚年拓展）的氟烷基卟啉研究。
 
 相关技术文书保存了陈庆云与曹海萍共同发明的制碘代物方法：由含氟卤代前驱体形成亚磺酸盐，再转化为相应碘化物。同一申请的公开与授权公告版本分别保存，具体文本对照放在AI资料页。
 
 **学术与应用意义：**通过改变溶剂、引发或金属体系，拓展含氟氯代原料参与有机合成的途径；原发现、后续改进和不同团队合作分别归属。
 
-传记70–71、83–84页；JOC1999／2001摘要；申请200510031063.4 · HERITAGE-S01、CQ-R06、HERITAGE-S07、HERITAGE-S06
+传记70–71、83–84页。另见1999年论文第4778–4779页、2001年论文第4652–4654页和申请200510031063.4。来源编号 HERITAGE-S01、CQ-R06、HERITAGE-S07、HERITAGE-S06。
 
 ## 从溶剂效应到方法拓展
 
@@ -82,7 +92,7 @@ F-53相关研究提供的含氟原料，为后续基础研究创造了条件。�
 
 | 文书 | 原文署名 | 介绍范围 |
 | --- | --- | --- |
-| 1999 DMSO／连二亚硫酸钠体系 | Zheng-Yu Long、Qing-Yun Chen | 论文4775–4782页；本次新增介绍限摘要支持的反应对象与方法。 |
+| 1999 DMSO／连二亚硫酸钠体系 | Zheng-Yu Long、Qing-Yun Chen | 第4778页表4记录溶剂对照，第4778–4779页讨论自由基探针和机理。 |
 | 2001零价镍体系 | Xiao-Ting Huang、Qing-Yun Chen | 论文4651–4656页；SET为作者提出的解释。 |
 | 申请200510031063.4 | 陈庆云、曹海萍；申请人上海有机所 | CN1752059A和CN1298686C为同一申请的公开／授权公告版本。 |
 
@@ -100,9 +110,14 @@ F-53相关研究提供的含氟原料，为后续基础研究创造了条件。�
 - **A07-ACTA1984-906** · [氟烷基化和氟烷氧基化的研究I.溶剂对碘苯氟烷基化的影响](https://sioc-journal.cn/EN/abstract/abstract333975.shtml)；陈庆云、陈亚雄、黄维垣；《化学学报》1984，42(9)：906–912；官方题录，研究对象为溶剂对碘苯氟烷基化的影响
 - **A07-ACTA1986-265** · [Studies on fluoroalkylation and fluoroalkoxylation 4. Reaction of fluoroalkyl iodides with vinyltrimethylsilane in the presence of copper and stereospecific synthesis of the corresponding olefins](https://sioc-journal.cn/Jwk_hxxb/CN/abstract/abstract334540.shtml)；陈庆云、杨震宇；《化学学报》1986，44(3)：265–269；此处按官方英文题名及摘要介绍具体合成与可能的SET解释
 - **CQ-R04** · [抑铬雾剂F-53的研制带动了有机氟化学的发展](https://sioc-journal.cn/Jwk_yjhx/CN/abstract/abstract325798.shtml)；陈庆云，2001，《有机化学》21(11)：805–809；原作者回顾摘要，保留原专题来源入口
-- **CQ-R06** · [The Activation of Carbon−Chlorine Bonds in Per- and Polyfluoroalkyl Chlorides: DMSO-Induced Hydroperfluoroalkylation of Alkenes and Alkynes with Sodium Dithionite](https://pubs.acs.org/doi/abs/10.1021/jo9900937)；Long、Chen；J. Org. Chem. 1999，64(13)：4775–4782；DOI 10.1021/jo9900937；新增方法介绍限出版社摘要
-- **HERITAGE-S07** · [Nickel(0)-Catalyzed Fluoroalkylation of Alkenes, Alkynes, and Aromatics with Perfluoroalkyl Chlorides](https://pubs.acs.org/doi/abs/10.1021/jo010178j)；Huang、Chen；J. Org. Chem. 2001，66(13)：4651–4656；DOI 10.1021/jo010178j；出版社摘要提出SET解释
+- **CQ-R06** · [The Activation of Carbon−Chlorine Bonds in Per- and Polyfluoroalkyl Chlorides: DMSO-Induced Hydroperfluoroalkylation of Alkenes and Alkynes with Sodium Dithionite](https://pubs.acs.org/doi/abs/10.1021/jo9900937)；Long、Chen；J. Org. Chem. 1999，64(13)：4775–4782；DOI 10.1021/jo9900937；第4778–4779页用于核对溶剂、实验观察与机理讨论
+- **HERITAGE-S07** · [Nickel(0)-Catalyzed Fluoroalkylation of Alkenes, Alkynes, and Aromatics with Perfluoroalkyl Chlorides](https://pubs.acs.org/doi/abs/10.1021/jo010178j)；Huang、Chen；J. Org. Chem. 2001，66(13)：4651–4656；DOI 10.1021/jo010178j；第4652–4654页用于核对底物范围、实验观察和作者的SET解释
 - **HERITAGE-S06** · [陈庆云、曹海萍：从全氟烷基氯制备全氟烷基碘](https://patents.google.com/patent/CN1752059A/zh)；申请200510031063.4，2005-10-21；CN1752059A与CN1298686C为同一申请的历史版本；署名及技术文字据既有两份完整说明书核读
+
+新增原文入口
+
+- [1988年零价钯与烯烃加成](https://doi.org/10.1039/P19880000563) · [1986年亲核试剂引发的取代](https://sioc-journal.cn/Jwk_yjhx/CN/abstract/abstract329365.shtml) · [1988年铅(IV)氧化剂](https://sioc-journal.cn/Jwk_hxxb/EN/abstract/abstract334705.shtml) · [1992年光照引发](https://doi.org/10.1039/P19920001443)。
+- [2000年连二亚硫酸钠体系与芳烃](https://sioc-journal.cn/Jwk_hxxb/EN/abstract/abstract336071.shtml) · [2006年环化的卟啉线索与合成结果](https://sioc.cas.cn/xiaogroup/publications/thesis/2010/202407/P020240724607639776752.pdf) · [2012年HCFC-133a选择性转化](https://doi.org/10.1039/C2SC01083F) · [2012年HCFC-123偶联](https://doi.org/10.1021/ol302962p)。
 
 ## 研究对象与解释范围
 
